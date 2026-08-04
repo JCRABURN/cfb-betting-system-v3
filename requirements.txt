@@ -1,2 +1,7 @@
-requests
-pytest
+# Runtime dependency lock for Python 3.11.
+# Update intentionally and verify with the complete test suite.
+certifi==2026.7.22
+charset-normalizer==3.4.9
+idna==3.18
+requests==2.34.2
+urllib3==2.7.0
