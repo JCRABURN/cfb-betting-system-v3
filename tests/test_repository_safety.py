@@ -82,6 +82,7 @@ jobs:
     steps:
       - run: python -m pip install --requirement requirements-dev.txt
       - run: python scripts/verify_repo_safety.py
+      - run: python -m scripts.verify_migrations
       - run: python -m pytest -q
 """
 
@@ -109,3 +110,9 @@ def test_ci_validator_rejects_job_level_write_permissions():
     text = _safe_ci_workflow().replace("  test:\n", "  test:\n    permissions:\n      contents: write\n")
     errors = ci_workflow_errors(text)
     assert any("must not grant write permissions" in error for error in errors)
+
+
+def test_ci_validator_requires_disposable_copy_migration_verification():
+    text = _safe_ci_workflow().replace("      - run: python -m scripts.verify_migrations\n", "")
+    errors = ci_workflow_errors(text)
+    assert any("does not verify migrations" in error for error in errors)

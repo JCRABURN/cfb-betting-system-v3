@@ -1,39 +1,32 @@
-"""
-db.py
-Shared SQLite access layer for the CFB betting system.
-Single file DB at data/cfb.db, committed to git so ingestion history
-persists across GitHub Actions runs instead of being discarded each week.
+"""Shared SQLite access layer for the CFB Betting System.
 
-Scripts in data/ and models/ import this via:
-    import sys, os
-    sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-    import db
+The committed database lives at ``data/cfb.db``. Schema changes are applied by
+the ordered, checksummed migration runner in ``migrations/``; application code
+must never issue ad hoc schema patches.
 """
+
+from __future__ import annotations
 
 import os
 import sqlite3
 from contextlib import contextmanager
 from datetime import datetime
 
+from migrations.runner import MigrationResult, apply_migrations
+
+
 _ROOT = os.path.dirname(os.path.abspath(__file__))
 DB_PATH = os.path.join(_ROOT, "data", "cfb.db")
 
 
-def _load_dotenv(path=None):
-    """Minimal .env loader so local runs pick up CFBD_API_KEY/ODDS_API_KEY without
-    the caller having to export them manually. No-op if .env doesn't exist (e.g. in
-    GitHub Actions, where secrets are already env vars). Never overwrites a var
-    that's already set, so real env vars always win over .env.
-
-    Every ingestion script does `import db` before reading its own API key
-    constants from os.environ, so this runs early enough to matter.
-    """
+def _load_dotenv(path: str | None = None) -> None:
+    """Load local environment values without overriding real environment vars."""
     path = path or os.path.join(_ROOT, ".env")
     if not os.path.exists(path):
         return
-    with open(path, encoding="utf-8") as f:
-        for line in f:
-            line = line.strip()
+    with open(path, encoding="utf-8") as env_file:
+        for raw_line in env_file:
+            line = raw_line.strip()
             if not line or line.startswith("#") or "=" not in line:
                 continue
             key, _, value = line.partition("=")
@@ -42,223 +35,26 @@ def _load_dotenv(path=None):
 
 _load_dotenv()
 
-SCHEMA = """
-CREATE TABLE IF NOT EXISTS teams (
-    team_id INTEGER PRIMARY KEY,
-    school TEXT NOT NULL UNIQUE,
-    conference TEXT,
-    division TEXT
-);
 
-CREATE TABLE IF NOT EXISTS games (
-    game_id INTEGER PRIMARY KEY,
-    season INTEGER NOT NULL,
-    week INTEGER NOT NULL,
-    season_type TEXT,
-    start_date TEXT,
-    home_team TEXT NOT NULL,
-    away_team TEXT NOT NULL,
-    venue TEXT,
-    venue_latitude REAL,
-    venue_longitude REAL,
-    neutral_site INTEGER DEFAULT 0,
-    conference_game INTEGER DEFAULT 0,
-    home_points INTEGER,
-    away_points INTEGER,
-    completed INTEGER DEFAULT 0
-);
-
--- One row per book per line pull. Never updated in place, only appended,
--- so line movement is a query (ORDER BY fetched_at) instead of a bolt-on field.
-CREATE TABLE IF NOT EXISTS betting_lines (
-    id INTEGER PRIMARY KEY AUTOINCREMENT,
-    game_id INTEGER,              -- best-effort FK to games.game_id; nullable if the
-                                    -- team-name join between odds and CFBD data failed
-    season INTEGER,
-    week INTEGER,
-    home_team TEXT NOT NULL,
-    away_team TEXT NOT NULL,
-    book TEXT NOT NULL,
-    home_spread REAL,
-    total REAL,
-    home_moneyline INTEGER,
-    away_moneyline INTEGER,
-    line_type TEXT NOT NULL,       -- opening | current
-    source TEXT NOT NULL,
-    fetched_at TEXT NOT NULL,
-    FOREIGN KEY (game_id) REFERENCES games(game_id)
-);
-
--- Season-to-date snapshot (SP+, EPA, success rate, havoc rate, records), one
--- row per team per capture. week/game_id are NULL for season-level snapshots
--- (e.g. the historical backfill), populated for in-season weekly captures.
-CREATE TABLE IF NOT EXISTS team_game_stats (
-    id INTEGER PRIMARY KEY AUTOINCREMENT,
-    game_id INTEGER,
-    season INTEGER NOT NULL,
-    week INTEGER,
-    team TEXT NOT NULL,
-    sp_rating REAL,
-    offense_epa_play REAL,
-    defense_epa_play REAL,
-    offense_success_rate REAL,
-    defense_success_rate REAL,
-    havoc_rate REAL,           -- CFBD only exposes havoc as a defensive stat
-    wins INTEGER,
-    losses INTEGER,
-    source TEXT NOT NULL,
-    fetched_at TEXT NOT NULL,
-    FOREIGN KEY (game_id) REFERENCES games(game_id)
-);
-
-CREATE TABLE IF NOT EXISTS weather (
-    id INTEGER PRIMARY KEY AUTOINCREMENT,
-    game_id INTEGER,
-    captured_at TEXT NOT NULL,
-    temp_f REAL,
-    wind_mph REAL,
-    precip_pct REAL,
-    is_forecast INTEGER DEFAULT 1,
-    source TEXT NOT NULL DEFAULT 'open-meteo',
-    FOREIGN KEY (game_id) REFERENCES games(game_id)
-);
-
-CREATE TABLE IF NOT EXISTS injuries (
-    id INTEGER PRIMARY KEY AUTOINCREMENT,
-    team TEXT NOT NULL,
-    player TEXT,
-    position TEXT,
-    status TEXT,
-    report_date TEXT,
-    source TEXT NOT NULL,
-    fetched_at TEXT NOT NULL
-);
-
-CREATE TABLE IF NOT EXISTS picks (
-    id INTEGER PRIMARY KEY AUTOINCREMENT,
-    game_id INTEGER,
-    week INTEGER NOT NULL,
-    year INTEGER NOT NULL,
-    home_team TEXT,
-    away_team TEXT,
-    consensus_spread REAL,
-    projected_spread REAL,
-    edge REAL,
-    recommended_side TEXT,
-    units INTEGER,
-    confidence_signals TEXT,   -- JSON-encoded list
-    key_factors TEXT,          -- JSON-encoded list
-    line_movement REAL,
-    weather TEXT,              -- JSON-encoded dict
-    risk_flags TEXT,           -- JSON-encoded list
-    qualifies INTEGER,
-    status TEXT NOT NULL DEFAULT 'pending',
-    result TEXT,
-    clv REAL,
-    unit_pl REAL,
-    pick_type TEXT NOT NULL DEFAULT 'live',  -- live | backfilled | synthetic
-    created_at TEXT NOT NULL,
-    FOREIGN KEY (game_id) REFERENCES games(game_id)
-);
-
-CREATE TABLE IF NOT EXISTS ingestion_runs (
-    id INTEGER PRIMARY KEY AUTOINCREMENT,
-    source TEXT NOT NULL,
-    started_at TEXT NOT NULL,
-    finished_at TEXT,
-    rows_added INTEGER DEFAULT 0,
-    status TEXT NOT NULL,      -- success | error
-    error TEXT
-);
-
--- Added 2026-07-30: the backtest harness's get_team_stats_as_of() runs this
--- exact WHERE/ORDER BY on every single team-game prediction and every
--- training-set row (tens of thousands of calls per walk-forward run,
--- multiplied by every model tested against the baseline) with no index --
--- a full table scan every time. A two-model feature-test run took several
--- minutes as a result. CREATE INDEX IF NOT EXISTS is safe to run against an
--- already-populated table (unlike ALTER TABLE ADD COLUMN, no separate
--- migration dance needed).
-CREATE INDEX IF NOT EXISTS idx_team_game_stats_lookup
-    ON team_game_stats (source, team, season, week);
-
-CREATE INDEX IF NOT EXISTS idx_betting_lines_lookup
-    ON betting_lines (game_id, line_type, book);
-
-CREATE INDEX IF NOT EXISTS idx_games_season_week
-    ON games (season, week);
-
--- Added 2026-07-31, for the rest/schedule feature test (MODEL_DESIGN.md
--- "Later features"): `games` is intentionally FBS-only (see Phase 3), so a
--- team's rest calculation breaks when their actual most recent game was an
--- FBS-vs-FCS buy game not in that table. This does NOT duplicate `games`'
--- scope -- it stores only the one field backtest_harness.get_days_rest()
--- needs (the date), never a full game row (no score, no opponent-as-a-
--- tracked-entity, no FK to games). Populated by
--- data/backfill_rest_dates.py, which only ever fills in gaps found in the
--- FBS-only archive, on demand.
-CREATE TABLE IF NOT EXISTS supplemental_game_dates (
-    id INTEGER PRIMARY KEY AUTOINCREMENT,
-    team TEXT NOT NULL,
-    season INTEGER NOT NULL,
-    week INTEGER NOT NULL,
-    start_date TEXT NOT NULL,
-    opponent_classification TEXT,
-    source TEXT NOT NULL DEFAULT 'cfbd_supplemental_dates',
-    fetched_at TEXT NOT NULL
-);
-
-CREATE INDEX IF NOT EXISTS idx_supplemental_game_dates_lookup
-    ON supplemental_game_dates (team, season, week);
-"""
-
-
-def get_connection():
+def get_connection() -> sqlite3.Connection:
     os.makedirs(os.path.dirname(DB_PATH), exist_ok=True)
     conn = sqlite3.connect(DB_PATH)
     conn.execute("PRAGMA foreign_keys = ON")
     return conn
 
 
-# Columns added after the table already existed in committed DBs.
-# CREATE TABLE IF NOT EXISTS won't retroactively add these, so init_db()
-# patches them in via ALTER TABLE when missing.
-_ADDED_COLUMNS = {
-    "team_game_stats": [
-        ("offense_success_rate", "REAL"),
-        ("defense_success_rate", "REAL"),
-        ("havoc_rate", "REAL"),
-    ],
-}
-
-
-def _migrate_schema(conn):
-    for table, columns in _ADDED_COLUMNS.items():
-        existing = {row[1] for row in conn.execute(f"PRAGMA table_info({table})")}
-        for name, col_type in columns:
-            if name not in existing:
-                conn.execute(f"ALTER TABLE {table} ADD COLUMN {name} {col_type}")
-
-
-def init_db():
+def init_db() -> tuple[MigrationResult, ...]:
+    """Apply pending schema migrations and return the migrations applied."""
     conn = get_connection()
     try:
-        conn.executescript(SCHEMA)
-        _migrate_schema(conn)
-        conn.commit()
+        return apply_migrations(conn)
     finally:
         conn.close()
 
 
 @contextmanager
-def log_run(source):
-    """
-    Wraps an ingestion step and records it in ingestion_runs.
-    Usage:
-        with log_run("cfbd_stats") as run:
-            ... do work ...
-            run["rows_added"] = 42
-    """
+def log_run(source: str):
+    """Record an ingestion run as success or error while preserving failures."""
     init_db()
     conn = get_connection()
     started_at = datetime.utcnow().isoformat()
@@ -271,11 +67,18 @@ def log_run(source):
             (source, started_at, datetime.utcnow().isoformat(), run["rows_added"]),
         )
         conn.commit()
-    except Exception as e:
+    except Exception as exc:
         conn.execute(
-            "INSERT INTO ingestion_runs (source, started_at, finished_at, rows_added, status, error) "
+            "INSERT INTO ingestion_runs "
+            "(source, started_at, finished_at, rows_added, status, error) "
             "VALUES (?, ?, ?, ?, 'error', ?)",
-            (source, started_at, datetime.utcnow().isoformat(), run["rows_added"], str(e)),
+            (
+                source,
+                started_at,
+                datetime.utcnow().isoformat(),
+                run["rows_added"],
+                str(exc),
+            ),
         )
         conn.commit()
         raise

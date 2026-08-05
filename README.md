@@ -32,3 +32,16 @@ keeps their data-writing jobs inert outside `JCRABURN/cfb-betting-system`.
 
 Do not weaken or remove those controls without explicit repository-owner
 approval and a dedicated pull request.
+
+## Database migrations
+
+Schema changes use ordered, checksummed migration modules and a
+`schema_migrations` ledger. Verify the entire migration chain against a
+disposable copy of `data/cfb.db` with:
+
+```text
+python -m scripts.verify_migrations
+```
+
+The authoritative database is never opened for writing by that command. See
+`migrations/README.md` for migration and recovery requirements.
