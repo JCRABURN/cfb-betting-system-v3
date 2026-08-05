@@ -4,6 +4,7 @@ def test_init_db_creates_all_tables(temp_db):
     expected = {
         "teams", "games", "betting_lines", "team_game_stats",
         "weather", "injuries", "picks", "ingestion_runs",
+        "schema_migrations", "supplemental_game_dates",
     }
     assert expected.issubset(tables)
     conn.close()

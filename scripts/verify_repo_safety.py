@@ -81,6 +81,8 @@ def ci_workflow_errors(text: str, source: str = "ci.yml") -> list[str]:
         errors.append(f"{source}: CI does not install the development dependency lock")
     if "python scripts/verify_repo_safety.py" not in text:
         errors.append(f"{source}: CI does not enforce repository safety checks")
+    if "python -m scripts.verify_migrations" not in text:
+        errors.append(f"{source}: CI does not verify migrations on a disposable copy")
     if "python -m pytest -q" not in text:
         errors.append(f"{source}: CI does not run the complete test suite")
     return errors

@@ -1,4 +1,4 @@
-.PHONY: safety test verify-cfbd
+.PHONY: safety test verify-cfbd verify-migrations
 
 YEAR ?= 2025
 WEEK ?= 10
@@ -8,6 +8,9 @@ test:
 
 safety:
 	python scripts/verify_repo_safety.py
+
+verify-migrations:
+	python -m scripts.verify_migrations
 
 # One real call per CFBD endpoint fetch_stats.py/backfill_historical_stats.py use;
 # checks the field names those scripts assume against the live response.
