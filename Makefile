@@ -1,10 +1,13 @@
-.PHONY: test verify-cfbd
+.PHONY: safety test verify-cfbd
 
 YEAR ?= 2025
 WEEK ?= 10
 
 test:
-	pytest -q
+	python -m pytest -q
+
+safety:
+	python scripts/verify_repo_safety.py
 
 # One real call per CFBD endpoint fetch_stats.py/backfill_historical_stats.py use;
 # checks the field names those scripts assume against the live response.
