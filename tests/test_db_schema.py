@@ -5,6 +5,7 @@ def test_init_db_creates_all_tables(temp_db):
         "teams", "games", "betting_lines", "team_game_stats",
         "weather", "injuries", "picks", "ingestion_runs",
         "schema_migrations", "supplemental_game_dates",
+        "contests", "contest_locked_lines", "contest_line_corrections",
     }
     assert expected.issubset(tables)
     conn.close()

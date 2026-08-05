@@ -45,3 +45,22 @@ python -m scripts.verify_migrations
 
 The authoritative database is never opened for writing by that command. See
 `migrations/README.md` for migration and recovery requirements.
+
+## Contest line custody
+
+Market and contest lines are separate records with different rules:
+
+- `betting_lines` accepts only `opening`, `current`, and `closing` market
+  snapshots.
+- `contests` identifies the source contest for one season and week.
+- `contest_locked_lines` stores the original contest lock, including raw and
+  normalized team names, source identifiers, UTC lock time, provenance, and
+  source-payload checksum.
+- `contest_line_corrections` stores append-only corrected snapshots with the
+  reason, author, timestamp, source, and superseded correction link.
+
+Use `contest_lines.py` to create contests, lock lines, record corrections, and
+read the effective corrected value. An identical lock replay is idempotent. A
+changed replay, direct update, delete, replacement, duplicate matchup, or
+out-of-order correction fails at the database boundary. The original locked
+row is never rewritten by a correction.
