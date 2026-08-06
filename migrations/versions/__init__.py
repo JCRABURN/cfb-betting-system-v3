@@ -9,6 +9,7 @@ from migrations.versions import (
     v0002_team_game_stats_features,
     v0003_lookup_indexes,
     v0004_supplemental_game_dates,
+    v0005_immutable_contest_lines,
 )
 
 
@@ -17,4 +18,5 @@ MIGRATION_MODULES = (
     v0002_team_game_stats_features,
     v0003_lookup_indexes,
     v0004_supplemental_game_dates,
+    v0005_immutable_contest_lines,
 )

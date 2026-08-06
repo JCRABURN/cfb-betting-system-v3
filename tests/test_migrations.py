@@ -117,7 +117,7 @@ def test_legacy_database_gains_feature_columns_without_data_loss(tmp_path):
     ).fetchone()
     conn.close()
 
-    assert [result.version for result in applied] == [1, 2, 3, 4]
+    assert [result.version for result in applied] == [1, 2, 3, 4, 5]
     assert after_counts["team_game_stats"] == before_counts["team_game_stats"] == 1
     assert {"offense_success_rate", "defense_success_rate", "havoc_rate"} <= columns
     assert row == (2025, 1, "Test", "fixture")
@@ -130,8 +130,14 @@ def test_authoritative_database_copy_preserves_rows_integrity_and_source(tmp_pat
 
     result = verify_database_copy(source_copy)
 
-    assert result.applied_versions == (1, 2, 3, 4)
-    assert result.before_counts == result.after_counts
+    assert result.applied_versions == (1, 2, 3, 4, 5)
+    assert all(
+        result.after_counts[table] == count
+        for table, count in result.before_counts.items()
+    )
+    assert result.after_counts["contests"] == 0
+    assert result.after_counts["contest_locked_lines"] == 0
+    assert result.after_counts["contest_line_corrections"] == 0
     assert _file_hash(AUTHORITATIVE_DATABASE) == source_hash_before
 
 
@@ -237,4 +243,59 @@ def test_index_definition_drift_is_detected_after_migrations_are_recorded(tmp_pa
 
     with pytest.raises(MigrationError, match="schema verification failed"):
         apply_migrations(conn)
+    conn.close()
+
+
+def test_missing_immutability_trigger_is_detected_as_schema_drift(tmp_path):
+    conn = _connect(tmp_path / "contest-trigger-drift.db")
+    apply_migrations(conn)
+    conn.execute("DROP TRIGGER contest_locked_lines_no_update")
+    conn.commit()
+
+    with pytest.raises(MigrationError, match="schema verification failed"):
+        apply_migrations(conn)
+    conn.close()
+
+
+def test_changed_immutability_trigger_definition_is_detected(tmp_path):
+    conn = _connect(tmp_path / "contest-trigger-definition-drift.db")
+    apply_migrations(conn)
+    conn.execute("DROP TRIGGER contest_locked_lines_no_update")
+    conn.execute(
+        "CREATE TRIGGER contest_locked_lines_no_update "
+        "BEFORE UPDATE ON contest_locked_lines BEGIN SELECT 1; END"
+    )
+    conn.commit()
+
+    with pytest.raises(MigrationError, match="definition changed"):
+        apply_migrations(conn)
+    conn.close()
+
+
+def test_unknown_legacy_line_type_blocks_migration_5_and_rolls_back(tmp_path):
+    conn = _connect(tmp_path / "unsupported-line-type.db")
+    migrations = load_migrations()
+    apply_migrations(conn, migrations[:4])
+    conn.execute(
+        "INSERT INTO betting_lines "
+        "(season, week, home_team, away_team, book, line_type, source, fetched_at) "
+        "VALUES (2026, 1, 'A', 'B', 'fixture', 'contest', 'fixture', 'now')"
+    )
+    conn.commit()
+
+    with pytest.raises(MigrationError, match="unsupported market line types"):
+        apply_migrations(conn)
+
+    versions = [
+        row[0]
+        for row in conn.execute(
+            "SELECT version FROM schema_migrations ORDER BY version"
+        )
+    ]
+    contest_table = conn.execute(
+        "SELECT 1 FROM sqlite_master WHERE type = 'table' AND name = 'contests'"
+    ).fetchone()
+    assert versions == [1, 2, 3, 4]
+    assert contest_table is None
+    assert conn.execute("SELECT COUNT(*) FROM betting_lines").fetchone()[0] == 1
     conn.close()

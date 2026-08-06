@@ -33,6 +33,24 @@ change. It never opens the authoritative database for writing.
 
 Never rewrite an applied migration. Fix a defect with a new forward migration.
 
+## Immutable contest lines
+
+Migration 5 adds `contests`, `contest_locked_lines`, and
+`contest_line_corrections`. It does not import or reinterpret any legacy
+`betting_lines` rows. The legacy table remains the market feed and is limited
+to `opening`, `current`, and `closing`; a locked contest line cannot be stored
+there.
+
+Locked contest rows and their contest identity are immutable. Corrections are
+full replacement snapshots linked in a contiguous append-only chain, while the
+original lock remains unchanged. Database triggers reject updates, deletes,
+replacement inserts, relocks, matchup collisions, invalid game mappings, and
+out-of-order corrections even when a caller bypasses the Python service.
+
+If captured contest data is wrong, use the correction service with a reason,
+author, UTC timestamp, source, provenance reference, and payload checksum. Do
+not edit the locked row or migration ledger.
+
 ## Recovery
 
 SQLite DDL is applied inside one transaction per migration. A failed migration
