@@ -51,6 +51,22 @@ If captured contest data is wrong, use the correction service with a reason,
 author, UTC timestamp, source, provenance reference, and payload checksum. Do
 not edit the locked row or migration ledger.
 
+## Separate business entities
+
+Migration 6 creates explicit, empty tables for `model_runs`,
+`model_predictions`, `contest_cards`, `contest_picks`,
+`sportsbook_recommendations`, `card_revisions`, `manual_adjustments`, and
+`pick_audits`. It does not transform, reinterpret, or delete legacy `picks`
+rows. New writes use the typed functions in `business_entities`; the legacy
+table remains a compatibility boundary until its existing readers and writers
+are retired in later milestones.
+
+The new tables are append-only. Database triggers reject updates, deletes,
+and replacement inserts. Revision, adjustment, and audit histories use
+contiguous supersession links, while cross-entity triggers prevent a card,
+line, prediction, pick, recommendation, or closing line from being attached
+to an unrelated contest or game.
+
 ## Recovery
 
 SQLite DDL is applied inside one transaction per migration. A failed migration

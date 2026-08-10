@@ -64,3 +64,17 @@ read the effective corrected value. An identical lock replay is idempotent. A
 changed replay, direct update, delete, replacement, duplicate matchup, or
 out-of-order correction fails at the database boundary. The original locked
 row is never rewritten by a correction.
+
+## Separate business records
+
+New work must not overload the legacy `picks` table. The
+`business_entities` package records model runs, raw model predictions, contest
+cards, contest picks, sportsbook recommendations, card revisions, manual
+adjustments, and pick audits in distinct append-only tables. The legacy table
+remains unchanged for the existing compatibility pipeline and historical
+reads; it is not the persistence API for new features.
+
+Every new record has a stable key, UTC timestamp, provenance, typed fields,
+and database-enforced immutability. A contest pick does not create a wager,
+manual context does not rewrite a raw prediction, and a revised card or audit
+is linked to the prior record instead of replacing it.
