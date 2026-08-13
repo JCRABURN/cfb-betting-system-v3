@@ -10,6 +10,7 @@ from migrations.versions import (
     v0003_lookup_indexes,
     v0004_supplemental_game_dates,
     v0005_immutable_contest_lines,
+    v0006_separate_business_entities,
 )
 
 
@@ -19,4 +20,5 @@ MIGRATION_MODULES = (
     v0003_lookup_indexes,
     v0004_supplemental_game_dates,
     v0005_immutable_contest_lines,
+    v0006_separate_business_entities,
 )
