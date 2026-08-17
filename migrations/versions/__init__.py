@@ -15,6 +15,7 @@ from migrations.versions import (
     v0008_reproducible_card_runs,
     v0009_daily_refresh_revisions,
     v0010_manual_contextual_adjustments,
+    v0011_complete_postgame_audits,
 )
 
 
@@ -29,4 +30,5 @@ MIGRATION_MODULES = (
     v0008_reproducible_card_runs,
     v0009_daily_refresh_revisions,
     v0010_manual_contextual_adjustments,
+    v0011_complete_postgame_audits,
 )

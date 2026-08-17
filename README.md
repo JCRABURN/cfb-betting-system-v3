@@ -126,6 +126,29 @@ Contest ranking remains separate from sportsbook recommendations. The legacy
 `models/card_generator.py` remains unchanged as a compatibility path and is not
 used by this engine.
 
+## Complete postgame audits
+
+Use `business_entities.audit_contest_card()` to grade an entire recorded card
+in one transaction. The caller must identify one explicit, pre-kickoff
+`closing` market line for every locked contest line. The service derives ATS
+win/loss/push, selected-side CLV, hook and key-number outcomes, favorite or
+underdog, location, spread bucket, Confidence, rank, Top 5, and raw-versus-
+adjusted model results from immutable card inputs and completed game scores.
+
+Each audit uses an immutable versioned policy and seals the full per-pick
+ledger with a SHA-256 checksum. Corrections append a new card audit run and new
+pick-audit sequences; they never overwrite a prior result. A run cannot be
+marked complete unless every card pick has a detail record, all applicable key
+crossings are recorded, and every result has a controlled failure-taxonomy
+entry. `inspect_postgame_audit_run()` and `validate_postgame_audit_run()`
+recompute coverage, result counts, and the ledger checksum.
+
+Backdoor outcomes default to `not_evaluated`. A confirmed classification is
+accepted only with explicit scoring-sequence evidence; the service never
+infers a backdoor cover from the final score alone. Audit persistence does not
+write the legacy `picks` table or alter locked contest lines, cards, model
+predictions, adjustment snapshots, or market-line history.
+
 ## Reproduce a prior card
 
 Every new full-card snapshot has an immutable `card_run_manifests` record. It

@@ -131,6 +131,29 @@ pick Confidence, item count, and numeric totals. Policies, assignments, items,
 and snapshots cannot be replaced, updated, or deleted. The migration adds no
 policy, assignment, item, snapshot, adjustment, card, or pick rows.
 
+## Complete postgame audit ledger
+
+Migration 11 creates immutable postgame-audit policies and their normalized
+key-number, spread-bucket, and failure-taxonomy definitions. Card-level audit
+runs contain complete per-pick details, normalized key-number crossings,
+applicable failure records, and a completion seal with a canonical ledger
+SHA-256 checksum.
+
+Database triggers require each detail to match the card pick, effective locked
+line as of card generation, completed game score, explicit pre-kickoff closing
+line, selected-side ATS and CLV calculations, frozen adjustment snapshot,
+Confidence, rank, Top 5, hook, key-number, favorite, location, and spread-
+bucket classifications. A completion row is rejected until every card pick and
+every required crossing and failure record is present. Confirmed backdoor
+covers require stored scoring-sequence evidence; the default is explicitly
+`not_evaluated`.
+
+Policy definitions freeze on first use. Policies, runs, details, crossings,
+failures, and completion seals cannot be replaced, updated, or deleted.
+Corrections append a contiguous superseding run instead of altering history.
+The migration adds no audit policies, runs, details, completion rows, game
+results, market lines, cards, or picks.
+
 ## Recovery
 
 SQLite DDL is applied inside one transaction per migration. A failed migration
