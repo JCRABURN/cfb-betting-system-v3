@@ -16,6 +16,7 @@ from migrations.versions import (
     v0009_daily_refresh_revisions,
     v0010_manual_contextual_adjustments,
     v0011_complete_postgame_audits,
+    v0012_weekly_diagnostics,
 )
 
 
@@ -31,4 +32,5 @@ MIGRATION_MODULES = (
     v0009_daily_refresh_revisions,
     v0010_manual_contextual_adjustments,
     v0011_complete_postgame_audits,
+    v0012_weekly_diagnostics,
 )

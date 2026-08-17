@@ -417,6 +417,24 @@ contest picks as wagers.
   attributable to a specific model version. (Enables "did v2.8 actually beat
   v2.7?" to be answered honestly.)
 
+The implemented weekly diagnostic ledger evaluates the completed card across
+eight fixed dimensions: favorite status, selected-side location, spread
+bucket, road-favorite status, Confidence, Top 5 status, frozen raw versus final
+adjusted selection, and CLV sign. It records wins, losses, pushes, and ATS rate
+for every category, including empty categories, so a weak cut cannot disappear
+from the report. Its Lessons Learned are descriptive comparisons, not causal
+claims.
+
+The only policy-change candidates currently supported are numeric tightenings
+to the existing Confidence 5–2 maximum-uncertainty thresholds. A versioned
+diagnostic policy requires a completed audit, a predefined minimum sample, a
+predefined minimum negative ATS delta from the full card, and a predefined
+step. A qualifying observation names a new candidate Confidence-policy version
+and requires explicit owner approval. It does not alter or assign the current
+policy, and a non-qualifying observation is stored as a numeric hold. Broader
+out-of-sample evidence and the repository's normal review workflow remain
+required before any candidate becomes an active rule.
+
 ### Tone of the system (goal #7)
 Be critical, not agreeable. If the data doesn't support a favored play, the
 system says so. Confidence must fall out of edge math, never be inflated to

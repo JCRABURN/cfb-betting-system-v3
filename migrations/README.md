@@ -154,6 +154,29 @@ Corrections append a contiguous superseding run instead of altering history.
 The migration adds no audit policies, runs, details, completion rows, game
 results, market lines, cards, or picks.
 
+## Weekly diagnostics and policy recommendations
+
+Migration 12 creates immutable versioned diagnostic policies, append-only
+weekly diagnostic runs, normalized segment aggregates, structured Lessons
+Learned, numeric policy-change recommendations, and completion seals. The
+`weekly_diagnostic_source_results` view exposes exactly eight required
+dimensions from the completed per-pick audit ledger; raw-versus-adjusted
+comparison uses only picks with a recorded raw-model result.
+
+Database triggers require a completed postgame audit, an effective diagnostic
+policy, contiguous supersession, exact recomputation of every segment, matching
+lesson evidence, and recommendations that agree with the assigned immutable
+Confidence/ranking policy. A candidate may only tighten an existing numeric
+Confidence uncertainty threshold by the policy's predefined step, must name an
+unused proposed version, and must require owner approval. The completion seal
+requires all 26 segments, four Lessons Learned, and four recommendations before
+recording the canonical SHA-256 ledger checksum.
+
+Policies, runs, segments, lessons, recommendations, and completion seals cannot
+be replaced, updated, or deleted. The migration adds no diagnostic policies or
+runs, no recommendations, and no model, ranking, Confidence, card, line, audit,
+workflow, or authoritative database rows.
+
 ## Recovery
 
 SQLite DDL is applied inside one transaction per migration. A failed migration

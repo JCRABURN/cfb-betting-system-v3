@@ -19,6 +19,9 @@ def test_init_db_creates_all_tables(temp_db):
         "card_postgame_audit_runs", "pick_audit_details",
         "pick_audit_key_number_crossings", "pick_audit_failures",
         "card_postgame_audit_completions",
+        "weekly_diagnostic_policies", "weekly_diagnostic_runs",
+        "weekly_diagnostic_segments", "weekly_diagnostic_lessons",
+        "policy_change_recommendations", "weekly_diagnostic_completions",
     }
     assert expected.issubset(tables)
     conn.close()

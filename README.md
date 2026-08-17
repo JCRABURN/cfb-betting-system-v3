@@ -149,6 +149,25 @@ infers a backdoor cover from the final score alone. Audit persistence does not
 write the legacy `picks` table or alter locked contest lines, cards, model
 predictions, adjustment snapshots, or market-line history.
 
+## Weekly diagnostics and policy versioning
+
+Use `business_entities.generate_weekly_diagnostics()` only after a complete,
+validated card audit. One immutable diagnostic run records all 26 normalized
+cuts required for favorites/underdogs, home/away/neutral, spread buckets, road
+favorites, Confidence 1–5, Top 5 versus the remaining card, raw model versus
+final adjusted selections, and positive/neutral/negative CLV. ATS rate is wins
+divided by decisions; pushes remain visible in the sample but not the rate.
+
+Each run also stores four explicitly descriptive Lessons Learned and four
+numeric Confidence-threshold recommendations. The versioned diagnostic policy
+sets the minimum sample, minimum underperformance delta, and permitted numeric
+tightening step. Insufficient or unsupported evidence produces a hold. A
+qualified result produces only `candidate_pending_owner_approval`, names a new
+proposed Confidence-policy version, and never registers or assigns that version.
+No active model, ranking, Confidence, card, line, audit, or adjustment record is
+changed. Corrections append a new superseding diagnostic run, and the complete
+evidence ledger is sealed with a SHA-256 checksum.
+
 ## Reproduce a prior card
 
 Every new full-card snapshot has an immutable `card_run_manifests` record. It
