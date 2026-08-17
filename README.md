@@ -168,6 +168,37 @@ No active model, ranking, Confidence, card, line, audit, or adjustment record is
 changed. Corrections append a new superseding diagnostic run, and the complete
 evidence ledger is sealed with a SHA-256 checksum.
 
+## Model research framework
+
+`models.research_framework` evaluates new models without changing the active
+EPA-only baseline. It builds sealed observations through the existing
+point-in-time accessor, predicts market residual against a genuine opening
+line, and keeps final scores and closing lines outside the model-input type.
+Weekly rolling-origin folds train and calibrate only on earlier weeks; every
+model is evaluated on the identical out-of-sample games.
+
+The framework includes the EPA-only residual baseline plus pure-Python ridge,
+dynamic team-rating, and gradient-boosted-stump candidates. A chronological
+holdout inside each training fold supplies isotonic cover-probability
+calibration and uncertainty. Reports include margin MAE/RMSE, Brier score, log
+loss, calibration error, ATS, ROI after −110 vig, CLV, maximum drawdown, and
+Confidence-rank monotonicity. The versioned v1 policy freezes every threshold
+before results are observed. Clearing every gate creates only an owner-pending
+candidate under a new model version; the framework has no activation path.
+
+Run the complete predefined suite against a database snapshot with:
+
+```text
+python -m models.run_research \
+  --database data/cfb.db \
+  --code-commit-sha COMMIT_SHA
+```
+
+The command opens SQLite read-only/query-only, includes the database SHA-256,
+code commit, feature-schema/configuration versions, fold membership, skips,
+predictions, metrics, decisions, and canonical ledger hash in JSON on stdout.
+It performs no API calls and writes no files or database rows.
+
 ## Reproduce a prior card
 
 Every new full-card snapshot has an immutable `card_run_manifests` record. It
