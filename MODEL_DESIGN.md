@@ -329,6 +329,15 @@ you don't actually play (false cleanliness). But EPA off 1–2 games is near-noi
   number, never a re-pegged line.
 - Late-breaking qualitative factors enter as logged manual overrides per §5b —
   recorded so their effect is auditable separately from the model.
+- V3 records each Tuesday-through-Saturday refresh as a new immutable card
+  version. Every locked game carries prior/new side, Confidence, rank, Top 5,
+  prediction, and fallback values with explicit change flags; the revision also
+  stores a UTC timestamp, reason, author, provenance, and source category.
+- A `data_refresh` may change the data snapshot but not model logic,
+  configuration, code, contest policies, adjustment history, or locked-line
+  snapshot. A `contextual_adjustment` retains the exact model run and requires
+  new append-only adjustment history. Contest-line corrections use the
+  separate `data_correction` category and preserve the original lock.
 
 ### Weekly betting card output (goal #5)
 - Full slate: every lined FBS game with side, confidence (1–5), rationale.

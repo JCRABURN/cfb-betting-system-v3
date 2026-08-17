@@ -143,3 +143,26 @@ manifest field, and emits canonical JSON. A mismatched identifier, missing
 manifest, changed policy input, line-snapshot mismatch, or adjustment-history
 mismatch fails visibly. Adjustments recorded after a card are excluded from its
 as-of history, and a later insert cannot be backdated into a frozen history.
+
+## Daily card refreshes
+
+Use `business_entities.refresh_full_card()` to create the next immutable card
+snapshot during the UTC Tuesday-through-Saturday operating window. The service
+reuses the prior card's stored selection, Confidence, and ranking policies,
+requires a strictly later pre-kickoff timestamp, and records the reason,
+author, source category, and provenance for the revision.
+
+Every locked contest game receives a `card_revision_pick_changes` row with its
+prior and new side, Confidence, Top 5 status, rank, prediction, and fallback
+values plus explicit change flags. A refresh is atomic: incomplete coverage,
+a policy change, an undocumented line replacement, or mixed change sources
+rolls back the new card and its history.
+
+`data_refresh` may use a newer data snapshot but must retain the model name and
+version, feature schema, configuration, code commit, manual-adjustment history,
+and locked-line snapshot. `contextual_adjustment` must retain the exact model
+run and expose new append-only adjustment history. A corrected contest line
+requires both an explicit line-correction record and a `data_correction`
+revision; the original locked row is never changed. This milestone records
+contextual history separately but does not yet apply manual adjustments to raw
+model output or contest selection.

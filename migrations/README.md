@@ -98,6 +98,24 @@ does not match the card. New manual adjustments must follow their prediction
 timestamp and cannot be backdated into an already frozen card history. The
 migration adds no policy, manifest, adjustment, card, or pick rows.
 
+## Daily refresh revision history
+
+Migration 9 creates immutable `card_refresh_policies`, complete per-game
+`card_revision_pick_changes`, and `card_refresh_revisions`. The operating
+policy is explicitly UTC Tuesday through Saturday. Database checks derive the
+stored operating date and weekday from the UTC refresh timestamp and require
+the policy to have been effective before the prior card.
+
+Each refresh must link consecutive card versions, cover the identical complete
+set of locked-line IDs, preserve the prior selection and ranking policies, and
+copy both cards' side, Confidence, rank, Top 5, prediction, and fallback values
+exactly. Triggers reject incomplete histories, fabricated change flags, model
+or adjustment mixing in `data_refresh`, model-run changes in
+`contextual_adjustment`, and locked-line snapshot changes without an explicit
+correction record and `data_correction` revision. All three tables are
+append-only. The migration adds no policy, card, pick, revision, or history
+rows.
+
 ## Recovery
 
 SQLite DDL is applied inside one transaction per migration. A failed migration

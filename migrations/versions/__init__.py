@@ -13,6 +13,7 @@ from migrations.versions import (
     v0006_separate_business_entities,
     v0007_confidence_ranking_policies,
     v0008_reproducible_card_runs,
+    v0009_daily_refresh_revisions,
 )
 
 
@@ -25,4 +26,5 @@ MIGRATION_MODULES = (
     v0006_separate_business_entities,
     v0007_confidence_ranking_policies,
     v0008_reproducible_card_runs,
+    v0009_daily_refresh_revisions,
 )
