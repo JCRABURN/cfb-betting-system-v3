@@ -14,6 +14,11 @@ def test_init_db_creates_all_tables(temp_db):
         "card_refresh_revisions",
         "manual_adjustment_policies", "card_adjustment_policy_assignments",
         "contest_pick_adjustment_items", "contest_pick_adjustment_snapshots",
+        "postgame_audit_policies", "postgame_audit_key_numbers",
+        "postgame_audit_spread_buckets", "postgame_audit_failure_taxonomy",
+        "card_postgame_audit_runs", "pick_audit_details",
+        "pick_audit_key_number_crossings", "pick_audit_failures",
+        "card_postgame_audit_completions",
     }
     assert expected.issubset(tables)
     conn.close()

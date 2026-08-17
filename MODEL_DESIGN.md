@@ -389,14 +389,25 @@ parallel prediction engine that could drift from the main one.
   the current card or inflate missing reliability data.
 
 ### Post-game audit (goal #8) — a first-class output, not an afterthought
-After each week, produce:
-- win / loss / push, final scores;
-- CLV per pick (locked line vs. close);
-- hook analysis (games decided by the half-point / key numbers);
-- backdoor-cover analysis;
-- identification of logic failures — WHY each pick succeeded or failed;
-- scored across ALL predictions (calibration) AND the bet subset (ROI/edge)
-  separately, per §5.
+The complete contest-card audit is now an immutable, versioned output. It
+records every pick's final score, ATS result against the locked contest line,
+explicit closing line, selected-side CLV, hook result, key-number landing and
+line crossings, favorite/underdog status, location, spread bucket, Confidence,
+rank, Top 5 status, and frozen raw-versus-manually-adjusted result.
+
+The controlled failure taxonomy separates model-backed losses, fallback
+losses, pushes, hook losses, key-number losses, and harmful side-flipping
+manual adjustments. Every pick receives a primary taxonomy record, including
+`no_failure` for a win. An audit run is complete only after every card pick and
+every applicable secondary failure/crossing are present, at which point its
+canonical ledger is sealed with a SHA-256 checksum. Corrections append and
+supersede; prior ledgers remain immutable.
+
+Backdoor status is `not_evaluated` unless scoring-sequence evidence is supplied
+for a confirmed classification. Final scores alone never establish a backdoor
+cover. Calibration across all model predictions and sportsbook ROI remain
+separate downstream analyses, per §5; this card audit does not recast mandatory
+contest picks as wagers.
 
 ### Continuous improvement + versioning (goals #9, #10)
 - Do NOT change rules from one surprising result. Require: weekly diagnostics →
