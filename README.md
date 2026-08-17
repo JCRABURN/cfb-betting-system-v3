@@ -117,3 +117,29 @@ gate is satisfied, not that the card was automatically published. New
 Contest ranking remains separate from sportsbook recommendations. The legacy
 `models/card_generator.py` remains unchanged as a compatibility path and is not
 used by this engine.
+
+## Reproduce a prior card
+
+Every new full-card snapshot has an immutable `card_run_manifests` record. It
+freezes the code commit, model and feature-schema versions, model configuration,
+selection/Confidence/ranking policy versions, data and locked-line snapshot
+hashes, generation timestamp, and the hash and count of the manual-adjustment
+history visible at generation. The full ordered real-book fallback policy is
+stored separately in immutable `contest_selection_policies` and
+`contest_selection_policy_books` rows.
+
+Replay a card by its two immutable run keys:
+
+```text
+python -m scripts.reproduce_card \
+  --database data/cfb.db \
+  --card-key CARD_KEY \
+  --model-run-key MODEL_RUN_KEY
+```
+
+The command opens SQLite in read-only/query-only mode, reconstructs both stored
+policies, re-runs point-in-time selection and ranking, verifies every pick and
+manifest field, and emits canonical JSON. A mismatched identifier, missing
+manifest, changed policy input, line-snapshot mismatch, or adjustment-history
+mismatch fails visibly. Adjustments recorded after a card are excluded from its
+as-of history, and a later insert cannot be backdated into a frozen history.

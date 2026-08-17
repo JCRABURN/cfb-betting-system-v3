@@ -83,6 +83,21 @@ card rows until a later validated publication service can atomically enforce
 all official-card gates; complete cards remain immutable `draft` snapshots with
 an `official_ready` report.
 
+## Reproducible card runs
+
+Migration 8 creates immutable `contest_selection_policies`, their normalized
+ordered `contest_selection_policy_books`, and one `card_run_manifests` row per
+reproducible card. The manifest copies and cross-checks the model run's code,
+model, feature-schema, configuration, and data-snapshot identifiers; all three
+contest-policy versions; the card's locked-line hash and generation time; and
+the count and SHA-256 fingerprint of adjustments visible at that instant.
+
+Database triggers prevent policy or manifest replacement, mutation, and
+deletion. A manifest cannot reference a partial book order or a policy/run that
+does not match the card. New manual adjustments must follow their prediction
+timestamp and cannot be backdated into an already frozen card history. The
+migration adds no policy, manifest, adjustment, card, or pick rows.
+
 ## Recovery
 
 SQLite DDL is applied inside one transaction per migration. A failed migration

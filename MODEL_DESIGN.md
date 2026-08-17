@@ -336,6 +336,14 @@ you don't actually play (false cleanliness). But EPA off 1–2 games is near-noi
   unless future out-of-sample evidence supports it.
 - Clear separation of recommended-bets vs. contest-only/no-bet (per §5 field).
 
+Every generated card also carries a frozen reproducibility manifest: code SHA,
+model and feature-schema versions, configuration version, all active contest
+policy versions, data and locked-line snapshot hashes, UTC generation time, and
+an as-of hash of the append-only manual-adjustment history. The selection
+policy stores its ordered named-book fallback inputs, not only a version label.
+A prior card is accepted as reproduced only when those stored inputs regenerate
+the exact immutable picks, Confidence values, and Top 5 ranks.
+
 ### Confidence-pool pick'em league (SECOND contest consumer)
 A separate weekly league: pick 5 games ATS, rank them 5-4-3-2-1, standard
 confidence-pool scoring (5 pts for the #1-ranked pick if correct, down to 1 pt
