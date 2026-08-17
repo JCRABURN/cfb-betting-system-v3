@@ -6,7 +6,7 @@ import sqlite3
 from dataclasses import dataclass
 from datetime import datetime
 
-from contest_lines import get_contest, get_effective_locked_line
+from contest_lines import get_contest, get_effective_locked_line_as_of
 
 from business_entities.common import (
     SHA256,
@@ -184,6 +184,23 @@ def get_contest_pick(conn: sqlite3.Connection, pick_id: int) -> ContestPick:
     return ContestPick(*values)
 
 
+def list_contest_picks(
+    conn: sqlite3.Connection, card_id: int
+) -> tuple[ContestPick, ...]:
+    """Return a card's immutable selections in locked-line order."""
+    rows = conn.execute(
+        f"SELECT {_PICK_COLUMNS} FROM contest_picks "
+        "WHERE card_id = ? ORDER BY locked_line_id, id",
+        (card_id,),
+    ).fetchall()
+    picks: list[ContestPick] = []
+    for row in rows:
+        values = list(row)
+        values[8] = bool(values[8])
+        picks.append(ContestPick(*values))
+    return tuple(picks)
+
+
 def add_contest_pick(
     conn: sqlite3.Connection,
     *,
@@ -221,14 +238,23 @@ def add_contest_pick(
         raise BusinessEntityError("pass selections cannot be ranked or assigned confidence")
     if model_prediction_id is None and fallback_code is None:
         raise BusinessEntityError("picks without a model prediction require fallback_code")
-    if model_prediction_id is not None and fallback_code is not None:
-        raise BusinessEntityError("model-backed picks cannot also claim a fallback")
+    if (
+        model_prediction_id is not None
+        and fallback_code is not None
+        and fallback_code not in ("model_tie_home", "model_tie_away")
+    ):
+        raise BusinessEntityError(
+            "model-backed picks may use only an explicit model-tie fallback"
+        )
     generated_at_value = utc_timestamp(generated_at, "generated_at")
+    generated_at_moment = datetime.fromisoformat(generated_at_value)
 
     try:
         with atomic(conn):
             card = get_contest_card(conn, card_id)
-            line = get_effective_locked_line(conn, locked_line_id)
+            line = get_effective_locked_line_as_of(
+                conn, locked_line_id, generated_at_moment
+            )
             if line.contest_id != card.contest_id:
                 raise BusinessEntityError("locked line does not belong to the card contest")
             if not timestamp_on_or_before(conn, line.effective_at, generated_at_value):

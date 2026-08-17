@@ -78,3 +78,26 @@ Every new record has a stable key, UTC timestamp, provenance, typed fields,
 and database-enforced immutability. A contest pick does not create a wager,
 manual context does not rewrite a raw prediction, and a revised card or audit
 is linked to the prior record instead of replacing it.
+
+## Full-card contest engine
+
+Use `business_entities.generate_full_card()` to produce one recorded home or
+away side for every line locked in a contest. It reads the effective locked
+line state as of the card timestamp and applies this versioned hierarchy:
+
+1. A point-in-time model prediction from the card's completed model run.
+2. The first actionable pre-generation `current` line from the policy's
+   ordered real-book list.
+3. The first actionable pre-generation `opening` line from that list.
+4. The locked-line underdog, with a versioned home/away tiebreak for pick'em.
+
+Every non-model decision records a fallback code and provenance. Consensus,
+closing, future-captured, unresolved, mismatched, and post-kickoff data cannot
+enter the hierarchy. Generation is atomic and fails rather than omitting a
+locked game. `inspect_full_card()` and `validate_full_card()` expose the exact
+coverage and integrity gates when supplied with the same versioned policy.
+
+This milestone creates draft, side-complete cards only. It deliberately does
+not label them official: Confidence 1–5 and ranked Top 5 policy are added and
+validated in the next milestone. The legacy `models/card_generator.py` remains
+unchanged as a compatibility path and is not used by this engine.

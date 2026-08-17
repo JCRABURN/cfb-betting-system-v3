@@ -500,11 +500,10 @@ def _latest_correction(
     return _correction_from_row(row)
 
 
-def get_effective_locked_line(
-    conn: sqlite3.Connection, locked_line_id: int
+def _effective_line(
+    original: LockedContestLine,
+    correction: ContestLineCorrection | None,
 ) -> EffectiveContestLine:
-    original = get_original_locked_line(conn, locked_line_id)
-    correction = _latest_correction(conn, locked_line_id)
     if correction is None:
         return EffectiveContestLine(
             locked_line_id=original.id,
@@ -547,6 +546,65 @@ def get_effective_locked_line(
         source_line_id=correction.source_line_id,
         provenance=correction.provenance,
         payload_sha256=correction.payload_sha256,
+    )
+
+
+def get_effective_locked_line(
+    conn: sqlite3.Connection, locked_line_id: int
+) -> EffectiveContestLine:
+    """Return the latest effective value while preserving the original lock."""
+    original = get_original_locked_line(conn, locked_line_id)
+    return _effective_line(original, _latest_correction(conn, locked_line_id))
+
+
+def get_effective_locked_line_as_of(
+    conn: sqlite3.Connection,
+    locked_line_id: int,
+    as_of: datetime,
+) -> EffectiveContestLine:
+    """Return the line state visible at one UTC instant, without lookahead."""
+    as_of_value = _utc_timestamp(as_of, "as_of")
+    original = get_original_locked_line(conn, locked_line_id)
+    visible = conn.execute(
+        "SELECT julianday(?) >= julianday(?)",
+        (as_of_value, original.locked_at),
+    ).fetchone()
+    if visible is None or visible[0] != 1:
+        raise ContestLineError(
+            f"locked contest line {locked_line_id} was not available at as_of"
+        )
+    row = conn.execute(
+        f"SELECT {_CORRECTION_COLUMNS} FROM contest_line_corrections "
+        "WHERE locked_line_id = ? AND julianday(corrected_at) <= julianday(?) "
+        "ORDER BY sequence DESC LIMIT 1",
+        (locked_line_id, as_of_value),
+    ).fetchone()
+    return _effective_line(original, _correction_from_row(row))
+
+
+def list_effective_locked_lines(
+    conn: sqlite3.Connection,
+    contest_id: int,
+    *,
+    as_of: datetime | None = None,
+) -> tuple[EffectiveContestLine, ...]:
+    """List every contest line in stable order, optionally point-in-time."""
+    contest_id = _integer(contest_id, "contest_id", 1)
+    get_contest(conn, contest_id)
+    as_of_value = _utc_timestamp(as_of, "as_of") if as_of is not None else None
+    line_ids = [
+        row[0]
+        for row in conn.execute(
+            "SELECT id FROM contest_locked_lines WHERE contest_id = ? "
+            "AND (? IS NULL OR julianday(locked_at) <= julianday(?)) ORDER BY id",
+            (contest_id, as_of_value, as_of_value),
+        )
+    ]
+    if as_of is None:
+        return tuple(get_effective_locked_line(conn, line_id) for line_id in line_ids)
+    return tuple(
+        get_effective_locked_line_as_of(conn, line_id, as_of)
+        for line_id in line_ids
     )
 
 
