@@ -117,7 +117,9 @@ def test_legacy_database_gains_feature_columns_without_data_loss(tmp_path):
     ).fetchone()
     conn.close()
 
-    assert [result.version for result in applied] == [1, 2, 3, 4, 5, 6, 7, 8, 9]
+    assert [result.version for result in applied] == [
+        1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+    ]
     assert after_counts["team_game_stats"] == before_counts["team_game_stats"] == 1
     assert {"offense_success_rate", "defense_success_rate", "havoc_rate"} <= columns
     assert row == (2025, 1, "Test", "fixture")
@@ -130,7 +132,7 @@ def test_authoritative_database_copy_preserves_rows_integrity_and_source(tmp_pat
 
     result = verify_database_copy(source_copy)
 
-    assert result.applied_versions == (1, 2, 3, 4, 5, 6, 7, 8, 9)
+    assert result.applied_versions == (1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
     assert all(
         result.after_counts[table] == count
         for table, count in result.before_counts.items()
@@ -155,6 +157,10 @@ def test_authoritative_database_copy_preserves_rows_integrity_and_source(tmp_pat
         "card_refresh_policies",
         "card_revision_pick_changes",
         "card_refresh_revisions",
+        "manual_adjustment_policies",
+        "card_adjustment_policy_assignments",
+        "contest_pick_adjustment_items",
+        "contest_pick_adjustment_snapshots",
     ):
         assert result.after_counts[table] == 0
     assert _file_hash(AUTHORITATIVE_DATABASE) == source_hash_before
@@ -313,6 +319,21 @@ def test_daily_refresh_trigger_definition_drift_is_detected(tmp_path):
     conn.execute(
         "CREATE TRIGGER card_refresh_revisions_validate_history "
         "BEFORE INSERT ON card_refresh_revisions BEGIN SELECT 1; END"
+    )
+    conn.commit()
+
+    with pytest.raises(MigrationError, match="definition changed"):
+        apply_migrations(conn)
+    conn.close()
+
+
+def test_contextual_adjustment_trigger_definition_drift_is_detected(tmp_path):
+    conn = _connect(tmp_path / "contextual-adjustment-trigger-drift.db")
+    apply_migrations(conn)
+    conn.execute("DROP TRIGGER contest_pick_adjustment_snapshots_validate")
+    conn.execute(
+        "CREATE TRIGGER contest_pick_adjustment_snapshots_validate "
+        "BEFORE INSERT ON contest_pick_adjustment_snapshots BEGIN SELECT 1; END"
     )
     conn.commit()
 

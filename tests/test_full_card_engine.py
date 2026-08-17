@@ -7,6 +7,7 @@ from business_entities import (
     FullCardError,
     FullCardPolicy,
     IncompleteCardError,
+    ManualAdjustmentPolicy,
     generate_full_card,
     inspect_full_card,
     record_model_prediction,
@@ -49,6 +50,12 @@ CONFIDENCE_POLICY = ConfidenceRankingPolicy(
     effective_at=LOCKED_AT,
     created_by="test",
     provenance="fixture://confidence-ranking-policy",
+)
+ADJUSTMENT_POLICY = ManualAdjustmentPolicy(
+    policy_version="manual-adjustments-v1",
+    effective_at=LOCKED_AT,
+    created_by="test",
+    provenance="fixture://manual-adjustment-policy",
 )
 
 
@@ -249,6 +256,7 @@ def _generate(seeded):
         version=1,
         policy=POLICY,
         confidence_policy=CONFIDENCE_POLICY,
+        adjustment_policy=ADJUSTMENT_POLICY,
         created_by="test",
         provenance="fixture://full-card-generation",
         generated_at=GENERATED_AT,
@@ -390,6 +398,7 @@ def test_unresolved_line_fails_before_any_card_or_pick_is_persisted(temp_db):
             version=1,
             policy=POLICY,
             confidence_policy=CONFIDENCE_POLICY,
+            adjustment_policy=ADJUSTMENT_POLICY,
             created_by="test",
             provenance="fixture://invalid-generation",
             generated_at=GENERATED_AT,
@@ -430,6 +439,7 @@ def test_missing_or_past_kickoff_fails_closed_without_persistence(temp_db):
             version=1,
             policy=POLICY,
             confidence_policy=CONFIDENCE_POLICY,
+            adjustment_policy=ADJUSTMENT_POLICY,
             created_by="test",
             provenance="fixture://late-generation",
             generated_at=GENERATED_AT,
@@ -473,6 +483,7 @@ def test_incomplete_existing_card_reports_exact_missing_locked_lines(temp_db):
         card.id,
         policy=POLICY,
         confidence_policy=CONFIDENCE_POLICY,
+        adjustment_policy=ADJUSTMENT_POLICY,
     )
     assert report.side_complete is False
     assert report.missing_locked_line_ids == tuple(
@@ -486,6 +497,7 @@ def test_incomplete_existing_card_reports_exact_missing_locked_lines(temp_db):
             card.id,
             policy=POLICY,
             confidence_policy=CONFIDENCE_POLICY,
+            adjustment_policy=ADJUSTMENT_POLICY,
         )
     assert failure.value.report == report
     conn.close()
@@ -500,6 +512,7 @@ def test_policy_rejects_consensus_or_duplicate_book_fallbacks(temp_db):
         model_run_id=seeded["run"].id,
         version=1,
         confidence_policy=CONFIDENCE_POLICY,
+        adjustment_policy=ADJUSTMENT_POLICY,
         created_by="test",
         provenance="fixture://invalid-policy",
         generated_at=GENERATED_AT,
@@ -552,6 +565,7 @@ def test_model_tie_uses_the_versioned_tiebreak_and_records_it(temp_db):
         version=1,
         policy=POLICY,
         confidence_policy=CONFIDENCE_POLICY,
+        adjustment_policy=ADJUSTMENT_POLICY,
         created_by="test",
         provenance="fixture://tie-card",
         generated_at=GENERATED_AT,

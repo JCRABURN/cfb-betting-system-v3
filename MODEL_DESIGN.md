@@ -338,6 +338,11 @@ you don't actually play (false cleanliness). But EPA off 1–2 games is near-noi
   snapshot. A `contextual_adjustment` retains the exact model run and requires
   new append-only adjustment history. Contest-line corrections use the
   separate `data_correction` category and preserve the original lock.
+- Contextual entries are applied additively to the home-margin projection and
+  Confidence, with Confidence clamped to 1–5. Each generated model-backed pick
+  freezes the raw projection and raw Confidence, every ordered adjustment ID,
+  both totals, and the final adjusted values under a versioned policy. This
+  ledger may change side and ranking but never rewrites the model prediction.
 
 ### Weekly betting card output (goal #5)
 - Full slate: every lined FBS game with side, confidence (1–5), rationale.
@@ -349,9 +354,11 @@ Every generated card also carries a frozen reproducibility manifest: code SHA,
 model and feature-schema versions, configuration version, all active contest
 policy versions, data and locked-line snapshot hashes, UTC generation time, and
 an as-of hash of the append-only manual-adjustment history. The selection
-policy stores its ordered named-book fallback inputs, not only a version label.
-A prior card is accepted as reproduced only when those stored inputs regenerate
-the exact immutable picks, Confidence values, and Top 5 ranks.
+policy stores its ordered named-book fallback inputs, not only a version label;
+the adjustment-policy assignment and per-pick ledgers preserve exactly how
+context was applied. A prior card is accepted as reproduced only when those
+stored inputs regenerate the exact immutable picks, Confidence values, and Top
+5 ranks.
 
 ### Confidence-pool pick'em league (SECOND contest consumer)
 A separate weekly league: pick 5 games ATS, rank them 5-4-3-2-1, standard

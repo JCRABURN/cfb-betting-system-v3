@@ -2,10 +2,8 @@
 
 from __future__ import annotations
 
-import hashlib
-import json
 import sqlite3
-from dataclasses import asdict, astuple, dataclass
+from dataclasses import astuple, dataclass
 from datetime import datetime
 
 from business_entities.adjustments import ManualAdjustment
@@ -20,6 +18,14 @@ from business_entities.common import (
     timestamp_on_or_before,
     translate_integrity,
     utc_timestamp,
+)
+from business_entities.contextual_adjustments import (
+    ManualAdjustmentPolicy,
+    adjustment_history_sha256 as _adjustment_history_sha256,
+    adjustment_policy_from_card,
+    get_card_adjustment_policy,
+    get_card_adjustment_policy_assignment,
+    recorded_manual_adjustment_policy_matches,
 )
 from business_entities.modeling import ModelRun, get_model_run
 from business_entities.ranking import (
@@ -269,14 +275,7 @@ def list_card_adjustment_history(
 def adjustment_history_sha256(
     adjustments: tuple[ManualAdjustment, ...],
 ) -> str:
-    canonical = json.dumps(
-        [asdict(adjustment) for adjustment in adjustments],
-        sort_keys=True,
-        separators=(",", ":"),
-        ensure_ascii=True,
-        allow_nan=False,
-    )
-    return hashlib.sha256(canonical.encode("utf-8")).hexdigest()
+    return _adjustment_history_sha256(adjustments)
 
 
 def get_card_run_manifest(
@@ -341,10 +340,22 @@ def record_card_run_manifest(
         conn, integer(ranking_policy_id, "ranking_policy_id", 1)
     )
     assignment = get_card_policy_assignment(conn, card.id)
+    adjustment_assignment = get_card_adjustment_policy_assignment(conn, card.id)
     if assignment.ranking_policy_id != ranking_policy.id:
         raise ReproducibilityError("manifest ranking policy is not assigned to card")
     if card.policy_version != selection_policy.policy_version:
         raise ReproducibilityError("manifest selection policy is not assigned to card")
+    adjustment_policy = get_card_adjustment_policy(conn, card.id)
+    if adjustment_assignment.adjustment_policy_id != adjustment_policy.id:
+        raise ReproducibilityError(
+            "manifest adjustment policy is not assigned to card"
+        )
+    if not timestamp_on_or_before(
+        conn, adjustment_policy.effective_at, card.generated_at
+    ):
+        raise ReproducibilityError(
+            "manual adjustment policy was not effective at generation"
+        )
     if not timestamp_on_or_before(conn, selection_policy.effective_at, card.generated_at):
         raise ReproducibilityError("selection policy was not effective at generation")
     requested = _manifest_values(
@@ -419,6 +430,7 @@ def card_run_manifest_matches(
     *,
     policy: FullCardPolicy,
     confidence_policy: ConfidenceRankingPolicy,
+    adjustment_policy: ManualAdjustmentPolicy,
 ) -> bool:
     try:
         card = get_contest_card(conn, card_id)
@@ -431,6 +443,7 @@ def card_run_manifest_matches(
         )
         ranking_policy = get_contest_ranking_policy(conn, manifest.ranking_policy_id)
         assignment = get_card_policy_assignment(conn, card.id)
+        recorded_adjustment_policy = get_card_adjustment_policy(conn, card.id)
         expected = _manifest_values(
             conn,
             card=card,
@@ -444,6 +457,10 @@ def card_run_manifest_matches(
             and assignment.ranking_policy_id == manifest.ranking_policy_id
             and selection_policy_matches(selection_policy, policy)
             and recorded_policy_matches(ranking_policy, confidence_policy)
+            and recorded_manual_adjustment_policy_matches(
+                recorded_adjustment_policy,
+                adjustment_policy,
+            )
         )
     except (BusinessEntityError, sqlite3.DatabaseError, ValueError):
         return False
@@ -455,12 +472,14 @@ def assert_card_run_manifest(
     *,
     policy: FullCardPolicy,
     confidence_policy: ConfidenceRankingPolicy,
+    adjustment_policy: ManualAdjustmentPolicy,
 ) -> CardRunManifest:
     if not card_run_manifest_matches(
         conn,
         card_id,
         policy=policy,
         confidence_policy=confidence_policy,
+        adjustment_policy=adjustment_policy,
     ):
         raise ReproducibilityError(
             "card run manifest or stored policy inputs do not match replay"
@@ -499,11 +518,13 @@ def reproduce_card(
     )
     policy = full_card_policy_from_manifest(conn, manifest)
     confidence_policy = confidence_policy_from_manifest(conn, manifest)
+    adjustment_policy = adjustment_policy_from_card(conn, card.id)
     assert_card_run_manifest(
         conn,
         card.id,
         policy=policy,
         confidence_policy=confidence_policy,
+        adjustment_policy=adjustment_policy,
     )
     from business_entities.full_card import generate_full_card
 
@@ -515,6 +536,7 @@ def reproduce_card(
         version=card.version,
         policy=policy,
         confidence_policy=confidence_policy,
+        adjustment_policy=adjustment_policy,
         created_by=card.created_by,
         provenance=card.provenance,
         generated_at=datetime.fromisoformat(card.generated_at),

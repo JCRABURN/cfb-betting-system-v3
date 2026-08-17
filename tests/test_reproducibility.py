@@ -12,6 +12,7 @@ from business_entities import (
     ConfidenceRankingPolicy,
     FullCardError,
     FullCardPolicy,
+    ManualAdjustmentPolicy,
     generate_full_card,
     get_card_run_manifest,
     get_contest_selection_policy,
@@ -55,6 +56,12 @@ RANKING_POLICY = ConfidenceRankingPolicy(
     effective_at=POLICY_AT,
     created_by="test",
     provenance="fixture://ranking-policy",
+)
+ADJUSTMENT_POLICY = ManualAdjustmentPolicy(
+    policy_version="manual-adjustments-v1",
+    effective_at=POLICY_AT,
+    created_by="test",
+    provenance="fixture://manual-adjustment-policy",
 )
 
 
@@ -144,6 +151,7 @@ def _seed_card(temp_db, *, with_adjustment=True):
         version=1,
         policy=SELECTION_POLICY,
         confidence_policy=RANKING_POLICY,
+        adjustment_policy=ADJUSTMENT_POLICY,
         created_by="test",
         provenance="fixture://repro-card",
         generated_at=GENERATED_AT,
@@ -218,7 +226,19 @@ def test_cli_reproduces_from_both_keys_on_a_read_only_connection(
     assert payload["model_run_key"] == run.run_key
     assert payload["manifest"]["adjustment_count"] == 1
     assert len(payload["adjustment_history"]) == 1
+    assert payload["adjustment_policy"]["policy_version"] == (
+        ADJUSTMENT_POLICY.policy_version
+    )
+    assert len(payload["adjusted_projections"]) == 1
+    projection = payload["adjusted_projections"][0]
+    assert projection["raw_model_margin"] == 7.0
+    assert projection["margin_adjustment_total"] == -1.0
+    assert projection["adjusted_model_margin"] == 6.0
+    assert projection["raw_confidence"] == 4
+    assert projection["adjusted_confidence"] == 3
+    assert len(projection["adjustment_items"]) == 1
     assert payload["verification"]["contest_complete"] is True
+    assert payload["verification"]["adjustment_ledger_matches"] is True
     assert payload["verification"]["reproducibility_manifest_matches"] is True
     assert _file_hash(database) == hash_before
 
@@ -276,6 +296,7 @@ def test_selection_policy_and_manifest_are_immutable_after_card_generation(temp_
                 market_books=("fanduel", "draftkings"),
             ),
             confidence_policy=RANKING_POLICY,
+            adjustment_policy=ADJUSTMENT_POLICY,
             created_by=result.card.created_by,
             provenance=result.card.provenance,
             generated_at=GENERATED_AT,

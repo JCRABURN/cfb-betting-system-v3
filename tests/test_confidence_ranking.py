@@ -10,6 +10,7 @@ from business_entities import (
     ConfidenceRankingPolicy,
     FullCardError,
     FullCardPolicy,
+    ManualAdjustmentPolicy,
     create_contest_card,
     generate_full_card,
     get_card_ranking_policy,
@@ -48,6 +49,12 @@ CONFIDENCE_POLICY = ConfidenceRankingPolicy(
     effective_at=POLICY_AT,
     created_by="test",
     provenance="fixture://confidence-ranking-policy",
+)
+ADJUSTMENT_POLICY = ManualAdjustmentPolicy(
+    policy_version="manual-adjustments-v1",
+    effective_at=POLICY_AT,
+    created_by="test",
+    provenance="fixture://manual-adjustment-policy",
 )
 
 
@@ -128,6 +135,7 @@ def _generate(conn, contest, run, confidence_policy=CONFIDENCE_POLICY):
         version=1,
         policy=SIDE_POLICY,
         confidence_policy=confidence_policy,
+        adjustment_policy=ADJUSTMENT_POLICY,
         created_by="test",
         provenance="fixture://ranking-card",
         generated_at=GENERATED_AT,
@@ -299,6 +307,7 @@ def test_replay_rejects_a_different_policy_without_mutation(temp_db):
         result.card.id,
         policy=SIDE_POLICY,
         confidence_policy=different,
+        adjustment_policy=ADJUSTMENT_POLICY,
     )
     assert report.side_complete is True
     assert report.confidence_ranking_policy_matches is False

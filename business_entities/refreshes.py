@@ -24,6 +24,7 @@ from business_entities.common import (
     translate_integrity,
     utc_timestamp,
 )
+from business_entities.contextual_adjustments import adjustment_policy_from_card
 from business_entities.full_card import (
     FullCardResult,
     generate_full_card,
@@ -460,11 +461,13 @@ def refresh_full_card(
     prior_manifest = get_card_run_manifest(conn, prior_card.id)
     selection_policy = full_card_policy_from_manifest(conn, prior_manifest)
     confidence_policy = confidence_policy_from_manifest(conn, prior_manifest)
+    adjustment_policy = adjustment_policy_from_card(conn, prior_card.id)
     validate_full_card(
         conn,
         prior_card.id,
         policy=selection_policy,
         confidence_policy=confidence_policy,
+        adjustment_policy=adjustment_policy,
     )
 
     revision_key = f"{prior_card.card_key}:revision:{prior_card.version + 1}"
@@ -478,6 +481,7 @@ def refresh_full_card(
             version=prior_card.version + 1,
             policy=selection_policy,
             confidence_policy=confidence_policy,
+            adjustment_policy=adjustment_policy,
             created_by=author,
             provenance=provenance,
             generated_at=generation_time,

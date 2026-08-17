@@ -10,6 +10,11 @@ from dataclasses import asdict
 from pathlib import Path
 
 from business_entities.common import BusinessEntityError
+from business_entities.contextual_adjustments import (
+    get_card_adjustment_policy,
+    list_card_adjustment_snapshots,
+    list_pick_adjustment_items,
+)
 from business_entities.reproducibility import (
     get_card_run_manifest,
     list_card_adjustment_history,
@@ -64,6 +69,10 @@ def main(argv: list[str] | None = None) -> int:
             )
             manifest = get_card_run_manifest(conn, result.card.id)
             adjustments = list_card_adjustment_history(conn, result.card.id)
+            adjustment_policy = get_card_adjustment_policy(conn, result.card.id)
+            adjustment_snapshots = list_card_adjustment_snapshots(
+                conn, result.card.id
+            )
             verification = asdict(result.report)
             verification.update(
                 side_complete=result.report.side_complete,
@@ -76,6 +85,19 @@ def main(argv: list[str] | None = None) -> int:
                 "manifest": asdict(manifest),
                 "adjustment_history": [
                     asdict(adjustment) for adjustment in adjustments
+                ],
+                "adjustment_policy": asdict(adjustment_policy),
+                "adjusted_projections": [
+                    {
+                        **asdict(snapshot),
+                        "adjustment_items": [
+                            asdict(item)
+                            for item in list_pick_adjustment_items(
+                                conn, snapshot.contest_pick_id
+                            )
+                        ],
+                    }
+                    for snapshot in adjustment_snapshots
                 ],
                 "picks": [asdict(pick) for pick in result.picks],
                 "verification": verification,

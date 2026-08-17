@@ -31,6 +31,20 @@ from business_entities.common import (
     timestamp_on_or_before,
     utc_timestamp,
 )
+from business_entities.contextual_adjustments import (
+    AdjustmentImpact,
+    ManualAdjustmentPolicy,
+    adjusted_confidence,
+    adjustment_impact,
+    assign_card_adjustment_policy,
+    get_card_adjustment_policy,
+    list_card_adjustment_snapshots,
+    pick_adjustment_snapshot_matches,
+    record_pick_adjustment_snapshot,
+    recorded_manual_adjustment_policy_matches,
+    register_manual_adjustment_policy,
+    validate_manual_adjustment_policy,
+)
 from business_entities.modeling import (
     ModelPrediction,
     get_model_prediction,
@@ -111,6 +125,8 @@ class CardCompletenessReport:
     locked_line_snapshot_matches: bool
     policy_replay_matches: bool
     confidence_ranking_policy_matches: bool
+    adjustment_policy_matches: bool
+    adjustment_ledger_matches: bool
     reproducibility_manifest_matches: bool
 
     @property
@@ -148,6 +164,8 @@ class CardCompletenessReport:
             and not self.invalid_confidence_pick_ids
             and not self.invalid_top_five_pick_ids
             and self.confidence_ranking_policy_matches
+            and self.adjustment_policy_matches
+            and self.adjustment_ledger_matches
             and self.reproducibility_manifest_matches
         )
 
@@ -177,6 +195,8 @@ class _Selection:
     fallback_code: str | None
     provenance: str
     uncertainty_points: float | None = None
+    adjustment_impact: AdjustmentImpact | None = None
+    raw_confidence: int | None = None
     confidence: int | None = None
     rank: int | None = None
     is_top_five: bool = False
@@ -393,6 +413,7 @@ def _select_side(
     line: EffectiveContestLine,
     model_run_id: int,
     policy: FullCardPolicy,
+    adjustment_policy: ManualAdjustmentPolicy,
     generated_at: str,
     provenance: str,
 ) -> _Selection:
@@ -403,12 +424,28 @@ def _select_side(
         generated_at=generated_at,
     )
     if prediction is not None:
-        home_edge = prediction.predicted_home_margin + line.home_spread
+        impact = adjustment_impact(
+            conn,
+            model_prediction_id=prediction.id,
+            as_of=generated_at,
+        )
+        home_edge = impact.adjusted_model_margin + line.home_spread
+        adjustment_ids = ",".join(
+            str(adjustment.id) for adjustment in impact.adjustments
+        ) or "none"
+        adjustment_detail = (
+            f";adjustment_policy_version={adjustment_policy.policy_version};"
+            f"raw_model_margin={prediction.predicted_home_margin};"
+            f"margin_adjustment_total={impact.margin_adjustment_total};"
+            f"adjusted_model_margin={impact.adjusted_model_margin};"
+            f"manual_adjustment_ids={adjustment_ids}"
+        )
         if home_edge != 0:
             side = "home" if home_edge > 0 else "away"
             detail = (
                 f"{provenance};selection=model_prediction;"
-                f"model_prediction_id={prediction.id};locked_line_id={line.locked_line_id}"
+                f"model_prediction_id={prediction.id};"
+                f"locked_line_id={line.locked_line_id}{adjustment_detail}"
             )
             return _Selection(
                 line,
@@ -417,12 +454,14 @@ def _select_side(
                 None,
                 detail,
                 uncertainty_points=prediction.uncertainty_points,
+                adjustment_impact=impact,
             )
         if policy.model_tie_side in ("home", "away"):
             code = f"model_tie_{policy.model_tie_side}"
             detail = (
                 f"{provenance};selection=fallback;fallback_code={code};"
-                f"model_prediction_id={prediction.id};locked_line_id={line.locked_line_id}"
+                f"model_prediction_id={prediction.id};"
+                f"locked_line_id={line.locked_line_id}{adjustment_detail}"
             )
             return _Selection(
                 line,
@@ -431,6 +470,7 @@ def _select_side(
                 code,
                 detail,
                 uncertainty_points=prediction.uncertainty_points,
+                adjustment_impact=impact,
             )
     return _fallback_selection(
         conn,
@@ -447,16 +487,24 @@ def _rank_selections(
 ) -> tuple[_Selection, ...]:
     """Assign confidence and Top 5 from reliability, never raw model edge."""
     policy = validate_confidence_ranking_policy(policy)
-    with_confidence = tuple(
-        replace(
-            selection,
-            confidence=confidence_for_uncertainty(
-                policy,
-                selection.uncertainty_points,
-            ),
+    with_confidence: list[_Selection] = []
+    for selection in selections:
+        raw_confidence = confidence_for_uncertainty(
+            policy,
+            selection.uncertainty_points,
         )
-        for selection in selections
-    )
+        adjustment_total = (
+            selection.adjustment_impact.confidence_adjustment_total
+            if selection.adjustment_impact is not None
+            else 0
+        )
+        with_confidence.append(
+            replace(
+                selection,
+                raw_confidence=raw_confidence,
+                confidence=adjusted_confidence(raw_confidence, adjustment_total),
+            )
+        )
     ordered = sorted(
         with_confidence,
         key=lambda selection: (
@@ -476,6 +524,11 @@ def _rank_selections(
     ranked: list[_Selection] = []
     for selection in with_confidence:
         rank = ranks.get(selection.line.locked_line_id)
+        confidence_adjustment_total = (
+            selection.adjustment_impact.confidence_adjustment_total
+            if selection.adjustment_impact is not None
+            else 0
+        )
         reliability = (
             f"model_uncertainty_points:{selection.uncertainty_points}"
             if selection.uncertainty_points is not None
@@ -484,7 +537,11 @@ def _rank_selections(
         detail = (
             f"{selection.provenance};confidence_policy_version="
             f"{policy.confidence_policy_version};ranking_policy_version="
-            f"{policy.ranking_policy_version};confidence={selection.confidence};"
+            f"{policy.ranking_policy_version};"
+            f"raw_confidence={selection.raw_confidence};"
+            f"confidence_adjustment_total="
+            f"{confidence_adjustment_total};"
+            f"confidence={selection.confidence};"
             f"reliability={reliability};top_five={str(rank is not None).lower()};"
             f"rank={rank if rank is not None else 'none'}"
         )
@@ -538,7 +595,12 @@ def _fallback_valid(
         if pick.model_prediction_id is None or line.game_id is None:
             return False
         prediction = get_model_prediction(conn, pick.model_prediction_id)
-        home_edge = prediction.predicted_home_margin + line.home_spread
+        impact = adjustment_impact(
+            conn,
+            model_prediction_id=prediction.id,
+            as_of=generated_at,
+        )
+        home_edge = impact.adjusted_model_margin + line.home_spread
         expected = "home" if home_edge > 0 else "away" if home_edge < 0 else None
         return prediction.game_id == line.game_id and pick.selected_side == expected
     if pick.model_prediction_id is not None and not code.startswith("model_tie_"):
@@ -569,10 +631,15 @@ def _fallback_valid(
         if pick.model_prediction_id is None or line.game_id is None:
             return False
         prediction = get_model_prediction(conn, pick.model_prediction_id)
+        impact = adjustment_impact(
+            conn,
+            model_prediction_id=prediction.id,
+            as_of=generated_at,
+        )
         expected_side = code.removeprefix("model_tie_")
         return (
             prediction.game_id == line.game_id
-            and prediction.predicted_home_margin + line.home_spread == 0
+            and impact.adjusted_model_margin + line.home_spread == 0
             and pick.selected_side == expected_side
         )
     return False
@@ -609,10 +676,12 @@ def inspect_full_card(
     *,
     policy: FullCardPolicy,
     confidence_policy: ConfidenceRankingPolicy,
+    adjustment_policy: ManualAdjustmentPolicy,
 ) -> CardCompletenessReport:
     """Inspect side, Confidence, ranking, and provenance without mutation."""
     policy = _validated_policy(policy)
     confidence_policy = validate_confidence_ranking_policy(confidence_policy)
+    adjustment_policy = validate_manual_adjustment_policy(adjustment_policy)
     card = get_contest_card(conn, integer(card_id, "card_id", 1))
     generated_at = datetime.fromisoformat(card.generated_at)
     lines = list_effective_locked_lines(conn, card.contest_id, as_of=generated_at)
@@ -694,6 +763,8 @@ def inspect_full_card(
 
     policy_replay_matches = card.policy_version == policy.version
     confidence_ranking_policy_matches = False
+    adjustment_policy_matches = False
+    adjustment_ledger_matches = False
     if model_metadata_complete and policy_replay_matches:
         expected_side_selections = tuple(
             _select_side(
@@ -701,6 +772,7 @@ def inspect_full_card(
                 line=line,
                 model_run_id=card.model_run_id,
                 policy=policy,
+                adjustment_policy=adjustment_policy,
                 generated_at=card.generated_at,
                 provenance=card.provenance,
             )
@@ -717,6 +789,15 @@ def inspect_full_card(
                 confidence_policy,
             )
             if confidence_ranking_policy_matches:
+                recorded_adjustment_policy = get_card_adjustment_policy(
+                    conn, card.id
+                )
+                adjustment_policy_matches = (
+                    recorded_manual_adjustment_policy_matches(
+                        recorded_adjustment_policy,
+                        adjustment_policy,
+                    )
+                )
                 expected_ranked_selections = _rank_selections(
                     expected_side_selections,
                     confidence_policy,
@@ -724,6 +805,30 @@ def inspect_full_card(
                 _assert_replay_matches(
                     existing=picks,
                     selections=expected_ranked_selections,
+                )
+                by_line_selection = {
+                    selection.line.locked_line_id: selection
+                    for selection in expected_ranked_selections
+                }
+                model_picks = tuple(
+                    pick for pick in picks if pick.model_prediction_id is not None
+                )
+                snapshots = list_card_adjustment_snapshots(conn, card.id)
+                adjustment_ledger_matches = (
+                    adjustment_policy_matches
+                    and {snapshot.contest_pick_id for snapshot in snapshots}
+                    == {pick.id for pick in model_picks}
+                    and all(
+                        pick_adjustment_snapshot_matches(
+                            conn,
+                            pick=pick,
+                            raw_confidence=by_line_selection[
+                                pick.locked_line_id
+                            ].raw_confidence,
+                            policy=adjustment_policy,
+                        )
+                        for pick in model_picks
+                    )
                 )
         except BusinessEntityError:
             confidence_ranking_policy_matches = False
@@ -767,11 +872,14 @@ def inspect_full_card(
         ),
         policy_replay_matches=policy_replay_matches,
         confidence_ranking_policy_matches=confidence_ranking_policy_matches,
+        adjustment_policy_matches=adjustment_policy_matches,
+        adjustment_ledger_matches=adjustment_ledger_matches,
         reproducibility_manifest_matches=card_run_manifest_matches(
             conn,
             card.id,
             policy=policy,
             confidence_policy=confidence_policy,
+            adjustment_policy=adjustment_policy,
         ),
     )
 
@@ -782,6 +890,7 @@ def validate_full_card(
     *,
     policy: FullCardPolicy,
     confidence_policy: ConfidenceRankingPolicy,
+    adjustment_policy: ManualAdjustmentPolicy,
 ) -> CardCompletenessReport:
     """Return a report only for a complete, policy-reproducible contest card."""
     report = inspect_full_card(
@@ -789,6 +898,7 @@ def validate_full_card(
         card_id,
         policy=policy,
         confidence_policy=confidence_policy,
+        adjustment_policy=adjustment_policy,
     )
     if not report.contest_complete:
         raise IncompleteCardError(report)
@@ -853,6 +963,7 @@ def generate_full_card(
     version: int,
     policy: FullCardPolicy,
     confidence_policy: ConfidenceRankingPolicy,
+    adjustment_policy: ManualAdjustmentPolicy,
     created_by: str,
     provenance: str,
     generated_at: datetime | None = None,
@@ -864,6 +975,7 @@ def generate_full_card(
     version = integer(version, "version", 1)
     policy = _validated_policy(policy)
     confidence_policy = validate_confidence_ranking_policy(confidence_policy)
+    adjustment_policy = validate_manual_adjustment_policy(adjustment_policy)
     created_by = required_text(created_by, "created_by")
     provenance = required_text(provenance, "provenance")
     run = get_model_run(conn, model_run_id)
@@ -901,6 +1013,7 @@ def generate_full_card(
                 line=line,
                 model_run_id=model_run_id,
                 policy=policy,
+                adjustment_policy=adjustment_policy,
                 generated_at=generated_at_value,
                 provenance=provenance,
             )
@@ -938,6 +1051,18 @@ def generate_full_card(
             raise FullCardError(
                 "existing card has a different Confidence or ranking policy"
             )
+        try:
+            recorded_adjustment_policy = get_card_adjustment_policy(conn, card.id)
+        except BusinessEntityError as exc:
+            raise FullCardError(
+                "existing card has no immutable manual adjustment policy"
+            ) from exc
+        if not recorded_manual_adjustment_policy_matches(
+            recorded_adjustment_policy, adjustment_policy
+        ):
+            raise FullCardError(
+                "existing card has a different manual adjustment policy"
+            )
         _assert_replay_matches(existing=picks, selections=selections)
         try:
             assert_card_run_manifest(
@@ -945,6 +1070,7 @@ def generate_full_card(
                 card.id,
                 policy=policy,
                 confidence_policy=confidence_policy,
+                adjustment_policy=adjustment_policy,
             )
         except BusinessEntityError as exc:
             raise FullCardError(
@@ -958,6 +1084,7 @@ def generate_full_card(
                 card.id,
                 policy=policy,
                 confidence_policy=confidence_policy,
+                adjustment_policy=adjustment_policy,
             ),
         )
 
@@ -972,6 +1099,10 @@ def generate_full_card(
         recorded_policy = register_confidence_ranking_policy(
             conn,
             confidence_policy,
+        )
+        recorded_adjustment_policy = register_manual_adjustment_policy(
+            conn,
+            adjustment_policy,
         )
         card = create_contest_card(
             conn,
@@ -993,8 +1124,15 @@ def generate_full_card(
             provenance=provenance,
             assigned_at=generation_time,
         )
+        assign_card_adjustment_policy(
+            conn,
+            card_id=card.id,
+            adjustment_policy_id=recorded_adjustment_policy.id,
+            provenance=provenance,
+            assigned_at=generation_time,
+        )
         for selection in selections:
-            add_contest_pick(
+            pick = add_contest_pick(
                 conn,
                 pick_key=f"{card_key}:locked-line:{selection.line.locked_line_id}",
                 card_id=card.id,
@@ -1008,6 +1146,13 @@ def generate_full_card(
                 generated_at=generation_time,
                 provenance=selection.provenance,
             )
+            if selection.model_prediction_id is not None:
+                record_pick_adjustment_snapshot(
+                    conn,
+                    contest_pick_id=pick.id,
+                    raw_confidence=selection.raw_confidence,
+                    provenance=selection.provenance,
+                )
         record_card_run_manifest(
             conn,
             card_id=card.id,
@@ -1019,5 +1164,6 @@ def generate_full_card(
             card.id,
             policy=policy,
             confidence_policy=confidence_policy,
+            adjustment_policy=adjustment_policy,
         )
         return FullCardResult(card, list_contest_picks(conn, card.id), report)
