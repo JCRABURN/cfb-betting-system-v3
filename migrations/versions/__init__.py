@@ -12,6 +12,7 @@ from migrations.versions import (
     v0005_immutable_contest_lines,
     v0006_separate_business_entities,
     v0007_confidence_ranking_policies,
+    v0008_reproducible_card_runs,
 )
 
 
@@ -23,4 +24,5 @@ MIGRATION_MODULES = (
     v0005_immutable_contest_lines,
     v0006_separate_business_entities,
     v0007_confidence_ranking_policies,
+    v0008_reproducible_card_runs,
 )

@@ -26,7 +26,6 @@ from business_entities.cards import (
 from business_entities.common import (
     BusinessEntityError,
     atomic,
-    choice,
     integer,
     required_text,
     timestamp_on_or_before,
@@ -46,6 +45,14 @@ from business_entities.ranking import (
     recorded_policy_matches,
     register_confidence_ranking_policy,
     validate_confidence_ranking_policy,
+)
+from business_entities.reproducibility import (
+    FullCardPolicy,
+    assert_card_run_manifest,
+    card_run_manifest_matches,
+    record_card_run_manifest,
+    register_contest_selection_policy,
+    validate_full_card_policy,
 )
 
 
@@ -78,16 +85,6 @@ class IncompleteCardError(FullCardError):
 
 
 @dataclass(frozen=True)
-class FullCardPolicy:
-    """Versioned selection policy and exact real-book fallback preference."""
-
-    version: str
-    market_books: tuple[str, ...]
-    model_tie_side: str = "away"
-    pickem_tiebreak_side: str = "home"
-
-
-@dataclass(frozen=True)
 class CardCompletenessReport:
     card_id: int
     contest_id: int
@@ -114,6 +111,7 @@ class CardCompletenessReport:
     locked_line_snapshot_matches: bool
     policy_replay_matches: bool
     confidence_ranking_policy_matches: bool
+    reproducibility_manifest_matches: bool
 
     @property
     def side_complete(self) -> bool:
@@ -150,6 +148,7 @@ class CardCompletenessReport:
             and not self.invalid_confidence_pick_ids
             and not self.invalid_top_five_pick_ids
             and self.confidence_ranking_policy_matches
+            and self.reproducibility_manifest_matches
         )
 
 
@@ -184,24 +183,10 @@ class _Selection:
 
 
 def _validated_policy(policy: FullCardPolicy) -> FullCardPolicy:
-    if not isinstance(policy, FullCardPolicy):
-        raise FullCardError("policy must be a FullCardPolicy")
-    required_text(policy.version, "policy.version")
-    choice(policy.model_tie_side, "policy.model_tie_side", ("home", "away"))
-    choice(
-        policy.pickem_tiebreak_side,
-        "policy.pickem_tiebreak_side",
-        ("home", "away"),
-    )
-    if len(policy.market_books) != len(set(policy.market_books)):
-        raise FullCardError("policy.market_books cannot contain duplicates")
-    for book in policy.market_books:
-        required_text(book, "policy.market_books entry")
-        if book.casefold() == "consensus":
-            raise FullCardError(
-                "market fallback requires explicitly named real books, not consensus"
-            )
-    return policy
+    try:
+        return validate_full_card_policy(policy)
+    except BusinessEntityError as exc:
+        raise FullCardError(str(exc)) from exc
 
 
 def _snapshot_payload(line: EffectiveContestLine) -> dict[str, object]:
@@ -782,6 +767,12 @@ def inspect_full_card(
         ),
         policy_replay_matches=policy_replay_matches,
         confidence_ranking_policy_matches=confidence_ranking_policy_matches,
+        reproducibility_manifest_matches=card_run_manifest_matches(
+            conn,
+            card.id,
+            policy=policy,
+            confidence_policy=confidence_policy,
+        ),
     )
 
 
@@ -948,6 +939,17 @@ def generate_full_card(
                 "existing card has a different Confidence or ranking policy"
             )
         _assert_replay_matches(existing=picks, selections=selections)
+        try:
+            assert_card_run_manifest(
+                conn,
+                card.id,
+                policy=policy,
+                confidence_policy=confidence_policy,
+            )
+        except BusinessEntityError as exc:
+            raise FullCardError(
+                "existing card has no matching immutable run manifest"
+            ) from exc
         return FullCardResult(
             card,
             picks,
@@ -960,6 +962,13 @@ def generate_full_card(
         )
 
     with atomic(conn):
+        selection_policy = register_contest_selection_policy(
+            conn,
+            policy,
+            effective_at=generation_time,
+            created_by=created_by,
+            provenance=provenance,
+        )
         recorded_policy = register_confidence_ranking_policy(
             conn,
             confidence_policy,
@@ -999,6 +1008,12 @@ def generate_full_card(
                 generated_at=generation_time,
                 provenance=selection.provenance,
             )
+        record_card_run_manifest(
+            conn,
+            card_id=card.id,
+            selection_policy_id=selection_policy.id,
+            ranking_policy_id=recorded_policy.id,
+        )
         report = validate_full_card(
             conn,
             card.id,
