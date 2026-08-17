@@ -67,6 +67,22 @@ contiguous supersession links, while cross-entity triggers prevent a card,
 line, prediction, pick, recommendation, or closing line from being attached
 to an unrelated contest or game.
 
+## Confidence and ranking policies
+
+Migration 7 creates `contest_ranking_policies` and
+`contest_card_policy_assignments`. Policy definitions store separate
+Confidence and ranking versions, monotonic model-uncertainty thresholds, the
+unscored Confidence floor, exact Top 5 count, reliability metric, ordering
+method, deterministic tie-breaker, effective time, author, and provenance.
+
+A Confidence/ranking version pair is unique and immutable. Assignments are
+append-only and must bind a policy that was already effective to the exact card
+generation timestamp. The migration adds no policy definitions or assignments
+and does not change existing card or pick rows. It also blocks new `official`
+card rows until a later validated publication service can atomically enforce
+all official-card gates; complete cards remain immutable `draft` snapshots with
+an `official_ready` report.
+
 ## Recovery
 
 SQLite DDL is applied inside one transaction per migration. A failed migration

@@ -3,6 +3,7 @@ from datetime import datetime, timezone
 import pytest
 
 from business_entities import (
+    ConfidenceRankingPolicy,
     FullCardError,
     FullCardPolicy,
     IncompleteCardError,
@@ -36,6 +37,18 @@ POLICY = FullCardPolicy(
     market_books=("draftkings", "fanduel", "betmgm"),
     model_tie_side="away",
     pickem_tiebreak_side="home",
+)
+CONFIDENCE_POLICY = ConfidenceRankingPolicy(
+    policy_key="contest-confidence-ranking-v1",
+    confidence_policy_version="confidence-v1",
+    ranking_policy_version="top-five-v1",
+    confidence_5_max_uncertainty=2.0,
+    confidence_4_max_uncertainty=4.0,
+    confidence_3_max_uncertainty=6.0,
+    confidence_2_max_uncertainty=8.0,
+    effective_at=LOCKED_AT,
+    created_by="test",
+    provenance="fixture://confidence-ranking-policy",
 )
 
 
@@ -153,6 +166,7 @@ def _seed_full_hierarchy(temp_db):
         model_run_id=run.id,
         game_id=101,
         predicted_home_margin=7.0,
+        uncertainty_points=3.0,
         entry_locked_line_id=lines[101].id,
         provenance="fixture://prediction/101",
         generated_at=PREDICTION_AT,
@@ -234,6 +248,7 @@ def _generate(seeded):
         model_run_id=seeded["run"].id,
         version=1,
         policy=POLICY,
+        confidence_policy=CONFIDENCE_POLICY,
         created_by="test",
         provenance="fixture://full-card-generation",
         generated_at=GENERATED_AT,
@@ -270,8 +285,11 @@ def test_generates_one_side_for_every_locked_game_with_explicit_fallbacks(temp_d
         "locked_line_pickem_tiebreak_home"
     )
     assert all(pick.selected_side in ("home", "away") for pick in result.picks)
-    assert all(pick.confidence is None for pick in result.picks)
-    assert all(pick.rank is None and not pick.is_top_five for pick in result.picks)
+    assert by_game[seeded["lines"][101].id].confidence == 4
+    assert by_game[seeded["lines"][101].id].rank == 5
+    assert all(pick.confidence == 1 for pick in result.picks[1:])
+    assert [pick.rank for pick in result.picks] == [5, 4, 3, 2, 1]
+    assert all(pick.is_top_five for pick in result.picks)
     assert all(pick.provenance.startswith("fixture://") for pick in result.picks)
     assert result.report.expected_locked_line_count == 5
     assert result.report.normalized_matchup_count == 5
@@ -279,8 +297,13 @@ def test_generates_one_side_for_every_locked_game_with_explicit_fallbacks(temp_d
     assert result.report.model_pick_count == 1
     assert result.report.fallback_pick_count == 4
     assert result.report.policy_replay_matches is True
+    assert result.report.confidence_ranking_policy_matches is True
+    assert result.report.confidence_coverage_count == 5
+    assert result.report.top_five_count == 5
+    assert result.report.ranked_pick_count == 5
     assert result.report.side_complete is True
-    assert result.report.official_ready is False
+    assert result.report.contest_complete is True
+    assert result.report.official_ready is True
     assert seeded["conn"].execute("SELECT COUNT(*) FROM picks").fetchone()[0] == 0
     assert seeded["conn"].execute(
         "SELECT COUNT(*) FROM sportsbook_recommendations"
@@ -366,6 +389,7 @@ def test_unresolved_line_fails_before_any_card_or_pick_is_persisted(temp_db):
             model_run_id=run.id,
             version=1,
             policy=POLICY,
+            confidence_policy=CONFIDENCE_POLICY,
             created_by="test",
             provenance="fixture://invalid-generation",
             generated_at=GENERATED_AT,
@@ -405,6 +429,7 @@ def test_missing_or_past_kickoff_fails_closed_without_persistence(temp_db):
             model_run_id=run.id,
             version=1,
             policy=POLICY,
+            confidence_policy=CONFIDENCE_POLICY,
             created_by="test",
             provenance="fixture://late-generation",
             generated_at=GENERATED_AT,
@@ -443,7 +468,12 @@ def test_incomplete_existing_card_reports_exact_missing_locked_lines(temp_db):
         provenance="fixture://partial-pick",
     )
 
-    report = inspect_full_card(conn, card.id, policy=POLICY)
+    report = inspect_full_card(
+        conn,
+        card.id,
+        policy=POLICY,
+        confidence_policy=CONFIDENCE_POLICY,
+    )
     assert report.side_complete is False
     assert report.missing_locked_line_ids == tuple(
         seeded["lines"][game_id].id for game_id in (102, 103, 104, 105)
@@ -451,7 +481,12 @@ def test_incomplete_existing_card_reports_exact_missing_locked_lines(temp_db):
     assert report.invalid_fallback_pick_ids == (partial_pick.id,)
     assert report.policy_replay_matches is False
     with pytest.raises(IncompleteCardError) as failure:
-        validate_full_card(conn, card.id, policy=POLICY)
+        validate_full_card(
+            conn,
+            card.id,
+            policy=POLICY,
+            confidence_policy=CONFIDENCE_POLICY,
+        )
     assert failure.value.report == report
     conn.close()
 
@@ -464,6 +499,7 @@ def test_policy_rejects_consensus_or_duplicate_book_fallbacks(temp_db):
         contest_id=seeded["contest"].id,
         model_run_id=seeded["run"].id,
         version=1,
+        confidence_policy=CONFIDENCE_POLICY,
         created_by="test",
         provenance="fixture://invalid-policy",
         generated_at=GENERATED_AT,
@@ -515,6 +551,7 @@ def test_model_tie_uses_the_versioned_tiebreak_and_records_it(temp_db):
         model_run_id=run.id,
         version=1,
         policy=POLICY,
+        confidence_policy=CONFIDENCE_POLICY,
         created_by="test",
         provenance="fixture://tie-card",
         generated_at=GENERATED_AT,

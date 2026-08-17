@@ -11,6 +11,7 @@ from migrations.versions import (
     v0004_supplemental_game_dates,
     v0005_immutable_contest_lines,
     v0006_separate_business_entities,
+    v0007_confidence_ranking_policies,
 )
 
 
@@ -21,4 +22,5 @@ MIGRATION_MODULES = (
     v0004_supplemental_game_dates,
     v0005_immutable_contest_lines,
     v0006_separate_business_entities,
+    v0007_confidence_ranking_policies,
 )

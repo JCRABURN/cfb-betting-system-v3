@@ -112,11 +112,16 @@ def create_contest_card(
     contest_id = integer(contest_id, "contest_id", 1)
     model_run_id = optional_integer(model_run_id, "model_run_id", 1)
     version = integer(version, "version", 1)
+    status = choice(status, "status", ("draft", "official"))
+    if status == "official":
+        raise BusinessEntityError(
+            "official cards require the validated publication service"
+        )
     values = (
         contest_id,
         model_run_id,
         version,
-        choice(status, "status", ("draft", "official")),
+        status,
         required_text(policy_version, "policy_version"),
         checksum(
             locked_line_snapshot_sha256,
