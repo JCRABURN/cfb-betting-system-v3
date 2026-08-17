@@ -116,6 +116,21 @@ correction record and `data_correction` revision. All three tables are
 append-only. The migration adds no policy, card, pick, revision, or history
 rows.
 
+## Manual contextual adjustment application
+
+Migration 10 creates immutable `manual_adjustment_policies`, one
+`card_adjustment_policy_assignments` row per generated card, ordered
+`contest_pick_adjustment_items`, and one `contest_pick_adjustment_snapshots`
+row per model-backed pick. The fixed policy applies signed adjustments
+additively to home margin and Confidence, then clamps Confidence to 1–5.
+
+Database triggers require the policy to be effective at card generation, each
+item to reference an eligible as-of adjustment for the pick's exact model
+prediction, and every snapshot to agree with the immutable raw prediction,
+pick Confidence, item count, and numeric totals. Policies, assignments, items,
+and snapshots cannot be replaced, updated, or deleted. The migration adds no
+policy, assignment, item, snapshot, adjustment, card, or pick rows.
+
 ## Recovery
 
 SQLite DDL is applied inside one transaction per migration. A failed migration

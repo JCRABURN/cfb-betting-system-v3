@@ -14,6 +14,7 @@ from migrations.versions import (
     v0007_confidence_ranking_policies,
     v0008_reproducible_card_runs,
     v0009_daily_refresh_revisions,
+    v0010_manual_contextual_adjustments,
 )
 
 
@@ -27,4 +28,5 @@ MIGRATION_MODULES = (
     v0007_confidence_ranking_policies,
     v0008_reproducible_card_runs,
     v0009_daily_refresh_revisions,
+    v0010_manual_contextual_adjustments,
 )

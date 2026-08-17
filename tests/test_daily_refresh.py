@@ -9,8 +9,10 @@ from business_entities import (
     DailyRefreshError,
     DailyRefreshPolicy,
     FullCardPolicy,
+    ManualAdjustmentPolicy,
     generate_full_card,
     get_card_run_manifest,
+    get_pick_adjustment_snapshot,
     record_card_revision,
     record_manual_adjustment,
     record_model_prediction,
@@ -52,6 +54,12 @@ REFRESH_POLICY = DailyRefreshPolicy(
     effective_at=POLICY_AT,
     created_by="test",
     provenance="fixture://daily-refresh-policy",
+)
+ADJUSTMENT_POLICY = ManualAdjustmentPolicy(
+    policy_version="manual-adjustments-v1",
+    effective_at=POLICY_AT,
+    created_by="test",
+    provenance="fixture://manual-adjustment-policy",
 )
 
 
@@ -142,6 +150,7 @@ def _seed(temp_db):
         version=1,
         policy=SELECTION_POLICY,
         confidence_policy=RANKING_POLICY,
+        adjustment_policy=ADJUSTMENT_POLICY,
         created_by="test",
         provenance="fixture://refresh-card/v1",
         generated_at=CARD_AT,
@@ -347,6 +356,17 @@ def test_contextual_refresh_requires_new_adjustment_and_preserves_raw_model(temp
     )
     prior_manifest = get_card_run_manifest(conn, seeded["card"].card.id)
     revised_manifest = get_card_run_manifest(conn, result.revised_card.card.id)
+    revised_pick = next(
+        pick
+        for pick in result.revised_card.picks
+        if pick.model_prediction_id == prediction.id
+    )
+    snapshot = get_pick_adjustment_snapshot(conn, revised_pick.id)
+    first_change = next(
+        item
+        for item in result.changes
+        if item.locked_line_id == seeded["lines"][901].id
+    )
 
     assert revised_manifest.model_run_id == prior_manifest.model_run_id
     assert revised_manifest.adjustment_count == prior_manifest.adjustment_count + 1
@@ -354,6 +374,10 @@ def test_contextual_refresh_requires_new_adjustment_and_preserves_raw_model(temp
         prior_manifest.adjustment_history_sha256
     )
     assert all(not change.model_prediction_changed for change in result.changes)
+    assert (first_change.prior_confidence, first_change.revised_confidence) == (5, 4)
+    assert first_change.confidence_changed is True
+    assert (snapshot.raw_model_margin, snapshot.adjusted_model_margin) == (7.0, 5.0)
+    assert (snapshot.raw_confidence, snapshot.adjusted_confidence) == (5, 4)
     assert conn.execute(
         "SELECT predicted_home_margin FROM model_predictions WHERE id = ?",
         (prediction.id,),
@@ -444,6 +468,7 @@ def test_refresh_history_is_append_only_and_database_validates_copied_values(tem
         version=3,
         policy=SELECTION_POLICY,
         confidence_policy=RANKING_POLICY,
+        adjustment_policy=ADJUSTMENT_POLICY,
         created_by="test",
         provenance="fixture://refresh-card/v3",
         generated_at=datetime(2026, 8, 27, 15, tzinfo=timezone.utc),

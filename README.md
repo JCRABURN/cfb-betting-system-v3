@@ -111,6 +111,14 @@ confidence/ranking version pair cannot silently change meaning between cards.
 and enforce complete Confidence coverage, exact Top 5 count and ranks, snapshot
 integrity, and provenance.
 
+Manual context is applied through a separate immutable policy. Each sourced
+injury, quarterback, coaching, travel, weather, motivation, or matchup entry
+retains its signed home-margin and Confidence effects, evidence, source,
+author, timestamp, and provenance. Card generation adds the eligible effects
+visible at its point-in-time timestamp, clamps adjusted Confidence to 1–5, and
+freezes per-pick raw values, totals, adjusted values, and ordered adjustment
+IDs. The raw model prediction is never edited.
+
 Generation still creates a draft: passing `official_ready` means every contest
 gate is satisfied, not that the card was automatically published. New
 `official` rows are blocked until a validated publication service is added.
@@ -137,12 +145,14 @@ python -m scripts.reproduce_card \
   --model-run-key MODEL_RUN_KEY
 ```
 
-The command opens SQLite in read-only/query-only mode, reconstructs both stored
+The command opens SQLite in read-only/query-only mode, reconstructs all stored
 policies, re-runs point-in-time selection and ranking, verifies every pick and
-manifest field, and emits canonical JSON. A mismatched identifier, missing
-manifest, changed policy input, line-snapshot mismatch, or adjustment-history
-mismatch fails visibly. Adjustments recorded after a card are excluded from its
-as-of history, and a later insert cannot be backdated into a frozen history.
+manifest field, and emits canonical JSON. Its output shows the adjustment
+policy and each pick's raw projection, ordered adjustment items, totals, and
+final adjusted projection. A mismatched identifier, missing manifest, changed
+policy input, line-snapshot mismatch, or adjustment-history mismatch fails
+visibly. Adjustments recorded after a card are excluded from its as-of history,
+and a later insert cannot be backdated into a frozen history.
 
 ## Daily card refreshes
 
@@ -163,6 +173,6 @@ version, feature schema, configuration, code commit, manual-adjustment history,
 and locked-line snapshot. `contextual_adjustment` must retain the exact model
 run and expose new append-only adjustment history. A corrected contest line
 requires both an explicit line-correction record and a `data_correction`
-revision; the original locked row is never changed. This milestone records
-contextual history separately but does not yet apply manual adjustments to raw
-model output or contest selection.
+revision; the original locked row is never changed. A contextual refresh
+applies the new ledger to the unchanged raw prediction, so side, Confidence,
+rank, and Top 5 may change while the locked line and model row remain immutable.
