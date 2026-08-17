@@ -311,6 +311,38 @@ you don't actually play (false cleanliness). But EPA off 1–2 games is near-noi
   gap §14 already flagged as not real signal). Conclusion unchanged: every
   slice still sits at or below the 52.4% breakeven line.
 
+### Point-in-time model research framework  ✅ IMPLEMENTED
+
+The active EPA-only production baseline remains unchanged. Research uses a
+separate EPA-only *market-residual* baseline so every candidate answers the
+same question: how much of `actual home margin − opening-market implied home
+margin` can be predicted from information available before kickoff? The model
+never receives the final score, target residual, closing line, database
+connection, or another game's future state.
+
+Validation rolls forward one season/week at a time. A target week's complete
+slate is held out together; training contains only earlier week keys, and a
+chronological sub-holdout inside training estimates uncertainty and fits an
+isotonic home-cover probability calibrator. The final fold model may then fit
+all available prior observations, but the calibrator and uncertainty still
+come only from the earlier internal holdout. Baseline and candidates must use
+identical out-of-sample game IDs.
+
+V1 supports the EPA-only baseline, ridge regression, online dynamic team
+ratings, and deterministic gradient-boosted decision stumps without adding a
+runtime dependency. Every result includes margin MAE/RMSE, Brier score, log
+loss, expected calibration error, ATS, ROI after −110 vig, same-book CLV where
+available, maximum drawdown, and Confidence-rank monotonicity. Missing inputs
+are explicit skips; neither feature values nor closing lines are imputed.
+
+Promotion thresholds are versioned and fixed before the run: minimum sample
+and season coverage plus required improvements in margin, probability, ATS,
+ROI, and CLV metrics, no worse calibration/drawdown beyond their stated
+limits, and monotonic Confidence ranks. A model failing any criterion is
+rejected. Passing all criteria creates only
+`candidate_pending_owner_approval` under its proposed new version; no research
+result can modify or assign an active policy or model.
+
 ---
 
 ## 7. OPERATIONAL WORKFLOW (from owner goals #3, #4, #5, #8, #9, #10)

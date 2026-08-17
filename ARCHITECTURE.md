@@ -868,3 +868,47 @@ Verified against the real week 1 data: re-running `card_generator.py` retracted 
 ### Tests
 
 8 new tests: 6 in `tests/test_card_generator.py` (large edge suppressed to no-pick, exact boundary at edge==10 stays low-confidence not suppressed since the threshold is strict `>`, a non-week-1 large edge is unaffected, no-pick games excluded from new persisted picks, a stale pending row from an earlier run gets retracted, a settled result is never retracted), and 2 in `tests/test_build_dashboard.py` (no-pick rows hide side/edge and show the message, no no-pick markup at all when nothing is flagged). 225 tests pass across the whole suite.
+
+## 26. Point-in-time model research framework (2026-08-17)
+
+`models/research_framework.py` extends the existing sanctioned
+`backtest_harness` access path rather than creating another database reader.
+It converts completed games into immutable observations with explicit feature
+as-of seasons/weeks, genuine opening lines, optional flagged closing lines,
+and a canonical dataset hash. A separate sealed `ModelInput` contains only
+pregame features, matchup identity, and the opening line; candidate code cannot
+access the database, outcome, target residual, or closing line.
+
+The target is market residual (`actual home margin + opening home spread`).
+Weekly rolling-origin validation holds an entire `(season, week)` out at once
+and trains only on strictly lower fold keys. Each training fold is split
+chronologically again: the earlier portion fits a temporary model, while the
+later portion supplies out-of-fit errors for uncertainty and binary outcomes
+for isotonic home-cover calibration. The final model fits all prior-fold data,
+then produces the held-out predictions. Baseline and every candidate must have
+the same test game IDs or the run fails.
+
+Four deterministic families are supported without new packages: EPA-only
+linear residual baseline, L2-regularized linear regression, online dynamic
+team ratings with explicit neutral initialization and season carry decay, and
+gradient-boosted decision stumps. The research baseline does not replace or
+alter the published `baseline_epa.py` model or its historical numbers.
+
+`default_research_policy()` pre-registers minimum sample/season coverage and
+numeric gates for MAE, RMSE, Brier score, log loss, calibration error, ATS,
+ROI after −110 vig, same-book CLV, maximum drawdown, and Confidence-rank
+monotonicity. Every failed criterion is retained. Clearing the full set creates
+only `candidate_pending_owner_approval`, sets `automatic_promotion=False`, and
+names the candidate's new version; there is no code path that activates it.
+
+`python -m models.run_research` opens an explicitly named SQLite snapshot in
+read-only/query-only mode and prints canonical JSON with the code SHA, database
+SHA-256, feature/configuration versions, policy, dataset hash, fold membership,
+skips, predictions, metrics, decisions, and ledger hash. It performs no live
+API call and creates no database or generated-output row.
+
+The adversarial test suite plants same-week feature values and closing-only
+games, verifies chronological calibration and disjoint train/test membership,
+proves a newly appended future fold cannot change prior predictions, exercises
+all four model families, rejects dataset-hash tampering, tests every promotion
+gate, and confirms the command's SQLite connection refuses writes.
