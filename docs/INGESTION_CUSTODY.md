@@ -83,6 +83,21 @@ authoritative `data/cfb.db`. A replay database needs canonical `teams` and
 `games` rows for records to be accepted; unresolved fixture records are
 quarantined by design.
 
+## Migration recovery
+
+Migration 13 only creates new, initially empty custody tables, indexes, and
+triggers; it does not rewrite an existing table or row. The migration runner
+applies and verifies those objects in one transaction, so a failed application
+rolls back automatically.
+
+Before applying the migration to any promoted database, retain a verified
+pre-migration database snapshot. If recovery is required after a successful
+application, stop writers, restore that complete pre-migration snapshot, verify
+SQLite integrity and foreign keys, and run the code version whose migration
+ledger ends at version 12. Do not delete migration-ledger rows or drop custody
+objects manually in place. Reverting the code commit alone is sufficient only
+when migration 13 has never been applied to the target database.
+
 ## Model and production state
 
 The EPA-only model remains the production baseline. The rejected ridge,
