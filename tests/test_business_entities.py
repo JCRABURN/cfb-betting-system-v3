@@ -264,7 +264,7 @@ def test_card_revision_links_consecutive_snapshots(temp_db):
         version=2,
         status="draft",
         policy_version="contest-policy-1",
-        locked_line_snapshot_sha256="e" * 64,
+        locked_line_snapshot_sha256="d" * 64,
         created_by="test",
         provenance="test fixture",
         generated_at=RECORDED_AT,
@@ -282,6 +282,18 @@ def test_card_revision_links_consecutive_snapshots(temp_db):
     )
     assert revision.prior_card_id == seeded["card"].id
     assert revision.revised_card_id == revised.id
+    with pytest.raises(BusinessEntityConflictError, match="different immutable"):
+        record_card_revision(
+            conn,
+            revision_key="week-1-revision-1",
+            prior_card_id=seeded["card"].id,
+            revised_card_id=revised.id,
+            change_type="contextual_adjustment",
+            reason="documented quarterback change",
+            author="test",
+            provenance="test fixture",
+            revised_at=FINAL_AT,
+        )
     with pytest.raises(BusinessEntityError, match="consecutive versions"):
         record_card_revision(
             conn,
@@ -421,7 +433,7 @@ def test_all_new_business_records_are_immutable_and_non_replaceable(temp_db):
         version=2,
         status="draft",
         policy_version="contest-policy-1",
-        locked_line_snapshot_sha256="f" * 64,
+        locked_line_snapshot_sha256="d" * 64,
         created_by="test",
         provenance="test fixture",
         generated_at=RECORDED_AT,

@@ -10,6 +10,8 @@ def test_init_db_creates_all_tables(temp_db):
         "sportsbook_recommendations", "card_revisions", "manual_adjustments",
         "pick_audits", "contest_selection_policies",
         "contest_selection_policy_books", "card_run_manifests",
+        "card_refresh_policies", "card_revision_pick_changes",
+        "card_refresh_revisions",
     }
     assert expected.issubset(tables)
     conn.close()

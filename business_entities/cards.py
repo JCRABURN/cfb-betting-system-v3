@@ -361,9 +361,13 @@ def record_card_revision(
         ),
         required_text(reason, "reason"),
         required_text(author, "author"),
-        required_text(provenance, "provenance"),
     )
-    revised_at_value = utc_timestamp(revised_at, "revised_at")
+    provenance = required_text(provenance, "provenance")
+    revised_at_value = (
+        utc_timestamp(revised_at, "revised_at")
+        if revised_at is not None
+        else None
+    )
     try:
         with atomic(conn):
             prior = get_contest_card(conn, prior_card_id)
@@ -378,9 +382,14 @@ def record_card_revision(
                 "ORDER BY revision_key = ? DESC LIMIT 1",
                 (revision_key, revised_card_id, revision_key),
             ).fetchone()
-            requested = (revision_key, *values)
             if row is not None:
                 existing = CardRevision(*row)
+                requested = (
+                    revision_key,
+                    *values,
+                    revised_at_value or existing.revised_at,
+                    provenance,
+                )
                 recorded = (
                     existing.revision_key,
                     existing.prior_card_id,
@@ -388,18 +397,26 @@ def record_card_revision(
                     existing.change_type,
                     existing.reason,
                     existing.author,
+                    existing.revised_at,
                     existing.provenance,
                 )
                 if recorded != requested:
                     raise BusinessEntityConflictError(
-                        "revision key or revised card already has different immutable values"
+                        "revision key or revised card already has different "
+                        "immutable values"
                     )
                 return existing
+            requested = (
+                revision_key,
+                *values,
+                revised_at_value or utc_timestamp(None, "revised_at"),
+                provenance,
+            )
             cursor = conn.execute(
                 "INSERT INTO card_revisions "
                 "(revision_key, prior_card_id, revised_card_id, change_type, reason, "
                 "author, revised_at, provenance) VALUES (?, ?, ?, ?, ?, ?, ?, ?)",
-                (*requested[:-1], revised_at_value, requested[-1]),
+                requested,
             )
             return get_card_revision(conn, cursor.lastrowid)
     except sqlite3.IntegrityError as exc:
