@@ -22,6 +22,10 @@ def test_init_db_creates_all_tables(temp_db):
         "weekly_diagnostic_policies", "weekly_diagnostic_runs",
         "weekly_diagnostic_segments", "weekly_diagnostic_lessons",
         "policy_change_recommendations", "weekly_diagnostic_completions",
+        "provider_team_aliases", "provider_ingestion_runs",
+        "provider_ingestion_rejections", "provider_ingestion_acceptances",
+        "provider_market_snapshots",
+        "provider_data_snapshots",
     }
     assert expected.issubset(tables)
     conn.close()

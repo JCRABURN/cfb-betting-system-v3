@@ -1,0 +1,32 @@
+{
+  "records": [
+    {
+      "matchup_id": "fixture-uga-clemson",
+      "game_id": 1001,
+      "season": 2026,
+      "week": 1,
+      "home_team": "Georgia Bulldogs",
+      "away_team": "Clemson Tigers",
+      "event_start_at": "2026-08-29T16:00:00+00:00",
+      "observed_at": "2026-08-25T14:55:00+00:00",
+      "bookmaker": "fixture-book",
+      "market_type": "spread",
+      "home_spread": -3.5,
+      "home_price": -110
+    },
+    {
+      "matchup_id": "fixture-alabama-auburn",
+      "game_id": 1002,
+      "season": 2026,
+      "week": 1,
+      "home_team": "Alabama Crimson Tide",
+      "away_team": "Auburn Tigers",
+      "event_start_at": "2026-08-29T20:00:00+00:00",
+      "observed_at": "2026-08-25T14:54:00+00:00",
+      "bookmaker": "fixture-book",
+      "market_type": "spread",
+      "home_spread": -6.5,
+      "home_price": -105
+    }
+  ]
+}

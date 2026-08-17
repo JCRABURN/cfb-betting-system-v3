@@ -118,7 +118,7 @@ def test_legacy_database_gains_feature_columns_without_data_loss(tmp_path):
     conn.close()
 
     assert [result.version for result in applied] == [
-        1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12
+        1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13
     ]
     assert after_counts["team_game_stats"] == before_counts["team_game_stats"] == 1
     assert {"offense_success_rate", "defense_success_rate", "havoc_rate"} <= columns
@@ -132,7 +132,7 @@ def test_authoritative_database_copy_preserves_rows_integrity_and_source(tmp_pat
 
     result = verify_database_copy(source_copy)
 
-    assert result.applied_versions == (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12)
+    assert result.applied_versions == (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13)
     assert all(
         result.after_counts[table] == count
         for table, count in result.before_counts.items()
@@ -176,6 +176,12 @@ def test_authoritative_database_copy_preserves_rows_integrity_and_source(tmp_pat
         "weekly_diagnostic_lessons",
         "policy_change_recommendations",
         "weekly_diagnostic_completions",
+        "provider_team_aliases",
+        "provider_ingestion_runs",
+        "provider_ingestion_rejections",
+        "provider_ingestion_acceptances",
+        "provider_market_snapshots",
+        "provider_data_snapshots",
     ):
         assert result.after_counts[table] == 0
     assert _file_hash(AUTHORITATIVE_DATABASE) == source_hash_before

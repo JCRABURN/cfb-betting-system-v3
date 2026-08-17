@@ -1,0 +1,128 @@
+{
+  "records": [
+    {
+      "matchup_id": "valid",
+      "game_id": 1001,
+      "season": 2026,
+      "week": 1,
+      "home_team": "Georgia Bulldogs",
+      "away_team": "Clemson Tigers",
+      "event_start_at": "2026-08-29T16:00:00+00:00",
+      "observed_at": "2026-08-25T14:55:00+00:00",
+      "bookmaker": "fixture-book",
+      "market_type": "spread",
+      "home_spread": -3.5,
+      "home_price": -110
+    },
+    {
+      "matchup_id": "valid",
+      "game_id": 1001,
+      "season": 2026,
+      "week": 1,
+      "home_team": "Georgia Bulldogs",
+      "away_team": "Clemson Tigers",
+      "event_start_at": "2026-08-29T16:00:00+00:00",
+      "observed_at": "2026-08-25T14:55:00+00:00",
+      "bookmaker": "fixture-book",
+      "market_type": "spread",
+      "home_spread": -3.5,
+      "home_price": -110
+    },
+    {
+      "matchup_id": "unknown-team",
+      "season": 2026,
+      "week": 1,
+      "home_team": "Mystery University Yetis",
+      "away_team": "Clemson Tigers",
+      "event_start_at": "2026-08-29T16:00:00+00:00",
+      "observed_at": "2026-08-25T14:55:00+00:00",
+      "bookmaker": "fixture-book",
+      "market_type": "spread",
+      "home_spread": 2.5
+    },
+    {
+      "matchup_id": "bad-spread",
+      "season": 2026,
+      "week": 1,
+      "home_team": "Georgia Bulldogs",
+      "away_team": "Clemson Tigers",
+      "event_start_at": "2026-08-29T16:00:00+00:00",
+      "observed_at": "2026-08-25T14:55:00+00:00",
+      "bookmaker": "fixture-book",
+      "market_type": "spread",
+      "home_spread": "minus three"
+    },
+    {
+      "matchup_id": "stale",
+      "season": 2026,
+      "week": 1,
+      "home_team": "Georgia Bulldogs",
+      "away_team": "Clemson Tigers",
+      "event_start_at": "2026-08-29T16:00:00+00:00",
+      "observed_at": "2026-08-25T14:00:00+00:00",
+      "bookmaker": "fixture-book",
+      "market_type": "spread",
+      "home_spread": -3.0
+    },
+    {
+      "matchup_id": "invalid-time",
+      "season": 2026,
+      "week": 1,
+      "home_team": "Georgia Bulldogs",
+      "away_team": "Clemson Tigers",
+      "event_start_at": "2026-08-29T16:00:00+00:00",
+      "observed_at": "2026-08-25T14:55:00",
+      "bookmaker": "fixture-book",
+      "market_type": "spread",
+      "home_spread": -3.0
+    },
+    {
+      "matchup_id": "total-market",
+      "season": 2026,
+      "week": 1,
+      "home_team": "Georgia Bulldogs",
+      "away_team": "Clemson Tigers",
+      "event_start_at": "2026-08-29T16:00:00+00:00",
+      "observed_at": "2026-08-25T14:55:00+00:00",
+      "bookmaker": "fixture-book",
+      "market_type": "total",
+      "home_spread": 48.5
+    },
+    {
+      "season": 2026,
+      "week": 1,
+      "home_team": "Georgia Bulldogs",
+      "away_team": "Clemson Tigers",
+      "event_start_at": "2026-08-29T16:00:00+00:00",
+      "observed_at": "2026-08-25T14:55:00+00:00",
+      "bookmaker": "fixture-book",
+      "market_type": "spread",
+      "home_spread": -3.0
+    },
+    {
+      "matchup_id": "reversed",
+      "season": 2026,
+      "week": 1,
+      "home_team": "Clemson Tigers",
+      "away_team": "Georgia Bulldogs",
+      "event_start_at": "2026-08-29T16:00:00+00:00",
+      "observed_at": "2026-08-25T14:55:00+00:00",
+      "bookmaker": "fixture-book",
+      "market_type": "spread",
+      "home_spread": 3.5
+    },
+    {
+      "matchup_id": "conflicting-game",
+      "game_id": 1002,
+      "season": 2026,
+      "week": 1,
+      "home_team": "Georgia Bulldogs",
+      "away_team": "Clemson Tigers",
+      "event_start_at": "2026-08-29T16:00:00+00:00",
+      "observed_at": "2026-08-25T14:55:00+00:00",
+      "bookmaker": "fixture-book-2",
+      "market_type": "spread",
+      "home_spread": -3.0
+    }
+  ]
+}

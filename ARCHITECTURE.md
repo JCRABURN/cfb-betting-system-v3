@@ -912,3 +912,42 @@ games, verifies chronological calibration and disjoint train/test membership,
 proves a newly appended future fold cannot change prior predictions, exercises
 all four model families, rejects dataset-hash tampering, tests every promotion
 gate, and confirms the command's SQLite connection refuses writes.
+
+## 27. Provider ingestion custody and freshness (2026-08-17)
+
+Migration 13 adds an append-only custody layer in front of future provider
+adapters. A final run record freezes sanitized request metadata, request time,
+parser version, payload checksum, replay reference, counts, and status.
+Record-level validation occurs before the transaction can call a downstream
+writer. Rejections retain a stable failure code, raw-record checksum, and
+replayable JSON. Provider-neutral acceptance rows make the boundary extensible
+to every required source type; accepted odds additionally retain raw and
+normalized teams, canonical game, book, price, observation/kickoff timestamps,
+and parser provenance.
+
+Team normalization now has one reusable boundary in
+`ingestion.custody.CanonicalTeamResolver`. The legacy Odds API resolver delegates
+to it without changing legacy behavior, while production custody treats unknown
+or ambiguous results as quarantine conditions. Reversed, nonexistent, or
+conflicting canonical game mappings are also rejected rather than being stored
+with a null `game_id`.
+
+Exact replay identity includes the provider, endpoint, sanitized parameters,
+request time, parser version, payload checksum, raw reference, and data type.
+The same replay returns its existing run; a parser-version change creates a new
+immutable interpretation. Expected-checksum mismatches never parse. A canonical
+writer failure rolls back custody records and downstream writes together, then
+records a separate immutable failure run.
+
+Freshness policy `provider_freshness_v1` sets maximum ages of 15 minutes for
+odds, 6 hours for injuries, 3 hours for weather, 5 minutes for game status, and
+24 hours for contextual data. As-of inspection ignores future runs and uses the
+oldest accepted observation in a payload as the expiry baseline. Partial,
+stale, and missing results remain visible for the Milestone 15 publication gate
+and require an explicit permitted fallback.
+
+All development and tests use recorded fixtures. No live provider request,
+credential, scheduled workflow, wager, authoritative database write, or model
+promotion was introduced. The EPA-only production baseline and locked research
+promotion criteria remain unchanged; rejected research candidates are not on a
+production path.
