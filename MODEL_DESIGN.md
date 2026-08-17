@@ -332,7 +332,8 @@ you don't actually play (false cleanliness). But EPA off 1–2 games is near-noi
 
 ### Weekly betting card output (goal #5)
 - Full slate: every lined FBS game with side, confidence (1–5), rationale.
-- Ranked **Top 5** highest-edge plays.
+- Ranked **Top 5** by the active versioned reliability policy, never raw edge
+  unless future out-of-sample evidence supports it.
 - Clear separation of recommended-bets vs. contest-only/no-bet (per §5 field).
 
 ### Confidence-pool pick'em league (SECOND contest consumer)
@@ -350,17 +351,18 @@ parallel prediction engine that could drift from the main one.
 - **Upload flow:** ingest the ~Tuesday fixed lines (CSV or paste: game +
   spread), join to predictions via the existing team-name resolver, evaluate
   every allowed game against THOSE locked numbers (not live market).
-- **v1 ranking:** rank all allowed games by edge (predicted margin − spread),
-  take the 5 biggest edges, assign rank 5 to the largest down to rank 1 to the
-  fifth. Simple, honest, reasonable for a first version.
-- **Known refinement (defer until calibration data exists):** the *optimal*
-  confidence-pool ranking weighs edge SIZE against edge RELIABILITY, not raw
-  size alone. A big-but-shaky 10pt edge is riskier to stake the max 5-point rank
-  on than a confident 6pt edge. But "biggest edge = most likely to hit" is an
-  ASSUMPTION until the audit proves edge sizes are calibrated (does a projected
-  10pt edge actually win more than a projected 5pt edge?). v1 ranks by raw edge;
-  refine to weight reliability once real calibration data exists. Same pattern as
-  everything else: honest simple version first, sophistication earned by data.
+- **Rejected historical proposal:** rank by raw edge. The walk-forward analysis
+  in `ARCHITECTURE.md` §19 found no monotonic relationship between edge size and
+  ATS performance; the 10+ bucket was the weakest aggregate bucket.
+- **V3 reliability ranking:** map explicit model `uncertainty_points` through
+  approved, versioned Confidence thresholds. Rank by Confidence descending,
+  lower uncertainty, then locked-line ID only to resolve exact ties. A pick with
+  no reliability input receives Confidence 1 and sorts below scored picks at
+  that level. Take five when at least five games exist, assigning rank 5 to the
+  strongest through rank 1 to the fifth.
+- Threshold calibration remains an audit responsibility. The system stores the
+  complete immutable policy and provenance; it does not infer thresholds from
+  the current card or inflate missing reliability data.
 
 ### Post-game audit (goal #8) — a first-class output, not an afterthought
 After each week, produce:

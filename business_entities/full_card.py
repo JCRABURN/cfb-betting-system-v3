@@ -1,8 +1,7 @@
 """Fail-closed generation of one side for every locked contest game.
 
-This engine creates draft cards only. Confidence 1-5 and Top 5 assignment are
-the next policy milestone, so a side-complete card must not yet be represented
-as an official card.
+This engine creates complete draft cards only. It assigns Confidence 1-5 from
+explicit model uncertainty and ranks a Top 5 without using raw model edge.
 """
 
 from __future__ import annotations
@@ -11,7 +10,7 @@ import hashlib
 import json
 import re
 import sqlite3
-from dataclasses import dataclass
+from dataclasses import dataclass, replace
 from datetime import datetime
 
 from contest_lines import EffectiveContestLine, list_effective_locked_lines
@@ -38,6 +37,16 @@ from business_entities.modeling import (
     get_model_prediction,
     get_model_run,
 )
+from business_entities.ranking import (
+    TOP_FIVE_COUNT,
+    ConfidenceRankingPolicy,
+    assign_card_ranking_policy,
+    confidence_for_uncertainty,
+    get_card_ranking_policy,
+    recorded_policy_matches,
+    register_confidence_ranking_policy,
+    validate_confidence_ranking_policy,
+)
 
 
 MARKET_CURRENT_PREFIX = "market_current_line:"
@@ -62,7 +71,9 @@ class IncompleteCardError(FullCardError):
             f"missing={report.missing_locked_line_ids}, "
             f"unexpected={report.unexpected_locked_line_ids}, "
             f"unresolved={report.unresolved_locked_line_ids}, "
-            f"invalid_picks={report.invalid_pick_ids}"
+            f"invalid_picks={report.invalid_pick_ids}, "
+            f"invalid_confidence={report.invalid_confidence_pick_ids}, "
+            f"invalid_top_five={report.invalid_top_five_pick_ids}"
         )
 
 
@@ -94,9 +105,15 @@ class CardCompletenessReport:
     invalid_pick_ids: tuple[int, ...]
     missing_provenance_pick_ids: tuple[int, ...]
     invalid_fallback_pick_ids: tuple[int, ...]
+    confidence_coverage_count: int
+    top_five_count: int
+    ranked_pick_count: int
+    invalid_confidence_pick_ids: tuple[int, ...]
+    invalid_top_five_pick_ids: tuple[int, ...]
     model_metadata_complete: bool
     locked_line_snapshot_matches: bool
     policy_replay_matches: bool
+    confidence_ranking_policy_matches: bool
 
     @property
     def side_complete(self) -> bool:
@@ -120,8 +137,20 @@ class CardCompletenessReport:
 
     @property
     def official_ready(self) -> bool:
-        """PR 5 deliberately defers Confidence and Top 5 policy."""
-        return False
+        return self.contest_complete
+
+    @property
+    def contest_complete(self) -> bool:
+        expected_top_five = min(TOP_FIVE_COUNT, self.expected_locked_line_count)
+        return (
+            self.side_complete
+            and self.confidence_coverage_count == self.expected_locked_line_count
+            and self.top_five_count == expected_top_five
+            and self.ranked_pick_count == expected_top_five
+            and not self.invalid_confidence_pick_ids
+            and not self.invalid_top_five_pick_ids
+            and self.confidence_ranking_policy_matches
+        )
 
 
 @dataclass(frozen=True)
@@ -148,6 +177,10 @@ class _Selection:
     model_prediction_id: int | None
     fallback_code: str | None
     provenance: str
+    uncertainty_points: float | None = None
+    confidence: int | None = None
+    rank: int | None = None
+    is_top_five: bool = False
 
 
 def _validated_policy(policy: FullCardPolicy) -> FullCardPolicy:
@@ -392,14 +425,28 @@ def _select_side(
                 f"{provenance};selection=model_prediction;"
                 f"model_prediction_id={prediction.id};locked_line_id={line.locked_line_id}"
             )
-            return _Selection(line, side, prediction.id, None, detail)
+            return _Selection(
+                line,
+                side,
+                prediction.id,
+                None,
+                detail,
+                uncertainty_points=prediction.uncertainty_points,
+            )
         if policy.model_tie_side in ("home", "away"):
             code = f"model_tie_{policy.model_tie_side}"
             detail = (
                 f"{provenance};selection=fallback;fallback_code={code};"
                 f"model_prediction_id={prediction.id};locked_line_id={line.locked_line_id}"
             )
-            return _Selection(line, policy.model_tie_side, prediction.id, code, detail)
+            return _Selection(
+                line,
+                policy.model_tie_side,
+                prediction.id,
+                code,
+                detail,
+                uncertainty_points=prediction.uncertainty_points,
+            )
     return _fallback_selection(
         conn,
         line=line,
@@ -407,6 +454,64 @@ def _select_side(
         generated_at=generated_at,
         provenance=provenance,
     )
+
+
+def _rank_selections(
+    selections: tuple[_Selection, ...],
+    policy: ConfidenceRankingPolicy,
+) -> tuple[_Selection, ...]:
+    """Assign confidence and Top 5 from reliability, never raw model edge."""
+    policy = validate_confidence_ranking_policy(policy)
+    with_confidence = tuple(
+        replace(
+            selection,
+            confidence=confidence_for_uncertainty(
+                policy,
+                selection.uncertainty_points,
+            ),
+        )
+        for selection in selections
+    )
+    ordered = sorted(
+        with_confidence,
+        key=lambda selection: (
+            -selection.confidence,
+            selection.uncertainty_points is None,
+            selection.uncertainty_points
+            if selection.uncertainty_points is not None
+            else float("inf"),
+            selection.line.locked_line_id,
+        ),
+    )
+    top_count = min(TOP_FIVE_COUNT, len(ordered))
+    ranks = {
+        selection.line.locked_line_id: top_count - index
+        for index, selection in enumerate(ordered[:top_count])
+    }
+    ranked: list[_Selection] = []
+    for selection in with_confidence:
+        rank = ranks.get(selection.line.locked_line_id)
+        reliability = (
+            f"model_uncertainty_points:{selection.uncertainty_points}"
+            if selection.uncertainty_points is not None
+            else "unscored_floor"
+        )
+        detail = (
+            f"{selection.provenance};confidence_policy_version="
+            f"{policy.confidence_policy_version};ranking_policy_version="
+            f"{policy.ranking_policy_version};confidence={selection.confidence};"
+            f"reliability={reliability};top_five={str(rank is not None).lower()};"
+            f"rank={rank if rank is not None else 'none'}"
+        )
+        ranked.append(
+            replace(
+                selection,
+                rank=rank,
+                is_top_five=rank is not None,
+                provenance=detail,
+            )
+        )
+    return tuple(ranked)
 
 
 def _market_fallback_valid(
@@ -488,14 +593,41 @@ def _fallback_valid(
     return False
 
 
+def _selection_replay_matches(
+    *,
+    existing: tuple[ContestPick, ...],
+    selections: tuple[_Selection, ...],
+) -> bool:
+    if len(existing) != len(selections):
+        return False
+    by_line = {pick.locked_line_id: pick for pick in existing}
+    for selection in selections:
+        pick = by_line.get(selection.line.locked_line_id)
+        if pick is None or (
+            pick.model_prediction_id,
+            pick.selected_side,
+            pick.fallback_code,
+        ) != (
+            selection.model_prediction_id,
+            selection.selected_side,
+            selection.fallback_code,
+        ):
+            return False
+        if not pick.provenance.startswith(f"{selection.provenance};"):
+            return False
+    return True
+
+
 def inspect_full_card(
     conn: sqlite3.Connection,
     card_id: int,
     *,
     policy: FullCardPolicy,
+    confidence_policy: ConfidenceRankingPolicy,
 ) -> CardCompletenessReport:
-    """Inspect all side-completeness gates without mutating the card."""
+    """Inspect side, Confidence, ranking, and provenance without mutation."""
     policy = _validated_policy(policy)
+    confidence_policy = validate_confidence_ranking_policy(confidence_policy)
     card = get_contest_card(conn, integer(card_id, "card_id", 1))
     generated_at = datetime.fromisoformat(card.generated_at)
     lines = list_effective_locked_lines(conn, card.contest_id, as_of=generated_at)
@@ -525,6 +657,10 @@ def inspect_full_card(
     invalid_fallback: list[int] = []
     model_pick_count = 0
     fallback_pick_count = 0
+    confidence_coverage_count = 0
+    invalid_confidence: list[int] = []
+    invalid_top_five: list[int] = []
+    ranks: dict[int, list[int]] = {}
     for pick in picks:
         line = by_line.get(pick.locked_line_id)
         if pick.selected_side not in ("home", "away") or line is None:
@@ -546,6 +682,16 @@ def inspect_full_card(
             model_pick_count += 1
         if pick.fallback_code is not None:
             fallback_pick_count += 1
+        if pick.confidence is not None:
+            confidence_coverage_count += 1
+        if pick.confidence not in (1, 2, 3, 4, 5):
+            invalid_confidence.append(pick.id)
+        if pick.is_top_five != (pick.rank is not None):
+            invalid_top_five.append(pick.id)
+        if pick.rank is not None:
+            ranks.setdefault(pick.rank, []).append(pick.id)
+            if not 1 <= pick.rank <= TOP_FIVE_COUNT:
+                invalid_top_five.append(pick.id)
         if not _fallback_valid(
             conn,
             pick=pick,
@@ -562,8 +708,9 @@ def inspect_full_card(
         )
 
     policy_replay_matches = card.policy_version == policy.version
+    confidence_ranking_policy_matches = False
     if model_metadata_complete and policy_replay_matches:
-        expected_selections = tuple(
+        expected_side_selections = tuple(
             _select_side(
                 conn,
                 line=line,
@@ -574,10 +721,38 @@ def inspect_full_card(
             )
             for line in lines
         )
+        policy_replay_matches = _selection_replay_matches(
+            existing=picks,
+            selections=expected_side_selections,
+        )
         try:
-            _assert_replay_matches(existing=picks, selections=expected_selections)
-        except FullCardError:
-            policy_replay_matches = False
+            recorded_policy = get_card_ranking_policy(conn, card.id)
+            confidence_ranking_policy_matches = recorded_policy_matches(
+                recorded_policy,
+                confidence_policy,
+            )
+            if confidence_ranking_policy_matches:
+                expected_ranked_selections = _rank_selections(
+                    expected_side_selections,
+                    confidence_policy,
+                )
+                _assert_replay_matches(
+                    existing=picks,
+                    selections=expected_ranked_selections,
+                )
+        except BusinessEntityError:
+            confidence_ranking_policy_matches = False
+
+    duplicate_rank_pick_ids = {
+        pick_id
+        for pick_ids in ranks.values()
+        if len(pick_ids) > 1
+        for pick_id in pick_ids
+    }
+    invalid_top_five.extend(duplicate_rank_pick_ids)
+    expected_top_five = min(TOP_FIVE_COUNT, len(lines))
+    if set(ranks) != set(range(1, expected_top_five + 1)):
+        invalid_top_five.extend(pick.id for pick in picks)
 
     return CardCompletenessReport(
         card_id=card.id,
@@ -596,11 +771,17 @@ def inspect_full_card(
         invalid_pick_ids=tuple(sorted(set(invalid_picks))),
         missing_provenance_pick_ids=tuple(missing_provenance),
         invalid_fallback_pick_ids=tuple(invalid_fallback),
+        confidence_coverage_count=confidence_coverage_count,
+        top_five_count=sum(pick.is_top_five for pick in picks),
+        ranked_pick_count=sum(pick.rank is not None for pick in picks),
+        invalid_confidence_pick_ids=tuple(sorted(set(invalid_confidence))),
+        invalid_top_five_pick_ids=tuple(sorted(set(invalid_top_five))),
         model_metadata_complete=model_metadata_complete,
         locked_line_snapshot_matches=(
             locked_line_snapshot_sha256(lines) == card.locked_line_snapshot_sha256
         ),
         policy_replay_matches=policy_replay_matches,
+        confidence_ranking_policy_matches=confidence_ranking_policy_matches,
     )
 
 
@@ -609,10 +790,16 @@ def validate_full_card(
     card_id: int,
     *,
     policy: FullCardPolicy,
+    confidence_policy: ConfidenceRankingPolicy,
 ) -> CardCompletenessReport:
-    """Return a report only when every locked line has one valid side."""
-    report = inspect_full_card(conn, card_id, policy=policy)
-    if not report.side_complete:
+    """Return a report only for a complete, policy-reproducible contest card."""
+    report = inspect_full_card(
+        conn,
+        card_id,
+        policy=policy,
+        confidence_policy=confidence_policy,
+    )
+    if not report.contest_complete:
         raise IncompleteCardError(report)
     return report
 
@@ -649,11 +836,17 @@ def _assert_replay_matches(
         if pick is None or (
             pick.model_prediction_id,
             pick.selected_side,
+            pick.confidence,
+            pick.rank,
+            pick.is_top_five,
             pick.fallback_code,
             pick.provenance,
         ) != (
             selection.model_prediction_id,
             selection.selected_side,
+            selection.confidence,
+            selection.rank,
+            selection.is_top_five,
             selection.fallback_code,
             selection.provenance,
         ):
@@ -668,16 +861,18 @@ def generate_full_card(
     model_run_id: int,
     version: int,
     policy: FullCardPolicy,
+    confidence_policy: ConfidenceRankingPolicy,
     created_by: str,
     provenance: str,
     generated_at: datetime | None = None,
 ) -> FullCardResult:
-    """Atomically create a side-complete draft card or persist nothing."""
+    """Atomically create a complete ranked draft card or persist nothing."""
     card_key = required_text(card_key, "card_key")
     contest_id = integer(contest_id, "contest_id", 1)
     model_run_id = integer(model_run_id, "model_run_id", 1)
     version = integer(version, "version", 1)
     policy = _validated_policy(policy)
+    confidence_policy = validate_confidence_ranking_policy(confidence_policy)
     created_by = required_text(created_by, "created_by")
     provenance = required_text(provenance, "provenance")
     run = get_model_run(conn, model_run_id)
@@ -698,7 +893,7 @@ def generate_full_card(
     if not lines:
         raise FullCardError("contest has no locked lines")
 
-    selections: list[_Selection] = []
+    side_selections: list[_Selection] = []
     for line in lines:
         game = _game_row(conn, line)
         if not _valid_matchup(line, game):
@@ -709,7 +904,7 @@ def generate_full_card(
             raise FullCardError(
                 f"locked line {line.locked_line_id} lacks a future valid kickoff"
             )
-        selections.append(
+        side_selections.append(
             _select_side(
                 conn,
                 line=line,
@@ -719,6 +914,7 @@ def generate_full_card(
                 provenance=provenance,
             )
         )
+    selections = _rank_selections(tuple(side_selections), confidence_policy)
 
     existing_row = conn.execute(
         "SELECT id FROM contest_cards "
@@ -741,14 +937,33 @@ def generate_full_card(
             provenance=provenance,
         )
         picks = list_contest_picks(conn, card.id)
-        _assert_replay_matches(existing=picks, selections=tuple(selections))
+        try:
+            recorded_policy = get_card_ranking_policy(conn, card.id)
+        except BusinessEntityError as exc:
+            raise FullCardError(
+                "existing card has no immutable Confidence and ranking policy"
+            ) from exc
+        if not recorded_policy_matches(recorded_policy, confidence_policy):
+            raise FullCardError(
+                "existing card has a different Confidence or ranking policy"
+            )
+        _assert_replay_matches(existing=picks, selections=selections)
         return FullCardResult(
             card,
             picks,
-            validate_full_card(conn, card.id, policy=policy),
+            validate_full_card(
+                conn,
+                card.id,
+                policy=policy,
+                confidence_policy=confidence_policy,
+            ),
         )
 
     with atomic(conn):
+        recorded_policy = register_confidence_ranking_policy(
+            conn,
+            confidence_policy,
+        )
         card = create_contest_card(
             conn,
             card_key=card_key,
@@ -762,6 +977,13 @@ def generate_full_card(
             created_by=created_by,
             provenance=provenance,
         )
+        assign_card_ranking_policy(
+            conn,
+            card_id=card.id,
+            ranking_policy_id=recorded_policy.id,
+            provenance=provenance,
+            assigned_at=generation_time,
+        )
         for selection in selections:
             add_contest_pick(
                 conn,
@@ -770,9 +992,17 @@ def generate_full_card(
                 locked_line_id=selection.line.locked_line_id,
                 model_prediction_id=selection.model_prediction_id,
                 selected_side=selection.selected_side,
+                confidence=selection.confidence,
+                rank=selection.rank,
+                is_top_five=selection.is_top_five,
                 fallback_code=selection.fallback_code,
                 generated_at=generation_time,
                 provenance=selection.provenance,
             )
-        report = validate_full_card(conn, card.id, policy=policy)
+        report = validate_full_card(
+            conn,
+            card.id,
+            policy=policy,
+            confidence_policy=confidence_policy,
+        )
         return FullCardResult(card, list_contest_picks(conn, card.id), report)

@@ -94,10 +94,26 @@ line state as of the card timestamp and applies this versioned hierarchy:
 Every non-model decision records a fallback code and provenance. Consensus,
 closing, future-captured, unresolved, mismatched, and post-kickoff data cannot
 enter the hierarchy. Generation is atomic and fails rather than omitting a
-locked game. `inspect_full_card()` and `validate_full_card()` expose the exact
-coverage and integrity gates when supplied with the same versioned policy.
+locked game.
 
-This milestone creates draft, side-complete cards only. It deliberately does
-not label them official: Confidence 1–5 and ranked Top 5 policy are added and
-validated in the next milestone. The legacy `models/card_generator.py` remains
-unchanged as a compatibility path and is not used by this engine.
+The engine also requires a `ConfidenceRankingPolicy`. Model-backed picks map
+their explicit `uncertainty_points` through versioned thresholds to Confidence
+1–5. Picks without that reliability input, including fallback selections,
+receive the visible conservative floor of 1 rather than an invented estimate.
+The Top 5 is ordered by Confidence descending, then lower model uncertainty,
+then immutable locked-line ID for exact ties. Raw model edge is not a ranking
+input.
+
+Policy definitions and card assignments are stored in immutable
+`contest_ranking_policies` and `contest_card_policy_assignments` records. A
+confidence/ranking version pair cannot silently change meaning between cards.
+`inspect_full_card()` and `validate_full_card()` replay both supplied policies
+and enforce complete Confidence coverage, exact Top 5 count and ranks, snapshot
+integrity, and provenance.
+
+Generation still creates a draft: passing `official_ready` means every contest
+gate is satisfied, not that the card was automatically published. New
+`official` rows are blocked until a validated publication service is added.
+Contest ranking remains separate from sportsbook recommendations. The legacy
+`models/card_generator.py` remains unchanged as a compatibility path and is not
+used by this engine.
