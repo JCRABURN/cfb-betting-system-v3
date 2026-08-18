@@ -951,3 +951,50 @@ credential, scheduled workflow, wager, authoritative database write, or model
 promotion was introduced. The EPA-only production baseline and locked research
 promotion criteria remain unchanged; rejected research candidates are not on a
 production path.
+
+## 28. Official card publication and weekly controller (2026-08-18)
+
+Migration 14 adds a single authoritative operating boundary over the existing
+line, model, adjustment, card, refresh, and reproducibility services. It adds
+immutable controller policies and required-source rules, controller runs,
+contest line-lock batches, per-card freshness/fallback decisions, and official
+publication envelopes. It does not alter the old immutable card schema.
+
+An official version is now defined by `official_card_publications`, not by a
+mutable status transition on `contest_cards`. The envelope is inserted last in
+the same transaction as the card and contains the locked snapshot hash,
+canonical publication-manifest hash, expected/published pick counts, exact Top
+5 count, fallback count, controller identity, and provenance. Database triggers
+independently verify complete coverage, side/Confidence/rank bounds, manifests,
+policy assignments, source decisions, line-batch custody, and daily revision
+chains before the row can exist.
+
+The Tuesday controller requires a declared complete SplashSports batch. All raw
+names pass through the Milestone 14 canonical resolver, and unknown, ambiguous,
+duplicate, reversed, missing, or conflicting mappings fail the transaction.
+Every imported matchup is locked exactly once and the full set is hashed.
+
+The production model path imports only `baseline_epa` and the sanctioned
+point-in-time backtest accessors. It records a fixed EPA-only model, feature,
+and configuration version. Missing inputs become explicit model skips; they do
+not omit contest games because the full-card hierarchy continues to an audited
+fallback. Research candidates and their locked promotion criteria are not
+changed or imported.
+
+Each official version records current/partial/stale/missing status for odds,
+injuries, weather, game status, and contextual data. Any non-current state
+requires the exact fallback code permitted by the versioned controller policy,
+plus reason, evidence, and provenance. Legacy market-line fallback is disabled
+for official cards because `betting_lines` does not yet retain direct custody
+acceptance lineage; the locked-line fallback remains explicit and complete.
+
+Wednesday-through-Saturday execution starts only from the latest valid
+publication and delegates card history to the existing daily-refresh service.
+Policy changes and revision branching fail. The original locked-line row never
+changes; an explicit correction remains a separate append-only object and must
+use a data-correction revision.
+
+Dry-run mode executes the complete path on an isolated in-memory database
+clone. `scripts.inspect_official_card` opens SQLite read-only/query-only and
+recomputes the card and publication hashes. No schedule, live adapter,
+credential, wager, dashboard publication, or production cutover was enabled.

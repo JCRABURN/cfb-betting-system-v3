@@ -228,6 +228,31 @@ The command refuses `data/cfb.db` and makes no live API call. Full custody,
 quarantine, freshness, replay, and recovery details are in
 `docs/INGESTION_CUSTODY.md`.
 
+## Official weekly controller
+
+`business_entities.weekly_controller` is the authoritative Tuesday-through-
+Saturday contest path. Tuesday imports one declared complete SplashSports line
+batch, resolves every team centrally, locks every matchup once, runs only the
+EPA-only baseline, applies separately recorded adjustments, generates a side
+and Confidence for every locked game, ranks the exact Top 5, and inserts an
+immutable official-publication envelope only after all gates pass.
+
+Daily refreshes start from the latest official publication, retain every prior
+version and pick change, and cannot change policy versions midweek. All five
+provider source types must be current or have an explicit versioned fallback.
+Dry run executes the same path in an isolated in-memory clone.
+
+Inspect an official version without writes:
+
+```text
+python -m scripts.inspect_official_card \
+  --database path/to/database.db \
+  --publication-key PUBLICATION_KEY
+```
+
+See `docs/WEEKLY_CONTROLLER.md` for the publication contract, fallback rules,
+daily revision behavior, recovery procedure, and current operational limits.
+
 ## Reproduce a prior card
 
 Every new full-card snapshot has an immutable `card_run_manifests` record. It

@@ -177,6 +177,19 @@ be replaced, updated, or deleted. The migration adds no diagnostic policies or
 runs, no recommendations, and no model, ranking, Confidence, card, line, audit,
 workflow, or authoritative database rows.
 
+## Official weekly controller
+
+Migration 14 creates immutable weekly-controller policies and required-source
+rules, controller runs, contest line-lock batches, per-card source decisions,
+and official-card publication envelopes. It adds no policy, controller, line,
+model, card, or publication rows and does not alter the immutable card table.
+
+An official publication trigger rejects incomplete coverage, invalid
+Confidence or ranking, missing manifests/policies, missing source evidence,
+line-snapshot disagreement, and broken daily revision chains. Publication
+rows, controller custody, line batches, and freshness decisions are append-only.
+See `docs/WEEKLY_CONTROLLER.md` for the operating contract and recovery steps.
+
 ## Recovery
 
 SQLite DDL is applied inside one transaction per migration. A failed migration
