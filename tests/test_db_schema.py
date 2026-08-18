@@ -26,6 +26,9 @@ def test_init_db_creates_all_tables(temp_db):
         "provider_ingestion_rejections", "provider_ingestion_acceptances",
         "provider_market_snapshots",
         "provider_data_snapshots",
+        "weekly_controller_policies", "weekly_controller_policy_sources",
+        "weekly_controller_runs", "contest_line_lock_batches",
+        "card_source_freshness", "official_card_publications",
     }
     assert expected.issubset(tables)
     conn.close()

@@ -18,6 +18,7 @@ from migrations.versions import (
     v0011_complete_postgame_audits,
     v0012_weekly_diagnostics,
     v0013_provider_ingestion_custody,
+    v0014_official_weekly_controller,
 )
 
 
@@ -35,4 +36,5 @@ MIGRATION_MODULES = (
     v0011_complete_postgame_audits,
     v0012_weekly_diagnostics,
     v0013_provider_ingestion_custody,
+    v0014_official_weekly_controller,
 )
