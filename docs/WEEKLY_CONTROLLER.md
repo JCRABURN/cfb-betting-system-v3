@@ -198,4 +198,5 @@ delete migration-ledger rows or manually drop publication objects in place.
   value.
 - Automatic publication scheduling and production cutover remain Milestone 17
   work.
-- Historical end-to-end dress rehearsal remains Milestone 16 work.
+- The deterministic historical end-to-end dress rehearsal is documented in
+  `docs/HISTORICAL_REHEARSAL.md`.

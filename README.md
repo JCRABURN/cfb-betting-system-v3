@@ -253,6 +253,24 @@ python -m scripts.inspect_official_card \
 See `docs/WEEKLY_CONTROLLER.md` for the publication contract, fallback rules,
 daily revision behavior, recovery procedure, and current operational limits.
 
+## Historical lifecycle rehearsal
+
+Milestone 16 replays the six-game 2024 Week 15 Saturday contest slate through
+Tuesday lock, Wednesday-Friday refreshes, Saturday final publication, postgame
+grading, CLV/hook/key-number classification, weekly diagnostics, Lessons
+Learned, and numeric policy recommendations. The source database is opened
+read-only and all writes occur in an in-memory clone.
+
+```text
+python -m scripts.run_historical_rehearsal \
+  --database data/cfb.db \
+  --code-commit-sha COMMIT_SHA \
+  --pretty
+```
+
+See `docs/HISTORICAL_REHEARSAL.md` for the locked fixture, timestamps, expected
+results, temporal isolation, failure behavior, and limitations.
+
 ## Reproduce a prior card
 
 Every new full-card snapshot has an immutable `card_run_manifests` record. It

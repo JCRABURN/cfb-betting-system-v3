@@ -71,6 +71,14 @@ from business_entities.full_card import (
     inspect_full_card,
     validate_full_card,
 )
+from business_entities.historical_rehearsal import (
+    HistoricalCardVersion,
+    HistoricalPickResult,
+    HistoricalPolicyRecommendation,
+    HistoricalRehearsalError,
+    HistoricalRehearsalReport,
+    run_historical_rehearsal,
+)
 from business_entities.modeling import (
     ModelPrediction,
     ModelRun,
@@ -198,6 +206,11 @@ __all__ = [
     "DailyRefreshRequest",
     "ContextualAdjustmentInput",
     "FreshnessFallbackDecision",
+    "HistoricalCardVersion",
+    "HistoricalPickResult",
+    "HistoricalPolicyRecommendation",
+    "HistoricalRehearsalError",
+    "HistoricalRehearsalReport",
     "ManualAdjustment",
     "ManualAdjustmentPolicy",
     "ModelPrediction",
@@ -300,6 +313,7 @@ __all__ = [
     "register_weekly_controller_policy",
     "run_daily_controller",
     "run_epa_only_model",
+    "run_historical_rehearsal",
     "run_tuesday_controller",
     "refresh_full_card",
     "reproduce_card",

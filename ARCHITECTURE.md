@@ -998,3 +998,34 @@ Dry-run mode executes the complete path on an isolated in-memory database
 clone. `scripts.inspect_official_card` opens SQLite read-only/query-only and
 recomputes the card and publication hashes. No schedule, live adapter,
 credential, wager, dashboard publication, or production cutover was enabled.
+
+## 29. Historical end-to-end rehearsal (2026-08-18)
+
+Milestone 16 adds no schema and no competing card engine. The rehearsal module
+composes the Milestone 14 custody service, Milestone 15 controller, immutable
+daily revisions, reproducibility service, complete postgame audit, and weekly
+diagnostics against a fixed six-game 2024 Week 15 Saturday contest slate.
+
+The committed database is opened in read-only mode and backed up into memory.
+Pending migrations and all rehearsal writes occur only in that clone. Target
+scores are removed from the clone before Tuesday modeling and restored only
+after the Saturday final publication. Archived openers become a clearly marked
+simulated SplashSports line fixture; archived closers are copied to replay rows
+with point-in-time-safe pre-kickoff capture timestamps for grading.
+
+The lifecycle produces five official versions, four append-only revisions,
+complete per-pick history, an exact Top 5, final grading and CLV, hook and key-
+number classifications, adjustment-effect evaluation, diagnostics, Lessons
+Learned, and numeric recommendations that cannot activate themselves. Every
+official version is reproduced from its persisted run and manifest identifiers.
+
+One Saturday adjustment is explicitly synthetic and exists only to exercise
+raw-versus-adjusted audit behavior. It is not represented as historical fact.
+The final card records `no_bet`; no wager path is enabled. The EPA-only model
+and locked promotion criteria remain unchanged.
+
+`scripts.run_historical_rehearsal` emits a canonical report hash and verifies
+the authoritative database hash before and after execution, SQLite integrity,
+foreign keys, line immutability, audit completeness, and diagnostics
+completeness. Live provider connectivity, credentials, schedules, and
+production cutover remain out of scope.
