@@ -20,13 +20,13 @@ whether fetch_stats.py ran earlier in the SAME job.
 import os
 import sys
 import json
-import unicodedata
 import requests
 from datetime import datetime
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 import db
 import fetch_stats
+from ingestion.custody import CanonicalTeamResolver, DEFAULT_TEAM_ALIASES
 
 ODDS_API_KEY = os.environ.get("ODDS_API_KEY", "")
 ODDS_BASE = "https://api.the-odds-api.com/v4"
@@ -47,11 +47,7 @@ BOOKMAKERS = "draftkings,fanduel,betmgm"
 # normalization fixes these; more may surface over time as new pairs are hit.
 # Keyed by the odds-side name (or its distinctive prefix), valued by the
 # corresponding CFBD school name.
-KNOWN_TEAM_ALIASES = {
-    "Appalachian State": "App State",
-    "UMass": "Massachusetts",
-    "Southern Mississippi": "Southern Miss",
-}
+KNOWN_TEAM_ALIASES = DEFAULT_TEAM_ALIASES["the_odds_api"]
 
 
 def fetch_current_lines():
@@ -185,15 +181,6 @@ def load_school_names(conn):
     return [r[0] for r in conn.execute("SELECT school FROM teams").fetchall()]
 
 
-def _normalize(name):
-    """Strip accents and apostrophes so "Hawai'i"/"Hawaii" and "San José"/
-    "San Jose" compare equal without needing a hardcoded alias for every
-    diacritic difference between the two APIs."""
-    name = name.replace("’", "'").replace("'", "")
-    nfkd = unicodedata.normalize("NFKD", name)
-    return "".join(c for c in nfkd if not unicodedata.combining(c))
-
-
 def resolve_school_name(schools, odds_team_name):
     """The Odds API includes the mascot in team names (e.g. "TCU Horned Frogs",
     "NC State Wolfpack"); CFBD uses bare school names ("TCU", "NC State") --
@@ -208,19 +195,8 @@ def resolve_school_name(schools, odds_team_name):
     Falls back to the raw odds_team_name if nothing matches, so a resolution
     failure never silently drops the row -- it just won't join to a CFBD game_id.
     """
-    for alias, canonical in KNOWN_TEAM_ALIASES.items():
-        if (odds_team_name == alias or odds_team_name.startswith(alias + " ")) and canonical in schools:
-            return canonical
-
-    normalized_name = _normalize(odds_team_name)
-    for school in schools:
-        if _normalize(school) == normalized_name:
-            return school
-
-    candidates = [s for s in schools if normalized_name.startswith(_normalize(s) + " ")]
-    if not candidates:
-        return odds_team_name
-    return max(candidates, key=len)
+    resolution = CanonicalTeamResolver(schools).resolve("the_odds_api", odds_team_name)
+    return resolution.canonical_name if resolution.status == "resolved" else odds_team_name
 
 
 def opening_line_recorded(conn, week, year):

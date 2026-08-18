@@ -199,6 +199,35 @@ code commit, feature-schema/configuration versions, fold membership, skips,
 predictions, metrics, decisions, and canonical ledger hash in JSON on stdout.
 It performs no API calls and writes no files or database rows.
 
+## Provider ingestion custody
+
+`ingestion.custody` is the fixture-driven boundary for provider data. Each run
+records provider, endpoint without query credentials, sanitized request
+parameters, UTC request time, parser version, exact payload checksum, replay
+reference, accepted/rejected counts, and final status. Invalid records are
+quarantined with stable reason codes. Every typed adapter records an immutable
+provider-neutral acceptance, and only strictly validated, canonically mapped
+spread records enter immutable `provider_market_snapshots`.
+
+Freshness policy `provider_freshness_v1` defines explicit windows for odds,
+injuries, weather, game status, and contextual data. Its as-of inspection API
+returns current, partial, stale, or missing without reading a future run. A
+partial/stale/missing source must be handled by an explicit controller fallback
+and can never justify omitting a locked lined game.
+
+Use the offline-only fixture replay command with a disposable database:
+
+```text
+python -m ingestion.replay \
+  --database path/to/disposable.db \
+  --fixture tests/fixtures/provider_ingestion/odds_valid.json \
+  --requested-at 2026-08-25T15:00:00+00:00
+```
+
+The command refuses `data/cfb.db` and makes no live API call. Full custody,
+quarantine, freshness, replay, and recovery details are in
+`docs/INGESTION_CUSTODY.md`.
+
 ## Reproduce a prior card
 
 Every new full-card snapshot has an immutable `card_run_manifests` record. It
