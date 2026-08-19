@@ -1,7 +1,8 @@
-.PHONY: safety test verify-cfbd verify-migrations
+.PHONY: production-preflight safety test verify-cfbd verify-migrations
 
 YEAR ?= 2025
 WEEK ?= 10
+OPERATION ?= tuesday_lock
 
 test:
 	python -m pytest -q
@@ -11,6 +12,9 @@ safety:
 
 verify-migrations:
 	python -m scripts.verify_migrations
+
+production-preflight:
+	python -m scripts.production_preflight --operation $(OPERATION) --database data/cfb.db
 
 # One real call per CFBD endpoint fetch_stats.py/backfill_historical_stats.py use;
 # checks the field names those scripts assume against the live response.

@@ -1,0 +1,157 @@
+name: V3 Production Operations Gate
+
+on:
+  # Schedules remain intentionally absent until explicit owner authorization.
+  workflow_dispatch:
+    inputs:
+      operation:
+        description: Governed operating stage
+        required: true
+        type: choice
+        options:
+          - tuesday_lock
+          - wednesday_refresh
+          - thursday_refresh
+          - friday_refresh
+          - saturday_final
+          - postgame_grading
+          - weekly_audit
+      season:
+        description: Four-digit CFB season
+        required: true
+        type: string
+      week:
+        description: CFB week number
+        required: true
+        type: string
+      confirmation:
+        description: Enter RUN_V3_OPERATION after completing the runbook
+        required: true
+        type: string
+
+concurrency:
+  # One lock covers every writer for the same repository/week.
+  group: v3-production-writer-${{ github.repository }}-${{ inputs.season }}-${{ inputs.week }}
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+
+jobs:
+  guard-rejected:
+    if: >-
+      github.repository != 'JCRABURN/cfb-betting-system-v3' ||
+      vars.CFB_V3_PRODUCTION_ENABLED != 'true' ||
+      vars.CFB_V3_OPERATION_EXECUTION_ENABLED != 'true' ||
+      vars.CFB_V3_KILL_SWITCH != 'false' ||
+      vars.CFB_V3_OWNER_CUTOVER_APPROVED != 'true' ||
+      inputs.confirmation != 'RUN_V3_OPERATION'
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      contents: read
+    steps:
+      - name: Record rejected authorization
+        run: |
+          {
+            echo "## V3 production operation rejected"
+            echo "An authorization or kill-switch guard blocked the request."
+            echo "No checkout, credential access, API call, or database operation occurred."
+          } >> "$GITHUB_STEP_SUMMARY"
+          exit 1
+
+  guarded-operation:
+    if: >-
+      github.repository == 'JCRABURN/cfb-betting-system-v3' &&
+      vars.CFB_V3_PRODUCTION_ENABLED == 'true' &&
+      vars.CFB_V3_OPERATION_EXECUTION_ENABLED == 'true' &&
+      vars.CFB_V3_KILL_SWITCH == 'false' &&
+      vars.CFB_V3_OWNER_CUTOVER_APPROVED == 'true' &&
+      inputs.confirmation == 'RUN_V3_OPERATION'
+    environment: v3-production
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    permissions:
+      contents: read
+    env:
+      CFB_V3_RUNTIME_MODE: production
+      CFB_V3_PRODUCTION_ENABLED: ${{ vars.CFB_V3_PRODUCTION_ENABLED }}
+      CFB_V3_OPERATION_EXECUTION_ENABLED: ${{ vars.CFB_V3_OPERATION_EXECUTION_ENABLED }}
+      CFB_V3_KILL_SWITCH: ${{ vars.CFB_V3_KILL_SWITCH }}
+      CFB_V3_OWNER_CUTOVER_APPROVED: ${{ vars.CFB_V3_OWNER_CUTOVER_APPROVED }}
+      CFB_V3_REPOSITORY: JCRABURN/cfb-betting-system-v3
+      CFB_V3_DATABASE_PATH: data/cfb.db
+      CFB_V3_PROVIDER_CONNECTIVITY_AUTHORIZED: ${{ vars.CFB_V3_PROVIDER_CONNECTIVITY_AUTHORIZED }}
+      CFB_V3_PROVIDER_CONNECTIVITY_VERIFIED_AT: ${{ vars.CFB_V3_PROVIDER_CONNECTIVITY_VERIFIED_AT }}
+      CFB_V3_SEASON: ${{ inputs.season }}
+      CFB_V3_WEEK: ${{ inputs.week }}
+      CFB_V3_CONTEST_KEY: ${{ vars.CFB_V3_CONTEST_KEY }}
+      CFB_V3_CONTEST_NAME: ${{ vars.CFB_V3_CONTEST_NAME }}
+      CFB_V3_SOURCE_CONTEST_ID: ${{ vars.CFB_V3_SOURCE_CONTEST_ID }}
+      CFB_V3_CONTEST_SOURCE: SplashSports
+      CFB_V3_EXPECTED_LINED_GAME_COUNT: ${{ vars.CFB_V3_EXPECTED_LINED_GAME_COUNT }}
+      CFB_V3_CONTEST_LINES_FILE: ${{ vars.CFB_V3_CONTEST_LINES_FILE }}
+      CFB_V3_CONTEST_LINES_SHA256: ${{ vars.CFB_V3_CONTEST_LINES_SHA256 }}
+      CFB_V3_MODEL_NAME: epa_only
+      CFB_V3_MODEL_VERSION: epa-only-linear-v1
+      CFB_V3_FEATURE_SCHEMA_VERSION: epa-differential-v1
+      CFB_V3_CONFIGURATION_VERSION: walk-forward-prior-seasons-v1
+      CFB_V3_CONTROLLER_POLICY_VERSION: ${{ vars.CFB_V3_CONTROLLER_POLICY_VERSION }}
+      CFB_V3_SELECTION_POLICY_VERSION: ${{ vars.CFB_V3_SELECTION_POLICY_VERSION }}
+      CFB_V3_CONFIDENCE_POLICY_VERSION: ${{ vars.CFB_V3_CONFIDENCE_POLICY_VERSION }}
+      CFB_V3_RANKING_POLICY_VERSION: ${{ vars.CFB_V3_RANKING_POLICY_VERSION }}
+      CFB_V3_ADJUSTMENT_POLICY_VERSION: ${{ vars.CFB_V3_ADJUSTMENT_POLICY_VERSION }}
+      CFB_V3_REFRESH_POLICY_VERSION: ${{ vars.CFB_V3_REFRESH_POLICY_VERSION }}
+      CFB_V3_AUDIT_POLICY_VERSION: ${{ vars.CFB_V3_AUDIT_POLICY_VERSION }}
+      CFB_V3_DIAGNOSTICS_POLICY_VERSION: ${{ vars.CFB_V3_DIAGNOSTICS_POLICY_VERSION }}
+      CFBD_API_KEY: ${{ secrets.CFBD_API_KEY }}
+      ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
+
+    steps:
+      - name: Checkout exact requested commit
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: pip
+          cache-dependency-path: requirements.txt
+
+      - name: Install locked dependencies
+        run: python -m pip install --requirement requirements.txt
+
+      - name: Verify repository safety controls
+        run: python scripts/verify_repo_safety.py
+
+      - name: Run guarded operation
+        id: operation
+        run: >-
+          python -m scripts.run_production_operation
+          --operation "${{ inputs.operation }}"
+          --database data/cfb.db
+          --preflight-output "$RUNNER_TEMP/v3-production-preflight.json"
+
+      - name: Upload redacted preflight report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: >-
+            v3-production-preflight-${{ inputs.season }}-${{ inputs.week }}-${{ inputs.operation }}
+          path: ${{ runner.temp }}/v3-production-preflight.json
+          if-no-files-found: ignore
+          retention-days: 14
+
+      - name: Record operation outcome
+        if: always()
+        run: |
+          {
+            echo "## V3 production operation"
+            echo "- Operation: ${{ inputs.operation }}"
+            echo "- Season/week: ${{ inputs.season }}/${{ inputs.week }}"
+            echo "- Outcome: ${{ steps.operation.outcome }}"
+            echo "- Production mutation remains blocked until every preflight gate"
+            echo "  passes and an owner-authorized adapter is installed."
+          } >> "$GITHUB_STEP_SUMMARY"

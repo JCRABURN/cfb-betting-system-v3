@@ -1029,3 +1029,35 @@ the authoritative database hash before and after execution, SQLite integrity,
 foreign keys, line immutability, audit completeness, and diagnostics
 completeness. Live provider connectivity, credentials, schedules, and
 production cutover remain out of scope.
+
+## 30. Production cutover readiness (2026-08-19)
+
+Milestone 17 adds a typed environment boundary and read-only preflight rather
+than enabling production prematurely. Configuration defaults fail closed and
+separates development, repository production enablement, per-operation
+execution permission, explicit owner approval, provider authorization, and the
+kill switch. Credential values never enter the settings object or report.
+
+The preflight verifies the exact V3 root, GitHub identity, origin, and database
+target; governed migrations; SQLite integrity and foreign keys; current
+season/week coverage; authorized contest-manifest hash, normalization, and
+complete matchup mapping; immutable policy registrations; the EPA-only model
+contract; five-source freshness thresholds; workflow safety; line-lock state;
+and stable operation idempotency. It opens the database read-only, performs no
+live calls, and proves the database hash is unchanged.
+
+One manual workflow gateway covers Tuesday lock, Wednesday-Saturday refreshes,
+postgame grading, and completed weekly audit. A shared repository/week
+concurrency group prevents overlapping writers. Exact repository, production,
+execution, owner-approval, kill-switch, and confirmation guards protect a
+`v3-production` environment. Repository permissions remain read-only,
+checkout credentials do not persist, schedules are absent, and redacted
+preflight artifacts plus job summaries preserve failure evidence.
+
+The current machine result is `PRODUCTION READY: NO`. The committed database
+lacks the governed migration ledger and registered production policies; live
+credentials and connectivity evidence are external; a current authorized line
+manifest is absent; and no owner-authorized live execution adapter or
+persistence step is installed. Tests do not override those blockers. The
+remaining authorization and recovery sequence is documented in
+`docs/PRODUCTION_CUTOVER.md`.

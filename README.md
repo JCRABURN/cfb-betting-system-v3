@@ -33,6 +33,10 @@ keeps their data-writing jobs inert outside `JCRABURN/cfb-betting-system`.
 Do not weaken or remove those controls without explicit repository-owner
 approval and a dedicated pull request.
 
+The additional V3 production gateway is manual-only, read-only, protected by
+independent production/execution/owner flags and a kill switch, and currently
+stops at preflight because no live execution adapter is authorized.
+
 ## Database migrations
 
 Schema changes use ordered, checksummed migration modules and a
@@ -270,6 +274,25 @@ python -m scripts.run_historical_rehearsal \
 
 See `docs/HISTORICAL_REHEARSAL.md` for the locked fixture, timestamps, expected
 results, temporal isolation, failure behavior, and limitations.
+
+## Production cutover preflight
+
+Milestone 17 adds a read-only preflight for configuration, repository identity,
+migrations, SQLite integrity, foreign keys, credentials by variable name,
+provider authorization, season/week, contest lines, active policies, the
+EPA-only model lock, stale-data thresholds, workflow safety, write-path safety,
+line-lock readiness, and idempotency.
+
+```text
+python -m scripts.production_preflight \
+  --operation tuesday_lock \
+  --database data/cfb.db \
+  --pretty
+```
+
+The current truthful result is `PRODUCTION READY: NO`. See
+`docs/PRODUCTION_CUTOVER.md` for all blockers, environment-variable names,
+workflow stages, kill-switch procedure, and recovery instructions.
 
 ## Reproduce a prior card
 
