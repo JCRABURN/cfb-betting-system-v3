@@ -193,10 +193,11 @@ delete migration-ledger rows or manually drop publication objects in place.
 
 - Live provider transport adapters remain disabled. The optional refresh hook
   must use Milestone 14 custody when an authorized adapter is later supplied.
-- No scheduled workflow is added or enabled.
+- The Milestone 17 gateway is manual-only and preflight-only; no scheduled
+  workflow is added or enabled.
 - Production credentials are not required, read, logged, or documented by
   value.
-- Automatic publication scheduling and production cutover remain Milestone 17
-  work.
+- Production cutover remains blocked by the explicit findings in
+  `docs/PRODUCTION_CUTOVER.md`.
 - The deterministic historical end-to-end dress rehearsal is documented in
   `docs/HISTORICAL_REHEARSAL.md`.
