@@ -15,6 +15,19 @@ from operations.preflight import (
     ProductionPreflightReport,
     run_production_preflight,
 )
+from operations.execution import (
+    EXECUTION_ADAPTER_VERSION,
+    ProductionExecutionError,
+    ProductionExecutionResult,
+    execute_production_operation,
+)
+from operations.weekly_config import (
+    WEEKLY_CONFIGURATION_VERSION,
+    WeeklyConfigurationError,
+    WeeklyOperationConfiguration,
+    load_weekly_configuration,
+    merge_weekly_environment,
+)
 
 __all__ = [
     "ACTIVE_CONFIGURATION_VERSION",
@@ -28,4 +41,13 @@ __all__ = [
     "ProductionSettings",
     "load_production_settings",
     "run_production_preflight",
+    "EXECUTION_ADAPTER_VERSION",
+    "ProductionExecutionError",
+    "ProductionExecutionResult",
+    "execute_production_operation",
+    "WEEKLY_CONFIGURATION_VERSION",
+    "WeeklyConfigurationError",
+    "WeeklyOperationConfiguration",
+    "load_weekly_configuration",
+    "merge_weekly_environment",
 ]

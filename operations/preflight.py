@@ -35,7 +35,7 @@ from operations.config import (
 
 
 CONNECTIVITY_EVIDENCE_MAX_AGE = timedelta(hours=24)
-LIVE_EXECUTION_ADAPTER_AVAILABLE = False
+LIVE_EXECUTION_ADAPTER_AVAILABLE = True
 EXPECTED_POLICY_TABLES = (
     "weekly_controller_policies",
     "contest_selection_policies",
@@ -169,6 +169,7 @@ def _configuration_checks(
     *,
     now: datetime,
     checks: list[PreflightCheck],
+    allow_disposable_database: bool,
 ) -> None:
     _record(
         checks,
@@ -275,8 +276,12 @@ def _configuration_checks(
     _record(
         checks,
         "write_path",
-        settings.database_path == expected_database,
-        "database write target is exactly the V3 authoritative database path",
+        settings.database_path == expected_database or allow_disposable_database,
+        (
+            "database target is an explicitly authorized disposable copy"
+            if allow_disposable_database and settings.database_path != expected_database
+            else "database write target is exactly the V3 authoritative database path"
+        ),
         "CFB_V3_DATABASE_PATH must resolve exactly to data/cfb.db inside the V3 root",
     )
 
@@ -780,16 +785,19 @@ def _line_lock_readiness(
         )
         manifest_fingerprint = tuple(
             sorted(
-                (
-                    line["raw_home_team"].strip(),
-                    line["raw_away_team"].strip(),
-                    float(line["home_spread"]),
-                    None if line.get("total") is None else float(line["total"]),
-                    line["source_line_id"].strip(),
-                    "SplashSports",
-                    settings.contest_lines_sha256,
-                )
-                for line in manifest_payload["lines"]
+                [
+                    (
+                        line["raw_home_team"].strip(),
+                        line["raw_away_team"].strip(),
+                        float(line["home_spread"]),
+                        None if line.get("total") is None else float(line["total"]),
+                        line["source_line_id"].strip(),
+                        "SplashSports",
+                        settings.contest_lines_sha256,
+                    )
+                    for line in manifest_payload["lines"]
+                ],
+                key=lambda item: item[4],
             )
         )
     except (AttributeError, KeyError, OSError, TypeError, ValueError):
@@ -1134,6 +1142,7 @@ def run_production_preflight(
     settings: ProductionSettings,
     *,
     now: datetime | None = None,
+    allow_disposable_database: bool = False,
 ) -> ProductionPreflightReport:
     """Run every cutover gate without applying migrations, calling APIs, or writing."""
     generated_at = now or datetime.now(timezone.utc)
@@ -1141,7 +1150,12 @@ def run_production_preflight(
         raise ValueError("preflight now must be timezone-aware UTC")
     generated_at = generated_at.astimezone(timezone.utc)
     checks: list[PreflightCheck] = []
-    _configuration_checks(settings, now=generated_at, checks=checks)
+    _configuration_checks(
+        settings,
+        now=generated_at,
+        checks=checks,
+        allow_disposable_database=allow_disposable_database,
+    )
 
     try:
         safety_errors = repository_errors(settings.repository_root)
@@ -1160,8 +1174,7 @@ def run_production_preflight(
         "authorized_execution_adapter",
         LIVE_EXECUTION_ADAPTER_AVAILABLE,
         "an owner-authorized V3 execution adapter is installed",
-        "no owner-authorized live execution adapter or persistence step is installed; "
-        "the workflow remains preflight-only",
+        "production execution adapter availability check failed",
     )
 
     blockers = tuple(check.detail for check in checks if check.status == "block")

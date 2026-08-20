@@ -1057,7 +1057,47 @@ preflight artifacts plus job summaries preserve failure evidence.
 The current machine result is `PRODUCTION READY: NO`. The committed database
 lacks the governed migration ledger and registered production policies; live
 credentials and connectivity evidence are external; a current authorized line
-manifest is absent; and no owner-authorized live execution adapter or
-persistence step is installed. Tests do not override those blockers. The
+manifest is absent; and owner cutover authorization is disabled. Tests do not
+override those blockers. The
 remaining authorization and recovery sequence is documented in
 `docs/PRODUCTION_CUTOVER.md`.
+
+## 31. Final cutover blocker remediation (2026-08-19)
+
+The production execution adapter now orchestrates existing governed services
+without reimplementing their betting logic. It loads only registered policies,
+replays checksummed provider bundles through ingestion custody, calls the
+EPA-only weekly controller for Tuesday and daily stages, calls complete audit
+and diagnostics services postgame, and never exposes a wager-placement path.
+Official publications retain the controller's atomic transaction. Stable
+business keys provide idempotency; GitHub concurrency plus an exclusive
+database lock file prevent overlapping writers and leave stale-lock recovery
+manual and fail closed.
+
+Persisted execution is confined to a dedicated, durable self-hosted runner
+labeled `cfb-v3-production`; the workflow does not use a disposable hosted
+runner for authoritative SQLite writes. Each operation runs against a
+same-filesystem staging copy, validates it, creates a checksummed recovery
+backup, and atomically replaces the authoritative database only on success.
+
+One secret-free weekly JSON contract supplies season, week, contest identity,
+expected count, locked model identifiers, policy versions, freshness rules,
+line-manifest hash, adjustments, and provenance. Manual SplashSports CSV and
+XLSX files, plus human-reviewed screenshot transcriptions with image evidence,
+all converge on one checksummed lock manifest. Every row is canonicalized and
+mapped before lock; ambiguity, duplicates, reversed games, malformed spreads,
+and incomplete counts are rejected rather than guessed.
+
+Live transport is split from execution. Minimal connectivity and payload-
+capture commands require explicit phrases and obtain credentials only from
+`CFBD_API_KEY` and `ODDS_API_KEY`. Raw evidence, normalized records, payload
+hashes, sanitized parameters, quarantine outcomes, and freshness custody are
+preserved. Market captures write only opening/current/closing rows and never
+touch immutable SplashSports locks.
+
+Database cutover tooling rehearses migrations and immutable policy
+registration on a new copy by default. Authoritative mode requires a verified
+backup, engaged kill switch, disabled writers and production, a dedicated
+owner-approval variable, and an exact confirmation. The current readiness
+answer remains `PRODUCTION READY: NO` solely because credentials/current-week
+data and production-state transitions require owner action.

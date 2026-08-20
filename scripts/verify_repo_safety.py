@@ -123,6 +123,10 @@ def v3_production_workflow_errors(
             errors.append(f"{source}: required fail-closed guard is missing: {required_guard}")
     if "environment: v3-production" not in text:
         errors.append(f"{source}: protected v3-production environment is missing")
+    if "runs-on: [self-hosted, cfb-v3-production]" not in text:
+        errors.append(
+            f"{source}: authoritative SQLite execution requires the dedicated durable runner"
+        )
     if not re.search(r"(?m)^permissions:\s*\r?\n\s{2}contents:\s*read\s*$", text):
         errors.append(f"{source}: workflow-level permissions must default to read-only")
     if re.search(r"(?m)^\s+contents:\s*write\s*$", text):
@@ -137,11 +141,22 @@ def v3_production_workflow_errors(
         errors.append(f"{source}: production writers must serialize without cancellation")
     if "persist-credentials: false" not in text:
         errors.append(f"{source}: checkout credentials must not persist")
+    if "clean: false" not in text:
+        errors.append(f"{source}: durable production checkout must preserve operating state")
     if "python -m scripts.run_production_operation" not in text:
         errors.append(f"{source}: guarded production-operation entry point is missing")
+    for adapter_argument in (
+        '--weekly-config "${{ vars.CFB_V3_WEEKLY_CONFIG_FILE }}"',
+        "--mode persist",
+        "--confirmation EXECUTE_V3_OPERATION",
+    ):
+        if adapter_argument not in text:
+            errors.append(
+                f"{source}: production adapter argument is missing: {adapter_argument}"
+            )
     if "python scripts/verify_repo_safety.py" not in text:
         errors.append(f"{source}: repository safety verification is missing")
-    if "actions/upload-artifact@v4" not in text or "GITHUB_STEP_SUMMARY" not in text:
+    if text.count("actions/upload-artifact@v4") < 2 or "GITHUB_STEP_SUMMARY" not in text:
         errors.append(f"{source}: redacted failure artifact or job-summary logging is missing")
     if "guard-rejected:" not in text or "No checkout, credential access" not in text:
         errors.append(f"{source}: rejected authorization must fail visibly without secrets")

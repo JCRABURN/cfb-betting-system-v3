@@ -255,7 +255,7 @@ def _report(root: Path, database: Path, environment: dict[str, str], operation: 
     return run_production_preflight(settings, now=NOW)
 
 
-def test_all_implemented_gates_pass_before_the_explicit_adapter_blocker(
+def test_all_implemented_gates_and_execution_adapter_are_ready(
     near_ready_repository,
 ):
     root, database, line_path = near_ready_repository
@@ -267,14 +267,10 @@ def test_all_implemented_gates_pass_before_the_explicit_adapter_blocker(
         "tuesday_lock",
     )
 
-    assert report.production_ready is False
-    assert report.production_ready_status == "PRODUCTION READY: NO"
-    assert report.blocker_count == 1
-    assert "no owner-authorized live execution adapter" in report.blockers[0]
-    assert all(
-        check.status == "pass" or check.name == "authorized_execution_adapter"
-        for check in report.checks
-    )
+    assert report.production_ready is True
+    assert report.production_ready_status == "PRODUCTION READY: YES"
+    assert report.blocker_count == 0
+    assert all(check.status == "pass" for check in report.checks)
     assert report.source_database_unchanged is True
     assert report.authoritative_database_rows_changed == 0
     assert report.live_api_calls == 0
@@ -431,7 +427,9 @@ def test_cli_reports_not_ready_without_printing_credentials(monkeypatch, capsys)
     assert all(secret not in output.out + output.err for secret in SECRET_SENTINELS)
 
 
-def test_operation_entry_point_refuses_mutation(monkeypatch, capsys):
+def test_operation_entry_point_requires_weekly_configuration_without_mutation(
+    monkeypatch, capsys
+):
     before = _file_sha256(AUTHORITATIVE_DATABASE)
     monkeypatch.setenv("CFBD_API_KEY", SECRET_SENTINELS[0])
     monkeypatch.setenv("ODDS_API_KEY", SECRET_SENTINELS[1])
@@ -441,7 +439,7 @@ def test_operation_entry_point_refuses_mutation(monkeypatch, capsys):
     )
     output = capsys.readouterr()
 
-    assert exit_code == 1
-    assert "PRODUCTION READY: NO" in output.err
+    assert exit_code == 2
+    assert "weekly configuration file is required" in output.err
     assert all(secret not in output.out + output.err for secret in SECRET_SENTINELS)
     assert _file_sha256(AUTHORITATIVE_DATABASE) == before

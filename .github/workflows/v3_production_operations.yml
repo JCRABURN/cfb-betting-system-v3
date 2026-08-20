@@ -69,7 +69,9 @@ jobs:
       vars.CFB_V3_OWNER_CUTOVER_APPROVED == 'true' &&
       inputs.confirmation == 'RUN_V3_OPERATION'
     environment: v3-production
-    runs-on: ubuntu-latest
+    # The authoritative SQLite file must live on an owner-provisioned durable
+    # operating host. A disposable GitHub-hosted runner cannot persist it.
+    runs-on: [self-hosted, cfb-v3-production]
     timeout-minutes: 30
     permissions:
       contents: read
@@ -81,6 +83,7 @@ jobs:
       CFB_V3_OWNER_CUTOVER_APPROVED: ${{ vars.CFB_V3_OWNER_CUTOVER_APPROVED }}
       CFB_V3_REPOSITORY: JCRABURN/cfb-betting-system-v3
       CFB_V3_DATABASE_PATH: data/cfb.db
+      CFB_V3_WEEKLY_CONFIG_FILE: ${{ vars.CFB_V3_WEEKLY_CONFIG_FILE }}
       CFB_V3_PROVIDER_CONNECTIVITY_AUTHORIZED: ${{ vars.CFB_V3_PROVIDER_CONNECTIVITY_AUTHORIZED }}
       CFB_V3_PROVIDER_CONNECTIVITY_VERIFIED_AT: ${{ vars.CFB_V3_PROVIDER_CONNECTIVITY_VERIFIED_AT }}
       CFB_V3_SEASON: ${{ inputs.season }}
@@ -111,6 +114,7 @@ jobs:
       - name: Checkout exact requested commit
         uses: actions/checkout@v4
         with:
+          clean: false
           persist-credentials: false
 
       - name: Set up Python
@@ -132,7 +136,11 @@ jobs:
           python -m scripts.run_production_operation
           --operation "${{ inputs.operation }}"
           --database data/cfb.db
+          --weekly-config "${{ vars.CFB_V3_WEEKLY_CONFIG_FILE }}"
+          --mode persist
+          --confirmation EXECUTE_V3_OPERATION
           --preflight-output "$RUNNER_TEMP/v3-production-preflight.json"
+          --result-output "$RUNNER_TEMP/v3-production-result.json"
 
       - name: Upload redacted preflight report
         if: always()
@@ -144,6 +152,16 @@ jobs:
           if-no-files-found: ignore
           retention-days: 14
 
+      - name: Upload redacted operation result
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: >-
+            v3-production-result-${{ inputs.season }}-${{ inputs.week }}-${{ inputs.operation }}
+          path: ${{ runner.temp }}/v3-production-result.json
+          if-no-files-found: ignore
+          retention-days: 14
+
       - name: Record operation outcome
         if: always()
         run: |
@@ -152,6 +170,5 @@ jobs:
             echo "- Operation: ${{ inputs.operation }}"
             echo "- Season/week: ${{ inputs.season }}/${{ inputs.week }}"
             echo "- Outcome: ${{ steps.operation.outcome }}"
-            echo "- Production mutation remains blocked until every preflight gate"
-            echo "  passes and an owner-authorized adapter is installed."
+            echo "- The adapter executes only after every preflight gate passes."
           } >> "$GITHUB_STEP_SUMMARY"

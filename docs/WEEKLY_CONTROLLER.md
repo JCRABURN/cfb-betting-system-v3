@@ -191,10 +191,15 @@ delete migration-ledger rows or manually drop publication objects in place.
 
 ## Operational limitations
 
-- Live provider transport adapters remain disabled. The optional refresh hook
-  must use Milestone 14 custody when an authorized adapter is later supplied.
-- The Milestone 17 gateway is manual-only and preflight-only; no scheduled
-  workflow is added or enabled.
+- The production adapter accepts only controlled provider bundles captured
+  after explicit authorization and replays them through Milestone 14 custody.
+  No live call occurs during ordinary tests or preflight.
+- The production gateway is manual-only and read-only by default; no scheduled
+  workflow is added or enabled. Persist mode requires every cutover guard,
+  exact confirmation, a dedicated durable self-hosted runner, and a writer
+  lock. It verifies a same-filesystem staging copy, creates a checksummed
+  recovery backup, and atomically replaces the authoritative database only on
+  success.
 - Production credentials are not required, read, logged, or documented by
   value.
 - Production cutover remains blocked by the explicit findings in
