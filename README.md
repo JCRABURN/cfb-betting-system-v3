@@ -33,9 +33,15 @@ keeps their data-writing jobs inert outside `JCRABURN/cfb-betting-system`.
 Do not weaken or remove those controls without explicit repository-owner
 approval and a dedicated pull request.
 
-The additional V3 production gateway is manual-only, read-only, protected by
-independent production/execution/owner flags and a kill switch, and currently
-stops at preflight because no live execution adapter is authorized.
+The additional V3 production gateway is manual-only, protected by independent
+production/execution/owner flags and a kill switch, and read-only by default.
+Its installed adapter can persist only after a passing preflight, exact CLI
+confirmation, protected-environment approval, and cross-process writer lock.
+Persisted workflow execution requires the dedicated durable
+`cfb-v3-production` self-hosted runner; disposable hosted runners are not
+allowed to write the authoritative SQLite database. Each operation verifies a
+staging copy, creates a checksummed recovery backup, and atomically replaces
+the database only after success. No schedule is enabled.
 
 ## Database migrations
 
@@ -277,7 +283,7 @@ results, temporal isolation, failure behavior, and limitations.
 
 ## Production cutover preflight
 
-Milestone 17 adds a read-only preflight for configuration, repository identity,
+The cutover layer includes a read-only preflight for configuration, repository identity,
 migrations, SQLite integrity, foreign keys, credentials by variable name,
 provider authorization, season/week, contest lines, active policies, the
 EPA-only model lock, stale-data thresholds, workflow safety, write-path safety,
@@ -292,7 +298,10 @@ python -m scripts.production_preflight \
 
 The current truthful result is `PRODUCTION READY: NO`. See
 `docs/PRODUCTION_CUTOVER.md` for all blockers, environment-variable names,
-workflow stages, kill-switch procedure, and recovery instructions.
+manual CSV/XLSX/screenshot input, provider evidence capture, database rehearsal,
+workflow stages, kill-switch procedure, and recovery instructions. Code and
+repository-preparation blockers are resolved; owner credentials, current-week
+input, authoritative migration, and explicit cutover approval remain.
 
 ## Reproduce a prior card
 

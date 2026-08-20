@@ -1,0 +1,63 @@
+{
+  "configuration_version": "v3-production-policies-v1",
+  "repository": "JCRABURN/cfb-betting-system-v3",
+  "effective_at": "2026-08-01T00:00:00+00:00",
+  "created_by": "repository-owner",
+  "provenance": "proposed-v3-production-policy-registration-requires-owner-approval",
+  "versions": {
+    "controller": "production-controller-v1",
+    "selection": "production-selection-v1",
+    "confidence": "production-confidence-v1",
+    "ranking": "production-ranking-v1",
+    "adjustment": "production-adjustment-v1",
+    "refresh": "production-refresh-v1",
+    "audit": "production-audit-v1",
+    "diagnostics": "production-diagnostics-v1"
+  },
+  "controller": {
+    "required_sources": [
+      {
+        "data_type": "odds",
+        "provider": "the_odds_api",
+        "fallback_code": "odds_documented_fallback_v1"
+      },
+      {
+        "data_type": "injuries",
+        "provider": "manual_injury_report",
+        "fallback_code": "injuries_documented_fallback_v1"
+      },
+      {
+        "data_type": "weather",
+        "provider": "open_meteo",
+        "fallback_code": "weather_documented_fallback_v1"
+      },
+      {
+        "data_type": "game_status",
+        "provider": "collegefootballdata",
+        "fallback_code": "game_status_documented_fallback_v1"
+      },
+      {
+        "data_type": "contextual",
+        "provider": "collegefootballdata",
+        "fallback_code": "contextual_documented_fallback_v1"
+      }
+    ]
+  },
+  "selection": {
+    "market_books": [],
+    "model_tie_side": "away",
+    "pickem_tiebreak_side": "home"
+  },
+  "confidence": {
+    "policy_key": "production-confidence-ranking-v1",
+    "confidence_5_max_uncertainty": 2.0,
+    "confidence_4_max_uncertainty": 4.0,
+    "confidence_3_max_uncertainty": 6.0,
+    "confidence_2_max_uncertainty": 8.0
+  },
+  "diagnostics": {
+    "minimum_recommendation_sample": 20,
+    "minimum_ats_delta_percentage_points": 10.0,
+    "confidence_threshold_step_points": 0.5
+  }
+}

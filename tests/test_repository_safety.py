@@ -151,6 +151,7 @@ jobs:
       vars.CFB_V3_OWNER_CUTOVER_APPROVED == 'true' &&
       inputs.confirmation == 'RUN_V3_OPERATION'
     environment: v3-production
+    runs-on: [self-hosted, cfb-v3-production]
     permissions:
       contents: read
     env:
@@ -158,9 +159,14 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
+          clean: false
           persist-credentials: false
       - run: python scripts/verify_repo_safety.py
       - run: python -m scripts.run_production_operation
+        --weekly-config "${{ vars.CFB_V3_WEEKLY_CONFIG_FILE }}"
+        --mode persist
+        --confirmation EXECUTE_V3_OPERATION
+      - uses: actions/upload-artifact@v4
       - uses: actions/upload-artifact@v4
       - run: echo result >> "$GITHUB_STEP_SUMMARY"
 """
@@ -202,6 +208,20 @@ def test_v3_workflow_and_runtime_operation_sets_match():
         (
             lambda text: text.replace("          - weekly_audit\n", ""),
             "weekly_audit",
+        ),
+        (
+            lambda text: text.replace("        --mode persist\n", ""),
+            "--mode persist",
+        ),
+        (
+            lambda text: text.replace(
+                "    runs-on: [self-hosted, cfb-v3-production]\n", ""
+            ),
+            "dedicated durable runner",
+        ),
+        (
+            lambda text: text.replace("          clean: false\n", ""),
+            "preserve operating state",
         ),
     ],
 )

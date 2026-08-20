@@ -68,6 +68,11 @@ data/spreads/
 data/analysis/
 data/cards/
 data/line_views/
+data/production_inputs/
+data/provider_evidence/
+config/production-weeks/
+*.v3-writer.lock
+data/backups/
 
 # data/pool_picks/ is deliberately NOT ignored -- the user's weekly pool-picks
 # CSV (models/pool_view.py) must be committed so the automated Thursday/
