@@ -21,6 +21,20 @@ from operations.execution import (
     ProductionExecutionResult,
     execute_production_operation,
 )
+from operations.cloud_execution import (
+    CLOUD_EXECUTION_ADAPTER_VERSION,
+    CloudProductionExecutionResult,
+    execute_cloud_production_operation,
+)
+from operations.cloud_persistence import (
+    CloudCommit,
+    CloudMigration,
+    CloudPersistenceError,
+    CloudSnapshot,
+    CloudWriterBusy,
+    PostgreSQLSnapshotStore,
+    load_cloud_migrations,
+)
 from operations.weekly_config import (
     WEEKLY_CONFIGURATION_VERSION,
     WeeklyConfigurationError,
@@ -45,6 +59,16 @@ __all__ = [
     "ProductionExecutionError",
     "ProductionExecutionResult",
     "execute_production_operation",
+    "CLOUD_EXECUTION_ADAPTER_VERSION",
+    "CloudProductionExecutionResult",
+    "execute_cloud_production_operation",
+    "CloudCommit",
+    "CloudMigration",
+    "CloudPersistenceError",
+    "CloudSnapshot",
+    "CloudWriterBusy",
+    "PostgreSQLSnapshotStore",
+    "load_cloud_migrations",
     "WEEKLY_CONFIGURATION_VERSION",
     "WeeklyConfigurationError",
     "WeeklyOperationConfiguration",

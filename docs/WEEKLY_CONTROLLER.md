@@ -194,12 +194,12 @@ delete migration-ledger rows or manually drop publication objects in place.
 - The production adapter accepts only controlled provider bundles captured
   after explicit authorization and replays them through Milestone 14 custody.
   No live call occurs during ordinary tests or preflight.
-- The production gateway is manual-only and read-only by default; no scheduled
-  workflow is added or enabled. Persist mode requires every cutover guard,
-  exact confirmation, a dedicated durable self-hosted runner, and a writer
-  lock. It verifies a same-filesystem staging copy, creates a checksummed
-  recovery backup, and atomically replaces the authoritative database only on
-  success.
+- The production gateway is manual-only and no scheduled workflow is enabled.
+  Persist mode requires every cutover guard and exact confirmation, then runs
+  on GitHub-hosted `ubuntu-latest`. Managed PostgreSQL holds the cross-run
+  advisory lock and immutable durable snapshot history; the SQLite execution
+  workspace is temporary and is discarded after the PostgreSQL transaction
+  commits or rolls back. No owner computer or self-managed runner is required.
 - Production credentials are not required, read, logged, or documented by
   value.
 - Production cutover remains blocked by the explicit findings in

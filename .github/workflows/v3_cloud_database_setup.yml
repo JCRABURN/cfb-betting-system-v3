@@ -1,0 +1,100 @@
+name: V3 Managed Database Setup Gate
+
+on:
+  # Schedules remain intentionally absent. This one-time setup is owner-dispatched.
+  workflow_dispatch:
+    inputs:
+      confirmation:
+        description: Enter INITIALIZE_V3_CLOUD_STATE after reviewing the cutover runbook
+        required: true
+        type: string
+
+concurrency:
+  group: v3-production-database-setup-${{ github.repository }}
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+
+jobs:
+  guard-rejected:
+    if: >-
+      github.repository != 'JCRABURN/cfb-betting-system-v3' ||
+      vars.CFB_V3_OWNER_CUTOVER_APPROVED != 'true' ||
+      vars.CFB_V3_KILL_SWITCH != 'true' ||
+      vars.CFB_V3_PRODUCTION_ENABLED != 'false' ||
+      vars.CFB_V3_OPERATION_EXECUTION_ENABLED != 'false' ||
+      inputs.confirmation != 'INITIALIZE_V3_CLOUD_STATE'
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Record rejected authorization
+        run: |
+          {
+            echo "## V3 cloud database setup rejected"
+            echo "An authorization or kill-switch guard blocked the request."
+            echo "No checkout, credential access, or database operation occurred."
+          } >> "$GITHUB_STEP_SUMMARY"
+          exit 1
+
+  initialize:
+    if: >-
+      github.repository == 'JCRABURN/cfb-betting-system-v3' &&
+      vars.CFB_V3_OWNER_CUTOVER_APPROVED == 'true' &&
+      vars.CFB_V3_KILL_SWITCH == 'true' &&
+      vars.CFB_V3_PRODUCTION_ENABLED == 'false' &&
+      vars.CFB_V3_OPERATION_EXECUTION_ENABLED == 'false' &&
+      inputs.confirmation == 'INITIALIZE_V3_CLOUD_STATE'
+    environment: v3-production
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      CFB_V3_DATABASE_URL: ${{ secrets.CFB_V3_DATABASE_URL }}
+    steps:
+      - name: Checkout exact requested commit
+        uses: actions/checkout@v4
+        with:
+          clean: true
+          persist-credentials: false
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: pip
+          cache-dependency-path: requirements.txt
+
+      - name: Install locked dependencies
+        run: python -m pip install --requirement requirements.txt
+
+      - name: Verify repository safety controls
+        run: python scripts/verify_repo_safety.py
+
+      - name: Initialize or verify the managed production stream
+        id: setup
+        run: >-
+          python -m scripts.prepare_cloud_database
+          --seed data/cfb.db
+          --policy-config config/production_policies.example.json
+          --actor "${{ github.actor }}"
+          --confirmation INITIALIZE_V3_CLOUD_STATE
+          --report-output "$RUNNER_TEMP/v3-cloud-setup.json"
+
+      - name: Upload redacted setup report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: v3-cloud-database-setup
+          path: ${{ runner.temp }}/v3-cloud-setup.json
+          if-no-files-found: ignore
+          retention-days: 14
+
+      - name: Record setup outcome
+        if: always()
+        run: |
+          {
+            echo "## V3 managed database setup"
+            echo "- Outcome: ${{ steps.setup.outcome }}"
+            echo "- Durable backend: managed PostgreSQL"
+            echo "- Runner workspace: disposable"
+          } >> "$GITHUB_STEP_SUMMARY"

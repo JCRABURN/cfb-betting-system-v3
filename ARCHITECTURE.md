@@ -1070,15 +1070,19 @@ replays checksummed provider bundles through ingestion custody, calls the
 EPA-only weekly controller for Tuesday and daily stages, calls complete audit
 and diagnostics services postgame, and never exposes a wager-placement path.
 Official publications retain the controller's atomic transaction. Stable
-business keys provide idempotency; GitHub concurrency plus an exclusive
-database lock file prevent overlapping writers and leave stale-lock recovery
-manual and fail closed.
+business keys provide idempotency. GitHub concurrency provides queueing, while
+a PostgreSQL transaction-scoped advisory lock serializes independent
+ephemeral writers at the durable boundary.
 
-Persisted execution is confined to a dedicated, durable self-hosted runner
-labeled `cfb-v3-production`; the workflow does not use a disposable hosted
-runner for authoritative SQLite writes. Each operation runs against a
-same-filesystem staging copy, validates it, creates a checksummed recovery
-backup, and atomically replaces the authoritative database only on success.
+Persisted execution runs on GitHub-hosted `ubuntu-latest`. Managed PostgreSQL
+stores append-only checksummed state generations, immutable operation
+completions, and an atomically advanced stream head. A job materializes the
+current governed SQLite domain snapshot only in its temporary workspace,
+executes the unchanged controller, validates integrity/foreign keys/publication
+gates, and commits a new durable generation in the same PostgreSQL transaction.
+Failures roll back the cloud transaction and the temporary workspace is
+discarded. Production therefore requires no owner computer or self-managed
+runner.
 
 One secret-free weekly JSON contract supplies season, week, contest identity,
 expected count, locked model identifiers, policy versions, freshness rules,
@@ -1095,9 +1099,10 @@ hashes, sanitized parameters, quarantine outcomes, and freshness custody are
 preserved. Market captures write only opening/current/closing rows and never
 touch immutable SplashSports locks.
 
-Database cutover tooling rehearses migrations and immutable policy
-registration on a new copy by default. Authoritative mode requires a verified
-backup, engaged kill switch, disabled writers and production, a dedicated
-owner-approval variable, and an exact confirmation. The current readiness
-answer remains `PRODUCTION READY: NO` solely because credentials/current-week
-data and production-state transitions require owner action.
+Database cutover tooling rehearses domain migrations and immutable policy
+registration on a new copy by default. A separate guarded GitHub-hosted setup
+workflow applies checksummed PostgreSQL migrations and creates generation zero
+once. The current readiness answer remains `PRODUCTION READY: NO` because the
+managed database, credentials/current-week data, protected flags, rehearsal,
+and explicit production transition still require owner action. Schedules
+remain absent pending a separate approval.

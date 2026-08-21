@@ -8,9 +8,8 @@ Spread Betting System. Repository-wide agent and data-integrity rules are in
 
 Python 3.11 is the supported automation runtime. Runtime packages and their
 transitive dependencies are pinned in `requirements.txt`; test-only packages
-are pinned in `requirements-dev.txt`. No new top-level package was introduced
-by this lock—the existing `requests` and `pytest` dependencies are now resolved
-deterministically.
+are pinned in `requirements-dev.txt`. `psycopg[binary]` is the managed
+PostgreSQL driver used only at the cloud production-state boundary.
 
 Create an isolated virtual environment, then install and verify with:
 
@@ -34,14 +33,13 @@ Do not weaken or remove those controls without explicit repository-owner
 approval and a dedicated pull request.
 
 The additional V3 production gateway is manual-only, protected by independent
-production/execution/owner flags and a kill switch, and read-only by default.
-Its installed adapter can persist only after a passing preflight, exact CLI
-confirmation, protected-environment approval, and cross-process writer lock.
-Persisted workflow execution requires the dedicated durable
-`cfb-v3-production` self-hosted runner; disposable hosted runners are not
-allowed to write the authoritative SQLite database. Each operation verifies a
-staging copy, creates a checksummed recovery backup, and atomically replaces
-the database only after success. No schedule is enabled.
+production/execution/owner flags and a kill switch, and runs on GitHub-hosted
+`ubuntu-latest` infrastructure. Managed PostgreSQL stores immutable,
+checksummed state generations and holds the cross-run transaction lock. Each
+job materializes the current domain snapshot only in its disposable workspace,
+runs the unchanged governed controller, and atomically advances durable state
+only after every verification passes. No owner computer or self-managed runner
+is required. No schedule is enabled.
 
 ## Database migrations
 
@@ -51,10 +49,12 @@ disposable copy of `data/cfb.db` with:
 
 ```text
 python -m scripts.verify_migrations
+python -m scripts.verify_cloud_migrations
 ```
 
-The authoritative database is never opened for writing by that command. See
-`migrations/README.md` for migration and recovery requirements.
+The authoritative source database is never opened for writing by those
+commands. See `migrations/README.md` and `cloud_migrations/README.md` for the
+independent domain and managed-persistence migration requirements.
 
 ## Contest line custody
 

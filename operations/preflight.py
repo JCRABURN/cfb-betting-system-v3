@@ -285,23 +285,32 @@ def _configuration_checks(
         "CFB_V3_DATABASE_PATH must resolve exactly to data/cfb.db inside the V3 root",
     )
 
+    provider_connectivity_required = settings.operation != "weekly_audit"
     _record(
         checks,
         "credentials",
-        not settings.missing_credential_variables,
-        "required credential variable names are present; values were not read into the report",
+        not settings.missing_credential_variables or not provider_connectivity_required,
+        (
+            "provider credentials are not needed for the API-free weekly audit"
+            if not provider_connectivity_required
+            else "required credential variable names are present; values were not read into the report"
+        ),
         "missing credential variables: "
         + ", ".join(settings.missing_credential_variables),
     )
     _record(
         checks,
         "provider_connectivity_authorization",
-        settings.provider_connectivity_authorized is True,
-        "live provider connectivity has explicit authorization",
+        settings.provider_connectivity_authorized is True or not provider_connectivity_required,
+        (
+            "provider connectivity is not needed for the API-free weekly audit"
+            if not provider_connectivity_required
+            else "live provider connectivity has explicit authorization"
+        ),
         "CFB_V3_PROVIDER_CONNECTIVITY_AUTHORIZED must be exactly true",
     )
     verified_at = _parse_utc(settings.provider_connectivity_verified_at)
-    verification_current = (
+    verification_current = not provider_connectivity_required or (
         verified_at is not None
         and verified_at <= now
         and now - verified_at <= CONNECTIVITY_EVIDENCE_MAX_AGE
@@ -310,7 +319,11 @@ def _configuration_checks(
         checks,
         "provider_connectivity_evidence",
         verification_current,
-        "authorized provider connectivity evidence is no more than 24 hours old",
+        (
+            "provider connectivity evidence is not needed for the API-free weekly audit"
+            if not provider_connectivity_required
+            else "authorized provider connectivity evidence is no more than 24 hours old"
+        ),
         "CFB_V3_PROVIDER_CONNECTIVITY_VERIFIED_AT must be a current UTC timestamp "
         "from an owner-authorized external check",
     )

@@ -1,4 +1,4 @@
-.PHONY: production-preflight safety test verify-cfbd verify-migrations
+.PHONY: production-preflight safety test verify-cfbd verify-cloud-migrations verify-migrations
 
 YEAR ?= 2025
 WEEK ?= 10
@@ -12,6 +12,9 @@ safety:
 
 verify-migrations:
 	python -m scripts.verify_migrations
+
+verify-cloud-migrations:
+	python -m scripts.verify_cloud_migrations
 
 production-preflight:
 	python -m scripts.production_preflight --operation $(OPERATION) --database data/cfb.db
