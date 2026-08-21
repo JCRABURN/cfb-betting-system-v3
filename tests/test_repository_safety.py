@@ -9,6 +9,7 @@ from scripts.verify_repo_safety import (
     production_workflow_errors,
     repository_errors,
     requirement_errors,
+    v3_cloud_setup_workflow_errors,
     v3_production_workflow_errors,
 )
 
@@ -18,6 +19,24 @@ ROOT = Path(__file__).resolve().parents[1]
 
 def test_checked_in_repository_safety_controls_pass():
     assert repository_errors(ROOT) == []
+
+
+def test_every_production_stage_is_cloud_hosted_and_schedules_stay_disabled():
+    workflow_directory = ROOT / ".github" / "workflows"
+    operation_text = (workflow_directory / "v3_production_operations.yml").read_text(
+        encoding="utf-8"
+    )
+    assert "runs-on: ubuntu-latest" in operation_text
+    assert "self-hosted" not in operation_text
+    assert "\n  schedule:" not in operation_text
+    assert "python -m scripts.run_cloud_production_operation" in operation_text
+    assert "--capture-provider-data" in operation_text
+    for operation in V3_PRODUCTION_OPERATIONS:
+        assert f"          - {operation}" in operation_text
+    for workflow in workflow_directory.glob("*.yml"):
+        text = workflow.read_text(encoding="utf-8")
+        assert "self-hosted" not in text
+        assert "\n  schedule:" not in text
 
 
 @pytest.mark.parametrize(
@@ -32,6 +51,10 @@ def test_checked_in_repository_safety_controls_pass():
 def test_requirement_validator_rejects_non_exact_versions(unsafe_line, expected_fragment):
     errors = requirement_errors(f"{unsafe_line}\n", "requirements.txt")
     assert any(expected_fragment in error for error in errors)
+
+
+def test_requirement_validator_accepts_exactly_pinned_binary_extra():
+    assert requirement_errors("psycopg[binary]==3.3.4\n", "requirements.txt") == []
 
 
 def _safe_production_workflow() -> str:
@@ -85,6 +108,7 @@ jobs:
       - run: python -m pip install --requirement requirements-dev.txt
       - run: python scripts/verify_repo_safety.py
       - run: python -m scripts.verify_migrations
+      - run: python -m scripts.verify_cloud_migrations
       - run: python -m pytest -q
 """
 
@@ -149,23 +173,28 @@ jobs:
       vars.CFB_V3_OPERATION_EXECUTION_ENABLED == 'true' &&
       vars.CFB_V3_KILL_SWITCH == 'false' &&
       vars.CFB_V3_OWNER_CUTOVER_APPROVED == 'true' &&
+      vars.CFB_V3_PROVIDER_CONNECTIVITY_AUTHORIZED == 'true' &&
       inputs.confirmation == 'RUN_V3_OPERATION'
     environment: v3-production
-    runs-on: [self-hosted, cfb-v3-production]
+    runs-on: ubuntu-latest
     permissions:
       contents: read
     env:
       CFB_V3_MODEL_NAME: epa_only
+      CFB_V3_PERSISTENCE_BACKEND: managed_postgresql
+      CFB_V3_DATABASE_URL: ${{ secrets.CFB_V3_DATABASE_URL }}
     steps:
       - uses: actions/checkout@v4
         with:
-          clean: false
+          clean: true
           persist-credentials: false
       - run: python scripts/verify_repo_safety.py
-      - run: python -m scripts.run_production_operation
+      - run: python -m scripts.run_cloud_production_operation
         --weekly-config "${{ vars.CFB_V3_WEEKLY_CONFIG_FILE }}"
-        --mode persist
-        --confirmation EXECUTE_V3_OPERATION
+        --confirmation EXECUTE_V3_CLOUD_OPERATION
+        --capture-provider-data
+        --provider-confirmation CAPTURE_V3_PROVIDER_PAYLOADS
+      - uses: actions/upload-artifact@v4
       - uses: actions/upload-artifact@v4
       - uses: actions/upload-artifact@v4
       - run: echo result >> "$GITHUB_STEP_SUMMARY"
@@ -210,19 +239,18 @@ def test_v3_workflow_and_runtime_operation_sets_match():
             "weekly_audit",
         ),
         (
-            lambda text: text.replace("        --mode persist\n", ""),
-            "--mode persist",
+            lambda text: text.replace("        --confirmation EXECUTE_V3_CLOUD_OPERATION\n", ""),
+            "EXECUTE_V3_CLOUD_OPERATION",
         ),
         (
-            lambda text: text.replace(
-                "    runs-on: [self-hosted, cfb-v3-production]\n", ""
-            ),
-            "dedicated durable runner",
+            lambda text: text.replace("    runs-on: ubuntu-latest\n", ""),
+            "GitHub-hosted runner",
         ),
         (
-            lambda text: text.replace("          clean: false\n", ""),
-            "preserve operating state",
+            lambda text: text.replace("          clean: true\n", ""),
+            "start clean",
         ),
+        (lambda text: text + "# self-hosted\n", "self-hosted runners are forbidden"),
     ],
 )
 def test_v3_production_workflow_validator_rejects_unsafe_changes(
@@ -231,3 +259,54 @@ def test_v3_production_workflow_validator_rejects_unsafe_changes(
 ):
     errors = v3_production_workflow_errors(mutator(_safe_v3_production_workflow()))
     assert any(expected_fragment in error for error in errors)
+
+
+def _safe_cloud_setup_workflow() -> str:
+    return """on:
+  workflow_dispatch:
+jobs:
+  rejected:
+    steps:
+      - run: echo rejected
+  setup:
+    if: >-
+      github.repository == 'JCRABURN/cfb-betting-system-v3' &&
+      vars.CFB_V3_OWNER_CUTOVER_APPROVED == 'true' &&
+      vars.CFB_V3_KILL_SWITCH == 'true' &&
+      vars.CFB_V3_PRODUCTION_ENABLED == 'false' &&
+      vars.CFB_V3_OPERATION_EXECUTION_ENABLED == 'false' &&
+      inputs.confirmation == 'INITIALIZE_V3_CLOUD_STATE'
+    environment: v3-production
+    runs-on: ubuntu-latest
+    env:
+      CFB_V3_DATABASE_URL: ${{ secrets.CFB_V3_DATABASE_URL }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          clean: true
+          persist-credentials: false
+      - run: python scripts/verify_repo_safety.py
+      - run: python -m scripts.prepare_cloud_database
+        --confirmation INITIALIZE_V3_CLOUD_STATE
+      - uses: actions/upload-artifact@v4
+"""
+
+
+def test_cloud_setup_workflow_is_manual_guarded_and_github_hosted():
+    assert v3_cloud_setup_workflow_errors(_safe_cloud_setup_workflow()) == []
+
+
+@pytest.mark.parametrize(
+    ("needle", "expected"),
+    [
+        ("  workflow_dispatch:\n", "controlled manual dispatch"),
+        ("    runs-on: ubuntu-latest\n", "GitHub-hosted"),
+        ("      CFB_V3_DATABASE_URL: ${{ secrets.CFB_V3_DATABASE_URL }}\n", "secret"),
+        ("        --confirmation INITIALIZE_V3_CLOUD_STATE\n", "confirmation"),
+    ],
+)
+def test_cloud_setup_workflow_rejects_missing_controls(needle, expected):
+    errors = v3_cloud_setup_workflow_errors(
+        _safe_cloud_setup_workflow().replace(needle, "")
+    )
+    assert any(expected in error for error in errors)

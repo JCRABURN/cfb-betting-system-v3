@@ -42,7 +42,7 @@ from operations.weekly_config import WeeklyOperationConfiguration
 from operations.writer_lock import ProductionWriterLock
 
 
-EXECUTION_ADAPTER_VERSION = "v3-production-execution-adapter-v1"
+EXECUTION_ADAPTER_VERSION = "v3-production-execution-adapter-v2"
 
 
 class ProductionExecutionError(RuntimeError):
@@ -513,8 +513,15 @@ def execute_production_operation(
     code_commit_sha: str,
     dry_run: bool,
     now: datetime | None = None,
+    managed_workspace: bool = False,
 ) -> tuple[ProductionExecutionResult, ProductionPreflightReport]:
-    """Preflight, serialize, execute, and verify one governed operation."""
+    """Preflight, execute, and verify one governed SQLite workspace.
+
+    ``managed_workspace`` is reserved for a temporary snapshot held under the
+    PostgreSQL writer transaction in ``operations.cloud_execution``. It skips
+    host-file locking and replacement because the runner filesystem is not the
+    durable commit boundary.
+    """
     generated_at = (now or datetime.now(timezone.utc)).astimezone(timezone.utc)
     if (
         len(code_commit_sha) != 40
@@ -523,7 +530,11 @@ def execute_production_operation(
         raise ProductionExecutionError("code_commit_sha must be lowercase SHA-1")
     if settings.model_name != ACTIVE_MODEL_NAME or settings.model_version != ACTIVE_MODEL_VERSION:
         raise ProductionExecutionError("only the EPA-only production baseline is executable")
-    preflight = run_production_preflight(settings, now=generated_at)
+    preflight = run_production_preflight(
+        settings,
+        now=generated_at,
+        allow_disposable_database=managed_workspace,
+    )
     initial_blocking_names = {
         check.name for check in preflight.checks if check.status == "block"
     }
@@ -542,7 +553,11 @@ def execute_production_operation(
     lock = None
     backup_path: Path | None = None
     backup_sha256: str | None = None
-    if dry_run:
+    if managed_workspace and dry_run:
+        raise ProductionExecutionError("managed workspace cannot also be a local dry run")
+    if managed_workspace:
+        working = source
+    elif dry_run:
         temporary_directory = tempfile.TemporaryDirectory(prefix="cfb-v3-production-dry-run-")
         working = Path(temporary_directory.name) / "cfb.db"
         shutil.copy2(source, working)
@@ -632,7 +647,7 @@ def execute_production_operation(
         finally:
                 conn.close()
         working_after = _file_sha256(working)
-        if not dry_run:
+        if not dry_run and not managed_workspace:
             if _file_sha256(source) != source_before:
                 raise ProductionExecutionError(
                     "authoritative database changed during staged execution"
@@ -675,7 +690,11 @@ def execute_production_operation(
         "operation": settings.operation,
         "operation_key": settings.idempotency_key,
         "weekly_configuration_sha256": _file_sha256(configuration.path),
-        "execution_mode": "dry_run" if dry_run else "persist",
+        "execution_mode": (
+            "managed_cloud_workspace"
+            if managed_workspace
+            else ("dry_run" if dry_run else "persist")
+        ),
         "status": "completed",
         "replayed": bool(details["replayed"]),
         "source_database_sha256_before": source_before,

@@ -15,6 +15,7 @@ PRODUCTION_WORKFLOWS = (
     "weekly_report.yml",
 )
 V3_PRODUCTION_WORKFLOW = "v3_production_operations.yml"
+V3_CLOUD_SETUP_WORKFLOW = "v3_cloud_database_setup.yml"
 V3_PRODUCTION_OPERATIONS = (
     "tuesday_lock",
     "wednesday_refresh",
@@ -25,7 +26,8 @@ V3_PRODUCTION_OPERATIONS = (
     "weekly_audit",
 )
 PINNED_REQUIREMENT = re.compile(
-    r"^[A-Za-z0-9][A-Za-z0-9_.-]*==[^;\s]+(?:\s*;\s*.+)?$"
+    r"^[A-Za-z0-9][A-Za-z0-9_.-]*(?:\[[A-Za-z0-9_,.-]+\])?"
+    r"==[^;\s]+(?:\s*;\s*.+)?$"
 )
 
 
@@ -93,6 +95,8 @@ def ci_workflow_errors(text: str, source: str = "ci.yml") -> list[str]:
         errors.append(f"{source}: CI does not enforce repository safety checks")
     if "python -m scripts.verify_migrations" not in text:
         errors.append(f"{source}: CI does not verify migrations on a disposable copy")
+    if "python -m scripts.verify_cloud_migrations" not in text:
+        errors.append(f"{source}: CI does not verify managed PostgreSQL migrations")
     if "python -m pytest -q" not in text:
         errors.append(f"{source}: CI does not run the complete test suite")
     return errors
@@ -117,16 +121,17 @@ def v3_production_workflow_errors(
         "vars.CFB_V3_OPERATION_EXECUTION_ENABLED == 'true'",
         "vars.CFB_V3_KILL_SWITCH == 'false'",
         "vars.CFB_V3_OWNER_CUTOVER_APPROVED == 'true'",
+        "vars.CFB_V3_PROVIDER_CONNECTIVITY_AUTHORIZED == 'true'",
         "inputs.confirmation == 'RUN_V3_OPERATION'",
     ):
         if required_guard not in text:
             errors.append(f"{source}: required fail-closed guard is missing: {required_guard}")
     if "environment: v3-production" not in text:
         errors.append(f"{source}: protected v3-production environment is missing")
-    if "runs-on: [self-hosted, cfb-v3-production]" not in text:
-        errors.append(
-            f"{source}: authoritative SQLite execution requires the dedicated durable runner"
-        )
+    if "runs-on: ubuntu-latest" not in text:
+        errors.append(f"{source}: production execution must use a GitHub-hosted runner")
+    if "self-hosted" in text:
+        errors.append(f"{source}: self-hosted runners are forbidden")
     if not re.search(r"(?m)^permissions:\s*\r?\n\s{2}contents:\s*read\s*$", text):
         errors.append(f"{source}: workflow-level permissions must default to read-only")
     if re.search(r"(?m)^\s+contents:\s*write\s*$", text):
@@ -141,14 +146,21 @@ def v3_production_workflow_errors(
         errors.append(f"{source}: production writers must serialize without cancellation")
     if "persist-credentials: false" not in text:
         errors.append(f"{source}: checkout credentials must not persist")
-    if "clean: false" not in text:
-        errors.append(f"{source}: durable production checkout must preserve operating state")
-    if "python -m scripts.run_production_operation" not in text:
-        errors.append(f"{source}: guarded production-operation entry point is missing")
+    if "clean: true" not in text:
+        errors.append(f"{source}: ephemeral production checkout must start clean")
+    if "python -m scripts.run_cloud_production_operation" not in text:
+        errors.append(f"{source}: managed-cloud production entry point is missing")
+    if "CFB_V3_DATABASE_URL: ${{ secrets.CFB_V3_DATABASE_URL }}" not in text:
+        errors.append(f"{source}: protected managed-database secret is missing")
+    if "CFB_V3_PERSISTENCE_BACKEND: managed_postgresql" not in text:
+        errors.append(f"{source}: managed PostgreSQL backend lock is missing")
+    if "CFB_V3_DATABASE_PATH" in text:
+        errors.append(f"{source}: production must not depend on a runner-local database path")
     for adapter_argument in (
         '--weekly-config "${{ vars.CFB_V3_WEEKLY_CONFIG_FILE }}"',
-        "--mode persist",
-        "--confirmation EXECUTE_V3_OPERATION",
+        "--confirmation EXECUTE_V3_CLOUD_OPERATION",
+        "--capture-provider-data",
+        "--provider-confirmation CAPTURE_V3_PROVIDER_PAYLOADS",
     ):
         if adapter_argument not in text:
             errors.append(
@@ -156,7 +168,7 @@ def v3_production_workflow_errors(
             )
     if "python scripts/verify_repo_safety.py" not in text:
         errors.append(f"{source}: repository safety verification is missing")
-    if text.count("actions/upload-artifact@v4") < 2 or "GITHUB_STEP_SUMMARY" not in text:
+    if text.count("actions/upload-artifact@v4") < 3 or "GITHUB_STEP_SUMMARY" not in text:
         errors.append(f"{source}: redacted failure artifact or job-summary logging is missing")
     if "guard-rejected:" not in text or "No checkout, credential access" not in text:
         errors.append(f"{source}: rejected authorization must fail visibly without secrets")
@@ -165,6 +177,46 @@ def v3_production_workflow_errors(
     for operation in V3_PRODUCTION_OPERATIONS:
         if f"          - {operation}" not in text:
             errors.append(f"{source}: governed operation choice is missing: {operation}")
+    return errors
+
+
+def v3_cloud_setup_workflow_errors(
+    text: str,
+    source: str = V3_CLOUD_SETUP_WORKFLOW,
+) -> list[str]:
+    """Return errors when one-time managed database setup stops failing closed."""
+    errors: list[str] = []
+    if re.search(r"(?m)^\s{2}schedule:\s*(?:#.*)?$", text):
+        errors.append(f"{source}: setup must never be scheduled")
+    if not re.search(r"(?m)^\s{2}workflow_dispatch:\s*(?:#.*)?$", text):
+        errors.append(f"{source}: controlled manual dispatch trigger is missing")
+    if "self-hosted" in text or "runs-on: ubuntu-latest" not in text:
+        errors.append(f"{source}: setup must use GitHub-hosted runners only")
+    if "environment: v3-production" not in text:
+        errors.append(f"{source}: protected v3-production environment is missing")
+    for guard in (
+        "github.repository == 'JCRABURN/cfb-betting-system-v3'",
+        "vars.CFB_V3_OWNER_CUTOVER_APPROVED == 'true'",
+        "vars.CFB_V3_KILL_SWITCH == 'true'",
+        "vars.CFB_V3_PRODUCTION_ENABLED == 'false'",
+        "vars.CFB_V3_OPERATION_EXECUTION_ENABLED == 'false'",
+        "inputs.confirmation == 'INITIALIZE_V3_CLOUD_STATE'",
+    ):
+        if guard not in text:
+            errors.append(f"{source}: required fail-closed guard is missing: {guard}")
+    for requirement in (
+        "CFB_V3_DATABASE_URL: ${{ secrets.CFB_V3_DATABASE_URL }}",
+        "persist-credentials: false",
+        "clean: true",
+        "python -m scripts.prepare_cloud_database",
+        "--confirmation INITIALIZE_V3_CLOUD_STATE",
+        "python scripts/verify_repo_safety.py",
+        "actions/upload-artifact@v4",
+    ):
+        if requirement not in text:
+            errors.append(f"{source}: required setup control is missing: {requirement}")
+    if re.search(r"(?m)^\s+contents:\s*write\s*$", text):
+        errors.append(f"{source}: setup must not grant repository write permissions")
     return errors
 
 
@@ -192,6 +244,19 @@ def repository_errors(root: Path = ROOT) -> list[str]:
             v3_path.name,
         )
     )
+
+    setup_path = workflow_dir / V3_CLOUD_SETUP_WORKFLOW
+    errors.extend(
+        v3_cloud_setup_workflow_errors(
+            setup_path.read_text(encoding="utf-8"),
+            setup_path.name,
+        )
+    )
+
+    for workflow_path in workflow_dir.glob("*.yml"):
+        workflow_text = workflow_path.read_text(encoding="utf-8")
+        if "self-hosted" in workflow_text:
+            errors.append(f"{workflow_path.name}: self-hosted runners are forbidden in V3")
 
     ci_path = workflow_dir / "ci.yml"
     errors.extend(ci_workflow_errors(ci_path.read_text(encoding="utf-8"), ci_path.name))

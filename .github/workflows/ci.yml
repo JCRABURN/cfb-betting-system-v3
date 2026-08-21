@@ -37,5 +37,8 @@ jobs:
       - name: Verify migrations on a disposable database copy
         run: python -m scripts.verify_migrations
 
+      - name: Verify managed PostgreSQL migration inventory
+        run: python -m scripts.verify_cloud_migrations
+
       - name: Run complete test suite
         run: python -m pytest -q

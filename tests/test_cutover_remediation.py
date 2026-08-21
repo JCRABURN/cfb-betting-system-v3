@@ -376,6 +376,43 @@ def test_production_adapter_dry_run_publishes_complete_card_on_disposable_copy(
     assert _sha(database) == before
 
 
+def test_managed_cloud_workspace_preserves_full_card_and_locked_line_gates(
+    prepared_week,
+):
+    root, database, configuration, settings = prepared_week
+
+    result, preflight = execute_production_operation(
+        settings,
+        configuration,
+        code_commit_sha="d" * 40,
+        dry_run=False,
+        now=NOW,
+        managed_workspace=True,
+    )
+
+    assert preflight.production_ready is True
+    assert result.execution_mode == "managed_cloud_workspace"
+    assert result.pick_count == len(LINES)
+    assert result.top_five_count == 5
+    assert result.wagers_placed == 0
+    assert result.backup_path is None
+    assert not (database.parent / "backups").exists()
+    connection = sqlite3.connect(database)
+    try:
+        assert connection.execute(
+            "SELECT COUNT(*) FROM contest_locked_lines"
+        ).fetchone()[0] == len(LINES)
+        assert connection.execute(
+            "SELECT COUNT(*) FROM contest_picks WHERE confidence BETWEEN 1 AND 5"
+        ).fetchone()[0] == len(LINES)
+        with pytest.raises(sqlite3.IntegrityError, match="immutable"):
+            connection.execute(
+                "UPDATE contest_locked_lines SET home_spread = home_spread + 0.5"
+            )
+    finally:
+        connection.close()
+
+
 def test_production_adapter_persists_once_and_replays_idempotently(prepared_week):
     root, database, configuration, settings = prepared_week
     first, _ = execute_production_operation(

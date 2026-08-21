@@ -1,503 +1,295 @@
-# V3 production cutover and first-live-week runbook
+# V3 cloud production cutover runbook
 
-The final blocker-remediation change installs the guarded execution adapter,
-manual SplashSports import path, replayable provider bundle, weekly
-configuration contract, database-cutover tooling, and cross-process writer
-lock. It does not promote this repository, enable a schedule, call a live
-provider, write the authoritative database, or authorize the first live week.
+V3 production is designed to run entirely on GitHub-hosted infrastructure.
+The owner does not need to run or maintain a personal computer, server, or
+self-managed Actions runner.
 
 Current determination:
 
 `PRODUCTION READY: NO`
 
-## Why the answer is still no
+The cloud execution and persistence code is present, but the protected managed
+database is not provisioned or initialized, current-week input is absent, live
+provider access is not authorized, the kill switch is engaged, and schedules
+remain intentionally disabled.
 
-All code and repository-preparation blockers from PR #17 are resolved. The
-remaining blockers are genuine owner or live-week state:
+## Production boundary
 
-1. **Category C — credentials/provider:** `CFBD_API_KEY` and `ODDS_API_KEY`
-   are not securely configured, live connectivity is not authorized, and no
-   current connectivity evidence exists.
-2. **Category D — current-week input:** no live season/week configuration,
-   manually supplied SplashSports card, expected count, checksummed lock
-   manifest, or current replayable provider bundle exists yet.
-3. **Category E — production transition:** the authoritative database has not
-   been backed up, migrated, and populated with approved immutable policy
-   registrations; the protected environment and production authorization
-   flags remain disabled; the owner has not approved cutover.
-4. Schedule activation remains a separate Category E decision and is not
-   required for the first manually dispatched live week.
+GitHub Actions uses `ubuntu-latest` for every production and setup job.
+PostgreSQL is the durable system of record across those ephemeral jobs. The
+existing trigger-heavy SQLite domain schema remains the validated execution
+format, but only inside a job's temporary directory:
 
-Tests passing and adapter availability do not clear external or owner-approval
-blockers.
+1. The job opens a managed PostgreSQL transaction.
+2. It obtains a transaction-scoped advisory lock for the V3 production stream.
+3. It verifies and materializes the current checksummed state snapshot under
+   `RUNNER_TEMP`.
+4. The existing preflight and governed controller operate on that disposable
+   snapshot without changing betting or model logic.
+5. A successful operation appends an immutable state generation and one unique
+   idempotency-key completion, then atomically advances the current head.
+6. PostgreSQL commits only after all SQLite integrity, foreign-key, card, line,
+   Confidence, Top 5, and audit checks pass.
+7. Any failure rolls back the PostgreSQL transaction. The runner directory is
+   discarded and is never a recovery source.
 
-## Report-only preflight after remediation
+This boundary preserves the fourteen existing domain migrations and their
+locked-line/card/audit triggers. It does not translate or weaken them. SQLite
+remains supported for tests, historical simulation, fixtures, development,
+and disposable rehearsals; durable production state does not depend on a
+SQLite file surviving on any machine.
 
-The 2026-08-20 report-only `thursday_refresh` preflight produced 20 machine
-findings, zero warnings, zero live API calls, zero execution attempts, and an
-unchanged authoritative database checksum. The execution-adapter check now
-passes. Its report SHA-256 is
-`02ec20cdc23987f94a557574c5d20b31824f44736a15edb47fb4fde7faa0f496`.
-Every remaining finding is classified below; several are duplicate fail-closed
-symptoms of the same missing owner state.
+## Managed PostgreSQL schema
 
-| # | Remaining preflight finding | Category | Exact owner action | When |
-| --- | --- | --- | --- | --- |
-| 1 | Production runtime mode absent | E | Select production runtime in the protected operating environment. | Cutover |
-| 2 | Repository production enablement absent | E | Enable V3 production only after migration and review. | Cutover |
-| 3 | Per-operation execution enablement absent | E | Enable guarded operations after dry-run acceptance. | First live week |
-| 4 | Owner cutover approval absent | E | Record explicit owner cutover approval. | Cutover |
-| 5 | Kill switch missing/engaged | E | Explicitly disengage it only for the approved operation window. | Each live operation |
-| 6 | Required boolean set incomplete | E | Configure the exact protected flags after the related approvals. | Cutover |
-| 7 | Runtime repository variables absent | E | Configure both repository identities to the exact V3 value. | Cutover |
-| 8 | `CFBD_API_KEY` and `ODDS_API_KEY` absent | C | Add both as `v3-production` environment secrets or OS secret-manager entries. | Connectivity setup |
-| 9 | Provider connectivity not authorized | C | Authorize the controlled two-endpoint connectivity check. | Connectivity setup |
-| 10 | Current connectivity evidence absent | C | Review a successful controlled check and record its UTC verification timestamp. | Before live ingestion |
-| 11 | Season/week absent | D | Create the current secret-free weekly JSON from the example. | First live week |
-| 12 | Contest identity/count absent | D | Enter the current SplashSports contest identifiers and expected lined-game count. | Tuesday input |
-| 13 | Locked EPA identifiers absent | D | Retain the exact EPA-only identifiers already present in the weekly template. | First live week |
-| 14 | Active policy versions absent | E | Complete governed policy registration, then reference those exact versions in weekly JSON. | Cutover |
-| 15 | Migrations 1-14 not applied to authoritative DB | E | Approve and run the guarded migration with a new verified backup. | Cutover |
-| 16 | No games for configured week | D | Capture/replay current provider evidence for the selected week. | First live week |
-| 17 | Production policy tables unavailable | E | Cleared by the same governed authoritative migration and registration. | Cutover |
-| 18 | SplashSports manifest absent | D | Supply CSV/XLSX or reviewed screenshot transcription and build its checksum-locked manifest. | Tuesday input |
-| 19 | Line-lock readiness incomplete | D | Validate the complete manifest after migration and current-week game ingestion. | Tuesday input |
-| 20 | Controller idempotency ledger unavailable | E | Cleared by the governed authoritative migration; never edit the ledger manually. | Cutover |
+Ordered SQL files under `cloud_migrations/versions/` create:
 
-The dedicated durable `cfb-v3-production` runner and protected environment
-must also be provisioned as part of the Category E transition before any
-persisted workflow run. Schedule activation remains a separate later Category
-E choice; no schedule is needed for manual first-week dispatch.
+- `cfb_v3_cloud_schema_migrations`: ordered name/checksum ledger;
+- `cfb_v3_state_snapshots`: append-only checksummed SQLite generations;
+- `cfb_v3_state_heads`: the atomically updated current generation per stream;
+- `cfb_v3_operation_commits`: one immutable completion per operation key.
 
-## PR #17 blocker reclassification
+Snapshot and operation history reject update and delete. Foreign keys use
+`ON DELETE RESTRICT`; stream/generation and stream/operation key pairs are
+unique. The application also holds `pg_try_advisory_xact_lock` for the entire
+read/execute/publish boundary. GitHub workflow concurrency is an additional
+queueing control, not the durability or correctness mechanism.
 
-The 21 PR #17 report entries reduce to five underlying groups:
+`PostgreSQLSnapshotStore.apply_migrations()` applies each migration
+inside a PostgreSQL transaction, under a separate advisory migration lock, and
+rejects an unknown or changed ledger entry. Verify the checked-in inventory
+offline with:
 
-| Prior blocker group | Category | Current disposition |
-| --- | --- | --- |
-| Missing runtime flags and exact repository values | B/E | Typed config and workflow wiring are complete; enabling them is an explicit owner transition. |
-| Missing credential presence and connectivity evidence | C | Secure names and controlled checks are implemented; owner configuration remains. |
-| Missing season/week, contest identity, model and policy values | B/D | Secret-free weekly configuration and locked defaults are implemented; the live week remains owner input. |
-| Missing migration ledger, policies, controller tables and idempotency state | B/E | Rehearsal and guarded authoritative cutover tooling are complete; authoritative mutation remains approval-gated. |
-| Missing line manifest and lock readiness | A/D | CSV, XLSX, and reviewed screenshot-transcription importers are complete; the actual Tuesday card remains owner input. |
-| Missing live execution/persistence adapter | A | Eliminated. The adapter orchestrates the existing governed services and remains disabled by default. |
+```text
+python -m scripts.verify_cloud_migrations
+```
 
-No Category A or B engineering blocker remains.
+The existing domain migration chain remains independently verifiable on a
+disposable SQLite copy:
 
-## Runtime separation and fail-closed flags
+```text
+python -m scripts.verify_migrations
+```
 
-Development remains the default. A production operation requires every flag
-below to have its exact safe value. Missing, misspelled, or non-boolean values
-block execution.
+## Why PostgreSQL
 
-| Environment variable | Required meaning |
-| --- | --- |
-| `CFB_V3_RUNTIME_MODE` | Explicit production runtime selection |
-| `CFB_V3_PRODUCTION_ENABLED` | Repository-level V3 production enablement |
-| `CFB_V3_OPERATION_EXECUTION_ENABLED` | Separate permission to execute an operation |
-| `CFB_V3_KILL_SWITCH` | Must be explicitly disengaged |
-| `CFB_V3_OWNER_CUTOVER_APPROVED` | Explicit owner cutover authorization |
-| `CFB_V3_REPOSITORY` | Exact V3 repository allow-list identity |
-| `GITHUB_REPOSITORY` | GitHub-provided repository identity |
-| `CFB_V3_DATABASE_PATH` | Exact V3 authoritative database path |
+Managed PostgreSQL provides durable storage, transactional compare-and-swap
+of the active head, uniqueness constraints, append-only history, and advisory
+locking shared by independent GitHub-hosted jobs. Those guarantees cannot be
+provided by a runner-local file. A provider may be selected by the owner, but
+it must expose a standard TLS PostgreSQL connection URL and retain durable
+backups/point-in-time recovery appropriate for production.
 
-The preflight also reads the local `origin` identity without printing its URL
-or embedded credentials. The repository root, runtime identifier, GitHub
-identifier, origin, and database target must all identify
-`JCRABURN/cfb-betting-system-v3`. The original repository is always rejected.
+The runtime uses the exactly pinned `psycopg[binary]` driver. It is
+LGPL-3.0-only, ships supported binary wheels for the Python 3.11 GitHub runner,
+and avoids requiring compiler or system `libpq` setup in each ephemeral job.
 
-## Credentials and provider authorization
+## Protected GitHub configuration
 
-Only credential variable names and presence are reported:
+Keep all sensitive values in the `v3-production` GitHub Environment. Required
+environment secrets are:
 
+- `CFB_V3_DATABASE_URL`
 - `CFBD_API_KEY`
 - `ODDS_API_KEY`
 
-Values are never retained in the typed settings object, report, logs,
-artifacts, tests, or documentation.
+The database URL must include TLS settings required by the selected provider.
+Never place it or either API key in repository variables, weekly JSON, command
+arguments, logs, artifacts, pull requests, reports, source files, or rows in
+the domain database. The persistence object redacts its representation and
+converts connection failures to credential-free messages.
 
-Live connectivity additionally requires:
+The existing fail-closed environment variables remain:
 
-- `CFB_V3_PROVIDER_CONNECTIVITY_AUTHORIZED`
-- `CFB_V3_PROVIDER_CONNECTIVITY_VERIFIED_AT`
+| Variable | Required live value |
+| --- | --- |
+| `CFB_V3_PRODUCTION_ENABLED` | `true` |
+| `CFB_V3_OPERATION_EXECUTION_ENABLED` | `true` |
+| `CFB_V3_KILL_SWITCH` | `false` |
+| `CFB_V3_OWNER_CUTOVER_APPROVED` | `true` |
+| `CFB_V3_PROVIDER_CONNECTIVITY_AUTHORIZED` | `true` only after explicit approval |
+| `CFB_V3_PROVIDER_CONNECTIVITY_VERIFIED_AT` | Current reviewed UTC evidence |
 
-The timestamp must be UTC, cannot be in the future, and must be no more than 24
-hours old. Recording it is allowed only after an owner-authorized external
-connectivity check. The preflight itself makes zero live API calls.
+Keep the current safe values (`false`, `false`, `true`, `false`, `false`) until
+the managed database, policies, provider custody, and a complete rehearsal are
+reviewed. The exact V3 repository, EPA-only model identifiers, policy versions,
+contest identity, expected count, and manifest checksum remain mandatory.
 
-Configure the two secret values in GitHub under **Settings → Environments →
-v3-production → Environment secrets**. For an owner-controlled local run, use
-the operating system or approved secret manager. Never place values in a
-weekly JSON file, repository variable, command line, artifact, or log.
+## One-time cloud initialization
 
-The controlled connectivity command is
-`python -m scripts.check_provider_connectivity`. It requires the exact
-`AUTHORIZE_V3_CONNECTIVITY` confirmation and performs only:
+`.github/workflows/v3_cloud_database_setup.yml` is the only production-stream
+bootstrap gateway. It is manual, protected by `v3-production`, read-only to
+the repository, and requires the exact `INITIALIZE_V3_CLOUD_STATE`
+confirmation. It:
 
-- CFBD `GET /calendar` with the `CFBD_API_KEY` bearer credential;
-- The Odds API `GET /v4/sports` with `ODDS_API_KEY`.
+1. checks out a clean V3 commit on `ubuntu-latest`;
+2. installs the pinned runtime lock;
+3. runs repository safety checks;
+4. copies and migrates `data/cfb.db` only in the runner's temporary directory;
+5. registers the reviewed immutable production policies through the existing
+   service layer;
+6. applies/verifies the PostgreSQL migration ledger;
+7. creates generation zero once and emits a redacted checksummed report.
 
-The report contains endpoint, credential-free parameters, timestamp, status,
-payload checksum, and credential variable names—never values. A successful
-timestamp becomes `CFB_V3_PROVIDER_CONNECTIVITY_VERIFIED_AT` only after owner
-review.
+An existing stream with identical state is an idempotent replay. An existing
+different stream fails closed; it is never overwritten. The setup workflow
+does not enable schedules, provider calls, production operations, or wagers.
 
-`python -m scripts.capture_provider_bundle` is separately gated by
-`CAPTURE_V3_PROVIDER_PAYLOADS`. It captures raw CFBD game/status evidence,
-point-in-time EPA through `week - 1` when applicable, and real-book Odds API
-spreads. It writes raw and normalized checksummed evidence under the ignored
-`data/provider_evidence/` directory. The operation adapter replays this bundle
-through Milestone 14 custody, quarantine, freshness, canonical writing, and
-idempotency. Market rows are stored only as opening/current/closing rows and
-can never modify `contest_locked_lines`.
+Before dispatching setup, the owner must:
 
-Use `--capture-scope pregame` for games, EPA, and odds. A final pre-kickoff
-capture may be labeled `--line-type closing`. After games finish, use
-`--capture-scope postgame` to capture final CFBD game results without calling
-the odds endpoint; postgame grading ingests that bundle before its final
-preflight and audit. The earlier closing rows remain separate and immutable.
+1. provision a managed PostgreSQL database with TLS and managed backups;
+2. add `CFB_V3_DATABASE_URL` to `v3-production` environment secrets;
+3. review and approve `config/production_policies.example.json`;
+4. keep production execution disabled and the kill switch engaged;
+5. temporarily record the explicit setup approval required by the workflow.
 
-## Week and contest configuration
+After setup, re-engage the safe flags until the first live-week rehearsal is
+accepted.
 
-The operating week requires:
+## Weekly SplashSports input
 
-- `CFB_V3_SEASON`
-- `CFB_V3_WEEK`
-- `CFB_V3_CONTEST_KEY`
-- `CFB_V3_CONTEST_NAME`
-- `CFB_V3_SOURCE_CONTEST_ID`
-- `CFB_V3_CONTEST_SOURCE`
-- `CFB_V3_EXPECTED_LINED_GAME_COUNT`
-- `CFB_V3_CONTEST_LINES_FILE`
-- `CFB_V3_CONTEST_LINES_SHA256`
+SplashSports remains the sole authoritative contest-line source. It is never
+replaced by an odds provider. The owner supplies screenshots or CSV/XLSX once
+per week and resolves genuinely ambiguous rows. The current validated manifest
+process remains unchanged:
 
-The source must be `SplashSports`. The line-manifest path must remain inside
-the V3 checkout and its exact SHA-256 must be supplied. The manifest contract
-is:
+- CSV/XLSX requires `Away Team`, `Home Team`, and home-team `Spread`;
+- screenshot input uses a reviewed transcription plus retained image evidence;
+- raw names and original input hashes are preserved;
+- every name resolves through the canonical resolver;
+- reversed, duplicate, unresolved, malformed, and count-mismatched rows fail;
+- the manifest is immutable and checksum locked;
+- a correction is new reviewed input and never an in-place line rewrite.
 
-- `manifest_version` is `v3-contest-lines-v1`;
-- `repository` identifies the V3 repository;
-- source, season, week, contest key, source contest id, and expected count
-  exactly match the runtime configuration;
-- `lines` contains exactly the expected number of records;
-- every record has unique `source_line_id`, `raw_home_team`, `raw_away_team`,
-  finite `home_spread`, and an optional nonnegative finite `total`;
-- reversed and duplicate matchups are forbidden;
-- every raw name resolves through the canonical SplashSports resolver;
-- every normalized matchup maps exactly once to the configured database week.
-
-The preflight never locks these lines. It verifies readiness read-only. The
-existing weekly controller remains the sole authorized future lock path.
-When a contest already exists, its raw teams, spreads, totals, source-line
-identifiers, source, and manifest hash must match exactly before an operation
-can be treated as an idempotent replay.
-
-### Manual SplashSports input
-
-`python -m scripts.build_splashsports_manifest` accepts three controlled input
-formats:
-
-- `csv` with `Away Team`, `Home Team`, and home-team `Spread` columns;
-- `xlsx` with the same required headers, parsed without macros or formulas;
-- `screenshot_transcription`, which is the same strict CSV after a human has
-  transcribed the screenshot. It additionally requires one or more PNG, JPEG,
-  or WebP evidence files, a reviewer, and a UTC review timestamp.
-
-Optional columns are `Game Date`, `Game Time`, `Total`, `SplashSports Game ID`,
-and `Notes`. The importer hashes the original file, preserves raw names,
-resolves only through the canonical resolver, maps every row to exactly one
-FBS game, rejects reversed/duplicate/ambiguous matchups and malformed spreads,
-and refuses an expected-count mismatch. It never infers a missing line or
-guesses an unclear screenshot value.
-
-All three formats produce the same `v3-contest-lines-v1` contract. The
-downstream controller sees only that contract and the original input custody.
-The importer refuses to overwrite an existing manifest. A correction must be
-created as new reviewed input and handled through the append-only correction
-process; an existing lock is never rewritten.
-
-Example spreadsheet import:
-
-```text
-python -m scripts.build_splashsports_manifest \
-  --input data/production_inputs/splashsports.csv \
-  --input-format csv \
-  --database data/cfb.db \
-  --output config/production-weeks/lines.json \
-  --season YEAR --week WEEK \
-  --contest-key CONTEST_KEY --contest-name CONTEST_NAME \
-  --source-contest-id SPLASHSPORTS_CONTEST_ID \
-  --expected-lined-game-count COUNT \
-  --captured-at UTC_TIMESTAMP --imported-by OWNER \
-  --provenance OWNER_REVIEW_REFERENCE
-```
-
-The screenshot path uses `--input-format screenshot_transcription` plus
-`--screenshot-evidence`, `--screenshot-reviewed-by`, and
-`--screenshot-reviewed-at`.
-
-### Weekly configuration
-
-Copy `config/weekly_operation.example.json` to the ignored
-`config/production-weeks/` directory and replace every placeholder. The file
-contains no credentials. It locks season, week, contest identity, expected
+The secret-free weekly configuration locks the contest identity, expected
 count, manifest path/hash, EPA-only identifiers, eight policy versions,
-freshness policy, explicit fallbacks, contextual adjustments, no-bet records,
-closing book, display timezone, actor, and provenance. Conflicting environment
-values fail closed. The adapter records the configuration checksum in every
-result.
+freshness policy, explicit fallbacks, adjustments, closing book, actor, and
+provenance. No production operation proceeds without the exact reviewed
+manifest and configuration.
 
-## Locked model and policies
+The recurring owner responsibility is limited to supplying this weekly source
+and resolving source ambiguity. Provider refreshes, cards, grading, audit, and
+diagnostics are cloud execution stages.
 
-These model identifiers are immutable cutover requirements:
+## Production operation gateway
 
-- `CFB_V3_MODEL_NAME`
-- `CFB_V3_MODEL_VERSION`
-- `CFB_V3_FEATURE_SCHEMA_VERSION`
-- `CFB_V3_CONFIGURATION_VERSION`
+`.github/workflows/v3_production_operations.yml` runs on `ubuntu-latest` and
+supports every governed stage:
 
-They must identify the EPA-only baseline, `epa-only-linear-v1`,
-`epa-differential-v1`, and `walk-forward-prior-seasons-v1`. Research
-candidates have no production configuration or workflow input.
-
-All active policy versions must be explicit and already registered:
-
-- `CFB_V3_CONTROLLER_POLICY_VERSION`
-- `CFB_V3_SELECTION_POLICY_VERSION`
-- `CFB_V3_CONFIDENCE_POLICY_VERSION`
-- `CFB_V3_RANKING_POLICY_VERSION`
-- `CFB_V3_ADJUSTMENT_POLICY_VERSION`
-- `CFB_V3_REFRESH_POLICY_VERSION`
-- `CFB_V3_AUDIT_POLICY_VERSION`
-- `CFB_V3_DIAGNOSTICS_POLICY_VERSION`
-
-The preflight checks immutable policy tables. The workflow cannot create,
-promote, or modify a policy.
-
-## Stale-data thresholds
-
-The gateway verifies the sanctioned `provider_freshness_v1` configuration:
-
-| Data type | Maximum age |
-| --- | ---: |
-| Odds | 900 seconds |
-| Injuries | 21,600 seconds |
-| Weather | 10,800 seconds |
-| Game status | 300 seconds |
-| Contextual data | 86,400 seconds |
-
-Official publication still requires current custody or the exact permitted,
-versioned fallback already enforced by the weekly controller.
-
-## Operating-stage gateway
-
-`.github/workflows/v3_production_operations.yml` is one manual gateway for all
-writers. Its operation choices are:
-
-| Choice | Intended controller stage | Prior-state requirement |
+| Operation | Result | Required prior state |
 | --- | --- | --- |
-| `tuesday_lock` | Initial line lock and official v1 | No prior lock, or exact completed v1 replay |
-| `wednesday_refresh` | Daily refresh and official v2 | Complete immutable lock and v1 |
-| `thursday_refresh` | Daily refresh and official v3 | Complete immutable lock and v2 |
-| `friday_refresh` | Daily refresh and official v4 | Complete immutable lock and v3 |
-| `saturday_final` | Final refresh and official v5 | Complete immutable lock and v4 |
-| `postgame_grading` | Complete postgame grading | Final official publication and result inputs |
-| `weekly_audit` | Diagnostics and completed weekly audit | Completed postgame audit |
+| `tuesday_lock` | immutable lock and official v1 | complete reviewed manifest |
+| `wednesday_refresh` | official v2 | complete lock and v1 |
+| `thursday_refresh` | official v3 | complete lock and v2 |
+| `friday_refresh` | official v4 | complete lock and v3 |
+| `saturday_final` | official v5 | complete lock and v4 |
+| `postgame_grading` | final grading and CLV ledger | final card, scores, closing custody |
+| `weekly_audit` | diagnostics and Lessons Learned | completed postgame audit |
 
-Every stage receives the stable idempotency key
-`v3:{season}:week:{week}:{operation}`. Existing completed keys are safe
-replays. Existing incomplete or failed keys require recovery review and are
-never silently reused.
+Every stage uses `v3:{season}:week:{week}:{operation}` as its idempotency key.
+PostgreSQL permits only one completion per stream/key. The controller's
+existing ledger remains a second domain-level idempotency control.
 
-Tuesday through Saturday card stages must also run on their corresponding UTC
-weekday and before every listed kickoff. Postgame grading requires final scores
-and pre-kickoff closing-line custody for every locked game; weekly audit
-requires a completed audit of the final official card.
+The job retains the exact repository allow list, protected environment,
+owner/production/execution/kill-switch guards, EPA-only model constants,
+read-only repository permissions, clean checkout, credential-free failure
+artifact, and always-written job summary. No workflow contains `self-hosted`.
+No job reads durable state from or writes durable state to the checkout.
 
-The workflow has:
+For Tuesday through Saturday and postgame grading, the same guarded job invokes
+the existing authorized provider-capture service before opening the cloud
+writer transaction. Tuesday records opening market custody, Wednesday-Friday
+record current custody, Saturday records the pre-kickoff closing snapshot, and
+postgame capture obtains final game status without an odds call. The resulting
+bundle is ingested through the existing parser/quarantine layer and uploaded as
+a checksummed Actions artifact. A successful capture supplies the current
+connectivity timestamp to preflight; no human has to refresh that timestamp.
+Weekly audit uses only the completed durable audit and makes no provider call.
 
-- manual dispatch only;
-- one shared repository/week concurrency lock across every operation;
-- `cancel-in-progress: false` for writer serialization;
-- exact V3 repository allow-listing;
-- an explicit confirmation phrase;
-- a protected `v3-production` environment boundary;
-- an owner-provisioned, persistent `cfb-v3-production` self-hosted runner;
-- read-only workflow and job permissions;
-- checkout credential persistence disabled;
-- a redacted JSON preflight artifact;
-- an always-written GitHub job summary;
-- a visible failed guard job when authorization is missing or the kill switch
-  is engaged, without checkout or credential access;
-- no schedule and no automatic policy-change input.
+## Schedule state
 
-The installed adapter remains inert unless every guard and preflight check
-passes and the CLI receives the exact persist confirmation. It loads only
-already-registered policies, replays provider evidence through custody,
-serializes writers with both the workflow concurrency group and a database
-lock file, and calls the existing Tuesday/daily controller, postgame audit, or
-weekly diagnostics service. Official publication remains one atomic controller
-transaction. No code path places a wager or activates a recommendation.
+No cron trigger is enabled. This is deliberate and enforced by repository
+safety tests. The operation gateway is technically capable of every Tuesday-
+Saturday, postgame, and audit stage on GitHub-hosted infrastructure once a
+separate owner-approved scheduling pull request supplies the calendar and
+current week inputs. Schedule activation is not authorized by this milestone.
 
-The guarded job deliberately cannot run on `ubuntu-latest`: a disposable
-runner would discard the mutated SQLite database after the job. Before owner
-authorization, provision a dedicated self-hosted runner with the
-`cfb-v3-production` label, a durable work directory, OS-level access limited to
-the V3 operator, and a documented host backup/restore process. The checkout
-uses `clean: false` so the durable authoritative database is not reset between
-operations. Do not share this runner with untrusted repositories or jobs.
+Until then, an authorized GitHub dispatch can rehearse each cloud stage without
+the owner running terminal commands or keeping a machine online.
 
-Read-only mode is the default. Dry-run mode requires
-`DRY_RUN_V3_OPERATION`, copies the configured database to a disposable
-directory, executes the full persisted path there, verifies integrity and
-foreign keys, and proves the source checksum is unchanged. Persist mode
-requires `EXECUTE_V3_OPERATION`. An existing lock file is never broken
-automatically; it requires kill-switch recovery review.
-Persist mode executes against a same-filesystem staging copy, verifies SQLite
-integrity and foreign keys, writes a checksummed pre-operation backup beneath
-`data/backups/`, and atomically replaces `data/cfb.db` only after success. Any
-failure before replacement leaves the authoritative database unchanged.
+## Provider custody and model contract
 
-## Kill switch
+Provider access still requires explicit authorization and current evidence.
+Raw payloads are checksummed, normalized through the existing custody layer,
+and quarantined on validation failure. Market opening/current/closing rows are
+separate from locked SplashSports lines and can never update them.
 
-Set `CFB_V3_KILL_SWITCH` to engaged at the repository or protected-environment
-level to stop every stage. The same guard covers ingestion, Tuesday lock,
-daily publication, database writers, postgame grading, and weekly audit.
+The active production model remains exactly:
+
+- `epa_only`
+- `epa-only-linear-v1`
+- `epa-differential-v1`
+- `walk-forward-prior-seasons-v1`
+
+Ridge, dynamic-rating, and gradient-boosted research candidates remain
+rejected. This boundary change does not tune, promote, substitute, or expose a
+production activation path for any research model. It does not change the
+locked promotion criteria.
+
+Missing research or provider data may invoke only the existing explicit,
+recorded contest fallback hierarchy. It never permits omission of a locked
+lined FBS game. Every official card still requires one side per locked game,
+Confidence 1–5 for every pick, and exactly five ranked Top 5 games when five or
+more are eligible.
+
+## Kill switch and recovery
 
 Emergency order:
 
-1. Engage `CFB_V3_KILL_SWITCH`.
-2. Disable `CFB_V3_OPERATION_EXECUTION_ENABLED`.
-3. Disable `CFB_V3_PRODUCTION_ENABLED`.
-4. Cancel any run that has not reached its atomic controller transaction.
-5. Preserve the failed-run artifact and logs.
-6. Inspect the latest official publication read-only.
-7. Verify database SHA-256, `integrity_check`, and `foreign_key_check`.
-8. Follow the operation-specific recovery procedure below.
+1. Set `CFB_V3_KILL_SWITCH=true`.
+2. Set `CFB_V3_OPERATION_EXECUTION_ENABLED=false`.
+3. Set `CFB_V3_PRODUCTION_ENABLED=false`.
+4. Cancel any queued GitHub run.
+5. Preserve redacted artifacts and managed-database logs.
+6. Inspect the last immutable PostgreSQL snapshot and operation completion.
+7. Restore only through the provider's managed recovery process to a separate
+   database, then verify snapshot checksum, SQLite integrity, foreign keys,
+   domain migration ledger, and cloud migration ledger.
+8. Resume only after owner review with a new operational identity where the
+   domain idempotency policy requires one.
 
-No schedule currently exists, so there is no cron trigger to disable.
+Never update/delete a snapshot, operation completion, locked line, card,
+adjustment, audit, diagnostic, or migration-ledger row to force recovery.
+Never treat a runner temporary file or Actions artifact as authoritative state.
 
-## Preflight command
+## Remaining owner setup and readiness answers
 
-The machine-verifiable command is:
+One-time owner setup remains:
 
-```text
-python -m scripts.production_preflight \
-  --operation tuesday_lock \
-  --database data/cfb.db \
-  --pretty
-```
+- select/provision managed PostgreSQL with TLS, backups, and recovery;
+- store its URL and provider API keys in the protected GitHub Environment;
+- approve the reviewed policy configuration and run the guarded cloud setup;
+- configure secret-free production variables and the weekly intake location;
+- authorize/review provider connectivity and one complete dry rehearsal;
+- explicitly approve cutover and, later, scheduling in separate decisions.
 
-It exits nonzero whenever any blocker exists. Add `--report-only` only when a
-human or CI step needs to capture the truthful report without treating
-`PRODUCTION READY: NO` as a command failure.
+Recurring owner work remains:
 
-The report includes every check, blocker, warning, credential variable name,
-database hash before and after, live API call count, execution-attempt flag,
-and its own canonical SHA-256. It never applies pending migrations.
+- supply the authoritative weekly SplashSports screenshot or CSV/XLSX;
+- confirm expected lined-game count and resolve genuinely ambiguous source
+  data;
+- review exceptional failed/quarantined runs or proposed policy changes.
 
-The adapter's read-only weekly-config path is:
+Explicit answers:
 
-```text
-python -m scripts.run_production_operation \
-  --operation tuesday_lock \
-  --database data/cfb.db \
-  --weekly-config config/production-weeks/week.json \
-  --mode read-only
-```
-
-Change to `--mode dry-run --confirmation DRY_RUN_V3_OPERATION` only after the
-read-only report passes. Persist execution is reserved for the protected
-workflow or an owner-approved operating host.
-
-## Database cutover preparation
-
-`python -m scripts.prepare_production_database` is the only production-cutover
-wrapper. Rehearsal mode copies the source, records hashes, row counts,
-pre-migration integrity and foreign keys, and the migration inventory, applies migrations 1–14
-through `migrations.runner`, registers the proposed definitions from
-`config/production_policies.example.json` through the existing immutable
-policy services, and verifies the result. Those definitions still require
-owner approval before authoritative use. The source must remain byte-for-byte
-unchanged.
-
-Authoritative mode remains Category E. It requires all of the following:
-
-- the exact `data/cfb.db` target;
-- a new explicit backup path whose checksum matches the source;
-- `CFB_V3_OWNER_DATABASE_MIGRATION_APPROVED=true`;
-- `CFB_V3_KILL_SWITCH=true`;
-- `CFB_V3_OPERATION_EXECUTION_ENABLED=false`;
-- `CFB_V3_PRODUCTION_ENABLED=false`;
-- the exact `MIGRATE_V3_AUTHORITATIVE_DATABASE` confirmation.
-
-The script never edits `schema_migrations` directly. A failure leaves the
-verified backup for the documented restore procedure and does not fabricate
-ledger or policy rows.
-
-## Recovery
-
-### Tuesday lock
-
-An identical completed run key is idempotent. A conflicting or partial
-contest must never be relocked or repaired in place. Engage the kill switch,
-preserve the failed database and logs, inspect line custody, and restore a
-verified pre-run database snapshot if the atomic controller guarantee was
-somehow bypassed. Retry only with an approved operational identity.
-
-### Wednesday through Saturday
-
-Never branch from an older publication. Confirm the latest official version,
-source freshness, line-snapshot hash, and policy assignments. A failed key is
-not reused. Correct source data or the documented defect, preserve both
-versions when a correction is required, and create the next append-only
-revision.
-
-### Postgame grading
-
-Do not rewrite a completed audit. Correct scores or closing-line custody using
-the governed source path, retain the prior audit, and create a superseding
-audit run with complete evidence.
-
-### Weekly audit
-
-Diagnostics require a completed audit and cannot activate recommendations.
-Correct the source audit first, then create a new diagnostic run. Owner
-approval and a separately versioned policy remain mandatory for any later
-rule change.
-
-### Migration or integrity failure
-
-Do not apply ad hoc schema SQL. Stop all writers, retain row counts and hashes,
-verify a disposable copy, and follow `migrations/README.md`. Restore the last
-verified complete snapshot rather than editing migration-ledger rows.
-
-## Remaining authorization sequence
-
-The remaining owner actions are:
-
-1. **Category E — required before the first live week:** approve the reviewed
-   policy configuration, create a verified backup, and authorize the guarded
-   authoritative migration/policy registration.
-2. **Category C — required before the first live week:** configure
-   `CFBD_API_KEY` and `ODDS_API_KEY` as `v3-production` environment secrets,
-   authorize the controlled connectivity check, and review its redacted
-   evidence timestamp.
-3. **Category E — required before the first live week:** protect the
-   `v3-production` environment, restrict approvers, provision the dedicated
-   durable `cfb-v3-production` runner, configure the documented non-secret
-   variables, and keep the kill switch engaged until the dry-run report is
-   accepted.
-4. **Category D — required each live Tuesday:** provide the authoritative
-   SplashSports screenshots or CSV/XLSX, confirm expected lined-game count,
-   review any visible import rejection, and approve the resulting checksum.
-5. **Category D — required for each operating stage:** approve current
-   provider evidence or explicit documented freshness fallbacks, plus any
-   sourced manual contextual adjustments. Supply a real closing-book choice
-   before postgame grading.
-6. **Category E — required before the first persisted operation:** review a
-   complete disposable dry run, disengage the kill switch, enable production
-   and operation flags, and explicitly approve cutover.
-
-Schedule activation is **Category E, later only**. No schedule exists, and
-enabling one requires a separate owner decision and pull request.
+1. Does production require the owner's PC to be running? **NO.**
+2. Does production require a self-managed runner? **NO.**
+3. Can Tuesday-Saturday operations run on GitHub-hosted infrastructure? **YES.**
+4. Is production state durable between ephemeral workflow runs? **YES**, after
+   the managed PostgreSQL stream is provisioned and bootstrapped.
+5. Managed datastore: **PostgreSQL**, for transactional durable snapshots,
+   uniqueness, immutable history, atomic head changes, and advisory locks.
+6. Owner setup: the one-time protected configuration listed above.
+7. Recurring owner work: weekly SplashSports input and genuine ambiguity review.
+8. Are schedules enabled? **NO; separate approval is required.**
+9. Current `PRODUCTION READY`: **NO**, pending external setup, current-week
+   input, live authorization, rehearsal, and explicit cutover approval.

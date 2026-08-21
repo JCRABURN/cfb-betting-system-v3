@@ -45,6 +45,7 @@ jobs:
       vars.CFB_V3_OPERATION_EXECUTION_ENABLED != 'true' ||
       vars.CFB_V3_KILL_SWITCH != 'false' ||
       vars.CFB_V3_OWNER_CUTOVER_APPROVED != 'true' ||
+      vars.CFB_V3_PROVIDER_CONNECTIVITY_AUTHORIZED != 'true' ||
       inputs.confirmation != 'RUN_V3_OPERATION'
     runs-on: ubuntu-latest
     timeout-minutes: 5
@@ -67,12 +68,12 @@ jobs:
       vars.CFB_V3_OPERATION_EXECUTION_ENABLED == 'true' &&
       vars.CFB_V3_KILL_SWITCH == 'false' &&
       vars.CFB_V3_OWNER_CUTOVER_APPROVED == 'true' &&
+      vars.CFB_V3_PROVIDER_CONNECTIVITY_AUTHORIZED == 'true' &&
       inputs.confirmation == 'RUN_V3_OPERATION'
     environment: v3-production
-    # The authoritative SQLite file must live on an owner-provisioned durable
-    # operating host. A disposable GitHub-hosted runner cannot persist it.
-    runs-on: [self-hosted, cfb-v3-production]
-    timeout-minutes: 30
+    # PostgreSQL owns durable state; the runner workspace is disposable.
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
     permissions:
       contents: read
     env:
@@ -82,7 +83,7 @@ jobs:
       CFB_V3_KILL_SWITCH: ${{ vars.CFB_V3_KILL_SWITCH }}
       CFB_V3_OWNER_CUTOVER_APPROVED: ${{ vars.CFB_V3_OWNER_CUTOVER_APPROVED }}
       CFB_V3_REPOSITORY: JCRABURN/cfb-betting-system-v3
-      CFB_V3_DATABASE_PATH: data/cfb.db
+      CFB_V3_PERSISTENCE_BACKEND: managed_postgresql
       CFB_V3_WEEKLY_CONFIG_FILE: ${{ vars.CFB_V3_WEEKLY_CONFIG_FILE }}
       CFB_V3_PROVIDER_CONNECTIVITY_AUTHORIZED: ${{ vars.CFB_V3_PROVIDER_CONNECTIVITY_AUTHORIZED }}
       CFB_V3_PROVIDER_CONNECTIVITY_VERIFIED_AT: ${{ vars.CFB_V3_PROVIDER_CONNECTIVITY_VERIFIED_AT }}
@@ -109,12 +110,13 @@ jobs:
       CFB_V3_DIAGNOSTICS_POLICY_VERSION: ${{ vars.CFB_V3_DIAGNOSTICS_POLICY_VERSION }}
       CFBD_API_KEY: ${{ secrets.CFBD_API_KEY }}
       ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
+      CFB_V3_DATABASE_URL: ${{ secrets.CFB_V3_DATABASE_URL }}
 
     steps:
       - name: Checkout exact requested commit
         uses: actions/checkout@v4
         with:
-          clean: false
+          clean: true
           persist-credentials: false
 
       - name: Set up Python
@@ -133,12 +135,12 @@ jobs:
       - name: Run guarded operation
         id: operation
         run: >-
-          python -m scripts.run_production_operation
+          python -m scripts.run_cloud_production_operation
           --operation "${{ inputs.operation }}"
-          --database data/cfb.db
           --weekly-config "${{ vars.CFB_V3_WEEKLY_CONFIG_FILE }}"
-          --mode persist
-          --confirmation EXECUTE_V3_OPERATION
+          --confirmation EXECUTE_V3_CLOUD_OPERATION
+          --capture-provider-data
+          --provider-confirmation CAPTURE_V3_PROVIDER_PAYLOADS
           --preflight-output "$RUNNER_TEMP/v3-production-preflight.json"
           --result-output "$RUNNER_TEMP/v3-production-result.json"
 
@@ -161,6 +163,16 @@ jobs:
           path: ${{ runner.temp }}/v3-production-result.json
           if-no-files-found: ignore
           retention-days: 14
+
+      - name: Upload checksummed provider evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: >-
+            v3-provider-evidence-${{ inputs.season }}-${{ inputs.week }}-${{ inputs.operation }}
+          path: data/provider_evidence/cloud-*
+          if-no-files-found: ignore
+          retention-days: 90
 
       - name: Record operation outcome
         if: always()
