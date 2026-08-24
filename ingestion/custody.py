@@ -129,6 +129,9 @@ class ParsedMarketRecord(AcceptedProviderRecord):
     market_type: str
     home_spread: float
     home_price: int | None
+    away_spread: float | None
+    away_price: int | None
+    line_type: str
     event_start_at: datetime
 
     @property
@@ -444,6 +447,58 @@ class OddsSpreadParser:
             isinstance(price_value, bool) or not isinstance(price_value, int)
         ):
             raise RecordRejected("malformed_record", "home_price must be an integer when present")
+        away_spread_value = record.get("away_spread")
+        away_price_value = record.get("away_price")
+        line_type_value = record.get("line_type", "current")
+        if not isinstance(line_type_value, str) or line_type_value not in (
+            "opening",
+            "current",
+            "closing",
+        ):
+            raise RecordRejected(
+                "malformed_record", "line_type must be opening, current, or closing"
+            )
+        if self.version == "odds_spread_v3":
+            if (
+                isinstance(away_spread_value, bool)
+                or not isinstance(away_spread_value, (int, float))
+                or not math.isfinite(float(away_spread_value))
+                or not -100 <= float(away_spread_value) <= 100
+            ):
+                raise RecordRejected(
+                    "malformed_spread",
+                    "away_spread must be finite and within [-100, 100]",
+                )
+            if not math.isclose(
+                home_spread + float(away_spread_value), 0.0, abs_tol=1e-6
+            ):
+                raise RecordRejected(
+                    "malformed_spread", "home and away spreads must be exact opposites"
+                )
+            for field, value in (
+                ("home_price", price_value),
+                ("away_price", away_price_value),
+            ):
+                if (
+                    isinstance(value, bool)
+                    or not isinstance(value, int)
+                    or -100 < value < 100
+                ):
+                    raise RecordRejected(
+                        "malformed_record", f"{field} must be valid American odds"
+                    )
+        elif away_spread_value is not None and (
+            isinstance(away_spread_value, bool)
+            or not isinstance(away_spread_value, (int, float))
+            or not math.isfinite(float(away_spread_value))
+        ):
+            raise RecordRejected("malformed_spread", "away_spread must be finite")
+        elif away_price_value is not None and (
+            isinstance(away_price_value, bool) or not isinstance(away_price_value, int)
+        ):
+            raise RecordRejected(
+                "malformed_record", "away_price must be an integer when present"
+            )
 
         season = _required_integer(record.get("season"), "season")
         week = _required_integer(record.get("week"), "week")
@@ -514,6 +569,7 @@ class OddsSpreadParser:
             record_key=payload_sha256(
                 {
                     "bookmaker": _required_text(record.get("bookmaker"), "bookmaker").casefold(),
+                    "line_type": line_type_value,
                     "observed_at": _utc_text(observed_at),
                     "provider_matchup_id": provider_matchup_id,
                 }
@@ -532,6 +588,11 @@ class OddsSpreadParser:
             market_type=market_type,
             home_spread=home_spread,
             home_price=price_value,
+            away_spread=(
+                float(away_spread_value) if away_spread_value is not None else None
+            ),
+            away_price=away_price_value,
+            line_type=line_type_value,
             event_start_at=event_start,
         )
 

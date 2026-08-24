@@ -5,6 +5,7 @@ import json
 import shutil
 import sqlite3
 import zipfile
+from dataclasses import replace
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
@@ -53,6 +54,7 @@ POLICY_VERSIONS = {
     "refresh": "production-refresh-v1",
     "audit": "production-audit-v1",
     "diagnostics": "production-diagnostics-v1",
+    "sportsbook": "production-sportsbook-v1",
 }
 SECRET_VALUES = ("cfbd-value-must-not-print", "odds-value-must-not-print")
 
@@ -344,7 +346,7 @@ def test_database_cutover_rehearsal_preserves_source_and_registers_policies(tmp_
 
     assert report.source_unchanged is True
     assert _sha(source) == before
-    assert report.migrations_applied == tuple(range(1, 15))
+    assert report.migrations_applied == tuple(range(1, 16))
     assert dict(report.registered_policy_versions) == POLICY_VERSIONS
     assert report.pre_integrity_check == "ok"
     assert report.pre_foreign_key_violation_count == 0
@@ -411,6 +413,49 @@ def test_managed_cloud_workspace_preserves_full_card_and_locked_line_gates(
             )
     finally:
         connection.close()
+
+
+def test_production_operation_automatically_emits_live_board_from_current_offer(
+    prepared_week,
+):
+    root, database, configuration, settings = prepared_week
+    evidence_parent = root / "data" / "provider_evidence"
+    evidence_parent.mkdir()
+    bundle_path = capture_live_provider_bundle(
+        {"CFBD_API_KEY": SECRET_VALUES[0], "ODDS_API_KEY": SECRET_VALUES[1]},
+        repository_root=root,
+        output_directory=evidence_parent / "live-board",
+        season=2026,
+        week=1,
+        line_type="current",
+        authorized=True,
+        captured_at=NOW,
+        session=_CaptureSession(),
+    )
+
+    result, preflight = execute_production_operation(
+        settings,
+        replace(
+            configuration,
+            provider_bundle_path=bundle_path,
+            freshness_fallbacks=tuple(
+                item
+                for item in configuration.freshness_fallbacks
+                if item.get("data_type") not in ("odds", "game_status")
+            ),
+        ),
+        code_commit_sha="e" * 40,
+        dry_run=True,
+        now=NOW,
+    )
+
+    assert preflight.production_ready is True
+    assert result.sportsbook_recommendation_count == 1
+    assert result.live_betting_board[0]["bookmaker"] == "draftkings"
+    assert result.live_betting_board[0]["policy_version"] == POLICY_VERSIONS["sportsbook"]
+    assert result.live_betting_board[0]["decision"] in ("BET", "NO BET")
+    assert result.pick_count == len(LINES)
+    assert result.wagers_placed == 0
 
 
 def test_production_adapter_persists_once_and_replays_idempotently(prepared_week):
@@ -579,7 +624,7 @@ class _CaptureSession:
                         "season": 2026,
                         "week": 1,
                         "seasonType": "regular",
-                        "startDate": "2026-08-29T16:00:00Z",
+                        "startDate": "2026-09-05T16:00:00Z",
                         "homeTeam": "Alabama",
                         "awayTeam": "East Carolina",
                         "completed": False,
@@ -593,7 +638,7 @@ class _CaptureSession:
                         "id": "odds-event-1",
                         "home_team": "Alabama Crimson Tide",
                         "away_team": "East Carolina Pirates",
-                        "commence_time": "2026-08-29T16:00:00Z",
+                        "commence_time": "2026-09-05T16:00:00Z",
                         "bookmakers": [
                             {
                                 "key": "draftkings",
@@ -606,7 +651,12 @@ class _CaptureSession:
                                                 "name": "Alabama Crimson Tide",
                                                 "point": -28.5,
                                                 "price": -110,
-                                            }
+                                            },
+                                            {
+                                                "name": "East Carolina Pirates",
+                                                "point": 28.5,
+                                                "price": -110,
+                                            },
                                         ],
                                     }
                                 ],
@@ -673,6 +723,11 @@ def test_live_capture_preparation_preserves_raw_evidence_without_secret_values(t
     )
 
     assert len(bundle.payloads) == 2
+    odds_spec = next(item for item in bundle.payloads if item.data_type == "odds")
+    normalized = json.loads(odds_spec.payload_path.read_text(encoding="utf-8"))
+    assert odds_spec.parser_version == "odds_spread_v3"
+    assert normalized[0]["away_spread"] == 28.5
+    assert normalized[0]["away_price"] == -110
     assert (output / "cfbd-games.raw.json").is_file()
     assert (output / "odds.raw.json").is_file()
     assert all(value not in serialized for value in SECRET_VALUES)

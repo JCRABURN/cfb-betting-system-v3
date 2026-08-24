@@ -14,6 +14,7 @@ from typing import Protocol
 
 import requests
 
+from business_entities.live_sportsbook import record_sportsbook_market_offer
 from ingestion import (
     AcceptedProviderRecord,
     CanonicalTeamResolver,
@@ -374,7 +375,7 @@ class ProviderSnapshotParser:
 
 
 def _parser(version: str):
-    if version == "odds_spread_v1":
+    if version in ("odds_spread_v1", "odds_spread_v2", "odds_spread_v3"):
         return OddsSpreadParser(version)
     if version == CfbdTeamStatsParser.version:
         return CfbdTeamStatsParser()
@@ -631,6 +632,23 @@ def _odds_writer(line_type: str):
                 continue
             if record.bookmaker.casefold() == "consensus":
                 raise ProviderIngestionError("synthetic consensus rows are never canonical")
+            snapshot = conn.execute(
+                "SELECT id, provider FROM provider_market_snapshots "
+                "WHERE provider_matchup_id = ? AND bookmaker = ? "
+                "AND observed_at = ? AND parser_version = ?",
+                (
+                    record.provider_matchup_id,
+                    record.bookmaker,
+                    record.observed_at.isoformat(),
+                    record.parser_version,
+                ),
+            ).fetchone()
+            if snapshot is None:
+                raise ProviderIngestionError("market snapshot custody is missing")
+            if record.parser_version == "odds_spread_v3" and record.line_type != line_type:
+                raise ProviderIngestionError(
+                    "two-sided offer line_type conflicts with its provider bundle"
+                )
             requested = (
                 record.game_id,
                 record.season,
@@ -641,7 +659,7 @@ def _odds_writer(line_type: str):
                 record.home_spread,
                 record.home_price,
                 line_type,
-                "the_odds_api",
+                snapshot[1],
                 record.observed_at.isoformat(),
             )
             existing = conn.execute(
@@ -658,14 +676,42 @@ def _odds_writer(line_type: str):
             if existing:
                 if len(existing) != 1 or tuple(existing[0]) != requested:
                     raise ProviderIngestionError("market line conflicts with prior custody")
-                continue
-            conn.execute(
-                "INSERT INTO betting_lines "
-                "(game_id, season, week, home_team, away_team, book, home_spread, "
-                "home_moneyline, line_type, source, fetched_at) "
-                "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)",
-                requested,
-            )
+                line_row = conn.execute(
+                    "SELECT id FROM betting_lines WHERE game_id = ? AND book = ? "
+                    "AND line_type = ? AND fetched_at = ?",
+                    (
+                        record.game_id,
+                        record.bookmaker,
+                        line_type,
+                        record.observed_at.isoformat(),
+                    ),
+                ).fetchone()
+                assert line_row is not None
+                betting_line_id = int(line_row[0])
+            else:
+                betting_line_id = int(
+                    conn.execute(
+                        "INSERT INTO betting_lines "
+                        "(game_id, season, week, home_team, away_team, book, home_spread, "
+                        "home_moneyline, line_type, source, fetched_at) "
+                        "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)",
+                        requested,
+                    ).lastrowid
+                )
+            if record.parser_version == "odds_spread_v3":
+                assert record.away_spread is not None and record.away_price is not None
+                record_sportsbook_market_offer(
+                    conn,
+                    provider_market_snapshot_id=int(snapshot[0]),
+                    betting_line_id=betting_line_id,
+                    line_type=line_type,
+                    away_spread=record.away_spread,
+                    away_price=record.away_price,
+                    provenance=(
+                        f"provider={snapshot[1]};provider_market_snapshot_id={snapshot[0]};"
+                        f"parser_version={record.parser_version}"
+                    ),
+                )
 
     return write
 
@@ -674,7 +720,7 @@ def ingest_provider_bundle(
     conn: sqlite3.Connection,
     bundle: ProviderBundle,
 ) -> tuple[IngestionSummary, ...]:
-    """Replay all evidence through M14 custody; never touch contest locks."""
+    """Replay all evidence through governed custody; never touch contest locks."""
     service = ProviderIngestionService()
     summaries: list[IngestionSummary] = []
     for spec in bundle.payloads:
@@ -691,7 +737,11 @@ def ingest_provider_bundle(
             writer = _write_team_stats
         elif spec.parser_version == CfbdGamesParser.version:
             writer = _write_games
-        elif spec.parser_version == "odds_spread_v1":
+        elif spec.parser_version in (
+            "odds_spread_v1",
+            "odds_spread_v2",
+            "odds_spread_v3",
+        ):
             if spec.line_type is None:
                 raise ProductionProviderError("odds payload requires an explicit line_type")
             writer = _odds_writer(spec.line_type)
@@ -813,6 +863,7 @@ def _normalized_odds_records(
     season: int,
     week: int,
     requested_at: datetime,
+    line_type: str,
 ) -> list[dict[str, object]]:
     if not isinstance(payload, list):
         raise ProductionProviderError("The Odds API payload must be an array")
@@ -855,7 +906,17 @@ def _normalized_odds_records(
                     raise ProductionProviderError(
                         f"odds event {event_id}/{book} lacks one home spread"
                     )
+                away_outcomes = [
+                    outcome
+                    for outcome in outcomes
+                    if isinstance(outcome, Mapping) and outcome.get("name") == away
+                ]
+                if len(away_outcomes) != 1:
+                    raise ProductionProviderError(
+                        f"odds event {event_id}/{book} lacks one away spread"
+                    )
                 outcome = home_outcomes[0]
+                away_outcome = away_outcomes[0]
                 records.append(
                     {
                         "matchup_id": f"{event_id}:{book}",
@@ -864,6 +925,9 @@ def _normalized_odds_records(
                         "market_type": "spread",
                         "home_spread": outcome.get("point"),
                         "home_price": outcome.get("price"),
+                        "away_spread": away_outcome.get("point"),
+                        "away_price": away_outcome.get("price"),
+                        "line_type": line_type,
                         "season": season,
                         "week": week,
                         "observed_at": observed.isoformat(),
@@ -955,6 +1019,7 @@ def capture_live_provider_bundle(
             season=season,
             week=week,
             requested_at=now,
+            line_type=line_type,
         )
 
     output.mkdir()
@@ -989,7 +1054,7 @@ def capture_live_provider_bundle(
                 "endpoint": odds_endpoint,
                 "request_parameters": odds_params,
                 "requested_at": now.isoformat(),
-                "parser_version": "odds_spread_v1",
+                "parser_version": "odds_spread_v3",
                 "raw_payload_reference": str(odds_raw_path),
                 "payload_path": odds_path.name,
                 "payload_sha256": odds_sha,

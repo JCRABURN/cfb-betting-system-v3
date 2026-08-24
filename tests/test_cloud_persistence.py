@@ -128,7 +128,7 @@ def test_sqlite_remains_a_valid_ephemeral_execution_snapshot(tmp_path):
     payload, checksum, schema_version = _validate_sqlite_snapshot(snapshot)
     assert len(payload) > 0
     assert checksum == hashlib.sha256(payload).hexdigest()
-    assert schema_version == 14
+    assert schema_version == 15
 
 
 def test_postgresql_writer_lock_serializes_ephemeral_runners():

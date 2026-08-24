@@ -16,6 +16,7 @@ from business_entities.contextual_adjustments import (
     ManualAdjustmentPolicy,
     register_manual_adjustment_policy,
 )
+from business_entities.live_sportsbook import register_sportsbook_recommendation_policy
 from business_entities.ranking import (
     ConfidenceRankingPolicy,
     register_confidence_ranking_policy,
@@ -58,6 +59,7 @@ POLICY_VERSIONS = {
     "refresh": "production-refresh-v1",
     "audit": "production-audit-v1",
     "diagnostics": "production-diagnostics-v1",
+    "sportsbook": "production-sportsbook-v1",
 }
 LINE_GAMES = (
     (401856634, "East Carolina", "Alabama", -28.5),
@@ -151,6 +153,24 @@ def _register_policies(database: Path) -> None:
             provenance=provenance,
         ),
     )
+    register_sportsbook_recommendation_policy(
+        conn,
+        policy_version=POLICY_VERSIONS["sportsbook"],
+        residual_stddev_points=14.0,
+        minimum_spread_edge_points=1.5,
+        minimum_cover_probability=0.545,
+        minimum_expected_value=0.025,
+        maximum_odds_age_seconds=900,
+        material_update_seconds=300,
+        material_spread_change_points=0.5,
+        material_price_change=5,
+        maximum_stake_units=1.0,
+        stake_units_per_expected_value=10.0,
+        stake_increment_units=0.25,
+        effective_at=effective_at,
+        created_by=actor,
+        provenance=provenance,
+    )
     conn.commit()
     conn.close()
 
@@ -212,6 +232,7 @@ def _valid_environment(line_path: Path) -> dict[str, str]:
         "CFB_V3_REFRESH_POLICY_VERSION": POLICY_VERSIONS["refresh"],
         "CFB_V3_AUDIT_POLICY_VERSION": POLICY_VERSIONS["audit"],
         "CFB_V3_DIAGNOSTICS_POLICY_VERSION": POLICY_VERSIONS["diagnostics"],
+        "CFB_V3_SPORTSBOOK_POLICY_VERSION": POLICY_VERSIONS["sportsbook"],
         "CFBD_API_KEY": SECRET_SENTINELS[0],
         "ODDS_API_KEY": SECRET_SENTINELS[1],
     }

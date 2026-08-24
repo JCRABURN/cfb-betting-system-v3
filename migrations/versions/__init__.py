@@ -19,6 +19,7 @@ from migrations.versions import (
     v0012_weekly_diagnostics,
     v0013_provider_ingestion_custody,
     v0014_official_weekly_controller,
+    v0015_live_sportsbook_recommendations,
 )
 
 
@@ -37,4 +38,5 @@ MIGRATION_MODULES = (
     v0012_weekly_diagnostics,
     v0013_provider_ingestion_custody,
     v0014_official_weekly_controller,
+    v0015_live_sportsbook_recommendations,
 )

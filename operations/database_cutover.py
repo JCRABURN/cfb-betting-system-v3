@@ -19,6 +19,7 @@ from business_entities.contextual_adjustments import (
     ManualAdjustmentPolicy,
     register_manual_adjustment_policy,
 )
+from business_entities.live_sportsbook import register_sportsbook_recommendation_policy
 from business_entities.ranking import (
     ConfidenceRankingPolicy,
     register_confidence_ranking_policy,
@@ -42,7 +43,7 @@ from migrations.runner import apply_migrations, load_migrations, table_row_count
 from operations.config import EXPECTED_REPOSITORY
 
 
-POLICY_CONFIGURATION_VERSION = "v3-production-policies-v1"
+POLICY_CONFIGURATION_VERSION = "v3-production-policies-v2"
 
 
 class DatabaseCutoverError(RuntimeError):
@@ -139,14 +140,19 @@ def register_approved_policies(
     controller = payload.get("controller")
     selection = payload.get("selection")
     confidence = payload.get("confidence")
+    sportsbook = payload.get("sportsbook")
     versions = payload.get("versions")
-    if not all(isinstance(item, Mapping) for item in (controller, selection, confidence, versions)):
+    if not all(
+        isinstance(item, Mapping)
+        for item in (controller, selection, confidence, sportsbook, versions)
+    ):
         raise DatabaseCutoverError(
-            "controller, selection, confidence, and versions must be objects"
+            "controller, selection, confidence, sportsbook, and versions must be objects"
         )
     assert isinstance(controller, Mapping)
     assert isinstance(selection, Mapping)
     assert isinstance(confidence, Mapping)
+    assert isinstance(sportsbook, Mapping)
     assert isinstance(versions, Mapping)
     raw_sources = controller.get("required_sources")
     if not isinstance(raw_sources, list) or any(not isinstance(item, Mapping) for item in raw_sources):
@@ -168,6 +174,7 @@ def register_approved_policies(
     refresh_version = _text(versions.get("refresh"), "versions.refresh")
     audit_version = _text(versions.get("audit"), "versions.audit")
     diagnostics_version = _text(versions.get("diagnostics"), "versions.diagnostics")
+    sportsbook_version = _text(versions.get("sportsbook"), "versions.sportsbook")
     try:
         conn.execute("BEGIN IMMEDIATE")
         register_weekly_controller_policy(
@@ -265,6 +272,60 @@ def register_approved_policies(
                 provenance=provenance,
             ),
         )
+        register_sportsbook_recommendation_policy(
+            conn,
+            policy_version=sportsbook_version,
+            residual_stddev_points=_number(
+                sportsbook.get("residual_stddev_points"),
+                "sportsbook.residual_stddev_points",
+            ),
+            minimum_spread_edge_points=_number(
+                sportsbook.get("minimum_spread_edge_points"),
+                "sportsbook.minimum_spread_edge_points",
+            ),
+            minimum_cover_probability=_number(
+                sportsbook.get("minimum_cover_probability"),
+                "sportsbook.minimum_cover_probability",
+            ),
+            minimum_expected_value=_number(
+                sportsbook.get("minimum_expected_value"),
+                "sportsbook.minimum_expected_value",
+            ),
+            maximum_odds_age_seconds=_integer(
+                sportsbook.get("maximum_odds_age_seconds"),
+                "sportsbook.maximum_odds_age_seconds",
+                1,
+            ),
+            material_update_seconds=_integer(
+                sportsbook.get("material_update_seconds"),
+                "sportsbook.material_update_seconds",
+                1,
+            ),
+            material_spread_change_points=_number(
+                sportsbook.get("material_spread_change_points"),
+                "sportsbook.material_spread_change_points",
+            ),
+            material_price_change=_integer(
+                sportsbook.get("material_price_change"),
+                "sportsbook.material_price_change",
+                1,
+            ),
+            maximum_stake_units=_number(
+                sportsbook.get("maximum_stake_units"),
+                "sportsbook.maximum_stake_units",
+            ),
+            stake_units_per_expected_value=_number(
+                sportsbook.get("stake_units_per_expected_value"),
+                "sportsbook.stake_units_per_expected_value",
+            ),
+            stake_increment_units=_number(
+                sportsbook.get("stake_increment_units"),
+                "sportsbook.stake_increment_units",
+            ),
+            effective_at=effective_at,
+            created_by=created_by,
+            provenance=provenance,
+        )
         conn.commit()
     except Exception:
         conn.rollback()
@@ -280,6 +341,7 @@ def register_approved_policies(
             "refresh",
             "audit",
             "diagnostics",
+            "sportsbook",
         )
     )
 

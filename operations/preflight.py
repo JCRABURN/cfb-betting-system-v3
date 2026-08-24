@@ -44,6 +44,7 @@ EXPECTED_POLICY_TABLES = (
     "card_refresh_policies",
     "postgame_audit_policies",
     "weekly_diagnostic_policies",
+    "sportsbook_recommendation_policies",
 )
 
 
@@ -531,6 +532,22 @@ def _registered_policy_checks(
             "SELECT 1 FROM weekly_diagnostic_policies WHERE policy_version = ? "
             "AND julianday(effective_at) <= julianday(?)",
             (versions.get("diagnostics", ""), effective_at),
+        ),
+        (
+            "sportsbook",
+            "SELECT 1 FROM sportsbook_recommendation_policies "
+            "WHERE policy_version = ? AND production_model_name = ? "
+            "AND production_model_version = ? "
+            "AND probability_model_version = 'normal-margin-v1' "
+            "AND maximum_odds_age_seconds <= 900 "
+            "AND maximum_stake_units > 0 "
+            "AND julianday(effective_at) <= julianday(?)",
+            (
+                versions.get("sportsbook", ""),
+                ACTIVE_MODEL_NAME,
+                ACTIVE_MODEL_VERSION,
+                effective_at,
+            ),
         ),
     )
     missing = tuple(
