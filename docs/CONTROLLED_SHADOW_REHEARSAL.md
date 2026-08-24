@@ -3,7 +3,7 @@
 PR #21 adds a manually dispatched, cloud-hosted rehearsal path for one real
 week. It uses an isolated managed-PostgreSQL stream and the existing EPA-only
 contest engine. Production remains disabled, the production kill switch stays
-engaged, schedules remain absent, and no wager-placement path exists.
+engaged, shadow schedules remain absent, and no wager-placement path exists.
 
 The workflow is `.github/workflows/v3_shadow_rehearsal.yml`. Every run uses a
 GitHub-hosted runner; the runner filesystem is disposable and is never the
@@ -130,15 +130,17 @@ locked line, offer, designation, card, evaluation, audit, diagnostic, or cloud
 snapshot. Re-run only with the same idempotency key for a true replay or a new
 governed revision identity where the policy requires it.
 
-Recurring schedules and production activation remain outside PR #21 and
-require separate explicit approval.
+The shadow workflow remains manual and isolated. Production recurring
+scheduling is implemented separately under the PR #22 contract below and can
+never activate this shadow stream.
 
-## Deferred PR #22 scheduling contract
+## PR #22 scheduling contract
 
-PR #21 does not add a schedule. If the owner separately authorizes PR #22, its
-cloud-hosted DraftKings refresh cadence must be configuration-driven, require
-no owner computer or command, respect the configured Odds API quota, and add
-governed pre-kickoff refreshes. It must automatically supersede materially
-changed DraftKings recommendations and fail visibly when quota or freshness
-prevents a current recommendation. An aggressive polling interval must never
-be hard-coded independently of the owner's provider allowance.
+The owner-authorized cloud schedule is configuration-driven and requires no
+owner computer or command after the weekly source/configuration is present. A
+fixed API-free dispatcher resolves explicit weekly entries; it is not an
+aggressive provider polling loop. Governed pre-kickoff sportsbook refreshes
+must fit the declared Odds API allowance and weekly call cap, preserve the
+configured credit reserve, automatically supersede materially changed
+DraftKings recommendations, and fail visibly when quota, freshness, provider
+coverage, or timing prevents a current recommendation.

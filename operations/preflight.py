@@ -27,11 +27,13 @@ from operations.config import (
     ACTIVE_FEATURE_SCHEMA_VERSION,
     ACTIVE_MODEL_NAME,
     ACTIVE_MODEL_VERSION,
+    CARD_STAGE_OPERATIONS,
     EXPECTED_REPOSITORY,
     ORIGINAL_REPOSITORY,
     PRODUCTION_OPERATIONS,
     ProductionSettings,
 )
+from production_scheduling import operation_instance_is_valid
 
 
 CONNECTIVITY_EVIDENCE_MAX_AGE = timedelta(hours=24)
@@ -277,12 +279,20 @@ def _configuration_checks(
         f"operation is recognized: {settings.operation}",
         f"operation must be one of: {', '.join(PRODUCTION_OPERATIONS)}",
     )
+    _record(
+        checks,
+        "operation_instance",
+        operation_instance_is_valid(settings.operation, settings.operation_instance),
+        "operation instance is valid for the governed stage",
+        "sportsbook_refresh requires YYYYMMDDTHHMMZ; all other stages require no instance",
+    )
     expected_weekday = {
         "tuesday_lock": 1,
         "wednesday_refresh": 2,
         "thursday_refresh": 3,
         "friday_refresh": 4,
         "saturday_final": 5,
+        "sportsbook_refresh": now.weekday() if now.weekday() in range(1, 6) else -1,
     }.get(settings.operation)
     timing_ok = expected_weekday is None or generated_at_weekday_is(
         now, expected_weekday
@@ -781,7 +791,7 @@ def _line_manifest_check(
             ).fetchall()
             kickoff = _parse_utc(game_rows[0][0]) if len(game_rows) == 1 else None
             pre_kickoff = (
-                settings.operation not in PRODUCTION_OPERATIONS[:5]
+                settings.operation not in CARD_STAGE_OPERATIONS
                 or (kickoff is not None and now < kickoff)
             )
             if len(game_rows) != 1 or not pre_kickoff:
@@ -912,6 +922,7 @@ def _line_lock_readiness(
             "thursday_refresh": 2,
             "friday_refresh": 3,
             "saturday_final": 4,
+            "sportsbook_refresh": 1,
             "postgame_grading": 5,
             "weekly_audit": 5,
         }.get(settings.operation, 999)
@@ -1033,13 +1044,56 @@ def _postgame_stage_readiness(
     )
 
 
+def _sportsbook_refresh_readiness(
+    conn: sqlite3.Connection,
+    settings: ProductionSettings,
+    now: datetime,
+    checks: list[PreflightCheck],
+) -> None:
+    if settings.operation != "sportsbook_refresh":
+        return
+    required_tables = (
+        "contests",
+        "contest_locked_lines",
+        "official_card_publications",
+        "games",
+    )
+    if any(not _table_exists(conn, table) for table in required_tables):
+        _record(
+            checks,
+            "sportsbook_refresh_readiness",
+            False,
+            "",
+            "sportsbook refresh requires the complete contest publication schema",
+        )
+        return
+    row = conn.execute(
+        "SELECT COUNT(*) FROM contest_locked_lines AS locked "
+        "JOIN contests AS contest ON contest.id = locked.contest_id "
+        "JOIN games AS game ON game.game_id = locked.game_id "
+        "WHERE contest.contest_key = ? AND contest.season = ? AND contest.week = ? "
+        "AND julianday(?) < julianday(game.start_date) "
+        "AND EXISTS (SELECT 1 FROM official_card_publications AS publication "
+        "WHERE publication.contest_id = contest.id)",
+        (settings.contest_key, settings.season, settings.week, now.isoformat()),
+    ).fetchone()
+    future_count = int(row[0]) if row is not None else 0
+    _record(
+        checks,
+        "sportsbook_refresh_readiness",
+        future_count > 0,
+        f"{future_count} locked contest games remain pre-kickoff",
+        "sportsbook refresh requires a prior official card and at least one pre-kickoff game",
+    )
+
+
 def _idempotency_check(
     conn: sqlite3.Connection,
     settings: ProductionSettings,
     checks: list[PreflightCheck],
 ) -> None:
     key = settings.idempotency_key
-    if settings.operation in PRODUCTION_OPERATIONS[:5]:
+    if settings.operation in CARD_STAGE_OPERATIONS:
         if not _table_exists(conn, "weekly_controller_runs"):
             _record(
                 checks,
@@ -1065,6 +1119,15 @@ def _idempotency_check(
             passed,
             detail,
             "operation key belongs to a failed attempt and cannot be silently reused",
+        )
+        return
+    if settings.operation == "sportsbook_refresh":
+        _record(
+            checks,
+            "idempotency",
+            bool(settings.operation_instance),
+            "managed PostgreSQL owns the unique scheduled refresh operation key",
+            "sportsbook refresh requires a unique scheduled operation instance",
         )
         return
     table, key_column, completion_table, join_column = (
@@ -1201,6 +1264,7 @@ def _database_checks(
             _registered_policy_checks(conn, settings, now, checks)
             manifest_valid = _line_manifest_check(conn, settings, now, checks)
             _line_lock_readiness(conn, settings, manifest_valid, checks)
+            _sportsbook_refresh_readiness(conn, settings, now, checks)
             _postgame_stage_readiness(conn, settings, checks)
             _idempotency_check(conn, settings, checks)
         except (OSError, ValueError, sqlite3.Error) as exc:

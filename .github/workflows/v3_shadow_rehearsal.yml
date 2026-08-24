@@ -1,7 +1,7 @@
 name: V3 Controlled Live-Week Shadow Rehearsal
 
 on:
-  # Recurring schedules remain intentionally absent until PR #22 authorization.
+  # Shadow remains manual; the production schedule cannot target this stream.
   workflow_dispatch:
     inputs:
       operation:

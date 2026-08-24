@@ -25,21 +25,24 @@ pinned, and must pass both verification commands.
 ## Workflow safety
 
 Pull requests run the complete offline test suite with read-only repository
-permissions. The copied production workflows have no schedule trigger in V3,
-are serialized with concurrency controls, and contain an allow-list guard that
-keeps their data-writing jobs inert outside `JCRABURN/cfb-betting-system`.
+permissions. The copied legacy production workflows have no schedule trigger
+in V3, are serialized with concurrency controls, and contain an allow-list
+guard that keeps their data-writing jobs inert outside
+`JCRABURN/cfb-betting-system`.
 
 Do not weaken or remove those controls without explicit repository-owner
 approval and a dedicated pull request.
 
-The additional V3 production gateway is manual-only, protected by independent
-production/execution/owner flags and a kill switch, and runs on GitHub-hosted
-`ubuntu-latest` infrastructure. Managed PostgreSQL stores immutable,
-checksummed state generations and holds the cross-run transaction lock. Each
-job materializes the current domain snapshot only in its disposable workspace,
-runs the unchanged governed controller, and atomically advances durable state
-only after every verification passes. No owner computer or self-managed runner
-is required. No schedule is enabled.
+The V3 production gateway supports guarded manual dispatch and a GitHub-hosted
+schedule dispatcher. It remains protected by independent
+production/execution/owner flags and a kill switch and runs on `ubuntu-latest`.
+The dispatcher makes no provider call unless an exact owner-reviewed weekly
+schedule entry is due. Managed PostgreSQL stores immutable, checksummed state
+generations and holds the cross-run transaction lock. Each operation
+materializes the current domain snapshot only in its disposable workspace,
+runs the governed controller or separate sportsbook refresh, and atomically
+advances durable state only after every verification passes. No owner computer
+or self-managed runner is required.
 
 ## Database migrations
 

@@ -50,7 +50,7 @@ from operations.weekly_config import WeeklyOperationConfiguration
 from operations.writer_lock import ProductionWriterLock
 
 
-EXECUTION_ADAPTER_VERSION = "v3-production-execution-adapter-v5"
+EXECUTION_ADAPTER_VERSION = "v3-production-execution-adapter-v6"
 
 
 class ProductionExecutionError(RuntimeError):
@@ -289,6 +289,25 @@ def _final_card_id(conn: sqlite3.Connection, settings: ProductionSettings) -> in
     if len(rows) != 1:
         raise ProductionExecutionError("final official publication is not unique")
     return int(rows[0][0])
+
+
+def _latest_publication_identity(
+    conn: sqlite3.Connection,
+    settings: ProductionSettings,
+) -> tuple[int, int, int]:
+    rows = conn.execute(
+        "SELECT publication.contest_id, publication.id, publication.card_id "
+        "FROM official_card_publications AS publication "
+        "JOIN contests AS contest ON contest.id = publication.contest_id "
+        "WHERE contest.contest_key = ? AND contest.season = ? AND contest.week = ? "
+        "ORDER BY publication.card_version DESC LIMIT 2",
+        (settings.contest_key, settings.season, settings.week),
+    ).fetchall()
+    if len(rows) == 0:
+        raise ProductionExecutionError(
+            "sportsbook refresh requires a prior official publication"
+        )
+    return (int(rows[0][0]), int(rows[0][1]), int(rows[0][2]))
 
 
 def _audit_requests(
@@ -531,6 +550,70 @@ def _operation(
                     item["decision"] == "BET" for item in board
                 ),
                 "sportsbook_closing_designation_count": len(closing_designations),
+                "sportsbook_grade_count": 0,
+                "sportsbook_clv_graded_count": 0,
+                "sportsbook_missing_clv_count": 0,
+                "sportsbook_realized_profit_units": None,
+                "sportsbook_roi_percent": None,
+                "shadow_rehearsal_report": None,
+            },
+            tuple(ingestion_ids),
+        )
+    if settings.operation == "sportsbook_refresh":
+        if bundle is None:
+            raise ProductionExecutionError(
+                "sportsbook refresh requires a newly captured provider bundle"
+            )
+        refresh_provider_data(
+            conn,
+            season=configuration.season,
+            week=configuration.week,
+            as_of=generated_at,
+        )
+        contest_id, _, card_id = _latest_publication_identity(conn, settings)
+        board, draftkings_board, draftkings_text = live_board(contest_id)
+        future_game_ids = {
+            int(row[0])
+            for row in conn.execute(
+                "SELECT locked.game_id FROM contest_locked_lines AS locked "
+                "JOIN games AS game ON game.game_id = locked.game_id "
+                "WHERE locked.contest_id = ? AND julianday(?) < julianday(game.start_date)",
+                (contest_id, generated_at.isoformat()),
+            )
+        }
+        current_draftkings_ids = {
+            int(item["game_id"])
+            for item in draftkings_board
+            if item.get("freshness") == "CURRENT"
+            and item.get("availability_state") == "AVAILABLE"
+        }
+        missing_current = sorted(future_game_ids - current_draftkings_ids)
+        if not future_game_ids or missing_current:
+            missing = ", ".join(str(game_id) for game_id in missing_current)
+            raise ProductionExecutionError(
+                "sportsbook refresh cannot publish a current DraftKings recommendation "
+                + (f"for pre-kickoff game ids: {missing}" if missing else "after kickoff")
+            )
+        return (
+            {
+                "replayed": False,
+                "controller_run_id": None,
+                "publication_id": None,
+                "card_id": card_id,
+                "audit_run_id": None,
+                "sportsbook_audit_run_id": None,
+                "diagnostic_run_id": None,
+                "pick_count": None,
+                "top_five_count": None,
+                "fallback_pick_count": None,
+                "live_betting_board": board,
+                "draftkings_betting_board": draftkings_board,
+                "draftkings_betting_board_text": draftkings_text,
+                "sportsbook_recommendation_count": len(board),
+                "sportsbook_bet_count": sum(
+                    item["decision"] == "BET" for item in board
+                ),
+                "sportsbook_closing_designation_count": 0,
                 "sportsbook_grade_count": 0,
                 "sportsbook_clv_graded_count": 0,
                 "sportsbook_missing_clv_count": 0,

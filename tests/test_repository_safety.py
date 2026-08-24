@@ -22,14 +22,16 @@ def test_checked_in_repository_safety_controls_pass():
     assert repository_errors(ROOT) == []
 
 
-def test_every_production_stage_is_cloud_hosted_and_schedules_stay_disabled():
+def test_every_production_stage_is_cloud_hosted_and_only_v3_production_is_scheduled():
     workflow_directory = ROOT / ".github" / "workflows"
     operation_text = (workflow_directory / "v3_production_operations.yml").read_text(
         encoding="utf-8"
     )
     assert "runs-on: ubuntu-latest" in operation_text
     assert "self-hosted" not in operation_text
-    assert "\n  schedule:" not in operation_text
+    assert "\n  schedule:" in operation_text
+    assert "- cron: '7,22,37,52 * * * 1-6'" in operation_text
+    assert "python -m scripts.resolve_production_schedule" in operation_text
     assert "python -m scripts.run_cloud_production_operation" in operation_text
     assert "--capture-provider-data" in operation_text
     for operation in V3_PRODUCTION_OPERATIONS:
@@ -37,7 +39,8 @@ def test_every_production_stage_is_cloud_hosted_and_schedules_stay_disabled():
     for workflow in workflow_directory.glob("*.yml"):
         text = workflow.read_text(encoding="utf-8")
         assert "self-hosted" not in text
-        assert "\n  schedule:" not in text
+        if workflow.name != "v3_production_operations.yml":
+            assert "\n  schedule:" not in text
 
 
 @pytest.mark.parametrize(
@@ -147,6 +150,8 @@ def test_ci_validator_requires_disposable_copy_migration_verification():
 
 def _safe_v3_production_workflow() -> str:
     return """on:
+  schedule:
+    - cron: '7,22,37,52 * * * 1-6'
   workflow_dispatch:
     inputs:
       operation:
@@ -156,10 +161,11 @@ def _safe_v3_production_workflow() -> str:
           - thursday_refresh
           - friday_refresh
           - saturday_final
+          - sportsbook_refresh
           - postgame_grading
           - weekly_audit
 concurrency:
-  group: v3-production-writer-${{ github.repository }}-${{ inputs.season }}-${{ inputs.week }}
+  group: v3-production-writer-${{ github.repository }}
   cancel-in-progress: false
 permissions:
   contents: read
@@ -167,14 +173,22 @@ jobs:
   guard-rejected:
     steps:
       - run: echo "No checkout, credential access" >> "$GITHUB_STEP_SUMMARY"
+  resolve-operation:
+    steps:
+      - run: python -m scripts.resolve_production_schedule
+  idle-heartbeat:
+    steps:
+      - run: echo idle
   guarded:
     if: >-
+      needs.resolve-operation.outputs.should-run == 'true' &&
       github.repository == 'JCRABURN/cfb-betting-system-v3' &&
       vars.CFB_V3_PRODUCTION_ENABLED == 'true' &&
       vars.CFB_V3_OPERATION_EXECUTION_ENABLED == 'true' &&
       vars.CFB_V3_KILL_SWITCH == 'false' &&
       vars.CFB_V3_OWNER_CUTOVER_APPROVED == 'true' &&
       vars.CFB_V3_PROVIDER_CONNECTIVITY_AUTHORIZED == 'true' &&
+      github.event_name == 'schedule' &&
       inputs.confirmation == 'RUN_V3_OPERATION'
     environment: v3-production
     runs-on: ubuntu-latest
@@ -182,6 +196,7 @@ jobs:
       contents: read
     env:
       CFB_V3_MODEL_NAME: epa_only
+      CFB_V3_OPERATION_INSTANCE: ${{ needs.resolve-operation.outputs.operation-instance }}
       CFB_V3_PERSISTENCE_BACKEND: managed_postgresql
       CFB_V3_DATABASE_URL: ${{ secrets.CFB_V3_DATABASE_URL }}
     steps:
@@ -202,7 +217,7 @@ jobs:
 """
 
 
-def test_v3_production_workflow_validator_accepts_manual_fail_closed_gateway():
+def test_v3_production_workflow_validator_accepts_scheduled_fail_closed_gateway():
     assert v3_production_workflow_errors(_safe_v3_production_workflow()) == []
 
 
@@ -215,7 +230,7 @@ def test_v3_workflow_and_runtime_operation_sets_match():
 @pytest.mark.parametrize(
     ("mutator", "expected_fragment"),
     [
-        (lambda text: text.replace("  workflow_dispatch:\n", "  schedule:\n"), "schedule"),
+        (lambda text: text.replace("  schedule:\n", "  disabled_schedule:\n"), "schedule"),
         (
             lambda text: text.replace(
                 "JCRABURN/cfb-betting-system-v3",

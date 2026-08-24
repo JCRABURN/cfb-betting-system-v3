@@ -10,8 +10,8 @@ Current determination:
 
 The cloud execution and persistence code is present, but the protected managed
 database is not provisioned or initialized, current-week input is absent, live
-provider access is not authorized, the kill switch is engaged, and schedules
-remain intentionally disabled.
+provider access is not authorized, the kill switch is engaged, and the checked-
+in schedule remains fail-closed behind those controls.
 
 ## Production boundary
 
@@ -210,14 +210,46 @@ and makes no provider call.
 
 ## Schedule state
 
-No cron trigger is enabled. This is deliberate and enforced by repository
-safety tests. The operation gateway is technically capable of every Tuesday-
-Saturday, postgame, and audit stage on GitHub-hosted infrastructure once a
-separate owner-approved scheduling pull request supplies the calendar and
-current week inputs. Schedule activation is not authorized by this milestone.
+The owner-authorized production schedule uses one GitHub-hosted dispatcher
+heartbeat at minutes 7, 22, 37, and 52, Monday through Saturday UTC. The
+heartbeat is not a provider polling interval. It checks the explicit
+`production_schedule.entries` in the current owner-reviewed weekly
+configuration and exits without credentials, API calls, or database access
+when no entry is due.
 
-Until then, an authorized GitHub dispatch can rehearse each cloud stage without
-the owner running terminal commands or keeping a machine online.
+The weekly schedule must:
+
+- use `production-schedule-v1` and 15-minute dispatcher alignment;
+- contain exactly one governed Tuesday lock, Wednesday-Friday refresh,
+  Saturday final, postgame grading, and weekly audit in chronological order;
+- contain one or more additional `sportsbook_refresh` entries after Tuesday
+  lock and before Saturday final;
+- keep entries at least 30 minutes apart;
+- declare the monthly Odds API allowance, protected reserve, estimated cost,
+  and maximum paid calls for that week; and
+- fit every paid schedule entry inside both the weekly cap and declared
+  allowance.
+
+Each paid pregame capture first calls the provider's quota-free `/sports`
+endpoint and requires provider response-header evidence that the paid odds call
+will leave the configured reserve intact. The paid response is checked again.
+Missing/malformed quota evidence, insufficient credits, stale DraftKings odds,
+or an unavailable DraftKings recommendation for any remaining pre-kickoff
+locked game fails the run visibly. Failed operations roll back and do not
+replace the last validated dashboard.
+
+`sportsbook_refresh` has a schedule-slot operation instance, obtains its own
+managed PostgreSQL idempotency key, and can automatically append/supersede
+materially refreshed BET/NO BET evaluations. It never creates a contest-card
+version, changes a contest pick, modifies a SplashSports locked line, or places
+a wager. The five existing card stages remain the only scheduled card-version
+writers.
+
+GitHub scheduled workflows execute from the default branch and can be delayed.
+A slot executes only within its unique 15-minute window; a later heartbeat is
+idle rather than silently spending quota twice. GitHub may disable schedules in
+a public repository after 60 days without repository activity, so the owner
+must treat the Actions schedule state as an operational readiness check.
 
 ## Provider custody and model contract
 
@@ -273,7 +305,8 @@ One-time owner setup remains:
 - approve the reviewed policy configuration and run the guarded cloud setup;
 - configure secret-free production variables and the weekly intake location;
 - authorize/review provider connectivity and one complete dry rehearsal;
-- explicitly approve cutover and, later, scheduling in separate decisions.
+- explicitly approve production cutover and keep the kill switch state under
+  owner control.
 
 Recurring owner work remains:
 
@@ -293,6 +326,8 @@ Explicit answers:
    uniqueness, immutable history, atomic head changes, and advisory locks.
 6. Owner setup: the one-time protected configuration listed above.
 7. Recurring owner work: weekly SplashSports input and genuine ambiguity review.
-8. Are schedules enabled? **NO; separate approval is required.**
+8. Are schedules checked in? **YES**, but no provider or database operation can
+   run until every protected flag is live and the current weekly configuration
+   contains a valid due entry.
 9. Current `PRODUCTION READY`: **NO**, pending external setup, current-week
    input, live authorization, rehearsal, and explicit cutover approval.

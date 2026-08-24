@@ -103,4 +103,6 @@ when migration 13 has never been applied to the target database.
 The EPA-only model remains the production baseline. The rejected ridge,
 dynamic-rating, and gradient-boosted research candidates are not imported,
 tuned, promoted, or connected to ingestion or card generation. Model-promotion
-criteria are unchanged. No scheduled production workflow is enabled.
+criteria are unchanged. Scheduled production capture remains behind the exact
+V3 allow list, protected flags, kill switch, explicit weekly schedule, and
+quota/freshness gates documented in `docs/PRODUCTION_CUTOVER.md`.

@@ -112,6 +112,8 @@ def main(argv: list[str] | None = None) -> int:
             )
             line_type = _capture_line_type(runtime_mode, args.operation)
             captured_at = datetime.now(timezone.utc)
+            schedule = configuration.production_schedule
+            quota = None if schedule is None else schedule.quota
             provider_bundle = capture_live_provider_bundle(
                 runtime_environment,
                 repository_root=ROOT,
@@ -122,6 +124,12 @@ def main(argv: list[str] | None = None) -> int:
                 capture_scope=capture_scope,
                 authorized=True,
                 captured_at=captured_at,
+                odds_api_minimum_remaining_credits=(
+                    None if quota is None else quota.minimum_remaining_credits
+                ),
+                odds_api_estimated_call_cost=(
+                    1 if quota is None else quota.estimated_credits_per_call
+                ),
             )
             runtime_environment["CFB_V3_PROVIDER_CONNECTIVITY_VERIFIED_AT"] = (
                 captured_at.isoformat()

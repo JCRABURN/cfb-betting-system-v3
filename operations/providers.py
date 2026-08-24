@@ -772,6 +772,28 @@ def _safe_get_json(
     headers: Mapping[str, str] | None = None,
     params: Mapping[str, object] | None = None,
 ) -> object:
+    response = _safe_get_response(
+        session,
+        url,
+        headers=headers,
+        params=params,
+    )
+    try:
+        return response.json()
+    except Exception as exc:
+        raise ProductionProviderError(
+            "provider response was not valid JSON; credential values and response URLs "
+            f"are suppressed: {type(exc).__name__}"
+        ) from None
+
+
+def _safe_get_response(
+    session: _Session,
+    url: str,
+    *,
+    headers: Mapping[str, str] | None = None,
+    params: Mapping[str, object] | None = None,
+) -> _JsonResponse:
     try:
         response = session.get(
             url,
@@ -780,12 +802,38 @@ def _safe_get_json(
             timeout=30,
         )
         response.raise_for_status()
-        return response.json()
+        return response
     except Exception as exc:
         raise ProductionProviderError(
             "provider connectivity failed; credential values and response URLs are suppressed: "
             f"{type(exc).__name__}"
         ) from None
+
+
+def _quota_header(headers: Mapping[str, str], name: str) -> int:
+    raw = next(
+        (value for key, value in headers.items() if key.casefold() == name.casefold()),
+        None,
+    )
+    try:
+        parsed = int(str(raw))
+    except (TypeError, ValueError) as exc:
+        raise ProductionProviderError(
+            f"The Odds API response is missing valid {name} quota evidence"
+        ) from exc
+    if parsed < 0:
+        raise ProductionProviderError(
+            f"The Odds API response contains invalid {name} quota evidence"
+        )
+    return parsed
+
+
+def _odds_quota_evidence(response: _JsonResponse) -> dict[str, int]:
+    return {
+        "remaining": _quota_header(response.headers, "x-requests-remaining"),
+        "used": _quota_header(response.headers, "x-requests-used"),
+        "last": _quota_header(response.headers, "x-requests-last"),
+    }
 
 
 def run_controlled_connectivity_checks(
@@ -950,6 +998,8 @@ def capture_live_provider_bundle(
     authorized: bool,
     captured_at: datetime | None = None,
     session: _Session | None = None,
+    odds_api_minimum_remaining_credits: int | None = None,
+    odds_api_estimated_call_cost: int = 1,
 ) -> Path:
     """Capture replayable CFBD/Odds evidence; never ingest or publish it."""
     if not authorized:
@@ -976,6 +1026,35 @@ def capture_live_provider_bundle(
         raise ProductionProviderError("ODDS_API_KEY is required for pregame capture")
     now = _utc(captured_at or datetime.now(timezone.utc), "captured_at")
     client = session or requests.Session()
+    quota_before = None
+    quota_after = None
+    if odds_api_minimum_remaining_credits is not None and capture_scope == "pregame":
+        minimum_remaining = _integer(
+            odds_api_minimum_remaining_credits,
+            "odds_api_minimum_remaining_credits",
+        )
+        estimated_cost = _integer(
+            odds_api_estimated_call_cost,
+            "odds_api_estimated_call_cost",
+        )
+        if estimated_cost < 1:
+            raise ProductionProviderError("Odds API estimated call cost must be positive")
+        quota_response = _safe_get_response(
+            client,
+            f"{ODDS_BASE_URL}/sports",
+            params={"apiKey": odds_key},
+        )
+        try:
+            quota_response.json()
+        except Exception as exc:
+            raise ProductionProviderError(
+                "The Odds API quota probe did not return valid JSON"
+            ) from exc
+        quota_before = _odds_quota_evidence(quota_response)
+        if quota_before["remaining"] < minimum_remaining + estimated_cost:
+            raise ProductionProviderError(
+                "The Odds API quota reserve blocks this paid provider capture"
+            )
     games_params = {"year": season, "week": week, "classification": "fbs"}
     games_endpoint = f"{CFBD_BASE_URL}/games"
     games_payload = _safe_get_json(
@@ -1010,11 +1089,28 @@ def capture_live_provider_bundle(
     odds_payload = None
     normalized_odds = None
     if capture_scope == "pregame":
-        odds_payload = _safe_get_json(
+        odds_response = _safe_get_response(
             client,
             odds_endpoint,
             params={**odds_api_params, "apiKey": odds_key},
         )
+        try:
+            odds_payload = odds_response.json()
+        except Exception as exc:
+            raise ProductionProviderError(
+                "The Odds API odds response did not return valid JSON"
+            ) from exc
+        if quota_before is not None:
+            quota_after = _odds_quota_evidence(odds_response)
+            minimum_remaining = int(odds_api_minimum_remaining_credits or 0)
+            if quota_after["last"] > odds_api_estimated_call_cost:
+                raise ProductionProviderError(
+                    "The Odds API charged more credits than the configured call cost"
+                )
+            if quota_after["remaining"] < minimum_remaining:
+                raise ProductionProviderError(
+                    "The Odds API quota reserve was crossed by the paid provider capture"
+                )
         normalized_odds = _normalized_odds_records(
             odds_payload,
             season=season,
@@ -1092,6 +1188,16 @@ def capture_live_provider_bundle(
             else ["CFBD_API_KEY"]
         ),
         "raw_evidence": raw_evidence,
+        "odds_api_quota": (
+            None
+            if quota_before is None or quota_after is None
+            else {
+                "minimum_remaining_credits": odds_api_minimum_remaining_credits,
+                "estimated_call_cost": odds_api_estimated_call_cost,
+                "before": quota_before,
+                "after": quota_after,
+            }
+        ),
         "payloads": payloads,
     }
     bundle_path = output / "provider-bundle.json"

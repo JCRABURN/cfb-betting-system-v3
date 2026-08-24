@@ -17,6 +17,11 @@ from operations.config import (
     EXPECTED_REPOSITORY,
     POLICY_ENVIRONMENT_VARIABLES,
 )
+from production_scheduling import (
+    ProductionSchedule,
+    ProductionScheduleError,
+    load_production_schedule,
+)
 
 
 WEEKLY_CONFIGURATION_VERSION = "v3-weekly-production-v1"
@@ -48,6 +53,7 @@ class WeeklyOperationConfiguration:
     closing_book: str
     actor: str
     provenance: str
+    production_schedule: ProductionSchedule | None
 
     def environment_values(self) -> dict[str, str]:
         values = {
@@ -230,6 +236,14 @@ def load_weekly_configuration(
     if closing_book.casefold() == "consensus":
         raise WeeklyConfigurationError("closing_book must name a real sportsbook")
 
+    try:
+        production_schedule = load_production_schedule(
+            payload.get("production_schedule"),
+            season=season,
+        )
+    except ProductionScheduleError as exc:
+        raise WeeklyConfigurationError(str(exc)) from exc
+
     return WeeklyOperationConfiguration(
         path=config_path,
         season=season,
@@ -262,6 +276,7 @@ def load_weekly_configuration(
         closing_book=closing_book,
         actor=_text(payload.get("actor"), "actor"),
         provenance=_text(payload.get("provenance"), "provenance"),
+        production_schedule=production_schedule,
     )
 
 

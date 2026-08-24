@@ -261,12 +261,15 @@ def test_output_is_deterministic_from_identical_immutable_input(dashboard_payloa
     assert generated["schema_version"] == PUBLIC_DASHBOARD_SCHEMA_VERSION
 
 
-def test_pages_workflows_are_hosted_least_privilege_manual_and_non_wagering():
+def test_pages_workflows_are_hosted_least_privilege_and_non_wagering():
     for name in ("v3_production_operations.yml", "v3_shadow_rehearsal.yml"):
         text = (ROOT / ".github" / "workflows" / name).read_text(encoding="utf-8")
         assert "runs-on: ubuntu-latest" in text
         assert "self-hosted" not in text
-        assert "\n  schedule:" not in text
+        if name == "v3_production_operations.yml":
+            assert "\n  schedule:" in text
+        else:
+            assert "\n  schedule:" not in text
         assert "actions/configure-pages@v5" in text
         assert "actions/upload-pages-artifact@v4" in text
         assert "actions/deploy-pages@v4" in text

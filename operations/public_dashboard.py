@@ -11,6 +11,7 @@ import sqlite3
 import tempfile
 from collections.abc import Mapping
 from dataclasses import dataclass
+from datetime import datetime
 from pathlib import Path
 
 from business_entities.live_sportsbook import DRAFTKINGS_BOOKMAKER
@@ -59,6 +60,7 @@ class PublicDashboardContext:
     execution_profile: str = "production"
     draftkings_rows: tuple[Mapping[str, object], ...] = ()
     next_scheduled_refresh: str | None = None
+    schedule_enabled: bool = False
 
 
 def _row_dicts(cursor: sqlite3.Cursor) -> list[dict[str, object]]:
@@ -916,8 +918,12 @@ def build_public_dashboard_payload(
             "next_scheduled_refresh": context.next_scheduled_refresh,
             "schedule_status": (
                 "Recurring schedules disabled; manual governed publication only."
-                if context.next_scheduled_refresh is None
-                else "Next governed refresh is scheduled."
+                if not context.schedule_enabled
+                else (
+                    "Next governed refresh is scheduled."
+                    if context.next_scheduled_refresh is not None
+                    else "Recurring schedule enabled; no later pregame refresh is configured."
+                )
             ),
             "system_status": system_status,
             "warning": warning,
@@ -1015,6 +1021,9 @@ def generate_public_dashboard_site(
 ) -> Path:
     """Build, validate, and stage a sanitized site before durable state commits."""
     policies = dict(configuration.policy_versions)
+    schedule = configuration.production_schedule
+    completed_at = datetime.fromisoformat(operation.completed_at.replace("Z", "+00:00"))
+    next_entry = None if schedule is None else schedule.next_pregame_entry_after(completed_at)
     context = PublicDashboardContext(
         season=configuration.season,
         week=configuration.week,
@@ -1026,6 +1035,10 @@ def generate_public_dashboard_site(
         operation=operation.operation,
         execution_profile=execution_profile,
         draftkings_rows=tuple(operation.draftkings_betting_board),
+        next_scheduled_refresh=(
+            None if next_entry is None else next_entry.run_at.isoformat()
+        ),
+        schedule_enabled=schedule is not None,
     )
     payload = build_public_dashboard_payload(conn, context)
     return write_public_dashboard_site(

@@ -6,6 +6,8 @@ from collections.abc import Mapping
 from dataclasses import dataclass
 from pathlib import Path
 
+from production_scheduling import CARD_STAGE_OPERATIONS, PRODUCTION_OPERATIONS
+
 
 EXPECTED_REPOSITORY = "JCRABURN/cfb-betting-system-v3"
 ORIGINAL_REPOSITORY = "JCRABURN/cfb-betting-system"
@@ -13,16 +15,6 @@ ACTIVE_MODEL_NAME = "epa_only"
 ACTIVE_MODEL_VERSION = "epa-only-linear-v1"
 ACTIVE_FEATURE_SCHEMA_VERSION = "epa-differential-v1"
 ACTIVE_CONFIGURATION_VERSION = "walk-forward-prior-seasons-v1"
-
-PRODUCTION_OPERATIONS = (
-    "tuesday_lock",
-    "wednesday_refresh",
-    "thursday_refresh",
-    "friday_refresh",
-    "saturday_final",
-    "postgame_grading",
-    "weekly_audit",
-)
 
 REQUIRED_CREDENTIAL_VARIABLES = (
     "CFBD_API_KEY",
@@ -84,6 +76,7 @@ class ProductionSettings:
     repository_root: Path
     database_path: Path
     operation: str
+    operation_instance: str
     runtime_mode: str
     production_enabled: bool | None
     operation_execution_enabled: bool | None
@@ -122,7 +115,8 @@ class ProductionSettings:
         season = self.season if self.season is not None else "missing-season"
         week = self.week if self.week is not None else "missing-week"
         prefix = "v3-shadow" if self.runtime_mode == "shadow" else "v3"
-        return f"{prefix}:{season}:week:{week}:{self.operation}"
+        key = f"{prefix}:{season}:week:{week}:{self.operation}"
+        return f"{key}:{self.operation_instance}" if self.operation_instance else key
 
     @property
     def is_shadow_rehearsal(self) -> bool:
@@ -178,6 +172,7 @@ def load_production_settings(
         repository_root=root,
         database_path=configured_database,
         operation=operation.strip(),
+        operation_instance=_text(environment, "CFB_V3_OPERATION_INSTANCE"),
         runtime_mode=_text(environment, "CFB_V3_RUNTIME_MODE"),
         production_enabled=_boolean(environment, "CFB_V3_PRODUCTION_ENABLED"),
         operation_execution_enabled=_boolean(
