@@ -198,12 +198,15 @@ No job reads durable state from or writes durable state to the checkout.
 For Tuesday through Saturday and postgame grading, the same guarded job invokes
 the existing authorized provider-capture service before opening the cloud
 writer transaction. Tuesday records opening market custody, Wednesday-Friday
-record current custody, Saturday records the pre-kickoff closing snapshot, and
-postgame capture obtains final game status without an odds call. The resulting
+record current custody, and Saturday evaluates the final current offers before
+immutably designating those exact same-book observations as closing evidence.
+Postgame capture obtains final game status without an odds call. The resulting
 bundle is ingested through the existing parser/quarantine layer and uploaded as
 a checksummed Actions artifact. A successful capture supplies the current
 connectivity timestamp to preflight; no human has to refresh that timestamp.
-Weekly audit uses only the completed durable audit and makes no provider call.
+Postgame grading settles the contest card and every preserved BET/NO BET
+evaluation, including CLV. Weekly audit uses only the completed durable audits
+and makes no provider call.
 
 ## Schedule state
 

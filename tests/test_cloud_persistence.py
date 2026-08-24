@@ -11,7 +11,7 @@ import pytest
 
 from migrations.runner import apply_migrations
 
-from operations.cloud_execution import execute_cloud_production_operation
+from operations.cloud_execution import durable_stream_key, execute_cloud_production_operation
 from operations.cloud_persistence import (
     CloudCommit,
     CloudPersistenceError,
@@ -21,6 +21,11 @@ from operations.cloud_persistence import (
     _validate_sqlite_snapshot,
     load_cloud_migrations,
 )
+from scripts.prepare_cloud_shadow_database import (
+    _safe_shadow_environment,
+    main as shadow_bootstrap_main,
+)
+from scripts.run_cloud_production_operation import _capture_line_type
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -128,7 +133,7 @@ def test_sqlite_remains_a_valid_ephemeral_execution_snapshot(tmp_path):
     payload, checksum, schema_version = _validate_sqlite_snapshot(snapshot)
     assert len(payload) > 0
     assert checksum == hashlib.sha256(payload).hexdigest()
-    assert schema_version == 15
+    assert schema_version == 16
 
 
 def test_postgresql_writer_lock_serializes_ephemeral_runners():
@@ -290,3 +295,65 @@ def test_cloud_execution_commits_to_store_then_discards_runner_workspace(
     assert result.runner_state_disposable is True
     assert preflight.production_ready is True
     assert not store.lease.target.exists()
+
+
+def test_shadow_week_uses_an_isolated_durable_stream():
+    settings = SimpleNamespace(
+        is_shadow_rehearsal=True,
+        season=2026,
+        week=1,
+    )
+    assert durable_stream_key(settings) == (
+        "JCRABURN/cfb-betting-system-v3:shadow:2026:week:1"
+    )
+    assert durable_stream_key(SimpleNamespace(is_shadow_rehearsal=False)) == (
+        "JCRABURN/cfb-betting-system-v3:production"
+    )
+
+
+def test_shadow_bootstrap_requires_exact_production_isolation(monkeypatch, capsys):
+    environment = {
+        "CFB_V3_RUNTIME_MODE": "shadow",
+        "CFB_V3_PRODUCTION_ENABLED": "false",
+        "CFB_V3_OPERATION_EXECUTION_ENABLED": "false",
+        "CFB_V3_KILL_SWITCH": "true",
+        "CFB_V3_OWNER_CUTOVER_APPROVED": "false",
+        "CFB_V3_SHADOW_REHEARSAL_ENABLED": "true",
+        "CFB_V3_SHADOW_OPERATION_EXECUTION_ENABLED": "true",
+        "CFB_V3_SHADOW_KILL_SWITCH": "false",
+    }
+    assert _safe_shadow_environment(environment) is True
+    environment["CFB_V3_PRODUCTION_ENABLED"] = "true"
+    assert _safe_shadow_environment(environment) is False
+
+    secret = "postgresql://credential-must-not-print"
+    for name, value in environment.items():
+        monkeypatch.setenv(name, value)
+    monkeypatch.setenv("CFB_V3_DATABASE_URL", secret)
+    result = shadow_bootstrap_main(
+        [
+            "--seed",
+            "missing.db",
+            "--policy-config",
+            "missing.json",
+            "--season",
+            "2026",
+            "--week",
+            "1",
+            "--actor",
+            "test",
+            "--confirmation",
+            "INITIALIZE_V3_CLOUD_SHADOW_REHEARSAL",
+        ]
+    )
+    captured = capsys.readouterr()
+    assert result == 1
+    assert "production isolation are unsafe" in captured.err
+    assert secret not in captured.out + captured.err
+
+
+def test_shadow_capture_uses_current_offers_without_changing_production_opening_custody():
+    assert _capture_line_type("shadow", "tuesday_lock") == "current"
+    assert _capture_line_type("shadow", "saturday_final") == "current"
+    assert _capture_line_type("production", "tuesday_lock") == "opening"
+    assert _capture_line_type("production", "saturday_final") == "current"

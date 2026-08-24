@@ -49,6 +49,12 @@ BOOLEAN_ENVIRONMENT_VARIABLES = (
     "CFB_V3_PROVIDER_CONNECTIVITY_AUTHORIZED",
 )
 
+SHADOW_BOOLEAN_ENVIRONMENT_VARIABLES = (
+    "CFB_V3_SHADOW_REHEARSAL_ENABLED",
+    "CFB_V3_SHADOW_OPERATION_EXECUTION_ENABLED",
+    "CFB_V3_SHADOW_KILL_SWITCH",
+)
+
 
 def _text(environment: Mapping[str, str], name: str) -> str:
     return environment.get(name, "").strip()
@@ -83,6 +89,9 @@ class ProductionSettings:
     operation_execution_enabled: bool | None
     kill_switch: bool | None
     owner_cutover_approved: bool | None
+    shadow_rehearsal_enabled: bool | None
+    shadow_operation_execution_enabled: bool | None
+    shadow_kill_switch: bool | None
     configured_repository: str
     github_repository: str
     provider_connectivity_authorized: bool | None
@@ -112,7 +121,12 @@ class ProductionSettings:
     def idempotency_key(self) -> str:
         season = self.season if self.season is not None else "missing-season"
         week = self.week if self.week is not None else "missing-week"
-        return f"v3:{season}:week:{week}:{self.operation}"
+        prefix = "v3-shadow" if self.runtime_mode == "shadow" else "v3"
+        return f"{prefix}:{season}:week:{week}:{self.operation}"
+
+    @property
+    def is_shadow_rehearsal(self) -> bool:
+        return self.runtime_mode == "shadow"
 
 
 def load_production_settings(
@@ -148,7 +162,11 @@ def load_production_settings(
     )
     invalid_booleans = tuple(
         name
-        for name in BOOLEAN_ENVIRONMENT_VARIABLES
+        for name in (
+            SHADOW_BOOLEAN_ENVIRONMENT_VARIABLES
+            if _text(environment, "CFB_V3_RUNTIME_MODE") == "shadow"
+            else BOOLEAN_ENVIRONMENT_VARIABLES
+        )
         if _boolean(environment, name) is None
     )
     policy_versions = tuple(
@@ -168,6 +186,15 @@ def load_production_settings(
         kill_switch=_boolean(environment, "CFB_V3_KILL_SWITCH"),
         owner_cutover_approved=_boolean(
             environment, "CFB_V3_OWNER_CUTOVER_APPROVED"
+        ),
+        shadow_rehearsal_enabled=_boolean(
+            environment, "CFB_V3_SHADOW_REHEARSAL_ENABLED"
+        ),
+        shadow_operation_execution_enabled=_boolean(
+            environment, "CFB_V3_SHADOW_OPERATION_EXECUTION_ENABLED"
+        ),
+        shadow_kill_switch=_boolean(
+            environment, "CFB_V3_SHADOW_KILL_SWITCH"
         ),
         configured_repository=_text(environment, "CFB_V3_REPOSITORY"),
         github_repository=_text(environment, "GITHUB_REPOSITORY"),

@@ -11,6 +11,7 @@ from scripts.verify_repo_safety import (
     requirement_errors,
     v3_cloud_setup_workflow_errors,
     v3_production_workflow_errors,
+    v3_shadow_rehearsal_workflow_errors,
 )
 
 
@@ -309,4 +310,29 @@ def test_cloud_setup_workflow_rejects_missing_controls(needle, expected):
     errors = v3_cloud_setup_workflow_errors(
         _safe_cloud_setup_workflow().replace(needle, "")
     )
+    assert any(expected in error for error in errors)
+
+
+def test_shadow_workflow_is_manual_isolated_and_github_hosted():
+    text = (ROOT / ".github" / "workflows" / "v3_shadow_rehearsal.yml").read_text(
+        encoding="utf-8"
+    )
+    assert v3_shadow_rehearsal_workflow_errors(text) == []
+
+
+@pytest.mark.parametrize(
+    ("needle", "expected"),
+    [
+        ("  workflow_dispatch:\n", "manual dispatch"),
+        ("vars.CFB_V3_PRODUCTION_ENABLED == 'false'", "PRODUCTION_ENABLED"),
+        ("vars.CFB_V3_SHADOW_REHEARSAL_ENABLED == 'true'", "SHADOW_REHEARSAL_ENABLED"),
+        ("--confirmation EXECUTE_V3_CLOUD_SHADOW_REHEARSAL", "SHADOW_REHEARSAL"),
+        ("          - weekly_audit\n", "weekly_audit"),
+    ],
+)
+def test_shadow_workflow_validator_rejects_missing_controls(needle, expected):
+    text = (ROOT / ".github" / "workflows" / "v3_shadow_rehearsal.yml").read_text(
+        encoding="utf-8"
+    )
+    errors = v3_shadow_rehearsal_workflow_errors(text.replace(needle, ""))
     assert any(expected in error for error in errors)

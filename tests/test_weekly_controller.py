@@ -1,7 +1,7 @@
 import hashlib
 import sqlite3
 from dataclasses import replace
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 import pytest
@@ -15,22 +15,35 @@ from business_entities import (
     FreshnessFallbackDecision,
     FullCardPolicy,
     ManualAdjustmentPolicy,
+    PostgameAuditPolicy,
+    PostgameAuditRequest,
     RequiredSourcePolicy,
     SportsbookNoBetInput,
     TuesdayCardRequest,
     WeeklyControllerError,
     WeeklyControllerPolicy,
+    WeeklyDiagnosticsPolicy,
+    audit_contest_card,
+    audit_sportsbook_recommendations,
+    build_draftkings_betting_board,
+    designate_week_closing_offers,
+    evaluate_live_sportsbook_board,
+    generate_weekly_diagnostics,
     get_card_run_manifest,
     inspect_official_card,
+    inspect_controlled_shadow_rehearsal,
+    register_sportsbook_recommendation_policy,
     run_daily_controller,
     run_tuesday_controller,
 )
 from ingestion import (
     AcceptedProviderRecord,
     IngestionRequest,
+    OddsSpreadParser,
     ProviderIngestionService,
     payload_sha256,
 )
+from operations.providers import _odds_writer
 from scripts.inspect_official_card import main as inspect_official_card_main
 
 
@@ -840,3 +853,364 @@ def test_read_only_inspection_cli_reproduces_without_changing_database(
     assert payload["verification"]["valid"] is True
     assert payload["verification"]["publication_manifest_matches"] is True
     assert _file_hash(database) == before_hash
+
+
+def test_controlled_shadow_report_proves_full_card_board_audit_and_lessons(temp_db):
+    conn, lines = _seed_games(temp_db)
+    _seed_epa_inputs(conn)
+
+    class SourceParser:
+        version = "shadow_source_v1"
+
+        def parse(self, conn, resolver, provider, request, record_index, record):
+            return AcceptedProviderRecord(
+                record_index=record_index,
+                provider_record_id=record["id"],
+                record_key=payload_sha256(record),
+                observed_at=datetime.fromisoformat(record["observed_at"]),
+                parser_version=self.version,
+                raw_record_sha256=payload_sha256(record),
+            )
+
+    service = ProviderIngestionService(clock=lambda: TUESDAY_AT)
+    for data_type in ("odds", "injuries", "weather", "game_status", "contextual"):
+        payload = {
+            "records": [
+                {"id": f"shadow-{data_type}", "observed_at": TUESDAY_AT.isoformat()}
+            ]
+        }
+        service.ingest_payload(
+            conn,
+            IngestionRequest(
+                provider="fixture-provider",
+                endpoint=f"fixture://shadow/{data_type}",
+                request_parameters={"season": 2026, "week": 1},
+                requested_at=TUESDAY_AT,
+                parser_version=SourceParser.version,
+                raw_payload_reference=f"fixture://shadow/{data_type}.json",
+                data_type=data_type,
+            ),
+            payload,
+            SourceParser(),
+        )
+    conn.commit()
+
+    sportsbook_policy = register_sportsbook_recommendation_policy(
+        conn,
+        policy_version="shadow-sportsbook-v1",
+        residual_stddev_points=14.0,
+        minimum_spread_edge_points=1.5,
+        minimum_cover_probability=0.545,
+        minimum_expected_value=0.025,
+        maximum_odds_age_seconds=900,
+        material_update_seconds=300,
+        material_spread_change_points=0.5,
+        material_price_change=5,
+        maximum_stake_units=1.0,
+        stake_units_per_expected_value=10.0,
+        stake_increment_units=0.25,
+        effective_at=POLICY_AT,
+        created_by="test",
+        provenance="fixture://shadow/sportsbook-policy",
+    )
+
+    def ingest_board(moment: datetime, movement: float) -> None:
+        records = [
+            {
+                "matchup_id": f"shadow-{1000 + index}:draftkings",
+                "game_id": 1000 + index,
+                "home_team": f"Home {index}",
+                "away_team": f"Away {index}",
+                "market_type": "spread",
+                "home_spread": -float(index) + movement,
+                "home_price": -110,
+                "away_spread": float(index) - movement,
+                "away_price": -110,
+                "line_type": "current",
+                "season": 2026,
+                "week": 1,
+                "observed_at": moment.isoformat(),
+                "event_start_at": KICKOFF,
+                "bookmaker": "draftkings",
+            }
+            for index in range(1, 6)
+        ]
+        request_time = moment + timedelta(minutes=1)
+        ProviderIngestionService(clock=lambda: request_time).ingest_payload(
+            conn,
+            IngestionRequest(
+                provider="fixture-provider",
+                endpoint="fixture://shadow/current-spreads",
+                request_parameters={"season": 2026, "week": 1},
+                requested_at=request_time,
+                parser_version="odds_spread_v3",
+                raw_payload_reference=f"fixture://shadow/odds/{moment.date()}.json",
+                data_type="odds",
+            ),
+            {"records": records},
+            OddsSpreadParser("odds_spread_v3"),
+            accepted_writer=_odds_writer("current"),
+        )
+
+    tuesday = run_tuesday_controller(
+        conn, _tuesday_request(lines, freshness_fallbacks=())
+    )
+    ingest_board(TUESDAY_AT, 0.0)
+    evaluate_live_sportsbook_board(
+        conn,
+        season=2026,
+        week=1,
+        policy_id=sportsbook_policy.id,
+        evaluated_at=TUESDAY_AT + timedelta(minutes=2),
+        provenance="fixture://shadow/tuesday-board",
+    )
+
+    prior = tuesday.publication.id
+    refreshes = (
+        (WEDNESDAY_AT, "wednesday", 2, 0.5),
+        (THURSDAY_AT, "thursday", 3, 1.0),
+        (datetime(2026, 8, 28, 15, tzinfo=timezone.utc), "friday", 4, 1.5),
+        (datetime(2026, 8, 29, 15, tzinfo=timezone.utc), "saturday", 5, 2.0),
+    )
+    for moment, label, version, movement in refreshes:
+        refresh_fallbacks = tuple(
+            fallback
+            for fallback in _fallbacks()
+            if label != "wednesday" or fallback.data_type != "contextual"
+        )
+        refreshed = run_daily_controller(
+            conn,
+            _daily_request(
+                prior,
+                run_key=f"week-1-{label}-controller",
+                publication_key=f"week-1-official-v{version}",
+                model_run_key=f"week-1-epa-run-v{version}",
+                generated_at=moment,
+                reason=f"{label.title()} shadow refresh.",
+                freshness_fallbacks=refresh_fallbacks,
+                provenance=f"fixture://shadow/{label}",
+            ),
+        )
+        prior = refreshed.publication.id
+        ingest_board(moment, movement)
+        evaluate_live_sportsbook_board(
+            conn,
+            season=2026,
+            week=1,
+            policy_id=sportsbook_policy.id,
+            evaluated_at=moment + timedelta(minutes=2),
+            provenance=f"fixture://shadow/{label}-board",
+        )
+
+    saturday_at = refreshes[-1][0]
+    closings = designate_week_closing_offers(
+        conn,
+        season=2026,
+        week=1,
+        designated_at=saturday_at + timedelta(minutes=3),
+        source="fixture-final-pregame-market",
+        provenance="fixture://shadow/closing-designations",
+    )
+    assert len(closings) == 5
+    for index in range(1, 6):
+        conn.execute(
+            "UPDATE games SET home_points = ?, away_points = ?, completed = 1 "
+            "WHERE game_id = ?",
+            (24 + index, 17, 1000 + index),
+        )
+    conn.commit()
+
+    audit_at = datetime(2026, 8, 31, 15, tzinfo=timezone.utc)
+    final_card_id = conn.execute(
+        "SELECT card_id FROM official_card_publications "
+        "WHERE contest_id = ? ORDER BY card_version DESC LIMIT 1",
+        (tuesday.publication.contest_id,),
+    ).fetchone()[0]
+    requests = {
+        int(row[0]): PostgameAuditRequest(int(row[1]))
+        for row in conn.execute(
+            "SELECT locked.id, designation.closing_betting_line_id "
+            "FROM contest_locked_lines AS locked "
+            "JOIN sportsbook_closing_designations AS designation "
+            "ON designation.game_id = locked.game_id "
+            "WHERE locked.contest_id = ?",
+            (tuesday.publication.contest_id,),
+        )
+    }
+    contest_audit = audit_contest_card(
+        conn,
+        audit_run_key="shadow-contest-audit",
+        card_id=int(final_card_id),
+        audit_policy=PostgameAuditPolicy(
+            "shadow-audit-v1", POLICY_AT, "test", "fixture://shadow/audit-policy"
+        ),
+        requests_by_locked_line_id=requests,
+        source="fixture-final-scores",
+        provenance="fixture://shadow/contest-audit",
+        audited_at=audit_at,
+    )
+    sportsbook_audit = audit_sportsbook_recommendations(
+        conn,
+        audit_run_key="shadow-sportsbook-audit",
+        season=2026,
+        week=1,
+        policy_id=sportsbook_policy.id,
+        source="fixture-final-scores",
+        provenance="fixture://shadow/sportsbook-audit",
+        audited_at=audit_at,
+    )
+    assert sportsbook_audit.report.all_clv_available is True
+    diagnostics = generate_weekly_diagnostics(
+        conn,
+        diagnostic_run_key="shadow-weekly-diagnostics",
+        audit_run_id=contest_audit.run.id,
+        diagnostic_policy=WeeklyDiagnosticsPolicy(
+            policy_version="shadow-diagnostics-v1",
+            minimum_recommendation_sample=20,
+            minimum_ats_delta_percentage_points=10.0,
+            confidence_threshold_step_points=0.5,
+            effective_at=POLICY_AT,
+            created_by="test",
+            provenance="fixture://shadow/diagnostics-policy",
+        ),
+        source="fixture-weekly-audit",
+        provenance="fixture://shadow/diagnostics",
+        generated_at=audit_at + timedelta(hours=1),
+    )
+    assert diagnostics.report.complete is True
+
+    report = inspect_controlled_shadow_rehearsal(
+        conn,
+        contest_key="splashsports-2026-week-1",
+        season=2026,
+        week=1,
+        expected_lined_game_count=5,
+        sportsbook_policy_id=sportsbook_policy.id,
+    )
+
+    assert report.successful is True
+    assert report.official_publication_count == 5
+    assert report.revision_count == 4
+    assert report.locked_line_count == 5
+    assert all(card.pick_count == card.confidence_coverage_count == 5 for card in report.card_versions)
+    assert all(card.top_five_count == 5 for card in report.card_versions)
+    assert report.sportsbook_game_coverage_count == 5
+    assert report.sportsbook_evaluation_count == 25
+    assert report.sportsbook_supersession_count == 20
+    assert report.sportsbook_audit_count == 25
+    assert report.sportsbook_clv_graded_count == 25
+    assert report.sportsbook_missing_clv_count == 0
+    assert report.draftkings_provider_capture_attempted is True
+    assert report.draftkings_offers_received_count == 25
+    assert report.draftkings_eligible_games_with_offers_count == 5
+    assert report.draftkings_eligible_offers_evaluated_count == 25
+    assert report.draftkings_bet_count + report.draftkings_no_bet_count == 25
+    assert report.draftkings_unavailable_count == 0
+    assert report.draftkings_stale_count == 0
+    assert report.draftkings_supersession_count == 20
+    assert report.draftkings_recommendation_reproduction_passed is True
+    assert report.draftkings_closing_line_coverage == "5/5"
+    assert report.draftkings_clv_coverage == "25/25"
+    assert report.draftkings_grading_coverage == "25/25"
+    assert report.contest_audit_count == 5
+    assert report.lesson_count == len(report.lessons) == 4
+    assert report.wagers_placed == 0
+    conn.close()
+
+
+def test_draftkings_board_records_unavailable_without_book_or_contest_substitution(
+    temp_db,
+):
+    conn, lines = _seed_games(temp_db)
+    _seed_epa_inputs(conn)
+    tuesday = run_tuesday_controller(conn, _tuesday_request(lines))
+    policy = register_sportsbook_recommendation_policy(
+        conn,
+        policy_version="draftkings-board-v1",
+        residual_stddev_points=14.0,
+        minimum_spread_edge_points=1.5,
+        minimum_cover_probability=0.545,
+        minimum_expected_value=0.025,
+        maximum_odds_age_seconds=900,
+        material_update_seconds=300,
+        material_spread_change_points=0.5,
+        material_price_change=5,
+        maximum_stake_units=1.0,
+        stake_units_per_expected_value=10.0,
+        stake_increment_units=0.25,
+        effective_at=POLICY_AT,
+        created_by="test",
+        provenance="fixture://draftkings-board-policy",
+    )
+    payload = {
+        "records": [
+            {
+                "matchup_id": "fanduel-only-1001",
+                "game_id": 1001,
+                "home_team": "Home 1",
+                "away_team": "Away 1",
+                "market_type": "spread",
+                "home_spread": -7.5,
+                "home_price": -110,
+                "away_spread": 7.5,
+                "away_price": -110,
+                "line_type": "current",
+                "season": 2026,
+                "week": 1,
+                "observed_at": TUESDAY_AT.isoformat(),
+                "event_start_at": KICKOFF,
+                "bookmaker": "fanduel",
+            }
+        ]
+    }
+    summary = ProviderIngestionService(clock=lambda: TUESDAY_AT).ingest_payload(
+        conn,
+        IngestionRequest(
+            provider="fixture-odds",
+            endpoint="fixture://draftkings-request-returned-fanduel-only",
+            request_parameters={
+                "season": 2026,
+                "week": 1,
+                "bookmakers": "draftkings,fanduel",
+            },
+            requested_at=TUESDAY_AT,
+            parser_version="odds_spread_v3",
+            raw_payload_reference="fixture://fanduel-only.json",
+            data_type="odds",
+        ),
+        payload,
+        OddsSpreadParser("odds_spread_v3"),
+        accepted_writer=_odds_writer("current"),
+    )
+    evaluate_live_sportsbook_board(
+        conn,
+        season=2026,
+        week=1,
+        policy_id=policy.id,
+        evaluated_at=TUESDAY_AT + timedelta(minutes=1),
+        provenance="fixture://comparison-board",
+    )
+
+    board = build_draftkings_betting_board(
+        conn,
+        contest_id=tuesday.publication.contest_id,
+        policy_id=policy.id,
+        season=2026,
+        week=1,
+        provider_ingestion_run_ids=(summary.ingestion_run_id,),
+    )
+
+    assert len(board) == len(lines) == 5
+    assert all(row.bookmaker == "DraftKings" for row in board)
+    assert all(row.decision == "DRAFTKINGS_UNAVAILABLE" for row in board)
+    assert all(row.reason_code == "DRAFTKINGS_SPREAD_NOT_RETURNED" for row in board)
+    assert all(row.offered_spread is None and row.offered_price is None for row in board)
+    assert all(row.provider_capture_attempted is True for row in board)
+    assert all(row.observation_timestamp == TUESDAY_AT.isoformat() for row in board)
+    assert board[0].owner_summary().startswith("UNAVAILABLE | Away 1 at Home 1")
+    assert conn.execute(
+        "SELECT COUNT(*) FROM sportsbook_recommendation_evaluations AS evaluation "
+        "JOIN sportsbook_market_offers AS offer ON offer.id = evaluation.market_offer_id "
+        "WHERE offer.bookmaker = 'fanduel'"
+    ).fetchone()[0] == 1
+    conn.close()

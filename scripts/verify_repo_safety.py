@@ -16,6 +16,7 @@ PRODUCTION_WORKFLOWS = (
 )
 V3_PRODUCTION_WORKFLOW = "v3_production_operations.yml"
 V3_CLOUD_SETUP_WORKFLOW = "v3_cloud_database_setup.yml"
+V3_SHADOW_REHEARSAL_WORKFLOW = "v3_shadow_rehearsal.yml"
 V3_PRODUCTION_OPERATIONS = (
     "tuesday_lock",
     "wednesday_refresh",
@@ -220,6 +221,68 @@ def v3_cloud_setup_workflow_errors(
     return errors
 
 
+def v3_shadow_rehearsal_workflow_errors(
+    text: str,
+    source: str = V3_SHADOW_REHEARSAL_WORKFLOW,
+) -> list[str]:
+    """Return errors when the controlled shadow gateway stops failing closed."""
+    errors: list[str] = []
+    if re.search(r"(?m)^\s{2}schedule:\s*(?:#.*)?$", text):
+        errors.append(f"{source}: shadow schedules are forbidden before PR #22")
+    if not re.search(r"(?m)^\s{2}workflow_dispatch:\s*(?:#.*)?$", text):
+        errors.append(f"{source}: controlled manual dispatch trigger is missing")
+    if re.search(r"(?m)^\s{2}pull_request_target:\s*", text):
+        errors.append(f"{source}: pull_request_target is forbidden")
+    for guard in (
+        "github.repository == 'JCRABURN/cfb-betting-system-v3'",
+        "vars.CFB_V3_PRODUCTION_ENABLED == 'false'",
+        "vars.CFB_V3_OPERATION_EXECUTION_ENABLED == 'false'",
+        "vars.CFB_V3_KILL_SWITCH == 'true'",
+        "vars.CFB_V3_OWNER_CUTOVER_APPROVED == 'false'",
+        "vars.CFB_V3_SHADOW_REHEARSAL_ENABLED == 'true'",
+        "vars.CFB_V3_SHADOW_OPERATION_EXECUTION_ENABLED == 'true'",
+        "vars.CFB_V3_SHADOW_KILL_SWITCH == 'false'",
+        "vars.CFB_V3_PROVIDER_CONNECTIVITY_AUTHORIZED == 'true'",
+        "inputs.confirmation == 'RUN_V3_SHADOW_REHEARSAL'",
+    ):
+        if guard not in text:
+            errors.append(f"{source}: required fail-closed guard is missing: {guard}")
+    for requirement in (
+        "environment: v3-production",
+        "runs-on: ubuntu-latest",
+        "group: v3-shadow-${{ github.repository }}-${{ inputs.season }}-${{ inputs.week }}",
+        "cancel-in-progress: false",
+        "persist-credentials: false",
+        "clean: true",
+        "CFB_V3_DATABASE_URL: ${{ secrets.CFB_V3_DATABASE_URL }}",
+        "CFB_V3_RUNTIME_MODE: shadow",
+        "CFB_V3_MODEL_NAME: epa_only",
+        "python -m scripts.prepare_cloud_shadow_database",
+        "--confirmation INITIALIZE_V3_CLOUD_SHADOW_REHEARSAL",
+        "python -m scripts.check_provider_connectivity",
+        "--confirmation AUTHORIZE_V3_CONNECTIVITY",
+        "python -m scripts.run_cloud_production_operation",
+        "--confirmation EXECUTE_V3_CLOUD_SHADOW_REHEARSAL",
+        "--provider-confirmation CAPTURE_V3_PROVIDER_PAYLOADS",
+        "python scripts/verify_repo_safety.py",
+        "actions/upload-artifact@v4",
+        "GITHUB_STEP_SUMMARY",
+        "No checkout, credential access",
+    ):
+        if requirement not in text:
+            errors.append(f"{source}: required shadow control is missing: {requirement}")
+    if "self-hosted" in text:
+        errors.append(f"{source}: self-hosted runners are forbidden")
+    if not re.search(r"(?m)^permissions:\s*\r?\n\s{2}contents:\s*read\s*$", text):
+        errors.append(f"{source}: workflow-level permissions must default to read-only")
+    if re.search(r"(?m)^\s+contents:\s*write\s*$", text):
+        errors.append(f"{source}: shadow workflow must not grant write permissions")
+    for operation in ("initialize", "connectivity_check", *V3_PRODUCTION_OPERATIONS):
+        if f"          - {operation}" not in text:
+            errors.append(f"{source}: controlled shadow stage is missing: {operation}")
+    return errors
+
+
 def repository_errors(root: Path = ROOT) -> list[str]:
     """Validate the checked-in dependency locks and workflow configuration."""
     errors: list[str] = []
@@ -250,6 +313,14 @@ def repository_errors(root: Path = ROOT) -> list[str]:
         v3_cloud_setup_workflow_errors(
             setup_path.read_text(encoding="utf-8"),
             setup_path.name,
+        )
+    )
+
+    shadow_path = workflow_dir / V3_SHADOW_REHEARSAL_WORKFLOW
+    errors.extend(
+        v3_shadow_rehearsal_workflow_errors(
+            shadow_path.read_text(encoding="utf-8"),
+            shadow_path.name,
         )
     )
 

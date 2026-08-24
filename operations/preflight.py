@@ -172,41 +172,96 @@ def _configuration_checks(
     checks: list[PreflightCheck],
     allow_disposable_database: bool,
 ) -> None:
+    shadow = settings.is_shadow_rehearsal
     _record(
         checks,
         "runtime_mode",
-        settings.runtime_mode == "production",
-        "runtime mode is explicitly production",
-        "CFB_V3_RUNTIME_MODE must be exactly production",
+        settings.runtime_mode in ("production", "shadow"),
+        f"runtime mode is explicitly {settings.runtime_mode}",
+        "CFB_V3_RUNTIME_MODE must be exactly production or shadow",
     )
     _record(
         checks,
         "production_enabled",
-        settings.production_enabled is True,
-        "the explicit V3 production flag is enabled",
-        "CFB_V3_PRODUCTION_ENABLED must be exactly true",
+        settings.production_enabled is (False if shadow else True),
+        (
+            "the production enable flag remains false during shadow rehearsal"
+            if shadow
+            else "the explicit V3 production flag is enabled"
+        ),
+        (
+            "CFB_V3_PRODUCTION_ENABLED must be exactly false for shadow rehearsal"
+            if shadow
+            else "CFB_V3_PRODUCTION_ENABLED must be exactly true"
+        ),
     )
     _record(
         checks,
         "operation_execution_enabled",
-        settings.operation_execution_enabled is True,
-        "the separate operation-execution flag is enabled",
-        "CFB_V3_OPERATION_EXECUTION_ENABLED must be exactly true",
+        settings.operation_execution_enabled is (False if shadow else True),
+        (
+            "production operation execution remains disabled during shadow rehearsal"
+            if shadow
+            else "the separate operation-execution flag is enabled"
+        ),
+        (
+            "CFB_V3_OPERATION_EXECUTION_ENABLED must be exactly false for shadow rehearsal"
+            if shadow
+            else "CFB_V3_OPERATION_EXECUTION_ENABLED must be exactly true"
+        ),
     )
     _record(
         checks,
         "owner_cutover_approval",
-        settings.owner_cutover_approved is True,
-        "explicit owner cutover approval is recorded",
-        "CFB_V3_OWNER_CUTOVER_APPROVED must be exactly true",
+        settings.owner_cutover_approved is (False if shadow else True),
+        (
+            "owner production cutover approval remains false during rehearsal"
+            if shadow
+            else "explicit owner cutover approval is recorded"
+        ),
+        (
+            "CFB_V3_OWNER_CUTOVER_APPROVED must be exactly false for shadow rehearsal"
+            if shadow
+            else "CFB_V3_OWNER_CUTOVER_APPROVED must be exactly true"
+        ),
     )
     _record(
         checks,
         "kill_switch",
-        settings.kill_switch is False,
-        "the kill switch is explicitly disengaged",
-        "CFB_V3_KILL_SWITCH is missing, invalid, or engaged",
+        settings.kill_switch is (True if shadow else False),
+        (
+            "the production kill switch remains engaged during shadow rehearsal"
+            if shadow
+            else "the kill switch is explicitly disengaged"
+        ),
+        (
+            "CFB_V3_KILL_SWITCH must remain exactly true for shadow rehearsal"
+            if shadow
+            else "CFB_V3_KILL_SWITCH is missing, invalid, or engaged"
+        ),
     )
+    if shadow:
+        _record(
+            checks,
+            "shadow_rehearsal_enabled",
+            settings.shadow_rehearsal_enabled is True,
+            "the controlled shadow rehearsal is explicitly enabled",
+            "CFB_V3_SHADOW_REHEARSAL_ENABLED must be exactly true",
+        )
+        _record(
+            checks,
+            "shadow_operation_execution_enabled",
+            settings.shadow_operation_execution_enabled is True,
+            "shadow operation execution is explicitly enabled",
+            "CFB_V3_SHADOW_OPERATION_EXECUTION_ENABLED must be exactly true",
+        )
+        _record(
+            checks,
+            "shadow_kill_switch",
+            settings.shadow_kill_switch is False,
+            "the separate shadow kill switch is explicitly disengaged",
+            "CFB_V3_SHADOW_KILL_SWITCH is missing, invalid, or engaged",
+        )
     _record(
         checks,
         "boolean_configuration",
@@ -891,6 +946,8 @@ def _postgame_stage_readiness(
         "contest_cards",
         "card_postgame_audit_runs",
         "card_postgame_audit_completions",
+        "sportsbook_postgame_audit_runs",
+        "sportsbook_postgame_audit_completions",
     )
     if any(not _table_exists(conn, table) for table in required_tables):
         _record(
@@ -958,12 +1015,21 @@ def _postgame_stage_readiness(
         "ON completion.audit_run_id = run.id WHERE run.card_id = ? LIMIT 1",
         (card_id,),
     ).fetchone()
+    sportsbook_audit = conn.execute(
+        "SELECT 1 FROM sportsbook_postgame_audit_runs AS run "
+        "JOIN sportsbook_postgame_audit_completions AS completion "
+        "ON completion.audit_run_id = run.id "
+        "JOIN sportsbook_recommendation_policies AS policy "
+        "ON policy.id = run.policy_id "
+        "WHERE run.season = ? AND run.week = ? AND policy.policy_version = ? LIMIT 1",
+        (settings.season, settings.week, settings.policy_version("sportsbook")),
+    ).fetchone()
     _record(
         checks,
         "postgame_stage_readiness",
-        completed_audit is not None,
-        "the final official card has a completed postgame audit",
-        "weekly audit requires a completed postgame audit for the final official card",
+        completed_audit is not None and sportsbook_audit is not None,
+        "the final card and sportsbook recommendation ledgers have completed audits",
+        "weekly audit requires completed contest-card and sportsbook postgame audits",
     )
 
 

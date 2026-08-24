@@ -26,6 +26,7 @@ from operations.providers import ProductionProviderError, capture_live_provider_
 
 ROOT = Path(__file__).resolve().parents[1]
 PERSIST_CONFIRMATION = "EXECUTE_V3_CLOUD_OPERATION"
+SHADOW_PERSIST_CONFIRMATION = "EXECUTE_V3_CLOUD_SHADOW_REHEARSAL"
 
 
 def _commit_sha() -> str:
@@ -53,6 +54,12 @@ def _write_json(path: Path | None, payload: dict[str, object]) -> bool:
     return True
 
 
+def _capture_line_type(runtime_mode: str, operation: str) -> str:
+    if runtime_mode == "shadow":
+        return "current"
+    return "opening" if operation == "tuesday_lock" else "current"
+
+
 def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--operation", required=True, choices=PRODUCTION_OPERATIONS)
@@ -62,8 +69,15 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("--provider-confirmation")
     parser.add_argument("--preflight-output", type=Path)
     parser.add_argument("--result-output", type=Path)
+    parser.add_argument("--pages-output", type=Path)
     args = parser.parse_args(argv)
-    if args.confirmation != PERSIST_CONFIRMATION:
+    runtime_mode = os.environ.get("CFB_V3_RUNTIME_MODE", "").strip()
+    required_confirmation = (
+        SHADOW_PERSIST_CONFIRMATION
+        if runtime_mode == "shadow"
+        else PERSIST_CONFIRMATION
+    )
+    if args.confirmation != required_confirmation:
         print("cloud persist mode requires the exact execution confirmation", file=sys.stderr)
         return 2
     database_url = os.environ.get("CFB_V3_DATABASE_URL", "")
@@ -96,10 +110,7 @@ def main(argv: list[str] | None = None) -> int:
             capture_scope = (
                 "postgame" if args.operation == "postgame_grading" else "pregame"
             )
-            line_type = {
-                "tuesday_lock": "opening",
-                "saturday_final": "closing",
-            }.get(args.operation, "current")
+            line_type = _capture_line_type(runtime_mode, args.operation)
             captured_at = datetime.now(timezone.utc)
             provider_bundle = capture_live_provider_bundle(
                 runtime_environment,
@@ -131,6 +142,7 @@ def main(argv: list[str] | None = None) -> int:
             settings,
             configuration,
             code_commit_sha=_commit_sha(),
+            pages_output_directory=args.pages_output,
         )
         if not _write_json(args.preflight_output, asdict(preflight)):
             return 2
@@ -138,6 +150,14 @@ def main(argv: list[str] | None = None) -> int:
         if not _write_json(args.result_output, result_payload):
             return 2
         print(json.dumps(result_payload, sort_keys=True, separators=(",", ":")))
+        if runtime_mode == "shadow" and args.operation == "weekly_audit":
+            report = result_payload["operation"].get("shadow_rehearsal_report")
+            if not isinstance(report, dict) or report.get("successful") is not True:
+                print(
+                    "shadow operation rejected: final rehearsal acceptance gates are unmet",
+                    file=sys.stderr,
+                )
+                return 1
         return 0
     except (
         CloudPersistenceError,

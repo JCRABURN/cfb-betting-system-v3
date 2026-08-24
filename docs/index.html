@@ -1,282 +1,131 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>CFB Line &amp; Pool Monitor</title>
-<style>
-:root {
-  --ink: #12181a; --ink-soft: #3a4245; --chalk: #e7e9e2; --panel: #ffffff;
-  --line: rgba(18, 24, 26, 0.14); --accent: #b9812a; --accent-strong: #96691f;
-  --good: #3f7a52; --good-bg: rgba(63, 122, 82, 0.12);
-  --bad: #a84a32; --bad-bg: rgba(168, 74, 50, 0.12);
-  --neutral-bg: rgba(18, 24, 26, 0.06);
-  --text: var(--ink); --text-soft: var(--ink-soft); --bg: var(--chalk); --surface: var(--panel);
-  color-scheme: light;
-}
-@media (prefers-color-scheme: dark) {
-  :root {
-    --text: #e9ebe4; --text-soft: #aab0a8; --bg: #12181a; --surface: #182022;
-    --line: rgba(233, 235, 228, 0.14); --accent: #d6a34a; --accent-strong: #eab766;
-    --good: #6cbb85; --good-bg: rgba(108, 187, 133, 0.14);
-    --bad: #e08064; --bad-bg: rgba(224, 128, 100, 0.14);
-    --neutral-bg: rgba(233, 235, 228, 0.07); color-scheme: dark;
-  }
-}
-:root[data-theme="dark"] {
-  --text: #e9ebe4; --text-soft: #aab0a8; --bg: #12181a; --surface: #182022;
-  --line: rgba(233, 235, 228, 0.14); --accent: #d6a34a; --accent-strong: #eab766;
-  --good: #6cbb85; --good-bg: rgba(108, 187, 133, 0.14);
-  --bad: #e08064; --bad-bg: rgba(224, 128, 100, 0.14);
-  --neutral-bg: rgba(233, 235, 228, 0.07); color-scheme: dark;
-}
-:root[data-theme="light"] {
-  --text: var(--ink); --text-soft: var(--ink-soft); --bg: var(--chalk); --surface: var(--panel);
-  --line: rgba(18, 24, 26, 0.14); --accent: #b9812a; --accent-strong: #96691f;
-  --good: #3f7a52; --good-bg: rgba(63, 122, 82, 0.12);
-  --bad: #a84a32; --bad-bg: rgba(168, 74, 50, 0.12);
-  --neutral-bg: rgba(18, 24, 26, 0.06); color-scheme: light;
-}
-* { box-sizing: border-box; }
-body { margin: 0; background: var(--bg); color: var(--text); font-family: Georgia, "Iowan Old Style", serif; font-size: 16px; line-height: 1.5; }
-.page { max-width: 920px; margin: 0 auto; padding: 28px 20px 80px; }
-.display { font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif; font-weight: 800; letter-spacing: -0.01em; text-wrap: balance; }
-.eyebrow { font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif; font-weight: 700; font-size: 11.5px; letter-spacing: 0.11em; text-transform: uppercase; color: var(--text-soft); }
-.mono { font-family: ui-monospace, "SF Mono", "Cascadia Mono", Consolas, "Roboto Mono", monospace; font-variant-numeric: tabular-nums; }
-.masthead { display: flex; justify-content: space-between; align-items: flex-end; gap: 20px; flex-wrap: wrap; padding-bottom: 20px; border-bottom: 2px solid var(--ink); }
-.masthead h1 { margin: 0 0 6px; font-size: 30px; line-height: 1.05; }
-.masthead .sub { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif; font-size: 13.5px; color: var(--text-soft); max-width: 46ch; }
-.masthead-meta { text-align: right; font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif; }
-.masthead-meta .week { font-size: 13px; font-weight: 700; color: var(--accent-strong); letter-spacing: 0.04em; text-transform: uppercase; }
-.masthead-meta .synced { font-size: 12px; color: var(--text-soft); margin-top: 3px; }
-.health { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin: 22px 0 8px; }
-.health-chip { border: 1px solid var(--line); border-radius: 3px; padding: 10px 12px; background: var(--surface); }
-.health-chip .day { font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif; font-size: 11px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--text-soft); display: block; margin-bottom: 5px; }
-.health-chip .state { display: flex; align-items: center; gap: 6px; font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif; font-size: 13px; font-weight: 700; }
-.health-chip .dot { width: 8px; height: 8px; border-radius: 50%; flex: none; }
-.health-chip.ok .dot { background: var(--good); } .health-chip.ok .state { color: var(--good); }
-.health-chip.stale .dot { background: var(--bad); } .health-chip.stale .state { color: var(--bad); }
-.health-chip.pending .dot { background: var(--text-soft); } .health-chip.pending .state { color: var(--text-soft); }
-.health-chip .ts { margin-top: 4px; font-size: 11.5px; color: var(--text-soft); }
-.stale-banner { display: flex; align-items: flex-start; gap: 10px; background: var(--bad-bg); border: 1px solid var(--bad); border-radius: 3px; padding: 12px 14px; margin: 4px 0 18px; font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif; font-size: 13px; color: var(--text); }
-.stale-banner strong { color: var(--bad); }
-.panel { padding: 34px 0 8px; border-top: 1px solid var(--line); margin-top: 34px; }
-.panel:first-of-type { margin-top: 30px; }
-.panel-head { display: flex; justify-content: space-between; align-items: baseline; gap: 14px; flex-wrap: wrap; margin-bottom: 6px; }
-.panel-head .eyebrow.headline { color: var(--accent-strong); }
-.panel h2 { margin: 2px 0 4px; font-size: 22px; }
-.panel .dek { margin: 0 0 18px; font-size: 14.5px; color: var(--text-soft); max-width: 62ch; }
-.panel .asof { font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif; font-size: 11.5px; color: var(--text-soft); white-space: nowrap; }
-.table-wrap { overflow-x: auto; }
-table { width: 100%; border-collapse: collapse; font-size: 14px; }
-thead th { text-align: left; font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif; font-size: 11px; font-weight: 700; letter-spacing: 0.07em; text-transform: uppercase; color: var(--text-soft); padding: 0 10px 8px 0; border-bottom: 1px solid var(--line); }
-tbody td { padding: 9px 10px 9px 0; border-bottom: 1px solid var(--line); vertical-align: middle; }
-tbody tr:last-child td { border-bottom: none; }
-td.num, th.num { text-align: right; }
-.matchup { white-space: nowrap; } .matchup .away { color: var(--text-soft); } .matchup .at { color: var(--text-soft); padding: 0 4px; }
-.pill { display: inline-flex; align-items: center; gap: 5px; font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif; font-size: 11.5px; font-weight: 700; padding: 3px 9px; border-radius: 999px; white-space: nowrap; }
-.pill.toward { background: var(--good-bg); color: var(--good); }
-.pill.away { background: var(--bad-bg); color: var(--bad); }
-.pill.flat { background: var(--neutral-bg); color: var(--text-soft); }
-.pill.flip { background: transparent; border: 1px solid var(--bad); color: var(--bad); }
-.pill.low-conf { background: transparent; border: 1px solid var(--text-soft); color: var(--text-soft); }
-.pill.standard { background: var(--neutral-bg); color: var(--text-soft); }
-.no-pick { color: var(--text-soft); font-style: italic; cursor: help; }
-.panel.secondary { background: var(--neutral-bg); margin-left: -20px; margin-right: -20px; padding-left: 20px; padding-right: 20px; }
-.panel.secondary .eyebrow { color: var(--text-soft); }
-.disclaimer { display: flex; gap: 12px; border: 1px solid var(--bad); background: var(--bad-bg); border-radius: 3px; padding: 14px 16px; margin: 4px 0 22px; }
-.disclaimer .mark { font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif; font-weight: 800; color: var(--bad); font-size: 13px; flex: none; padding-top: 1px; }
-.disclaimer p { margin: 0; font-size: 13.5px; color: var(--text); max-width: 64ch; }
-.disclaimer p + p { margin-top: 6px; }
-.stat-row { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px; background: var(--line); border: 1px solid var(--line); margin-bottom: 24px; }
-.stat-cell { background: var(--surface); padding: 16px 16px 14px; }
-.stat-cell .label { font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif; font-size: 11px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--text-soft); display: block; margin-bottom: 6px; }
-.stat-cell .value { font-size: 26px; font-weight: 800; font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif; }
-.stat-cell .value.good { color: var(--good); } .stat-cell .value.bad { color: var(--bad); }
-.stat-cell .note { font-size: 11.5px; color: var(--text-soft); margin-top: 4px; }
-.empty-state { border: 1px dashed var(--line); border-radius: 3px; padding: 22px; text-align: center; color: var(--text-soft); font-size: 13.5px; }
-.ref-note { font-size: 12px; color: var(--text-soft); margin-top: 10px; }
-footer { margin-top: 50px; padding-top: 20px; border-top: 2px solid var(--ink); font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif; font-size: 12px; color: var(--text-soft); display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
-footer .theme-toggle { display: inline-flex; border: 1px solid var(--line); border-radius: 999px; overflow: hidden; }
-footer .theme-toggle button { appearance: none; border: none; background: transparent; color: var(--text-soft); padding: 5px 12px; font: inherit; font-size: 12px; cursor: pointer; }
-footer .theme-toggle button.active { background: var(--ink); color: var(--bg); }
-@media (max-width: 620px) { .health { grid-template-columns: repeat(2, 1fr); } .stat-row { grid-template-columns: repeat(2, 1fr); } .masthead { align-items: flex-start; } .masthead-meta { text-align: left; } }
-</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'">
+  <meta name="description" content="Owner-facing CFB Betting System V3 contest card, DraftKings board, and postgame audit.">
+  <title>CFB Betting System V3</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="dashboard.js" defer></script>
 </head>
 <body>
-<div class="page">
-
-  <div class="masthead">
+  <a class="skip-link" href="#main">Skip to dashboard</a>
+  <header class="masthead">
     <div>
-      <h1 class="display">CFB Line &amp; Pool Monitor</h1>
-      <p class="sub">Market movement and pool drift first &mdash; the model's picks are reference-only, never sharp. Personal decision support, not advice.</p>
+      <p class="eyebrow">JCRABURN / GOVERNED OWNER VIEW</p>
+      <h1>CFB Betting System <span>V3</span></h1>
+      <p class="subtitle">One immutable contest card. One explicit DraftKings decision board. Full audit custody.</p>
     </div>
-    <div class="masthead-meta">
-      <div class="week">Week 1 &middot; 2026</div>
-      <div class="synced">Generated Aug 04, 16:13 UTC</div>
-    </div>
-  </div>
+    <div id="system-badge" class="system-badge" aria-live="polite">LOADING</div>
+  </header>
 
-  <div class="health"><div class="health-chip ok"><span class="day">Tue · Card</span><span class="state"><span class="dot"></span>Updated</span><div class="ts mono">Aug 04, 16:13 UTC</div></div><div class="health-chip ok"><span class="day">Thu/Sat · Drift</span><span class="state"><span class="dot"></span>Updated</span><div class="ts mono">Aug 04, 14:48 UTC</div></div><div class="health-chip pending"><span class="day">Sat · Pool</span><span class="state"><span class="dot"></span>Pending</span><div class="ts mono">Not yet run</div></div><div class="health-chip pending"><span class="day">Mon · Audit</span><span class="state"><span class="dot"></span>Pending</span><div class="ts mono">Not yet run</div></div></div>
+  <main id="main">
+    <div id="fatal-error" class="fatal-error" role="alert" hidden></div>
 
-  <section class="panel">
-    <div class="panel-head">
-      <div><div class="eyebrow headline">Headline &middot; Market Read</div><h2 class="display">Market Movement</h2></div>
-      <div class="asof mono">opening &rarr; latest, same book</div>
-    </div>
-    <p class="dek">Every lined game, opening line vs. the latest number from the <em>same</em> book. No model involved: this is what the market itself has done.</p>
-    
-    <div class="table-wrap"><table><thead><tr><th>Game</th><th>Open</th><th>Latest</th><th>Movement</th><th class="num">Book</th></tr></thead>
-    <tbody><tr><td class="matchup"><span class="away">East Carolina</span><span class="at">@</span>Alabama</td><td class="num mono">-28.5</td><td class="num mono">-28.5</td><td class="mono">0.0 pts &rarr; flat</td><td class="num mono">draftkings</td></tr>
-<tr><td class="matchup"><span class="away">Baylor</span><span class="at">@</span>Auburn</td><td class="num mono">-7.0</td><td class="num mono">-7.0</td><td class="mono">0.0 pts &rarr; flat</td><td class="num mono">draftkings</td></tr>
-<tr><td class="matchup"><span class="away">Florida Atlantic</span><span class="at">@</span>Florida</td><td class="num mono">-26.5</td><td class="num mono">-26.5</td><td class="mono">0.0 pts &rarr; flat</td><td class="num mono">draftkings</td></tr>
-<tr><td class="matchup"><span class="away">Clemson</span><span class="at">@</span>LSU</td><td class="num mono">-10.0</td><td class="num mono">-10.0</td><td class="mono">0.0 pts &rarr; flat</td><td class="num mono">draftkings</td></tr>
-<tr><td class="matchup"><span class="away">Louisville</span><span class="at">@</span>Ole Miss</td><td class="num mono">-6.5</td><td class="num mono">-6.5</td><td class="mono">0.0 pts &rarr; flat</td><td class="num mono">draftkings</td></tr>
-<tr><td class="matchup"><span class="away">UL Monroe</span><span class="at">@</span>Mississippi State</td><td class="num mono">-29.5</td><td class="num mono">-29.5</td><td class="mono">0.0 pts &rarr; flat</td><td class="num mono">draftkings</td></tr>
-<tr><td class="matchup"><span class="away">UTEP</span><span class="at">@</span>Oklahoma</td><td class="num mono">-40.5</td><td class="num mono">-40.5</td><td class="mono">0.0 pts &rarr; flat</td><td class="num mono">draftkings</td></tr>
-<tr><td class="matchup"><span class="away">Kent State</span><span class="at">@</span>South Carolina</td><td class="num mono">-34.5</td><td class="num mono">-34.5</td><td class="mono">0.0 pts &rarr; flat</td><td class="num mono">draftkings</td></tr>
-<tr><td class="matchup"><span class="away">Texas State</span><span class="at">@</span>Texas</td><td class="num mono">-30.5</td><td class="num mono">-30.5</td><td class="mono">0.0 pts &rarr; flat</td><td class="num mono">draftkings</td></tr>
-<tr><td class="matchup"><span class="away">Missouri State</span><span class="at">@</span>Texas A&amp;M</td><td class="num mono">-39.5</td><td class="num mono">-39.5</td><td class="mono">0.0 pts &rarr; flat</td><td class="num mono">draftkings</td></tr>
-<tr><td class="matchup"><span class="away">North Carolina</span><span class="at">@</span>TCU</td><td class="num mono">-7.0</td><td class="num mono">-7.0</td><td class="mono">0.0 pts &rarr; flat</td><td class="num mono">draftkings</td></tr>
-<tr><td class="matchup"><span class="away">Oklahoma State</span><span class="at">@</span>Tulsa</td><td class="num mono">+13.5</td><td class="num mono">+13.5</td><td class="mono">0.0 pts &rarr; flat</td><td class="num mono">draftkings</td></tr>
-<tr><td class="matchup"><span class="away">Colorado</span><span class="at">@</span>Georgia Tech</td><td class="num mono">-7.0</td><td class="num mono">-7.0</td><td class="mono">0.0 pts &rarr; flat</td><td class="num mono">draftkings</td></tr>
-<tr><td class="matchup"><span class="away">Boston College</span><span class="at">@</span>Cincinnati</td><td class="num mono">-7.5</td><td class="num mono">-7.5</td><td class="mono">0.0 pts &rarr; flat</td><td class="num mono">draftkings</td></tr>
-<tr><td class="matchup"><span class="away">Oregon State</span><span class="at">@</span>Houston</td><td class="num mono">-19.5</td><td class="num mono">-19.5</td><td class="mono">0.0 pts &rarr; flat</td><td class="num mono">draftkings</td></tr>
-<tr><td class="matchup"><span class="away">Coastal Carolina</span><span class="at">@</span>West Virginia</td><td class="num mono">-21.0</td><td class="num mono">-21.0</td><td class="mono">0.0 pts &rarr; flat</td><td class="num mono">draftkings</td></tr>
-<tr><td class="matchup"><span class="away">Hawai'i</span><span class="at">@</span>Stanford</td><td class="num mono">-4.0</td><td class="num mono">-4.0</td><td class="mono">0.0 pts &rarr; flat</td><td class="num mono">draftkings</td></tr>
-<tr><td class="matchup"><span class="away">NC State</span><span class="at">@</span>Virginia</td><td class="num mono">-5.5</td><td class="num mono">-5.5</td><td class="mono">0.0 pts &rarr; flat</td><td class="num mono">draftkings</td></tr>
-<tr><td class="matchup"><span class="away">Akron</span><span class="at">@</span>Wake Forest</td><td class="num mono">-22.5</td><td class="num mono">-22.5</td><td class="mono">0.0 pts &rarr; flat</td><td class="num mono">draftkings</td></tr>
-<tr><td class="matchup"><span class="away">Miami</span><span class="at">@</span>Stanford</td><td class="num mono">+23.5</td><td class="num mono">+23.5</td><td class="mono">0.0 pts &rarr; flat</td><td class="num mono">draftkings</td></tr>
-<tr><td class="matchup"><span class="away">Miami (OH)</span><span class="at">@</span>Pittsburgh</td><td class="num mono">-16.5</td><td class="num mono">-16.5</td><td class="mono">0.0 pts &rarr; flat</td><td class="num mono">draftkings</td></tr>
-<tr><td class="matchup"><span class="away">Tulane</span><span class="at">@</span>Duke</td><td class="num mono">-10.0</td><td class="num mono">-10.0</td><td class="mono">0.0 pts &rarr; flat</td><td class="num mono">draftkings</td></tr>
-<tr><td class="matchup"><span class="away">UCLA</span><span class="at">@</span>California</td><td class="num mono">-1.5</td><td class="num mono">-1.5</td><td class="mono">0.0 pts &rarr; flat</td><td class="num mono">draftkings</td></tr>
-<tr><td class="matchup"><span class="away">SMU</span><span class="at">@</span>Florida State</td><td class="num mono">+1.5</td><td class="num mono">+1.5</td><td class="mono">0.0 pts &rarr; flat</td><td class="num mono">draftkings</td></tr>
-<tr><td class="matchup"><span class="away">Massachusetts</span><span class="at">@</span>Rutgers</td><td class="num mono">-30.5</td><td class="num mono">-30.5</td><td class="mono">0.0 pts &rarr; flat</td><td class="num mono">draftkings</td></tr>
-<tr><td class="matchup"><span class="away">UAB</span><span class="at">@</span>Illinois</td><td class="num mono">-27.5</td><td class="num mono">-27.5</td><td class="mono">0.0 pts &rarr; flat</td><td class="num mono">draftkings</td></tr>
-<tr><td class="matchup"><span class="away">North Texas</span><span class="at">@</span>Indiana</td><td class="num mono">-40.5</td><td class="num mono">-40.5</td><td class="mono">0.0 pts &rarr; flat</td><td class="num mono">draftkings</td></tr>
-<tr><td class="matchup"><span class="away">Northern Illinois</span><span class="at">@</span>Iowa</td><td class="num mono">-30.5</td><td class="num mono">-30.5</td><td class="mono">0.0 pts &rarr; flat</td><td class="num mono">draftkings</td></tr>
-<tr><td class="matchup"><span class="away">Western Michigan</span><span class="at">@</span>Michigan</td><td class="num mono">-26.5</td><td class="num mono">-26.5</td><td class="mono">0.0 pts &rarr; flat</td><td class="num mono">draftkings</td></tr>
-<tr><td class="matchup"><span class="away">Toledo</span><span class="at">@</span>Michigan State</td><td class="num mono">-11.5</td><td class="num mono">-11.5</td><td class="mono">0.0 pts &rarr; flat</td><td class="num mono">draftkings</td></tr>
-<tr><td class="matchup"><span class="away">Ohio</span><span class="at">@</span>Nebraska</td><td class="num mono">-24.5</td><td class="num mono">-24.5</td><td class="mono">0.0 pts &rarr; flat</td><td class="num mono">draftkings</td></tr>
-<tr><td class="matchup"><span class="away">Ball State</span><span class="at">@</span>Ohio State</td><td class="num mono">-50.5</td><td class="num mono">-50.5</td><td class="mono">0.0 pts &rarr; flat</td><td class="num mono">draftkings</td></tr>
-<tr><td class="matchup"><span class="away">Boise State</span><span class="at">@</span>Oregon</td><td class="num mono">-24.5</td><td class="num mono">-24.5</td><td class="mono">0.0 pts &rarr; flat</td><td class="num mono">draftkings</td></tr>
-<tr><td class="matchup"><span class="away">Marshall</span><span class="at">@</span>Penn State</td><td class="num mono">-24.5</td><td class="num mono">-24.5</td><td class="mono">0.0 pts &rarr; flat</td><td class="num mono">draftkings</td></tr>
-<tr><td class="matchup"><span class="away">Fresno State</span><span class="at">@</span>USC</td><td class="num mono">-23.5</td><td class="num mono">-23.5</td><td class="mono">0.0 pts &rarr; flat</td><td class="num mono">draftkings</td></tr>
-<tr><td class="matchup"><span class="away">Washington State</span><span class="at">@</span>Washington</td><td class="num mono">-21.5</td><td class="num mono">-21.5</td><td class="mono">0.0 pts &rarr; flat</td><td class="num mono">draftkings</td></tr>
-<tr><td class="matchup"><span class="away">Wisconsin</span><span class="at">@</span>Notre Dame</td><td class="num mono">-20.5</td><td class="num mono">-20.5</td><td class="mono">0.0 pts &rarr; flat</td><td class="num mono">draftkings</td></tr>
-<tr><td class="matchup"><span class="away">Wyoming</span><span class="at">@</span>Colorado State</td><td class="num mono">-4.0</td><td class="num mono">-4.0</td><td class="mono">0.0 pts &rarr; flat</td><td class="num mono">draftkings</td></tr>
-<tr><td class="matchup"><span class="away">Memphis</span><span class="at">@</span>UNLV</td><td class="num mono">-5.5</td><td class="num mono">-5.5</td><td class="mono">0.0 pts &rarr; flat</td><td class="num mono">draftkings</td></tr>
-<tr><td class="matchup"><span class="away">Arkansas State</span><span class="at">@</span>Memphis</td><td class="num mono">-10.5</td><td class="num mono">-10.5</td><td class="mono">0.0 pts &rarr; flat</td><td class="num mono">draftkings</td></tr>
-<tr><td class="matchup"><span class="away">Florida International</span><span class="at">@</span>South Florida</td><td class="num mono">-12.5</td><td class="num mono">-12.5</td><td class="mono">0.0 pts &rarr; flat</td><td class="num mono">draftkings</td></tr>
-<tr><td class="matchup"><span class="away">Western Kentucky</span><span class="at">@</span>Nevada</td><td class="num mono">+3.0</td><td class="num mono">+3.0</td><td class="mono">0.0 pts &rarr; flat</td><td class="num mono">draftkings</td></tr>
-<tr><td class="matchup"><span class="away">San José State</span><span class="at">@</span>USC</td><td class="num mono">-38.5</td><td class="num mono">-38.5</td><td class="mono">0.0 pts &rarr; flat</td><td class="num mono">draftkings</td></tr>
-<tr><td class="matchup"><span class="away">San José State</span><span class="at">@</span>Eastern Michigan</td><td class="num mono">-4.0</td><td class="num mono">-4.0</td><td class="mono">0.0 pts &rarr; flat</td><td class="num mono">draftkings</td></tr>
-<tr><td class="matchup"><span class="away">UNLV</span><span class="at">@</span>Hawai'i</td><td class="num mono">+1.5</td><td class="num mono">+1.5</td><td class="mono">0.0 pts &rarr; flat</td><td class="num mono">draftkings</td></tr>
-<tr><td class="matchup"><span class="away">Central Michigan</span><span class="at">@</span>New Mexico</td><td class="num mono">-12.5</td><td class="num mono">-12.5</td><td class="mono">0.0 pts &rarr; flat</td><td class="num mono">draftkings</td></tr>
-<tr><td class="matchup"><span class="away">New Mexico State</span><span class="at">@</span>Florida State</td><td class="num mono">-30.5</td><td class="num mono">-30.5</td><td class="mono">0.0 pts &rarr; flat</td><td class="num mono">draftkings</td></tr>
-<tr><td class="matchup"><span class="away">Liberty</span><span class="at">@</span>James Madison</td><td class="num mono">-6.5</td><td class="num mono">-6.5</td><td class="mono">0.0 pts &rarr; flat</td><td class="num mono">draftkings</td></tr>
-<tr><td class="matchup"><span class="away">Sam Houston</span><span class="at">@</span>Troy</td><td class="num mono">-16.5</td><td class="num mono">-16.5</td><td class="mono">0.0 pts &rarr; flat</td><td class="num mono">draftkings</td></tr></tbody></table></div>
-  </section>
+    <section class="panel status-panel" aria-labelledby="status-title">
+      <div class="section-heading">
+        <div>
+          <p class="section-number">01 / CONTROL</p>
+          <h2 id="status-title">Week &amp; system status</h2>
+        </div>
+        <p id="generated-at" class="as-of"></p>
+      </div>
+      <div id="warning" class="warning" role="status" hidden></div>
+      <div id="status-grid" class="status-grid"></div>
+      <details class="source-details">
+        <summary>Source freshness detail</summary>
+        <div id="source-freshness" class="source-grid"></div>
+      </details>
+    </section>
 
-  <section class="panel">
-    <div class="panel-head">
-      <div><div class="eyebrow headline">Headline &middot; Your Pool</div><h2 class="display">Pool Drift</h2></div>
-      <div class="asof mono">vs. entered pool line</div>
-    </div>
-    <p class="dek">Your locked picks against the pool's own number, compared to where the market sits now. Sorted worst-for-your-pick first.</p>
-    
-    <div class="empty-state">No pool picks entered for this week yet &mdash; run <code>models/pool_view.py</code> after committing <code>data/pool_picks/week_1_2026.csv</code>.</div>
-  </section>
+    <section class="panel top-five-panel" aria-labelledby="top-five-title">
+      <div class="section-heading">
+        <div>
+          <p class="section-number">02 / PRIORITY</p>
+          <h2 id="top-five-title">Top 5</h2>
+        </div>
+        <p class="section-note">Ranked contest selections at the immutable SplashSports line</p>
+      </div>
+      <div id="top-five" class="top-five-grid"></div>
+    </section>
 
-  <section class="panel secondary">
-    <div class="panel-head">
-      <div><div class="eyebrow">Reference Only &middot; Not a Recommendation</div><h2 class="display">Model Picks &mdash; EPA-Only Baseline</h2></div>
-      <div class="asof mono">fit on prior seasons</div>
-    </div>
-    
-    <div class="disclaimer"><span class="mark">&#9888;</span><div>
-      <p><strong>This baseline has not demonstrated a betting edge over the market.</strong> Six independent tests &mdash; three candidate features, three structural fixes for its worst bucket &mdash; were all rejected against a pre-registered bar. Every edge bucket sits at or below the ~52.4% break-even line.</p>
-      <p>The picks below are shown for reference, not as a recommendation. Large-edge picks are flagged low-confidence, not high &mdash; the model's biggest disagreements with the market are its <em>least</em> reliable, not its best.</p>
-    </div></div>
-    <div class="stale-banner"><span class="mark">&#9888;</span><span><strong>49 picks this week use prior-season EPA</strong> -- no in-season data can exist yet this early (Week 1), so these use last season's final numbers as a fallback input (MODEL_DESIGN.md &sect;6). Confidence is capped accordingly, not standard. 27 of those go further: edge past the model's worst-performing bucket (ARCHITECTURE.md &sect;19-20) on top of the fallback input, so those show as no pick at all, not just low confidence.</span></div>
-    <div class="table-wrap"><table><thead><tr><th>Game</th><th>Side</th><th class="num">Edge</th><th class="num">Confidence</th></tr></thead>
-    <tbody><tr><td class="matchup"><span class="away">East Carolina</span><span class="at">@</span>Alabama</td><td colspan="3" class="no-pick" title="Raw model edge 24.5 pts, not shown -- prior-season fallback input, past the 10+ bucket that's the model's worst-performing slice (ARCHITECTURE.md &sect;19-20)">No pick &mdash; extrapolation beyond model&rsquo;s reliable range</td></tr>
-<tr><td class="matchup"><span class="away">Baylor</span><span class="at">@</span>Auburn</td><td>Baylor</td><td class="num mono">0.5</td><td class="num"><span class="pill low-conf">prior-season data</span> <span class="pill flip" title="Uses prior-season final EPA -- no in-season data exists yet (Week 1)">week 1</span></td></tr>
-<tr><td class="matchup"><span class="away">Florida Atlantic</span><span class="at">@</span>Florida</td><td colspan="3" class="no-pick" title="Raw model edge 22.2 pts, not shown -- prior-season fallback input, past the 10+ bucket that's the model's worst-performing slice (ARCHITECTURE.md &sect;19-20)">No pick &mdash; extrapolation beyond model&rsquo;s reliable range</td></tr>
-<tr><td class="matchup"><span class="away">Clemson</span><span class="at">@</span>LSU</td><td>Clemson</td><td class="num mono">10.0</td><td class="num"><span class="pill low-conf">prior-season data</span> <span class="pill flip" title="Uses prior-season final EPA -- no in-season data exists yet (Week 1)">week 1</span></td></tr>
-<tr><td class="matchup"><span class="away">Louisville</span><span class="at">@</span>Ole Miss</td><td>Ole Miss</td><td class="num mono">0.1</td><td class="num"><span class="pill low-conf">prior-season data</span> <span class="pill flip" title="Uses prior-season final EPA -- no in-season data exists yet (Week 1)">week 1</span></td></tr>
-<tr><td class="matchup"><span class="away">UL Monroe</span><span class="at">@</span>Mississippi State</td><td colspan="3" class="no-pick" title="Raw model edge 24.4 pts, not shown -- prior-season fallback input, past the 10+ bucket that's the model's worst-performing slice (ARCHITECTURE.md &sect;19-20)">No pick &mdash; extrapolation beyond model&rsquo;s reliable range</td></tr>
-<tr><td class="matchup"><span class="away">UTEP</span><span class="at">@</span>Oklahoma</td><td colspan="3" class="no-pick" title="Raw model edge 29.1 pts, not shown -- prior-season fallback input, past the 10+ bucket that's the model's worst-performing slice (ARCHITECTURE.md &sect;19-20)">No pick &mdash; extrapolation beyond model&rsquo;s reliable range</td></tr>
-<tr><td class="matchup"><span class="away">Kent State</span><span class="at">@</span>South Carolina</td><td colspan="3" class="no-pick" title="Raw model edge 27.0 pts, not shown -- prior-season fallback input, past the 10+ bucket that's the model's worst-performing slice (ARCHITECTURE.md &sect;19-20)">No pick &mdash; extrapolation beyond model&rsquo;s reliable range</td></tr>
-<tr><td class="matchup"><span class="away">Texas State</span><span class="at">@</span>Texas</td><td colspan="3" class="no-pick" title="Raw model edge 29.7 pts, not shown -- prior-season fallback input, past the 10+ bucket that's the model's worst-performing slice (ARCHITECTURE.md &sect;19-20)">No pick &mdash; extrapolation beyond model&rsquo;s reliable range</td></tr>
-<tr><td class="matchup"><span class="away">Missouri State</span><span class="at">@</span>Texas A&amp;M</td><td colspan="3" class="no-pick" title="Raw model edge 28.7 pts, not shown -- prior-season fallback input, past the 10+ bucket that's the model's worst-performing slice (ARCHITECTURE.md &sect;19-20)">No pick &mdash; extrapolation beyond model&rsquo;s reliable range</td></tr>
-<tr><td class="matchup"><span class="away">North Carolina</span><span class="at">@</span>TCU</td><td>TCU</td><td class="num mono">2.6</td><td class="num"><span class="pill low-conf">prior-season data</span> <span class="pill flip" title="Uses prior-season final EPA -- no in-season data exists yet (Week 1)">week 1</span></td></tr>
-<tr><td class="matchup"><span class="away">Oklahoma State</span><span class="at">@</span>Tulsa</td><td colspan="3" class="no-pick" title="Raw model edge 25.5 pts, not shown -- prior-season fallback input, past the 10+ bucket that's the model's worst-performing slice (ARCHITECTURE.md &sect;19-20)">No pick &mdash; extrapolation beyond model&rsquo;s reliable range</td></tr>
-<tr><td class="matchup"><span class="away">Colorado</span><span class="at">@</span>Georgia Tech</td><td>Georgia Tech</td><td class="num mono">3.6</td><td class="num"><span class="pill low-conf">prior-season data</span> <span class="pill flip" title="Uses prior-season final EPA -- no in-season data exists yet (Week 1)">week 1</span></td></tr>
-<tr><td class="matchup"><span class="away">Boston College</span><span class="at">@</span>Cincinnati</td><td>Cincinnati</td><td class="num mono">2.8</td><td class="num"><span class="pill low-conf">prior-season data</span> <span class="pill flip" title="Uses prior-season final EPA -- no in-season data exists yet (Week 1)">week 1</span></td></tr>
-<tr><td class="matchup"><span class="away">Oregon State</span><span class="at">@</span>Houston</td><td colspan="3" class="no-pick" title="Raw model edge 10.9 pts, not shown -- prior-season fallback input, past the 10+ bucket that's the model's worst-performing slice (ARCHITECTURE.md &sect;19-20)">No pick &mdash; extrapolation beyond model&rsquo;s reliable range</td></tr>
-<tr><td class="matchup"><span class="away">Coastal Carolina</span><span class="at">@</span>West Virginia</td><td colspan="3" class="no-pick" title="Raw model edge 16.8 pts, not shown -- prior-season fallback input, past the 10+ bucket that's the model's worst-performing slice (ARCHITECTURE.md &sect;19-20)">No pick &mdash; extrapolation beyond model&rsquo;s reliable range</td></tr>
-<tr><td class="matchup"><span class="away">Hawai'i</span><span class="at">@</span>Stanford</td><td>Hawai'i</td><td class="num mono">5.1</td><td class="num"><span class="pill low-conf">prior-season data</span> <span class="pill flip" title="Uses prior-season final EPA -- no in-season data exists yet (Week 1)">week 1</span></td></tr>
-<tr><td class="matchup"><span class="away">NC State</span><span class="at">@</span>Virginia</td><td>Virginia</td><td class="num mono">0.9</td><td class="num"><span class="pill low-conf">prior-season data</span> <span class="pill flip" title="Uses prior-season final EPA -- no in-season data exists yet (Week 1)">week 1</span></td></tr>
-<tr><td class="matchup"><span class="away">Akron</span><span class="at">@</span>Wake Forest</td><td colspan="3" class="no-pick" title="Raw model edge 13.5 pts, not shown -- prior-season fallback input, past the 10+ bucket that's the model's worst-performing slice (ARCHITECTURE.md &sect;19-20)">No pick &mdash; extrapolation beyond model&rsquo;s reliable range</td></tr>
-<tr><td class="matchup"><span class="away">Miami</span><span class="at">@</span>Stanford</td><td colspan="3" class="no-pick" title="Raw model edge 15.7 pts, not shown -- prior-season fallback input, past the 10+ bucket that's the model's worst-performing slice (ARCHITECTURE.md &sect;19-20)">No pick &mdash; extrapolation beyond model&rsquo;s reliable range</td></tr>
-<tr><td class="matchup"><span class="away">Miami (OH)</span><span class="at">@</span>Pittsburgh</td><td colspan="3" class="no-pick" title="Raw model edge 10.6 pts, not shown -- prior-season fallback input, past the 10+ bucket that's the model's worst-performing slice (ARCHITECTURE.md &sect;19-20)">No pick &mdash; extrapolation beyond model&rsquo;s reliable range</td></tr>
-<tr><td class="matchup"><span class="away">Tulane</span><span class="at">@</span>Duke</td><td>Tulane</td><td class="num mono">9.7</td><td class="num"><span class="pill low-conf">prior-season data</span> <span class="pill flip" title="Uses prior-season final EPA -- no in-season data exists yet (Week 1)">week 1</span></td></tr>
-<tr><td class="matchup"><span class="away">UCLA</span><span class="at">@</span>California</td><td>California</td><td class="num mono">5.8</td><td class="num"><span class="pill low-conf">prior-season data</span> <span class="pill flip" title="Uses prior-season final EPA -- no in-season data exists yet (Week 1)">week 1</span></td></tr>
-<tr><td class="matchup"><span class="away">SMU</span><span class="at">@</span>Florida State</td><td>Florida State</td><td class="num mono">1.8</td><td class="num"><span class="pill low-conf">prior-season data</span> <span class="pill flip" title="Uses prior-season final EPA -- no in-season data exists yet (Week 1)">week 1</span></td></tr>
-<tr><td class="matchup"><span class="away">Massachusetts</span><span class="at">@</span>Rutgers</td><td colspan="3" class="no-pick" title="Raw model edge 19.8 pts, not shown -- prior-season fallback input, past the 10+ bucket that's the model's worst-performing slice (ARCHITECTURE.md &sect;19-20)">No pick &mdash; extrapolation beyond model&rsquo;s reliable range</td></tr>
-<tr><td class="matchup"><span class="away">UAB</span><span class="at">@</span>Illinois</td><td colspan="3" class="no-pick" title="Raw model edge 18.3 pts, not shown -- prior-season fallback input, past the 10+ bucket that's the model's worst-performing slice (ARCHITECTURE.md &sect;19-20)">No pick &mdash; extrapolation beyond model&rsquo;s reliable range</td></tr>
-<tr><td class="matchup"><span class="away">North Texas</span><span class="at">@</span>Indiana</td><td colspan="3" class="no-pick" title="Raw model edge 33.8 pts, not shown -- prior-season fallback input, past the 10+ bucket that's the model's worst-performing slice (ARCHITECTURE.md &sect;19-20)">No pick &mdash; extrapolation beyond model&rsquo;s reliable range</td></tr>
-<tr><td class="matchup"><span class="away">Northern Illinois</span><span class="at">@</span>Iowa</td><td colspan="3" class="no-pick" title="Raw model edge 18.1 pts, not shown -- prior-season fallback input, past the 10+ bucket that's the model's worst-performing slice (ARCHITECTURE.md &sect;19-20)">No pick &mdash; extrapolation beyond model&rsquo;s reliable range</td></tr>
-<tr><td class="matchup"><span class="away">Western Michigan</span><span class="at">@</span>Michigan</td><td colspan="3" class="no-pick" title="Raw model edge 19.9 pts, not shown -- prior-season fallback input, past the 10+ bucket that's the model's worst-performing slice (ARCHITECTURE.md &sect;19-20)">No pick &mdash; extrapolation beyond model&rsquo;s reliable range</td></tr>
-<tr><td class="matchup"><span class="away">Toledo</span><span class="at">@</span>Michigan State</td><td colspan="3" class="no-pick" title="Raw model edge 20.8 pts, not shown -- prior-season fallback input, past the 10+ bucket that's the model's worst-performing slice (ARCHITECTURE.md &sect;19-20)">No pick &mdash; extrapolation beyond model&rsquo;s reliable range</td></tr>
-<tr><td class="matchup"><span class="away">Ohio</span><span class="at">@</span>Nebraska</td><td colspan="3" class="no-pick" title="Raw model edge 24.2 pts, not shown -- prior-season fallback input, past the 10+ bucket that's the model's worst-performing slice (ARCHITECTURE.md &sect;19-20)">No pick &mdash; extrapolation beyond model&rsquo;s reliable range</td></tr>
-<tr><td class="matchup"><span class="away">Ball State</span><span class="at">@</span>Ohio State</td><td colspan="3" class="no-pick" title="Raw model edge 27.4 pts, not shown -- prior-season fallback input, past the 10+ bucket that's the model's worst-performing slice (ARCHITECTURE.md &sect;19-20)">No pick &mdash; extrapolation beyond model&rsquo;s reliable range</td></tr>
-<tr><td class="matchup"><span class="away">Boise State</span><span class="at">@</span>Oregon</td><td colspan="3" class="no-pick" title="Raw model edge 11.8 pts, not shown -- prior-season fallback input, past the 10+ bucket that's the model's worst-performing slice (ARCHITECTURE.md &sect;19-20)">No pick &mdash; extrapolation beyond model&rsquo;s reliable range</td></tr>
-<tr><td class="matchup"><span class="away">Marshall</span><span class="at">@</span>Penn State</td><td colspan="3" class="no-pick" title="Raw model edge 17.4 pts, not shown -- prior-season fallback input, past the 10+ bucket that's the model's worst-performing slice (ARCHITECTURE.md &sect;19-20)">No pick &mdash; extrapolation beyond model&rsquo;s reliable range</td></tr>
-<tr><td class="matchup"><span class="away">Fresno State</span><span class="at">@</span>USC</td><td colspan="3" class="no-pick" title="Raw model edge 11.8 pts, not shown -- prior-season fallback input, past the 10+ bucket that's the model's worst-performing slice (ARCHITECTURE.md &sect;19-20)">No pick &mdash; extrapolation beyond model&rsquo;s reliable range</td></tr>
-<tr><td class="matchup"><span class="away">Washington State</span><span class="at">@</span>Washington</td><td colspan="3" class="no-pick" title="Raw model edge 11.8 pts, not shown -- prior-season fallback input, past the 10+ bucket that's the model's worst-performing slice (ARCHITECTURE.md &sect;19-20)">No pick &mdash; extrapolation beyond model&rsquo;s reliable range</td></tr>
-<tr><td class="matchup"><span class="away">Wisconsin</span><span class="at">@</span>Notre Dame</td><td>Notre Dame</td><td class="num mono">0.5</td><td class="num"><span class="pill low-conf">prior-season data</span> <span class="pill flip" title="Uses prior-season final EPA -- no in-season data exists yet (Week 1)">week 1</span></td></tr>
-<tr><td class="matchup"><span class="away">Wyoming</span><span class="at">@</span>Colorado State</td><td>Wyoming</td><td class="num mono">3.1</td><td class="num"><span class="pill low-conf">prior-season data</span> <span class="pill flip" title="Uses prior-season final EPA -- no in-season data exists yet (Week 1)">week 1</span></td></tr>
-<tr><td class="matchup"><span class="away">Memphis</span><span class="at">@</span>UNLV</td><td>Memphis</td><td class="num mono">1.6</td><td class="num"><span class="pill low-conf">prior-season data</span> <span class="pill flip" title="Uses prior-season final EPA -- no in-season data exists yet (Week 1)">week 1</span></td></tr>
-<tr><td class="matchup"><span class="away">Arkansas State</span><span class="at">@</span>Memphis</td><td>Arkansas State</td><td class="num mono">0.2</td><td class="num"><span class="pill low-conf">prior-season data</span> <span class="pill flip" title="Uses prior-season final EPA -- no in-season data exists yet (Week 1)">week 1</span></td></tr>
-<tr><td class="matchup"><span class="away">Florida International</span><span class="at">@</span>South Florida</td><td>South Florida</td><td class="num mono">0.5</td><td class="num"><span class="pill low-conf">prior-season data</span> <span class="pill flip" title="Uses prior-season final EPA -- no in-season data exists yet (Week 1)">week 1</span></td></tr>
-<tr><td class="matchup"><span class="away">Western Kentucky</span><span class="at">@</span>Nevada</td><td>Western Kentucky</td><td class="num mono">1.5</td><td class="num"><span class="pill low-conf">prior-season data</span> <span class="pill flip" title="Uses prior-season final EPA -- no in-season data exists yet (Week 1)">week 1</span></td></tr>
-<tr><td class="matchup"><span class="away">San José State</span><span class="at">@</span>USC</td><td colspan="3" class="no-pick" title="Raw model edge 26.0 pts, not shown -- prior-season fallback input, past the 10+ bucket that's the model's worst-performing slice (ARCHITECTURE.md &sect;19-20)">No pick &mdash; extrapolation beyond model&rsquo;s reliable range</td></tr>
-<tr><td class="matchup"><span class="away">San José State</span><span class="at">@</span>Eastern Michigan</td><td>San José State</td><td class="num mono">1.4</td><td class="num"><span class="pill low-conf">prior-season data</span> <span class="pill flip" title="Uses prior-season final EPA -- no in-season data exists yet (Week 1)">week 1</span></td></tr>
-<tr><td class="matchup"><span class="away">UNLV</span><span class="at">@</span>Hawai'i</td><td>Hawai'i</td><td class="num mono">3.2</td><td class="num"><span class="pill low-conf">prior-season data</span> <span class="pill flip" title="Uses prior-season final EPA -- no in-season data exists yet (Week 1)">week 1</span></td></tr>
-<tr><td class="matchup"><span class="away">Central Michigan</span><span class="at">@</span>New Mexico</td><td>Central Michigan</td><td class="num mono">9.8</td><td class="num"><span class="pill low-conf">prior-season data</span> <span class="pill flip" title="Uses prior-season final EPA -- no in-season data exists yet (Week 1)">week 1</span></td></tr>
-<tr><td class="matchup"><span class="away">New Mexico State</span><span class="at">@</span>Florida State</td><td colspan="3" class="no-pick" title="Raw model edge 21.2 pts, not shown -- prior-season fallback input, past the 10+ bucket that's the model's worst-performing slice (ARCHITECTURE.md &sect;19-20)">No pick &mdash; extrapolation beyond model&rsquo;s reliable range</td></tr>
-<tr><td class="matchup"><span class="away">Liberty</span><span class="at">@</span>James Madison</td><td>James Madison</td><td class="num mono">6.1</td><td class="num"><span class="pill low-conf">prior-season data</span> <span class="pill flip" title="Uses prior-season final EPA -- no in-season data exists yet (Week 1)">week 1</span></td></tr>
-<tr><td class="matchup"><span class="away">Sam Houston</span><span class="at">@</span>Troy</td><td>Sam Houston</td><td class="num mono">5.5</td><td class="num"><span class="pill low-conf">prior-season data</span> <span class="pill flip" title="Uses prior-season final EPA -- no in-season data exists yet (Week 1)">week 1</span></td></tr></tbody></table></div>
-  </section>
+    <section class="panel" aria-labelledby="contest-title">
+      <div class="section-heading">
+        <div>
+          <p class="section-number">03 / CONTEST</p>
+          <h2 id="contest-title">SplashSports contest card</h2>
+        </div>
+        <div class="source-lock"><span class="lock-icon" aria-hidden="true">◆</span> IMMUTABLE LOCK</div>
+      </div>
+      <p class="section-intro">Every locked, lined FBS game receives a side and Confidence 1–5. Sportsbook offers never replace these contest lines.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Matchup</th><th>Locked line</th><th>Selection</th><th>Confidence</th><th>Top 5</th><th>Model / adjusted</th><th>Latest change</th><th>Context</th></tr></thead>
+          <tbody id="contest-body"></tbody>
+        </table>
+      </div>
+    </section>
 
-  <section class="panel">
-    <div class="panel-head">
-      <div><div class="eyebrow">Season Performance</div><h2 class="display">The Ledger</h2></div>
-      <div class="asof mono">updated Mondays after grading</div>
-    </div>
-    <p class="dek">Every graded pick counts here, wins and losses both &mdash; nothing excluded after the fact.</p>
-    <div class="empty-state">No games graded yet this season &mdash; the first Monday audit runs after Week 1 and will populate Record (ATS), ROI, Avg CLV, and hook losses here, game by game.</div>
-  </section>
+    <section class="panel sportsbook-panel" aria-labelledby="draftkings-title">
+      <div class="section-heading">
+        <div>
+          <p class="section-number">04 / ACTION BOARD</p>
+          <h2 id="draftkings-title">DraftKings betting board</h2>
+        </div>
+        <p class="section-note">Recommendations only · no wager placement</p>
+      </div>
+      <p class="section-intro">DraftKings is the primary actionable book. A contest pick is not a wager unless this board independently says BET.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>State</th><th>Matchup / side</th><th>Exact offer</th><th>Fair / edge</th><th>Probability</th><th>EV / units</th><th>Captured</th><th>Reason / freshness</th><th>Change</th></tr></thead>
+          <tbody id="draftkings-body"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="split-layout">
+      <article class="panel" aria-labelledby="changes-title">
+        <div class="section-heading compact">
+          <div><p class="section-number">05 / DELTA</p><h2 id="changes-title">Changes since last refresh</h2></div>
+        </div>
+        <ol id="changes" class="change-list"></ol>
+      </article>
+      <article class="panel" aria-labelledby="market-title">
+        <div class="section-heading compact">
+          <div><p class="section-number">06 / CONTEXT</p><h2 id="market-title">Market comparison</h2></div>
+        </div>
+        <p class="section-intro">Secondary context only. These books never masquerade as DraftKings.</p>
+        <div id="market-comparison" class="market-list"></div>
+      </article>
+    </section>
+
+    <section class="panel" aria-labelledby="results-title">
+      <div class="section-heading">
+        <div><p class="section-number">07 / ACCOUNTABILITY</p><h2 id="results-title">Results &amp; audit</h2></div>
+        <p id="profitability-note" class="section-note"></p>
+      </div>
+      <div id="results-pending" class="empty-state"></div>
+      <div id="results-content" hidden>
+        <div id="weekly-summary" class="summary-grid"></div>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Game / final</th><th>Splash ATS</th><th>Tier</th><th>Confidence</th><th>DraftKings</th><th>Close / CLV</th><th>Hook</th><th>Key number</th><th>Backdoor</th></tr></thead>
+            <tbody id="results-body"></tbody>
+          </table>
+        </div>
+        <div class="audit-columns">
+          <div><h3>Required segments</h3><div id="segments" class="segment-list"></div></div>
+          <div><h3>Lessons Learned</h3><ol id="lessons" class="lesson-list"></ol></div>
+        </div>
+      </div>
+    </section>
+  </main>
 
   <footer>
-    <span>CFB Line &amp; Pool Monitor &middot; personal decision support, not financial advice &middot; data: CFBD, The Odds API</span>
-    <div class="theme-toggle" role="group" aria-label="Theme">
-      <button type="button" onclick="setTheme('light', this)">Light</button>
-      <button type="button" onclick="setTheme('dark', this)">Dark</button>
-      <button type="button" class="active" onclick="setTheme(null, this)">Auto</button>
-    </div>
+    <p>CFB Betting System V3 · Static, sanitized GitHub Pages publication</p>
+    <p>Contest selection, model forecast, and sportsbook recommendation remain separate products.</p>
   </footer>
-
-</div>
-<script>
-function setTheme(mode, btn) {
-  if (mode) { document.documentElement.setAttribute('data-theme', mode); }
-  else { document.documentElement.removeAttribute('data-theme'); }
-  btn.parentElement.querySelectorAll('button').forEach(function (b) { b.classList.remove('active'); });
-  btn.classList.add('active');
-}
-</script>
 </body>
 </html>
