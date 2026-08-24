@@ -29,6 +29,8 @@ def test_init_db_creates_all_tables(temp_db):
         "weekly_controller_policies", "weekly_controller_policy_sources",
         "weekly_controller_runs", "contest_line_lock_batches",
         "card_source_freshness", "official_card_publications",
+        "sportsbook_market_offers", "sportsbook_recommendation_policies",
+        "sportsbook_recommendation_evaluations",
     }
     assert expected.issubset(tables)
     conn.close()

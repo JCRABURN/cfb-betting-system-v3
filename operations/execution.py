@@ -16,6 +16,7 @@ from business_entities.complete_audits import (
     PostgameAuditRequest,
     audit_contest_card,
 )
+from business_entities.live_sportsbook import evaluate_live_sportsbook_board
 from business_entities.weekly_controller import (
     ContextualAdjustmentInput,
     ContestLineInput,
@@ -42,7 +43,7 @@ from operations.weekly_config import WeeklyOperationConfiguration
 from operations.writer_lock import ProductionWriterLock
 
 
-EXECUTION_ADAPTER_VERSION = "v3-production-execution-adapter-v2"
+EXECUTION_ADAPTER_VERSION = "v3-production-execution-adapter-v3"
 
 
 class ProductionExecutionError(RuntimeError):
@@ -73,6 +74,9 @@ class ProductionExecutionResult:
     pick_count: int | None
     top_five_count: int | None
     fallback_pick_count: int | None
+    sportsbook_recommendation_count: int
+    sportsbook_bet_count: int
+    live_betting_board: tuple[dict[str, object], ...]
     wagers_placed: int
     completed_at: str
     result_sha256: str
@@ -311,7 +315,7 @@ def _operation(
     generated_at: datetime,
     code_commit_sha: str,
     pre_ingestion_ids: tuple[int, ...] = (),
-) -> tuple[dict[str, int | bool | None], tuple[int, ...]]:
+) -> tuple[dict[str, object], tuple[int, ...]]:
     policies = load_registered_policy_set(conn, settings)
     bundle = (
         load_provider_bundle(
@@ -342,6 +346,18 @@ def _operation(
     fallbacks = _fallbacks(configuration.freshness_fallbacks)
     adjustments = _adjustments(configuration.contextual_adjustments)
     no_bets = _no_bets(configuration.sportsbook_recommendations)
+
+    def live_board() -> tuple[dict[str, object], ...]:
+        evaluations = evaluate_live_sportsbook_board(
+            conn,
+            season=configuration.season,
+            week=configuration.week,
+            policy_id=policies.sportsbook.id,
+            evaluated_at=generated_at,
+            provenance=configuration.provenance,
+        )
+        return tuple(item.board_payload() for item in evaluations)
+
     if settings.operation == "tuesday_lock":
         result = run_tuesday_controller(
             conn,
@@ -372,6 +388,7 @@ def _operation(
             ),
             data_refresh=refresh_provider_data,
         )
+        board = live_board()
         return (
             {
                 "replayed": result.replayed,
@@ -384,6 +401,11 @@ def _operation(
                 "top_five_count": sum(pick.is_top_five for pick in result.card.picks),
                 "fallback_pick_count": sum(
                     pick.fallback_code is not None for pick in result.card.picks
+                ),
+                "live_betting_board": board,
+                "sportsbook_recommendation_count": len(board),
+                "sportsbook_bet_count": sum(
+                    item["decision"] == "BET" for item in board
                 ),
             },
             tuple(ingestion_ids),
@@ -425,6 +447,7 @@ def _operation(
             ),
             data_refresh=refresh_provider_data,
         )
+        board = live_board()
         return (
             {
                 "replayed": result.replayed,
@@ -437,6 +460,11 @@ def _operation(
                 "top_five_count": sum(pick.is_top_five for pick in result.card.picks),
                 "fallback_pick_count": sum(
                     pick.fallback_code is not None for pick in result.card.picks
+                ),
+                "live_betting_board": board,
+                "sportsbook_recommendation_count": len(board),
+                "sportsbook_bet_count": sum(
+                    item["decision"] == "BET" for item in board
                 ),
             },
             tuple(ingestion_ids),
@@ -466,6 +494,9 @@ def _operation(
                 "pick_count": len(audit.details),
                 "top_five_count": sum(detail.is_top_five for detail in audit.details),
                 "fallback_pick_count": None,
+                "live_betting_board": (),
+                "sportsbook_recommendation_count": 0,
+                "sportsbook_bet_count": 0,
             },
             tuple(ingestion_ids),
         )
@@ -500,6 +531,9 @@ def _operation(
                 "pick_count": None,
                 "top_five_count": None,
                 "fallback_pick_count": None,
+                "live_betting_board": (),
+                "sportsbook_recommendation_count": 0,
+                "sportsbook_bet_count": 0,
             },
             (),
         )
@@ -712,6 +746,11 @@ def execute_production_operation(
         "pick_count": details["pick_count"],
         "top_five_count": details["top_five_count"],
         "fallback_pick_count": details["fallback_pick_count"],
+        "sportsbook_recommendation_count": details[
+            "sportsbook_recommendation_count"
+        ],
+        "sportsbook_bet_count": details["sportsbook_bet_count"],
+        "live_betting_board": details["live_betting_board"],
         "wagers_placed": 0,
         "completed_at": generated_at.isoformat(),
     }

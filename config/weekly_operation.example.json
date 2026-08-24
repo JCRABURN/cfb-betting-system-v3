@@ -29,7 +29,8 @@
     "adjustment": "production-adjustment-v1",
     "refresh": "production-refresh-v1",
     "audit": "production-audit-v1",
-    "diagnostics": "production-diagnostics-v1"
+    "diagnostics": "production-diagnostics-v1",
+    "sportsbook": "production-sportsbook-v1"
   },
   "freshness": {
     "policy_version": "provider_freshness_v1",

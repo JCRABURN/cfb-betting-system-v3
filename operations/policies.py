@@ -11,6 +11,10 @@ from business_entities.contextual_adjustments import (
     ManualAdjustmentPolicy,
     get_manual_adjustment_policy,
 )
+from business_entities.live_sportsbook import (
+    SportsbookRecommendationPolicy,
+    get_sportsbook_recommendation_policy,
+)
 from business_entities.ranking import (
     ConfidenceRankingPolicy,
     get_contest_ranking_policy,
@@ -43,6 +47,7 @@ class ProductionPolicySet:
     refresh: DailyRefreshPolicy
     audit: PostgameAuditPolicy
     diagnostics: WeeklyDiagnosticsPolicy
+    sportsbook: SportsbookRecommendationPolicy
 
 
 def _id_by_version(
@@ -193,6 +198,15 @@ def load_registered_policy_set(
         created_by=diagnostics_record.created_by,
         provenance=diagnostics_record.provenance,
     )
+    sportsbook = get_sportsbook_recommendation_policy(
+        conn,
+        _id_by_version(
+            conn,
+            "sportsbook_recommendation_policies",
+            "policy_version",
+            settings.policy_version("sportsbook"),
+        ),
+    )
     return ProductionPolicySet(
         controller,
         selection,
@@ -201,4 +215,5 @@ def load_registered_policy_set(
         refresh,
         audit,
         diagnostics,
+        sportsbook,
     )

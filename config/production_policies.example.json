@@ -1,5 +1,5 @@
 {
-  "configuration_version": "v3-production-policies-v1",
+  "configuration_version": "v3-production-policies-v2",
   "repository": "JCRABURN/cfb-betting-system-v3",
   "effective_at": "2026-08-01T00:00:00+00:00",
   "created_by": "repository-owner",
@@ -12,7 +12,8 @@
     "adjustment": "production-adjustment-v1",
     "refresh": "production-refresh-v1",
     "audit": "production-audit-v1",
-    "diagnostics": "production-diagnostics-v1"
+    "diagnostics": "production-diagnostics-v1",
+    "sportsbook": "production-sportsbook-v1"
   },
   "controller": {
     "required_sources": [
@@ -59,5 +60,18 @@
     "minimum_recommendation_sample": 20,
     "minimum_ats_delta_percentage_points": 10.0,
     "confidence_threshold_step_points": 0.5
+  },
+  "sportsbook": {
+    "residual_stddev_points": 14.0,
+    "minimum_spread_edge_points": 1.5,
+    "minimum_cover_probability": 0.545,
+    "minimum_expected_value": 0.025,
+    "maximum_odds_age_seconds": 900,
+    "material_update_seconds": 300,
+    "material_spread_change_points": 0.5,
+    "material_price_change": 5,
+    "maximum_stake_units": 1.0,
+    "stake_units_per_expected_value": 10.0,
+    "stake_increment_units": 0.25
   }
 }
