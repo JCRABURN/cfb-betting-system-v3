@@ -105,6 +105,19 @@ class SportsbookRecommendationEvaluation:
         return payload
 
 
+@dataclass(frozen=True)
+class SportsbookClosingDesignation:
+    id: int
+    designation_key: str
+    market_offer_id: int
+    closing_betting_line_id: int
+    game_id: int
+    bookmaker: str
+    designated_at: str
+    source: str
+    provenance: str
+
+
 _OFFER_COLUMNS = (
     "id, provider_market_snapshot_id, betting_line_id, provider, bookmaker, "
     "game_id, line_type, home_spread, home_price, away_spread, away_price, "
@@ -128,6 +141,10 @@ _EVALUATION_COLUMNS = (
     "captured_at, event_start_at, model_fair_spread, spread_edge_points, "
     "estimated_cover_probability, break_even_probability, expected_value, "
     "stake_units, reason_code, evaluated_at, provenance"
+)
+_CLOSING_COLUMNS = (
+    "id, designation_key, market_offer_id, closing_betting_line_id, game_id, "
+    "bookmaker, designated_at, source, provenance"
 )
 
 
@@ -257,6 +274,152 @@ def record_sportsbook_market_offer(
         return get_sportsbook_market_offer(conn, cursor.lastrowid)
 
 
+def get_sportsbook_closing_designation(
+    conn: sqlite3.Connection, designation_id: int
+) -> SportsbookClosingDesignation:
+    row = conn.execute(
+        f"SELECT {_CLOSING_COLUMNS} FROM sportsbook_closing_designations WHERE id = ?",
+        (integer(designation_id, "designation_id", 1),),
+    ).fetchone()
+    if row is None:
+        raise BusinessEntityError(
+            f"sportsbook closing designation does not exist: {designation_id}"
+        )
+    return SportsbookClosingDesignation(*row)
+
+
+def designate_sportsbook_closing_offer(
+    conn: sqlite3.Connection,
+    *,
+    market_offer_id: int,
+    designated_at: datetime,
+    source: str,
+    provenance: str,
+) -> SportsbookClosingDesignation:
+    """Designate the exact latest current offer as the same-book pre-kickoff close."""
+    offer = get_sportsbook_market_offer(conn, market_offer_id)
+    if offer.line_type != "current":
+        raise BusinessEntityError("only a current offer can be designated as closing")
+    designated_at_value = utc_timestamp(designated_at, "designated_at")
+    designated = _utc(designated_at_value)
+    if _utc(offer.observed_at) > designated or designated >= _utc(offer.event_start_at):
+        raise BusinessEntityError("closing designation must be after capture and before kickoff")
+    source = required_text(source, "source")
+    provenance = required_text(provenance, "provenance")
+    latest = conn.execute(
+        "SELECT id FROM sportsbook_market_offers WHERE game_id = ? "
+        "AND bookmaker = ? AND line_type = 'current' "
+        "AND julianday(observed_at) <= julianday(?) "
+        "ORDER BY julianday(observed_at) DESC, id DESC LIMIT 1",
+        (offer.game_id, offer.bookmaker, designated_at_value),
+    ).fetchone()
+    if latest is None or int(latest[0]) != offer.id:
+        raise BusinessEntityError("closing designation requires the latest current offer")
+    key = f"sportsbook-closing:offer:{offer.id}"
+    with atomic(conn):
+        existing = conn.execute(
+            f"SELECT {_CLOSING_COLUMNS} FROM sportsbook_closing_designations "
+            "WHERE designation_key = ? OR market_offer_id = ?",
+            (key, offer.id),
+        ).fetchone()
+        if existing is not None:
+            designation = SportsbookClosingDesignation(*existing)
+            if (
+                designation.designation_key != key
+                or designation.market_offer_id != offer.id
+                or designation.game_id != offer.game_id
+                or designation.bookmaker != offer.bookmaker
+                or designation.designated_at != designated_at_value
+                or designation.source != source
+                or designation.provenance != provenance
+            ):
+                raise BusinessEntityConflictError(
+                    "sportsbook closing designation has different immutable values"
+                )
+            return designation
+        closing_line_id = int(
+            conn.execute(
+                "INSERT INTO betting_lines "
+                "(game_id, season, week, home_team, away_team, book, home_spread, "
+                "home_moneyline, line_type, source, fetched_at) "
+                "SELECT game.game_id, game.season, game.week, game.home_team, "
+                "game.away_team, ?, ?, ?, 'closing', ?, ? FROM games AS game "
+                "WHERE game.game_id = ?",
+                (
+                    offer.bookmaker,
+                    offer.home_spread,
+                    offer.home_price,
+                    offer.provider,
+                    offer.observed_at,
+                    offer.game_id,
+                ),
+            ).lastrowid
+        )
+        cursor = conn.execute(
+            "INSERT INTO sportsbook_closing_designations "
+            "(designation_key, market_offer_id, closing_betting_line_id, game_id, "
+            "bookmaker, designated_at, source, provenance) "
+            "VALUES (?, ?, ?, ?, ?, ?, ?, ?)",
+            (
+                key,
+                offer.id,
+                closing_line_id,
+                offer.game_id,
+                offer.bookmaker,
+                designated_at_value,
+                source,
+                provenance,
+            ),
+        )
+        return get_sportsbook_closing_designation(conn, cursor.lastrowid)
+
+
+def designate_week_closing_offers(
+    conn: sqlite3.Connection,
+    *,
+    season: int,
+    week: int,
+    designated_at: datetime,
+    source: str,
+    provenance: str,
+) -> tuple[SportsbookClosingDesignation, ...]:
+    """Designate one latest current observation for every available game/book."""
+    season = integer(season, "season", 1869)
+    week = integer(week, "week", 0)
+    designated_at_value = utc_timestamp(designated_at, "designated_at")
+    rows = conn.execute(
+        "SELECT offer.id FROM sportsbook_market_offers AS offer "
+        "JOIN games AS game ON game.game_id = offer.game_id "
+        "WHERE game.season = ? AND game.week = ? AND offer.line_type = 'current' "
+        "AND julianday(offer.observed_at) <= julianday(?) "
+        "AND julianday(?) < julianday(offer.event_start_at) "
+        "AND NOT EXISTS (SELECT 1 FROM sportsbook_market_offers AS newer "
+        "WHERE newer.game_id = offer.game_id AND newer.bookmaker = offer.bookmaker "
+        "AND newer.line_type = 'current' "
+        "AND julianday(newer.observed_at) <= julianday(?) AND ("
+        "julianday(newer.observed_at) > julianday(offer.observed_at) "
+        "OR newer.observed_at = offer.observed_at AND newer.id > offer.id)) "
+        "ORDER BY offer.game_id, offer.bookmaker",
+        (
+            season,
+            week,
+            designated_at_value,
+            designated_at_value,
+            designated_at_value,
+        ),
+    ).fetchall()
+    return tuple(
+        designate_sportsbook_closing_offer(
+            conn,
+            market_offer_id=int(row[0]),
+            designated_at=datetime.fromisoformat(designated_at_value),
+            source=source,
+            provenance=provenance,
+        )
+        for row in rows
+    )
+
+
 def get_sportsbook_recommendation_policy(
     conn: sqlite3.Connection, policy_id: int
 ) -> SportsbookRecommendationPolicy:
@@ -372,6 +535,105 @@ def get_sportsbook_recommendation_evaluation(
     if row is None:
         raise BusinessEntityError(f"sportsbook evaluation does not exist: {evaluation_id}")
     return SportsbookRecommendationEvaluation(*row)
+
+
+def sportsbook_evaluation_matches_sources(
+    conn: sqlite3.Connection, evaluation_id: int
+) -> bool:
+    """Recalculate one stored decision from immutable inputs without writing."""
+    try:
+        evaluation = get_sportsbook_recommendation_evaluation(conn, evaluation_id)
+        offer = get_sportsbook_market_offer(conn, evaluation.market_offer_id)
+        prediction = get_model_prediction(conn, evaluation.model_prediction_id)
+        run = get_model_run(conn, prediction.model_run_id)
+        policy = get_sportsbook_recommendation_policy(conn, evaluation.policy_id)
+        evaluated = _utc(evaluation.evaluated_at)
+        captured = _utc(offer.observed_at)
+        kickoff = _utc(offer.event_start_at)
+        if (
+            offer.line_type not in ("opening", "current")
+            or prediction.game_id != offer.game_id
+            or (run.model_name, run.model_version)
+            != (policy.production_model_name, policy.production_model_version)
+            or _utc(prediction.generated_at) > evaluated
+            or captured > evaluated
+            or evaluated >= kickoff
+            or _utc(policy.effective_at) > evaluated
+        ):
+            return False
+        teams = conn.execute(
+            "SELECT home_team, away_team FROM games WHERE game_id = ?",
+            (offer.game_id,),
+        ).fetchone()
+        if teams is None:
+            return False
+        home_edge = prediction.predicted_home_margin + offer.home_spread
+        home_cover = NormalDist().cdf(home_edge / policy.residual_stddev_points)
+        selected = max(
+            (
+                _candidate(
+                    side=side,
+                    home_edge=home_edge,
+                    home_cover_probability=home_cover,
+                    home_spread=offer.home_spread,
+                    home_price=offer.home_price,
+                    away_spread=offer.away_spread,
+                    away_price=offer.away_price,
+                    predicted_home_margin=prediction.predicted_home_margin,
+                )
+                for side in ("home", "away")
+            ),
+            key=lambda item: (item[6], item[4], item[0] == "home"),
+        )
+        side, spread, price, fair_spread, edge, cover_probability, expected_value = selected
+        break_even = _break_even_probability(price)
+        lifecycle = "active"
+        if (evaluated - captured).total_seconds() > policy.maximum_odds_age_seconds:
+            lifecycle, decision, reason = "expired", "no_bet", "stale_odds"
+        elif edge < policy.minimum_spread_edge_points:
+            decision, reason = "no_bet", "insufficient_spread_edge"
+        elif cover_probability < policy.minimum_cover_probability:
+            decision, reason = "no_bet", "insufficient_cover_probability"
+        elif expected_value < policy.minimum_expected_value:
+            decision, reason = "no_bet", "insufficient_expected_value"
+        else:
+            decision, reason = "bet", "positive_expected_value"
+        stake = _stake(expected_value, policy) if decision == "bet" else 0.0
+        if decision == "bet" and stake <= 0:
+            decision, reason = "no_bet", "below_minimum_stake_increment"
+        expected_key = (
+            f"sportsbook:{policy.policy_version}:offer:{offer.id}:"
+            f"prediction:{prediction.id}:"
+            f"{'expired' if lifecycle == 'expired' else 'active'}"
+        )
+        exact = (
+            evaluation.evaluation_key == expected_key
+            and evaluation.policy_version == policy.policy_version
+            and evaluation.lifecycle_state == lifecycle
+            and evaluation.decision == decision
+            and evaluation.selected_side == side
+            and evaluation.selected_team == (teams[0] if side == "home" else teams[1])
+            and evaluation.bookmaker == offer.bookmaker
+            and evaluation.offered_price == price
+            and evaluation.captured_at == offer.observed_at
+            and evaluation.event_start_at == offer.event_start_at
+            and evaluation.reason_code == reason
+        )
+        numeric = (
+            (evaluation.offered_spread, spread),
+            (evaluation.model_fair_spread, fair_spread),
+            (evaluation.spread_edge_points, edge),
+            (evaluation.estimated_cover_probability, cover_probability),
+            (evaluation.break_even_probability, break_even),
+            (evaluation.expected_value, expected_value),
+            (evaluation.stake_units, stake),
+        )
+        return exact and all(
+            math.isclose(recorded, expected, rel_tol=1e-12, abs_tol=1e-12)
+            for recorded, expected in numeric
+        )
+    except (BusinessEntityError, sqlite3.DatabaseError, ValueError):
+        return False
 
 
 def _break_even_probability(price: int) -> float:

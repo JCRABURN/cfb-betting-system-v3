@@ -20,6 +20,7 @@ from migrations.versions import (
     v0013_provider_ingestion_custody,
     v0014_official_weekly_controller,
     v0015_live_sportsbook_recommendations,
+    v0016_sportsbook_postgame_audits,
 )
 
 
@@ -39,4 +40,5 @@ MIGRATION_MODULES = (
     v0013_provider_ingestion_custody,
     v0014_official_weekly_controller,
     v0015_live_sportsbook_recommendations,
+    v0016_sportsbook_postgame_audits,
 )

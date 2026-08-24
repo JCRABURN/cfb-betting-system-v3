@@ -5,11 +5,14 @@ import pytest
 
 from business_entities import (
     BusinessEntityError,
+    audit_sportsbook_recommendations,
+    designate_sportsbook_closing_offer,
     evaluate_live_sportsbook_board,
     evaluate_sportsbook_offer,
     record_model_prediction,
     record_model_run,
     register_sportsbook_recommendation_policy,
+    sportsbook_evaluation_matches_sources,
 )
 from ingestion import IngestionRequest, OddsSpreadParser, ProviderIngestionService
 from operations.providers import _odds_writer
@@ -185,6 +188,7 @@ def test_bet_and_no_bet_are_offer_level_auditable_and_contest_independent(temp_d
         f"{conn.execute('SELECT raw_record_sha256 FROM sportsbook_market_offers WHERE id = ?', (offer_id,)).fetchone()[0]};"
         f"model_prediction_id={prediction.id};policy_version={policy.policy_version}"
     )
+    assert sportsbook_evaluation_matches_sources(conn, bet.id) is True
     parent = conn.execute(
         "SELECT contest_pick_id, decision FROM sportsbook_recommendations WHERE id = ?",
         (bet.recommendation_id,),
@@ -208,6 +212,7 @@ def test_bet_and_no_bet_are_offer_level_auditable_and_contest_independent(temp_d
     assert no_bet.decision == "no_bet"
     assert no_bet.reason_code.startswith("insufficient_")
     assert no_bet.stake_units == 0
+    assert sportsbook_evaluation_matches_sources(conn, no_bet.id) is True
     assert not any(
         row[0].startswith("wager")
         for row in conn.execute("SELECT name FROM sqlite_master WHERE type = 'table'")
@@ -415,4 +420,174 @@ def test_stake_cap_and_model_mismatch_rejection(temp_db):
             evaluated_at=BASE + timedelta(minutes=3),
             provenance="fixture://model-mismatch",
         )
+    conn.close()
+
+
+def test_sportsbook_postgame_audit_grades_every_decision_and_calculates_clv(temp_db):
+    conn = temp_db.get_connection()
+    _seed_game(conn)
+    prediction = _prediction(conn, margin=7.0)
+    no_bet_prediction = _prediction(conn, margin=3.5, run_key="epa-run-no-bet-audit")
+    policy = _policy(conn)
+    _, offer_id = _ingest_offer(conn, home_spread=-3.0)
+    assert offer_id is not None
+    bet = evaluate_sportsbook_offer(
+        conn,
+        market_offer_id=offer_id,
+        model_prediction_id=prediction.id,
+        policy_id=policy.id,
+        evaluated_at=BASE + timedelta(minutes=2),
+        provenance="fixture://postgame-bet",
+    )
+    no_bet = evaluate_sportsbook_offer(
+        conn,
+        market_offer_id=offer_id,
+        model_prediction_id=no_bet_prediction.id,
+        policy_id=policy.id,
+        evaluated_at=BASE + timedelta(minutes=3),
+        provenance="fixture://postgame-no-bet",
+    )
+    _, closing_offer_id = _ingest_offer(
+        conn,
+        observed=BASE + timedelta(minutes=10),
+        home_spread=-4.0,
+        line_type="current",
+    )
+    assert closing_offer_id is not None
+    designation = designate_sportsbook_closing_offer(
+        conn,
+        market_offer_id=closing_offer_id,
+        designated_at=BASE + timedelta(minutes=11),
+        source="fixture-final-pregame-market",
+        provenance="fixture://closing-designation",
+    )
+    assert conn.execute(
+        "SELECT line_type FROM betting_lines WHERE id = ?",
+        (designation.closing_betting_line_id,),
+    ).fetchone()[0] == "closing"
+    conn.execute(
+        "UPDATE games SET home_points = 28, away_points = 20, completed = 1 "
+        "WHERE game_id = 9001"
+    )
+    conn.commit()
+
+    result = audit_sportsbook_recommendations(
+        conn,
+        audit_run_key="sportsbook-audit:2026:1",
+        season=2026,
+        week=1,
+        policy_id=policy.id,
+        source="fixture-final-scores",
+        provenance="fixture://sportsbook-audit",
+        audited_at=KICKOFF + timedelta(hours=1),
+    )
+
+    assert result.report.complete is True
+    assert result.report.all_clv_available is True
+    assert result.completion.audit_count == 2
+    assert (result.completion.bet_count, result.completion.no_bet_count) == (1, 1)
+    assert result.completion.clv_graded_count == 2
+    by_evaluation = {detail.evaluation_id: detail for detail in result.details}
+    assert by_evaluation[bet.id].ats_result == "win"
+    assert by_evaluation[bet.id].clv_points == 1.0
+    assert by_evaluation[bet.id].realized_profit_units > 0
+    assert by_evaluation[no_bet.id].realized_profit_units == 0
+    assert result.completion.total_staked_units == bet.stake_units
+    assert result.completion.roi_percent is not None
+
+    replay = audit_sportsbook_recommendations(
+        conn,
+        audit_run_key="sportsbook-audit:2026:1",
+        season=2026,
+        week=1,
+        policy_id=policy.id,
+        source="fixture-final-scores",
+        provenance="fixture://sportsbook-audit",
+        audited_at=KICKOFF + timedelta(hours=1),
+    )
+    assert replay == result
+    for table, column in (
+        ("sportsbook_closing_designations", "id"),
+        ("sportsbook_postgame_audit_runs", "id"),
+        ("sportsbook_postgame_audit_details", "id"),
+        ("sportsbook_postgame_audit_completions", "audit_run_id"),
+    ):
+        with pytest.raises(sqlite3.IntegrityError, match="immutable"):
+            conn.execute(f"UPDATE {table} SET {column} = {column}")
+        conn.rollback()
+    conn.close()
+
+
+def test_sportsbook_postgame_audit_records_missing_closing_evidence(temp_db):
+    conn = temp_db.get_connection()
+    _seed_game(conn)
+    prediction = _prediction(conn)
+    policy = _policy(conn)
+    _, offer_id = _ingest_offer(conn, book="missing-close-book")
+    assert offer_id is not None
+    evaluation = evaluate_sportsbook_offer(
+        conn,
+        market_offer_id=offer_id,
+        model_prediction_id=prediction.id,
+        policy_id=policy.id,
+        evaluated_at=BASE + timedelta(minutes=2),
+        provenance="fixture://missing-close",
+    )
+    conn.execute(
+        "UPDATE games SET home_points = 24, away_points = 21, completed = 1 "
+        "WHERE game_id = 9001"
+    )
+    conn.commit()
+
+    result = audit_sportsbook_recommendations(
+        conn,
+        audit_run_key="sportsbook-audit:missing-close",
+        season=2026,
+        week=1,
+        policy_id=policy.id,
+        source="fixture-final-scores",
+        provenance="fixture://missing-close-audit",
+        audited_at=KICKOFF + timedelta(hours=1),
+    )
+
+    assert result.report.complete is True
+    assert result.report.all_clv_available is False
+    assert result.report.missing_clv_count == 1
+    detail = result.details[0]
+    assert detail.evaluation_id == evaluation.id
+    assert detail.closing_evidence_status == "missing"
+    assert detail.clv_evidence_status == "missing"
+    assert detail.clv_points is None
+    conn.close()
+
+
+def test_sportsbook_postgame_audit_rejects_incomplete_results_atomically(temp_db):
+    conn = temp_db.get_connection()
+    _seed_game(conn)
+    _prediction(conn)
+    policy = _policy(conn)
+    _ingest_offer(conn)
+    evaluate_live_sportsbook_board(
+        conn,
+        season=2026,
+        week=1,
+        policy_id=policy.id,
+        evaluated_at=BASE + timedelta(minutes=2),
+        provenance="fixture://incomplete-game",
+    )
+
+    with pytest.raises(BusinessEntityError, match="not complete"):
+        audit_sportsbook_recommendations(
+            conn,
+            audit_run_key="sportsbook-audit:incomplete",
+            season=2026,
+            week=1,
+            policy_id=policy.id,
+            source="fixture-final-scores",
+            provenance="fixture://incomplete-game-audit",
+            audited_at=KICKOFF + timedelta(hours=1),
+        )
+    assert conn.execute(
+        "SELECT COUNT(*) FROM sportsbook_postgame_audit_runs"
+    ).fetchone()[0] == 0
     conn.close()

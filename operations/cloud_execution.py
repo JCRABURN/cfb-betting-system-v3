@@ -17,13 +17,23 @@ from operations.preflight import ProductionPreflightReport
 from operations.weekly_config import WeeklyOperationConfiguration
 
 
-CLOUD_EXECUTION_ADAPTER_VERSION = "v3-managed-postgresql-snapshot-v1"
+CLOUD_EXECUTION_ADAPTER_VERSION = "v3-managed-postgresql-snapshot-v2"
 PRODUCTION_STREAM_KEY = f"{EXPECTED_REPOSITORY}:production"
+
+
+def durable_stream_key(settings: ProductionSettings) -> str:
+    """Return an isolated durable stream for production or one governed shadow week."""
+    if not getattr(settings, "is_shadow_rehearsal", False):
+        return PRODUCTION_STREAM_KEY
+    if settings.season is None or settings.week is None:
+        raise ValueError("shadow rehearsal stream requires an explicit season and week")
+    return f"{EXPECTED_REPOSITORY}:shadow:{settings.season}:week:{settings.week}"
 
 
 @dataclass(frozen=True)
 class CloudProductionExecutionResult:
     cloud_adapter_version: str
+    execution_profile: str
     persistence_backend: str
     durable_stream_key: str
     durable_generation_before: int
@@ -46,11 +56,12 @@ def execute_cloud_production_operation(
 ) -> tuple[CloudProductionExecutionResult, ProductionPreflightReport]:
     """Run against an ephemeral snapshot and commit it inside PostgreSQL."""
     generated_at = (now or datetime.now(timezone.utc)).astimezone(timezone.utc)
+    stream_key = durable_stream_key(settings)
     store.apply_migrations()
     with tempfile.TemporaryDirectory(prefix="cfb-v3-cloud-workspace-") as directory:
         workspace = Path(directory) / "cfb.db"
         with store.writer(
-            stream_key=PRODUCTION_STREAM_KEY,
+            stream_key=stream_key,
             operation_key=settings.idempotency_key,
             actor=configuration.actor,
             code_commit_sha=code_commit_sha,
@@ -80,8 +91,9 @@ def execute_cloud_production_operation(
             )
             result = CloudProductionExecutionResult(
                 cloud_adapter_version=CLOUD_EXECUTION_ADAPTER_VERSION,
+                execution_profile=getattr(settings, "runtime_mode", "production"),
                 persistence_backend="managed_postgresql",
-                durable_stream_key=PRODUCTION_STREAM_KEY,
+                durable_stream_key=stream_key,
                 durable_generation_before=before.generation,
                 durable_generation_after=cloud_commit.snapshot.generation,
                 durable_snapshot_sha256=cloud_commit.snapshot.payload_sha256,

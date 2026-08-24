@@ -8,7 +8,7 @@ import os
 import shutil
 import sqlite3
 import tempfile
-from dataclasses import dataclass, replace
+from dataclasses import asdict, dataclass, replace
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -16,7 +16,12 @@ from business_entities.complete_audits import (
     PostgameAuditRequest,
     audit_contest_card,
 )
-from business_entities.live_sportsbook import evaluate_live_sportsbook_board
+from business_entities.live_sportsbook import (
+    designate_week_closing_offers,
+    evaluate_live_sportsbook_board,
+)
+from business_entities.shadow_rehearsal import inspect_controlled_shadow_rehearsal
+from business_entities.sportsbook_audits import audit_sportsbook_recommendations
 from business_entities.weekly_controller import (
     ContextualAdjustmentInput,
     ContestLineInput,
@@ -43,7 +48,7 @@ from operations.weekly_config import WeeklyOperationConfiguration
 from operations.writer_lock import ProductionWriterLock
 
 
-EXECUTION_ADAPTER_VERSION = "v3-production-execution-adapter-v3"
+EXECUTION_ADAPTER_VERSION = "v3-production-execution-adapter-v4"
 
 
 class ProductionExecutionError(RuntimeError):
@@ -70,12 +75,20 @@ class ProductionExecutionResult:
     publication_id: int | None
     card_id: int | None
     audit_run_id: int | None
+    sportsbook_audit_run_id: int | None
     diagnostic_run_id: int | None
     pick_count: int | None
     top_five_count: int | None
     fallback_pick_count: int | None
     sportsbook_recommendation_count: int
     sportsbook_bet_count: int
+    sportsbook_closing_designation_count: int
+    sportsbook_grade_count: int
+    sportsbook_clv_graded_count: int
+    sportsbook_missing_clv_count: int
+    sportsbook_realized_profit_units: float | None
+    sportsbook_roi_percent: float | None
+    shadow_rehearsal_report: dict[str, object] | None
     live_betting_board: tuple[dict[str, object], ...]
     wagers_placed: int
     completed_at: str
@@ -396,6 +409,7 @@ def _operation(
                 "publication_id": result.publication.id,
                 "card_id": result.card.card.id,
                 "audit_run_id": None,
+                "sportsbook_audit_run_id": None,
                 "diagnostic_run_id": None,
                 "pick_count": len(result.card.picks),
                 "top_five_count": sum(pick.is_top_five for pick in result.card.picks),
@@ -407,6 +421,13 @@ def _operation(
                 "sportsbook_bet_count": sum(
                     item["decision"] == "BET" for item in board
                 ),
+                "sportsbook_closing_designation_count": 0,
+                "sportsbook_grade_count": 0,
+                "sportsbook_clv_graded_count": 0,
+                "sportsbook_missing_clv_count": 0,
+                "sportsbook_realized_profit_units": None,
+                "sportsbook_roi_percent": None,
+                "shadow_rehearsal_report": None,
             },
             tuple(ingestion_ids),
         )
@@ -448,6 +469,18 @@ def _operation(
             data_refresh=refresh_provider_data,
         )
         board = live_board()
+        closing_designations = (
+            designate_week_closing_offers(
+                conn,
+                season=configuration.season,
+                week=configuration.week,
+                designated_at=generated_at,
+                source="governed-final-pregame-market-custody",
+                provenance=configuration.provenance,
+            )
+            if settings.operation == "saturday_final"
+            else ()
+        )
         return (
             {
                 "replayed": result.replayed,
@@ -455,6 +488,7 @@ def _operation(
                 "publication_id": result.publication.id,
                 "card_id": result.card.card.id,
                 "audit_run_id": None,
+                "sportsbook_audit_run_id": None,
                 "diagnostic_run_id": None,
                 "pick_count": len(result.card.picks),
                 "top_five_count": sum(pick.is_top_five for pick in result.card.picks),
@@ -466,6 +500,13 @@ def _operation(
                 "sportsbook_bet_count": sum(
                     item["decision"] == "BET" for item in board
                 ),
+                "sportsbook_closing_designation_count": len(closing_designations),
+                "sportsbook_grade_count": 0,
+                "sportsbook_clv_graded_count": 0,
+                "sportsbook_missing_clv_count": 0,
+                "sportsbook_realized_profit_units": None,
+                "sportsbook_roi_percent": None,
+                "shadow_rehearsal_report": None,
             },
             tuple(ingestion_ids),
         )
@@ -483,6 +524,16 @@ def _operation(
             provenance=configuration.provenance,
             audited_at=generated_at,
         )
+        sportsbook_audit = audit_sportsbook_recommendations(
+            conn,
+            audit_run_key=f"{settings.idempotency_key}:sportsbook",
+            season=configuration.season,
+            week=configuration.week,
+            policy_id=policies.sportsbook.id,
+            source="governed-production-provider-custody",
+            provenance=configuration.provenance,
+            audited_at=generated_at,
+        )
         return (
             {
                 "replayed": audit.run.sequence > 1,
@@ -490,6 +541,7 @@ def _operation(
                 "publication_id": None,
                 "card_id": card_id,
                 "audit_run_id": audit.run.id,
+                "sportsbook_audit_run_id": sportsbook_audit.run.id,
                 "diagnostic_run_id": None,
                 "pick_count": len(audit.details),
                 "top_five_count": sum(detail.is_top_five for detail in audit.details),
@@ -497,6 +549,19 @@ def _operation(
                 "live_betting_board": (),
                 "sportsbook_recommendation_count": 0,
                 "sportsbook_bet_count": 0,
+                "sportsbook_closing_designation_count": 0,
+                "sportsbook_grade_count": sportsbook_audit.completion.audit_count,
+                "sportsbook_clv_graded_count": (
+                    sportsbook_audit.completion.clv_graded_count
+                ),
+                "sportsbook_missing_clv_count": (
+                    sportsbook_audit.completion.missing_clv_count
+                ),
+                "sportsbook_realized_profit_units": (
+                    sportsbook_audit.completion.realized_profit_units
+                ),
+                "sportsbook_roi_percent": sportsbook_audit.completion.roi_percent,
+                "shadow_rehearsal_report": None,
             },
             tuple(ingestion_ids),
         )
@@ -511,6 +576,18 @@ def _operation(
         ).fetchone()
         if audit_row is None:
             raise ProductionExecutionError("weekly audit requires a completed postgame audit")
+        sportsbook_audit_row = conn.execute(
+            "SELECT run.id FROM sportsbook_postgame_audit_runs AS run "
+            "JOIN sportsbook_postgame_audit_completions AS completion "
+            "ON completion.audit_run_id = run.id "
+            "WHERE run.season = ? AND run.week = ? "
+            "AND run.policy_id = ? ORDER BY run.sequence DESC LIMIT 1",
+            (configuration.season, configuration.week, policies.sportsbook.id),
+        ).fetchone()
+        if sportsbook_audit_row is None:
+            raise ProductionExecutionError(
+                "weekly audit requires a completed sportsbook postgame audit"
+            )
         diagnostics = generate_weekly_diagnostics(
             conn,
             diagnostic_run_key=settings.idempotency_key,
@@ -520,6 +597,22 @@ def _operation(
             provenance=configuration.provenance,
             generated_at=generated_at,
         )
+        shadow_report = (
+            inspect_controlled_shadow_rehearsal(
+                conn,
+                contest_key=settings.contest_key,
+                season=configuration.season,
+                week=configuration.week,
+                expected_lined_game_count=configuration.expected_lined_game_count,
+                sportsbook_policy_id=policies.sportsbook.id,
+            )
+            if settings.is_shadow_rehearsal
+            else None
+        )
+        shadow_payload = None
+        if shadow_report is not None:
+            shadow_payload = asdict(shadow_report)
+            shadow_payload["successful"] = shadow_report.successful
         return (
             {
                 "replayed": diagnostics.run.sequence > 1,
@@ -527,6 +620,7 @@ def _operation(
                 "publication_id": None,
                 "card_id": card_id,
                 "audit_run_id": int(audit_row[0]),
+                "sportsbook_audit_run_id": int(sportsbook_audit_row[0]),
                 "diagnostic_run_id": diagnostics.run.id,
                 "pick_count": None,
                 "top_five_count": None,
@@ -534,6 +628,13 @@ def _operation(
                 "live_betting_board": (),
                 "sportsbook_recommendation_count": 0,
                 "sportsbook_bet_count": 0,
+                "sportsbook_closing_designation_count": 0,
+                "sportsbook_grade_count": 0,
+                "sportsbook_clv_graded_count": 0,
+                "sportsbook_missing_clv_count": 0,
+                "sportsbook_realized_profit_units": None,
+                "sportsbook_roi_percent": None,
+                "shadow_rehearsal_report": shadow_payload,
             },
             (),
         )
@@ -742,6 +843,7 @@ def execute_production_operation(
         "publication_id": details["publication_id"],
         "card_id": details["card_id"],
         "audit_run_id": details["audit_run_id"],
+        "sportsbook_audit_run_id": details["sportsbook_audit_run_id"],
         "diagnostic_run_id": details["diagnostic_run_id"],
         "pick_count": details["pick_count"],
         "top_five_count": details["top_five_count"],
@@ -750,6 +852,17 @@ def execute_production_operation(
             "sportsbook_recommendation_count"
         ],
         "sportsbook_bet_count": details["sportsbook_bet_count"],
+        "sportsbook_closing_designation_count": details[
+            "sportsbook_closing_designation_count"
+        ],
+        "sportsbook_grade_count": details["sportsbook_grade_count"],
+        "sportsbook_clv_graded_count": details["sportsbook_clv_graded_count"],
+        "sportsbook_missing_clv_count": details["sportsbook_missing_clv_count"],
+        "sportsbook_realized_profit_units": details[
+            "sportsbook_realized_profit_units"
+        ],
+        "sportsbook_roi_percent": details["sportsbook_roi_percent"],
+        "shadow_rehearsal_report": details["shadow_rehearsal_report"],
         "live_betting_board": details["live_betting_board"],
         "wagers_placed": 0,
         "completed_at": generated_at.isoformat(),

@@ -24,6 +24,7 @@ from operations.execution import (
 from operations.cloud_execution import (
     CLOUD_EXECUTION_ADAPTER_VERSION,
     CloudProductionExecutionResult,
+    durable_stream_key,
     execute_cloud_production_operation,
 )
 from operations.cloud_persistence import (
@@ -61,6 +62,7 @@ __all__ = [
     "execute_production_operation",
     "CLOUD_EXECUTION_ADAPTER_VERSION",
     "CloudProductionExecutionResult",
+    "durable_stream_key",
     "execute_cloud_production_operation",
     "CloudCommit",
     "CloudMigration",

@@ -346,7 +346,7 @@ def test_database_cutover_rehearsal_preserves_source_and_registers_policies(tmp_
 
     assert report.source_unchanged is True
     assert _sha(source) == before
-    assert report.migrations_applied == tuple(range(1, 16))
+    assert report.migrations_applied == tuple(range(1, 17))
     assert dict(report.registered_policy_versions) == POLICY_VERSIONS
     assert report.pre_integrity_check == "ok"
     assert report.pre_foreign_key_violation_count == 0

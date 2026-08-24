@@ -299,6 +299,47 @@ def test_all_implemented_gates_and_execution_adapter_are_ready(
     assert _file_sha256(database) == before
 
 
+def test_shadow_rehearsal_has_separate_authorization_and_keeps_production_disabled(
+    near_ready_repository,
+):
+    root, database, line_path = near_ready_repository
+    environment = _valid_environment(line_path)
+    environment.update(
+        {
+            "CFB_V3_RUNTIME_MODE": "shadow",
+            "CFB_V3_PRODUCTION_ENABLED": "false",
+            "CFB_V3_OPERATION_EXECUTION_ENABLED": "false",
+            "CFB_V3_KILL_SWITCH": "true",
+            "CFB_V3_OWNER_CUTOVER_APPROVED": "false",
+            "CFB_V3_SHADOW_REHEARSAL_ENABLED": "true",
+            "CFB_V3_SHADOW_OPERATION_EXECUTION_ENABLED": "true",
+            "CFB_V3_SHADOW_KILL_SWITCH": "false",
+        }
+    )
+    settings = load_production_settings(
+        environment,
+        repository_root=root,
+        operation="tuesday_lock",
+        database_path=database,
+    )
+    report = run_production_preflight(settings, now=NOW)
+
+    assert settings.is_shadow_rehearsal is True
+    assert settings.idempotency_key == "v3-shadow:2026:week:1:tuesday_lock"
+    assert report.production_ready is True
+    assert all(check.status == "pass" for check in report.checks)
+    assert next(
+        check for check in report.checks if check.name == "production_enabled"
+    ).detail == "the production enable flag remains false during shadow rehearsal"
+
+    environment["CFB_V3_PRODUCTION_ENABLED"] = "true"
+    unsafe = _report(root, database, environment, "tuesday_lock")
+    assert unsafe.production_ready is False
+    assert next(
+        check for check in unsafe.checks if check.name == "production_enabled"
+    ).status == "block"
+
+
 @pytest.mark.parametrize("operation", PRODUCTION_OPERATIONS)
 def test_kill_switch_blocks_every_operating_stage(
     near_ready_repository,
