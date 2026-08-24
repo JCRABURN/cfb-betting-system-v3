@@ -204,6 +204,11 @@ jobs:
     environment: v3-production
     runs-on: ubuntu-latest
     timeout-minutes: 45
+    outputs:
+      dashboard-ready: ${{ steps.dashboard-gate.outputs.ready }}
+    permissions:
+      contents: read
+      pages: read
     env:
       CFB_V3_RUNTIME_MODE: shadow
       CFB_V3_PRODUCTION_ENABLED: 'false'
@@ -271,6 +276,16 @@ jobs:
           --provider-confirmation CAPTURE_V3_PROVIDER_PAYLOADS
           --preflight-output "$RUNNER_TEMP/v3-shadow-preflight.json"
           --result-output "$RUNNER_TEMP/v3-shadow-result.json"
+          --pages-output "$RUNNER_TEMP/v3-pages-site"
+      - name: Mark validated dashboard artifact ready
+        id: dashboard-gate
+        run: echo "ready=true" >> "$GITHUB_OUTPUT"
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
+      - name: Upload sanitized Pages artifact
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: ${{ runner.temp }}/v3-pages-site
       - name: Publish owner-facing DraftKings betting board
         if: >-
           steps.operation.outcome == 'success' &&
@@ -314,3 +329,22 @@ jobs:
             echo "- Production flags remained disabled and the production kill switch remained engaged."
             echo "- Wager placement is unavailable."
           } >> "$GITHUB_STEP_SUMMARY"
+
+  deploy-pages:
+    name: Deploy sanitized V3 shadow dashboard
+    needs: governed-operation
+    if: >-
+      needs.governed-operation.result == 'success' &&
+      needs.governed-operation.outputs.dashboard-ready == 'true'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

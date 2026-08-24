@@ -74,8 +74,11 @@ jobs:
     # PostgreSQL owns durable state; the runner workspace is disposable.
     runs-on: ubuntu-latest
     timeout-minutes: 45
+    outputs:
+      dashboard-ready: ${{ steps.dashboard-gate.outputs.ready }}
     permissions:
       contents: read
+      pages: read
     env:
       CFB_V3_RUNTIME_MODE: production
       CFB_V3_PRODUCTION_ENABLED: ${{ vars.CFB_V3_PRODUCTION_ENABLED }}
@@ -144,6 +147,19 @@ jobs:
           --provider-confirmation CAPTURE_V3_PROVIDER_PAYLOADS
           --preflight-output "$RUNNER_TEMP/v3-production-preflight.json"
           --result-output "$RUNNER_TEMP/v3-production-result.json"
+          --pages-output "$RUNNER_TEMP/v3-pages-site"
+
+      - name: Mark validated dashboard artifact ready
+        id: dashboard-gate
+        run: echo "ready=true" >> "$GITHUB_OUTPUT"
+
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload sanitized Pages artifact
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: ${{ runner.temp }}/v3-pages-site
 
       - name: Upload redacted preflight report
         if: always()
@@ -185,3 +201,22 @@ jobs:
             echo "- Outcome: ${{ steps.operation.outcome }}"
             echo "- The adapter executes only after every preflight gate passes."
           } >> "$GITHUB_STEP_SUMMARY"
+
+  deploy-pages:
+    name: Deploy sanitized V3 dashboard
+    needs: guarded-operation
+    if: >-
+      needs.guarded-operation.result == 'success' &&
+      needs.guarded-operation.outputs.dashboard-ready == 'true'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

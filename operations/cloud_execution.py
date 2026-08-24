@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import sqlite3
 import tempfile
 from dataclasses import dataclass, replace
 from datetime import datetime, timezone
@@ -14,6 +15,7 @@ from operations.execution import (
     execute_production_operation,
 )
 from operations.preflight import ProductionPreflightReport
+from operations.public_dashboard import generate_public_dashboard_site
 from operations.weekly_config import WeeklyOperationConfiguration
 
 
@@ -53,6 +55,7 @@ def execute_cloud_production_operation(
     *,
     code_commit_sha: str,
     now: datetime | None = None,
+    pages_output_directory: Path | None = None,
 ) -> tuple[CloudProductionExecutionResult, ProductionPreflightReport]:
     """Run against an ephemeral snapshot and commit it inside PostgreSQL."""
     generated_at = (now or datetime.now(timezone.utc)).astimezone(timezone.utc)
@@ -77,6 +80,21 @@ def execute_cloud_production_operation(
                 now=generated_at,
                 managed_workspace=True,
             )
+            if pages_output_directory is not None:
+                dashboard_connection = sqlite3.connect(workspace)
+                dashboard_connection.execute("PRAGMA foreign_keys = ON")
+                dashboard_connection.execute("PRAGMA query_only = ON")
+                try:
+                    generate_public_dashboard_site(
+                        dashboard_connection,
+                        configuration=configuration,
+                        operation=operation,
+                        output_directory=pages_output_directory,
+                        repository_root=settings.repository_root,
+                        execution_profile=getattr(settings, "runtime_mode", "production"),
+                    )
+                finally:
+                    dashboard_connection.close()
             cloud_commit: CloudCommit = lease.publish(
                 workspace,
                 result_sha256=operation.result_sha256,

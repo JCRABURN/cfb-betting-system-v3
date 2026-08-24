@@ -69,6 +69,7 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("--provider-confirmation")
     parser.add_argument("--preflight-output", type=Path)
     parser.add_argument("--result-output", type=Path)
+    parser.add_argument("--pages-output", type=Path)
     args = parser.parse_args(argv)
     runtime_mode = os.environ.get("CFB_V3_RUNTIME_MODE", "").strip()
     required_confirmation = (
@@ -141,6 +142,7 @@ def main(argv: list[str] | None = None) -> int:
             settings,
             configuration,
             code_commit_sha=_commit_sha(),
+            pages_output_directory=args.pages_output,
         )
         if not _write_json(args.preflight_output, asdict(preflight)):
             return 2
