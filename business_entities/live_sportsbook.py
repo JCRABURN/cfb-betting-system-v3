@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import json
 import math
 import sqlite3
 from dataclasses import asdict, dataclass
@@ -24,6 +25,8 @@ from business_entities.wagering import record_sportsbook_recommendation
 ACTIVE_MODEL_NAME = "epa_only"
 ACTIVE_MODEL_VERSION = "epa-only-linear-v1"
 PROBABILITY_MODEL_VERSION = "normal-margin-v1"
+DRAFTKINGS_BOOKMAKER = "draftkings"
+DRAFTKINGS_BOARD_TITLE = "DRAFTKINGS BETTING BOARD"
 
 
 @dataclass(frozen=True)
@@ -116,6 +119,59 @@ class SportsbookClosingDesignation:
     designated_at: str
     source: str
     provenance: str
+
+
+@dataclass(frozen=True)
+class DraftKingsBettingBoardRow:
+    game_id: int
+    game: str
+    selected_team: str | None
+    selected_side: str | None
+    decision: str
+    bookmaker: str
+    offered_spread: float | None
+    offered_price: int | None
+    offer_captured_at: str | None
+    observation_timestamp: str
+    model_fair_spread: float | None
+    spread_edge_points: float | None
+    estimated_cover_probability: float | None
+    break_even_probability: float | None
+    expected_value: float | None
+    stake_units: float
+    policy_version: str
+    reason_code: str
+    freshness: str
+    availability_state: str
+    provider_capture_attempted: bool
+    provider_ingestion_run_id: int | None
+    provider_market_snapshot_id: int | None
+    market_offer_id: int | None
+    evaluation_id: int | None
+    provenance: str
+
+    def board_payload(self) -> dict[str, object]:
+        return asdict(self)
+
+    def owner_summary(self) -> str:
+        if self.availability_state != "AVAILABLE":
+            return (
+                f"UNAVAILABLE | {self.game} | {self.reason_code} | "
+                f"observed {self.observation_timestamp}"
+            )
+        assert self.selected_team is not None
+        assert self.offered_spread is not None
+        assert self.offered_price is not None
+        assert self.model_fair_spread is not None
+        assert self.estimated_cover_probability is not None
+        assert self.expected_value is not None
+        summary = (
+            f"{self.decision} | {self.selected_team} {self.offered_spread:+g} | "
+            f"{self.offered_price:+d} | Fair {self.model_fair_spread:+.1f} | "
+            f"Cover {self.estimated_cover_probability:.1%} | "
+            f"EV {self.expected_value:+.1%} | {self.stake_units:.2f}u"
+        )
+        return summary if self.decision == "BET" else f"{summary} | {self.reason_code}"
 
 
 _OFFER_COLUMNS = (
@@ -956,7 +1012,10 @@ def evaluate_live_sportsbook_board(
                 if prior.lifecycle_state == "expired" or not current_is_stale:
                     results.append(prior)
                     continue
-            elif not _is_material_update(prior_offer, offer, policy):
+            elif (
+                bookmaker.strip().casefold() != DRAFTKINGS_BOOKMAKER
+                and not _is_material_update(prior_offer, offer, policy)
+            ):
                 results.append(prior)
                 continue
         evaluation = evaluate_sportsbook_offer(
@@ -991,3 +1050,229 @@ def list_current_live_sportsbook_board(
         (season, week, policy_id),
     ).fetchall()
     return tuple(SportsbookRecommendationEvaluation(*row) for row in rows)
+
+
+def _draftkings_capture_run(
+    conn: sqlite3.Connection,
+    *,
+    season: int,
+    week: int,
+    provider_ingestion_run_ids: tuple[int, ...],
+) -> tuple[int, str, str, str, bool] | None:
+    if provider_ingestion_run_ids:
+        placeholders = ",".join("?" for _ in provider_ingestion_run_ids)
+        rows = conn.execute(
+            "SELECT id, request_parameters, requested_at, status, raw_payload_reference "
+            f"FROM provider_ingestion_runs WHERE id IN ({placeholders}) "
+            "AND data_type = 'odds' ORDER BY julianday(requested_at) DESC, id DESC",
+            provider_ingestion_run_ids,
+        ).fetchall()
+    else:
+        rows = conn.execute(
+            "SELECT id, request_parameters, requested_at, status, raw_payload_reference "
+            "FROM provider_ingestion_runs WHERE data_type = 'odds' "
+            "AND json_extract(request_parameters, '$.season') = ? "
+            "AND json_extract(request_parameters, '$.week') = ? "
+            "ORDER BY julianday(requested_at) DESC, id DESC",
+            (season, week),
+        ).fetchall()
+    for run_id, parameters, requested_at, status, raw_reference in rows:
+        try:
+            request = json.loads(str(parameters))
+        except (TypeError, ValueError):
+            request = {}
+        requested_books = request.get("bookmakers", "")
+        if isinstance(requested_books, list):
+            books = {str(book).strip().casefold() for book in requested_books}
+        else:
+            books = {
+                book.strip().casefold()
+                for book in str(requested_books).split(",")
+                if book.strip()
+            }
+        has_snapshot = conn.execute(
+            "SELECT 1 FROM provider_market_snapshots "
+            "WHERE ingestion_run_id = ? AND lower(trim(bookmaker)) = ? LIMIT 1",
+            (int(run_id), DRAFTKINGS_BOOKMAKER),
+        ).fetchone()
+        attempted = DRAFTKINGS_BOOKMAKER in books or has_snapshot is not None
+        return (
+            int(run_id),
+            str(requested_at),
+            str(status),
+            str(raw_reference),
+            attempted,
+        )
+    return None
+
+
+def build_draftkings_betting_board(
+    conn: sqlite3.Connection,
+    *,
+    contest_id: int,
+    policy_id: int,
+    season: int,
+    week: int,
+    provider_ingestion_run_ids: tuple[int, ...] = (),
+) -> tuple[DraftKingsBettingBoardRow, ...]:
+    """Return one explicit DraftKings row for every immutable contest-line game."""
+    contest_id = integer(contest_id, "contest_id", 1)
+    policy = get_sportsbook_recommendation_policy(conn, policy_id)
+    season = integer(season, "season", 1869)
+    week = integer(week, "week")
+    run = _draftkings_capture_run(
+        conn,
+        season=season,
+        week=week,
+        provider_ingestion_run_ids=provider_ingestion_run_ids,
+    )
+    games = conn.execute(
+        "SELECT locked.game_id, game.away_team, game.home_team "
+        "FROM contest_locked_lines AS locked "
+        "JOIN games AS game ON game.game_id = locked.game_id "
+        "WHERE locked.contest_id = ? ORDER BY game.start_date, locked.game_id",
+        (contest_id,),
+    ).fetchall()
+    result: list[DraftKingsBettingBoardRow] = []
+    for game_id_value, away_team, home_team in games:
+        game_id = int(game_id_value)
+        game_label = f"{away_team} at {home_team}"
+        run_id = None if run is None else run[0]
+        observed_at = "NOT_ATTEMPTED" if run is None else run[1]
+        capture_attempted = False if run is None else run[4]
+        offer_row = None
+        if run_id is not None and capture_attempted:
+            offer_row = conn.execute(
+                f"SELECT {_qualified(_OFFER_COLUMNS, 'offer')} "
+                "FROM provider_market_snapshots AS snapshot "
+                "JOIN sportsbook_market_offers AS offer "
+                "ON offer.provider_market_snapshot_id = snapshot.id "
+                "WHERE snapshot.ingestion_run_id = ? AND snapshot.game_id = ? "
+                "AND lower(trim(snapshot.bookmaker)) = ? "
+                "AND lower(trim(offer.bookmaker)) = ? "
+                "AND offer.line_type IN ('opening', 'current') "
+                "ORDER BY julianday(offer.observed_at) DESC, offer.id DESC LIMIT 1",
+                (run_id, game_id, DRAFTKINGS_BOOKMAKER, DRAFTKINGS_BOOKMAKER),
+            ).fetchone()
+        if offer_row is None:
+            if run is None or not capture_attempted:
+                state = "CAPTURE_NOT_ATTEMPTED"
+                reason = "DRAFTKINGS_CAPTURE_NOT_ATTEMPTED"
+            elif run[2] not in ("completed", "partial", "empty"):
+                state = "PROVIDER_UNAVAILABLE"
+                reason = f"DRAFTKINGS_CAPTURE_{run[2].upper()}"
+            else:
+                state = "PROVIDER_UNAVAILABLE"
+                reason = "DRAFTKINGS_SPREAD_NOT_RETURNED"
+            provenance = (
+                "draftkings-capture:not-attempted"
+                if run is None
+                else f"provider-ingestion-run:{run[0]};raw-payload:{run[3]}"
+            )
+            result.append(
+                DraftKingsBettingBoardRow(
+                    game_id=game_id,
+                    game=game_label,
+                    selected_team=None,
+                    selected_side=None,
+                    decision="DRAFTKINGS_UNAVAILABLE",
+                    bookmaker="DraftKings",
+                    offered_spread=None,
+                    offered_price=None,
+                    offer_captured_at=None,
+                    observation_timestamp=observed_at,
+                    model_fair_spread=None,
+                    spread_edge_points=None,
+                    estimated_cover_probability=None,
+                    break_even_probability=None,
+                    expected_value=None,
+                    stake_units=0.0,
+                    policy_version=policy.policy_version,
+                    reason_code=reason,
+                    freshness="UNAVAILABLE",
+                    availability_state=state,
+                    provider_capture_attempted=capture_attempted,
+                    provider_ingestion_run_id=run_id,
+                    provider_market_snapshot_id=None,
+                    market_offer_id=None,
+                    evaluation_id=None,
+                    provenance=provenance,
+                )
+            )
+            continue
+        offer = SportsbookMarketOffer(*offer_row)
+        evaluation_row = conn.execute(
+            f"SELECT {_EVALUATION_COLUMNS} "
+            "FROM sportsbook_recommendation_evaluations "
+            "WHERE policy_id = ? AND market_offer_id = ? ORDER BY id DESC LIMIT 1",
+            (policy.id, offer.id),
+        ).fetchone()
+        if evaluation_row is None:
+            result.append(
+                DraftKingsBettingBoardRow(
+                    game_id=game_id,
+                    game=game_label,
+                    selected_team=None,
+                    selected_side=None,
+                    decision="DRAFTKINGS_UNAVAILABLE",
+                    bookmaker="DraftKings",
+                    offered_spread=None,
+                    offered_price=None,
+                    offer_captured_at=offer.observed_at,
+                    observation_timestamp=offer.observed_at,
+                    model_fair_spread=None,
+                    spread_edge_points=None,
+                    estimated_cover_probability=None,
+                    break_even_probability=None,
+                    expected_value=None,
+                    stake_units=0.0,
+                    policy_version=policy.policy_version,
+                    reason_code="DRAFTKINGS_EVALUATION_MISSING",
+                    freshness="UNAVAILABLE",
+                    availability_state="EVALUATION_MISSING",
+                    provider_capture_attempted=True,
+                    provider_ingestion_run_id=run_id,
+                    provider_market_snapshot_id=offer.provider_market_snapshot_id,
+                    market_offer_id=offer.id,
+                    evaluation_id=None,
+                    provenance=(
+                        f"provider-ingestion-run:{run_id};market-offer:{offer.id};"
+                        f"provider-market-snapshot:{offer.provider_market_snapshot_id}"
+                    ),
+                )
+            )
+            continue
+        evaluation = SportsbookRecommendationEvaluation(*evaluation_row)
+        result.append(
+            DraftKingsBettingBoardRow(
+                game_id=game_id,
+                game=game_label,
+                selected_team=evaluation.selected_team,
+                selected_side=evaluation.selected_side,
+                decision=evaluation.decision.upper(),
+                bookmaker="DraftKings",
+                offered_spread=evaluation.offered_spread,
+                offered_price=evaluation.offered_price,
+                offer_captured_at=evaluation.captured_at,
+                observation_timestamp=evaluation.captured_at,
+                model_fair_spread=evaluation.model_fair_spread,
+                spread_edge_points=evaluation.spread_edge_points,
+                estimated_cover_probability=evaluation.estimated_cover_probability,
+                break_even_probability=evaluation.break_even_probability,
+                expected_value=evaluation.expected_value,
+                stake_units=evaluation.stake_units,
+                policy_version=evaluation.policy_version,
+                reason_code=evaluation.reason_code,
+                freshness=(
+                    "STALE" if evaluation.lifecycle_state == "expired" else "CURRENT"
+                ),
+                availability_state="AVAILABLE",
+                provider_capture_attempted=True,
+                provider_ingestion_run_id=run_id,
+                provider_market_snapshot_id=offer.provider_market_snapshot_id,
+                market_offer_id=offer.id,
+                evaluation_id=evaluation.id,
+                provenance=evaluation.provenance,
+            )
+        )
+    return tuple(result)

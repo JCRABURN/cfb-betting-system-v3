@@ -9,7 +9,11 @@ from dataclasses import asdict, dataclass
 
 from business_entities.common import BusinessEntityError, integer, required_text
 from business_entities.complete_audits import validate_postgame_audit_run
-from business_entities.live_sportsbook import sportsbook_evaluation_matches_sources
+from business_entities.live_sportsbook import (
+    DRAFTKINGS_BOOKMAKER,
+    build_draftkings_betting_board,
+    sportsbook_evaluation_matches_sources,
+)
 from business_entities.reproducibility import reproduce_card
 from business_entities.sportsbook_audits import (
     get_sportsbook_postgame_audit_completion,
@@ -22,7 +26,7 @@ from business_entities.weekly_diagnostics import (
 )
 
 
-SHADOW_REHEARSAL_REPORT_VERSION = "controlled-live-week-shadow-v1"
+SHADOW_REHEARSAL_REPORT_VERSION = "controlled-live-week-shadow-v2"
 
 
 @dataclass(frozen=True)
@@ -64,6 +68,19 @@ class ControlledShadowRehearsalReport:
     sportsbook_no_bet_count: int
     sportsbook_supersession_count: int
     reproducible_sportsbook_evaluation_count: int
+    draftkings_provider_capture_attempted: bool
+    draftkings_offers_received_count: int
+    draftkings_eligible_games_with_offers_count: int
+    draftkings_eligible_offers_evaluated_count: int
+    draftkings_bet_count: int
+    draftkings_no_bet_count: int
+    draftkings_unavailable_count: int
+    draftkings_stale_count: int
+    draftkings_supersession_count: int
+    draftkings_recommendation_reproduction_passed: bool
+    draftkings_closing_line_coverage: str
+    draftkings_clv_coverage: str
+    draftkings_grading_coverage: str
     contest_audit_run_id: int
     contest_audit_count: int
     sportsbook_audit_run_id: int
@@ -103,15 +120,27 @@ class ControlledShadowRehearsalReport:
             and self.provider_ingestion_run_count > 0
             and self.provider_noncomplete_run_count
             == self.provider_failures_explicit_count
-            and self.sportsbook_evaluation_count > 0
-            and self.sportsbook_game_coverage_count == self.expected_lined_game_count
             and self.sportsbook_evaluation_count
             == self.reproducible_sportsbook_evaluation_count
-            and self.sportsbook_supersession_count
-            >= 4 * self.expected_lined_game_count
             and self.sportsbook_evaluation_count == self.sportsbook_audit_count
             and self.sportsbook_missing_clv_count == 0
             and self.sportsbook_clv_graded_count == self.sportsbook_audit_count
+            and self.draftkings_provider_capture_attempted
+            and self.draftkings_eligible_games_with_offers_count
+            + self.draftkings_unavailable_count
+            >= self.expected_lined_game_count
+            and self.draftkings_offers_received_count
+            == self.draftkings_eligible_offers_evaluated_count
+            and self.draftkings_recommendation_reproduction_passed
+            and self.draftkings_closing_line_coverage
+            == f"{self.draftkings_eligible_games_with_offers_count}/"
+            f"{self.draftkings_eligible_games_with_offers_count}"
+            and self.draftkings_clv_coverage
+            == f"{self.draftkings_eligible_offers_evaluated_count}/"
+            f"{self.draftkings_eligible_offers_evaluated_count}"
+            and self.draftkings_grading_coverage
+            == f"{self.draftkings_eligible_offers_evaluated_count}/"
+            f"{self.draftkings_eligible_offers_evaluated_count}"
             and self.contest_audit_count == self.expected_lined_game_count
             and self.diagnostics_complete
             and self.lesson_count == 4
@@ -239,6 +268,15 @@ def inspect_controlled_shadow_rehearsal(
             (season, week),
         )
     )
+    ingestion_run_ids.update(
+        int(row[0])
+        for row in conn.execute(
+            "SELECT id FROM provider_ingestion_runs "
+            "WHERE json_extract(request_parameters, '$.season') = ? "
+            "AND json_extract(request_parameters, '$.week') = ?",
+            (season, week),
+        )
+    )
 
     provider_rows = ()
     if ingestion_run_ids:
@@ -264,7 +302,7 @@ def inspect_controlled_shadow_rehearsal(
     evaluation_rows = tuple(
         conn.execute(
             "SELECT evaluation.id, evaluation.decision, "
-            "evaluation.supersedes_evaluation_id "
+            "evaluation.supersedes_evaluation_id, offer.bookmaker "
             "FROM sportsbook_recommendation_evaluations AS evaluation "
             "JOIN sportsbook_market_offers AS offer "
             "ON offer.id = evaluation.market_offer_id "
@@ -277,6 +315,48 @@ def inspect_controlled_shadow_rehearsal(
     reproducible_evaluations = sum(
         sportsbook_evaluation_matches_sources(conn, int(row[0]))
         for row in evaluation_rows
+    )
+    draftkings_offer_rows = tuple(
+        conn.execute(
+            "SELECT offer.id, offer.game_id, evaluation.id "
+            "FROM sportsbook_market_offers AS offer "
+            "JOIN contest_locked_lines AS locked ON locked.game_id = offer.game_id "
+            "LEFT JOIN sportsbook_recommendation_evaluations AS evaluation "
+            "ON evaluation.market_offer_id = offer.id AND evaluation.policy_id = ? "
+            "WHERE locked.contest_id = ? AND lower(trim(offer.bookmaker)) = ? "
+            "AND offer.line_type IN ('opening', 'current') ORDER BY offer.id",
+            (sportsbook_policy_id, contest_id, DRAFTKINGS_BOOKMAKER),
+        )
+    )
+    draftkings_evaluation_rows = tuple(
+        row
+        for row in evaluation_rows
+        if str(row[3]).strip().casefold() == DRAFTKINGS_BOOKMAKER
+    )
+    draftkings_reproducible = sum(
+        sportsbook_evaluation_matches_sources(conn, int(row[0]))
+        for row in draftkings_evaluation_rows
+    )
+    draftkings_board = build_draftkings_betting_board(
+        conn,
+        contest_id=contest_id,
+        policy_id=sportsbook_policy_id,
+        season=season,
+        week=week,
+        provider_ingestion_run_ids=tuple(sorted(ingestion_run_ids)),
+    )
+    draftkings_capture_attempted = any(
+        row.provider_capture_attempted for row in draftkings_board
+    )
+    draftkings_unavailable_count = sum(
+        row.availability_state != "AVAILABLE" for row in draftkings_board
+    )
+    draftkings_game_count = len({int(row[1]) for row in draftkings_offer_rows})
+    missing_evidence.extend(
+        f"draftkings-game:{row.game_id}:{row.reason_code}:"
+        f"{row.observation_timestamp}"
+        for row in draftkings_board
+        if row.availability_state != "AVAILABLE"
     )
 
     final_card = conn.execute(
@@ -324,6 +404,25 @@ def inspect_controlled_shadow_rehearsal(
             )
             for evaluation_id in (int(evaluation_id[0]),)
         )
+    draftkings_audit_rows = tuple(
+        conn.execute(
+            "SELECT detail.evaluation_id, detail.clv_evidence_status "
+            "FROM sportsbook_postgame_audit_details AS detail "
+            "WHERE detail.audit_run_id = ? AND lower(trim(detail.bookmaker)) = ? "
+            "ORDER BY detail.evaluation_id",
+            (sportsbook_audit_id, DRAFTKINGS_BOOKMAKER),
+        )
+    )
+    draftkings_clv_count = sum(row[1] == "available" for row in draftkings_audit_rows)
+    draftkings_closing_game_count = int(
+        conn.execute(
+            "SELECT COUNT(DISTINCT designation.game_id) "
+            "FROM sportsbook_closing_designations AS designation "
+            "JOIN contest_locked_lines AS locked ON locked.game_id = designation.game_id "
+            "WHERE locked.contest_id = ? AND lower(trim(designation.bookmaker)) = ?",
+            (contest_id, DRAFTKINGS_BOOKMAKER),
+        ).fetchone()[0]
+    )
 
     diagnostic = conn.execute(
         "SELECT run.id FROM weekly_diagnostic_runs AS run "
@@ -383,6 +482,43 @@ def inspect_controlled_shadow_rehearsal(
         "sportsbook_no_bet_count": sum(row[1] == "no_bet" for row in evaluation_rows),
         "sportsbook_supersession_count": sum(row[2] is not None for row in evaluation_rows),
         "reproducible_sportsbook_evaluation_count": reproducible_evaluations,
+        "draftkings_provider_capture_attempted": draftkings_capture_attempted,
+        "draftkings_offers_received_count": len(
+            {int(row[0]) for row in draftkings_offer_rows}
+        ),
+        "draftkings_eligible_games_with_offers_count": draftkings_game_count,
+        "draftkings_eligible_offers_evaluated_count": len(
+            {int(row[0]) for row in draftkings_offer_rows if row[2] is not None}
+        ),
+        "draftkings_bet_count": sum(
+            row[1] == "bet" for row in draftkings_evaluation_rows
+        ),
+        "draftkings_no_bet_count": sum(
+            row[1] == "no_bet" for row in draftkings_evaluation_rows
+        ),
+        "draftkings_unavailable_count": draftkings_unavailable_count,
+        "draftkings_stale_count": sum(
+            row.freshness == "STALE" for row in draftkings_board
+        ),
+        "draftkings_supersession_count": sum(
+            row[2] is not None for row in draftkings_evaluation_rows
+        ),
+        "draftkings_recommendation_reproduction_passed": (
+            draftkings_reproducible == len(draftkings_evaluation_rows)
+            and len({int(row[0]) for row in draftkings_offer_rows})
+            == len({int(row[0]) for row in draftkings_offer_rows if row[2] is not None})
+        ),
+        "draftkings_closing_line_coverage": (
+            f"{draftkings_closing_game_count}/{draftkings_game_count}"
+        ),
+        "draftkings_clv_coverage": (
+            f"{draftkings_clv_count}/"
+            f"{len({int(row[0]) for row in draftkings_offer_rows if row[2] is not None})}"
+        ),
+        "draftkings_grading_coverage": (
+            f"{len(draftkings_audit_rows)}/"
+            f"{len({int(row[0]) for row in draftkings_offer_rows if row[2] is not None})}"
+        ),
         "contest_audit_run_id": contest_audit_id,
         "contest_audit_count": contest_report.audit_count,
         "sportsbook_audit_run_id": sportsbook_audit_id,

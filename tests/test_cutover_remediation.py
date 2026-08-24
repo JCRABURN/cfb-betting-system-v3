@@ -454,6 +454,46 @@ def test_production_operation_automatically_emits_live_board_from_current_offer(
     assert result.live_betting_board[0]["bookmaker"] == "draftkings"
     assert result.live_betting_board[0]["policy_version"] == POLICY_VERSIONS["sportsbook"]
     assert result.live_betting_board[0]["decision"] in ("BET", "NO BET")
+    assert len(result.draftkings_betting_board) == len(LINES)
+    available = tuple(
+        row
+        for row in result.draftkings_betting_board
+        if row["availability_state"] == "AVAILABLE"
+    )
+    unavailable = tuple(
+        row
+        for row in result.draftkings_betting_board
+        if row["availability_state"] != "AVAILABLE"
+    )
+    assert len(available) == 1
+    assert {
+        "game",
+        "selected_team",
+        "selected_side",
+        "decision",
+        "bookmaker",
+        "offered_spread",
+        "offered_price",
+        "offer_captured_at",
+        "model_fair_spread",
+        "spread_edge_points",
+        "estimated_cover_probability",
+        "break_even_probability",
+        "expected_value",
+        "stake_units",
+        "policy_version",
+        "reason_code",
+        "freshness",
+        "provenance",
+    }.issubset(available[0])
+    assert available[0]["bookmaker"] == "DraftKings"
+    assert abs(available[0]["offered_spread"]) == 28.5
+    assert available[0]["offered_price"] == -110
+    assert len(unavailable) == len(LINES) - 1
+    assert all(row["decision"] == "DRAFTKINGS_UNAVAILABLE" for row in unavailable)
+    assert all(row["offered_spread"] is None for row in unavailable)
+    assert result.draftkings_betting_board_text[0] == "DRAFTKINGS BETTING BOARD"
+    assert result.draftkings_betting_board_text[1].startswith(("BET |", "NO BET |"))
     assert result.pick_count == len(LINES)
     assert result.wagers_placed == 0
 
@@ -726,6 +766,9 @@ def test_live_capture_preparation_preserves_raw_evidence_without_secret_values(t
     odds_spec = next(item for item in bundle.payloads if item.data_type == "odds")
     normalized = json.loads(odds_spec.payload_path.read_text(encoding="utf-8"))
     assert odds_spec.parser_version == "odds_spread_v3"
+    assert odds_spec.request_parameters["bookmakers"].split(",")[0] == "draftkings"
+    assert odds_spec.request_parameters["season"] == 2026
+    assert odds_spec.request_parameters["week"] == 1
     assert normalized[0]["away_spread"] == 28.5
     assert normalized[0]["away_price"] == -110
     assert (output / "cfbd-games.raw.json").is_file()

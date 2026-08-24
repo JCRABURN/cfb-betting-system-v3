@@ -271,6 +271,20 @@ jobs:
           --provider-confirmation CAPTURE_V3_PROVIDER_PAYLOADS
           --preflight-output "$RUNNER_TEMP/v3-shadow-preflight.json"
           --result-output "$RUNNER_TEMP/v3-shadow-result.json"
+      - name: Publish owner-facing DraftKings betting board
+        if: >-
+          steps.operation.outcome == 'success' &&
+          (inputs.operation == 'tuesday_lock' ||
+          inputs.operation == 'wednesday_refresh' ||
+          inputs.operation == 'thursday_refresh' ||
+          inputs.operation == 'friday_refresh' ||
+          inputs.operation == 'saturday_final')
+        run: |
+          {
+            echo "## DRAFTKINGS BETTING BOARD"
+            jq -r '.draftkings_betting_board_text[1:][] | "- `" + . + "`"' \
+              "$RUNNER_TEMP/v3-shadow-result.json"
+          } >> "$GITHUB_STEP_SUMMARY"
       - name: Upload redacted shadow reports
         if: always()
         uses: actions/upload-artifact@v4

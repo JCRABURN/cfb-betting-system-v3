@@ -59,7 +59,10 @@ week and the confirmation `RUN_V3_SHADOW_REHEARSAL`. Run stages in this order:
    uploads redacted evidence.
 3. `tuesday_lock` captures current provider data, validates the owner-reviewed
    SplashSports manifest, locks every contest line once, publishes card v1,
-   and evaluates the current sportsbook board.
+   and evaluates the current sportsbook board. DraftKings is the primary
+   actionable sportsbook; exact DraftKings spreads and American prices feed
+   the governed recommendation engine. Other books remain a separate market-
+   comparison view.
 4. `wednesday_refresh`, `thursday_refresh`, and `friday_refresh` capture newer
    provider observations, publish cards v2-v4 against the original lock, and
    preserve every BET/NO BET evaluation and supersession.
@@ -79,6 +82,17 @@ checksummed and retained separately. A failed or quarantined provider record is
 durable evidence; it is never silently converted into context or a fabricated
 value.
 
+Every pregame result contains a readable `DRAFTKINGS BETTING BOARD`, also shown
+in the workflow summary. It has one row for every locked game. Available rows
+show the selected team/side, exact DraftKings spread and American price, offer
+timestamp, fair spread, edge, cover and break-even probabilities, expected
+value, stake, policy, reason, freshness, and immutable provenance. If the
+current capture does not contain a DraftKings spread, the row is
+`DRAFTKINGS_UNAVAILABLE` with the capture attempt, timestamp, and reason. A
+FanDuel, BetMGM, Caesars/William Hill, Bovada, consensus, or SplashSports line
+is never relabeled or substituted as DraftKings. The board is advisory only;
+the repository contains no wager-submission or sportsbook-account path.
+
 ## Acceptance gates
 
 The final report succeeds only when it demonstrates all of the following:
@@ -90,10 +104,15 @@ The final report succeeds only when it demonstrates all of the following:
 - every card has exactly five Top 5 picks when at least five games are lined;
 - missing or stale input is represented by an explicit governed fallback;
 - provider failures and rejected rows remain explicit;
-- the sportsbook board covers every lined game with reproducible evaluations;
-- all four daily board refresh waves preserve supersession history;
+- every real DraftKings offer is evaluated and reproducible;
+- every locked game has an explicit current DraftKings evaluation or an
+  explicit provider-side unavailable state;
+- DraftKings BET, NO BET, stale, unavailable, and supersession counts are
+  reported independently from the multi-book comparison board;
+- materially newer DraftKings offers preserve immutable supersession history;
 - every contest pick and every BET/NO BET evaluation is graded;
-- every sportsbook evaluation has same-book closing evidence and CLV;
+- every DraftKings evaluation has same-book DraftKings closing evidence,
+  grading, and CLV, or the missing closing evidence is explicit;
 - diagnostics are complete and exactly four Lessons Learned are recorded;
 - every contextual adjustment has evidence, source, and provenance; and
 - `wagers_placed` is zero.
@@ -113,3 +132,13 @@ governed revision identity where the policy requires it.
 
 Recurring schedules and production activation remain outside PR #21 and
 require separate explicit approval.
+
+## Deferred PR #22 scheduling contract
+
+PR #21 does not add a schedule. If the owner separately authorizes PR #22, its
+cloud-hosted DraftKings refresh cadence must be configuration-driven, require
+no owner computer or command, respect the configured Odds API quota, and add
+governed pre-kickoff refreshes. It must automatically supersede materially
+changed DraftKings recommendations and fail visibly when quota or freshness
+prevents a current recommendation. An aggressive polling interval must never
+be hard-coded independently of the owner's provider allowance.

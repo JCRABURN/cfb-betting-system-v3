@@ -25,6 +25,7 @@ from business_entities import (
     WeeklyDiagnosticsPolicy,
     audit_contest_card,
     audit_sportsbook_recommendations,
+    build_draftkings_betting_board,
     designate_week_closing_offers,
     evaluate_live_sportsbook_board,
     generate_weekly_diagnostics,
@@ -1099,7 +1100,117 @@ def test_controlled_shadow_report_proves_full_card_board_audit_and_lessons(temp_
     assert report.sportsbook_audit_count == 25
     assert report.sportsbook_clv_graded_count == 25
     assert report.sportsbook_missing_clv_count == 0
+    assert report.draftkings_provider_capture_attempted is True
+    assert report.draftkings_offers_received_count == 25
+    assert report.draftkings_eligible_games_with_offers_count == 5
+    assert report.draftkings_eligible_offers_evaluated_count == 25
+    assert report.draftkings_bet_count + report.draftkings_no_bet_count == 25
+    assert report.draftkings_unavailable_count == 0
+    assert report.draftkings_stale_count == 0
+    assert report.draftkings_supersession_count == 20
+    assert report.draftkings_recommendation_reproduction_passed is True
+    assert report.draftkings_closing_line_coverage == "5/5"
+    assert report.draftkings_clv_coverage == "25/25"
+    assert report.draftkings_grading_coverage == "25/25"
     assert report.contest_audit_count == 5
     assert report.lesson_count == len(report.lessons) == 4
     assert report.wagers_placed == 0
+    conn.close()
+
+
+def test_draftkings_board_records_unavailable_without_book_or_contest_substitution(
+    temp_db,
+):
+    conn, lines = _seed_games(temp_db)
+    _seed_epa_inputs(conn)
+    tuesday = run_tuesday_controller(conn, _tuesday_request(lines))
+    policy = register_sportsbook_recommendation_policy(
+        conn,
+        policy_version="draftkings-board-v1",
+        residual_stddev_points=14.0,
+        minimum_spread_edge_points=1.5,
+        minimum_cover_probability=0.545,
+        minimum_expected_value=0.025,
+        maximum_odds_age_seconds=900,
+        material_update_seconds=300,
+        material_spread_change_points=0.5,
+        material_price_change=5,
+        maximum_stake_units=1.0,
+        stake_units_per_expected_value=10.0,
+        stake_increment_units=0.25,
+        effective_at=POLICY_AT,
+        created_by="test",
+        provenance="fixture://draftkings-board-policy",
+    )
+    payload = {
+        "records": [
+            {
+                "matchup_id": "fanduel-only-1001",
+                "game_id": 1001,
+                "home_team": "Home 1",
+                "away_team": "Away 1",
+                "market_type": "spread",
+                "home_spread": -7.5,
+                "home_price": -110,
+                "away_spread": 7.5,
+                "away_price": -110,
+                "line_type": "current",
+                "season": 2026,
+                "week": 1,
+                "observed_at": TUESDAY_AT.isoformat(),
+                "event_start_at": KICKOFF,
+                "bookmaker": "fanduel",
+            }
+        ]
+    }
+    summary = ProviderIngestionService(clock=lambda: TUESDAY_AT).ingest_payload(
+        conn,
+        IngestionRequest(
+            provider="fixture-odds",
+            endpoint="fixture://draftkings-request-returned-fanduel-only",
+            request_parameters={
+                "season": 2026,
+                "week": 1,
+                "bookmakers": "draftkings,fanduel",
+            },
+            requested_at=TUESDAY_AT,
+            parser_version="odds_spread_v3",
+            raw_payload_reference="fixture://fanduel-only.json",
+            data_type="odds",
+        ),
+        payload,
+        OddsSpreadParser("odds_spread_v3"),
+        accepted_writer=_odds_writer("current"),
+    )
+    evaluate_live_sportsbook_board(
+        conn,
+        season=2026,
+        week=1,
+        policy_id=policy.id,
+        evaluated_at=TUESDAY_AT + timedelta(minutes=1),
+        provenance="fixture://comparison-board",
+    )
+
+    board = build_draftkings_betting_board(
+        conn,
+        contest_id=tuesday.publication.contest_id,
+        policy_id=policy.id,
+        season=2026,
+        week=1,
+        provider_ingestion_run_ids=(summary.ingestion_run_id,),
+    )
+
+    assert len(board) == len(lines) == 5
+    assert all(row.bookmaker == "DraftKings" for row in board)
+    assert all(row.decision == "DRAFTKINGS_UNAVAILABLE" for row in board)
+    assert all(row.reason_code == "DRAFTKINGS_SPREAD_NOT_RETURNED" for row in board)
+    assert all(row.offered_spread is None and row.offered_price is None for row in board)
+    assert all(row.provider_capture_attempted is True for row in board)
+    assert all(row.observation_timestamp == TUESDAY_AT.isoformat() for row in board)
+    assert board[0].owner_summary().startswith("UNAVAILABLE | Away 1 at Home 1")
+    assert conn.execute(
+        "SELECT COUNT(*) FROM sportsbook_recommendation_evaluations AS evaluation "
+        "JOIN sportsbook_market_offers AS offer ON offer.id = evaluation.market_offer_id "
+        "WHERE offer.bookmaker = 'fanduel'"
+    ).fetchone()[0] == 1
     conn.close()

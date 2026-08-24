@@ -86,10 +86,14 @@ from business_entities.modeling import (
     record_model_run,
 )
 from business_entities.live_sportsbook import (
+    DRAFTKINGS_BOARD_TITLE,
+    DRAFTKINGS_BOOKMAKER,
+    DraftKingsBettingBoardRow,
     SportsbookMarketOffer,
     SportsbookClosingDesignation,
     SportsbookRecommendationEvaluation,
     SportsbookRecommendationPolicy,
+    build_draftkings_betting_board,
     evaluate_live_sportsbook_board,
     evaluate_sportsbook_offer,
     get_sportsbook_market_offer,
@@ -223,6 +227,7 @@ __all__ = [
     "SportsbookPostgameAuditReport",
     "SportsbookPostgameAuditResult",
     "SportsbookPostgameAuditRun",
+    "DraftKingsBettingBoardRow",
     "ControlledShadowRehearsalReport",
     "ShadowCardEvidence",
     "BusinessEntityConflictError",
@@ -310,6 +315,7 @@ __all__ = [
     "assign_card_adjustment_policy",
     "create_contest_card",
     "generate_full_card",
+    "build_draftkings_betting_board",
     "evaluate_live_sportsbook_board",
     "designate_sportsbook_closing_offer",
     "designate_week_closing_offers",
@@ -391,4 +397,6 @@ __all__ = [
     "EPA_ONLY_FEATURE_SCHEMA_VERSION",
     "EPA_ONLY_MODEL_NAME",
     "EPA_ONLY_MODEL_VERSION",
+    "DRAFTKINGS_BOARD_TITLE",
+    "DRAFTKINGS_BOOKMAKER",
 ]

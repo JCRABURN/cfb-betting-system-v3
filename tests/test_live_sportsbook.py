@@ -286,6 +286,43 @@ def test_spread_threshold_crossing_supersedes_without_mutation(temp_db):
     conn.close()
 
 
+def test_draftkings_price_movement_reevaluates_exact_offer(temp_db):
+    conn = temp_db.get_connection()
+    _seed_game(conn)
+    _prediction(conn, margin=6.0)
+    policy = _policy(conn)
+    _ingest_offer(conn, home_price=-105, away_price=-115)
+    first = evaluate_live_sportsbook_board(
+        conn,
+        season=2026,
+        week=1,
+        policy_id=policy.id,
+        evaluated_at=BASE + timedelta(minutes=1),
+        provenance="fixture://draftkings-initial-price",
+    )[0]
+    _, moved_offer_id = _ingest_offer(
+        conn,
+        observed=BASE + timedelta(minutes=4),
+        home_price=-160,
+        away_price=130,
+    )
+    second = evaluate_live_sportsbook_board(
+        conn,
+        season=2026,
+        week=1,
+        policy_id=policy.id,
+        evaluated_at=BASE + timedelta(minutes=5),
+        provenance="fixture://draftkings-moved-price",
+    )[0]
+
+    assert (first.bookmaker, first.decision) == ("draftkings", "bet")
+    assert second.decision == "no_bet"
+    assert second.market_offer_id == moved_offer_id
+    assert second.supersedes_evaluation_id == first.id
+    assert sportsbook_evaluation_matches_sources(conn, second.id) is True
+    conn.close()
+
+
 def test_stale_future_and_closing_offers_fail_safe(temp_db):
     conn = temp_db.get_connection()
     _seed_game(conn)
@@ -523,7 +560,7 @@ def test_sportsbook_postgame_audit_records_missing_closing_evidence(temp_db):
     _seed_game(conn)
     prediction = _prediction(conn)
     policy = _policy(conn)
-    _, offer_id = _ingest_offer(conn, book="missing-close-book")
+    _, offer_id = _ingest_offer(conn, book="draftkings")
     assert offer_id is not None
     evaluation = evaluate_sportsbook_offer(
         conn,
@@ -532,6 +569,20 @@ def test_sportsbook_postgame_audit_records_missing_closing_evidence(temp_db):
         policy_id=policy.id,
         evaluated_at=BASE + timedelta(minutes=2),
         provenance="fixture://missing-close",
+    )
+    _, other_book_close_id = _ingest_offer(
+        conn,
+        book="fanduel",
+        observed=BASE + timedelta(minutes=10),
+        home_spread=-4.0,
+    )
+    assert other_book_close_id is not None
+    designate_sportsbook_closing_offer(
+        conn,
+        market_offer_id=other_book_close_id,
+        designated_at=BASE + timedelta(minutes=11),
+        source="fixture-other-book-close",
+        provenance="fixture://other-book-closing-designation",
     )
     conn.execute(
         "UPDATE games SET home_points = 24, away_points = 21, completed = 1 "
@@ -558,6 +609,7 @@ def test_sportsbook_postgame_audit_records_missing_closing_evidence(temp_db):
     assert detail.closing_evidence_status == "missing"
     assert detail.clv_evidence_status == "missing"
     assert detail.clv_points is None
+    assert detail.bookmaker == "draftkings"
     conn.close()
 
 

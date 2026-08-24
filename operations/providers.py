@@ -999,12 +999,13 @@ def capture_live_provider_bundle(
             headers={"Authorization": f"Bearer {cfbd_key}"},
             params=stats_params,
         )
-    odds_params = {
+    odds_api_params = {
         "regions": "us",
         "markets": "spreads",
         "bookmakers": "draftkings,fanduel,betmgm,williamhill_us,bovada",
         "oddsFormat": "american",
     }
+    odds_custody_params = {**odds_api_params, "season": season, "week": week}
     odds_endpoint = f"{ODDS_BASE_URL}/sports/americanfootball_ncaaf/odds"
     odds_payload = None
     normalized_odds = None
@@ -1012,7 +1013,7 @@ def capture_live_provider_bundle(
         odds_payload = _safe_get_json(
             client,
             odds_endpoint,
-            params={**odds_params, "apiKey": odds_key},
+            params={**odds_api_params, "apiKey": odds_key},
         )
         normalized_odds = _normalized_odds_records(
             odds_payload,
@@ -1052,7 +1053,7 @@ def capture_live_provider_bundle(
                 "provider": "the_odds_api",
                 "data_type": "odds",
                 "endpoint": odds_endpoint,
-                "request_parameters": odds_params,
+                "request_parameters": odds_custody_params,
                 "requested_at": now.isoformat(),
                 "parser_version": "odds_spread_v3",
                 "raw_payload_reference": str(odds_raw_path),
