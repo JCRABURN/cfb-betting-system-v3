@@ -178,6 +178,11 @@ class ContextEvidenceParser:
         affected_side = _text(record.get("affected_side"), "affected_side")
         if affected_side not in ("home", "away", "both", "neutral"):
             raise RecordRejected("malformed_record", "affected_side is invalid")
+        if context_class == "injury" and record.get("coverage_status") == "missing":
+            raise RecordRejected(
+                "malformed_record",
+                _text(record.get("coverage_reason"), "coverage_reason"),
+            )
         margin = _number(record.get("margin_adjustment", 0), "margin_adjustment")
         confidence_raw = record.get("confidence_adjustment", 0)
         if isinstance(confidence_raw, bool) or not isinstance(confidence_raw, int):
@@ -385,7 +390,10 @@ def record_card_context_status(
     for context_class in CONTEXT_CLASSES:
         current = conn.execute(
             "SELECT COUNT(*), COUNT(DISTINCT game_id), MAX(observed_at), "
-            "COUNT(DISTINCT source_mode) FROM provider_context_evidence "
+            "COUNT(DISTINCT source_mode), "
+            "COUNT(DISTINCT CASE WHEN affected_side IN ('home', 'away') "
+            "THEN CAST(game_id AS TEXT) || ':' || affected_side END) "
+            "FROM provider_context_evidence "
             f"WHERE game_id IN ({placeholders}) AND context_class = ? "
             "AND julianday(observed_at) <= julianday(?) "
             "AND julianday(expires_at) >= julianday(?)",
@@ -394,10 +402,17 @@ def record_card_context_status(
         current_count = int(current[0])
         current_games = int(current[1])
         latest_current = current[2]
+        current_game_sides = int(current[4])
         requires_full_coverage = context_class in AUTOMATED_CONTEXT_CLASSES
-        is_current = current_count > 0 and (
-            not requires_full_coverage or current_games == len(set(game_ids))
-        )
+        required_game_count = len(set(game_ids))
+        if context_class == "injury":
+            is_current = (
+                current_count > 0 and current_game_sides == required_game_count * 2
+            )
+        else:
+            is_current = current_count > 0 and (
+                not requires_full_coverage or current_games == required_game_count
+            )
         prior = conn.execute(
             "SELECT MAX(observed_at) FROM provider_context_evidence "
             f"WHERE game_id IN ({placeholders}) AND context_class = ? "
@@ -411,7 +426,11 @@ def record_card_context_status(
             evidence_count = current_count
             latest = str(latest_current)
         else:
-            state = "stale" if prior is not None else "missing"
+            state = (
+                "missing"
+                if context_class == "injury" and current_count > 0
+                else "stale" if prior is not None else "missing"
+            )
             fallback_code = (
                 "manual_context_not_asserted"
                 if context_class in MANUAL_CONTEXT_CLASSES and prior is None

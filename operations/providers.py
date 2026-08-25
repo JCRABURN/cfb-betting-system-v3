@@ -1046,6 +1046,14 @@ def _normalized_injury_records(
     week: int,
     requested_at: datetime,
 ) -> list[dict[str, object]]:
+    """Normalize only explicit ESPN team reports; aggregate omissions stay missing.
+
+    The aggregate endpoint does not enumerate teams with no reported injuries.  A
+    team therefore has negative coverage only when its own uniquely mapped group
+    is present with an explicit empty ``injuries``/``items`` collection.  Missing
+    contest-team groups become quarantinable coverage-gap records instead of
+    synthetic ``no_reported_injuries`` evidence.
+    """
     if not isinstance(payload, Mapping):
         raise ProductionProviderError("ESPN injuries payload must be an object")
     groups_value = payload.get("injuries", payload.get("items"))
@@ -1057,20 +1065,73 @@ def _normalized_injury_records(
         name = _team_name(group.get("team"))
         if name is None:
             raise ProductionProviderError("ESPN injury group lacks team identity")
-        injuries_value = group.get("injuries", group.get("items", []))
+        injuries_value = group.get("injuries", group.get("items"))
+        if injuries_value is None:
+            raise ProductionProviderError(
+                f"ESPN injury group for {name} lacks an explicit injuries collection"
+            )
         injuries = _payload_records(injuries_value, "ESPN team injuries")
         reports.append((name, group, injuries))
     endpoint_reference = ESPN_INJURIES_URL
+    games = [
+        game
+        for game in _game_rows(games_payload, season=season, week=week)
+        if requested_at < _utc(game["startDate"], "CFBD startDate")
+    ]
+    contest_teams = tuple(
+        dict.fromkeys(
+            str(team)
+            for game in games
+            for team in (game["homeTeam"], game["awayTeam"])
+        )
+    )
+    reports_by_team: dict[
+        str, list[tuple[str, Mapping[str, object], list[Mapping[str, object]]]]
+    ] = {team: [] for team in contest_teams}
+    for report in reports:
+        candidates = [team for team in contest_teams if _name_matches(report[0], team)]
+        if len(candidates) > 1:
+            raise ProductionProviderError(
+                f"ESPN injuries ambiguously map provider team {report[0]}"
+            )
+        if candidates:
+            reports_by_team[candidates[0]].append(report)
+    for team, team_reports in reports_by_team.items():
+        if len(team_reports) > 1:
+            raise ProductionProviderError(f"ESPN injuries ambiguously map team {team}")
+
     normalized: list[dict[str, object]] = []
-    for game in _game_rows(games_payload, season=season, week=week):
-        kickoff = _utc(game["startDate"], "CFBD startDate")
-        if requested_at >= kickoff:
-            continue
+    for game in games:
         for side, team in (("home", str(game["homeTeam"])), ("away", str(game["awayTeam"]))):
-            matching = [report for report in reports if _name_matches(report[0], team)]
-            if len(matching) > 1:
-                raise ProductionProviderError(f"ESPN injuries ambiguously map team {team}")
-            injuries = matching[0][2] if matching else []
+            matching = reports_by_team[team]
+            if not matching:
+                normalized.append(
+                    {
+                        "record_id": f"{game['id']}:{side}:missing-team-report",
+                        "context_class": "injury",
+                        "source_mode": "automated",
+                        "coverage_status": "missing",
+                        "coverage_reason": (
+                            "ESPN aggregate injuries response omitted this contest team; "
+                            "absence is not evidence of no reported injuries."
+                        ),
+                        "game_id": game["id"],
+                        "season": season,
+                        "week": week,
+                        "home_team": game["homeTeam"],
+                        "away_team": game["awayTeam"],
+                        "affected_side": side,
+                        "subject": team,
+                        "source_name": "ESPN College Football injuries",
+                        "source_reference": endpoint_reference,
+                        "observed_at": requested_at.isoformat(),
+                        "margin_adjustment": 0,
+                        "confidence_adjustment": 0,
+                        "author": "automated-espn-injury-capture",
+                    }
+                )
+                continue
+            injuries = matching[0][2]
             if not injuries:
                 normalized.append(
                     {
@@ -1086,7 +1147,8 @@ def _normalized_injury_records(
                         "subject": team,
                         "report_status": "no_reported_injuries",
                         "evidence_summary": (
-                            "ESPN returned no listed injuries for this team at capture time."
+                            "ESPN returned an explicit team report with an empty injury "
+                            "list at capture time."
                         ),
                         "source_name": "ESPN College Football injuries",
                         "source_reference": endpoint_reference,
