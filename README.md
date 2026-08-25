@@ -222,6 +222,15 @@ quarantined with stable reason codes. Every typed adapter records an immutable
 provider-neutral acceptance, and only strictly validated, canonically mapped
 spread records enter immutable `provider_market_snapshots`.
 
+Production card stages also normalize live ESPN injury reports, Open-Meteo
+kickoff forecasts, and CFBD schedule/venue evidence into immutable
+`provider_context_evidence`. Coaching and motivation never masquerade as an
+automated feed: a numeric change requires an owner-sourced manual exception
+with an observation timestamp, source, reference, author, and provenance.
+Every official card freezes all five context-class states in
+`card_context_status`; the public dashboard displays CURRENT, STALE, or MISSING
+and whether the source mode was automated or manual-exception.
+
 Freshness policy `provider_freshness_v1` defines explicit windows for odds,
 injuries, weather, game status, and contextual data. Its as-of inspection API
 returns current, partial, stale, or missing without reading a future run. A

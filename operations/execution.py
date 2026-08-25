@@ -43,6 +43,10 @@ from operations.config import (
     EXPECTED_REPOSITORY,
     ProductionSettings,
 )
+from operations.context import (
+    contextual_adjustments_from_evidence,
+    record_card_context_status,
+)
 from operations.policies import load_registered_policy_set
 from operations.preflight import ProductionPreflightReport, run_production_preflight
 from operations.providers import ingest_provider_bundle, load_provider_bundle
@@ -50,7 +54,7 @@ from operations.weekly_config import WeeklyOperationConfiguration
 from operations.writer_lock import ProductionWriterLock
 
 
-EXECUTION_ADAPTER_VERSION = "v3-production-execution-adapter-v6"
+EXECUTION_ADAPTER_VERSION = "v3-production-execution-adapter-v7"
 
 
 class ProductionExecutionError(RuntimeError):
@@ -364,6 +368,35 @@ def _operation(
         else None
     )
     ingestion_ids: list[int] = list(pre_ingestion_ids)
+    provider_refreshed = False
+    manual_context_in_custody = bool(
+        bundle
+        and any(spec.provider == "owner_context_manifest" for spec in bundle.payloads)
+    )
+
+    def validate_declared_manual_context(summaries) -> None:
+        if bundle is None:
+            return
+        for spec, summary in zip(bundle.payloads, summaries, strict=True):
+            if (
+                spec.provider == "owner_context_manifest"
+                and summary.status != "completed"
+            ):
+                raise ProductionExecutionError(
+                    "declared manual context failed custody and cannot be silently omitted"
+                )
+
+    if bundle is not None and settings.operation in (
+        "tuesday_lock",
+        "wednesday_refresh",
+        "thursday_refresh",
+        "friday_refresh",
+        "saturday_final",
+    ):
+        summaries = ingest_provider_bundle(conn, bundle)
+        validate_declared_manual_context(summaries)
+        ingestion_ids.extend(summary.ingestion_run_id for summary in summaries)
+        provider_refreshed = True
 
     def refresh_provider_data(
         target: sqlite3.Connection,
@@ -372,15 +405,34 @@ def _operation(
         week: int,
         as_of: datetime,
     ) -> None:
+        nonlocal provider_refreshed
+        if provider_refreshed:
+            return
         if bundle is None:
             return
         if (season, week) != (bundle.season, bundle.week):
             raise ProductionExecutionError("provider bundle week conflicts with controller")
         summaries = ingest_provider_bundle(target, bundle)
+        validate_declared_manual_context(summaries)
         ingestion_ids.extend(summary.ingestion_run_id for summary in summaries)
+        provider_refreshed = True
 
     fallbacks = _fallbacks(configuration.freshness_fallbacks)
-    adjustments = _adjustments(configuration.contextual_adjustments)
+    direct_adjustments = tuple(
+        item
+        for item in configuration.contextual_adjustments
+        if not manual_context_in_custody
+        or item.get("category") not in ("coaching", "motivation")
+    )
+    adjustments = (
+        _adjustments(direct_adjustments)
+        + contextual_adjustments_from_evidence(
+            conn,
+            season=configuration.season,
+            week=configuration.week,
+            as_of=generated_at,
+        )
+    )
     no_bets = _no_bets(configuration.sportsbook_recommendations)
 
     def live_board(
@@ -442,6 +494,13 @@ def _operation(
             ),
             data_refresh=refresh_provider_data,
         )
+        record_card_context_status(
+            conn,
+            card_id=result.card.card.id,
+            controller_run_id=result.run.id,
+            as_of=generated_at,
+            provenance=configuration.provenance,
+        )
         board, draftkings_board, draftkings_text = live_board(
             result.publication.contest_id
         )
@@ -488,6 +547,11 @@ def _operation(
             "friday_refresh": 4,
             "saturday_final": 5,
         }[settings.operation]
+        effective_change_type = (
+            "contextual_adjustment"
+            if adjustments
+            else configuration.daily_change_type
+        )
         result = run_daily_controller(
             conn,
             DailyRefreshRequest(
@@ -496,11 +560,11 @@ def _operation(
                 prior_publication_id=_prior_publication_id(conn, settings),
                 model_run_key=(
                     None
-                    if configuration.daily_change_type == "contextual_adjustment"
+                    if effective_change_type == "contextual_adjustment"
                     else f"{settings.idempotency_key}:epa-only"
                 ),
                 code_commit_sha=code_commit_sha,
-                change_type=configuration.daily_change_type,
+                change_type=effective_change_type,
                 reason=configuration.daily_reason,
                 refresh_policy=policies.refresh,
                 controller_policy=policies.controller,
@@ -512,6 +576,13 @@ def _operation(
                 provenance=configuration.provenance,
             ),
             data_refresh=refresh_provider_data,
+        )
+        record_card_context_status(
+            conn,
+            card_id=result.card.card.id,
+            controller_run_id=result.run.id,
+            as_of=generated_at,
+            provenance=configuration.provenance,
         )
         board, draftkings_board, draftkings_text = live_board(
             result.publication.contest_id

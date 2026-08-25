@@ -106,6 +106,14 @@ missing custody cannot publish without a matching fallback code, reason,
 evidence, and provenance. The decision is copied into immutable
 `card_source_freshness` rows for that card version.
 
+The production adapter ingests the live context bundle before the controller
+evaluates freshness or generates the card. Injury, weather, and travel/rest
+observations enter provider custody automatically. Current owner-sourced
+coaching or motivation exceptions are materialized into the existing
+append-only manual-adjustment ledger before selection, Confidence, and Top 5
+are recomputed. Raw EPA predictions remain separate and immutable. Each card
+also receives immutable per-class context status for the public dashboard.
+
 Milestone 15 rejects official selection policies with legacy market-book
 fallbacks because `betting_lines` does not yet carry a direct acceptance ID
 back to Milestone 14 custody. The official hierarchy therefore continues from

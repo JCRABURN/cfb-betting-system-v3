@@ -32,6 +32,27 @@ The append-only migration-v13 records are:
 All six tables reject updates and deletes at the database boundary. Market
 snapshots also require an accepted run and an exact canonical `games` mapping.
 
+Migration 17 adds two more append-only controls for production context:
+
+- `provider_context_evidence` links every normalized injury, weather,
+  travel/rest, coaching, or motivation record to its accepted provider row,
+  canonical game, PIT observation, expiry, source, reference, and parser;
+- `card_context_status` freezes CURRENT, STALE, or MISSING for each of those
+  five classes on every official card version.
+
+Tuesday-through-Saturday card stages capture ESPN injury reports, Open-Meteo
+hourly kickoff forecasts, and CFBD season schedule plus venue coordinates.
+CFBD schedule history yields explicit rest days and, when both venue
+coordinates exist, venue-to-venue travel distance. Automated observations are
+not allowed to invent numeric margin or Confidence adjustments.
+
+Coaching and motivation use `manual_exception`, never `automated`. A declared
+item must supply a non-zero adjustment plus observed-at, source, evidence
+reference, author, and reason. If it fails custody, the operation blocks rather
+than dropping it. When no sourced item is asserted, the dashboard records
+MISSING with `manual_context_not_asserted` instead of claiming fresh automated
+coverage.
+
 ## Quarantine behavior
 
 Unknown or ambiguous teams, malformed spreads, duplicates, invalid timestamps,
@@ -97,6 +118,11 @@ SQLite integrity and foreign keys, and run the code version whose migration
 ledger ends at version 12. Do not delete migration-ledger rows or drop custody
 objects manually in place. Reverting the code commit alone is sufficient only
 when migration 13 has never been applied to the target database.
+
+Migration 17 likewise creates only new, initially empty tables, indexes, and
+triggers. Recovery after it has been applied is by restoring the verified
+pre-migration snapshot and the code version whose domain ledger ends at 16;
+never delete migration rows or drop the context tables in place.
 
 ## Model and production state
 

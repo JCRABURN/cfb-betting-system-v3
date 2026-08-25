@@ -204,6 +204,56 @@ def _freshness(
     return safe, "CURRENT"
 
 
+def _context_status(
+    conn: sqlite3.Connection, card_id: int
+) -> list[dict[str, object]]:
+    rows = _row_dicts(
+        conn.execute(
+            "SELECT context_class, state, source_mode, evidence_count, "
+            "latest_observed_at, fallback_code, fallback_reason "
+            "FROM card_context_status WHERE card_id = ? "
+            "ORDER BY CASE context_class WHEN 'injury' THEN 1 WHEN 'weather' THEN 2 "
+            "WHEN 'travel_rest' THEN 3 WHEN 'coaching' THEN 4 ELSE 5 END",
+            (card_id,),
+        )
+    )
+    if not rows:
+        return [
+            {
+                "context_class": context_class,
+                "state": "MISSING",
+                "source_mode": (
+                    "manual_exception"
+                    if context_class in ("coaching", "motivation")
+                    else "automated"
+                ),
+                "record_count": 0,
+                "latest_observed_at": None,
+                "fallback_code": "context_status_not_captured",
+                "fallback_reason": "This card predates governed context-status capture.",
+            }
+            for context_class in (
+                "injury",
+                "weather",
+                "travel_rest",
+                "coaching",
+                "motivation",
+            )
+        ]
+    return [
+        {
+            "context_class": row["context_class"],
+            "state": str(row["state"]).upper(),
+            "source_mode": row["source_mode"],
+            "record_count": row["evidence_count"],
+            "latest_observed_at": row["latest_observed_at"],
+            "fallback_code": row["fallback_code"],
+            "fallback_reason": row["fallback_reason"],
+        }
+        for row in rows
+    ]
+
+
 def _card_games(
     conn: sqlite3.Connection, publication: Mapping[str, object]
 ) -> tuple[list[dict[str, object]], list[dict[str, object]]]:
@@ -782,6 +832,27 @@ def validate_public_dashboard_payload(payload: Mapping[str, object]) -> None:
     """Fail closed unless the public contract is complete and provider-specific."""
     if payload.get("schema_version") != PUBLIC_DASHBOARD_SCHEMA_VERSION:
         raise PublicDashboardError("public dashboard schema version is invalid")
+    status = payload.get("status")
+    context = status.get("context") if isinstance(status, Mapping) else None
+    expected_context = {"injury", "weather", "travel_rest", "coaching", "motivation"}
+    if (
+        not isinstance(context, list)
+        or len(context) != len(expected_context)
+        or {
+            row.get("context_class")
+            for row in context
+            if isinstance(row, Mapping)
+        }
+        != expected_context
+        or any(
+            not isinstance(row, Mapping)
+            or row.get("state") not in ("CURRENT", "STALE", "MISSING")
+            or row.get("source_mode")
+            not in ("automated", "manual_exception", "mixed")
+            for row in context
+        )
+    ):
+        raise PublicDashboardError("governed context status is incomplete")
     card = payload.get("splashsports_card")
     if not isinstance(card, Mapping) or card.get("source") != "SplashSports":
         raise PublicDashboardError("SplashSports card identity is invalid")
@@ -882,7 +953,14 @@ def build_public_dashboard_payload(
         conn, publication=publication, context=context
     )
     freshness_rows, freshness_state = _freshness(conn, int(publication["card_id"]))
+    context_rows = _context_status(conn, int(publication["card_id"]))
     if any(row["freshness"] in ("STALE", "UNAVAILABLE") for row in draftkings):
+        freshness_state = "STALE" if freshness_state == "CURRENT" else freshness_state
+    if any(
+        row["state"] in ("STALE", "MISSING")
+        and row["fallback_code"] != "manual_context_not_asserted"
+        for row in context_rows
+    ):
         freshness_state = "STALE" if freshness_state == "CURRENT" else freshness_state
     warning = None
     if freshness_state != "CURRENT":
@@ -928,6 +1006,7 @@ def build_public_dashboard_payload(
             "system_status": system_status,
             "warning": warning,
             "sources": freshness_rows,
+            "context": context_rows,
         },
         "splashsports_card": {
             "source": "SplashSports",

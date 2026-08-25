@@ -110,6 +110,25 @@ def test_complete_splashsports_card_confidence_and_exact_top_five(dashboard_payl
     assert [game["top_five_rank"] for game in dashboard_payload["top_five"]] == [1, 2, 3, 4, 5]
 
 
+def test_context_classes_are_explicit_and_manual_sources_cannot_masquerade(dashboard_payload):
+    context = {
+        row["context_class"]: row for row in dashboard_payload["status"]["context"]
+    }
+    assert set(context) == {
+        "injury",
+        "weather",
+        "travel_rest",
+        "coaching",
+        "motivation",
+    }
+    assert context["injury"]["source_mode"] == "automated"
+    assert context["weather"]["source_mode"] == "automated"
+    assert context["travel_rest"]["source_mode"] == "automated"
+    assert context["coaching"]["source_mode"] == "manual_exception"
+    assert context["motivation"]["source_mode"] == "manual_exception"
+    assert all(row["state"] in ("CURRENT", "STALE", "MISSING") for row in context.values())
+
+
 def test_draftkings_bet_no_bet_unavailable_and_stale_are_explicit(dashboard_payload):
     board = dashboard_payload["draftkings_board"]
     assert board["bookmaker"] == "DraftKings"

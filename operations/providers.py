@@ -29,12 +29,21 @@ from ingestion import (
 from ingestion.custody import ParsedMarketRecord, RecordRejected
 
 from operations.config import EXPECTED_REPOSITORY
+from operations.context import (
+    CONTEXT_EVIDENCE_PARSER_VERSION,
+    ContextEvidenceParser,
+    write_context_evidence,
+)
 
 
 PROVIDER_BUNDLE_VERSION = "v3-provider-bundle-v1"
 CONNECTIVITY_REPORT_VERSION = "v3-provider-connectivity-v1"
 CFBD_BASE_URL = "https://api.collegefootballdata.com"
 ODDS_BASE_URL = "https://api.the-odds-api.com/v4"
+ESPN_INJURIES_URL = (
+    "https://site.api.espn.com/apis/site/v2/sports/football/college-football/injuries"
+)
+OPEN_METEO_FORECAST_URL = "https://api.open-meteo.com/v1/forecast"
 
 
 class ProductionProviderError(RuntimeError):
@@ -383,6 +392,8 @@ def _parser(version: str):
         return CfbdGamesParser()
     if version == ProviderSnapshotParser.version:
         return ProviderSnapshotParser()
+    if version == CONTEXT_EVIDENCE_PARSER_VERSION:
+        return ContextEvidenceParser()
     raise ProductionProviderError(f"unsupported parser version: {version}")
 
 
@@ -745,6 +756,8 @@ def ingest_provider_bundle(
             if spec.line_type is None:
                 raise ProductionProviderError("odds payload requires an explicit line_type")
             writer = _odds_writer(spec.line_type)
+        elif spec.parser_version == CONTEXT_EVIDENCE_PARSER_VERSION:
+            writer = write_context_evidence
         summary = service.ingest_payload(
             conn,
             IngestionRequest(
@@ -986,6 +999,347 @@ def _normalized_odds_records(
     return records
 
 
+def _payload_records(payload: object, field: str) -> list[Mapping[str, object]]:
+    if not isinstance(payload, list) or any(not isinstance(item, Mapping) for item in payload):
+        raise ProductionProviderError(f"{field} must be an array of objects")
+    return list(payload)
+
+
+def _game_rows(payload: object, *, season: int, week: int | None = None) -> list[Mapping[str, object]]:
+    records = _payload_records(payload, "CFBD games payload")
+    selected: list[Mapping[str, object]] = []
+    for record in records:
+        if record.get("season") != season:
+            continue
+        if week is not None and record.get("week") != week:
+            continue
+        if not isinstance(record.get("id"), int):
+            raise ProductionProviderError("CFBD game id must be an integer")
+        _text(record.get("homeTeam"), "CFBD homeTeam")
+        _text(record.get("awayTeam"), "CFBD awayTeam")
+        _utc(record.get("startDate"), "CFBD startDate")
+        selected.append(record)
+    return selected
+
+
+def _team_name(value: object) -> str | None:
+    if not isinstance(value, Mapping):
+        return None
+    for field in ("displayName", "location", "name", "shortDisplayName"):
+        candidate = value.get(field)
+        if isinstance(candidate, str) and candidate.strip():
+            return candidate.strip()
+    return None
+
+
+def _name_matches(provider_name: str, canonical_name: str) -> bool:
+    provider = " ".join(provider_name.casefold().replace("’", "'").split())
+    canonical = " ".join(canonical_name.casefold().replace("’", "'").split())
+    return provider == canonical or provider.startswith(canonical + " ")
+
+
+def _normalized_injury_records(
+    payload: object,
+    *,
+    games_payload: object,
+    season: int,
+    week: int,
+    requested_at: datetime,
+) -> list[dict[str, object]]:
+    if not isinstance(payload, Mapping):
+        raise ProductionProviderError("ESPN injuries payload must be an object")
+    groups_value = payload.get("injuries", payload.get("items"))
+    if groups_value is None:
+        raise ProductionProviderError("ESPN injuries payload lacks an injuries collection")
+    groups = _payload_records(groups_value, "ESPN injuries collection")
+    reports: list[tuple[str, Mapping[str, object], list[Mapping[str, object]]]] = []
+    for group in groups:
+        name = _team_name(group.get("team"))
+        if name is None:
+            raise ProductionProviderError("ESPN injury group lacks team identity")
+        injuries_value = group.get("injuries", group.get("items", []))
+        injuries = _payload_records(injuries_value, "ESPN team injuries")
+        reports.append((name, group, injuries))
+    endpoint_reference = ESPN_INJURIES_URL
+    normalized: list[dict[str, object]] = []
+    for game in _game_rows(games_payload, season=season, week=week):
+        kickoff = _utc(game["startDate"], "CFBD startDate")
+        if requested_at >= kickoff:
+            continue
+        for side, team in (("home", str(game["homeTeam"])), ("away", str(game["awayTeam"]))):
+            matching = [report for report in reports if _name_matches(report[0], team)]
+            if len(matching) > 1:
+                raise ProductionProviderError(f"ESPN injuries ambiguously map team {team}")
+            injuries = matching[0][2] if matching else []
+            if not injuries:
+                normalized.append(
+                    {
+                        "record_id": f"{game['id']}:{side}:no-reported-injuries",
+                        "context_class": "injury",
+                        "source_mode": "automated",
+                        "game_id": game["id"],
+                        "season": season,
+                        "week": week,
+                        "home_team": game["homeTeam"],
+                        "away_team": game["awayTeam"],
+                        "affected_side": side,
+                        "subject": team,
+                        "report_status": "no_reported_injuries",
+                        "evidence_summary": (
+                            "ESPN returned no listed injuries for this team at capture time."
+                        ),
+                        "source_name": "ESPN College Football injuries",
+                        "source_reference": endpoint_reference,
+                        "observed_at": requested_at.isoformat(),
+                        "margin_adjustment": 0,
+                        "confidence_adjustment": 0,
+                        "author": "automated-espn-injury-capture",
+                    }
+                )
+                continue
+            for injury_index, injury in enumerate(injuries):
+                athlete = injury.get("athlete")
+                subject = _team_name(athlete) or _team_name(injury) or f"{team} player"
+                status_value = injury.get("status")
+                if isinstance(status_value, Mapping):
+                    status = _team_name(status_value) or str(status_value.get("type", "")).strip()
+                else:
+                    status = str(status_value or injury.get("type") or "reported").strip()
+                detail = str(
+                    injury.get("shortComment")
+                    or injury.get("details")
+                    or injury.get("description")
+                    or status
+                ).strip()
+                normalized.append(
+                    {
+                        "record_id": f"{game['id']}:{side}:{injury.get('id', injury_index)}",
+                        "context_class": "injury",
+                        "source_mode": "automated",
+                        "game_id": game["id"],
+                        "season": season,
+                        "week": week,
+                        "home_team": game["homeTeam"],
+                        "away_team": game["awayTeam"],
+                        "affected_side": side,
+                        "subject": subject,
+                        "report_status": status,
+                        "evidence_summary": detail,
+                        "source_name": "ESPN College Football injuries",
+                        "source_reference": endpoint_reference,
+                        "observed_at": requested_at.isoformat(),
+                        "margin_adjustment": 0,
+                        "confidence_adjustment": 0,
+                        "author": "automated-espn-injury-capture",
+                    }
+                )
+    return normalized
+
+
+def _venue_coordinates(payload: object) -> dict[int, tuple[float, float, str]]:
+    venues = _payload_records(payload, "CFBD venues payload")
+    result: dict[int, tuple[float, float, str]] = {}
+    for venue in venues:
+        venue_id = venue.get("id")
+        location = venue.get("location")
+        latitude = venue.get("latitude")
+        longitude = venue.get("longitude")
+        if isinstance(location, Mapping):
+            latitude = location.get("latitude", latitude)
+            longitude = location.get("longitude", longitude)
+        if (
+            isinstance(venue_id, int)
+            and not isinstance(latitude, bool)
+            and isinstance(latitude, (int, float))
+            and not isinstance(longitude, bool)
+            and isinstance(longitude, (int, float))
+        ):
+            result[venue_id] = (
+                float(latitude),
+                float(longitude),
+                str(venue.get("name") or venue_id),
+            )
+    return result
+
+
+def _forecast_observation(
+    payload: object,
+    *,
+    kickoff: datetime,
+) -> tuple[str, float, float, float, object]:
+    if not isinstance(payload, Mapping) or not isinstance(payload.get("hourly"), Mapping):
+        raise ProductionProviderError("Open-Meteo payload lacks hourly forecast data")
+    hourly = payload["hourly"]
+    fields = (
+        "time",
+        "temperature_2m",
+        "wind_speed_10m",
+        "precipitation_probability",
+        "weather_code",
+    )
+    values = [hourly.get(field) for field in fields]
+    if any(not isinstance(value, list) for value in values):
+        raise ProductionProviderError("Open-Meteo hourly arrays are incomplete")
+    assert all(isinstance(value, list) for value in values)
+    if len({len(value) for value in values}) != 1:
+        raise ProductionProviderError("Open-Meteo hourly arrays have conflicting lengths")
+    candidates: list[tuple[float, int, datetime]] = []
+    for index, raw in enumerate(values[0]):
+        if not isinstance(raw, str):
+            continue
+        parsed = datetime.fromisoformat(raw)
+        parsed = parsed.replace(tzinfo=timezone.utc) if parsed.tzinfo is None else parsed
+        parsed = parsed.astimezone(timezone.utc)
+        candidates.append((abs((parsed - kickoff).total_seconds()), index, parsed))
+    if not candidates:
+        raise ProductionProviderError("Open-Meteo returned no parseable UTC forecast hours")
+    distance, index, forecast_for = min(candidates)
+    if distance > 3600:
+        raise ProductionProviderError("Open-Meteo lacks a forecast hour near kickoff")
+    try:
+        temperature = float(values[1][index])
+        wind = float(values[2][index])
+        precipitation = float(values[3][index])
+    except (TypeError, ValueError) as exc:
+        raise ProductionProviderError("Open-Meteo forecast values are not numeric") from exc
+    if not all(math.isfinite(value) for value in (temperature, wind, precipitation)):
+        raise ProductionProviderError("Open-Meteo forecast values must be finite")
+    return forecast_for.isoformat(), temperature, wind, precipitation, values[4][index]
+
+
+def _haversine_miles(
+    origin: tuple[float, float, str], destination: tuple[float, float, str]
+) -> float:
+    lat1, lon1 = math.radians(origin[0]), math.radians(origin[1])
+    lat2, lon2 = math.radians(destination[0]), math.radians(destination[1])
+    delta_lat = lat2 - lat1
+    delta_lon = lon2 - lon1
+    haversine = (
+        math.sin(delta_lat / 2) ** 2
+        + math.cos(lat1) * math.cos(lat2) * math.sin(delta_lon / 2) ** 2
+    )
+    return 3958.8 * 2 * math.asin(math.sqrt(haversine))
+
+
+def _normalized_travel_rest_records(
+    *,
+    current_games_payload: object,
+    season_games_payload: object,
+    venues_payload: object,
+    season: int,
+    week: int,
+    requested_at: datetime,
+) -> list[dict[str, object]]:
+    current = _game_rows(current_games_payload, season=season, week=week)
+    season_games = _game_rows(season_games_payload, season=season)
+    venues = _venue_coordinates(venues_payload)
+    normalized: list[dict[str, object]] = []
+    for game in current:
+        kickoff = _utc(game["startDate"], "CFBD startDate")
+        if requested_at >= kickoff:
+            continue
+        destination = venues.get(game.get("venueId"))
+        for side, team in (("home", str(game["homeTeam"])), ("away", str(game["awayTeam"]))):
+            previous = [
+                candidate
+                for candidate in season_games
+                if candidate.get("id") != game.get("id")
+                and team in (candidate.get("homeTeam"), candidate.get("awayTeam"))
+                and _utc(candidate["startDate"], "CFBD startDate") < kickoff
+            ]
+            previous.sort(key=lambda candidate: _utc(candidate["startDate"], "CFBD startDate"))
+            prior = previous[-1] if previous else None
+            if prior is None:
+                rest_days = None
+                travel_miles = None
+                schedule_state = "season_opener"
+                summary = "No earlier game exists in the captured season schedule."
+            else:
+                prior_start = _utc(prior["startDate"], "CFBD startDate")
+                rest_days = int((kickoff - prior_start).total_seconds() // 86400)
+                origin = venues.get(prior.get("venueId"))
+                travel_miles = (
+                    None
+                    if origin is None or destination is None
+                    else round(_haversine_miles(origin, destination), 1)
+                )
+                schedule_state = "computed"
+                summary = (
+                    f"{rest_days} days since prior scheduled game; "
+                    + (
+                        "travel distance unavailable from venue coordinates."
+                        if travel_miles is None
+                        else f"approximately {travel_miles:.1f} venue-to-venue miles."
+                    )
+                )
+            normalized.append(
+                {
+                    "record_id": f"{game['id']}:{side}:travel-rest",
+                    "context_class": "travel_rest",
+                    "source_mode": "automated",
+                    "game_id": game["id"],
+                    "season": season,
+                    "week": week,
+                    "home_team": game["homeTeam"],
+                    "away_team": game["awayTeam"],
+                    "affected_side": side,
+                    "subject": team,
+                    "schedule_state": schedule_state,
+                    "rest_days": rest_days,
+                    "travel_miles": travel_miles,
+                    "evidence_summary": summary,
+                    "source_name": "CollegeFootballData games",
+                    "source_reference": f"{CFBD_BASE_URL}/games",
+                    "observed_at": requested_at.isoformat(),
+                    "margin_adjustment": 0,
+                    "confidence_adjustment": 0,
+                    "author": "automated-cfbd-schedule-context",
+                }
+            )
+    return normalized
+
+
+def _normalized_manual_context_records(
+    adjustments: Sequence[Mapping[str, object]],
+    *,
+    games_payload: object,
+    season: int,
+    week: int,
+) -> list[dict[str, object]]:
+    games = {int(game["id"]): game for game in _game_rows(games_payload, season=season, week=week)}
+    normalized: list[dict[str, object]] = []
+    for adjustment in adjustments:
+        category = adjustment.get("category")
+        if category not in ("coaching", "motivation"):
+            continue
+        game_id = adjustment.get("game_id")
+        if not isinstance(game_id, int) or game_id not in games:
+            raise ProductionProviderError("manual context targets a game outside the captured week")
+        game = games[game_id]
+        normalized.append(
+            {
+                "record_id": _text(adjustment.get("adjustment_key"), "adjustment_key"),
+                "context_class": category,
+                "source_mode": "manual_exception",
+                "game_id": game_id,
+                "season": season,
+                "week": week,
+                "home_team": game["homeTeam"],
+                "away_team": game["awayTeam"],
+                "affected_side": adjustment.get("affected_side"),
+                "subject": adjustment.get("subject", category),
+                "evidence_summary": adjustment.get("reason"),
+                "source_name": adjustment.get("source"),
+                "source_reference": adjustment.get("evidence"),
+                "observed_at": adjustment.get("observed_at"),
+                "margin_adjustment": adjustment.get("margin_adjustment"),
+                "confidence_adjustment": adjustment.get("confidence_adjustment"),
+                "author": adjustment.get("author"),
+            }
+        )
+    return normalized
+
+
 def capture_live_provider_bundle(
     environment: Mapping[str, str],
     *,
@@ -995,13 +1349,15 @@ def capture_live_provider_bundle(
     week: int,
     line_type: str,
     capture_scope: str = "pregame",
+    capture_context: bool = False,
+    manual_context_adjustments: Sequence[Mapping[str, object]] = (),
     authorized: bool,
     captured_at: datetime | None = None,
     session: _Session | None = None,
     odds_api_minimum_remaining_credits: int | None = None,
     odds_api_estimated_call_cost: int = 1,
 ) -> Path:
-    """Capture replayable CFBD/Odds evidence; never ingest or publish it."""
+    """Capture replayable governed provider evidence; never ingest or publish it."""
     if not authorized:
         raise ProductionProviderError("live provider capture requires authorization")
     if line_type not in ("opening", "current", "closing"):
@@ -1063,6 +1419,141 @@ def capture_live_provider_bundle(
         headers={"Authorization": f"Bearer {cfbd_key}"},
         params=games_params,
     )
+    season_games_payload = None
+    venues_payload = None
+    injuries_payload = None
+    normalized_injuries = None
+    normalized_weather: list[dict[str, object]] | None = None
+    normalized_travel_rest = None
+    normalized_manual_context = None
+    weather_raw_payloads: list[dict[str, object]] = []
+    if capture_scope == "pregame" and capture_context:
+        season_games_params = {"year": season, "classification": "fbs"}
+        season_games_payload = _safe_get_json(
+            client,
+            f"{CFBD_BASE_URL}/games",
+            headers={"Authorization": f"Bearer {cfbd_key}"},
+            params=season_games_params,
+        )
+        venues_payload = _safe_get_json(
+            client,
+            f"{CFBD_BASE_URL}/venues",
+            headers={"Authorization": f"Bearer {cfbd_key}"},
+            params={},
+        )
+        injuries_payload = _safe_get_json(client, ESPN_INJURIES_URL)
+        normalized_injuries = _normalized_injury_records(
+            injuries_payload,
+            games_payload=games_payload,
+            season=season,
+            week=week,
+            requested_at=now,
+        )
+        venues = _venue_coordinates(venues_payload)
+        normalized_weather = []
+        for game in _game_rows(games_payload, season=season, week=week):
+            kickoff = _utc(game["startDate"], "CFBD startDate")
+            if now >= kickoff:
+                continue
+            coordinate = venues.get(game.get("venueId"))
+            if coordinate is None:
+                normalized_weather.append(
+                    {
+                        "record_id": f"{game['id']}:weather:missing-venue",
+                        "context_class": "weather",
+                        "source_mode": "automated",
+                        "game_id": game["id"],
+                        "season": season,
+                        "week": week,
+                        "home_team": game["homeTeam"],
+                        "away_team": game["awayTeam"],
+                        "affected_side": "both",
+                        "subject": str(game.get("venue") or "unknown venue"),
+                        "forecast_for": kickoff.isoformat(),
+                        "temperature_f": None,
+                        "wind_mph": None,
+                        "precipitation_probability": None,
+                        "weather_code": None,
+                        "evidence_summary": "Venue coordinates are missing; weather is quarantined.",
+                        "source_name": "Open-Meteo",
+                        "source_reference": OPEN_METEO_FORECAST_URL,
+                        "observed_at": now.isoformat(),
+                        "margin_adjustment": 0,
+                        "confidence_adjustment": 0,
+                        "author": "automated-open-meteo-capture",
+                    }
+                )
+                continue
+            weather_params = {
+                "latitude": coordinate[0],
+                "longitude": coordinate[1],
+                "hourly": (
+                    "temperature_2m,wind_speed_10m,precipitation_probability,weather_code"
+                ),
+                "temperature_unit": "fahrenheit",
+                "wind_speed_unit": "mph",
+                "timezone": "UTC",
+                "forecast_days": 16,
+            }
+            weather_payload = _safe_get_json(
+                client,
+                OPEN_METEO_FORECAST_URL,
+                params=weather_params,
+            )
+            weather_raw_payloads.append(
+                {
+                    "game_id": game["id"],
+                    "venue_id": game.get("venueId"),
+                    "request_parameters": weather_params,
+                    "payload": weather_payload,
+                }
+            )
+            forecast_for, temperature, wind, precipitation, weather_code = (
+                _forecast_observation(weather_payload, kickoff=kickoff)
+            )
+            normalized_weather.append(
+                {
+                    "record_id": f"{game['id']}:weather:{forecast_for}",
+                    "context_class": "weather",
+                    "source_mode": "automated",
+                    "game_id": game["id"],
+                    "season": season,
+                    "week": week,
+                    "home_team": game["homeTeam"],
+                    "away_team": game["awayTeam"],
+                    "affected_side": "both",
+                    "subject": coordinate[2],
+                    "forecast_for": forecast_for,
+                    "temperature_f": temperature,
+                    "wind_mph": wind,
+                    "precipitation_probability": precipitation,
+                    "weather_code": weather_code,
+                    "evidence_summary": (
+                        f"Kickoff forecast: {temperature:.1f} F, {wind:.1f} mph wind, "
+                        f"{precipitation:.0f}% precipitation probability."
+                    ),
+                    "source_name": "Open-Meteo",
+                    "source_reference": OPEN_METEO_FORECAST_URL,
+                    "observed_at": now.isoformat(),
+                    "margin_adjustment": 0,
+                    "confidence_adjustment": 0,
+                    "author": "automated-open-meteo-capture",
+                }
+            )
+        normalized_travel_rest = _normalized_travel_rest_records(
+            current_games_payload=games_payload,
+            season_games_payload=season_games_payload,
+            venues_payload=venues_payload,
+            season=season,
+            week=week,
+            requested_at=now,
+        )
+        normalized_manual_context = _normalized_manual_context_records(
+            manual_context_adjustments,
+            games_payload=games_payload,
+            season=season,
+            week=week,
+        )
     stats_payload = None
     stats_params = None
     stats_endpoint = f"{CFBD_BASE_URL}/stats/season/advanced"
@@ -1175,6 +1666,94 @@ def capture_live_provider_bundle(
                 "payload_sha256": stats_sha,
             }
         )
+    if (
+        season_games_payload is not None
+        and venues_payload is not None
+        and injuries_payload is not None
+        and normalized_injuries is not None
+        and normalized_weather is not None
+        and normalized_travel_rest is not None
+        and normalized_manual_context is not None
+    ):
+        context_raw = (
+            ("cfbd-season-games.raw.json", season_games_payload),
+            ("cfbd-venues.raw.json", venues_payload),
+            ("espn-injuries.raw.json", injuries_payload),
+            ("open-meteo.raw.json", weather_raw_payloads),
+        )
+        for name, raw_payload in context_raw:
+            path = output / name
+            digest = _write_canonical_json(path, raw_payload)
+            raw_evidence.append({"path": path.name, "sha256": digest})
+        context_specs = (
+            (
+                "espn",
+                "injuries",
+                ESPN_INJURIES_URL,
+                {"season": season, "week": week},
+                "espn-injuries.raw.json",
+                "injuries.normalized.json",
+                normalized_injuries,
+            ),
+            (
+                "open_meteo",
+                "weather",
+                OPEN_METEO_FORECAST_URL,
+                {"season": season, "week": week, "timezone": "UTC"},
+                "open-meteo.raw.json",
+                "weather.normalized.json",
+                normalized_weather,
+            ),
+            (
+                "collegefootballdata",
+                "contextual",
+                f"{CFBD_BASE_URL}/games",
+                {"year": season, "week": week, "classification": "fbs"},
+                "cfbd-season-games.raw.json",
+                "travel-rest.normalized.json",
+                normalized_travel_rest,
+            ),
+        )
+        for (
+            provider,
+            data_type,
+            endpoint,
+            parameters,
+            raw_name,
+            normalized_name,
+            records,
+        ) in context_specs:
+            path = output / normalized_name
+            digest = _write_canonical_json(path, records)
+            payloads.append(
+                {
+                    "provider": provider,
+                    "data_type": data_type,
+                    "endpoint": endpoint,
+                    "request_parameters": parameters,
+                    "requested_at": now.isoformat(),
+                    "parser_version": CONTEXT_EVIDENCE_PARSER_VERSION,
+                    "raw_payload_reference": str(output / raw_name),
+                    "payload_path": path.name,
+                    "payload_sha256": digest,
+                }
+            )
+        if normalized_manual_context:
+            manual_path = output / "owner-context.normalized.json"
+            manual_sha = _write_canonical_json(manual_path, normalized_manual_context)
+            payloads.append(
+                {
+                    "provider": "owner_context_manifest",
+                    "data_type": "contextual",
+                    "endpoint": "config://weekly-operation/contextual-adjustments",
+                    "request_parameters": {"season": season, "week": week},
+                    "requested_at": now.isoformat(),
+                    "parser_version": CONTEXT_EVIDENCE_PARSER_VERSION,
+                    "raw_payload_reference": "config://weekly-operation/contextual-adjustments",
+                    "payload_path": manual_path.name,
+                    "payload_sha256": manual_sha,
+                }
+            )
     bundle = {
         "bundle_version": PROVIDER_BUNDLE_VERSION,
         "repository": EXPECTED_REPOSITORY,
@@ -1187,6 +1766,7 @@ def capture_live_provider_bundle(
             if capture_scope == "pregame"
             else ["CFBD_API_KEY"]
         ),
+        "context_capture": capture_context,
         "raw_evidence": raw_evidence,
         "odds_api_quota": (
             None

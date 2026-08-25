@@ -5,7 +5,7 @@
   "created_by": "repository-owner",
   "provenance": "proposed-v3-production-policy-registration-requires-owner-approval",
   "versions": {
-    "controller": "production-controller-v1",
+    "controller": "production-controller-v2",
     "selection": "production-selection-v1",
     "confidence": "production-confidence-v1",
     "ranking": "production-ranking-v1",
@@ -24,7 +24,7 @@
       },
       {
         "data_type": "injuries",
-        "provider": "manual_injury_report",
+        "provider": "espn",
         "fallback_code": "injuries_documented_fallback_v1"
       },
       {

@@ -44,6 +44,11 @@ from ingestion import (
     payload_sha256,
 )
 from operations.providers import _odds_writer
+from operations.context import (
+    ContextEvidenceParser,
+    contextual_adjustments_from_evidence,
+    write_context_evidence,
+)
 from scripts.inspect_official_card import main as inspect_official_card_main
 
 
@@ -1115,6 +1120,118 @@ def test_controlled_shadow_report_proves_full_card_board_audit_and_lessons(temp_
     assert report.contest_audit_count == 5
     assert report.lesson_count == len(report.lessons) == 4
     assert report.wagers_placed == 0
+    conn.close()
+
+
+def test_governed_context_change_can_revise_side_confidence_and_top_five_without_line_mutation(
+    temp_db,
+):
+    conn, lines = _seed_games(temp_db, count=6)
+    _seed_epa_inputs(conn, target_count=6)
+    tuesday = run_tuesday_controller(conn, _tuesday_request(lines))
+    prior_pick = next(pick for pick in tuesday.card.picks if not pick.is_top_five)
+    locked_before = tuple(
+        conn.execute(
+            "SELECT id, home_spread, payload_sha256, locked_at FROM contest_locked_lines "
+            "WHERE contest_id = ? ORDER BY id",
+            (tuesday.publication.contest_id,),
+        )
+    )
+    prediction_margin = conn.execute(
+        "SELECT predicted_home_margin FROM model_predictions WHERE id = ?",
+        (prior_pick.model_prediction_id,),
+    ).fetchone()[0]
+    margin_adjustment = -50.0 if prior_pick.selected_side == "home" else 50.0
+    game = conn.execute(
+        "SELECT game_id, home_team, away_team FROM games "
+        "JOIN contest_locked_lines AS locked USING (game_id) WHERE locked.id = ?",
+        (prior_pick.locked_line_id,),
+    ).fetchone()
+    payload = [
+        {
+            "record_id": f"coaching-change-{game[0]}",
+            "context_class": "coaching",
+            "source_mode": "manual_exception",
+            "game_id": int(game[0]),
+            "season": 2026,
+            "week": 1,
+            "home_team": str(game[1]),
+            "away_team": str(game[2]),
+            "affected_side": "home" if margin_adjustment > 0 else "away",
+            "subject": "fixture coaching context",
+            "evidence_summary": "Sourced fixture coaching change materially revises the game.",
+            "source_name": "fixture coaching report",
+            "source_reference": "fixture://coaching/change-report",
+            "observed_at": WEDNESDAY_AT.isoformat(),
+            "margin_adjustment": margin_adjustment,
+            "confidence_adjustment": 4,
+            "author": "fixture-owner",
+        }
+    ]
+    summary = ProviderIngestionService(clock=lambda: WEDNESDAY_AT).ingest_payload(
+        conn,
+        IngestionRequest(
+            provider="owner_context_manifest",
+            endpoint="config://weekly-operation/contextual-adjustments",
+            request_parameters={"season": 2026, "week": 1},
+            requested_at=WEDNESDAY_AT,
+            parser_version=ContextEvidenceParser.version,
+            raw_payload_reference="fixture://owner-context.json",
+            data_type="contextual",
+            expected_payload_sha256=payload_sha256(payload),
+        ),
+        payload,
+        ContextEvidenceParser(),
+        accepted_writer=write_context_evidence,
+    )
+    assert summary.status == "completed", tuple(
+        conn.execute(
+            "SELECT rejection_code, rejection_reason FROM provider_ingestion_rejections"
+        )
+    )
+    assert conn.execute("SELECT COUNT(*) FROM provider_context_evidence").fetchone()[0] == 1
+    adjustments = contextual_adjustments_from_evidence(
+        conn,
+        season=2026,
+        week=1,
+        as_of=WEDNESDAY_AT,
+    )
+    assert len(adjustments) == 1
+    assert adjustments[0].game_id == int(game[0])
+    revised = run_daily_controller(
+        conn,
+        _daily_request(
+            tuesday.publication.id,
+            change_type="contextual_adjustment",
+            model_run_key=None,
+            reason="Governed coaching evidence refresh.",
+            contextual_adjustments=adjustments,
+        ),
+    )
+    revised_pick = next(
+        pick
+        for pick in revised.card.picks
+        if pick.locked_line_id == prior_pick.locked_line_id
+    )
+    locked_after = tuple(
+        conn.execute(
+            "SELECT id, home_spread, payload_sha256, locked_at FROM contest_locked_lines "
+            "WHERE contest_id = ? ORDER BY id",
+            (tuesday.publication.contest_id,),
+        )
+    )
+
+    assert summary.status == "completed"
+    assert len(adjustments) == 1
+    assert prediction_margin is not None
+    assert revised_pick.selected_side != prior_pick.selected_side
+    assert revised_pick.confidence != prior_pick.confidence
+    assert revised_pick.is_top_five is True
+    assert prior_pick.is_top_five is False
+    assert locked_after == locked_before
+    assert conn.execute("SELECT COUNT(*) FROM contest_line_corrections").fetchone()[0] == 0
+    assert conn.execute("SELECT COUNT(*) FROM provider_context_evidence").fetchone()[0] == 1
+    assert inspect_official_card(conn, publication_id=revised.publication.id).valid
     conn.close()
 
 

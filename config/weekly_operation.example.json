@@ -22,7 +22,7 @@
     "configuration_version": "walk-forward-prior-seasons-v1"
   },
   "policies": {
-    "controller": "production-controller-v1",
+    "controller": "production-controller-v2",
     "selection": "production-selection-v1",
     "confidence": "production-confidence-v1",
     "ranking": "production-ranking-v1",

@@ -122,6 +122,14 @@ def main(argv: list[str] | None = None) -> int:
                 week=configuration.week,
                 line_type=line_type,
                 capture_scope=capture_scope,
+                capture_context=args.operation in (
+                    "tuesday_lock",
+                    "wednesday_refresh",
+                    "thursday_refresh",
+                    "friday_refresh",
+                    "saturday_final",
+                ),
+                manual_context_adjustments=configuration.contextual_adjustments,
                 authorized=True,
                 captured_at=captured_at,
                 odds_api_minimum_remaining_credits=(

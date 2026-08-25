@@ -238,6 +238,20 @@ or an unavailable DraftKings recommendation for any remaining pre-kickoff
 locked game fails the run visibly. Failed operations roll back and do not
 replace the last validated dashboard.
 
+Only the five card stages add production-context calls. Before their card
+generation/revision step they capture ESPN injuries, Open-Meteo kickoff
+weather, and CFBD season/venue data used to derive rest and travel context.
+Malformed timestamps, unresolved games, missing weather coordinates/values,
+or partial provider payloads enter quarantine and remain subject to the
+existing explicit freshness fallback gate. A declared coaching or motivation
+manual exception that fails custody blocks the operation. The resulting card
+freezes current/stale/missing state for injury, weather, travel/rest, coaching,
+and motivation, and the dashboard exposes those states.
+
+`sportsbook_refresh` deliberately sets context capture off. Its existing Odds
+API call, quota accounting, DraftKings board update, and no-wager behavior are
+unchanged.
+
 `sportsbook_refresh` has a schedule-slot operation instance, obtains its own
 managed PostgreSQL idempotency key, and can automatically append/supersede
 materially refreshed BET/NO BET evaluations. It never creates a contest-card
