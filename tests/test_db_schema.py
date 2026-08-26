@@ -34,6 +34,7 @@ def test_init_db_creates_all_tables(temp_db):
         "sportsbook_closing_designations",
         "sportsbook_postgame_audit_runs", "sportsbook_postgame_audit_details",
         "sportsbook_postgame_audit_completions",
+        "card_context_source_snapshots",
     }
     assert expected.issubset(tables)
     conn.close()

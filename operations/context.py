@@ -387,12 +387,17 @@ def record_card_context_status(
     if not game_ids:
         raise ProductionContextError("card context status requires pre-kickoff contest picks")
     placeholders = ",".join("?" for _ in game_ids)
+    injury_run = conn.execute(
+        "SELECT id, status, requested_at FROM provider_ingestion_runs "
+        "WHERE provider = 'espn' AND data_type = 'injuries' "
+        "AND julianday(requested_at) <= julianday(?) "
+        "ORDER BY julianday(requested_at) DESC, id DESC LIMIT 1",
+        (as_of.isoformat(),),
+    ).fetchone()
     for context_class in CONTEXT_CLASSES:
         current = conn.execute(
             "SELECT COUNT(*), COUNT(DISTINCT game_id), MAX(observed_at), "
-            "COUNT(DISTINCT source_mode), "
-            "COUNT(DISTINCT CASE WHEN affected_side IN ('home', 'away') "
-            "THEN CAST(game_id AS TEXT) || ':' || affected_side END) "
+            "COUNT(DISTINCT source_mode) "
             "FROM provider_context_evidence "
             f"WHERE game_id IN ({placeholders}) AND context_class = ? "
             "AND julianday(observed_at) <= julianday(?) "
@@ -402,14 +407,55 @@ def record_card_context_status(
         current_count = int(current[0])
         current_games = int(current[1])
         latest_current = current[2]
-        current_game_sides = int(current[4])
         requires_full_coverage = context_class in AUTOMATED_CONTEXT_CLASSES
         required_game_count = len(set(game_ids))
         if context_class == "injury":
+            source_ingestion_run_id = None if injury_run is None else int(injury_run[0])
+            snapshot_status = None if injury_run is None else str(injury_run[1])
+            snapshot_requested_at = None if injury_run is None else str(injury_run[2])
+            if source_ingestion_run_id is None:
+                snapshot_current_count = 0
+                snapshot_current_sides = 0
+                snapshot_latest = None
+            else:
+                snapshot = conn.execute(
+                    "SELECT COUNT(*), "
+                    "COUNT(DISTINCT CASE WHEN affected_side IN ('home', 'away') "
+                    "THEN CAST(game_id AS TEXT) || ':' || affected_side END) "
+                    "FROM provider_context_evidence "
+                    f"WHERE game_id IN ({placeholders}) AND context_class = 'injury' "
+                    "AND ingestion_run_id = ? "
+                    "AND julianday(observed_at) <= julianday(?) "
+                    "AND julianday(expires_at) >= julianday(?)",
+                    (
+                        *game_ids,
+                        source_ingestion_run_id,
+                        as_of.isoformat(),
+                        as_of.isoformat(),
+                    ),
+                ).fetchone()
+                snapshot_current_count = int(snapshot[0])
+                snapshot_current_sides = int(snapshot[1])
+                snapshot_latest = conn.execute(
+                    "SELECT MAX(observed_at) FROM provider_context_evidence "
+                    f"WHERE game_id IN ({placeholders}) AND context_class = 'injury' "
+                    "AND ingestion_run_id = ? "
+                    "AND julianday(observed_at) <= julianday(?)",
+                    (*game_ids, source_ingestion_run_id, as_of.isoformat()),
+                ).fetchone()[0]
+            required_sides = required_game_count * 2
             is_current = (
-                current_count > 0 and current_game_sides == required_game_count * 2
+                snapshot_current_count > 0
+                and snapshot_current_sides == required_sides
             )
         else:
+            source_ingestion_run_id = None
+            snapshot_status = None
+            snapshot_requested_at = None
+            snapshot_current_count = None
+            snapshot_current_sides = None
+            snapshot_latest = None
+            required_sides = None
             is_current = current_count > 0 and (
                 not requires_full_coverage or current_games == required_game_count
             )
@@ -419,18 +465,52 @@ def record_card_context_status(
             "AND julianday(observed_at) <= julianday(?)",
             (*game_ids, context_class, as_of.isoformat()),
         ).fetchone()[0]
-        if is_current:
+        if context_class == "injury" and is_current:
+            state = "current"
+            fallback_code = None
+            fallback_reason = None
+            # Migration 17's original invariant retains the aggregate count; the
+            # authoritative coherent-run count is stored separately below.
+            evidence_count = current_count
+            latest = str(snapshot_latest)
+        elif context_class == "injury" and snapshot_current_count:
+            state = "missing"
+            fallback_code = "injury_partial"
+            fallback_reason = (
+                f"Latest ESPN injury ingestion run {source_ingestion_run_id} has accepted "
+                f"coverage for {snapshot_current_sides} of {required_sides} required "
+                "contest-team sides; older runs cannot fill the gaps."
+            )
+            evidence_count = int(snapshot_current_count)
+            latest = None if snapshot_latest is None else str(snapshot_latest)
+        elif context_class == "injury" and snapshot_latest is not None:
+            state = "stale"
+            fallback_code = "injury_stale"
+            fallback_reason = (
+                f"Latest ESPN injury ingestion run {source_ingestion_run_id} has no "
+                "accepted evidence inside the current freshness window."
+            )
+            evidence_count = 0
+            latest = str(snapshot_latest)
+        elif context_class == "injury":
+            state = "missing"
+            fallback_code = "injury_missing"
+            fallback_reason = (
+                "No applicable ESPN injury ingestion run exists."
+                if source_ingestion_run_id is None
+                else f"Latest ESPN injury ingestion run {source_ingestion_run_id} "
+                f"(status={snapshot_status}) contains no accepted contest-team evidence."
+            )
+            evidence_count = 0
+            latest = None
+        elif is_current:
             state = "current"
             fallback_code = None
             fallback_reason = None
             evidence_count = current_count
             latest = str(latest_current)
         else:
-            state = (
-                "missing"
-                if context_class == "injury" and current_count > 0
-                else "stale" if prior is not None else "missing"
-            )
+            state = "stale" if prior is not None else "missing"
             fallback_code = (
                 "manual_context_not_asserted"
                 if context_class in MANUAL_CONTEXT_CLASSES and prior is None
@@ -448,6 +528,14 @@ def record_card_context_status(
             if context_class in MANUAL_CONTEXT_CLASSES
             else "automated"
         )
+        status_provenance = provenance
+        if context_class == "injury":
+            status_provenance = (
+                f"{provenance};injury_provider=espn;"
+                f"injury_ingestion_run_id={source_ingestion_run_id or 'none'};"
+                f"injury_ingestion_status={snapshot_status or 'missing'};"
+                f"injury_snapshot_requested_at={snapshot_requested_at or 'none'}"
+            )
         conn.execute(
             "INSERT INTO card_context_status "
             "(card_id, controller_run_id, context_class, state, source_mode, "
@@ -463,6 +551,20 @@ def record_card_context_status(
                 latest,
                 fallback_code,
                 fallback_reason,
-                provenance,
+                status_provenance,
             ),
         )
+        if context_class == "injury":
+            conn.execute(
+                "INSERT INTO card_context_source_snapshots "
+                "(card_id, controller_run_id, context_class, provider, ingestion_run_id, "
+                "snapshot_evidence_count, provenance) "
+                "VALUES (?, ?, 'injury', 'espn', ?, ?, ?)",
+                (
+                    card_id,
+                    controller_run_id,
+                    source_ingestion_run_id,
+                    int(snapshot_current_count),
+                    status_provenance,
+                ),
+            )

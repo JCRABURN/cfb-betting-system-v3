@@ -209,10 +209,16 @@ def _context_status(
 ) -> list[dict[str, object]]:
     rows = _row_dicts(
         conn.execute(
-            "SELECT context_class, state, source_mode, evidence_count, "
-            "latest_observed_at, fallback_code, fallback_reason "
-            "FROM card_context_status WHERE card_id = ? "
-            "ORDER BY CASE context_class WHEN 'injury' THEN 1 WHEN 'weather' THEN 2 "
+            "SELECT status.context_class, status.state, status.source_mode, "
+            "COALESCE(snapshot.snapshot_evidence_count, status.evidence_count) "
+            "AS evidence_count, status.latest_observed_at, status.fallback_code, "
+            "status.fallback_reason, snapshot.ingestion_run_id AS source_ingestion_run_id "
+            "FROM card_context_status AS status "
+            "LEFT JOIN card_context_source_snapshots AS snapshot "
+            "ON snapshot.card_id = status.card_id "
+            "AND snapshot.context_class = status.context_class "
+            "WHERE status.card_id = ? "
+            "ORDER BY CASE status.context_class WHEN 'injury' THEN 1 WHEN 'weather' THEN 2 "
             "WHEN 'travel_rest' THEN 3 WHEN 'coaching' THEN 4 ELSE 5 END",
             (card_id,),
         )
@@ -231,6 +237,7 @@ def _context_status(
                 "latest_observed_at": None,
                 "fallback_code": "context_status_not_captured",
                 "fallback_reason": "This card predates governed context-status capture.",
+                "source_ingestion_run_id": None,
             }
             for context_class in (
                 "injury",
@@ -249,6 +256,7 @@ def _context_status(
             "latest_observed_at": row["latest_observed_at"],
             "fallback_code": row["fallback_code"],
             "fallback_reason": row["fallback_reason"],
+            "source_ingestion_run_id": row["source_ingestion_run_id"],
         }
         for row in rows
     ]
