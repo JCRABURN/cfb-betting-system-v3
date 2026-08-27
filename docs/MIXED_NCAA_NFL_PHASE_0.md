@@ -18,19 +18,28 @@ behavioral parity. Build the mixed product on a sport-aware identity and
 contest layer in the same repository, with a separate managed-state stream and
 separate production enablement.
 
-This is one mixed contest product, not one mixed predictive model:
+This is one mixed contest product, not one mixed predictive model. The governed
+NCAA forecast capability is a contest-independent service boundary; neither
+mixed-card generation nor NCAA forecast availability depends on Product A's
+SplashSports workflow:
 
 ```mermaid
 flowchart TD
-    S[Authoritative weekly administrator spreadsheet] --> M[Reviewed mixed-slate manifest]
-    M --> L[Immutable contest-product line locks]
-    L --> R{Route by canonical sport}
-    R -->|NCAA| C[Governed production CFB forecast]
-    R -->|NFL| N[Separately governed production NFL forecast]
-    C --> E[Common contest evaluation contract]
+    CD[Governed NCAA PIT data and model] --> C[Contest-independent NCAA forecast service]
+    C --> CA[Product A compatibility adapter]
+    SA[Product A SplashSports import, locks, controller and schedule] --> PA[Product A contest evaluation and publication]
+    CA --> PA
+
+    S[Mixed administrator spreadsheet] --> M[Reviewed mixed-slate manifest]
+    M --> L[Immutable Product B line locks]
+    L --> R{Product B route by canonical sport}
+    R -->|canonical NCAA events and as-of| C
+    R -->|canonical NFL events and as-of| N[Separately governed NFL forecast service]
+    C --> E[Product B common contest evaluation]
     N --> E
     E --> K[Unified mixed ATS card]
     K --> T[Confidence 1-5 and exact mixed Top 5]
+
     C --> B[Separate exact-book sportsbook evaluation]
     N --> B
     B --> D[DraftKings BET / NO BET / UNAVAILABLE board]
@@ -116,7 +125,8 @@ Classification:
 - **A — reuse unchanged**: semantics and implementation can be shared as-is.
 - **B — reuse after generalization**: the control is sound, but identity,
   policy, or orchestration is CFB-specific.
-- **C — remain NCAA-specific**: keep behind the existing CFB adapter.
+- **C — remain NCAA-specific**: keep behind an NCAA boundary; contest workflow
+  behavior remains behind the Product A compatibility adapter.
 - **D — new NFL-specific implementation**: do not infer it from CFB behavior.
 
 | Component | Class | Repository evidence and required treatment |
@@ -135,11 +145,12 @@ Classification:
 | Spreadsheet parsing primitives | B | Reuse CSV/XLSX and reviewed-transcription mechanics. Replace SplashSports-only columns/messages with a versioned mixed import contract and staged review. |
 | Provider ingestion custody | B | Reuse runs, acceptances, rejections, raw checksums, parser versions, replay, and freshness. Add `sport_code`, NFL parsers, and provider-specific retention rules. |
 | Model runs and predictions | B | Preserve immutable metadata, but make sport explicit and allow one card to reference multiple independent runs. |
-| EPA-only CFB model | C | Remains the active production CFB forecast. No tuning, promotion, or replacement. |
+| Contest-independent NCAA forecast boundary | B | Extract a line-independent request/response capability over canonical NCAA events and one `as_of`. It exposes the governed model/version, PIT feature identity, fair margin, and uncertainty without reading or requiring a SplashSports contest, line lock, controller run, publication, dashboard, or schedule. Product A consumes it through a parity-preserving compatibility adapter; Product B calls it directly with its own canonical events. |
+| EPA-only CFB model | C | Remains the active production NCAA forecast behind the shared forecast boundary. No tuning, promotion, or replacement. |
 | CFB PIT backtest/research framework | C | Its anti-lookahead patterns are reference material; NFL needs a separate dataset, feature registry, folds, residuals, calibration, and criteria. |
 | NFL schedule/PBP/feature ingestion | D | New source adapters, canonical identities, PIT snapshots, and dataset builder. |
 | NFL model and calibration | D | New governed research history and promotion decision; no production model exists now. |
-| Weekly controller | B | Decompose shared transaction/completeness steps from the SplashSports Tuesday-Saturday policy. Mixed deadlines and stages derive from the earliest slate kickoff. |
+| Weekly controller | C | Product A's SplashSports controller remains Product A-specific and is not an orchestration dependency of Product B. Reuse only lower-level transaction/completeness primitives through explicit interfaces. The mixed controller is separate, and its deadlines and stages derive from the earliest mixed-slate kickoff. |
 | Existing Confidence policy | C | Keep unchanged for standalone SplashSports cards. It is not transferable to NFL or the mixed product. |
 | Ranking and Top 5 controls | B | Reuse completeness and deterministic exact-count controls after replacing raw point-edge ordering with a mixed calibrated score. |
 | Contextual evidence custody | B | Reuse immutable evidence/status concepts. NFL needs sport-specific providers, player/position identity, and coverage semantics. |
@@ -206,9 +217,20 @@ runtime state. The target boundaries are:
   keys and operation idempotency namespaces;
 - distinct product policies and enablement variables;
 - separately versioned NCAA and NFL models/datasets/calibrators;
-- one mixed-card transaction that reads immutable forecasts from both sports;
-- a SplashSports failure cannot publish a mixed card, and a mixed/NFL failure
-  cannot change Product A's last validated state.
+- one contest-independent NCAA forecast service that accepts canonical NCAA
+  events and an `as_of`, and returns line-independent immutable forecast
+  envelopes without depending on either contest product;
+- a Product A compatibility adapter that consumes that service while preserving
+  the existing SplashSports contract and behavior;
+- one Product B transaction that combines its own immutable mixed lines with
+  immutable NCAA and NFL forecast envelopes;
+- a SplashSports import, lock, controller, schedule, dashboard, or publication
+  failure must **not** by itself block a mixed card;
+- a mixed-product or NFL failure must **not** alter Product A's last validated
+  state; and
+- only failure of the shared NCAA forecast/data service can affect NCAA forecast
+  availability in both products. Product B still invokes its independently
+  governed mandatory fallback hierarchy and must not omit a listed game.
 
 ## 5. Domain model
 
@@ -248,17 +270,33 @@ exactly one sport before lock. The routing registry is versioned:
 
 ```text
 (sport_code, forecast_policy_version)
-  NCAA -> existing governed CFB production adapter
-  NFL  -> future owner-approved NFL production adapter
+  NCAA -> contest-independent governed NCAA forecast service
+  NFL  -> future owner-approved NFL forecast service
 ```
+
+The NCAA service accepts canonical NCAA event identities plus one UTC `as_of`.
+It reads the sanctioned NCAA point-in-time data layer and exposes the active
+governed forecast's model/version, PIT feature snapshot, as-of time, fair home
+margin, and uncertainty. Its request and execution path must not read, require,
+or wait for a SplashSports contest, SplashSports line lock, Product A weekly
+controller run, Product A publication/dashboard, or Product A schedule.
+
+Product A maps its legacy CFB game request through a compatibility adapter to
+this service, then evaluates the returned line-independent forecast against its
+own immutable SplashSports line through its existing policy path. Product B
+resolves the mixed administrator spreadsheet to its own canonical NCAA events,
+calls the same service independently, and evaluates the result only against its
+own immutable mixed line. Product B never calls Product A's controller or reads
+Product A's contest state as a readiness prerequisite.
 
 The router must:
 
 1. accept only `NCAA` or `NFL` from canonical event identity, never infer from
    free text after approval;
-2. group events by sport and invoke each adapter once with the same card
+2. group events by sport and invoke each contest-independent forecast service
+   once with the same card
    `as_of` time;
-3. require each adapter to return exactly one forecast or one explicit skip
+3. require each service to return exactly one forecast or one explicit skip
    reason per routed event;
 4. reject missing, extra, duplicate, or cross-sport forecast IDs;
 5. preserve each sport's model run, feature schema, configuration, data
@@ -266,6 +304,13 @@ The router must:
 6. evaluate each result only against that row's immutable mixed contest line;
 7. continue through the versioned contest fallback hierarchy for a missing
    forecast, so no approved lined game is omitted.
+
+Service availability and product readiness are separate states. A Product A
+workflow failure cannot make the NCAA service unavailable to Product B. If the
+shared NCAA forecast/data service itself cannot return an eligible forecast,
+both products may record NCAA forecast unavailability independently; Product B
+must still issue every required pick through its own fallback policy in section
+5.3.
 
 The common forecast envelope is line-independent:
 
@@ -1110,6 +1155,14 @@ Missing forecast inputs after a slate is locked do **not** permit omission.
 They invoke the recorded hierarchy in section 5.3 and still produce a side,
 Confidence, rank, and Top status for every locked row.
 
+Product failure boundaries are asymmetric only at the shared NCAA forecast/data
+service: a SplashSports import, lock, controller, schedule, dashboard, or
+publication failure is not a Product B publication failure; a Product B or NFL
+failure cannot mutate, invalidate, or republish Product A. If the shared NCAA
+service fails, Product B records that specific unavailability and continues with
+its separately versioned mandatory fallback hierarchy for every listed NCAA
+game.
+
 ## 20. Exact future pull-request sequence
 
 Each item is a separate reviewed PR. No later PR starts until its predecessor's
@@ -1137,26 +1190,35 @@ acceptance report is approved.
 9. **NFL sealed holdout and promotion decision.** Open 2024-2025 once, publish
    the complete report, and create no production activation without a separate
    explicit owner approval.
-10. **Mixed routing and mandatory full card.** Connect approved NCAA/NFL
-    forecast adapters, multi-run card manifests, and audited sport-specific
-    fallback hierarchy. No mixed Confidence yet beyond a temporary
+10. **Contest-independent NCAA forecast boundary.** Extract the governed NCAA
+    forecast behind a canonical-event/`as_of` request and line-independent
+    response. Add a Product A compatibility adapter and golden/parity tests
+    proving unchanged SplashSports behavior. Prove the service requires no
+    Product A import, lock, controller, publication, dashboard, or schedule.
+    No Product B routing or behavior activation.
+11. **Mixed routing and mandatory full card.** Have Product B independently
+    call the NCAA service with its spreadsheet-resolved canonical events and
+    call the approved NFL service. Add multi-run card manifests, audited
+    sport-specific fallback hierarchy, and failure-isolation tests proving a
+    Product A workflow outage does not block Product B and a Product B/NFL
+    outage does not alter Product A. No mixed Confidence yet beyond a temporary
     non-production research score.
-11. **Cross-sport ranking, Confidence, and exact Top 5.** Freeze and validate
+12. **Cross-sport ranking, Confidence, and exact Top 5.** Freeze and validate
     the common calibrated scale, Confidence bands, full ranking, and `MIN(5,N)`
     gate without changing Product A.
-12. **Pool scoring, standings, and payouts.** Implement entries, missed credit,
+13. **Pool scoring, standings, and payouts.** Implement entries, missed credit,
     weekly carry, final tiebreakers, payouts, privacy, and unresolved-rule
     states. No pool-management UI beyond required outputs.
-13. **NFL DraftKings integration.** Generalize exact-offer custody/evaluation,
+14. **NFL DraftKings integration.** Generalize exact-offer custody/evaluation,
     add NFL policies and `UNAVAILABLE`, exact-book closing/CLV, and keep wager
     placement absent.
-14. **Mixed audit and dashboard.** Add mixed/NFL grading, diagnostics, separate
+15. **Mixed audit and dashboard.** Add mixed/NFL grading, diagnostics, separate
     Pages payload/route, and optional privacy-safe standings. Existing CFB site
     stays on its contract.
-15. **Controlled cloud rehearsal.** Use fixtures or explicitly authorized
+16. **Controlled cloud rehearsal.** Use fixtures or explicitly authorized
     captures, a separate managed stream, failover/rollback, deadline simulation,
     and end-to-end audit. Production remains disabled.
-16. **Production automation.** Only after owner acceptance of rehearsal,
+17. **Production automation.** Only after owner acceptance of rehearsal,
     provider contracts, managed persistence, secrets, quotas, schedule, kill
     switch, and current-week input. Use GitHub-hosted/cloud execution and a
     separate mixed-product activation gate.
@@ -1212,7 +1274,8 @@ git diff --check
 
 Results:
 
-- full suite: `507 passed, 39 warnings in 90.80s`;
+- full suite after the architecture amendment: `507 passed, 39 warnings in
+  87.73s`;
 - repository dependency/workflow safety: passed;
 - diff whitespace check: passed;
 - `data/cfb.db` SHA-256 before and after:
