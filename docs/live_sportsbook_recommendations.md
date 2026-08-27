@@ -32,6 +32,9 @@ version, and provenance. The evaluator has no wager-placement integration and
 production results always report `wagers_placed: 0`.
 
 Provider capture and evaluation can be invoked repeatedly before kickoff; the
-material-update and freshness rules control regeneration. GitHub schedules
-remain disabled until a later, explicitly authorized production-activation
-milestone.
+material-update and freshness rules control regeneration. The owner-authorized
+GitHub schedule adds explicit `sportsbook_refresh` entries without publishing a
+new contest-card version. Each scheduled capture is bounded by the weekly call
+cap and a live quota-reserve probe. A refresh fails visibly rather than
+publishing when any remaining locked game lacks a current DraftKings
+recommendation. No refresh mutates locked SplashSports lines or places wagers.

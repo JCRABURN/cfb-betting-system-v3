@@ -94,6 +94,16 @@ function renderStatus(data) {
     if (source.fallback_code) card.append(node("p", "", `Fallback: ${source.fallback_code}`));
     sources.append(card);
   });
+  (status.context || []).forEach((context) => {
+    const card = node("article", "source-card");
+    card.append(node("strong", "", context.context_class.replaceAll("_", " ")));
+    card.append(node("span", context.state === "CURRENT" ? "" : "stale", context.state));
+    card.append(node("small", "", `Mode: ${context.source_mode.replaceAll("_", " ")}`));
+    card.append(node("small", "", `Records: ${context.record_count}`));
+    card.append(node("small", "", `Observed: ${time(context.latest_observed_at)}`));
+    if (context.fallback_reason) card.append(node("small", "stale", context.fallback_reason));
+    sources.append(card);
+  });
 }
 
 function renderTopFive(data) {

@@ -22,7 +22,7 @@
     "configuration_version": "walk-forward-prior-seasons-v1"
   },
   "policies": {
-    "controller": "production-controller-v1",
+    "controller": "production-controller-v2",
     "selection": "production-selection-v1",
     "confidence": "production-confidence-v1",
     "ranking": "production-ranking-v1",
@@ -48,6 +48,66 @@
   "daily_refresh": {
     "change_type": "data_refresh",
     "reason": "Governed daily production refresh."
+  },
+  "production_schedule": {
+    "policy_version": "production-schedule-v1",
+    "dispatcher_interval_minutes": 15,
+    "odds_api_quota": {
+      "monthly_credit_allowance": 500,
+      "minimum_remaining_credits": 100,
+      "maximum_paid_calls_per_week": 10,
+      "estimated_credits_per_call": 1
+    },
+    "entries": [
+      {
+        "operation": "tuesday_lock",
+        "run_at": "2099-08-25T15:22:00+00:00"
+      },
+      {
+        "operation": "sportsbook_refresh",
+        "run_at": "2099-08-25T21:22:00+00:00"
+      },
+      {
+        "operation": "wednesday_refresh",
+        "run_at": "2099-08-26T15:22:00+00:00"
+      },
+      {
+        "operation": "sportsbook_refresh",
+        "run_at": "2099-08-26T21:22:00+00:00"
+      },
+      {
+        "operation": "thursday_refresh",
+        "run_at": "2099-08-27T15:22:00+00:00"
+      },
+      {
+        "operation": "sportsbook_refresh",
+        "run_at": "2099-08-27T21:22:00+00:00"
+      },
+      {
+        "operation": "friday_refresh",
+        "run_at": "2099-08-28T15:22:00+00:00"
+      },
+      {
+        "operation": "sportsbook_refresh",
+        "run_at": "2099-08-28T21:22:00+00:00"
+      },
+      {
+        "operation": "sportsbook_refresh",
+        "run_at": "2099-08-29T13:22:00+00:00"
+      },
+      {
+        "operation": "saturday_final",
+        "run_at": "2099-08-29T14:22:00+00:00"
+      },
+      {
+        "operation": "postgame_grading",
+        "run_at": "2099-08-31T15:22:00+00:00"
+      },
+      {
+        "operation": "weekly_audit",
+        "run_at": "2099-08-31T16:07:00+00:00"
+      }
+    ]
   },
   "closing_book": "draftkings",
   "display_timezone": "America/Chicago",

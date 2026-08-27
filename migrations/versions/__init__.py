@@ -21,6 +21,8 @@ from migrations.versions import (
     v0014_official_weekly_controller,
     v0015_live_sportsbook_recommendations,
     v0016_sportsbook_postgame_audits,
+    v0017_production_context_evidence,
+    v0018_card_context_snapshot_identity,
 )
 
 
@@ -41,4 +43,6 @@ MIGRATION_MODULES = (
     v0014_official_weekly_controller,
     v0015_live_sportsbook_recommendations,
     v0016_sportsbook_postgame_audits,
+    v0017_production_context_evidence,
+    v0018_card_context_snapshot_identity,
 )

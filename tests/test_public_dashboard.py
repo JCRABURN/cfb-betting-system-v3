@@ -110,6 +110,25 @@ def test_complete_splashsports_card_confidence_and_exact_top_five(dashboard_payl
     assert [game["top_five_rank"] for game in dashboard_payload["top_five"]] == [1, 2, 3, 4, 5]
 
 
+def test_context_classes_are_explicit_and_manual_sources_cannot_masquerade(dashboard_payload):
+    context = {
+        row["context_class"]: row for row in dashboard_payload["status"]["context"]
+    }
+    assert set(context) == {
+        "injury",
+        "weather",
+        "travel_rest",
+        "coaching",
+        "motivation",
+    }
+    assert context["injury"]["source_mode"] == "automated"
+    assert context["weather"]["source_mode"] == "automated"
+    assert context["travel_rest"]["source_mode"] == "automated"
+    assert context["coaching"]["source_mode"] == "manual_exception"
+    assert context["motivation"]["source_mode"] == "manual_exception"
+    assert all(row["state"] in ("CURRENT", "STALE", "MISSING") for row in context.values())
+
+
 def test_draftkings_bet_no_bet_unavailable_and_stale_are_explicit(dashboard_payload):
     board = dashboard_payload["draftkings_board"]
     assert board["bookmaker"] == "DraftKings"
@@ -261,12 +280,15 @@ def test_output_is_deterministic_from_identical_immutable_input(dashboard_payloa
     assert generated["schema_version"] == PUBLIC_DASHBOARD_SCHEMA_VERSION
 
 
-def test_pages_workflows_are_hosted_least_privilege_manual_and_non_wagering():
+def test_pages_workflows_are_hosted_least_privilege_and_non_wagering():
     for name in ("v3_production_operations.yml", "v3_shadow_rehearsal.yml"):
         text = (ROOT / ".github" / "workflows" / name).read_text(encoding="utf-8")
         assert "runs-on: ubuntu-latest" in text
         assert "self-hosted" not in text
-        assert "\n  schedule:" not in text
+        if name == "v3_production_operations.yml":
+            assert "\n  schedule:" in text
+        else:
+            assert "\n  schedule:" not in text
         assert "actions/configure-pages@v5" in text
         assert "actions/upload-pages-artifact@v4" in text
         assert "actions/deploy-pages@v4" in text

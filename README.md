@@ -25,21 +25,24 @@ pinned, and must pass both verification commands.
 ## Workflow safety
 
 Pull requests run the complete offline test suite with read-only repository
-permissions. The copied production workflows have no schedule trigger in V3,
-are serialized with concurrency controls, and contain an allow-list guard that
-keeps their data-writing jobs inert outside `JCRABURN/cfb-betting-system`.
+permissions. The copied legacy production workflows have no schedule trigger
+in V3, are serialized with concurrency controls, and contain an allow-list
+guard that keeps their data-writing jobs inert outside
+`JCRABURN/cfb-betting-system`.
 
 Do not weaken or remove those controls without explicit repository-owner
 approval and a dedicated pull request.
 
-The additional V3 production gateway is manual-only, protected by independent
-production/execution/owner flags and a kill switch, and runs on GitHub-hosted
-`ubuntu-latest` infrastructure. Managed PostgreSQL stores immutable,
-checksummed state generations and holds the cross-run transaction lock. Each
-job materializes the current domain snapshot only in its disposable workspace,
-runs the unchanged governed controller, and atomically advances durable state
-only after every verification passes. No owner computer or self-managed runner
-is required. No schedule is enabled.
+The V3 production gateway supports guarded manual dispatch and a GitHub-hosted
+schedule dispatcher. It remains protected by independent
+production/execution/owner flags and a kill switch and runs on `ubuntu-latest`.
+The dispatcher makes no provider call unless an exact owner-reviewed weekly
+schedule entry is due. Managed PostgreSQL stores immutable, checksummed state
+generations and holds the cross-run transaction lock. Each operation
+materializes the current domain snapshot only in its disposable workspace,
+runs the governed controller or separate sportsbook refresh, and atomically
+advances durable state only after every verification passes. No owner computer
+or self-managed runner is required.
 
 ## Database migrations
 
@@ -218,6 +221,15 @@ reference, accepted/rejected counts, and final status. Invalid records are
 quarantined with stable reason codes. Every typed adapter records an immutable
 provider-neutral acceptance, and only strictly validated, canonically mapped
 spread records enter immutable `provider_market_snapshots`.
+
+Production card stages also normalize live ESPN injury reports, Open-Meteo
+kickoff forecasts, and CFBD schedule/venue evidence into immutable
+`provider_context_evidence`. Coaching and motivation never masquerade as an
+automated feed: a numeric change requires an owner-sourced manual exception
+with an observation timestamp, source, reference, author, and provenance.
+Every official card freezes all five context-class states in
+`card_context_status`; the public dashboard displays CURRENT, STALE, or MISSING
+and whether the source mode was automated or manual-exception.
 
 Freshness policy `provider_freshness_v1` defines explicit windows for odds,
 injuries, weather, game status, and contextual data. Its as-of inspection API

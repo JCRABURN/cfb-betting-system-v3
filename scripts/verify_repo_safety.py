@@ -23,6 +23,7 @@ V3_PRODUCTION_OPERATIONS = (
     "thursday_refresh",
     "friday_refresh",
     "saturday_final",
+    "sportsbook_refresh",
     "postgame_grading",
     "weekly_audit",
 )
@@ -107,10 +108,12 @@ def v3_production_workflow_errors(
     text: str,
     source: str = V3_PRODUCTION_WORKFLOW,
 ) -> list[str]:
-    """Return errors when the manual V3 cutover gateway stops failing closed."""
+    """Return errors when the scheduled/manual V3 gateway stops failing closed."""
     errors: list[str] = []
-    if re.search(r"(?m)^\s{2}schedule:\s*(?:#.*)?$", text):
-        errors.append(f"{source}: production schedule trigger is forbidden before approval")
+    if not re.search(r"(?m)^\s{2}schedule:\s*(?:#.*)?$", text):
+        errors.append(f"{source}: approved production schedule trigger is missing")
+    if "- cron: '7,22,37,52 * * * 1-6'" not in text:
+        errors.append(f"{source}: governed 15-minute dispatcher heartbeat is missing")
     if not re.search(r"(?m)^\s{2}workflow_dispatch:\s*(?:#.*)?$", text):
         errors.append(f"{source}: controlled manual dispatch trigger is missing")
     if re.search(r"(?m)^\s{2}pull_request_target:\s*", text):
@@ -137,12 +140,9 @@ def v3_production_workflow_errors(
         errors.append(f"{source}: workflow-level permissions must default to read-only")
     if re.search(r"(?m)^\s+contents:\s*write\s*$", text):
         errors.append(f"{source}: cutover-readiness workflow must not grant write permissions")
-    writer_group = (
-        "group: v3-production-writer-${{ github.repository }}-"
-        "${{ inputs.season }}-${{ inputs.week }}"
-    )
+    writer_group = "group: v3-production-writer-${{ github.repository }}"
     if writer_group not in text:
-        errors.append(f"{source}: one shared repository/week writer lock is missing")
+        errors.append(f"{source}: one shared repository writer lock is missing")
     if "cancel-in-progress: false" not in text:
         errors.append(f"{source}: production writers must serialize without cancellation")
     if "persist-credentials: false" not in text:
@@ -151,6 +151,15 @@ def v3_production_workflow_errors(
         errors.append(f"{source}: ephemeral production checkout must start clean")
     if "python -m scripts.run_cloud_production_operation" not in text:
         errors.append(f"{source}: managed-cloud production entry point is missing")
+    for schedule_control in (
+        "python -m scripts.resolve_production_schedule",
+        "needs.resolve-operation.outputs.should-run == 'true'",
+        "github.event_name == 'schedule'",
+        "idle-heartbeat:",
+        "CFB_V3_OPERATION_INSTANCE",
+    ):
+        if schedule_control not in text:
+            errors.append(f"{source}: scheduled-operation control is missing: {schedule_control}")
     if "CFB_V3_DATABASE_URL: ${{ secrets.CFB_V3_DATABASE_URL }}" not in text:
         errors.append(f"{source}: protected managed-database secret is missing")
     if "CFB_V3_PERSISTENCE_BACKEND: managed_postgresql" not in text:
@@ -228,7 +237,7 @@ def v3_shadow_rehearsal_workflow_errors(
     """Return errors when the controlled shadow gateway stops failing closed."""
     errors: list[str] = []
     if re.search(r"(?m)^\s{2}schedule:\s*(?:#.*)?$", text):
-        errors.append(f"{source}: shadow schedules are forbidden before PR #22")
+        errors.append(f"{source}: shadow rehearsal must remain manual")
     if not re.search(r"(?m)^\s{2}workflow_dispatch:\s*(?:#.*)?$", text):
         errors.append(f"{source}: controlled manual dispatch trigger is missing")
     if re.search(r"(?m)^\s{2}pull_request_target:\s*", text):
@@ -277,7 +286,12 @@ def v3_shadow_rehearsal_workflow_errors(
         errors.append(f"{source}: workflow-level permissions must default to read-only")
     if re.search(r"(?m)^\s+contents:\s*write\s*$", text):
         errors.append(f"{source}: shadow workflow must not grant write permissions")
-    for operation in ("initialize", "connectivity_check", *V3_PRODUCTION_OPERATIONS):
+    shadow_operations = tuple(
+        operation
+        for operation in V3_PRODUCTION_OPERATIONS
+        if operation != "sportsbook_refresh"
+    )
+    for operation in ("initialize", "connectivity_check", *shadow_operations):
         if f"          - {operation}" not in text:
             errors.append(f"{source}: controlled shadow stage is missing: {operation}")
     return errors

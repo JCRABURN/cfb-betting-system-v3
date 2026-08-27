@@ -1,7 +1,9 @@
 name: V3 Production Operations Gate
 
 on:
-  # Schedules remain intentionally absent until explicit owner authorization.
+  schedule:
+    # Dispatcher heartbeat only. Paid provider calls require an exact weekly-config entry.
+    - cron: '7,22,37,52 * * * 1-6'
   workflow_dispatch:
     inputs:
       operation:
@@ -14,8 +16,13 @@ on:
           - thursday_refresh
           - friday_refresh
           - saturday_final
+          - sportsbook_refresh
           - postgame_grading
           - weekly_audit
+      operation_instance:
+        description: YYYYMMDDTHHMMZ for sportsbook_refresh; blank otherwise
+        required: false
+        type: string
       season:
         description: Four-digit CFB season
         required: true
@@ -30,8 +37,8 @@ on:
         type: string
 
 concurrency:
-  # One lock covers every writer for the same repository/week.
-  group: v3-production-writer-${{ github.repository }}-${{ inputs.season }}-${{ inputs.week }}
+  # PostgreSQL is authoritative; this stricter queue prevents any repository writer overlap.
+  group: v3-production-writer-${{ github.repository }}
   cancel-in-progress: false
 
 permissions:
@@ -46,7 +53,8 @@ jobs:
       vars.CFB_V3_KILL_SWITCH != 'false' ||
       vars.CFB_V3_OWNER_CUTOVER_APPROVED != 'true' ||
       vars.CFB_V3_PROVIDER_CONNECTIVITY_AUTHORIZED != 'true' ||
-      inputs.confirmation != 'RUN_V3_OPERATION'
+      (github.event_name == 'workflow_dispatch' &&
+       inputs.confirmation != 'RUN_V3_OPERATION')
     runs-on: ubuntu-latest
     timeout-minutes: 5
     permissions:
@@ -61,7 +69,7 @@ jobs:
           } >> "$GITHUB_STEP_SUMMARY"
           exit 1
 
-  guarded-operation:
+  resolve-operation:
     if: >-
       github.repository == 'JCRABURN/cfb-betting-system-v3' &&
       vars.CFB_V3_PRODUCTION_ENABLED == 'true' &&
@@ -69,9 +77,84 @@ jobs:
       vars.CFB_V3_KILL_SWITCH == 'false' &&
       vars.CFB_V3_OWNER_CUTOVER_APPROVED == 'true' &&
       vars.CFB_V3_PROVIDER_CONNECTIVITY_AUTHORIZED == 'true' &&
-      inputs.confirmation == 'RUN_V3_OPERATION'
+      (github.event_name == 'schedule' ||
+       inputs.confirmation == 'RUN_V3_OPERATION')
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      contents: read
+    outputs:
+      status: ${{ steps.resolve.outputs.status }}
+      reason: ${{ steps.resolve.outputs.reason }}
+      should-run: ${{ steps.resolve.outputs.should-run }}
+      operation: ${{ steps.resolve.outputs.operation }}
+      operation-instance: ${{ steps.resolve.outputs.operation-instance }}
+      scheduled-for: ${{ steps.resolve.outputs.scheduled-for }}
+      next-scheduled-refresh: ${{ steps.resolve.outputs.next-scheduled-refresh }}
+      season: ${{ steps.resolve.outputs.season }}
+      week: ${{ steps.resolve.outputs.week }}
+    env:
+      CFB_V3_WEEKLY_CONFIG_FILE: ${{ vars.CFB_V3_WEEKLY_CONFIG_FILE }}
+      V3_EVENT_NAME: ${{ github.event_name }}
+      V3_MANUAL_OPERATION: ${{ inputs.operation }}
+      V3_MANUAL_OPERATION_INSTANCE: ${{ inputs.operation_instance }}
+      V3_MANUAL_SEASON: ${{ inputs.season }}
+      V3_MANUAL_WEEK: ${{ inputs.week }}
+    steps:
+      - name: Checkout exact default-branch commit
+        uses: actions/checkout@v4
+        with:
+          clean: true
+          persist-credentials: false
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Verify repository safety controls
+        run: python scripts/verify_repo_safety.py
+
+      - name: Resolve governed operation without credentials
+        id: resolve
+        run: >-
+          python -m scripts.resolve_production_schedule
+          --event-name "$V3_EVENT_NAME"
+          --weekly-config "$CFB_V3_WEEKLY_CONFIG_FILE"
+          --manual-operation "$V3_MANUAL_OPERATION"
+          --manual-operation-instance "$V3_MANUAL_OPERATION_INSTANCE"
+          --manual-season "$V3_MANUAL_SEASON"
+          --manual-week "$V3_MANUAL_WEEK"
+
+  idle-heartbeat:
+    needs: resolve-operation
+    if: needs.resolve-operation.outputs.status == 'idle'
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      contents: read
+    steps:
+      - name: Record API-free idle heartbeat
+        run: |
+          {
+            echo "## V3 production schedule idle"
+            echo "${{ needs.resolve-operation.outputs.reason }}"
+            echo "No credential access, API call, or database operation occurred."
+          } >> "$GITHUB_STEP_SUMMARY"
+
+  guarded-operation:
+    needs: resolve-operation
+    if: >-
+      needs.resolve-operation.outputs.should-run == 'true' &&
+      github.repository == 'JCRABURN/cfb-betting-system-v3' &&
+      vars.CFB_V3_PRODUCTION_ENABLED == 'true' &&
+      vars.CFB_V3_OPERATION_EXECUTION_ENABLED == 'true' &&
+      vars.CFB_V3_KILL_SWITCH == 'false' &&
+      vars.CFB_V3_OWNER_CUTOVER_APPROVED == 'true' &&
+      vars.CFB_V3_PROVIDER_CONNECTIVITY_AUTHORIZED == 'true' &&
+      (github.event_name == 'schedule' ||
+       inputs.confirmation == 'RUN_V3_OPERATION')
     environment: v3-production
-    # PostgreSQL owns durable state; the runner workspace is disposable.
     runs-on: ubuntu-latest
     timeout-minutes: 45
     outputs:
@@ -90,8 +173,9 @@ jobs:
       CFB_V3_WEEKLY_CONFIG_FILE: ${{ vars.CFB_V3_WEEKLY_CONFIG_FILE }}
       CFB_V3_PROVIDER_CONNECTIVITY_AUTHORIZED: ${{ vars.CFB_V3_PROVIDER_CONNECTIVITY_AUTHORIZED }}
       CFB_V3_PROVIDER_CONNECTIVITY_VERIFIED_AT: ${{ vars.CFB_V3_PROVIDER_CONNECTIVITY_VERIFIED_AT }}
-      CFB_V3_SEASON: ${{ inputs.season }}
-      CFB_V3_WEEK: ${{ inputs.week }}
+      CFB_V3_SEASON: ${{ needs.resolve-operation.outputs.season }}
+      CFB_V3_WEEK: ${{ needs.resolve-operation.outputs.week }}
+      CFB_V3_OPERATION_INSTANCE: ${{ needs.resolve-operation.outputs.operation-instance }}
       CFB_V3_CONTEST_KEY: ${{ vars.CFB_V3_CONTEST_KEY }}
       CFB_V3_CONTEST_NAME: ${{ vars.CFB_V3_CONTEST_NAME }}
       CFB_V3_SOURCE_CONTEST_ID: ${{ vars.CFB_V3_SOURCE_CONTEST_ID }}
@@ -140,7 +224,7 @@ jobs:
         id: operation
         run: >-
           python -m scripts.run_cloud_production_operation
-          --operation "${{ inputs.operation }}"
+          --operation "${{ needs.resolve-operation.outputs.operation }}"
           --weekly-config "${{ vars.CFB_V3_WEEKLY_CONFIG_FILE }}"
           --confirmation EXECUTE_V3_CLOUD_OPERATION
           --capture-provider-data
@@ -165,8 +249,7 @@ jobs:
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: >-
-            v3-production-preflight-${{ inputs.season }}-${{ inputs.week }}-${{ inputs.operation }}
+          name: v3-production-preflight-${{ needs.resolve-operation.outputs.season }}-${{ needs.resolve-operation.outputs.week }}-${{ needs.resolve-operation.outputs.operation }}
           path: ${{ runner.temp }}/v3-production-preflight.json
           if-no-files-found: ignore
           retention-days: 14
@@ -175,8 +258,7 @@ jobs:
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: >-
-            v3-production-result-${{ inputs.season }}-${{ inputs.week }}-${{ inputs.operation }}
+          name: v3-production-result-${{ needs.resolve-operation.outputs.season }}-${{ needs.resolve-operation.outputs.week }}-${{ needs.resolve-operation.outputs.operation }}
           path: ${{ runner.temp }}/v3-production-result.json
           if-no-files-found: ignore
           retention-days: 14
@@ -185,8 +267,7 @@ jobs:
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: >-
-            v3-provider-evidence-${{ inputs.season }}-${{ inputs.week }}-${{ inputs.operation }}
+          name: v3-provider-evidence-${{ needs.resolve-operation.outputs.season }}-${{ needs.resolve-operation.outputs.week }}-${{ needs.resolve-operation.outputs.operation }}
           path: data/provider_evidence/cloud-*
           if-no-files-found: ignore
           retention-days: 90
@@ -196,8 +277,9 @@ jobs:
         run: |
           {
             echo "## V3 production operation"
-            echo "- Operation: ${{ inputs.operation }}"
-            echo "- Season/week: ${{ inputs.season }}/${{ inputs.week }}"
+            echo "- Operation: ${{ needs.resolve-operation.outputs.operation }}"
+            echo "- Season/week: ${{ needs.resolve-operation.outputs.season }}/${{ needs.resolve-operation.outputs.week }}"
+            echo "- Scheduled for: ${{ needs.resolve-operation.outputs.scheduled-for || 'manual dispatch' }}"
             echo "- Outcome: ${{ steps.operation.outcome }}"
             echo "- The adapter executes only after every preflight gate passes."
           } >> "$GITHUB_STEP_SUMMARY"

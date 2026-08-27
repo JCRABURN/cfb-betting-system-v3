@@ -43,6 +43,10 @@ from operations.config import (
     EXPECTED_REPOSITORY,
     ProductionSettings,
 )
+from operations.context import (
+    contextual_adjustments_from_evidence,
+    record_card_context_status,
+)
 from operations.policies import load_registered_policy_set
 from operations.preflight import ProductionPreflightReport, run_production_preflight
 from operations.providers import ingest_provider_bundle, load_provider_bundle
@@ -50,7 +54,7 @@ from operations.weekly_config import WeeklyOperationConfiguration
 from operations.writer_lock import ProductionWriterLock
 
 
-EXECUTION_ADAPTER_VERSION = "v3-production-execution-adapter-v5"
+EXECUTION_ADAPTER_VERSION = "v3-production-execution-adapter-v7"
 
 
 class ProductionExecutionError(RuntimeError):
@@ -291,6 +295,25 @@ def _final_card_id(conn: sqlite3.Connection, settings: ProductionSettings) -> in
     return int(rows[0][0])
 
 
+def _latest_publication_identity(
+    conn: sqlite3.Connection,
+    settings: ProductionSettings,
+) -> tuple[int, int, int]:
+    rows = conn.execute(
+        "SELECT publication.contest_id, publication.id, publication.card_id "
+        "FROM official_card_publications AS publication "
+        "JOIN contests AS contest ON contest.id = publication.contest_id "
+        "WHERE contest.contest_key = ? AND contest.season = ? AND contest.week = ? "
+        "ORDER BY publication.card_version DESC LIMIT 2",
+        (settings.contest_key, settings.season, settings.week),
+    ).fetchall()
+    if len(rows) == 0:
+        raise ProductionExecutionError(
+            "sportsbook refresh requires a prior official publication"
+        )
+    return (int(rows[0][0]), int(rows[0][1]), int(rows[0][2]))
+
+
 def _audit_requests(
     conn: sqlite3.Connection,
     *,
@@ -345,6 +368,35 @@ def _operation(
         else None
     )
     ingestion_ids: list[int] = list(pre_ingestion_ids)
+    provider_refreshed = False
+    manual_context_in_custody = bool(
+        bundle
+        and any(spec.provider == "owner_context_manifest" for spec in bundle.payloads)
+    )
+
+    def validate_declared_manual_context(summaries) -> None:
+        if bundle is None:
+            return
+        for spec, summary in zip(bundle.payloads, summaries, strict=True):
+            if (
+                spec.provider == "owner_context_manifest"
+                and summary.status != "completed"
+            ):
+                raise ProductionExecutionError(
+                    "declared manual context failed custody and cannot be silently omitted"
+                )
+
+    if bundle is not None and settings.operation in (
+        "tuesday_lock",
+        "wednesday_refresh",
+        "thursday_refresh",
+        "friday_refresh",
+        "saturday_final",
+    ):
+        summaries = ingest_provider_bundle(conn, bundle)
+        validate_declared_manual_context(summaries)
+        ingestion_ids.extend(summary.ingestion_run_id for summary in summaries)
+        provider_refreshed = True
 
     def refresh_provider_data(
         target: sqlite3.Connection,
@@ -353,15 +405,34 @@ def _operation(
         week: int,
         as_of: datetime,
     ) -> None:
+        nonlocal provider_refreshed
+        if provider_refreshed:
+            return
         if bundle is None:
             return
         if (season, week) != (bundle.season, bundle.week):
             raise ProductionExecutionError("provider bundle week conflicts with controller")
         summaries = ingest_provider_bundle(target, bundle)
+        validate_declared_manual_context(summaries)
         ingestion_ids.extend(summary.ingestion_run_id for summary in summaries)
+        provider_refreshed = True
 
     fallbacks = _fallbacks(configuration.freshness_fallbacks)
-    adjustments = _adjustments(configuration.contextual_adjustments)
+    direct_adjustments = tuple(
+        item
+        for item in configuration.contextual_adjustments
+        if not manual_context_in_custody
+        or item.get("category") not in ("coaching", "motivation")
+    )
+    adjustments = (
+        _adjustments(direct_adjustments)
+        + contextual_adjustments_from_evidence(
+            conn,
+            season=configuration.season,
+            week=configuration.week,
+            as_of=generated_at,
+        )
+    )
     no_bets = _no_bets(configuration.sportsbook_recommendations)
 
     def live_board(
@@ -423,6 +494,13 @@ def _operation(
             ),
             data_refresh=refresh_provider_data,
         )
+        record_card_context_status(
+            conn,
+            card_id=result.card.card.id,
+            controller_run_id=result.run.id,
+            as_of=generated_at,
+            provenance=configuration.provenance,
+        )
         board, draftkings_board, draftkings_text = live_board(
             result.publication.contest_id
         )
@@ -469,6 +547,11 @@ def _operation(
             "friday_refresh": 4,
             "saturday_final": 5,
         }[settings.operation]
+        effective_change_type = (
+            "contextual_adjustment"
+            if adjustments
+            else configuration.daily_change_type
+        )
         result = run_daily_controller(
             conn,
             DailyRefreshRequest(
@@ -477,11 +560,11 @@ def _operation(
                 prior_publication_id=_prior_publication_id(conn, settings),
                 model_run_key=(
                     None
-                    if configuration.daily_change_type == "contextual_adjustment"
+                    if effective_change_type == "contextual_adjustment"
                     else f"{settings.idempotency_key}:epa-only"
                 ),
                 code_commit_sha=code_commit_sha,
-                change_type=configuration.daily_change_type,
+                change_type=effective_change_type,
                 reason=configuration.daily_reason,
                 refresh_policy=policies.refresh,
                 controller_policy=policies.controller,
@@ -493,6 +576,13 @@ def _operation(
                 provenance=configuration.provenance,
             ),
             data_refresh=refresh_provider_data,
+        )
+        record_card_context_status(
+            conn,
+            card_id=result.card.card.id,
+            controller_run_id=result.run.id,
+            as_of=generated_at,
+            provenance=configuration.provenance,
         )
         board, draftkings_board, draftkings_text = live_board(
             result.publication.contest_id
@@ -531,6 +621,70 @@ def _operation(
                     item["decision"] == "BET" for item in board
                 ),
                 "sportsbook_closing_designation_count": len(closing_designations),
+                "sportsbook_grade_count": 0,
+                "sportsbook_clv_graded_count": 0,
+                "sportsbook_missing_clv_count": 0,
+                "sportsbook_realized_profit_units": None,
+                "sportsbook_roi_percent": None,
+                "shadow_rehearsal_report": None,
+            },
+            tuple(ingestion_ids),
+        )
+    if settings.operation == "sportsbook_refresh":
+        if bundle is None:
+            raise ProductionExecutionError(
+                "sportsbook refresh requires a newly captured provider bundle"
+            )
+        refresh_provider_data(
+            conn,
+            season=configuration.season,
+            week=configuration.week,
+            as_of=generated_at,
+        )
+        contest_id, _, card_id = _latest_publication_identity(conn, settings)
+        board, draftkings_board, draftkings_text = live_board(contest_id)
+        future_game_ids = {
+            int(row[0])
+            for row in conn.execute(
+                "SELECT locked.game_id FROM contest_locked_lines AS locked "
+                "JOIN games AS game ON game.game_id = locked.game_id "
+                "WHERE locked.contest_id = ? AND julianday(?) < julianday(game.start_date)",
+                (contest_id, generated_at.isoformat()),
+            )
+        }
+        current_draftkings_ids = {
+            int(item["game_id"])
+            for item in draftkings_board
+            if item.get("freshness") == "CURRENT"
+            and item.get("availability_state") == "AVAILABLE"
+        }
+        missing_current = sorted(future_game_ids - current_draftkings_ids)
+        if not future_game_ids or missing_current:
+            missing = ", ".join(str(game_id) for game_id in missing_current)
+            raise ProductionExecutionError(
+                "sportsbook refresh cannot publish a current DraftKings recommendation "
+                + (f"for pre-kickoff game ids: {missing}" if missing else "after kickoff")
+            )
+        return (
+            {
+                "replayed": False,
+                "controller_run_id": None,
+                "publication_id": None,
+                "card_id": card_id,
+                "audit_run_id": None,
+                "sportsbook_audit_run_id": None,
+                "diagnostic_run_id": None,
+                "pick_count": None,
+                "top_five_count": None,
+                "fallback_pick_count": None,
+                "live_betting_board": board,
+                "draftkings_betting_board": draftkings_board,
+                "draftkings_betting_board_text": draftkings_text,
+                "sportsbook_recommendation_count": len(board),
+                "sportsbook_bet_count": sum(
+                    item["decision"] == "BET" for item in board
+                ),
+                "sportsbook_closing_designation_count": 0,
                 "sportsbook_grade_count": 0,
                 "sportsbook_clv_graded_count": 0,
                 "sportsbook_missing_clv_count": 0,

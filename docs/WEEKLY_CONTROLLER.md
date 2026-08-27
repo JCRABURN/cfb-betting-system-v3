@@ -106,6 +106,14 @@ missing custody cannot publish without a matching fallback code, reason,
 evidence, and provenance. The decision is copied into immutable
 `card_source_freshness` rows for that card version.
 
+The production adapter ingests the live context bundle before the controller
+evaluates freshness or generates the card. Injury, weather, and travel/rest
+observations enter provider custody automatically. Current owner-sourced
+coaching or motivation exceptions are materialized into the existing
+append-only manual-adjustment ledger before selection, Confidence, and Top 5
+are recomputed. Raw EPA predictions remain separate and immutable. Each card
+also receives immutable per-class context status for the public dashboard.
+
 Milestone 15 rejects official selection policies with legacy market-book
 fallbacks because `betting_lines` does not yet carry a direct acceptance ID
 back to Milestone 14 custody. The official hierarchy therefore continues from
@@ -194,12 +202,13 @@ delete migration-ledger rows or manually drop publication objects in place.
 - The production adapter accepts only controlled provider bundles captured
   after explicit authorization and replays them through Milestone 14 custody.
   No live call occurs during ordinary tests or preflight.
-- The production gateway is manual-only and no scheduled workflow is enabled.
-  Persist mode requires every cutover guard and exact confirmation, then runs
-  on GitHub-hosted `ubuntu-latest`. Managed PostgreSQL holds the cross-run
-  advisory lock and immutable durable snapshot history; the SQLite execution
-  workspace is temporary and is discarded after the PostgreSQL transaction
-  commits or rolls back. No owner computer or self-managed runner is required.
+- The production gateway supports exact-confirmation manual dispatch and
+  owner-reviewed scheduled entries. Both require every cutover guard and run
+  on GitHub-hosted `ubuntu-latest`. Idle dispatcher heartbeats make no provider
+  or database call. Managed PostgreSQL holds the cross-run advisory lock and
+  immutable durable snapshot history; the SQLite execution workspace is
+  temporary and is discarded after the PostgreSQL transaction commits or
+  rolls back. No owner computer or self-managed runner is required.
 - Production credentials are not required, read, logged, or documented by
   value.
 - Production cutover remains blocked by the explicit findings in

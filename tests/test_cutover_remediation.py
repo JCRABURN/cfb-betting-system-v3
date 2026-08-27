@@ -46,7 +46,7 @@ LINES = (
     (401856662, "UL Monroe", "Mississippi State", -24.5),
 )
 POLICY_VERSIONS = {
-    "controller": "production-controller-v1",
+    "controller": "production-controller-v2",
     "selection": "production-selection-v1",
     "confidence": "production-confidence-v1",
     "ranking": "production-ranking-v1",
@@ -346,7 +346,7 @@ def test_database_cutover_rehearsal_preserves_source_and_registers_policies(tmp_
 
     assert report.source_unchanged is True
     assert _sha(source) == before
-    assert report.migrations_applied == tuple(range(1, 17))
+    assert report.migrations_applied == tuple(range(1, 19))
     assert dict(report.registered_policy_versions) == POLICY_VERSIONS
     assert report.pre_integrity_check == "ok"
     assert report.pre_foreign_key_violation_count == 0
@@ -706,6 +706,129 @@ class _CaptureSession:
                 ]
             )
         return _Response([{"ok": True}])
+
+
+class _CompleteDraftKingsSession:
+    def __init__(self, observed_at):
+        self.observed_at = observed_at
+        self.calls = []
+
+    def get(self, url, **kwargs):
+        self.calls.append((url, kwargs))
+        if url.endswith("/games"):
+            return _Response([])
+        if "americanfootball_ncaaf" in url:
+            provider_names = {
+                "East Carolina": "East Carolina Pirates",
+                "Alabama": "Alabama Crimson Tide",
+                "Baylor": "Baylor Bears",
+                "Auburn": "Auburn Tigers",
+                "Florida Atlantic": "Florida Atlantic Owls",
+                "Florida": "Florida Gators",
+                "Clemson": "Clemson Tigers",
+                "LSU": "LSU Tigers",
+                "Louisville": "Louisville Cardinals",
+                "Ole Miss": "Ole Miss Rebels",
+                "UL Monroe": "UL Monroe Warhawks",
+                "Mississippi State": "Mississippi State Bulldogs",
+            }
+            kickoffs = {
+                401856634: "2026-09-05T16:00:00Z",
+                401856636: "2026-09-05T19:30:00Z",
+                401856637: "2026-09-05T23:45:00Z",
+                401856660: "2026-09-05T23:30:00Z",
+                401856661: "2026-09-06T23:30:00Z",
+                401856662: "2026-09-05T23:30:00Z",
+            }
+            return _Response(
+                [
+                    {
+                        "id": f"odds-event-{game_id}",
+                        "home_team": provider_names[home],
+                        "away_team": provider_names[away],
+                        "commence_time": kickoffs[game_id],
+                        "bookmakers": [
+                            {
+                                "key": "draftkings",
+                                "last_update": self.observed_at.isoformat(),
+                                "markets": [
+                                    {
+                                        "key": "spreads",
+                                        "outcomes": [
+                                            {
+                                                "name": provider_names[home],
+                                                "point": spread,
+                                                "price": -110,
+                                            },
+                                            {
+                                                "name": provider_names[away],
+                                                "point": -spread,
+                                                "price": -110,
+                                            },
+                                        ],
+                                    }
+                                ],
+                            }
+                        ],
+                    }
+                    for game_id, away, home, spread in LINES
+                ]
+            )
+        return _Response([{"ok": True}])
+
+
+def test_repeatable_sportsbook_refresh_updates_only_current_draftkings_board(
+    prepared_week,
+):
+    root, database, configuration, tuesday_settings = prepared_week
+    execute_production_operation(
+        tuesday_settings,
+        configuration,
+        code_commit_sha="1" * 40,
+        dry_run=False,
+        now=NOW,
+    )
+    refresh_at = NOW + timedelta(hours=1)
+    evidence_parent = root / "data" / "provider_evidence"
+    evidence_parent.mkdir()
+    bundle_path = capture_live_provider_bundle(
+        {"CFBD_API_KEY": SECRET_VALUES[0], "ODDS_API_KEY": SECRET_VALUES[1]},
+        repository_root=root,
+        output_directory=evidence_parent / "complete-live-board",
+        season=2026,
+        week=1,
+        line_type="current",
+        authorized=True,
+        captured_at=refresh_at,
+        session=_CompleteDraftKingsSession(refresh_at),
+    )
+    environment = merge_weekly_environment(_environment(), configuration)
+    environment["CFB_V3_OPERATION_INSTANCE"] = refresh_at.strftime("%Y%m%dT%H%MZ")
+    refresh_settings = load_production_settings(
+        environment,
+        repository_root=root,
+        operation="sportsbook_refresh",
+        database_path=database,
+    )
+    before = _sha(database)
+
+    result, preflight = execute_production_operation(
+        refresh_settings,
+        replace(configuration, provider_bundle_path=bundle_path),
+        code_commit_sha="2" * 40,
+        dry_run=True,
+        now=refresh_at,
+    )
+
+    assert preflight.production_ready is True
+    assert result.operation == "sportsbook_refresh"
+    assert result.publication_id is None
+    assert result.controller_run_id is None
+    assert result.pick_count is None
+    assert len(result.draftkings_betting_board) == len(LINES)
+    assert {row["freshness"] for row in result.draftkings_betting_board} == {"CURRENT"}
+    assert result.wagers_placed == 0
+    assert _sha(database) == before
 
 
 def test_controlled_connectivity_reports_names_and_hashes_never_secret_values():
