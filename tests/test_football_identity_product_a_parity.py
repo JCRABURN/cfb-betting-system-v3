@@ -253,7 +253,7 @@ def test_migration_preserves_product_a_rows_and_controller_outputs_exactly():
     product_a_tables = _application_tables(before_conn)
     pre_migration_rows = _table_snapshot(after_conn, product_a_tables)
 
-    applied = apply_migrations(after_conn)
+    applied = apply_migrations(after_conn, load_migrations()[:19])
 
     assert tuple(result.version for result in applied) == (19,)
     assert _table_snapshot(after_conn, product_a_tables) == pre_migration_rows
@@ -311,5 +311,71 @@ def test_product_a_runs_when_only_required_sport_registry_exists():
     assert all(
         conn.execute(f"SELECT COUNT(*) FROM {table}").fetchone()[0] == 0
         for table in empty_identity_tables
+    )
+    conn.close()
+
+
+def test_migration_20_preserves_product_a_rows_and_controller_outputs_exactly():
+    before_conn = _connection(19)
+    after_conn = _connection(19)
+    before_lines = _seed_product_a_fixture(before_conn)
+    after_lines = _seed_product_a_fixture(after_conn)
+    product_a_tables = _application_tables(before_conn)
+    pre_migration_rows = _table_snapshot(after_conn, product_a_tables)
+
+    applied = apply_migrations(after_conn)
+
+    assert tuple(result.version for result in applied) == (20,)
+    assert _table_snapshot(after_conn, product_a_tables) == pre_migration_rows
+
+    before_result = run_tuesday_controller(before_conn, _request(before_lines))
+    after_result = run_tuesday_controller(after_conn, _request(after_lines))
+
+    assert _result_signature(after_result) == _result_signature(before_result)
+    assert _table_snapshot(after_conn, product_a_tables) == _table_snapshot(
+        before_conn, product_a_tables
+    )
+    assert len(after_result.card.picks) == 5
+    assert {pick.confidence for pick in after_result.card.picks} == {1}
+    assert {pick.rank for pick in after_result.card.picks} == {1, 2, 3, 4, 5}
+    assert all(pick.is_top_five for pick in after_result.card.picks)
+    assert after_conn.execute(
+        "SELECT decision, recommended_side, stake_units, reason_code "
+        "FROM sportsbook_recommendations"
+    ).fetchall() == [
+        ("no_bet", None, 0.0, "insufficient_calibrated_edge")
+    ]
+    before_conn.close()
+    after_conn.close()
+
+
+def test_product_a_has_no_dependency_on_product_b_operational_state():
+    conn = _connection(20)
+    lines = _seed_product_a_fixture(conn)
+    operational_tables = (
+        "mixed_contest_seasons",
+        "mixed_contest_rounds",
+        "mixed_slate_imports",
+        "mixed_slate_import_rows",
+        "mixed_slate_manifests",
+        "mixed_slate_manifest_rows",
+        "mixed_deadline_derivations",
+        "mixed_slate_approvals",
+        "mixed_line_lock_batches",
+        "mixed_contest_lines",
+    )
+    assert all(
+        conn.execute(f"SELECT COUNT(*) FROM {table}").fetchone()[0] == 0
+        for table in operational_tables
+    )
+
+    result = run_tuesday_controller(conn, _request(lines))
+
+    assert result.publication.pick_count == 5
+    assert result.publication.top_five_count == 5
+    assert result.publication.fallback_pick_count == 0
+    assert all(
+        conn.execute(f"SELECT COUNT(*) FROM {table}").fetchone()[0] == 0
+        for table in operational_tables
     )
     conn.close()

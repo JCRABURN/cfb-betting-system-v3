@@ -40,6 +40,14 @@ def test_init_db_creates_all_tables(temp_db):
         "football_venues", "football_venue_versions", "football_events",
         "football_event_revisions", "football_provider_event_ids",
         "legacy_cfb_game_links",
+        "mixed_contest_products", "mixed_contest_product_sports",
+        "mixed_contest_seasons", "mixed_contest_rounds",
+        "mixed_slate_imports", "mixed_slate_import_states",
+        "mixed_slate_import_rows", "mixed_slate_manifests",
+        "mixed_slate_manifest_rows", "mixed_deadline_derivations",
+        "mixed_deadline_events", "mixed_slate_approvals",
+        "mixed_line_lock_batches", "mixed_contest_lines",
+        "mixed_line_lock_completions", "mixed_round_state_events",
     }
     assert expected.issubset(tables)
     conn.close()

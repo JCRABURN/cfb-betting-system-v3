@@ -24,6 +24,7 @@ from migrations.versions import (
     v0017_production_context_evidence,
     v0018_card_context_snapshot_identity,
     v0019_football_identity_foundation,
+    v0020_mixed_pickem_custody,
 )
 
 
@@ -47,4 +48,5 @@ MIGRATION_MODULES = (
     v0017_production_context_evidence,
     v0018_card_context_snapshot_identity,
     v0019_football_identity_foundation,
+    v0020_mixed_pickem_custody,
 )
