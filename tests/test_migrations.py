@@ -118,7 +118,7 @@ def test_legacy_database_gains_feature_columns_without_data_loss(tmp_path):
     conn.close()
 
     assert [result.version for result in applied] == [
-        1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19
+        1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20
     ]
     assert after_counts["team_game_stats"] == before_counts["team_game_stats"] == 1
     assert {"offense_success_rate", "defense_success_rate", "havoc_rate"} <= columns
@@ -137,7 +137,7 @@ def test_authoritative_database_copy_preserves_rows_integrity_and_source(tmp_pat
     assert result.integrity_result == "ok"
     assert result.foreign_key_violation_count == 0
     assert result.applied_versions == (
-        1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19
+        1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20
     )
     assert all(
         result.after_counts[table] == count
@@ -216,6 +216,10 @@ def test_authoritative_database_copy_preserves_rows_integrity_and_source(tmp_pat
         assert result.after_counts[table] == 0
     assert result.after_counts["football_sports"] == 2
     assert result.new_table_counts["football_sports"] == 2
+    assert result.after_counts["mixed_contest_products"] == 1
+    assert result.after_counts["mixed_contest_product_sports"] == 2
+    assert result.new_table_counts["mixed_contest_products"] == 1
+    assert result.new_table_counts["mixed_contest_product_sports"] == 2
     assert all(
         result.new_table_counts[table] == 0
         for table in (
@@ -229,6 +233,20 @@ def test_authoritative_database_copy_preserves_rows_integrity_and_source(tmp_pat
             "football_event_revisions",
             "football_provider_event_ids",
             "legacy_cfb_game_links",
+            "mixed_contest_seasons",
+            "mixed_contest_rounds",
+            "mixed_slate_imports",
+            "mixed_slate_import_states",
+            "mixed_slate_import_rows",
+            "mixed_slate_manifests",
+            "mixed_slate_manifest_rows",
+            "mixed_deadline_derivations",
+            "mixed_deadline_events",
+            "mixed_slate_approvals",
+            "mixed_line_lock_batches",
+            "mixed_contest_lines",
+            "mixed_line_lock_completions",
+            "mixed_round_state_events",
         )
     )
     assert _file_hash(AUTHORITATIVE_DATABASE) == source_hash_before

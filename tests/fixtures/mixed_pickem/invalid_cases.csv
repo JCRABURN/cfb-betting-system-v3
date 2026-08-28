@@ -1,0 +1,8 @@
+Away Team,Home Team,Spread,Spread Side,Sport,Kickoff UTC,Source Event ID,Notes
+Unknown Academy,Beacon Tech,-3,Away,NCAA,2026-09-02T22:00:00+00:00,,Unknown team
+Beacon Tech,Atlas State,-3,Away,NCAA,2026-09-02T22:00:00+00:00,fixture-ncaa-1,Reversed orientation
+Harbor Hounds,Metro Meteors,+3,Home,NCAA,2026-09-03T18:00:00+00:00,fixture-nfl-1,Wrong sport
+Cedar College,Delta Institute,-3.5,Home,NCAA,2026-09-05T16:00:01+00:00,fixture-ncaa-2,Kickoff mismatch
+Prairie Pros,Union United,NaN,Away,NFL,2026-09-06T17:00:00+00:00,fixture-nfl-2,Malformed spread
+Atlas State,Beacon Tech,-3,Away,NCAA,2026-09-02T22:00:00+00:00,fixture-ncaa-1,Duplicate canonical event
+Atlas State,Beacon Tech,-4,Away,NCAA,2026-09-02T22:00:00+00:00,fixture-ncaa-1,Conflicting spread

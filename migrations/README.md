@@ -200,6 +200,15 @@ and optional exact legacy-CFB links. It seeds only the immutable `NCAA` and
 and Product A does not read the new tables. See
 `docs/FOOTBALL_IDENTITY_FOUNDATION.md` for the schema and recovery contract.
 
+## Mixed Pick'em custody
+
+Migration 20 adds the isolated Product B contest, source-import, manifest,
+approval, earliest-kickoff deadline, and immutable line-lock custody tables. It
+seeds only the `mixed_pickem` product and its NCAA/NFL allowlist, creates no
+season, round, import, approval, or lock, and does not rewrite or reinterpret
+Product A data. See `docs/MIXED_PICKEM_CUSTODY.md` for the staged operating and
+recovery contract.
+
 ## Recovery
 
 SQLite DDL is applied inside one transaction per migration. A failed migration
