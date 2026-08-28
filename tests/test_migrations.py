@@ -118,7 +118,7 @@ def test_legacy_database_gains_feature_columns_without_data_loss(tmp_path):
     conn.close()
 
     assert [result.version for result in applied] == [
-        1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18
+        1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19
     ]
     assert after_counts["team_game_stats"] == before_counts["team_game_stats"] == 1
     assert {"offense_success_rate", "defense_success_rate", "havoc_rate"} <= columns
@@ -132,8 +132,12 @@ def test_authoritative_database_copy_preserves_rows_integrity_and_source(tmp_pat
 
     result = verify_database_copy(source_copy)
 
+    assert result.source_unchanged is True
+    assert result.source_hash_after == result.source_hash
+    assert result.integrity_result == "ok"
+    assert result.foreign_key_violation_count == 0
     assert result.applied_versions == (
-        1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18
+        1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19
     )
     assert all(
         result.after_counts[table] == count
@@ -198,8 +202,35 @@ def test_authoritative_database_copy_preserves_rows_integrity_and_source(tmp_pat
         "sportsbook_postgame_audit_details",
         "sportsbook_postgame_audit_completions",
         "card_context_source_snapshots",
+        "football_franchises",
+        "football_teams",
+        "football_team_seasons",
+        "football_team_aliases",
+        "football_venues",
+        "football_venue_versions",
+        "football_events",
+        "football_event_revisions",
+        "football_provider_event_ids",
+        "legacy_cfb_game_links",
     ):
         assert result.after_counts[table] == 0
+    assert result.after_counts["football_sports"] == 2
+    assert result.new_table_counts["football_sports"] == 2
+    assert all(
+        result.new_table_counts[table] == 0
+        for table in (
+            "football_franchises",
+            "football_teams",
+            "football_team_seasons",
+            "football_team_aliases",
+            "football_venues",
+            "football_venue_versions",
+            "football_events",
+            "football_event_revisions",
+            "football_provider_event_ids",
+            "legacy_cfb_game_links",
+        )
+    )
     assert _file_hash(AUTHORITATIVE_DATABASE) == source_hash_before
 
 

@@ -35,6 +35,11 @@ def test_init_db_creates_all_tables(temp_db):
         "sportsbook_postgame_audit_runs", "sportsbook_postgame_audit_details",
         "sportsbook_postgame_audit_completions",
         "card_context_source_snapshots",
+        "football_sports", "football_franchises", "football_teams",
+        "football_team_seasons", "football_team_aliases",
+        "football_venues", "football_venue_versions", "football_events",
+        "football_event_revisions", "football_provider_event_ids",
+        "legacy_cfb_game_links",
     }
     assert expected.issubset(tables)
     conn.close()
