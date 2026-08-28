@@ -190,6 +190,16 @@ line-snapshot disagreement, and broken daily revision chains. Publication
 rows, controller custody, line batches, and freshness decisions are append-only.
 See `docs/WEEKLY_CONTROLLER.md` for the operating contract and recovery steps.
 
+## Football identity foundation
+
+Migration 19 creates an additive NCAA/NFL identity registry for franchises,
+effective team names and alignments, exact sport-scoped aliases, versioned
+venues, football events and append-only event revisions, provider event IDs,
+and optional exact legacy-CFB links. It seeds only the immutable `NCAA` and
+`NFL` sport rows. No current CFB table is rewritten, no legacy link is inferred,
+and Product A does not read the new tables. See
+`docs/FOOTBALL_IDENTITY_FOUNDATION.md` for the schema and recovery contract.
+
 ## Recovery
 
 SQLite DDL is applied inside one transaction per migration. A failed migration

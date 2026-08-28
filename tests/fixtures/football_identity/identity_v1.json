@@ -1,0 +1,111 @@
+{
+  "franchises": [
+    {
+      "ref": "fixture_state",
+      "sport_code": "NCAA",
+      "canonical_key": "fixture-state-program",
+      "display_label": "Fixture State program"
+    },
+    {
+      "ref": "lake_tech",
+      "sport_code": "NCAA",
+      "canonical_key": "lake-tech-program",
+      "display_label": "Lake Tech program"
+    },
+    {
+      "ref": "nomads",
+      "sport_code": "NFL",
+      "canonical_key": "nomads-franchise",
+      "display_label": "Nomads franchise"
+    },
+    {
+      "ref": "capitals",
+      "sport_code": "NFL",
+      "canonical_key": "capitals-franchise",
+      "display_label": "Capitals franchise"
+    }
+  ],
+  "teams": [
+    {
+      "ref": "fixture_state",
+      "franchise_ref": "fixture_state",
+      "sport_code": "NCAA",
+      "canonical_key": "fixture-state",
+      "display_name": "Fixture State",
+      "effective_from_season": 1900
+    },
+    {
+      "ref": "lake_tech",
+      "franchise_ref": "lake_tech",
+      "sport_code": "NCAA",
+      "canonical_key": "lake-tech",
+      "display_name": "Lake Tech",
+      "effective_from_season": 1900
+    },
+    {
+      "ref": "coast_nomads",
+      "franchise_ref": "nomads",
+      "sport_code": "NFL",
+      "canonical_key": "coast-city-nomads",
+      "display_name": "Coast City Nomads",
+      "effective_from_season": 1995
+    },
+    {
+      "ref": "mountain_nomads",
+      "franchise_ref": "nomads",
+      "sport_code": "NFL",
+      "canonical_key": "mountain-city-nomads",
+      "display_name": "Mountain City Nomads",
+      "effective_from_season": 2020
+    },
+    {
+      "ref": "capital_club",
+      "franchise_ref": "capitals",
+      "sport_code": "NFL",
+      "canonical_key": "capital-club",
+      "display_name": "Capital Club",
+      "effective_from_season": 1960
+    }
+  ],
+  "venues": [
+    {
+      "ref": "fixture_stadium",
+      "canonical_key": "fixture-stadium",
+      "versions": [
+        {
+          "display_name": "Old Fixture Stadium",
+          "latitude_e6": 40123456,
+          "longitude_e6": -75123456,
+          "time_zone": "America/New_York",
+          "roof_type": "outdoor",
+          "surface": "grass",
+          "effective_from_at": "2000-01-01T00:00:00+00:00"
+        },
+        {
+          "display_name": "Fixture Stadium",
+          "latitude_e6": 40123456,
+          "longitude_e6": -75123456,
+          "time_zone": "America/New_York",
+          "roof_type": "outdoor",
+          "surface": "grass",
+          "effective_from_at": "2020-01-01T00:00:00+00:00"
+        }
+      ]
+    },
+    {
+      "ref": "international_ground",
+      "canonical_key": "fixture-international-ground",
+      "versions": [
+        {
+          "display_name": "Fixture International Ground",
+          "latitude_e6": 51556167,
+          "longitude_e6": -27917,
+          "time_zone": "Europe/London",
+          "roof_type": "retractable",
+          "surface": "hybrid",
+          "effective_from_at": "2019-01-01T00:00:00+00:00"
+        }
+      ]
+    }
+  ]
+}

@@ -20,9 +20,14 @@ DEFAULT_DATABASE = ROOT / "data" / "cfb.db"
 @dataclass(frozen=True)
 class VerificationResult:
     source_hash: str
+    source_hash_after: str
+    source_unchanged: bool
     applied_versions: tuple[int, ...]
     before_counts: dict[str, int]
     after_counts: dict[str, int]
+    new_table_counts: dict[str, int]
+    integrity_result: str
+    foreign_key_violation_count: int
 
 
 def _sha256(path: Path) -> str:
@@ -61,6 +66,10 @@ def verify_database_copy(source: Path = DEFAULT_DATABASE) -> VerificationResult:
             results = apply_migrations(conn)
             after_counts = table_row_counts(conn)
             _verify_database_integrity(conn, "post-migration copy")
+            integrity_result = str(conn.execute("PRAGMA integrity_check").fetchone()[0])
+            foreign_key_violation_count = len(
+                tuple(conn.execute("PRAGMA foreign_key_check"))
+            )
 
             changed = {
                 table: (count, after_counts.get(table))
@@ -85,9 +94,18 @@ def verify_database_copy(source: Path = DEFAULT_DATABASE) -> VerificationResult:
 
     return VerificationResult(
         source_hash=source_hash_before,
+        source_hash_after=source_hash_after,
+        source_unchanged=source_hash_after == source_hash_before,
         applied_versions=applied_versions,
         before_counts=before_counts,
         after_counts=after_counts,
+        new_table_counts={
+            table: count
+            for table, count in after_counts.items()
+            if table not in before_counts
+        },
+        integrity_result=integrity_result,
+        foreign_key_violation_count=foreign_key_violation_count,
     )
 
 
@@ -104,11 +122,18 @@ def main() -> int:
     args = parser.parse_args()
 
     result = verify_database_copy(args.database)
-    print(f"Source SHA-256: {result.source_hash}")
+    print(f"Source SHA-256 before: {result.source_hash}")
+    print(f"Source SHA-256 after: {result.source_hash_after}")
+    print(f"Source database unchanged: {'YES' if result.source_unchanged else 'NO'}")
     print(f"Applied migration versions: {list(result.applied_versions)}")
     print("Existing table row counts preserved:")
     for table, count in result.before_counts.items():
         print(f"  {table}: {count}")
+    print("New table row counts:")
+    for table, count in result.new_table_counts.items():
+        print(f"  {table}: {count}")
+    print(f"SQLite integrity check: {result.integrity_result}")
+    print(f"Foreign-key violations: {result.foreign_key_violation_count}")
     print("Migration verification passed on a disposable copy.")
     return 0
 

@@ -23,6 +23,7 @@ from migrations.versions import (
     v0016_sportsbook_postgame_audits,
     v0017_production_context_evidence,
     v0018_card_context_snapshot_identity,
+    v0019_football_identity_foundation,
 )
 
 
@@ -45,4 +46,5 @@ MIGRATION_MODULES = (
     v0016_sportsbook_postgame_audits,
     v0017_production_context_evidence,
     v0018_card_context_snapshot_identity,
+    v0019_football_identity_foundation,
 )
