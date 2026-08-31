@@ -1,0 +1,230 @@
+name: Week 1 Model Preview
+
+on:
+  push:
+    branches:
+      - agent/week1-model-preview-20260831
+
+permissions:
+  contents: read
+
+jobs:
+  preview:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      CFB_V3_RUNTIME_MODE: production
+      CFB_V3_PRODUCTION_ENABLED: 'true'
+      CFB_V3_OPERATION_EXECUTION_ENABLED: 'true'
+      CFB_V3_KILL_SWITCH: 'false'
+      CFB_V3_OWNER_CUTOVER_APPROVED: 'true'
+      CFB_V3_REPOSITORY: JCRABURN/cfb-betting-system-v3
+      GITHUB_REPOSITORY: JCRABURN/cfb-betting-system-v3
+      CFB_V3_PROVIDER_CONNECTIVITY_AUTHORIZED: 'true'
+      CFB_V3_PROVIDER_CONNECTIVITY_VERIFIED_AT: '2026-08-31T18:00:00+00:00'
+      CFBD_API_KEY: preview-no-live-call
+      ODDS_API_KEY: preview-no-live-call
+    steps:
+      - name: Checkout preview branch
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: pip
+          cache-dependency-path: requirements.txt
+
+      - name: Install dependencies
+        run: python -m pip install --requirement requirements.txt
+
+      - name: Prepare disposable database
+        shell: bash
+        run: |
+          set -euo pipefail
+          sha256sum data/cfb.db | awk '{print $1}' > /tmp/source-before.sha
+          cp data/cfb.db data/week1-preview.db
+          python - <<'PY'
+          import sqlite3
+          from pathlib import Path
+          from migrations.runner import apply_migrations
+          from operations.database_cutover import register_approved_policies
+
+          db = Path('data/week1-preview.db')
+          conn = sqlite3.connect(db)
+          apply_migrations(conn)
+          register_approved_policies(conn, Path('config/production_policies.example.json'))
+          conn.commit()
+          conn.close()
+          PY
+
+      - name: Build immutable preview manifest
+        run: >-
+          python -m scripts.build_splashsports_manifest
+          --input production-weeks/2026-week1-splashsports.csv
+          --input-format csv
+          --database data/week1-preview.db
+          --output production-weeks/week1-preview-manifest.json
+          --season 2026
+          --week 1
+          --contest-key splashsports-2026-week-1-preview
+          --contest-name "SplashSports 2026 Week 1 Preview"
+          --source-contest-id week1-preview-20260831
+          --expected-lined-game-count 43
+          --captured-at "2026-08-31T17:55:17+00:00"
+          --imported-by JCRABURN
+          --provenance "Owner-provided Week 1 slate; pre-lock preview only"
+
+      - name: Build preview weekly configuration
+        run: |
+          python - <<'PY'
+          import hashlib, json
+          from pathlib import Path
+
+          manifest = Path('production-weeks/week1-preview-manifest.json')
+          manifest_sha = hashlib.sha256(manifest.read_bytes()).hexdigest()
+          policy_versions = {
+              'controller': 'production-controller-v2',
+              'selection': 'production-selection-v1',
+              'confidence': 'production-confidence-v1',
+              'ranking': 'production-ranking-v1',
+              'adjustment': 'production-adjustment-v1',
+              'refresh': 'production-refresh-v1',
+              'audit': 'production-audit-v1',
+              'diagnostics': 'production-diagnostics-v1',
+              'sportsbook': 'production-sportsbook-v1',
+          }
+          payload = {
+              'configuration_version': 'v3-weekly-production-v1',
+              'repository': 'JCRABURN/cfb-betting-system-v3',
+              'season': 2026,
+              'week': 1,
+              'contest': {
+                  'key': 'splashsports-2026-week-1-preview',
+                  'name': 'SplashSports 2026 Week 1 Preview',
+                  'source': 'SplashSports',
+                  'source_contest_id': 'week1-preview-20260831',
+                  'expected_lined_game_count': 43,
+              },
+              'line_manifest': {
+                  'path': 'production-weeks/week1-preview-manifest.json',
+                  'sha256': manifest_sha,
+              },
+              'provider_bundle': None,
+              'model': {
+                  'name': 'epa_only',
+                  'version': 'epa-only-linear-v1',
+                  'feature_schema_version': 'epa-differential-v1',
+                  'configuration_version': 'walk-forward-prior-seasons-v1',
+              },
+              'policies': policy_versions,
+              'freshness': {
+                  'policy_version': 'provider_freshness_v1',
+                  'max_age_seconds': {
+                      'odds': 900,
+                      'injuries': 21600,
+                      'weather': 10800,
+                      'game_status': 300,
+                      'contextual': 86400,
+                  },
+              },
+              'freshness_fallbacks': [
+                  {
+                      'data_type': data_type,
+                      'fallback_code': f'{data_type}_preview_fallback_v1',
+                      'reason': f'Pre-lock Week 1 preview fallback for {data_type}',
+                      'evidence': f'owner-preview://2026/week1/{data_type}',
+                      'provenance': 'pre-lock-preview-only',
+                  }
+                  for data_type in ('odds','injuries','weather','game_status','contextual')
+              ],
+              'contextual_adjustments': [],
+              'sportsbook_recommendations': [],
+              'daily_refresh': {
+                  'change_type': 'data_refresh',
+                  'reason': 'Pre-lock Week 1 model preview.',
+              },
+              'closing_book': 'draftkings',
+              'display_timezone': 'America/Chicago',
+              'actor': 'repository-owner',
+              'provenance': 'pre-lock-week1-model-preview',
+          }
+          Path('production-weeks/week1-preview-config.json').write_text(
+              json.dumps(payload, indent=2) + '\n', encoding='utf-8'
+          )
+          PY
+
+      - name: Run real V3 controller on disposable database
+        run: >-
+          python -m scripts.run_production_operation
+          --operation tuesday_lock
+          --database data/week1-preview.db
+          --weekly-config production-weeks/week1-preview-config.json
+          --mode persist
+          --confirmation EXECUTE_V3_OPERATION
+          --preflight-output /tmp/week1-preflight.json
+          --result-output /tmp/week1-result.json
+
+      - name: Extract full card and Top 5
+        shell: bash
+        run: |
+          set -euo pipefail
+          PUB=$(python - <<'PY'
+          import json
+          print(json.load(open('/tmp/week1-result.json'))['publication_id'])
+          PY
+          )
+          python -m scripts.inspect_official_card \
+            --database data/week1-preview.db \
+            --publication-id "$PUB" > /tmp/week1-card.json
+          python - <<'PY'
+          import json, sqlite3
+          result = json.load(open('/tmp/week1-result.json'))
+          card_id = result['card_id']
+          conn = sqlite3.connect('data/week1-preview.db')
+          conn.row_factory = sqlite3.Row
+          rows = conn.execute('''
+              SELECT p.rank, p.confidence, p.selected_side, p.fallback_code,
+                     l.game_id, l.home_spread, l.total,
+                     g.away_team, g.home_team,
+                     mp.predicted_home_margin, mp.uncertainty_points
+              FROM contest_picks AS p
+              JOIN contest_locked_lines AS l ON l.id = p.locked_line_id
+              JOIN games AS g ON g.game_id = l.game_id
+              LEFT JOIN model_predictions AS mp ON mp.id = p.model_prediction_id
+              WHERE p.card_id = ?
+              ORDER BY p.is_top_five DESC, p.rank DESC, p.confidence DESC,
+                       CASE WHEN mp.uncertainty_points IS NULL THEN 1 ELSE 0 END,
+                       mp.uncertainty_points ASC, p.locked_line_id ASC
+          ''', (card_id,)).fetchall()
+          picks = []
+          for r in rows:
+              d = dict(r)
+              d['selected_team'] = d['home_team'] if d['selected_side'] == 'home' else d['away_team']
+              d['selected_spread'] = d['home_spread'] if d['selected_side'] == 'home' else -d['home_spread']
+              d['is_top_five'] = d['rank'] is not None
+              picks.append(d)
+          top5 = [p for p in picks if p['is_top_five']]
+          json.dump(picks, open('/tmp/week1-all-picks.json','w'), indent=2)
+          json.dump(top5, open('/tmp/week1-top5.json','w'), indent=2)
+          print('WEEK1_TOP5_JSON=' + json.dumps(top5, separators=(',', ':')))
+          conn.close()
+          PY
+          sha256sum data/cfb.db | awk '{print $1}' > /tmp/source-after.sha
+          diff -u /tmp/source-before.sha /tmp/source-after.sha
+          echo "SOURCE_DB_UNCHANGED=true"
+          cat /tmp/week1-top5.json
+
+      - name: Upload preview artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: week1-model-preview
+          path: |
+            /tmp/week1-preflight.json
+            /tmp/week1-result.json
+            /tmp/week1-card.json
+            /tmp/week1-all-picks.json
+            /tmp/week1-top5.json
+          retention-days: 7
