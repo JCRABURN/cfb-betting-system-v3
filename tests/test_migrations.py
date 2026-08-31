@@ -118,7 +118,7 @@ def test_legacy_database_gains_feature_columns_without_data_loss(tmp_path):
     conn.close()
 
     assert [result.version for result in applied] == [
-        1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20
+        1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21
     ]
     assert after_counts["team_game_stats"] == before_counts["team_game_stats"] == 1
     assert {"offense_success_rate", "defense_success_rate", "havoc_rate"} <= columns
@@ -137,7 +137,7 @@ def test_authoritative_database_copy_preserves_rows_integrity_and_source(tmp_pat
     assert result.integrity_result == "ok"
     assert result.foreign_key_violation_count == 0
     assert result.applied_versions == (
-        1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20
+        1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21
     )
     assert all(
         result.after_counts[table] == count
@@ -212,6 +212,17 @@ def test_authoritative_database_copy_preserves_rows_integrity_and_source(tmp_pat
         "football_event_revisions",
         "football_provider_event_ids",
         "legacy_cfb_game_links",
+        "total_model_runs",
+        "total_model_predictions",
+        "total_reliability_policies",
+        "total_shadow_cards",
+        "total_card_candidates",
+        "total_card_skips",
+        "total_shadow_card_completions",
+        "unified_top_five_policies",
+        "unified_top_five_runs",
+        "unified_top_five_candidates",
+        "unified_top_five_completions",
     ):
         assert result.after_counts[table] == 0
     assert result.after_counts["football_sports"] == 2
@@ -247,6 +258,17 @@ def test_authoritative_database_copy_preserves_rows_integrity_and_source(tmp_pat
             "mixed_contest_lines",
             "mixed_line_lock_completions",
             "mixed_round_state_events",
+            "total_model_runs",
+            "total_model_predictions",
+            "total_reliability_policies",
+            "total_shadow_cards",
+            "total_card_candidates",
+            "total_card_skips",
+            "total_shadow_card_completions",
+            "unified_top_five_policies",
+            "unified_top_five_runs",
+            "unified_top_five_candidates",
+            "unified_top_five_completions",
         )
     )
     assert _file_hash(AUTHORITATIVE_DATABASE) == source_hash_before
@@ -469,6 +491,21 @@ def test_official_publication_trigger_definition_drift_is_detected(tmp_path):
     conn.commit()
 
     with pytest.raises(MigrationError, match="schema verification failed"):
+        apply_migrations(conn)
+    conn.close()
+
+
+def test_totals_shadow_trigger_definition_drift_is_detected(tmp_path):
+    conn = _connect(tmp_path / "totals-shadow-trigger-drift.db")
+    apply_migrations(conn)
+    conn.execute("DROP TRIGGER total_card_candidates_validate")
+    conn.execute(
+        "CREATE TRIGGER total_card_candidates_validate "
+        "BEFORE INSERT ON total_card_candidates BEGIN SELECT 1; END"
+    )
+    conn.commit()
+
+    with pytest.raises(MigrationError, match="definition changed"):
         apply_migrations(conn)
     conn.close()
 

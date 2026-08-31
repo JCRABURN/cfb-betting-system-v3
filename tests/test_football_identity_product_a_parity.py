@@ -13,6 +13,7 @@ from business_entities import (
     TuesdayCardRequest,
     WeeklyControllerPolicy,
     run_tuesday_controller,
+    run_daily_controller,
 )
 from migrations.runner import apply_migrations, load_migrations
 
@@ -323,7 +324,7 @@ def test_migration_20_preserves_product_a_rows_and_controller_outputs_exactly():
     product_a_tables = _application_tables(before_conn)
     pre_migration_rows = _table_snapshot(after_conn, product_a_tables)
 
-    applied = apply_migrations(after_conn)
+    applied = apply_migrations(after_conn, load_migrations()[:20])
 
     assert tuple(result.version for result in applied) == (20,)
     assert _table_snapshot(after_conn, product_a_tables) == pre_migration_rows
@@ -379,3 +380,115 @@ def test_product_a_has_no_dependency_on_product_b_operational_state():
         for table in operational_tables
     )
     conn.close()
+
+
+def test_migration_21_preserves_product_a_rows_and_controller_outputs_exactly():
+    before_conn = _connection(20)
+    after_conn = _connection(20)
+    before_lines = _seed_product_a_fixture(before_conn)
+    after_lines = _seed_product_a_fixture(after_conn)
+    product_a_tables = _application_tables(before_conn)
+    pre_migration_rows = _table_snapshot(after_conn, product_a_tables)
+
+    applied = apply_migrations(after_conn)
+
+    assert tuple(result.version for result in applied) == (21,)
+    assert _table_snapshot(after_conn, product_a_tables) == pre_migration_rows
+
+    before_result = run_tuesday_controller(before_conn, _request(before_lines))
+    after_result = run_tuesday_controller(after_conn, _request(after_lines))
+
+    assert _result_signature(after_result) == _result_signature(before_result)
+    assert _table_snapshot(after_conn, product_a_tables) == _table_snapshot(
+        before_conn, product_a_tables
+    )
+    assert tuple(
+        (pick.selected_side, pick.confidence, pick.rank, pick.is_top_five)
+        for pick in after_result.card.picks
+    ) == tuple(
+        (pick.selected_side, pick.confidence, pick.rank, pick.is_top_five)
+        for pick in before_result.card.picks
+    )
+    assert after_result.publication == before_result.publication
+    assert after_conn.execute(
+        "SELECT decision, recommended_side, stake_units, reason_code "
+        "FROM sportsbook_recommendations"
+    ).fetchall() == before_conn.execute(
+        "SELECT decision, recommended_side, stake_units, reason_code "
+        "FROM sportsbook_recommendations"
+    ).fetchall()
+    assert all(
+        after_conn.execute(f"SELECT COUNT(*) FROM {table}").fetchone()[0] == 0
+        for table in (
+            "total_model_runs",
+            "total_model_predictions",
+            "total_reliability_policies",
+            "total_shadow_cards",
+            "total_card_candidates",
+            "total_card_skips",
+            "total_shadow_card_completions",
+            "unified_top_five_policies",
+            "unified_top_five_runs",
+            "unified_top_five_candidates",
+            "unified_top_five_completions",
+        )
+    )
+    before_conn.close()
+    after_conn.close()
+
+
+def test_migration_21_preserves_revision_grading_and_diagnostics_exactly():
+    from tests import test_weekly_controller as controller_fixture
+    from tests import test_weekly_diagnostics as diagnostic_fixture
+
+    class ConnectionFixture:
+        def __init__(self, connection):
+            self.connection = connection
+
+        def get_connection(self):
+            return self.connection
+
+    before_conn = _connection(20)
+    after_conn = _connection(20)
+    apply_migrations(after_conn)
+
+    signatures = []
+    for conn in (before_conn, after_conn):
+        fixture = ConnectionFixture(conn)
+        _, lines = controller_fixture._seed_games(fixture)
+        controller_fixture._seed_epa_inputs(conn)
+        tuesday = run_tuesday_controller(
+            conn, controller_fixture._tuesday_request(lines)
+        )
+        daily = run_daily_controller(
+            conn,
+            controller_fixture._daily_request(tuesday.publication.id),
+        )
+        _, audit = diagnostic_fixture._seed_completed_audit(fixture)
+        diagnostics = diagnostic_fixture._generate(conn, audit)
+        signatures.append(
+            {
+                "tuesday": asdict(tuesday),
+                "daily": asdict(daily),
+                "audit": asdict(audit),
+                "diagnostics": asdict(diagnostics),
+                "revisions": tuple(
+                    conn.execute(
+                        "SELECT revision_key, prior_card_id, revised_card_id, "
+                        "change_type, reason, author, revised_at, provenance "
+                        "FROM card_revisions ORDER BY id"
+                    )
+                ),
+                "refreshes": tuple(
+                    conn.execute(
+                        "SELECT revision_id, refresh_policy_id, operating_date, "
+                        "operating_weekday, timezone_name, refreshed_at, provenance "
+                        "FROM card_refresh_revisions ORDER BY revision_id"
+                    )
+                ),
+            }
+        )
+
+    assert signatures[1] == signatures[0]
+    before_conn.close()
+    after_conn.close()
