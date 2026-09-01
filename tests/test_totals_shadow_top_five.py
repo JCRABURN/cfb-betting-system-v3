@@ -4,18 +4,22 @@ from datetime import datetime, timezone
 import pytest
 
 from business_entities import (
-    AtsUnifiedCandidateInput,
+    AtsShadowCalibrationPolicy,
     BusinessEntityConflictError,
     BusinessEntityError,
     TotalReliabilityPolicy,
     UnifiedTopFivePolicy,
     add_contest_pick,
     create_contest_card,
+    generate_ats_shadow_calibrations,
     generate_total_shadow_card,
     generate_unified_top_five,
+    record_model_prediction,
+    record_model_run,
     record_total_model_prediction,
     record_total_model_run,
     register_total_reliability_policy,
+    register_ats_shadow_calibration_policy,
     register_unified_top_five_policy,
 )
 from business_entities.full_card import locked_line_snapshot_sha256
@@ -30,9 +34,11 @@ from contest_lines import (
 POLICY_AT = datetime(2026, 8, 25, 12, tzinfo=timezone.utc)
 LOCKED_AT = datetime(2026, 8, 25, 13, tzinfo=timezone.utc)
 RUN_AT = datetime(2026, 8, 25, 14, tzinfo=timezone.utc)
+ATS_PREDICTION_AT = datetime(2026, 8, 25, 14, 10, tzinfo=timezone.utc)
 ATS_CARD_AT = datetime(2026, 8, 25, 14, 20, tzinfo=timezone.utc)
 PREDICTION_AT = datetime(2026, 8, 25, 14, 30, tzinfo=timezone.utc)
 TOTAL_CARD_AT = datetime(2026, 8, 25, 15, tzinfo=timezone.utc)
+ATS_CALIBRATION_AT = datetime(2026, 8, 25, 15, 5, tzinfo=timezone.utc)
 UNIFIED_AT = datetime(2026, 8, 25, 15, 15, tzinfo=timezone.utc)
 FUTURE_CORRECTION_AT = datetime(2026, 8, 25, 15, 30, tzinfo=timezone.utc)
 AFTER_CORRECTION_AT = datetime(2026, 8, 25, 15, 45, tzinfo=timezone.utc)
@@ -82,6 +88,41 @@ def _seed(temp_db):
             ).line
         )
 
+    ats_run = record_model_run(
+        conn,
+        run_key="ats-shadow-source-run-v1",
+        model_name="epa_only",
+        model_version="epa-only-linear-v1",
+        feature_schema_version="epa-differential-v1",
+        configuration_version="walk-forward-prior-seasons-v1",
+        code_commit_sha="c" * 40,
+        data_snapshot_sha256="d" * 64,
+        status="completed",
+        provenance="fixture://totals/ats-model-run",
+        generated_at=RUN_AT,
+    )
+    ats_advantages = (10.0, 8.0, 6.0, 4.0, 2.0, 12.0)
+    ats_predictions = []
+    for index, (line, advantage) in enumerate(
+        zip(lines, ats_advantages), start=1
+    ):
+        predicted_home_margin = (
+            index + advantage if index % 2 else index - advantage
+        )
+        ats_predictions.append(
+            record_model_prediction(
+                conn,
+                prediction_key=f"ats-shadow-prediction-{index}",
+                model_run_id=ats_run.id,
+                game_id=4100 + index,
+                predicted_home_margin=predicted_home_margin,
+                uncertainty_points=7.0,
+                entry_locked_line_id=line.id,
+                provenance=f"fixture://totals/ats-prediction/{index}",
+                generated_at=ATS_PREDICTION_AT,
+            )
+        )
+
     ats_card = create_contest_card(
         conn,
         card_key="legacy-ats-card-v1",
@@ -94,10 +135,13 @@ def _seed(temp_db):
         ),
         created_by="test",
         provenance="fixture://totals/legacy-ats-card",
+        model_run_id=ats_run.id,
         generated_at=ATS_CARD_AT,
     )
     picks = []
-    for index, line in enumerate(lines, start=1):
+    for index, (line, prediction) in enumerate(
+        zip(lines, ats_predictions), start=1
+    ):
         picks.append(
             add_contest_pick(
                 conn,
@@ -105,10 +149,10 @@ def _seed(temp_db):
                 card_id=ats_card.id,
                 locked_line_id=line.id,
                 selected_side="home" if index % 2 else "away",
+                model_prediction_id=prediction.id,
                 confidence=min(index, 5),
                 rank=index,
                 is_top_five=index <= 5,
-                fallback_code="fixture_explicit_fallback",
                 provenance="fixture://totals/legacy-ats-pick",
                 generated_at=ATS_CARD_AT,
             )
@@ -176,6 +220,30 @@ def _seed(temp_db):
         created_by="test",
         provenance="fixture://totals/card",
     )
+    ats_calibration_policy = register_ats_shadow_calibration_policy(
+        conn,
+        AtsShadowCalibrationPolicy(
+            policy_key="ats-shadow-conservative-policy-v1",
+            reliability_policy_version="ats-shadow-conservative-v1",
+            probability_method_version="conservative-selected-margin-v1",
+            required_model_name="epa_only",
+            required_model_version="epa-only-linear-v1",
+            probability_per_margin_point=0.005,
+            maximum_selected_probability=0.6,
+            effective_at=POLICY_AT,
+            created_by="test",
+            provenance="fixture://totals/ats-calibration-policy",
+        ),
+    )
+    ats_calibration = generate_ats_shadow_calibrations(
+        conn,
+        run_key="ats-shadow-calibration-run-v1",
+        contest_card_id=ats_card.id,
+        ats_shadow_calibration_policy_id=ats_calibration_policy.id,
+        generated_at=ATS_CALIBRATION_AT,
+        created_by="test",
+        provenance="fixture://totals/ats-calibration-run",
+    )
     unified_policy = register_unified_top_five_policy(
         conn,
         UnifiedTopFivePolicy(
@@ -193,24 +261,99 @@ def _seed(temp_db):
         "contest": contest,
         "lines": tuple(lines),
         "ats_card": ats_card,
+        "ats_run": ats_run,
+        "ats_predictions": tuple(ats_predictions),
         "picks": tuple(picks),
+        "ats_calibration_policy": ats_calibration_policy,
+        "ats_calibration": ats_calibration,
         "total_run": total_run,
         "predictions": tuple(predictions),
         "total_policy": total_policy,
         "total_card": total_card,
         "unified_policy": unified_policy,
+}
+
+
+def _ats_evaluation_ids(seeded):
+    return tuple(item.id for item in seeded["ats_calibration"].evaluations)
+
+
+def _unified_kwargs(seeded, run_key):
+    return {
+        "run_key": run_key,
+        "contest_card_id": seeded["ats_card"].id,
+        "total_shadow_card_id": seeded["total_card"].card.id,
+        "unified_top_five_policy_id": seeded["unified_policy"].id,
+        "ats_calibrated_evaluation_ids": _ats_evaluation_ids(seeded),
+        "generated_at": UNIFIED_AT,
+        "created_by": "test",
+        "provenance": "fixture://totals/unified-adversarial",
     }
 
 
-def _ats_inputs(picks):
-    probabilities = (0.95, 0.61, 0.62, 0.63, 0.64, 0.65)
-    return tuple(
-        AtsUnifiedCandidateInput(
-            contest_pick_id=pick.id,
-            calibrated_probability=probability,
-            reliability_policy_version="ats-shadow-calibration-v7",
-        )
-        for pick, probability in zip(picks, probabilities)
+def _insert_open_unified_run(conn, seeded, run_key):
+    cursor = conn.execute(
+        "INSERT INTO unified_top_five_runs "
+        "(run_key, contest_card_id, ats_shadow_calibration_run_id, "
+        "total_shadow_card_id, unified_top_five_policy_id, status, "
+        "candidate_input_sha256, generated_at, created_by, provenance) "
+        "VALUES (?, ?, ?, ?, ?, 'shadow', ?, ?, 'test', ?)",
+        (
+            run_key,
+            seeded["ats_card"].id,
+            seeded["ats_calibration"].run.id,
+            seeded["total_card"].card.id,
+            seeded["unified_policy"].id,
+            "e" * 64,
+            UNIFIED_AT.isoformat(),
+            "fixture://totals/open-unified-run",
+        ),
+    )
+    return cursor.lastrowid
+
+
+def _insert_ats_candidate(
+    conn,
+    *,
+    run_id,
+    candidate_key,
+    evaluation,
+    contest_pick_id=None,
+    probability=None,
+    reliability_policy_version=None,
+):
+    probability = (
+        evaluation.calibrated_selected_side_probability
+        if probability is None
+        else probability
+    )
+    reliability_policy_version = (
+        evaluation.reliability_policy_version
+        if reliability_policy_version is None
+        else reliability_policy_version
+    )
+    conn.execute(
+        "INSERT INTO unified_top_five_candidates "
+        "(candidate_key, unified_top_five_run_id, market_type, game_id, "
+        "contest_pick_id, ats_shadow_calibrated_evaluation_id, "
+        "total_card_candidate_id, calibrated_probability, candidate_score, "
+        "reliability_policy_version, pool_rank, top_five_rank, is_top_five, "
+        "generated_at, provenance) "
+        "VALUES (?, ?, 'ATS', ?, ?, ?, NULL, ?, ?, ?, 1, NULL, 0, ?, ?)",
+        (
+            candidate_key,
+            run_id,
+            evaluation.game_id,
+            evaluation.contest_pick_id
+            if contest_pick_id is None
+            else contest_pick_id,
+            evaluation.id,
+            probability,
+            probability,
+            reliability_policy_version,
+            UNIFIED_AT.isoformat(),
+            "fixture://totals/adversarial-candidate",
+        ),
     )
 
 
@@ -335,7 +478,7 @@ def test_unified_top_five_mixes_markets_uses_probability_and_one_per_game(temp_d
         contest_card_id=seeded["ats_card"].id,
         total_shadow_card_id=seeded["total_card"].card.id,
         unified_top_five_policy_id=seeded["unified_policy"].id,
-        ats_candidates=_ats_inputs(seeded["picks"]),
+        ats_calibrated_evaluation_ids=_ats_evaluation_ids(seeded),
         generated_at=UNIFIED_AT,
         created_by="test",
         provenance="fixture://totals/unified-run",
@@ -346,14 +489,13 @@ def test_unified_top_five_mixes_markets_uses_probability_and_one_per_game(temp_d
     assert len(result.top_five) == 5
     assert {item.market_type for item in result.top_five} == {"ATS", "TOTAL"}
     assert len({item.game_id for item in result.top_five}) == 5
-    assert result.candidates[0].market_type == "ATS"
-    assert result.candidates[0].calibrated_probability == 0.95
+    assert result.candidates[0].market_type == "TOTAL"
     assert all(item.candidate_score == item.calibrated_probability for item in result.candidates)
     game_one = [item for item in result.candidates if item.game_id == 4101]
     assert len(game_one) == 2
     assert sum(item.is_top_five for item in game_one) == 1
     assert {item.reliability_policy_version for item in game_one} == {
-        "ats-shadow-calibration-v7",
+        "ats-shadow-conservative-v1",
         "total-reliability-v1",
     }
     assert [item.top_five_rank for item in result.top_five] == [1, 2, 3, 4, 5]
@@ -365,6 +507,131 @@ def test_unified_top_five_mixes_markets_uses_probability_and_one_per_game(temp_d
     conn.close()
 
 
+def test_unified_callers_cannot_assert_ats_probability_or_reliability(temp_db):
+    seeded = _seed(temp_db)
+    kwargs = _unified_kwargs(seeded, "unified-shadow-no-caller-assertions")
+
+    with pytest.raises(TypeError, match="calibrated_probability"):
+        generate_unified_top_five(
+            seeded["conn"], **kwargs, calibrated_probability=0.99
+        )
+    with pytest.raises(TypeError, match="reliability_policy_version"):
+        generate_unified_top_five(
+            seeded["conn"],
+            **kwargs,
+            reliability_policy_version="spoofed-ats-policy-v999",
+        )
+    assert seeded["conn"].execute(
+        "SELECT COUNT(*) FROM unified_top_five_runs"
+    ).fetchone()[0] == 0
+    seeded["conn"].close()
+
+
+def test_sqlite_rejects_ats_evaluation_pick_probability_and_policy_spoofing(temp_db):
+    seeded = _seed(temp_db)
+    conn = seeded["conn"]
+    run_id = _insert_open_unified_run(conn, seeded, "open-unified-adversarial")
+    evaluation = seeded["ats_calibration"].evaluations[0]
+
+    with pytest.raises(sqlite3.IntegrityError, match="mismatched market reference"):
+        _insert_ats_candidate(
+            conn,
+            run_id=run_id,
+            candidate_key="wrong-pick-for-evaluation",
+            evaluation=evaluation,
+            contest_pick_id=seeded["picks"][1].id,
+        )
+    with pytest.raises(sqlite3.IntegrityError, match="mismatched market reference"):
+        _insert_ats_candidate(
+            conn,
+            run_id=run_id,
+            candidate_key="wrong-probability-for-evaluation",
+            evaluation=evaluation,
+            probability=0.599,
+        )
+    with pytest.raises(sqlite3.IntegrityError, match="mismatched market reference"):
+        _insert_ats_candidate(
+            conn,
+            run_id=run_id,
+            candidate_key="wrong-policy-for-evaluation",
+            evaluation=evaluation,
+            reliability_policy_version="spoofed-ats-policy-v999",
+        )
+    assert conn.execute(
+        "SELECT COUNT(*) FROM unified_top_five_candidates"
+    ).fetchone()[0] == 0
+    conn.close()
+
+
+def test_sqlite_rejects_ats_calibration_evaluation_from_another_card(temp_db):
+    seeded = _seed(temp_db)
+    conn = seeded["conn"]
+    second_card_at = datetime(2026, 8, 25, 14, 25, tzinfo=timezone.utc)
+    second_calibration_at = datetime(2026, 8, 25, 15, 10, tzinfo=timezone.utc)
+    second_card = create_contest_card(
+        conn,
+        card_key="legacy-ats-card-v2",
+        contest_id=seeded["contest"].id,
+        version=2,
+        status="draft",
+        policy_version="unchanged-ats-policy-v1",
+        locked_line_snapshot_sha256=locked_line_snapshot_sha256(
+            list_effective_locked_lines(
+                conn, seeded["contest"].id, as_of=second_card_at
+            )
+        ),
+        created_by="test",
+        provenance="fixture://totals/legacy-ats-card-v2",
+        model_run_id=seeded["ats_run"].id,
+        generated_at=second_card_at,
+    )
+    for index, (line, prediction) in enumerate(
+        zip(seeded["lines"], seeded["ats_predictions"]), start=1
+    ):
+        add_contest_pick(
+            conn,
+            pick_key=f"legacy-ats-pick-v2-{index}",
+            card_id=second_card.id,
+            locked_line_id=line.id,
+            selected_side="home" if index % 2 else "away",
+            model_prediction_id=prediction.id,
+            confidence=min(index, 5),
+            rank=index,
+            is_top_five=index <= 5,
+            provenance="fixture://totals/legacy-ats-pick-v2",
+            generated_at=second_card_at,
+        )
+    other_calibration = generate_ats_shadow_calibrations(
+        conn,
+        run_key="ats-shadow-calibration-run-v2",
+        contest_card_id=second_card.id,
+        ats_shadow_calibration_policy_id=seeded["ats_calibration_policy"].id,
+        generated_at=second_calibration_at,
+        created_by="test",
+        provenance="fixture://totals/ats-calibration-run-v2",
+    )
+
+    run_id = _insert_open_unified_run(conn, seeded, "open-unified-other-card")
+    with pytest.raises(sqlite3.IntegrityError, match="mismatched market reference"):
+        _insert_ats_candidate(
+            conn,
+            run_id=run_id,
+            candidate_key="other-card-evaluation",
+            evaluation=other_calibration.evaluations[0],
+        )
+    with pytest.raises(BusinessEntityError, match="another contest card"):
+        generate_unified_top_five(
+            conn,
+            **{
+                **_unified_kwargs(seeded, "unified-other-card-service"),
+                "ats_calibrated_evaluation_ids": tuple(
+                    item.id for item in other_calibration.evaluations
+                ),
+            },
+        )
+    conn.close()
+
+
 def test_unified_replay_is_deterministic_and_requires_unambiguous_complete_inputs(temp_db):
     seeded = _seed(temp_db)
     conn = seeded["conn"]
@@ -373,7 +640,7 @@ def test_unified_replay_is_deterministic_and_requires_unambiguous_complete_input
         contest_card_id=seeded["ats_card"].id,
         total_shadow_card_id=seeded["total_card"].card.id,
         unified_top_five_policy_id=seeded["unified_policy"].id,
-        ats_candidates=_ats_inputs(seeded["picks"]),
+        ats_calibrated_evaluation_ids=_ats_evaluation_ids(seeded),
         generated_at=UNIFIED_AT,
         created_by="test",
         provenance="fixture://totals/unified-replay",
@@ -385,22 +652,44 @@ def test_unified_replay_is_deterministic_and_requires_unambiguous_complete_input
     assert second.candidates == first.candidates
     assert second.completion == first.completion
 
-    with pytest.raises(BusinessEntityError, match="cover every card pick"):
+    calibration_replay = generate_ats_shadow_calibrations(
+        conn,
+        run_key="ats-shadow-calibration-run-v1",
+        contest_card_id=seeded["ats_card"].id,
+        ats_shadow_calibration_policy_id=seeded["ats_calibration_policy"].id,
+        generated_at=ATS_CALIBRATION_AT,
+        created_by="test",
+        provenance="fixture://totals/ats-calibration-run",
+    )
+    assert calibration_replay.replayed is True
+    assert calibration_replay.run == seeded["ats_calibration"].run
+    assert calibration_replay.evaluations == seeded["ats_calibration"].evaluations
+    assert calibration_replay.completion == seeded["ats_calibration"].completion
+
+    with pytest.raises(BusinessEntityError, match="cover the complete ledger"):
         generate_unified_top_five(
             conn,
-            **{**kwargs, "run_key": "unified-incomplete", "ats_candidates": kwargs["ats_candidates"][:-1]},
+            **{
+                **kwargs,
+                "run_key": "unified-incomplete",
+                "ats_calibrated_evaluation_ids": kwargs[
+                    "ats_calibrated_evaluation_ids"
+                ][:-1],
+            },
         )
     with pytest.raises(sqlite3.IntegrityError, match="sealed"):
         conn.execute(
             "INSERT INTO unified_top_five_candidates "
             "(candidate_key, unified_top_five_run_id, market_type, game_id, "
-            "contest_pick_id, total_card_candidate_id, calibrated_probability, "
-            "candidate_score, reliability_policy_version, pool_rank, "
-            "is_top_five, generated_at, provenance) "
-            "VALUES ('ambiguous', ?, 'ATS', 4101, ?, ?, 0.6, 0.6, 'x', 99, 0, ?, 'x')",
+            "contest_pick_id, ats_shadow_calibrated_evaluation_id, "
+            "total_card_candidate_id, calibrated_probability, candidate_score, "
+            "reliability_policy_version, pool_rank, is_top_five, generated_at, "
+            "provenance) VALUES "
+            "('ambiguous', ?, 'ATS', 4101, ?, ?, ?, 0.6, 0.6, 'x', 99, 0, ?, 'x')",
             (
                 first.run.id,
                 seeded["picks"][0].id,
+                seeded["ats_calibration"].evaluations[0].id,
                 seeded["total_card"].candidates[0].id,
                 UNIFIED_AT.isoformat(),
             ),
@@ -417,7 +706,7 @@ def test_totals_shadow_entities_are_immutable_and_policy_is_independent_from_ats
         contest_card_id=seeded["ats_card"].id,
         total_shadow_card_id=seeded["total_card"].card.id,
         unified_top_five_policy_id=seeded["unified_policy"].id,
-        ats_candidates=_ats_inputs(seeded["picks"]),
+        ats_calibrated_evaluation_ids=_ats_evaluation_ids(seeded),
         generated_at=UNIFIED_AT,
         created_by="test",
         provenance="fixture://totals/unified-immutable",
@@ -430,6 +719,12 @@ def test_totals_shadow_entities_are_immutable_and_policy_is_independent_from_ats
         "total_card_candidates": seeded["total_card"].candidates[0].id,
         "total_card_skips": seeded["total_card"].skips[0].id,
         "total_shadow_card_completions": seeded["total_card"].card.id,
+        "ats_shadow_calibration_policies": seeded["ats_calibration_policy"].id,
+        "ats_shadow_calibration_runs": seeded["ats_calibration"].run.id,
+        "ats_shadow_calibrated_evaluations": seeded["ats_calibration"].evaluations[
+            0
+        ].id,
+        "ats_shadow_calibration_completions": seeded["ats_calibration"].run.id,
         "unified_top_five_policies": seeded["unified_policy"].id,
         "unified_top_five_runs": unified.run.id,
         "unified_top_five_candidates": unified.candidates[0].id,
@@ -437,6 +732,7 @@ def test_totals_shadow_entities_are_immutable_and_policy_is_independent_from_ats
     }
     primary_keys = {
         "total_shadow_card_completions": "total_shadow_card_id",
+        "ats_shadow_calibration_completions": "ats_shadow_calibration_run_id",
         "unified_top_five_completions": "unified_top_five_run_id",
     }
     for table, row_id in rows.items():

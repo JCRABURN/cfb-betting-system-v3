@@ -231,6 +231,136 @@ STATEMENTS = (
     )
     """,
     """
+    CREATE TABLE ats_shadow_calibration_policies (
+        id INTEGER PRIMARY KEY AUTOINCREMENT,
+        policy_key TEXT NOT NULL UNIQUE CHECK (length(trim(policy_key)) > 0),
+        reliability_policy_version TEXT NOT NULL UNIQUE
+            CHECK (length(trim(reliability_policy_version)) > 0),
+        probability_method_version TEXT NOT NULL
+            CHECK (length(trim(probability_method_version)) > 0),
+        calibration_method TEXT NOT NULL
+            CHECK (calibration_method = 'conservative_linear_margin_v1'),
+        required_model_name TEXT NOT NULL CHECK (length(trim(required_model_name)) > 0),
+        required_model_version TEXT NOT NULL
+            CHECK (length(trim(required_model_version)) > 0),
+        probability_per_margin_point REAL NOT NULL CHECK (
+            probability_per_margin_point > 0
+            AND probability_per_margin_point <= 0.01
+        ),
+        maximum_selected_probability REAL NOT NULL CHECK (
+            maximum_selected_probability > 0.5
+            AND maximum_selected_probability <= 0.6
+        ),
+        missing_prediction_probability REAL NOT NULL
+            CHECK (missing_prediction_probability = 0.5),
+        empirical_calibration_status TEXT NOT NULL
+            CHECK (empirical_calibration_status = 'not_empirically_validated'),
+        status TEXT NOT NULL CHECK (status = 'shadow'),
+        effective_at TEXT NOT NULL CHECK (
+            julianday(effective_at) IS NOT NULL AND substr(effective_at, -6) = '+00:00'
+        ),
+        created_by TEXT NOT NULL CHECK (length(trim(created_by)) > 0),
+        provenance TEXT NOT NULL CHECK (length(trim(provenance)) > 0)
+    )
+    """,
+    """
+    CREATE TABLE ats_shadow_calibration_runs (
+        id INTEGER PRIMARY KEY AUTOINCREMENT,
+        run_key TEXT NOT NULL UNIQUE CHECK (length(trim(run_key)) > 0),
+        contest_card_id INTEGER NOT NULL,
+        ats_model_run_id INTEGER NOT NULL,
+        ats_shadow_calibration_policy_id INTEGER NOT NULL,
+        status TEXT NOT NULL CHECK (status = 'shadow'),
+        input_sha256 TEXT NOT NULL CHECK (
+            length(input_sha256) = 64
+            AND lower(input_sha256) NOT GLOB '*[^0-9a-f]*'
+        ),
+        generated_at TEXT NOT NULL CHECK (
+            julianday(generated_at) IS NOT NULL AND substr(generated_at, -6) = '+00:00'
+        ),
+        created_by TEXT NOT NULL CHECK (length(trim(created_by)) > 0),
+        provenance TEXT NOT NULL CHECK (length(trim(provenance)) > 0),
+        UNIQUE (contest_card_id, ats_shadow_calibration_policy_id),
+        FOREIGN KEY (contest_card_id) REFERENCES contest_cards(id),
+        FOREIGN KEY (ats_model_run_id) REFERENCES model_runs(id),
+        FOREIGN KEY (ats_shadow_calibration_policy_id)
+            REFERENCES ats_shadow_calibration_policies(id)
+    )
+    """,
+    """
+    CREATE TABLE ats_shadow_calibrated_evaluations (
+        id INTEGER PRIMARY KEY AUTOINCREMENT,
+        evaluation_key TEXT NOT NULL UNIQUE CHECK (length(trim(evaluation_key)) > 0),
+        ats_shadow_calibration_run_id INTEGER NOT NULL,
+        contest_card_id INTEGER NOT NULL,
+        contest_pick_id INTEGER NOT NULL,
+        ats_model_run_id INTEGER NOT NULL,
+        ats_model_prediction_id INTEGER,
+        locked_line_id INTEGER NOT NULL,
+        game_id INTEGER NOT NULL,
+        selected_side TEXT NOT NULL CHECK (selected_side IN ('home', 'away')),
+        ats_model_name TEXT NOT NULL CHECK (length(trim(ats_model_name)) > 0),
+        ats_model_version TEXT NOT NULL CHECK (length(trim(ats_model_version)) > 0),
+        reliability_policy_version TEXT NOT NULL
+            CHECK (length(trim(reliability_policy_version)) > 0),
+        probability_method_version TEXT NOT NULL
+            CHECK (length(trim(probability_method_version)) > 0),
+        selected_margin_advantage_points REAL NOT NULL
+            CHECK (selected_margin_advantage_points >= 0),
+        calibrated_selected_side_probability REAL NOT NULL CHECK (
+            calibrated_selected_side_probability >= 0.5
+            AND calibrated_selected_side_probability <= 0.6
+        ),
+        card_generated_at TEXT NOT NULL CHECK (
+            julianday(card_generated_at) IS NOT NULL
+            AND substr(card_generated_at, -6) = '+00:00'
+        ),
+        line_effective_at TEXT NOT NULL CHECK (
+            julianday(line_effective_at) IS NOT NULL
+            AND substr(line_effective_at, -6) = '+00:00'
+        ),
+        prediction_generated_at TEXT CHECK (
+            prediction_generated_at IS NULL OR (
+                julianday(prediction_generated_at) IS NOT NULL
+                AND substr(prediction_generated_at, -6) = '+00:00'
+            )
+        ),
+        input_sha256 TEXT NOT NULL CHECK (
+            length(input_sha256) = 64
+            AND lower(input_sha256) NOT GLOB '*[^0-9a-f]*'
+        ),
+        generated_at TEXT NOT NULL CHECK (
+            julianday(generated_at) IS NOT NULL AND substr(generated_at, -6) = '+00:00'
+        ),
+        provenance TEXT NOT NULL CHECK (length(trim(provenance)) > 0),
+        UNIQUE (ats_shadow_calibration_run_id, contest_pick_id),
+        UNIQUE (ats_shadow_calibration_run_id, locked_line_id),
+        FOREIGN KEY (ats_shadow_calibration_run_id)
+            REFERENCES ats_shadow_calibration_runs(id),
+        FOREIGN KEY (contest_card_id) REFERENCES contest_cards(id),
+        FOREIGN KEY (contest_pick_id) REFERENCES contest_picks(id),
+        FOREIGN KEY (ats_model_run_id) REFERENCES model_runs(id),
+        FOREIGN KEY (ats_model_prediction_id) REFERENCES model_predictions(id),
+        FOREIGN KEY (locked_line_id) REFERENCES contest_locked_lines(id),
+        FOREIGN KEY (game_id) REFERENCES games(game_id)
+    )
+    """,
+    """
+    CREATE TABLE ats_shadow_calibration_completions (
+        ats_shadow_calibration_run_id INTEGER PRIMARY KEY,
+        evaluation_count INTEGER NOT NULL CHECK (evaluation_count >= 0),
+        ledger_sha256 TEXT NOT NULL CHECK (
+            length(ledger_sha256) = 64
+            AND lower(ledger_sha256) NOT GLOB '*[^0-9a-f]*'
+        ),
+        completed_at TEXT NOT NULL CHECK (
+            julianday(completed_at) IS NOT NULL AND substr(completed_at, -6) = '+00:00'
+        ),
+        FOREIGN KEY (ats_shadow_calibration_run_id)
+            REFERENCES ats_shadow_calibration_runs(id)
+    )
+    """,
+    """
     CREATE TABLE unified_top_five_policies (
         id INTEGER PRIMARY KEY AUTOINCREMENT,
         policy_key TEXT NOT NULL UNIQUE CHECK (length(trim(policy_key)) > 0),
@@ -256,6 +386,7 @@ STATEMENTS = (
         id INTEGER PRIMARY KEY AUTOINCREMENT,
         run_key TEXT NOT NULL UNIQUE CHECK (length(trim(run_key)) > 0),
         contest_card_id INTEGER NOT NULL,
+        ats_shadow_calibration_run_id INTEGER NOT NULL,
         total_shadow_card_id INTEGER NOT NULL,
         unified_top_five_policy_id INTEGER NOT NULL,
         status TEXT NOT NULL CHECK (status = 'shadow'),
@@ -269,6 +400,8 @@ STATEMENTS = (
         created_by TEXT NOT NULL CHECK (length(trim(created_by)) > 0),
         provenance TEXT NOT NULL CHECK (length(trim(provenance)) > 0),
         FOREIGN KEY (contest_card_id) REFERENCES contest_cards(id),
+        FOREIGN KEY (ats_shadow_calibration_run_id)
+            REFERENCES ats_shadow_calibration_runs(id),
         FOREIGN KEY (total_shadow_card_id) REFERENCES total_shadow_cards(id),
         FOREIGN KEY (unified_top_five_policy_id) REFERENCES unified_top_five_policies(id)
     )
@@ -281,6 +414,7 @@ STATEMENTS = (
         market_type TEXT NOT NULL CHECK (market_type IN ('ATS', 'TOTAL')),
         game_id INTEGER NOT NULL,
         contest_pick_id INTEGER,
+        ats_shadow_calibrated_evaluation_id INTEGER,
         total_card_candidate_id INTEGER,
         calibrated_probability REAL NOT NULL CHECK (
             calibrated_probability >= 0.5 AND calibrated_probability <= 1
@@ -300,8 +434,10 @@ STATEMENTS = (
         provenance TEXT NOT NULL CHECK (length(trim(provenance)) > 0),
         CHECK (
             (market_type = 'ATS' AND contest_pick_id IS NOT NULL
+                AND ats_shadow_calibrated_evaluation_id IS NOT NULL
                 AND total_card_candidate_id IS NULL)
             OR (market_type = 'TOTAL' AND contest_pick_id IS NULL
+                AND ats_shadow_calibrated_evaluation_id IS NULL
                 AND total_card_candidate_id IS NOT NULL)
         ),
         CHECK (
@@ -310,10 +446,14 @@ STATEMENTS = (
         ),
         UNIQUE (unified_top_five_run_id, pool_rank),
         UNIQUE (unified_top_five_run_id, market_type, contest_pick_id),
+        UNIQUE (unified_top_five_run_id, market_type,
+            ats_shadow_calibrated_evaluation_id),
         UNIQUE (unified_top_five_run_id, market_type, total_card_candidate_id),
         FOREIGN KEY (unified_top_five_run_id) REFERENCES unified_top_five_runs(id),
         FOREIGN KEY (game_id) REFERENCES games(game_id),
         FOREIGN KEY (contest_pick_id) REFERENCES contest_picks(id),
+        FOREIGN KEY (ats_shadow_calibrated_evaluation_id)
+            REFERENCES ats_shadow_calibrated_evaluations(id),
         FOREIGN KEY (total_card_candidate_id) REFERENCES total_card_candidates(id)
     )
     """,
@@ -623,11 +763,202 @@ STATEMENTS = (
     END
     """,
     """
+    CREATE TRIGGER ats_shadow_calibration_runs_validate
+    BEFORE INSERT ON ats_shadow_calibration_runs
+    WHEN NOT EXISTS (
+        SELECT 1
+        FROM contest_cards AS card
+        JOIN model_runs AS model ON model.id = card.model_run_id
+        JOIN ats_shadow_calibration_policies AS policy
+          ON policy.id = NEW.ats_shadow_calibration_policy_id
+        WHERE card.id = NEW.contest_card_id
+          AND model.id = NEW.ats_model_run_id
+          AND model.status = 'completed'
+          AND model.model_name = policy.required_model_name
+          AND model.model_version = policy.required_model_version
+          AND julianday(model.generated_at) <= julianday(NEW.generated_at)
+          AND julianday(card.generated_at) <= julianday(NEW.generated_at)
+          AND julianday(policy.effective_at) <= julianday(NEW.generated_at)
+    )
+    BEGIN
+        SELECT RAISE(ABORT, 'ATS shadow calibration run lacks governed card/model custody');
+    END
+    """,
+    """
+    CREATE TRIGGER ats_shadow_calibrated_evaluations_validate
+    BEFORE INSERT ON ats_shadow_calibrated_evaluations
+    WHEN NOT EXISTS (
+        SELECT 1
+        FROM ats_shadow_calibration_runs AS run
+        JOIN ats_shadow_calibration_policies AS policy
+          ON policy.id = run.ats_shadow_calibration_policy_id
+        JOIN contest_cards AS card ON card.id = run.contest_card_id
+        JOIN contest_picks AS pick ON pick.id = NEW.contest_pick_id
+        JOIN model_runs AS model ON model.id = run.ats_model_run_id
+        JOIN contest_locked_lines AS line ON line.id = pick.locked_line_id
+        LEFT JOIN model_predictions AS prediction
+          ON prediction.id = pick.model_prediction_id
+        JOIN games AS game ON game.game_id = NEW.game_id
+        WHERE run.id = NEW.ats_shadow_calibration_run_id
+          AND NEW.evaluation_key = run.run_key || ':pick:' || pick.id
+          AND NEW.contest_card_id = run.contest_card_id
+          AND pick.card_id = run.contest_card_id
+          AND NEW.ats_model_run_id = run.ats_model_run_id
+          AND NEW.ats_model_prediction_id IS pick.model_prediction_id
+          AND NEW.locked_line_id = pick.locked_line_id
+          AND NEW.selected_side = pick.selected_side
+          AND NEW.ats_model_name = model.model_name
+          AND NEW.ats_model_version = model.model_version
+          AND NEW.reliability_policy_version = policy.reliability_policy_version
+          AND NEW.probability_method_version = policy.probability_method_version
+          AND NEW.card_generated_at = card.generated_at
+          AND NEW.generated_at = run.generated_at
+          AND NEW.prediction_generated_at IS prediction.generated_at
+          AND NEW.game_id IS CASE WHEN EXISTS (
+              SELECT 1 FROM contest_line_corrections AS correction
+              WHERE correction.locked_line_id = line.id
+                AND julianday(correction.corrected_at) <= julianday(card.generated_at)
+          ) THEN (
+              SELECT correction.game_id
+              FROM contest_line_corrections AS correction
+              WHERE correction.locked_line_id = line.id
+                AND julianday(correction.corrected_at) <= julianday(card.generated_at)
+              ORDER BY correction.sequence DESC LIMIT 1
+          ) ELSE line.game_id END
+          AND NEW.line_effective_at = CASE WHEN EXISTS (
+              SELECT 1 FROM contest_line_corrections AS correction
+              WHERE correction.locked_line_id = line.id
+                AND julianday(correction.corrected_at) <= julianday(card.generated_at)
+          ) THEN (
+              SELECT correction.corrected_at
+              FROM contest_line_corrections AS correction
+              WHERE correction.locked_line_id = line.id
+                AND julianday(correction.corrected_at) <= julianday(card.generated_at)
+              ORDER BY correction.sequence DESC LIMIT 1
+          ) ELSE line.locked_at END
+          AND (
+              prediction.id IS NULL OR (
+                  prediction.model_run_id = run.ats_model_run_id
+                  AND prediction.game_id = NEW.game_id
+                  AND prediction.entry_locked_line_id = pick.locked_line_id
+                  AND julianday(prediction.generated_at) <= julianday(card.generated_at)
+              )
+          )
+          AND NEW.selected_margin_advantage_points = CASE
+              WHEN prediction.id IS NULL THEN 0.0
+              ELSE max(0.0, CASE WHEN pick.selected_side = 'home' THEN
+                  prediction.predicted_home_margin + CASE WHEN EXISTS (
+                      SELECT 1 FROM contest_line_corrections AS correction
+                      WHERE correction.locked_line_id = line.id
+                        AND julianday(correction.corrected_at) <= julianday(card.generated_at)
+                  ) THEN (
+                      SELECT correction.home_spread
+                      FROM contest_line_corrections AS correction
+                      WHERE correction.locked_line_id = line.id
+                        AND julianday(correction.corrected_at) <= julianday(card.generated_at)
+                      ORDER BY correction.sequence DESC LIMIT 1
+                  ) ELSE line.home_spread END
+                  ELSE -(prediction.predicted_home_margin + CASE WHEN EXISTS (
+                      SELECT 1 FROM contest_line_corrections AS correction
+                      WHERE correction.locked_line_id = line.id
+                        AND julianday(correction.corrected_at) <= julianday(card.generated_at)
+                  ) THEN (
+                      SELECT correction.home_spread
+                      FROM contest_line_corrections AS correction
+                      WHERE correction.locked_line_id = line.id
+                        AND julianday(correction.corrected_at) <= julianday(card.generated_at)
+                      ORDER BY correction.sequence DESC LIMIT 1
+                  ) ELSE line.home_spread END) END)
+          END
+          AND NEW.calibrated_selected_side_probability = min(
+              policy.maximum_selected_probability,
+              policy.missing_prediction_probability
+              + policy.probability_per_margin_point * CASE
+                  WHEN prediction.id IS NULL THEN 0.0
+                  ELSE max(0.0, CASE WHEN pick.selected_side = 'home' THEN
+                      prediction.predicted_home_margin + CASE WHEN EXISTS (
+                          SELECT 1 FROM contest_line_corrections AS correction
+                          WHERE correction.locked_line_id = line.id
+                            AND julianday(correction.corrected_at) <= julianday(card.generated_at)
+                      ) THEN (
+                          SELECT correction.home_spread
+                          FROM contest_line_corrections AS correction
+                          WHERE correction.locked_line_id = line.id
+                            AND julianday(correction.corrected_at) <= julianday(card.generated_at)
+                          ORDER BY correction.sequence DESC LIMIT 1
+                      ) ELSE line.home_spread END
+                      ELSE -(prediction.predicted_home_margin + CASE WHEN EXISTS (
+                          SELECT 1 FROM contest_line_corrections AS correction
+                          WHERE correction.locked_line_id = line.id
+                            AND julianday(correction.corrected_at) <= julianday(card.generated_at)
+                      ) THEN (
+                          SELECT correction.home_spread
+                          FROM contest_line_corrections AS correction
+                          WHERE correction.locked_line_id = line.id
+                            AND julianday(correction.corrected_at) <= julianday(card.generated_at)
+                          ORDER BY correction.sequence DESC LIMIT 1
+                      ) ELSE line.home_spread END) END)
+              END
+          )
+          AND julianday(NEW.generated_at) < julianday(game.start_date)
+    )
+    BEGIN
+        SELECT RAISE(ABORT, 'ATS shadow evaluation does not match governed pick custody');
+    END
+    """,
+    """
+    CREATE TRIGGER ats_shadow_calibration_completions_validate
+    BEFORE INSERT ON ats_shadow_calibration_completions
+    WHEN NOT EXISTS (
+        SELECT 1
+        FROM ats_shadow_calibration_runs AS run
+        WHERE run.id = NEW.ats_shadow_calibration_run_id
+          AND NEW.completed_at = run.generated_at
+          AND NEW.evaluation_count = (
+              SELECT COUNT(*) FROM contest_picks AS pick
+              WHERE pick.card_id = run.contest_card_id
+          )
+          AND NEW.evaluation_count = (
+              SELECT COUNT(*) FROM ats_shadow_calibrated_evaluations AS evaluation
+              WHERE evaluation.ats_shadow_calibration_run_id = run.id
+          )
+          AND NOT EXISTS (
+              SELECT 1 FROM contest_picks AS pick
+              WHERE pick.card_id = run.contest_card_id
+                AND NOT EXISTS (
+                    SELECT 1
+                    FROM ats_shadow_calibrated_evaluations AS evaluation
+                    WHERE evaluation.ats_shadow_calibration_run_id = run.id
+                      AND evaluation.contest_pick_id = pick.id
+                )
+          )
+    )
+    BEGIN
+        SELECT RAISE(ABORT, 'ATS shadow calibration ledger is incomplete');
+    END
+    """,
+    """
+    CREATE TRIGGER ats_shadow_calibrated_evaluations_no_insert_after_completion
+    BEFORE INSERT ON ats_shadow_calibrated_evaluations
+    WHEN EXISTS (
+        SELECT 1 FROM ats_shadow_calibration_completions AS completion
+        WHERE completion.ats_shadow_calibration_run_id =
+            NEW.ats_shadow_calibration_run_id
+    )
+    BEGIN
+        SELECT RAISE(ABORT, 'ATS shadow calibration ledger is sealed');
+    END
+    """,
+    """
     CREATE TRIGGER unified_top_five_runs_validate
     BEFORE INSERT ON unified_top_five_runs
     WHEN NOT EXISTS (
         SELECT 1
         FROM contest_cards AS ats_card
+        JOIN ats_shadow_calibration_runs AS ats_calibration
+          ON ats_calibration.id = NEW.ats_shadow_calibration_run_id
+        JOIN ats_shadow_calibration_completions AS ats_completion
+          ON ats_completion.ats_shadow_calibration_run_id = ats_calibration.id
         JOIN total_shadow_cards AS total_card
           ON total_card.id = NEW.total_shadow_card_id
         JOIN total_shadow_card_completions AS total_completion
@@ -635,6 +966,8 @@ STATEMENTS = (
         JOIN unified_top_five_policies AS policy
           ON policy.id = NEW.unified_top_five_policy_id
         WHERE ats_card.id = NEW.contest_card_id
+          AND ats_calibration.contest_card_id = ats_card.id
+          AND julianday(ats_calibration.generated_at) <= julianday(NEW.generated_at)
           AND ats_card.contest_id = total_card.contest_id
           AND julianday(ats_card.generated_at) <= julianday(NEW.generated_at)
           AND julianday(total_card.generated_at) <= julianday(NEW.generated_at)
@@ -653,23 +986,20 @@ STATEMENTS = (
         NEW.market_type = 'ATS' AND NOT EXISTS (
             SELECT 1
             FROM unified_top_five_runs AS run
-            JOIN contest_picks AS pick ON pick.id = NEW.contest_pick_id
-            JOIN contest_locked_lines AS line ON line.id = pick.locked_line_id
-            JOIN contest_cards AS card ON card.id = pick.card_id
+            JOIN ats_shadow_calibration_runs AS calibration_run
+              ON calibration_run.id = run.ats_shadow_calibration_run_id
+            JOIN ats_shadow_calibrated_evaluations AS evaluation
+              ON evaluation.id = NEW.ats_shadow_calibrated_evaluation_id
             WHERE run.id = NEW.unified_top_five_run_id
-              AND pick.card_id = run.contest_card_id
-              AND NEW.game_id IS CASE WHEN EXISTS (
-                  SELECT 1
-                  FROM contest_line_corrections AS correction
-                  WHERE correction.locked_line_id = line.id
-                    AND julianday(correction.corrected_at) <= julianday(card.generated_at)
-              ) THEN (
-                  SELECT correction.game_id
-                  FROM contest_line_corrections AS correction
-                  WHERE correction.locked_line_id = line.id
-                    AND julianday(correction.corrected_at) <= julianday(card.generated_at)
-                  ORDER BY correction.sequence DESC LIMIT 1
-              ) ELSE line.game_id END
+              AND calibration_run.contest_card_id = run.contest_card_id
+              AND evaluation.ats_shadow_calibration_run_id = calibration_run.id
+              AND evaluation.contest_card_id = run.contest_card_id
+              AND evaluation.contest_pick_id = NEW.contest_pick_id
+              AND evaluation.game_id = NEW.game_id
+              AND evaluation.calibrated_selected_side_probability =
+                  NEW.calibrated_probability
+              AND evaluation.reliability_policy_version =
+                  NEW.reliability_policy_version
         )
     ) OR (
         NEW.market_type = 'TOTAL' AND NOT EXISTS (
@@ -717,8 +1047,9 @@ STATEMENTS = (
               WHERE candidate.unified_top_five_run_id = run.id
           )
           AND NEW.candidate_count = (
-              SELECT COUNT(*) FROM contest_picks AS pick
-              WHERE pick.card_id = run.contest_card_id
+              SELECT COUNT(*) FROM ats_shadow_calibrated_evaluations AS evaluation
+              WHERE evaluation.ats_shadow_calibration_run_id =
+                  run.ats_shadow_calibration_run_id
           ) + (
               SELECT COUNT(*) FROM total_card_candidates AS candidate
               WHERE candidate.total_shadow_card_id = run.total_shadow_card_id
@@ -775,10 +1106,10 @@ STATEMENTS = (
                               better.candidate_score = candidate.candidate_score
                               AND better.market_type = candidate.market_type
                               AND COALESCE(
-                                  better.contest_pick_id,
+                                  better.ats_shadow_calibrated_evaluation_id,
                                   better.total_card_candidate_id
                               ) < COALESCE(
-                                  candidate.contest_pick_id,
+                                  candidate.ats_shadow_calibrated_evaluation_id,
                                   candidate.total_card_candidate_id
                               )
                           )
@@ -872,6 +1203,10 @@ for _table in (
     "total_card_candidates",
     "total_card_skips",
     "total_shadow_card_completions",
+    "ats_shadow_calibration_policies",
+    "ats_shadow_calibration_runs",
+    "ats_shadow_calibrated_evaluations",
+    "ats_shadow_calibration_completions",
     "unified_top_five_policies",
     "unified_top_five_runs",
     "unified_top_five_candidates",
@@ -943,6 +1278,10 @@ def verify(conn: sqlite3.Connection) -> None:
         "total_card_candidates",
         "total_card_skips",
         "total_shadow_card_completions",
+        "ats_shadow_calibration_policies",
+        "ats_shadow_calibration_runs",
+        "ats_shadow_calibrated_evaluations",
+        "ats_shadow_calibration_completions",
         "unified_top_five_policies",
         "unified_top_five_runs",
         "unified_top_five_candidates",

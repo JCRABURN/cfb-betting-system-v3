@@ -213,10 +213,12 @@ recovery contract.
 
 Migration 21 adds isolated immutable totals-model runs and predictions,
 totals-only reliability policies, complete shadow totals cards with explicit
-candidate-or-skip coverage, and generic shadow Top-5 candidate pools that can
-reference either an existing ATS contest pick or a totals candidate. It reuses
-the effective point-in-time value of `contest_locked_lines.total` and creates
-no second locked-total authority.
+candidate-or-skip coverage, conservative immutable ATS shadow calibration
+evaluations, and generic shadow Top-5 candidate pools that reference either a
+governed ATS evaluation or a totals candidate. Unified callers supply ATS
+evaluation IDs, not asserted probability or policy values. It reuses the
+effective point-in-time value of `contest_locked_lines.total` and creates no
+second locked-total authority.
 
 The migration adds no policies, runs, predictions, cards, candidates, or Top-5
 rows; it changes no existing table. Production ATS, official Top 5, controller,

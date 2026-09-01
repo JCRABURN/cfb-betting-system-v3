@@ -132,14 +132,49 @@ or model version are promoted by this PR.
 `unified_top_five_candidates` is a generic reference ledger. Each row contains
 exactly one source identity:
 
-- `ATS` → existing `contest_pick_id`; or
+- `ATS` → existing `contest_pick_id` plus an immutable
+  `ats_shadow_calibrated_evaluation_id`; or
 - `TOTAL` → `total_card_candidate_id`.
 
-Both market types provide an independently calibrated selection probability
-and source reliability-policy version. `candidate_score` is constrained to
-that probability. Raw ATS point edge and raw total point edge are not fields in
-the unified input or ranking table, so cross-market raw-edge comparison is
-structurally unavailable.
+The unified service accepts ATS calibrated-evaluation IDs only. It reads the
+probability and reliability-policy version from the sealed evaluation rows;
+callers cannot assert either value. SQLite rejects an ATS candidate unless its
+evaluation belongs to the run's exact card and calibration run, names the
+exact contest pick and game, and supplies the exact stored probability and
+policy version. `candidate_score` is constrained to that probability. Raw ATS
+point edge and raw total point edge are not fields in the unified input or
+ranking table, so cross-market raw-edge comparison is structurally
+unavailable.
+
+### Conservative ATS shadow reliability policy
+
+The repository does not contain validation evidence sufficient to claim an
+empirically calibrated ATS cover-probability model. Migration 21 therefore
+records that limitation as `not_empirically_validated` and permits only the
+shadow method `conservative_linear_margin_v1`.
+
+For a contest pick with its exact ATS model prediction, the method calculates:
+
+```text
+home ATS advantage = predicted home margin + effective locked home spread
+selected-side advantage = max(0, signed home ATS advantage)
+shadow probability = min(policy cap,
+                         0.50 + selected-side advantage * policy rate)
+```
+
+The initial governed fixture policy uses a rate of 0.005 probability per
+margin point and a maximum of 0.60. Schema constraints permit no rate above
+0.01 and no cap above 0.60. A pick without a model prediction receives exactly
+0.50 rather than a fabricated advantage. This is a conservative, auditable
+ranking transform, not a claim of empirical ATS calibration, profitability,
+or wagering value.
+
+Each immutable evaluation binds the contest card and pick, exact model run and
+prediction when present, locked-line identity and point-in-time effective
+timestamp, selected side, ATS model/version, calibration method and reliability
+version, derived probability, generation timestamp, provenance, deterministic
+evaluation key, and input hash. A completion seal proves one evaluation for
+every pick before unified ranking can begin.
 
 Ordering is deterministic:
 
@@ -161,6 +196,8 @@ count is exactly five whenever five eligible distinct games exist.
 The adversarial suite covers over and under selection, exact-line ties, missing
 totals, future corrections, corrected-total PIT behavior, future features,
 post-kickoff generation, immutable runs/predictions/selections/policies,
+caller ATS probability and policy-version injection, cross-pick and cross-card
+calibration substitution, schema-level probability and policy spoofing,
 separate ATS and totals reliability versions, mixed-market ordering, one entry
 per game, duplicate/ambiguous identity rejection, replay determinism, complete
 candidate-or-skip coverage, and database-trigger enforcement.
@@ -183,8 +220,11 @@ the source hash is unchanged.
   games without one are forecast-scored but not O/U graded.
 - Totals postgame audit, totals sportsbook recommendations, and official mixed
   contest publication are intentionally out of scope.
-- ATS calibrated probabilities are explicit shadow inputs to the unified
-  service; this PR does not replace the current official ATS Confidence policy.
+- The conservative ATS probability transform has not been empirically
+  calibrated or validated for wagering; it exists only for auditable shadow
+  cross-market ordering.
+- This PR does not replace or modify the current official ATS Confidence,
+  ranking, or Top-5 policy.
 
 ## Rollback and recovery
 

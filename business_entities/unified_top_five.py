@@ -14,7 +14,12 @@ import sqlite3
 from dataclasses import asdict, dataclass
 from datetime import datetime
 
-from business_entities.cards import get_contest_card, list_contest_picks
+from business_entities.ats_shadow_calibration import (
+    AtsShadowCalibrationResult,
+    get_ats_shadow_calibrated_evaluation,
+    get_ats_shadow_calibration_result,
+)
+from business_entities.cards import get_contest_card
 from business_entities.common import (
     BusinessEntityConflictError,
     BusinessEntityError,
@@ -31,9 +36,6 @@ from business_entities.totals import (
     get_total_shadow_card_result,
     list_total_card_candidates,
 )
-from contest_lines import get_effective_locked_line_as_of
-
-
 TOP_FIVE_COUNT = 5
 CANDIDATE_SCORE_METRIC = "calibrated_selection_probability"
 ORDERING_METHOD = "score_desc_market_type_asc_source_id_asc"
@@ -65,17 +67,11 @@ class RecordedUnifiedTopFivePolicy:
 
 
 @dataclass(frozen=True)
-class AtsUnifiedCandidateInput:
-    contest_pick_id: int
-    calibrated_probability: float
-    reliability_policy_version: str
-
-
-@dataclass(frozen=True)
 class UnifiedTopFiveRun:
     id: int
     run_key: str
     contest_card_id: int
+    ats_shadow_calibration_run_id: int
     total_shadow_card_id: int
     unified_top_five_policy_id: int
     status: str
@@ -93,6 +89,7 @@ class UnifiedTopFiveCandidate:
     market_type: str
     game_id: int
     contest_pick_id: int | None
+    ats_shadow_calibrated_evaluation_id: int | None
     total_card_candidate_id: int | None
     calibrated_probability: float
     candidate_score: float
@@ -136,6 +133,7 @@ class _PoolInput:
     game_id: int
     source_id: int
     contest_pick_id: int | None
+    ats_shadow_calibrated_evaluation_id: int | None
     total_card_candidate_id: int | None
     calibrated_probability: float
     reliability_policy_version: str
@@ -147,15 +145,17 @@ _POLICY_COLUMNS = (
     "provenance"
 )
 _RUN_COLUMNS = (
-    "id, run_key, contest_card_id, total_shadow_card_id, "
+    "id, run_key, contest_card_id, ats_shadow_calibration_run_id, "
+    "total_shadow_card_id, "
     "unified_top_five_policy_id, status, candidate_input_sha256, generated_at, "
     "created_by, provenance"
 )
 _CANDIDATE_COLUMNS = (
     "id, candidate_key, unified_top_five_run_id, market_type, game_id, "
-    "contest_pick_id, total_card_candidate_id, calibrated_probability, "
-    "candidate_score, reliability_policy_version, pool_rank, top_five_rank, "
-    "is_top_five, generated_at, provenance"
+    "contest_pick_id, ats_shadow_calibrated_evaluation_id, "
+    "total_card_candidate_id, calibrated_probability, candidate_score, "
+    "reliability_policy_version, pool_rank, top_five_rank, is_top_five, "
+    "generated_at, provenance"
 )
 _COMPLETION_COLUMNS = (
     "unified_top_five_run_id, candidate_count, selected_count, ledger_sha256, "
@@ -251,7 +251,7 @@ def list_unified_top_five_candidates(
         (integer(run_id, "run_id", 1),),
     ):
         values = list(row)
-        values[12] = bool(values[12])
+        values[13] = bool(values[13])
         result.append(UnifiedTopFiveCandidate(*values))
     return tuple(result)
 
@@ -290,54 +290,56 @@ def _probability(value: float | int, field: str) -> float:
 def _ats_pool(
     conn: sqlite3.Connection,
     contest_card_id: int,
-    inputs: tuple[AtsUnifiedCandidateInput, ...],
-) -> tuple[_PoolInput, ...]:
-    card = get_contest_card(conn, contest_card_id)
-    picks = list_contest_picks(conn, contest_card_id)
-    by_id: dict[int, AtsUnifiedCandidateInput] = {}
-    for item in inputs:
-        if not isinstance(item, AtsUnifiedCandidateInput):
-            raise BusinessEntityError("ATS candidates must be AtsUnifiedCandidateInput")
-        pick_id = integer(item.contest_pick_id, "contest_pick_id", 1)
-        if pick_id in by_id:
-            raise BusinessEntityError("duplicate ATS candidate identity")
-        by_id[pick_id] = item
-    expected_ids = {pick.id for pick in picks}
-    if set(by_id) != expected_ids:
-        missing = sorted(expected_ids - set(by_id))
-        unknown = sorted(set(by_id) - expected_ids)
+    evaluation_ids: tuple[int, ...],
+) -> tuple[tuple[_PoolInput, ...], AtsShadowCalibrationResult]:
+    normalized_ids = tuple(
+        integer(item, "ats_calibrated_evaluation_id", 1) for item in evaluation_ids
+    )
+    if len(set(normalized_ids)) != len(normalized_ids):
+        raise BusinessEntityError("duplicate ATS calibrated evaluation identity")
+    if not normalized_ids:
+        raise BusinessEntityError("ATS calibrated evaluation IDs cannot be empty")
+
+    evaluations = tuple(
+        get_ats_shadow_calibrated_evaluation(conn, item)
+        for item in normalized_ids
+    )
+    run_ids = {item.ats_shadow_calibration_run_id for item in evaluations}
+    if len(run_ids) != 1:
         raise BusinessEntityError(
-            f"ATS calibrated inputs must cover every card pick; missing={missing}, "
+            "ATS calibrated evaluations must belong to one calibration run"
+        )
+    result = get_ats_shadow_calibration_result(conn, next(iter(run_ids)))
+    if result.run.contest_card_id != contest_card_id:
+        raise BusinessEntityError(
+            "ATS calibrated evaluations belong to another contest card"
+        )
+    expected_ids = {item.id for item in result.evaluations}
+    if set(normalized_ids) != expected_ids:
+        missing = sorted(expected_ids - set(normalized_ids))
+        unknown = sorted(set(normalized_ids) - expected_ids)
+        raise BusinessEntityError(
+            f"ATS calibrated evaluations must cover the complete ledger; missing={missing}, "
             f"unknown={unknown}"
         )
 
-    generated_at = datetime.fromisoformat(card.generated_at)
-    pool: list[_PoolInput] = []
-    for pick in picks:
-        if pick.selected_side not in ("home", "away"):
-            raise BusinessEntityError("unified Top-5 ATS candidates require a selected side")
-        line = get_effective_locked_line_as_of(conn, pick.locked_line_id, generated_at)
-        if line.game_id is None:
-            raise BusinessEntityError("unified ATS candidate lacks game identity")
-        item = by_id[pick.id]
-        pool.append(
-            _PoolInput(
-                market_type="ATS",
-                game_id=line.game_id,
-                source_id=pick.id,
-                contest_pick_id=pick.id,
-                total_card_candidate_id=None,
-                calibrated_probability=_probability(
-                    item.calibrated_probability,
-                    f"ATS pick {pick.id} calibrated_probability",
-                ),
-                reliability_policy_version=required_text(
-                    item.reliability_policy_version,
-                    f"ATS pick {pick.id} reliability_policy_version",
-                ),
-            )
+    pool = tuple(
+        _PoolInput(
+            market_type="ATS",
+            game_id=item.game_id,
+            source_id=item.id,
+            contest_pick_id=item.contest_pick_id,
+            ats_shadow_calibrated_evaluation_id=item.id,
+            total_card_candidate_id=None,
+            calibrated_probability=_probability(
+                item.calibrated_selected_side_probability,
+                f"ATS evaluation {item.id} calibrated probability",
+            ),
+            reliability_policy_version=item.reliability_policy_version,
         )
-    return tuple(pool)
+        for item in result.evaluations
+    )
+    return pool, result
 
 
 def _total_pool(candidates: tuple[TotalCardCandidate, ...]) -> tuple[_PoolInput, ...]:
@@ -347,6 +349,7 @@ def _total_pool(candidates: tuple[TotalCardCandidate, ...]) -> tuple[_PoolInput,
             game_id=item.game_id,
             source_id=item.id,
             contest_pick_id=None,
+            ats_shadow_calibrated_evaluation_id=None,
             total_card_candidate_id=item.id,
             calibrated_probability=_probability(
                 item.selected_probability,
@@ -379,7 +382,7 @@ def generate_unified_top_five(
     contest_card_id: int,
     total_shadow_card_id: int,
     unified_top_five_policy_id: int,
-    ats_candidates: tuple[AtsUnifiedCandidateInput, ...],
+    ats_calibrated_evaluation_ids: tuple[int, ...],
     generated_at: datetime,
     created_by: str,
     provenance: str,
@@ -409,9 +412,14 @@ def generate_unified_top_five(
     if not timestamp_on_or_before(conn, policy.effective_at, generated_at_value):
         raise BusinessEntityError("unified Top-5 policy is not yet effective")
 
-    pool = _ats_pool(conn, contest_card_id, ats_candidates) + _total_pool(
-        total_result.candidates
+    ats_pool, ats_calibration_result = _ats_pool(
+        conn, contest_card_id, ats_calibrated_evaluation_ids
     )
+    if not timestamp_on_or_before(
+        conn, ats_calibration_result.run.generated_at, generated_at_value
+    ):
+        raise BusinessEntityError("unified run cannot precede the ATS calibration")
+    pool = ats_pool + _total_pool(total_result.candidates)
     for item in pool:
         _assert_before_kickoff(conn, item.game_id, generated_at_value)
     ordered = tuple(
@@ -442,11 +450,15 @@ def generate_unified_top_five(
         {
             "run_key": run_key,
             "contest_card_id": contest_card_id,
+            "ats_shadow_calibration_run_id": ats_calibration_result.run.id,
+            "ats_calibration_ledger_sha256": (
+                ats_calibration_result.completion.ledger_sha256
+            ),
             "total_shadow_card_id": total_shadow_card_id,
             "total_ledger_sha256": total_result.completion.ledger_sha256,
             "unified_top_five_policy_id": unified_top_five_policy_id,
             "generated_at": generated_at_value,
-            "ats_candidates": [asdict(item) for item in ats_candidates],
+            "ats_calibrated_evaluation_ids": list(ats_calibrated_evaluation_ids),
             "ordered_candidate_inputs": [asdict(item) for item in ordered],
         }
     )
@@ -460,6 +472,7 @@ def generate_unified_top_five(
             requested_run = (
                 run_key,
                 contest_card_id,
+                ats_calibration_result.run.id,
                 total_shadow_card_id,
                 unified_top_five_policy_id,
                 "shadow",
@@ -477,10 +490,11 @@ def generate_unified_top_five(
 
             cursor = conn.execute(
                 "INSERT INTO unified_top_five_runs "
-                "(run_key, contest_card_id, total_shadow_card_id, "
-                "unified_top_five_policy_id, status, candidate_input_sha256, "
+                "(run_key, contest_card_id, ats_shadow_calibration_run_id, "
+                "total_shadow_card_id, unified_top_five_policy_id, status, "
+                "candidate_input_sha256, "
                 "generated_at, created_by, provenance) "
-                "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)",
+                "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)",
                 requested_run,
             )
             run_id = cursor.lastrowid
@@ -489,16 +503,18 @@ def generate_unified_top_five(
                 conn.execute(
                     "INSERT INTO unified_top_five_candidates "
                     "(candidate_key, unified_top_five_run_id, market_type, game_id, "
-                    "contest_pick_id, total_card_candidate_id, calibrated_probability, "
+                    "contest_pick_id, ats_shadow_calibrated_evaluation_id, "
+                    "total_card_candidate_id, calibrated_probability, "
                     "candidate_score, reliability_policy_version, pool_rank, "
                     "top_five_rank, is_top_five, generated_at, provenance) "
-                    "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)",
+                    "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)",
                     (
                         f"{run_key}:{item.market_type}:{item.source_id}",
                         run_id,
                         item.market_type,
                         item.game_id,
                         item.contest_pick_id,
+                        item.ats_shadow_calibrated_evaluation_id,
                         item.total_card_candidate_id,
                         item.calibrated_probability,
                         item.calibrated_probability,
