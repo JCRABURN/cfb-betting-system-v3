@@ -1,0 +1,14 @@
+{
+  "season": 2026,
+  "week": 1,
+  "contest_key": "splashsports-cfb-2026-w01",
+  "source": "SplashSports owner-supplied screenshots",
+  "authoritative_locked_lines": true,
+  "chat_received_at": "2026-09-01T14:06:00-05:00",
+  "chat_received_at_note": "Timestamp is when the screenshot set was supplied in this chat, not an independently verified screenshot capture timestamp.",
+  "game_count": 43,
+  "canonical_csv_path": "production-weeks/2026-week1-splashsports.csv",
+  "canonical_csv_sha256": "9f9ccaf6a8a03b745e8dab21058cd036ac62b36afd01f51b55e1ac73520c76c6",
+  "spread_convention": "Spread is the home-team spread.",
+  "lock_rule": "These screenshot values are the authoritative Week 1 contest lines and must not be overwritten by later market movement."
+}
