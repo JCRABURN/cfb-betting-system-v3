@@ -48,6 +48,15 @@ def test_init_db_creates_all_tables(temp_db):
         "mixed_deadline_events", "mixed_slate_approvals",
         "mixed_line_lock_batches", "mixed_contest_lines",
         "mixed_line_lock_completions", "mixed_round_state_events",
+        "total_model_runs", "total_model_predictions",
+        "total_reliability_policies", "total_shadow_cards",
+        "total_card_candidates", "total_card_skips",
+        "total_shadow_card_completions",
+        "ats_shadow_calibration_policies", "ats_shadow_calibration_runs",
+        "ats_shadow_calibrated_evaluations",
+        "ats_shadow_calibration_completions", "unified_top_five_policies",
+        "unified_top_five_runs", "unified_top_five_candidates",
+        "unified_top_five_completions",
     }
     assert expected.issubset(tables)
     conn.close()

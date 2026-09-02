@@ -1012,7 +1012,7 @@ def test_offline_cli_builds_review_only_and_has_no_approval_or_lock_path(tmp_pat
 def test_migration_20_registration_seed_counts_immutability_and_verification():
     conn = _connection()
     assert conn.execute(
-        "SELECT version, name FROM schema_migrations ORDER BY version DESC LIMIT 1"
+        "SELECT version, name FROM schema_migrations WHERE version = 20"
     ).fetchone() == (20, "mixed_pickem_custody")
     assert conn.execute("SELECT COUNT(*) FROM mixed_contest_products").fetchone()[0] == 1
     assert conn.execute("SELECT COUNT(*) FROM mixed_contest_product_sports").fetchone()[0] == 2

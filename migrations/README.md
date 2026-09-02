@@ -209,6 +209,23 @@ season, round, import, approval, or lock, and does not rewrite or reinterpret
 Product A data. See `docs/MIXED_PICKEM_CUSTODY.md` for the staged operating and
 recovery contract.
 
+## Totals shadow and unified Top 5
+
+Migration 21 adds isolated immutable totals-model runs and predictions,
+totals-only reliability policies, complete shadow totals cards with explicit
+candidate-or-skip coverage, conservative immutable ATS shadow calibration
+evaluations, and generic shadow Top-5 candidate pools that reference either a
+governed ATS evaluation or a totals candidate. Unified callers supply ATS
+evaluation IDs, not asserted probability or policy values. It reuses the
+effective point-in-time value of `contest_locked_lines.total` and creates no
+second locked-total authority.
+
+The migration adds no policies, runs, predictions, cards, candidates, or Top-5
+rows; it changes no existing table. Production ATS, official Top 5, controller,
+publication, sportsbook, audit, diagnostics, dashboard, Product A, and Product
+B paths do not read the new tables. See `docs/TOTALS_SHADOW_TOP_FIVE.md` for the
+research result, parity proof, and rollback contract.
+
 ## Recovery
 
 SQLite DDL is applied inside one transaction per migration. A failed migration
