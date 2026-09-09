@@ -118,7 +118,7 @@ def test_legacy_database_gains_feature_columns_without_data_loss(tmp_path):
     conn.close()
 
     assert [result.version for result in applied] == [
-        1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21
+        1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22
     ]
     assert after_counts["team_game_stats"] == before_counts["team_game_stats"] == 1
     assert {"offense_success_rate", "defense_success_rate", "havoc_rate"} <= columns
@@ -137,7 +137,7 @@ def test_authoritative_database_copy_preserves_rows_integrity_and_source(tmp_pat
     assert result.integrity_result == "ok"
     assert result.foreign_key_violation_count == 0
     assert result.applied_versions == (
-        1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21
+        1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22
     )
     assert all(
         result.after_counts[table] == count
@@ -227,6 +227,21 @@ def test_authoritative_database_copy_preserves_rows_integrity_and_source(tmp_pat
         "unified_top_five_runs",
         "unified_top_five_candidates",
         "unified_top_five_completions",
+        "total_score_component_predictions",
+        "total_postgame_audit_policies",
+        "total_postgame_audit_runs",
+        "total_postgame_audit_details",
+        "total_postgame_audit_completions",
+        "cross_market_correlation_policies",
+        "cross_market_correlation_cells",
+        "correlation_aware_unified_policies",
+        "correlation_aware_unified_runs",
+        "correlation_aware_unified_candidates",
+        "correlation_aware_unified_pair_flags",
+        "correlation_aware_unified_completions",
+        "mixed_top_five_audit_runs",
+        "mixed_top_five_audit_details",
+        "mixed_top_five_audit_completions",
     ):
         assert result.after_counts[table] == 0
     assert result.after_counts["football_sports"] == 2
@@ -277,6 +292,21 @@ def test_authoritative_database_copy_preserves_rows_integrity_and_source(tmp_pat
             "unified_top_five_runs",
             "unified_top_five_candidates",
             "unified_top_five_completions",
+            "total_score_component_predictions",
+            "total_postgame_audit_policies",
+            "total_postgame_audit_runs",
+            "total_postgame_audit_details",
+            "total_postgame_audit_completions",
+            "cross_market_correlation_policies",
+            "cross_market_correlation_cells",
+            "correlation_aware_unified_policies",
+            "correlation_aware_unified_runs",
+            "correlation_aware_unified_candidates",
+            "correlation_aware_unified_pair_flags",
+            "correlation_aware_unified_completions",
+            "mixed_top_five_audit_runs",
+            "mixed_top_five_audit_details",
+            "mixed_top_five_audit_completions",
         )
     )
     assert _file_hash(AUTHORITATIVE_DATABASE) == source_hash_before

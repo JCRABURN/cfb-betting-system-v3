@@ -22,6 +22,38 @@ from business_entities import (
     register_ats_shadow_calibration_policy,
     register_unified_top_five_policy,
 )
+from business_entities.correlation_aware_top_five import (
+    CorrelationAwareUnifiedPolicy,
+    CrossMarketCorrelationPolicy,
+    generate_correlation_aware_unified_top_five,
+    register_correlation_aware_unified_policy,
+    register_cross_market_correlation_policy,
+)
+from business_entities.totals_audits import (
+    TotalPostgameAuditPolicy,
+    audit_total_shadow_card,
+    register_total_postgame_audit_policy,
+    summarize_total_postgame_audit,
+)
+from business_entities.totals_components import (
+    record_total_score_component_prediction,
+)
+from business_entities.complete_audits import (
+    PostgameAuditPolicy,
+    PostgameAuditRequest,
+    audit_contest_card,
+)
+from business_entities.mixed_top_five_audits import audit_mixed_top_five
+from business_entities.contextual_adjustments import (
+    ManualAdjustmentPolicy,
+    assign_card_adjustment_policy,
+    record_pick_adjustment_snapshot,
+    register_manual_adjustment_policy,
+)
+from models.cross_market_correlation import (
+    CrossMarketOutOfSampleOutcome,
+    estimate_cross_market_correlations,
+)
 from business_entities.full_card import locked_line_snapshot_sha256
 from contest_lines import (
     correct_locked_line,
@@ -43,6 +75,7 @@ UNIFIED_AT = datetime(2026, 8, 25, 15, 15, tzinfo=timezone.utc)
 FUTURE_CORRECTION_AT = datetime(2026, 8, 25, 15, 30, tzinfo=timezone.utc)
 AFTER_CORRECTION_AT = datetime(2026, 8, 25, 15, 45, tzinfo=timezone.utc)
 KICKOFF_AT = datetime(2026, 8, 29, 17, tzinfo=timezone.utc)
+AUDIT_AT = datetime(2026, 8, 30, 17, tzinfo=timezone.utc)
 
 
 def _seed(temp_db):
@@ -151,7 +184,7 @@ def _seed(temp_db):
                 selected_side="home" if index % 2 else "away",
                 model_prediction_id=prediction.id,
                 confidence=min(index, 5),
-                rank=index,
+                rank=index if index <= 5 else None,
                 is_top_five=index <= 5,
                 provenance="fixture://totals/legacy-ats-pick",
                 generated_at=ATS_CARD_AT,
@@ -355,6 +388,398 @@ def _insert_ats_candidate(
             "fixture://totals/adversarial-candidate",
         ),
     )
+
+
+def _complete_fixture_games(seeded):
+    conn = seeded["conn"]
+    scores = {
+        4101: (30, 20),  # total 50: over 45 wins
+        4102: (30, 20),  # total 50: under 50 pushes
+        4103: (30, 30),  # total 60: under 55 loses
+        4104: (20, 20),  # total 40: under 60 wins
+        4105: (30, 30),  # total 60: over 65 loses
+        4106: (24, 20),
+    }
+    closing_ids = {}
+    for index, line in enumerate(seeded["lines"], start=1):
+        game_id = 4100 + index
+        home_points, away_points = scores[game_id]
+        conn.execute(
+            "UPDATE games SET home_points = ?, away_points = ?, completed = 1 "
+            "WHERE game_id = ?",
+            (home_points, away_points, game_id),
+        )
+        closing_total = None if line.total is None else line.total + 1.0
+        closing_ids[line.id] = conn.execute(
+            "INSERT INTO betting_lines "
+            "(game_id, season, week, home_team, away_team, book, home_spread, "
+            "total, line_type, source, fetched_at) "
+            "VALUES (?, 2026, 1, ?, ?, 'fixturebook', ?, ?, 'closing', "
+            "'fixture-closing', ?)",
+            (
+                game_id,
+                f"Total Home {index}",
+                f"Total Away {index}",
+                -float(index),
+                closing_total,
+                datetime(2026, 8, 29, 16, 30, tzinfo=timezone.utc).isoformat(),
+            ),
+        ).lastrowid
+    conn.commit()
+    return closing_ids
+
+
+def _positive_favorite_over_evidence():
+    outcomes = tuple(
+        CrossMarketOutOfSampleOutcome(
+            game_id=index,
+            season=2024,
+            week=index,
+            ats_selected_market_status="favorite",
+            ats_result="win" if index % 2 else "loss",
+            total_selected_direction="over",
+            total_result="win" if index % 2 else "loss",
+        )
+        for index in range(1, 101)
+    )
+    return estimate_cross_market_correlations(outcomes)
+
+
+def _correlation_aware_result(seeded, *, run_key="correlation-aware-v1"):
+    conn = seeded["conn"]
+    correlation_policy, _ = register_cross_market_correlation_policy(
+        conn,
+        policy=CrossMarketCorrelationPolicy(
+            policy_key="cross-market-correlation-v1",
+            policy_version="cross-market-correlation-v1",
+            effective_at=POLICY_AT,
+            created_by="test",
+            provenance="fixture://totals/correlation-policy",
+        ),
+        evidence=_positive_favorite_over_evidence(),
+        generated_at=TOTAL_CARD_AT,
+    )
+    unified_policy = register_correlation_aware_unified_policy(
+        conn,
+        CorrelationAwareUnifiedPolicy(
+            policy_key="correlation-aware-unified-v1",
+            policy_version="correlation-aware-unified-v1",
+            cross_market_correlation_policy_id=correlation_policy.id,
+            effective_at=POLICY_AT,
+            created_by="test",
+            provenance="fixture://totals/correlation-aware-policy",
+        ),
+    )
+    return generate_correlation_aware_unified_top_five(
+        conn,
+        run_key=run_key,
+        contest_card_id=seeded["ats_card"].id,
+        total_shadow_card_id=seeded["total_card"].card.id,
+        correlation_aware_unified_policy_id=unified_policy.id,
+        ats_calibrated_evaluation_ids=_ats_evaluation_ids(seeded),
+        generated_at=UNIFIED_AT,
+        created_by="test",
+        provenance="fixture://totals/correlation-aware-run",
+    )
+
+
+def test_component_score_custody_requires_exact_sum_and_is_immutable(temp_db):
+    seeded = _seed(temp_db)
+    conn = seeded["conn"]
+    parent = seeded["predictions"][0]
+    component = record_total_score_component_prediction(
+        conn,
+        total_model_prediction_id=parent.id,
+        component_model_version="pit-epa-component-total-linear-v1",
+        projected_home_points=28,
+        projected_away_points=22,
+        generated_at=PREDICTION_AT,
+        provenance="fixture://totals/components",
+    )
+    assert component.projected_total == parent.projected_total == 50
+    with pytest.raises(BusinessEntityError, match="sum"):
+        record_total_score_component_prediction(
+            conn,
+            total_model_prediction_id=seeded["predictions"][1].id,
+            component_model_version="pit-epa-component-total-linear-v1",
+            projected_home_points=30,
+            projected_away_points=30,
+            generated_at=PREDICTION_AT,
+            provenance="fixture://totals/components-invalid",
+        )
+    with pytest.raises(sqlite3.IntegrityError, match="immutable"):
+        conn.execute(
+            "UPDATE total_score_component_predictions SET projected_home_points = 29 "
+            "WHERE total_model_prediction_id = ?",
+            (parent.id,),
+        )
+
+
+def test_totals_postgame_audit_grades_over_under_push_clv_and_segments(temp_db):
+    seeded = _seed(temp_db)
+    _complete_fixture_games(seeded)
+    conn = seeded["conn"]
+    policy = register_total_postgame_audit_policy(
+        conn,
+        TotalPostgameAuditPolicy(
+            policy_version="totals-postgame-audit-v1",
+            effective_at=POLICY_AT,
+            created_by="test",
+            provenance="fixture://totals/audit-policy",
+        ),
+    )
+    result = audit_total_shadow_card(
+        conn,
+        audit_run_key="totals-postgame-audit-run-v1",
+        total_shadow_card_id=seeded["total_card"].card.id,
+        total_postgame_audit_policy_id=policy.id,
+        audited_at=AUDIT_AT,
+        source="fixture-results",
+        provenance="fixture://totals/audit-run",
+    )
+    assert (
+        result.completion.audit_count,
+        result.completion.win_count,
+        result.completion.loss_count,
+        result.completion.push_count,
+    ) == (5, 2, 2, 1)
+    by_game = {item.game_id: item for item in result.details}
+    assert by_game[4101].result == "win"
+    assert by_game[4102].result == "push"
+    assert by_game[4103].result == "loss"
+    assert by_game[4101].clv_points == pytest.approx(1.0)
+    assert by_game[4102].clv_points == pytest.approx(-1.0)
+    assert all(item.weather_impact_status == "not_evaluated" for item in result.details)
+    segments = summarize_total_postgame_audit(conn, result.run.id)
+    assert {(item.dimension, item.value) for item in segments} >= {
+        ("direction", "over"),
+        ("direction", "under"),
+        ("weather", "not_evaluated"),
+        ("qb_change", "not_evaluated"),
+    }
+    replay = audit_total_shadow_card(
+        conn,
+        audit_run_key="totals-postgame-audit-run-v1",
+        total_shadow_card_id=seeded["total_card"].card.id,
+        total_postgame_audit_policy_id=policy.id,
+        audited_at=AUDIT_AT,
+        source="fixture-results",
+        provenance="fixture://totals/audit-run",
+    )
+    assert replay.replayed is True
+    assert replay.completion.ledger_sha256 == result.completion.ledger_sha256
+    correction = audit_total_shadow_card(
+        conn,
+        audit_run_key="totals-postgame-audit-run-v2",
+        total_shadow_card_id=seeded["total_card"].card.id,
+        total_postgame_audit_policy_id=policy.id,
+        audited_at=AUDIT_AT,
+        source="fixture-results",
+        provenance="fixture://totals/audit-run-correction",
+    )
+    assert correction.replayed is False
+    assert (correction.run.sequence, correction.run.supersedes_run_id) == (
+        2,
+        result.run.id,
+    )
+
+
+def test_correlation_ranking_penalizes_but_does_not_prohibit_same_game(temp_db):
+    seeded = _seed(temp_db)
+    result = _correlation_aware_result(seeded)
+    assert len(result.candidates) == 11
+    assert result.completion.selected_count == 5
+    assert result.completion.cutoff_gap == pytest.approx(
+        result.candidates[4].adjusted_score - result.candidates[5].adjusted_score
+    )
+    assert len({item.game_id for item in result.top_five}) == 5
+    ats_game_one = next(
+        item
+        for item in result.candidates
+        if item.market_type == "ATS" and item.game_id == 4101
+    )
+    total_game_one = next(
+        item
+        for item in result.candidates
+        if item.market_type == "TOTAL" and item.game_id == 4101
+    )
+    assert total_game_one.correlation_penalty == 0
+    assert ats_game_one.correlation_penalty > 0
+    assert ats_game_one.correlation_status == "penalized_positive_correlation"
+    assert ats_game_one.adjusted_score < ats_game_one.calibrated_probability
+    replay = _correlation_aware_result(seeded)
+    assert replay.replayed is True
+    assert replay.candidates == result.candidates
+    assert replay.completion.ledger_sha256 == result.completion.ledger_sha256
+
+
+def test_correlation_schema_rejects_probability_and_policy_spoofing(temp_db):
+    seeded = _seed(temp_db)
+    _correlation_aware_result(seeded)
+    conn = seeded["conn"]
+    correlation_policy_id = conn.execute(
+        "SELECT id FROM cross_market_correlation_policies"
+    ).fetchone()[0]
+    policy = register_correlation_aware_unified_policy(
+        conn,
+        CorrelationAwareUnifiedPolicy(
+            policy_key="correlation-aware-unified-adversarial-v2",
+            policy_version="correlation-aware-unified-adversarial-v2",
+            cross_market_correlation_policy_id=correlation_policy_id,
+            effective_at=POLICY_AT,
+            created_by="test",
+            provenance="fixture://totals/correlation-adversarial-policy",
+        ),
+    )
+    run_id = conn.execute(
+        "INSERT INTO correlation_aware_unified_runs "
+        "(run_key, contest_card_id, ats_shadow_calibration_run_id, "
+        "total_shadow_card_id, correlation_aware_unified_policy_id, "
+        "candidate_input_sha256, status, generated_at, created_by, provenance) "
+        "VALUES ('correlation-adversarial-open', ?, ?, ?, ?, ?, 'shadow', ?, "
+        "'test', 'fixture://totals/correlation-adversarial-run')",
+        (
+            seeded["ats_card"].id,
+            seeded["ats_calibration"].run.id,
+            seeded["total_card"].card.id,
+            policy.id,
+            "f" * 64,
+            UNIFIED_AT.isoformat(),
+        ),
+    ).lastrowid
+    evaluation = seeded["ats_calibration"].evaluations[0]
+
+    def insert_candidate(probability, reliability_version):
+        conn.execute(
+            "INSERT INTO correlation_aware_unified_candidates "
+            "(candidate_key, correlation_aware_unified_run_id, market_type, "
+            "game_id, contest_pick_id, ats_shadow_calibrated_evaluation_id, "
+            "total_card_candidate_id, same_game_predecessor_candidate_id, "
+            "correlation_cell_id, correlation_relation_code, calibrated_probability, reliability_policy_version, "
+            "correlation_penalty, adjusted_score, correlation_status, pool_rank, "
+            "top_five_rank, is_top_five, generated_at, provenance) "
+            "VALUES (?, ?, 'ATS', ?, ?, ?, NULL, NULL, NULL, NULL, ?, ?, 0, ?, "
+            "'no_same_game_predecessor', 1, 1, 1, ?, 'fixture://totals/spoof')",
+            (
+                f"spoof-{probability}-{reliability_version}",
+                run_id,
+                evaluation.game_id,
+                evaluation.contest_pick_id,
+                evaluation.id,
+                probability,
+                reliability_version,
+                probability,
+                UNIFIED_AT.isoformat(),
+            ),
+        )
+
+    with pytest.raises(sqlite3.IntegrityError, match="source custody"):
+        insert_candidate(
+            evaluation.calibrated_selected_side_probability + 0.01,
+            evaluation.reliability_policy_version,
+        )
+    with pytest.raises(sqlite3.IntegrityError, match="source custody"):
+        insert_candidate(
+            evaluation.calibrated_selected_side_probability,
+            "fake-reliability-v999",
+        )
+    columns = {
+        row[1]
+        for row in conn.execute(
+            "PRAGMA table_info(correlation_aware_unified_candidates)"
+        )
+    }
+    assert "raw_edge" not in columns
+
+
+def test_mixed_top_five_audit_keeps_ats_and_totals_results_separate(temp_db):
+    seeded = _seed(temp_db)
+    unified = _correlation_aware_result(seeded)
+    closing_ids = _complete_fixture_games(seeded)
+    conn = seeded["conn"]
+    adjustment_policy = register_manual_adjustment_policy(
+        conn,
+        ManualAdjustmentPolicy(
+            policy_version="no-adjustments-for-mixed-v1",
+            effective_at=POLICY_AT,
+            created_by="test",
+            provenance="fixture://totals/no-adjustments-policy",
+        ),
+    )
+    assign_card_adjustment_policy(
+        conn,
+        card_id=seeded["ats_card"].id,
+        adjustment_policy_id=adjustment_policy.id,
+        assigned_at=ATS_CARD_AT,
+        provenance="fixture://totals/no-adjustments-assignment",
+    )
+    for pick in seeded["picks"]:
+        record_pick_adjustment_snapshot(
+            conn,
+            contest_pick_id=pick.id,
+            raw_confidence=pick.confidence,
+            provenance="fixture://totals/no-adjustments-snapshot",
+        )
+    ats_audit = audit_contest_card(
+        conn,
+        audit_run_key="ats-audit-for-mixed-v1",
+        card_id=seeded["ats_card"].id,
+        audit_policy=PostgameAuditPolicy(
+            policy_version="ats-audit-for-mixed-v1",
+            effective_at=POLICY_AT,
+            created_by="test",
+            provenance="fixture://totals/ats-audit-policy",
+        ),
+        requests_by_locked_line_id={
+            line.id: PostgameAuditRequest(closing_ids[line.id])
+            for line in seeded["lines"]
+        },
+        source="fixture-results",
+        provenance="fixture://totals/ats-audit-run",
+        audited_at=AUDIT_AT,
+    )
+    totals_policy = register_total_postgame_audit_policy(
+        conn,
+        TotalPostgameAuditPolicy(
+            policy_version="totals-audit-for-mixed-v1",
+            effective_at=POLICY_AT,
+            created_by="test",
+            provenance="fixture://totals/mixed-total-policy",
+        ),
+    )
+    totals_audit = audit_total_shadow_card(
+        conn,
+        audit_run_key="totals-audit-for-mixed-v1",
+        total_shadow_card_id=seeded["total_card"].card.id,
+        total_postgame_audit_policy_id=totals_policy.id,
+        audited_at=AUDIT_AT,
+        source="fixture-results",
+        provenance="fixture://totals/mixed-total-audit",
+    )
+    mixed = audit_mixed_top_five(
+        conn,
+        audit_run_key="mixed-top-five-audit-v1",
+        correlation_aware_unified_run_id=unified.run.id,
+        card_postgame_audit_run_id=ats_audit.run.id,
+        total_postgame_audit_run_id=totals_audit.run.id,
+        audited_at=AUDIT_AT,
+        provenance="fixture://totals/mixed-audit",
+    )
+    assert mixed.completion.audit_count == 5
+    assert mixed.completion.ats_count + mixed.completion.total_count == 5
+    assert mixed.completion.win_count + mixed.completion.loss_count + mixed.completion.push_count == 5
+    assert {item.market_type for item in mixed.details} == {"ATS", "TOTAL"}
+    replay = audit_mixed_top_five(
+        conn,
+        audit_run_key="mixed-top-five-audit-v1",
+        correlation_aware_unified_run_id=unified.run.id,
+        card_postgame_audit_run_id=ats_audit.run.id,
+        total_postgame_audit_run_id=totals_audit.run.id,
+        audited_at=AUDIT_AT,
+        provenance="fixture://totals/mixed-audit",
+    )
+    assert replay.replayed is True
+    assert replay.completion.ledger_sha256 == mixed.completion.ledger_sha256
 
 
 def test_total_shadow_selects_over_under_tie_and_explicit_missing_total(temp_db):
@@ -750,7 +1175,7 @@ def test_totals_shadow_entities_are_immutable_and_policy_is_independent_from_ats
         ("home", 3, 3, 1),
         ("away", 4, 4, 1),
         ("home", 5, 5, 1),
-        ("away", 5, 6, 0),
+        ("away", 5, None, 0),
     ]
     with pytest.raises(BusinessEntityConflictError, match="different immutable"):
         record_total_model_run(

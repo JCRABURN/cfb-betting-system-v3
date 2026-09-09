@@ -1,9 +1,15 @@
-# Totals shadow forecasting and unified Top-5 foundation
+# Totals shadow forecasting, audit, and unified Top-5 governance
 
 ## Scope and activation
 
 Migration 21 adds an isolated, append-only totals domain and a generic
 cross-market Top-5 candidate ledger. Both paths are `shadow` only.
+
+Migration 22 extends that foundation without changing migration 21 or any ATS
+table. It adds separately fitted home/away score custody, a manual shadow
+weekly runner, complete totals grading and CLV custody, OOS same-game
+correlation evidence, a correlation-aware mixed ranking, the #5/#6 cutoff
+gap, and a combined mixed-card audit. All migration-22 rows are immutable.
 
 The production ATS contract is unchanged:
 
@@ -184,12 +190,104 @@ market type ascending (ATS before TOTAL),
 source row ID ascending
 ```
 
-The default shadow policy sets `allow_multiple_per_game = false`. Ranking walks
+The migration-21 default shadow policy sets `allow_multiple_per_game = false`. Ranking walks
 the ordered pool and selects the first five distinct games. A policy may later
 allow both markets from one game, but doing so requires a new immutable version
 and supporting evidence. Completion is rejected unless every ATS pick and
 every totals candidate has one unambiguous generic reference and the selected
 count is exactly five whenever five eligible distinct games exist.
+
+## Component-score shadow model
+
+`pit-epa-component-total-linear-v1` fits home points and away points as two
+separate ridge targets in every strict rolling-origin fold, then sums them.
+It uses the same four point-in-time opponent-adjusted EPA level features as
+the combined-target baseline. The manual weekly shadow runner fits only folds
+before the target contest fold. SQLite rejects a component sum that does not
+equal its parent total prediction. Missing target EPA remains an explicit
+`missing_total_prediction` card skip. No production schedule imports this runner.
+
+Historical component-score OOS results on the same 4,687 forecast games:
+
+| Measure | Result |
+|---|---:|
+| Home score MAE | 10.2625 |
+| Away score MAE | 9.7403 |
+| Summed total MAE | 13.3611 |
+| Summed total RMSE | 16.7368 |
+
+The component version does not improve the v1 combined-target result and is
+therefore also shadow-only.
+
+## Comparative evaluation and rollout gate
+
+On the common 3,708 lined OOS games, the model total is worse than simply
+using the recorded market total as the point forecast:
+
+| Forecast | N | MAE | RMSE |
+|---|---:|---:|---:|
+| EPA totals model | 3,708 | 13.2074 | 16.5473 |
+| Recorded market total | 3,708 | 12.6174 | 15.8923 |
+
+Season O/U ROI was +0.72% (2021), -5.01% (2022), +1.25% (2023), -1.17%
+(2024), and -4.14% (2025). The 20+ point disagreement bucket was 3-10 with
+-55.94% ROI, despite an average 91.17% normal-model probability. That region
+is materially miscalibrated, not a promoted Confidence tier.
+
+The proposed future sample gate is 2,243 OOS decisions, derived from a
+one-sided 5% significance / 80% power normal approximation for a predeclared
+55% alternative against the 52.381% -110 break-even null. Sample size alone is
+not sufficient: a future candidate must also beat the market-total forecast,
+show stable holdout seasons, positive after-vig ROI, and acceptable Brier/log
+loss/calibration under an owner-approved versioned policy.
+
+## Correlation-aware shadow ranking
+
+The additive migration-22 ranking starts from each governed source row's
+calibrated selected-side probability, never raw ATS or total point edge. When
+the opposite market for the same game was ranked earlier, it derives a
+concentration penalty from historical joint OOS outcomes:
+
+```text
+phi = correlation(ATS win indicator, totals win indicator)
+weight = max(lower endpoint of the Fisher 95% interval, 0)
+penalty = weight * sqrt(p1(1-p1) * p2(1-p2))
+adjusted score = calibrated probability - penalty
+```
+
+No tuned correlation threshold is used. Same-game opportunities remain in the
+pool and can both be selected; any selected pair receives an immutable flag.
+Cells with no evidence or intervals that include zero receive no numeric
+penalty and are explicitly labeled. Candidate rows reference their exact
+earlier same-game candidate and evidence cell; SQLite recomputes and enforces
+the penalty, source probability, and source reliability-policy custody.
+
+The exact ATS prior-season walk-forward ledger joined to the totals OOS ledger
+on 3,708 games produced:
+
+| Relation | N | Phi | 95% interval | Penalty weight |
+|---|---:|---:|---:|---:|
+| Favorite + Over | 546 | 0.1534 | 0.0704 to 0.2343 | 0.0704 |
+| Favorite + Under | 282 | 0.0343 | -0.0829 to 0.1505 | 0 |
+| Underdog + Over | 1,681 | -0.0847 | -0.1320 to -0.0371 | 0 |
+| Underdog + Under | 1,060 | 0.0465 | -0.0137 to 0.1064 | 0 |
+| Pick'em + Over | 24 | 0.2509 | -0.1697 to 0.5941 | 0 |
+| Pick'em + Under | 9 | -0.1581 | -0.7441 to 0.5654 | 0 |
+
+The completion seal stores rank-5 score, rank-6 score, and their exact gap.
+The mixed audit records ATS and totals source-audit identities separately,
+then reports combined W/L/P, ROI, CLV, and expected versus actual win rate so
+combined performance cannot conceal either submodel.
+
+## Totals postgame audit
+
+Every totals candidate is graded against its exact locked total. The audit
+resolves a closing total from a real `betting_lines` closing row at or before
+kickoff; absence is `missing_closing_total`, never a fabricated close. It
+stores final component scores, actual total, W/L/P, -110 unit result, totals
+CLV, signed projection error, edge, Confidence, and explicit context/failure
+statuses. Weather, QB/injury, overtime, garbage time, and late-score effects
+default to `not_evaluated`; any evaluated status requires evidence.
 
 ## Verification and parity
 
@@ -203,7 +301,7 @@ per game, duplicate/ambiguous identity rejection, replay determinism, complete
 candidate-or-skip coverage, and database-trigger enforcement.
 
 The migration parity test runs the same Product A Tuesday controller fixture on
-migration 20 and migration 21 schemas and compares the complete typed result,
+the migration-20 schema and the schema after migrations 21 and 22, then compares the complete typed result,
 all pre-existing table rows, ATS side/Confidence/rank/Top-5 fields,
 publication, and sportsbook output exactly. Existing revision, grading,
 diagnostic, dashboard, and sportsbook suites are also run unchanged before and
@@ -218,13 +316,18 @@ the source hash is unchanged.
   sufficiently calibrated for production.
 - Historical O/U grading uses the genuine recorded opening total when present;
   games without one are forecast-scored but not O/U graded.
-- Totals postgame audit, totals sportsbook recommendations, and official mixed
-  contest publication are intentionally out of scope.
+- Totals sportsbook recommendations and official mixed contest publication
+  remain intentionally out of scope.
 - The conservative ATS probability transform has not been empirically
   calibrated or validated for wagering; it exists only for auditable shadow
   cross-market ordering.
 - This PR does not replace or modify the current official ATS Confidence,
   ranking, or Top-5 policy.
+- Conference, pace, wind, QB, offensive-line, and defensive-personnel subgroup
+  analysis remains unavailable because the authoritative historical snapshot
+  has no governed rows for those inputs. No adjustment is fabricated.
+- Current 2026 locked contest rows do not yet contain verified totals. The
+  shadow card records explicit skips until an authorized source supplies them.
 
 ## Rollback and recovery
 

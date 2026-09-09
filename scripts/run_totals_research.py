@@ -11,9 +11,13 @@ from pathlib import Path
 
 from models.totals_research import (
     TotalsResearchPolicy,
-    build_totals_research_dataset,
     run_totals_rolling_origin,
 )
+from models.totals_component_research import (
+    build_totals_component_dataset,
+    run_totals_component_rolling_origin,
+)
+from models.totals_evaluation import evaluate_totals_research
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -42,7 +46,7 @@ def main() -> int:
     before_hash = _sha256(database)
     connection = sqlite3.connect(f"file:{database.as_posix()}?mode=ro", uri=True)
     try:
-        dataset = build_totals_research_dataset(
+        dataset, component_observations = build_totals_component_dataset(
             connection, seasons=tuple(args.seasons)
         )
     finally:
@@ -53,6 +57,12 @@ def main() -> int:
             minimum_training_examples=args.minimum_training_examples
         ),
     )
+    component_result = run_totals_component_rolling_origin(
+        dataset,
+        component_observations,
+        policy=result.policy,
+    )
+    evaluation = evaluate_totals_research(dataset, result)
     after_hash = _sha256(database)
     if after_hash != before_hash:
         raise RuntimeError("authoritative database changed during totals research")
@@ -82,6 +92,20 @@ def main() -> int:
         "governance_status": result.governance_status,
         "production_eligible": result.production_eligible,
         "recommendation": result.recommendation,
+        "component_score_model": {
+            "model_name": component_result.model_name,
+            "model_version": component_result.model_version,
+            "target_version": component_result.target_version,
+            "configuration_version": component_result.configuration_version,
+            "home_mae": component_result.home_mae,
+            "away_mae": component_result.away_mae,
+            "total_mae": component_result.total_mae,
+            "total_rmse": component_result.total_rmse,
+            "ledger_sha256": component_result.ledger_sha256,
+            "governance_status": component_result.governance_status,
+            "production_eligible": component_result.production_eligible,
+        },
+        "comparative_evaluation": asdict(evaluation),
     }
     if args.include_predictions:
         payload["predictions"] = [asdict(item) for item in result.predictions]

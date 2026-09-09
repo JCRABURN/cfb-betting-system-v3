@@ -26,6 +26,7 @@ from migrations.versions import (
     v0019_football_identity_foundation,
     v0020_mixed_pickem_custody,
     v0021_totals_shadow_top_five,
+    v0022_totals_shadow_audits_correlation,
 )
 
 
@@ -51,4 +52,5 @@ MIGRATION_MODULES = (
     v0019_football_identity_foundation,
     v0020_mixed_pickem_custody,
     v0021_totals_shadow_top_five,
+    v0022_totals_shadow_audits_correlation,
 )

@@ -382,7 +382,7 @@ def test_product_a_has_no_dependency_on_product_b_operational_state():
     conn.close()
 
 
-def test_migration_21_preserves_product_a_rows_and_controller_outputs_exactly():
+def test_migrations_21_and_22_preserve_product_a_rows_and_controller_outputs_exactly():
     before_conn = _connection(20)
     after_conn = _connection(20)
     before_lines = _seed_product_a_fixture(before_conn)
@@ -392,7 +392,7 @@ def test_migration_21_preserves_product_a_rows_and_controller_outputs_exactly():
 
     applied = apply_migrations(after_conn)
 
-    assert tuple(result.version for result in applied) == (21,)
+    assert tuple(result.version for result in applied) == (21, 22)
     assert _table_snapshot(after_conn, product_a_tables) == pre_migration_rows
 
     before_result = run_tuesday_controller(before_conn, _request(before_lines))
@@ -435,13 +435,28 @@ def test_migration_21_preserves_product_a_rows_and_controller_outputs_exactly():
             "unified_top_five_runs",
             "unified_top_five_candidates",
             "unified_top_five_completions",
+            "total_score_component_predictions",
+            "total_postgame_audit_policies",
+            "total_postgame_audit_runs",
+            "total_postgame_audit_details",
+            "total_postgame_audit_completions",
+            "cross_market_correlation_policies",
+            "cross_market_correlation_cells",
+            "correlation_aware_unified_policies",
+            "correlation_aware_unified_runs",
+            "correlation_aware_unified_candidates",
+            "correlation_aware_unified_pair_flags",
+            "correlation_aware_unified_completions",
+            "mixed_top_five_audit_runs",
+            "mixed_top_five_audit_details",
+            "mixed_top_five_audit_completions",
         )
     )
     before_conn.close()
     after_conn.close()
 
 
-def test_migration_21_preserves_revision_grading_and_diagnostics_exactly():
+def test_migrations_21_and_22_preserve_revision_grading_and_diagnostics_exactly():
     from tests import test_weekly_controller as controller_fixture
     from tests import test_weekly_diagnostics as diagnostic_fixture
 
