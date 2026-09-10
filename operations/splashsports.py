@@ -21,7 +21,14 @@ from operations.config import EXPECTED_REPOSITORY
 
 MANIFEST_VERSION = "v3-contest-lines-v1"
 IMPORTER_VERSION = "splashsports-manual-import-v1"
-SUPPORTED_INPUT_FORMATS = ("csv", "xlsx", "screenshot_transcription")
+OWNER_MODEL_IMPORT_FORMAT = "owner_reviewed_model_import_csv"
+OWNER_MODEL_IMPORT_VERSION = "splashsports-owner-model-import-v1"
+SUPPORTED_INPUT_FORMATS = (
+    "csv",
+    "xlsx",
+    "screenshot_transcription",
+    OWNER_MODEL_IMPORT_FORMAT,
+)
 REQUIRED_COLUMNS = ("Away Team", "Home Team", "Spread")
 OPTIONAL_COLUMNS = (
     "Game Date",
@@ -42,6 +49,29 @@ _COLUMN_BY_NORMALIZED = {
 }
 _CELL_REFERENCE = re.compile(r"^([A-Z]+)[0-9]+$")
 _SPREAD_PATTERN = re.compile(r"^[+-]?(?:[0-9]+(?:\.[0-9]+)?|\.[0-9]+)$")
+_OWNER_GAME_ID_PATTERN = re.compile(
+    r"^(?P<season>[0-9]{4})_W(?P<week>[0-9]{2})_(?P<sequence>[0-9]{2})$"
+)
+_OWNER_COLUMNS = (
+    "game_id",
+    "season",
+    "week",
+    "game_date",
+    "start_time",
+    "away_team",
+    "home_team",
+    "away_spread",
+    "home_spread",
+    "locked_total",
+    "favorite",
+    "favorite_line",
+    "underdog",
+    "source",
+    "locked_at",
+    "source_image",
+    "lock_status",
+)
+_OWNER_GAME_ID_NAMESPACE = 8_000_000_000_000
 
 
 class SplashSportsImportError(RuntimeError):
@@ -72,6 +102,15 @@ class SplashSportsManifest:
     canonical_json: str
     sha256: str
     parsed_line_count: int
+
+
+@dataclass(frozen=True)
+class SplashSportsScheduleIngestion:
+    source_sha256: str
+    requested_count: int
+    inserted_count: int
+    existing_count: int
+    game_ids: tuple[int, ...]
 
 
 def _canonical_json(value: object) -> str:
@@ -193,7 +232,33 @@ def _csv_rows(path: Path) -> list[list[str]]:
         raise SplashSportsImportError("input is not valid UTF-8 CSV") from exc
 
 
+def _owner_model_import_rows(path: Path) -> list[dict[str, str]]:
+    rows = _csv_rows(path)
+    rows = [row for row in rows if any(cell.strip() for cell in row)]
+    if not rows:
+        raise SplashSportsImportError("input contains no rows")
+    headers = [cell.strip().casefold() for cell in rows[0]]
+    if tuple(headers) != _OWNER_COLUMNS:
+        raise SplashSportsImportError(
+            "owner model import columns must match the governed v1 schema exactly"
+        )
+    parsed: list[dict[str, str]] = []
+    for row_number, row in enumerate(rows[1:], start=2):
+        if len(row) != len(headers):
+            raise SplashSportsImportError(
+                f"row {row_number} does not match the governed v1 column count"
+            )
+        record = dict(zip(headers, (cell.strip() for cell in row)))
+        record["_row_number"] = str(row_number)
+        parsed.append(record)
+    if not parsed:
+        raise SplashSportsImportError("input contains no contest-line rows")
+    return parsed
+
+
 def _table_rows(path: Path, input_format: str) -> list[dict[str, str]]:
+    if input_format == OWNER_MODEL_IMPORT_FORMAT:
+        return _owner_model_import_rows(path)
     if input_format in ("csv", "screenshot_transcription"):
         rows = _csv_rows(path)
     elif input_format == "xlsx":
@@ -231,6 +296,180 @@ def _table_rows(path: Path, input_format: str) -> list[dict[str, str]]:
     return parsed
 
 
+def _owner_timestamp(value: str, field: str) -> datetime:
+    match = re.fullmatch(
+        r"(?P<date>[0-9]{4}-[0-9]{2}-[0-9]{2}) "
+        r"(?P<time>[0-9]{2}:[0-9]{2}) (?P<zone>CDT|CST)",
+        value,
+    )
+    if match is None:
+        raise SplashSportsImportError(
+            f"{field} must use YYYY-MM-DD HH:MM CDT/CST"
+        )
+    offset = timedelta(hours=-5 if match.group("zone") == "CDT" else -6)
+    parsed = datetime.strptime(
+        f"{match.group('date')} {match.group('time')}", "%Y-%m-%d %H:%M"
+    ).replace(tzinfo=timezone(offset))
+    return parsed.astimezone(timezone.utc)
+
+
+def _owner_kickoff(record: dict[str, str], row_number: int) -> datetime:
+    try:
+        local = datetime.strptime(
+            f"{record['game_date']} {record['start_time']}",
+            "%Y-%m-%d %I:%M %p",
+        )
+    except (KeyError, ValueError) as exc:
+        raise SplashSportsImportError(
+            f"row {row_number} has an invalid game date or start time"
+        ) from exc
+    # The governed file names CDT/CST explicitly. Preserve that numeric offset
+    # for the displayed kickoff time instead of consulting mutable machine TZ data.
+    source_offset = timedelta(
+        hours=-5 if record["locked_at"].endswith(" CDT") else -6
+    )
+    return local.replace(tzinfo=timezone(source_offset)).astimezone(timezone.utc)
+
+
+def _validate_owner_record(
+    record: dict[str, str], request: SplashSportsImportRequest
+) -> tuple[int, datetime]:
+    row_number = int(record["_row_number"])
+    match = _OWNER_GAME_ID_PATTERN.fullmatch(record["game_id"])
+    if match is None:
+        raise SplashSportsImportError(
+            f"row {row_number} game_id does not match YYYY_Www_nn"
+        )
+    season = int(match.group("season"))
+    week = int(match.group("week"))
+    sequence = int(match.group("sequence"))
+    try:
+        row_season = int(record["season"])
+        row_week = int(record["week"])
+    except ValueError as exc:
+        raise SplashSportsImportError(
+            f"row {row_number} season/week must be integers"
+        ) from exc
+    if (season, week) != (row_season, row_week) or (season, week) != (
+        request.season,
+        request.week,
+    ):
+        raise SplashSportsImportError(
+            f"row {row_number} season/week identity is inconsistent"
+        )
+    if sequence < 1:
+        raise SplashSportsImportError(f"row {row_number} sequence must be positive")
+    if record["source"] != "SplashSports" or record["lock_status"] != "LOCKED":
+        raise SplashSportsImportError(
+            f"row {row_number} is not an authoritative locked SplashSports row"
+        )
+    if not record["source_image"].strip():
+        raise SplashSportsImportError(
+            f"row {row_number} requires source-image provenance"
+        )
+    away_spread = _spread(record["away_spread"], f"row {row_number} away_spread")
+    home_spread = _spread(record["home_spread"], f"row {row_number} home_spread")
+    total = _optional_total(record["locked_total"], f"row {row_number} locked_total")
+    if total is None:
+        raise SplashSportsImportError(f"row {row_number} requires a locked total")
+    if abs(away_spread + home_spread) >= 1e-9:
+        raise SplashSportsImportError(
+            f"row {row_number} away/home spreads do not sum to zero"
+        )
+    if home_spread < 0:
+        expected_favorite, expected_underdog, expected_line = (
+            record["home_team"],
+            record["away_team"],
+            home_spread,
+        )
+    elif away_spread < 0:
+        expected_favorite, expected_underdog, expected_line = (
+            record["away_team"],
+            record["home_team"],
+            away_spread,
+        )
+    else:
+        raise SplashSportsImportError(
+            f"row {row_number} pick'em requires a different governed schema"
+        )
+    favorite_line = _spread(
+        record["favorite_line"], f"row {row_number} favorite_line"
+    )
+    if (
+        record["favorite"] != expected_favorite
+        or record["underdog"] != expected_underdog
+        or abs(favorite_line - expected_line) >= 1e-9
+    ):
+        raise SplashSportsImportError(
+            f"row {row_number} favorite/underdog custody disagrees with its spreads"
+        )
+    locked_at = _owner_timestamp(record["locked_at"], f"row {row_number} locked_at")
+    if locked_at != request.captured_at:
+        raise SplashSportsImportError(
+            f"row {row_number} locked_at disagrees with captured_at"
+        )
+    kickoff = _owner_kickoff(record, row_number)
+    if kickoff <= locked_at:
+        raise SplashSportsImportError(
+            f"row {row_number} kickoff must follow the locked timestamp"
+        )
+    game_id = (
+        _OWNER_GAME_ID_NAMESPACE + season * 10_000 + week * 100 + sequence
+    )
+    return game_id, kickoff
+
+
+def _validate_owner_file_identity(
+    rows: list[dict[str, str]], request: SplashSportsImportRequest
+) -> None:
+    expected = {
+        f"{request.season}_W{request.week:02d}_{sequence:02d}"
+        for sequence in range(1, request.expected_lined_game_count + 1)
+    }
+    supplied = {record["game_id"] for record in rows}
+    if supplied != expected:
+        missing = sorted(expected - supplied)
+        unexpected = sorted(supplied - expected)
+        raise SplashSportsImportError(
+            "owner model import game_id sequence is incomplete or unexpected: "
+            f"missing={missing}, unexpected={unexpected}"
+        )
+
+
+def _resolve_owner_team(
+    conn: sqlite3.Connection,
+    resolver: CanonicalTeamResolver,
+    raw_name: str,
+    *,
+    row_number: str,
+    side: str,
+) -> str:
+    """Resolve a governed owner row without broadening provider normalization.
+
+    The canonical FBS inventory remains authoritative. A named historical FCS
+    opponent may be reused only when that exact identity already exists in the
+    game ledger; no ``teams`` row is fabricated to make an import pass.
+    """
+    resolution = resolver.resolve("SplashSports", raw_name)
+    if resolution.status == "resolved" and resolution.canonical_name is not None:
+        return str(resolution.canonical_name)
+    historical = {
+        str(row[0])
+        for row in conn.execute(
+            "SELECT home_team FROM games WHERE home_team = ? COLLATE NOCASE "
+            "UNION SELECT away_team FROM games WHERE away_team = ? COLLATE NOCASE",
+            (raw_name, raw_name),
+        )
+        if row[0]
+    }
+    if len(historical) == 1:
+        return next(iter(historical))
+    status = "ambiguous" if resolution.status == "ambiguous" or historical else "unknown"
+    raise SplashSportsImportError(
+        f"row {row_number} {side} team is {status}: {raw_name}"
+    )
+
+
 def _spread(value: str, field: str) -> float:
     folded = " ".join(value.casefold().replace("’", "'").split())
     if folded in ("pk", "pick", "pick'em", "pickem", "even"):
@@ -262,7 +501,11 @@ def _validate_request(request: SplashSportsImportRequest) -> SplashSportsImportR
         raise SplashSportsImportError("unsupported manual input format")
     if request.input_format == "xlsx" and source_path.suffix.casefold() != ".xlsx":
         raise SplashSportsImportError("XLSX input must use the .xlsx extension")
-    if request.input_format in ("csv", "screenshot_transcription") and source_path.suffix.casefold() != ".csv":
+    if request.input_format in (
+        "csv",
+        "screenshot_transcription",
+        OWNER_MODEL_IMPORT_FORMAT,
+    ) and source_path.suffix.casefold() != ".csv":
         raise SplashSportsImportError("CSV input must use the .csv extension")
     if request.season < 1869 or not 0 <= request.week <= 20:
         raise SplashSportsImportError("season/week are outside valid bounds")
@@ -307,6 +550,8 @@ def build_splashsports_manifest(
             "expected versus parsed lined-game count differs: "
             f"expected={request.expected_lined_game_count}, parsed={len(rows)}"
         )
+    if request.input_format == OWNER_MODEL_IMPORT_FORMAT:
+        _validate_owner_file_identity(rows, request)
     resolver = CanonicalTeamResolver.from_connection(conn)
     source_sha256 = _file_sha256(request.source_path.resolve())
     seen_raw: set[tuple[str, str]] = set()
@@ -315,23 +560,56 @@ def build_splashsports_manifest(
     lines: list[dict[str, object]] = []
     for record in rows:
         row_number = int(record["_row_number"])
-        raw_away = record["Away Team"].strip()
-        raw_home = record["Home Team"].strip()
+        if request.input_format == OWNER_MODEL_IMPORT_FORMAT:
+            _validate_owner_record(record, request)
+            raw_away = record["away_team"].strip()
+            raw_home = record["home_team"].strip()
+            supplied_id = record["game_id"].strip()
+            spread_value = record["home_spread"]
+            total_value = record["locked_total"]
+            game_date = record["game_date"]
+            game_time = record["start_time"]
+            notes = None
+        else:
+            raw_away = record["Away Team"].strip()
+            raw_home = record["Home Team"].strip()
+            supplied_id = record.get("SplashSports Game ID", "").strip()
+            spread_value = record["Spread"]
+            total_value = record.get("Total", "")
+            game_date = record.get("Game Date", "") or None
+            game_time = record.get("Game Time", "") or None
+            notes = record.get("Notes", "") or None
         if not raw_away or not raw_home or raw_away.casefold() == raw_home.casefold():
             raise SplashSportsImportError(
                 f"row {row_number} requires distinct away and home teams"
             )
-        away = resolver.resolve("SplashSports", raw_away)
-        home = resolver.resolve("SplashSports", raw_home)
-        for side, resolution in (("away", away), ("home", home)):
-            if resolution.status != "resolved" or resolution.canonical_name is None:
-                candidates = ",".join(resolution.candidates) or "none"
-                raise SplashSportsImportError(
-                    f"row {row_number} {side} team is {resolution.status}; "
-                    f"raw={resolution.raw_name}; candidates={candidates}"
-                )
-        normalized_away = str(away.canonical_name)
-        normalized_home = str(home.canonical_name)
+        if request.input_format == OWNER_MODEL_IMPORT_FORMAT:
+            normalized_away = _resolve_owner_team(
+                conn,
+                resolver,
+                raw_away,
+                row_number=str(row_number),
+                side="away",
+            )
+            normalized_home = _resolve_owner_team(
+                conn,
+                resolver,
+                raw_home,
+                row_number=str(row_number),
+                side="home",
+            )
+        else:
+            away = resolver.resolve("SplashSports", raw_away)
+            home = resolver.resolve("SplashSports", raw_home)
+            for side, resolution in (("away", away), ("home", home)):
+                if resolution.status != "resolved" or resolution.canonical_name is None:
+                    candidates = ",".join(resolution.candidates) or "none"
+                    raise SplashSportsImportError(
+                        f"row {row_number} {side} team is {resolution.status}; "
+                        f"raw={resolution.raw_name}; candidates={candidates}"
+                    )
+            normalized_away = str(away.canonical_name)
+            normalized_home = str(home.canonical_name)
         exact = conn.execute(
             "SELECT game_id, start_date FROM games WHERE season = ? AND week = ? "
             "AND home_team = ? AND away_team = ?",
@@ -362,7 +640,6 @@ def build_splashsports_manifest(
             )
         seen_raw.add(raw_pair)
         seen_normalized.add(normalized_pair)
-        supplied_id = record.get("SplashSports Game ID", "").strip()
         source_line_id = supplied_id or "manual-" + hashlib.sha256(
             f"{request.source_contest_id}|{raw_away}|{raw_home}".encode("utf-8")
         ).hexdigest()[:24]
@@ -371,22 +648,36 @@ def build_splashsports_manifest(
                 f"row {row_number} duplicates a SplashSports game identifier"
             )
         seen_source_ids.add(source_line_id)
-        lines.append(
-            {
-                "source_line_id": source_line_id,
-                "raw_away_team": raw_away,
-                "raw_home_team": raw_home,
-                "normalized_away_team": normalized_away,
-                "normalized_home_team": normalized_home,
-                "game_id": int(exact[0][0]),
-                "home_spread": _spread(record["Spread"], f"row {row_number} Spread"),
-                "total": _optional_total(record.get("Total", ""), f"row {row_number} Total"),
-                "game_date": record.get("Game Date", "") or None,
-                "game_time": record.get("Game Time", "") or None,
-                "notes": record.get("Notes", "") or None,
-                "source_row_number": row_number,
+        line = {
+            "source_line_id": source_line_id,
+            "raw_away_team": raw_away,
+            "raw_home_team": raw_home,
+            "normalized_away_team": normalized_away,
+            "normalized_home_team": normalized_home,
+            "game_id": int(exact[0][0]),
+            "home_spread": _spread(
+                spread_value, f"row {row_number} home-team spread"
+            ),
+            "total": _optional_total(
+                total_value, f"row {row_number} locked total"
+            ),
+            "game_date": game_date,
+            "game_time": game_time,
+            "notes": notes,
+            "source_row_number": row_number,
+        }
+        if request.input_format == OWNER_MODEL_IMPORT_FORMAT:
+            line["owner_reviewed_custody"] = {
+                "away_spread": float(record["away_spread"]),
+                "favorite": record["favorite"],
+                "favorite_line": float(record["favorite_line"]),
+                "underdog": record["underdog"],
+                "locked_at": record["locked_at"],
+                "source_image": record["source_image"],
+                "lock_status": record["lock_status"],
+                "import_version": OWNER_MODEL_IMPORT_VERSION,
             }
-        )
+        lines.append(line)
     evidence = [
         {
             "path": str(path.resolve()),
@@ -394,6 +685,15 @@ def build_splashsports_manifest(
         }
         for path in request.screenshot_evidence_paths
     ]
+    source_path = request.source_path.resolve()
+    source_reference = str(source_path)
+    if request.input_format == OWNER_MODEL_IMPORT_FORMAT:
+        try:
+            source_reference = source_path.relative_to(
+                Path(__file__).resolve().parents[1]
+            ).as_posix()
+        except ValueError:
+            pass
     payload: dict[str, object] = {
         "manifest_version": MANIFEST_VERSION,
         "repository": EXPECTED_REPOSITORY,
@@ -405,9 +705,13 @@ def build_splashsports_manifest(
         "source_contest_id": request.source_contest_id,
         "expected_lined_game_count": request.expected_lined_game_count,
         "input_custody": {
-            "importer_version": IMPORTER_VERSION,
+            "importer_version": (
+                OWNER_MODEL_IMPORT_VERSION
+                if request.input_format == OWNER_MODEL_IMPORT_FORMAT
+                else IMPORTER_VERSION
+            ),
             "input_format": request.input_format,
-            "source_path": str(request.source_path.resolve()),
+            "source_path": source_reference,
             "source_sha256": source_sha256,
             "captured_at": request.captured_at.isoformat(),
             "imported_by": request.imported_by,
@@ -428,4 +732,139 @@ def build_splashsports_manifest(
         canonical_json=canonical,
         sha256=hashlib.sha256(canonical.encode("utf-8")).hexdigest(),
         parsed_line_count=len(lines),
+    )
+
+
+def ingest_owner_reviewed_schedule(
+    conn: sqlite3.Connection,
+    request: SplashSportsImportRequest,
+    *,
+    imported_at: datetime,
+) -> SplashSportsScheduleIngestion:
+    """Materialize the exact owner-reviewed slate into the legacy game boundary.
+
+    Existing canonical games win over the deterministic local namespace. New
+    rows are permitted only when the complete governed source file resolves to
+    one canonical orientation and no other Week/game identity exists.
+    """
+    request = _validate_request(request)
+    if request.input_format != OWNER_MODEL_IMPORT_FORMAT:
+        raise SplashSportsImportError(
+            "schedule ingestion requires owner_reviewed_model_import_csv"
+        )
+    rows = _table_rows(request.source_path.resolve(), request.input_format)
+    if len(rows) != request.expected_lined_game_count:
+        raise SplashSportsImportError(
+            "expected versus parsed lined-game count differs: "
+            f"expected={request.expected_lined_game_count}, parsed={len(rows)}"
+        )
+    _validate_owner_file_identity(rows, request)
+    imported_value = _utc(imported_at, "imported_at").isoformat()
+    resolver = CanonicalTeamResolver.from_connection(conn)
+    resolved: list[tuple[dict[str, str], int, datetime, str, str]] = []
+    seen_source_ids: set[str] = set()
+    seen_matchups: set[tuple[str, str]] = set()
+    for record in rows:
+        game_id, kickoff = _validate_owner_record(record, request)
+        raw_home = record["home_team"]
+        raw_away = record["away_team"]
+        home = _resolve_owner_team(
+            conn,
+            resolver,
+            raw_home,
+            row_number=record["_row_number"],
+            side="home",
+        )
+        away = _resolve_owner_team(
+            conn,
+            resolver,
+            raw_away,
+            row_number=record["_row_number"],
+            side="away",
+        )
+        source_id = record["game_id"]
+        matchup = tuple(sorted((home.casefold(), away.casefold())))
+        if source_id in seen_source_ids or matchup in seen_matchups:
+            raise SplashSportsImportError(
+                f"row {record['_row_number']} duplicates an owner-reviewed identity"
+            )
+        seen_source_ids.add(source_id)
+        seen_matchups.add(matchup)
+        resolved.append((record, game_id, kickoff, home, away))
+
+    inserted = 0
+    existing = 0
+    game_ids: list[int] = []
+    try:
+        conn.execute("SAVEPOINT owner_reviewed_schedule")
+        for record, proposed_game_id, kickoff, home, away in resolved:
+            exact = conn.execute(
+                "SELECT game_id, start_date FROM games WHERE season = ? AND week = ? "
+                "AND home_team = ? AND away_team = ? ORDER BY game_id",
+                (request.season, request.week, home, away),
+            ).fetchall()
+            reversed_rows = conn.execute(
+                "SELECT game_id FROM games WHERE season = ? AND week = ? "
+                "AND home_team = ? AND away_team = ?",
+                (request.season, request.week, away, home),
+            ).fetchall()
+            if reversed_rows or len(exact) > 1:
+                raise SplashSportsImportError(
+                    f"row {record['_row_number']} has ambiguous/reversed game custody"
+                )
+            if exact:
+                if exact[0][1] != kickoff.isoformat():
+                    raise SplashSportsImportError(
+                        f"row {record['_row_number']} kickoff conflicts with canonical game"
+                    )
+                game_id = int(exact[0][0])
+                existing += 1
+            else:
+                collision = conn.execute(
+                    "SELECT season, week, home_team, away_team FROM games WHERE game_id = ?",
+                    (proposed_game_id,),
+                ).fetchone()
+                if collision is not None:
+                    raise SplashSportsImportError(
+                        f"row {record['_row_number']} deterministic game ID collides"
+                    )
+                conn.execute(
+                    "INSERT INTO games "
+                    "(game_id, season, week, season_type, start_date, home_team, "
+                    "away_team, neutral_site, conference_game, completed) "
+                    "VALUES (?, ?, ?, 'regular', ?, ?, ?, 0, 0, 0)",
+                    (
+                        proposed_game_id,
+                        request.season,
+                        request.week,
+                        kickoff.isoformat(),
+                        home,
+                        away,
+                    ),
+                )
+                game_id = proposed_game_id
+                inserted += 1
+            game_ids.append(game_id)
+        conn.execute(
+            "INSERT INTO ingestion_runs "
+            "(source, started_at, finished_at, rows_added, status, error) "
+            "VALUES (?, ?, ?, ?, 'success', NULL)",
+            (
+                OWNER_MODEL_IMPORT_VERSION,
+                imported_value,
+                imported_value,
+                inserted,
+            ),
+        )
+        conn.execute("RELEASE SAVEPOINT owner_reviewed_schedule")
+    except Exception:
+        conn.execute("ROLLBACK TO SAVEPOINT owner_reviewed_schedule")
+        conn.execute("RELEASE SAVEPOINT owner_reviewed_schedule")
+        raise
+    return SplashSportsScheduleIngestion(
+        source_sha256=_file_sha256(request.source_path.resolve()),
+        requested_count=len(rows),
+        inserted_count=inserted,
+        existing_count=existing,
+        game_ids=tuple(game_ids),
     )
