@@ -58,6 +58,9 @@ INITIAL_LOCK_OVERRIDE_REASON = (
     "the normal Tuesday initial-card window."
 )
 PROVENANCE = "owner-reviewed://2026-week2/ats-official-totals-limited-shadow-v1"
+APPROVED_PRODUCTION_POLICY_PROVENANCE = (
+    "proposed-v3-production-policy-registration-requires-owner-approval"
+)
 SOURCE_RULES = tuple(
     RequiredSourcePolicy(data_type, provider, fallback)
     for data_type, provider, fallback in (
@@ -598,7 +601,7 @@ def main(argv: list[str] | None = None) -> int:
                     required_sources=SOURCE_RULES,
                     effective_at=POLICY_EFFECTIVE_AT,
                     created_by="repository-owner",
-                    provenance=PROVENANCE,
+                    provenance=APPROVED_PRODUCTION_POLICY_PROVENANCE,
                 ),
                 selection_policy=FullCardPolicy(
                     version="production-selection-v1",
@@ -616,13 +619,13 @@ def main(argv: list[str] | None = None) -> int:
                     confidence_2_max_uncertainty=8.0,
                     effective_at=POLICY_EFFECTIVE_AT,
                     created_by="repository-owner",
-                    provenance=PROVENANCE,
+                    provenance=APPROVED_PRODUCTION_POLICY_PROVENANCE,
                 ),
                 adjustment_policy=ManualAdjustmentPolicy(
                     policy_version="production-adjustment-v1",
                     effective_at=POLICY_EFFECTIVE_AT,
                     created_by="repository-owner",
-                    provenance=PROVENANCE,
+                    provenance=APPROVED_PRODUCTION_POLICY_PROVENANCE,
                 ),
                 freshness_fallbacks=fallbacks,
                 contextual_adjustments=(),

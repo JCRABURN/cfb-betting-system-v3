@@ -143,6 +143,17 @@ def test_authoritative_database_copy_preserves_rows_integrity_and_source(tmp_pat
         result.after_counts[table] == count
         for table, count in result.before_counts.items()
     )
+    if result.before_counts.get("contests", 0):
+        assert result.after_counts["contests"] == 1
+        assert result.after_counts["contest_locked_lines"] == 49
+        assert result.after_counts["contest_picks"] == 49
+        assert result.after_counts["model_predictions"] == 49
+        assert result.after_counts["total_model_predictions"] == 49
+        assert result.after_counts["total_card_candidates"] == 49
+        assert result.after_counts["ats_shadow_calibrated_evaluations"] == 49
+        assert result.new_table_counts == {}
+        assert _file_hash(AUTHORITATIVE_DATABASE) == source_hash_before
+        return
     assert result.after_counts["contests"] == 0
     assert result.after_counts["contest_locked_lines"] == 0
     assert result.after_counts["contest_line_corrections"] == 0

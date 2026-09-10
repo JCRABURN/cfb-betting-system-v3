@@ -458,7 +458,7 @@ def test_preflight_never_applies_pending_migrations(tmp_path):
     shutil.copy2(ROOT / "requirements.txt", root / "requirements.txt")
     shutil.copy2(ROOT / "requirements-dev.txt", root / "requirements-dev.txt")
     database = root / "data" / "cfb.db"
-    shutil.copy2(AUTHORITATIVE_DATABASE, database)
+    sqlite3.connect(database).close()
     line_path = root / "contest-lines.json"
     line_path.write_text(json.dumps(_line_manifest()), encoding="utf-8")
     before = _file_sha256(database)
