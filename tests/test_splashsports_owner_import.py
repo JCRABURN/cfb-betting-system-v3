@@ -1,12 +1,16 @@
 import csv
 import hashlib
+import json
 from datetime import datetime, timezone
 from pathlib import Path
 
 import pytest
 
+from ingestion import CanonicalTeamResolver, IngestionRequest
+from operations.providers import CfbdTeamStatsParser
 from operations.splashsports import (
     OWNER_MODEL_IMPORT_FORMAT,
+    OWNER_MODEL_IMPORT_VERSION,
     SplashSportsImportError,
     SplashSportsImportRequest,
     build_splashsports_manifest,
@@ -28,6 +32,15 @@ WEEK_2_INPUT = (
 )
 WEEK_2_INPUT_SHA256 = (
     "1b2fed8f991dbdde2bb709d106d2c36aae2cbace9e937effbbb712bc50ce7432"
+)
+WEEK_1_EVIDENCE = (
+    Path(__file__).resolve().parents[1]
+    / "production-weeks"
+    / "evidence"
+    / "2026-week2"
+)
+WEEK_1_EPA_RAW_SHA256 = (
+    "0247baa317f1bfdf44790f87cb0010245fffc0c5ba93c44c6d7aa7bf2ca279e4"
 )
 
 
@@ -108,6 +121,14 @@ def test_owner_reviewed_import_resolves_aliases_and_existing_fcs_identities(
     assert lines[0]["normalized_away_team"] == "App State"
     assert lines[1]["normalized_away_team"] == "North Dakota State"
     assert lines[0]["owner_reviewed_custody"]["source_image"] == "Screenshot 1"
+    ingestion_source = (
+        f"{OWNER_MODEL_IMPORT_VERSION}:"
+        f"{hashlib.sha256(path.read_bytes()).hexdigest()}"
+    )
+    assert conn.execute(
+        "SELECT COUNT(*) FROM ingestion_runs WHERE source = ?",
+        (ingestion_source,),
+    ).fetchone()[0] == 1
     conn.close()
 
 
@@ -128,6 +149,73 @@ def test_owner_import_reuses_existing_game_identity_without_duplicate_team(
         "SELECT COUNT(*) FROM teams WHERE school = 'North Dakota State'"
     ).fetchone()[0] == 0
     conn.close()
+
+
+def test_cfbd_stats_reuse_exact_historical_fcs_identity_without_team_row(temp_db):
+    conn = temp_db.get_connection()
+    _seed_identity_universe(conn)
+    parsed = CfbdTeamStatsParser().parse(
+        conn,
+        CanonicalTeamResolver.from_connection(conn),
+        "collegefootballdata",
+        IngestionRequest(
+            provider="collegefootballdata",
+            endpoint="https://api.collegefootballdata.com/stats/season/advanced",
+            request_parameters={"year": 2026, "endWeek": 1},
+            requested_at=CAPTURED_AT,
+            parser_version="cfbd_team_stats_v1",
+            raw_payload_reference="fixture://cfbd-fcs-stats",
+            data_type="contextual",
+        ),
+        0,
+        {
+            "team": "North Dakota State",
+            "offense": {"ppa": 0.25, "successRate": 0.5},
+            "defense": {
+                "ppa": -0.10,
+                "successRate": 0.4,
+                "havoc": {"total": 0.2},
+            },
+        },
+    )
+
+    assert parsed.team == "North Dakota State"
+    assert conn.execute(
+        "SELECT COUNT(*) FROM teams WHERE school = 'North Dakota State'"
+    ).fetchone()[0] == 0
+    conn.close()
+
+
+def test_week_2_cfbd_replay_bundle_binds_the_exact_archived_payload():
+    raw_path = WEEK_1_EVIDENCE / "cfbd-week1-stats.raw.json"
+    bundle_path = WEEK_1_EVIDENCE / "cfbd-week1-stats-replay-bundle.json"
+    bundle = json.loads(bundle_path.read_text(encoding="utf-8"))
+
+    assert hashlib.sha256(raw_path.read_bytes()).hexdigest() == WEEK_1_EPA_RAW_SHA256
+    assert bundle["capture_scope"] == "pregame"
+    assert bundle["context_capture"] is False
+    assert bundle["season"] == 2026
+    assert bundle["week"] == 2
+    assert bundle["payloads"] == [
+        {
+            "data_type": "contextual",
+            "endpoint": "https://api.collegefootballdata.com/stats/season/advanced",
+            "parser_version": "cfbd_team_stats_v1",
+            "payload_path": "cfbd-week1-stats.raw.json",
+            "payload_sha256": WEEK_1_EPA_RAW_SHA256,
+            "provider": "collegefootballdata",
+            "raw_payload_reference": (
+                "repo://production-weeks/evidence/2026-week2/"
+                "cfbd-week1-stats.raw.json"
+            ),
+            "request_parameters": {
+                "endWeek": 1,
+                "excludeGarbageTime": True,
+                "year": 2026,
+            },
+            "requested_at": "2026-09-09T13:38:46.896384+00:00",
+        }
+    ]
 
 
 def test_owner_reviewed_import_rejects_asymmetric_spreads(temp_db, tmp_path):

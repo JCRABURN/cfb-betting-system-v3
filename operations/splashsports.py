@@ -760,6 +760,8 @@ def ingest_owner_reviewed_schedule(
         )
     _validate_owner_file_identity(rows, request)
     imported_value = _utc(imported_at, "imported_at").isoformat()
+    source_sha256 = _file_sha256(request.source_path.resolve())
+    ingestion_source = f"{OWNER_MODEL_IMPORT_VERSION}:{source_sha256}"
     resolver = CanonicalTeamResolver.from_connection(conn)
     resolved: list[tuple[dict[str, str], int, datetime, str, str]] = []
     seen_source_ids: set[str] = set()
@@ -845,24 +847,35 @@ def ingest_owner_reviewed_schedule(
                 game_id = proposed_game_id
                 inserted += 1
             game_ids.append(game_id)
-        conn.execute(
-            "INSERT INTO ingestion_runs "
-            "(source, started_at, finished_at, rows_added, status, error) "
-            "VALUES (?, ?, ?, ?, 'success', NULL)",
-            (
-                OWNER_MODEL_IMPORT_VERSION,
-                imported_value,
-                imported_value,
-                inserted,
-            ),
-        )
+        prior_ingestion = conn.execute(
+            "SELECT rows_added FROM ingestion_runs "
+            "WHERE source = ? AND started_at = ? AND finished_at = ? "
+            "AND status = 'success' AND error IS NULL ORDER BY id LIMIT 1",
+            (ingestion_source, imported_value, imported_value),
+        ).fetchone()
+        if prior_ingestion is None:
+            conn.execute(
+                "INSERT INTO ingestion_runs "
+                "(source, started_at, finished_at, rows_added, status, error) "
+                "VALUES (?, ?, ?, ?, 'success', NULL)",
+                (
+                    ingestion_source,
+                    imported_value,
+                    imported_value,
+                    inserted,
+                ),
+            )
+        elif int(prior_ingestion[0]) not in (0, len(rows)):
+            raise SplashSportsImportError(
+                "prior owner-reviewed ingestion has an incomplete row count"
+            )
         conn.execute("RELEASE SAVEPOINT owner_reviewed_schedule")
     except Exception:
         conn.execute("ROLLBACK TO SAVEPOINT owner_reviewed_schedule")
         conn.execute("RELEASE SAVEPOINT owner_reviewed_schedule")
         raise
     return SplashSportsScheduleIngestion(
-        source_sha256=_file_sha256(request.source_path.resolve()),
+        source_sha256=source_sha256,
         requested_count=len(rows),
         inserted_count=inserted,
         existing_count=existing,

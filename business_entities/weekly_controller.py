@@ -158,6 +158,9 @@ class ContestLineInput:
     home_spread: float
     source_line_id: str
     total: float | None = None
+    game_id: int | None = None
+    normalized_home_team: str | None = None
+    normalized_away_team: str | None = None
 
 
 @dataclass(frozen=True)
@@ -220,6 +223,8 @@ class TuesdayCardRequest:
     generated_at: datetime
     actor: str
     provenance: str
+    line_captured_at: datetime | None = None
+    initial_lock_window_override_reason: str | None = None
 
 
 @dataclass(frozen=True)
@@ -638,12 +643,42 @@ def _validate_line_input(line: ContestLineInput) -> ContestLineInput:
     total = None if line.total is None else number(line.total, "line.total")
     if total is not None and total < 0:
         raise WeeklyControllerError("line.total cannot be negative")
+    explicit_identity = (
+        line.game_id,
+        line.normalized_home_team,
+        line.normalized_away_team,
+    )
+    if any(value is not None for value in explicit_identity) and not all(
+        value is not None for value in explicit_identity
+    ):
+        raise WeeklyControllerError(
+            "an explicit line identity requires game_id and both normalized teams"
+        )
     return ContestLineInput(
         raw_home_team=required_text(line.raw_home_team, "line.raw_home_team"),
         raw_away_team=required_text(line.raw_away_team, "line.raw_away_team"),
         home_spread=spread,
         source_line_id=required_text(line.source_line_id, "line.source_line_id"),
         total=total,
+        game_id=(
+            None if line.game_id is None else integer(line.game_id, "line.game_id", 1)
+        ),
+        normalized_home_team=(
+            None
+            if line.normalized_home_team is None
+            else required_text(
+                line.normalized_home_team,
+                "line.normalized_home_team",
+            )
+        ),
+        normalized_away_team=(
+            None
+            if line.normalized_away_team is None
+            else required_text(
+                line.normalized_away_team,
+                "line.normalized_away_team",
+            )
+        ),
     )
 
 
@@ -656,6 +691,28 @@ def _resolve_game(
     season: int,
     week: int,
 ) -> tuple[int, str, str]:
+    if line.game_id is not None:
+        assert line.normalized_home_team is not None
+        assert line.normalized_away_team is not None
+        row = conn.execute(
+            "SELECT season, week, home_team, away_team FROM games WHERE game_id = ?",
+            (line.game_id,),
+        ).fetchone()
+        expected = (
+            season,
+            week,
+            line.normalized_home_team,
+            line.normalized_away_team,
+        )
+        if row != expected:
+            raise WeeklyControllerError(
+                "explicit authorized line identity does not match the canonical game"
+            )
+        return (
+            line.game_id,
+            line.normalized_home_team,
+            line.normalized_away_team,
+        )
     home = resolver.resolve(provider, line.raw_home_team)
     away = resolver.resolve(provider, line.raw_away_team)
     for side, resolution in (("home", home), ("away", away)):
@@ -701,6 +758,7 @@ def _lock_tuesday_lines(
     request: TuesdayCardRequest,
     source: str,
     generated_at: datetime,
+    line_captured_at: datetime,
 ) -> tuple[int, str]:
     lines = tuple(_validate_line_input(line) for line in request.lines)
     expected = integer(
@@ -752,7 +810,7 @@ def _lock_tuesday_lines(
                 f"source_line_id={line.source_line_id}"
             ),
             payload_sha256=request.line_payload_sha256,
-            locked_at=generated_at,
+            locked_at=line_captured_at,
         )
         if not result.created:
             raise WeeklyControllerError(
@@ -1239,7 +1297,10 @@ def _record_line_batch(
         len(request.lines),
         locked_count,
         snapshot_sha256,
-        utc_timestamp(request.generated_at, "captured_at"),
+        utc_timestamp(
+            request.line_captured_at or request.generated_at,
+            "captured_at",
+        ),
         request.provenance,
     )
     try:
@@ -1448,7 +1509,36 @@ def _run_tuesday_persisted(
         if existing.run.operation != "tuesday_lock":
             raise WeeklyControllerConflictError("run key belongs to another operation")
         return existing
-    generation_time = _validate_request_time(request.generated_at, weekdays=(2,))
+    generation_time = datetime.fromisoformat(
+        utc_timestamp(request.generated_at, "generated_at")
+    )
+    override_reason = request.initial_lock_window_override_reason
+    if override_reason is None:
+        if generation_time.isoweekday() != 2:
+            raise WeeklyControllerError(
+                "controller operation is not permitted on this UTC weekday; allowed=2"
+            )
+    else:
+        required_text(
+            override_reason,
+            "initial_lock_window_override_reason",
+        )
+        if request.actor != "repository-owner":
+            raise WeeklyControllerError(
+                "an off-schedule initial lock requires repository-owner custody"
+            )
+        if generation_time.isoweekday() not in (3, 4, 5, 6):
+            raise WeeklyControllerError(
+                "owner-authorized late initial locks are limited to Wednesday-Saturday UTC"
+            )
+    line_captured_at = datetime.fromisoformat(
+        utc_timestamp(
+            request.line_captured_at or request.generated_at,
+            "line_captured_at",
+        )
+    )
+    if line_captured_at > generation_time:
+        raise WeeklyControllerError("line_captured_at cannot follow generated_at")
     policy = validate_weekly_controller_policy(request.controller_policy)
     if not timestamp_on_or_before(
         conn, policy.effective_at.isoformat(), generation_time.isoformat()
@@ -1502,6 +1592,7 @@ def _run_tuesday_persisted(
                 request=request,
                 source=source,
                 generated_at=generation_time,
+                line_captured_at=line_captured_at,
             )
             model_run = run_epa_only_model(
                 conn,
