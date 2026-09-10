@@ -34,8 +34,8 @@ card generation instant. Callers cannot supply or override a total.
 For every locked line visible at that instant, the card records exactly one of:
 
 - a `total_card_candidates` row with the exact effective total, correction ID,
-  projected total, uncertainty, O/U direction, totals-only calibrated
-  probability, Confidence, policy version, PIT timestamps, and provenance; or
+  projected total, uncertainty, O/U direction, raw normal-residual probability,
+  legacy shadow Confidence, policy version, PIT timestamps, and provenance; or
 - a `total_card_skips` row naming `missing_locked_total`,
   `missing_game_identity`, or `missing_total_prediction`.
 
@@ -49,8 +49,9 @@ The model and policy tables are separately versioned and immutable:
 - `total_model_runs` allows only `research` or `shadow` lifecycle stages;
 - `total_model_predictions` stores a raw projected game total and uncertainty,
   plus feature-as-of coordinates and a feature snapshot hash;
-- `total_reliability_policies` owns totals probability calibration, Confidence
-  thresholds, and the exact-forecast tie direction independently of ATS.
+- `total_reliability_policies` owns the legacy raw-probability transform,
+  shadow Confidence thresholds, and the exact-forecast tie direction
+  independently of ATS. It is not an empirical calibration policy.
 
 Predictions and cards are rejected when a feature snapshot reaches the target
 week, a timestamp looks forward, or generation occurs at/after kickoff.
@@ -82,15 +83,24 @@ the sanctioned access layer. No pace, injury, weather, roster, or other
 unavailable historical feature is invented.
 
 Uncertainty is the training-fold residual RMSE. A normal residual distribution
-produces the O/U probability for the historical opening total. The totals-only
-`symmetric_logit_scale_v1` calibration channel is independent of ATS; v1 uses
-the pre-registered identity slope of 1.0 and reports its observed calibration
-error rather than claiming it is calibrated enough for production. An exact
+produces a raw O/U probability for the historical opening total. The legacy
+`symmetric_logit_scale_v1` field names are retained for schema compatibility;
+v1 uses an identity slope of 1.0 and is not empirically calibrated. Reports
+must label this as `RAW MODEL PROBABILITY` and report empirical calibrated
+probability as `NOT AVAILABLE`. An exact
 forecast/line tie deterministically selects `under` under policy v1.
+
+Historical totals select a non-null opening total under
+`historical-totals-book-priority-v1`, ordered Bovada, DraftKings, then ESPN Bet.
+There is no alphabetical fallback. Historical `fetched_at` values are retained
+as `archive_ingested_at`; they do not prove market observation or original
+quote time. Every current archive row is therefore labeled
+`UNVERIFIED_ARCHIVAL_OPENING`, with `market_observed_at` and
+`original_quote_at` unavailable rather than fabricated.
 
 ## Historical out-of-sample result
 
-Command executed on 2026-08-31:
+Command re-executed after the custody correction on 2026-09-09:
 
 ```text
 python -m scripts.run_totals_research --seasons 2019 2020 2021 2022 2023 2024 2025 --minimum-training-examples 100
@@ -108,22 +118,28 @@ after the run.
 | OOS forecasts | 4,687 |
 | Total MAE | 13.3592 points |
 | Total RMSE | 16.7339 points |
-| O/U decisions | 3,708 |
-| Wins–losses–pushes | 1,890–1,780–38 |
-| Win rate, excluding pushes | 51.4986% |
-| ROI at −110 | −1.6672% |
-| Brier score | 0.260713 |
-| Log loss | 0.718995 |
-| Expected calibration error | 0.088374 |
+| O/U decisions | 3,719 |
+| Wins–losses–pushes | 1,897–1,784–38 |
+| Win rate, excluding pushes | 51.5349% |
+| ROI at −110 | −1.5987% |
+| Brier score | 0.260473 |
+| Log loss | 0.718477 |
+| Expected calibration error | 0.088100 |
 
 Reproducibility identifiers:
 
 - authoritative database SHA-256:
   `09d0bcda684356001bacf8bc9e42939add56b053f405564d9be924e39c0cf842`;
-- dataset SHA-256:
-  `eae48d76526f4e47670a2aee37a8e6ac6f55d5b92bc5dc74d72d775b01aa0cfa`;
-- OOS ledger SHA-256:
-  `2a9d589abd144562470a71f4cc53f01b912b20868f3883e8b617e44c8e402879`.
+- corrected dataset SHA-256:
+  `72126e2bb6133b934e9afa6ab82a70f74cb8d3b7e797f6eee73bc8352e8c488a`;
+- corrected OOS ledger SHA-256:
+  `7aef0a7184c78d277fcd7a171f2be96a435daaf570d96155d6e04de487f1874b`.
+
+The total-specific resolver correction added 11 decisions, removed none, and
+changed the selected real-book row on one retained decision. The prior
+spread-driven result was 3,708 decisions, 1,890–1,780–38, and −1.6672% ROI.
+The corrected result remains negative and does not change the governance
+conclusion.
 
 The observed win rate does not clear the −110 break-even rate, ROI is
 negative, and the probability diagnostics are not production-grade.
@@ -221,17 +237,17 @@ therefore also shadow-only.
 
 ## Comparative evaluation and rollout gate
 
-On the common 3,708 lined OOS games, the model total is worse than simply
+On the corrected 3,719 lined OOS games, the model total is worse than simply
 using the recorded market total as the point forecast:
 
 | Forecast | N | MAE | RMSE |
 |---|---:|---:|---:|
-| EPA totals model | 3,708 | 13.2074 | 16.5473 |
-| Recorded market total | 3,708 | 12.6174 | 15.8923 |
+| EPA totals model | 3,719 | 13.1920 | 16.5321 |
+| Recorded market total | 3,719 | 12.6080 | 15.8809 |
 
-Season O/U ROI was +0.72% (2021), -5.01% (2022), +1.25% (2023), -1.17%
+Season O/U ROI was +0.72% (2021), -4.61% (2022), +1.37% (2023), -1.31%
 (2024), and -4.14% (2025). The 20+ point disagreement bucket was 3-10 with
--55.94% ROI, despite an average 91.17% normal-model probability. That region
+-55.94% ROI, despite an average 91.17% raw normal-model probability. That region
 is materially miscalibrated, not a promoted Confidence tier.
 
 The proposed future sample gate is 2,243 OOS decisions, derived from a
@@ -262,14 +278,14 @@ penalty and are explicitly labeled. Candidate rows reference their exact
 earlier same-game candidate and evidence cell; SQLite recomputes and enforces
 the penalty, source probability, and source reliability-policy custody.
 
-The exact ATS prior-season walk-forward ledger joined to the totals OOS ledger
-on 3,708 games produced:
+The exact ATS prior-season walk-forward ledger joined to the corrected totals
+OOS ledger on 3,712 games produced:
 
 | Relation | N | Phi | 95% interval | Penalty weight |
 |---|---:|---:|---:|---:|
-| Favorite + Over | 546 | 0.1534 | 0.0704 to 0.2343 | 0.0704 |
+| Favorite + Over | 547 | 0.1549 | 0.0720 to 0.2357 | 0.0720 |
 | Favorite + Under | 282 | 0.0343 | -0.0829 to 0.1505 | 0 |
-| Underdog + Over | 1,681 | -0.0847 | -0.1320 to -0.0371 | 0 |
+| Underdog + Over | 1,684 | -0.0863 | -0.1335 to -0.0387 | 0 |
 | Underdog + Under | 1,060 | 0.0465 | -0.0137 to 0.1064 | 0 |
 | Pick'em + Over | 24 | 0.2509 | -0.1697 to 0.5941 | 0 |
 | Pick'em + Under | 9 | -0.1581 | -0.7441 to 0.5654 | 0 |

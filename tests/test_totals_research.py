@@ -44,6 +44,17 @@ def _observation(game_id, season, week, actual_total, opening_total=50.0):
         actual_total=float(actual_total),
         opening_total=opening_total,
         opening_book=None if opening_total is None else "fixturebook",
+        opening_line_id=None if opening_total is None else game_id,
+        opening_source=None if opening_total is None else "fixture",
+        opening_book_priority_policy_version=(
+            None if opening_total is None else "fixture-policy-v1"
+        ),
+        archive_ingested_at=None if opening_total is None else "2026-01-01T00:00:00",
+        market_observed_at=None,
+        original_quote_at=None,
+        quote_time_custody_status=(
+            None if opening_total is None else "UNVERIFIED_ARCHIVAL_OPENING"
+        ),
     )
 
 
@@ -126,6 +137,13 @@ def test_future_feature_snapshot_is_rejected_adversarially():
             actual_total=52,
             opening_total=50,
             opening_book="fixture",
+            opening_line_id=1,
+            opening_source="fixture",
+            opening_book_priority_policy_version="fixture-policy-v1",
+            archive_ingested_at="2026-01-01T00:00:00",
+            market_observed_at=None,
+            original_quote_at=None,
+            quote_time_custody_status="UNVERIFIED_ARCHIVAL_OPENING",
         )
 
 
@@ -169,10 +187,23 @@ def test_dataset_builder_uses_pit_stats_and_actual_points_total(monkeypatch):
             },
         },
     )
+    from models.totals_opening_lines import HistoricalOpeningTotal
+
     monkeypatch.setattr(
-        totals_research.bh,
-        "get_opening_line",
-        lambda connection, game_id: {"home_spread": -3, "total": 52.5, "book": "fixture"},
+        totals_research,
+        "get_historical_opening_total",
+        lambda connection, game_id: HistoricalOpeningTotal(
+            betting_line_id=4,
+            game_id=game_id,
+            total=52.5,
+            book="fixture",
+            source="fixture",
+            archive_ingested_at="2026-01-01T00:00:00",
+            market_observed_at=None,
+            original_quote_at=None,
+            quote_time_custody_status="UNVERIFIED_ARCHIVAL_OPENING",
+            book_priority_policy_version="fixture-policy-v1",
+        ),
     )
 
     dataset = build_totals_research_dataset(conn, seasons=(2026,))
@@ -183,6 +214,9 @@ def test_dataset_builder_uses_pit_stats_and_actual_points_total(monkeypatch):
     assert observation.opening_total == 52.5
     assert observation.features == (0.3, 0.1, 0.2, 0.15)
     assert observation.home_stats_as_of_week == 1 < observation.week
+    assert observation.opening_line_id == 4
+    assert observation.market_observed_at is None
+    assert observation.quote_time_custody_status == "UNVERIFIED_ARCHIVAL_OPENING"
     conn.close()
 
 

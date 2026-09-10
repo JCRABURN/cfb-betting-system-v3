@@ -82,6 +82,29 @@ def main() -> int:
         "feature_schema_version": result.feature_schema_version,
         "target_version": result.target_version,
         "probability_model_version": result.probability_model_version,
+        "probability_status": result.probability_status,
+        "empirically_calibrated_probability": (
+            result.empirically_calibrated_probability_status
+        ),
+        "selected_book_distribution": {
+            book: sum(item.opening_book == book for item in dataset.observations)
+            for book in sorted(
+                {item.opening_book for item in dataset.observations if item.opening_book}
+            )
+        },
+        "quote_time_custody_distribution": {
+            status: sum(
+                item.quote_time_custody_status == status
+                for item in dataset.observations
+            )
+            for status in sorted(
+                {
+                    item.quote_time_custody_status
+                    for item in dataset.observations
+                    if item.quote_time_custody_status
+                }
+            )
+        },
         "configuration_version": result.configuration_version,
         "policy": asdict(result.policy),
         "dataset_sha256": result.dataset_sha256,

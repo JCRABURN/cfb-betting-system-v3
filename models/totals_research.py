@@ -16,6 +16,7 @@ from dataclasses import asdict, dataclass
 from datetime import datetime
 
 from models import backtest_harness as bh
+from models.totals_opening_lines import get_historical_opening_total
 
 
 FEATURE_NAMES = (
@@ -30,6 +31,8 @@ FEATURE_SCHEMA_VERSION = "pit-epa-levels-v1"
 TARGET_VERSION = "actual-game-total-v1"
 PROBABILITY_MODEL_VERSION = "normal-total-residual-v1"
 CONFIGURATION_VERSION = "weekly-rolling-origin-ridge-v1"
+PROBABILITY_STATUS = "RAW_MODEL_PROBABILITY_NOT_EMPIRICALLY_CALIBRATED"
+EMPIRICALLY_CALIBRATED_PROBABILITY_STATUS = "NOT_AVAILABLE"
 
 
 class TotalsResearchError(ValueError):
@@ -50,6 +53,13 @@ class TotalsResearchObservation:
     actual_total: float
     opening_total: float | None
     opening_book: str | None
+    opening_line_id: int | None
+    opening_source: str | None
+    opening_book_priority_policy_version: str | None
+    archive_ingested_at: str | None
+    market_observed_at: str | None
+    original_quote_at: str | None
+    quote_time_custody_status: str | None
 
     def __post_init__(self) -> None:
         if self.game_id < 1 or self.season < 1869 or self.week < 0:
@@ -73,10 +83,18 @@ class TotalsResearchObservation:
             raise TotalsResearchError("away feature snapshot must precede target week")
         if not math.isfinite(self.actual_total) or self.actual_total < 0:
             raise TotalsResearchError("actual_total must be finite and nonnegative")
-        if (self.opening_total is None) != (self.opening_book is None):
-            raise TotalsResearchError(
-                "opening_total and opening_book must both be present or absent"
-            )
+        custody = (
+            self.opening_book,
+            self.opening_line_id,
+            self.opening_source,
+            self.opening_book_priority_policy_version,
+            self.archive_ingested_at,
+            self.quote_time_custody_status,
+        )
+        if self.opening_total is None and any(value is not None for value in custody):
+            raise TotalsResearchError("opening-total custody must be wholly absent")
+        if self.opening_total is not None and any(value is None for value in custody):
+            raise TotalsResearchError("opening-total custody must be complete")
         if self.opening_book is not None and not self.opening_book.strip():
             raise TotalsResearchError("opening_book must be non-empty")
         if self.opening_total is not None and (
@@ -177,10 +195,15 @@ class TotalsOutOfSamplePrediction:
     uncertainty_points: float
     opening_total: float | None
     selected_direction: str | None
-    selected_probability: float | None
+    raw_selected_probability: float | None
     result: str | None
     unit_profit: float | None
     error: float
+
+    @property
+    def selected_probability(self) -> float | None:
+        """Backward-compatible alias; this value is raw, not calibrated."""
+        return self.raw_selected_probability
 
 
 @dataclass(frozen=True)
@@ -206,6 +229,8 @@ class TotalsResearchResult:
     feature_schema_version: str
     target_version: str
     probability_model_version: str
+    probability_status: str
+    empirically_calibrated_probability_status: str
     configuration_version: str
     policy: TotalsResearchPolicy
     dataset_sha256: str
@@ -294,12 +319,26 @@ def build_totals_research_dataset(
                         TotalsResearchSkip(game_id, season, week, "missing_epa_level")
                     )
                     continue
-                opening = bh.get_opening_line(conn, game_id)
+                opening = get_historical_opening_total(conn, game_id)
                 opening_total = None
                 opening_book = None
-                if opening is not None and opening["total"] is not None:
-                    opening_total = float(opening["total"])
-                    opening_book = str(opening["book"])
+                opening_line_id = None
+                opening_source = None
+                book_policy_version = None
+                archive_ingested_at = None
+                market_observed_at = None
+                original_quote_at = None
+                quote_time_status = None
+                if opening is not None:
+                    opening_total = opening.total
+                    opening_book = opening.book
+                    opening_line_id = opening.betting_line_id
+                    opening_source = opening.source
+                    book_policy_version = opening.book_priority_policy_version
+                    archive_ingested_at = opening.archive_ingested_at
+                    market_observed_at = opening.market_observed_at
+                    original_quote_at = opening.original_quote_at
+                    quote_time_status = opening.quote_time_custody_status
                 observations.append(
                     TotalsResearchObservation(
                         game_id=game_id,
@@ -314,6 +353,13 @@ def build_totals_research_dataset(
                         actual_total=float(home_points + away_points),
                         opening_total=opening_total,
                         opening_book=opening_book,
+                        opening_line_id=opening_line_id,
+                        opening_source=opening_source,
+                        opening_book_priority_policy_version=book_policy_version,
+                        archive_ingested_at=archive_ingested_at,
+                        market_observed_at=market_observed_at,
+                        original_quote_at=original_quote_at,
+                        quote_time_custody_status=quote_time_status,
                     )
                 )
     return totals_dataset_from_observations(tuple(observations), tuple(skips))
@@ -374,7 +420,8 @@ def _normal_cdf(value: float) -> float:
     return 0.5 * (1 + math.erf(value / math.sqrt(2)))
 
 
-def _symmetric_calibration(probability: float, slope: float) -> float:
+def _symmetric_probability_transform(probability: float, slope: float) -> float:
+    """Apply the legacy transform; this is not empirical calibration."""
     bounded = min(max(probability, 1e-12), 1 - 1e-12)
     logit = math.log(bounded / (1 - bounded))
     scaled = min(max(slope * logit, -700.0), 700.0)
@@ -404,7 +451,7 @@ def _metrics(
     probability_rows = tuple(item for item in graded if item.result != "push")
     if probability_rows:
         outcomes = [1.0 if item.result == "win" else 0.0 for item in probability_rows]
-        probabilities = [float(item.selected_probability) for item in probability_rows]
+        probabilities = [float(item.raw_selected_probability) for item in probability_rows]
         brier = sum(
             (probability - outcome) ** 2
             for probability, outcome in zip(probabilities, outcomes)
@@ -499,14 +546,14 @@ def run_totals_rolling_origin(
         for item in testing:
             projected = _forecast(item.features, intercept, coefficients)
             direction = None
-            selected_probability = None
+            raw_selected_probability = None
             result = None
             unit_profit = None
             if item.opening_total is not None:
                 raw_over = _normal_cdf(
                     (projected - item.opening_total) / uncertainty
                 )
-                calibrated_over = _symmetric_calibration(
+                transformed_over = _symmetric_probability_transform(
                     raw_over, policy.calibration_slope
                 )
                 if projected > item.opening_total:
@@ -515,8 +562,8 @@ def run_totals_rolling_origin(
                     direction = "under"
                 else:
                     direction = policy.forecast_tie_direction
-                selected_probability = (
-                    calibrated_over if direction == "over" else 1 - calibrated_over
+                raw_selected_probability = (
+                    transformed_over if direction == "over" else 1 - transformed_over
                 )
                 if item.actual_total == item.opening_total:
                     result = "push"
@@ -537,7 +584,7 @@ def run_totals_rolling_origin(
                     uncertainty_points=uncertainty,
                     opening_total=item.opening_total,
                     selected_direction=direction,
-                    selected_probability=selected_probability,
+                    raw_selected_probability=raw_selected_probability,
                     result=result,
                     unit_profit=unit_profit,
                     error=projected - item.actual_total,
@@ -567,6 +614,10 @@ def run_totals_rolling_origin(
         feature_schema_version=FEATURE_SCHEMA_VERSION,
         target_version=TARGET_VERSION,
         probability_model_version=PROBABILITY_MODEL_VERSION,
+        probability_status=PROBABILITY_STATUS,
+        empirically_calibrated_probability_status=(
+            EMPIRICALLY_CALIBRATED_PROBABILITY_STATUS
+        ),
         configuration_version=CONFIGURATION_VERSION,
         policy=policy,
         dataset_sha256=dataset.dataset_sha256,
