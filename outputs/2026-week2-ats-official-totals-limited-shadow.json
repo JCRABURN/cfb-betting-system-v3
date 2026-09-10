@@ -2,14 +2,14 @@
   "artifact_version": "week2-ats-official-totals-limited-shadow-v1",
   "ats_shadow_calibration": {
     "evaluation_count": 49,
-    "ledger_sha256": "8264a10f08daed578336e595e64a7d049ab507b83843b0cdcb9a9b98a091d3fc",
+    "ledger_sha256": "84d51ec3cc7e3b96e4a0d2e7bf4206ca66fb4424437d3b900b506aa0dc84eef0",
     "policy_version": "ats-shadow-conservative-v1",
     "probability_method_version": "conservative-selected-margin-v1",
     "status": "SHADOW_ONLY_NOT_EMPIRICALLY_VALIDATED"
   },
-  "code_commit_sha": "dcd99d452a049f3c0bd58299aa7d8f11be43c651",
+  "code_commit_sha": "84eb7a57728b6e9e713d3ebd11750fb6eb5b5e5d",
   "current_totals_conclusion": "CONTINUE SHADOW",
-  "database_sha256_after": "b3b8ae0be2e395395d7dc97756720491d0acfb499e89a427c9d43d5ca1183e19",
+  "database_sha256_after": "e24925c7d338677ef08492eeeb8247c9f33cf2f1ed4f5eb46c88ec6fb3e60290",
   "database_sha256_before": "09d0bcda684356001bacf8bc9e42939add56b053f405564d9be924e39c0cf842",
   "experimental_combined_top_five": {
     "candidates": [
@@ -70,7 +70,7 @@
     "raw_point_edge_used_for_ranking": false,
     "status": "SHADOW_NOT_OFFICIAL"
   },
-  "generated_at": "2026-09-10T15:10:00+00:00",
+  "generated_at": "2026-09-10T15:38:30+00:00",
   "historical_diagnostic_reference": {
     "artifact": "outputs/totals-historical-custody-correction-2026-09-09.json",
     "conclusion_survives": true,
