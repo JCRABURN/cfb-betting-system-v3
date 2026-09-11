@@ -382,7 +382,7 @@ def test_product_a_has_no_dependency_on_product_b_operational_state():
     conn.close()
 
 
-def test_migrations_21_and_22_preserve_product_a_rows_and_controller_outputs_exactly():
+def test_migrations_21_through_23_preserve_product_a_rows_and_controller_outputs_exactly():
     before_conn = _connection(20)
     after_conn = _connection(20)
     before_lines = _seed_product_a_fixture(before_conn)
@@ -392,7 +392,7 @@ def test_migrations_21_and_22_preserve_product_a_rows_and_controller_outputs_exa
 
     applied = apply_migrations(after_conn)
 
-    assert tuple(result.version for result in applied) == (21, 22)
+    assert tuple(result.version for result in applied) == (21, 22, 23)
     assert _table_snapshot(after_conn, product_a_tables) == pre_migration_rows
 
     before_result = run_tuesday_controller(before_conn, _request(before_lines))
@@ -456,7 +456,7 @@ def test_migrations_21_and_22_preserve_product_a_rows_and_controller_outputs_exa
     after_conn.close()
 
 
-def test_migrations_21_and_22_preserve_revision_grading_and_diagnostics_exactly():
+def test_migrations_21_through_23_preserve_revision_grading_and_diagnostics_exactly():
     from tests import test_weekly_controller as controller_fixture
     from tests import test_weekly_diagnostics as diagnostic_fixture
 

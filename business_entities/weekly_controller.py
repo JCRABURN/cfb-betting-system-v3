@@ -853,6 +853,10 @@ def run_epa_only_model(
     """Run only the locked EPA baseline; missing inputs create explicit skips."""
     from models import backtest_harness as harness
     from models import baseline_epa
+    from models.epa_uncertainty import (
+        EpaUncertaintyError,
+        load_uncertainty_artifact,
+    )
 
     contest_id = integer(contest_id, "contest_id", 1)
     model_run_key = required_text(model_run_key, "model_run_key")
@@ -860,6 +864,12 @@ def run_epa_only_model(
     lines = list_effective_locked_lines(conn, contest_id, as_of=generated_at)
     if not lines:
         raise WeeklyControllerError("EPA run requires at least one locked line")
+    try:
+        uncertainty_artifact = load_uncertainty_artifact()
+    except EpaUncertaintyError as exc:
+        raise WeeklyControllerError(
+            "governed EPA uncertainty is unavailable; official run failed closed"
+        ) from exc
     season = lines[0].season
     training_seasons = tuple(harness.available_seasons_before(conn, season))
     training_rows: list[tuple[float, ...]] = []
@@ -911,6 +921,13 @@ def run_epa_only_model(
             "training_rows": training_rows,
             "training_targets": training_targets,
             "training_error": training_error,
+            "uncertainty_artifact_version": uncertainty_artifact.artifact_version,
+            "uncertainty_artifact_payload_sha256": (
+                uncertainty_artifact.artifact_payload_sha256
+            ),
+            "uncertainty_residual_ledger_sha256": (
+                uncertainty_artifact.ledger_sha256
+            ),
             "targets": [
                 {
                     "locked_line_id": line.locked_line_id,
@@ -941,7 +958,13 @@ def run_epa_only_model(
         provenance=(
             f"{provenance};model=epa_only;training_seasons="
             f"{','.join(str(item) for item in training_seasons) or 'none'};"
-            f"training_rows={len(training_rows)};skipped={','.join(skipped) or 'none'}"
+            f"training_rows={len(training_rows)};skipped={','.join(skipped) or 'none'};"
+            f"uncertainty_policy_version={uncertainty_artifact.artifact_version};"
+            "uncertainty_formula_version="
+            f"{uncertainty_artifact.formula_version};"
+            "uncertainty_artifact_payload_sha256="
+            f"{uncertainty_artifact.artifact_payload_sha256};"
+            f"uncertainty_residual_ledger_sha256={uncertainty_artifact.ledger_sha256}"
         ),
     )
     if coefficients is None or intercept is None:
@@ -950,18 +973,28 @@ def run_epa_only_model(
         if package is None or skip_reason is not None or line.game_id is None:
             continue
         predicted_margin = baseline_epa.predict_margin(package, intercept, coefficients)
+        feature_value = baseline_epa.epa_differential(package)[0]
+        uncertainty_points = uncertainty_artifact.uncertainty_points(feature_value)
         record_model_prediction(
             conn,
             prediction_key=f"{model_run_key}:game:{line.game_id}",
             model_run_id=run.id,
             game_id=line.game_id,
             predicted_home_margin=predicted_margin,
-            uncertainty_points=None,
+            uncertainty_points=uncertainty_points,
             entry_locked_line_id=line.locked_line_id,
             generated_at=generated_at,
             provenance=(
                 f"{provenance};model=epa_only;locked_line_id={line.locked_line_id};"
-                f"training_snapshot_sha256={data_snapshot_sha256}"
+                f"training_snapshot_sha256={data_snapshot_sha256};"
+                f"epa_feature_x={feature_value:.17g};"
+                f"uncertainty_points={uncertainty_points:.17g};"
+                f"uncertainty_policy_version={uncertainty_artifact.artifact_version};"
+                "uncertainty_formula_version="
+                f"{uncertainty_artifact.formula_version};"
+                "uncertainty_artifact_payload_sha256="
+                f"{uncertainty_artifact.artifact_payload_sha256};"
+                f"uncertainty_residual_ledger_sha256={uncertainty_artifact.ledger_sha256}"
             ),
         )
     return run
@@ -1325,6 +1358,24 @@ def _record_publication(
 ) -> OfficialCardPublication:
     card = card_result.card
     picks = card_result.picks
+    unsupported_top_five = tuple(
+        conn.execute(
+            "SELECT pick.id, pick.model_prediction_id, prediction.uncertainty_points "
+            "FROM contest_picks AS pick "
+            "LEFT JOIN model_predictions AS prediction "
+            "ON prediction.id = pick.model_prediction_id "
+            "WHERE pick.card_id = ? AND pick.is_top_five = 1 "
+            "AND pick.model_prediction_id IS NOT NULL "
+            "AND (prediction.uncertainty_points IS NULL "
+            "OR prediction.uncertainty_points <= 0)",
+            (card.id,),
+        )
+    )
+    if unsupported_top_five:
+        raise WeeklyControllerError(
+            "official Top 5 requires positive governed model uncertainty; "
+            "publication failed closed"
+        )
     manifest = get_card_run_manifest(conn, card.id)
     sportsbook_recommendations = _list_card_sportsbook_recommendations(
         conn, card.id

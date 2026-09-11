@@ -27,6 +27,7 @@ from migrations.versions import (
     v0020_mixed_pickem_custody,
     v0021_totals_shadow_top_five,
     v0022_totals_shadow_audits_correlation,
+    v0023_ats_official_uncertainty_gate,
 )
 
 
@@ -53,4 +54,5 @@ MIGRATION_MODULES = (
     v0020_mixed_pickem_custody,
     v0021_totals_shadow_top_five,
     v0022_totals_shadow_audits_correlation,
+    v0023_ats_official_uncertainty_gate,
 )

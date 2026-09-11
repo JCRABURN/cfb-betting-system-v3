@@ -33,6 +33,15 @@ change. It never opens the authoritative database for writing.
 
 Never rewrite an applied migration. Fix a defect with a new forward migration.
 
+## Official ATS uncertainty gate
+
+Migration 23 adds no data rows and does not reinterpret an existing card. It
+adds a forward publication trigger that rejects a new official publication if
+any model-backed Top-5 pick has null or nonpositive `uncertainty_points`.
+Explicit non-model fallback picks retain their existing separate governance.
+The controller also fails before publication when the checksummed governed EPA
+uncertainty artifact is unavailable.
+
 ## Immutable contest lines
 
 Migration 5 adds `contests`, `contest_locked_lines`, and
