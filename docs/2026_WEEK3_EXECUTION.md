@@ -73,6 +73,28 @@ that boundary, the second rehearsal completed: 57 locks, 56 ATS forecasts,
 56 totals forecasts, and one explicit elapsed-kickoff skip. A final run is
 recorded separately in the output manifest with its actual timestamp and SHA.
 
+Final execution used code `c49cec9bc7deff2a3d66c983f5c8f5f4ac3631c6` at
+`2026-09-18T14:56:33.826187+00:00` (09:56:33 CDT):
+
+```powershell
+& 'C:\Users\jraburn\Documents\GitHub\cfb-betting-system-v3\.venv\Scripts\python.exe' -m scripts.run_week3_execution --input 'C:\Users\jraburn\Downloads\week3_splash_lines_2026.csv' --evidence data/provider_evidence/2026-week3-execution-20260918 --output outputs/2026-week3-execution-20260918 --execution-database data/production_inputs/2026-week3-execution-20260918/execution.db
+```
+
+It completed with the same forecast values, picks, confidence, and provisional
+ranking as the independent rehearsal. The final database has 57 Week 3 locks,
+56 EPA predictions, 56 component totals predictions, 49 newly graded Week 2
+ATS results and 49 graded totals results. No Week 3 publication or unified
+run was created. In a separate in-memory QA copy, all 57 locks replayed
+idempotently; changed lock replay and direct total overwrite were rejected.
+`acceptance-verification.json` records the exact acceptance results.
+
+The seven requested output categories are in
+`outputs/2026-week3-execution-20260918/`, along with `RESULTS.md`, the exact
+original CSV, and a checksummed provider-evidence ZIP for offline replay.
+The SQLite snapshot and byte-identical source backup are in
+`data/production_inputs/2026-week3-execution-20260918/`. These execution
+databases are intentionally excluded from the code commit.
+
 ## Data-quality acceptance
 
 - Exact inventory: Thursday 1, Friday 2, Saturday 54; all 57 source rows match
