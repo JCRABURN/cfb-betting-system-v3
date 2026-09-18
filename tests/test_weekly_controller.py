@@ -296,6 +296,85 @@ def test_tuesday_controller_publishes_every_lined_game_with_explicit_fallbacks(t
     conn.close()
 
 
+def test_owner_authorized_late_initial_lock_preserves_source_capture_time(temp_db):
+    conn, lines = _seed_games(temp_db)
+    captured_at = WEDNESDAY_AT - timedelta(hours=1)
+    request = _tuesday_request(
+        lines,
+        generated_at=WEDNESDAY_AT,
+        actor="repository-owner",
+        line_captured_at=captured_at,
+        initial_lock_window_override_reason=(
+            "Owner authorized the reviewed immutable contest snapshot after Tuesday."
+        ),
+    )
+
+    result = run_tuesday_controller(conn, request)
+
+    assert result.line_batch.captured_at == captured_at.isoformat()
+    assert {
+        row[0]
+        for row in conn.execute(
+            "SELECT locked_at FROM contest_locked_lines WHERE contest_id = ?",
+            (result.publication.contest_id,),
+        )
+    } == {captured_at.isoformat()}
+
+
+def test_late_initial_lock_override_requires_repository_owner(temp_db):
+    conn, lines = _seed_games(temp_db)
+    with pytest.raises(WeeklyControllerError, match="repository-owner"):
+        run_tuesday_controller(
+            conn,
+            _tuesday_request(
+                lines,
+                generated_at=WEDNESDAY_AT,
+                line_captured_at=WEDNESDAY_AT - timedelta(hours=1),
+                initial_lock_window_override_reason="Late reviewed line import.",
+            ),
+        )
+    conn.close()
+
+
+def test_explicit_governed_game_identity_supports_lined_fcs_opponent(temp_db):
+    conn = temp_db.get_connection()
+    conn.execute(
+        "INSERT INTO games "
+        "(game_id, season, week, home_team, away_team, start_date) "
+        "VALUES (1999, 2026, 1, 'Home FBS', 'Historical FCS', ?)",
+        (KICKOFF,),
+    )
+    conn.commit()
+    line = ContestLineInput(
+        raw_home_team="Home FBS",
+        raw_away_team="Historical FCS",
+        home_spread=-7.5,
+        source_line_id="explicit-fcs-line",
+        total=47.5,
+        game_id=1999,
+        normalized_home_team="Home FBS",
+        normalized_away_team="Historical FCS",
+    )
+
+    result = run_tuesday_controller(conn, _tuesday_request((line,)))
+
+    assert len(result.card.picks) == 1
+    assert result.card.picks[0].fallback_code == "locked_line_underdog"
+    assert conn.execute(
+        "SELECT COUNT(*) FROM teams WHERE school = 'Historical FCS'"
+    ).fetchone()[0] == 0
+    conn.close()
+
+
+def test_explicit_governed_game_identity_rejects_mismatched_matchup(temp_db):
+    conn, lines = _seed_games(temp_db, count=1)
+    invalid = replace(lines[0], game_id=1001, normalized_home_team="Wrong Home", normalized_away_team="Away 1")
+
+    with pytest.raises(WeeklyControllerError, match="does not match"):
+        run_tuesday_controller(conn, _tuesday_request((invalid,)))
+    conn.close()
+
+
 def test_tuesday_replay_is_idempotent_and_does_not_rerun_model(temp_db):
     conn, lines = _seed_games(temp_db)
     first = run_tuesday_controller(conn, _tuesday_request(lines))

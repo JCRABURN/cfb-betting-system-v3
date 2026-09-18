@@ -198,6 +198,35 @@ def _resolved(resolution: TeamResolution, side: str) -> str:
     return resolution.canonical_name
 
 
+def _resolved_team_stats_identity(
+    conn: sqlite3.Connection,
+    resolution: TeamResolution,
+) -> str:
+    """Reuse an exact historical FCS identity without adding it to FBS teams."""
+    if resolution.status == "resolved":
+        assert resolution.canonical_name is not None
+        return resolution.canonical_name
+    raw_name = resolution.raw_name.strip()
+    if resolution.status == "unknown" and raw_name:
+        historical = {
+            str(row[0])
+            for row in conn.execute(
+                "SELECT home_team FROM games WHERE home_team = ? COLLATE NOCASE "
+                "UNION SELECT away_team FROM games WHERE away_team = ? COLLATE NOCASE",
+                (raw_name, raw_name),
+            )
+            if row[0]
+        }
+        if len(historical) == 1:
+            return next(iter(historical))
+        if len(historical) > 1:
+            raise RecordRejected(
+                "ambiguous_team_normalization",
+                "team identity has conflicting historical casing",
+            )
+    return _resolved(resolution, "team")
+
+
 class CfbdTeamStatsParser:
     version = "cfbd_team_stats_v1"
 
@@ -218,7 +247,10 @@ class CfbdTeamStatsParser:
         snapshot_week = _integer(
             request.request_parameters.get("endWeek"), "endWeek", 0
         )
-        team = _resolved(resolver.resolve(provider, record.get("team")), "team")
+        team = _resolved_team_stats_identity(
+            conn,
+            resolver.resolve(provider, record.get("team")),
+        )
         offense = record.get("offense")
         defense = record.get("defense")
         if not isinstance(offense, Mapping) or not isinstance(defense, Mapping):

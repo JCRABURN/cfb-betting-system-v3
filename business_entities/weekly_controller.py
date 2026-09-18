@@ -158,6 +158,9 @@ class ContestLineInput:
     home_spread: float
     source_line_id: str
     total: float | None = None
+    game_id: int | None = None
+    normalized_home_team: str | None = None
+    normalized_away_team: str | None = None
 
 
 @dataclass(frozen=True)
@@ -220,6 +223,8 @@ class TuesdayCardRequest:
     generated_at: datetime
     actor: str
     provenance: str
+    line_captured_at: datetime | None = None
+    initial_lock_window_override_reason: str | None = None
 
 
 @dataclass(frozen=True)
@@ -638,12 +643,42 @@ def _validate_line_input(line: ContestLineInput) -> ContestLineInput:
     total = None if line.total is None else number(line.total, "line.total")
     if total is not None and total < 0:
         raise WeeklyControllerError("line.total cannot be negative")
+    explicit_identity = (
+        line.game_id,
+        line.normalized_home_team,
+        line.normalized_away_team,
+    )
+    if any(value is not None for value in explicit_identity) and not all(
+        value is not None for value in explicit_identity
+    ):
+        raise WeeklyControllerError(
+            "an explicit line identity requires game_id and both normalized teams"
+        )
     return ContestLineInput(
         raw_home_team=required_text(line.raw_home_team, "line.raw_home_team"),
         raw_away_team=required_text(line.raw_away_team, "line.raw_away_team"),
         home_spread=spread,
         source_line_id=required_text(line.source_line_id, "line.source_line_id"),
         total=total,
+        game_id=(
+            None if line.game_id is None else integer(line.game_id, "line.game_id", 1)
+        ),
+        normalized_home_team=(
+            None
+            if line.normalized_home_team is None
+            else required_text(
+                line.normalized_home_team,
+                "line.normalized_home_team",
+            )
+        ),
+        normalized_away_team=(
+            None
+            if line.normalized_away_team is None
+            else required_text(
+                line.normalized_away_team,
+                "line.normalized_away_team",
+            )
+        ),
     )
 
 
@@ -656,6 +691,28 @@ def _resolve_game(
     season: int,
     week: int,
 ) -> tuple[int, str, str]:
+    if line.game_id is not None:
+        assert line.normalized_home_team is not None
+        assert line.normalized_away_team is not None
+        row = conn.execute(
+            "SELECT season, week, home_team, away_team FROM games WHERE game_id = ?",
+            (line.game_id,),
+        ).fetchone()
+        expected = (
+            season,
+            week,
+            line.normalized_home_team,
+            line.normalized_away_team,
+        )
+        if row != expected:
+            raise WeeklyControllerError(
+                "explicit authorized line identity does not match the canonical game"
+            )
+        return (
+            line.game_id,
+            line.normalized_home_team,
+            line.normalized_away_team,
+        )
     home = resolver.resolve(provider, line.raw_home_team)
     away = resolver.resolve(provider, line.raw_away_team)
     for side, resolution in (("home", home), ("away", away)):
@@ -701,6 +758,7 @@ def _lock_tuesday_lines(
     request: TuesdayCardRequest,
     source: str,
     generated_at: datetime,
+    line_captured_at: datetime,
 ) -> tuple[int, str]:
     lines = tuple(_validate_line_input(line) for line in request.lines)
     expected = integer(
@@ -752,7 +810,7 @@ def _lock_tuesday_lines(
                 f"source_line_id={line.source_line_id}"
             ),
             payload_sha256=request.line_payload_sha256,
-            locked_at=generated_at,
+            locked_at=line_captured_at,
         )
         if not result.created:
             raise WeeklyControllerError(
@@ -795,6 +853,10 @@ def run_epa_only_model(
     """Run only the locked EPA baseline; missing inputs create explicit skips."""
     from models import backtest_harness as harness
     from models import baseline_epa
+    from models.epa_uncertainty import (
+        EpaUncertaintyError,
+        load_uncertainty_artifact,
+    )
 
     contest_id = integer(contest_id, "contest_id", 1)
     model_run_key = required_text(model_run_key, "model_run_key")
@@ -802,6 +864,12 @@ def run_epa_only_model(
     lines = list_effective_locked_lines(conn, contest_id, as_of=generated_at)
     if not lines:
         raise WeeklyControllerError("EPA run requires at least one locked line")
+    try:
+        uncertainty_artifact = load_uncertainty_artifact()
+    except EpaUncertaintyError as exc:
+        raise WeeklyControllerError(
+            "governed EPA uncertainty is unavailable; official run failed closed"
+        ) from exc
     season = lines[0].season
     training_seasons = tuple(harness.available_seasons_before(conn, season))
     training_rows: list[tuple[float, ...]] = []
@@ -837,6 +905,9 @@ def run_epa_only_model(
         if game is None or game[2] is None:
             targets.append((line, None, "missing_game_or_kickoff"))
             continue
+        if timestamp_on_or_before(conn, game[2], generated_at.isoformat()):
+            targets.append((line, None, "kickoff_not_in_future"))
+            continue
         package = harness.get_pregame_stats(
             conn, game[0], game[1], line.season, line.week, game[2]
         )
@@ -853,6 +924,13 @@ def run_epa_only_model(
             "training_rows": training_rows,
             "training_targets": training_targets,
             "training_error": training_error,
+            "uncertainty_artifact_version": uncertainty_artifact.artifact_version,
+            "uncertainty_artifact_payload_sha256": (
+                uncertainty_artifact.artifact_payload_sha256
+            ),
+            "uncertainty_residual_ledger_sha256": (
+                uncertainty_artifact.ledger_sha256
+            ),
             "targets": [
                 {
                     "locked_line_id": line.locked_line_id,
@@ -883,7 +961,13 @@ def run_epa_only_model(
         provenance=(
             f"{provenance};model=epa_only;training_seasons="
             f"{','.join(str(item) for item in training_seasons) or 'none'};"
-            f"training_rows={len(training_rows)};skipped={','.join(skipped) or 'none'}"
+            f"training_rows={len(training_rows)};skipped={','.join(skipped) or 'none'};"
+            f"uncertainty_policy_version={uncertainty_artifact.artifact_version};"
+            "uncertainty_formula_version="
+            f"{uncertainty_artifact.formula_version};"
+            "uncertainty_artifact_payload_sha256="
+            f"{uncertainty_artifact.artifact_payload_sha256};"
+            f"uncertainty_residual_ledger_sha256={uncertainty_artifact.ledger_sha256}"
         ),
     )
     if coefficients is None or intercept is None:
@@ -892,18 +976,28 @@ def run_epa_only_model(
         if package is None or skip_reason is not None or line.game_id is None:
             continue
         predicted_margin = baseline_epa.predict_margin(package, intercept, coefficients)
+        feature_value = baseline_epa.epa_differential(package)[0]
+        uncertainty_points = uncertainty_artifact.uncertainty_points(feature_value)
         record_model_prediction(
             conn,
             prediction_key=f"{model_run_key}:game:{line.game_id}",
             model_run_id=run.id,
             game_id=line.game_id,
             predicted_home_margin=predicted_margin,
-            uncertainty_points=None,
+            uncertainty_points=uncertainty_points,
             entry_locked_line_id=line.locked_line_id,
             generated_at=generated_at,
             provenance=(
                 f"{provenance};model=epa_only;locked_line_id={line.locked_line_id};"
-                f"training_snapshot_sha256={data_snapshot_sha256}"
+                f"training_snapshot_sha256={data_snapshot_sha256};"
+                f"epa_feature_x={feature_value:.17g};"
+                f"uncertainty_points={uncertainty_points:.17g};"
+                f"uncertainty_policy_version={uncertainty_artifact.artifact_version};"
+                "uncertainty_formula_version="
+                f"{uncertainty_artifact.formula_version};"
+                "uncertainty_artifact_payload_sha256="
+                f"{uncertainty_artifact.artifact_payload_sha256};"
+                f"uncertainty_residual_ledger_sha256={uncertainty_artifact.ledger_sha256}"
             ),
         )
     return run
@@ -1239,7 +1333,10 @@ def _record_line_batch(
         len(request.lines),
         locked_count,
         snapshot_sha256,
-        utc_timestamp(request.generated_at, "captured_at"),
+        utc_timestamp(
+            request.line_captured_at or request.generated_at,
+            "captured_at",
+        ),
         request.provenance,
     )
     try:
@@ -1264,6 +1361,24 @@ def _record_publication(
 ) -> OfficialCardPublication:
     card = card_result.card
     picks = card_result.picks
+    unsupported_top_five = tuple(
+        conn.execute(
+            "SELECT pick.id, pick.model_prediction_id, prediction.uncertainty_points "
+            "FROM contest_picks AS pick "
+            "LEFT JOIN model_predictions AS prediction "
+            "ON prediction.id = pick.model_prediction_id "
+            "WHERE pick.card_id = ? AND pick.is_top_five = 1 "
+            "AND pick.model_prediction_id IS NOT NULL "
+            "AND (prediction.uncertainty_points IS NULL "
+            "OR prediction.uncertainty_points <= 0)",
+            (card.id,),
+        )
+    )
+    if unsupported_top_five:
+        raise WeeklyControllerError(
+            "official Top 5 requires positive governed model uncertainty; "
+            "publication failed closed"
+        )
     manifest = get_card_run_manifest(conn, card.id)
     sportsbook_recommendations = _list_card_sportsbook_recommendations(
         conn, card.id
@@ -1448,7 +1563,36 @@ def _run_tuesday_persisted(
         if existing.run.operation != "tuesday_lock":
             raise WeeklyControllerConflictError("run key belongs to another operation")
         return existing
-    generation_time = _validate_request_time(request.generated_at, weekdays=(2,))
+    generation_time = datetime.fromisoformat(
+        utc_timestamp(request.generated_at, "generated_at")
+    )
+    override_reason = request.initial_lock_window_override_reason
+    if override_reason is None:
+        if generation_time.isoweekday() != 2:
+            raise WeeklyControllerError(
+                "controller operation is not permitted on this UTC weekday; allowed=2"
+            )
+    else:
+        required_text(
+            override_reason,
+            "initial_lock_window_override_reason",
+        )
+        if request.actor != "repository-owner":
+            raise WeeklyControllerError(
+                "an off-schedule initial lock requires repository-owner custody"
+            )
+        if generation_time.isoweekday() not in (3, 4, 5, 6):
+            raise WeeklyControllerError(
+                "owner-authorized late initial locks are limited to Wednesday-Saturday UTC"
+            )
+    line_captured_at = datetime.fromisoformat(
+        utc_timestamp(
+            request.line_captured_at or request.generated_at,
+            "line_captured_at",
+        )
+    )
+    if line_captured_at > generation_time:
+        raise WeeklyControllerError("line_captured_at cannot follow generated_at")
     policy = validate_weekly_controller_policy(request.controller_policy)
     if not timestamp_on_or_before(
         conn, policy.effective_at.isoformat(), generation_time.isoformat()
@@ -1502,6 +1646,7 @@ def _run_tuesday_persisted(
                 request=request,
                 source=source,
                 generated_at=generation_time,
+                line_captured_at=line_captured_at,
             )
             model_run = run_epa_only_model(
                 conn,

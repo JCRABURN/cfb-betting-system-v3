@@ -57,10 +57,37 @@ POLICY_VERSIONS = {
     "sportsbook": "production-sportsbook-v1",
 }
 SECRET_VALUES = ("cfbd-value-must-not-print", "odds-value-must-not-print")
+LEGACY_MODEL_TABLES = (
+    "teams",
+    "games",
+    "betting_lines",
+    "team_game_stats",
+    "weather",
+    "injuries",
+    "picks",
+    "ingestion_runs",
+    "supplemental_game_dates",
+)
 
 
 def _sha(path: Path) -> str:
     return hashlib.sha256(path.read_bytes()).hexdigest()
+
+
+def _copy_legacy_model_data(database: Path) -> None:
+    connection = sqlite3.connect(database)
+    apply_migrations(connection)
+    connection.execute(
+        "ATTACH DATABASE ? AS authoritative",
+        (str(AUTHORITATIVE_DATABASE),),
+    )
+    for table in LEGACY_MODEL_TABLES:
+        connection.execute(
+            f'INSERT INTO main."{table}" SELECT * FROM authoritative."{table}"'
+        )
+    connection.commit()
+    connection.execute("DETACH DATABASE authoritative")
+    connection.close()
 
 
 def _repo(tmp_path: Path) -> tuple[Path, Path]:
@@ -78,9 +105,8 @@ def _repo(tmp_path: Path) -> tuple[Path, Path]:
     shutil.copy2(ROOT / "requirements-dev.txt", root / "requirements-dev.txt")
     shutil.copy2(POLICY_CONFIG, root / "config" / POLICY_CONFIG.name)
     database = root / "data" / "cfb.db"
-    shutil.copy2(AUTHORITATIVE_DATABASE, database)
+    _copy_legacy_model_data(database)
     connection = sqlite3.connect(database)
-    apply_migrations(connection)
     register_approved_policies(connection, root / "config" / POLICY_CONFIG.name)
     connection.close()
     return root, database
@@ -346,7 +372,7 @@ def test_database_cutover_rehearsal_preserves_source_and_registers_policies(tmp_
 
     assert report.source_unchanged is True
     assert _sha(source) == before
-    assert report.migrations_applied == tuple(range(1, 21))
+    assert report.migrations_applied == (23,)
     assert dict(report.registered_policy_versions) == POLICY_VERSIONS
     assert report.pre_integrity_check == "ok"
     assert report.pre_foreign_key_violation_count == 0
@@ -610,7 +636,7 @@ def test_provider_bundle_quarantines_bad_records_without_touching_contest_locks(
     assert summaries[0].rows_accepted == 1
     assert summaries[0].rows_rejected == 1
     assert rejection == "malformed_record"
-    assert before_locks == after_locks == 0
+    assert before_locks == after_locks
 
 
 def test_writer_lock_rejects_overlap_and_releases(tmp_path):

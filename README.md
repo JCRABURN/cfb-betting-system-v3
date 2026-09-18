@@ -92,6 +92,11 @@ and database-enforced immutability. A contest pick does not create a wager,
 manual context does not rewrite a raw prediction, and a revised card or audit
 is linked to the prior record instead of replacing it.
 
+The additive totals/O-U path and generic mixed-market Top-5 foundation remain
+shadow-only and do not change `contest_picks` or the official ATS Top 5. See
+`docs/TOTALS_SHADOW_TOP_FIVE.md` for the point-in-time custody model, historical
+OOS result, parity proof, and explicit non-promotion decision.
+
 ## Full-card contest engine
 
 Use `business_entities.generate_full_card()` to produce one recorded home or

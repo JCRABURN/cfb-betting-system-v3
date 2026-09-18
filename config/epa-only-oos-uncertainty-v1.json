@@ -1,0 +1,28 @@
+{
+  "artifact_payload_sha256": "2c372640d867a6a365523856a0643237e4c922f7c4f17b42787cb8d9578b9d0c",
+  "artifact_version": "epa-oos-predictive-uncertainty-v1",
+  "baseline_code_commit_sha": "c7b621a981cf72d9699a3899a1b5b92f548e6150",
+  "configuration_version": "walk-forward-prior-seasons-v1",
+  "eligible_predictions": 3714,
+  "evaluation_seasons": [
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+  ],
+  "feature_mean": 0.007709117029612803,
+  "feature_schema_version": "epa-differential-v1",
+  "feature_sxx": 262.25572267407097,
+  "formula_version": "oos-rmse-one-feature-prediction-leverage-v1",
+  "generated_at": "2026-09-11T15:04:34.502868+00:00",
+  "ledger_sha256": "7cc76abf69fccb966235c74b38dda4824f974b566b00e75d766439e6ba376d91",
+  "model_name": "epa_only",
+  "model_version": "epa-only-linear-v1",
+  "outcome_cutoff_season": 2025,
+  "provenance": "models.backtest_harness.run_walk_forward; strictly-prior-season fits; cfbd_point_in_time features strictly before each target week; genuine historical opening lines only; completed outcomes through 2025",
+  "residual_bias_points": 0.724741171467257,
+  "residual_rmse_points": 18.279631175886248,
+  "skipped_predictions": 503
+}

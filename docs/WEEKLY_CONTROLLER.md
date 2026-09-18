@@ -76,6 +76,8 @@ point-in-time accessors in `models.backtest_harness`. It stores:
 - code commit SHA;
 - canonical data-snapshot SHA-256;
 - training seasons and row count;
+- governed OOS uncertainty artifact, formula, and residual-ledger SHA-256;
+- exact per-game predictive uncertainty and EPA feature value;
 - explicit per-game missing-input skips.
 
 Missing EPA or training inputs produce no fabricated forecast. The completed
@@ -85,10 +87,23 @@ Confidence, and ranking. The ridge, dynamic-rating, and gradient-boosted
 research candidates have no import or activation path in this controller.
 Research promotion criteria are unchanged.
 
-The baseline does not currently emit calibrated per-game uncertainty. Those
-forecasts therefore receive the existing explicit unscored Confidence floor of
-1. This limitation is visible in the card; the controller does not invent an
-uncertainty estimate or rank by raw edge.
+The unchanged baseline margin forecast now receives predictive uncertainty from
+`epa-oos-predictive-uncertainty-v1`. Its frozen scale is the exact RMSE of 3,714
+genuine 2020--2025 rolling-origin residuals. Per-game support uses the standard
+one-feature prediction-leverage term over that same historical OOS feature
+ledger. The method does not use the contest line, model edge, current-week
+outcome, or a tuned threshold. It is a predictive spread measure, not a claim
+of calibrated selected-side ATS probability.
+
+The existing `production-confidence-v1` thresholds and
+`production-ranking-v1` ordering remain unchanged: Confidence descending,
+then lower uncertainty. The uncertainty artifact checksum, residual-ledger
+checksum, method version, exact feature value, and exact uncertainty are stored
+in model-run and prediction provenance. If the governed artifact cannot be
+loaded, the model run fails closed. Migration 23 also prevents an official
+publication when any model-backed Top-5 pick has null or nonpositive
+uncertainty. Explicit non-model fallback picks remain governed by the existing
+fallback hierarchy.
 
 ## Source freshness and fallbacks
 

@@ -1,0 +1,110 @@
+{
+  "artifact_version": "totals-historical-custody-correction-v1",
+  "command": "python -m scripts.run_totals_research --seasons 2019 2020 2021 2022 2023 2024 2025 --minimum-training-examples 100",
+  "source_database_sha256": "09d0bcda684356001bacf8bc9e42939add56b053f405564d9be924e39c0cf842",
+  "corrected_dataset_sha256": "72126e2bb6133b934e9afa6ab82a70f74cb8d3b7e797f6eee73bc8352e8c488a",
+  "corrected_ledger_sha256": "7aef0a7184c78d277fcd7a171f2be96a435daaf570d96155d6e04de487f1874b",
+  "probability_status": "RAW_MODEL_PROBABILITY_NOT_EMPIRICALLY_CALIBRATED",
+  "empirically_calibrated_probability": "NOT_AVAILABLE",
+  "quote_time_custody_status": "UNVERIFIED_ARCHIVAL_OPENING",
+  "old": {
+    "decision_count": 3708,
+    "wins": 1890,
+    "losses": 1780,
+    "pushes": 38,
+    "win_rate_excluding_pushes": 0.514986376,
+    "roi_at_minus_110": -0.016671570,
+    "lined_prediction_mae": 13.2073789,
+    "lined_prediction_rmse": 16.5472917,
+    "selected_book_distribution": {
+      "2021:Bovada": 730,
+      "2022:Bovada": 724,
+      "2023:Bovada": 746,
+      "2023:DraftKings": 1,
+      "2024:Bovada": 744,
+      "2024:ESPN Bet": 3,
+      "2025:Bovada": 760
+    }
+  },
+  "corrected": {
+    "decision_count": 3719,
+    "wins": 1897,
+    "losses": 1784,
+    "pushes": 38,
+    "win_rate_excluding_pushes": 0.5153490899,
+    "roi_at_minus_110": -0.0159867022,
+    "lined_prediction_mae": 13.19198998,
+    "lined_prediction_rmse": 16.53211899,
+    "all_forecast_prediction_mae": 13.3591894,
+    "all_forecast_prediction_rmse": 16.7339426,
+    "market_forecast_mae": 12.60795913,
+    "market_forecast_rmse": 15.88086698,
+    "brier_score": 0.260472819,
+    "log_loss": 0.718476668,
+    "expected_calibration_error": 0.088100293,
+    "selected_book_distribution": {
+      "2021:Bovada": 730,
+      "2022:Bovada": 731,
+      "2023:Bovada": 748,
+      "2024:Bovada": 744,
+      "2024:DraftKings": 2,
+      "2024:ESPN Bet": 4,
+      "2025:Bovada": 760
+    }
+  },
+  "delta": {
+    "added_decisions": 11,
+    "removed_decisions": 0,
+    "changed_selected_line_decisions": 1
+  },
+  "added_games": [
+    {"season": 2022, "week": 9, "away": "Utah", "home": "Washington State", "total": 55.5, "book": "Bovada", "line_id": 12096},
+    {"season": 2022, "week": 13, "away": "Nebraska", "home": "Iowa", "total": 38.0, "book": "Bovada", "line_id": 13295},
+    {"season": 2022, "week": 13, "away": "Army", "home": "Massachusetts", "total": 45.0, "book": "Bovada", "line_id": 13190},
+    {"season": 2022, "week": 13, "away": "Troy", "home": "Arkansas State", "total": 46.5, "book": "Bovada", "line_id": 13325},
+    {"season": 2022, "week": 13, "away": "Louisiana", "home": "Texas State", "total": 44.5, "book": "Bovada", "line_id": 13155},
+    {"season": 2022, "week": 13, "away": "Nevada", "home": "UNLV", "total": 50.5, "book": "Bovada", "line_id": 13250},
+    {"season": 2022, "week": 13, "away": "Tennessee", "home": "Vanderbilt", "total": 66.0, "book": "Bovada", "line_id": 13380},
+    {"season": 2023, "week": 5, "away": "Michigan", "home": "Nebraska", "total": 40.5, "book": "Bovada", "line_id": 14545},
+    {"season": 2024, "week": 3, "away": "UTEP", "home": "Liberty", "total": 57.5, "book": "DraftKings", "line_id": 17887},
+    {"season": 2024, "week": 4, "away": "South Alabama", "home": "App State", "total": 63.5, "book": "DraftKings", "line_id": 18020},
+    {"season": 2024, "week": 6, "away": "Army", "home": "Tulsa", "total": 50.5, "book": "ESPN Bet", "line_id": 18767}
+  ],
+  "changed_selected_line": {
+    "season": 2023,
+    "week": 8,
+    "away": "Buffalo",
+    "home": "Kent State",
+    "old": {"book": "DraftKings", "total": 47.0, "line_id": 15540},
+    "corrected": {"book": "Bovada", "total": 44.5, "line_id": 15538},
+    "selected_direction": "Over",
+    "result_before": "loss",
+    "result_after": "loss"
+  },
+  "edge_buckets": [
+    {"label": "0_to_under_1", "lower": 0.0, "upper_exclusive": 1.0, "n": 506, "wins": 251, "losses": 250, "pushes": 5, "win_rate_excluding_pushes": 0.500998, "roi_at_minus_110": -0.043119},
+    {"label": "1_to_under_2", "lower": 1.0, "upper_exclusive": 2.0, "n": 520, "wins": 246, "losses": 266, "pushes": 8, "win_rate_excluding_pushes": 0.480469, "roi_at_minus_110": -0.081469},
+    {"label": "2_to_under_3", "lower": 2.0, "upper_exclusive": 3.0, "n": 469, "wins": 237, "losses": 227, "pushes": 5, "win_rate_excluding_pushes": 0.510776, "roi_at_minus_110": -0.024617},
+    {"label": "3_to_under_4", "lower": 3.0, "upper_exclusive": 4.0, "n": 431, "wins": 211, "losses": 214, "pushes": 6, "win_rate_excluding_pushes": 0.496471, "roi_at_minus_110": -0.051466},
+    {"label": "4_to_under_5", "lower": 4.0, "upper_exclusive": 5.0, "n": 388, "wins": 199, "losses": 185, "pushes": 4, "win_rate_excluding_pushes": 0.518229, "roi_at_minus_110": -0.010544},
+    {"label": "5_to_under_6", "lower": 5.0, "upper_exclusive": 6.0, "n": 337, "wins": 169, "losses": 166, "pushes": 2, "win_rate_excluding_pushes": 0.504478, "roi_at_minus_110": -0.036687},
+    {"label": "6_to_under_8", "lower": 6.0, "upper_exclusive": 8.0, "n": 461, "wins": 250, "losses": 209, "pushes": 2, "win_rate_excluding_pushes": 0.544662, "roi_at_minus_110": 0.039637},
+    {"label": "8_to_under_10", "lower": 8.0, "upper_exclusive": 10.0, "n": 303, "wins": 164, "losses": 136, "pushes": 3, "win_rate_excluding_pushes": 0.546667, "roi_at_minus_110": 0.043204},
+    {"label": "10_to_under_15", "lower": 10.0, "upper_exclusive": 15.0, "n": 264, "wins": 153, "losses": 108, "pushes": 3, "win_rate_excluding_pushes": 0.586207, "roi_at_minus_110": 0.117769},
+    {"label": "15_to_under_20", "lower": 15.0, "upper_exclusive": 20.0, "n": 27, "wins": 14, "losses": 13, "pushes": 0, "win_rate_excluding_pushes": 0.518519, "roi_at_minus_110": -0.010101},
+    {"label": "20_plus", "lower": 20.0, "upper_exclusive": null, "n": 13, "wins": 3, "losses": 10, "pushes": 0, "win_rate_excluding_pushes": 0.230769, "roi_at_minus_110": -0.559441}
+  ],
+  "direction": {
+    "Under": {"n": 1388, "wins": 746, "losses": 623, "pushes": 19, "win_rate_excluding_pushes": 0.544923, "roi_at_minus_110": 0.039756, "prediction_mae": 12.8943, "prediction_rmse": 16.4369},
+    "Over": {"n": 2331, "wins": 1151, "losses": 1161, "pushes": 19, "win_rate_excluding_pushes": 0.497837, "roi_at_minus_110": -0.049179, "prediction_mae": 13.3693, "prediction_rmse": 16.5885}
+  },
+  "absolute_disagreement_thresholds": [
+    {"threshold": 6.0, "n": 1068, "wins": 584, "losses": 476, "pushes": 8, "win_rate_excluding_pushes": 0.550943, "roi_at_minus_110": 0.051413, "prediction_mae": 13.7647, "prediction_rmse": 17.2351},
+    {"threshold": 8.0, "n": 607, "wins": 334, "losses": 267, "pushes": 6, "win_rate_excluding_pushes": 0.555740, "roi_at_minus_110": 0.060356},
+    {"threshold": 10.0, "n": 304, "wins": 170, "losses": 131, "pushes": 3, "win_rate_excluding_pushes": 0.564784, "roi_at_minus_110": 0.077452},
+    {"threshold": 15.0, "n": 40, "wins": 17, "losses": 23, "pushes": 0, "win_rate_excluding_pushes": 0.425000, "roi_at_minus_110": -0.188636, "prediction_mae": 22.1365, "prediction_rmse": 25.4694},
+    {"threshold": 20.0, "n": 13, "wins": 3, "losses": 10, "pushes": 0, "win_rate_excluding_pushes": 0.230769, "roi_at_minus_110": -0.559441, "prediction_mae": 29.8170, "prediction_rmse": 31.9657}
+  ],
+  "conclusion": "CONTINUE SHADOW",
+  "production_eligible": false
+}
