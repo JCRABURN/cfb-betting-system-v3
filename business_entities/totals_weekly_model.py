@@ -15,6 +15,7 @@ from business_entities.common import (
     atomic,
     checksum,
     required_text,
+    timestamp_on_or_before,
     translate_integrity,
     utc_timestamp,
 )
@@ -95,6 +96,9 @@ def run_component_totals_shadow_model(
         if game is None or game[2] is None:
             targets.append((line, None, "missing_game_or_kickoff"))
             continue
+        if timestamp_on_or_before(conn, game[2], generated_value):
+            targets.append((line, None, "kickoff_not_in_future"))
+            continue
         package = harness.get_pregame_stats(
             conn,
             game[0],
@@ -157,6 +161,10 @@ def run_component_totals_shadow_model(
                 provenance=(
                     f"{provenance};training_count={len(training)};"
                     f"dataset_sha256={dataset.dataset_sha256};"
+                    "skipped=" + (",".join(
+                        f"{line.game_id}:{skip}"
+                        for line, _, skip in targets if skip is not None
+                    ) or "none") + ";"
                     "unavailable_inputs_are_explicit_prediction_omissions"
                 ),
             )

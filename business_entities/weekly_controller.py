@@ -905,6 +905,9 @@ def run_epa_only_model(
         if game is None or game[2] is None:
             targets.append((line, None, "missing_game_or_kickoff"))
             continue
+        if timestamp_on_or_before(conn, game[2], generated_at.isoformat()):
+            targets.append((line, None, "kickoff_not_in_future"))
+            continue
         package = harness.get_pregame_stats(
             conn, game[0], game[1], line.season, line.week, game[2]
         )
