@@ -1,0 +1,32 @@
+{
+  "coaching_motivation": "NO_NUMERIC_ADJUSTMENTS;NO_OWNER_EVIDENCE",
+  "epa": {
+    "capture_file": "cfbd-week4-advanced.json",
+    "snapshot_week": 4,
+    "source": "CFBD advanced season stats endWeek=4",
+    "teams": 138
+  },
+  "game_status": {
+    "captured_at": "2026-10-01T03:16:11.098503+00:00",
+    "week1_through_4_completed_fbs_games": 215,
+    "week5_provider_games": 56
+  },
+  "injuries": {
+    "coverage": "INCOMPLETE",
+    "espn_team_groups": 3,
+    "no_row_does_not_mean_healthy": true
+  },
+  "market": {
+    "capture_file": "odds-draftkings-current.json",
+    "captured_games": 56,
+    "missing_games": [],
+    "provider": "The Odds API / DraftKings"
+  },
+  "quarterbacks": "UNVERIFIED_FOR_ALL_GAMES_WITHOUT_SEPARATE_CREDIBLE_EVIDENCE",
+  "reviewed_at": "2026-10-01T03:55:22.204769+00:00",
+  "weather": {
+    "failed": 0,
+    "indoor_domes": 2,
+    "outdoor_forecasts": 54
+  }
+}
