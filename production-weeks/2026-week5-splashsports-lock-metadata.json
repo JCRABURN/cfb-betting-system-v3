@@ -1,0 +1,71 @@
+{
+  "season": 2026,
+  "week": 5,
+  "contest_key": "splashsports-cfb-2026-w05",
+  "source": "SplashSports owner-supplied screenshots",
+  "authoritative_locked_lines": true,
+  "chat_received_at": "2026-09-30T22:03:00-05:00",
+  "chat_received_at_note": "Timestamp is when the screenshot set was supplied in this chat, not an independently verified screenshot capture timestamp.",
+  "game_count": 56,
+  "date_inventory": {
+    "2026-10-01": 2,
+    "2026-10-02": 3,
+    "2026-10-03": 51
+  },
+  "canonical_csv_path": "production-weeks/2026-week5-splashsports.csv",
+  "canonical_csv_sha256": "2f598560b4aed27a93615fc41a6577dedd041b52966c16bdc1cb393cc0e410e4",
+  "spread_convention": "Spread is the home-team spread.",
+  "total_convention": "Total is the contest over/under shown in the screenshots.",
+  "orientation_basis": "Away/home orientation transcribed from the explicit matchup labels at right (Away @ Home), not inferred from left/right selection boxes.",
+  "lock_rule": "These screenshot values are the authoritative Week 5 contest lines and totals and must not be overwritten by later market movement.",
+  "source_images": [
+    {
+      "screenshot_number": 1,
+      "uploaded_name": "6fd781a4-c304-4bdd-81db-9d4202b8276e.png",
+      "sha256": "6ea5062bfc007f5b7ff2d451729aa935aba8e385b97ec2d00779c328eea30768",
+      "size_bytes": 107834
+    },
+    {
+      "screenshot_number": 2,
+      "uploaded_name": "7061ae7d-e4ff-4b14-b9f2-4a0156d32ba3.png",
+      "sha256": "0debadc7ee5d72a26b6d4faf5aeb5c6154d3bb167c11a67b76765502de381fe7",
+      "size_bytes": 116429
+    },
+    {
+      "screenshot_number": 3,
+      "uploaded_name": "c8fbd88e-f268-4f76-80aa-b3f4c4b799c8.png",
+      "sha256": "80a42176c8bb4f0689c97211e2ad70e69d8890ef03dbde3e29f1be937654383c",
+      "size_bytes": 116191
+    },
+    {
+      "screenshot_number": 4,
+      "uploaded_name": "2d814761-4f39-4d62-ab26-b5857bb760cd.png",
+      "sha256": "d4ae06d8a718ba50bceda84f7e4771d8f57be935155bf8ec326b8b3c5753a9fb",
+      "size_bytes": 117349
+    },
+    {
+      "screenshot_number": 5,
+      "uploaded_name": "dd50cca5-c88c-4269-be7c-cdb124486827.png",
+      "sha256": "f8eb0bed7a7f55c1f50cf624d6fe5eb374605bcaad6b3a89cd20fd5ddec59a92",
+      "size_bytes": 115437
+    },
+    {
+      "screenshot_number": 6,
+      "uploaded_name": "4fce319a-6d8f-4970-b1f5-7e9524a7e9fc.png",
+      "sha256": "ec01470bed18618140c5e38fd46b06f28d05228834b64aba842749552427737b",
+      "size_bytes": 116595
+    },
+    {
+      "screenshot_number": 7,
+      "uploaded_name": "b8d691cd-1679-40e9-ae64-c3c496b277d4.png",
+      "sha256": "a547dd81fce93da36a7de08edb768e0c66cc785cbe785552208855568cbde193",
+      "size_bytes": 119787
+    },
+    {
+      "screenshot_number": 8,
+      "uploaded_name": "e97b9281-eddb-45ba-a9ae-77fe504385e3.png",
+      "sha256": "d7fc5f2dd151acd5e6939a8ff0f3924a3e4f654a12c234215f7f840551ea5d5d",
+      "size_bytes": 14430
+    }
+  ]
+}
