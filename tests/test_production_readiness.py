@@ -69,10 +69,37 @@ LINE_GAMES = (
     (401856661, "Louisville", "Ole Miss", -6.5),
     (401856662, "UL Monroe", "Mississippi State", -24.5),
 )
+LEGACY_MODEL_TABLES = (
+    "teams",
+    "games",
+    "betting_lines",
+    "team_game_stats",
+    "weather",
+    "injuries",
+    "picks",
+    "ingestion_runs",
+    "supplemental_game_dates",
+)
 
 
 def _file_sha256(path: Path) -> str:
     return hashlib.sha256(path.read_bytes()).hexdigest()
+
+
+def _copy_legacy_model_data(database: Path) -> None:
+    connection = sqlite3.connect(database)
+    apply_migrations(connection)
+    connection.execute(
+        "ATTACH DATABASE ? AS authoritative",
+        (str(AUTHORITATIVE_DATABASE),),
+    )
+    for table in LEGACY_MODEL_TABLES:
+        connection.execute(
+            f'INSERT INTO main."{table}" SELECT * FROM authoritative."{table}"'
+        )
+    connection.commit()
+    connection.execute("DETACH DATABASE authoritative")
+    connection.close()
 
 
 def _register_policies(database: Path) -> None:
@@ -253,10 +280,7 @@ def near_ready_repository(tmp_path_factory):
     shutil.copy2(ROOT / "requirements.txt", root / "requirements.txt")
     shutil.copy2(ROOT / "requirements-dev.txt", root / "requirements-dev.txt")
     database = root / "data" / "cfb.db"
-    shutil.copy2(AUTHORITATIVE_DATABASE, database)
-    conn = sqlite3.connect(database)
-    apply_migrations(conn)
-    conn.close()
+    _copy_legacy_model_data(database)
     _register_policies(database)
     line_path = root / "contest-lines.json"
     line_path.write_text(
@@ -458,7 +482,7 @@ def test_preflight_never_applies_pending_migrations(tmp_path):
     shutil.copy2(ROOT / "requirements.txt", root / "requirements.txt")
     shutil.copy2(ROOT / "requirements-dev.txt", root / "requirements-dev.txt")
     database = root / "data" / "cfb.db"
-    shutil.copy2(AUTHORITATIVE_DATABASE, database)
+    sqlite3.connect(database).close()
     line_path = root / "contest-lines.json"
     line_path.write_text(json.dumps(_line_manifest()), encoding="utf-8")
     before = _file_sha256(database)

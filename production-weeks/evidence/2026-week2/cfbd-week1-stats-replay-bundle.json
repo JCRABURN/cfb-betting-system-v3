@@ -1,0 +1,36 @@
+{
+  "bundle_version": "v3-provider-bundle-v1",
+  "capture_scope": "pregame",
+  "captured_at": "2026-09-09T13:38:46.896384+00:00",
+  "context_capture": false,
+  "credential_variables": [
+    "CFBD_API_KEY"
+  ],
+  "odds_api_quota": null,
+  "payloads": [
+    {
+      "data_type": "contextual",
+      "endpoint": "https://api.collegefootballdata.com/stats/season/advanced",
+      "parser_version": "cfbd_team_stats_v1",
+      "payload_path": "cfbd-week1-stats.raw.json",
+      "payload_sha256": "0247baa317f1bfdf44790f87cb0010245fffc0c5ba93c44c6d7aa7bf2ca279e4",
+      "provider": "collegefootballdata",
+      "raw_payload_reference": "repo://production-weeks/evidence/2026-week2/cfbd-week1-stats.raw.json",
+      "request_parameters": {
+        "endWeek": 1,
+        "excludeGarbageTime": true,
+        "year": 2026
+      },
+      "requested_at": "2026-09-09T13:38:46.896384+00:00"
+    }
+  ],
+  "raw_evidence": [
+    {
+      "path": "cfbd-week1-stats.raw.json",
+      "sha256": "0247baa317f1bfdf44790f87cb0010245fffc0c5ba93c44c6d7aa7bf2ca279e4"
+    }
+  ],
+  "repository": "JCRABURN/cfb-betting-system-v3",
+  "season": 2026,
+  "week": 2
+}

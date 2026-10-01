@@ -51,7 +51,11 @@ DEFAULT_TEAM_ALIASES: Mapping[str, Mapping[str, str]] = MappingProxyType({
         "Appalachian State": "App State",
         "UMass": "Massachusetts",
         "Southern Mississippi": "Southern Miss",
-    })
+    }),
+    "SplashSports": MappingProxyType({
+        "Appalachian State": "App State",
+        "Louisiana-Monroe": "UL Monroe",
+    }),
 })
 
 RejectionCode = Literal[

@@ -1,0 +1,15 @@
+{
+  "verified_at": "2026-09-18T14:59:08.037401+00:00",
+  "locks_replayed_identically": 57,
+  "changed_lock_replay_rejected": true,
+  "direct_locked_total_update_rejected": true,
+  "semantic_forecasts_match_independent_rehearsal": true,
+  "ats_rows": 57,
+  "totals_rows": 57,
+  "postkickoff_predictions": 0,
+  "new_official_publications": 0,
+  "unified_runs": 0,
+  "source_unchanged": true,
+  "integrity": "ok",
+  "foreign_key_violations": 0
+}
