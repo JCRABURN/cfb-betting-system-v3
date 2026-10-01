@@ -1,0 +1,14 @@
+{
+  "endpoint": "https://api.the-odds-api.com/v4/sports/americanfootball_ncaaf/odds",
+  "parameters": {
+    "regions": "us",
+    "markets": "spreads,totals",
+    "bookmakers": "draftkings",
+    "oddsFormat": "american",
+    "dateFormat": "iso"
+  },
+  "requested_at": "2026-10-01T03:25:54.643730+00:00",
+  "sha256": "dabe2cfbbce2b3b4c29227aee4db05fe1fe233e83b32e5e121d0505b7bd514c9",
+  "rows": 71,
+  "quota_remaining_after": "498"
+}

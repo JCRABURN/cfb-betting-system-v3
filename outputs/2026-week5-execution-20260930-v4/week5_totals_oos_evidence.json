@@ -1,0 +1,16 @@
+{
+  "seasons": "2019-2025",
+  "observations": 4830,
+  "oos_predictions": 4687,
+  "total_mae": 13.361090894927983,
+  "total_rmse": 16.736832192174173,
+  "ledger_sha256": "fa4bd555360ba72beba57550f89562f3f222f8d72620c8af2d6ea5b72619dc7b",
+  "dataset_sha256": "72126e2bb6133b934e9afa6ab82a70f74cb8d3b7e797f6eee73bc8352e8c488a",
+  "archived_opening_line_decisions": 3719,
+  "wins": 1897,
+  "losses": 1784,
+  "pushes": 38,
+  "roi_minus110": -0.016151737423131078,
+  "opening_quote_time_custody": "UNVERIFIED_ARCHIVAL_OPENING",
+  "production_eligible": false
+}

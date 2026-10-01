@@ -1,0 +1,57 @@
+csv_row,game_id,raw_away,raw_home,away,home,away_resolution,home_resolution,home_spread,locked_total,source_kickoff_utc,provider_kickoff_utc,kickoff_discrepancy_minutes,home_classification,away_classification,source_note,status,locked_line_id,lock_status
+1,401871049,Western Kentucky,New Mexico State,Western Kentucky,New Mexico State,normalized_exact,normalized_exact,-2.5,57.5,2026-10-02T00:00:00+00:00,2026-10-02T00:00:00+00:00,0,fbs,fbs,Screenshot 1,MATCHED,1,CREATED
+2,401862786,North Texas,Tulsa,North Texas,Tulsa,normalized_exact,normalized_exact,-1.5,57.5,2026-10-02T01:00:00+00:00,2026-10-02T01:00:00+00:00,0,fbs,fbs,Screenshot 1,MATCHED,2,CREATED
+3,401871050,Liberty,Delaware,Liberty,Delaware,normalized_exact,normalized_exact,7.5,49.5,2026-10-02T23:00:00+00:00,2026-10-02T23:00:00+00:00,0,fbs,fbs,Screenshot 1,MATCHED,3,CREATED
+4,401858245,Pittsburgh,Virginia Tech,Pittsburgh,Virginia Tech,normalized_exact,normalized_exact,-3.5,54.5,2026-10-02T23:00:00+00:00,2026-10-02T23:00:00+00:00,0,fbs,fbs,Screenshot 1,MATCHED,4,CREATED
+5,401858476,Penn State,Northwestern,Penn State,Northwestern,normalized_exact,normalized_exact,2.5,45.5,2026-10-03T00:00:00+00:00,2026-10-03T00:00:00+00:00,0,fbs,fbs,Screenshot 1,MATCHED,5,CREATED
+6,401858250,Notre Dame,North Carolina,Notre Dame,North Carolina,normalized_exact,normalized_exact,21.5,46.5,2026-10-03T16:00:00+00:00,2026-10-03T16:00:00+00:00,0,fbs,fbs,Screenshot 1,MATCHED,6,CREATED
+7,401856819,UCF,Houston,UCF,Houston,normalized_exact,normalized_exact,-12.5,51.5,2026-10-03T16:00:00+00:00,2026-10-03T16:00:00+00:00,0,fbs,fbs,Screenshot 1,MATCHED,7,CREATED
+8,401858251,Stanford,Wake Forest,Stanford,Wake Forest,normalized_exact,normalized_exact,-12.5,53.5,2026-10-03T16:00:00+00:00,2026-10-03T16:00:00+00:00,0,fbs,fbs,Screenshot 2,MATCHED,8,CREATED
+9,401858246,Boston College,SMU,Boston College,SMU,normalized_exact,normalized_exact,-20.5,55.5,2026-10-03T16:00:00+00:00,2026-10-03T16:00:00+00:00,0,fbs,fbs,Screenshot 2,MATCHED,9,CREATED
+10,401858252,Syracuse,UConn,Syracuse,UConn,normalized_exact,normalized_exact,6.5,50.5,2026-10-03T16:00:00+00:00,2026-10-03T16:00:00+00:00,0,fbs,fbs,Screenshot 2,MATCHED,10,CREATED
+11,401858474,Michigan,Minnesota,Michigan,Minnesota,normalized_exact,normalized_exact,5.5,43.5,2026-10-03T16:00:00+00:00,2026-10-03T16:00:00+00:00,0,fbs,fbs,Screenshot 2,MATCHED,11,CREATED
+12,401856707,Alabama,Mississippi State,Alabama,Mississippi State,normalized_exact,normalized_exact,5.5,60.5,2026-10-03T16:00:00+00:00,2026-10-03T16:00:00+00:00,0,fbs,fbs,Screenshot 2,MATCHED,12,CREATED
+13,401856807,Middle Tennessee,Kansas,Middle Tennessee,Kansas,normalized_exact,normalized_exact,-19.5,49.5,2026-10-03T16:00:00+00:00,2026-10-03T16:00:00+00:00,0,fbs,fbs,Screenshot 2,MATCHED,13,CREATED
+14,401856822,West Virginia,Iowa State,West Virginia,Iowa State,normalized_exact,normalized_exact,-2.5,52.5,2026-10-03T16:00:00+00:00,2026-10-03T16:00:00+00:00,0,fbs,fbs,Screenshot 2,MATCHED,14,CREATED
+15,401862791,Navy,Air Force,Navy,Air Force,normalized_exact,normalized_exact,-3.5,46.5,2026-10-03T16:00:00+00:00,2026-10-03T16:00:00+00:00,0,fbs,fbs,Screenshot 2,MATCHED,15,CREATED
+16,401858479,Michigan State,Wisconsin,Michigan State,Wisconsin,normalized_exact,normalized_exact,-10.5,43.5,2026-10-03T16:30:00+00:00,2026-10-03T16:30:00+00:00,0,fbs,fbs,Screenshot 3,MATCHED,16,CREATED
+17,401856705,Vanderbilt,Georgia,Vanderbilt,Georgia,normalized_exact,normalized_exact,-24.5,51.5,2026-10-03T16:45:00+00:00,2026-10-03T16:45:00+00:00,0,fbs,fbs,Screenshot 3,MATCHED,17,CREATED
+18,401866432,Western Michigan,Buffalo,Western Michigan,Buffalo,normalized_exact,normalized_exact,13.5,46.5,2026-10-03T17:00:00+00:00,2026-10-03T17:00:00+00:00,0,fbs,fbs,Screenshot 3,MATCHED,18,CREATED
+19,401866431,Toledo,Ball State,Toledo,Ball State,normalized_exact,normalized_exact,19.5,51.5,2026-10-03T18:00:00+00:00,2026-10-03T18:00:00+00:00,0,fbs,fbs,Screenshot 3,MATCHED,19,CREATED
+20,401866477,Bowling Green,Miami (OH),Bowling Green,Miami (OH),normalized_exact,normalized_exact,-13.5,43.5,2026-10-03T19:30:00+00:00,2026-10-03T19:30:00+00:00,0,fbs,fbs,Screenshot 3,MATCHED,20,CREATED
+21,401858247,California,UNLV,California,UNLV,normalized_exact,normalized_exact,-2.5,52.5,2026-10-03T19:30:00+00:00,2026-10-03T19:30:00+00:00,0,fbs,fbs,Screenshot 3,MATCHED,21,CREATED
+22,401856708,Florida,Missouri,Florida,Missouri,normalized_exact,normalized_exact,5.5,57.5,2026-10-03T19:30:00+00:00,2026-10-03T19:30:00+00:00,0,fbs,fbs,Screenshot 3,MATCHED,22,CREATED
+23,401856710,Auburn,Tennessee,Auburn,Tennessee,normalized_exact,normalized_exact,-7.5,54.5,2026-10-03T19:30:00+00:00,2026-10-03T19:30:00+00:00,0,fbs,fbs,Screenshot 3,MATCHED,23,CREATED
+24,401869956,Old Dominion,Georgia State,Old Dominion,Georgia State,normalized_exact,normalized_exact,-1.5,51.5,2026-10-03T19:30:00+00:00,2026-10-03T19:30:00+00:00,0,fbs,fbs,Screenshot 4,MATCHED,24,CREATED
+25,401866433,Eastern Michigan,UMass,Eastern Michigan,Massachusetts,normalized_exact,provider_alias,-5.5,48.5,2026-10-03T19:30:00+00:00,2026-10-03T19:30:00+00:00,0,fbs,fbs,Screenshot 4,MATCHED,25,CREATED
+26,401858248,Louisville,NC State,Louisville,NC State,normalized_exact,normalized_exact,4.5,59.5,2026-10-03T19:30:00+00:00,2026-10-03T19:30:00+00:00,0,fbs,fbs,Screenshot 4,MATCHED,26,CREATED
+27,401858253,Virginia,Florida State,Virginia,Florida State,normalized_exact,normalized_exact,2.5,51.5,2026-10-03T19:30:00+00:00,2026-10-03T19:30:00+00:00,0,fbs,fbs,Screenshot 4,MATCHED,27,CREATED
+28,401862787,Memphis,Charlotte,Memphis,Charlotte,normalized_exact,normalized_exact,20.5,52.5,2026-10-03T19:30:00+00:00,2026-10-03T19:30:00+00:00,0,fbs,fbs,Screenshot 4,MATCHED,28,CREATED
+29,401858473,Ohio State,Iowa,Ohio State,Iowa,normalized_exact,normalized_exact,13.5,45.5,2026-10-03T19:30:00+00:00,2026-10-03T19:30:00+00:00,0,fbs,fbs,Screenshot 4,MATCHED,29,CREATED
+30,401866434,Ohio,Kent State,Ohio,Kent State,normalized_exact,normalized_exact,3.5,50.5,2026-10-03T19:30:00+00:00,2026-10-03T19:30:00+00:00,0,fbs,fbs,Screenshot 4,MATCHED,30,CREATED
+31,401866430,Akron,Central Michigan,Akron,Central Michigan,normalized_exact,normalized_exact,-6.5,47.5,2026-10-03T19:30:00+00:00,2026-10-03T19:30:00+00:00,0,fbs,fbs,Screenshot 4,MATCHED,31,CREATED
+32,401864515,Wyoming,North Dakota State,Wyoming,North Dakota State,normalized_exact,normalized_exact,-18.5,45.5,2026-10-03T19:30:00+00:00,2026-10-03T19:30:00+00:00,0,fbs,fbs,Screenshot 5,MATCHED,32,CREATED
+33,401869962,Marshall,James Madison,Marshall,James Madison,normalized_exact,normalized_exact,-18.5,55.5,2026-10-03T19:45:00+00:00,2026-10-03T19:45:00+00:00,0,fbs,fbs,Screenshot 5,MATCHED,33,CREATED
+34,401858475,Maryland,Nebraska,Maryland,Nebraska,normalized_exact,normalized_exact,-14.5,52.5,2026-10-03T20:00:00+00:00,2026-10-03T20:00:00+00:00,0,fbs,fbs,Screenshot 5,MATCHED,34,CREATED
+35,401864514,UTEP,New Mexico,UTEP,New Mexico,normalized_exact,normalized_exact,-22.5,48.5,2026-10-03T20:00:00+00:00,2026-10-03T20:00:00+00:00,0,fbs,fbs,Screenshot 5,MATCHED,35,CREATED
+36,401856709,Kentucky,South Carolina,Kentucky,South Carolina,normalized_exact,normalized_exact,-2.5,53.5,2026-10-03T20:15:00+00:00,2026-10-03T20:15:00+00:00,0,fbs,fbs,Screenshot 5,MATCHED,36,CREATED
+37,401858472,Purdue,Illinois,Purdue,Illinois,normalized_exact,normalized_exact,-10.5,61.5,2026-10-03T20:15:00+00:00,2026-10-03T20:15:00+00:00,0,fbs,fbs,Screenshot 5,MATCHED,37,CREATED
+38,401860899,Oregon State,Colorado State,Oregon State,Colorado State,normalized_exact,normalized_exact,6.5,62.5,2026-10-03T22:00:00+00:00,2026-10-03T22:00:00+00:00,0,fbs,fbs,Screenshot 5,MATCHED,38,CREATED
+39,401862788,UTSA,Rice,UTSA,Rice,normalized_exact,normalized_exact,11.5,55.5,2026-10-03T23:00:00+00:00,2026-10-03T23:00:00+00:00,0,fbs,fbs,Screenshot 5,MATCHED,39,CREATED
+40,401856711,Arkansas,Texas A&M,Arkansas,Texas A&M,normalized_exact,normalized_exact,-14.5,50.5,2026-10-03T23:00:00+00:00,2026-10-03T23:00:00+00:00,0,fbs,fbs,Screenshot 6,MATCHED,40,CREATED
+41,401871089,Louisiana-Monroe,South Alabama,UL Monroe,South Alabama,provider_alias,normalized_exact,-13.5,57.5,2026-10-03T23:00:00+00:00,2026-10-03T23:00:00+00:00,0,fbs,fbs,Screenshot 6,MATCHED,41,CREATED
+42,401869942,Georgia Southern,Coastal Carolina,Georgia Southern,Coastal Carolina,normalized_exact,normalized_exact,2.5,54.5,2026-10-03T23:00:00+00:00,2026-10-03T23:00:00+00:00,0,fbs,fbs,Screenshot 6,MATCHED,42,CREATED
+43,401856818,BYU,TCU,BYU,TCU,normalized_exact,normalized_exact,6.5,47.5,2026-10-03T23:00:00+00:00,2026-10-03T23:00:00+00:00,0,fbs,fbs,Screenshot 6,MATCHED,43,CREATED
+44,401869842,Army,Louisiana Tech,Army,Louisiana Tech,normalized_exact,normalized_exact,2.5,46.5,2026-10-03T23:30:00+00:00,2026-10-03T23:30:00+00:00,0,fbs,fbs,Screenshot 6,MATCHED,44,CREATED
+45,401858249,Miami (FL),Clemson,Miami,Clemson,provider_alias,normalized_exact,16.5,47.5,2026-10-03T23:30:00+00:00,2026-10-03T23:30:00+00:00,0,fbs,fbs,Screenshot 6,MATCHED,45,CREATED
+46,401858478,Washington,USC,Washington,USC,normalized_exact,normalized_exact,-9.5,58.5,2026-10-03T23:30:00+00:00,2026-10-03T23:30:00+00:00,0,fbs,fbs,Screenshot 6,MATCHED,46,CREATED
+47,401862792,Temple,South Florida,Temple,South Florida,normalized_exact,normalized_exact,-5.5,48.5,2026-10-03T23:30:00+00:00,2026-10-03T23:30:00+00:00,0,fbs,fbs,Screenshot 6,MATCHED,47,CREATED
+48,401856821,Texas Tech,Colorado,Texas Tech,Colorado,normalized_exact,normalized_exact,13.5,50.5,2026-10-03T23:30:00+00:00,2026-10-03T23:30:00+00:00,0,fbs,fbs,Screenshot 7,MATCHED,48,CREATED
+49,401860898,Utah State,Boise State,Utah State,Boise State,normalized_exact,normalized_exact,-20.5,51.5,2026-10-03T23:30:00+00:00,2026-10-03T23:30:00+00:00,0,fbs,fbs,Screenshot 7,MATCHED,49,CREATED
+50,401858477,Indiana,Rutgers,Indiana,Rutgers,normalized_exact,normalized_exact,24.5,55.5,2026-10-04T00:00:00+00:00,2026-10-04T00:00:00+00:00,0,fbs,fbs,Screenshot 7,MATCHED,50,CREATED
+51,401869932,Arkansas State,Louisiana,Arkansas State,Louisiana,normalized_exact,normalized_exact,-6.5,47.5,2026-10-04T00:00:00+00:00,2026-10-04T00:00:00+00:00,0,fbs,fbs,Screenshot 7,MATCHED,51,CREATED
+52,401860921,Fresno State,Washington State,Fresno State,Washington State,normalized_exact,normalized_exact,-2.5,46.5,2026-10-04T01:30:00+00:00,2026-10-04T01:30:00+00:00,0,fbs,fbs,Screenshot 7,MATCHED,52,CREATED
+53,401856817,Baylor,Arizona State,Baylor,Arizona State,normalized_exact,normalized_exact,-3.5,48.5,2026-10-04T02:30:00+00:00,2026-10-04T02:30:00+00:00,0,fbs,fbs,Screenshot 7,MATCHED,53,CREATED
+54,401860900,Texas State,San Diego State,Texas State,San Diego State,normalized_exact,normalized_exact,4.5,59.5,2026-10-04T02:30:00+00:00,2026-10-04T02:30:00+00:00,0,fbs,fbs,Screenshot 7,MATCHED,54,CREATED
+55,401856820,Cincinnati,Arizona,Cincinnati,Arizona,normalized_exact,normalized_exact,-7.5,55.5,2026-10-04T03:00:00+00:00,2026-10-04T03:00:00+00:00,0,fbs,fbs,Screenshot 7,MATCHED,55,CREATED
+56,401864513,San Jose State,Hawai'i,San José State,Hawai'i,normalized_exact,normalized_exact,-2.5,51.5,2026-10-04T04:00:00+00:00,2026-10-04T03:59:00+00:00,1,fbs,fbs,Screenshot 8,MATCHED_ONE_MINUTE_SOURCE_DIFFERENCE,56,CREATED

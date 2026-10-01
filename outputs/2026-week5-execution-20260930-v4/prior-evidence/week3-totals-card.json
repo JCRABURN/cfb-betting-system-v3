@@ -1,0 +1,3376 @@
+[
+  {
+    "away": "Syracuse",
+    "eligibility": "SKIPPED",
+    "game_id": 401858225,
+    "home": "Pittsburgh",
+    "locked_total": 51.5,
+    "projected_total": null,
+    "record_type": "explicit_skip",
+    "selected_direction": null,
+    "shadow_confidence": null,
+    "skip_reason": "kickoff_not_in_future"
+  },
+  {
+    "away": "Miami",
+    "data_quality_flags": [],
+    "eligibility": "SHADOW_REVIEW",
+    "empirically_calibrated_probability": "NOT_AVAILABLE",
+    "feature_custody": {
+      "away_stats_as_of": [
+        2026,
+        2
+      ],
+      "extrapolated_features": [],
+      "home_stats_as_of": [
+        2026,
+        2
+      ],
+      "values": {
+        "away_defense_epa_play": 0.012758150980022245,
+        "away_offense_epa_play": 0.8022148445589686,
+        "home_defense_epa_play": 0.13675790436077034,
+        "home_offense_epa_play": 0.4427595133635961
+      }
+    },
+    "game_id": 401858226,
+    "historical_direction_context": {
+      "losses": 1161,
+      "n": 2331,
+      "prediction_mae": 13.3693,
+      "prediction_rmse": 16.5885,
+      "pushes": 19,
+      "roi_at_minus_110": -0.049179,
+      "win_rate_excluding_pushes": 0.497837,
+      "wins": 1151
+    },
+    "historical_edge_context": {
+      "label": "10_to_under_15",
+      "losses": 108,
+      "lower": 10.0,
+      "n": 264,
+      "pushes": 3,
+      "roi_at_minus_110": 0.117769,
+      "upper_exclusive": 15.0,
+      "win_rate_excluding_pushes": 0.586207,
+      "wins": 153
+    },
+    "home": "Wake Forest",
+    "locked_total": 55.5,
+    "primary_model_risk": "Raw normal-residual probability is not empirically calibrated.",
+    "projected_away_points": 39.08174914250226,
+    "projected_home_points": 27.812922524031332,
+    "projected_total": 66.8946716665336,
+    "raw_disagreement_points": 11.394671666533597,
+    "raw_model_probability": 0.7525470914945618,
+    "raw_probability_status": "RAW_MODEL_PROBABILITY_NOT_EMPIRICALLY_CALIBRATED",
+    "record_type": "shadow_prediction",
+    "selected_direction": "OVER",
+    "shadow_confidence": 4,
+    "skip_reason": null,
+    "total_card_candidate_id": null,
+    "uncertainty_points": 16.694830753314726
+  },
+  {
+    "away": "Houston",
+    "data_quality_flags": [],
+    "eligibility": "SHADOW_REVIEW",
+    "empirically_calibrated_probability": "NOT_AVAILABLE",
+    "feature_custody": {
+      "away_stats_as_of": [
+        2026,
+        2
+      ],
+      "extrapolated_features": [],
+      "home_stats_as_of": [
+        2026,
+        2
+      ],
+      "values": {
+        "away_defense_epa_play": -0.10861558237052071,
+        "away_offense_epa_play": 0.4013804742615041,
+        "home_defense_epa_play": 0.015798047658254235,
+        "home_offense_epa_play": 0.22020078137891635
+      }
+    },
+    "game_id": 401856811,
+    "historical_direction_context": {
+      "losses": 623,
+      "n": 1388,
+      "prediction_mae": 12.8943,
+      "prediction_rmse": 16.4369,
+      "pushes": 19,
+      "roi_at_minus_110": 0.039756,
+      "win_rate_excluding_pushes": 0.544923,
+      "wins": 746
+    },
+    "historical_edge_context": {
+      "label": "1_to_under_2",
+      "losses": 266,
+      "lower": 1.0,
+      "n": 520,
+      "pushes": 8,
+      "roi_at_minus_110": -0.081469,
+      "upper_exclusive": 2.0,
+      "win_rate_excluding_pushes": 0.480469,
+      "wins": 246
+    },
+    "home": "Texas Tech",
+    "locked_total": 52.5,
+    "primary_model_risk": "Raw normal-residual probability is not empirically calibrated.",
+    "projected_away_points": 27.95843506225223,
+    "projected_home_points": 23.286727258417596,
+    "projected_total": 51.24516232066983,
+    "raw_disagreement_points": 1.2548376793301728,
+    "raw_model_probability": 0.5299575866800843,
+    "raw_probability_status": "RAW_MODEL_PROBABILITY_NOT_EMPIRICALLY_CALIBRATED",
+    "record_type": "shadow_prediction",
+    "selected_direction": "UNDER",
+    "shadow_confidence": 1,
+    "skip_reason": null,
+    "total_card_candidate_id": null,
+    "uncertainty_points": 16.694830753314726
+  },
+  {
+    "away": "Coastal Carolina",
+    "data_quality_flags": [],
+    "eligibility": "SHADOW_REVIEW",
+    "empirically_calibrated_probability": "NOT_AVAILABLE",
+    "feature_custody": {
+      "away_stats_as_of": [
+        2026,
+        2
+      ],
+      "extrapolated_features": [],
+      "home_stats_as_of": [
+        2026,
+        2
+      ],
+      "values": {
+        "away_defense_epa_play": 0.02627456289901512,
+        "away_offense_epa_play": 0.20826517107183928,
+        "home_defense_epa_play": -0.16608952634930532,
+        "home_offense_epa_play": 0.1318243895959389
+      }
+    },
+    "game_id": 401869940,
+    "historical_direction_context": {
+      "losses": 623,
+      "n": 1388,
+      "prediction_mae": 12.8943,
+      "prediction_rmse": 16.4369,
+      "pushes": 19,
+      "roi_at_minus_110": 0.039756,
+      "win_rate_excluding_pushes": 0.544923,
+      "wins": 746
+    },
+    "historical_edge_context": {
+      "label": "10_to_under_15",
+      "losses": 108,
+      "lower": 10.0,
+      "n": 264,
+      "pushes": 3,
+      "roi_at_minus_110": 0.117769,
+      "upper_exclusive": 15.0,
+      "win_rate_excluding_pushes": 0.586207,
+      "wins": 153
+    },
+    "home": "Delaware",
+    "locked_total": 57.5,
+    "primary_model_risk": "Raw normal-residual probability is not empirically calibrated.",
+    "projected_away_points": 17.888943037280768,
+    "projected_home_points": 27.166968513295263,
+    "projected_total": 45.05591155057603,
+    "raw_disagreement_points": 12.444088449423973,
+    "raw_model_probability": 0.7719807131223266,
+    "raw_probability_status": "RAW_MODEL_PROBABILITY_NOT_EMPIRICALLY_CALIBRATED",
+    "record_type": "shadow_prediction",
+    "selected_direction": "UNDER",
+    "shadow_confidence": 4,
+    "skip_reason": null,
+    "total_card_candidate_id": null,
+    "uncertainty_points": 16.694830753314726
+  },
+  {
+    "away": "North Texas",
+    "data_quality_flags": [],
+    "eligibility": "SHADOW_REVIEW",
+    "empirically_calibrated_probability": "NOT_AVAILABLE",
+    "feature_custody": {
+      "away_stats_as_of": [
+        2026,
+        2
+      ],
+      "extrapolated_features": [],
+      "home_stats_as_of": [
+        2026,
+        2
+      ],
+      "values": {
+        "away_defense_epa_play": 0.1368553348847947,
+        "away_offense_epa_play": 0.28830057023439093,
+        "home_defense_epa_play": 0.3208344797102915,
+        "home_offense_epa_play": 0.1225732369623089
+      }
+    },
+    "game_id": 401860889,
+    "historical_direction_context": {
+      "losses": 623,
+      "n": 1388,
+      "prediction_mae": 12.8943,
+      "prediction_rmse": 16.4369,
+      "pushes": 19,
+      "roi_at_minus_110": 0.039756,
+      "win_rate_excluding_pushes": 0.544923,
+      "wins": 746
+    },
+    "historical_edge_context": {
+      "label": "6_to_under_8",
+      "losses": 209,
+      "lower": 6.0,
+      "n": 461,
+      "pushes": 2,
+      "roi_at_minus_110": 0.039637,
+      "upper_exclusive": 8.0,
+      "win_rate_excluding_pushes": 0.544662,
+      "wins": 250
+    },
+    "home": "Texas State",
+    "locked_total": 63.5,
+    "primary_model_risk": "Raw normal-residual probability is not empirically calibrated.",
+    "projected_away_points": 32.665245892184814,
+    "projected_home_points": 24.335747517657847,
+    "projected_total": 57.000993409842664,
+    "raw_disagreement_points": 6.499006590157336,
+    "raw_model_probability": 0.6514664350228421,
+    "raw_probability_status": "RAW_MODEL_PROBABILITY_NOT_EMPIRICALLY_CALIBRATED",
+    "record_type": "shadow_prediction",
+    "selected_direction": "UNDER",
+    "shadow_confidence": 3,
+    "skip_reason": null,
+    "total_card_candidate_id": null,
+    "uncertainty_points": 16.694830753314726
+  },
+  {
+    "away": "Georgia",
+    "data_quality_flags": [],
+    "eligibility": "SHADOW_REVIEW",
+    "empirically_calibrated_probability": "NOT_AVAILABLE",
+    "feature_custody": {
+      "away_stats_as_of": [
+        2026,
+        2
+      ],
+      "extrapolated_features": [],
+      "home_stats_as_of": [
+        2026,
+        2
+      ],
+      "values": {
+        "away_defense_epa_play": -0.19854757887879368,
+        "away_offense_epa_play": 0.8953042985702858,
+        "home_defense_epa_play": 0.23800003976619588,
+        "home_offense_epa_play": 0.04764507574328407
+      }
+    },
+    "game_id": 401856686,
+    "historical_direction_context": {
+      "losses": 1161,
+      "n": 2331,
+      "prediction_mae": 13.3693,
+      "prediction_rmse": 16.5885,
+      "pushes": 19,
+      "roi_at_minus_110": -0.049179,
+      "win_rate_excluding_pushes": 0.497837,
+      "wins": 1151
+    },
+    "historical_edge_context": {
+      "label": "4_to_under_5",
+      "losses": 185,
+      "lower": 4.0,
+      "n": 388,
+      "pushes": 4,
+      "roi_at_minus_110": -0.010544,
+      "upper_exclusive": 5.0,
+      "win_rate_excluding_pushes": 0.518229,
+      "wins": 199
+    },
+    "home": "Arkansas",
+    "locked_total": 54.5,
+    "primary_model_risk": "Raw normal-residual probability is not empirically calibrated.",
+    "projected_away_points": 48.40415365052752,
+    "projected_home_points": 10.679941145472343,
+    "projected_total": 59.08409479599986,
+    "raw_disagreement_points": 4.58409479599986,
+    "raw_model_probability": 0.6081811813883314,
+    "raw_probability_status": "RAW_MODEL_PROBABILITY_NOT_EMPIRICALLY_CALIBRATED",
+    "record_type": "shadow_prediction",
+    "selected_direction": "OVER",
+    "shadow_confidence": 3,
+    "skip_reason": null,
+    "total_card_candidate_id": null,
+    "uncertainty_points": 16.694830753314726
+  },
+  {
+    "away": "Tulane",
+    "data_quality_flags": [],
+    "eligibility": "SHADOW_REVIEW",
+    "empirically_calibrated_probability": "NOT_AVAILABLE",
+    "feature_custody": {
+      "away_stats_as_of": [
+        2026,
+        2
+      ],
+      "extrapolated_features": [],
+      "home_stats_as_of": [
+        2026,
+        2
+      ],
+      "values": {
+        "away_defense_epa_play": 0.06011898109867321,
+        "away_offense_epa_play": 0.10564017788046957,
+        "home_defense_epa_play": -0.2826514827640093,
+        "home_offense_epa_play": 0.25116500916925527
+      }
+    },
+    "game_id": 401856792,
+    "historical_direction_context": {
+      "losses": 623,
+      "n": 1388,
+      "prediction_mae": 12.8943,
+      "prediction_rmse": 16.4369,
+      "pushes": 19,
+      "roi_at_minus_110": 0.039756,
+      "win_rate_excluding_pushes": 0.544923,
+      "wins": 746
+    },
+    "historical_edge_context": {
+      "label": "5_to_under_6",
+      "losses": 166,
+      "lower": 5.0,
+      "n": 337,
+      "pushes": 2,
+      "roi_at_minus_110": -0.036687,
+      "upper_exclusive": 6.0,
+      "win_rate_excluding_pushes": 0.504478,
+      "wins": 169
+    },
+    "home": "Kansas State",
+    "locked_total": 49.5,
+    "primary_model_risk": "Raw normal-residual probability is not empirically calibrated.",
+    "projected_away_points": 11.006995918346593,
+    "projected_home_points": 33.03060326514051,
+    "projected_total": 44.0375991834871,
+    "raw_disagreement_points": 5.462400816512897,
+    "raw_model_probability": 0.6282383416527484,
+    "raw_probability_status": "RAW_MODEL_PROBABILITY_NOT_EMPIRICALLY_CALIBRATED",
+    "record_type": "shadow_prediction",
+    "selected_direction": "UNDER",
+    "shadow_confidence": 3,
+    "skip_reason": null,
+    "total_card_candidate_id": null,
+    "uncertainty_points": 16.694830753314726
+  },
+  {
+    "away": "Akron",
+    "data_quality_flags": [],
+    "eligibility": "SHADOW_REVIEW",
+    "empirically_calibrated_probability": "NOT_AVAILABLE",
+    "feature_custody": {
+      "away_stats_as_of": [
+        2026,
+        2
+      ],
+      "extrapolated_features": [],
+      "home_stats_as_of": [
+        2026,
+        2
+      ],
+      "values": {
+        "away_defense_epa_play": 0.1910930313901826,
+        "away_offense_epa_play": 0.10891219595634419,
+        "home_defense_epa_play": 0.19059981652924735,
+        "home_offense_epa_play": 0.12940363393704582
+      }
+    },
+    "game_id": 401858451,
+    "historical_direction_context": {
+      "losses": 1161,
+      "n": 2331,
+      "prediction_mae": 13.3693,
+      "prediction_rmse": 16.5885,
+      "pushes": 19,
+      "roi_at_minus_110": -0.049179,
+      "win_rate_excluding_pushes": 0.497837,
+      "wins": 1151
+    },
+    "historical_edge_context": {
+      "label": "3_to_under_4",
+      "losses": 214,
+      "lower": 3.0,
+      "n": 431,
+      "pushes": 6,
+      "roi_at_minus_110": -0.051466,
+      "upper_exclusive": 4.0,
+      "win_rate_excluding_pushes": 0.496471,
+      "wins": 211
+    },
+    "home": "Minnesota",
+    "locked_total": 49.5,
+    "primary_model_risk": "Raw normal-residual probability is not empirically calibrated.",
+    "projected_away_points": 24.15767902317425,
+    "projected_home_points": 28.357906124263653,
+    "projected_total": 52.5155851474379,
+    "raw_disagreement_points": 3.0155851474379034,
+    "raw_model_probability": 0.571670946586568,
+    "raw_probability_status": "RAW_MODEL_PROBABILITY_NOT_EMPIRICALLY_CALIBRATED",
+    "record_type": "shadow_prediction",
+    "selected_direction": "OVER",
+    "shadow_confidence": 2,
+    "skip_reason": null,
+    "total_card_candidate_id": null,
+    "uncertainty_points": 16.694830753314726
+  },
+  {
+    "away": "North Carolina",
+    "data_quality_flags": [],
+    "eligibility": "SHADOW_REVIEW",
+    "empirically_calibrated_probability": "NOT_AVAILABLE",
+    "feature_custody": {
+      "away_stats_as_of": [
+        2026,
+        2
+      ],
+      "extrapolated_features": [],
+      "home_stats_as_of": [
+        2026,
+        2
+      ],
+      "values": {
+        "away_defense_epa_play": -0.14861408621201316,
+        "away_offense_epa_play": 0.2570909990167539,
+        "home_defense_epa_play": 0.09705888158610551,
+        "home_offense_epa_play": -0.23667435689631888
+      }
+    },
+    "game_id": 401858229,
+    "historical_direction_context": {
+      "losses": 623,
+      "n": 1388,
+      "prediction_mae": 12.8943,
+      "prediction_rmse": 16.4369,
+      "pushes": 19,
+      "roi_at_minus_110": 0.039756,
+      "win_rate_excluding_pushes": 0.544923,
+      "wins": 746
+    },
+    "historical_edge_context": {
+      "label": "2_to_under_3",
+      "losses": 227,
+      "lower": 2.0,
+      "n": 469,
+      "pushes": 5,
+      "roi_at_minus_110": -0.024617,
+      "upper_exclusive": 3.0,
+      "win_rate_excluding_pushes": 0.510776,
+      "wins": 237
+    },
+    "home": "Clemson",
+    "locked_total": 43.5,
+    "primary_model_risk": "Raw normal-residual probability is not empirically calibrated.",
+    "projected_away_points": 30.11012923807972,
+    "projected_home_points": 10.438333331506021,
+    "projected_total": 40.54846256958574,
+    "raw_disagreement_points": 2.9515374304142625,
+    "raw_model_probability": 0.5701646994929258,
+    "raw_probability_status": "RAW_MODEL_PROBABILITY_NOT_EMPIRICALLY_CALIBRATED",
+    "record_type": "shadow_prediction",
+    "selected_direction": "UNDER",
+    "shadow_confidence": 2,
+    "skip_reason": null,
+    "total_card_candidate_id": null,
+    "uncertainty_points": 16.694830753314726
+  },
+  {
+    "away": "Kent State",
+    "data_quality_flags": [],
+    "eligibility": "SHADOW_REVIEW",
+    "empirically_calibrated_probability": "NOT_AVAILABLE",
+    "feature_custody": {
+      "away_stats_as_of": [
+        2026,
+        2
+      ],
+      "extrapolated_features": [],
+      "home_stats_as_of": [
+        2026,
+        2
+      ],
+      "values": {
+        "away_defense_epa_play": 0.043259384757346364,
+        "away_offense_epa_play": 0.10020671078321255,
+        "home_defense_epa_play": -0.0639629648425031,
+        "home_offense_epa_play": 0.3320117873515842
+      }
+    },
+    "game_id": 401858454,
+    "historical_direction_context": {
+      "losses": 623,
+      "n": 1388,
+      "prediction_mae": 12.8943,
+      "prediction_rmse": 16.4369,
+      "pushes": 19,
+      "roi_at_minus_110": 0.039756,
+      "win_rate_excluding_pushes": 0.544923,
+      "wins": 746
+    },
+    "historical_edge_context": {
+      "label": "10_to_under_15",
+      "losses": 108,
+      "lower": 10.0,
+      "n": 264,
+      "pushes": 3,
+      "roi_at_minus_110": 0.117769,
+      "upper_exclusive": 15.0,
+      "win_rate_excluding_pushes": 0.586207,
+      "wins": 153
+    },
+    "home": "Ohio State",
+    "locked_total": 59.5,
+    "primary_model_risk": "Raw normal-residual probability is not empirically calibrated.",
+    "projected_away_points": 16.37796850909413,
+    "projected_home_points": 32.85427549623185,
+    "projected_total": 49.23224400532598,
+    "raw_disagreement_points": 10.267755994674019,
+    "raw_model_probability": 0.7307312450581575,
+    "raw_probability_status": "RAW_MODEL_PROBABILITY_NOT_EMPIRICALLY_CALIBRATED",
+    "record_type": "shadow_prediction",
+    "selected_direction": "UNDER",
+    "shadow_confidence": 4,
+    "skip_reason": null,
+    "total_card_candidate_id": null,
+    "uncertainty_points": 16.694830753314726
+  },
+  {
+    "away": "Bowling Green",
+    "data_quality_flags": [],
+    "eligibility": "SHADOW_REVIEW",
+    "empirically_calibrated_probability": "NOT_AVAILABLE",
+    "feature_custody": {
+      "away_stats_as_of": [
+        2026,
+        2
+      ],
+      "extrapolated_features": [],
+      "home_stats_as_of": [
+        2026,
+        2
+      ],
+      "values": {
+        "away_defense_epa_play": 0.29535113944173885,
+        "away_offense_epa_play": -0.12952451888985597,
+        "home_defense_epa_play": -0.12764610143025867,
+        "home_offense_epa_play": 0.17771974664223494
+      }
+    },
+    "game_id": 401856798,
+    "historical_direction_context": {
+      "losses": 1161,
+      "n": 2331,
+      "prediction_mae": 13.3693,
+      "prediction_rmse": 16.5885,
+      "pushes": 19,
+      "roi_at_minus_110": -0.049179,
+      "win_rate_excluding_pushes": 0.497837,
+      "wins": 1151
+    },
+    "historical_edge_context": {
+      "label": "0_to_under_1",
+      "losses": 250,
+      "lower": 0.0,
+      "n": 506,
+      "pushes": 5,
+      "roi_at_minus_110": -0.043119,
+      "upper_exclusive": 1.0,
+      "win_rate_excluding_pushes": 0.500998,
+      "wins": 251
+    },
+    "home": "Iowa State",
+    "locked_total": 44.5,
+    "primary_model_risk": "Raw normal-residual probability is not empirically calibrated.",
+    "projected_away_points": 8.385667510970276,
+    "projected_home_points": 36.83196173086941,
+    "projected_total": 45.21762924183969,
+    "raw_disagreement_points": 0.7176292418396883,
+    "raw_model_probability": 0.5171433008274261,
+    "raw_probability_status": "RAW_MODEL_PROBABILITY_NOT_EMPIRICALLY_CALIBRATED",
+    "record_type": "shadow_prediction",
+    "selected_direction": "OVER",
+    "shadow_confidence": 1,
+    "skip_reason": null,
+    "total_card_candidate_id": null,
+    "uncertainty_points": 16.694830753314726
+  },
+  {
+    "away": "Arizona State",
+    "data_quality_flags": [],
+    "eligibility": "SHADOW_REVIEW",
+    "empirically_calibrated_probability": "NOT_AVAILABLE",
+    "feature_custody": {
+      "away_stats_as_of": [
+        2026,
+        2
+      ],
+      "extrapolated_features": [],
+      "home_stats_as_of": [
+        2026,
+        2
+      ],
+      "values": {
+        "away_defense_epa_play": -0.0607245466984698,
+        "away_offense_epa_play": 0.19919042538739387,
+        "home_defense_epa_play": 0.02647417957805798,
+        "home_offense_epa_play": 0.1328906430502066
+      }
+    },
+    "game_id": 401856812,
+    "historical_direction_context": {
+      "losses": 623,
+      "n": 1388,
+      "prediction_mae": 12.8943,
+      "prediction_rmse": 16.4369,
+      "pushes": 19,
+      "roi_at_minus_110": 0.039756,
+      "win_rate_excluding_pushes": 0.544923,
+      "wins": 746
+    },
+    "historical_edge_context": {
+      "label": "3_to_under_4",
+      "losses": 214,
+      "lower": 3.0,
+      "n": 431,
+      "pushes": 6,
+      "roi_at_minus_110": -0.051466,
+      "upper_exclusive": 4.0,
+      "win_rate_excluding_pushes": 0.496471,
+      "wins": 211
+    },
+    "home": "Kansas",
+    "locked_total": 50.5,
+    "primary_model_risk": "Raw normal-residual probability is not empirically calibrated.",
+    "projected_away_points": 23.46363173551896,
+    "projected_home_points": 23.507738805211805,
+    "projected_total": 46.97137054073076,
+    "raw_disagreement_points": 3.52862945926924,
+    "raw_model_probability": 0.5836970509048592,
+    "raw_probability_status": "RAW_MODEL_PROBABILITY_NOT_EMPIRICALLY_CALIBRATED",
+    "record_type": "shadow_prediction",
+    "selected_direction": "UNDER",
+    "shadow_confidence": 2,
+    "skip_reason": null,
+    "total_card_candidate_id": null,
+    "uncertainty_points": 16.694830753314726
+  },
+  {
+    "away": "Buffalo",
+    "data_quality_flags": [],
+    "eligibility": "SHADOW_REVIEW",
+    "empirically_calibrated_probability": "NOT_AVAILABLE",
+    "feature_custody": {
+      "away_stats_as_of": [
+        2026,
+        2
+      ],
+      "extrapolated_features": [],
+      "home_stats_as_of": [
+        2026,
+        2
+      ],
+      "values": {
+        "away_defense_epa_play": 0.028654358409258684,
+        "away_offense_epa_play": 0.0688000492594795,
+        "home_defense_epa_play": -0.012803341676587345,
+        "home_offense_epa_play": 0.3723004845277873
+      }
+    },
+    "game_id": 401858456,
+    "historical_direction_context": {
+      "losses": 1161,
+      "n": 2331,
+      "prediction_mae": 13.3693,
+      "prediction_rmse": 16.5885,
+      "pushes": 19,
+      "roi_at_minus_110": -0.049179,
+      "win_rate_excluding_pushes": 0.497837,
+      "wins": 1151
+    },
+    "historical_edge_context": {
+      "label": "0_to_under_1",
+      "losses": 250,
+      "lower": 0.0,
+      "n": 506,
+      "pushes": 5,
+      "roi_at_minus_110": -0.043119,
+      "upper_exclusive": 1.0,
+      "win_rate_excluding_pushes": 0.500998,
+      "wins": 251
+    },
+    "home": "Penn State",
+    "locked_total": 49.5,
+    "primary_model_risk": "Raw normal-residual probability is not empirically calibrated.",
+    "projected_away_points": 16.778206836469412,
+    "projected_home_points": 33.38107957351948,
+    "projected_total": 50.159286409988894,
+    "raw_disagreement_points": 0.6592864099888942,
+    "raw_model_probability": 0.5157503170494656,
+    "raw_probability_status": "RAW_MODEL_PROBABILITY_NOT_EMPIRICALLY_CALIBRATED",
+    "record_type": "shadow_prediction",
+    "selected_direction": "OVER",
+    "shadow_confidence": 1,
+    "skip_reason": null,
+    "total_card_candidate_id": null,
+    "uncertainty_points": 16.694830753314726
+  },
+  {
+    "away": "Eastern Michigan",
+    "data_quality_flags": [],
+    "eligibility": "SHADOW_REVIEW",
+    "empirically_calibrated_probability": "NOT_AVAILABLE",
+    "feature_custody": {
+      "away_stats_as_of": [
+        2026,
+        2
+      ],
+      "extrapolated_features": [],
+      "home_stats_as_of": [
+        2026,
+        2
+      ],
+      "values": {
+        "away_defense_epa_play": 0.07135817096730467,
+        "away_offense_epa_play": -0.024729038514973118,
+        "home_defense_epa_play": 0.15077317728539,
+        "home_offense_epa_play": 0.07628746980985784
+      }
+    },
+    "game_id": 401858460,
+    "historical_direction_context": {
+      "losses": 1161,
+      "n": 2331,
+      "prediction_mae": 13.3693,
+      "prediction_rmse": 16.5885,
+      "pushes": 19,
+      "roi_at_minus_110": -0.049179,
+      "win_rate_excluding_pushes": 0.497837,
+      "wins": 1151
+    },
+    "historical_edge_context": {
+      "label": "0_to_under_1",
+      "losses": 250,
+      "lower": 0.0,
+      "n": 506,
+      "pushes": 5,
+      "roi_at_minus_110": -0.043119,
+      "upper_exclusive": 1.0,
+      "win_rate_excluding_pushes": 0.500998,
+      "wins": 251
+    },
+    "home": "Wisconsin",
+    "locked_total": 45.5,
+    "primary_model_risk": "Raw normal-residual probability is not empirically calibrated.",
+    "projected_away_points": 20.793476796690637,
+    "projected_home_points": 25.602630300837856,
+    "projected_total": 46.39610709752849,
+    "raw_disagreement_points": 0.8961070975284926,
+    "raw_model_probability": 0.521403237102013,
+    "raw_probability_status": "RAW_MODEL_PROBABILITY_NOT_EMPIRICALLY_CALIBRATED",
+    "record_type": "shadow_prediction",
+    "selected_direction": "OVER",
+    "shadow_confidence": 1,
+    "skip_reason": null,
+    "total_card_candidate_id": null,
+    "uncertainty_points": 16.694830753314726
+  },
+  {
+    "away": "NC State",
+    "data_quality_flags": [],
+    "eligibility": "SHADOW_REVIEW",
+    "empirically_calibrated_probability": "NOT_AVAILABLE",
+    "feature_custody": {
+      "away_stats_as_of": [
+        2026,
+        2
+      ],
+      "extrapolated_features": [],
+      "home_stats_as_of": [
+        2026,
+        2
+      ],
+      "values": {
+        "away_defense_epa_play": 0.10436082161312828,
+        "away_offense_epa_play": 0.3228851774304531,
+        "home_defense_epa_play": -0.1188975264171307,
+        "home_offense_epa_play": 0.0770759026769088
+      }
+    },
+    "game_id": 401856695,
+    "historical_direction_context": {
+      "losses": 623,
+      "n": 1388,
+      "prediction_mae": 12.8943,
+      "prediction_rmse": 16.4369,
+      "pushes": 19,
+      "roi_at_minus_110": 0.039756,
+      "win_rate_excluding_pushes": 0.544923,
+      "wins": 746
+    },
+    "historical_edge_context": {
+      "label": "2_to_under_3",
+      "losses": 227,
+      "lower": 2.0,
+      "n": 469,
+      "pushes": 5,
+      "roi_at_minus_110": -0.024617,
+      "upper_exclusive": 3.0,
+      "win_rate_excluding_pushes": 0.510776,
+      "wins": 237
+    },
+    "home": "Vanderbilt",
+    "locked_total": 50.5,
+    "primary_model_risk": "Raw normal-residual probability is not empirically calibrated.",
+    "projected_away_points": 22.015953138005838,
+    "projected_home_points": 26.144795362150127,
+    "projected_total": 48.16074850015596,
+    "raw_disagreement_points": 2.339251499844039,
+    "raw_model_probability": 0.5557167436753028,
+    "raw_probability_status": "RAW_MODEL_PROBABILITY_NOT_EMPIRICALLY_CALIBRATED",
+    "record_type": "shadow_prediction",
+    "selected_direction": "UNDER",
+    "shadow_confidence": 2,
+    "skip_reason": null,
+    "total_card_candidate_id": null,
+    "uncertainty_points": 16.694830753314726
+  },
+  {
+    "away": "Wyoming",
+    "data_quality_flags": [],
+    "eligibility": "SHADOW_REVIEW",
+    "empirically_calibrated_probability": "NOT_AVAILABLE",
+    "feature_custody": {
+      "away_stats_as_of": [
+        2026,
+        2
+      ],
+      "extrapolated_features": [],
+      "home_stats_as_of": [
+        2026,
+        2
+      ],
+      "values": {
+        "away_defense_epa_play": 0.06489075558866486,
+        "away_offense_epa_play": -0.002827735068849334,
+        "home_defense_epa_play": 0.08896719182257044,
+        "home_offense_epa_play": -0.1629384621507237
+      }
+    },
+    "game_id": 401864508,
+    "historical_direction_context": {
+      "losses": 1161,
+      "n": 2331,
+      "prediction_mae": 13.3693,
+      "prediction_rmse": 16.5885,
+      "pushes": 19,
+      "roi_at_minus_110": -0.049179,
+      "win_rate_excluding_pushes": 0.497837,
+      "wins": 1151
+    },
+    "historical_edge_context": {
+      "label": "1_to_under_2",
+      "losses": 266,
+      "lower": 1.0,
+      "n": 520,
+      "pushes": 8,
+      "roi_at_minus_110": -0.081469,
+      "upper_exclusive": 2.0,
+      "win_rate_excluding_pushes": 0.480469,
+      "wins": 246
+    },
+    "home": "Central Michigan",
+    "locked_total": 39.5,
+    "primary_model_risk": "Raw normal-residual probability is not empirically calibrated.",
+    "projected_away_points": 21.44400177046421,
+    "projected_home_points": 19.40500966281937,
+    "projected_total": 40.84901143328358,
+    "raw_disagreement_points": 1.3490114332835788,
+    "raw_model_probability": 0.5322011420076054,
+    "raw_probability_status": "RAW_MODEL_PROBABILITY_NOT_EMPIRICALLY_CALIBRATED",
+    "record_type": "shadow_prediction",
+    "selected_direction": "OVER",
+    "shadow_confidence": 1,
+    "skip_reason": null,
+    "total_card_candidate_id": null,
+    "uncertainty_points": 16.694830753314726
+  },
+  {
+    "away": "Temple",
+    "data_quality_flags": [],
+    "eligibility": "SHADOW_REVIEW",
+    "empirically_calibrated_probability": "NOT_AVAILABLE",
+    "feature_custody": {
+      "away_stats_as_of": [
+        2026,
+        2
+      ],
+      "extrapolated_features": [],
+      "home_stats_as_of": [
+        2026,
+        2
+      ],
+      "values": {
+        "away_defense_epa_play": 0.11176712229259443,
+        "away_offense_epa_play": 0.14388927704469126,
+        "home_defense_epa_play": -0.12055044595054973,
+        "home_offense_epa_play": 0.25015282599191485
+      }
+    },
+    "game_id": 401862774,
+    "historical_direction_context": {
+      "losses": 623,
+      "n": 1388,
+      "prediction_mae": 12.8943,
+      "prediction_rmse": 16.4369,
+      "pushes": 19,
+      "roi_at_minus_110": 0.039756,
+      "win_rate_excluding_pushes": 0.544923,
+      "wins": 746
+    },
+    "historical_edge_context": {
+      "label": "1_to_under_2",
+      "losses": 266,
+      "lower": 1.0,
+      "n": 520,
+      "pushes": 8,
+      "roi_at_minus_110": -0.081469,
+      "upper_exclusive": 2.0,
+      "win_rate_excluding_pushes": 0.480469,
+      "wins": 246
+    },
+    "home": "Toledo",
+    "locked_total": 50.5,
+    "primary_model_risk": "Raw normal-residual probability is not empirically calibrated.",
+    "projected_away_points": 16.11490821464451,
+    "projected_home_points": 32.3918912154633,
+    "projected_total": 48.50679943010782,
+    "raw_disagreement_points": 1.9932005698921813,
+    "raw_model_probability": 0.5475169204005159,
+    "raw_probability_status": "RAW_MODEL_PROBABILITY_NOT_EMPIRICALLY_CALIBRATED",
+    "record_type": "shadow_prediction",
+    "selected_direction": "UNDER",
+    "shadow_confidence": 1,
+    "skip_reason": null,
+    "total_card_candidate_id": null,
+    "uncertainty_points": 16.694830753314726
+  },
+  {
+    "away": "Florida State",
+    "data_quality_flags": [],
+    "eligibility": "SHADOW_REVIEW",
+    "empirically_calibrated_probability": "NOT_AVAILABLE",
+    "feature_custody": {
+      "away_stats_as_of": [
+        2026,
+        2
+      ],
+      "extrapolated_features": [],
+      "home_stats_as_of": [
+        2026,
+        2
+      ],
+      "values": {
+        "away_defense_epa_play": 0.23409225215135004,
+        "away_offense_epa_play": 0.20419813063961514,
+        "home_defense_epa_play": -0.2987940926506599,
+        "home_offense_epa_play": 0.24983517618965412
+      }
+    },
+    "game_id": 401856685,
+    "historical_direction_context": {
+      "losses": 623,
+      "n": 1388,
+      "prediction_mae": 12.8943,
+      "prediction_rmse": 16.4369,
+      "pushes": 19,
+      "roi_at_minus_110": 0.039756,
+      "win_rate_excluding_pushes": 0.544923,
+      "wins": 746
+    },
+    "historical_edge_context": {
+      "label": "0_to_under_1",
+      "losses": 250,
+      "lower": 0.0,
+      "n": 506,
+      "pushes": 5,
+      "roi_at_minus_110": -0.043119,
+      "upper_exclusive": 1.0,
+      "win_rate_excluding_pushes": 0.500998,
+      "wins": 251
+    },
+    "home": "Alabama",
+    "locked_total": 48.5,
+    "primary_model_risk": "Raw normal-residual probability is not empirically calibrated.",
+    "projected_away_points": 12.012118816111068,
+    "projected_home_points": 36.34597537663274,
+    "projected_total": 48.358094192743806,
+    "raw_disagreement_points": 0.14190580725619384,
+    "raw_model_probability": 0.5033909624775335,
+    "raw_probability_status": "RAW_MODEL_PROBABILITY_NOT_EMPIRICALLY_CALIBRATED",
+    "record_type": "shadow_prediction",
+    "selected_direction": "UNDER",
+    "shadow_confidence": 1,
+    "skip_reason": null,
+    "total_card_candidate_id": null,
+    "uncertainty_points": 16.694830753314726
+  },
+  {
+    "away": "Miami (OH)",
+    "data_quality_flags": [],
+    "eligibility": "SHADOW_REVIEW",
+    "empirically_calibrated_probability": "NOT_AVAILABLE",
+    "feature_custody": {
+      "away_stats_as_of": [
+        2026,
+        2
+      ],
+      "extrapolated_features": [],
+      "home_stats_as_of": [
+        2026,
+        2
+      ],
+      "values": {
+        "away_defense_epa_play": 0.13261619365968708,
+        "away_offense_epa_play": 0.4359413952795996,
+        "home_defense_epa_play": 0.016717096262211118,
+        "home_offense_epa_play": 0.44855916803638
+      }
+    },
+    "game_id": 401856797,
+    "historical_direction_context": {
+      "losses": 1161,
+      "n": 2331,
+      "prediction_mae": 13.3693,
+      "prediction_rmse": 16.5885,
+      "pushes": 19,
+      "roi_at_minus_110": -0.049179,
+      "win_rate_excluding_pushes": 0.497837,
+      "wins": 1151
+    },
+    "historical_edge_context": {
+      "label": "8_to_under_10",
+      "losses": 136,
+      "lower": 8.0,
+      "n": 303,
+      "pushes": 3,
+      "roi_at_minus_110": 0.043204,
+      "upper_exclusive": 10.0,
+      "win_rate_excluding_pushes": 0.546667,
+      "wins": 164
+    },
+    "home": "Cincinnati",
+    "locked_total": 50.5,
+    "primary_model_risk": "Raw normal-residual probability is not empirically calibrated.",
+    "projected_away_points": 25.715174475767896,
+    "projected_home_points": 34.67128106786534,
+    "projected_total": 60.38645554363323,
+    "raw_disagreement_points": 9.886455543633232,
+    "raw_model_probability": 0.7231371889141054,
+    "raw_probability_status": "RAW_MODEL_PROBABILITY_NOT_EMPIRICALLY_CALIBRATED",
+    "record_type": "shadow_prediction",
+    "selected_direction": "OVER",
+    "shadow_confidence": 4,
+    "skip_reason": null,
+    "total_card_candidate_id": null,
+    "uncertainty_points": 16.694830753314726
+  },
+  {
+    "away": "UTEP",
+    "data_quality_flags": [],
+    "eligibility": "SHADOW_REVIEW",
+    "empirically_calibrated_probability": "NOT_AVAILABLE",
+    "feature_custody": {
+      "away_stats_as_of": [
+        2026,
+        2
+      ],
+      "extrapolated_features": [],
+      "home_stats_as_of": [
+        2026,
+        2
+      ],
+      "values": {
+        "away_defense_epa_play": 0.23331397749482366,
+        "away_offense_epa_play": -0.05894264604928306,
+        "home_defense_epa_play": -0.08984038830589929,
+        "home_offense_epa_play": 0.084462587896415
+      }
+    },
+    "game_id": 401858450,
+    "historical_direction_context": {
+      "losses": 623,
+      "n": 1388,
+      "prediction_mae": 12.8943,
+      "prediction_rmse": 16.4369,
+      "pushes": 19,
+      "roi_at_minus_110": 0.039756,
+      "win_rate_excluding_pushes": 0.544923,
+      "wins": 746
+    },
+    "historical_edge_context": {
+      "label": "5_to_under_6",
+      "losses": 166,
+      "lower": 5.0,
+      "n": 337,
+      "pushes": 2,
+      "roi_at_minus_110": -0.036687,
+      "upper_exclusive": 6.0,
+      "win_rate_excluding_pushes": 0.504478,
+      "wins": 169
+    },
+    "home": "Michigan",
+    "locked_total": 49.5,
+    "primary_model_risk": "Raw normal-residual probability is not empirically calibrated.",
+    "projected_away_points": 12.275992693388229,
+    "projected_home_points": 32.00274986068415,
+    "projected_total": 44.27874255407238,
+    "raw_disagreement_points": 5.22125744592762,
+    "raw_model_probability": 0.6227635397831461,
+    "raw_probability_status": "RAW_MODEL_PROBABILITY_NOT_EMPIRICALLY_CALIBRATED",
+    "record_type": "shadow_prediction",
+    "selected_direction": "UNDER",
+    "shadow_confidence": 3,
+    "skip_reason": null,
+    "total_card_candidate_id": null,
+    "uncertainty_points": 16.694830753314726
+  },
+  {
+    "away": "Kentucky",
+    "data_quality_flags": [],
+    "eligibility": "SHADOW_REVIEW",
+    "empirically_calibrated_probability": "NOT_AVAILABLE",
+    "feature_custody": {
+      "away_stats_as_of": [
+        2026,
+        2
+      ],
+      "extrapolated_features": [],
+      "home_stats_as_of": [
+        2026,
+        2
+      ],
+      "values": {
+        "away_defense_epa_play": 0.1339259095432242,
+        "away_offense_epa_play": 0.056281828747762074,
+        "home_defense_epa_play": -0.36159187486361766,
+        "home_offense_epa_play": 0.16702031093927844
+      }
+    },
+    "game_id": 401856694,
+    "historical_direction_context": {
+      "losses": 623,
+      "n": 1388,
+      "prediction_mae": 12.8943,
+      "prediction_rmse": 16.4369,
+      "pushes": 19,
+      "roi_at_minus_110": 0.039756,
+      "win_rate_excluding_pushes": 0.544923,
+      "wins": 746
+    },
+    "historical_edge_context": {
+      "label": "8_to_under_10",
+      "losses": 136,
+      "lower": 8.0,
+      "n": 303,
+      "pushes": 3,
+      "roi_at_minus_110": 0.043204,
+      "upper_exclusive": 10.0,
+      "win_rate_excluding_pushes": 0.546667,
+      "wins": 164
+    },
+    "home": "Texas A&M",
+    "locked_total": 50.5,
+    "primary_model_risk": "Raw normal-residual probability is not empirically calibrated.",
+    "projected_away_points": 7.753090629350854,
+    "projected_home_points": 33.55996044253422,
+    "projected_total": 41.31305107188507,
+    "raw_disagreement_points": 9.18694892811493,
+    "raw_model_probability": 0.7089387425980164,
+    "raw_probability_status": "RAW_MODEL_PROBABILITY_NOT_EMPIRICALLY_CALIBRATED",
+    "record_type": "shadow_prediction",
+    "selected_direction": "UNDER",
+    "shadow_confidence": 4,
+    "skip_reason": null,
+    "total_card_candidate_id": null,
+    "uncertainty_points": 16.694830753314726
+  },
+  {
+    "away": "Utah State",
+    "data_quality_flags": [],
+    "eligibility": "SHADOW_REVIEW",
+    "empirically_calibrated_probability": "NOT_AVAILABLE",
+    "feature_custody": {
+      "away_stats_as_of": [
+        2026,
+        2
+      ],
+      "extrapolated_features": [],
+      "home_stats_as_of": [
+        2026,
+        2
+      ],
+      "values": {
+        "away_defense_epa_play": 0.03298395912116417,
+        "away_offense_epa_play": -0.125510359104815,
+        "home_defense_epa_play": 0.008886032612688636,
+        "home_offense_epa_play": 0.541855276815718
+      }
+    },
+    "game_id": 401856801,
+    "historical_direction_context": {
+      "losses": 623,
+      "n": 1388,
+      "prediction_mae": 12.8943,
+      "prediction_rmse": 16.4369,
+      "pushes": 19,
+      "roi_at_minus_110": 0.039756,
+      "win_rate_excluding_pushes": 0.544923,
+      "wins": 746
+    },
+    "historical_edge_context": {
+      "label": "5_to_under_6",
+      "losses": 166,
+      "lower": 5.0,
+      "n": 337,
+      "pushes": 2,
+      "roi_at_minus_110": -0.036687,
+      "upper_exclusive": 6.0,
+      "win_rate_excluding_pushes": 0.504478,
+      "wins": 169
+    },
+    "home": "Utah",
+    "locked_total": 56.5,
+    "primary_model_risk": "Raw normal-residual probability is not empirically calibrated.",
+    "projected_away_points": 11.173055949690024,
+    "projected_home_points": 39.367748190303814,
+    "projected_total": 50.54080413999384,
+    "raw_disagreement_points": 5.959195860006162,
+    "raw_model_probability": 0.6394348437132238,
+    "raw_probability_status": "RAW_MODEL_PROBABILITY_NOT_EMPIRICALLY_CALIBRATED",
+    "record_type": "shadow_prediction",
+    "selected_direction": "UNDER",
+    "shadow_confidence": 3,
+    "skip_reason": null,
+    "total_card_candidate_id": null,
+    "uncertainty_points": 16.694830753314726
+  },
+  {
+    "away": "USC",
+    "data_quality_flags": [],
+    "eligibility": "SHADOW_REVIEW",
+    "empirically_calibrated_probability": "NOT_AVAILABLE",
+    "feature_custody": {
+      "away_stats_as_of": [
+        2026,
+        2
+      ],
+      "extrapolated_features": [],
+      "home_stats_as_of": [
+        2026,
+        2
+      ],
+      "values": {
+        "away_defense_epa_play": 0.018295788900326983,
+        "away_offense_epa_play": 0.35788081838668306,
+        "home_defense_epa_play": 0.1558907367674346,
+        "home_offense_epa_play": -0.08029788516594087
+      }
+    },
+    "game_id": 401858457,
+    "historical_direction_context": {
+      "losses": 623,
+      "n": 1388,
+      "prediction_mae": 12.8943,
+      "prediction_rmse": 16.4369,
+      "pushes": 19,
+      "roi_at_minus_110": 0.039756,
+      "win_rate_excluding_pushes": 0.544923,
+      "wins": 746
+    },
+    "historical_edge_context": {
+      "label": "10_to_under_15",
+      "losses": 108,
+      "lower": 10.0,
+      "n": 264,
+      "pushes": 3,
+      "roi_at_minus_110": 0.117769,
+      "upper_exclusive": 15.0,
+      "win_rate_excluding_pushes": 0.586207,
+      "wins": 153
+    },
+    "home": "Rutgers",
+    "locked_total": 59.5,
+    "primary_model_risk": "Raw normal-residual probability is not empirically calibrated.",
+    "projected_away_points": 32.117603398774676,
+    "projected_home_points": 17.135528820031865,
+    "projected_total": 49.25313221880654,
+    "raw_disagreement_points": 10.246867781193458,
+    "raw_model_probability": 0.7303179512866541,
+    "raw_probability_status": "RAW_MODEL_PROBABILITY_NOT_EMPIRICALLY_CALIBRATED",
+    "record_type": "shadow_prediction",
+    "selected_direction": "UNDER",
+    "shadow_confidence": 4,
+    "skip_reason": null,
+    "total_card_candidate_id": null,
+    "uncertainty_points": 16.694830753314726
+  },
+  {
+    "away": "SMU",
+    "data_quality_flags": [],
+    "eligibility": "SHADOW_REVIEW",
+    "empirically_calibrated_probability": "NOT_AVAILABLE",
+    "feature_custody": {
+      "away_stats_as_of": [
+        2026,
+        2
+      ],
+      "extrapolated_features": [],
+      "home_stats_as_of": [
+        2026,
+        2
+      ],
+      "values": {
+        "away_defense_epa_play": -0.07429116015125987,
+        "away_offense_epa_play": 0.5489492300243838,
+        "home_defense_epa_play": 0.15893259186839306,
+        "home_offense_epa_play": 0.43599799054824906
+      }
+    },
+    "game_id": 401858230,
+    "historical_direction_context": {
+      "losses": 1161,
+      "n": 2331,
+      "prediction_mae": 13.3693,
+      "prediction_rmse": 16.5885,
+      "pushes": 19,
+      "roi_at_minus_110": -0.049179,
+      "win_rate_excluding_pushes": 0.497837,
+      "wins": 1151
+    },
+    "historical_edge_context": {
+      "label": "1_to_under_2",
+      "losses": 266,
+      "lower": 1.0,
+      "n": 520,
+      "pushes": 8,
+      "roi_at_minus_110": -0.081469,
+      "upper_exclusive": 2.0,
+      "win_rate_excluding_pushes": 0.480469,
+      "wins": 246
+    },
+    "home": "Louisville",
+    "locked_total": 59.5,
+    "primary_model_risk": "Raw normal-residual probability is not empirically calibrated.",
+    "projected_away_points": 33.841758992148314,
+    "projected_home_points": 27.41688650231992,
+    "projected_total": 61.25864549446823,
+    "raw_disagreement_points": 1.758645494468233,
+    "raw_model_probability": 0.5419472736559569,
+    "raw_probability_status": "RAW_MODEL_PROBABILITY_NOT_EMPIRICALLY_CALIBRATED",
+    "record_type": "shadow_prediction",
+    "selected_direction": "OVER",
+    "shadow_confidence": 1,
+    "skip_reason": null,
+    "total_card_candidate_id": null,
+    "uncertainty_points": 16.694830753314726
+  },
+  {
+    "away": "Western Kentucky",
+    "data_quality_flags": [],
+    "eligibility": "SHADOW_REVIEW",
+    "empirically_calibrated_probability": "NOT_AVAILABLE",
+    "feature_custody": {
+      "away_stats_as_of": [
+        2026,
+        2
+      ],
+      "extrapolated_features": [],
+      "home_stats_as_of": [
+        2026,
+        2
+      ],
+      "values": {
+        "away_defense_epa_play": 0.7855462209262107,
+        "away_offense_epa_play": -0.10010084575903047,
+        "home_defense_epa_play": -0.045851854738092786,
+        "home_offense_epa_play": 0.6547727533822375
+      }
+    },
+    "game_id": 401858449,
+    "historical_direction_context": {
+      "losses": 1161,
+      "n": 2331,
+      "prediction_mae": 13.3693,
+      "prediction_rmse": 16.5885,
+      "pushes": 19,
+      "roi_at_minus_110": -0.049179,
+      "win_rate_excluding_pushes": 0.497837,
+      "wins": 1151
+    },
+    "historical_edge_context": {
+      "label": "4_to_under_5",
+      "losses": 185,
+      "lower": 4.0,
+      "n": 388,
+      "pushes": 4,
+      "roi_at_minus_110": -0.010544,
+      "upper_exclusive": 5.0,
+      "win_rate_excluding_pushes": 0.518229,
+      "wins": 199
+    },
+    "home": "Indiana",
+    "locked_total": 60.5,
+    "primary_model_risk": "Raw normal-residual probability is not empirically calibrated.",
+    "projected_away_points": 4.887889931907861,
+    "projected_home_points": 59.89981727130229,
+    "projected_total": 64.78770720321015,
+    "raw_disagreement_points": 4.287707203210147,
+    "raw_model_probability": 0.6013443897058889,
+    "raw_probability_status": "RAW_MODEL_PROBABILITY_NOT_EMPIRICALLY_CALIBRATED",
+    "record_type": "shadow_prediction",
+    "selected_direction": "OVER",
+    "shadow_confidence": 3,
+    "skip_reason": null,
+    "total_card_candidate_id": null,
+    "uncertainty_points": 16.694830753314726
+  },
+  {
+    "away": "Stanford",
+    "data_quality_flags": [],
+    "eligibility": "SHADOW_REVIEW",
+    "empirically_calibrated_probability": "NOT_AVAILABLE",
+    "feature_custody": {
+      "away_stats_as_of": [
+        2026,
+        2
+      ],
+      "extrapolated_features": [],
+      "home_stats_as_of": [
+        2026,
+        2
+      ],
+      "values": {
+        "away_defense_epa_play": 0.24370110876269221,
+        "away_offense_epa_play": 0.2658325800342648,
+        "home_defense_epa_play": -0.025118696453782445,
+        "home_offense_epa_play": 0.0971002378932878
+      }
+    },
+    "game_id": 401858231,
+    "historical_direction_context": {
+      "losses": 1161,
+      "n": 2331,
+      "prediction_mae": 13.3693,
+      "prediction_rmse": 16.5885,
+      "pushes": 19,
+      "roi_at_minus_110": -0.049179,
+      "win_rate_excluding_pushes": 0.497837,
+      "wins": 1151
+    },
+    "historical_edge_context": {
+      "label": "0_to_under_1",
+      "losses": 250,
+      "lower": 0.0,
+      "n": 506,
+      "pushes": 5,
+      "roi_at_minus_110": -0.043119,
+      "upper_exclusive": 1.0,
+      "win_rate_excluding_pushes": 0.500998,
+      "wins": 251
+    },
+    "home": "Duke",
+    "locked_total": 51.5,
+    "primary_model_risk": "Raw normal-residual probability is not empirically calibrated.",
+    "projected_away_points": 22.1404232790063,
+    "projected_home_points": 29.448465809761217,
+    "projected_total": 51.588889088767516,
+    "raw_disagreement_points": 0.088889088767516,
+    "raw_model_probability": 0.5021240974977268,
+    "raw_probability_status": "RAW_MODEL_PROBABILITY_NOT_EMPIRICALLY_CALIBRATED",
+    "record_type": "shadow_prediction",
+    "selected_direction": "OVER",
+    "shadow_confidence": 1,
+    "skip_reason": null,
+    "total_card_candidate_id": null,
+    "uncertainty_points": 16.694830753314726
+  },
+  {
+    "away": "Louisiana Tech",
+    "data_quality_flags": [],
+    "eligibility": "SHADOW_REVIEW",
+    "empirically_calibrated_probability": "NOT_AVAILABLE",
+    "feature_custody": {
+      "away_stats_as_of": [
+        2026,
+        2
+      ],
+      "extrapolated_features": [],
+      "home_stats_as_of": [
+        2026,
+        2
+      ],
+      "values": {
+        "away_defense_epa_play": -0.07955510689342157,
+        "away_offense_epa_play": 0.058093879304882384,
+        "home_defense_epa_play": -0.1308416467086896,
+        "home_offense_epa_play": 0.09543588108372021
+      }
+    },
+    "game_id": 401867804,
+    "historical_direction_context": {
+      "losses": 623,
+      "n": 1388,
+      "prediction_mae": 12.8943,
+      "prediction_rmse": 16.4369,
+      "pushes": 19,
+      "roi_at_minus_110": 0.039756,
+      "win_rate_excluding_pushes": 0.544923,
+      "wins": 746
+    },
+    "historical_edge_context": {
+      "label": "10_to_under_15",
+      "losses": 108,
+      "lower": 10.0,
+      "n": 264,
+      "pushes": 3,
+      "roi_at_minus_110": 0.117769,
+      "upper_exclusive": 15.0,
+      "win_rate_excluding_pushes": 0.586207,
+      "wins": 153
+    },
+    "home": "Baylor",
+    "locked_total": 52.5,
+    "primary_model_risk": "Raw normal-residual probability is not empirically calibrated.",
+    "projected_away_points": 15.956448101382296,
+    "projected_home_points": 24.61814070000577,
+    "projected_total": 40.57458880138807,
+    "raw_disagreement_points": 11.925411198611933,
+    "raw_model_probability": 0.7624845898290504,
+    "raw_probability_status": "RAW_MODEL_PROBABILITY_NOT_EMPIRICALLY_CALIBRATED",
+    "record_type": "shadow_prediction",
+    "selected_direction": "UNDER",
+    "shadow_confidence": 4,
+    "skip_reason": null,
+    "total_card_candidate_id": null,
+    "uncertainty_points": 16.694830753314726
+  },
+  {
+    "away": "Ball State",
+    "data_quality_flags": [],
+    "eligibility": "SHADOW_REVIEW",
+    "empirically_calibrated_probability": "NOT_AVAILABLE",
+    "feature_custody": {
+      "away_stats_as_of": [
+        2026,
+        2
+      ],
+      "extrapolated_features": [],
+      "home_stats_as_of": [
+        2026,
+        2
+      ],
+      "values": {
+        "away_defense_epa_play": 0.22954668897666305,
+        "away_offense_epa_play": 0.06593569987468169,
+        "home_defense_epa_play": 0.02950823087776632,
+        "home_offense_epa_play": -0.11610195104079693
+      }
+    },
+    "game_id": 401866422,
+    "historical_direction_context": {
+      "losses": 623,
+      "n": 1388,
+      "prediction_mae": 12.8943,
+      "prediction_rmse": 16.4369,
+      "pushes": 19,
+      "roi_at_minus_110": 0.039756,
+      "win_rate_excluding_pushes": 0.544923,
+      "wins": 746
+    },
+    "historical_edge_context": {
+      "label": "4_to_under_5",
+      "losses": 185,
+      "lower": 4.0,
+      "n": 388,
+      "pushes": 4,
+      "roi_at_minus_110": -0.010544,
+      "upper_exclusive": 5.0,
+      "win_rate_excluding_pushes": 0.518229,
+      "wins": 199
+    },
+    "home": "Liberty",
+    "locked_total": 49.5,
+    "primary_model_risk": "Raw normal-residual probability is not empirically calibrated.",
+    "projected_away_points": 20.209485352039685,
+    "projected_home_points": 24.43722500948599,
+    "projected_total": 44.64671036152568,
+    "raw_disagreement_points": 4.8532896384743225,
+    "raw_model_probability": 0.6143619585174227,
+    "raw_probability_status": "RAW_MODEL_PROBABILITY_NOT_EMPIRICALLY_CALIBRATED",
+    "record_type": "shadow_prediction",
+    "selected_direction": "UNDER",
+    "shadow_confidence": 3,
+    "skip_reason": null,
+    "total_card_candidate_id": null,
+    "uncertainty_points": 16.694830753314726
+  },
+  {
+    "away": "Mississippi State",
+    "data_quality_flags": [],
+    "eligibility": "SHADOW_REVIEW",
+    "empirically_calibrated_probability": "NOT_AVAILABLE",
+    "feature_custody": {
+      "away_stats_as_of": [
+        2026,
+        2
+      ],
+      "extrapolated_features": [],
+      "home_stats_as_of": [
+        2026,
+        2
+      ],
+      "values": {
+        "away_defense_epa_play": -0.16917369488956105,
+        "away_offense_epa_play": 0.5855603963103305,
+        "home_defense_epa_play": -0.04719525518308177,
+        "home_offense_epa_play": 0.33314414594525493
+      }
+    },
+    "game_id": 401856691,
+    "historical_direction_context": {
+      "losses": 623,
+      "n": 1388,
+      "prediction_mae": 12.8943,
+      "prediction_rmse": 16.4369,
+      "pushes": 19,
+      "roi_at_minus_110": 0.039756,
+      "win_rate_excluding_pushes": 0.544923,
+      "wins": 746
+    },
+    "historical_edge_context": {
+      "label": "3_to_under_4",
+      "losses": 214,
+      "lower": 3.0,
+      "n": 431,
+      "pushes": 6,
+      "roi_at_minus_110": -0.051466,
+      "upper_exclusive": 4.0,
+      "win_rate_excluding_pushes": 0.496471,
+      "wins": 211
+    },
+    "home": "South Carolina",
+    "locked_total": 58.5,
+    "primary_model_risk": "Raw normal-residual probability is not empirically calibrated.",
+    "projected_away_points": 30.45126482096957,
+    "projected_home_points": 24.089559861475138,
+    "projected_total": 54.54082468244471,
+    "raw_disagreement_points": 3.9591753175552924,
+    "raw_model_probability": 0.5937296997597565,
+    "raw_probability_status": "RAW_MODEL_PROBABILITY_NOT_EMPIRICALLY_CALIBRATED",
+    "record_type": "shadow_prediction",
+    "selected_direction": "UNDER",
+    "shadow_confidence": 2,
+    "skip_reason": null,
+    "total_card_candidate_id": null,
+    "uncertainty_points": 16.694830753314726
+  },
+  {
+    "away": "Charlotte",
+    "data_quality_flags": [],
+    "eligibility": "SHADOW_REVIEW",
+    "empirically_calibrated_probability": "NOT_AVAILABLE",
+    "feature_custody": {
+      "away_stats_as_of": [
+        2026,
+        2
+      ],
+      "extrapolated_features": [],
+      "home_stats_as_of": [
+        2026,
+        2
+      ],
+      "values": {
+        "away_defense_epa_play": 0.375064790217641,
+        "away_offense_epa_play": 0.13039069547927434,
+        "home_defense_epa_play": 0.12858929316792805,
+        "home_offense_epa_play": 0.2971502441250783
+      }
+    },
+    "game_id": 401864574,
+    "historical_direction_context": {
+      "losses": 1161,
+      "n": 2331,
+      "prediction_mae": 13.3693,
+      "prediction_rmse": 16.5885,
+      "pushes": 19,
+      "roi_at_minus_110": -0.049179,
+      "win_rate_excluding_pushes": 0.497837,
+      "wins": 1151
+    },
+    "historical_edge_context": {
+      "label": "6_to_under_8",
+      "losses": 209,
+      "lower": 6.0,
+      "n": 461,
+      "pushes": 2,
+      "roi_at_minus_110": 0.039637,
+      "upper_exclusive": 8.0,
+      "win_rate_excluding_pushes": 0.544662,
+      "wins": 250
+    },
+    "home": "App State",
+    "locked_total": 51.5,
+    "primary_model_risk": "Raw normal-residual probability is not empirically calibrated.",
+    "projected_away_points": 20.650138551027943,
+    "projected_home_points": 37.48277325985126,
+    "projected_total": 58.1329118108792,
+    "raw_disagreement_points": 6.6329118108792,
+    "raw_model_probability": 0.6544281030590344,
+    "raw_probability_status": "RAW_MODEL_PROBABILITY_NOT_EMPIRICALLY_CALIBRATED",
+    "record_type": "shadow_prediction",
+    "selected_direction": "OVER",
+    "shadow_confidence": 3,
+    "skip_reason": null,
+    "total_card_candidate_id": null,
+    "uncertainty_points": 16.694830753314726
+  },
+  {
+    "away": "East Carolina",
+    "data_quality_flags": [],
+    "eligibility": "SHADOW_REVIEW",
+    "empirically_calibrated_probability": "NOT_AVAILABLE",
+    "feature_custody": {
+      "away_stats_as_of": [
+        2026,
+        2
+      ],
+      "extrapolated_features": [],
+      "home_stats_as_of": [
+        2026,
+        2
+      ],
+      "values": {
+        "away_defense_epa_play": 0.2568352025600416,
+        "away_offense_epa_play": 0.1676505230630775,
+        "home_defense_epa_play": 0.013918456869979407,
+        "home_offense_epa_play": 0.07282805948247816
+      }
+    },
+    "game_id": 401862710,
+    "historical_direction_context": {
+      "losses": 1161,
+      "n": 2331,
+      "prediction_mae": 13.3693,
+      "prediction_rmse": 16.5885,
+      "pushes": 19,
+      "roi_at_minus_110": -0.049179,
+      "win_rate_excluding_pushes": 0.497837,
+      "wins": 1151
+    },
+    "historical_edge_context": {
+      "label": "0_to_under_1",
+      "losses": 250,
+      "lower": 0.0,
+      "n": 506,
+      "pushes": 5,
+      "roi_at_minus_110": -0.043119,
+      "upper_exclusive": 1.0,
+      "win_rate_excluding_pushes": 0.500998,
+      "wins": 251
+    },
+    "home": "Old Dominion",
+    "locked_total": 49.5,
+    "primary_model_risk": "Raw normal-residual probability is not empirically calibrated.",
+    "projected_away_points": 20.8154689828942,
+    "projected_home_points": 29.50161441773943,
+    "projected_total": 50.31708340063363,
+    "raw_disagreement_points": 0.8170834006336278,
+    "raw_model_probability": 0.5195173602979101,
+    "raw_probability_status": "RAW_MODEL_PROBABILITY_NOT_EMPIRICALLY_CALIBRATED",
+    "record_type": "shadow_prediction",
+    "selected_direction": "OVER",
+    "shadow_confidence": 1,
+    "skip_reason": null,
+    "total_card_candidate_id": null,
+    "uncertainty_points": 16.694830753314726
+  },
+  {
+    "away": "Florida International",
+    "data_quality_flags": [],
+    "eligibility": "SHADOW_REVIEW",
+    "empirically_calibrated_probability": "NOT_AVAILABLE",
+    "feature_custody": {
+      "away_stats_as_of": [
+        2026,
+        2
+      ],
+      "extrapolated_features": [],
+      "home_stats_as_of": [
+        2026,
+        2
+      ],
+      "values": {
+        "away_defense_epa_play": -0.044960223512562854,
+        "away_offense_epa_play": -0.002803154418928294,
+        "home_defense_epa_play": 0.31072528320063625,
+        "home_offense_epa_play": 0.12742576408167808
+      }
+    },
+    "game_id": 401862771,
+    "historical_direction_context": {
+      "losses": 623,
+      "n": 1388,
+      "prediction_mae": 12.8943,
+      "prediction_rmse": 16.4369,
+      "pushes": 19,
+      "roi_at_minus_110": 0.039756,
+      "win_rate_excluding_pushes": 0.544923,
+      "wins": 746
+    },
+    "historical_edge_context": {
+      "label": "10_to_under_15",
+      "losses": 108,
+      "lower": 10.0,
+      "n": 264,
+      "pushes": 3,
+      "roi_at_minus_110": 0.117769,
+      "upper_exclusive": 15.0,
+      "win_rate_excluding_pushes": 0.586207,
+      "wins": 153
+    },
+    "home": "Florida Atlantic",
+    "locked_total": 62.5,
+    "primary_model_risk": "Raw normal-residual probability is not empirically calibrated.",
+    "projected_away_points": 26.073984637228055,
+    "projected_home_points": 22.681589024562147,
+    "projected_total": 48.7555736617902,
+    "raw_disagreement_points": 13.744426338209799,
+    "raw_model_probability": 0.7948240085542697,
+    "raw_probability_status": "RAW_MODEL_PROBABILITY_NOT_EMPIRICALLY_CALIBRATED",
+    "record_type": "shadow_prediction",
+    "selected_direction": "UNDER",
+    "shadow_confidence": 4,
+    "skip_reason": null,
+    "total_card_candidate_id": null,
+    "uncertainty_points": 16.694830753314726
+  },
+  {
+    "away": "Marshall",
+    "data_quality_flags": [],
+    "eligibility": "SHADOW_REVIEW",
+    "empirically_calibrated_probability": "NOT_AVAILABLE",
+    "feature_custody": {
+      "away_stats_as_of": [
+        2026,
+        2
+      ],
+      "extrapolated_features": [],
+      "home_stats_as_of": [
+        2026,
+        2
+      ],
+      "values": {
+        "away_defense_epa_play": 0.3392639976860251,
+        "away_offense_epa_play": 0.03880454920053952,
+        "home_defense_epa_play": 0.15738224722780622,
+        "home_offense_epa_play": 0.08129729414617068
+      }
+    },
+    "game_id": 401871047,
+    "historical_direction_context": {
+      "losses": 623,
+      "n": 1388,
+      "prediction_mae": 12.8943,
+      "prediction_rmse": 16.4369,
+      "pushes": 19,
+      "roi_at_minus_110": 0.039756,
+      "win_rate_excluding_pushes": 0.544923,
+      "wins": 746
+    },
+    "historical_edge_context": {
+      "label": "0_to_under_1",
+      "losses": 250,
+      "lower": 0.0,
+      "n": 506,
+      "pushes": 5,
+      "roi_at_minus_110": -0.043119,
+      "upper_exclusive": 1.0,
+      "win_rate_excluding_pushes": 0.500998,
+      "wins": 251
+    },
+    "home": "Missouri State",
+    "locked_total": 52.5,
+    "primary_model_risk": "Raw normal-residual probability is not empirically calibrated.",
+    "projected_away_points": 20.912379284203638,
+    "projected_home_points": 31.29775230205734,
+    "projected_total": 52.21013158626098,
+    "raw_disagreement_points": 0.28986841373902195,
+    "raw_model_probability": 0.5069263928265875,
+    "raw_probability_status": "RAW_MODEL_PROBABILITY_NOT_EMPIRICALLY_CALIBRATED",
+    "record_type": "shadow_prediction",
+    "selected_direction": "UNDER",
+    "shadow_confidence": 1,
+    "skip_reason": null,
+    "total_card_candidate_id": null,
+    "uncertainty_points": 16.694830753314726
+  },
+  {
+    "away": "Ohio",
+    "data_quality_flags": [],
+    "eligibility": "SHADOW_REVIEW",
+    "empirically_calibrated_probability": "NOT_AVAILABLE",
+    "feature_custody": {
+      "away_stats_as_of": [
+        2026,
+        2
+      ],
+      "extrapolated_features": [],
+      "home_stats_as_of": [
+        2026,
+        2
+      ],
+      "values": {
+        "away_defense_epa_play": 0.36436680016988715,
+        "away_offense_epa_play": 0.07631328053469545,
+        "home_defense_epa_play": 0.16612120630007077,
+        "home_offense_epa_play": 0.15426759666788942
+      }
+    },
+    "game_id": 401866423,
+    "historical_direction_context": {
+      "losses": 1161,
+      "n": 2331,
+      "prediction_mae": 13.3693,
+      "prediction_rmse": 16.5885,
+      "pushes": 19,
+      "roi_at_minus_110": -0.049179,
+      "win_rate_excluding_pushes": 0.497837,
+      "wins": 1151
+    },
+    "historical_edge_context": {
+      "label": "3_to_under_4",
+      "losses": 214,
+      "lower": 3.0,
+      "n": 431,
+      "pushes": 6,
+      "roi_at_minus_110": -0.051466,
+      "upper_exclusive": 4.0,
+      "win_rate_excluding_pushes": 0.496471,
+      "wins": 211
+    },
+    "home": "South Alabama",
+    "locked_total": 51.5,
+    "primary_model_risk": "Raw normal-residual probability is not empirically calibrated.",
+    "projected_away_points": 21.41701871901619,
+    "projected_home_points": 33.46430777423125,
+    "projected_total": 54.88132649324744,
+    "raw_disagreement_points": 3.3813264932474425,
+    "raw_model_probability": 0.5802516621371476,
+    "raw_probability_status": "RAW_MODEL_PROBABILITY_NOT_EMPIRICALLY_CALIBRATED",
+    "record_type": "shadow_prediction",
+    "selected_direction": "OVER",
+    "shadow_confidence": 2,
+    "skip_reason": null,
+    "total_card_candidate_id": null,
+    "uncertainty_points": 16.694830753314726
+  },
+  {
+    "away": "Western Michigan",
+    "data_quality_flags": [],
+    "eligibility": "SHADOW_REVIEW",
+    "empirically_calibrated_probability": "NOT_AVAILABLE",
+    "feature_custody": {
+      "away_stats_as_of": [
+        2026,
+        2
+      ],
+      "extrapolated_features": [],
+      "home_stats_as_of": [
+        2026,
+        2
+      ],
+      "values": {
+        "away_defense_epa_play": -0.036087015939101914,
+        "away_offense_epa_play": 0.15776744018512157,
+        "home_defense_epa_play": 0.10775862172824827,
+        "home_offense_epa_play": -0.02785379591416674
+      }
+    },
+    "game_id": 401862773,
+    "historical_direction_context": {
+      "losses": 1161,
+      "n": 2331,
+      "prediction_mae": 13.3693,
+      "prediction_rmse": 16.5885,
+      "pushes": 19,
+      "roi_at_minus_110": -0.049179,
+      "win_rate_excluding_pushes": 0.497837,
+      "wins": 1151
+    },
+    "historical_edge_context": {
+      "label": "1_to_under_2",
+      "losses": 266,
+      "lower": 1.0,
+      "n": 520,
+      "pushes": 8,
+      "roi_at_minus_110": -0.081469,
+      "upper_exclusive": 2.0,
+      "win_rate_excluding_pushes": 0.480469,
+      "wins": 246
+    },
+    "home": "Rice",
+    "locked_total": 43.5,
+    "primary_model_risk": "Raw normal-residual probability is not empirically calibrated.",
+    "projected_away_points": 25.66613999183305,
+    "projected_home_points": 19.313135171991245,
+    "projected_total": 44.9792751638243,
+    "raw_disagreement_points": 1.4792751638242976,
+    "raw_model_probability": 0.5353027894303571,
+    "raw_probability_status": "RAW_MODEL_PROBABILITY_NOT_EMPIRICALLY_CALIBRATED",
+    "record_type": "shadow_prediction",
+    "selected_direction": "OVER",
+    "shadow_confidence": 1,
+    "skip_reason": null,
+    "total_card_candidate_id": null,
+    "uncertainty_points": 16.694830753314726
+  },
+  {
+    "away": "Troy",
+    "data_quality_flags": [],
+    "eligibility": "SHADOW_REVIEW",
+    "empirically_calibrated_probability": "NOT_AVAILABLE",
+    "feature_custody": {
+      "away_stats_as_of": [
+        2026,
+        2
+      ],
+      "extrapolated_features": [],
+      "home_stats_as_of": [
+        2026,
+        2
+      ],
+      "values": {
+        "away_defense_epa_play": -0.07309036672333533,
+        "away_offense_epa_play": 0.18322326119528756,
+        "home_defense_epa_play": -0.16637080117603154,
+        "home_offense_epa_play": 0.26680855441715845
+      }
+    },
+    "game_id": 401856689,
+    "historical_direction_context": {
+      "losses": 623,
+      "n": 1388,
+      "prediction_mae": 12.8943,
+      "prediction_rmse": 16.4369,
+      "pushes": 19,
+      "roi_at_minus_110": 0.039756,
+      "win_rate_excluding_pushes": 0.544923,
+      "wins": 746
+    },
+    "historical_edge_context": {
+      "label": "4_to_under_5",
+      "losses": 185,
+      "lower": 4.0,
+      "n": 388,
+      "pushes": 4,
+      "roi_at_minus_110": -0.010544,
+      "upper_exclusive": 5.0,
+      "win_rate_excluding_pushes": 0.518229,
+      "wins": 199
+    },
+    "home": "Missouri",
+    "locked_total": 50.5,
+    "primary_model_risk": "Raw normal-residual probability is not empirically calibrated.",
+    "projected_away_points": 16.865885738472794,
+    "projected_home_points": 28.734510203939113,
+    "projected_total": 45.60039594241191,
+    "raw_disagreement_points": 4.899604057588093,
+    "raw_model_probability": 0.6154224751240001,
+    "raw_probability_status": "RAW_MODEL_PROBABILITY_NOT_EMPIRICALLY_CALIBRATED",
+    "record_type": "shadow_prediction",
+    "selected_direction": "UNDER",
+    "shadow_confidence": 3,
+    "skip_reason": null,
+    "total_card_candidate_id": null,
+    "uncertainty_points": 16.694830753314726
+  },
+  {
+    "away": "UConn",
+    "data_quality_flags": [],
+    "eligibility": "SHADOW_REVIEW",
+    "empirically_calibrated_probability": "NOT_AVAILABLE",
+    "feature_custody": {
+      "away_stats_as_of": [
+        2026,
+        2
+      ],
+      "extrapolated_features": [],
+      "home_stats_as_of": [
+        2026,
+        2
+      ],
+      "values": {
+        "away_defense_epa_play": 0.1142393578463542,
+        "away_offense_epa_play": 0.25237262582718367,
+        "home_defense_epa_play": 0.11323955049300269,
+        "home_offense_epa_play": 0.16609040295974684
+      }
+    },
+    "game_id": 401861963,
+    "historical_direction_context": {
+      "losses": 623,
+      "n": 1388,
+      "prediction_mae": 12.8943,
+      "prediction_rmse": 16.4369,
+      "pushes": 19,
+      "roi_at_minus_110": 0.039756,
+      "win_rate_excluding_pushes": 0.544923,
+      "wins": 746
+    },
+    "historical_edge_context": {
+      "label": "1_to_under_2",
+      "losses": 266,
+      "lower": 1.0,
+      "n": 520,
+      "pushes": 8,
+      "roi_at_minus_110": -0.081469,
+      "upper_exclusive": 2.0,
+      "win_rate_excluding_pushes": 0.480469,
+      "wins": 246
+    },
+    "home": "Southern Miss",
+    "locked_total": 54.5,
+    "primary_model_risk": "Raw normal-residual probability is not empirically calibrated.",
+    "projected_away_points": 25.880181267322165,
+    "projected_home_points": 27.18358044118658,
+    "projected_total": 53.06376170850875,
+    "raw_disagreement_points": 1.4362382914912502,
+    "raw_model_probability": 0.5342782869628977,
+    "raw_probability_status": "RAW_MODEL_PROBABILITY_NOT_EMPIRICALLY_CALIBRATED",
+    "record_type": "shadow_prediction",
+    "selected_direction": "UNDER",
+    "shadow_confidence": 1,
+    "skip_reason": null,
+    "total_card_candidate_id": null,
+    "uncertainty_points": 16.694830753314726
+  },
+  {
+    "away": "Nevada",
+    "data_quality_flags": [],
+    "eligibility": "SHADOW_REVIEW",
+    "empirically_calibrated_probability": "NOT_AVAILABLE",
+    "feature_custody": {
+      "away_stats_as_of": [
+        2026,
+        2
+      ],
+      "extrapolated_features": [],
+      "home_stats_as_of": [
+        2026,
+        2
+      ],
+      "values": {
+        "away_defense_epa_play": 0.04771799370757256,
+        "away_offense_epa_play": 0.10019105401896868,
+        "home_defense_epa_play": 0.09687057379234552,
+        "home_offense_epa_play": 0.2627298867802216
+      }
+    },
+    "game_id": 401864443,
+    "historical_direction_context": {
+      "losses": 623,
+      "n": 1388,
+      "prediction_mae": 12.8943,
+      "prediction_rmse": 16.4369,
+      "pushes": 19,
+      "roi_at_minus_110": 0.039756,
+      "win_rate_excluding_pushes": 0.544923,
+      "wins": 746
+    },
+    "historical_edge_context": {
+      "label": "0_to_under_1",
+      "losses": 250,
+      "lower": 0.0,
+      "n": 506,
+      "pushes": 5,
+      "roi_at_minus_110": -0.043119,
+      "upper_exclusive": 1.0,
+      "win_rate_excluding_pushes": 0.500998,
+      "wins": 251
+    },
+    "home": "Middle Tennessee",
+    "locked_total": 51.5,
+    "primary_model_risk": "Raw normal-residual probability is not empirically calibrated.",
+    "projected_away_points": 21.267654948253558,
+    "projected_home_points": 29.608530601618543,
+    "projected_total": 50.876185549872105,
+    "raw_disagreement_points": 0.6238144501278953,
+    "raw_model_probability": 0.5149032993555832,
+    "raw_probability_status": "RAW_MODEL_PROBABILITY_NOT_EMPIRICALLY_CALIBRATED",
+    "record_type": "shadow_prediction",
+    "selected_direction": "UNDER",
+    "shadow_confidence": 1,
+    "skip_reason": null,
+    "total_card_candidate_id": null,
+    "uncertainty_points": 16.694830753314726
+  },
+  {
+    "away": "Georgia Southern",
+    "data_quality_flags": [],
+    "eligibility": "SHADOW_REVIEW",
+    "empirically_calibrated_probability": "NOT_AVAILABLE",
+    "feature_custody": {
+      "away_stats_as_of": [
+        2026,
+        2
+      ],
+      "extrapolated_features": [],
+      "home_stats_as_of": [
+        2026,
+        2
+      ],
+      "values": {
+        "away_defense_epa_play": -0.17223215094251232,
+        "away_offense_epa_play": 0.07581670429454632,
+        "home_defense_epa_play": 0.057092075188441685,
+        "home_offense_epa_play": 0.14904453228349632
+      }
+    },
+    "game_id": 401869948,
+    "historical_direction_context": {
+      "losses": 623,
+      "n": 1388,
+      "prediction_mae": 12.8943,
+      "prediction_rmse": 16.4369,
+      "pushes": 19,
+      "roi_at_minus_110": 0.039756,
+      "win_rate_excluding_pushes": 0.544923,
+      "wins": 746
+    },
+    "historical_edge_context": {
+      "label": "8_to_under_10",
+      "losses": 136,
+      "lower": 8.0,
+      "n": 303,
+      "pushes": 3,
+      "roi_at_minus_110": 0.043204,
+      "upper_exclusive": 10.0,
+      "win_rate_excluding_pushes": 0.546667,
+      "wins": 164
+    },
+    "home": "Jacksonville State",
+    "locked_total": 52.5,
+    "primary_model_risk": "Raw normal-residual probability is not empirically calibrated.",
+    "projected_away_points": 21.734917077820946,
+    "projected_home_points": 22.078762364664883,
+    "projected_total": 43.81367944248583,
+    "raw_disagreement_points": 8.686320557514172,
+    "raw_model_probability": 0.6985727544838131,
+    "raw_probability_status": "RAW_MODEL_PROBABILITY_NOT_EMPIRICALLY_CALIBRATED",
+    "record_type": "shadow_prediction",
+    "selected_direction": "UNDER",
+    "shadow_confidence": 3,
+    "skip_reason": null,
+    "total_card_candidate_id": null,
+    "uncertainty_points": 16.694830753314726
+  },
+  {
+    "away": "Florida",
+    "data_quality_flags": [],
+    "eligibility": "SHADOW_REVIEW",
+    "empirically_calibrated_probability": "NOT_AVAILABLE",
+    "feature_custody": {
+      "away_stats_as_of": [
+        2026,
+        2
+      ],
+      "extrapolated_features": [],
+      "home_stats_as_of": [
+        2026,
+        2
+      ],
+      "values": {
+        "away_defense_epa_play": -0.1864284110571179,
+        "away_offense_epa_play": 0.5959748210409541,
+        "home_defense_epa_play": -0.06870965347701778,
+        "home_offense_epa_play": 0.13108296200484887
+      }
+    },
+    "game_id": 401856687,
+    "historical_direction_context": {
+      "losses": 623,
+      "n": 1388,
+      "prediction_mae": 12.8943,
+      "prediction_rmse": 16.4369,
+      "pushes": 19,
+      "roi_at_minus_110": 0.039756,
+      "win_rate_excluding_pushes": 0.544923,
+      "wins": 746
+    },
+    "historical_edge_context": {
+      "label": "3_to_under_4",
+      "losses": 214,
+      "lower": 3.0,
+      "n": 431,
+      "pushes": 6,
+      "roi_at_minus_110": -0.051466,
+      "upper_exclusive": 4.0,
+      "win_rate_excluding_pushes": 0.496471,
+      "wins": 211
+    },
+    "home": "Auburn",
+    "locked_total": 53.5,
+    "primary_model_risk": "Raw normal-residual probability is not empirically calibrated.",
+    "projected_away_points": 31.709220792770786,
+    "projected_home_points": 18.366180287868104,
+    "projected_total": 50.07540108063889,
+    "raw_disagreement_points": 3.4245989193611095,
+    "raw_model_probability": 0.5812644468458903,
+    "raw_probability_status": "RAW_MODEL_PROBABILITY_NOT_EMPIRICALLY_CALIBRATED",
+    "record_type": "shadow_prediction",
+    "selected_direction": "UNDER",
+    "shadow_confidence": 2,
+    "skip_reason": null,
+    "total_card_candidate_id": null,
+    "uncertainty_points": 16.694830753314726
+  },
+  {
+    "away": "Georgia State",
+    "data_quality_flags": [],
+    "eligibility": "SHADOW_REVIEW",
+    "empirically_calibrated_probability": "NOT_AVAILABLE",
+    "feature_custody": {
+      "away_stats_as_of": [
+        2026,
+        2
+      ],
+      "extrapolated_features": [],
+      "home_stats_as_of": [
+        2026,
+        2
+      ],
+      "values": {
+        "away_defense_epa_play": -0.030818774333277083,
+        "away_offense_epa_play": 0.4056545531063136,
+        "home_defense_epa_play": -0.13223636415763018,
+        "home_offense_epa_play": -0.04061614838776895
+      }
+    },
+    "game_id": 401856800,
+    "historical_direction_context": {
+      "losses": 623,
+      "n": 1388,
+      "prediction_mae": 12.8943,
+      "prediction_rmse": 16.4369,
+      "pushes": 19,
+      "roi_at_minus_110": 0.039756,
+      "win_rate_excluding_pushes": 0.544923,
+      "wins": 746
+    },
+    "historical_edge_context": {
+      "label": "6_to_under_8",
+      "losses": 209,
+      "lower": 6.0,
+      "n": 461,
+      "pushes": 2,
+      "roi_at_minus_110": 0.039637,
+      "upper_exclusive": 8.0,
+      "win_rate_excluding_pushes": 0.544662,
+      "wins": 250
+    },
+    "home": "UCF",
+    "locked_total": 51.5,
+    "primary_model_risk": "Raw normal-residual probability is not empirically calibrated.",
+    "projected_away_points": 25.43927354287163,
+    "projected_home_points": 19.36249858195767,
+    "projected_total": 44.8017721248293,
+    "raw_disagreement_points": 6.698227875170701,
+    "raw_model_probability": 0.6558693313542163,
+    "raw_probability_status": "RAW_MODEL_PROBABILITY_NOT_EMPIRICALLY_CALIBRATED",
+    "record_type": "shadow_prediction",
+    "selected_direction": "UNDER",
+    "shadow_confidence": 3,
+    "skip_reason": null,
+    "total_card_candidate_id": null,
+    "uncertainty_points": 16.694830753314726
+  },
+  {
+    "away": "Virginia Tech",
+    "data_quality_flags": [],
+    "eligibility": "SHADOW_REVIEW",
+    "empirically_calibrated_probability": "NOT_AVAILABLE",
+    "feature_custody": {
+      "away_stats_as_of": [
+        2026,
+        2
+      ],
+      "extrapolated_features": [],
+      "home_stats_as_of": [
+        2026,
+        2
+      ],
+      "values": {
+        "away_defense_epa_play": -0.23350598876588413,
+        "away_offense_epa_play": 0.459059940830105,
+        "home_defense_epa_play": -0.20578094501141098,
+        "home_offense_epa_play": 0.3154766524648116
+      }
+    },
+    "game_id": 401858232,
+    "historical_direction_context": {
+      "losses": 623,
+      "n": 1388,
+      "prediction_mae": 12.8943,
+      "prediction_rmse": 16.4369,
+      "pushes": 19,
+      "roi_at_minus_110": 0.039756,
+      "win_rate_excluding_pushes": 0.544923,
+      "wins": 746
+    },
+    "historical_edge_context": {
+      "label": "5_to_under_6",
+      "losses": 166,
+      "lower": 5.0,
+      "n": 337,
+      "pushes": 2,
+      "roi_at_minus_110": -0.036687,
+      "upper_exclusive": 6.0,
+      "win_rate_excluding_pushes": 0.504478,
+      "wins": 169
+    },
+    "home": "Maryland",
+    "locked_total": 53.5,
+    "primary_model_risk": "Raw normal-residual probability is not empirically calibrated.",
+    "projected_away_points": 23.41341461718684,
+    "projected_home_points": 24.592038728352474,
+    "projected_total": 48.005453345539316,
+    "raw_disagreement_points": 5.4945466544606845,
+    "raw_model_probability": 0.6289662374976759,
+    "raw_probability_status": "RAW_MODEL_PROBABILITY_NOT_EMPIRICALLY_CALIBRATED",
+    "record_type": "shadow_prediction",
+    "selected_direction": "UNDER",
+    "shadow_confidence": 3,
+    "skip_reason": null,
+    "total_card_candidate_id": null,
+    "uncertainty_points": 16.694830753314726
+  },
+  {
+    "away": "BYU",
+    "data_quality_flags": [],
+    "eligibility": "SHADOW_REVIEW",
+    "empirically_calibrated_probability": "NOT_AVAILABLE",
+    "feature_custody": {
+      "away_stats_as_of": [
+        2026,
+        2
+      ],
+      "extrapolated_features": [],
+      "home_stats_as_of": [
+        2026,
+        2
+      ],
+      "values": {
+        "away_defense_epa_play": -0.13704850198958124,
+        "away_offense_epa_play": 0.5203958783433291,
+        "home_defense_epa_play": -0.08012883386862096,
+        "home_offense_epa_play": 0.42706988411904756
+      }
+    },
+    "game_id": 401856795,
+    "historical_direction_context": {
+      "losses": 1161,
+      "n": 2331,
+      "prediction_mae": 13.3693,
+      "prediction_rmse": 16.5885,
+      "pushes": 19,
+      "roi_at_minus_110": -0.049179,
+      "win_rate_excluding_pushes": 0.497837,
+      "wins": 1151
+    },
+    "historical_edge_context": {
+      "label": "2_to_under_3",
+      "losses": 227,
+      "lower": 2.0,
+      "n": 469,
+      "pushes": 5,
+      "roi_at_minus_110": -0.024617,
+      "upper_exclusive": 3.0,
+      "win_rate_excluding_pushes": 0.510776,
+      "wins": 237
+    },
+    "home": "Colorado State",
+    "locked_total": 52.5,
+    "primary_model_risk": "Raw normal-residual probability is not empirically calibrated.",
+    "projected_away_points": 27.0101610001515,
+    "projected_home_points": 28.166660210629654,
+    "projected_total": 55.176821210781156,
+    "raw_disagreement_points": 2.6768212107811564,
+    "raw_model_probability": 0.5636927150701986,
+    "raw_probability_status": "RAW_MODEL_PROBABILITY_NOT_EMPIRICALLY_CALIBRATED",
+    "record_type": "shadow_prediction",
+    "selected_direction": "OVER",
+    "shadow_confidence": 2,
+    "skip_reason": null,
+    "total_card_candidate_id": null,
+    "uncertainty_points": 16.694830753314726
+  },
+  {
+    "away": "LSU",
+    "data_quality_flags": [
+      "EXTREME_DISAGREEMENT_15_PLUS"
+    ],
+    "eligibility": "QUARANTINED_SHADOW",
+    "empirically_calibrated_probability": "NOT_AVAILABLE",
+    "feature_custody": {
+      "away_stats_as_of": [
+        2026,
+        2
+      ],
+      "extrapolated_features": [],
+      "home_stats_as_of": [
+        2026,
+        2
+      ],
+      "values": {
+        "away_defense_epa_play": -0.5964069336240049,
+        "away_offense_epa_play": 0.14256323194839376,
+        "home_defense_epa_play": 0.1643824634594712,
+        "home_offense_epa_play": 0.28454062253410906
+      }
+    },
+    "game_id": 401856688,
+    "historical_direction_context": {
+      "losses": 623,
+      "n": 1388,
+      "prediction_mae": 12.8943,
+      "prediction_rmse": 16.4369,
+      "pushes": 19,
+      "roi_at_minus_110": 0.039756,
+      "win_rate_excluding_pushes": 0.544923,
+      "wins": 746
+    },
+    "historical_edge_context": {
+      "label": "15_to_under_20",
+      "losses": 13,
+      "lower": 15.0,
+      "n": 27,
+      "pushes": 0,
+      "roi_at_minus_110": -0.010101,
+      "upper_exclusive": 20.0,
+      "win_rate_excluding_pushes": 0.518519,
+      "wins": 14
+    },
+    "home": "Ole Miss",
+    "locked_total": 59.5,
+    "primary_model_risk": "The model-total disagreement is in the audited unsafe tail.",
+    "projected_away_points": 27.975224297245795,
+    "projected_home_points": 14.536778041206114,
+    "projected_total": 42.51200233845191,
+    "raw_disagreement_points": 16.987997661548093,
+    "raw_model_probability": 0.845556528511505,
+    "raw_probability_status": "RAW_MODEL_PROBABILITY_NOT_EMPIRICALLY_CALIBRATED",
+    "record_type": "shadow_prediction",
+    "selected_direction": "UNDER",
+    "shadow_confidence": 5,
+    "skip_reason": null,
+    "total_card_candidate_id": null,
+    "uncertainty_points": 16.694830753314726
+  },
+  {
+    "away": "West Virginia",
+    "data_quality_flags": [],
+    "eligibility": "SHADOW_REVIEW",
+    "empirically_calibrated_probability": "NOT_AVAILABLE",
+    "feature_custody": {
+      "away_stats_as_of": [
+        2026,
+        2
+      ],
+      "extrapolated_features": [],
+      "home_stats_as_of": [
+        2026,
+        2
+      ],
+      "values": {
+        "away_defense_epa_play": 0.04500052470768789,
+        "away_offense_epa_play": 0.31940976342425,
+        "home_defense_epa_play": -0.26553430256208965,
+        "home_offense_epa_play": 0.3904028542073486
+      }
+    },
+    "game_id": 401856802,
+    "historical_direction_context": {
+      "losses": 623,
+      "n": 1388,
+      "prediction_mae": 12.8943,
+      "prediction_rmse": 16.4369,
+      "pushes": 19,
+      "roi_at_minus_110": 0.039756,
+      "win_rate_excluding_pushes": 0.544923,
+      "wins": 746
+    },
+    "historical_edge_context": {
+      "label": "2_to_under_3",
+      "losses": 227,
+      "lower": 2.0,
+      "n": 469,
+      "pushes": 5,
+      "roi_at_minus_110": -0.024617,
+      "upper_exclusive": 3.0,
+      "win_rate_excluding_pushes": 0.510776,
+      "wins": 237
+    },
+    "home": "Virginia",
+    "locked_total": 53.5,
+    "primary_model_risk": "Raw normal-residual probability is not empirically calibrated.",
+    "projected_away_points": 15.977675656958272,
+    "projected_home_points": 34.61123405718894,
+    "projected_total": 50.588909714147206,
+    "raw_disagreement_points": 2.9110902858527936,
+    "raw_model_probability": 0.5692129528377232,
+    "raw_probability_status": "RAW_MODEL_PROBABILITY_NOT_EMPIRICALLY_CALIBRATED",
+    "record_type": "shadow_prediction",
+    "selected_direction": "UNDER",
+    "shadow_confidence": 2,
+    "skip_reason": null,
+    "total_card_candidate_id": null,
+    "uncertainty_points": 16.694830753314726
+  },
+  {
+    "away": "New Mexico",
+    "data_quality_flags": [],
+    "eligibility": "SHADOW_REVIEW",
+    "empirically_calibrated_probability": "NOT_AVAILABLE",
+    "feature_custody": {
+      "away_stats_as_of": [
+        2026,
+        2
+      ],
+      "extrapolated_features": [],
+      "home_stats_as_of": [
+        2026,
+        2
+      ],
+      "values": {
+        "away_defense_epa_play": -0.38306528122851674,
+        "away_offense_epa_play": 0.29419931731011884,
+        "home_defense_epa_play": -0.1419773087564331,
+        "home_offense_epa_play": 0.08112952982619673
+      }
+    },
+    "game_id": 401856690,
+    "historical_direction_context": {
+      "losses": 623,
+      "n": 1388,
+      "prediction_mae": 12.8943,
+      "prediction_rmse": 16.4369,
+      "pushes": 19,
+      "roi_at_minus_110": 0.039756,
+      "win_rate_excluding_pushes": 0.544923,
+      "wins": 746
+    },
+    "historical_edge_context": {
+      "label": "6_to_under_8",
+      "losses": 209,
+      "lower": 6.0,
+      "n": 461,
+      "pushes": 2,
+      "roi_at_minus_110": 0.039637,
+      "upper_exclusive": 8.0,
+      "win_rate_excluding_pushes": 0.544662,
+      "wins": 250
+    },
+    "home": "Oklahoma",
+    "locked_total": 46.5,
+    "primary_model_risk": "Raw normal-residual probability is not empirically calibrated.",
+    "projected_away_points": 23.606551091906624,
+    "projected_home_points": 15.561101441172077,
+    "projected_total": 39.1676525330787,
+    "raw_disagreement_points": 7.3323474669212985,
+    "raw_model_probability": 0.6697412057517917,
+    "raw_probability_status": "RAW_MODEL_PROBABILITY_NOT_EMPIRICALLY_CALIBRATED",
+    "record_type": "shadow_prediction",
+    "selected_direction": "UNDER",
+    "shadow_confidence": 3,
+    "skip_reason": null,
+    "total_card_candidate_id": null,
+    "uncertainty_points": 16.694830753314726
+  },
+  {
+    "away": "Colorado",
+    "data_quality_flags": [],
+    "eligibility": "SHADOW_REVIEW",
+    "empirically_calibrated_probability": "NOT_AVAILABLE",
+    "feature_custody": {
+      "away_stats_as_of": [
+        2026,
+        2
+      ],
+      "extrapolated_features": [],
+      "home_stats_as_of": [
+        2026,
+        2
+      ],
+      "values": {
+        "away_defense_epa_play": -0.011366738702244075,
+        "away_offense_epa_play": 0.3015996888344145,
+        "home_defense_epa_play": 0.08997341550625394,
+        "home_offense_epa_play": 0.4796492784465596
+      }
+    },
+    "game_id": 401856796,
+    "historical_direction_context": {
+      "losses": 1161,
+      "n": 2331,
+      "prediction_mae": 13.3693,
+      "prediction_rmse": 16.5885,
+      "pushes": 19,
+      "roi_at_minus_110": -0.049179,
+      "win_rate_excluding_pushes": 0.497837,
+      "wins": 1151
+    },
+    "historical_edge_context": {
+      "label": "8_to_under_10",
+      "losses": 136,
+      "lower": 8.0,
+      "n": 303,
+      "pushes": 3,
+      "roi_at_minus_110": 0.043204,
+      "upper_exclusive": 10.0,
+      "win_rate_excluding_pushes": 0.546667,
+      "wins": 164
+    },
+    "home": "Northwestern",
+    "locked_total": 48.5,
+    "primary_model_risk": "Raw normal-residual probability is not empirically calibrated.",
+    "projected_away_points": 24.966676259711903,
+    "projected_home_points": 32.59657121441184,
+    "projected_total": 57.56324747412374,
+    "raw_disagreement_points": 9.063247474123742,
+    "raw_model_probability": 0.7063929152599336,
+    "raw_probability_status": "RAW_MODEL_PROBABILITY_NOT_EMPIRICALLY_CALIBRATED",
+    "record_type": "shadow_prediction",
+    "selected_direction": "OVER",
+    "shadow_confidence": 4,
+    "skip_reason": null,
+    "total_card_candidate_id": null,
+    "uncertainty_points": 16.694830753314726
+  },
+  {
+    "away": "Michigan State",
+    "data_quality_flags": [],
+    "eligibility": "SHADOW_REVIEW",
+    "empirically_calibrated_probability": "NOT_AVAILABLE",
+    "feature_custody": {
+      "away_stats_as_of": [
+        2026,
+        2
+      ],
+      "extrapolated_features": [],
+      "home_stats_as_of": [
+        2026,
+        2
+      ],
+      "values": {
+        "away_defense_epa_play": 0.08184972718027432,
+        "away_offense_epa_play": 0.1173668894937905,
+        "home_defense_epa_play": -0.28800801047928504,
+        "home_offense_epa_play": 0.4639520694285929
+      }
+    },
+    "game_id": 401858453,
+    "historical_direction_context": {
+      "losses": 623,
+      "n": 1388,
+      "prediction_mae": 12.8943,
+      "prediction_rmse": 16.4369,
+      "pushes": 19,
+      "roi_at_minus_110": 0.039756,
+      "win_rate_excluding_pushes": 0.544923,
+      "wins": 746
+    },
+    "historical_edge_context": {
+      "label": "3_to_under_4",
+      "losses": 214,
+      "lower": 3.0,
+      "n": 431,
+      "pushes": 6,
+      "roi_at_minus_110": -0.051466,
+      "upper_exclusive": 4.0,
+      "win_rate_excluding_pushes": 0.496471,
+      "wins": 211
+    },
+    "home": "Notre Dame",
+    "locked_total": 52.5,
+    "primary_model_risk": "Raw normal-residual probability is not empirically calibrated.",
+    "projected_away_points": 9.468444311506635,
+    "projected_home_points": 39.21968615728693,
+    "projected_total": 48.68813046879357,
+    "raw_disagreement_points": 3.8118695312064332,
+    "raw_model_probability": 0.5903037238531245,
+    "raw_probability_status": "RAW_MODEL_PROBABILITY_NOT_EMPIRICALLY_CALIBRATED",
+    "record_type": "shadow_prediction",
+    "selected_direction": "UNDER",
+    "shadow_confidence": 2,
+    "skip_reason": null,
+    "total_card_candidate_id": null,
+    "uncertainty_points": 16.694830753314726
+  },
+  {
+    "away": "Kennesaw State",
+    "data_quality_flags": [],
+    "eligibility": "SHADOW_REVIEW",
+    "empirically_calibrated_probability": "NOT_AVAILABLE",
+    "feature_custody": {
+      "away_stats_as_of": [
+        2026,
+        2
+      ],
+      "extrapolated_features": [],
+      "home_stats_as_of": [
+        2026,
+        2
+      ],
+      "values": {
+        "away_defense_epa_play": 0.07932262144598466,
+        "away_offense_epa_play": 0.18832665686540748,
+        "home_defense_epa_play": -0.16766065092597143,
+        "home_offense_epa_play": 0.32841787502380176
+      }
+    },
+    "game_id": 401856692,
+    "historical_direction_context": {
+      "losses": 623,
+      "n": 1388,
+      "prediction_mae": 12.8943,
+      "prediction_rmse": 16.4369,
+      "pushes": 19,
+      "roi_at_minus_110": 0.039756,
+      "win_rate_excluding_pushes": 0.544923,
+      "wins": 746
+    },
+    "historical_edge_context": {
+      "label": "10_to_under_15",
+      "losses": 108,
+      "lower": 10.0,
+      "n": 264,
+      "pushes": 3,
+      "roi_at_minus_110": 0.117769,
+      "upper_exclusive": 15.0,
+      "win_rate_excluding_pushes": 0.586207,
+      "wins": 153
+    },
+    "home": "Tennessee",
+    "locked_total": 60.5,
+    "primary_model_risk": "Raw normal-residual probability is not empirically calibrated.",
+    "projected_away_points": 15.577160211283879,
+    "projected_home_points": 33.84711074334657,
+    "projected_total": 49.424270954630444,
+    "raw_disagreement_points": 11.075729045369556,
+    "raw_model_probability": 0.7464700517866438,
+    "raw_probability_status": "RAW_MODEL_PROBABILITY_NOT_EMPIRICALLY_CALIBRATED",
+    "record_type": "shadow_prediction",
+    "selected_direction": "UNDER",
+    "shadow_confidence": 4,
+    "skip_reason": null,
+    "total_card_candidate_id": null,
+    "uncertainty_points": 16.694830753314726
+  },
+  {
+    "away": "Arkansas State",
+    "data_quality_flags": [],
+    "eligibility": "SHADOW_REVIEW",
+    "empirically_calibrated_probability": "NOT_AVAILABLE",
+    "feature_custody": {
+      "away_stats_as_of": [
+        2026,
+        2
+      ],
+      "extrapolated_features": [],
+      "home_stats_as_of": [
+        2026,
+        2
+      ],
+      "values": {
+        "away_defense_epa_play": 0.20797714676345552,
+        "away_offense_epa_play": 0.1721558928336657,
+        "home_defense_epa_play": -0.008167015748716231,
+        "home_offense_epa_play": 0.21182443807171852
+      }
+    },
+    "game_id": 401856799,
+    "historical_direction_context": {
+      "losses": 623,
+      "n": 1388,
+      "prediction_mae": 12.8943,
+      "prediction_rmse": 16.4369,
+      "pushes": 19,
+      "roi_at_minus_110": 0.039756,
+      "win_rate_excluding_pushes": 0.544923,
+      "wins": 746
+    },
+    "historical_edge_context": {
+      "label": "4_to_under_5",
+      "losses": 185,
+      "lower": 4.0,
+      "n": 388,
+      "pushes": 4,
+      "roi_at_minus_110": -0.010544,
+      "upper_exclusive": 5.0,
+      "win_rate_excluding_pushes": 0.518229,
+      "wins": 199
+    },
+    "home": "TCU",
+    "locked_total": 56.5,
+    "primary_model_risk": "Raw normal-residual probability is not empirically calibrated.",
+    "projected_away_points": 19.606341652595876,
+    "projected_home_points": 32.30045693585194,
+    "projected_total": 51.90679858844781,
+    "raw_disagreement_points": 4.593201411552187,
+    "raw_model_probability": 0.6083907280103966,
+    "raw_probability_status": "RAW_MODEL_PROBABILITY_NOT_EMPIRICALLY_CALIBRATED",
+    "record_type": "shadow_prediction",
+    "selected_direction": "UNDER",
+    "shadow_confidence": 3,
+    "skip_reason": null,
+    "total_card_candidate_id": null,
+    "uncertainty_points": 16.694830753314726
+  },
+  {
+    "away": "UTSA",
+    "data_quality_flags": [],
+    "eligibility": "SHADOW_REVIEW",
+    "empirically_calibrated_probability": "NOT_AVAILABLE",
+    "feature_custody": {
+      "away_stats_as_of": [
+        2026,
+        2
+      ],
+      "extrapolated_features": [],
+      "home_stats_as_of": [
+        2026,
+        2
+      ],
+      "values": {
+        "away_defense_epa_play": -0.02433258267505792,
+        "away_offense_epa_play": 0.2783294522494773,
+        "home_defense_epa_play": 0.10273421187260114,
+        "home_offense_epa_play": 0.2183737080465227
+      }
+    },
+    "game_id": 401856693,
+    "historical_direction_context": {
+      "losses": 623,
+      "n": 1388,
+      "prediction_mae": 12.8943,
+      "prediction_rmse": 16.4369,
+      "pushes": 19,
+      "roi_at_minus_110": 0.039756,
+      "win_rate_excluding_pushes": 0.544923,
+      "wins": 746
+    },
+    "historical_edge_context": {
+      "label": "6_to_under_8",
+      "losses": 209,
+      "lower": 6.0,
+      "n": 461,
+      "pushes": 2,
+      "roi_at_minus_110": 0.039637,
+      "upper_exclusive": 8.0,
+      "win_rate_excluding_pushes": 0.544662,
+      "wins": 250
+    },
+    "home": "Texas",
+    "locked_total": 58.5,
+    "primary_model_risk": "Raw normal-residual probability is not empirically calibrated.",
+    "projected_away_points": 26.7162685608348,
+    "projected_home_points": 25.322721981540756,
+    "projected_total": 52.03899054237556,
+    "raw_disagreement_points": 6.461009457624442,
+    "raw_model_probability": 0.6506243339740356,
+    "raw_probability_status": "RAW_MODEL_PROBABILITY_NOT_EMPIRICALLY_CALIBRATED",
+    "record_type": "shadow_prediction",
+    "selected_direction": "UNDER",
+    "shadow_confidence": 3,
+    "skip_reason": null,
+    "total_card_candidate_id": null,
+    "uncertainty_points": 16.694830753314726
+  },
+  {
+    "away": "UAB",
+    "data_quality_flags": [],
+    "eligibility": "SHADOW_REVIEW",
+    "empirically_calibrated_probability": "NOT_AVAILABLE",
+    "feature_custody": {
+      "away_stats_as_of": [
+        2026,
+        2
+      ],
+      "extrapolated_features": [],
+      "home_stats_as_of": [
+        2026,
+        2
+      ],
+      "values": {
+        "away_defense_epa_play": 0.08329417434843475,
+        "away_offense_epa_play": 0.11102505204997087,
+        "home_defense_epa_play": 0.12107219477260164,
+        "home_offense_epa_play": 0.2216276554468252
+      }
+    },
+    "game_id": 401862776,
+    "historical_direction_context": {
+      "losses": 623,
+      "n": 1388,
+      "prediction_mae": 12.8943,
+      "prediction_rmse": 16.4369,
+      "pushes": 19,
+      "roi_at_minus_110": 0.039756,
+      "win_rate_excluding_pushes": 0.544923,
+      "wins": 746
+    },
+    "historical_edge_context": {
+      "label": "5_to_under_6",
+      "losses": 166,
+      "lower": 5.0,
+      "n": 337,
+      "pushes": 2,
+      "roi_at_minus_110": -0.036687,
+      "upper_exclusive": 6.0,
+      "win_rate_excluding_pushes": 0.504478,
+      "wins": 169
+    },
+    "home": "Louisiana",
+    "locked_total": 56.5,
+    "primary_model_risk": "Raw normal-residual probability is not empirically calibrated.",
+    "projected_away_points": 22.289438211871968,
+    "projected_home_points": 29.005661607347417,
+    "projected_total": 51.29509981921939,
+    "raw_disagreement_points": 5.204900180780612,
+    "raw_model_probability": 0.6223912630487245,
+    "raw_probability_status": "RAW_MODEL_PROBABILITY_NOT_EMPIRICALLY_CALIBRATED",
+    "record_type": "shadow_prediction",
+    "selected_direction": "UNDER",
+    "shadow_confidence": 3,
+    "skip_reason": null,
+    "total_card_candidate_id": null,
+    "uncertainty_points": 16.694830753314726
+  },
+  {
+    "away": "James Madison",
+    "data_quality_flags": [],
+    "eligibility": "SHADOW_REVIEW",
+    "empirically_calibrated_probability": "NOT_AVAILABLE",
+    "feature_custody": {
+      "away_stats_as_of": [
+        2026,
+        2
+      ],
+      "extrapolated_features": [],
+      "home_stats_as_of": [
+        2026,
+        2
+      ],
+      "values": {
+        "away_defense_epa_play": -0.2053016103869133,
+        "away_offense_epa_play": 0.2928115323082911,
+        "home_defense_epa_play": 0.08109555674920554,
+        "home_offense_epa_play": 0.00645959398032199
+      }
+    },
+    "game_id": 401860887,
+    "historical_direction_context": {
+      "losses": 623,
+      "n": 1388,
+      "prediction_mae": 12.8943,
+      "prediction_rmse": 16.4369,
+      "pushes": 19,
+      "roi_at_minus_110": 0.039756,
+      "win_rate_excluding_pushes": 0.544923,
+      "wins": 746
+    },
+    "historical_edge_context": {
+      "label": "1_to_under_2",
+      "losses": 266,
+      "lower": 1.0,
+      "n": 520,
+      "pushes": 8,
+      "roi_at_minus_110": -0.081469,
+      "upper_exclusive": 2.0,
+      "win_rate_excluding_pushes": 0.480469,
+      "wins": 246
+    },
+    "home": "San Diego State",
+    "locked_total": 46.5,
+    "primary_model_risk": "Raw normal-residual probability is not empirically calibrated.",
+    "projected_away_points": 29.147557278005127,
+    "projected_home_points": 15.565065904182962,
+    "projected_total": 44.71262318218809,
+    "raw_disagreement_points": 1.7873768178119107,
+    "raw_model_probability": 0.5426299808576791,
+    "raw_probability_status": "RAW_MODEL_PROBABILITY_NOT_EMPIRICALLY_CALIBRATED",
+    "record_type": "shadow_prediction",
+    "selected_direction": "UNDER",
+    "shadow_confidence": 1,
+    "skip_reason": null,
+    "total_card_candidate_id": null,
+    "uncertainty_points": 16.694830753314726
+  },
+  {
+    "away": "Northern Illinois",
+    "data_quality_flags": [],
+    "eligibility": "SHADOW_REVIEW",
+    "empirically_calibrated_probability": "NOT_AVAILABLE",
+    "feature_custody": {
+      "away_stats_as_of": [
+        2026,
+        2
+      ],
+      "extrapolated_features": [],
+      "home_stats_as_of": [
+        2026,
+        2
+      ],
+      "values": {
+        "away_defense_epa_play": 0.13045714384132387,
+        "away_offense_epa_play": -0.1812207920559141,
+        "home_defense_epa_play": 0.09223826708421244,
+        "home_offense_epa_play": 0.1405599968106389
+      }
+    },
+    "game_id": 401856793,
+    "historical_direction_context": {
+      "losses": 623,
+      "n": 1388,
+      "prediction_mae": 12.8943,
+      "prediction_rmse": 16.4369,
+      "pushes": 19,
+      "roi_at_minus_110": 0.039756,
+      "win_rate_excluding_pushes": 0.544923,
+      "wins": 746
+    },
+    "historical_edge_context": {
+      "label": "4_to_under_5",
+      "losses": 185,
+      "lower": 4.0,
+      "n": 388,
+      "pushes": 4,
+      "roi_at_minus_110": -0.010544,
+      "upper_exclusive": 5.0,
+      "win_rate_excluding_pushes": 0.518229,
+      "wins": 199
+    },
+    "home": "Arizona",
+    "locked_total": 49.5,
+    "primary_model_risk": "Raw normal-residual probability is not empirically calibrated.",
+    "projected_away_points": 14.383558309102817,
+    "projected_home_points": 30.44525706067581,
+    "projected_total": 44.828815369778624,
+    "raw_disagreement_points": 4.671184630221376,
+    "raw_model_probability": 0.6101838574287736,
+    "raw_probability_status": "RAW_MODEL_PROBABILITY_NOT_EMPIRICALLY_CALIBRATED",
+    "record_type": "shadow_prediction",
+    "selected_direction": "UNDER",
+    "shadow_confidence": 3,
+    "skip_reason": null,
+    "total_card_candidate_id": null,
+    "uncertainty_points": 16.694830753314726
+  },
+  {
+    "away": "North Dakota State",
+    "data_quality_flags": [],
+    "eligibility": "SHADOW_REVIEW",
+    "empirically_calibrated_probability": "NOT_AVAILABLE",
+    "feature_custody": {
+      "away_stats_as_of": [
+        2026,
+        2
+      ],
+      "extrapolated_features": [],
+      "home_stats_as_of": [
+        2026,
+        2
+      ],
+      "values": {
+        "away_defense_epa_play": -0.16877890144319635,
+        "away_offense_epa_play": 0.20023757156581695,
+        "home_defense_epa_play": 0.07796412434649182,
+        "home_offense_epa_play": -0.057106336746276784
+      }
+    },
+    "game_id": 401864507,
+    "historical_direction_context": {
+      "losses": 623,
+      "n": 1388,
+      "prediction_mae": 12.8943,
+      "prediction_rmse": 16.4369,
+      "pushes": 19,
+      "roi_at_minus_110": 0.039756,
+      "win_rate_excluding_pushes": 0.544923,
+      "wins": 746
+    },
+    "historical_edge_context": {
+      "label": "8_to_under_10",
+      "losses": 136,
+      "lower": 8.0,
+      "n": 303,
+      "pushes": 3,
+      "roi_at_minus_110": 0.043204,
+      "upper_exclusive": 10.0,
+      "win_rate_excluding_pushes": 0.546667,
+      "wins": 164
+    },
+    "home": "Sacramento State",
+    "locked_total": 50.5,
+    "primary_model_risk": "Raw normal-residual probability is not empirically calibrated.",
+    "projected_away_points": 26.952939491611303,
+    "projected_home_points": 15.437504105708767,
+    "projected_total": 42.39044359732007,
+    "raw_disagreement_points": 8.109556402679928,
+    "raw_model_probability": 0.6864286854097801,
+    "raw_probability_status": "RAW_MODEL_PROBABILITY_NOT_EMPIRICALLY_CALIBRATED",
+    "record_type": "shadow_prediction",
+    "selected_direction": "UNDER",
+    "shadow_confidence": 3,
+    "skip_reason": null,
+    "total_card_candidate_id": null,
+    "uncertainty_points": 16.694830753314726
+  },
+  {
+    "away": "Purdue",
+    "data_quality_flags": [],
+    "eligibility": "SHADOW_REVIEW",
+    "empirically_calibrated_probability": "NOT_AVAILABLE",
+    "feature_custody": {
+      "away_stats_as_of": [
+        2026,
+        2
+      ],
+      "extrapolated_features": [],
+      "home_stats_as_of": [
+        2026,
+        2
+      ],
+      "values": {
+        "away_defense_epa_play": 0.21009927913703202,
+        "away_offense_epa_play": 0.3502549165886152,
+        "home_defense_epa_play": -0.1287180100332439,
+        "home_offense_epa_play": 0.24142107117552244
+      }
+    },
+    "game_id": 401858458,
+    "historical_direction_context": {
+      "losses": 1161,
+      "n": 2331,
+      "prediction_mae": 13.3693,
+      "prediction_rmse": 16.5885,
+      "pushes": 19,
+      "roi_at_minus_110": -0.049179,
+      "win_rate_excluding_pushes": 0.497837,
+      "wins": 1151
+    },
+    "historical_edge_context": {
+      "label": "0_to_under_1",
+      "losses": 250,
+      "lower": 0.0,
+      "n": 506,
+      "pushes": 5,
+      "roi_at_minus_110": -0.043119,
+      "upper_exclusive": 1.0,
+      "win_rate_excluding_pushes": 0.500998,
+      "wins": 251
+    },
+    "home": "UCLA",
+    "locked_total": 52.5,
+    "primary_model_risk": "Raw normal-residual probability is not empirically calibrated.",
+    "projected_away_points": 20.592617661127274,
+    "projected_home_points": 32.86530921159966,
+    "projected_total": 53.45792687272693,
+    "raw_disagreement_points": 0.9579268727269294,
+    "raw_model_probability": 0.5228782156228386,
+    "raw_probability_status": "RAW_MODEL_PROBABILITY_NOT_EMPIRICALLY_CALIBRATED",
+    "record_type": "shadow_prediction",
+    "selected_direction": "OVER",
+    "shadow_confidence": 1,
+    "skip_reason": null,
+    "total_card_candidate_id": null,
+    "uncertainty_points": 16.694830753314726
+  },
+  {
+    "away": "Fresno State",
+    "data_quality_flags": [],
+    "eligibility": "SHADOW_REVIEW",
+    "empirically_calibrated_probability": "NOT_AVAILABLE",
+    "feature_custody": {
+      "away_stats_as_of": [
+        2026,
+        2
+      ],
+      "extrapolated_features": [],
+      "home_stats_as_of": [
+        2026,
+        2
+      ],
+      "values": {
+        "away_defense_epa_play": 0.057363726043147316,
+        "away_offense_epa_play": 0.03299257702377403,
+        "home_defense_epa_play": 0.07485252262744996,
+        "home_offense_epa_play": 0.1404176638826232
+      }
+    },
+    "game_id": 401860888,
+    "historical_direction_context": {
+      "losses": 623,
+      "n": 1388,
+      "prediction_mae": 12.8943,
+      "prediction_rmse": 16.4369,
+      "pushes": 19,
+      "roi_at_minus_110": 0.039756,
+      "win_rate_excluding_pushes": 0.544923,
+      "wins": 746
+    },
+    "historical_edge_context": {
+      "label": "3_to_under_4",
+      "losses": 214,
+      "lower": 3.0,
+      "n": 431,
+      "pushes": 6,
+      "roi_at_minus_110": -0.051466,
+      "upper_exclusive": 4.0,
+      "win_rate_excluding_pushes": 0.496471,
+      "wins": 211
+    },
+    "home": "San Jos\u00e9 State",
+    "locked_total": 50.5,
+    "primary_model_risk": "Raw normal-residual probability is not empirically calibrated.",
+    "projected_away_points": 19.79345405649035,
+    "projected_home_points": 27.259579205122016,
+    "projected_total": 47.05303326161237,
+    "raw_disagreement_points": 3.44696673838763,
+    "raw_model_probability": 0.5817877516836791,
+    "raw_probability_status": "RAW_MODEL_PROBABILITY_NOT_EMPIRICALLY_CALIBRATED",
+    "record_type": "shadow_prediction",
+    "selected_direction": "UNDER",
+    "shadow_confidence": 2,
+    "skip_reason": null,
+    "total_card_candidate_id": null,
+    "uncertainty_points": 16.694830753314726
+  }
+]
