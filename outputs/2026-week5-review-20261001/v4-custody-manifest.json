@@ -1,0 +1,466 @@
+{
+  "v4_pr_head": "417b77e7ffbc0ae8e8bda793a9ee3822a2ca8f79",
+  "source_database_sha256": "09d0bcda684356001bacf8bc9e42939add56b053f405564d9be924e39c0cf842",
+  "archived_execution_database_path": "../../week5/cfb-betting-system-v3/data/production_inputs/2026-week5-execution/execution-v4.db",
+  "archived_execution_database_sha256": "e5d00e33e68a7ed2f20160fdb62fd808bf735ac0ee9009b6e643cfb74f197baa",
+  "archived_execution_database_verified_locally": true,
+  "v4_files": [
+    {
+      "path": "outputs/2026-week5-execution-20260930-v4/prior-evidence/week1-postgame-audit.csv",
+      "sha256": "b9248fd7db2ba2cde5ba3674f61683522d9a6f885811441846368f82092dcf20",
+      "bytes": 42716
+    },
+    {
+      "path": "outputs/2026-week5-execution-20260930-v4/prior-evidence/week2-audit.json",
+      "sha256": "c193ecd1735d9ed0c81392491668e84fa3c6919b59463487151c5c10fc2dbed1",
+      "bytes": 122480
+    },
+    {
+      "path": "outputs/2026-week5-execution-20260930-v4/prior-evidence/week3-ats-card.json",
+      "sha256": "8909f3e73bf38d010f81b9db9a2c4117d01453b239727ece575bc0259fa197ec",
+      "bytes": 30970
+    },
+    {
+      "path": "outputs/2026-week5-execution-20260930-v4/prior-evidence/week3-totals-card.json",
+      "sha256": "bc420c70d3b8ad848d7b071f64f9f64fa142f51806949ff35e33c7f4949ecb23",
+      "bytes": 106608
+    },
+    {
+      "path": "outputs/2026-week5-execution-20260930-v4/provider-evidence/capture-manifest.json",
+      "sha256": "8c8c08f207378d5c2aa833cf750fcf22417dcad88c90d8af899f8529679f7850",
+      "bytes": 1365
+    },
+    {
+      "path": "outputs/2026-week5-execution-20260930-v4/provider-evidence/cfbd-2026-fbs-teams.json",
+      "sha256": "99441fa547a34880c34cb9a2350ab675d4d9fd90d7a437ef827333cb02a0c317",
+      "bytes": 202974
+    },
+    {
+      "path": "outputs/2026-week5-execution-20260930-v4/provider-evidence/cfbd-2026-games.json",
+      "sha256": "45e9c5d88433a4ccd4493efe9e93540ad50a89b8d4d809abacd0d99f7900ce28",
+      "bytes": 670216
+    },
+    {
+      "path": "outputs/2026-week5-execution-20260930-v4/provider-evidence/cfbd-venues-manifest.json",
+      "sha256": "39aa8bdac8757b89b6cf410de818ee4c7ff0e2322ff3d482c08b4b213de2e847",
+      "bytes": 246
+    },
+    {
+      "path": "outputs/2026-week5-execution-20260930-v4/provider-evidence/cfbd-venues.json",
+      "sha256": "67a3cdfad57a2d8b528a731637bb37cf7bef3ea4111af227abef4ce2a487b12f",
+      "bytes": 221258
+    },
+    {
+      "path": "outputs/2026-week5-execution-20260930-v4/provider-evidence/cfbd-week1-games.derived.json",
+      "sha256": "6a17cd08d53e3d5ccd7bd33796cb0fda344fbbec5e7e5d9163a3bb45068fd8a7",
+      "bytes": 40080
+    },
+    {
+      "path": "outputs/2026-week5-execution-20260930-v4/provider-evidence/cfbd-week2-games.derived.json",
+      "sha256": "92194b524e4deafc0f8ebb2107b6554f4983a4a118abe7ff7bc4fad4c20c25ad",
+      "bytes": 38336
+    },
+    {
+      "path": "outputs/2026-week5-execution-20260930-v4/provider-evidence/cfbd-week3-games.derived.json",
+      "sha256": "e996349b9e578c308bfd404660e9ed1a406654995f0a5d48f21d8909048047bd",
+      "bytes": 44427
+    },
+    {
+      "path": "outputs/2026-week5-execution-20260930-v4/provider-evidence/cfbd-week4-advanced.derived.json",
+      "sha256": "6852b017d8802e4113d28749d0592c7638e78cb84936afe6da55068d6a67cecf",
+      "bytes": 337158
+    },
+    {
+      "path": "outputs/2026-week5-execution-20260930-v4/provider-evidence/cfbd-week4-advanced.json",
+      "sha256": "6852b017d8802e4113d28749d0592c7638e78cb84936afe6da55068d6a67cecf",
+      "bytes": 337158
+    },
+    {
+      "path": "outputs/2026-week5-execution-20260930-v4/provider-evidence/cfbd-week4-games.derived.json",
+      "sha256": "ba6a70a016c62c9c8e80116a5a4332c0741e9ac4ee101a02bf5e4a955719d37c",
+      "bytes": 45126
+    },
+    {
+      "path": "outputs/2026-week5-execution-20260930-v4/provider-evidence/cfbd-week5-games.derived.json",
+      "sha256": "5bb6f6d309ca420d17104e6c0daf899493321b62d4504f7860ae6211b9954eff",
+      "bytes": 41129
+    },
+    {
+      "path": "outputs/2026-week5-execution-20260930-v4/provider-evidence/espn-injuries-manifest.json",
+      "sha256": "d925ea2b0486af573024759f59037069ad05eb91effdabfa8428066d492e04ee",
+      "bytes": 282
+    },
+    {
+      "path": "outputs/2026-week5-execution-20260930-v4/provider-evidence/espn-injuries.json",
+      "sha256": "f12bfd9a3755df829f8f84bd2657756d9da6e20d47fe984a79bfc0f15587b89b",
+      "bytes": 28635
+    },
+    {
+      "path": "outputs/2026-week5-execution-20260930-v4/provider-evidence/odds-current-manifest.json",
+      "sha256": "bf867f12f8bb783d912815e860d56074900a489232a4d3d32a3936e446b1da64",
+      "bytes": 446
+    },
+    {
+      "path": "outputs/2026-week5-execution-20260930-v4/provider-evidence/odds-draftkings-current.json",
+      "sha256": "dabe2cfbbce2b3b4c29227aee4db05fe1fe233e83b32e5e121d0505b7bd514c9",
+      "bytes": 45862
+    },
+    {
+      "path": "outputs/2026-week5-execution-20260930-v4/provider-evidence/weather/401856705.json",
+      "sha256": "08767f8203b68392e1493be3c265f3e3237612b3dbf967a196582c431ff11342",
+      "bytes": 5939
+    },
+    {
+      "path": "outputs/2026-week5-execution-20260930-v4/provider-evidence/weather/401856707.json",
+      "sha256": "fe092c36f7bf6bed4bccbb4a324ba2bfc03b1bcae641d76e77cb72298e699592",
+      "bytes": 5921
+    },
+    {
+      "path": "outputs/2026-week5-execution-20260930-v4/provider-evidence/weather/401856708.json",
+      "sha256": "e1ae6f8d631392c3e84ee2393686e702c1f52b19ad867eb37a07854674394ab1",
+      "bytes": 5869
+    },
+    {
+      "path": "outputs/2026-week5-execution-20260930-v4/provider-evidence/weather/401856709.json",
+      "sha256": "34a503076ed62b3cb908012c7edbd4c7d05fc3b183c862cf3133fac8b9b16e76",
+      "bytes": 5909
+    },
+    {
+      "path": "outputs/2026-week5-execution-20260930-v4/provider-evidence/weather/401856710.json",
+      "sha256": "db6e44f2a85f4a47660af2c808e2b95bbe4fc615e6a8ff2ba9d13e6f79706edc",
+      "bytes": 5898
+    },
+    {
+      "path": "outputs/2026-week5-execution-20260930-v4/provider-evidence/weather/401856711.json",
+      "sha256": "2254cb979cd269711585cb3223f0141ba0513d2f6403f240df0957a9525e18b0",
+      "bytes": 5971
+    },
+    {
+      "path": "outputs/2026-week5-execution-20260930-v4/provider-evidence/weather/401856807.json",
+      "sha256": "2a40a2401b1a1c6e0464150396060047831a94f1c563dd04147c26e9b4a88573",
+      "bytes": 5874
+    },
+    {
+      "path": "outputs/2026-week5-execution-20260930-v4/provider-evidence/weather/401856817.json",
+      "sha256": "9ddcfef63a2869fa94caf5cddeca4965dcf918ce605a866645c6d04ac588d39d",
+      "bytes": 5860
+    },
+    {
+      "path": "outputs/2026-week5-execution-20260930-v4/provider-evidence/weather/401856818.json",
+      "sha256": "6484789e1ccf61155bcf0c18b2a2f35340c142368fa924c586149920afb2110b",
+      "bytes": 5933
+    },
+    {
+      "path": "outputs/2026-week5-execution-20260930-v4/provider-evidence/weather/401856819.json",
+      "sha256": "65c112fbc23cbeae04f2fb2105264c0f7a653f7632457ed8bd71ab2bb959de61",
+      "bytes": 5925
+    },
+    {
+      "path": "outputs/2026-week5-execution-20260930-v4/provider-evidence/weather/401856820.json",
+      "sha256": "4a4b5db3a84bc0b799ffcf5ffa99407feec3be3aed59eca9ef89bc036d25195c",
+      "bytes": 5896
+    },
+    {
+      "path": "outputs/2026-week5-execution-20260930-v4/provider-evidence/weather/401856821.json",
+      "sha256": "f5f0eafc7b6c9072ea5338365af48bc41b61e3553755bb63adab5a7d14efe673",
+      "bytes": 5831
+    },
+    {
+      "path": "outputs/2026-week5-execution-20260930-v4/provider-evidence/weather/401856822.json",
+      "sha256": "5f0bf334532098c4f5e56ed7d0955a4c5b16ab96123f1bd3d402912e4f6fb20b",
+      "bytes": 5885
+    },
+    {
+      "path": "outputs/2026-week5-execution-20260930-v4/provider-evidence/weather/401858245.json",
+      "sha256": "5288935e55341b2966d9e5c166995ba47855920b8df3701cf6978111c3487be1",
+      "bytes": 5878
+    },
+    {
+      "path": "outputs/2026-week5-execution-20260930-v4/provider-evidence/weather/401858246.json",
+      "sha256": "2ff4153816c2ed659579058dfe7a5d340940a681d527bbb54925b5b602b5ff98",
+      "bytes": 5916
+    },
+    {
+      "path": "outputs/2026-week5-execution-20260930-v4/provider-evidence/weather/401858248.json",
+      "sha256": "99b2c7b312a74756cb0a4cddb36971c41b580bf9eddf2b719493bc468144ad4e",
+      "bytes": 5905
+    },
+    {
+      "path": "outputs/2026-week5-execution-20260930-v4/provider-evidence/weather/401858249.json",
+      "sha256": "73766a4145251690b93cc91347983531cfa1d4a2412b93921dbf8ba1e144946b",
+      "bytes": 5916
+    },
+    {
+      "path": "outputs/2026-week5-execution-20260930-v4/provider-evidence/weather/401858250.json",
+      "sha256": "01ae86ff70875e8492e714b8e3ef4642d306b4ffc17e1a0a2ddc0bf543c4c7c5",
+      "bytes": 5890
+    },
+    {
+      "path": "outputs/2026-week5-execution-20260930-v4/provider-evidence/weather/401858251.json",
+      "sha256": "0cf74073caa8bf0c98d1e0094faf091683c27dfb866c861b8630f3be31b1e6e0",
+      "bytes": 5890
+    },
+    {
+      "path": "outputs/2026-week5-execution-20260930-v4/provider-evidence/weather/401858252.json",
+      "sha256": "be80e4a3622579df936b75a2ab44e2b9e29660c3884c2f26399b706e1e524d4f",
+      "bytes": 5845
+    },
+    {
+      "path": "outputs/2026-week5-execution-20260930-v4/provider-evidence/weather/401858253.json",
+      "sha256": "53637fca2921b2c39360af0473bc8d5eff4dab427d1e5fa143be0c5d4def2226",
+      "bytes": 6036
+    },
+    {
+      "path": "outputs/2026-week5-execution-20260930-v4/provider-evidence/weather/401858472.json",
+      "sha256": "6b86e5ffe8c695844d8f1c40f9ee65f0ff2b40e4ea9dc0251bb927881d278421",
+      "bytes": 5864
+    },
+    {
+      "path": "outputs/2026-week5-execution-20260930-v4/provider-evidence/weather/401858473.json",
+      "sha256": "4cecc2b14eb27d1cfca93105eb46f016e133f82c19928ca3fb03daca901e2ae6",
+      "bytes": 5875
+    },
+    {
+      "path": "outputs/2026-week5-execution-20260930-v4/provider-evidence/weather/401858474.json",
+      "sha256": "caa153f6dd423d9e0ebda501fa03cfc063d6490f11ad906457c4eb3cc6f80ab2",
+      "bytes": 5868
+    },
+    {
+      "path": "outputs/2026-week5-execution-20260930-v4/provider-evidence/weather/401858475.json",
+      "sha256": "801cded50576b080999ee3942bd4718ef0cd1ea699da8f625b6ecf13944d0baa",
+      "bytes": 5891
+    },
+    {
+      "path": "outputs/2026-week5-execution-20260930-v4/provider-evidence/weather/401858476.json",
+      "sha256": "eeff16af4c9e56aac33ffbbdf7b7fe1b379df42d89317a6be6bf0c0254519ebe",
+      "bytes": 5934
+    },
+    {
+      "path": "outputs/2026-week5-execution-20260930-v4/provider-evidence/weather/401858477.json",
+      "sha256": "6afbd5cce1011e5c444ac3c7056104268e7b3d2c308add56efb3ef8795018a13",
+      "bytes": 5860
+    },
+    {
+      "path": "outputs/2026-week5-execution-20260930-v4/provider-evidence/weather/401858478.json",
+      "sha256": "ab613e8f7f82de1aef50021cf9ed5a6f854fc0c2b98661626abf6a4387778f15",
+      "bytes": 5821
+    },
+    {
+      "path": "outputs/2026-week5-execution-20260930-v4/provider-evidence/weather/401858479.json",
+      "sha256": "edec2f401888e9f4e20e7fd23b877d54549d8fe2832a834445a766d215e8b5f8",
+      "bytes": 5904
+    },
+    {
+      "path": "outputs/2026-week5-execution-20260930-v4/provider-evidence/weather/401860898.json",
+      "sha256": "31ddf6c57626865048888a9b5e531efe5c5c5973aa5b77f14068de4865638da0",
+      "bytes": 5796
+    },
+    {
+      "path": "outputs/2026-week5-execution-20260930-v4/provider-evidence/weather/401860899.json",
+      "sha256": "af180e5d0d4d483dd6ea27c825e47c5c4368c0446d9a9d0b692b6c9515f4244b",
+      "bytes": 5804
+    },
+    {
+      "path": "outputs/2026-week5-execution-20260930-v4/provider-evidence/weather/401860900.json",
+      "sha256": "4fe776e85bf175e0a849b7847b9409002616d37031a0f5cc37db47ee5a391980",
+      "bytes": 5816
+    },
+    {
+      "path": "outputs/2026-week5-execution-20260930-v4/provider-evidence/weather/401860921.json",
+      "sha256": "6576a9a1e6fb19b322129da4292a113aaf60297ead08e5ebf3a52c1a515b23af",
+      "bytes": 5802
+    },
+    {
+      "path": "outputs/2026-week5-execution-20260930-v4/provider-evidence/weather/401862786.json",
+      "sha256": "551fdea209b7cbb5d729e85efdaa1d9dfdb914d91f92f411d346b5e54f746475",
+      "bytes": 5881
+    },
+    {
+      "path": "outputs/2026-week5-execution-20260930-v4/provider-evidence/weather/401862787.json",
+      "sha256": "97fb04fec71b5e484e1e7e39ef282d3a2ea43c5f05aecc532de90e3d17257bb0",
+      "bytes": 5901
+    },
+    {
+      "path": "outputs/2026-week5-execution-20260930-v4/provider-evidence/weather/401862788.json",
+      "sha256": "5f49efb8082582d8b9828485b1601b429796f0c21d7a0a04e1c81efd1bc717c0",
+      "bytes": 5931
+    },
+    {
+      "path": "outputs/2026-week5-execution-20260930-v4/provider-evidence/weather/401862791.json",
+      "sha256": "9efbd69bdbba19d5cd2e39d2a0abbe4fb999d38f6e6ebd48a16231ef2189cb8d",
+      "bytes": 5869
+    },
+    {
+      "path": "outputs/2026-week5-execution-20260930-v4/provider-evidence/weather/401862792.json",
+      "sha256": "b1f57a4b4fa2a1216065eddf9a68e41b5d7731af1b6665b7d0c41dc975b966c4",
+      "bytes": 5988
+    },
+    {
+      "path": "outputs/2026-week5-execution-20260930-v4/provider-evidence/weather/401864513.json",
+      "sha256": "f897fe8092f294838685e57501535fd7a76df800bcd5b2f784cab27f5cafcc9a",
+      "bytes": 6072
+    },
+    {
+      "path": "outputs/2026-week5-execution-20260930-v4/provider-evidence/weather/401864514.json",
+      "sha256": "c4f70519792e539de2dc8a5e8e804b443445689ae851d4352939ddf9346a493f",
+      "bytes": 5843
+    },
+    {
+      "path": "outputs/2026-week5-execution-20260930-v4/provider-evidence/weather/401866430.json",
+      "sha256": "cbe468a2ce1b53a395d2df342d617515a28ec9e632dde81c17dd9963ff09809b",
+      "bytes": 5888
+    },
+    {
+      "path": "outputs/2026-week5-execution-20260930-v4/provider-evidence/weather/401866431.json",
+      "sha256": "4a46ef7269b0c96d0314705fee87aadf6c8e0cf3e2767b4c4ceb4b53fd861f15",
+      "bytes": 5872
+    },
+    {
+      "path": "outputs/2026-week5-execution-20260930-v4/provider-evidence/weather/401866432.json",
+      "sha256": "633fbda9a4fdd777dfadd9c953a302ab49eb54ed70416e9abcfc73f10fabeff8",
+      "bytes": 5875
+    },
+    {
+      "path": "outputs/2026-week5-execution-20260930-v4/provider-evidence/weather/401866433.json",
+      "sha256": "1ff6ea5cccfae51e7f108dd9c0d3207ea02f31f753d5508eedbeff62a9295750",
+      "bytes": 5842
+    },
+    {
+      "path": "outputs/2026-week5-execution-20260930-v4/provider-evidence/weather/401866434.json",
+      "sha256": "08254a8063abbd78de322652b4ac39272bb382a80bb7dd7cf84f837aa7a011f6",
+      "bytes": 5862
+    },
+    {
+      "path": "outputs/2026-week5-execution-20260930-v4/provider-evidence/weather/401866477.json",
+      "sha256": "0aa1c9b4364487c9285b21ed2877df344d1e73c165f96c5cd5322172fa7bbc71",
+      "bytes": 5856
+    },
+    {
+      "path": "outputs/2026-week5-execution-20260930-v4/provider-evidence/weather/401869842.json",
+      "sha256": "cc7d85f262dfa96a757ef7b9750e6a924ade59a7b971003e1db15beb06b86558",
+      "bytes": 5878
+    },
+    {
+      "path": "outputs/2026-week5-execution-20260930-v4/provider-evidence/weather/401869932.json",
+      "sha256": "63ca0eba76f9b4980e1b5ff2785cc9630ddc49eaf2c972494afce1fb69f4fe65",
+      "bytes": 5956
+    },
+    {
+      "path": "outputs/2026-week5-execution-20260930-v4/provider-evidence/weather/401869942.json",
+      "sha256": "6c6f38dc4f6fd14e28418b4ff207dc44c30fec972e9e931bb9d2e791ff9b68cf",
+      "bytes": 5919
+    },
+    {
+      "path": "outputs/2026-week5-execution-20260930-v4/provider-evidence/weather/401869956.json",
+      "sha256": "a368d61399488ff883df63ca7c8f8e96d340aa27895e8f00f92df67f4339e167",
+      "bytes": 5956
+    },
+    {
+      "path": "outputs/2026-week5-execution-20260930-v4/provider-evidence/weather/401869962.json",
+      "sha256": "b0bf3690371bac55dc3b6bb5eb551ca28d3b90d5668b1a1fb82005fe89663840",
+      "bytes": 5918
+    },
+    {
+      "path": "outputs/2026-week5-execution-20260930-v4/provider-evidence/weather/401871049.json",
+      "sha256": "41863bd1538bf57a2e424e00c7e1fc528f22c7579d84f5b570f7c6e94a4abcfb",
+      "bytes": 5857
+    },
+    {
+      "path": "outputs/2026-week5-execution-20260930-v4/provider-evidence/weather/401871050.json",
+      "sha256": "0633d5e544c1867d0ab9fd6bc54a921a43948e6e1b1044c8deb93e7dedfcb331",
+      "bytes": 5865
+    },
+    {
+      "path": "outputs/2026-week5-execution-20260930-v4/provider-evidence/weather/401871089.json",
+      "sha256": "962b763c169259a7f0dd432620b294986e2f06bf1f72086b40f802f41852f691",
+      "bytes": 6006
+    },
+    {
+      "path": "outputs/2026-week5-execution-20260930-v4/provider-evidence/weather-manifest.json",
+      "sha256": "7af72454929081c7f9685cfcca2cdc9e0e071f2494c66d07186235a66a790afb",
+      "bytes": 36442
+    },
+    {
+      "path": "outputs/2026-week5-execution-20260930-v4/week5_ats_full_card.csv",
+      "sha256": "c6ad7bb2f5ba27c9268eada6c77154d4659f3be427a83aa0e5bb1eb4d8b8bf6e",
+      "bytes": 11219
+    },
+    {
+      "path": "outputs/2026-week5-execution-20260930-v4/week5_card_manifest.json",
+      "sha256": "f3b20d8923e1abbed9e1364ff3c0aaba81bfaae2d6f82760a5b34f2ceefd95bc",
+      "bytes": 3912
+    },
+    {
+      "path": "outputs/2026-week5-execution-20260930-v4/week5_combined_top5.csv",
+      "sha256": "e860a7ad30501b180d0b71b4ed3cfcbd5766bf6af58da6ac967929a8bef6603c",
+      "bytes": 785
+    },
+    {
+      "path": "outputs/2026-week5-execution-20260930-v4/week5_context_review.csv",
+      "sha256": "aad4bc4d648773e1129f199253ce4cfbf565db735619fcc6ac4043058a075d34",
+      "bytes": 10690
+    },
+    {
+      "path": "outputs/2026-week5-execution-20260930-v4/week5_data_freshness.json",
+      "sha256": "dbb0b73274b6b6ab7534a59fc61de76cd821ef036754f67e40c86e004e6c67b6",
+      "bytes": 928
+    },
+    {
+      "path": "outputs/2026-week5-execution-20260930-v4/week5_execution_report.md",
+      "sha256": "6ecfc40b5b88fd10e44a714ed2b023fdec2d96470bff111f854dd33041f15f16",
+      "bytes": 11949
+    },
+    {
+      "path": "outputs/2026-week5-execution-20260930-v4/week5_ingestion_manifest.json",
+      "sha256": "6b7251c6e97bd443c3a9b062e963007e3d8f835fcf60e5ac0a25a03306c5c90a",
+      "bytes": 12729
+    },
+    {
+      "path": "outputs/2026-week5-execution-20260930-v4/week5_ingestion_reconciliation.csv",
+      "sha256": "6514348640f5e75f14f8b26b9e02ff63fe6e2b028f908d4b4e531756791e6c57",
+      "bytes": 11135
+    },
+    {
+      "path": "outputs/2026-week5-execution-20260930-v4/week5_model_manifest.json",
+      "sha256": "b4f6898e5e81717e25f49ffc7e4f8a9f17e4540fd791bd5962d708d078c81d7d",
+      "bytes": 2372
+    },
+    {
+      "path": "outputs/2026-week5-execution-20260930-v4/week5_official_ats_top5.csv",
+      "sha256": "e04895b28f3bdc54a581b97c028be1879b96f843fe15768133d4a245bae32644",
+      "bytes": 1253
+    },
+    {
+      "path": "outputs/2026-week5-execution-20260930-v4/week5_prior_performance_audit.json",
+      "sha256": "cea71def64eaf072388cb706694ca8a012107317878c196b6b36ab8d5e88a9de",
+      "bytes": 4951
+    },
+    {
+      "path": "outputs/2026-week5-execution-20260930-v4/week5_shadow_ats_top5.csv",
+      "sha256": "3f795bcc60da2b2a150523f07be78e858cc5fe524f764bf4046426b82306d349",
+      "bytes": 1221
+    },
+    {
+      "path": "outputs/2026-week5-execution-20260930-v4/week5_shadow_totals_top5.csv",
+      "sha256": "f15df52c5a82022d80872dc1cc2db1209ea9101407a1d25412097758fbb366c8",
+      "bytes": 1149
+    },
+    {
+      "path": "outputs/2026-week5-execution-20260930-v4/week5_top_pick_adversarial_review.json",
+      "sha256": "e5744b46dccb082f73d5817ef3192fc00570477d3fcd3f4291ad44bfe0c7ee4d",
+      "bytes": 23202
+    },
+    {
+      "path": "outputs/2026-week5-execution-20260930-v4/week5_totals_full_card.csv",
+      "sha256": "cd35c011982d361a588aed7bc81f26a706734b0c74ec701d92dd952dc8fd19a7",
+      "bytes": 11208
+    },
+    {
+      "path": "outputs/2026-week5-execution-20260930-v4/week5_totals_oos_evidence.json",
+      "sha256": "f06a25948368075733b0b00486eac52724f5309229356f83df5f8622d1eaeb99",
+      "bytes": 571
+    }
+  ],
+  "file_count": 91,
+  "locked_line_snapshot_sha256": "0e9705b44349587bb3d54ff7a22e6b0159a6fbd9a04fe1f7862759cc143543aa"
+}
