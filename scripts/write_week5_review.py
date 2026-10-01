@@ -9,6 +9,7 @@ import csv
 import hashlib
 import json
 import os
+from collections import Counter
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -121,6 +122,7 @@ def main() -> None:
         raise ValueError("large ATS edge review count changed")
     if any(row["confidence"] != "1" for row in ats.values()):
         raise ValueError("governed ATS confidence changed")
+    qb_counts = Counter(status for row in qb.values() for status in (row["away_qb_status"], row["home_qb_status"]))
     custody = source_checksums()
     (OUT / "v4-custody-manifest.json").write_text(json.dumps(custody, indent=2) + "\n", encoding="utf-8")
 
@@ -130,6 +132,9 @@ def main() -> None:
         if a["pick"] != pick:
             raise ValueError(f"expected pick differs: {game_id}")
         edge = abs(float(a["home_ats_edge"]))
+        weather_sensitivity = ("INDOOR" if m["weather_status"] != "CAPTURED" else
+                               "MONITOR_WIND_OR_RAIN" if float(m["wind_mph"] or 0) >= 12 or float(m["precip_probability_pct"] or 0) >= 50 else
+                               "NO_MATERIAL_FORECAST_FLAG")
         shortlist.append({
             "rank": rank, "game_id": game_id, "game": f"{a['away']} @ {a['home']}",
             "market": "ATS", "pick": pick, "locked_splash_line": a["pick_spread"],
@@ -140,6 +145,8 @@ def main() -> None:
             "qb_status": f"{q['expected_away_qb']} ({q['away_qb_status']}); {q['expected_home_qb']} ({q['home_qb_status']})",
             "material_injuries": f"Away: {q['material_away_injuries']}; Home: {q['material_home_injuries']}",
             "weather_issue": f"{m['weather_status']}; wind {m['wind_mph'] or 'indoor'} mph; precip {m['precip_probability_pct'] or 'indoor'}%",
+            "weather_sensitivity": weather_sensitivity,
+            "data_completeness": ("BOTH_QBS_PROBABLE" if q["away_qb_status"] == q["home_qb_status"] == "PROBABLE" else "QB_ROLE_UNCERTAIN") + ";INJURIES_UNVERIFIED;WEEK4_EPA_PRESENT;MARKET_AND_WEATHER_CAPTURED",
             "sample_quality_warning": ("FCS and/or blowout in Week 1-4 EPA aggregates; " if game_id in {401871050, 401869942} else "Week 1-4 EPA sample only; ") + "opponent mix not adjusted",
             "shadow_uncertainty_points": round(float(a["shadow_uncertainty_points"]), 3),
             "shadow_uncertainty_interpretation": "EFFECTIVELY_FLAT_NOT_USED_FOR_RANKING",
@@ -214,7 +221,7 @@ def main() -> None:
         "## Data and custody",
         "",
         "56/56 immutable SplashSports spread/total locks, 56/56 ATS picks, 56/56 shadow totals, 56/56 market/QB/weather review rows. No lock changed; see `v4-custody-manifest.json` for every v4 SHA-256 and the archived execution DB hash.",
-        "The refreshed ESPN injury feed contains only three stale team groups (2020/2022), so 2026 material injuries remain UNVERIFIED for almost all teams. ESPN passing leaders are candidate QBs, never confirmed Week 5 starters. Official team previews refine several to PROBABLE, not CONFIRMED. No numeric manual adjustment was justified.",
+        f"The refreshed ESPN injury feed contains only three stale team groups (2020/2022), so 2026 material injuries remain UNVERIFIED for almost all teams. Of 112 expected QB roles, {qb_counts['PROBABLE']} are PROBABLE, {qb_counts['UNCERTAIN']} UNCERTAIN and {qb_counts['CONFIRMED']} CONFIRMED. ESPN passing leaders are candidate QBs, never confirmed Week 5 starters. No numeric manual adjustment was justified.",
         "DraftKings matched 56 games; two spreads moved at least 1.5, no totals moved at least 2.5. Outdoor weather was refreshed for 54 games; two are domes. Market observations are diagnostic and do not replace locks.",
         "",
         "## DETERMINISTIC POLICY TOP 5 — NOT STRENGTH RANKED",
