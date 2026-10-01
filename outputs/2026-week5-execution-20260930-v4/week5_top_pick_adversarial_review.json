@@ -1,0 +1,660 @@
+[
+  {
+    "away_rest_days": "5.0",
+    "away_travel_miles": "1195",
+    "clv_direction_so_far": "UNCHANGED",
+    "context_numeric_adjustments": 0,
+    "fcs_contamination_risk": "UNQUANTIFIED_CFBD_AGGREGATE_MAY_INCLUDE_FCS",
+    "forecast_wind_mph": "12.6",
+    "game": "Western Kentucky @ New Mexico State",
+    "game_id": 401871049,
+    "game_script_physical_sanity": "PASS",
+    "home_rest_days": "5.2",
+    "home_travel_miles": "0",
+    "implied_away_points_from_independent_models": 18.8,
+    "implied_home_points_from_independent_models": 33.9,
+    "injury_coverage": "INCOMPLETE_ESPN_THREE_TEAM_FEED",
+    "locked_line_advantage_vs_draftkings_points": 0.0,
+    "market": "ATS_OFFICIAL_POLICY",
+    "market_agreement": "NEAR_LOCKED_LINE",
+    "note": "Diagnostic review only; no source line, forecast, or pick rewritten.",
+    "pace_feature_status": "NOT_IN_SANCTIONED_MODEL",
+    "pick": "New Mexico State",
+    "prior_team_review": {
+      "New Mexico State": {
+        "completed_games": 4,
+        "fcs_opponents": [
+          "Mercyhurst"
+        ],
+        "largest_prior_final_margin_points": 37,
+        "week3_model_home_margin_errors_when_available": []
+      },
+      "Western Kentucky": {
+        "completed_games": 4,
+        "fcs_opponents": [
+          "Mercyhurst"
+        ],
+        "largest_prior_final_margin_points": 50,
+        "week3_model_home_margin_errors_when_available": [
+          21.5
+        ]
+      }
+    },
+    "provider_kickoff_utc": "2026-10-02T00:00:00.000Z",
+    "quarterback_status": "UNVERIFIED"
+  },
+  {
+    "away_rest_days": "5.1",
+    "away_travel_miles": "215",
+    "clv_direction_so_far": "ADVERSE",
+    "context_numeric_adjustments": 0,
+    "fcs_contamination_risk": "UNQUANTIFIED_CFBD_AGGREGATE_MAY_INCLUDE_FCS",
+    "forecast_wind_mph": "3.3",
+    "game": "North Texas @ Tulsa",
+    "game_id": 401862786,
+    "game_script_physical_sanity": "PASS",
+    "home_rest_days": "5.0",
+    "home_travel_miles": "99",
+    "implied_away_points_from_independent_models": 24.6,
+    "implied_home_points_from_independent_models": 27.5,
+    "injury_coverage": "INCOMPLETE_ESPN_THREE_TEAM_FEED",
+    "locked_line_advantage_vs_draftkings_points": -3.0,
+    "market": "ATS_OFFICIAL_POLICY",
+    "market_agreement": "MATERIAL_DISAGREEMENT",
+    "note": "Diagnostic review only; no source line, forecast, or pick rewritten.",
+    "pace_feature_status": "NOT_IN_SANCTIONED_MODEL",
+    "pick": "Tulsa",
+    "prior_team_review": {
+      "North Texas": {
+        "completed_games": 4,
+        "fcs_opponents": [
+          "Houston Christian"
+        ],
+        "largest_prior_final_margin_points": 49,
+        "week3_model_home_margin_errors_when_available": [
+          -22.5
+        ]
+      },
+      "Tulsa": {
+        "completed_games": 4,
+        "fcs_opponents": [
+          "East Texas A&M"
+        ],
+        "largest_prior_final_margin_points": 42,
+        "week3_model_home_margin_errors_when_available": []
+      }
+    },
+    "provider_kickoff_utc": "2026-10-02T01:00:00.000Z",
+    "quarterback_status": "UNVERIFIED"
+  },
+  {
+    "away_rest_days": "8.0",
+    "away_travel_miles": "444",
+    "clv_direction_so_far": "UNCHANGED",
+    "context_numeric_adjustments": 0,
+    "fcs_contamination_risk": "UNQUANTIFIED_CFBD_AGGREGATE_MAY_INCLUDE_FCS",
+    "forecast_wind_mph": "7.7",
+    "game": "Liberty @ Delaware",
+    "game_id": 401871050,
+    "game_script_physical_sanity": "PASS",
+    "home_rest_days": "6.0",
+    "home_travel_miles": "187",
+    "implied_away_points_from_independent_models": 24.0,
+    "implied_home_points_from_independent_models": 23.9,
+    "injury_coverage": "INCOMPLETE_ESPN_THREE_TEAM_FEED",
+    "locked_line_advantage_vs_draftkings_points": 0.0,
+    "market": "ATS_OFFICIAL_POLICY",
+    "market_agreement": "NEAR_LOCKED_LINE",
+    "note": "Diagnostic review only; no source line, forecast, or pick rewritten.",
+    "pace_feature_status": "NOT_IN_SANCTIONED_MODEL",
+    "pick": "Delaware",
+    "prior_team_review": {
+      "Delaware": {
+        "completed_games": 4,
+        "fcs_opponents": [
+          "Merrimack"
+        ],
+        "largest_prior_final_margin_points": 39,
+        "week3_model_home_margin_errors_when_available": [
+          -0.1
+        ]
+      },
+      "Liberty": {
+        "completed_games": 4,
+        "fcs_opponents": [
+          "Gardner-Webb"
+        ],
+        "largest_prior_final_margin_points": 36,
+        "week3_model_home_margin_errors_when_available": [
+          -31.6
+        ]
+      }
+    },
+    "provider_kickoff_utc": "2026-10-02T23:00:00.000Z",
+    "quarterback_status": "UNVERIFIED"
+  },
+  {
+    "away_rest_days": "6.3",
+    "away_travel_miles": "224",
+    "clv_direction_so_far": "FAVORABLE",
+    "context_numeric_adjustments": 0,
+    "fcs_contamination_risk": "UNQUANTIFIED_CFBD_AGGREGATE_MAY_INCLUDE_FCS",
+    "forecast_wind_mph": "4.1",
+    "game": "Pittsburgh @ Virginia Tech",
+    "game_id": 401858245,
+    "game_script_physical_sanity": "PASS",
+    "home_rest_days": "6.3",
+    "home_travel_miles": "605",
+    "implied_away_points_from_independent_models": 25.7,
+    "implied_home_points_from_independent_models": 24.7,
+    "injury_coverage": "INCOMPLETE_ESPN_THREE_TEAM_FEED",
+    "locked_line_advantage_vs_draftkings_points": 0.5,
+    "market": "ATS_OFFICIAL_POLICY",
+    "market_agreement": "NEAR_LOCKED_LINE",
+    "note": "Diagnostic review only; no source line, forecast, or pick rewritten.",
+    "pace_feature_status": "NOT_IN_SANCTIONED_MODEL",
+    "pick": "Pittsburgh",
+    "prior_team_review": {
+      "Pittsburgh": {
+        "completed_games": 4,
+        "fcs_opponents": [
+          "Bucknell"
+        ],
+        "largest_prior_final_margin_points": 59,
+        "week3_model_home_margin_errors_when_available": []
+      },
+      "Virginia Tech": {
+        "completed_games": 4,
+        "fcs_opponents": [
+          "VMI"
+        ],
+        "largest_prior_final_margin_points": 70,
+        "week3_model_home_margin_errors_when_available": [
+          6.8
+        ]
+      }
+    },
+    "provider_kickoff_utc": "2026-10-02T23:00:00.000Z",
+    "quarterback_status": "UNVERIFIED"
+  },
+  {
+    "away_rest_days": "6.1",
+    "away_travel_miles": "517",
+    "clv_direction_so_far": "UNCHANGED",
+    "context_numeric_adjustments": 0,
+    "fcs_contamination_risk": "UNQUANTIFIED_CFBD_AGGREGATE_MAY_INCLUDE_FCS",
+    "forecast_wind_mph": "11.5",
+    "game": "Penn State @ Northwestern",
+    "game_id": 401858476,
+    "game_script_physical_sanity": "PASS",
+    "home_rest_days": "7.0",
+    "home_travel_miles": "208",
+    "implied_away_points_from_independent_models": 25.9,
+    "implied_home_points_from_independent_models": 26.9,
+    "injury_coverage": "INCOMPLETE_ESPN_THREE_TEAM_FEED",
+    "locked_line_advantage_vs_draftkings_points": 0.0,
+    "market": "ATS_OFFICIAL_POLICY",
+    "market_agreement": "NEAR_LOCKED_LINE",
+    "note": "Diagnostic review only; no source line, forecast, or pick rewritten.",
+    "pace_feature_status": "NOT_IN_SANCTIONED_MODEL",
+    "pick": "Northwestern",
+    "prior_team_review": {
+      "Northwestern": {
+        "completed_games": 3,
+        "fcs_opponents": [
+          "South Dakota State"
+        ],
+        "largest_prior_final_margin_points": 34,
+        "week3_model_home_margin_errors_when_available": [
+          -27.5
+        ]
+      },
+      "Penn State": {
+        "completed_games": 4,
+        "fcs_opponents": [],
+        "largest_prior_final_margin_points": 45,
+        "week3_model_home_margin_errors_when_available": [
+          -26.1
+        ]
+      }
+    },
+    "provider_kickoff_utc": "2026-10-03T00:00:00.000Z",
+    "quarterback_status": "UNVERIFIED"
+  },
+  {
+    "away_rest_days": "7.2",
+    "away_travel_miles": "1552",
+    "clv_direction_so_far": "FAVORABLE",
+    "context_numeric_adjustments": 0,
+    "fcs_contamination_risk": "UNQUANTIFIED_CFBD_AGGREGATE_MAY_INCLUDE_FCS",
+    "forecast_wind_mph": "11.1",
+    "game": "Cincinnati @ Arizona",
+    "game_id": 401856820,
+    "game_script_physical_sanity": "PASS",
+    "home_rest_days": "7.1",
+    "home_travel_miles": "1055",
+    "implied_away_points_from_independent_models": 25.6,
+    "implied_home_points_from_independent_models": 29.4,
+    "injury_coverage": "INCOMPLETE_ESPN_THREE_TEAM_FEED",
+    "locked_line_advantage_vs_draftkings_points": 1.0,
+    "market": "ATS_SHADOW_UNCERTAINTY",
+    "market_agreement": "NEAR_LOCKED_LINE",
+    "note": "Diagnostic review only; no source line, forecast, or pick rewritten.",
+    "pace_feature_status": "NOT_IN_SANCTIONED_MODEL",
+    "pick": "Cincinnati",
+    "prior_team_review": {
+      "Arizona": {
+        "completed_games": 4,
+        "fcs_opponents": [
+          "Northern Arizona"
+        ],
+        "largest_prior_final_margin_points": 28,
+        "week3_model_home_margin_errors_when_available": [
+          -8.6
+        ]
+      },
+      "Cincinnati": {
+        "completed_games": 4,
+        "fcs_opponents": [
+          "Western Carolina"
+        ],
+        "largest_prior_final_margin_points": 52,
+        "week3_model_home_margin_errors_when_available": [
+          4.3
+        ]
+      }
+    },
+    "provider_kickoff_utc": "2026-10-04T03:00:00.000Z",
+    "quarterback_status": "UNVERIFIED"
+  },
+  {
+    "away_rest_days": "7.0",
+    "away_travel_miles": "132",
+    "clv_direction_so_far": "UNCHANGED",
+    "context_numeric_adjustments": 0,
+    "fcs_contamination_risk": "UNQUANTIFIED_CFBD_AGGREGATE_MAY_INCLUDE_FCS",
+    "forecast_wind_mph": "8.0",
+    "game": "Ohio @ Kent State",
+    "game_id": 401866434,
+    "game_script_physical_sanity": "PASS",
+    "home_rest_days": "7.1",
+    "home_travel_miles": "0",
+    "implied_away_points_from_independent_models": 24.8,
+    "implied_home_points_from_independent_models": 28.4,
+    "injury_coverage": "INCOMPLETE_ESPN_THREE_TEAM_FEED",
+    "locked_line_advantage_vs_draftkings_points": 0.0,
+    "market": "ATS_SHADOW_UNCERTAINTY",
+    "market_agreement": "NEAR_LOCKED_LINE",
+    "note": "Diagnostic review only; no source line, forecast, or pick rewritten.",
+    "pace_feature_status": "NOT_IN_SANCTIONED_MODEL",
+    "pick": "Kent State",
+    "prior_team_review": {
+      "Kent State": {
+        "completed_games": 4,
+        "fcs_opponents": [
+          "Wofford"
+        ],
+        "largest_prior_final_margin_points": 57,
+        "week3_model_home_margin_errors_when_available": [
+          -40.3
+        ]
+      },
+      "Ohio": {
+        "completed_games": 4,
+        "fcs_opponents": [
+          "Stonehill"
+        ],
+        "largest_prior_final_margin_points": 28,
+        "week3_model_home_margin_errors_when_available": [
+          8.5
+        ]
+      }
+    },
+    "provider_kickoff_utc": "2026-10-03T19:30:00.000Z",
+    "quarterback_status": "UNVERIFIED"
+  },
+  {
+    "away_rest_days": "5.1",
+    "away_travel_miles": "215",
+    "clv_direction_so_far": "ADVERSE",
+    "context_numeric_adjustments": 0,
+    "fcs_contamination_risk": "UNQUANTIFIED_CFBD_AGGREGATE_MAY_INCLUDE_FCS",
+    "forecast_wind_mph": "3.3",
+    "game": "North Texas @ Tulsa",
+    "game_id": 401862786,
+    "game_script_physical_sanity": "PASS",
+    "home_rest_days": "5.0",
+    "home_travel_miles": "99",
+    "implied_away_points_from_independent_models": 24.6,
+    "implied_home_points_from_independent_models": 27.5,
+    "injury_coverage": "INCOMPLETE_ESPN_THREE_TEAM_FEED",
+    "locked_line_advantage_vs_draftkings_points": -3.0,
+    "market": "ATS_SHADOW_UNCERTAINTY",
+    "market_agreement": "MATERIAL_DISAGREEMENT",
+    "note": "Diagnostic review only; no source line, forecast, or pick rewritten.",
+    "pace_feature_status": "NOT_IN_SANCTIONED_MODEL",
+    "pick": "Tulsa",
+    "prior_team_review": {
+      "North Texas": {
+        "completed_games": 4,
+        "fcs_opponents": [
+          "Houston Christian"
+        ],
+        "largest_prior_final_margin_points": 49,
+        "week3_model_home_margin_errors_when_available": [
+          -22.5
+        ]
+      },
+      "Tulsa": {
+        "completed_games": 4,
+        "fcs_opponents": [
+          "East Texas A&M"
+        ],
+        "largest_prior_final_margin_points": 42,
+        "week3_model_home_margin_errors_when_available": []
+      }
+    },
+    "provider_kickoff_utc": "2026-10-02T01:00:00.000Z",
+    "quarterback_status": "UNVERIFIED"
+  },
+  {
+    "away_rest_days": "7.7",
+    "away_travel_miles": "409",
+    "clv_direction_so_far": "UNCHANGED",
+    "context_numeric_adjustments": 0,
+    "fcs_contamination_risk": "UNQUANTIFIED_CFBD_AGGREGATE_MAY_INCLUDE_FCS",
+    "forecast_wind_mph": null,
+    "game": "California @ UNLV",
+    "game_id": 401858247,
+    "game_script_physical_sanity": "PASS",
+    "home_rest_days": "7.1",
+    "home_travel_miles": "1839",
+    "implied_away_points_from_independent_models": 19.7,
+    "implied_home_points_from_independent_models": 25.2,
+    "injury_coverage": "INCOMPLETE_ESPN_THREE_TEAM_FEED",
+    "locked_line_advantage_vs_draftkings_points": 0.0,
+    "market": "ATS_SHADOW_UNCERTAINTY",
+    "market_agreement": "NEAR_LOCKED_LINE",
+    "note": "Diagnostic review only; no source line, forecast, or pick rewritten.",
+    "pace_feature_status": "NOT_IN_SANCTIONED_MODEL",
+    "pick": "UNLV",
+    "prior_team_review": {
+      "California": {
+        "completed_games": 4,
+        "fcs_opponents": [
+          "Wagner"
+        ],
+        "largest_prior_final_margin_points": 42,
+        "week3_model_home_margin_errors_when_available": []
+      },
+      "UNLV": {
+        "completed_games": 4,
+        "fcs_opponents": [],
+        "largest_prior_final_margin_points": 38,
+        "week3_model_home_margin_errors_when_available": []
+      }
+    },
+    "provider_kickoff_utc": "2026-10-03T19:30:00.000Z",
+    "quarterback_status": "UNVERIFIED"
+  },
+  {
+    "away_rest_days": "7.1",
+    "away_travel_miles": "186",
+    "clv_direction_so_far": "UNCHANGED",
+    "context_numeric_adjustments": 0,
+    "fcs_contamination_risk": "UNQUANTIFIED_CFBD_AGGREGATE_MAY_INCLUDE_FCS",
+    "forecast_wind_mph": "1.2",
+    "game": "Georgia Southern @ Coastal Carolina",
+    "game_id": 401869942,
+    "game_script_physical_sanity": "PASS",
+    "home_rest_days": "9.0",
+    "home_travel_miles": "0",
+    "implied_away_points_from_independent_models": 22.5,
+    "implied_home_points_from_independent_models": 28.4,
+    "injury_coverage": "INCOMPLETE_ESPN_THREE_TEAM_FEED",
+    "locked_line_advantage_vs_draftkings_points": 0.0,
+    "market": "ATS_SHADOW_UNCERTAINTY",
+    "market_agreement": "NEAR_LOCKED_LINE",
+    "note": "Diagnostic review only; no source line, forecast, or pick rewritten.",
+    "pace_feature_status": "NOT_IN_SANCTIONED_MODEL",
+    "pick": "Coastal Carolina",
+    "prior_team_review": {
+      "Coastal Carolina": {
+        "completed_games": 4,
+        "fcs_opponents": [
+          "Fordham"
+        ],
+        "largest_prior_final_margin_points": 38,
+        "week3_model_home_margin_errors_when_available": [
+          -0.1
+        ]
+      },
+      "Georgia Southern": {
+        "completed_games": 4,
+        "fcs_opponents": [
+          "Charleston Southern"
+        ],
+        "largest_prior_final_margin_points": 31,
+        "week3_model_home_margin_errors_when_available": [
+          -5.7
+        ]
+      }
+    },
+    "provider_kickoff_utc": "2026-10-03T23:00:00.000Z",
+    "quarterback_status": "UNVERIFIED"
+  },
+  {
+    "away_rest_days": "7.0",
+    "away_travel_miles": "248",
+    "clv_direction_so_far": "UNCHANGED",
+    "context_numeric_adjustments": 0,
+    "fcs_contamination_risk": "UNQUANTIFIED_CFBD_AGGREGATE_MAY_INCLUDE_FCS",
+    "forecast_wind_mph": "4.7",
+    "game": "Auburn @ Tennessee",
+    "game_id": 401856710,
+    "game_script_physical_sanity": "PASS",
+    "home_rest_days": "7.1",
+    "home_travel_miles": "0",
+    "implied_away_points_from_independent_models": 16.7,
+    "implied_home_points_from_independent_models": 28.0,
+    "injury_coverage": "INCOMPLETE_ESPN_THREE_TEAM_FEED",
+    "locked_line_advantage_vs_draftkings_points": 0.0,
+    "market": "TOTAL",
+    "market_agreement": "NEAR_LOCKED_LINE",
+    "note": "Diagnostic review only; no source line, forecast, or pick rewritten.",
+    "pace_feature_status": "NOT_IN_SANCTIONED_MODEL",
+    "pick": "under",
+    "prior_team_review": {
+      "Auburn": {
+        "completed_games": 4,
+        "fcs_opponents": [],
+        "largest_prior_final_margin_points": 35,
+        "week3_model_home_margin_errors_when_available": [
+          -11.6
+        ]
+      },
+      "Tennessee": {
+        "completed_games": 4,
+        "fcs_opponents": [
+          "Furman"
+        ],
+        "largest_prior_final_margin_points": 47,
+        "week3_model_home_margin_errors_when_available": [
+          -15.6
+        ]
+      }
+    },
+    "provider_kickoff_utc": "2026-10-03T19:30:00.000Z",
+    "quarterback_status": "UNVERIFIED"
+  },
+  {
+    "away_rest_days": "7.0",
+    "away_travel_miles": "1540",
+    "clv_direction_so_far": "UNCHANGED",
+    "context_numeric_adjustments": 0,
+    "fcs_contamination_risk": "UNQUANTIFIED_CFBD_AGGREGATE_MAY_INCLUDE_FCS",
+    "forecast_wind_mph": "6.5",
+    "game": "Boston College @ SMU",
+    "game_id": 401858246,
+    "game_script_physical_sanity": "PASS",
+    "home_rest_days": "6.6",
+    "home_travel_miles": "0",
+    "implied_away_points_from_independent_models": 16.6,
+    "implied_home_points_from_independent_models": 29.8,
+    "injury_coverage": "INCOMPLETE_ESPN_THREE_TEAM_FEED",
+    "locked_line_advantage_vs_draftkings_points": 0.0,
+    "market": "TOTAL",
+    "market_agreement": "NEAR_LOCKED_LINE",
+    "note": "Diagnostic review only; no source line, forecast, or pick rewritten.",
+    "pace_feature_status": "NOT_IN_SANCTIONED_MODEL",
+    "pick": "under",
+    "prior_team_review": {
+      "Boston College": {
+        "completed_games": 4,
+        "fcs_opponents": [
+          "Maine"
+        ],
+        "largest_prior_final_margin_points": 19,
+        "week3_model_home_margin_errors_when_available": []
+      },
+      "SMU": {
+        "completed_games": 4,
+        "fcs_opponents": [
+          "UC Davis"
+        ],
+        "largest_prior_final_margin_points": 46,
+        "week3_model_home_margin_errors_when_available": [
+          -18.3
+        ]
+      }
+    },
+    "provider_kickoff_utc": "2026-10-03T16:00:00.000Z",
+    "quarterback_status": "UNVERIFIED"
+  },
+  {
+    "away_rest_days": "7.7",
+    "away_travel_miles": "409",
+    "clv_direction_so_far": "ADVERSE",
+    "context_numeric_adjustments": 0,
+    "fcs_contamination_risk": "UNQUANTIFIED_CFBD_AGGREGATE_MAY_INCLUDE_FCS",
+    "forecast_wind_mph": null,
+    "game": "California @ UNLV",
+    "game_id": 401858247,
+    "game_script_physical_sanity": "PASS",
+    "home_rest_days": "7.1",
+    "home_travel_miles": "1839",
+    "implied_away_points_from_independent_models": 19.7,
+    "implied_home_points_from_independent_models": 25.2,
+    "injury_coverage": "INCOMPLETE_ESPN_THREE_TEAM_FEED",
+    "locked_line_advantage_vs_draftkings_points": -1.0,
+    "market": "TOTAL",
+    "market_agreement": "NEAR_LOCKED_LINE",
+    "note": "Diagnostic review only; no source line, forecast, or pick rewritten.",
+    "pace_feature_status": "NOT_IN_SANCTIONED_MODEL",
+    "pick": "under",
+    "prior_team_review": {
+      "California": {
+        "completed_games": 4,
+        "fcs_opponents": [
+          "Wagner"
+        ],
+        "largest_prior_final_margin_points": 42,
+        "week3_model_home_margin_errors_when_available": []
+      },
+      "UNLV": {
+        "completed_games": 4,
+        "fcs_opponents": [],
+        "largest_prior_final_margin_points": 38,
+        "week3_model_home_margin_errors_when_available": []
+      }
+    },
+    "provider_kickoff_utc": "2026-10-03T19:30:00.000Z",
+    "quarterback_status": "UNVERIFIED"
+  },
+  {
+    "away_rest_days": "7.7",
+    "away_travel_miles": "1072",
+    "clv_direction_so_far": "ADVERSE",
+    "context_numeric_adjustments": 0,
+    "fcs_contamination_risk": "UNQUANTIFIED_CFBD_AGGREGATE_MAY_INCLUDE_FCS",
+    "forecast_wind_mph": "3.5",
+    "game": "Navy @ Air Force",
+    "game_id": 401862791,
+    "game_script_physical_sanity": "PASS",
+    "home_rest_days": "6.6",
+    "home_travel_miles": "801",
+    "implied_away_points_from_independent_models": 20.8,
+    "implied_home_points_from_independent_models": 33.1,
+    "injury_coverage": "INCOMPLETE_ESPN_THREE_TEAM_FEED",
+    "locked_line_advantage_vs_draftkings_points": -1.0,
+    "market": "TOTAL",
+    "market_agreement": "NEAR_LOCKED_LINE",
+    "note": "Diagnostic review only; no source line, forecast, or pick rewritten.",
+    "pace_feature_status": "NOT_IN_SANCTIONED_MODEL",
+    "pick": "over",
+    "prior_team_review": {
+      "Air Force": {
+        "completed_games": 3,
+        "fcs_opponents": [
+          "Duquesne"
+        ],
+        "largest_prior_final_margin_points": 34,
+        "week3_model_home_margin_errors_when_available": []
+      },
+      "Navy": {
+        "completed_games": 3,
+        "fcs_opponents": [
+          "Towson"
+        ],
+        "largest_prior_final_margin_points": 27,
+        "week3_model_home_margin_errors_when_available": []
+      }
+    },
+    "provider_kickoff_utc": "2026-10-03T16:00:00.000Z",
+    "quarterback_status": "UNVERIFIED"
+  },
+  {
+    "away_rest_days": "6.1",
+    "away_travel_miles": "517",
+    "clv_direction_so_far": "UNCHANGED",
+    "context_numeric_adjustments": 0,
+    "fcs_contamination_risk": "UNQUANTIFIED_CFBD_AGGREGATE_MAY_INCLUDE_FCS",
+    "forecast_wind_mph": "11.5",
+    "game": "Penn State @ Northwestern",
+    "game_id": 401858476,
+    "game_script_physical_sanity": "PASS",
+    "home_rest_days": "7.0",
+    "home_travel_miles": "208",
+    "implied_away_points_from_independent_models": 25.9,
+    "implied_home_points_from_independent_models": 26.9,
+    "injury_coverage": "INCOMPLETE_ESPN_THREE_TEAM_FEED",
+    "locked_line_advantage_vs_draftkings_points": 0.0,
+    "market": "TOTAL",
+    "market_agreement": "NEAR_LOCKED_LINE",
+    "note": "Diagnostic review only; no source line, forecast, or pick rewritten.",
+    "pace_feature_status": "NOT_IN_SANCTIONED_MODEL",
+    "pick": "over",
+    "prior_team_review": {
+      "Northwestern": {
+        "completed_games": 3,
+        "fcs_opponents": [
+          "South Dakota State"
+        ],
+        "largest_prior_final_margin_points": 34,
+        "week3_model_home_margin_errors_when_available": [
+          -27.5
+        ]
+      },
+      "Penn State": {
+        "completed_games": 4,
+        "fcs_opponents": [],
+        "largest_prior_final_margin_points": 45,
+        "week3_model_home_margin_errors_when_available": [
+          -26.1
+        ]
+      }
+    },
+    "provider_kickoff_utc": "2026-10-03T00:00:00.000Z",
+    "quarterback_status": "UNVERIFIED"
+  }
+]

@@ -1,0 +1,7 @@
+{
+  "endpoint": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/injuries",
+  "requested_at": "2026-10-01T03:26:54.427117+00:00",
+  "sha256": "f12bfd9a3755df829f8f84bd2657756d9da6e20d47fe984a79bfc0f15587b89b",
+  "top_type": "dict",
+  "top_count": 4
+}

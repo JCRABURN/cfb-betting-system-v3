@@ -1,0 +1,43 @@
+{
+  "requests": [
+    {
+      "name": "cfbd-2026-games",
+      "endpoint": "https://api.collegefootballdata.com/games",
+      "parameters": {
+        "year": 2026,
+        "classification": "fbs"
+      },
+      "requested_at": "2026-10-01T03:16:11.098503+00:00",
+      "status": "captured",
+      "path": "cfbd-2026-games.json",
+      "sha256": "45e9c5d88433a4ccd4493efe9e93540ad50a89b8d4d809abacd0d99f7900ce28",
+      "records": 888
+    },
+    {
+      "name": "cfbd-2026-fbs-teams",
+      "endpoint": "https://api.collegefootballdata.com/teams/fbs",
+      "parameters": {
+        "year": 2026
+      },
+      "requested_at": "2026-10-01T03:16:11.443165+00:00",
+      "status": "captured",
+      "path": "cfbd-2026-fbs-teams.json",
+      "sha256": "99441fa547a34880c34cb9a2350ab675d4d9fd90d7a437ef827333cb02a0c317",
+      "records": 138
+    },
+    {
+      "name": "cfbd-week4-advanced",
+      "endpoint": "https://api.collegefootballdata.com/stats/season/advanced",
+      "parameters": {
+        "year": 2026,
+        "endWeek": 4,
+        "excludeGarbageTime": "true"
+      },
+      "requested_at": "2026-10-01T03:16:11.550919+00:00",
+      "status": "captured",
+      "path": "cfbd-week4-advanced.json",
+      "sha256": "6852b017d8802e4113d28749d0592c7638e78cb84936afe6da55068d6a67cecf",
+      "records": 138
+    }
+  ]
+}
