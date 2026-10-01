@@ -66,6 +66,7 @@ def test_market_adversarial_moves_and_decision_separation():
     assert len(decision) == len({row["game_id"] for row in decision}) == 5
     assert all(row["selection_status"] == "WEEK_5_DECISION_SHORTLIST" for row in decision)
     assert all("probability" not in column for column in decision[0])
+    assert all(row["data_completeness"] and row["weather_sensitivity"] for row in decision)
     assert "401862786" not in {row["game_id"] for row in decision}
     mississippi_state = next(row for row in decision if row["game_id"] == "401856707")
     assert "FCS" not in mississippi_state["sample_quality_warning"]

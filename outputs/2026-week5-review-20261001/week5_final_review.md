@@ -1,12 +1,12 @@
 # WEEK 5 FINAL REVIEW — DECISION PACKET
 
-Generated 2026-10-01T13:38:35.876455+00:00 from immutable v4 artifacts and October 1 review captures.
+Generated 2026-10-01T13:43:12.514326+00:00 from immutable v4 artifacts and October 1 review captures.
 Review-only analysis. No official policy ranking, model change, numeric adjustment, sportsbook recommendation, or wager.
 
 ## Data and custody
 
 56/56 immutable SplashSports spread/total locks, 56/56 ATS picks, 56/56 shadow totals, 56/56 market/QB/weather review rows. No lock changed; see `v4-custody-manifest.json` for every v4 SHA-256 and the archived execution DB hash.
-The refreshed ESPN injury feed contains only three stale team groups (2020/2022), so 2026 material injuries remain UNVERIFIED for almost all teams. ESPN passing leaders are candidate QBs, never confirmed Week 5 starters. Official team previews refine several to PROBABLE, not CONFIRMED. No numeric manual adjustment was justified.
+The refreshed ESPN injury feed contains only three stale team groups (2020/2022), so 2026 material injuries remain UNVERIFIED for almost all teams. Of 112 expected QB roles, 13 are PROBABLE, 99 UNCERTAIN and 0 CONFIRMED. ESPN passing leaders are candidate QBs, never confirmed Week 5 starters. No numeric manual adjustment was justified.
 DraftKings matched 56 games; two spreads moved at least 1.5, no totals moved at least 2.5. Outdoor weather was refreshed for 54 games; two are domes. Market observations are diagnostic and do not replace locks.
 
 ## DETERMINISTIC POLICY TOP 5 — NOT STRENGTH RANKED
