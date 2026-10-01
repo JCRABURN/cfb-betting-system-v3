@@ -1,0 +1,16 @@
+game_id,case,assessment,reason
+401871049,WKU @ New Mexico State ATS,RETAIN_GOVERNED_ONLY,Both teams used multiple QBs recently; Week 4 FCS/blowout effects and turnover swings contaminate a 12.7-point raw edge. No QB certainty or market confirmation.
+401862786,North Texas @ Tulsa ATS,DOWNGRADE,"Tulsa used Williams after Hayes, whose knee status remains unconfirmed. DraftKings shifted 3 points against the locked Tulsa side; its 1.4-point raw edge is overwhelmed by that diagnostic."
+401871050,Liberty @ Delaware ATS,CONDITIONAL_SHORTLIST,"Delaware Minicucci is probable; Liberty used Purdie and Vasko. Raw 7.4-point edge and +7.5 lock survive, but both teams had FCS opponents and large blowouts."
+401858245,Pittsburgh @ Virginia Tech ATS,DECISION_SHORTLIST,Pitt Heintschel and VT Grunkemeyer probable; +3.5 lock is half a point better than current +3.0. Modest 4.5-point raw edge avoids oversized-edge trap.
+401858476,Penn State @ Northwestern ATS,DECISION_SHORTLIST,Both QBs probable; Northwestern's six-point loss at Indiana supports competitiveness. Locked +2.5 is half a point worse than current +3.0.
+401856820,Cincinnati @ Arizona ATS,DECISION_SHORTLIST,Both current quarterbacks are probable from official previews; +7.5 lock is 1 point better than current +6.5. Raw 3.8-point edge is modest and uncalibrated.
+401866434,Ohio @ Kent State ATS,DOWNGRADE,Ohio's Vezza was reported injured earlier and Week 5 availability is unresolved. Kent's 57- and 56-point losses distort a four-game EPA sample; 7.1-point edge is fragile.
+401858247,California @ UNLV ATS,SECONDARY,"UNLV Arnold probable, Cal starter less verified; 3.0-point raw edge and unchanged spread survive, but the small edge has no calibration support."
+401869942,Georgia Southern @ Coastal Carolina ATS,DOWNGRADE,"Both QB statuses uncertain, both prior schedules include FCS opponents, and Coastal's Week 4 Liberty loss challenges the 8.4-point raw edge."
+401856710,Auburn @ Tennessee total,RESEARCH_SIGNAL,"Under has 9.9 raw points and no line erosion, but both offensive injuries remain unverified and Tennessee's explosive offense can invalidate the low projection."
+401858246,Boston College @ SMU total,REJECT,"Under 55.5 conflicts with SMU's explosive Jennings passing ceiling; its 464-yard Week 4 passing came against FCS Missouri State, so pace/opponent mix is uncertain."
+401858247,California @ UNLV total,REJECT,"The locked Under 52.5 is a full point worse than current 53.5; indoors, weather offers no scoring suppression and QB/injury status is incomplete."
+401862791,Navy @ Air Force total,WEAK_SIGNAL,"Over projection is 7.4 points high, but locked 46.5 is 1 point worse than current 45.5; service-academy run-game pace and low possessions threaten the Over."
+401858476,Penn State @ Northwestern total,WEAK_SIGNAL,Both QBs probable and Northwestern passed effectively against Indiana; 13.6-mph wind and a historically losing totals model limit the Over case.
+401856707,Alabama @ Mississippi State ATS,DECISION_SHORTLIST,"Only >=7-point edge with no prior FCS opponent on either side. Both QBs probable, current +5.5 unchanged. Strong Alabama opponent and prior blowouts remain major hazards."

@@ -1,0 +1,253 @@
+{
+  "ats_all_recorded_including_provisional_week3": {
+    "loss": 79,
+    "n": 148,
+    "push": 0,
+    "win": 69
+  },
+  "ats_by_week": {
+    "1": {
+      "loss": 25,
+      "n": 43,
+      "push": 0,
+      "win": 18
+    },
+    "2": {
+      "loss": 25,
+      "n": 49,
+      "push": 0,
+      "win": 24
+    },
+    "3": {
+      "loss": 29,
+      "n": 56,
+      "push": 0,
+      "win": 27
+    }
+  },
+  "ats_cuts_all_recorded": {
+    "confidence": {
+      "1": {
+        "loss": 79,
+        "n": 148,
+        "push": 0,
+        "win": 69
+      }
+    },
+    "favorite_status": {
+      "favorite": {
+        "loss": 22,
+        "n": 36,
+        "push": 0,
+        "win": 14
+      },
+      "underdog": {
+        "loss": 57,
+        "n": 112,
+        "push": 0,
+        "win": 55
+      }
+    },
+    "hook_outcome": {
+      "lost_by_hook": {
+        "loss": 5,
+        "n": 5,
+        "push": 0,
+        "win": 0
+      },
+      "not_hook": {
+        "loss": 74,
+        "n": 134,
+        "push": 0,
+        "win": 60
+      },
+      "won_by_hook": {
+        "loss": 0,
+        "n": 9,
+        "push": 0,
+        "win": 9
+      }
+    },
+    "road_favorite": {
+      "False": {
+        "loss": 74,
+        "n": 140,
+        "push": 0,
+        "win": 66
+      },
+      "True": {
+        "loss": 5,
+        "n": 8,
+        "push": 0,
+        "win": 3
+      }
+    },
+    "selected_side": {
+      "away": {
+        "loss": 49,
+        "n": 95,
+        "push": 0,
+        "win": 46
+      },
+      "home": {
+        "loss": 30,
+        "n": 53,
+        "push": 0,
+        "win": 23
+      }
+    },
+    "spread_bucket": {
+      "10_to_13_5": {
+        "loss": 9,
+        "n": 13,
+        "push": 0,
+        "win": 4
+      },
+      "14_plus": {
+        "loss": 32,
+        "n": 73,
+        "push": 0,
+        "win": 41
+      },
+      "3_to_6_5": {
+        "loss": 21,
+        "n": 29,
+        "push": 0,
+        "win": 8
+      },
+      "7_to_9_5": {
+        "loss": 7,
+        "n": 17,
+        "push": 0,
+        "win": 10
+      },
+      "under_3": {
+        "loss": 10,
+        "n": 16,
+        "push": 0,
+        "win": 6
+      }
+    }
+  },
+  "ats_recorded_local_draft_weeks1_2": {
+    "loss": 50,
+    "n": 92,
+    "push": 0,
+    "win": 42
+  },
+  "ats_top_five_by_week": {
+    "1": {
+      "loss": 4,
+      "n": 5,
+      "push": 0,
+      "win": 1
+    },
+    "2": {
+      "loss": 3,
+      "n": 5,
+      "push": 0,
+      "win": 2
+    },
+    "3": {
+      "loss": 4,
+      "n": 5,
+      "push": 0,
+      "win": 1
+    }
+  },
+  "ats_top_five_including_provisional_week3": {
+    "loss": 11,
+    "n": 15,
+    "push": 0,
+    "win": 4
+  },
+  "ats_top_five_recorded_local_draft_weeks1_2": {
+    "loss": 7,
+    "n": 10,
+    "push": 0,
+    "win": 3
+  },
+  "limitations": [
+    "Week 1 archived closing timestamps do not satisfy governed CLV custody",
+    "Week 2 and 3 complete closing-line custody is absent",
+    "Week 3 cards were provisional, not officially published",
+    "No Week 4 pregame card is available"
+  ],
+  "score_source_sha256": "45e9c5d88433a4ccd4493efe9e93540ad50a89b8d4d809abacd0d99f7900ce28",
+  "source_sha256": {
+    "week1-postgame-audit.csv": "b9248fd7db2ba2cde5ba3674f61683522d9a6f885811441846368f82092dcf20",
+    "week2-audit.json": "c193ecd1735d9ed0c81392491668e84fa3c6919b59463487151c5c10fc2dbed1",
+    "week3-ats-card.json": "8909f3e73bf38d010f81b9db9a2c4117d01453b239727ece575bc0259fa197ec",
+    "week3-totals-card.json": "bc420c70d3b8ad848d7b071f64f9f64fa142f51806949ff35e33c7f4949ecb23"
+  },
+  "totals_all_shadow": {
+    "loss": 55,
+    "n": 105,
+    "push": 0,
+    "win": 50
+  },
+  "totals_by_week": {
+    "2": {
+      "loss": 25,
+      "n": 49,
+      "push": 0,
+      "win": 24
+    },
+    "3": {
+      "loss": 30,
+      "n": 56,
+      "push": 0,
+      "win": 26
+    }
+  },
+  "totals_cuts_all_recorded": {
+    "confidence": {
+      "1": {
+        "loss": 16,
+        "n": 27,
+        "push": 0,
+        "win": 11
+      },
+      "2": {
+        "loss": 12,
+        "n": 23,
+        "push": 0,
+        "win": 11
+      },
+      "3": {
+        "loss": 20,
+        "n": 38,
+        "push": 0,
+        "win": 18
+      },
+      "4": {
+        "loss": 7,
+        "n": 16,
+        "push": 0,
+        "win": 9
+      },
+      "5": {
+        "loss": 0,
+        "n": 1,
+        "push": 0,
+        "win": 1
+      }
+    },
+    "direction": {
+      "over": {
+        "loss": 22,
+        "n": 43,
+        "push": 0,
+        "win": 21
+      },
+      "under": {
+        "loss": 33,
+        "n": 62,
+        "push": 0,
+        "win": 29
+      }
+    }
+  },
+  "totals_top_five": "NO_STORED_TOP_FIVE_ACROSS_BOTH_WEEKS;RETROSPECTIVE_RANK_NOT_CLAIMED",
+  "week4": "NO_PREEXISTING_PICK_CARD;RESULTS_ONLY;NO_RETROACTIVE_PICKS"
+}

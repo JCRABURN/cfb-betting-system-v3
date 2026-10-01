@@ -47,6 +47,11 @@ SENSITIVE_PARAMETER_TOKENS = (
 # Provider-specific aliases live only at the canonical resolver boundary.
 # Downstream parsers and card code must not add one-off corrections.
 DEFAULT_TEAM_ALIASES: Mapping[str, Mapping[str, str]] = MappingProxyType({
+    "SplashSports": MappingProxyType({
+        "UMass": "Massachusetts",
+        "Louisiana-Monroe": "UL Monroe",
+        "Miami (FL)": "Miami",
+    }),
     "the_odds_api": MappingProxyType({
         "Appalachian State": "App State",
         "UMass": "Massachusetts",

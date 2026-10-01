@@ -1,0 +1,1402 @@
+[
+  {
+    "game_id": 401856705,
+    "requested_at": "2026-10-01T13:16:59.140801+00:00",
+    "source": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401856705",
+    "response_sha256": "48380662ebb44e05adeec40aada720152a9548abab3d4966f257b693cb8966fe",
+    "teams": [
+      {
+        "team": "Georgia Bulldogs",
+        "espn_team_id": "61",
+        "season_passing_leader": "Gunner Stockton",
+        "position": "QB",
+        "athlete_status": "Active",
+        "season_passing_yards": 754.0
+      },
+      {
+        "team": "Vanderbilt Commodores",
+        "espn_team_id": "238",
+        "season_passing_leader": "Jared Curtis",
+        "position": "QB",
+        "athlete_status": "Active",
+        "season_passing_yards": 746.0
+      }
+    ],
+    "status": "PREVIEW_PASSING_LEADER_ONLY_NOT_CONFIRMED_STARTER"
+  },
+  {
+    "game_id": 401856707,
+    "requested_at": "2026-10-01T13:16:59.141813+00:00",
+    "source": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401856707",
+    "response_sha256": "b06bb02b612c0679b2deccba66b285697db0089af5794979bc919de51aec2d63",
+    "teams": [
+      {
+        "team": "Mississippi State Bulldogs",
+        "espn_team_id": "344",
+        "season_passing_leader": "Kamario Taylor",
+        "position": "QB",
+        "athlete_status": "Active",
+        "season_passing_yards": 1192.0
+      },
+      {
+        "team": "Alabama Crimson Tide",
+        "espn_team_id": "333",
+        "season_passing_leader": "Keelon Russell",
+        "position": "QB",
+        "athlete_status": "Active",
+        "season_passing_yards": 1129.0
+      }
+    ],
+    "status": "PREVIEW_PASSING_LEADER_ONLY_NOT_CONFIRMED_STARTER"
+  },
+  {
+    "game_id": 401856708,
+    "requested_at": "2026-10-01T13:16:59.141813+00:00",
+    "source": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401856708",
+    "response_sha256": "126e20703c32c316a833d29ee65bb5b198e1553a4bbab3ddd8541e604b52f0a4",
+    "teams": [
+      {
+        "team": "Missouri Tigers",
+        "espn_team_id": "142",
+        "season_passing_leader": "Austin Simmons",
+        "position": "QB",
+        "athlete_status": "Active",
+        "season_passing_yards": 947.0
+      },
+      {
+        "team": "Florida Gators",
+        "espn_team_id": "57",
+        "season_passing_leader": "Aaron Philo",
+        "position": "QB",
+        "athlete_status": "Active",
+        "season_passing_yards": 917.0
+      }
+    ],
+    "status": "PREVIEW_PASSING_LEADER_ONLY_NOT_CONFIRMED_STARTER"
+  },
+  {
+    "game_id": 401856709,
+    "requested_at": "2026-10-01T13:16:59.142811+00:00",
+    "source": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401856709",
+    "response_sha256": "c2da48ed27076727132ed4f2b4ef9fe2e94ed51a21edb1699ac267b7517b28f3",
+    "teams": [
+      {
+        "team": "South Carolina Gamecocks",
+        "espn_team_id": "2579",
+        "season_passing_leader": "LaNorris Sellers",
+        "position": "QB",
+        "athlete_status": "Active",
+        "season_passing_yards": 833.0
+      },
+      {
+        "team": "Kentucky Wildcats",
+        "espn_team_id": "96",
+        "season_passing_leader": "Kenny Minchey",
+        "position": "QB",
+        "athlete_status": "Active",
+        "season_passing_yards": 876.0
+      }
+    ],
+    "status": "PREVIEW_PASSING_LEADER_ONLY_NOT_CONFIRMED_STARTER"
+  },
+  {
+    "game_id": 401856710,
+    "requested_at": "2026-10-01T13:16:59.142811+00:00",
+    "source": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401856710",
+    "response_sha256": "74acd7b49d2d8337d73e16a0c0d5afcc00422bf159139b20d9bde3c0ecd4bfae",
+    "teams": [
+      {
+        "team": "Tennessee Volunteers",
+        "espn_team_id": "2633",
+        "season_passing_leader": "Faizon Brandon",
+        "position": "QB",
+        "athlete_status": "Active",
+        "season_passing_yards": 697.0
+      },
+      {
+        "team": "Auburn Tigers",
+        "espn_team_id": "2",
+        "season_passing_leader": "Byrum Brown",
+        "position": "QB",
+        "athlete_status": "Active",
+        "season_passing_yards": 896.0
+      }
+    ],
+    "status": "PREVIEW_PASSING_LEADER_ONLY_NOT_CONFIRMED_STARTER"
+  },
+  {
+    "game_id": 401856711,
+    "requested_at": "2026-10-01T13:16:59.143809+00:00",
+    "source": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401856711",
+    "response_sha256": "3f740a93dc0bc9ac6938d14e38ebb9964c66f3e7800cc02a0377cd86726f34ec",
+    "teams": [
+      {
+        "team": "Texas A&M Aggies",
+        "espn_team_id": "245",
+        "season_passing_leader": "Marcel Reed",
+        "position": "QB",
+        "athlete_status": "Active",
+        "season_passing_yards": 738.0
+      },
+      {
+        "team": "Arkansas Razorbacks",
+        "espn_team_id": "8",
+        "season_passing_leader": "KJ Jackson",
+        "position": "QB",
+        "athlete_status": "Active",
+        "season_passing_yards": 927.0
+      }
+    ],
+    "status": "PREVIEW_PASSING_LEADER_ONLY_NOT_CONFIRMED_STARTER"
+  },
+  {
+    "game_id": 401856807,
+    "requested_at": "2026-10-01T13:16:59.425701+00:00",
+    "source": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401856807",
+    "response_sha256": "25d785b763f43f9b2fb64d34c788d4c5b22cf3b747c7f548b74b0bfbbe7b2fdf",
+    "teams": [
+      {
+        "team": "Kansas Jayhawks",
+        "espn_team_id": "2305",
+        "season_passing_leader": "Isaiah Marshall",
+        "position": "QB",
+        "athlete_status": "Active",
+        "season_passing_yards": 649.0
+      },
+      {
+        "team": "Middle Tennessee Blue Raiders",
+        "espn_team_id": "2393",
+        "season_passing_leader": "Roman Gagliano",
+        "position": "QB",
+        "athlete_status": "Active",
+        "season_passing_yards": 832.0
+      }
+    ],
+    "status": "PREVIEW_PASSING_LEADER_ONLY_NOT_CONFIRMED_STARTER"
+  },
+  {
+    "game_id": 401856817,
+    "requested_at": "2026-10-01T13:16:59.428621+00:00",
+    "source": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401856817",
+    "response_sha256": "19a5010536dcb788ad5c91f6606ccd685a38f122e868b5a9e107b9a79d32c1e1",
+    "teams": [
+      {
+        "team": "Arizona State Sun Devils",
+        "espn_team_id": "9",
+        "season_passing_leader": "Cutter Boley",
+        "position": "QB",
+        "athlete_status": "Active",
+        "season_passing_yards": 736.0
+      },
+      {
+        "team": "Baylor Bears",
+        "espn_team_id": "239",
+        "season_passing_leader": "Nate Bennett",
+        "position": "QB",
+        "athlete_status": "Active",
+        "season_passing_yards": 567.0
+      }
+    ],
+    "status": "PREVIEW_PASSING_LEADER_ONLY_NOT_CONFIRMED_STARTER"
+  },
+  {
+    "game_id": 401856818,
+    "requested_at": "2026-10-01T13:16:59.430640+00:00",
+    "source": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401856818",
+    "response_sha256": "7215d44b61b28b12908ea06aeb1b3848fa1b255bd0def4e5310ad70385ba654f",
+    "teams": [
+      {
+        "team": "TCU Horned Frogs",
+        "espn_team_id": "2628",
+        "season_passing_leader": "Jaden Craig",
+        "position": "QB",
+        "athlete_status": "Active",
+        "season_passing_yards": 1213.0
+      },
+      {
+        "team": "BYU Cougars",
+        "espn_team_id": "252",
+        "season_passing_leader": "Bear Bachmeier",
+        "position": "QB",
+        "athlete_status": "Active",
+        "season_passing_yards": 642.0
+      }
+    ],
+    "status": "PREVIEW_PASSING_LEADER_ONLY_NOT_CONFIRMED_STARTER"
+  },
+  {
+    "game_id": 401856819,
+    "requested_at": "2026-10-01T13:16:59.433648+00:00",
+    "source": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401856819",
+    "response_sha256": "39b478f2c329712d1ceb62aff7a0c0a13a5228e04feb6b64000e04af389fcc9b",
+    "teams": [
+      {
+        "team": "Houston Cougars",
+        "espn_team_id": "248",
+        "season_passing_leader": "Conner Weigman",
+        "position": "QB",
+        "athlete_status": "Active",
+        "season_passing_yards": 947.0
+      },
+      {
+        "team": "UCF Knights",
+        "espn_team_id": "2116",
+        "season_passing_leader": "Alonza Barnett III",
+        "position": "QB",
+        "athlete_status": "Active",
+        "season_passing_yards": 344.0
+      }
+    ],
+    "status": "PREVIEW_PASSING_LEADER_ONLY_NOT_CONFIRMED_STARTER"
+  },
+  {
+    "game_id": 401856820,
+    "requested_at": "2026-10-01T13:16:59.474644+00:00",
+    "source": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401856820",
+    "response_sha256": "cdd66b56ea7476ad152761a80111e575ce047e652c15f810abe6b4f10872a148",
+    "teams": [
+      {
+        "team": "Arizona Wildcats",
+        "espn_team_id": "12",
+        "season_passing_leader": "Noah Fifita",
+        "position": "QB",
+        "athlete_status": "Active",
+        "season_passing_yards": 1131.0
+      },
+      {
+        "team": "Cincinnati Bearcats",
+        "espn_team_id": "2132",
+        "season_passing_leader": "JC French IV",
+        "position": "QB",
+        "athlete_status": "Active",
+        "season_passing_yards": 796.0
+      }
+    ],
+    "status": "PREVIEW_PASSING_LEADER_ONLY_NOT_CONFIRMED_STARTER"
+  },
+  {
+    "game_id": 401856821,
+    "requested_at": "2026-10-01T13:16:59.482198+00:00",
+    "source": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401856821",
+    "response_sha256": "135318f0f5d713038522e7ad31bfa139253206dfe6b4084507dfc0f7f61692e4",
+    "teams": [
+      {
+        "team": "Colorado Buffaloes",
+        "espn_team_id": "38",
+        "season_passing_leader": "Julian Lewis",
+        "position": "QB",
+        "athlete_status": "Active",
+        "season_passing_yards": 733.0
+      },
+      {
+        "team": "Texas Tech Red Raiders",
+        "espn_team_id": "2641",
+        "season_passing_leader": "Will Hammond",
+        "position": "QB",
+        "athlete_status": "Active",
+        "season_passing_yards": 968.0
+      }
+    ],
+    "status": "PREVIEW_PASSING_LEADER_ONLY_NOT_CONFIRMED_STARTER"
+  },
+  {
+    "game_id": 401856822,
+    "requested_at": "2026-10-01T13:16:59.718133+00:00",
+    "source": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401856822",
+    "response_sha256": "be08cc4f2cdd88927bb25d204757e17b87c14ba4775b603a40a70912d92ecf58",
+    "teams": [
+      {
+        "team": "Iowa State Cyclones",
+        "espn_team_id": "66",
+        "season_passing_leader": "Jaylen Raynor",
+        "position": "QB",
+        "athlete_status": "Active",
+        "season_passing_yards": 639.0
+      },
+      {
+        "team": "West Virginia Mountaineers",
+        "espn_team_id": "277",
+        "season_passing_leader": "Michael Hawkins Jr.",
+        "position": "QB",
+        "athlete_status": "Active",
+        "season_passing_yards": 609.0
+      }
+    ],
+    "status": "PREVIEW_PASSING_LEADER_ONLY_NOT_CONFIRMED_STARTER"
+  },
+  {
+    "game_id": 401858245,
+    "requested_at": "2026-10-01T13:16:59.720145+00:00",
+    "source": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401858245",
+    "response_sha256": "c15f9cdcf204e844d69e2a210ba46a312eb72468f06cef7fcb5595ff04f562e1",
+    "teams": [
+      {
+        "team": "Virginia Tech Hokies",
+        "espn_team_id": "259",
+        "season_passing_leader": "Ethan Grunkemeyer",
+        "position": "QB",
+        "athlete_status": "Active",
+        "season_passing_yards": 1012.0
+      },
+      {
+        "team": "Pittsburgh Panthers",
+        "espn_team_id": "221",
+        "season_passing_leader": "Mason Heintschel",
+        "position": "QB",
+        "athlete_status": "Active",
+        "season_passing_yards": 1191.0
+      }
+    ],
+    "status": "PREVIEW_PASSING_LEADER_ONLY_NOT_CONFIRMED_STARTER"
+  },
+  {
+    "game_id": 401858246,
+    "requested_at": "2026-10-01T13:16:59.722145+00:00",
+    "source": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401858246",
+    "response_sha256": "04bdd1e5da564c97445bae24ee71dff2c3d5a1a5a98770d83330d7c25fdc9b1d",
+    "teams": [
+      {
+        "team": "SMU Mustangs",
+        "espn_team_id": "2567",
+        "season_passing_leader": "Kevin Jennings",
+        "position": "QB",
+        "athlete_status": "Active",
+        "season_passing_yards": 1453.0
+      },
+      {
+        "team": "Boston College Eagles",
+        "espn_team_id": "103",
+        "season_passing_leader": "Mason McKenzie",
+        "position": "QB",
+        "athlete_status": "Active",
+        "season_passing_yards": 759.0
+      }
+    ],
+    "status": "PREVIEW_PASSING_LEADER_ONLY_NOT_CONFIRMED_STARTER"
+  },
+  {
+    "game_id": 401858247,
+    "requested_at": "2026-10-01T13:16:59.749757+00:00",
+    "source": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401858247",
+    "response_sha256": "2c5ed195fdf4969ca24ba4afb4f472e92f66b4f5cff2426807d2a46276dc7127",
+    "teams": [
+      {
+        "team": "UNLV Rebels",
+        "espn_team_id": "2439",
+        "season_passing_leader": "Jackson Arnold",
+        "position": "QB",
+        "athlete_status": "Active",
+        "season_passing_yards": 891.0
+      },
+      {
+        "team": "California Golden Bears",
+        "espn_team_id": "25",
+        "season_passing_leader": "Jaron-Keawe Sagapolutele",
+        "position": "QB",
+        "athlete_status": "Active",
+        "season_passing_yards": 985.0
+      }
+    ],
+    "status": "PREVIEW_PASSING_LEADER_ONLY_NOT_CONFIRMED_STARTER"
+  },
+  {
+    "game_id": 401858248,
+    "requested_at": "2026-10-01T13:16:59.763303+00:00",
+    "source": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401858248",
+    "response_sha256": "e6326b8ea586a233ba9cee7a61719be9a50e3190927943ff1b5372cdf08bec05",
+    "teams": [
+      {
+        "team": "NC State Wolfpack",
+        "espn_team_id": "152",
+        "season_passing_leader": "CJ Bailey",
+        "position": "QB",
+        "athlete_status": "Active",
+        "season_passing_yards": 893.0
+      },
+      {
+        "team": "Louisville Cardinals",
+        "espn_team_id": "97",
+        "season_passing_leader": "Lincoln Kienholz",
+        "position": "QB",
+        "athlete_status": "Active",
+        "season_passing_yards": 1140.0
+      }
+    ],
+    "status": "PREVIEW_PASSING_LEADER_ONLY_NOT_CONFIRMED_STARTER"
+  },
+  {
+    "game_id": 401858249,
+    "requested_at": "2026-10-01T13:16:59.792439+00:00",
+    "source": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401858249",
+    "response_sha256": "6d0595637f4fccf145ed08f09a8e51c47d0791c78c1507b0581f284b204c8e81",
+    "teams": [
+      {
+        "team": "Clemson Tigers",
+        "espn_team_id": "228",
+        "season_passing_leader": "Tait Reynolds",
+        "position": "QB",
+        "athlete_status": "Active",
+        "season_passing_yards": 521.0
+      },
+      {
+        "team": "Miami Hurricanes",
+        "espn_team_id": "2390",
+        "season_passing_leader": "Darian Mensah",
+        "position": "QB",
+        "athlete_status": "Active",
+        "season_passing_yards": 1211.0
+      }
+    ],
+    "status": "PREVIEW_PASSING_LEADER_ONLY_NOT_CONFIRMED_STARTER"
+  },
+  {
+    "game_id": 401858250,
+    "requested_at": "2026-10-01T13:16:59.995728+00:00",
+    "source": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401858250",
+    "response_sha256": "ec16a626e678be4775f16fa78fdd7c5a4a6a8bddf6b438132d3920c2bf39e8e8",
+    "teams": [
+      {
+        "team": "North Carolina Tar Heels",
+        "espn_team_id": "153",
+        "season_passing_leader": "Billy Edwards Jr.",
+        "position": "QB",
+        "athlete_status": "Active",
+        "season_passing_yards": 611.0
+      },
+      {
+        "team": "Notre Dame Fighting Irish",
+        "espn_team_id": "87",
+        "season_passing_leader": "CJ Carr",
+        "position": "QB",
+        "athlete_status": "Active",
+        "season_passing_yards": 963.0
+      }
+    ],
+    "status": "PREVIEW_PASSING_LEADER_ONLY_NOT_CONFIRMED_STARTER"
+  },
+  {
+    "game_id": 401858251,
+    "requested_at": "2026-10-01T13:17:00.021535+00:00",
+    "source": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401858251",
+    "response_sha256": "c24bd9923e5ca7abd4b7161589ce9375e12cd81a24c970beeb1100c2fa998e18",
+    "teams": [
+      {
+        "team": "Wake Forest Demon Deacons",
+        "espn_team_id": "154",
+        "season_passing_leader": "Gio Lopez",
+        "position": "QB",
+        "athlete_status": "Active",
+        "season_passing_yards": 1112.0
+      },
+      {
+        "team": "Stanford Cardinal",
+        "espn_team_id": "24",
+        "season_passing_leader": "Davis Warren",
+        "position": "QB",
+        "athlete_status": "Active",
+        "season_passing_yards": 1071.0
+      }
+    ],
+    "status": "PREVIEW_PASSING_LEADER_ONLY_NOT_CONFIRMED_STARTER"
+  },
+  {
+    "game_id": 401858252,
+    "requested_at": "2026-10-01T13:17:00.051082+00:00",
+    "source": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401858252",
+    "response_sha256": "376496ae3291323ec36ce18cfe00cd8667559aa331839816015e69b9435fb825",
+    "teams": [
+      {
+        "team": "UConn Huskies",
+        "espn_team_id": "41",
+        "season_passing_leader": "Kalieb Osborne",
+        "position": "QB",
+        "athlete_status": "Active",
+        "season_passing_yards": 850.0
+      },
+      {
+        "team": "Syracuse Orange",
+        "espn_team_id": "183",
+        "season_passing_leader": "Steve Angeli",
+        "position": "QB",
+        "athlete_status": "Active",
+        "season_passing_yards": 731.0
+      }
+    ],
+    "status": "PREVIEW_PASSING_LEADER_ONLY_NOT_CONFIRMED_STARTER"
+  },
+  {
+    "game_id": 401858253,
+    "requested_at": "2026-10-01T13:17:00.072182+00:00",
+    "source": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401858253",
+    "response_sha256": "6cd8f6178753191c834f21dcb640762b41ded7cf7b32f530c30dcdb82a3261a5",
+    "teams": [
+      {
+        "team": "Florida State Seminoles",
+        "espn_team_id": "52",
+        "season_passing_leader": "Ashton Daniels",
+        "position": "QB",
+        "athlete_status": "Active",
+        "season_passing_yards": 928.0
+      },
+      {
+        "team": "Virginia Cavaliers",
+        "espn_team_id": "258",
+        "season_passing_leader": "Beau Pribula",
+        "position": "QB",
+        "athlete_status": "Active",
+        "season_passing_yards": 793.0
+      }
+    ],
+    "status": "PREVIEW_PASSING_LEADER_ONLY_NOT_CONFIRMED_STARTER"
+  },
+  {
+    "game_id": 401858472,
+    "requested_at": "2026-10-01T13:17:00.104353+00:00",
+    "source": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401858472",
+    "response_sha256": "e8e6bfa4b03808f9c4e3e3b017d2ac567ecb5437ccc37789f910d5bcbfaf6e35",
+    "teams": [
+      {
+        "team": "Illinois Fighting Illini",
+        "espn_team_id": "356",
+        "season_passing_leader": "Katin Houser",
+        "position": "QB",
+        "athlete_status": "Active",
+        "season_passing_yards": 1021.0
+      },
+      {
+        "team": "Purdue Boilermakers",
+        "espn_team_id": "2509",
+        "season_passing_leader": "Ryan Browne",
+        "position": "QB",
+        "athlete_status": "Active",
+        "season_passing_yards": 1135.0
+      }
+    ],
+    "status": "PREVIEW_PASSING_LEADER_ONLY_NOT_CONFIRMED_STARTER"
+  },
+  {
+    "game_id": 401858473,
+    "requested_at": "2026-10-01T13:17:00.218078+00:00",
+    "source": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401858473",
+    "response_sha256": "00b2bf5dea7584e07cb452f6b1a93a791f6a76f2d1fc2d1ecbabf8805ab1c310",
+    "teams": [
+      {
+        "team": "Iowa Hawkeyes",
+        "espn_team_id": "2294",
+        "season_passing_leader": "Hank Brown",
+        "position": "QB",
+        "athlete_status": "Active",
+        "season_passing_yards": 700.0
+      },
+      {
+        "team": "Ohio State Buckeyes",
+        "espn_team_id": "194",
+        "season_passing_leader": "Julian Sayin",
+        "position": "QB",
+        "athlete_status": "Active",
+        "season_passing_yards": 1206.0
+      }
+    ],
+    "status": "PREVIEW_PASSING_LEADER_ONLY_NOT_CONFIRMED_STARTER"
+  },
+  {
+    "game_id": 401858474,
+    "requested_at": "2026-10-01T13:17:00.309520+00:00",
+    "source": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401858474",
+    "response_sha256": "87df8e8b39f015a01c37f089334edefa01b23e97acb570dbf1e67e73c34e5b35",
+    "teams": [
+      {
+        "team": "Minnesota Golden Gophers",
+        "espn_team_id": "135",
+        "season_passing_leader": "Drake Lindsey",
+        "position": "QB",
+        "athlete_status": "Active",
+        "season_passing_yards": 951.0
+      },
+      {
+        "team": "Michigan Wolverines",
+        "espn_team_id": "130",
+        "season_passing_leader": "Bryce Underwood",
+        "position": "QB",
+        "athlete_status": "Active",
+        "season_passing_yards": 780.0
+      }
+    ],
+    "status": "PREVIEW_PASSING_LEADER_ONLY_NOT_CONFIRMED_STARTER"
+  },
+  {
+    "game_id": 401858475,
+    "requested_at": "2026-10-01T13:17:00.329634+00:00",
+    "source": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401858475",
+    "response_sha256": "93e8f8aa3bb03223c31ca347f814b0aaa4848ff376d7a9ee69dcf579dc2976df",
+    "teams": [
+      {
+        "team": "Nebraska Cornhuskers",
+        "espn_team_id": "158",
+        "season_passing_leader": "Anthony Colandrea",
+        "position": "QB",
+        "athlete_status": "Active",
+        "season_passing_yards": 904.0
+      },
+      {
+        "team": "Maryland Terrapins",
+        "espn_team_id": "120",
+        "season_passing_leader": "Malik Washington",
+        "position": "QB",
+        "athlete_status": "Active",
+        "season_passing_yards": 1034.0
+      }
+    ],
+    "status": "PREVIEW_PASSING_LEADER_ONLY_NOT_CONFIRMED_STARTER"
+  },
+  {
+    "game_id": 401858476,
+    "requested_at": "2026-10-01T13:17:00.354161+00:00",
+    "source": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401858476",
+    "response_sha256": "12656b5aa13321a858553d447985988d4b10e54142dcc2a87d4e646720f30585",
+    "teams": [
+      {
+        "team": "Northwestern Wildcats",
+        "espn_team_id": "77",
+        "season_passing_leader": "Aidan Chiles",
+        "position": "QB",
+        "athlete_status": "Active",
+        "season_passing_yards": 807.0
+      },
+      {
+        "team": "Penn State Nittany Lions",
+        "espn_team_id": "213",
+        "season_passing_leader": "Rocco Becht",
+        "position": "QB",
+        "athlete_status": "Active",
+        "season_passing_yards": 865.0
+      }
+    ],
+    "status": "PREVIEW_PASSING_LEADER_ONLY_NOT_CONFIRMED_STARTER"
+  },
+  {
+    "game_id": 401858477,
+    "requested_at": "2026-10-01T13:17:00.361737+00:00",
+    "source": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401858477",
+    "response_sha256": "6b5ba6bb317abadc187dcdc69b87b4ed33739a2f0ca914b1d3214650bc766029",
+    "teams": [
+      {
+        "team": "Rutgers Scarlet Knights",
+        "espn_team_id": "164",
+        "season_passing_leader": "Dylan Lonergan",
+        "position": "QB",
+        "athlete_status": "Active",
+        "season_passing_yards": 708.0
+      },
+      {
+        "team": "Indiana Hoosiers",
+        "espn_team_id": "84",
+        "season_passing_leader": "Josh Hoover",
+        "position": "QB",
+        "athlete_status": "Active",
+        "season_passing_yards": 850.0
+      }
+    ],
+    "status": "PREVIEW_PASSING_LEADER_ONLY_NOT_CONFIRMED_STARTER"
+  },
+  {
+    "game_id": 401858478,
+    "requested_at": "2026-10-01T13:17:00.501885+00:00",
+    "source": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401858478",
+    "response_sha256": "eabf27ab1a0e7bf2840b1a4fa2c76f4cb0e69f4d4f362d349a479c055b49355a",
+    "teams": [
+      {
+        "team": "USC Trojans",
+        "espn_team_id": "30",
+        "season_passing_leader": "Jayden Maiava",
+        "position": "QB",
+        "athlete_status": "Active",
+        "season_passing_yards": 1499.0
+      },
+      {
+        "team": "Washington Huskies",
+        "espn_team_id": "264",
+        "season_passing_leader": "Demond Williams Jr.",
+        "position": "QB",
+        "athlete_status": "Active",
+        "season_passing_yards": 1129.0
+      }
+    ],
+    "status": "PREVIEW_PASSING_LEADER_ONLY_NOT_CONFIRMED_STARTER"
+  },
+  {
+    "game_id": 401858479,
+    "requested_at": "2026-10-01T13:17:00.627881+00:00",
+    "source": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401858479",
+    "response_sha256": "7862bfff7204888236b049cd80c8203d17405ec71747e51c970ebd4af70cb02c",
+    "teams": [
+      {
+        "team": "Wisconsin Badgers",
+        "espn_team_id": "275",
+        "season_passing_leader": "Colton Joseph",
+        "position": "QB",
+        "athlete_status": "Active",
+        "season_passing_yards": 987.0
+      },
+      {
+        "team": "Michigan State Spartans",
+        "espn_team_id": "127",
+        "season_passing_leader": "Alessio Milivojevic",
+        "position": "QB",
+        "athlete_status": "Active",
+        "season_passing_yards": 748.0
+      }
+    ],
+    "status": "PREVIEW_PASSING_LEADER_ONLY_NOT_CONFIRMED_STARTER"
+  },
+  {
+    "game_id": 401860898,
+    "requested_at": "2026-10-01T13:17:00.633879+00:00",
+    "source": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401860898",
+    "response_sha256": "e28762d96970b9f9736276a46951f91f6f4fc36b8d0419ac8921cc56d9e23441",
+    "teams": [
+      {
+        "team": "Boise State Broncos",
+        "espn_team_id": "68",
+        "season_passing_leader": "Maddux Madsen",
+        "position": "QB",
+        "athlete_status": "Active",
+        "season_passing_yards": 814.0
+      },
+      {
+        "team": "Utah State Aggies",
+        "espn_team_id": "328",
+        "season_passing_leader": "Grady Brosterhous",
+        "position": "QB",
+        "athlete_status": "Active",
+        "season_passing_yards": 635.0
+      }
+    ],
+    "status": "PREVIEW_PASSING_LEADER_ONLY_NOT_CONFIRMED_STARTER"
+  },
+  {
+    "game_id": 401860899,
+    "requested_at": "2026-10-01T13:17:00.638543+00:00",
+    "source": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401860899",
+    "response_sha256": "65b7e3e781ad8740b0842e38e0a617a00184e6fba3b16fdf16000245683845f0",
+    "teams": [
+      {
+        "team": "Colorado State Rams",
+        "espn_team_id": "36",
+        "season_passing_leader": "Hauss Hejny",
+        "position": "QB",
+        "athlete_status": "Active",
+        "season_passing_yards": 619.0
+      },
+      {
+        "team": "Oregon State Beavers",
+        "espn_team_id": "204",
+        "season_passing_leader": "Braden Atkinson",
+        "position": "QB",
+        "athlete_status": "Active",
+        "season_passing_yards": 1421.0
+      }
+    ],
+    "status": "PREVIEW_PASSING_LEADER_ONLY_NOT_CONFIRMED_STARTER"
+  },
+  {
+    "game_id": 401860900,
+    "requested_at": "2026-10-01T13:17:00.664387+00:00",
+    "source": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401860900",
+    "response_sha256": "c1cbbd1a69e5758f043970dfacad0e05e38644f3229676f0acc3f76d9a1de9b2",
+    "teams": [
+      {
+        "team": "San Diego State Aztecs",
+        "espn_team_id": "21",
+        "season_passing_leader": "Jayden Denegal",
+        "position": "QB",
+        "athlete_status": "Active",
+        "season_passing_yards": 600.0
+      },
+      {
+        "team": "Texas State Bobcats",
+        "espn_team_id": "326",
+        "season_passing_leader": "Brad Jackson",
+        "position": "QB",
+        "athlete_status": "Active",
+        "season_passing_yards": 854.0
+      }
+    ],
+    "status": "PREVIEW_PASSING_LEADER_ONLY_NOT_CONFIRMED_STARTER"
+  },
+  {
+    "game_id": 401860921,
+    "requested_at": "2026-10-01T13:17:00.683002+00:00",
+    "source": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401860921",
+    "response_sha256": "548d51b59c4bcba5be02f4e7f319c1e5fbcdbb5c630854a0b659b8bba6f0cdb3",
+    "teams": [
+      {
+        "team": "Washington State Cougars",
+        "espn_team_id": "265",
+        "season_passing_leader": "Caden Pinnick",
+        "position": "QB",
+        "athlete_status": "Active",
+        "season_passing_yards": 644.0
+      },
+      {
+        "team": "Fresno State Bulldogs",
+        "espn_team_id": "278",
+        "season_passing_leader": "Jayden Mandal",
+        "position": "QB",
+        "athlete_status": "Active",
+        "season_passing_yards": 789.0
+      }
+    ],
+    "status": "PREVIEW_PASSING_LEADER_ONLY_NOT_CONFIRMED_STARTER"
+  },
+  {
+    "game_id": 401862786,
+    "requested_at": "2026-10-01T13:17:00.803231+00:00",
+    "source": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401862786",
+    "response_sha256": "186970ae89508e4572450431e8eb2c7478f765f50e923697cf03a781136c27c5",
+    "teams": [
+      {
+        "team": "Tulsa Golden Hurricane",
+        "espn_team_id": "202",
+        "season_passing_leader": "Baylor Hayes",
+        "position": "QB",
+        "athlete_status": "Active",
+        "season_passing_yards": 353.0
+      },
+      {
+        "team": "North Texas Mean Green",
+        "espn_team_id": "249",
+        "season_passing_leader": "Tayven Jackson",
+        "position": "QB",
+        "athlete_status": "Active",
+        "season_passing_yards": 1187.0
+      }
+    ],
+    "status": "PREVIEW_PASSING_LEADER_ONLY_NOT_CONFIRMED_STARTER"
+  },
+  {
+    "game_id": 401862787,
+    "requested_at": "2026-10-01T13:17:00.903962+00:00",
+    "source": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401862787",
+    "response_sha256": "d6db79cc67718a729ca4113c9a71f6885b069d720c134940add6d3349695c5f2",
+    "teams": [
+      {
+        "team": "Charlotte 49ers",
+        "espn_team_id": "2429",
+        "season_passing_leader": "Cole Gonzales",
+        "position": "QB",
+        "athlete_status": "Active",
+        "season_passing_yards": 729.0
+      },
+      {
+        "team": "Memphis Tigers",
+        "espn_team_id": "235",
+        "season_passing_leader": "Marcus Stokes",
+        "position": "QB",
+        "athlete_status": "Active",
+        "season_passing_yards": 1053.0
+      }
+    ],
+    "status": "PREVIEW_PASSING_LEADER_ONLY_NOT_CONFIRMED_STARTER"
+  },
+  {
+    "game_id": 401862788,
+    "requested_at": "2026-10-01T13:17:01.034034+00:00",
+    "source": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401862788",
+    "response_sha256": "93a6041e664efa067e3684a0eee986ae2d301a5783ad72bf729d0e4b270b0fe3",
+    "teams": [
+      {
+        "team": "Rice Owls",
+        "espn_team_id": "242",
+        "season_passing_leader": "Jacurri Brown",
+        "position": "QB",
+        "athlete_status": "Active",
+        "season_passing_yards": 322.0
+      },
+      {
+        "team": "UTSA Roadrunners",
+        "espn_team_id": "2636",
+        "season_passing_leader": "Owen McCown",
+        "position": "QB",
+        "athlete_status": "Active",
+        "season_passing_yards": 862.0
+      }
+    ],
+    "status": "PREVIEW_PASSING_LEADER_ONLY_NOT_CONFIRMED_STARTER"
+  },
+  {
+    "game_id": 401862791,
+    "requested_at": "2026-10-01T13:17:01.063821+00:00",
+    "source": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401862791",
+    "response_sha256": "a54a7ad81086e9a47b41947d60417d3ba8607fb7cb5527c30cf22a37a5c91eae",
+    "teams": [
+      {
+        "team": "Air Force Falcons",
+        "espn_team_id": "2005",
+        "season_passing_leader": "Liam Szarka",
+        "position": "QB",
+        "athlete_status": "Active",
+        "season_passing_yards": 214.0
+      },
+      {
+        "team": "Navy Midshipmen",
+        "espn_team_id": "2426",
+        "season_passing_leader": "Jackson Gutierrez",
+        "position": "QB",
+        "athlete_status": "Active",
+        "season_passing_yards": 204.0
+      }
+    ],
+    "status": "PREVIEW_PASSING_LEADER_ONLY_NOT_CONFIRMED_STARTER"
+  },
+  {
+    "game_id": 401862792,
+    "requested_at": "2026-10-01T13:17:01.109719+00:00",
+    "source": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401862792",
+    "response_sha256": "10427b2e2804e5b496a6a548f6c2749deffe075d93c1f681362cc47a58f1edb5",
+    "teams": [
+      {
+        "team": "South Florida Bulls",
+        "espn_team_id": "58",
+        "season_passing_leader": "Michael Van Buren Jr.",
+        "position": "QB",
+        "athlete_status": "Active",
+        "season_passing_yards": 691.0
+      },
+      {
+        "team": "Temple Owls",
+        "espn_team_id": "218",
+        "season_passing_leader": "Ajani Sheppard",
+        "position": "QB",
+        "athlete_status": "Active",
+        "season_passing_yards": 539.0
+      }
+    ],
+    "status": "PREVIEW_PASSING_LEADER_ONLY_NOT_CONFIRMED_STARTER"
+  },
+  {
+    "game_id": 401864513,
+    "requested_at": "2026-10-01T13:17:01.140702+00:00",
+    "source": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401864513",
+    "response_sha256": "db0263c5c1f209416aac83a4b293f81a2931c29144fb788ff3792a1c3b5c5df8",
+    "teams": [
+      {
+        "team": "Hawai'i Rainbow Warriors",
+        "espn_team_id": "62",
+        "season_passing_leader": "Micah Alejado",
+        "position": "QB",
+        "athlete_status": "Active",
+        "season_passing_yards": 1020.0
+      },
+      {
+        "team": "San Jos\u00e9 State Spartans",
+        "espn_team_id": "23",
+        "season_passing_leader": "Luke Weaver",
+        "position": "QB",
+        "athlete_status": "Active",
+        "season_passing_yards": 1032.0
+      }
+    ],
+    "status": "PREVIEW_PASSING_LEADER_ONLY_NOT_CONFIRMED_STARTER"
+  },
+  {
+    "game_id": 401864514,
+    "requested_at": "2026-10-01T13:17:01.142698+00:00",
+    "source": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401864514",
+    "response_sha256": "f34d2f64f5378bfc0ef02d1fe7e575ab53c3108de5290edbe9e8fc0e22c7ca68",
+    "teams": [
+      {
+        "team": "New Mexico Lobos",
+        "espn_team_id": "167",
+        "season_passing_leader": "Toa Fa'avae",
+        "position": "QB",
+        "athlete_status": "Active",
+        "season_passing_yards": 390.0
+      },
+      {
+        "team": "UTEP Miners",
+        "espn_team_id": "2638",
+        "season_passing_leader": "EJ Colson Jr.",
+        "position": "QB",
+        "athlete_status": "Active",
+        "season_passing_yards": 496.0
+      }
+    ],
+    "status": "PREVIEW_PASSING_LEADER_ONLY_NOT_CONFIRMED_STARTER"
+  },
+  {
+    "game_id": 401864515,
+    "requested_at": "2026-10-01T13:17:01.335636+00:00",
+    "source": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401864515",
+    "response_sha256": "debb8612db6039752271de12100e632814d666f7f4f664ebf66db00d97ab6b1f",
+    "teams": [
+      {
+        "team": "North Dakota State Bison",
+        "espn_team_id": "2449",
+        "season_passing_leader": "Nathan Hayes",
+        "position": "QB",
+        "athlete_status": "Active",
+        "season_passing_yards": 808.0
+      },
+      {
+        "team": "Wyoming Cowboys",
+        "espn_team_id": "2751",
+        "season_passing_leader": "Tyler Hughes",
+        "position": "QB",
+        "athlete_status": "Active",
+        "season_passing_yards": 656.0
+      }
+    ],
+    "status": "PREVIEW_PASSING_LEADER_ONLY_NOT_CONFIRMED_STARTER"
+  },
+  {
+    "game_id": 401866430,
+    "requested_at": "2026-10-01T13:17:01.429865+00:00",
+    "source": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401866430",
+    "response_sha256": "eed3db0ead475b0bb1927f5806bb87988f95f1840f2ff9e41d1d78f3802fa08c",
+    "teams": [
+      {
+        "team": "Central Michigan Chippewas",
+        "espn_team_id": "2117",
+        "season_passing_leader": "Angel Flores",
+        "position": "QB",
+        "athlete_status": "Active",
+        "season_passing_yards": 123.0
+      },
+      {
+        "team": "Akron Zips",
+        "espn_team_id": "2006",
+        "season_passing_leader": "Brayden Roggow",
+        "position": "QB",
+        "athlete_status": "Active",
+        "season_passing_yards": 425.0
+      }
+    ],
+    "status": "PREVIEW_PASSING_LEADER_ONLY_NOT_CONFIRMED_STARTER"
+  },
+  {
+    "game_id": 401866431,
+    "requested_at": "2026-10-01T13:17:01.453058+00:00",
+    "source": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401866431",
+    "response_sha256": "1f163f3e27b0459cc47f8f83740f6d6be9093a8d249a34af75b634a838f24b99",
+    "teams": [
+      {
+        "team": "Ball State Cardinals",
+        "espn_team_id": "2050",
+        "season_passing_leader": "Keldric Luster",
+        "position": "QB",
+        "athlete_status": "Active",
+        "season_passing_yards": 438.0
+      },
+      {
+        "team": "Toledo Rockets",
+        "espn_team_id": "2649",
+        "season_passing_leader": "John Alan Richter",
+        "position": "QB",
+        "athlete_status": "Active",
+        "season_passing_yards": 1161.0
+      }
+    ],
+    "status": "PREVIEW_PASSING_LEADER_ONLY_NOT_CONFIRMED_STARTER"
+  },
+  {
+    "game_id": 401866432,
+    "requested_at": "2026-10-01T13:17:01.454059+00:00",
+    "source": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401866432",
+    "response_sha256": "c7acb81ac9dbb778cb7fb768ad82cb546302a9b872e138d8a22bcef68ea88f29",
+    "teams": [
+      {
+        "team": "Buffalo Bulls",
+        "espn_team_id": "2084",
+        "season_passing_leader": "Jason Wright",
+        "position": "QB",
+        "athlete_status": "Active",
+        "season_passing_yards": 385.0
+      },
+      {
+        "team": "Western Michigan Broncos",
+        "espn_team_id": "2711",
+        "season_passing_leader": "Broc Lowry",
+        "position": "QB",
+        "athlete_status": "Active",
+        "season_passing_yards": 527.0
+      }
+    ],
+    "status": "PREVIEW_PASSING_LEADER_ONLY_NOT_CONFIRMED_STARTER"
+  },
+  {
+    "game_id": 401866433,
+    "requested_at": "2026-10-01T13:17:01.483775+00:00",
+    "source": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401866433",
+    "response_sha256": "2450db63156c311e7462d5a35807586eb8ec797d8999e0daf2fed0147fb31b80",
+    "teams": [
+      {
+        "team": "Massachusetts Minutemen",
+        "espn_team_id": "113",
+        "season_passing_leader": "William Watson III",
+        "position": "QB",
+        "athlete_status": "Active",
+        "season_passing_yards": 610.0
+      },
+      {
+        "team": "Eastern Michigan Eagles",
+        "espn_team_id": "2199",
+        "season_passing_leader": "Noah Kim",
+        "position": "QB",
+        "athlete_status": "Active",
+        "season_passing_yards": 968.0
+      }
+    ],
+    "status": "PREVIEW_PASSING_LEADER_ONLY_NOT_CONFIRMED_STARTER"
+  },
+  {
+    "game_id": 401866434,
+    "requested_at": "2026-10-01T13:17:01.577007+00:00",
+    "source": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401866434",
+    "response_sha256": "167c86b792e7c6ae0aade13ca1883b67bf69b83395300594a05ced72c0185b8b",
+    "teams": [
+      {
+        "team": "Kent State Golden Flashes",
+        "espn_team_id": "2309",
+        "season_passing_leader": "Dru DeShields",
+        "position": "QB",
+        "athlete_status": "Active",
+        "season_passing_yards": 540.0
+      },
+      {
+        "team": "Ohio Bobcats",
+        "espn_team_id": "195",
+        "season_passing_leader": "Matt Vezza",
+        "position": "QB",
+        "athlete_status": "Active",
+        "season_passing_yards": 400.0
+      }
+    ],
+    "status": "PREVIEW_PASSING_LEADER_ONLY_NOT_CONFIRMED_STARTER"
+  },
+  {
+    "game_id": 401866477,
+    "requested_at": "2026-10-01T13:17:01.656125+00:00",
+    "source": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401866477",
+    "response_sha256": "80ca1c27a7e4546c2ae96f2a6b9a901280693bf33684dba244d5da7b7e2b877a",
+    "teams": [
+      {
+        "team": "Miami (OH) RedHawks",
+        "espn_team_id": "193",
+        "season_passing_leader": "David McComb",
+        "position": "QB",
+        "athlete_status": "Active",
+        "season_passing_yards": 1121.0
+      },
+      {
+        "team": "Bowling Green Falcons",
+        "espn_team_id": "189",
+        "season_passing_leader": "Jay Kastantin",
+        "position": "QB",
+        "athlete_status": "Active",
+        "season_passing_yards": 565.0
+      }
+    ],
+    "status": "PREVIEW_PASSING_LEADER_ONLY_NOT_CONFIRMED_STARTER"
+  },
+  {
+    "game_id": 401869842,
+    "requested_at": "2026-10-01T13:17:01.748724+00:00",
+    "source": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401869842",
+    "response_sha256": "8ee6b3bb38d5ef80c109626d5c45c68584376ba9325ca9bbe28a371757eb644b",
+    "teams": [
+      {
+        "team": "Louisiana Tech Bulldogs",
+        "espn_team_id": "2348",
+        "season_passing_leader": "Blake Baker",
+        "position": "QB",
+        "athlete_status": "Active",
+        "season_passing_yards": 360.0
+      },
+      {
+        "team": "Army Black Knights",
+        "espn_team_id": "349",
+        "season_passing_leader": "Cale Hellums",
+        "position": "QB",
+        "athlete_status": "Active",
+        "season_passing_yards": 186.0
+      }
+    ],
+    "status": "PREVIEW_PASSING_LEADER_ONLY_NOT_CONFIRMED_STARTER"
+  },
+  {
+    "game_id": 401869932,
+    "requested_at": "2026-10-01T13:17:01.780482+00:00",
+    "source": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401869932",
+    "response_sha256": "0ee2c2823fabfcb19468932ea4bcc219696965a18775e829da35d9f0c9476dbe",
+    "teams": [
+      {
+        "team": "Louisiana Ragin' Cajuns",
+        "espn_team_id": "309",
+        "season_passing_leader": "Lunch Winfield",
+        "position": "QB",
+        "athlete_status": "Active",
+        "season_passing_yards": 660.0
+      },
+      {
+        "team": "Arkansas State Red Wolves",
+        "espn_team_id": "2032",
+        "season_passing_leader": "Trey Owens",
+        "position": "QB",
+        "athlete_status": "Active",
+        "season_passing_yards": 837.0
+      }
+    ],
+    "status": "PREVIEW_PASSING_LEADER_ONLY_NOT_CONFIRMED_STARTER"
+  },
+  {
+    "game_id": 401869942,
+    "requested_at": "2026-10-01T13:17:01.871520+00:00",
+    "source": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401869942",
+    "response_sha256": "8f38b54d0c5400caa3d15982a54929445559ba6af0075027a4552ba5d504f8b4",
+    "teams": [
+      {
+        "team": "Coastal Carolina Chanticleers",
+        "espn_team_id": "324",
+        "season_passing_leader": "Deuce Bailey",
+        "position": "QB",
+        "athlete_status": "Active",
+        "season_passing_yards": 1039.0
+      },
+      {
+        "team": "Georgia Southern Eagles",
+        "espn_team_id": "290",
+        "season_passing_leader": "Max Johnson",
+        "position": "QB",
+        "athlete_status": "Active",
+        "season_passing_yards": 996.0
+      }
+    ],
+    "status": "PREVIEW_PASSING_LEADER_ONLY_NOT_CONFIRMED_STARTER"
+  },
+  {
+    "game_id": 401869956,
+    "requested_at": "2026-10-01T13:17:01.900647+00:00",
+    "source": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401869956",
+    "response_sha256": "489dbaa1ba35a28c93fac28f3a8417cefccacbf38c3e9e400be2615c87ef9de7",
+    "teams": [
+      {
+        "team": "Georgia State Panthers",
+        "espn_team_id": "2247",
+        "season_passing_leader": "Cameran Brown",
+        "position": "QB",
+        "athlete_status": "Active",
+        "season_passing_yards": 873.0
+      },
+      {
+        "team": "Old Dominion Monarchs",
+        "espn_team_id": "295",
+        "season_passing_leader": "Quinn Henicle",
+        "position": "QB",
+        "athlete_status": "Active",
+        "season_passing_yards": 424.0
+      }
+    ],
+    "status": "PREVIEW_PASSING_LEADER_ONLY_NOT_CONFIRMED_STARTER"
+  },
+  {
+    "game_id": 401869962,
+    "requested_at": "2026-10-01T13:17:01.956941+00:00",
+    "source": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401869962",
+    "response_sha256": "e46d64a122fb760e80a5cac76782d9929766fc46d279eca46c2e43efa469120f",
+    "teams": [
+      {
+        "team": "James Madison Dukes",
+        "espn_team_id": "256",
+        "season_passing_leader": "Camden Coleman",
+        "position": "QB",
+        "athlete_status": "Active",
+        "season_passing_yards": 716.0
+      },
+      {
+        "team": "Marshall Thundering Herd",
+        "espn_team_id": "276",
+        "season_passing_leader": "Carlos Del Rio-Wilson",
+        "position": "QB",
+        "athlete_status": "Active",
+        "season_passing_yards": 783.0
+      }
+    ],
+    "status": "PREVIEW_PASSING_LEADER_ONLY_NOT_CONFIRMED_STARTER"
+  },
+  {
+    "game_id": 401871049,
+    "requested_at": "2026-10-01T13:17:01.963958+00:00",
+    "source": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401871049",
+    "response_sha256": "bb77259af8a3fbeb3d2935f30105f713bab893d7ba9bc19305767b5a11598dd5",
+    "teams": [
+      {
+        "team": "New Mexico State Aggies",
+        "espn_team_id": "166",
+        "season_passing_leader": "Trey Hedden",
+        "position": "QB",
+        "athlete_status": "Active",
+        "season_passing_yards": 887.0
+      },
+      {
+        "team": "Western Kentucky Hilltoppers",
+        "espn_team_id": "98",
+        "season_passing_leader": "Rodney Tisdale Jr.",
+        "position": "QB",
+        "athlete_status": "Active",
+        "season_passing_yards": 537.0
+      }
+    ],
+    "status": "PREVIEW_PASSING_LEADER_ONLY_NOT_CONFIRMED_STARTER"
+  },
+  {
+    "game_id": 401871050,
+    "requested_at": "2026-10-01T13:17:02.103896+00:00",
+    "source": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401871050",
+    "response_sha256": "10eb6007807ab55c563fa3032d52479294c009b8e446af3971368dc4957acfb5",
+    "teams": [
+      {
+        "team": "Delaware Blue Hens",
+        "espn_team_id": "48",
+        "season_passing_leader": "Nick Minicucci",
+        "position": "QB",
+        "athlete_status": "Active",
+        "season_passing_yards": 838.0
+      },
+      {
+        "team": "Liberty Flames",
+        "espn_team_id": "2335",
+        "season_passing_leader": "Deshawn Purdie",
+        "position": "QB",
+        "athlete_status": "Active",
+        "season_passing_yards": 779.0
+      }
+    ],
+    "status": "PREVIEW_PASSING_LEADER_ONLY_NOT_CONFIRMED_STARTER"
+  },
+  {
+    "game_id": 401871089,
+    "requested_at": "2026-10-01T13:17:02.117990+00:00",
+    "source": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401871089",
+    "response_sha256": "4f4841f8ced409540f0604cac6f2c4f476c8932cd435130cb8f2fd42fd40af56",
+    "teams": [
+      {
+        "team": "South Alabama Jaguars",
+        "espn_team_id": "6",
+        "season_passing_leader": "Jared Hollins",
+        "position": "QB",
+        "athlete_status": "Active",
+        "season_passing_yards": 458.0
+      },
+      {
+        "team": "UL Monroe Warhawks",
+        "espn_team_id": "2433",
+        "season_passing_leader": "Aidan Armenta",
+        "position": "QB",
+        "athlete_status": "Active",
+        "season_passing_yards": 493.0
+      }
+    ],
+    "status": "PREVIEW_PASSING_LEADER_ONLY_NOT_CONFIRMED_STARTER"
+  }
+]
