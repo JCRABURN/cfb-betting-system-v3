@@ -323,7 +323,7 @@ def test_migration_20_preserves_product_a_rows_and_controller_outputs_exactly():
     product_a_tables = _application_tables(before_conn)
     pre_migration_rows = _table_snapshot(after_conn, product_a_tables)
 
-    applied = apply_migrations(after_conn)
+    applied = apply_migrations(after_conn, load_migrations()[:20])
 
     assert tuple(result.version for result in applied) == (20,)
     assert _table_snapshot(after_conn, product_a_tables) == pre_migration_rows
