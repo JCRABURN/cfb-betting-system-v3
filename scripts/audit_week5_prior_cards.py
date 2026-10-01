@@ -12,7 +12,7 @@ from business_entities.complete_audits import _spread_bucket
 
 
 ROOT = Path(__file__).resolve().parents[1]
-OUTPUT = ROOT / "outputs/2026-week5-execution-20260930-v3"
+OUTPUT = ROOT / "outputs/2026-week5-execution-20260930-v4"
 EVIDENCE = OUTPUT / "prior-evidence"
 GAMES = OUTPUT / "provider-evidence/cfbd-2026-games.json"
 

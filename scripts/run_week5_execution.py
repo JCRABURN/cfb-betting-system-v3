@@ -29,7 +29,7 @@ ROOT = Path(__file__).resolve().parents[1]
 CONTEST_KEY = "splashsports-cfb-2026-w05"
 SOURCE = ROOT / "production-weeks" / "2026-week5-splashsports.csv"
 METADATA = ROOT / "production-weeks" / "2026-week5-splashsports-lock-metadata.json"
-EVIDENCE = ROOT / "outputs" / "2026-week5-execution-20260930-v3" / "provider-evidence"
+EVIDENCE = ROOT / "outputs" / "2026-week5-execution-20260930-v4" / "provider-evidence"
 SOURCE_DB = ROOT / "data" / "cfb.db"
 # All supplied October 1–3, 2026 local times precede the November DST change.
 CHICAGO = timezone(timedelta(hours=-5), "CDT")

@@ -18,7 +18,7 @@ from scripts.run_week5_execution import reconcile
 ROOT = Path(__file__).resolve().parents[1]
 SOURCE = ROOT / "production-weeks/2026-week5-splashsports.csv"
 META = ROOT / "production-weeks/2026-week5-splashsports-lock-metadata.json"
-OUTPUT = ROOT / "outputs/2026-week5-execution-20260930-v3"
+OUTPUT = ROOT / "outputs/2026-week5-execution-20260930-v4"
 GAMES = OUTPUT / "provider-evidence/cfbd-2026-games.json"
 
 
@@ -32,7 +32,7 @@ def schedule_and_conn():
     games = json.loads(GAMES.read_text(encoding="utf-8"))
     conn = sqlite3.connect(":memory:")
     conn.execute("CREATE TABLE teams (school TEXT NOT NULL)")
-    conn.execute("CREATE TABLE provider_team_aliases (provider TEXT, raw_team_name TEXT, canonical_team TEXT)")
+    conn.execute("CREATE TABLE provider_team_aliases (id INTEGER PRIMARY KEY, provider TEXT, raw_team_name TEXT, canonical_team TEXT)")
     teams = sorted({game[side] for game in games if game["week"] == 5 for side in ("homeTeam", "awayTeam")})
     conn.executemany("INSERT INTO teams(school) VALUES(?)", ((team,) for team in teams))
     yield games, conn
@@ -92,9 +92,13 @@ def test_generated_cards_use_locked_lines_and_correct_ats_sign():
 def test_three_top_fives_are_complete_deterministic_and_pregame():
     ats = rows(OUTPUT / "week5_ats_full_card.csv")
     ats_top = rows(OUTPUT / "week5_official_ats_top5.csv")
+    shadow_ats_top = rows(OUTPUT / "week5_shadow_ats_top5.csv")
     total_top = rows(OUTPUT / "week5_shadow_totals_top5.csv")
     combined = rows(OUTPUT / "week5_combined_top5.csv")
-    assert len(ats_top) == len(total_top) == len(combined) == 5
+    assert len(ats_top) == len(shadow_ats_top) == len(total_top) == len(combined) == 5
+    assert all(row["uncertainty_points"] == "" and row["confidence"] == "1" for row in ats)
+    assert [int(row["locked_line_id"]) for row in ats_top] == sorted(int(row["locked_line_id"]) for row in ats)[:5]
+    assert [float(row["shadow_uncertainty_points"]) for row in shadow_ats_top] == sorted(float(row["shadow_uncertainty_points"]) for row in shadow_ats_top)
     assert {row["game_id"] for row in ats_top} == {row["game_id"] for row in ats if row["top_five"] == "True"}
     assert [int(row["rank"]) for row in ats_top] == [5, 4, 3, 2, 1]
     assert len({row["game_id"] for row in combined}) == 5

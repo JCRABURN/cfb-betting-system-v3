@@ -14,7 +14,7 @@ from ingestion import CanonicalTeamResolver
 
 
 ROOT = Path(__file__).resolve().parents[1]
-EVIDENCE = ROOT / "outputs/2026-week5-execution-20260930-v3/provider-evidence"
+EVIDENCE = ROOT / "outputs/2026-week5-execution-20260930-v4/provider-evidence"
 
 
 def timestamp(value: str) -> datetime:
@@ -49,8 +49,8 @@ def market_line(event: dict) -> tuple[float | None, float | None, str | None]:
 
 
 def main() -> None:
-    out = ROOT / "outputs/2026-week5-execution-20260930-v3"
-    database = ROOT / "data/production_inputs/2026-week5-execution/execution-v3.db"
+    out = ROOT / "outputs/2026-week5-execution-20260930-v4"
+    database = ROOT / "data/production_inputs/2026-week5-execution/execution-v4.db"
     conn = sqlite3.connect(database)
     resolver = CanonicalTeamResolver.from_connection(conn)
     schedule = json.loads((EVIDENCE / "cfbd-2026-games.json").read_text(encoding="utf-8"))

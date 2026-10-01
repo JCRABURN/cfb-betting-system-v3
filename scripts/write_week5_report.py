@@ -8,7 +8,7 @@ from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parents[1]
-OUTPUT = ROOT / "outputs/2026-week5-execution-20260930-v3"
+OUTPUT = ROOT / "outputs/2026-week5-execution-20260930-v4"
 
 
 def csv_rows(name: str) -> list[dict]:
@@ -34,6 +34,7 @@ def main() -> None:
     ats = csv_rows("week5_ats_full_card.csv")
     totals = csv_rows("week5_totals_full_card.csv")
     ats_top = csv_rows("week5_official_ats_top5.csv")
+    shadow_ats_top = csv_rows("week5_shadow_ats_top5.csv")
     total_top = csv_rows("week5_shadow_totals_top5.csv")
     combined = csv_rows("week5_combined_top5.csv")
     context = {row["game_id"]: row for row in csv_rows("week5_context_review.csv")}
@@ -66,7 +67,7 @@ def main() -> None:
             return f"DraftKings now gives the selected side {abs(delta):.1f} more points than the lock; QB/injury coverage is incomplete."
         if market == "TOTAL":
             return "Component totals lost money out of sample and the ESPN injury feed covers only three teams."
-        return "All ATS Confidence values are 1 with near-identical uncertainty; FCS-game effects and QB status are unverified."
+        return "Main-policy ATS uncertainty is absent and all Confidence values are 1; FCS-game effects and QB status are unverified."
 
     ats_table = []
     for row in ats_top:
@@ -77,6 +78,13 @@ def main() -> None:
                           signed(row["home_ats_edge"]), row["confidence"],
                           signed(ctx["current_draftkings_home_spread"]), line_advantage(row, "ATS"),
                           script(row), risk(row, "ATS")))
+    shadow_ats_table = []
+    for index, row in enumerate(shadow_ats_top, 1):
+        shadow_ats_table.append((index, f"{row['away']} @ {row['home']}",
+                                 f"{row['pick']} {signed(row['pick_spread'])}",
+                                 signed(row["locked_home_spread"]), signed(row["projected_home_margin"]),
+                                 signed(row["home_ats_edge"]), f"{float(row['shadow_uncertainty_points']):.3f}",
+                                 script(row), risk(row, "ATS")))
     total_table = []
     for index, row in enumerate(total_top, 1):
         ctx = context[row["game_id"]]
@@ -114,7 +122,7 @@ def main() -> None:
         "",
         "## Model trust",
         "",
-        "The ATS EPA-only model fits 4,830 historical rows from 2019–2025, using Week 4 snapshots for all Week 5 targets. It produces game-specific home margins and an out-of-sample residual-based uncertainty artifact, but uncertainty ranges only about 18.282–18.304 points across this slate; all governed Confidence values are 1. The official-policy Top 5 is thus the deterministic lowest-uncertainty ordering, not evidence of five strong bets. No 2026 outcome was used to refit the ATS coefficients; completed games affect only point-in-time Week 4 team features.",
+        "The main-policy ATS EPA-only model fits 4,830 historical rows from 2019–2025, using Week 4 snapshots for all Week 5 targets. It produces game-specific home margins but no game-specific uncertainty, so all governed Confidence values are 1 and the official-policy Top 5 follows deterministic lock-ID tie order. A separate out-of-sample residual-based uncertainty artifact yields a shadow ATS ranking, but its uncertainty ranges only about 18.282–18.304 points across this slate and does not establish five strong bets. No 2026 outcome was used to refit ATS coefficients; completed games affect only point-in-time Week 4 team features.",
         "",
         f"The component totals model is shadow-only. Its 2019–2025 rolling-origin evaluation produced {oos['oos_predictions']} projections, MAE {oos['total_mae']:.3f}, RMSE {oos['total_rmse']:.3f}, and {oos['wins']}-{oos['losses']}-{oos['pushes']} against archived opening totals, ROI {oos['roi_minus110']:.2%} at -110. Original quote timestamps are unverified. Its displayed normal probabilities are raw, not empirically calibrated. The unified ranking uses a conservative ATS transform and these raw totals probabilities; it is experimental and its five selections are not a calibrated cross-market betting card.",
         "",
@@ -128,6 +136,10 @@ def main() -> None:
         "",
         table(("Rank", "Game", "Pick", "Locked home", "Home margin", "Home ATS edge", "Conf", "DK home", "Locked advantage", "Game script", "Primary risk"), ats_table),
         "",
+        "## SHADOW ATS TOP 5 — research uncertainty order",
+        "",
+        table(("Rank", "Game", "Pick", "Locked home", "Home margin", "Home ATS edge", "Shadow uncertainty", "Game script", "Primary risk"), shadow_ats_table),
+        "",
         "## SHADOW TOTALS TOP 5",
         "",
         table(("Rank", "Game", "Pick", "Locked total", "Projected", "Edge", "Raw P", "Conf", "DK total", "Locked advantage", "Game script", "Primary risk"), total_table),
@@ -138,7 +150,7 @@ def main() -> None:
         "",
         "## What I would trust most",
         "",
-        "Trust the immutable source lines, CFBD schedule/results reconciliation, and the relative direction of the baseline EPA forecast more than its ranked Confidence or any betting probability. The ATS Top 5 barely discriminates because uncertainty is almost constant; prior local cards and Top 5 have poor realized performance. Totals and unified outputs are useful experimental signals for review, but their negative out-of-sample ROI and unverified quote-time custody prevent treating them as recommended wagers.",
+        "Trust the immutable source lines, CFBD schedule/results reconciliation, and the relative direction of the baseline EPA forecast more than its ranked Confidence or any betting probability. The main-policy ATS Top 5 is a deterministic tie order with no demonstrated reliability discrimination; the research uncertainty order barely discriminates and prior local cards and Top 5 have poor realized performance. Totals and unified outputs are useful experimental signals for review, but their negative out-of-sample ROI and unverified quote-time custody prevent treating them as recommended wagers.",
         "",
         "## Reproduction, limits, and rollback",
         "",

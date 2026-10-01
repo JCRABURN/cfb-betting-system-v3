@@ -25,6 +25,8 @@ from business_entities.unified_top_five import (
     UnifiedTopFivePolicy, generate_unified_top_five, register_unified_top_five_policy,
 )
 from contest_lines import list_effective_locked_lines
+from models import backtest_harness, baseline_epa
+from models.epa_uncertainty import load_uncertainty_artifact
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -132,6 +134,16 @@ def main(argv: list[str] | None = None) -> int:
     )
     conn.commit()
     by_line = {line.locked_line_id: line for line in lines}
+    uncertainty_artifact = load_uncertainty_artifact()
+    shadow_uncertainty: dict[int, float] = {}
+    for line in lines:
+        game = conn.execute("SELECT home_team,away_team,start_date FROM games WHERE game_id=?", (line.game_id,)).fetchone()
+        if game is None:
+            raise ValueError(f"missing game for shadow uncertainty: {line.game_id}")
+        package = backtest_harness.get_pregame_stats(conn, game[0], game[1], line.season, line.week, game[2])
+        if package is None:
+            raise ValueError(f"missing point-in-time features for shadow uncertainty: {line.game_id}")
+        shadow_uncertainty[line.game_id] = uncertainty_artifact.uncertainty_points(baseline_epa.epa_differential(package)[0])
     ats_rows: list[dict] = []
     for pick in ats_card.picks:
         line = by_line[pick.locked_line_id]
@@ -145,6 +157,7 @@ def main(argv: list[str] | None = None) -> int:
             "pick": line.normalized_home_team if pick.selected_side == "home" else line.normalized_away_team,
             "pick_spread": line.home_spread if pick.selected_side == "home" else -line.home_spread,
             "uncertainty_points": projection[1] if projection else None,
+            "shadow_uncertainty_points": shadow_uncertainty[line.game_id],
             "confidence": pick.confidence, "rank": pick.rank, "top_five": bool(pick.is_top_five),
             "fallback_code": pick.fallback_code, "context_adjustment_points": 0,
             "adjusted_home_margin": projection[0] if projection else None,
@@ -177,6 +190,7 @@ def main(argv: list[str] | None = None) -> int:
     if len(ats_rows) != 56 or len(totals_rows) != 56:
         raise ValueError("card coverage failed")
     ats_top = sorted((row for row in ats_rows if row["top_five"]), key=lambda row: -row["rank"])
+    shadow_ats_top = sorted(ats_rows, key=lambda row: (row["shadow_uncertainty_points"], row["locked_line_id"]))[:5]
     total_top = sorted((row for row in totals_rows if row["pick"]), key=lambda row: -row["raw_selected_probability"])[:5]
     ats_by_game = {row["game_id"]: row for row in ats_rows}
     totals_by_game = {row["game_id"]: row for row in totals_rows}
@@ -195,6 +209,7 @@ def main(argv: list[str] | None = None) -> int:
     write_csv(output / "week5_ats_full_card.csv", ats_rows)
     write_csv(output / "week5_totals_full_card.csv", totals_rows)
     write_csv(output / "week5_official_ats_top5.csv", ats_top)
+    write_csv(output / "week5_shadow_ats_top5.csv", shadow_ats_top)
     write_csv(output / "week5_shadow_totals_top5.csv", total_top)
     write_csv(output / "week5_combined_top5.csv", combined_rows)
     (output / "week5_card_manifest.json").write_text(json.dumps({
@@ -204,6 +219,7 @@ def main(argv: list[str] | None = None) -> int:
         "ats_shadow_completion": asdict(ats_shadow.completion),
         "unified_run": asdict(unified.run), "unified_completion": asdict(unified.completion),
         "policy_source": "config/production_policies.example.json; example/proposed, not owner-approved cutover",
+        "ats_shadow_uncertainty_artifact_sha256": uncertainty_artifact.artifact_payload_sha256,
         "totals_production_eligible": False, "combined_empirically_validated": False,
     }, indent=2, default=str) + "\n", encoding="utf-8")
     model_rows = conn.execute(
@@ -227,7 +243,9 @@ def main(argv: list[str] | None = None) -> int:
         "contest_key": "splashsports-cfb-2026-w05", "season": 2026, "week": 5,
         "ats": dict(zip(("name", "version", "feature_schema", "configuration", "code_commit_sha", "data_snapshot_sha256"), model_rows)),
         "ats_training_seasons": list(range(2019, 2026)),
-        "ats_uncertainty_policy": "epa-oos-predictive-uncertainty-v1",
+        "ats_uncertainty_policy": "main-policy-null-uncertainty",
+        "ats_shadow_uncertainty_policy": uncertainty_artifact.artifact_version,
+        "ats_shadow_uncertainty_artifact_sha256": uncertainty_artifact.artifact_payload_sha256,
         "ats_selection_policy": selection.version,
         "ats_confidence_policy": ranking.confidence_policy_version,
         "ats_ranking_policy": ranking.ranking_policy_version,
