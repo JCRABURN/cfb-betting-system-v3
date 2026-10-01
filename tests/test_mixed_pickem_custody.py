@@ -1013,7 +1013,10 @@ def test_migration_20_registration_seed_counts_immutability_and_verification():
     conn = _connection()
     assert conn.execute(
         "SELECT version, name FROM schema_migrations ORDER BY version DESC LIMIT 1"
-    ).fetchone() == (20, "mixed_pickem_custody")
+    ).fetchone() == (23, "ats_official_uncertainty_gate")
+    assert conn.execute(
+        "SELECT name FROM schema_migrations WHERE version = 20"
+    ).fetchone() == ("mixed_pickem_custody",)
     assert conn.execute("SELECT COUNT(*) FROM mixed_contest_products").fetchone()[0] == 1
     assert conn.execute("SELECT COUNT(*) FROM mixed_contest_product_sports").fetchone()[0] == 2
     for table in (
