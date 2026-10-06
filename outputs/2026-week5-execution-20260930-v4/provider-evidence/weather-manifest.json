@@ -1,0 +1,989 @@
+{
+  "records": [
+    {
+      "game_id": 401871049,
+      "status": "CAPTURED",
+      "venue_id": 3601,
+      "requested_at": "2026-10-01T03:27:48.276649+00:00",
+      "endpoint": "https://api.open-meteo.com/v1/forecast",
+      "parameters": {
+        "latitude": 32.2796202,
+        "longitude": -106.7411148,
+        "hourly": "temperature_2m,wind_speed_10m,precipitation_probability,weather_code",
+        "temperature_unit": "fahrenheit",
+        "wind_speed_unit": "mph",
+        "timezone": "UTC",
+        "forecast_days": 7
+      },
+      "path": "weather\\401871049.json",
+      "sha256": "41863bd1538bf57a2e424e00c7e1fc528f22c7579d84f5b570f7c6e94a4abcfb"
+    },
+    {
+      "game_id": 401862786,
+      "status": "CAPTURED",
+      "venue_id": 3674,
+      "requested_at": "2026-10-01T03:27:48.276649+00:00",
+      "endpoint": "https://api.open-meteo.com/v1/forecast",
+      "parameters": {
+        "latitude": 36.1489175,
+        "longitude": -95.9437853,
+        "hourly": "temperature_2m,wind_speed_10m,precipitation_probability,weather_code",
+        "temperature_unit": "fahrenheit",
+        "wind_speed_unit": "mph",
+        "timezone": "UTC",
+        "forecast_days": 7
+      },
+      "path": "weather\\401862786.json",
+      "sha256": "551fdea209b7cbb5d729e85efdaa1d9dfdb914d91f92f411d346b5e54f746475"
+    },
+    {
+      "game_id": 401858245,
+      "status": "CAPTURED",
+      "venue_id": 3799,
+      "requested_at": "2026-10-01T03:27:48.276649+00:00",
+      "endpoint": "https://api.open-meteo.com/v1/forecast",
+      "parameters": {
+        "latitude": 37.2199873,
+        "longitude": -80.4180643,
+        "hourly": "temperature_2m,wind_speed_10m,precipitation_probability,weather_code",
+        "temperature_unit": "fahrenheit",
+        "wind_speed_unit": "mph",
+        "timezone": "UTC",
+        "forecast_days": 7
+      },
+      "path": "weather\\401858245.json",
+      "sha256": "5288935e55341b2966d9e5c166995ba47855920b8df3701cf6978111c3487be1"
+    },
+    {
+      "game_id": 401871050,
+      "status": "CAPTURED",
+      "venue_id": 3695,
+      "requested_at": "2026-10-01T03:27:48.276649+00:00",
+      "endpoint": "https://api.open-meteo.com/v1/forecast",
+      "parameters": {
+        "latitude": 39.6617428,
+        "longitude": -75.7488224,
+        "hourly": "temperature_2m,wind_speed_10m,precipitation_probability,weather_code",
+        "temperature_unit": "fahrenheit",
+        "wind_speed_unit": "mph",
+        "timezone": "UTC",
+        "forecast_days": 7
+      },
+      "path": "weather\\401871050.json",
+      "sha256": "0633d5e544c1867d0ab9fd6bc54a921a43948e6e1b1044c8deb93e7dedfcb331"
+    },
+    {
+      "game_id": 401858476,
+      "status": "CAPTURED",
+      "venue_id": 11823,
+      "requested_at": "2026-10-01T03:27:48.276649+00:00",
+      "endpoint": "https://api.open-meteo.com/v1/forecast",
+      "parameters": {
+        "latitude": 42.065556,
+        "longitude": -87.6925,
+        "hourly": "temperature_2m,wind_speed_10m,precipitation_probability,weather_code",
+        "temperature_unit": "fahrenheit",
+        "wind_speed_unit": "mph",
+        "timezone": "UTC",
+        "forecast_days": 7
+      },
+      "path": "weather\\401858476.json",
+      "sha256": "eeff16af4c9e56aac33ffbbdf7b7fe1b379df42d89317a6be6bf0c0254519ebe"
+    },
+    {
+      "game_id": 401856819,
+      "status": "CAPTURED",
+      "venue_id": 4728,
+      "requested_at": "2026-10-01T03:27:48.277689+00:00",
+      "endpoint": "https://api.open-meteo.com/v1/forecast",
+      "parameters": {
+        "latitude": 29.7219885,
+        "longitude": -95.3491623,
+        "hourly": "temperature_2m,wind_speed_10m,precipitation_probability,weather_code",
+        "temperature_unit": "fahrenheit",
+        "wind_speed_unit": "mph",
+        "timezone": "UTC",
+        "forecast_days": 7
+      },
+      "path": "weather\\401856819.json",
+      "sha256": "65c112fbc23cbeae04f2fb2105264c0f7a653f7632457ed8bd71ab2bb959de61"
+    },
+    {
+      "game_id": 401858252,
+      "status": "CAPTURED",
+      "venue_id": 3892,
+      "requested_at": "2026-10-01T03:27:48.865715+00:00",
+      "endpoint": "https://api.open-meteo.com/v1/forecast",
+      "parameters": {
+        "latitude": 41.7595675,
+        "longitude": -72.6187728,
+        "hourly": "temperature_2m,wind_speed_10m,precipitation_probability,weather_code",
+        "temperature_unit": "fahrenheit",
+        "wind_speed_unit": "mph",
+        "timezone": "UTC",
+        "forecast_days": 7
+      },
+      "path": "weather\\401858252.json",
+      "sha256": "be80e4a3622579df936b75a2ab44e2b9e29660c3884c2f26399b706e1e524d4f"
+    },
+    {
+      "game_id": 401858474,
+      "status": "CAPTURED",
+      "venue_id": 3953,
+      "requested_at": "2026-10-01T03:27:48.866745+00:00",
+      "endpoint": "https://api.open-meteo.com/v1/forecast",
+      "parameters": {
+        "latitude": 44.976525,
+        "longitude": -93.2245462,
+        "hourly": "temperature_2m,wind_speed_10m,precipitation_probability,weather_code",
+        "temperature_unit": "fahrenheit",
+        "wind_speed_unit": "mph",
+        "timezone": "UTC",
+        "forecast_days": 7
+      },
+      "path": "weather\\401858474.json",
+      "sha256": "caa153f6dd423d9e0ebda501fa03cfc063d6490f11ad906457c4eb3cc6f80ab2"
+    },
+    {
+      "game_id": 401856707,
+      "status": "CAPTURED",
+      "venue_id": 3693,
+      "requested_at": "2026-10-01T03:27:48.873139+00:00",
+      "endpoint": "https://api.open-meteo.com/v1/forecast",
+      "parameters": {
+        "latitude": 33.4563403,
+        "longitude": -88.7933652,
+        "hourly": "temperature_2m,wind_speed_10m,precipitation_probability,weather_code",
+        "temperature_unit": "fahrenheit",
+        "wind_speed_unit": "mph",
+        "timezone": "UTC",
+        "forecast_days": 7
+      },
+      "path": "weather\\401856707.json",
+      "sha256": "fe092c36f7bf6bed4bccbb4a324ba2bfc03b1bcae641d76e77cb72298e699592"
+    },
+    {
+      "game_id": 401862791,
+      "status": "CAPTURED",
+      "venue_id": 3713,
+      "requested_at": "2026-10-01T03:27:48.874144+00:00",
+      "endpoint": "https://api.open-meteo.com/v1/forecast",
+      "parameters": {
+        "latitude": 38.9969701,
+        "longitude": -104.8436165,
+        "hourly": "temperature_2m,wind_speed_10m,precipitation_probability,weather_code",
+        "temperature_unit": "fahrenheit",
+        "wind_speed_unit": "mph",
+        "timezone": "UTC",
+        "forecast_days": 7
+      },
+      "path": "weather\\401862791.json",
+      "sha256": "9efbd69bdbba19d5cd2e39d2a0abbe4fb999d38f6e6ebd48a16231ef2189cb8d"
+    },
+    {
+      "game_id": 401858251,
+      "status": "CAPTURED",
+      "venue_id": 3630,
+      "requested_at": "2026-10-01T03:27:48.877310+00:00",
+      "endpoint": "https://api.open-meteo.com/v1/forecast",
+      "parameters": {
+        "latitude": 36.1305507,
+        "longitude": -80.2545851,
+        "hourly": "temperature_2m,wind_speed_10m,precipitation_probability,weather_code",
+        "temperature_unit": "fahrenheit",
+        "wind_speed_unit": "mph",
+        "timezone": "UTC",
+        "forecast_days": 7
+      },
+      "path": "weather\\401858251.json",
+      "sha256": "0cf74073caa8bf0c98d1e0094faf091683c27dfb866c861b8630f3be31b1e6e0"
+    },
+    {
+      "game_id": 401858246,
+      "status": "CAPTURED",
+      "venue_id": 3735,
+      "requested_at": "2026-10-01T03:27:48.884266+00:00",
+      "endpoint": "https://api.open-meteo.com/v1/forecast",
+      "parameters": {
+        "latitude": 32.8377223,
+        "longitude": -96.7827859,
+        "hourly": "temperature_2m,wind_speed_10m,precipitation_probability,weather_code",
+        "temperature_unit": "fahrenheit",
+        "wind_speed_unit": "mph",
+        "timezone": "UTC",
+        "forecast_days": 7
+      },
+      "path": "weather\\401858246.json",
+      "sha256": "2ff4153816c2ed659579058dfe7a5d340940a681d527bbb54925b5b602b5ff98"
+    },
+    {
+      "game_id": 401856822,
+      "status": "CAPTURED",
+      "venue_id": 3772,
+      "requested_at": "2026-10-01T03:27:49.312105+00:00",
+      "endpoint": "https://api.open-meteo.com/v1/forecast",
+      "parameters": {
+        "latitude": 42.0139977,
+        "longitude": -93.6357716,
+        "hourly": "temperature_2m,wind_speed_10m,precipitation_probability,weather_code",
+        "temperature_unit": "fahrenheit",
+        "wind_speed_unit": "mph",
+        "timezone": "UTC",
+        "forecast_days": 7
+      },
+      "path": "weather\\401856822.json",
+      "sha256": "5f0bf334532098c4f5e56ed7d0955a4c5b16ab96123f1bd3d402912e4f6fb20b"
+    },
+    {
+      "game_id": 401856807,
+      "status": "CAPTURED",
+      "venue_id": 3833,
+      "requested_at": "2026-10-01T03:27:49.325540+00:00",
+      "endpoint": "https://api.open-meteo.com/v1/forecast",
+      "parameters": {
+        "latitude": 38.9629418,
+        "longitude": -95.2463686,
+        "hourly": "temperature_2m,wind_speed_10m,precipitation_probability,weather_code",
+        "temperature_unit": "fahrenheit",
+        "wind_speed_unit": "mph",
+        "timezone": "UTC",
+        "forecast_days": 7
+      },
+      "path": "weather\\401856807.json",
+      "sha256": "2a40a2401b1a1c6e0464150396060047831a94f1c563dd04147c26e9b4a88573"
+    },
+    {
+      "game_id": 401858250,
+      "status": "CAPTURED",
+      "venue_id": 3787,
+      "requested_at": "2026-10-01T03:27:49.330572+00:00",
+      "endpoint": "https://api.open-meteo.com/v1/forecast",
+      "parameters": {
+        "latitude": 35.9069294,
+        "longitude": -79.0478889,
+        "hourly": "temperature_2m,wind_speed_10m,precipitation_probability,weather_code",
+        "temperature_unit": "fahrenheit",
+        "wind_speed_unit": "mph",
+        "timezone": "UTC",
+        "forecast_days": 7
+      },
+      "path": "weather\\401858250.json",
+      "sha256": "01ae86ff70875e8492e714b8e3ef4642d306b4ffc17e1a0a2ddc0bf543c4c7c5"
+    },
+    {
+      "game_id": 401858479,
+      "status": "CAPTURED",
+      "venue_id": 347,
+      "requested_at": "2026-10-01T03:27:49.335026+00:00",
+      "endpoint": "https://api.open-meteo.com/v1/forecast",
+      "parameters": {
+        "latitude": 43.06994,
+        "longitude": -89.4126943,
+        "hourly": "temperature_2m,wind_speed_10m,precipitation_probability,weather_code",
+        "temperature_unit": "fahrenheit",
+        "wind_speed_unit": "mph",
+        "timezone": "UTC",
+        "forecast_days": 7
+      },
+      "path": "weather\\401858479.json",
+      "sha256": "edec2f401888e9f4e20e7fd23b877d54549d8fe2832a834445a766d215e8b5f8"
+    },
+    {
+      "game_id": 401856705,
+      "status": "CAPTURED",
+      "venue_id": 3917,
+      "requested_at": "2026-10-01T03:27:49.339090+00:00",
+      "endpoint": "https://api.open-meteo.com/v1/forecast",
+      "parameters": {
+        "latitude": 33.9498197,
+        "longitude": -83.3733813,
+        "hourly": "temperature_2m,wind_speed_10m,precipitation_probability,weather_code",
+        "temperature_unit": "fahrenheit",
+        "wind_speed_unit": "mph",
+        "timezone": "UTC",
+        "forecast_days": 7
+      },
+      "path": "weather\\401856705.json",
+      "sha256": "08767f8203b68392e1493be3c265f3e3237612b3dbf967a196582c431ff11342"
+    },
+    {
+      "game_id": 401866432,
+      "status": "CAPTURED",
+      "venue_id": 3965,
+      "requested_at": "2026-10-01T03:27:49.341141+00:00",
+      "endpoint": "https://api.open-meteo.com/v1/forecast",
+      "parameters": {
+        "latitude": 42.9991334,
+        "longitude": -78.7775113,
+        "hourly": "temperature_2m,wind_speed_10m,precipitation_probability,weather_code",
+        "temperature_unit": "fahrenheit",
+        "wind_speed_unit": "mph",
+        "timezone": "UTC",
+        "forecast_days": 7
+      },
+      "path": "weather\\401866432.json",
+      "sha256": "633fbda9a4fdd777dfadd9c953a302ab49eb54ed70416e9abcfc73f10fabeff8"
+    },
+    {
+      "game_id": 401866431,
+      "status": "CAPTURED",
+      "venue_id": 3919,
+      "requested_at": "2026-10-01T03:27:49.732841+00:00",
+      "endpoint": "https://api.open-meteo.com/v1/forecast",
+      "parameters": {
+        "latitude": 40.2159422,
+        "longitude": -85.4161148,
+        "hourly": "temperature_2m,wind_speed_10m,precipitation_probability,weather_code",
+        "temperature_unit": "fahrenheit",
+        "wind_speed_unit": "mph",
+        "timezone": "UTC",
+        "forecast_days": 7
+      },
+      "path": "weather\\401866431.json",
+      "sha256": "4a46ef7269b0c96d0314705fee87aadf6c8e0cf3e2767b4c4ceb4b53fd861f15"
+    },
+    {
+      "game_id": 401864515,
+      "status": "INDOOR_DOME",
+      "venue_id": 3714
+    },
+    {
+      "game_id": 401856710,
+      "status": "CAPTURED",
+      "venue_id": 3853,
+      "requested_at": "2026-10-01T03:27:49.757433+00:00",
+      "endpoint": "https://api.open-meteo.com/v1/forecast",
+      "parameters": {
+        "latitude": 35.9550131,
+        "longitude": -83.9250128,
+        "hourly": "temperature_2m,wind_speed_10m,precipitation_probability,weather_code",
+        "temperature_unit": "fahrenheit",
+        "wind_speed_unit": "mph",
+        "timezone": "UTC",
+        "forecast_days": 7
+      },
+      "path": "weather\\401856710.json",
+      "sha256": "db6e44f2a85f4a47660af2c808e2b95bbe4fc615e6a8ff2ba9d13e6f79706edc"
+    },
+    {
+      "game_id": 401869956,
+      "status": "CAPTURED",
+      "venue_id": 4246,
+      "requested_at": "2026-10-01T03:27:49.762383+00:00",
+      "endpoint": "https://api.open-meteo.com/v1/forecast",
+      "parameters": {
+        "latitude": 33.735267,
+        "longitude": -84.389949,
+        "hourly": "temperature_2m,wind_speed_10m,precipitation_probability,weather_code",
+        "temperature_unit": "fahrenheit",
+        "wind_speed_unit": "mph",
+        "timezone": "UTC",
+        "forecast_days": 7
+      },
+      "path": "weather\\401869956.json",
+      "sha256": "a368d61399488ff883df63ca7c8f8e96d340aa27895e8f00f92df67f4339e167"
+    },
+    {
+      "game_id": 401866477,
+      "status": "CAPTURED",
+      "venue_id": 3996,
+      "requested_at": "2026-10-01T03:27:49.783029+00:00",
+      "endpoint": "https://api.open-meteo.com/v1/forecast",
+      "parameters": {
+        "latitude": 39.5197009,
+        "longitude": -84.7330255,
+        "hourly": "temperature_2m,wind_speed_10m,precipitation_probability,weather_code",
+        "temperature_unit": "fahrenheit",
+        "wind_speed_unit": "mph",
+        "timezone": "UTC",
+        "forecast_days": 7
+      },
+      "path": "weather\\401866477.json",
+      "sha256": "0aa1c9b4364487c9285b21ed2877df344d1e73c165f96c5cd5322172fa7bbc71"
+    },
+    {
+      "game_id": 401858253,
+      "status": "CAPTURED",
+      "venue_id": 3697,
+      "requested_at": "2026-10-01T03:27:49.788968+00:00",
+      "endpoint": "https://api.open-meteo.com/v1/forecast",
+      "parameters": {
+        "latitude": 30.4381692,
+        "longitude": -84.3044032,
+        "hourly": "temperature_2m,wind_speed_10m,precipitation_probability,weather_code",
+        "temperature_unit": "fahrenheit",
+        "wind_speed_unit": "mph",
+        "timezone": "UTC",
+        "forecast_days": 7
+      },
+      "path": "weather\\401858253.json",
+      "sha256": "53637fca2921b2c39360af0473bc8d5eff4dab427d1e5fa143be0c5d4def2226"
+    },
+    {
+      "game_id": 401858248,
+      "status": "CAPTURED",
+      "venue_id": 3670,
+      "requested_at": "2026-10-01T03:27:49.792983+00:00",
+      "endpoint": "https://api.open-meteo.com/v1/forecast",
+      "parameters": {
+        "latitude": 35.8008001,
+        "longitude": -78.7195655,
+        "hourly": "temperature_2m,wind_speed_10m,precipitation_probability,weather_code",
+        "temperature_unit": "fahrenheit",
+        "wind_speed_unit": "mph",
+        "timezone": "UTC",
+        "forecast_days": 7
+      },
+      "path": "weather\\401858248.json",
+      "sha256": "99b2c7b312a74756cb0a4cddb36971c41b580bf9eddf2b719493bc468144ad4e"
+    },
+    {
+      "game_id": 401866434,
+      "status": "CAPTURED",
+      "venue_id": 3696,
+      "requested_at": "2026-10-01T03:27:50.142830+00:00",
+      "endpoint": "https://api.open-meteo.com/v1/forecast",
+      "parameters": {
+        "latitude": 41.1390935,
+        "longitude": -81.31346,
+        "hourly": "temperature_2m,wind_speed_10m,precipitation_probability,weather_code",
+        "temperature_unit": "fahrenheit",
+        "wind_speed_unit": "mph",
+        "timezone": "UTC",
+        "forecast_days": 7
+      },
+      "path": "weather\\401866434.json",
+      "sha256": "08254a8063abbd78de322652b4ac39272bb382a80bb7dd7cf84f837aa7a011f6"
+    },
+    {
+      "game_id": 401866433,
+      "status": "CAPTURED",
+      "venue_id": 3985,
+      "requested_at": "2026-10-01T03:27:50.205802+00:00",
+      "endpoint": "https://api.open-meteo.com/v1/forecast",
+      "parameters": {
+        "latitude": 42.3773244,
+        "longitude": -72.5360595,
+        "hourly": "temperature_2m,wind_speed_10m,precipitation_probability,weather_code",
+        "temperature_unit": "fahrenheit",
+        "wind_speed_unit": "mph",
+        "timezone": "UTC",
+        "forecast_days": 7
+      },
+      "path": "weather\\401866433.json",
+      "sha256": "1ff6ea5cccfae51e7f108dd9c0d3207ea02f31f753d5508eedbeff62a9295750"
+    },
+    {
+      "game_id": 401862787,
+      "status": "CAPTURED",
+      "venue_id": 4418,
+      "requested_at": "2026-10-01T03:27:50.222565+00:00",
+      "endpoint": "https://api.open-meteo.com/v1/forecast",
+      "parameters": {
+        "latitude": 35.3105033,
+        "longitude": -80.7401194,
+        "hourly": "temperature_2m,wind_speed_10m,precipitation_probability,weather_code",
+        "temperature_unit": "fahrenheit",
+        "wind_speed_unit": "mph",
+        "timezone": "UTC",
+        "forecast_days": 7
+      },
+      "path": "weather\\401862787.json",
+      "sha256": "97fb04fec71b5e484e1e7e39ef282d3a2ea43c5f05aecc532de90e3d17257bb0"
+    },
+    {
+      "game_id": 401856708,
+      "status": "CAPTURED",
+      "venue_id": 3838,
+      "requested_at": "2026-10-01T03:27:50.221559+00:00",
+      "endpoint": "https://api.open-meteo.com/v1/forecast",
+      "parameters": {
+        "latitude": 38.9358491,
+        "longitude": -92.3332009,
+        "hourly": "temperature_2m,wind_speed_10m,precipitation_probability,weather_code",
+        "temperature_unit": "fahrenheit",
+        "wind_speed_unit": "mph",
+        "timezone": "UTC",
+        "forecast_days": 7
+      },
+      "path": "weather\\401856708.json",
+      "sha256": "e1ae6f8d631392c3e84ee2393686e702c1f52b19ad867eb37a07854674394ab1"
+    },
+    {
+      "game_id": 401858247,
+      "status": "INDOOR_DOME",
+      "venue_id": 6501
+    },
+    {
+      "game_id": 401858473,
+      "status": "CAPTURED",
+      "venue_id": 3793,
+      "requested_at": "2026-10-01T03:27:50.231196+00:00",
+      "endpoint": "https://api.open-meteo.com/v1/forecast",
+      "parameters": {
+        "latitude": 41.6586045,
+        "longitude": -91.5510829,
+        "hourly": "temperature_2m,wind_speed_10m,precipitation_probability,weather_code",
+        "temperature_unit": "fahrenheit",
+        "wind_speed_unit": "mph",
+        "timezone": "UTC",
+        "forecast_days": 7
+      },
+      "path": "weather\\401858473.json",
+      "sha256": "4cecc2b14eb27d1cfca93105eb46f016e133f82c19928ca3fb03daca901e2ae6"
+    },
+    {
+      "game_id": 401866430,
+      "status": "CAPTURED",
+      "venue_id": 3786,
+      "requested_at": "2026-10-01T03:27:50.237640+00:00",
+      "endpoint": "https://api.open-meteo.com/v1/forecast",
+      "parameters": {
+        "latitude": 43.5777313,
+        "longitude": -84.7709904,
+        "hourly": "temperature_2m,wind_speed_10m,precipitation_probability,weather_code",
+        "temperature_unit": "fahrenheit",
+        "wind_speed_unit": "mph",
+        "timezone": "UTC",
+        "forecast_days": 7
+      },
+      "path": "weather\\401866430.json",
+      "sha256": "cbe468a2ce1b53a395d2df342d617515a28ec9e632dde81c17dd9963ff09809b"
+    },
+    {
+      "game_id": 401869962,
+      "status": "CAPTURED",
+      "venue_id": 3651,
+      "requested_at": "2026-10-01T03:27:50.562578+00:00",
+      "endpoint": "https://api.open-meteo.com/v1/forecast",
+      "parameters": {
+        "latitude": 38.4352919,
+        "longitude": -78.8729349,
+        "hourly": "temperature_2m,wind_speed_10m,precipitation_probability,weather_code",
+        "temperature_unit": "fahrenheit",
+        "wind_speed_unit": "mph",
+        "timezone": "UTC",
+        "forecast_days": 7
+      },
+      "path": "weather\\401869962.json",
+      "sha256": "b0bf3690371bac55dc3b6bb5eb551ca28d3b90d5668b1a1fb82005fe89663840"
+    },
+    {
+      "game_id": 401858475,
+      "status": "CAPTURED",
+      "venue_id": 3834,
+      "requested_at": "2026-10-01T03:27:50.645202+00:00",
+      "endpoint": "https://api.open-meteo.com/v1/forecast",
+      "parameters": {
+        "latitude": 40.820682,
+        "longitude": -96.705594,
+        "hourly": "temperature_2m,wind_speed_10m,precipitation_probability,weather_code",
+        "temperature_unit": "fahrenheit",
+        "wind_speed_unit": "mph",
+        "timezone": "UTC",
+        "forecast_days": 7
+      },
+      "path": "weather\\401858475.json",
+      "sha256": "801cded50576b080999ee3942bd4718ef0cd1ea699da8f625b6ecf13944d0baa"
+    },
+    {
+      "game_id": 401864514,
+      "status": "CAPTURED",
+      "venue_id": 3971,
+      "requested_at": "2026-10-01T03:27:50.646276+00:00",
+      "endpoint": "https://api.open-meteo.com/v1/forecast",
+      "parameters": {
+        "latitude": 35.0669479,
+        "longitude": -106.6283225,
+        "hourly": "temperature_2m,wind_speed_10m,precipitation_probability,weather_code",
+        "temperature_unit": "fahrenheit",
+        "wind_speed_unit": "mph",
+        "timezone": "UTC",
+        "forecast_days": 7
+      },
+      "path": "weather\\401864514.json",
+      "sha256": "c4f70519792e539de2dc8a5e8e804b443445689ae851d4352939ddf9346a493f"
+    },
+    {
+      "game_id": 401858472,
+      "status": "CAPTURED",
+      "venue_id": 3832,
+      "requested_at": "2026-10-01T03:27:50.650276+00:00",
+      "endpoint": "https://api.open-meteo.com/v1/forecast",
+      "parameters": {
+        "latitude": 40.0993268,
+        "longitude": -88.2359569,
+        "hourly": "temperature_2m,wind_speed_10m,precipitation_probability,weather_code",
+        "temperature_unit": "fahrenheit",
+        "wind_speed_unit": "mph",
+        "timezone": "UTC",
+        "forecast_days": 7
+      },
+      "path": "weather\\401858472.json",
+      "sha256": "6b86e5ffe8c695844d8f1c40f9ee65f0ff2b40e4ea9dc0251bb927881d278421"
+    },
+    {
+      "game_id": 401856709,
+      "status": "CAPTURED",
+      "venue_id": 3994,
+      "requested_at": "2026-10-01T03:27:50.656812+00:00",
+      "endpoint": "https://api.open-meteo.com/v1/forecast",
+      "parameters": {
+        "latitude": 33.9730239,
+        "longitude": -81.0191726,
+        "hourly": "temperature_2m,wind_speed_10m,precipitation_probability,weather_code",
+        "temperature_unit": "fahrenheit",
+        "wind_speed_unit": "mph",
+        "timezone": "UTC",
+        "forecast_days": 7
+      },
+      "path": "weather\\401856709.json",
+      "sha256": "34a503076ed62b3cb908012c7edbd4c7d05fc3b183c862cf3133fac8b9b16e76"
+    },
+    {
+      "game_id": 401860899,
+      "status": "CAPTURED",
+      "venue_id": 5388,
+      "requested_at": "2026-10-01T03:27:50.661718+00:00",
+      "endpoint": "https://api.open-meteo.com/v1/forecast",
+      "parameters": {
+        "latitude": 40.570015,
+        "longitude": -105.088435,
+        "hourly": "temperature_2m,wind_speed_10m,precipitation_probability,weather_code",
+        "temperature_unit": "fahrenheit",
+        "wind_speed_unit": "mph",
+        "timezone": "UTC",
+        "forecast_days": 7
+      },
+      "path": "weather\\401860899.json",
+      "sha256": "af180e5d0d4d483dd6ea27c825e47c5c4368c0446d9a9d0b692b6c9515f4244b"
+    },
+    {
+      "game_id": 401869942,
+      "status": "CAPTURED",
+      "venue_id": 3654,
+      "requested_at": "2026-10-01T03:27:50.989017+00:00",
+      "endpoint": "https://api.open-meteo.com/v1/forecast",
+      "parameters": {
+        "latitude": 33.7928506,
+        "longitude": -79.0166946,
+        "hourly": "temperature_2m,wind_speed_10m,precipitation_probability,weather_code",
+        "temperature_unit": "fahrenheit",
+        "wind_speed_unit": "mph",
+        "timezone": "UTC",
+        "forecast_days": 7
+      },
+      "path": "weather\\401869942.json",
+      "sha256": "6c6f38dc4f6fd14e28418b4ff207dc44c30fec972e9e931bb9d2e791ff9b68cf"
+    },
+    {
+      "game_id": 401862788,
+      "status": "CAPTURED",
+      "venue_id": 3895,
+      "requested_at": "2026-10-01T03:27:51.072586+00:00",
+      "endpoint": "https://api.open-meteo.com/v1/forecast",
+      "parameters": {
+        "latitude": 29.7163297,
+        "longitude": -95.4093261,
+        "hourly": "temperature_2m,wind_speed_10m,precipitation_probability,weather_code",
+        "temperature_unit": "fahrenheit",
+        "wind_speed_unit": "mph",
+        "timezone": "UTC",
+        "forecast_days": 7
+      },
+      "path": "weather\\401862788.json",
+      "sha256": "5f49efb8082582d8b9828485b1601b429796f0c21d7a0a04e1c81efd1bc717c0"
+    },
+    {
+      "game_id": 401871089,
+      "status": "CAPTURED",
+      "venue_id": 6526,
+      "requested_at": "2026-10-01T03:27:51.077298+00:00",
+      "endpoint": "https://api.open-meteo.com/v1/forecast",
+      "parameters": {
+        "latitude": 30.696904,
+        "longitude": -88.192013,
+        "hourly": "temperature_2m,wind_speed_10m,precipitation_probability,weather_code",
+        "temperature_unit": "fahrenheit",
+        "wind_speed_unit": "mph",
+        "timezone": "UTC",
+        "forecast_days": 7
+      },
+      "path": "weather\\401871089.json",
+      "sha256": "962b763c169259a7f0dd432620b294986e2f06bf1f72086b40f802f41852f691"
+    },
+    {
+      "game_id": 401856818,
+      "status": "CAPTURED",
+      "venue_id": 3616,
+      "requested_at": "2026-10-01T03:27:51.085851+00:00",
+      "endpoint": "https://api.open-meteo.com/v1/forecast",
+      "parameters": {
+        "latitude": 32.7096604,
+        "longitude": -97.3680835,
+        "hourly": "temperature_2m,wind_speed_10m,precipitation_probability,weather_code",
+        "temperature_unit": "fahrenheit",
+        "wind_speed_unit": "mph",
+        "timezone": "UTC",
+        "forecast_days": 7
+      },
+      "path": "weather\\401856818.json",
+      "sha256": "6484789e1ccf61155bcf0c18b2a2f35340c142368fa924c586149920afb2110b"
+    },
+    {
+      "game_id": 401856711,
+      "status": "CAPTURED",
+      "venue_id": 3795,
+      "requested_at": "2026-10-01T03:27:51.090773+00:00",
+      "endpoint": "https://api.open-meteo.com/v1/forecast",
+      "parameters": {
+        "latitude": 30.6098891,
+        "longitude": -96.3403828,
+        "hourly": "temperature_2m,wind_speed_10m,precipitation_probability,weather_code",
+        "temperature_unit": "fahrenheit",
+        "wind_speed_unit": "mph",
+        "timezone": "UTC",
+        "forecast_days": 7
+      },
+      "path": "weather\\401856711.json",
+      "sha256": "2254cb979cd269711585cb3223f0141ba0513d2f6403f240df0957a9525e18b0"
+    },
+    {
+      "game_id": 401860898,
+      "status": "CAPTURED",
+      "venue_id": 3653,
+      "requested_at": "2026-10-01T03:27:51.097837+00:00",
+      "endpoint": "https://api.open-meteo.com/v1/forecast",
+      "parameters": {
+        "latitude": 43.6028839,
+        "longitude": -116.1958882,
+        "hourly": "temperature_2m,wind_speed_10m,precipitation_probability,weather_code",
+        "temperature_unit": "fahrenheit",
+        "wind_speed_unit": "mph",
+        "timezone": "UTC",
+        "forecast_days": 7
+      },
+      "path": "weather\\401860898.json",
+      "sha256": "31ddf6c57626865048888a9b5e531efe5c5c5973aa5b77f14068de4865638da0"
+    },
+    {
+      "game_id": 401862792,
+      "status": "CAPTURED",
+      "venue_id": 3886,
+      "requested_at": "2026-10-01T03:27:51.401393+00:00",
+      "endpoint": "https://api.open-meteo.com/v1/forecast",
+      "parameters": {
+        "latitude": 27.9758691,
+        "longitude": -82.5033344,
+        "hourly": "temperature_2m,wind_speed_10m,precipitation_probability,weather_code",
+        "temperature_unit": "fahrenheit",
+        "wind_speed_unit": "mph",
+        "timezone": "UTC",
+        "forecast_days": 7
+      },
+      "path": "weather\\401862792.json",
+      "sha256": "b1f57a4b4fa2a1216065eddf9a68e41b5d7731af1b6665b7d0c41dc975b966c4"
+    },
+    {
+      "game_id": 401858249,
+      "status": "CAPTURED",
+      "venue_id": 3836,
+      "requested_at": "2026-10-01T03:27:51.481458+00:00",
+      "endpoint": "https://api.open-meteo.com/v1/forecast",
+      "parameters": {
+        "latitude": 34.6787737,
+        "longitude": -82.8432428,
+        "hourly": "temperature_2m,wind_speed_10m,precipitation_probability,weather_code",
+        "temperature_unit": "fahrenheit",
+        "wind_speed_unit": "mph",
+        "timezone": "UTC",
+        "forecast_days": 7
+      },
+      "path": "weather\\401858249.json",
+      "sha256": "73766a4145251690b93cc91347983531cfa1d4a2412b93921dbf8ba1e144946b"
+    },
+    {
+      "game_id": 401858478,
+      "status": "CAPTURED",
+      "venue_id": 477,
+      "requested_at": "2026-10-01T03:27:51.488241+00:00",
+      "endpoint": "https://api.open-meteo.com/v1/forecast",
+      "parameters": {
+        "latitude": 34.014167,
+        "longitude": -118.287778,
+        "hourly": "temperature_2m,wind_speed_10m,precipitation_probability,weather_code",
+        "temperature_unit": "fahrenheit",
+        "wind_speed_unit": "mph",
+        "timezone": "UTC",
+        "forecast_days": 7
+      },
+      "path": "weather\\401858478.json",
+      "sha256": "ab613e8f7f82de1aef50021cf9ed5a6f854fc0c2b98661626abf6a4387778f15"
+    },
+    {
+      "game_id": 401869842,
+      "status": "CAPTURED",
+      "venue_id": 3776,
+      "requested_at": "2026-10-01T03:27:51.492774+00:00",
+      "endpoint": "https://api.open-meteo.com/v1/forecast",
+      "parameters": {
+        "latitude": 32.5321487,
+        "longitude": -92.6560019,
+        "hourly": "temperature_2m,wind_speed_10m,precipitation_probability,weather_code",
+        "temperature_unit": "fahrenheit",
+        "wind_speed_unit": "mph",
+        "timezone": "UTC",
+        "forecast_days": 7
+      },
+      "path": "weather\\401869842.json",
+      "sha256": "cc7d85f262dfa96a757ef7b9750e6a924ade59a7b971003e1db15beb06b86558"
+    },
+    {
+      "game_id": 401856821,
+      "status": "CAPTURED",
+      "venue_id": 3726,
+      "requested_at": "2026-10-01T03:27:51.496455+00:00",
+      "endpoint": "https://api.open-meteo.com/v1/forecast",
+      "parameters": {
+        "latitude": 40.0094746,
+        "longitude": -105.266905,
+        "hourly": "temperature_2m,wind_speed_10m,precipitation_probability,weather_code",
+        "temperature_unit": "fahrenheit",
+        "wind_speed_unit": "mph",
+        "timezone": "UTC",
+        "forecast_days": 7
+      },
+      "path": "weather\\401856821.json",
+      "sha256": "f5f0eafc7b6c9072ea5338365af48bc41b61e3553755bb63adab5a7d14efe673"
+    },
+    {
+      "game_id": 401858477,
+      "status": "CAPTURED",
+      "venue_id": 6577,
+      "requested_at": "2026-10-01T03:27:51.531499+00:00",
+      "endpoint": "https://api.open-meteo.com/v1/forecast",
+      "parameters": {
+        "latitude": 40.513611,
+        "longitude": -74.465278,
+        "hourly": "temperature_2m,wind_speed_10m,precipitation_probability,weather_code",
+        "temperature_unit": "fahrenheit",
+        "wind_speed_unit": "mph",
+        "timezone": "UTC",
+        "forecast_days": 7
+      },
+      "path": "weather\\401858477.json",
+      "sha256": "6afbd5cce1011e5c444ac3c7056104268e7b3d2c308add56efb3ef8795018a13"
+    },
+    {
+      "game_id": 401869932,
+      "status": "CAPTURED",
+      "venue_id": 3666,
+      "requested_at": "2026-10-01T03:27:51.842212+00:00",
+      "endpoint": "https://api.open-meteo.com/v1/forecast",
+      "parameters": {
+        "latitude": 30.2158434,
+        "longitude": -92.0417371,
+        "hourly": "temperature_2m,wind_speed_10m,precipitation_probability,weather_code",
+        "temperature_unit": "fahrenheit",
+        "wind_speed_unit": "mph",
+        "timezone": "UTC",
+        "forecast_days": 7
+      },
+      "path": "weather\\401869932.json",
+      "sha256": "63ca0eba76f9b4980e1b5ff2785cc9630ddc49eaf2c972494afce1fb69f4fe65"
+    },
+    {
+      "game_id": 401860921,
+      "status": "CAPTURED",
+      "venue_id": 3820,
+      "requested_at": "2026-10-01T03:27:51.893815+00:00",
+      "endpoint": "https://api.open-meteo.com/v1/forecast",
+      "parameters": {
+        "latitude": 46.731831,
+        "longitude": -117.1604991,
+        "hourly": "temperature_2m,wind_speed_10m,precipitation_probability,weather_code",
+        "temperature_unit": "fahrenheit",
+        "wind_speed_unit": "mph",
+        "timezone": "UTC",
+        "forecast_days": 7
+      },
+      "path": "weather\\401860921.json",
+      "sha256": "6576a9a1e6fb19b322129da4292a113aaf60297ead08e5ebf3a52c1a515b23af"
+    },
+    {
+      "game_id": 401856817,
+      "status": "CAPTURED",
+      "venue_id": 3947,
+      "requested_at": "2026-10-01T03:27:51.923752+00:00",
+      "endpoint": "https://api.open-meteo.com/v1/forecast",
+      "parameters": {
+        "latitude": 33.4264471,
+        "longitude": -111.9325005,
+        "hourly": "temperature_2m,wind_speed_10m,precipitation_probability,weather_code",
+        "temperature_unit": "fahrenheit",
+        "wind_speed_unit": "mph",
+        "timezone": "UTC",
+        "forecast_days": 7
+      },
+      "path": "weather\\401856817.json",
+      "sha256": "9ddcfef63a2869fa94caf5cddeca4965dcf918ce605a866645c6d04ac588d39d"
+    },
+    {
+      "game_id": 401860900,
+      "status": "CAPTURED",
+      "venue_id": 7311,
+      "requested_at": "2026-10-01T03:27:51.926403+00:00",
+      "endpoint": "https://api.open-meteo.com/v1/forecast",
+      "parameters": {
+        "latitude": 32.784444,
+        "longitude": -117.122833,
+        "hourly": "temperature_2m,wind_speed_10m,precipitation_probability,weather_code",
+        "temperature_unit": "fahrenheit",
+        "wind_speed_unit": "mph",
+        "timezone": "UTC",
+        "forecast_days": 7
+      },
+      "path": "weather\\401860900.json",
+      "sha256": "4fe776e85bf175e0a849b7847b9409002616d37031a0f5cc37db47ee5a391980"
+    },
+    {
+      "game_id": 401856820,
+      "status": "CAPTURED",
+      "venue_id": 3619,
+      "requested_at": "2026-10-01T03:27:51.928370+00:00",
+      "endpoint": "https://api.open-meteo.com/v1/forecast",
+      "parameters": {
+        "latitude": 32.2288054,
+        "longitude": -110.9488677,
+        "hourly": "temperature_2m,wind_speed_10m,precipitation_probability,weather_code",
+        "temperature_unit": "fahrenheit",
+        "wind_speed_unit": "mph",
+        "timezone": "UTC",
+        "forecast_days": 7
+      },
+      "path": "weather\\401856820.json",
+      "sha256": "4a4b5db3a84bc0b799ffcf5ffa99407feec3be3aed59eca9ef89bc036d25195c"
+    },
+    {
+      "game_id": 401864513,
+      "status": "CAPTURED",
+      "venue_id": 7220,
+      "requested_at": "2026-10-01T03:27:51.942139+00:00",
+      "endpoint": "https://api.open-meteo.com/v1/forecast",
+      "parameters": {
+        "latitude": 21.294294,
+        "longitude": -157.819338,
+        "hourly": "temperature_2m,wind_speed_10m,precipitation_probability,weather_code",
+        "temperature_unit": "fahrenheit",
+        "wind_speed_unit": "mph",
+        "timezone": "UTC",
+        "forecast_days": 7
+      },
+      "path": "weather\\401864513.json",
+      "sha256": "f897fe8092f294838685e57501535fd7a76df800bcd5b2f784cab27f5cafcc9a"
+    }
+  ],
+  "captured": 54,
+  "indoors": 2,
+  "failed": 0
+}

@@ -1,0 +1,40 @@
+{
+  "capture_started_at": "2026-10-01T13:16:58.704477+00:00",
+  "status": "COMPLETE",
+  "requests": [
+    {
+      "provider": "The Odds API",
+      "endpoint": "https://api.the-odds-api.com/v4/sports/americanfootball_ncaaf/odds",
+      "parameters": {
+        "regions": "us",
+        "markets": "spreads,totals",
+        "bookmakers": "draftkings",
+        "oddsFormat": "american",
+        "dateFormat": "iso"
+      },
+      "requested_at": "2026-10-01T13:16:06.178220+00:00",
+      "sha256": "208588eeaf00646b62bbb67e579e7cbcbb4c2d25aabf13e035ff2c5133a4a9c1",
+      "rows": 71
+    },
+    {
+      "provider": "ESPN",
+      "endpoint": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/injuries",
+      "requested_at": "2026-10-01T13:16:58.733288+00:00",
+      "sha256": "75fb28d5f8c5ee9d7150693f0a6bb4131c62d5af2016a975aed59b6f883b7dc6",
+      "team_groups": 3
+    },
+    {
+      "provider": "ESPN",
+      "endpoint": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary",
+      "captured_game_previews": 56,
+      "evidence_file": "espn-game-preview-qb-evidence.json"
+    },
+    {
+      "provider": "Open-Meteo",
+      "endpoint": "https://api.open-meteo.com/v1/forecast",
+      "captured": 54,
+      "evidence_file": "weather-kickoff-review.json"
+    }
+  ],
+  "capture_completed_at": "2026-10-01T13:17:06.332524+00:00"
+}
