@@ -111,11 +111,16 @@ def test_three_top_fives_are_complete_deterministic_and_pregame():
 
 
 @pytest.mark.parametrize(
-    ("offset", "expected_feature_calls", "expected_skip_reason"),
-    ((-1, 1, "missing_point_in_time_epa"), (0, 0, "kickoff_elapsed"), (1, 0, "kickoff_elapsed")),
+    ("offset", "kickoff_value", "expected_feature_calls", "expected_skip_reason"),
+    (
+        (-1, None, 1, "missing_point_in_time_epa"),
+        (0, None, 0, "kickoff_elapsed"),
+        (1, None, 0, "kickoff_elapsed"),
+        (-1, "invalid-kickoff", 0, "kickoff_elapsed"),
+    ),
 )
 def test_ats_model_blocks_feature_access_at_and_after_exact_kickoff(
-    temp_db, monkeypatch, offset, expected_feature_calls, expected_skip_reason
+    temp_db, monkeypatch, offset, kickoff_value, expected_feature_calls, expected_skip_reason
 ):
     from models import backtest_harness as harness
 
@@ -135,7 +140,7 @@ def test_ats_model_blocks_feature_access_at_and_after_exact_kickoff(
     conn.execute(
         "INSERT INTO games (game_id, season, week, home_team, away_team, start_date) "
         "VALUES (9001, 2026, 5, 'Home', 'Away', ?)",
-        (kickoff.isoformat(),),
+        (kickoff_value or kickoff.isoformat(),),
     )
     lock_contest_line(
         conn,
