@@ -1,0 +1,82 @@
+{
+  "completed_at": "2026-10-06T21:44:20.440923+00:00",
+  "requests": [
+    {
+      "name": "cfbd-venues",
+      "provider": "CFBD",
+      "endpoint": "https://api.collegefootballdata.com/venues",
+      "parameters": {},
+      "requested_at": "2026-10-06T21:44:14.487031+00:00",
+      "path": "cfbd-venues.json",
+      "sha256": "67a3cdfad57a2d8b528a731637bb37cf7bef3ea4111af227abef4ce2a487b12f",
+      "records": 852,
+      "status": "CAPTURED"
+    },
+    {
+      "name": "espn-injuries",
+      "provider": "ESPN",
+      "endpoint": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/injuries",
+      "parameters": {},
+      "requested_at": "2026-10-06T21:44:14.938325+00:00",
+      "path": "espn-injuries.json",
+      "sha256": "6810f9c9e81c54951cbe7c3ee28091bd98d88c5432824f1e0853aab82816cf00",
+      "records": null,
+      "status": "CAPTURED"
+    },
+    {
+      "name": "espn-game-preview-qb-evidence",
+      "provider": "ESPN",
+      "endpoint": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary",
+      "parameters": {},
+      "requested_at": "2026-10-06T21:44:16.313462+00:00",
+      "path": "espn-game-preview-qb-evidence.json",
+      "sha256": "3eaa698aed07f3160987f48ee0ebe4b7929182ce62f9b5f6a718e55cdf231d4b",
+      "records": 58,
+      "status": "CAPTURED"
+    },
+    {
+      "name": "weather-kickoff",
+      "provider": "Open-Meteo",
+      "endpoint": "https://api.open-meteo.com/v1/forecast",
+      "parameters": {},
+      "requested_at": "2026-10-06T21:44:20.440923+00:00",
+      "path": "weather-kickoff.json",
+      "sha256": "dc13dee7f70dd8c4a10f88e06e70390734ed36f430db570f562701e73f742f80",
+      "records": 58,
+      "status": "CAPTURED"
+    },
+    {
+      "name": "espn-draftkings-current",
+      "provider": "ESPN",
+      "underlying_market_provider": "DraftKings",
+      "endpoint": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/scoreboard",
+      "parameters": {
+        "dates": "2026",
+        "week": 6,
+        "limit": 500,
+        "groups": 80
+      },
+      "requested_at": "2026-10-06T21:45:39.701104+00:00",
+      "raw_path": "espn-week6-scoreboard-raw.json",
+      "raw_sha256": "4e70063fb634bc7eeeafa12dd269559f131c87159e7b973468a232ade0afa8e9",
+      "summary_path": "espn-draftkings-current.json",
+      "records": 58,
+      "complete_market_events": 57,
+      "status": "CAPTURED"
+    }
+  ],
+  "failures": [
+    {
+      "name": "odds-draftkings-current",
+      "provider": "The Odds API",
+      "endpoint": "https://api.the-odds-api.com/v4/sports/americanfootball_ncaaf/odds",
+      "requested_at": "2026-10-06T21:44:14.831256+00:00",
+      "status": "UNAVAILABLE",
+      "error_type": "ConnectionError"
+    }
+  ],
+  "market_events": 0,
+  "injury_groups": 3,
+  "espn_previews": 58,
+  "weather_forecasts": 56
+}

@@ -125,6 +125,15 @@ def test_run_and_card_timestamps_precede_every_kickoff_and_source_db_is_unchange
     assert hashlib.sha256((ROOT / "data/cfb.db").read_bytes()).hexdigest() == ingestion["source_database_sha256"]
 
 
+def test_all_sealed_week6_artifact_bytes_match_portable_checksums():
+    sealed = json.loads((OUT / "week6_artifact_checksums.json").read_text())
+    assert len(sealed["files"]) == 40
+    for name, expected in sealed["files"].items():
+        assert hashlib.sha256((OUT / name).read_bytes()).hexdigest() == expected
+    card = json.loads((OUT / "week6_card_manifest.json").read_text())
+    assert hashlib.sha256((OUT / "provider-evidence/context/capture-manifest.json").read_bytes()).hexdigest() == card["context_capture_manifest_sha256"]
+
+
 @pytest.mark.parametrize("offset,feature_calls", ((-1, 1), (0, 0), (1, 0)))
 def test_totals_model_never_accesses_features_at_or_after_kickoff(
     temp_db, monkeypatch, offset, feature_calls,
