@@ -79,8 +79,8 @@ def _play(away, home, period, seconds, text):
 def test_backdoor_requires_scoring_sequence_and_selected_team_loses_game():
     backdoor = [_play(0, 10, 3, 60, "earlier"), _play(7, 10, 4, 60, "late touchdown")]
     assert classify_late_score(backdoor, "away", -3.5, 7, 10)["classification"] == "BACKDOOR_COVER"
-    frontdoor = [_play(0, 10, 3, 60, "earlier"), _play(14, 10, 4, 60, "winning touchdown")]
-    assert classify_late_score(frontdoor, "away", -3.5, 14, 10)["classification"] == "LATE_FRONTDOOR_COVER"
+    frontdoor = [_play(7, 10, 3, 60, "earlier"), _play(14, 10, 4, 60, "winning touchdown")]
+    assert classify_late_score(frontdoor, "away", 3.5, 14, 10)["classification"] == "LATE_FRONTDOOR_COVER"
     assert classify_late_score([], "away", -3.5, 7, 10)["classification"] == "NOT_EVALUATED_NO_PBP"
     early_only = [_play(0, 10, 3, 60, "early touchdown")]
     assert classify_late_score(early_only, "away", -3.5, 0, 10)["classification"] == "NOT_APPLICABLE"
@@ -103,8 +103,8 @@ def test_late_score_into_cover_while_losing_outright_is_backdoor_cover():
 
 
 def test_late_score_into_cover_and_outright_win_is_frontdoor_cover():
-    plays = [_play(0, 10, 3, 60, "earlier"), _play(14, 10, 4, 60, "winning touchdown")]
-    assert classify_late_score(plays, "away", -3.5, 14, 10)["classification"] == "LATE_FRONTDOOR_COVER"
+    plays = [_play(7, 10, 3, 60, "earlier"), _play(14, 10, 4, 60, "winning touchdown")]
+    assert classify_late_score(plays, "away", 3.5, 14, 10)["classification"] == "LATE_FRONTDOOR_COVER"
 
 
 def test_late_opponent_score_is_not_failed_backdoor():
