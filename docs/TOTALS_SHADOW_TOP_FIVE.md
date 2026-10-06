@@ -1,14 +1,16 @@
-# Totals shadow forecasting and unified Top-5 custody
+# Totals shadow forecasting, audit, and unified Top-5 governance
 
 ## Scope and activation
 
 Migration 21 adds an isolated, append-only totals domain and a generic
 cross-market Top-5 candidate ledger. Both paths are `shadow` only.
 
-Migration 21 also retains the component-score custody needed by the Week 5
-shadow runner: the recorded home and away scores must sum to the same immutable
-total-model prediction. Postgame totals audit and correlation-aware ranking are
-separate research extensions.
+Migration 21 also contains the component-score custody and manual shadow weekly
+runner required by Week 5. Migration 22 extends that foundation without
+changing migration 21 or any ATS table. It adds complete totals grading and
+CLV custody, OOS same-game
+correlation evidence, a correlation-aware mixed ranking, the #5/#6 cutoff
+gap, and a combined mixed-card audit. All migration-22 rows are immutable.
 
 The production ATS contract is unchanged:
 
@@ -256,6 +258,54 @@ not sufficient: a future candidate must also beat the market-total forecast,
 show stable holdout seasons, positive after-vig ROI, and acceptable Brier/log
 loss/calibration under an owner-approved versioned policy.
 
+## Correlation-aware shadow ranking
+
+The additive migration-22 ranking starts from each governed source row's
+calibrated selected-side probability, never raw ATS or total point edge. When
+the opposite market for the same game was ranked earlier, it derives a
+concentration penalty from historical joint OOS outcomes:
+
+```text
+phi = correlation(ATS win indicator, totals win indicator)
+weight = max(lower endpoint of the Fisher 95% interval, 0)
+penalty = weight * sqrt(p1(1-p1) * p2(1-p2))
+adjusted score = calibrated probability - penalty
+```
+
+No tuned correlation threshold is used. Same-game opportunities remain in the
+pool and can both be selected; any selected pair receives an immutable flag.
+Cells with no evidence or intervals that include zero receive no numeric
+penalty and are explicitly labeled. Candidate rows reference their exact
+earlier same-game candidate and evidence cell; SQLite recomputes and enforces
+the penalty, source probability, and source reliability-policy custody.
+
+The exact ATS prior-season walk-forward ledger joined to the corrected totals
+OOS ledger on 3,712 games produced:
+
+| Relation | N | Phi | 95% interval | Penalty weight |
+|---|---:|---:|---:|---:|
+| Favorite + Over | 547 | 0.1549 | 0.0720 to 0.2357 | 0.0720 |
+| Favorite + Under | 282 | 0.0343 | -0.0829 to 0.1505 | 0 |
+| Underdog + Over | 1,684 | -0.0863 | -0.1335 to -0.0387 | 0 |
+| Underdog + Under | 1,060 | 0.0465 | -0.0137 to 0.1064 | 0 |
+| Pick'em + Over | 24 | 0.2509 | -0.1697 to 0.5941 | 0 |
+| Pick'em + Under | 9 | -0.1581 | -0.7441 to 0.5654 | 0 |
+
+The completion seal stores rank-5 score, rank-6 score, and their exact gap.
+The mixed audit records ATS and totals source-audit identities separately,
+then reports combined W/L/P, ROI, CLV, and expected versus actual win rate so
+combined performance cannot conceal either submodel.
+
+## Totals postgame audit
+
+Every totals candidate is graded against its exact locked total. The audit
+resolves a closing total from a real `betting_lines` closing row at or before
+kickoff; absence is `missing_closing_total`, never a fabricated close. It
+stores final component scores, actual total, W/L/P, -110 unit result, totals
+CLV, signed projection error, edge, Confidence, and explicit context/failure
+statuses. Weather, QB/injury, overtime, garbage time, and late-score effects
+default to `not_evaluated`; any evaluated status requires evidence.
+
 ## Verification and parity
 
 The adversarial suite covers over and under selection, exact-line ties, missing
@@ -268,7 +318,7 @@ per game, duplicate/ambiguous identity rejection, replay determinism, complete
 candidate-or-skip coverage, and database-trigger enforcement.
 
 The migration parity test runs the same Product A Tuesday controller fixture on
-the migration-20 schema and the schema after migration 21, then compares the complete typed result,
+the migration-20 schema and the schema after migrations 21 and 22, then compares the complete typed result,
 all pre-existing table rows, ATS side/Confidence/rank/Top-5 fields,
 publication, and sportsbook output exactly. Existing revision, grading,
 diagnostic, dashboard, and sportsbook suites are also run unchanged before and

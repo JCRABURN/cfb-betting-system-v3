@@ -20,6 +20,11 @@ from models.totals_component_research import (
     TotalsComponentObservation,
     run_totals_component_rolling_origin,
 )
+from models.cross_market_correlation import (
+    CrossMarketCorrelationError,
+    CrossMarketOutOfSampleOutcome,
+    estimate_cross_market_correlations,
+)
 from business_entities.totals_weekly_model import run_component_totals_shadow_model
 from contest_lines import create_contest, lock_contest_line
 from models.totals_evaluation import evaluate_totals_research
@@ -243,6 +248,37 @@ def test_component_score_model_fits_separate_targets_and_replays_deterministical
         for item in first.predictions
     )
     assert first.production_eligible is False
+
+
+def test_cross_market_correlation_uses_oos_outcomes_and_positive_ci_only():
+    rows = tuple(
+        CrossMarketOutOfSampleOutcome(
+            game_id=index,
+            season=2024,
+            week=index,
+            ats_selected_market_status="favorite",
+            ats_result="win" if index % 2 else "loss",
+            total_selected_direction="over",
+            total_result="win" if index % 2 else "loss",
+        )
+        for index in range(1, 101)
+    )
+    result = estimate_cross_market_correlations(rows)
+    favorite_over = next(
+        item for item in result.estimates if item.relation_code == "favorite_over"
+    )
+    assert favorite_over.sample_n == 100
+    assert favorite_over.positive_penalty_weight > 0
+    assert favorite_over.positive_penalty_weight == pytest.approx(
+        max(favorite_over.fisher_lower_95, 0)
+    )
+    assert all(
+        item.positive_penalty_weight == 0
+        for item in result.estimates
+        if item.relation_code != "favorite_over"
+    )
+    with pytest.raises(CrossMarketCorrelationError, match="unique"):
+        estimate_cross_market_correlations((rows[0], rows[0]))
 
 
 def test_weekly_component_runner_is_shadow_only_and_records_components(temp_db, monkeypatch):
