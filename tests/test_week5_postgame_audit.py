@@ -118,6 +118,29 @@ def test_absent_or_incomplete_scoring_sequence_is_not_evaluated():
     assert classify_late_score(partial, "away", -3.5, 8, 20)["classification"] == "NOT_EVALUATED_NO_PBP"
 
 
+@pytest.mark.parametrize(
+    ("side", "home_spread", "plays", "final_away", "final_home", "expected"),
+    (
+        pytest.param("away", -7.5, [_play(0, 20, 3, 60, "earlier"), _play(7, 20, 4, 60, "late TD")],
+                     7, 20, "BACKDOOR_FAILURE", id="away-underdog-fails"),
+        pytest.param("home", 7.5, [_play(20, 0, 3, 60, "earlier"), _play(20, 7, 4, 60, "late TD")],
+                     20, 7, "BACKDOOR_FAILURE", id="home-underdog-fails"),
+        pytest.param("away", 4.5, [_play(0, 20, 3, 60, "earlier"), _play(7, 20, 4, 60, "late TD")],
+                     7, 20, "LATE_SCORE_NONDETERMINATIVE", id="away-favorite-fails"),
+        pytest.param("away", -10.5, [_play(3, 20, 3, 60, "earlier"), _play(10, 20, 4, 60, "late TD")],
+                     10, 20, "BACKDOOR_COVER", id="underdog-covers-while-losing"),
+        pytest.param("away", 3.5, [_play(7, 10, 3, 60, "earlier"), _play(14, 10, 4, 60, "late TD")],
+                     14, 10, "LATE_FRONTDOOR_COVER", id="favorite-wins-and-covers"),
+        pytest.param("away", -7.5, [_play(0, 13, 3, 60, "earlier"), _play(0, 20, 4, 60, "opponent TD")],
+                     0, 20, "LATE_SCORE_NONDETERMINATIVE", id="opponent-scores"),
+    ),
+)
+def test_backdoor_failure_is_positive_selected_spread_only(
+    side, home_spread, plays, final_away, final_home, expected
+):
+    assert classify_late_score(plays, side, home_spread, final_away, final_home)["classification"] == expected
+
+
 def test_final_score_capture_fails_closed_on_missing_game():
     card = _csv(V4 / "week5_ats_full_card.csv")
     capture = _json(EVIDENCE / "capture-manifest.json")

@@ -133,6 +133,7 @@ def classify_late_score(
     if not plays or (int(plays[-1]["awayScore"]), int(plays[-1]["homeScore"])) != (final_away_score, final_home_score):
         return {"classification": "NOT_EVALUATED_NO_PBP", **empty}
     final_result, _ = grade_ats(side, locked_home_spread, final_home_score - final_away_score)
+    selected_spread = _d(locked_home_spread) if side == "home" else -_d(locked_home_spread)
     selected_lost_game = (final_home_score < final_away_score) if side == "home" else (final_away_score < final_home_score)
     previous_away = previous_home = 0
     late_plays: list[tuple[dict[str, object], str, str, Decimal, Decimal, int, int]] = []
@@ -156,7 +157,7 @@ def classify_late_score(
             continue
         if before != "WIN" and after == final_result == "WIN":
             classification = "BACKDOOR_COVER" if selected_trailing and selected_lost_game else "LATE_FRONTDOOR_COVER"
-        elif selected_trailing and after_margin > before_margin and final_result == "LOSS":
+        elif selected_spread > 0 and selected_trailing and after_margin > before_margin and final_result == "LOSS":
             classification = "BACKDOOR_FAILURE"
         else:
             continue
