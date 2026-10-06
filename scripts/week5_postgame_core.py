@@ -127,43 +127,45 @@ def classify_late_score(
     plays: list[dict[str, object]], side: str, locked_home_spread: object,
     final_away_score: int, final_home_score: int,
 ) -> dict[str, str]:
-    """Use actual scoring sequence, never a final-score backdoor inference."""
-    if not plays:
-        return {"classification": "NOT_EVALUATED_NO_PBP", "decisive_score": "", "game_clock": "", "period": ""}
+    """Classify late selected-team scores using complete play-by-play and locked ATS margin."""
+    empty = {"decisive_score": "", "game_clock": "", "period": "",
+             "score_before_late_play": "", "score_after_late_play": ""}
+    if not plays or (int(plays[-1]["awayScore"]), int(plays[-1]["homeScore"])) != (final_away_score, final_home_score):
+        return {"classification": "NOT_EVALUATED_NO_PBP", **empty}
     final_result, _ = grade_ats(side, locked_home_spread, final_home_score - final_away_score)
+    selected_lost_game = (final_home_score < final_away_score) if side == "home" else (final_away_score < final_home_score)
     previous_away = previous_home = 0
-    late_plays: list[tuple[dict[str, object], str, str, int, int]] = []
+    late_plays: list[tuple[dict[str, object], str, str, Decimal, Decimal, int, int]] = []
     for play in plays:
         away = int(play["awayScore"])
         home = int(play["homeScore"])
         period = int(play["period"]["number"])
         clock = float(play["clock"]["value"])
         if period > 4 or (period == 4 and clock <= 300):
-            before, _ = grade_ats(side, locked_home_spread, previous_home - previous_away)
-            after, _ = grade_ats(side, locked_home_spread, home - away)
-            late_plays.append((play, before, after, previous_away, previous_home))
+            before, before_margin = grade_ats(side, locked_home_spread, previous_home - previous_away)
+            after, after_margin = grade_ats(side, locked_home_spread, home - away)
+            late_plays.append((play, before, after, before_margin, after_margin, previous_away, previous_home))
         previous_away, previous_home = away, home
     if not late_plays:
-        return {"classification": "NOT_APPLICABLE", "decisive_score": "", "game_clock": "", "period": ""}
-    for play, before, after, prior_away, prior_home in reversed(late_plays):
-        if before == after or after != final_result:
-            continue
+        return {"classification": "NOT_APPLICABLE", **empty}
+    for play, before, after, before_margin, after_margin, prior_away, prior_home in reversed(late_plays):
         away, home = int(play["awayScore"]), int(play["homeScore"])
         selected_scored = (home > prior_home) if side == "home" else (away > prior_away)
         selected_trailing = (prior_home < prior_away) if side == "home" else (prior_away < prior_home)
-        selected_lost_game = (final_home_score < final_away_score) if side == "home" else (final_away_score < final_home_score)
-        if after == "WIN" and selected_scored and selected_trailing and selected_lost_game:
-            classification = "BACKDOOR_COVER"
-        elif after == "WIN" and selected_scored:
-            classification = "LATE_FRONTDOOR_COVER"
-        elif after == "LOSS" and selected_scored:
+        if not selected_scored:
+            continue
+        if before != "WIN" and after == final_result == "WIN":
+            classification = "BACKDOOR_COVER" if selected_trailing and selected_lost_game else "LATE_FRONTDOOR_COVER"
+        elif selected_trailing and after_margin > before_margin and final_result == "LOSS":
             classification = "BACKDOOR_FAILURE"
         else:
-            classification = "LATE_SCORE_NONDETERMINATIVE"
+            continue
         return {
             "classification": classification,
             "decisive_score": str(play.get("text", "")),
             "game_clock": str(play["clock"].get("displayValue", "")),
             "period": str(play["period"]["number"]),
+            "score_before_late_play": f"{prior_away}-{prior_home}",
+            "score_after_late_play": f"{away}-{home}",
         }
-    return {"classification": "LATE_SCORE_NONDETERMINATIVE", "decisive_score": "", "game_clock": "", "period": ""}
+    return {"classification": "LATE_SCORE_NONDETERMINATIVE", **empty}

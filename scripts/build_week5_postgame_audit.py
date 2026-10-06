@@ -342,7 +342,8 @@ def build() -> dict[str, object]:
         late = classify_late_score(plays, row["selected_side"],
                                    row["locked_home_spread"], int(result["away_score"]), int(result["home_score"]))
         if not sequence_complete:
-            late = {"classification": "NOT_EVALUATED_NO_PBP", "decisive_score": "", "game_clock": "", "period": ""}
+            late = {"classification": "NOT_EVALUATED_NO_PBP", "decisive_score": "", "game_clock": "", "period": "",
+                    "score_before_late_play": "", "score_after_late_play": ""}
         late_rows.append({**common, "pick": row["pick"], "ats_result": ats_result,
                           **late, "scoring_sequence_status": "COMPLETE" if sequence_complete else "PARTIAL_OR_UNAVAILABLE_FINAL_SCORE_MISMATCH",
                           "source": result["summary_source"],
@@ -637,7 +638,7 @@ def _finish(
     cumulative["combined_comparable_cuts"] = combined_cuts
     _write_json("week5_cumulative_2026_diagnostics.json", cumulative)
     return _reports(model, custody, capture, results, ats, totals, decision,
-                    large, logic, diagnostics, cumulative)
+                    large, logic, late, diagnostics, cumulative)
 
 
 def _record_text(value: dict[str, object]) -> str:
@@ -650,6 +651,7 @@ def _reports(
     results: list[dict[str, object]], ats: list[dict[str, object]],
     totals: list[dict[str, object]], decision: list[dict[str, object]],
     large: list[dict[str, object]], logic: list[dict[str, object]],
+    late: list[dict[str, object]],
     diagnostics: dict[str, object], cumulative: dict[str, object],
 ) -> dict[str, object]:
     a = diagnostics["ats"]
@@ -680,6 +682,14 @@ def _reports(
     )
     overtime = [row for row in results if row["overtime"] == "True"]
     late_counts = diagnostics["late_score_counts"]
+    ats_by_game = {row["game_id"]: row for row in ats}
+    backdoor_failure_table = "\n".join(
+        f"| {row['away']} @ {row['home']} | {row['pick']} {float(ats_by_game[row['game_id']]['selected_spread']):+g} | "
+        f"{row['score_before_late_play']} | {row['score_after_late_play']} | "
+        f"{ats_by_game[row['game_id']]['final_away_score']}-{ats_by_game[row['game_id']]['final_home_score']} | "
+        f"{row['ats_result']} |"
+        for row in late if row["classification"] == "BACKDOOR_FAILURE"
+    ) or "| None | — | — | — | — | — |"
     summary = (
         "# WEEK 5 2026 POSTGAME AUDIT\n\n"
         "This grades the frozen local governed-draft ATS card and shadow-only totals card; it does not create wagers or alter pregame selections. "
@@ -741,8 +751,17 @@ def _reports(
         "Hook classifications require the actual ATS grading margin to equal ±0.5 on a half-point selection. "
         "Key-number classifications require a final margin of exactly 3 or 7 and a grading margin within one point of the boundary. "
         "The detailed game-by-game table records one-point boundaries separately. Late-score classification uses ESPN scoring-play sequence, clock and before/after cover state; it never infers a backdoor solely from the final. "
+        "The late window is the final five minutes of regulation or overtime. BACKDOOR_COVER requires a selected-team score from an outright deficit into an ATS win while still losing outright. "
+        "BACKDOOR_FAILURE requires a selected-team score from an outright deficit that improves the locked-line ATS margin, with a final ATS loss. "
+        "LATE_FRONTDOOR_COVER requires a selected-team score into an ATS win without the backdoor-cover conditions. "
+        "Other late scores are LATE_SCORE_NONDETERMINATIVE; absent or incomplete scoring sequences are NOT_EVALUATED_NO_PBP; no late score is NOT_APPLICABLE. "
         "UTEP–New Mexico's ESPN scoring-play list ends 7–60 while both final-score feeds say 7–61, so its late-score class is withheld as NOT_EVALUATED_NO_PBP with a partial-sequence flag. "
         f"Observed late-score class counts: `{json.dumps(late_counts, sort_keys=True)}`.\n\n"
+        "### Scoring-sequence-backed backdoor failures\n\n"
+        "Scores are away-home. The late score is the score immediately after the identified scoring play.\n\n"
+        "| Game | Frozen pick | Before late play | Late score | Final score | Final ATS |\n"
+        "| --- | --- | --- | --- | --- | --- |\n"
+        f"{backdoor_failure_table}\n\n"
         "## Large edges, calibration, and model misses\n\n"
         f"All 23 absolute raw ATS edges ≥7 points: **{_record_text(large_summary['edge_ge_7'])}**, "
         f"versus **{_record_text(large_summary['edge_lt_7'])}** below 7. "

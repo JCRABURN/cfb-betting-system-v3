@@ -51,7 +51,21 @@ ESPN game summaries contain DraftKings `open` and `close` fields, but do not pro
 
 ## Hook, key number, and late-score evidence
 
-Hook classifications require the actual ATS grading margin to equal ±0.5 on a half-point selection. Key-number classifications require a final margin of exactly 3 or 7 and a grading margin within one point of the boundary. The detailed game-by-game table records one-point boundaries separately. Late-score classification uses ESPN scoring-play sequence, clock and before/after cover state; it never infers a backdoor solely from the final. UTEP–New Mexico's ESPN scoring-play list ends 7–60 while both final-score feeds say 7–61, so its late-score class is withheld as NOT_EVALUATED_NO_PBP with a partial-sequence flag. Observed late-score class counts: `{"LATE_FRONTDOOR_COVER": 4, "LATE_SCORE_NONDETERMINATIVE": 32, "NOT_APPLICABLE": 19, "NOT_EVALUATED_NO_PBP": 1}`.
+Hook classifications require the actual ATS grading margin to equal ±0.5 on a half-point selection. Key-number classifications require a final margin of exactly 3 or 7 and a grading margin within one point of the boundary. The detailed game-by-game table records one-point boundaries separately. Late-score classification uses ESPN scoring-play sequence, clock and before/after cover state; it never infers a backdoor solely from the final. The late window is the final five minutes of regulation or overtime. BACKDOOR_COVER requires a selected-team score from an outright deficit into an ATS win while still losing outright. BACKDOOR_FAILURE requires a selected-team score from an outright deficit that improves the locked-line ATS margin, with a final ATS loss. LATE_FRONTDOOR_COVER requires a selected-team score into an ATS win without the backdoor-cover conditions. Other late scores are LATE_SCORE_NONDETERMINATIVE; absent or incomplete scoring sequences are NOT_EVALUATED_NO_PBP; no late score is NOT_APPLICABLE. UTEP–New Mexico's ESPN scoring-play list ends 7–60 while both final-score feeds say 7–61, so its late-score class is withheld as NOT_EVALUATED_NO_PBP with a partial-sequence flag. Observed late-score class counts: `{"BACKDOOR_FAILURE": 7, "LATE_FRONTDOOR_COVER": 4, "LATE_SCORE_NONDETERMINATIVE": 25, "NOT_APPLICABLE": 19, "NOT_EVALUATED_NO_PBP": 1}`.
+
+### Scoring-sequence-backed backdoor failures
+
+Scores are away-home. The late score is the score immediately after the identified scoring play.
+
+| Game | Frozen pick | Before late play | Late score | Final score | Final ATS |
+| --- | --- | --- | --- | --- | --- |
+| Cincinnati @ Arizona | Cincinnati +7.5 | 0-34 | 7-34 | 7-34 | LOSS |
+| Texas State @ San Diego State | Texas State -4.5 | 22-31 | 29-31 | 29-31 | LOSS |
+| North Texas @ Tulsa | Tulsa -1.5 | 45-38 | 45-44 | 45-44 | LOSS |
+| Eastern Michigan @ Massachusetts | Massachusetts -5.5 | 38-7 | 38-14 | 38-14 | LOSS |
+| Georgia Southern @ Coastal Carolina | Coastal Carolina +2.5 | 31-17 | 31-24 | 31-24 | LOSS |
+| Liberty @ Delaware | Delaware +7.5 | 30-6 | 30-14 | 30-14 | LOSS |
+| UL Monroe @ South Alabama | UL Monroe +13.5 | 28-52 | 35-52 | 35-52 | LOSS |
 
 ## Large edges, calibration, and model misses
 

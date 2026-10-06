@@ -84,8 +84,38 @@ def test_backdoor_requires_scoring_sequence_and_selected_team_loses_game():
     assert classify_late_score([], "away", -3.5, 7, 10)["classification"] == "NOT_EVALUATED_NO_PBP"
     early_only = [_play(0, 10, 3, 60, "early touchdown")]
     assert classify_late_score(early_only, "away", -3.5, 0, 10)["classification"] == "NOT_APPLICABLE"
-    nondeterminative = [_play(0, 20, 3, 60, "earlier"), _play(7, 20, 4, 60, "late touchdown")]
-    assert classify_late_score(nondeterminative, "away", -3.5, 7, 20)["classification"] == "LATE_SCORE_NONDETERMINATIVE"
+    failed_backdoor = [_play(0, 20, 3, 60, "earlier"), _play(7, 20, 4, 60, "late touchdown")]
+    assert classify_late_score(failed_backdoor, "away", -3.5, 7, 20)["classification"] == "BACKDOOR_FAILURE"
+
+
+def test_failed_backdoor_requires_late_selected_score_and_final_ats_loss():
+    plays = [_play(0, 20, 3, 60, "earlier"), _play(7, 20, 4, 60, "late touchdown")]
+    outcome = classify_late_score(plays, "away", -3.5, 7, 20)
+    assert outcome["classification"] == "BACKDOOR_FAILURE"
+    assert outcome["decisive_score"] == "late touchdown"
+    assert outcome["score_before_late_play"] == "0-20"
+    assert outcome["score_after_late_play"] == "7-20"
+
+
+def test_late_score_into_cover_while_losing_outright_is_backdoor_cover():
+    plays = [_play(3, 20, 3, 60, "earlier"), _play(10, 20, 4, 60, "late touchdown")]
+    assert classify_late_score(plays, "away", -10.5, 10, 20)["classification"] == "BACKDOOR_COVER"
+
+
+def test_late_score_into_cover_and_outright_win_is_frontdoor_cover():
+    plays = [_play(0, 10, 3, 60, "earlier"), _play(14, 10, 4, 60, "winning touchdown")]
+    assert classify_late_score(plays, "away", -3.5, 14, 10)["classification"] == "LATE_FRONTDOOR_COVER"
+
+
+def test_late_opponent_score_is_not_failed_backdoor():
+    plays = [_play(0, 13, 3, 60, "earlier"), _play(0, 20, 4, 60, "opponent touchdown")]
+    assert classify_late_score(plays, "away", -3.5, 0, 20)["classification"] == "LATE_SCORE_NONDETERMINATIVE"
+
+
+def test_absent_or_incomplete_scoring_sequence_is_not_evaluated():
+    assert classify_late_score([], "away", -3.5, 7, 20)["classification"] == "NOT_EVALUATED_NO_PBP"
+    partial = [_play(0, 20, 3, 60, "earlier"), _play(7, 20, 4, 60, "late touchdown")]
+    assert classify_late_score(partial, "away", -3.5, 8, 20)["classification"] == "NOT_EVALUATED_NO_PBP"
 
 
 def test_final_score_capture_fails_closed_on_missing_game():
