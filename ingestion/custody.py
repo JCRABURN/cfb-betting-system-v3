@@ -48,6 +48,7 @@ SENSITIVE_PARAMETER_TOKENS = (
 # Downstream parsers and card code must not add one-off corrections.
 DEFAULT_TEAM_ALIASES: Mapping[str, Mapping[str, str]] = MappingProxyType({
     "SplashSports": MappingProxyType({
+        "Appalachian State": "App State",
         "UMass": "Massachusetts",
         "Louisiana-Monroe": "UL Monroe",
         "Miami (FL)": "Miami",
