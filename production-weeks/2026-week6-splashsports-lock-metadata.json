@@ -1,0 +1,31 @@
+{
+  "season": 2026,
+  "week": 6,
+  "contest_key": "splashsports-cfb-2026-w06",
+  "source": "SplashSports owner-supplied screenshots",
+  "authoritative_locked_lines": true,
+  "chat_received_at": "2026-10-06T14:49:00-05:00",
+  "chat_received_at_note": "Timestamp is when the screenshot set was supplied in this chat, not an independently verified screenshot capture timestamp.",
+  "game_count": 58,
+  "date_inventory": {
+    "2026-10-06": 1,
+    "2026-10-07": 2,
+    "2026-10-08": 4,
+    "2026-10-09": 5,
+    "2026-10-10": 46
+  },
+  "canonical_csv_path": "production-weeks/2026-week6-splashsports.csv",
+  "canonical_csv_sha256": "904811a6aa0be7855216f5899ca0855bac6310a40ebe41f99ac36f3fe1904180",
+  "spread_convention": "Spread is the home-team spread.",
+  "total_convention": "Total is the contest over/under shown in the screenshots.",
+  "orientation_basis": "Away/home orientation transcribed from the explicit matchup labels at right (Away @ Home), not inferred from left/right selection boxes.",
+  "lock_rule": "These screenshot values are the authoritative Week 6 contest lines and totals and must not be overwritten by later market movement.",
+  "source_images": [
+    {"screenshot_number":1,"uploaded_name":"e8a0213c-e4b9-436e-aee4-38f9724a46dd.png","sha256":"7a6b2cb7157a3d307a859ed9050f763c8377e3e74c8c8e1075bb340ef8123906","size_bytes":103548},
+    {"screenshot_number":2,"uploaded_name":"b97900f2-d32e-4f14-8842-e2183fa3dbdd.png","sha256":"fa616f3d42a57735b317a276aa18d498c01a92cda5ad78589d57a2c78921929c","size_bytes":105583},
+    {"screenshot_number":3,"uploaded_name":"def0f3a5-18d8-4479-a2a8-b62674832d36.png","sha256":"348f74536f1c5c4433a1921ca670bcec8da5aef902495c51126ace615b8a36e6","size_bytes":115822},
+    {"screenshot_number":4,"uploaded_name":"940aa53a-8066-4e07-8cab-c6b134dd2714.png","sha256":"5600f24efd597f562d559c7a29a819101f4b9b3ebc5df46411a4ff7d3c4cb6fd","size_bytes":102236},
+    {"screenshot_number":5,"uploaded_name":"ef6c2eab-eb63-4545-9b1b-26503e6accf0.png","sha256":"871fd61080a4ef1b3a23498011e3ae6a80c57f0e0093e0d66054300c056c5dab","size_bytes":111955},
+    {"screenshot_number":6,"uploaded_name":"abd9c213-90a2-47d9-b893-573239851c00.png","sha256":"5580063cdc4404676d7059c7c1d125ce15ad15c144c4ef09562da17a44040a29","size_bytes":72421}
+  ]
+}
