@@ -349,54 +349,7 @@ def main() -> None:
         for i, row in enumerate(totals_pool[:10], 1)]
     write_csv("week6_analytical_ats_shortlist.csv", analytical_ats)
     write_csv("week6_analytical_totals_shortlist.csv", analytical_totals)
-    # The owner receives the five stored mixed-market leaders for explicit
-    # decision review; this is neither an official ATS rank nor a wager.
-    decisions = [{**row, "decision_rank": i,
-        "reason_survived_review": "Top stored cross-market shadow score; current context recorded",
-        "main_failure_mode": "Unvalidated cross-market score; Week 5 shadow totals 23-33; QB unverified",
-        "review_status": "HUMAN_REVIEW_OPTION_NOT_SPORTSBOOK_RECOMMENDATION"}
-        for i, row in enumerate(mixed, 1)]
-    write_csv("week6_decision_shortlist.csv", decisions)
     counts = Counter(row["market_type"] for row in mixed)
-    report = ["# Week 6 initial execution — local governed draft", "",
-        "**WEEK 6 MARKET COVERAGE**", "", "Locked games: 58",
-        "ATS candidates: 58; ATS skips: 0",
-        "Totals candidates: 58; Totals skips: 0",
-        "Combined market selections: 116", "",
-        "## Custody and timing", "",
-        "The immutable SplashSports source remains the grading and selection lock. "
-        "Model generation occurred before every reconciled kickoff. The Hawaii–Arizona State "
-        "one-hour CFBD schedule discrepancy was corrected only in the isolated database "
-        "using both teams' official 7:30 p.m. MST schedule; the raw provider capture remains preserved.", "",
-        "## Governed ATS Top 5", "",
-        "All 58 governed ATS Confidence values are 1. The ATS Top 5 is a deterministic "
-        "policy order and is not strength ranked.", ""]
-    report.extend(f"- {i}. {row['pick']} {row['pick_spread']} at {row['home']} vs {row['away']}"
-                  for i, row in enumerate(official, 1))
-    report += ["", "## Mixed-market shadow Top 5", "",
-        f"Composition: ATS {counts['ATS']}; TOTAL {counts['TOTAL']}. "
-        "This ranks the stored cross-market shadow candidate score, never raw ATS "
-        "and total point edges. Its probabilities are not empirically validated; "
-        "totals are not production eligible.", ""]
-    report.extend(f"- {row['combined_top5_rank']}. {row['market_type']} {row['selection']} "
-                  f"{row['locked_line']}: score {float(row['candidate_score']):.4f}; "
-                  f"Confidence {row['confidence']}" for row in mixed)
-    report += ["", "## Context limitations", "",
-        f"ESPN displayed DraftKings spread and total for {sum(row['status'] == 'OBSERVED_UNTIMESTAMPED' for row in market.values())}/58 games. "
-        "The direct Odds API endpoint was unavailable. ESPN does not provide an observation timestamp "
-        "for each displayed line, so the retrieval timestamp is the only freshness bound. "
-        "Market lines never replace SplashSports locks.",
-        f"Open-Meteo kickoff-hour forecasts were captured for {evidence['weather_forecasts']} games; "
-        "the other two are domes or have explicit status. All QB starts remain unverified. "
-        f"The ESPN injury feed returned {len(injuries.get('injuries', []))} team groups; absence of a record does not mean healthy.",
-        "No manual, coaching, travel, injury, or weather point adjustments were made.",
-        "Week 5 shadow totals finished 23-33, while the Week 5 ATS card finished 34-22. "
-        "Those results are review context, not a new policy.", "",
-        "## Owner review", "",
-        "The five decision shortlist rows are human review options and are not sportsbook recommendations. "
-        "The analytical ATS and totals shortlists are separate from governed and mixed Top 5. "
-        "All reported market, QB, injury, and weather gaps remain visible in the CSVs.", ""]
-    (OUT / "week6_execution_report.md").write_text("\n".join(report), encoding="utf-8")
     card_manifest = json.loads((OUT / "week6_card_manifest.json").read_text())
     card_manifest["coverage"] = {"locked_games": 58, "ats_candidates": 58, "ats_skips": 0,
         "totals_candidates": 58, "totals_skips": 0, "combined_market_selections": 116,
@@ -406,6 +359,10 @@ def main() -> None:
         (RAW / "capture-manifest.json").read_bytes()).hexdigest()
     card_manifest["no_manual_adjustments"] = True
     write_json("week6_card_manifest.json", card_manifest)
+    # The decision/reporting layer is a separate qualitative review of sealed
+    # pregame artifacts, never a copy of the mixed shadow score leaders.
+    from scripts.review_week6_decision import write_review_outputs
+    write_review_outputs(update_checksums=False)
     print(json.dumps({"ats": len(ats_enriched), "totals": len(total_enriched),
                       "pool": len(pool), "mixed_ats": counts["ATS"],
                       "mixed_totals": counts["TOTAL"], "large_edges": len(large),

@@ -127,11 +127,79 @@ def test_run_and_card_timestamps_precede_every_kickoff_and_source_db_is_unchange
 
 def test_all_sealed_week6_artifact_bytes_match_portable_checksums():
     sealed = json.loads((OUT / "week6_artifact_checksums.json").read_text())
-    assert len(sealed["files"]) == 40
+    assert len(sealed["files"]) == 41  # original 40 plus review-only scale diagnostic
     for name, expected in sealed["files"].items():
         assert hashlib.sha256((OUT / name).read_bytes()).hexdigest() == expected
     card = json.loads((OUT / "week6_card_manifest.json").read_text())
     assert hashlib.sha256((OUT / "provider-evidence/context/capture-manifest.json").read_bytes()).hexdigest() == card["context_capture_manifest_sha256"]
+
+
+def test_frozen_week6_execution_and_independent_human_review_are_distinct():
+    from scripts.review_week6_decision import FROZEN_HASHES, LOCK_SHA, MIXED_LABEL, REVIEW_LABEL
+
+    sealed = json.loads((OUT / "week6_artifact_checksums.json").read_text())
+    for name, expected in FROZEN_HASHES.items():
+        assert sealed["files"][name] == expected
+        assert hashlib.sha256((OUT / name).read_bytes()).hexdigest() == expected
+    ats = csv_rows(OUT / "week6_ats_full_card.csv")
+    totals = csv_rows(OUT / "week6_totals_full_card.csv")
+    pool = csv_rows(OUT / "week6_combined_candidate_pool.csv")
+    official = csv_rows(OUT / "week6_official_ats_top5.csv")
+    mixed = csv_rows(OUT / "week6_mixed_market_shadow_top5.csv")
+    decisions = csv_rows(OUT / "week6_decision_shortlist.csv")
+    assert (len(ats), len(totals), len(pool), len(official), len(mixed), len(decisions)) == (
+        58, 58, 116, 5, 5, 5)
+    assert [(row["away"], row["home"], row["selection"], row["locked_line"])
+            for row in mixed] == [
+        ("UCF", "Oklahoma State", "under", "53.5"),
+        ("Tulane", "Army", "over", "47.5"),
+        ("UCLA", "Oregon", "under", "59.5"),
+        ("Arizona", "West Virginia", "under", "61.5"),
+        ("Central Michigan", "Ohio", "over", "46.5"),
+    ]
+    assert {(row["market_type"], row["game_id"]) for row in decisions} != {
+        (row["market_type"], row["game_id"]) for row in mixed}
+    assert [int(row["decision_rank"]) for row in decisions] == [1, 2, 3, 4, 5]
+    assert all(row["review_label"] == REVIEW_LABEL and row["why_survived_human_review"]
+               and row["primary_failure_mode"] and row["cross_market_score_limitation"]
+               for row in decisions)
+    assert all(row["review_status"] == "HUMAN_REVIEW_OPTION_NOT_SPORTSBOOK_RECOMMENDATION"
+               for row in decisions)
+    report = (OUT / "week6_execution_report.md").read_text(encoding="utf-8")
+    assert "## OFFICIAL GOVERNED ATS TOP 5" in report
+    assert f"## {MIXED_LABEL}" in report
+    assert f"## {REVIEW_LABEL}" in report
+    assert LOCK_SHA in report
+    locks = json.loads((OUT / "week6_locked_line_snapshot.json").read_text())
+    card = json.loads((OUT / "week6_card_manifest.json").read_text())
+    model = json.loads((OUT / "week6_model_manifest.json").read_text())
+    ingestion = json.loads((OUT / "week6_ingestion_manifest.json").read_text())
+    assert {LOCK_SHA} == {locks["locked_line_snapshot_sha256"],
+                          card["ats_card"]["locked_line_snapshot_sha256"],
+                          card["totals_card"]["locked_line_snapshot_sha256"],
+                          model["locked_line_snapshot_sha256"], ingestion["lock_snapshot_sha256"]}
+
+
+def test_frozen_cross_market_score_scale_is_reported_without_calibration_claim():
+    from scripts.review_week6_decision import SCALE_LABEL, score_diagnostic
+
+    pool = csv_rows(OUT / "week6_combined_candidate_pool.csv")
+    computed = score_diagnostic(pool)
+    reported = json.loads((OUT / "week6_cross_market_scale_diagnostic.json").read_text())
+    assert reported == computed
+    assert reported["score_interpretation"] == SCALE_LABEL
+    assert reported["cross_market_common_scale_validated"] is False
+    assert reported["ats_policy_maximum_selected_probability"] == 0.60
+    assert reported["total_score_method"] == "UNCALIBRATED_NORMAL_SHADOW"
+    assert reported["total_candidates_above_best_ats_score"] == 25
+    assert reported["markets"]["ATS"]["count"] == 58
+    assert reported["markets"]["TOTAL"]["count"] == 58
+    assert reported["markets"]["ATS"]["minimum"] == pytest.approx(0.5007, abs=0.0001)
+    assert reported["markets"]["ATS"]["median"] == pytest.approx(0.5197, abs=0.0001)
+    assert reported["markets"]["ATS"]["maximum"] == pytest.approx(0.5896, abs=0.0001)
+    assert reported["markets"]["TOTAL"]["minimum"] == pytest.approx(0.5040, abs=0.0001)
+    assert reported["markets"]["TOTAL"]["median"] == pytest.approx(0.5749, abs=0.0001)
+    assert reported["markets"]["TOTAL"]["maximum"] == pytest.approx(0.7197, abs=0.0001)
 
 
 @pytest.mark.parametrize("offset,feature_calls", ((-1, 1), (0, 0), (1, 0)))
