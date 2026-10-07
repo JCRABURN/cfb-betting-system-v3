@@ -1,0 +1,24 @@
+{
+  "ats_policy_maximum_selected_probability": 0.6,
+  "cross_market_common_scale_validated": false,
+  "locked_line_domain_snapshot_sha256": "f2723f75d94c2c3e4edaadf618cbb71866f3cf2d8b59c62fe48ab84bad6c2c75",
+  "markets": {
+    "ATS": {
+      "count": 58,
+      "maximum": 0.5895824550378874,
+      "median": 0.5196997309222039,
+      "minimum": 0.5007320176370166
+    },
+    "TOTAL": {
+      "count": 58,
+      "maximum": 0.719718755302035,
+      "median": 0.5749113765156029,
+      "minimum": 0.5040485332903303
+    }
+  },
+  "score_interpretation": "SHADOW SCORE ORDERING WITH CROSS-MARKET SCALE LIMITATION",
+  "source": "sealed week6_combined_candidate_pool.csv",
+  "source_sha256": "73b8ad05d1efa10dc2ea870d7ad7342fda41355d48e425ea0ae22dfc77530111",
+  "total_candidates_above_best_ats_score": 25,
+  "total_score_method": "UNCALIBRATED_NORMAL_SHADOW"
+}

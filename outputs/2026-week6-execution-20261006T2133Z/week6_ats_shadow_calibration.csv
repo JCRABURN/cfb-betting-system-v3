@@ -1,0 +1,59 @@
+game_id,away,home,selection,selected_spread,selected_margin_advantage_points,calibrated_selected_side_probability,candidate_score,reliability_policy_version,calibration_method,empirical_validation
+401856712,Georgia,Alabama,Georgia,1.5,1.0657042894295978,0.505328521447148,0.505328521447148,ats-shadow-conservative-v1,conservative_linear_margin_v1,NOT_EMPIRICALLY_VALIDATED
+401856713,Tennessee,Arkansas,Tennessee,-13.5,0.4360248919138243,0.5021801244595692,0.5021801244595692,ats-shadow-conservative-v1,conservative_linear_margin_v1,NOT_EMPIRICALLY_VALIDATED
+401856714,South Carolina,Florida,Florida,-13.5,0.14640352740332574,0.5007320176370166,0.5007320176370166,ats-shadow-conservative-v1,conservative_linear_margin_v1,NOT_EMPIRICALLY_VALIDATED
+401856715,LSU,Kentucky,Kentucky,9.5,5.349114341981318,0.5267455717099065,0.5267455717099065,ats-shadow-conservative-v1,conservative_linear_margin_v1,NOT_EMPIRICALLY_VALIDATED
+401856716,Texas A&M,Missouri,Missouri,-3.5,8.164562506153095,0.5408228125307655,0.5408228125307655,ats-shadow-conservative-v1,conservative_linear_margin_v1,NOT_EMPIRICALLY_VALIDATED
+401856717,Texas,Oklahoma,Oklahoma,7.5,10.09205754232226,0.5504602877116113,0.5504602877116113,ats-shadow-conservative-v1,conservative_linear_margin_v1,NOT_EMPIRICALLY_VALIDATED
+401856718,Ole Miss,Vanderbilt,Vanderbilt,10.5,14.944332275501417,0.5747216613775071,0.5747216613775071,ats-shadow-conservative-v1,conservative_linear_margin_v1,NOT_EMPIRICALLY_VALIDATED
+401856808,Hawai'i,Arizona State,Hawai'i,20.5,15.35033117653901,0.5767516558826951,0.5767516558826951,ats-shadow-conservative-v1,conservative_linear_margin_v1,NOT_EMPIRICALLY_VALIDATED
+401856823,Arizona,West Virginia,Arizona,-3.5,1.7053094716526225,0.5085265473582631,0.5085265473582631,ats-shadow-conservative-v1,conservative_linear_margin_v1,NOT_EMPIRICALLY_VALIDATED
+401856824,UCF,Oklahoma State,UCF,9.5,3.9598842714677183,0.5197994213573386,0.5197994213573386,ats-shadow-conservative-v1,conservative_linear_margin_v1,NOT_EMPIRICALLY_VALIDATED
+401856825,Houston,Kansas State,Kansas State,-2.5,3.347093974638124,0.5167354698731906,0.5167354698731906,ats-shadow-conservative-v1,conservative_linear_margin_v1,NOT_EMPIRICALLY_VALIDATED
+401856826,Iowa State,BYU,BYU,-10.5,5.684746282346033,0.5284237314117302,0.5284237314117302,ats-shadow-conservative-v1,conservative_linear_margin_v1,NOT_EMPIRICALLY_VALIDATED
+401856827,Kansas,Utah,Kansas,15.5,7.43204303891887,0.5371602151945943,0.5371602151945943,ats-shadow-conservative-v1,conservative_linear_margin_v1,NOT_EMPIRICALLY_VALIDATED
+401858254,Florida State,Louisville,Louisville,-3.5,2.9922539065743017,0.5149612695328715,0.5149612695328715,ats-shadow-conservative-v1,conservative_linear_margin_v1,NOT_EMPIRICALLY_VALIDATED
+401858255,Duke,Georgia Tech,Duke,-6.5,0.7983216353398426,0.5039916081766992,0.5039916081766992,ats-shadow-conservative-v1,conservative_linear_margin_v1,NOT_EMPIRICALLY_VALIDATED
+401858256,North Carolina,Pittsburgh,Pittsburgh,-3.5,7.041690364740688,0.5352084518237035,0.5352084518237035,ats-shadow-conservative-v1,conservative_linear_margin_v1,NOT_EMPIRICALLY_VALIDATED
+401858257,Stanford,Notre Dame,Stanford,37.5,12.299749685175133,0.5614987484258757,0.5614987484258757,ats-shadow-conservative-v1,conservative_linear_margin_v1,NOT_EMPIRICALLY_VALIDATED
+401858258,Syracuse,Virginia,Syracuse,8.5,1.1353663321446854,0.5056768316607234,0.5056768316607234,ats-shadow-conservative-v1,conservative_linear_margin_v1,NOT_EMPIRICALLY_VALIDATED
+401858259,Virginia Tech,California,California,9.5,3.7419680979827366,0.5187098404899136,0.5187098404899136,ats-shadow-conservative-v1,conservative_linear_margin_v1,NOT_EMPIRICALLY_VALIDATED
+401858260,Wake Forest,NC State,NC State,3.5,1.4384276118567838,0.5071921380592839,0.5071921380592839,ats-shadow-conservative-v1,conservative_linear_margin_v1,NOT_EMPIRICALLY_VALIDATED
+401858480,Illinois,Michigan State,Illinois,-2.5,1.514562067727164,0.5075728103386358,0.5075728103386358,ats-shadow-conservative-v1,conservative_linear_margin_v1,NOT_EMPIRICALLY_VALIDATED
+401858481,Indiana,Nebraska,Nebraska,7.5,9.243867232761586,0.5462193361638079,0.5462193361638079,ats-shadow-conservative-v1,conservative_linear_margin_v1,NOT_EMPIRICALLY_VALIDATED
+401858482,Ball State,Northwestern,Ball State,36.5,17.916491007577488,0.5895824550378874,0.5895824550378874,ats-shadow-conservative-v1,conservative_linear_margin_v1,NOT_EMPIRICALLY_VALIDATED
+401858483,Maryland,Ohio State,Maryland,34.5,15.478594635420158,0.5773929731771008,0.5773929731771008,ats-shadow-conservative-v1,conservative_linear_margin_v1,NOT_EMPIRICALLY_VALIDATED
+401858484,UCLA,Oregon,UCLA,11.5,12.602975371212864,0.5630148768560643,0.5630148768560643,ats-shadow-conservative-v1,conservative_linear_margin_v1,NOT_EMPIRICALLY_VALIDATED
+401858485,USC,Penn State,Penn State,-1.5,3.2051761214619443,0.5160258806073097,0.5160258806073097,ats-shadow-conservative-v1,conservative_linear_margin_v1,NOT_EMPIRICALLY_VALIDATED
+401858486,Minnesota,Purdue,Purdue,2.5,4.0197845337658356,0.5200989226688292,0.5200989226688292,ats-shadow-conservative-v1,conservative_linear_margin_v1,NOT_EMPIRICALLY_VALIDATED
+401858487,Iowa,Washington,Washington,-2.5,3.1692429071011547,0.5158462145355057,0.5158462145355057,ats-shadow-conservative-v1,conservative_linear_margin_v1,NOT_EMPIRICALLY_VALIDATED
+401860901,Boise State,Fresno State,Fresno State,6.5,6.430238591083368,0.5321511929554168,0.5321511929554168,ats-shadow-conservative-v1,conservative_linear_margin_v1,NOT_EMPIRICALLY_VALIDATED
+401860902,San Diego State,Oregon State,Oregon State,-14.5,3.4914046077070893,0.5174570230385355,0.5174570230385355,ats-shadow-conservative-v1,conservative_linear_margin_v1,NOT_EMPIRICALLY_VALIDATED
+401860922,Washington State,Utah State,Utah State,-5.5,0.7147720231398438,0.5035738601156993,0.5035738601156993,ats-shadow-conservative-v1,conservative_linear_margin_v1,NOT_EMPIRICALLY_VALIDATED
+401861964,UConn,Temple,UConn,3.5,2.100823589639792,0.5105041179481989,0.5105041179481989,ats-shadow-conservative-v1,conservative_linear_margin_v1,NOT_EMPIRICALLY_VALIDATED
+401862794,South Florida,UTSA,South Florida,7.5,3.58309293689478,0.5179154646844739,0.5179154646844739,ats-shadow-conservative-v1,conservative_linear_margin_v1,NOT_EMPIRICALLY_VALIDATED
+401862795,Tulane,Army,Army,-3.5,3.990685370873935,0.5199534268543696,0.5199534268543696,ats-shadow-conservative-v1,conservative_linear_margin_v1,NOT_EMPIRICALLY_VALIDATED
+401862796,Charlotte,North Texas,Charlotte,28.5,10.558234501553436,0.5527911725077672,0.5527911725077672,ats-shadow-conservative-v1,conservative_linear_margin_v1,NOT_EMPIRICALLY_VALIDATED
+401862797,Rice,East Carolina,East Carolina,-9.5,2.156918021479406,0.5107845901073971,0.5107845901073971,ats-shadow-conservative-v1,conservative_linear_margin_v1,NOT_EMPIRICALLY_VALIDATED
+401862798,UAB,Memphis,UAB,14.5,8.43919709783934,0.5421959854891967,0.5421959854891967,ats-shadow-conservative-v1,conservative_linear_margin_v1,NOT_EMPIRICALLY_VALIDATED
+401862799,Tulsa,Navy,Tulsa,2.5,0.7783074650182775,0.5038915373250914,0.5038915373250914,ats-shadow-conservative-v1,conservative_linear_margin_v1,NOT_EMPIRICALLY_VALIDATED
+401864516,Air Force,Northern Illinois,Air Force,-7.5,6.863473490093263,0.5343173674504663,0.5343173674504663,ats-shadow-conservative-v1,conservative_linear_margin_v1,NOT_EMPIRICALLY_VALIDATED
+401864517,Nevada,UTEP,Nevada,-8.5,3.8155913446413976,0.519077956723207,0.519077956723207,ats-shadow-conservative-v1,conservative_linear_margin_v1,NOT_EMPIRICALLY_VALIDATED
+401864518,North Dakota State,UNLV,North Dakota State,-3.5,5.142615530110875,0.5257130776505544,0.5257130776505544,ats-shadow-conservative-v1,conservative_linear_margin_v1,NOT_EMPIRICALLY_VALIDATED
+401864519,Wyoming,San José State,San José State,-6.5,0.25547287848096367,0.5012773643924048,0.5012773643924048,ats-shadow-conservative-v1,conservative_linear_margin_v1,NOT_EMPIRICALLY_VALIDATED
+401866435,Eastern Michigan,Akron,Akron,6.5,0.5914811459498655,0.5029574057297493,0.5029574057297493,ats-shadow-conservative-v1,conservative_linear_margin_v1,NOT_EMPIRICALLY_VALIDATED
+401866436,Sacramento State,Bowling Green,Sacramento State,7.5,3.9200080974138496,0.5196000404870692,0.5196000404870692,ats-shadow-conservative-v1,conservative_linear_margin_v1,NOT_EMPIRICALLY_VALIDATED
+401866437,Buffalo,Toledo,Buffalo,20.5,4.158144058071169,0.5207907202903559,0.5207907202903559,ats-shadow-conservative-v1,conservative_linear_margin_v1,NOT_EMPIRICALLY_VALIDATED
+401866438,Central Michigan,Ohio,Ohio,-2.5,3.3688025306885043,0.5168440126534425,0.5168440126534425,ats-shadow-conservative-v1,conservative_linear_margin_v1,NOT_EMPIRICALLY_VALIDATED
+401866439,Kent State,Western Michigan,Kent State,13.5,7.887965412278217,0.539439827061391,0.539439827061391,ats-shadow-conservative-v1,conservative_linear_margin_v1,NOT_EMPIRICALLY_VALIDATED
+401866440,Miami (OH),Massachusetts,Massachusetts,2.5,15.75417281577491,0.5787708640788746,0.5787708640788746,ats-shadow-conservative-v1,conservative_linear_margin_v1,NOT_EMPIRICALLY_VALIDATED
+401869843,Old Dominion,App State,App State,-9.5,2.4839210435724617,0.5124196052178623,0.5124196052178623,ats-shadow-conservative-v1,conservative_linear_margin_v1,NOT_EMPIRICALLY_VALIDATED
+401869933,South Alabama,Arkansas State,Arkansas State,-1.5,0.718160663568062,0.5035908033178403,0.5035908033178403,ats-shadow-conservative-v1,conservative_linear_margin_v1,NOT_EMPIRICALLY_VALIDATED
+401869943,Coastal Carolina,Marshall,Coastal Carolina,2.5,5.1872570830540745,0.5259362854152704,0.5259362854152704,ats-shadow-conservative-v1,conservative_linear_margin_v1,NOT_EMPIRICALLY_VALIDATED
+401869949,James Madison,Georgia Southern,Georgia Southern,7.5,0.5665470488712607,0.5028327352443563,0.5028327352443563,ats-shadow-conservative-v1,conservative_linear_margin_v1,NOT_EMPIRICALLY_VALIDATED
+401869965,Louisiana,Louisiana Tech,Louisiana,2.5,5.116040464470142,0.5255802023223507,0.5255802023223507,ats-shadow-conservative-v1,conservative_linear_margin_v1,NOT_EMPIRICALLY_VALIDATED
+401870766,Sam Houston,Liberty,Sam Houston,13.5,4.228908143944732,0.5211445407197237,0.5211445407197237,ats-shadow-conservative-v1,conservative_linear_margin_v1,NOT_EMPIRICALLY_VALIDATED
+401871051,Jacksonville State,Kennesaw State,Jacksonville State,-2.5,1.960314139159772,0.5098015706957989,0.5098015706957989,ats-shadow-conservative-v1,conservative_linear_margin_v1,NOT_EMPIRICALLY_VALIDATED
+401871052,Missouri State,Western Kentucky,Missouri State,2.5,7.7801750903481,0.5389008754517405,0.5389008754517405,ats-shadow-conservative-v1,conservative_linear_margin_v1,NOT_EMPIRICALLY_VALIDATED
+401871066,New Mexico State,Florida International,New Mexico State,6.5,0.37259513423481216,0.5018629756711741,0.5018629756711741,ats-shadow-conservative-v1,conservative_linear_margin_v1,NOT_EMPIRICALLY_VALIDATED
+401871090,Southern Miss,Troy,Southern Miss,10.5,4.304885187391694,0.5215244259369585,0.5215244259369585,ats-shadow-conservative-v1,conservative_linear_margin_v1,NOT_EMPIRICALLY_VALIDATED
