@@ -1,1 +1,3 @@
 outputs/2026-week6-execution-20261006T2133Z/** text eol=lf
+outputs/2026-week6-postgame-audit/** text eol=lf
+outputs/2026-week6-postgame-audit/**/*.gz -text
