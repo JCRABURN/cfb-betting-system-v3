@@ -1,0 +1,22 @@
+{
+  "title": "WEEK 7 CORRECTED OWNER-APPROVED MONITORING RESUME",
+  "status": "ACTIVE",
+  "resumed_at_utc": "2026-10-13T19:41:15Z",
+  "automation_id": "week-7-prospective-context-and-closing-line-custody",
+  "schedule": "FREQ=DAILY;BYHOUR=8,10,14,18,21;BYMINUTE=15;UNTIL=20261018T031500Z",
+  "minimum_context_window": "Through Saturday morning, 2026-10-17",
+  "closing_line_window": "Continue through the selected games' kickoffs on Saturday",
+  "corrected_owner_approved_artifact": "outputs/2026-week7-owner-review/OWNER-APPROVED-WEEK-7-CONTEST-FIVE-CORRECTED-V2.json",
+  "corrected_owner_approved_artifact_sha256": "31dd412b3e6c16f3f871e4dc0276c3b2c84c2faae95715ac20eb39d648042568",
+  "corrected_locked_card_sha256": "d9c3c8b517875743b1c78c1ff3a5f190f83bcdb570eff8449752a6cf9fdbd568",
+  "original_approval_status": "SUPERSEDED — SOURCE LINE ERROR",
+  "corrected_approval_status": "OWNER APPROVED — CORRECTED SOURCE V2",
+  "special_priorities": [
+    "Resolve Oregon QB Dante Moore's status for Nebraska +7.5 using timestamped credible evidence",
+    "Track QB, weather, wind, pace context, and market movement for Colorado State at Texas State UNDER 69.5"
+  ],
+  "material_change_custody": "New timestamped append-only snapshots; preserve prior assessment and approved pick; flag WOULD RECONSIDER IF PICKS WERE NOT LOCKED when warranted",
+  "closing_line_custody": "Pre-kickoff timestamp-qualified sportsbook quote required for CLV; otherwise CLV UNVERIFIABLE",
+  "postgame_gate": "Wait for all Week 7 games to complete before the twelve-cohort audit",
+  "note": "This is the monitoring activation record, not a claim that new context or sportsbook quotes have already been captured."
+}
