@@ -72,9 +72,11 @@ def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--database", type=Path, required=True)
     parser.add_argument("--output", type=Path, required=True)
+    parser.add_argument("--source-lines", type=Path,
+                        default=ROOT / "production-weeks/2026-week7-splashsports.csv")
     args = parser.parse_args(argv)
-    database, output = args.database.resolve(), args.output.resolve()
-    if not database.is_relative_to(ROOT) or database == ROOT / "data" / "cfb.db" or not output.is_relative_to(ROOT):
+    database, output, source_lines = args.database.resolve(), args.output.resolve(), args.source_lines.resolve()
+    if not database.is_relative_to(ROOT) or database == ROOT / "data" / "cfb.db" or not output.is_relative_to(ROOT) or not source_lines.is_relative_to(ROOT):
         parser.error("only isolated Week 7 paths are permitted")
     if not output.is_dir():
         parser.error("output must be an existing Week 7 directory")
@@ -96,6 +98,9 @@ def main(argv: list[str] | None = None) -> int:
     contest_id = contest[0]
     lines = list_effective_locked_lines(conn, contest_id, as_of=now)
     ingestion = json.loads((output / "week7_ingestion_manifest.json").read_text(encoding="utf-8"))
+    source_sha = hashlib.sha256(source_lines.read_bytes().replace(b"\r\n", b"\n")).hexdigest()
+    if source_sha != ingestion["source_csv_sha256"]:
+        raise ValueError("final-card source differs from ingested lock")
     if len(lines) != ingestion["locked_games"]:
         raise ValueError("locked game count differs from ingestion custody")
     ats_run = conn.execute("SELECT id FROM model_runs WHERE run_key='week7-20261013:epa'").fetchone()
@@ -331,7 +336,7 @@ def main(argv: list[str] | None = None) -> int:
         "generated_at_utc": now.isoformat(), "code_commit_sha": code_sha,
         "source_database_sha256": hashlib.sha256((ROOT / "data/cfb.db").read_bytes()).hexdigest(),
         "execution_database_sha256": hashlib.sha256(database.read_bytes()).hexdigest(),
-        "locked_source_csv_sha256": hashlib.sha256((ROOT / "production-weeks/2026-week7-splashsports.csv").read_bytes().replace(b"\r\n", b"\n")).hexdigest(),
+        "locked_source_csv_sha256": source_sha,
         "locked_line_snapshot_sha256": locked_line_snapshot_sha256(lines),
         "contest_key": "splashsports-cfb-2026-w07", "season": 2026, "week": 7,
         "ats": dict(zip(("name", "version", "feature_schema", "configuration", "code_commit_sha", "data_snapshot_sha256"), model_rows)),
