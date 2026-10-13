@@ -2,4 +2,4 @@ outputs/2026-week6-execution-20261006T2133Z/** text eol=lf
 outputs/2026-week6-postgame-audit/** text eol=lf
 outputs/2026-week6-postgame-audit/**/*.gz -text
 production-weeks/2026-week7-splashsports.csv -text
-outputs/2026-week7-prospective/** -text
+outputs/2026-week7-prospective/** -text whitespace=cr-at-eol
