@@ -3,3 +3,7 @@ outputs/2026-week6-postgame-audit/** text eol=lf
 outputs/2026-week6-postgame-audit/**/*.gz -text
 production-weeks/2026-week7-splashsports.csv -text
 outputs/2026-week7-prospective/** -text whitespace=cr-at-eol
+production-weeks/2026-week7-splashsports-corrected-v2.csv -text whitespace=cr-at-eol
+production-weeks/2026-week7-splashsports-corrected-v2-lock-metadata.json -text
+production-weeks/2026-week7-screenshot-transcription-v2.csv -text
+outputs/2026-week7-prospective-corrected-v2/** -text whitespace=cr-at-eol
