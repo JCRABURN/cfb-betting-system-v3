@@ -1,0 +1,16 @@
+{
+  "corrected_gap": "-10.155007529277903",
+  "corrected_locked_total": "69.5",
+  "corrected_score_not_calibrated": "0.7281308061730213",
+  "corrected_selection": "under",
+  "game": "Colorado State @ Texas State",
+  "game_id": "401860923",
+  "model_total": "59.3449924707221",
+  "new_rank": 1,
+  "old_gap": "-13.155007529277903",
+  "old_locked_total": "72.5",
+  "old_rank": 1,
+  "old_score_not_calibrated": "0.7842244194545135",
+  "old_selection": "under",
+  "rank_change_old_minus_new": 0
+}

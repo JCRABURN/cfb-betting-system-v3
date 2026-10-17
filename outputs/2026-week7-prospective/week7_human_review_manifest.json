@@ -1,0 +1,36 @@
+{
+  "ats_model_data_snapshot_sha256": "2bb88eb9ea47c5d19e56be4efb04861d0236901e3f526f80608e0a9bccd6cc77",
+  "code_commit_sha": "97a8dfb7ba14842bbf8da1cddfec7a3599b7b8d9",
+  "context_capture_manifest_sha256": "d864eca58efaf2e63576510fae06f75aed61a996372eb2e5c063a44bc7049116",
+  "data_warnings": [
+    "ESPN injury feed captured only three unrelated team groups; absence of listing does not establish health.",
+    "ESPN game preview names season passing leaders, not confirmed Week 7 starters.",
+    "Odds API DraftKings request failed; public web market references are indicative only, not timestamp-qualified closing quotes or CLV.",
+    "Initial local weather capture covers 49 of 59 games; Texas State venue weather was unavailable.",
+    "Governed ATS confidence is 1 for all 59 and governed uncertainty is null; technical Top 5 is lock-ID order.",
+    "ATS shadow score and totals normal-tail score are not validated or cross-market comparable. Confidence on these five is a human contest judgment, not a calibrated probability."
+  ],
+  "decision_rule": "Qualitative review of within-market ranks and sourced pregame context; ATS and totals raw scores were never sorted against each other.",
+  "final_count": 5,
+  "final_five_sha256": "992b8ff9649eaa862f2b14f860198d4aee5e055759aaa9128886698faf9f1b40",
+  "final_market_mix": {
+    "ATS": 4,
+    "TOTAL": 1
+  },
+  "first_lined_kickoff_utc": "2026-10-13T23:00:00+00:00",
+  "locked_line_snapshot_sha256": "3561c1cf93debbe0aafcf527b5e9f8abfc60c29589da3ad4f17f3502077ab8ad",
+  "red_team": [
+    "Massachusetts ATS research rank 1 excluded: primary QB Watson missed Week 6 and replacement McCarthy was injured; ESPN passing leader is not a confirmed starter.",
+    "Syracuse ATS research rank 3 excluded: recent QB injury and unresolved Week 7 starter.",
+    "BYU ATS research rank 6 kept on shortlist but excluded from five because of key RB/OT concerns and elite Notre Dame opponent.",
+    "Northern Illinois/Wyoming Over research rank 4 excluded because projected gusts conflict with over.",
+    "Colorado State/Texas State Under retained at lower confidence despite weak totals calibration; locked 72.5 is above indicative public current totals, but quote timestamps are unqualified and weather is not a suppressing factor.",
+    "Nebraska selection remains exposed to Oregon QB Dante Moore return; later status must be captured as a separate append-only refresh, not rewritten into this initial card."
+  ],
+  "reviewed_at_utc": "2026-10-13T18:37:33.697366+00:00",
+  "reviewed_shortlist_sha256": "88e4dc41296cfadcabae339a10a067d47fb20712814d6c411037af19e1e298ba",
+  "shortlist_count": 12,
+  "source_database_sha256": "09d0bcda684356001bacf8bc9e42939add56b053f405564d9be924e39c0cf842",
+  "status": "PREGAME_HUMAN_REVIEWED_CONTEST_SELECTIONS_NOT_SPORTSBOOK_WAGERS",
+  "totals_model_data_snapshot_sha256": "69a37d21897d3c0c200cd12e3ef9e1910df1ccff82904801eb56cfec9eda7c89"
+}
