@@ -1,1 +1,15 @@
 outputs/2026-week6-execution-20261006T2133Z/** text eol=lf
+outputs/2026-week6-postgame-audit/** text eol=lf
+outputs/2026-week6-postgame-audit/**/*.gz -text
+production-weeks/2026-week7-splashsports.csv -text
+outputs/2026-week7-prospective/** -text whitespace=cr-at-eol
+production-weeks/2026-week7-splashsports-corrected-v2.csv -text whitespace=cr-at-eol
+production-weeks/2026-week7-splashsports-corrected-v2-lock-metadata.json -text
+production-weeks/2026-week7-screenshot-transcription-v2.csv -text
+outputs/2026-week7-prospective-corrected-v2/** -text whitespace=cr-at-eol
+outputs/2026-week7-owner-review/OWNER-APPROVED-WEEK-7-CONTEST-FIVE-CORRECTED-V2.json -text
+outputs/2026-week7-owner-review/OWNER-APPROVED-WEEK-7-CORRECTED-V2-CUSTODY-VERIFICATION.json -text
+outputs/2026-week7-owner-review/WEEK-7-CORRECTED-MONITORING-RESUME.json -text
+outputs/2026-week7-owner-review/OWNER-APPROVED-WEEK-7-CONTEST-FIVE.json -text
+outputs/2026-week7-postgame-audit/** text eol=lf
+outputs/2026-week7-postgame-audit/**/*.gz -text
