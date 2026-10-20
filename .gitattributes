@@ -10,3 +10,6 @@ outputs/2026-week7-prospective-corrected-v2/** -text whitespace=cr-at-eol
 outputs/2026-week7-owner-review/OWNER-APPROVED-WEEK-7-CONTEST-FIVE-CORRECTED-V2.json -text
 outputs/2026-week7-owner-review/OWNER-APPROVED-WEEK-7-CORRECTED-V2-CUSTODY-VERIFICATION.json -text
 outputs/2026-week7-owner-review/WEEK-7-CORRECTED-MONITORING-RESUME.json -text
+outputs/2026-week7-owner-review/OWNER-APPROVED-WEEK-7-CONTEST-FIVE.json -text
+outputs/2026-week7-postgame-audit/** text eol=lf
+outputs/2026-week7-postgame-audit/**/*.gz -text
