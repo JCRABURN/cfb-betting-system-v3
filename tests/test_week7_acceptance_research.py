@@ -128,12 +128,13 @@ def test_independent_manifest_gate_requires_exact_coverage_and_incomplete_clv():
     with pytest.raises(ValueError,match='coverage'):research.validate_manifest(bad,outputs,code)
 
 
-def test_week6_writer_overwrite_defect_is_reproduced_only_in_disposable_directory(tmp_path,monkeypatch):
+def test_week6_writer_rejects_overwrite_in_disposable_directory(tmp_path,monkeypatch):
     from scripts import build_week6_postgame_audit as week6
     monkeypatch.setattr(week6,'OUTPUT',tmp_path)
     (tmp_path/'existing.csv').write_text('sealed original\n')
-    week6.write_csv('existing.csv',[{'result':'replacement'}])
-    assert 'sealed original' not in (tmp_path/'existing.csv').read_text()
+    with pytest.raises(FileExistsError):
+        week6.write_csv('existing.csv',[{'result':'replacement'}])
+    assert (tmp_path/'existing.csv').read_text() == 'sealed original\n'
 
 
 def test_archived_diagnostic_totals_and_no_clv_promotion():

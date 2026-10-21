@@ -2,7 +2,15 @@
 
 This branch is stacked on the unmerged Week 6 audit/research branches. It does not change v2.8 selection, confidence, ranking, ATS model, totals shadow model, schema, or past cards. Do not merge either Week 6 PR as part of this operation.
 
-## Present state
+## Corrected operational state (2026-10-21)
+
+Week 7 source receipt, execution, correction, sealing, approval and grading are complete. The original pre-source planning text below is retained as historical context, not current readiness. Use the corrected-v2 source and seal under `outputs/2026-week7-prospective-corrected-v2/`; preserve the superseded original artifacts. All 59 ATS and 59 totals are graded; historical CLV remains INCOMPLETE.
+
+Acceptance command: `python -m scripts.verify_week7_audit_integrity`. It requires the exact original 69-output/3-code checksum inventory, consistent status declarations, exact current custody, and deterministic replay. The sealed `build_week7_postgame_audit --verify` implementation remains historical evidence; it is not a sufficient acceptance gate by itself. Missing historical CLV blocks completion claims and policy promotion, not unrelated integrity-safe code integration.
+
+The approval-containing commit is `cfbe724fc9687dea24bd50409bcc4a4c2214aec4`; the original approval field `approval_source_commit_sha=d3ffcc24316af7deee7f9f0aebce9b46cb3fac80` identifies its parent/pending-card context. The additive [correction record](evidence/week7-approval-identification-correction.json) retains that original field and artifact hash. Neither approval nor historical seal is edited.
+
+## Original planning state (superseded, preserved verbatim)
 
 The initial CFBD capture at `outputs/2026-week7-prospective/provider-evidence/core-initial/` was made before the first Week 7 game. Its hashed schedule contains 59 FBS-vs-FBS games, none complete; the earliest listed kickoff is Delaware at Middle Tennessee, 2026-10-13 23:00 UTC. This is **schedule inventory, not a SplashSports locked-line count**. The owner-supplied 2026 Week 7 SplashSports line source is not yet present. No lock, model execution, card, research rank, or selected five may be represented as ready until it arrives and passes the strict pre-kickoff gate.
 

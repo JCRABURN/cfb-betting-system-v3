@@ -25,6 +25,29 @@ OUTPUT = ROOT / "outputs/2026-week6-postgame-audit"
 EVIDENCE = OUTPUT / "provider-evidence"
 PRIOR = ROOT / "outputs/2026-week5-postgame-audit"
 
+# Provider captures are inputs, not generated audit outputs. Check the entire
+# output set before grading so even a partial previous run is never replaced.
+AUDIT_OUTPUTS = (
+    "week6_final_results.csv", "week6_ats_audit.csv", "week6_totals_audit.csv",
+    "week6_clv_audit.csv", "week6_combined_board_audit.csv",
+    "week6_governed_ats_top5_audit.csv", "week6_mixed_shadow_top5_audit.csv",
+    "week6_decision_review_audit.csv", "week6_diagnostics.json",
+    "week6_counterfactual_top5.json", "week6_postgame_report.md",
+    "week6_top5_failure_analysis.md", "week6_postgame_manifest.json",
+)
+
+
+def require_new_outputs(names: tuple[str, ...] = AUDIT_OUTPUTS) -> None:
+    existing = [name for name in names if (OUTPUT / name).exists() or (OUTPUT / name).is_symlink()]
+    if existing:
+        raise FileExistsError(f"audit output already exists; use a new version: {existing}")
+
+
+def write_text(name: str, value: str) -> None:
+    # Exclusive creation also closes the check/write race for each destination.
+    with (OUTPUT / name).open("x", encoding="utf-8", newline="\n") as stream:
+        stream.write(value)
+
 
 def read_csv(path: Path) -> list[dict[str, str]]:
     with path.open(encoding="utf-8-sig", newline="") as stream:
@@ -42,14 +65,14 @@ def sha(path: Path) -> str:
 def write_csv(name: str, rows: list[dict]) -> None:
     if not rows:
         raise ValueError(f"empty audit: {name}")
-    with (OUTPUT / name).open("w", encoding="utf-8", newline="") as stream:
+    with (OUTPUT / name).open("x", encoding="utf-8", newline="") as stream:
         writer = csv.DictWriter(stream, fieldnames=list(rows[0]), lineterminator="\n")
         writer.writeheader()
         writer.writerows(rows)
 
 
 def write_json(name: str, value: object) -> None:
-    (OUTPUT / name).write_text(json.dumps(value, indent=2, sort_keys=True) + "\n", encoding="utf-8", newline="\n")
+    write_text(name, json.dumps(value, indent=2, sort_keys=True) + "\n")
 
 
 def load_raw(entry: dict) -> dict:
@@ -251,6 +274,7 @@ def ranking_table(rows: list[dict], result_key: str, rank_key: str) -> dict:
 
 
 def grade() -> dict:
+    require_new_outputs()
     OUTPUT.mkdir(parents=True, exist_ok=True)
     custody = frozen_gate()
     capture = read_json(EVIDENCE / "capture-manifest.json")
@@ -394,6 +418,7 @@ def historical(ats_rows: list[dict], total_rows: list[dict]) -> dict:
 
 def finish(custody: dict, capture: dict, ats_rows: list[dict], total_rows: list[dict],
            pool: list[dict], official: list[dict], mixed: list[dict], decision: list[dict]) -> dict:
+    require_new_outputs(AUDIT_OUTPUTS[4:])
     ats_by_id = {row["game_id"]: row for row in ats_rows}
     total_by_id = {row["game_id"]: row for row in total_rows}
     graded_pool = []
@@ -502,8 +527,8 @@ def finish(custody: dict, capture: dict, ats_rows: list[dict], total_rows: list[
     counterfactuals = counterfactual(graded_pool, ats_rows, total_rows)
     write_json("week6_counterfactual_top5.json", counterfactuals)
     report = make_report(custody, metrics, top5_rows, mixed_rows, decision_rows, counterfactuals)
-    (OUTPUT / "week6_postgame_report.md").write_text(report, encoding="utf-8", newline="\n")
-    (OUTPUT / "week6_top5_failure_analysis.md").write_text(make_top5_analysis(top5_rows), encoding="utf-8", newline="\n")
+    write_text("week6_postgame_report.md", report)
+    write_text("week6_top5_failure_analysis.md", make_top5_analysis(top5_rows))
     manifest = {"audit_status": "FAIL_INCOMPLETE_CLV_CUSTODY_AND_RAW_COMPONENTS", "frozen": {k: v for k, v in custody.items() if k not in {"model_manifest", "card_manifest"}},
                 "pregame_model_code_sha": custody["model_manifest"]["code_commit_sha"],
                 "pregame_model_versions": {"ats": custody["model_manifest"]["ats"]["version"],
