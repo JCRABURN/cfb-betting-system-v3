@@ -1,0 +1,43 @@
+{
+  "source": "SplashSports owner screenshots",
+  "source_task_id": "6ad7c843-3a48-83ea-9bb3-00a537ae40d7",
+  "source_task_title": "Review PR 38 Audit",
+  "source_message_id": "3699ad41-9c52-48ab-920e-0ad00ae7ad02",
+  "chat_received_unix_seconds": 1792589947.052,
+  "original_capture_time": "UNKNOWN",
+  "original_posting_time": "UNKNOWN",
+  "pr39_head": "3148e4fe7cd7ab9387048386903db68ad7c2de4b",
+  "source_csv_sha256": "174b0e645afe45f7c4d5f569b88f856a38c4b6707106b0298279c9bee58b72f6",
+  "images": [
+    {
+      "path": "splashsports-01.png",
+      "sha256": "eec24c668e1d1ee130d47ad09079e837566ace2f823508a99f1bb119d3429592",
+      "bytes": 90301
+    },
+    {
+      "path": "splashsports-02.png",
+      "sha256": "b5e9211038318e4e1f62f05a61ac9559cf977b50f450c347454ce5bd84dc6e73",
+      "bytes": 99749
+    },
+    {
+      "path": "splashsports-03.png",
+      "sha256": "6847aa8895554213f3201eb4dffdab966dabbb3f9ea986ebac76f74320042a67",
+      "bytes": 115293
+    },
+    {
+      "path": "splashsports-04.png",
+      "sha256": "dd1836a7991802b9d6d7ae38a1e0ce073c56c017840de00cac41194a1155290b",
+      "bytes": 104827
+    },
+    {
+      "path": "splashsports-05.png",
+      "sha256": "c59566f800ea249104346c9055ebe55c13dae56ab2d950ebfe52ceb19d82c511",
+      "bytes": 119809
+    },
+    {
+      "path": "splashsports-06.png",
+      "sha256": "e7bbcd4d925e8f5bae0ec88d0d4a683df01517b02bc210a01aeb41896e1a4c31",
+      "bytes": 72019
+    }
+  ]
+}
