@@ -3,6 +3,9 @@ import copy
 import hashlib
 import json
 import subprocess
+import shutil
+import tempfile
+from pathlib import Path
 
 import pytest
 
@@ -81,6 +84,34 @@ def test_manifest_and_corresponding_file_cannot_both_disappear(tmp_path, monkeyp
 def test_strict_full_replay_and_exact_current_custody():
     assert strict.verify()["formal_audit_status"] == "INCOMPLETE_CLV_CUSTODY"
     assert strict.verify_research()["exact_custody_checks"] == 419
+
+
+@pytest.mark.parametrize("autocrlf", ["true", "false"])
+def test_git_checkout_reproduces_original_week5_hashes_on_both_eol_settings(tmp_path, autocrlf):
+    checks = [r for r in strict.research.custody()["checks"] if r["group"].startswith("week5")]
+    names = sorted({r["path"] for r in checks})
+    subprocess.run(["git", "-c", f"core.autocrlf={autocrlf}", "checkout-index",
+                    "--prefix=" + tmp_path.as_posix() + "/", "--force", "-z", "--stdin"],
+                   cwd=strict.ROOT, input=("\0".join(names) + "\0").encode(), check=True)
+    for row in checks:
+        assert hashlib.sha256((tmp_path / row["path"]).read_bytes()).hexdigest() == row["expected_sha256"]
+
+
+def test_week6_deterministic_replay_to_new_output_matches_all_original_bytes(monkeypatch):
+    original = week6.OUTPUT
+    manifest = week6.read_json(original / "week6_postgame_manifest.json")
+    with tempfile.TemporaryDirectory(prefix="audit-replay-", dir=week6.ROOT) as directory:
+        target = Path(directory)
+        shutil.copytree(week6.EVIDENCE, target / "provider-evidence")
+        monkeypatch.setattr(week6, "OUTPUT", target)
+        week6.grade()
+        for name in week6.AUDIT_OUTPUTS[:-1]:
+            assert (target / name).read_bytes() == (original / name).read_bytes(), name
+        replayed = week6.read_json(target / "week6_postgame_manifest.json")
+        prefix = target.relative_to(week6.ROOT).as_posix()
+        old_prefix = original.relative_to(week6.ROOT).as_posix()
+        replayed["output_sha256"] = {old_prefix + k[len(prefix):]: v for k, v in replayed["output_sha256"].items()}
+        assert replayed == manifest
 
 
 def test_original_expected_manifest_and_historical_git_blobs_are_preserved():
