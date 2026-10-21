@@ -1,0 +1,43 @@
+{
+  "ats_games_compared": 59,
+  "ats_reproduction": "PASS",
+  "governed_ranking_discrimination": "INSUFFICIENT_DISCRIMINATION_NULL_UNCERTAINTY_AND_EQUAL_CONFIDENCE",
+  "original_seal_files_unchanged": 89,
+  "texas_state": {
+    "corrected_gap": "-10.155007529277903",
+    "corrected_locked_total": "69.5",
+    "corrected_score_not_calibrated": "0.7281308061730213",
+    "corrected_selection": "under",
+    "game": "Colorado State @ Texas State",
+    "game_id": "401860923",
+    "model_total": "59.3449924707221",
+    "new_rank": 1,
+    "old_gap": "-13.155007529277903",
+    "old_locked_total": "72.5",
+    "old_rank": 1,
+    "old_score_not_calibrated": "0.7842244194545135",
+    "old_selection": "under",
+    "rank_change_old_minus_new": 0
+  },
+  "total_line_changes": 6,
+  "total_rank_changes": 27,
+  "total_selection_changes": [
+    {
+      "corrected_gap": "0.9132656449017915",
+      "corrected_locked_total": "43.5",
+      "corrected_score_not_calibrated": "0.5217731445754114",
+      "corrected_selection": "over",
+      "game": "Nevada @ North Dakota State",
+      "game_id": "401864520",
+      "model_total": "44.41326564490179",
+      "new_rank": 53,
+      "old_gap": "-0.08673435509820848",
+      "old_locked_total": "44.5",
+      "old_rank": 56,
+      "old_score_not_calibrated": "0.5020688500651946",
+      "old_selection": "under",
+      "rank_change_old_minus_new": 3
+    }
+  ],
+  "totals_candidates": 59
+}
