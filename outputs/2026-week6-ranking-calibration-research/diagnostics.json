@@ -1,0 +1,1351 @@
+{
+  "scope": "RESEARCH_ONLY_IN_SAMPLE_NOT_VALIDATION",
+  "weeks_included": [
+    5,
+    6
+  ],
+  "weeks_excluded": {
+    "1": "archived audit is not an independently sealed full pregame candidate ledger",
+    "2": "audit lacks full frozen per-candidate edge/score/probability ledger",
+    "3": "provisional card has kickoff-passed skips and incomplete frozen grading join",
+    "4": "no complete frozen pregame candidate ledger"
+  },
+  "ats": {
+    "n": 114,
+    "ranking": {
+      "governed": {
+        "weeks": 2,
+        "selections": 114,
+        "bands": {
+          "1-5": {
+            "n": 10,
+            "wins": 3,
+            "losses": 7,
+            "pushes": 0,
+            "win_rate_ex_push": 0.3,
+            "wilson_95_ex_push": [
+              0.10779126740630099,
+              0.6032218525388546
+            ],
+            "mean_shadow_score": 0.5240872584478435,
+            "expected_wins_shadow": 5.240872584478436
+          },
+          "6-10": {
+            "n": 10,
+            "wins": 6,
+            "losses": 4,
+            "pushes": 0,
+            "win_rate_ex_push": 0.6,
+            "wilson_95_ex_push": [
+              0.31267376973365824,
+              0.8318196702937638
+            ],
+            "mean_shadow_score": 0.5225248049468977,
+            "expected_wins_shadow": 5.225248049468977
+          },
+          "11-20": {
+            "n": 20,
+            "wins": 11,
+            "losses": 9,
+            "pushes": 0,
+            "win_rate_ex_push": 0.55,
+            "wilson_95_ex_push": [
+              0.34208534245034233,
+              0.7418021417443759
+            ],
+            "mean_shadow_score": 0.5285058732037016,
+            "expected_wins_shadow": 10.570117464074032
+          },
+          "remaining": {
+            "n": 74,
+            "wins": 42,
+            "losses": 32,
+            "pushes": 0,
+            "win_rate_ex_push": 0.5675675675675675,
+            "wilson_95_ex_push": [
+              0.4541274325981889,
+              0.6743388134293266
+            ],
+            "mean_shadow_score": 0.5302011954039918,
+            "expected_wins_shadow": 39.234888459895394
+          }
+        },
+        "top5_by_week": {
+          "5": {
+            "n": 5,
+            "wins": 3,
+            "losses": 2,
+            "pushes": 0,
+            "win_rate_ex_push": 0.6,
+            "wilson_95_ex_push": [
+              0.2307242812760128,
+              0.882379225767352
+            ],
+            "mean_shadow_score": 0.5295276392006081,
+            "expected_wins_shadow": 2.6476381960030406
+          },
+          "6": {
+            "n": 5,
+            "wins": 0,
+            "losses": 5,
+            "pushes": 0,
+            "win_rate_ex_push": 0.0,
+            "wilson_95_ex_push": [
+              0.0,
+              0.43448246478317476
+            ],
+            "mean_shadow_score": 0.5186468776950791,
+            "expected_wins_shadow": 2.5932343884753957
+          }
+        }
+      },
+      "shadow_score": {
+        "weeks": 2,
+        "selections": 114,
+        "bands": {
+          "1-5": {
+            "n": 10,
+            "wins": 7,
+            "losses": 3,
+            "pushes": 0,
+            "win_rate_ex_push": 0.7,
+            "wilson_95_ex_push": [
+              0.39677814746114537,
+              0.8922087325936989
+            ],
+            "mean_shadow_score": 0.5761095987300533,
+            "expected_wins_shadow": 5.761095987300533
+          },
+          "6-10": {
+            "n": 10,
+            "wins": 5,
+            "losses": 5,
+            "pushes": 0,
+            "win_rate_ex_push": 0.5,
+            "wilson_95_ex_push": [
+              0.236593090512564,
+              0.7634069094874361
+            ],
+            "mean_shadow_score": 0.5562596078322677,
+            "expected_wins_shadow": 5.562596078322677
+          },
+          "11-20": {
+            "n": 20,
+            "wins": 7,
+            "losses": 13,
+            "pushes": 0,
+            "win_rate_ex_push": 0.35,
+            "wilson_95_ex_push": [
+              0.18119182410108206,
+              0.5671457233147638
+            ],
+            "mean_shadow_score": 0.5388040898093597,
+            "expected_wins_shadow": 10.776081796187194
+          },
+          "remaining": {
+            "n": 74,
+            "wins": 43,
+            "losses": 31,
+            "pushes": 0,
+            "win_rate_ex_push": 0.581081081081081,
+            "wilson_95_ex_push": [
+              0.467402844507797,
+              0.6867566507252213
+            ],
+            "mean_shadow_score": 0.5158290904879248,
+            "expected_wins_shadow": 38.17135269610644
+          }
+        },
+        "top5_by_week": {
+          "5": {
+            "n": 5,
+            "wins": 3,
+            "losses": 2,
+            "pushes": 0,
+            "win_rate_ex_push": 0.6,
+            "wilson_95_ex_push": [
+              0.2307242812760128,
+              0.882379225767352
+            ],
+            "mean_shadow_score": 0.5727752755492936,
+            "expected_wins_shadow": 2.863876377746468
+          },
+          "6": {
+            "n": 5,
+            "wins": 4,
+            "losses": 1,
+            "pushes": 0,
+            "win_rate_ex_push": 0.8,
+            "wilson_95_ex_push": [
+              0.37553462976252533,
+              0.9637758913675698
+            ],
+            "mean_shadow_score": 0.579443921910813,
+            "expected_wins_shadow": 2.8972196095540648
+          }
+        }
+      },
+      "confidence": {
+        "weeks": 2,
+        "selections": 114,
+        "bands": {
+          "1-5": {
+            "n": 10,
+            "wins": 3,
+            "losses": 7,
+            "pushes": 0,
+            "win_rate_ex_push": 0.3,
+            "wilson_95_ex_push": [
+              0.10779126740630099,
+              0.6032218525388546
+            ],
+            "mean_shadow_score": 0.5240872584478435,
+            "expected_wins_shadow": 5.240872584478436
+          },
+          "6-10": {
+            "n": 10,
+            "wins": 6,
+            "losses": 4,
+            "pushes": 0,
+            "win_rate_ex_push": 0.6,
+            "wilson_95_ex_push": [
+              0.31267376973365824,
+              0.8318196702937638
+            ],
+            "mean_shadow_score": 0.5225248049468977,
+            "expected_wins_shadow": 5.225248049468977
+          },
+          "11-20": {
+            "n": 20,
+            "wins": 11,
+            "losses": 9,
+            "pushes": 0,
+            "win_rate_ex_push": 0.55,
+            "wilson_95_ex_push": [
+              0.34208534245034233,
+              0.7418021417443759
+            ],
+            "mean_shadow_score": 0.5285058732037016,
+            "expected_wins_shadow": 10.570117464074032
+          },
+          "remaining": {
+            "n": 74,
+            "wins": 42,
+            "losses": 32,
+            "pushes": 0,
+            "win_rate_ex_push": 0.5675675675675675,
+            "wilson_95_ex_push": [
+              0.4541274325981889,
+              0.6743388134293266
+            ],
+            "mean_shadow_score": 0.5302011954039918,
+            "expected_wins_shadow": 39.234888459895394
+          }
+        },
+        "top5_by_week": {
+          "5": {
+            "n": 5,
+            "wins": 3,
+            "losses": 2,
+            "pushes": 0,
+            "win_rate_ex_push": 0.6,
+            "wilson_95_ex_push": [
+              0.2307242812760128,
+              0.882379225767352
+            ],
+            "mean_shadow_score": 0.5295276392006081,
+            "expected_wins_shadow": 2.6476381960030406
+          },
+          "6": {
+            "n": 5,
+            "wins": 0,
+            "losses": 5,
+            "pushes": 0,
+            "win_rate_ex_push": 0.0,
+            "wilson_95_ex_push": [
+              0.0,
+              0.43448246478317476
+            ],
+            "mean_shadow_score": 0.5186468776950791,
+            "expected_wins_shadow": 2.5932343884753957
+          }
+        }
+      },
+      "edge": {
+        "weeks": 2,
+        "selections": 114,
+        "bands": {
+          "1-5": {
+            "n": 10,
+            "wins": 7,
+            "losses": 3,
+            "pushes": 0,
+            "win_rate_ex_push": 0.7,
+            "wilson_95_ex_push": [
+              0.39677814746114537,
+              0.8922087325936989
+            ],
+            "mean_shadow_score": 0.5761095987300533,
+            "expected_wins_shadow": 5.761095987300533
+          },
+          "6-10": {
+            "n": 10,
+            "wins": 5,
+            "losses": 5,
+            "pushes": 0,
+            "win_rate_ex_push": 0.5,
+            "wilson_95_ex_push": [
+              0.236593090512564,
+              0.7634069094874361
+            ],
+            "mean_shadow_score": 0.5562596078322677,
+            "expected_wins_shadow": 5.562596078322677
+          },
+          "11-20": {
+            "n": 20,
+            "wins": 7,
+            "losses": 13,
+            "pushes": 0,
+            "win_rate_ex_push": 0.35,
+            "wilson_95_ex_push": [
+              0.18119182410108206,
+              0.5671457233147638
+            ],
+            "mean_shadow_score": 0.5388040898093597,
+            "expected_wins_shadow": 10.776081796187194
+          },
+          "remaining": {
+            "n": 74,
+            "wins": 43,
+            "losses": 31,
+            "pushes": 0,
+            "win_rate_ex_push": 0.581081081081081,
+            "wilson_95_ex_push": [
+              0.467402844507797,
+              0.6867566507252213
+            ],
+            "mean_shadow_score": 0.5158290904879248,
+            "expected_wins_shadow": 38.17135269610644
+          }
+        },
+        "top5_by_week": {
+          "5": {
+            "n": 5,
+            "wins": 3,
+            "losses": 2,
+            "pushes": 0,
+            "win_rate_ex_push": 0.6,
+            "wilson_95_ex_push": [
+              0.2307242812760128,
+              0.882379225767352
+            ],
+            "mean_shadow_score": 0.5727752755492936,
+            "expected_wins_shadow": 2.863876377746468
+          },
+          "6": {
+            "n": 5,
+            "wins": 4,
+            "losses": 1,
+            "pushes": 0,
+            "win_rate_ex_push": 0.8,
+            "wilson_95_ex_push": [
+              0.37553462976252533,
+              0.9637758913675698
+            ],
+            "mean_shadow_score": 0.579443921910813,
+            "expected_wins_shadow": 2.8972196095540648
+          }
+        }
+      },
+      "shadow_uncertainty": {
+        "weeks": 2,
+        "selections": 114,
+        "bands": {
+          "1-5": {
+            "n": 10,
+            "wins": 4,
+            "losses": 6,
+            "pushes": 0,
+            "win_rate_ex_push": 0.4,
+            "wilson_95_ex_push": [
+              0.16818032970623614,
+              0.6873262302663417
+            ],
+            "mean_shadow_score": 0.532287963041367,
+            "expected_wins_shadow": 5.322879630413671
+          },
+          "6-10": {
+            "n": 10,
+            "wins": 3,
+            "losses": 7,
+            "pushes": 0,
+            "win_rate_ex_push": 0.3,
+            "wilson_95_ex_push": [
+              0.10779126740630099,
+              0.6032218525388546
+            ],
+            "mean_shadow_score": 0.5300478053138441,
+            "expected_wins_shadow": 5.300478053138441
+          },
+          "11-20": {
+            "n": 20,
+            "wins": 11,
+            "losses": 9,
+            "pushes": 0,
+            "win_rate_ex_push": 0.55,
+            "wilson_95_ex_push": [
+              0.34208534245034233,
+              0.7418021417443759
+            ],
+            "mean_shadow_score": 0.5285087282294147,
+            "expected_wins_shadow": 10.570174564588294
+          },
+          "remaining": {
+            "n": 74,
+            "wins": 44,
+            "losses": 30,
+            "pushes": 0,
+            "win_rate_ex_push": 0.5945945945945946,
+            "wilson_95_ex_push": [
+              0.4807583890640794,
+              0.6990943553744422
+            ],
+            "mean_shadow_score": 0.5280755987807627,
+            "expected_wins_shadow": 39.07759430977644
+          }
+        },
+        "top5_by_week": {
+          "5": {
+            "n": 5,
+            "wins": 2,
+            "losses": 3,
+            "pushes": 0,
+            "win_rate_ex_push": 0.4,
+            "wilson_95_ex_push": [
+              0.11762077423264783,
+              0.769275718723987
+            ],
+            "mean_shadow_score": 0.5235729854749231,
+            "expected_wins_shadow": 2.6178649273746157
+          },
+          "6": {
+            "n": 5,
+            "wins": 2,
+            "losses": 3,
+            "pushes": 0,
+            "win_rate_ex_push": 0.4,
+            "wilson_95_ex_push": [
+              0.11762077423264783,
+              0.769275718723987
+            ],
+            "mean_shadow_score": 0.541002940607811,
+            "expected_wins_shadow": 2.705014703039055
+          }
+        }
+      }
+    },
+    "calibration_all": {
+      "n": 114,
+      "brier_shadow_diagnostic": 0.24769179968582353,
+      "log_loss_shadow_diagnostic": 0.6885218018850565,
+      "ece_shadow_diagnostic": 0.030155575246466382,
+      "pairwise_auc": 0.5313275434243176,
+      "buckets": [
+        {
+          "bucket": "0.50-0.52",
+          "n": 50,
+          "mean_score": 0.5109657661067565,
+          "win_rate": 0.52,
+          "gap_observed_minus_score": 0.009034233893243537,
+          "expected_wins": 25.548288305337824,
+          "wins": 26,
+          "wilson_95": [
+            0.38511744890044614,
+            0.6520286471342196
+          ]
+        },
+        {
+          "bucket": "0.52-0.54",
+          "n": 36,
+          "mean_score": 0.5290370931398192,
+          "win_rate": 0.5555555555555556,
+          "gap_observed_minus_score": 0.02651846241573641,
+          "expected_wins": 19.04533535303349,
+          "wins": 20,
+          "wilson_95": [
+            0.395810617556973,
+            0.7045873125991978
+          ]
+        },
+        {
+          "bucket": "0.54-0.56",
+          "n": 14,
+          "mean_score": 0.5475999340864662,
+          "win_rate": 0.5,
+          "gap_observed_minus_score": -0.047599934086466233,
+          "expected_wins": 7.666399077210527,
+          "wins": 7,
+          "wilson_95": [
+            0.26799202452413634,
+            0.7320079754758637
+          ]
+        },
+        {
+          "bucket": "0.56-0.58",
+          "n": 12,
+          "mean_score": 0.5685893192948771,
+          "win_rate": 0.6666666666666666,
+          "gap_observed_minus_score": 0.09807734737178952,
+          "expected_wins": 6.823071831538525,
+          "wins": 8,
+          "wilson_95": [
+            0.39062208887279953,
+            0.8618799089087867
+          ]
+        },
+        {
+          "bucket": "0.58-0.60",
+          "n": 2,
+          "mean_score": 0.594015995398239,
+          "win_rate": 0.5,
+          "gap_observed_minus_score": -0.09401599539823902,
+          "expected_wins": 1.188031990796478,
+          "wins": 1,
+          "wilson_95": [
+            0.09453120573423074,
+            0.9054687942657693
+          ]
+        },
+        {
+          "bucket": "0.60+",
+          "n": 0,
+          "mean_score": null,
+          "win_rate": null,
+          "gap_observed_minus_score": null,
+          "expected_wins": 0,
+          "wins": 0,
+          "wilson_95": null
+        }
+      ]
+    },
+    "calibration_by_week": {
+      "5": {
+        "n": 56,
+        "brier_shadow_diagnostic": 0.24779853322056594,
+        "log_loss_shadow_diagnostic": 0.6887856256301431,
+        "ece_shadow_diagnostic": 0.1303316589688818,
+        "pairwise_auc": 0.40641711229946526,
+        "buckets": [
+          {
+            "bucket": "0.50-0.52",
+            "n": 19,
+            "mean_score": 0.5121402694525098,
+            "win_rate": 0.6842105263157895,
+            "gap_observed_minus_score": 0.1720702568632797,
+            "expected_wins": 9.730665119597687,
+            "wins": 13,
+            "wilson_95": [
+              0.46010407675327475,
+              0.8463562091220773
+            ]
+          },
+          {
+            "bucket": "0.52-0.54",
+            "n": 21,
+            "mean_score": 0.5291523783319284,
+            "win_rate": 0.6190476190476191,
+            "gap_observed_minus_score": 0.08989524071569066,
+            "expected_wins": 11.112199944970497,
+            "wins": 13,
+            "wilson_95": [
+              0.4087865377511576,
+              0.7924898863143551
+            ]
+          },
+          {
+            "bucket": "0.54-0.56",
+            "n": 9,
+            "mean_score": 0.5482121647563754,
+            "win_rate": 0.4444444444444444,
+            "gap_observed_minus_score": -0.10376772031193093,
+            "expected_wins": 4.933909482807378,
+            "wins": 4,
+            "wilson_95": [
+              0.18877852109766452,
+              0.733348706504507
+            ]
+          },
+          {
+            "bucket": "0.56-0.58",
+            "n": 6,
+            "mean_score": 0.5651535086234012,
+            "win_rate": 0.6666666666666666,
+            "gap_observed_minus_score": 0.10151315804326544,
+            "expected_wins": 3.390921051740407,
+            "wins": 4,
+            "wilson_95": [
+              0.299993315138392,
+              0.9032285888942195
+            ]
+          },
+          {
+            "bucket": "0.58-0.60",
+            "n": 1,
+            "mean_score": 0.5984495357585906,
+            "win_rate": 0.0,
+            "gap_observed_minus_score": -0.5984495357585906,
+            "expected_wins": 0.5984495357585906,
+            "wins": 0,
+            "wilson_95": [
+              0.0,
+              0.7934506856227626
+            ]
+          },
+          {
+            "bucket": "0.60+",
+            "n": 0,
+            "mean_score": null,
+            "win_rate": null,
+            "gap_observed_minus_score": null,
+            "expected_wins": 0,
+            "wins": 0,
+            "wilson_95": null
+          }
+        ]
+      },
+      "6": {
+        "n": 58,
+        "brier_shadow_diagnostic": 0.2475887466177964,
+        "log_loss_shadow_diagnostic": 0.6882670755104902,
+        "ece_shadow_diagnostic": 0.08614716835455132,
+        "pairwise_auc": 0.6107142857142858,
+        "buckets": [
+          {
+            "bucket": "0.50-0.52",
+            "n": 31,
+            "mean_score": 0.5102459092174239,
+            "win_rate": 0.41935483870967744,
+            "gap_observed_minus_score": -0.09089107050774642,
+            "expected_wins": 15.817623185740139,
+            "wins": 13,
+            "wilson_95": [
+              0.2641554306731223,
+              0.5923373750463029
+            ]
+          },
+          {
+            "bucket": "0.52-0.54",
+            "n": 15,
+            "mean_score": 0.5288756938708661,
+            "win_rate": 0.4666666666666667,
+            "gap_observed_minus_score": -0.06220902720419941,
+            "expected_wins": 7.9331354080629914,
+            "wins": 7,
+            "wilson_95": [
+              0.24809535365737387,
+              0.698830199745016
+            ]
+          },
+          {
+            "bucket": "0.54-0.56",
+            "n": 5,
+            "mean_score": 0.5464979188806297,
+            "win_rate": 0.6,
+            "gap_observed_minus_score": 0.05350208111937027,
+            "expected_wins": 2.7324895944031486,
+            "wins": 3,
+            "wilson_95": [
+              0.2307242812760128,
+              0.882379225767352
+            ]
+          },
+          {
+            "bucket": "0.56-0.58",
+            "n": 6,
+            "mean_score": 0.5720251299663529,
+            "win_rate": 0.6666666666666666,
+            "gap_observed_minus_score": 0.09464153670031372,
+            "expected_wins": 3.4321507797981177,
+            "wins": 4,
+            "wilson_95": [
+              0.299993315138392,
+              0.9032285888942195
+            ]
+          },
+          {
+            "bucket": "0.58-0.60",
+            "n": 1,
+            "mean_score": 0.5895824550378874,
+            "win_rate": 1.0,
+            "gap_observed_minus_score": 0.4104175449621126,
+            "expected_wins": 0.5895824550378874,
+            "wins": 1,
+            "wilson_95": [
+              0.20654931437723745,
+              1.0
+            ]
+          },
+          {
+            "bucket": "0.60+",
+            "n": 0,
+            "mean_score": null,
+            "win_rate": null,
+            "gap_observed_minus_score": null,
+            "expected_wins": 0,
+            "wins": 0,
+            "wilson_95": null
+          }
+        ]
+      }
+    }
+  },
+  "totals": {
+    "n": 114,
+    "score_rank_bands": {
+      "1-5": {
+        "n": 10,
+        "wins": 4,
+        "losses": 6,
+        "pushes": 0,
+        "win_rate_ex_push": 0.4,
+        "wilson_95_ex_push": [
+          0.16818032970623614,
+          0.6873262302663417
+        ],
+        "mean_shadow_score": 0.6888955524950068,
+        "expected_wins_shadow": 6.888955524950068
+      },
+      "6-10": {
+        "n": 10,
+        "wins": 5,
+        "losses": 5,
+        "pushes": 0,
+        "win_rate_ex_push": 0.5,
+        "wilson_95_ex_push": [
+          0.236593090512564,
+          0.7634069094874361
+        ],
+        "mean_shadow_score": 0.6479801234813773,
+        "expected_wins_shadow": 6.479801234813774
+      },
+      "11-20": {
+        "n": 20,
+        "wins": 7,
+        "losses": 13,
+        "pushes": 0,
+        "win_rate_ex_push": 0.35,
+        "wilson_95_ex_push": [
+          0.18119182410108206,
+          0.5671457233147638
+        ],
+        "mean_shadow_score": 0.6260443934143426,
+        "expected_wins_shadow": 12.520887868286852
+      },
+      "remaining": {
+        "n": 74,
+        "wins": 40,
+        "losses": 34,
+        "pushes": 0,
+        "win_rate_ex_push": 0.5405405405405406,
+        "wilson_95_ex_push": [
+          0.4278134568803063,
+          0.649266290736203
+        ],
+        "mean_shadow_score": 0.5544012948806778,
+        "expected_wins_shadow": 41.02569582117015
+      }
+    },
+    "calibration_all": {
+      "n": 114,
+      "brier_shadow_diagnostic": 0.26840848350915925,
+      "log_loss_shadow_diagnostic": 0.7315455446986305,
+      "ece_shadow_diagnostic": 0.13466580920337345,
+      "pairwise_auc": 0.42980295566502463,
+      "buckets": [
+        {
+          "bucket": "0.50-0.52",
+          "n": 10,
+          "mean_score": 0.5094999852598627,
+          "win_rate": 0.5,
+          "gap_observed_minus_score": -0.009499985259862731,
+          "expected_wins": 5.094999852598627,
+          "wins": 5,
+          "wilson_95": [
+            0.236593090512564,
+            0.7634069094874361
+          ]
+        },
+        {
+          "bucket": "0.52-0.54",
+          "n": 16,
+          "mean_score": 0.5308185409543231,
+          "win_rate": 0.625,
+          "gap_observed_minus_score": 0.09418145904567687,
+          "expected_wins": 8.49309665526917,
+          "wins": 10,
+          "wilson_95": [
+            0.38641040545502714,
+            0.8151876744113636
+          ]
+        },
+        {
+          "bucket": "0.54-0.56",
+          "n": 19,
+          "mean_score": 0.5496970430431523,
+          "win_rate": 0.5789473684210527,
+          "gap_observed_minus_score": 0.0292503253779004,
+          "expected_wins": 10.444243817819894,
+          "wins": 11,
+          "wilson_95": [
+            0.3627590353425504,
+            0.7685810871754576
+          ]
+        },
+        {
+          "bucket": "0.56-0.58",
+          "n": 12,
+          "mean_score": 0.5703648855774229,
+          "win_rate": 0.5833333333333334,
+          "gap_observed_minus_score": 0.01296844775591044,
+          "expected_wins": 6.844378626929075,
+          "wins": 7,
+          "wilson_95": [
+            0.31951131254954973,
+            0.8067396863412435
+          ]
+        },
+        {
+          "bucket": "0.58-0.60",
+          "n": 10,
+          "mean_score": 0.5900432627603645,
+          "win_rate": 0.3,
+          "gap_observed_minus_score": -0.29004326276036446,
+          "expected_wins": 5.900432627603644,
+          "wins": 3,
+          "wilson_95": [
+            0.10779126740630099,
+            0.6032218525388546
+          ]
+        },
+        {
+          "bucket": "0.60+",
+          "n": 47,
+          "mean_score": 0.6412380610425625,
+          "win_rate": 0.425531914893617,
+          "gap_observed_minus_score": -0.2157061461489455,
+          "expected_wins": 30.138188869000437,
+          "wins": 20,
+          "wilson_95": [
+            0.2951362834367996,
+            0.5671808065450721
+          ]
+        }
+      ]
+    },
+    "neutral_half_shrink_posthoc_diagnostic": {
+      "n": 114,
+      "brier_shadow_diagnostic": 0.2565999076424822,
+      "log_loss_shadow_diagnostic": 0.7064750342267984,
+      "ece_shadow_diagnostic": 0.11035922168415489,
+      "pairwise_auc": 0.42980295566502463,
+      "buckets": [
+        {
+          "bucket": "0.50-0.52",
+          "n": 26,
+          "mean_score": 0.5113095482282268,
+          "win_rate": 0.5769230769230769,
+          "gap_observed_minus_score": 0.06561352869485004,
+          "expected_wins": 13.294048253933898,
+          "wins": 15,
+          "wilson_95": [
+            0.3894861374659171,
+            0.7445555668634343
+          ]
+        },
+        {
+          "bucket": "0.52-0.54",
+          "n": 31,
+          "mean_score": 0.5288487491088543,
+          "win_rate": 0.5806451612903226,
+          "gap_observed_minus_score": 0.051796412181468354,
+          "expected_wins": 16.394311222374483,
+          "wins": 18,
+          "wilson_95": [
+            0.4076626249536972,
+            0.7358445693268778
+          ]
+        },
+        {
+          "bucket": "0.54-0.56",
+          "n": 24,
+          "mean_score": 0.5512084234584504,
+          "win_rate": 0.375,
+          "gap_observed_minus_score": -0.17620842345845045,
+          "expected_wins": 13.22900216300281,
+          "wins": 9,
+          "wilson_95": [
+            0.21159367559548778,
+            0.5729003755732572
+          ]
+        },
+        {
+          "bucket": "0.56-0.58",
+          "n": 21,
+          "mean_score": 0.5683540842253431,
+          "win_rate": 0.47619047619047616,
+          "gap_observed_minus_score": -0.0921636080348669,
+          "expected_wins": 11.935435768732205,
+          "wins": 10,
+          "wilson_95": [
+            0.2834400610153417,
+            0.6763046541715557
+          ]
+        },
+        {
+          "bucket": "0.58-0.60",
+          "n": 8,
+          "mean_score": 0.5841259325678206,
+          "win_rate": 0.25,
+          "gap_observed_minus_score": -0.33412593256782064,
+          "expected_wins": 4.673007460542565,
+          "wins": 2,
+          "wilson_95": [
+            0.071479212752109,
+            0.5907245696898311
+          ]
+        },
+        {
+          "bucket": "0.60+",
+          "n": 4,
+          "mean_score": 0.6079663390061144,
+          "win_rate": 0.5,
+          "gap_observed_minus_score": -0.10796633900611441,
+          "expected_wins": 2.4318653560244576,
+          "wins": 2,
+          "wilson_95": [
+            0.15003898915214947,
+            0.8499610108478506
+          ]
+        }
+      ]
+    },
+    "calibration_by_week": {
+      "5": {
+        "n": 56,
+        "brier_shadow_diagnostic": 0.28173124481383355,
+        "log_loss_shadow_diagnostic": 0.7579255932557484,
+        "ece_shadow_diagnostic": 0.24658977062985923,
+        "pairwise_auc": 0.42292490118577075,
+        "buckets": [
+          {
+            "bucket": "0.50-0.52",
+            "n": 7,
+            "mean_score": 0.5101694748627702,
+            "win_rate": 0.42857142857142855,
+            "gap_observed_minus_score": -0.08159804629134165,
+            "expected_wins": 3.5711863240393917,
+            "wins": 3,
+            "wilson_95": [
+              0.15821985525146975,
+              0.7495416354723428
+            ]
+          },
+          {
+            "bucket": "0.52-0.54",
+            "n": 4,
+            "mean_score": 0.530435096309749,
+            "win_rate": 1.0,
+            "gap_observed_minus_score": 0.46956490369025095,
+            "expected_wins": 2.121740385238996,
+            "wins": 4,
+            "wilson_95": [
+              0.5101091635454027,
+              1.0
+            ]
+          },
+          {
+            "bucket": "0.54-0.56",
+            "n": 8,
+            "mean_score": 0.5495624103168819,
+            "win_rate": 0.5,
+            "gap_observed_minus_score": -0.04956241031688191,
+            "expected_wins": 4.396499282535055,
+            "wins": 4,
+            "wilson_95": [
+              0.21521606221387757,
+              0.7847839377861224
+            ]
+          },
+          {
+            "bucket": "0.56-0.58",
+            "n": 7,
+            "mean_score": 0.5692006854322412,
+            "win_rate": 0.42857142857142855,
+            "gap_observed_minus_score": -0.14062925686081268,
+            "expected_wins": 3.9844047980256887,
+            "wins": 3,
+            "wilson_95": [
+              0.15821985525146975,
+              0.7495416354723428
+            ]
+          },
+          {
+            "bucket": "0.58-0.60",
+            "n": 6,
+            "mean_score": 0.5886861591540424,
+            "win_rate": 0.0,
+            "gap_observed_minus_score": -0.5886861591540424,
+            "expected_wins": 3.5321169549242546,
+            "wins": 0,
+            "wilson_95": [
+              2.7755575615628914e-17,
+              0.3903342879021653
+            ]
+          },
+          {
+            "bucket": "0.60+",
+            "n": 24,
+            "mean_score": 0.6436066742077802,
+            "win_rate": 0.375,
+            "gap_observed_minus_score": -0.26860667420778017,
+            "expected_wins": 15.446560180986724,
+            "wins": 9,
+            "wilson_95": [
+              0.21159367559548778,
+              0.5729003755732572
+            ]
+          }
+        ]
+      },
+      "6": {
+        "n": 58,
+        "brier_shadow_diagnostic": 0.25554512776671506,
+        "log_loss_shadow_diagnostic": 0.7060751529883099,
+        "ece_shadow_diagnostic": 0.1252265067692593,
+        "pairwise_auc": 0.46060606060606063,
+        "buckets": [
+          {
+            "bucket": "0.50-0.52",
+            "n": 3,
+            "mean_score": 0.5079378428530784,
+            "win_rate": 0.6666666666666666,
+            "gap_observed_minus_score": 0.15872882381358822,
+            "expected_wins": 1.5238135285592354,
+            "wins": 2,
+            "wilson_95": [
+              0.2076596008020477,
+              0.9385080552796037
+            ]
+          },
+          {
+            "bucket": "0.52-0.54",
+            "n": 12,
+            "mean_score": 0.5309463558358478,
+            "win_rate": 0.5,
+            "gap_observed_minus_score": -0.030946355835847816,
+            "expected_wins": 6.371356270030174,
+            "wins": 6,
+            "wilson_95": [
+              0.2537815976337061,
+              0.7462184023662939
+            ]
+          },
+          {
+            "bucket": "0.54-0.56",
+            "n": 11,
+            "mean_score": 0.549794957753167,
+            "win_rate": 0.6363636363636364,
+            "gap_observed_minus_score": 0.08656867861046935,
+            "expected_wins": 6.047744535284838,
+            "wins": 7,
+            "wilson_95": [
+              0.35380117450784887,
+              0.8483352890463243
+            ]
+          },
+          {
+            "bucket": "0.56-0.58",
+            "n": 5,
+            "mean_score": 0.5719947657806772,
+            "win_rate": 0.8,
+            "gap_observed_minus_score": 0.22800523421932284,
+            "expected_wins": 2.859973828903386,
+            "wins": 4,
+            "wilson_95": [
+              0.37553462976252533,
+              0.9637758913675698
+            ]
+          },
+          {
+            "bucket": "0.58-0.60",
+            "n": 4,
+            "mean_score": 0.5920789181698474,
+            "win_rate": 0.75,
+            "gap_observed_minus_score": 0.15792108183015263,
+            "expected_wins": 2.3683156726793895,
+            "wins": 3,
+            "wilson_95": [
+              0.30064184258240184,
+              0.9544127391902995
+            ]
+          },
+          {
+            "bucket": "0.60+",
+            "n": 23,
+            "mean_score": 0.6387664646962484,
+            "win_rate": 0.4782608695652174,
+            "gap_observed_minus_score": -0.16050559513103102,
+            "expected_wins": 14.691628688013713,
+            "wins": 11,
+            "wilson_95": [
+              0.29237157416646653,
+              0.6703726266357259
+            ]
+          }
+        ]
+      }
+    },
+    "top5_by_week": {
+      "5": {
+        "n": 5,
+        "wins": 3,
+        "losses": 2,
+        "pushes": 0,
+        "win_rate_ex_push": 0.6,
+        "wilson_95_ex_push": [
+          0.2307242812760128,
+          0.882379225767352
+        ],
+        "mean_shadow_score": 0.6891550453192263,
+        "expected_wins_shadow": 3.4457752265961314
+      },
+      "6": {
+        "n": 5,
+        "wins": 1,
+        "losses": 4,
+        "pushes": 0,
+        "win_rate_ex_push": 0.2,
+        "wilson_95_ex_push": [
+          0.03622410863243014,
+          0.6244653702374747
+        ],
+        "mean_shadow_score": 0.6886360596707872,
+        "expected_wins_shadow": 3.443180298353936
+      }
+    }
+  },
+  "week6_score_distribution": {
+    "ATS": {
+      "min": 0.5007320176370166,
+      "p10": 0.5033889237999143,
+      "p25": 0.508845303192647,
+      "median": 0.5196997309222039,
+      "p75": 0.5366722743518716,
+      "p90": 0.5619535869549322,
+      "max": 0.5895824550378874
+    },
+    "TOTAL": {
+      "min": 0.5040485332903303,
+      "p10": 0.5252188814568981,
+      "p25": 0.5387216561120642,
+      "median": 0.5749113765156029,
+      "p75": 0.6268404077932379,
+      "p90": 0.6413911982344909,
+      "max": 0.719718755302035
+    }
+  },
+  "week6_totals_above_best_ats": 25,
+  "random_baseline_expected_wins_per_week": {
+    "5": {
+      "ATS": 3.0357142857142856,
+      "TOTAL": 2.0535714285714284
+    },
+    "6": {
+      "ATS": 2.413793103448276,
+      "TOTAL": 2.8448275862068964
+    }
+  },
+  "fixed_rule_replay": {
+    "governed_ats": {
+      "weekly": [
+        {
+          "week": 5,
+          "n": 5,
+          "wins": 3,
+          "losses": 2,
+          "pushes": 0,
+          "win_rate_ex_push": 0.6,
+          "wilson_95_ex_push": [
+            0.2307242812760128,
+            0.882379225767352
+          ],
+          "mean_shadow_score": 0.5295276392006081,
+          "expected_wins_shadow": 2.6476381960030406,
+          "ats_count": 5,
+          "totals_count": 0,
+          "cumulative_wins": 3,
+          "cumulative_losses": 2
+        },
+        {
+          "week": 6,
+          "n": 5,
+          "wins": 0,
+          "losses": 5,
+          "pushes": 0,
+          "win_rate_ex_push": 0.0,
+          "wilson_95_ex_push": [
+            0.0,
+            0.43448246478317476
+          ],
+          "mean_shadow_score": 0.5186468776950791,
+          "expected_wins_shadow": 2.5932343884753957,
+          "ats_count": 5,
+          "totals_count": 0,
+          "cumulative_wins": 3,
+          "cumulative_losses": 7
+        }
+      ],
+      "cumulative_wins": 3,
+      "cumulative_losses": 7,
+      "max_week_end_drawdown_even_money_units": 5,
+      "longest_losing_week_streak": 1,
+      "status": "FROZEN_OR_FIXED_RULE_REPLAY_ONLY_NOT_VALIDATED_WALK_FORWARD"
+    },
+    "ats_shadow_score": {
+      "weekly": [
+        {
+          "week": 5,
+          "n": 5,
+          "wins": 3,
+          "losses": 2,
+          "pushes": 0,
+          "win_rate_ex_push": 0.6,
+          "wilson_95_ex_push": [
+            0.2307242812760128,
+            0.882379225767352
+          ],
+          "mean_shadow_score": 0.5727752755492936,
+          "expected_wins_shadow": 2.863876377746468,
+          "ats_count": 5,
+          "totals_count": 0,
+          "cumulative_wins": 3,
+          "cumulative_losses": 2
+        },
+        {
+          "week": 6,
+          "n": 5,
+          "wins": 4,
+          "losses": 1,
+          "pushes": 0,
+          "win_rate_ex_push": 0.8,
+          "wilson_95_ex_push": [
+            0.37553462976252533,
+            0.9637758913675698
+          ],
+          "mean_shadow_score": 0.579443921910813,
+          "expected_wins_shadow": 2.8972196095540648,
+          "ats_count": 5,
+          "totals_count": 0,
+          "cumulative_wins": 7,
+          "cumulative_losses": 3
+        }
+      ],
+      "cumulative_wins": 7,
+      "cumulative_losses": 3,
+      "max_week_end_drawdown_even_money_units": 0,
+      "longest_losing_week_streak": 0,
+      "status": "FROZEN_OR_FIXED_RULE_REPLAY_ONLY_NOT_VALIDATED_WALK_FORWARD"
+    },
+    "totals_shadow_score": {
+      "weekly": [
+        {
+          "week": 5,
+          "n": 5,
+          "wins": 3,
+          "losses": 2,
+          "pushes": 0,
+          "win_rate_ex_push": 0.6,
+          "wilson_95_ex_push": [
+            0.2307242812760128,
+            0.882379225767352
+          ],
+          "mean_shadow_score": 0.6891550453192263,
+          "expected_wins_shadow": 3.4457752265961314,
+          "ats_count": 0,
+          "totals_count": 5,
+          "cumulative_wins": 3,
+          "cumulative_losses": 2
+        },
+        {
+          "week": 6,
+          "n": 5,
+          "wins": 1,
+          "losses": 4,
+          "pushes": 0,
+          "win_rate_ex_push": 0.2,
+          "wilson_95_ex_push": [
+            0.03622410863243014,
+            0.6244653702374747
+          ],
+          "mean_shadow_score": 0.6886360596707872,
+          "expected_wins_shadow": 3.443180298353936,
+          "ats_count": 0,
+          "totals_count": 5,
+          "cumulative_wins": 4,
+          "cumulative_losses": 6
+        }
+      ],
+      "cumulative_wins": 4,
+      "cumulative_losses": 6,
+      "max_week_end_drawdown_even_money_units": 3,
+      "longest_losing_week_streak": 1,
+      "status": "FROZEN_OR_FIXED_RULE_REPLAY_ONLY_NOT_VALIDATED_WALK_FORWARD"
+    },
+    "frozen_mixed_shadow": {
+      "weekly": [
+        {
+          "week": 5,
+          "n": 5,
+          "wins": 3,
+          "losses": 2,
+          "pushes": 0,
+          "win_rate_ex_push": 0.6,
+          "wilson_95_ex_push": [
+            0.2307242812760128,
+            0.882379225767352
+          ],
+          "mean_shadow_score": 0.6891550453192263,
+          "expected_wins_shadow": 3.4457752265961314,
+          "ats_count": 0,
+          "totals_count": 5,
+          "cumulative_wins": 3,
+          "cumulative_losses": 2
+        },
+        {
+          "week": 6,
+          "n": 5,
+          "wins": 1,
+          "losses": 4,
+          "pushes": 0,
+          "win_rate_ex_push": 0.2,
+          "wilson_95_ex_push": [
+            0.03622410863243014,
+            0.6244653702374747
+          ],
+          "mean_shadow_score": 0.6886360596707872,
+          "expected_wins_shadow": 3.443180298353936,
+          "ats_count": 0,
+          "totals_count": 5,
+          "cumulative_wins": 4,
+          "cumulative_losses": 6
+        }
+      ],
+      "cumulative_wins": 4,
+      "cumulative_losses": 6,
+      "max_week_end_drawdown_even_money_units": 3,
+      "longest_losing_week_streak": 1,
+      "status": "FROZEN_OR_FIXED_RULE_REPLAY_ONLY_NOT_VALIDATED_WALK_FORWARD"
+    }
+  },
+  "walk_forward_calibration": "NOT_ESTIMABLE: only two complete frozen dual-market weeks; no prior training period for Week 5, and one prior week is insufficient for a credible Week 6 fit"
+}
