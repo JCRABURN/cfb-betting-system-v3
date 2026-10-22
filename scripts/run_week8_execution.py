@@ -142,6 +142,10 @@ def run(*, source: Path, metadata: Path, capture: Path, database: Path, output: 
         "week8_initial_seal_manifest.json",
     )):
         raise ValueError("Week 8 lock evidence already exists; never overwrite")
+    derived_dir = output / "provider-evidence"
+    if derived_dir.exists() and any(derived_dir.iterdir()):
+        raise FileExistsError("derived ingestion evidence already exists; create a new output version")
+    derived_dir.mkdir(exist_ok=True)
     rows, details, source_hash = read_source(source, metadata)
     capture_manifest = json.loads((capture / "capture-manifest.json").read_text(encoding="utf-8"))
     if capture_manifest.get("status") != "COMPLETE":
