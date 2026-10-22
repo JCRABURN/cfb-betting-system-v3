@@ -72,3 +72,7 @@ outputs/2026-week5-review-20261001/week5_qb_injury_review.csv text eol=crlf
 outputs/2026-week5-review-20261001/week5_shadow_totals_watchlist.csv text eol=crlf
 outputs/2026-week5-review-20261001/week5_top5_adversarial_review.csv text eol=crlf
 data/ingest/2026-week8-splashsports-screen-capture.csv -text
+outputs/2026-week8-prospective/** -text
+production-weeks/2026-week8* -text
+data/ingest/2026-week8-independent-screenshot-review.csv -text
+outputs/2026-week8-prospective-v2/** -text
