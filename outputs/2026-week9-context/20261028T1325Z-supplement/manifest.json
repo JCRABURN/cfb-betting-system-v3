@@ -1,0 +1,56 @@
+[
+  {
+    "name": "navy-preview",
+    "url": "https://navysports.com/news/2026/10/26/football-navy-and-5-6-notre-dame-set-for-99th-meeting-saturday-at-gillette-stadium.aspx",
+    "requested_at_utc": "2026-10-28T13:24:39.410332+00:00",
+    "received_at_utc": "2026-10-28T13:24:39.935755+00:00",
+    "http_status": 404,
+    "path": "navy-preview.html.gz",
+    "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "texas-state-week8-box",
+    "url": "https://utahstateaggies.com/boxscore.aspx?id=16759&path=football",
+    "requested_at_utc": "2026-10-28T13:24:39.935755+00:00",
+    "received_at_utc": "2026-10-28T13:24:40.391502+00:00",
+    "http_status": 404,
+    "path": "texas-state-week8-box.html.gz",
+    "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "texas-state-week7-recap",
+    "url": "https://txst.com/news/2026/10/15/football-game-recap-bobcats-dominate-colorado-state-66-27-in-pac-12-home-opener.aspx",
+    "requested_at_utc": "2026-10-28T13:24:40.391502+00:00",
+    "received_at_utc": "2026-10-28T13:24:40.464534+00:00",
+    "http_status": 404,
+    "path": "texas-state-week7-recap.html.gz",
+    "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "name": "texas-state-week8-stats",
+    "url": "https://txst.com/sports/football/stats/2026",
+    "requested_at_utc": "2026-10-28T13:24:40.464534+00:00",
+    "received_at_utc": "2026-10-28T13:24:45.998003+00:00",
+    "http_status": 200,
+    "path": "texas-state-week8-stats.html.gz",
+    "raw_sha256": "3bd0b339614e72190d07a886461af1c40c89b5403a6aef387754b44253097e47"
+  },
+  {
+    "name": "utah-state-news",
+    "url": "https://utahstateaggies.com/sports/football/archives",
+    "requested_at_utc": "2026-10-28T13:24:45.998003+00:00",
+    "received_at_utc": "2026-10-28T13:24:46.568863+00:00",
+    "http_status": 200,
+    "path": "utah-state-news.html.gz",
+    "raw_sha256": "8548d3a0ec2c2e480bfa5f3816b36371dd16d75c74a70df2aef8fa6b02ea0e84"
+  },
+  {
+    "name": "ulm-news",
+    "url": "https://ulmwarhawks.com/sports/football/archives",
+    "requested_at_utc": "2026-10-28T13:24:46.568863+00:00",
+    "received_at_utc": "2026-10-28T13:24:47.034920+00:00",
+    "http_status": 200,
+    "path": "ulm-news.html.gz",
+    "raw_sha256": "db361b04be646c135d9bd7138eb6899b09c2b25c02c853c8589fbb28f2205e72"
+  }
+]

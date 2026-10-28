@@ -81,3 +81,9 @@ outputs/2026-week8-prospective-v2/** -text whitespace=cr-at-eol
 data/ingest/2026-week9* -text
 production-weeks/2026-week9* -text
 outputs/2026-week9-prospective/** -text whitespace=cr-at-eol
+
+# Context and human review are separate, immutable evidence versions.
+outputs/2026-week9-context/** -text whitespace=cr-at-eol
+outputs/2026-week9-owner-review/** -text whitespace=cr-at-eol
+outputs/2026-week9-elapsed-results/** -text whitespace=cr-at-eol
+outputs/2026-week9-verification/** -text whitespace=cr-at-eol
