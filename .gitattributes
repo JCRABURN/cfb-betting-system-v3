@@ -76,3 +76,7 @@ outputs/2026-week8-prospective/** -text whitespace=cr-at-eol
 production-weeks/2026-week8* -text
 data/ingest/2026-week8-independent-screenshot-review.csv -text
 outputs/2026-week8-prospective-v2/** -text whitespace=cr-at-eol
+
+# New Week 8 audit evidence is byte-preserved; original artifacts are untouched.
+outputs/2026-week8-postgame-audit/** -text whitespace=cr-at-eol
+outputs/2026-week8-audit-research/** -text whitespace=cr-at-eol
