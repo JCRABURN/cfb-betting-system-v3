@@ -1,0 +1,11 @@
+{
+  "version": "owner-review-custody-v1",
+  "recorded_at_utc": "2026-10-28T13:53:22.335819+00:00",
+  "owner_approval": "PENDING",
+  "sha256": {
+    "owner_review_shortlist.json": "1a6b8ab4fd5b01c12bba6b1c8a7aae0641e190a20c79807d9e3a62b3c7261bed",
+    "OWNER_REVIEW.md": "400faacd91ade1ec65954d3e3267ea56714c1b97904e00d200422e6b9f388b52"
+  },
+  "source_context_manifest_sha256": "b14fa027b0a59d4f10c39ace52fe439dca8996c83b3148031cba38974007b8e6",
+  "sealed_board_sha256": "77aea6d0eefecc6dce014524610294da617d7dab2b6e903a59f8664f664e5460"
+}

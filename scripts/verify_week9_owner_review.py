@@ -19,6 +19,16 @@ def validate(review):
     for market, filename in [('ATS','week9_ats_research_full_board.csv'),('TOTAL','week9_totals_research_full_board.csv')]:
         boards[market] = {int(r['game_id']):r for r in csv.DictReader((BOARD/filename).open(encoding='utf-8'))}
     rows = review['selections']
+    review_time = instant(review['created_at_utc'])
+    previous_rows = {}
+    if review.get('previous_review_path'):
+        prior_path = (ROOT/review['previous_review_path']).resolve()
+        if not prior_path.is_relative_to(ROOT/'outputs/2026-week9-owner-review'):
+            raise ValueError('previous review outside custody directory')
+        prior = json.loads(prior_path.read_text(encoding='utf-8'))
+        if instant(prior['created_at_utc']) >= review_time:
+            raise ValueError('previous review must precede revision')
+        previous_rows = {(r['game_id'],r['market']):r for r in prior['selections']}
     if len(rows) != 10 or len({r['game_id'] for r in rows}) != 10:
         raise ValueError('shortlist coverage or duplicate')
     for rank, row in enumerate(rows, 1):
@@ -28,8 +38,10 @@ def validate(review):
             raise ValueError('confidence adjustment or approval')
         cutoff = instant(locked[row['game_id']]['source_kickoff_utc'])
         created = instant(row['created_at_utc'])
-        if created != instant(review['created_at_utc']) or created >= cutoff:
+        if created > review_time or created >= cutoff:
             raise ValueError('late recommendation')
+        if review_time >= cutoff and previous_rows.get((row['game_id'],row['market'])) != row:
+            raise ValueError('started-game recommendation must match prior version exactly')
         for source in row['sources']:
             if source.get('captured_at_utc') and instant(source['captured_at_utc']) > created:
                 raise ValueError('future evidence')
