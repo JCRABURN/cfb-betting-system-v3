@@ -17,7 +17,7 @@ Initial validation: 15 Week 9 continuity tests passed; full execution tree befor
 Exact pipeline commands (repository .venv/Scripts/python.exe):
 
 ```
-python -m scripts.capture_week9_core --output outputs/2026-week9-prospective/core-initial
+python -m scripts.capture_week9_core --output-directory outputs/2026-week9-prospective/core-initial
 python -m scripts.run_week9_execution --source-lines production-weeks/2026-week9-splashsports.csv --source-metadata production-weeks/2026-week9-splashsports-lock-metadata.json --capture-dir outputs/2026-week9-prospective/core-initial --database data/week9-execution.db --output outputs/2026-week9-prospective
 python -m scripts.finalize_week9_card --database data/week9-execution.db --output outputs/2026-week9-prospective --source-lines production-weeks/2026-week9-splashsports.csv
 python -m scripts.seal_week9_board

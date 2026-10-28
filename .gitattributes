@@ -87,3 +87,6 @@ outputs/2026-week9-context/** -text whitespace=cr-at-eol
 outputs/2026-week9-owner-review/** -text whitespace=cr-at-eol
 outputs/2026-week9-elapsed-results/** -text whitespace=cr-at-eol
 outputs/2026-week9-verification/** -text whitespace=cr-at-eol
+# New Week 8 audit evidence is byte-preserved; original artifacts are untouched.
+outputs/2026-week8-postgame-audit/** -text whitespace=cr-at-eol
+outputs/2026-week8-audit-research/** -text whitespace=cr-at-eol
