@@ -76,3 +76,8 @@ outputs/2026-week8-prospective/** -text whitespace=cr-at-eol
 production-weeks/2026-week8* -text
 data/ingest/2026-week8-independent-screenshot-review.csv -text
 outputs/2026-week8-prospective-v2/** -text whitespace=cr-at-eol
+
+# Preserve Week 9 custody bytes without checkout conversion.
+data/ingest/2026-week9* -text
+production-weeks/2026-week9* -text
+outputs/2026-week9-prospective/** -text whitespace=cr-at-eol

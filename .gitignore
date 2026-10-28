@@ -226,3 +226,6 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# Disposable Week 9 execution database.
+data/week9-execution.db*
