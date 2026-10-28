@@ -1,0 +1,529 @@
+{
+  "week": 9,
+  "season": 2026,
+  "source": "User-supplied SplashSports screenshots in chat on 2026-10-27",
+  "capture_caveat": "Screenshot original creation timestamp and source-market quote times are unavailable. Tuesday live state was displayed in image and must not be treated as current live data.",
+  "games": 56,
+  "pregame_at_receipt": 54,
+  "excluded_from_prospective_as_of_receipt": 2,
+  "final_at_receipt": 1,
+  "live_at_receipt": 1,
+  "lock_policy": "Preserve screenshot values unchanged; version any corrections separately; do not substitute later-market lines. Reconcile screenshots independently before declaring authoritative immutable lock.",
+  "kickoff_caveat": "Screenshot times are displayed without an explicit timezone. Not a verified local timezone or kickoff feed.",
+  "status_caveat": "Tuesday live snapshot is not a final result. Never use any Tuesday scores in prospective model features.",
+  "live_snapshot": {
+    "away": "Sam Houston",
+    "home": "Missouri State",
+    "away_score": 3,
+    "home_score": 10,
+    "clock": "Q3 4:28",
+    "source_image": 1,
+    "source_row": 2
+  },
+  "rows": [
+    {
+      "date": "2026-10-27",
+      "away_team": "Delaware",
+      "home_team": "Western Kentucky",
+      "source_image": 1,
+      "source_row": 1,
+      "kickoff_display": null,
+      "status_at_receipt": "FINAL"
+    },
+    {
+      "date": "2026-10-27",
+      "away_team": "Sam Houston",
+      "home_team": "Missouri State",
+      "source_image": 1,
+      "source_row": 2,
+      "kickoff_display": "Q3 4:28, Sam Houston 3–10 Missouri State",
+      "status_at_receipt": "LIVE_AT_SCREENSHOT"
+    },
+    {
+      "date": "2026-10-28",
+      "away_team": "Kennesaw State",
+      "home_team": "Middle Tennessee",
+      "source_image": 1,
+      "source_row": 3,
+      "kickoff_display": "PREGAME",
+      "status_at_receipt": "PREGAME"
+    },
+    {
+      "date": "2026-10-28",
+      "away_team": "Jacksonville State",
+      "home_team": "New Mexico State",
+      "source_image": 1,
+      "source_row": 4,
+      "kickoff_display": "PREGAME",
+      "status_at_receipt": "PREGAME"
+    },
+    {
+      "date": "2026-10-29",
+      "away_team": "Troy",
+      "home_team": "James Madison",
+      "source_image": 1,
+      "source_row": 5,
+      "kickoff_display": "PREGAME",
+      "status_at_receipt": "PREGAME"
+    },
+    {
+      "date": "2026-10-29",
+      "away_team": "Florida Atlantic",
+      "home_team": "North Texas",
+      "source_image": 1,
+      "source_row": 6,
+      "kickoff_display": "PREGAME",
+      "status_at_receipt": "PREGAME"
+    },
+    {
+      "date": "2026-10-30",
+      "away_team": "Tulane",
+      "home_team": "Charlotte",
+      "source_image": 1,
+      "source_row": 7,
+      "kickoff_display": "PREGAME",
+      "status_at_receipt": "PREGAME"
+    },
+    {
+      "date": "2026-10-30",
+      "away_team": "Baylor",
+      "home_team": "UCF",
+      "source_image": 1,
+      "source_row": 8,
+      "kickoff_display": "PREGAME",
+      "status_at_receipt": "PREGAME"
+    },
+    {
+      "date": "2026-10-30",
+      "away_team": "Kent State",
+      "home_team": "Sacramento State",
+      "source_image": 1,
+      "source_row": 9,
+      "kickoff_display": "PREGAME",
+      "status_at_receipt": "PREGAME"
+    },
+    {
+      "date": "2026-10-31",
+      "away_team": "Boston College",
+      "home_team": "Duke",
+      "source_image": 2,
+      "source_row": 1,
+      "kickoff_display": "Sat 11:00am",
+      "status_at_receipt": "PREGAME"
+    },
+    {
+      "date": "2026-10-31",
+      "away_team": "California",
+      "home_team": "NC State",
+      "source_image": 2,
+      "source_row": 2,
+      "kickoff_display": "Sat 11:00am",
+      "status_at_receipt": "PREGAME"
+    },
+    {
+      "date": "2026-10-31",
+      "away_team": "Notre Dame",
+      "home_team": "Navy",
+      "source_image": 2,
+      "source_row": 3,
+      "kickoff_display": "Sat 11:00am",
+      "status_at_receipt": "PREGAME"
+    },
+    {
+      "date": "2026-10-31",
+      "away_team": "UAB",
+      "home_team": "South Florida",
+      "source_image": 2,
+      "source_row": 4,
+      "kickoff_display": "Sat 11:00am",
+      "status_at_receipt": "PREGAME"
+    },
+    {
+      "date": "2026-10-31",
+      "away_team": "Bowling Green",
+      "home_team": "Western Michigan",
+      "source_image": 2,
+      "source_row": 5,
+      "kickoff_display": "Sat 11:00am",
+      "status_at_receipt": "PREGAME"
+    },
+    {
+      "date": "2026-10-31",
+      "away_team": "Illinois",
+      "home_team": "Maryland",
+      "source_image": 2,
+      "source_row": 6,
+      "kickoff_display": "Sat 11:00am",
+      "status_at_receipt": "PREGAME"
+    },
+    {
+      "date": "2026-10-31",
+      "away_team": "Arizona",
+      "home_team": "Texas Tech",
+      "source_image": 2,
+      "source_row": 7,
+      "kickoff_display": "Sat 11:00am",
+      "status_at_receipt": "PREGAME"
+    },
+    {
+      "date": "2026-10-31",
+      "away_team": "SMU",
+      "home_team": "Syracuse",
+      "source_image": 2,
+      "source_row": 8,
+      "kickoff_display": "Sat 11:00am",
+      "status_at_receipt": "PREGAME"
+    },
+    {
+      "date": "2026-10-31",
+      "away_team": "Wisconsin",
+      "home_team": "Iowa",
+      "source_image": 2,
+      "source_row": 9,
+      "kickoff_display": "Sat 11:00am",
+      "status_at_receipt": "PREGAME"
+    },
+    {
+      "date": "2026-10-31",
+      "away_team": "Michigan",
+      "home_team": "Rutgers",
+      "source_image": 2,
+      "source_row": 10,
+      "kickoff_display": "Sat 11:30am",
+      "status_at_receipt": "PREGAME"
+    },
+    {
+      "date": "2026-10-31",
+      "away_team": "Auburn",
+      "home_team": "Ole Miss",
+      "source_image": 2,
+      "source_row": 11,
+      "kickoff_display": "Sat 11:45am",
+      "status_at_receipt": "PREGAME"
+    },
+    {
+      "date": "2026-10-31",
+      "away_team": "Marshall",
+      "home_team": "Old Dominion",
+      "source_image": 3,
+      "source_row": 1,
+      "kickoff_display": "Sat 12:00pm",
+      "status_at_receipt": "PREGAME"
+    },
+    {
+      "date": "2026-10-31",
+      "away_team": "Kansas State",
+      "home_team": "Colorado",
+      "source_image": 3,
+      "source_row": 2,
+      "kickoff_display": "Sat 1:00pm",
+      "status_at_receipt": "PREGAME"
+    },
+    {
+      "date": "2026-10-31",
+      "away_team": "Coastal Carolina",
+      "home_team": "Georgia State",
+      "source_image": 3,
+      "source_row": 3,
+      "kickoff_display": "Sat 1:00pm",
+      "status_at_receipt": "PREGAME"
+    },
+    {
+      "date": "2026-10-31",
+      "away_team": "UConn",
+      "home_team": "Air Force",
+      "source_image": 3,
+      "source_row": 4,
+      "kickoff_display": "Sat 2:00pm",
+      "status_at_receipt": "PREGAME"
+    },
+    {
+      "date": "2026-10-31",
+      "away_team": "Temple",
+      "home_team": "East Carolina",
+      "source_image": 3,
+      "source_row": 5,
+      "kickoff_display": "Sat 2:00pm",
+      "status_at_receipt": "PREGAME"
+    },
+    {
+      "date": "2026-10-31",
+      "away_team": "Louisiana Tech",
+      "home_team": "South Alabama",
+      "source_image": 3,
+      "source_row": 6,
+      "kickoff_display": "Sat 2:00pm",
+      "status_at_receipt": "PREGAME"
+    },
+    {
+      "date": "2026-10-31",
+      "away_team": "Stanford",
+      "home_team": "Louisville",
+      "source_image": 3,
+      "source_row": 7,
+      "kickoff_display": "Sat 2:15pm",
+      "status_at_receipt": "PREGAME"
+    },
+    {
+      "date": "2026-10-31",
+      "away_team": "Arizona State",
+      "home_team": "BYU",
+      "source_image": 3,
+      "source_row": 8,
+      "kickoff_display": "Sat 2:30pm",
+      "status_at_receipt": "PREGAME"
+    },
+    {
+      "date": "2026-10-31",
+      "away_team": "Kansas",
+      "home_team": "TCU",
+      "source_image": 3,
+      "source_row": 9,
+      "kickoff_display": "Sat 2:30pm",
+      "status_at_receipt": "PREGAME"
+    },
+    {
+      "date": "2026-10-31",
+      "away_team": "Northwestern",
+      "home_team": "Oregon",
+      "source_image": 3,
+      "source_row": 10,
+      "kickoff_display": "Sat 2:30pm",
+      "status_at_receipt": "PREGAME"
+    },
+    {
+      "date": "2026-10-31",
+      "away_team": "Florida International",
+      "home_team": "Liberty",
+      "source_image": 3,
+      "source_row": 11,
+      "kickoff_display": "Sat 2:30pm",
+      "status_at_receipt": "PREGAME"
+    },
+    {
+      "date": "2026-10-31",
+      "away_team": "Florida",
+      "home_team": "Georgia",
+      "source_image": 4,
+      "source_row": 1,
+      "kickoff_display": "Sat 2:30pm",
+      "status_at_receipt": "PREGAME"
+    },
+    {
+      "date": "2026-10-31",
+      "away_team": "Colorado State",
+      "home_team": "Utah State",
+      "source_image": 4,
+      "source_row": 2,
+      "kickoff_display": "Sat 2:30pm",
+      "status_at_receipt": "PREGAME"
+    },
+    {
+      "date": "2026-10-31",
+      "away_team": "Southern Miss",
+      "home_team": "Louisiana-Monroe",
+      "source_image": 4,
+      "source_row": 3,
+      "kickoff_display": "Sat 2:30pm",
+      "status_at_receipt": "PREGAME"
+    },
+    {
+      "date": "2026-10-31",
+      "away_team": "Minnesota",
+      "home_team": "Indiana",
+      "source_image": 4,
+      "source_row": 4,
+      "kickoff_display": "Sat 2:30pm",
+      "status_at_receipt": "PREGAME"
+    },
+    {
+      "date": "2026-10-31",
+      "away_team": "UTEP",
+      "home_team": "North Dakota State",
+      "source_image": 4,
+      "source_row": 5,
+      "kickoff_display": "Sat 2:30pm",
+      "status_at_receipt": "PREGAME"
+    },
+    {
+      "date": "2026-10-31",
+      "away_team": "Virginia",
+      "home_team": "Wake Forest",
+      "source_image": 4,
+      "source_row": 6,
+      "kickoff_display": "Sat 2:45pm",
+      "status_at_receipt": "PREGAME"
+    },
+    {
+      "date": "2026-10-31",
+      "away_team": "Utah",
+      "home_team": "Cincinnati",
+      "source_image": 4,
+      "source_row": 7,
+      "kickoff_display": "Sat 2:45pm",
+      "status_at_receipt": "PREGAME"
+    },
+    {
+      "date": "2026-10-31",
+      "away_team": "New Mexico",
+      "home_team": "San Jose State",
+      "source_image": 4,
+      "source_row": 8,
+      "kickoff_display": "Sat 3:00pm",
+      "status_at_receipt": "PREGAME"
+    },
+    {
+      "date": "2026-10-31",
+      "away_team": "South Carolina",
+      "home_team": "Oklahoma",
+      "source_image": 4,
+      "source_row": 9,
+      "kickoff_display": "Sat 3:15pm",
+      "status_at_receipt": "PREGAME"
+    },
+    {
+      "date": "2026-10-31",
+      "away_team": "Nevada",
+      "home_team": "UCLA",
+      "source_image": 4,
+      "source_row": 10,
+      "kickoff_display": "Sat 3:15pm",
+      "status_at_receipt": "PREGAME"
+    },
+    {
+      "date": "2026-10-31",
+      "away_team": "Purdue",
+      "home_team": "Penn State",
+      "source_image": 4,
+      "source_row": 11,
+      "kickoff_display": "Sat 3:15pm",
+      "status_at_receipt": "PREGAME"
+    },
+    {
+      "date": "2026-10-31",
+      "away_team": "Appalachian State",
+      "home_team": "Georgia Southern",
+      "source_image": 5,
+      "source_row": 1,
+      "kickoff_display": "Sat 5:30pm",
+      "status_at_receipt": "PREGAME"
+    },
+    {
+      "date": "2026-10-31",
+      "away_team": "Washington State",
+      "home_team": "San Diego State",
+      "source_image": 5,
+      "source_row": 2,
+      "kickoff_display": "Sat 6:00pm",
+      "status_at_receipt": "PREGAME"
+    },
+    {
+      "date": "2026-10-31",
+      "away_team": "Oklahoma State",
+      "home_team": "Iowa State",
+      "source_image": 5,
+      "source_row": 3,
+      "kickoff_display": "Sat 6:00pm",
+      "status_at_receipt": "PREGAME"
+    },
+    {
+      "date": "2026-10-31",
+      "away_team": "Clemson",
+      "home_team": "Florida State",
+      "source_image": 5,
+      "source_row": 4,
+      "kickoff_display": "Sat 6:00pm",
+      "status_at_receipt": "PREGAME"
+    },
+    {
+      "date": "2026-10-31",
+      "away_team": "Ohio State",
+      "home_team": "USC",
+      "source_image": 5,
+      "source_row": 5,
+      "kickoff_display": "Sat 6:30pm",
+      "status_at_receipt": "PREGAME"
+    },
+    {
+      "date": "2026-10-31",
+      "away_team": "Mississippi State",
+      "home_team": "Texas",
+      "source_image": 5,
+      "source_row": 6,
+      "kickoff_display": "Sat 6:30pm",
+      "status_at_receipt": "PREGAME"
+    },
+    {
+      "date": "2026-10-31",
+      "away_team": "Miami (FL)",
+      "home_team": "North Carolina",
+      "source_image": 5,
+      "source_row": 7,
+      "kickoff_display": "Sat 6:30pm",
+      "status_at_receipt": "PREGAME"
+    },
+    {
+      "date": "2026-10-31",
+      "away_team": "Georgia Tech",
+      "home_team": "Pittsburgh",
+      "source_image": 5,
+      "source_row": 8,
+      "kickoff_display": "Sat 6:30pm",
+      "status_at_receipt": "PREGAME"
+    },
+    {
+      "date": "2026-10-31",
+      "away_team": "Missouri",
+      "home_team": "Arkansas",
+      "source_image": 5,
+      "source_row": 9,
+      "kickoff_display": "Sat 6:45pm",
+      "status_at_receipt": "PREGAME"
+    },
+    {
+      "date": "2026-10-31",
+      "away_team": "Army",
+      "home_team": "Memphis",
+      "source_image": 5,
+      "source_row": 10,
+      "kickoff_display": "Sat 7:00pm",
+      "status_at_receipt": "PREGAME"
+    },
+    {
+      "date": "2026-10-31",
+      "away_team": "Washington",
+      "home_team": "Nebraska",
+      "source_image": 5,
+      "source_row": 11,
+      "kickoff_display": "Sat 7:00pm",
+      "status_at_receipt": "PREGAME"
+    },
+    {
+      "date": "2026-10-31",
+      "away_team": "Texas State",
+      "home_team": "Boise State",
+      "source_image": 6,
+      "source_row": 1,
+      "kickoff_display": "Sat 9:00pm",
+      "status_at_receipt": "PREGAME"
+    },
+    {
+      "date": "2026-10-31",
+      "away_team": "Northern Illinois",
+      "home_team": "UNLV",
+      "source_image": 6,
+      "source_row": 2,
+      "kickoff_display": "Sat 9:30pm",
+      "status_at_receipt": "PREGAME"
+    },
+    {
+      "date": "2026-10-31",
+      "away_team": "Oregon State",
+      "home_team": "Fresno State",
+      "source_image": 6,
+      "source_row": 3,
+      "kickoff_display": "Sat 10:00pm",
+      "status_at_receipt": "PREGAME"
+    }
+  ]
+}
