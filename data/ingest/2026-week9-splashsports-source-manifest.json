@@ -45,7 +45,7 @@
       "home_team": "Middle Tennessee",
       "source_image": 1,
       "source_row": 3,
-      "kickoff_display": "PREGAME",
+      "kickoff_display": "Wed 6:00pm",
       "status_at_receipt": "PREGAME"
     },
     {
@@ -54,7 +54,7 @@
       "home_team": "New Mexico State",
       "source_image": 1,
       "source_row": 4,
-      "kickoff_display": "PREGAME",
+      "kickoff_display": "Wed 7:00pm",
       "status_at_receipt": "PREGAME"
     },
     {
@@ -63,7 +63,7 @@
       "home_team": "James Madison",
       "source_image": 1,
       "source_row": 5,
-      "kickoff_display": "PREGAME",
+      "kickoff_display": "Thu 6:30pm",
       "status_at_receipt": "PREGAME"
     },
     {
@@ -72,7 +72,7 @@
       "home_team": "North Texas",
       "source_image": 1,
       "source_row": 6,
-      "kickoff_display": "PREGAME",
+      "kickoff_display": "Thu 6:30pm",
       "status_at_receipt": "PREGAME"
     },
     {
@@ -81,7 +81,7 @@
       "home_team": "Charlotte",
       "source_image": 1,
       "source_row": 7,
-      "kickoff_display": "PREGAME",
+      "kickoff_display": "Fri 6:00pm",
       "status_at_receipt": "PREGAME"
     },
     {
@@ -90,7 +90,7 @@
       "home_team": "UCF",
       "source_image": 1,
       "source_row": 8,
-      "kickoff_display": "PREGAME",
+      "kickoff_display": "Fri 6:30pm",
       "status_at_receipt": "PREGAME"
     },
     {
@@ -99,7 +99,7 @@
       "home_team": "Sacramento State",
       "source_image": 1,
       "source_row": 9,
-      "kickoff_display": "PREGAME",
+      "kickoff_display": "Fri 9:30pm",
       "status_at_receipt": "PREGAME"
     },
     {
@@ -525,5 +525,6 @@
       "kickoff_display": "Sat 10:00pm",
       "status_at_receipt": "PREGAME"
     }
-  ]
+  ],
+  "provenance_note": "The original screenshot line values remain unchanged. Manifest kickoff labels for image 1 rows 3–9 were corrected in a subsequent Git commit before modeling or lock acceptance; Git history retains the previous version."
 }
