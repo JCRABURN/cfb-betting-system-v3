@@ -1,0 +1,88 @@
+{
+  "records": [
+    {
+      "name": "sunbelt-availability",
+      "url": "https://sunbeltsports.org/news/2025/8/11/football-availability-report-new.aspx",
+      "requested_at_utc": "2026-10-28T23:12:49.478871+00:00",
+      "received_at_utc": "2026-10-28T23:12:49.624283+00:00",
+      "http_status": 404,
+      "resolved_url": "https://sunbeltsports.org/news/2025/8/11/football-availability-report-new.aspx",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "content_type": null,
+      "status": "UNAVAILABLE_HTTP_ERROR",
+      "path": "sunbelt-availability.html.gz"
+    },
+    {
+      "name": "sunbelt-week9",
+      "url": "https://sunbeltsports.org/news/2026/10/28/clashes-atop-sun-belt-east-west-divisions-championship-game-rematch-dot-sun-belt-football-week-9-slate.aspx",
+      "requested_at_utc": "2026-10-28T23:12:49.624283+00:00",
+      "received_at_utc": "2026-10-28T23:12:49.704264+00:00",
+      "http_status": 404,
+      "resolved_url": "https://sunbeltsports.org/news/2026/10/28/clashes-atop-sun-belt-east-west-divisions-championship-game-rematch-dot-sun-belt-football-week-9-slate.aspx",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "content_type": null,
+      "status": "UNAVAILABLE_HTTP_ERROR",
+      "path": "sunbelt-week9.html.gz"
+    },
+    {
+      "name": "fau-countdown",
+      "url": "https://fausports.com/news/2026/10/28/football-countdown-to-kickoff-game-8-at-north-texas",
+      "requested_at_utc": "2026-10-28T23:12:49.704264+00:00",
+      "received_at_utc": "2026-10-28T23:12:50.655444+00:00",
+      "http_status": 200,
+      "resolved_url": "https://fausports.com/news/2026/10/28/football-countdown-to-kickoff-game-8-at-north-texas",
+      "sha256": "d9833fe1a8203ad8064cb0bbe7f408d75ff2bec1064f3150f8e643200670cc2f",
+      "content_type": "text/html;charset=utf-8",
+      "status": "CAPTURED",
+      "path": "fau-countdown.html.gz"
+    },
+    {
+      "name": "jmu-notes",
+      "url": "https://jmusports.com/documents/download/2026/10/26/2026_JMU_Football_Game_Notes_-_Troy.pdf",
+      "requested_at_utc": "2026-10-28T23:12:50.689040+00:00",
+      "received_at_utc": "2026-10-28T23:12:52.321606+00:00",
+      "http_status": 200,
+      "resolved_url": "https://jmusports.com/documents/download/2026/10/26/2026_JMU_Football_Game_Notes_-_Troy.pdf",
+      "sha256": "c84fbd1f4944438ab64e5950c8b485b1379b0e25171c49fbafdc0b08ea83a2aa",
+      "content_type": "application/pdf",
+      "status": "CAPTURED",
+      "path": "jmu-notes.pdf"
+    },
+    {
+      "name": "unt-notes",
+      "url": "https://meangreensports.com/documents/download/2026/10/27/UNT_FB_Game_Notes_2026_8_FAU.pdf",
+      "requested_at_utc": "2026-10-28T23:12:52.339081+00:00",
+      "received_at_utc": "2026-10-28T23:12:53.782400+00:00",
+      "http_status": 200,
+      "resolved_url": "https://meangreensports.com/documents/download/2026/10/27/UNT_FB_Game_Notes_2026_8_FAU.pdf",
+      "sha256": "7ec2239a25dcda5aaccd23125934ed2689d2bb2d5f26145808f7bcca46bcb075",
+      "content_type": "application/pdf",
+      "status": "CAPTURED",
+      "path": "unt-notes.pdf"
+    },
+    {
+      "name": "fau-notes",
+      "url": "https://fausports.com/documents/download/2026/10/26/2026_Game_Notes__8_remediated.pdf",
+      "requested_at_utc": "2026-10-28T23:12:53.787487+00:00",
+      "received_at_utc": "2026-10-28T23:12:56.017788+00:00",
+      "http_status": 200,
+      "resolved_url": "https://fausports.com/documents/download/2026/10/26/2026_Game_Notes__8_remediated.pdf",
+      "sha256": "778770ce550e783411d0fc130e26b37f43f95c299d6706f094c986b6ea16ff09",
+      "content_type": "application/pdf",
+      "status": "CAPTURED",
+      "path": "fau-notes.pdf"
+    },
+    {
+      "name": "american-football",
+      "url": "https://theamerican.org/sports/football",
+      "requested_at_utc": "2026-10-28T23:12:56.053161+00:00",
+      "received_at_utc": "2026-10-28T23:12:56.221913+00:00",
+      "http_status": 200,
+      "resolved_url": "https://theamerican.org/sports/football",
+      "sha256": "43c3d9070388c08c87fb17a649daa8f5ce4c16e6390f05ee373c947729b97344",
+      "content_type": "text/html; charset=utf-8",
+      "status": "CAPTURED",
+      "path": "american-football.html.gz"
+    }
+  ]
+}
