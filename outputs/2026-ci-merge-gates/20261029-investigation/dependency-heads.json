@@ -1,0 +1,112 @@
+[
+  {
+    "number": 35,
+    "head": "57c33b29aa399e4d94c749f6e2d25a6e80b48262",
+    "branch": "codex/2026-week6-postgame-audit",
+    "base": "abb4eb26bd1140e66972d2f1143cd587e80960b4",
+    "state": "open",
+    "draft": true,
+    "merged": false,
+    "mergeable": true
+  },
+  {
+    "number": 36,
+    "head": "48d0250aff3fc286b7b8bd06e7e798a4134910a5",
+    "branch": "codex/week6-ranking-calibration-research",
+    "base": "57c33b29aa399e4d94c749f6e2d25a6e80b48262",
+    "state": "open",
+    "draft": true,
+    "merged": false,
+    "mergeable": true
+  },
+  {
+    "number": 37,
+    "head": "55c0a417c72492943253ad50cf139415ca3902be",
+    "branch": "codex/2026-week7-prospective-validation",
+    "base": "48d0250aff3fc286b7b8bd06e7e798a4134910a5",
+    "state": "open",
+    "draft": true,
+    "merged": false,
+    "mergeable": true
+  },
+  {
+    "number": 38,
+    "head": "da7381b801abee170a8b321cf77d833626230a11",
+    "branch": "codex/2026-week7-postgame-audit",
+    "base": "abb4eb26bd1140e66972d2f1143cd587e80960b4",
+    "state": "open",
+    "draft": true,
+    "merged": false,
+    "mergeable": true
+  },
+  {
+    "number": 39,
+    "head": "3148e4fe7cd7ab9387048386903db68ad7c2de4b",
+    "branch": "codex/2026-week8-splashsports-ingest",
+    "base": "da7381b801abee170a8b321cf77d833626230a11",
+    "state": "open",
+    "draft": true,
+    "merged": false,
+    "mergeable": true
+  },
+  {
+    "number": 40,
+    "head": "5f07ca3d9e52d1b467886856f1ec6f36562728a3",
+    "branch": "codex/week7-acceptance-evidence",
+    "base": "abb4eb26bd1140e66972d2f1143cd587e80960b4",
+    "state": "open",
+    "draft": true,
+    "merged": false,
+    "mergeable": true
+  },
+  {
+    "number": 41,
+    "head": "78ed6eb5540f66ba3193f91366c802e27e3cb9c7",
+    "branch": "codex/audit-integrity-repair",
+    "base": "abb4eb26bd1140e66972d2f1143cd587e80960b4",
+    "state": "open",
+    "draft": true,
+    "merged": false,
+    "mergeable": true
+  },
+  {
+    "number": 42,
+    "head": "7f42da36f9aef4666bb715d49babde7ee374defa",
+    "branch": "codex/week8-continuity",
+    "base": "abb4eb26bd1140e66972d2f1143cd587e80960b4",
+    "state": "open",
+    "draft": true,
+    "merged": false,
+    "mergeable": true
+  },
+  {
+    "number": 43,
+    "head": "43807ae374b9db143c1d9675d7a7cafe6e2f28ba",
+    "branch": "codex/2026-week9-splashsports-ingest",
+    "base": "7f42da36f9aef4666bb715d49babde7ee374defa",
+    "state": "open",
+    "draft": true,
+    "merged": false,
+    "mergeable": true
+  },
+  {
+    "number": 44,
+    "head": "922f1f8f8c66ef14674eb9aa20db144a45dada68",
+    "branch": "codex/week8-postgame-audit",
+    "base": "abb4eb26bd1140e66972d2f1143cd587e80960b4",
+    "state": "open",
+    "draft": true,
+    "merged": false,
+    "mergeable": true
+  },
+  {
+    "number": 45,
+    "head": "6e1948dd9b675a3f1226350ce5b40a6556e09f7a",
+    "branch": "codex/week9-prospective-execution",
+    "base": "abb4eb26bd1140e66972d2f1143cd587e80960b4",
+    "state": "open",
+    "draft": true,
+    "merged": false,
+    "mergeable": true
+  }
+]

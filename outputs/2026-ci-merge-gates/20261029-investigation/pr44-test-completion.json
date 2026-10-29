@@ -1,0 +1,17 @@
+{
+  "tested_commit": "922f1f8f8c66ef14674eb9aa20db144a45dada68",
+  "started_at_utc": "2026-10-29T21:42:14.200320+00:00",
+  "cwd": "C:\\Users\\jraburn\\Documents\\GitHub\\cfb-betting-system-v3\\.worktrees\\pr44-verification",
+  "command": [
+    "C:/Users/jraburn/Documents/GitHub/cfb-betting-system-v3/.venv/Scripts/python.exe",
+    "-m",
+    "pytest",
+    "-q"
+  ],
+  "tracked_diff_before": "",
+  "completed_at_utc": "2026-10-29T21:45:31.247166+00:00",
+  "head_after": "922f1f8f8c66ef14674eb9aa20db144a45dada68",
+  "exit_code": 0,
+  "tracked_diff_after": "",
+  "log_sha256": "9f32373b6ffa98522ac6fad24ce1929c0dabcc629c11bd7dcc194418ed17006e"
+}

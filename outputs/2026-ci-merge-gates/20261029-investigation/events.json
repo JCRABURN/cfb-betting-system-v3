@@ -1,0 +1,3703 @@
+{
+  "endpoint": "events?per_page=100",
+  "requested_at_utc": "2026-10-29T21:38:50.969909+00:00",
+  "received_at_utc": "2026-10-29T21:38:51.684907+00:00",
+  "http_status": 200,
+  "body": [
+    {
+      "id": "25554992200",
+      "type": "PushEvent",
+      "actor": {
+        "id": 215523089,
+        "login": "JCRABURN",
+        "display_login": "JCRABURN",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/JCRABURN",
+        "avatar_url": "https://avatars.githubusercontent.com/u/215523089?"
+      },
+      "repo": {
+        "id": 1323187714,
+        "name": "JCRABURN/cfb-betting-system-v3",
+        "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3"
+      },
+      "payload": {
+        "repository_id": 1323187714,
+        "push_id": 48040550743,
+        "ref": "refs/heads/codex/2026-week9-splashsports-ingest",
+        "head": "db82104ec5ace6ef0e924beda20c97f5c21d0143",
+        "before": "92a5b7730bf61e06c91cca2a7d5673bef97be204"
+      },
+      "public": true,
+      "created_at": "2026-10-28T02:36:24Z"
+    },
+    {
+      "id": "25553794262",
+      "type": "PushEvent",
+      "actor": {
+        "id": 215523089,
+        "login": "JCRABURN",
+        "display_login": "JCRABURN",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/JCRABURN",
+        "avatar_url": "https://avatars.githubusercontent.com/u/215523089?"
+      },
+      "repo": {
+        "id": 1323187714,
+        "name": "JCRABURN/cfb-betting-system-v3",
+        "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3"
+      },
+      "payload": {
+        "repository_id": 1323187714,
+        "push_id": 48040587453,
+        "ref": "refs/heads/codex/2026-week9-splashsports-ingest",
+        "head": "43807ae374b9db143c1d9675d7a7cafe6e2f28ba",
+        "before": "db82104ec5ace6ef0e924beda20c97f5c21d0143"
+      },
+      "public": true,
+      "created_at": "2026-10-28T02:36:55Z"
+    },
+    {
+      "id": "25538296780",
+      "type": "PushEvent",
+      "actor": {
+        "id": 215523089,
+        "login": "JCRABURN",
+        "display_login": "JCRABURN",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/JCRABURN",
+        "avatar_url": "https://avatars.githubusercontent.com/u/215523089?"
+      },
+      "repo": {
+        "id": 1323187714,
+        "name": "JCRABURN/cfb-betting-system-v3",
+        "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3"
+      },
+      "payload": {
+        "repository_id": 1323187714,
+        "push_id": 48040547747,
+        "ref": "refs/heads/codex/2026-week9-splashsports-ingest",
+        "head": "92a5b7730bf61e06c91cca2a7d5673bef97be204",
+        "before": "7f42da36f9aef4666bb715d49babde7ee374defa"
+      },
+      "public": true,
+      "created_at": "2026-10-28T02:36:22Z"
+    },
+    {
+      "id": "25538290688",
+      "type": "CreateEvent",
+      "actor": {
+        "id": 215523089,
+        "login": "JCRABURN",
+        "display_login": "JCRABURN",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/JCRABURN",
+        "avatar_url": "https://avatars.githubusercontent.com/u/215523089?"
+      },
+      "repo": {
+        "id": 1323187714,
+        "name": "JCRABURN/cfb-betting-system-v3",
+        "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3"
+      },
+      "payload": {
+        "ref": "codex/2026-week9-splashsports-ingest",
+        "ref_type": "branch",
+        "full_ref": "refs/heads/codex/2026-week9-splashsports-ingest",
+        "master_branch": "main",
+        "description": null,
+        "pusher_type": "user"
+      },
+      "public": true,
+      "created_at": "2026-10-28T02:36:16Z"
+    },
+    {
+      "id": "25522479818",
+      "type": "PushEvent",
+      "actor": {
+        "id": 215523089,
+        "login": "JCRABURN",
+        "display_login": "JCRABURN",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/JCRABURN",
+        "avatar_url": "https://avatars.githubusercontent.com/u/215523089?"
+      },
+      "repo": {
+        "id": 1323187714,
+        "name": "JCRABURN/cfb-betting-system-v3",
+        "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3"
+      },
+      "payload": {
+        "repository_id": 1323187714,
+        "push_id": 48102551040,
+        "ref": "refs/heads/codex/week9-prospective-execution",
+        "head": "e3a9a10ed63c0aa003d16e88208331d1ff81e170",
+        "before": "bcd1b603dc70b24e0154d5a2f8b5cef5c0bc48ed"
+      },
+      "public": true,
+      "created_at": "2026-10-28T13:58:37Z"
+    },
+    {
+      "id": "25509657487",
+      "type": "CreateEvent",
+      "actor": {
+        "id": 215523089,
+        "login": "JCRABURN",
+        "display_login": "JCRABURN",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/JCRABURN",
+        "avatar_url": "https://avatars.githubusercontent.com/u/215523089?"
+      },
+      "repo": {
+        "id": 1323187714,
+        "name": "JCRABURN/cfb-betting-system-v3",
+        "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3"
+      },
+      "payload": {
+        "ref": "codex/week9-prospective-execution",
+        "ref_type": "branch",
+        "full_ref": "refs/heads/codex/week9-prospective-execution",
+        "master_branch": "main",
+        "description": null,
+        "pusher_type": "user"
+      },
+      "public": true,
+      "created_at": "2026-10-28T13:44:40Z"
+    },
+    {
+      "id": "18502593789",
+      "type": "PullRequestReviewEvent",
+      "actor": {
+        "id": 215523089,
+        "login": "JCRABURN",
+        "display_login": "JCRABURN",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/JCRABURN",
+        "avatar_url": "https://avatars.githubusercontent.com/u/215523089?"
+      },
+      "repo": {
+        "id": 1323187714,
+        "name": "JCRABURN/cfb-betting-system-v3",
+        "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3"
+      },
+      "payload": {
+        "review": {
+          "id": 5690865367,
+          "node_id": "PRR_kwDOTt4-As8AAAABUzO21w",
+          "user": {
+            "login": "JCRABURN",
+            "id": 215523089,
+            "node_id": "U_kgDODNifEQ",
+            "avatar_url": "https://avatars.githubusercontent.com/u/215523089?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/JCRABURN",
+            "html_url": "https://github.com/JCRABURN",
+            "followers_url": "https://api.github.com/users/JCRABURN/followers",
+            "following_url": "https://api.github.com/users/JCRABURN/following{/other_user}",
+            "gists_url": "https://api.github.com/users/JCRABURN/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/JCRABURN/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/JCRABURN/subscriptions",
+            "organizations_url": "https://api.github.com/users/JCRABURN/orgs",
+            "repos_url": "https://api.github.com/users/JCRABURN/repos",
+            "events_url": "https://api.github.com/users/JCRABURN/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/JCRABURN/received_events",
+            "type": "User",
+            "user_view_type": "public",
+            "site_admin": false
+          },
+          "body": "Review at new head `db007694`: additive evening evidence appears to preserve the frozen Week 9 54 ATS/54 totals card, the owner-review PENDING status, and prior model/source bytes. Official Troy Oct 28 preview supports JMU RB Pettaway absence, but also documents JMU 50.3 points/game at home, Troy 11 points/game on the road, and recurring Troy QB injury; therefore Troy +20.5 remains low conviction. Oregon's 6.973/-2.092-point input sensitivity correctly must NOT be represented as a causal Moore valuation or added adjustment. FAU-UNT Under 77.5 is high risk given offensive/return-score tails.\n\nVerification discrepancy to reconcile before merge: `outputs/2026-week9-verification/20261028-evening-full-suite.txt` ends `809 passed, 39 warnings in 203.82s`, and `20261028-evening/integration-gates.json` identifies `tested_commit` as `e3a9a10...`; the owner-delivered summary claims `809 passed ... 240.94 seconds` on the exact final `db007694...` commit. Please attach the claimed final-head test log with immutable run/commit provenance, or correct the claim and explicitly establish new head differs only by additive evidence/documentation. The new head has zero GitHub statuses/workflow runs and no APPROVED independent review. Hold merge pending this reconciliation and independent validation. Do not approve owner contest selections or alter locked lines/v2.8; retain missing historical CLV as INCOMPLETE.",
+          "commit_id": "db007694d3ee87d3a2b85feacd1fd9b7a2d10fb0",
+          "state": "commented",
+          "html_url": "https://github.com/JCRABURN/cfb-betting-system-v3/pull/45#pullrequestreview-5690865367",
+          "pull_request_url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3/pulls/45",
+          "_links": {
+            "html": {
+              "href": "https://github.com/JCRABURN/cfb-betting-system-v3/pull/45#pullrequestreview-5690865367"
+            },
+            "pull_request": {
+              "href": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3/pulls/45"
+            }
+          },
+          "submitted_at": "2026-10-28T23:07:18Z",
+          "updated_at": "2026-10-28T23:07:18Z"
+        },
+        "pull_request": {
+          "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3/pulls/45",
+          "id": 5051582224,
+          "number": 45,
+          "head": {
+            "ref": "codex/week9-prospective-execution",
+            "sha": "6e1948dd9b675a3f1226350ce5b40a6556e09f7a",
+            "repo": {
+              "id": 1323187714,
+              "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3",
+              "name": "cfb-betting-system-v3"
+            }
+          },
+          "base": {
+            "ref": "main",
+            "sha": "abb4eb26bd1140e66972d2f1143cd587e80960b4",
+            "repo": {
+              "id": 1323187714,
+              "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3",
+              "name": "cfb-betting-system-v3"
+            }
+          }
+        },
+        "action": "created"
+      },
+      "public": true,
+      "created_at": "2026-10-28T23:07:20Z"
+    },
+    {
+      "id": "18500251135",
+      "type": "PullRequestReviewEvent",
+      "actor": {
+        "id": 215523089,
+        "login": "JCRABURN",
+        "display_login": "JCRABURN",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/JCRABURN",
+        "avatar_url": "https://avatars.githubusercontent.com/u/215523089?"
+      },
+      "repo": {
+        "id": 1323187714,
+        "name": "JCRABURN/cfb-betting-system-v3",
+        "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3"
+      },
+      "payload": {
+        "review": {
+          "id": 5690613152,
+          "node_id": "PRR_kwDOTt4-As8AAAABUy_doA",
+          "user": {
+            "login": "JCRABURN",
+            "id": 215523089,
+            "node_id": "U_kgDODNifEQ",
+            "avatar_url": "https://avatars.githubusercontent.com/u/215523089?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/JCRABURN",
+            "html_url": "https://github.com/JCRABURN",
+            "followers_url": "https://api.github.com/users/JCRABURN/followers",
+            "following_url": "https://api.github.com/users/JCRABURN/following{/other_user}",
+            "gists_url": "https://api.github.com/users/JCRABURN/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/JCRABURN/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/JCRABURN/subscriptions",
+            "organizations_url": "https://api.github.com/users/JCRABURN/orgs",
+            "repos_url": "https://api.github.com/users/JCRABURN/repos",
+            "events_url": "https://api.github.com/users/JCRABURN/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/JCRABURN/received_events",
+            "type": "User",
+            "user_view_type": "public",
+            "site_admin": false
+          },
+          "body": "Week 9 review: 56 screenshot games reconcile; 2 elapsed Tuesday games excluded; frozen 54 ATS + 54 totals and source/lock custody are documented. Owner approval is expressly PENDING, and frozen model ranking is separated from the subjective five. Do not treat the proposed Northwestern/Navy/Southern Miss/SJSU/FAU list as approved. Key decision risks: governed ATS confidence is uniformly 1; mixed ATS/totals score scales are not calibrated; SJSU +14.5 and FAU\u2013UNT Under 77.5 have human confidence 1 and unresolved QB/pace/possession risks. Current Week 9 market quotes lack historical closing-line timestamps; start capture of time-qualified quotes before kickoff where available, without modifying locked contest lines. No GitHub CI statuses or PR-triggered runs/reviews exist at head; the 809 locally reported passes are not an independent CI pass. Rerun strict gates on the final integration head and obtain independent review before merging. No v2.8 changes or retrospective rewrites.",
+          "commit_id": "e3a9a10ed63c0aa003d16e88208331d1ff81e170",
+          "state": "commented",
+          "html_url": "https://github.com/JCRABURN/cfb-betting-system-v3/pull/45#pullrequestreview-5690613152",
+          "pull_request_url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3/pulls/45",
+          "_links": {
+            "html": {
+              "href": "https://github.com/JCRABURN/cfb-betting-system-v3/pull/45#pullrequestreview-5690613152"
+            },
+            "pull_request": {
+              "href": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3/pulls/45"
+            }
+          },
+          "submitted_at": "2026-10-28T22:36:36Z",
+          "updated_at": "2026-10-28T22:36:36Z"
+        },
+        "pull_request": {
+          "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3/pulls/45",
+          "id": 5051582224,
+          "number": 45,
+          "head": {
+            "ref": "codex/week9-prospective-execution",
+            "sha": "6e1948dd9b675a3f1226350ce5b40a6556e09f7a",
+            "repo": {
+              "id": 1323187714,
+              "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3",
+              "name": "cfb-betting-system-v3"
+            }
+          },
+          "base": {
+            "ref": "main",
+            "sha": "abb4eb26bd1140e66972d2f1143cd587e80960b4",
+            "repo": {
+              "id": 1323187714,
+              "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3",
+              "name": "cfb-betting-system-v3"
+            }
+          }
+        },
+        "action": "created"
+      },
+      "public": true,
+      "created_at": "2026-10-28T22:36:37Z"
+    },
+    {
+      "id": "18500247373",
+      "type": "PullRequestReviewEvent",
+      "actor": {
+        "id": 215523089,
+        "login": "JCRABURN",
+        "display_login": "JCRABURN",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/JCRABURN",
+        "avatar_url": "https://avatars.githubusercontent.com/u/215523089?"
+      },
+      "repo": {
+        "id": 1323187714,
+        "name": "JCRABURN/cfb-betting-system-v3",
+        "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3"
+      },
+      "payload": {
+        "review": {
+          "id": 5690612629,
+          "node_id": "PRR_kwDOTt4-As8AAAABUy_blQ",
+          "user": {
+            "login": "JCRABURN",
+            "id": 215523089,
+            "node_id": "U_kgDODNifEQ",
+            "avatar_url": "https://avatars.githubusercontent.com/u/215523089?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/JCRABURN",
+            "html_url": "https://github.com/JCRABURN",
+            "followers_url": "https://api.github.com/users/JCRABURN/followers",
+            "following_url": "https://api.github.com/users/JCRABURN/following{/other_user}",
+            "gists_url": "https://api.github.com/users/JCRABURN/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/JCRABURN/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/JCRABURN/subscriptions",
+            "organizations_url": "https://api.github.com/users/JCRABURN/orgs",
+            "repos_url": "https://api.github.com/users/JCRABURN/repos",
+            "events_url": "https://api.github.com/users/JCRABURN/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/JCRABURN/received_events",
+            "type": "User",
+            "user_view_type": "public",
+            "site_admin": false
+          },
+          "body": "Review of frozen Week 8 audit evidence: 52 ATS + 52 totals, 26\u201326 and 23\u201329, correctly preserved as separate cohorts with no invented owner-approved five. Research diagnostics properly distinguish calibration defects and CLV INCOMPLETE; no policy promotion. The audit-only diff against #42 is additive (78 files, one commit). Prior to merge, independently verify the integration tree and sealed source identities at the exact head, and preserve the repaired #41 ancestry; no GitHub CI checks/reviews are currently registered at this head. Historical missing CLV is not a reason to discard valid postgame arithmetic. No approval or merge is implied by this comment.",
+          "commit_id": "922f1f8f8c66ef14674eb9aa20db144a45dada68",
+          "state": "commented",
+          "html_url": "https://github.com/JCRABURN/cfb-betting-system-v3/pull/44#pullrequestreview-5690612629",
+          "pull_request_url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3/pulls/44",
+          "_links": {
+            "html": {
+              "href": "https://github.com/JCRABURN/cfb-betting-system-v3/pull/44#pullrequestreview-5690612629"
+            },
+            "pull_request": {
+              "href": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3/pulls/44"
+            }
+          },
+          "submitted_at": "2026-10-28T22:36:32Z",
+          "updated_at": "2026-10-28T22:36:33Z"
+        },
+        "pull_request": {
+          "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3/pulls/44",
+          "id": 5051524455,
+          "number": 44,
+          "head": {
+            "ref": "codex/week8-postgame-audit",
+            "sha": "922f1f8f8c66ef14674eb9aa20db144a45dada68",
+            "repo": {
+              "id": 1323187714,
+              "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3",
+              "name": "cfb-betting-system-v3"
+            }
+          },
+          "base": {
+            "ref": "main",
+            "sha": "abb4eb26bd1140e66972d2f1143cd587e80960b4",
+            "repo": {
+              "id": 1323187714,
+              "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3",
+              "name": "cfb-betting-system-v3"
+            }
+          }
+        },
+        "action": "created"
+      },
+      "public": true,
+      "created_at": "2026-10-28T22:36:34Z"
+    },
+    {
+      "id": "18453984586",
+      "type": "PullRequestEvent",
+      "actor": {
+        "id": 215523089,
+        "login": "JCRABURN",
+        "display_login": "JCRABURN",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/JCRABURN",
+        "avatar_url": "https://avatars.githubusercontent.com/u/215523089?"
+      },
+      "repo": {
+        "id": 1323187714,
+        "name": "JCRABURN/cfb-betting-system-v3",
+        "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3"
+      },
+      "payload": {
+        "action": "opened",
+        "number": 45,
+        "pull_request": {
+          "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3/pulls/45",
+          "id": 5051582224,
+          "number": 45,
+          "head": {
+            "ref": "codex/week9-prospective-execution",
+            "sha": "6e1948dd9b675a3f1226350ce5b40a6556e09f7a",
+            "repo": {
+              "id": 1323187714,
+              "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3",
+              "name": "cfb-betting-system-v3"
+            }
+          },
+          "base": {
+            "ref": "main",
+            "sha": "abb4eb26bd1140e66972d2f1143cd587e80960b4",
+            "repo": {
+              "id": 1323187714,
+              "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3",
+              "name": "cfb-betting-system-v3"
+            }
+          }
+        }
+      },
+      "public": true,
+      "created_at": "2026-10-28T13:48:04Z"
+    },
+    {
+      "id": "18453744763",
+      "type": "PullRequestEvent",
+      "actor": {
+        "id": 215523089,
+        "login": "JCRABURN",
+        "display_login": "JCRABURN",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/JCRABURN",
+        "avatar_url": "https://avatars.githubusercontent.com/u/215523089?"
+      },
+      "repo": {
+        "id": 1323187714,
+        "name": "JCRABURN/cfb-betting-system-v3",
+        "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3"
+      },
+      "payload": {
+        "action": "opened",
+        "number": 44,
+        "pull_request": {
+          "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3/pulls/44",
+          "id": 5051524455,
+          "number": 44,
+          "head": {
+            "ref": "codex/week8-postgame-audit",
+            "sha": "922f1f8f8c66ef14674eb9aa20db144a45dada68",
+            "repo": {
+              "id": 1323187714,
+              "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3",
+              "name": "cfb-betting-system-v3"
+            }
+          },
+          "base": {
+            "ref": "main",
+            "sha": "abb4eb26bd1140e66972d2f1143cd587e80960b4",
+            "repo": {
+              "id": 1323187714,
+              "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3",
+              "name": "cfb-betting-system-v3"
+            }
+          }
+        }
+      },
+      "public": true,
+      "created_at": "2026-10-28T13:44:10Z"
+    },
+    {
+      "id": "18409789722",
+      "type": "PullRequestEvent",
+      "actor": {
+        "id": 215523089,
+        "login": "JCRABURN",
+        "display_login": "JCRABURN",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/JCRABURN",
+        "avatar_url": "https://avatars.githubusercontent.com/u/215523089?"
+      },
+      "repo": {
+        "id": 1323187714,
+        "name": "JCRABURN/cfb-betting-system-v3",
+        "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3"
+      },
+      "payload": {
+        "action": "opened",
+        "number": 43,
+        "pull_request": {
+          "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3/pulls/43",
+          "id": 5044259387,
+          "number": 43,
+          "head": {
+            "ref": "codex/2026-week9-splashsports-ingest",
+            "sha": "43807ae374b9db143c1d9675d7a7cafe6e2f28ba",
+            "repo": {
+              "id": 1323187714,
+              "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3",
+              "name": "cfb-betting-system-v3"
+            }
+          },
+          "base": {
+            "ref": "codex/week8-continuity",
+            "sha": "7f42da36f9aef4666bb715d49babde7ee374defa",
+            "repo": {
+              "id": 1323187714,
+              "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3",
+              "name": "cfb-betting-system-v3"
+            }
+          }
+        }
+      },
+      "public": true,
+      "created_at": "2026-10-28T02:37:16Z"
+    },
+    {
+      "id": "17960185133",
+      "type": "PullRequestEvent",
+      "actor": {
+        "id": 215523089,
+        "login": "JCRABURN",
+        "display_login": "JCRABURN",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/JCRABURN",
+        "avatar_url": "https://avatars.githubusercontent.com/u/215523089?"
+      },
+      "repo": {
+        "id": 1323187714,
+        "name": "JCRABURN/cfb-betting-system-v3",
+        "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3"
+      },
+      "payload": {
+        "action": "opened",
+        "number": 42,
+        "pull_request": {
+          "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3/pulls/42",
+          "id": 4974561506,
+          "number": 42,
+          "head": {
+            "ref": "codex/week8-continuity",
+            "sha": "7f42da36f9aef4666bb715d49babde7ee374defa",
+            "repo": {
+              "id": 1323187714,
+              "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3",
+              "name": "cfb-betting-system-v3"
+            }
+          },
+          "base": {
+            "ref": "main",
+            "sha": "abb4eb26bd1140e66972d2f1143cd587e80960b4",
+            "repo": {
+              "id": 1323187714,
+              "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3",
+              "name": "cfb-betting-system-v3"
+            }
+          }
+        }
+      },
+      "public": true,
+      "created_at": "2026-10-22T21:46:57Z"
+    },
+    {
+      "id": "24842828365",
+      "type": "CreateEvent",
+      "actor": {
+        "id": 215523089,
+        "login": "JCRABURN",
+        "display_login": "JCRABURN",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/JCRABURN",
+        "avatar_url": "https://avatars.githubusercontent.com/u/215523089?"
+      },
+      "repo": {
+        "id": 1323187714,
+        "name": "JCRABURN/cfb-betting-system-v3",
+        "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3"
+      },
+      "payload": {
+        "ref": "codex/audit-integrity-repair",
+        "ref_type": "branch",
+        "full_ref": "refs/heads/codex/audit-integrity-repair",
+        "master_branch": "main",
+        "description": null,
+        "pusher_type": "user"
+      },
+      "public": true,
+      "created_at": "2026-10-21T19:02:51Z"
+    },
+    {
+      "id": "24841293539",
+      "type": "CreateEvent",
+      "actor": {
+        "id": 215523089,
+        "login": "JCRABURN",
+        "display_login": "JCRABURN",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/JCRABURN",
+        "avatar_url": "https://avatars.githubusercontent.com/u/215523089?"
+      },
+      "repo": {
+        "id": 1323187714,
+        "name": "JCRABURN/cfb-betting-system-v3",
+        "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3"
+      },
+      "payload": {
+        "ref": "codex/week7-acceptance-evidence",
+        "ref_type": "branch",
+        "full_ref": "refs/heads/codex/week7-acceptance-evidence",
+        "master_branch": "main",
+        "description": null,
+        "pusher_type": "user"
+      },
+      "public": true,
+      "created_at": "2026-10-21T18:42:04Z"
+    },
+    {
+      "id": "17847408141",
+      "type": "PullRequestEvent",
+      "actor": {
+        "id": 215523089,
+        "login": "JCRABURN",
+        "display_login": "JCRABURN",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/JCRABURN",
+        "avatar_url": "https://avatars.githubusercontent.com/u/215523089?"
+      },
+      "repo": {
+        "id": 1323187714,
+        "name": "JCRABURN/cfb-betting-system-v3",
+        "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3"
+      },
+      "payload": {
+        "action": "opened",
+        "number": 41,
+        "pull_request": {
+          "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3/pulls/41",
+          "id": 4956859313,
+          "number": 41,
+          "head": {
+            "ref": "codex/audit-integrity-repair",
+            "sha": "78ed6eb5540f66ba3193f91366c802e27e3cb9c7",
+            "repo": {
+              "id": 1323187714,
+              "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3",
+              "name": "cfb-betting-system-v3"
+            }
+          },
+          "base": {
+            "ref": "main",
+            "sha": "abb4eb26bd1140e66972d2f1143cd587e80960b4",
+            "repo": {
+              "id": 1323187714,
+              "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3",
+              "name": "cfb-betting-system-v3"
+            }
+          }
+        }
+      },
+      "public": true,
+      "created_at": "2026-10-21T19:03:15Z"
+    },
+    {
+      "id": "17845658974",
+      "type": "PullRequestEvent",
+      "actor": {
+        "id": 215523089,
+        "login": "JCRABURN",
+        "display_login": "JCRABURN",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/JCRABURN",
+        "avatar_url": "https://avatars.githubusercontent.com/u/215523089?"
+      },
+      "repo": {
+        "id": 1323187714,
+        "name": "JCRABURN/cfb-betting-system-v3",
+        "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3"
+      },
+      "payload": {
+        "action": "opened",
+        "number": 40,
+        "pull_request": {
+          "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3/pulls/40",
+          "id": 4956606268,
+          "number": 40,
+          "head": {
+            "ref": "codex/week7-acceptance-evidence",
+            "sha": "5f07ca3d9e52d1b467886856f1ec6f36562728a3",
+            "repo": {
+              "id": 1323187714,
+              "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3",
+              "name": "cfb-betting-system-v3"
+            }
+          },
+          "base": {
+            "ref": "main",
+            "sha": "abb4eb26bd1140e66972d2f1143cd587e80960b4",
+            "repo": {
+              "id": 1323187714,
+              "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3",
+              "name": "cfb-betting-system-v3"
+            }
+          }
+        }
+      },
+      "public": true,
+      "created_at": "2026-10-21T18:42:52Z"
+    },
+    {
+      "id": "17818479304",
+      "type": "PullRequestEvent",
+      "actor": {
+        "id": 215523089,
+        "login": "JCRABURN",
+        "display_login": "JCRABURN",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/JCRABURN",
+        "avatar_url": "https://avatars.githubusercontent.com/u/215523089?"
+      },
+      "repo": {
+        "id": 1323187714,
+        "name": "JCRABURN/cfb-betting-system-v3",
+        "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3"
+      },
+      "payload": {
+        "action": "opened",
+        "number": 39,
+        "pull_request": {
+          "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3/pulls/39",
+          "id": 4952567243,
+          "number": 39,
+          "head": {
+            "ref": "codex/2026-week8-splashsports-ingest",
+            "sha": "3148e4fe7cd7ab9387048386903db68ad7c2de4b",
+            "repo": {
+              "id": 1323187714,
+              "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3",
+              "name": "cfb-betting-system-v3"
+            }
+          },
+          "base": {
+            "ref": "codex/2026-week7-postgame-audit",
+            "sha": "da7381b801abee170a8b321cf77d833626230a11",
+            "repo": {
+              "id": 1323187714,
+              "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3",
+              "name": "cfb-betting-system-v3"
+            }
+          }
+        }
+      },
+      "public": true,
+      "created_at": "2026-10-21T13:41:08Z"
+    },
+    {
+      "id": "24717662794",
+      "type": "CreateEvent",
+      "actor": {
+        "id": 215523089,
+        "login": "JCRABURN",
+        "display_login": "JCRABURN",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/JCRABURN",
+        "avatar_url": "https://avatars.githubusercontent.com/u/215523089?"
+      },
+      "repo": {
+        "id": 1323187714,
+        "name": "JCRABURN/cfb-betting-system-v3",
+        "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3"
+      },
+      "payload": {
+        "ref": "codex/2026-week8-splashsports-ingest",
+        "ref_type": "branch",
+        "full_ref": "refs/heads/codex/2026-week8-splashsports-ingest",
+        "master_branch": "main",
+        "description": null,
+        "pusher_type": "user"
+      },
+      "public": true,
+      "created_at": "2026-10-21T13:40:40Z"
+    },
+    {
+      "id": "17745849932",
+      "type": "PullRequestEvent",
+      "actor": {
+        "id": 215523089,
+        "login": "JCRABURN",
+        "display_login": "JCRABURN",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/JCRABURN",
+        "avatar_url": "https://avatars.githubusercontent.com/u/215523089?"
+      },
+      "repo": {
+        "id": 1323187714,
+        "name": "JCRABURN/cfb-betting-system-v3",
+        "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3"
+      },
+      "payload": {
+        "action": "opened",
+        "number": 38,
+        "pull_request": {
+          "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3/pulls/38",
+          "id": 4941651065,
+          "number": 38,
+          "head": {
+            "ref": "codex/2026-week7-postgame-audit",
+            "sha": "da7381b801abee170a8b321cf77d833626230a11",
+            "repo": {
+              "id": 1323187714,
+              "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3",
+              "name": "cfb-betting-system-v3"
+            }
+          },
+          "base": {
+            "ref": "main",
+            "sha": "abb4eb26bd1140e66972d2f1143cd587e80960b4",
+            "repo": {
+              "id": 1323187714,
+              "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3",
+              "name": "cfb-betting-system-v3"
+            }
+          }
+        }
+      },
+      "public": true,
+      "created_at": "2026-10-20T19:57:51Z"
+    },
+    {
+      "id": "24388922045",
+      "type": "PushEvent",
+      "actor": {
+        "id": 215523089,
+        "login": "JCRABURN",
+        "display_login": "JCRABURN",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/JCRABURN",
+        "avatar_url": "https://avatars.githubusercontent.com/u/215523089?"
+      },
+      "repo": {
+        "id": 1323187714,
+        "name": "JCRABURN/cfb-betting-system-v3",
+        "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3"
+      },
+      "payload": {
+        "repository_id": 1323187714,
+        "push_id": 46820795246,
+        "ref": "refs/heads/codex/2026-week7-prospective-validation",
+        "head": "55c0a417c72492943253ad50cf139415ca3902be",
+        "before": "e27c86b2a8163f611b96fa0ce262b1cc17fa7247"
+      },
+      "public": true,
+      "created_at": "2026-10-17T13:42:29Z"
+    },
+    {
+      "id": "24085106819",
+      "type": "PushEvent",
+      "actor": {
+        "id": 215523089,
+        "login": "JCRABURN",
+        "display_login": "JCRABURN",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/JCRABURN",
+        "avatar_url": "https://avatars.githubusercontent.com/u/215523089?"
+      },
+      "repo": {
+        "id": 1323187714,
+        "name": "JCRABURN/cfb-betting-system-v3",
+        "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3"
+      },
+      "payload": {
+        "repository_id": 1323187714,
+        "push_id": 46386717505,
+        "ref": "refs/heads/codex/2026-week7-prospective-validation",
+        "head": "d3ffcc24316af7deee7f9f0aebce9b46cb3fac80",
+        "before": "b8ab7469285407ac1c603b717469d34a1f19b476"
+      },
+      "public": true,
+      "created_at": "2026-10-13T19:32:24Z"
+    },
+    {
+      "id": "24057881146",
+      "type": "PushEvent",
+      "actor": {
+        "id": 215523089,
+        "login": "JCRABURN",
+        "display_login": "JCRABURN",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/JCRABURN",
+        "avatar_url": "https://avatars.githubusercontent.com/u/215523089?"
+      },
+      "repo": {
+        "id": 1323187714,
+        "name": "JCRABURN/cfb-betting-system-v3",
+        "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3"
+      },
+      "payload": {
+        "repository_id": 1323187714,
+        "push_id": 46388041243,
+        "ref": "refs/heads/codex/2026-week7-prospective-validation",
+        "head": "cfbe724fc9687dea24bd50409bcc4a4c2214aec4",
+        "before": "d3ffcc24316af7deee7f9f0aebce9b46cb3fac80"
+      },
+      "public": true,
+      "created_at": "2026-10-13T19:46:17Z"
+    },
+    {
+      "id": "24041711409",
+      "type": "PushEvent",
+      "actor": {
+        "id": 215523089,
+        "login": "JCRABURN",
+        "display_login": "JCRABURN",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/JCRABURN",
+        "avatar_url": "https://avatars.githubusercontent.com/u/215523089?"
+      },
+      "repo": {
+        "id": 1323187714,
+        "name": "JCRABURN/cfb-betting-system-v3",
+        "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3"
+      },
+      "payload": {
+        "repository_id": 1323187714,
+        "push_id": 46383085896,
+        "ref": "refs/heads/codex/2026-week7-prospective-validation",
+        "head": "f6c584f5933819e0076557695c54caf188b93242",
+        "before": "6da1fa428a23fc1733aa0003af793b2206cb1453"
+      },
+      "public": true,
+      "created_at": "2026-10-13T18:55:10Z"
+    },
+    {
+      "id": "23992084225",
+      "type": "CreateEvent",
+      "actor": {
+        "id": 215523089,
+        "login": "JCRABURN",
+        "display_login": "JCRABURN",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/JCRABURN",
+        "avatar_url": "https://avatars.githubusercontent.com/u/215523089?"
+      },
+      "repo": {
+        "id": 1323187714,
+        "name": "JCRABURN/cfb-betting-system-v3",
+        "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3"
+      },
+      "payload": {
+        "ref": "codex/week6-ranking-calibration-research",
+        "ref_type": "branch",
+        "full_ref": "refs/heads/codex/week6-ranking-calibration-research",
+        "master_branch": "main",
+        "description": null,
+        "pusher_type": "user"
+      },
+      "public": true,
+      "created_at": "2026-10-12T22:16:15Z"
+    },
+    {
+      "id": "23977200805",
+      "type": "PushEvent",
+      "actor": {
+        "id": 215523089,
+        "login": "JCRABURN",
+        "display_login": "JCRABURN",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/JCRABURN",
+        "avatar_url": "https://avatars.githubusercontent.com/u/215523089?"
+      },
+      "repo": {
+        "id": 1323187714,
+        "name": "JCRABURN/cfb-betting-system-v3",
+        "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3"
+      },
+      "payload": {
+        "repository_id": 1323187714,
+        "push_id": 46471458722,
+        "ref": "refs/heads/codex/2026-week7-prospective-validation",
+        "head": "e27c86b2a8163f611b96fa0ce262b1cc17fa7247",
+        "before": "c89cfb4c300ed78d82b2cfbdb695c352c85cbcff"
+      },
+      "public": true,
+      "created_at": "2026-10-14T13:13:06Z"
+    },
+    {
+      "id": "23977141361",
+      "type": "PushEvent",
+      "actor": {
+        "id": 215523089,
+        "login": "JCRABURN",
+        "display_login": "JCRABURN",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/JCRABURN",
+        "avatar_url": "https://avatars.githubusercontent.com/u/215523089?"
+      },
+      "repo": {
+        "id": 1323187714,
+        "name": "JCRABURN/cfb-betting-system-v3",
+        "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3"
+      },
+      "payload": {
+        "repository_id": 1323187714,
+        "push_id": 46471384964,
+        "ref": "refs/heads/codex/2026-week7-prospective-validation",
+        "head": "c89cfb4c300ed78d82b2cfbdb695c352c85cbcff",
+        "before": "cfbe724fc9687dea24bd50409bcc4a4c2214aec4"
+      },
+      "public": true,
+      "created_at": "2026-10-14T13:12:24Z"
+    },
+    {
+      "id": "23942093139",
+      "type": "PushEvent",
+      "actor": {
+        "id": 215523089,
+        "login": "JCRABURN",
+        "display_login": "JCRABURN",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/JCRABURN",
+        "avatar_url": "https://avatars.githubusercontent.com/u/215523089?"
+      },
+      "repo": {
+        "id": 1323187714,
+        "name": "JCRABURN/cfb-betting-system-v3",
+        "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3"
+      },
+      "payload": {
+        "repository_id": 1323187714,
+        "push_id": 46262214099,
+        "ref": "refs/heads/codex/2026-week6-postgame-audit",
+        "head": "57c33b29aa399e4d94c749f6e2d25a6e80b48262",
+        "before": "4e0562420126af7c11e9e3f4fb38794173493558"
+      },
+      "public": true,
+      "created_at": "2026-10-12T18:42:09Z"
+    },
+    {
+      "id": "23902939354",
+      "type": "PushEvent",
+      "actor": {
+        "id": 215523089,
+        "login": "JCRABURN",
+        "display_login": "JCRABURN",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/JCRABURN",
+        "avatar_url": "https://avatars.githubusercontent.com/u/215523089?"
+      },
+      "repo": {
+        "id": 1323187714,
+        "name": "JCRABURN/cfb-betting-system-v3",
+        "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3"
+      },
+      "payload": {
+        "repository_id": 1323187714,
+        "push_id": 46383950886,
+        "ref": "refs/heads/codex/2026-week7-prospective-validation",
+        "head": "b8ab7469285407ac1c603b717469d34a1f19b476",
+        "before": "f6c584f5933819e0076557695c54caf188b93242"
+      },
+      "public": true,
+      "created_at": "2026-10-13T19:03:48Z"
+    },
+    {
+      "id": "23902287374",
+      "type": "PushEvent",
+      "actor": {
+        "id": 215523089,
+        "login": "JCRABURN",
+        "display_login": "JCRABURN",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/JCRABURN",
+        "avatar_url": "https://avatars.githubusercontent.com/u/215523089?"
+      },
+      "repo": {
+        "id": 1323187714,
+        "name": "JCRABURN/cfb-betting-system-v3",
+        "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3"
+      },
+      "payload": {
+        "repository_id": 1323187714,
+        "push_id": 46381821494,
+        "ref": "refs/heads/codex/2026-week7-prospective-validation",
+        "head": "6da1fa428a23fc1733aa0003af793b2206cb1453",
+        "before": "68ba62d410ee1bf7aadf3b514559cfbb91abd982"
+      },
+      "public": true,
+      "created_at": "2026-10-13T18:42:18Z"
+    },
+    {
+      "id": "23899775976",
+      "type": "PushEvent",
+      "actor": {
+        "id": 215523089,
+        "login": "JCRABURN",
+        "display_login": "JCRABURN",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/JCRABURN",
+        "avatar_url": "https://avatars.githubusercontent.com/u/215523089?"
+      },
+      "repo": {
+        "id": 1323187714,
+        "name": "JCRABURN/cfb-betting-system-v3",
+        "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3"
+      },
+      "payload": {
+        "repository_id": 1323187714,
+        "push_id": 46378456509,
+        "ref": "refs/heads/codex/2026-week7-prospective-validation",
+        "head": "68ba62d410ee1bf7aadf3b514559cfbb91abd982",
+        "before": "7f1aded74da3dd4826a82c22e830a4e196bbfd04"
+      },
+      "public": true,
+      "created_at": "2026-10-13T18:07:56Z"
+    },
+    {
+      "id": "23894682547",
+      "type": "CreateEvent",
+      "actor": {
+        "id": 215523089,
+        "login": "JCRABURN",
+        "display_login": "JCRABURN",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/JCRABURN",
+        "avatar_url": "https://avatars.githubusercontent.com/u/215523089?"
+      },
+      "repo": {
+        "id": 1323187714,
+        "name": "JCRABURN/cfb-betting-system-v3",
+        "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3"
+      },
+      "payload": {
+        "ref": "codex/2026-week6-postgame-audit",
+        "ref_type": "branch",
+        "full_ref": "refs/heads/codex/2026-week6-postgame-audit",
+        "master_branch": "main",
+        "description": null,
+        "pusher_type": "user"
+      },
+      "public": true,
+      "created_at": "2026-10-12T18:41:19Z"
+    },
+    {
+      "id": "23881827175",
+      "type": "CreateEvent",
+      "actor": {
+        "id": 215523089,
+        "login": "JCRABURN",
+        "display_login": "JCRABURN",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/JCRABURN",
+        "avatar_url": "https://avatars.githubusercontent.com/u/215523089?"
+      },
+      "repo": {
+        "id": 1323187714,
+        "name": "JCRABURN/cfb-betting-system-v3",
+        "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3"
+      },
+      "payload": {
+        "ref": "codex/2026-week7-prospective-validation",
+        "ref_type": "branch",
+        "full_ref": "refs/heads/codex/2026-week7-prospective-validation",
+        "master_branch": "main",
+        "description": null,
+        "pusher_type": "user"
+      },
+      "public": true,
+      "created_at": "2026-10-13T14:33:01Z"
+    },
+    {
+      "id": "17109010620",
+      "type": "PullRequestEvent",
+      "actor": {
+        "id": 215523089,
+        "login": "JCRABURN",
+        "display_login": "JCRABURN",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/JCRABURN",
+        "avatar_url": "https://avatars.githubusercontent.com/u/215523089?"
+      },
+      "repo": {
+        "id": 1323187714,
+        "name": "JCRABURN/cfb-betting-system-v3",
+        "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3"
+      },
+      "payload": {
+        "action": "opened",
+        "number": 37,
+        "pull_request": {
+          "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3/pulls/37",
+          "id": 4844828719,
+          "number": 37,
+          "head": {
+            "ref": "codex/2026-week7-prospective-validation",
+            "sha": "55c0a417c72492943253ad50cf139415ca3902be",
+            "repo": {
+              "id": 1323187714,
+              "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3",
+              "name": "cfb-betting-system-v3"
+            }
+          },
+          "base": {
+            "ref": "codex/week6-ranking-calibration-research",
+            "sha": "48d0250aff3fc286b7b8bd06e7e798a4134910a5",
+            "repo": {
+              "id": 1323187714,
+              "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3",
+              "name": "cfb-betting-system-v3"
+            }
+          }
+        }
+      },
+      "public": true,
+      "created_at": "2026-10-13T14:33:41Z"
+    },
+    {
+      "id": "17048949807",
+      "type": "PullRequestEvent",
+      "actor": {
+        "id": 215523089,
+        "login": "JCRABURN",
+        "display_login": "JCRABURN",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/JCRABURN",
+        "avatar_url": "https://avatars.githubusercontent.com/u/215523089?"
+      },
+      "repo": {
+        "id": 1323187714,
+        "name": "JCRABURN/cfb-betting-system-v3",
+        "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3"
+      },
+      "payload": {
+        "action": "opened",
+        "number": 36,
+        "pull_request": {
+          "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3/pulls/36",
+          "id": 4835622502,
+          "number": 36,
+          "head": {
+            "ref": "codex/week6-ranking-calibration-research",
+            "sha": "48d0250aff3fc286b7b8bd06e7e798a4134910a5",
+            "repo": {
+              "id": 1323187714,
+              "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3",
+              "name": "cfb-betting-system-v3"
+            }
+          },
+          "base": {
+            "ref": "codex/2026-week6-postgame-audit",
+            "sha": "57c33b29aa399e4d94c749f6e2d25a6e80b48262",
+            "repo": {
+              "id": 1323187714,
+              "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3",
+              "name": "cfb-betting-system-v3"
+            }
+          }
+        }
+      },
+      "public": true,
+      "created_at": "2026-10-12T22:16:40Z"
+    },
+    {
+      "id": "17035072022",
+      "type": "PullRequestEvent",
+      "actor": {
+        "id": 215523089,
+        "login": "JCRABURN",
+        "display_login": "JCRABURN",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/JCRABURN",
+        "avatar_url": "https://avatars.githubusercontent.com/u/215523089?"
+      },
+      "repo": {
+        "id": 1323187714,
+        "name": "JCRABURN/cfb-betting-system-v3",
+        "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3"
+      },
+      "payload": {
+        "action": "opened",
+        "number": 35,
+        "pull_request": {
+          "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3/pulls/35",
+          "id": 4833627879,
+          "number": 35,
+          "head": {
+            "ref": "codex/2026-week6-postgame-audit",
+            "sha": "57c33b29aa399e4d94c749f6e2d25a6e80b48262",
+            "repo": {
+              "id": 1323187714,
+              "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3",
+              "name": "cfb-betting-system-v3"
+            }
+          },
+          "base": {
+            "ref": "main",
+            "sha": "abb4eb26bd1140e66972d2f1143cd587e80960b4",
+            "repo": {
+              "id": 1323187714,
+              "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3",
+              "name": "cfb-betting-system-v3"
+            }
+          }
+        }
+      },
+      "public": true,
+      "created_at": "2026-10-12T18:46:23Z"
+    },
+    {
+      "id": "23327014714",
+      "type": "PushEvent",
+      "actor": {
+        "id": 215523089,
+        "login": "JCRABURN",
+        "display_login": "JCRABURN",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/JCRABURN",
+        "avatar_url": "https://avatars.githubusercontent.com/u/215523089?"
+      },
+      "repo": {
+        "id": 1323187714,
+        "name": "JCRABURN/cfb-betting-system-v3",
+        "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3"
+      },
+      "payload": {
+        "repository_id": 1323187714,
+        "push_id": 45743084931,
+        "ref": "refs/heads/codex/2026-week6-execution",
+        "head": "a419ebc2bc024bbf454bedc2ea2b697f7a918938",
+        "before": "c49ea205dacd80946a4b895ab5a034623fc8834d"
+      },
+      "public": true,
+      "created_at": "2026-10-07T14:25:24Z"
+    },
+    {
+      "id": "23295295384",
+      "type": "PushEvent",
+      "actor": {
+        "id": 215523089,
+        "login": "JCRABURN",
+        "display_login": "JCRABURN",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/JCRABURN",
+        "avatar_url": "https://avatars.githubusercontent.com/u/215523089?"
+      },
+      "repo": {
+        "id": 1323187714,
+        "name": "JCRABURN/cfb-betting-system-v3",
+        "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3"
+      },
+      "payload": {
+        "repository_id": 1323187714,
+        "push_id": 45743443231,
+        "ref": "refs/heads/main",
+        "head": "abb4eb26bd1140e66972d2f1143cd587e80960b4",
+        "before": "28c89a69b82fae319816e77bf8853cd0567dbc1c"
+      },
+      "public": true,
+      "created_at": "2026-10-07T14:28:53Z"
+    },
+    {
+      "id": "23286243141",
+      "type": "CreateEvent",
+      "actor": {
+        "id": 215523089,
+        "login": "JCRABURN",
+        "display_login": "JCRABURN",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/JCRABURN",
+        "avatar_url": "https://avatars.githubusercontent.com/u/215523089?"
+      },
+      "repo": {
+        "id": 1323187714,
+        "name": "JCRABURN/cfb-betting-system-v3",
+        "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3"
+      },
+      "payload": {
+        "ref": "codex/2026-week6-execution",
+        "ref_type": "branch",
+        "full_ref": "refs/heads/codex/2026-week6-execution",
+        "master_branch": "main",
+        "description": null,
+        "pusher_type": "user"
+      },
+      "public": true,
+      "created_at": "2026-10-06T22:11:56Z"
+    },
+    {
+      "id": "23278454876",
+      "type": "CreateEvent",
+      "actor": {
+        "id": 215523089,
+        "login": "JCRABURN",
+        "display_login": "JCRABURN",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/JCRABURN",
+        "avatar_url": "https://avatars.githubusercontent.com/u/215523089?"
+      },
+      "repo": {
+        "id": 1323187714,
+        "name": "JCRABURN/cfb-betting-system-v3",
+        "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3"
+      },
+      "payload": {
+        "ref": "codex/2026-week5-postgame-audit",
+        "ref_type": "branch",
+        "full_ref": "refs/heads/codex/2026-week5-postgame-audit",
+        "master_branch": "main",
+        "description": null,
+        "pusher_type": "user"
+      },
+      "public": true,
+      "created_at": "2026-10-06T14:51:00Z"
+    },
+    {
+      "id": "23277188058",
+      "type": "PushEvent",
+      "actor": {
+        "id": 215523089,
+        "login": "JCRABURN",
+        "display_login": "JCRABURN",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/JCRABURN",
+        "avatar_url": "https://avatars.githubusercontent.com/u/215523089?"
+      },
+      "repo": {
+        "id": 1323187714,
+        "name": "JCRABURN/cfb-betting-system-v3",
+        "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3"
+      },
+      "payload": {
+        "repository_id": 1323187714,
+        "push_id": 45658042296,
+        "ref": "refs/heads/codex/2026-week5-postgame-audit",
+        "head": "028325c3352ba09f6a63d28e6b9f6ba1be8fdf07",
+        "before": "4cb6a52f9871a504ecaca4daf8d8867a761a141c"
+      },
+      "public": true,
+      "created_at": "2026-10-06T19:55:30Z"
+    },
+    {
+      "id": "23277182284",
+      "type": "PushEvent",
+      "actor": {
+        "id": 215523089,
+        "login": "JCRABURN",
+        "display_login": "JCRABURN",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/JCRABURN",
+        "avatar_url": "https://avatars.githubusercontent.com/u/215523089?"
+      },
+      "repo": {
+        "id": 1323187714,
+        "name": "JCRABURN/cfb-betting-system-v3",
+        "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3"
+      },
+      "payload": {
+        "repository_id": 1323187714,
+        "push_id": 45658032998,
+        "ref": "refs/heads/codex/2026-week6-locks",
+        "head": "9201b670e9b9d5b8917c7d8d14e151bfb4e94875",
+        "before": "52e6d6c9388e698030e810f2e2629c5fcdafe9c6"
+      },
+      "public": true,
+      "created_at": "2026-10-06T19:55:23Z"
+    },
+    {
+      "id": "16648215030",
+      "type": "PullRequestEvent",
+      "actor": {
+        "id": 215523089,
+        "login": "JCRABURN",
+        "display_login": "JCRABURN",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/JCRABURN",
+        "avatar_url": "https://avatars.githubusercontent.com/u/215523089?"
+      },
+      "repo": {
+        "id": 1323187714,
+        "name": "JCRABURN/cfb-betting-system-v3",
+        "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3"
+      },
+      "payload": {
+        "action": "merged",
+        "number": 34,
+        "pull_request": {
+          "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3/pulls/34",
+          "id": 4765226680,
+          "number": 34,
+          "head": {
+            "ref": "codex/2026-week6-execution",
+            "sha": "a419ebc2bc024bbf454bedc2ea2b697f7a918938",
+            "repo": {
+              "id": 1323187714,
+              "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3",
+              "name": "cfb-betting-system-v3"
+            }
+          },
+          "base": {
+            "ref": "main",
+            "sha": "28c89a69b82fae319816e77bf8853cd0567dbc1c",
+            "repo": {
+              "id": 1323187714,
+              "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3",
+              "name": "cfb-betting-system-v3"
+            }
+          }
+        }
+      },
+      "public": true,
+      "created_at": "2026-10-07T14:28:52Z"
+    },
+    {
+      "id": "16648206320",
+      "type": "PullRequestReviewEvent",
+      "actor": {
+        "id": 215523089,
+        "login": "JCRABURN",
+        "display_login": "JCRABURN",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/JCRABURN",
+        "avatar_url": "https://avatars.githubusercontent.com/u/215523089?"
+      },
+      "repo": {
+        "id": 1323187714,
+        "name": "JCRABURN/cfb-betting-system-v3",
+        "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3"
+      },
+      "payload": {
+        "review": {
+          "id": 5443839062,
+          "node_id": "PRR_kwDOTt4-As8AAAABRHpkVg",
+          "user": {
+            "login": "JCRABURN",
+            "id": 215523089,
+            "node_id": "U_kgDODNifEQ",
+            "avatar_url": "https://avatars.githubusercontent.com/u/215523089?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/JCRABURN",
+            "html_url": "https://github.com/JCRABURN",
+            "followers_url": "https://api.github.com/users/JCRABURN/followers",
+            "following_url": "https://api.github.com/users/JCRABURN/following{/other_user}",
+            "gists_url": "https://api.github.com/users/JCRABURN/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/JCRABURN/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/JCRABURN/subscriptions",
+            "organizations_url": "https://api.github.com/users/JCRABURN/orgs",
+            "repos_url": "https://api.github.com/users/JCRABURN/repos",
+            "events_url": "https://api.github.com/users/JCRABURN/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/JCRABURN/received_events",
+            "type": "User",
+            "user_view_type": "public",
+            "site_admin": false
+          },
+          "body": "Final re-review passed.\n\nVerified the Week 6 review fix is review/reporting-only: the 58 ATS selections, 58 totals selections, 116-candidate pool, official ATS Top 5, mixed shadow Top 5, locked-line custody, model outputs, context captures, and provider evidence are frozen.\n\nThe authoritative locked-line domain snapshot is consistently `f2723f75d94c2c3e4edaadf618cbb71866f3cf2d8b59c62fe48ab84bad6c2c75`; the abandoned timestamp-specific hash is no longer presented as authoritative.\n\nThe new cross-market diagnostic correctly exposes the scale problem: ATS max 0.5896 versus totals max 0.7197, with 25 totals above the best ATS score. The mixed Top 5 is therefore preserved only as scale-limited shadow research, not overall confidence.\n\nThe owner decision shortlist is now independently curated from the frozen analytical shortlists rather than copied from the mixed Top 5: Vanderbilt +10.5, UCF\u2013Oklahoma State Under 53.5, Tulane\u2013Army Over 47.5, San Diego State\u2013Oregon State Under 55.5, Stanford +37.5. Each row preserves the frozen evidence, explicit limitations, and failure mode.\n\nReported verification: 15/15 focused tests; 634 full-suite tests in a checksum-correct disposable checkout; migration/cloud/repo-safety/diff checks passed. No GitHub-hosted CI is attached to this head.\n\nReady to merge. Mixed-market score calibration remains a research limitation to address in a future dedicated model/calibration change, not midweek.",
+          "commit_id": "a419ebc2bc024bbf454bedc2ea2b697f7a918938",
+          "state": "commented",
+          "html_url": "https://github.com/JCRABURN/cfb-betting-system-v3/pull/34#pullrequestreview-5443839062",
+          "pull_request_url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3/pulls/34",
+          "_links": {
+            "html": {
+              "href": "https://github.com/JCRABURN/cfb-betting-system-v3/pull/34#pullrequestreview-5443839062"
+            },
+            "pull_request": {
+              "href": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3/pulls/34"
+            }
+          },
+          "submitted_at": "2026-10-07T14:28:46Z",
+          "updated_at": "2026-10-07T14:28:46Z"
+        },
+        "pull_request": {
+          "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3/pulls/34",
+          "id": 4765226680,
+          "number": 34,
+          "head": {
+            "ref": "codex/2026-week6-execution",
+            "sha": "a419ebc2bc024bbf454bedc2ea2b697f7a918938",
+            "repo": {
+              "id": 1323187714,
+              "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3",
+              "name": "cfb-betting-system-v3"
+            }
+          },
+          "base": {
+            "ref": "main",
+            "sha": "28c89a69b82fae319816e77bf8853cd0567dbc1c",
+            "repo": {
+              "id": 1323187714,
+              "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3",
+              "name": "cfb-betting-system-v3"
+            }
+          }
+        },
+        "action": "created"
+      },
+      "public": true,
+      "created_at": "2026-10-07T14:28:49Z"
+    },
+    {
+      "id": "16646468664",
+      "type": "PullRequestReviewEvent",
+      "actor": {
+        "id": 215523089,
+        "login": "JCRABURN",
+        "display_login": "JCRABURN",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/JCRABURN",
+        "avatar_url": "https://avatars.githubusercontent.com/u/215523089?"
+      },
+      "repo": {
+        "id": 1323187714,
+        "name": "JCRABURN/cfb-betting-system-v3",
+        "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3"
+      },
+      "payload": {
+        "review": {
+          "id": 5443562271,
+          "node_id": "PRR_kwDOTt4-As8AAAABRHYrHw",
+          "user": {
+            "login": "JCRABURN",
+            "id": 215523089,
+            "node_id": "U_kgDODNifEQ",
+            "avatar_url": "https://avatars.githubusercontent.com/u/215523089?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/JCRABURN",
+            "html_url": "https://github.com/JCRABURN",
+            "followers_url": "https://api.github.com/users/JCRABURN/followers",
+            "following_url": "https://api.github.com/users/JCRABURN/following{/other_user}",
+            "gists_url": "https://api.github.com/users/JCRABURN/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/JCRABURN/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/JCRABURN/subscriptions",
+            "organizations_url": "https://api.github.com/users/JCRABURN/orgs",
+            "repos_url": "https://api.github.com/users/JCRABURN/repos",
+            "events_url": "https://api.github.com/users/JCRABURN/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/JCRABURN/received_events",
+            "type": "User",
+            "user_view_type": "public",
+            "site_admin": false
+          },
+          "body": "Week 6 execution review: the 58 ATS + 58 totals coverage and strict pre-kickoff generation look sound, but I found two correctness/decision-layer blockers and one reporting inconsistency before merge.\n\n1) The mixed-market score is not actually on a comparable calibrated scale. Week 6 ATS shadow scores range about 0.5007\u20130.5896 and are hard-capped by policy at 0.60; totals scores range about 0.5040\u20130.7197 and are explicitly `UNCALIBRATED_NORMAL_SHADOW`. Twenty-five totals candidates score above the single best ATS candidate. That means the 0 ATS / 5 totals Top 5 is mechanically driven by scale asymmetry, not evidence that those five totals are stronger than every ATS play. Preserve this mixed Top 5 as shadow research, but do not present it as an overall-confidence ranking.\n\n2) `week6_decision_shortlist.csv` is just a copy of the mixed-market Top 5. `build_week6_review.py` literally sets the decision rows from `mixed` with `reason_survived_review = Top stored cross-market shadow score`. That does not perform the requested adversarial human review, especially given Week 5 totals were 23-33 and every Top-5 total has QB status UNVERIFIED. Rebuild the owner decision shortlist from the frozen pregame analytical ATS + totals evidence, without changing model outputs or ranking policy.\n\n3) The PR body/final response reports lock snapshot SHA `d696420770cab90c017ab10ce6f5f01561db589e9871940d0a89867260fb681f`, but that hash does not appear in the committed PR artifacts. The committed ATS card, totals card, model manifest, and ingestion manifest consistently use locked-line snapshot `f2723f75d94c2c3e4edaadf618cbb71866f3cf2d8b59c62fe48ab84bad6c2c75`. Correct the PR/report so the authoritative domain snapshot hash is unambiguous.\n\nDo NOT rerun models or recapture context now\u2014the Tuesday game has already passed. Use only the frozen pre-kickoff Week 6 evidence already captured on Oct 6. Do not change any locked line, model prediction, ATS/totals candidate, calibration policy, or combined-shadow ranking. This should be a review/reporting correction only.",
+          "commit_id": "c49ea205dacd80946a4b895ab5a034623fc8834d",
+          "state": "commented",
+          "html_url": "https://github.com/JCRABURN/cfb-betting-system-v3/pull/34#pullrequestreview-5443562271",
+          "pull_request_url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3/pulls/34",
+          "_links": {
+            "html": {
+              "href": "https://github.com/JCRABURN/cfb-betting-system-v3/pull/34#pullrequestreview-5443562271"
+            },
+            "pull_request": {
+              "href": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3/pulls/34"
+            }
+          },
+          "submitted_at": "2026-10-07T14:08:47Z",
+          "updated_at": "2026-10-07T14:08:47Z"
+        },
+        "pull_request": {
+          "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3/pulls/34",
+          "id": 4765226680,
+          "number": 34,
+          "head": {
+            "ref": "codex/2026-week6-execution",
+            "sha": "a419ebc2bc024bbf454bedc2ea2b697f7a918938",
+            "repo": {
+              "id": 1323187714,
+              "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3",
+              "name": "cfb-betting-system-v3"
+            }
+          },
+          "base": {
+            "ref": "main",
+            "sha": "28c89a69b82fae319816e77bf8853cd0567dbc1c",
+            "repo": {
+              "id": 1323187714,
+              "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3",
+              "name": "cfb-betting-system-v3"
+            }
+          }
+        },
+        "action": "created"
+      },
+      "public": true,
+      "created_at": "2026-10-07T14:08:50Z"
+    },
+    {
+      "id": "23261202530",
+      "type": "PushEvent",
+      "actor": {
+        "id": 215523089,
+        "login": "JCRABURN",
+        "display_login": "JCRABURN",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/JCRABURN",
+        "avatar_url": "https://avatars.githubusercontent.com/u/215523089?"
+      },
+      "repo": {
+        "id": 1323187714,
+        "name": "JCRABURN/cfb-betting-system-v3",
+        "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3"
+      },
+      "payload": {
+        "repository_id": 1323187714,
+        "push_id": 45658684428,
+        "ref": "refs/heads/main",
+        "head": "28c89a69b82fae319816e77bf8853cd0567dbc1c",
+        "before": "eef296011ac9b4426171dcf403c869785cb6fa31"
+      },
+      "public": true,
+      "created_at": "2026-10-06T20:02:30Z"
+    },
+    {
+      "id": "23260169990",
+      "type": "CreateEvent",
+      "actor": {
+        "id": 215523089,
+        "login": "JCRABURN",
+        "display_login": "JCRABURN",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/JCRABURN",
+        "avatar_url": "https://avatars.githubusercontent.com/u/215523089?"
+      },
+      "repo": {
+        "id": 1323187714,
+        "name": "JCRABURN/cfb-betting-system-v3",
+        "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3"
+      },
+      "payload": {
+        "ref": "codex/2026-week6-locks",
+        "ref_type": "branch",
+        "full_ref": "refs/heads/codex/2026-week6-locks",
+        "master_branch": "main",
+        "description": null,
+        "pusher_type": "user"
+      },
+      "public": true,
+      "created_at": "2026-10-06T19:55:20Z"
+    },
+    {
+      "id": "23243406768",
+      "type": "PushEvent",
+      "actor": {
+        "id": 215523089,
+        "login": "JCRABURN",
+        "display_login": "JCRABURN",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/JCRABURN",
+        "avatar_url": "https://avatars.githubusercontent.com/u/215523089?"
+      },
+      "repo": {
+        "id": 1323187714,
+        "name": "JCRABURN/cfb-betting-system-v3",
+        "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3"
+      },
+      "payload": {
+        "repository_id": 1323187714,
+        "push_id": 45637076701,
+        "ref": "refs/heads/codex/2026-week5-postgame-audit",
+        "head": "141d9797ee92d340bd0cdde9aec97e359ff88484",
+        "before": "d211d0cca64b70c93c6d66dbb9536ced02546551"
+      },
+      "public": true,
+      "created_at": "2026-10-06T16:05:05Z"
+    },
+    {
+      "id": "23223359857",
+      "type": "CreateEvent",
+      "actor": {
+        "id": 215523089,
+        "login": "JCRABURN",
+        "display_login": "JCRABURN",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/JCRABURN",
+        "avatar_url": "https://avatars.githubusercontent.com/u/215523089?"
+      },
+      "repo": {
+        "id": 1323187714,
+        "name": "JCRABURN/cfb-betting-system-v3",
+        "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3"
+      },
+      "payload": {
+        "ref": "codex/week5-migration22-research",
+        "ref_type": "branch",
+        "full_ref": "refs/heads/codex/week5-migration22-research",
+        "master_branch": "main",
+        "description": null,
+        "pusher_type": "user"
+      },
+      "public": true,
+      "created_at": "2026-10-06T13:46:37Z"
+    },
+    {
+      "id": "16588692654",
+      "type": "PullRequestEvent",
+      "actor": {
+        "id": 215523089,
+        "login": "JCRABURN",
+        "display_login": "JCRABURN",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/JCRABURN",
+        "avatar_url": "https://avatars.githubusercontent.com/u/215523089?"
+      },
+      "repo": {
+        "id": 1323187714,
+        "name": "JCRABURN/cfb-betting-system-v3",
+        "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3"
+      },
+      "payload": {
+        "action": "opened",
+        "number": 34,
+        "pull_request": {
+          "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3/pulls/34",
+          "id": 4765226680,
+          "number": 34,
+          "head": {
+            "ref": "codex/2026-week6-execution",
+            "sha": "a419ebc2bc024bbf454bedc2ea2b697f7a918938",
+            "repo": {
+              "id": 1323187714,
+              "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3",
+              "name": "cfb-betting-system-v3"
+            }
+          },
+          "base": {
+            "ref": "main",
+            "sha": "28c89a69b82fae319816e77bf8853cd0567dbc1c",
+            "repo": {
+              "id": 1323187714,
+              "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3",
+              "name": "cfb-betting-system-v3"
+            }
+          }
+        }
+      },
+      "public": true,
+      "created_at": "2026-10-06T22:12:44Z"
+    },
+    {
+      "id": "23201698478",
+      "type": "PushEvent",
+      "actor": {
+        "id": 215523089,
+        "login": "JCRABURN",
+        "display_login": "JCRABURN",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/JCRABURN",
+        "avatar_url": "https://avatars.githubusercontent.com/u/215523089?"
+      },
+      "repo": {
+        "id": 1323187714,
+        "name": "JCRABURN/cfb-betting-system-v3",
+        "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3"
+      },
+      "payload": {
+        "repository_id": 1323187714,
+        "push_id": 45658096514,
+        "ref": "refs/heads/main",
+        "head": "eef296011ac9b4426171dcf403c869785cb6fa31",
+        "before": "2e9a8a42c95c9552f119dc4437d15547302b6c9e"
+      },
+      "public": true,
+      "created_at": "2026-10-06T19:56:07Z"
+    },
+    {
+      "id": "23201632114",
+      "type": "PushEvent",
+      "actor": {
+        "id": 215523089,
+        "login": "JCRABURN",
+        "display_login": "JCRABURN",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/JCRABURN",
+        "avatar_url": "https://avatars.githubusercontent.com/u/215523089?"
+      },
+      "repo": {
+        "id": 1323187714,
+        "name": "JCRABURN/cfb-betting-system-v3",
+        "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3"
+      },
+      "payload": {
+        "repository_id": 1323187714,
+        "push_id": 45658029928,
+        "ref": "refs/heads/codex/2026-week6-locks",
+        "head": "52e6d6c9388e698030e810f2e2629c5fcdafe9c6",
+        "before": "2e9a8a42c95c9552f119dc4437d15547302b6c9e"
+      },
+      "public": true,
+      "created_at": "2026-10-06T19:55:22Z"
+    },
+    {
+      "id": "16579824840",
+      "type": "PullRequestEvent",
+      "actor": {
+        "id": 215523089,
+        "login": "JCRABURN",
+        "display_login": "JCRABURN",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/JCRABURN",
+        "avatar_url": "https://avatars.githubusercontent.com/u/215523089?"
+      },
+      "repo": {
+        "id": 1323187714,
+        "name": "JCRABURN/cfb-betting-system-v3",
+        "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3"
+      },
+      "payload": {
+        "action": "merged",
+        "number": 32,
+        "pull_request": {
+          "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3/pulls/32",
+          "id": 4760490710,
+          "number": 32,
+          "head": {
+            "ref": "codex/2026-week5-postgame-audit",
+            "sha": "028325c3352ba09f6a63d28e6b9f6ba1be8fdf07",
+            "repo": {
+              "id": 1323187714,
+              "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3",
+              "name": "cfb-betting-system-v3"
+            }
+          },
+          "base": {
+            "ref": "main",
+            "sha": "2e9a8a42c95c9552f119dc4437d15547302b6c9e",
+            "repo": {
+              "id": 1323187714,
+              "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3",
+              "name": "cfb-betting-system-v3"
+            }
+          }
+        }
+      },
+      "public": true,
+      "created_at": "2026-10-06T20:02:29Z"
+    },
+    {
+      "id": "16579817782",
+      "type": "PullRequestReviewEvent",
+      "actor": {
+        "id": 215523089,
+        "login": "JCRABURN",
+        "display_login": "JCRABURN",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/JCRABURN",
+        "avatar_url": "https://avatars.githubusercontent.com/u/215523089?"
+      },
+      "repo": {
+        "id": 1323187714,
+        "name": "JCRABURN/cfb-betting-system-v3",
+        "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3"
+      },
+      "payload": {
+        "review": {
+          "id": 5433941740,
+          "node_id": "PRR_kwDOTt4-As8AAAABQ-Ne7A",
+          "user": {
+            "login": "JCRABURN",
+            "id": 215523089,
+            "node_id": "U_kgDODNifEQ",
+            "avatar_url": "https://avatars.githubusercontent.com/u/215523089?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/JCRABURN",
+            "html_url": "https://github.com/JCRABURN",
+            "followers_url": "https://api.github.com/users/JCRABURN/followers",
+            "following_url": "https://api.github.com/users/JCRABURN/following{/other_user}",
+            "gists_url": "https://api.github.com/users/JCRABURN/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/JCRABURN/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/JCRABURN/subscriptions",
+            "organizations_url": "https://api.github.com/users/JCRABURN/orgs",
+            "repos_url": "https://api.github.com/users/JCRABURN/repos",
+            "events_url": "https://api.github.com/users/JCRABURN/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/JCRABURN/received_events",
+            "type": "User",
+            "user_view_type": "public",
+            "site_admin": false
+          },
+          "body": "Final re-review passed.\n\nThe underdog-only backdoor taxonomy is now correct. `BACKDOOR_FAILURE` derives the selected locked spread from side/home-spread orientation and requires a positive selected spread, an outright late deficit, a selected-team score that improves ATS margin, and a final ATS loss. Favorite failed comeback/frontdoor attempts remain nondeterminative.\n\nVerified Week 5 late-score counts: 4 BACKDOOR_FAILURE, 4 LATE_FRONTDOOR_COVER, 28 LATE_SCORE_NONDETERMINATIVE, 19 NOT_APPLICABLE, 1 NOT_EVALUATED_NO_PBP = 56. The four failures are Cincinnati +7.5, Coastal Carolina +2.5, Delaware +7.5, and UL Monroe +13.5.\n\nThe final correction changes only the classifier, builder/test coverage, and five rebuilt postgame audit artifacts. ATS/totals/decision/CLV grading files are unchanged. Reported focused suite 29/29 and full suite 619/619 passed with migration/cloud/repo-safety/diff checks. No GitHub-hosted CI is attached to this head, so those are the recorded local verification results.\n\nPR #32 is ready to merge. Week 6 source-lock changes already merged to main are independent.",
+          "commit_id": "028325c3352ba09f6a63d28e6b9f6ba1be8fdf07",
+          "state": "commented",
+          "html_url": "https://github.com/JCRABURN/cfb-betting-system-v3/pull/32#pullrequestreview-5433941740",
+          "pull_request_url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3/pulls/32",
+          "_links": {
+            "html": {
+              "href": "https://github.com/JCRABURN/cfb-betting-system-v3/pull/32#pullrequestreview-5433941740"
+            },
+            "pull_request": {
+              "href": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3/pulls/32"
+            }
+          },
+          "submitted_at": "2026-10-06T20:02:24Z",
+          "updated_at": "2026-10-06T20:02:24Z"
+        },
+        "pull_request": {
+          "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3/pulls/32",
+          "id": 4760490710,
+          "number": 32,
+          "head": {
+            "ref": "codex/2026-week5-postgame-audit",
+            "sha": "028325c3352ba09f6a63d28e6b9f6ba1be8fdf07",
+            "repo": {
+              "id": 1323187714,
+              "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3",
+              "name": "cfb-betting-system-v3"
+            }
+          },
+          "base": {
+            "ref": "main",
+            "sha": "2e9a8a42c95c9552f119dc4437d15547302b6c9e",
+            "repo": {
+              "id": 1323187714,
+              "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3",
+              "name": "cfb-betting-system-v3"
+            }
+          }
+        },
+        "action": "created"
+      },
+      "public": true,
+      "created_at": "2026-10-06T20:02:26Z"
+    },
+    {
+      "id": "16579349210",
+      "type": "PullRequestEvent",
+      "actor": {
+        "id": 215523089,
+        "login": "JCRABURN",
+        "display_login": "JCRABURN",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/JCRABURN",
+        "avatar_url": "https://avatars.githubusercontent.com/u/215523089?"
+      },
+      "repo": {
+        "id": 1323187714,
+        "name": "JCRABURN/cfb-betting-system-v3",
+        "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3"
+      },
+      "payload": {
+        "action": "merged",
+        "number": 33,
+        "pull_request": {
+          "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3/pulls/33",
+          "id": 4763936039,
+          "number": 33,
+          "head": {
+            "ref": "codex/2026-week6-locks",
+            "sha": "9201b670e9b9d5b8917c7d8d14e151bfb4e94875",
+            "repo": {
+              "id": 1323187714,
+              "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3",
+              "name": "cfb-betting-system-v3"
+            }
+          },
+          "base": {
+            "ref": "main",
+            "sha": "2e9a8a42c95c9552f119dc4437d15547302b6c9e",
+            "repo": {
+              "id": 1323187714,
+              "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3",
+              "name": "cfb-betting-system-v3"
+            }
+          }
+        }
+      },
+      "public": true,
+      "created_at": "2026-10-06T19:56:05Z"
+    },
+    {
+      "id": "16579341646",
+      "type": "PullRequestReviewEvent",
+      "actor": {
+        "id": 215523089,
+        "login": "JCRABURN",
+        "display_login": "JCRABURN",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/JCRABURN",
+        "avatar_url": "https://avatars.githubusercontent.com/u/215523089?"
+      },
+      "repo": {
+        "id": 1323187714,
+        "name": "JCRABURN/cfb-betting-system-v3",
+        "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3"
+      },
+      "payload": {
+        "review": {
+          "id": 5433874433,
+          "node_id": "PRR_kwDOTt4-As8AAAABQ-JYAQ",
+          "user": {
+            "login": "JCRABURN",
+            "id": 215523089,
+            "node_id": "U_kgDODNifEQ",
+            "avatar_url": "https://avatars.githubusercontent.com/u/215523089?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/JCRABURN",
+            "html_url": "https://github.com/JCRABURN",
+            "followers_url": "https://api.github.com/users/JCRABURN/followers",
+            "following_url": "https://api.github.com/users/JCRABURN/following{/other_user}",
+            "gists_url": "https://api.github.com/users/JCRABURN/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/JCRABURN/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/JCRABURN/subscriptions",
+            "organizations_url": "https://api.github.com/users/JCRABURN/orgs",
+            "repos_url": "https://api.github.com/users/JCRABURN/repos",
+            "events_url": "https://api.github.com/users/JCRABURN/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/JCRABURN/received_events",
+            "type": "User",
+            "user_view_type": "public",
+            "site_admin": false
+          },
+          "body": "Week 6 source-lock review passed.\n\nVerified 58 unique transcribed matchup rows with date inventory Oct 6: 1, Oct 7: 2, Oct 8: 4, Oct 9: 5, Oct 10: 46. The CSV uses the repository convention that `Spread` is the HOME-team spread, preserves the displayed totals, and records screenshot provenance and receipt custody.\n\nCanonical CSV SHA-256: `904811a6aa0be7855216f5899ca0855bac6310a40ebe41f99ac36f3fe1904180`.\n\nData-only change: two new Week 6 custody files; no model, schema, prior-week, policy, or result changes. Ready to merge as the immutable Week 6 source card.",
+          "commit_id": "9201b670e9b9d5b8917c7d8d14e151bfb4e94875",
+          "state": "commented",
+          "html_url": "https://github.com/JCRABURN/cfb-betting-system-v3/pull/33#pullrequestreview-5433874433",
+          "pull_request_url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3/pulls/33",
+          "_links": {
+            "html": {
+              "href": "https://github.com/JCRABURN/cfb-betting-system-v3/pull/33#pullrequestreview-5433874433"
+            },
+            "pull_request": {
+              "href": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3/pulls/33"
+            }
+          },
+          "submitted_at": "2026-10-06T19:56:00Z",
+          "updated_at": "2026-10-06T19:56:00Z"
+        },
+        "pull_request": {
+          "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3/pulls/33",
+          "id": 4763936039,
+          "number": 33,
+          "head": {
+            "ref": "codex/2026-week6-locks",
+            "sha": "9201b670e9b9d5b8917c7d8d14e151bfb4e94875",
+            "repo": {
+              "id": 1323187714,
+              "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3",
+              "name": "cfb-betting-system-v3"
+            }
+          },
+          "base": {
+            "ref": "main",
+            "sha": "2e9a8a42c95c9552f119dc4437d15547302b6c9e",
+            "repo": {
+              "id": 1323187714,
+              "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3",
+              "name": "cfb-betting-system-v3"
+            }
+          }
+        },
+        "action": "created"
+      },
+      "public": true,
+      "created_at": "2026-10-06T19:56:02Z"
+    },
+    {
+      "id": "16579303991",
+      "type": "PullRequestEvent",
+      "actor": {
+        "id": 215523089,
+        "login": "JCRABURN",
+        "display_login": "JCRABURN",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/JCRABURN",
+        "avatar_url": "https://avatars.githubusercontent.com/u/215523089?"
+      },
+      "repo": {
+        "id": 1323187714,
+        "name": "JCRABURN/cfb-betting-system-v3",
+        "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3"
+      },
+      "payload": {
+        "action": "opened",
+        "number": 33,
+        "pull_request": {
+          "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3/pulls/33",
+          "id": 4763936039,
+          "number": 33,
+          "head": {
+            "ref": "codex/2026-week6-locks",
+            "sha": "9201b670e9b9d5b8917c7d8d14e151bfb4e94875",
+            "repo": {
+              "id": 1323187714,
+              "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3",
+              "name": "cfb-betting-system-v3"
+            }
+          },
+          "base": {
+            "ref": "main",
+            "sha": "2e9a8a42c95c9552f119dc4437d15547302b6c9e",
+            "repo": {
+              "id": 1323187714,
+              "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3",
+              "name": "cfb-betting-system-v3"
+            }
+          }
+        }
+      },
+      "public": true,
+      "created_at": "2026-10-06T19:55:32Z"
+    },
+    {
+      "id": "16578882867",
+      "type": "PullRequestReviewEvent",
+      "actor": {
+        "id": 215523089,
+        "login": "JCRABURN",
+        "display_login": "JCRABURN",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/JCRABURN",
+        "avatar_url": "https://avatars.githubusercontent.com/u/215523089?"
+      },
+      "repo": {
+        "id": 1323187714,
+        "name": "JCRABURN/cfb-betting-system-v3",
+        "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3"
+      },
+      "payload": {
+        "review": {
+          "id": 5433807852,
+          "node_id": "PRR_kwDOTt4-As8AAAABQ-FT7A",
+          "user": {
+            "login": "JCRABURN",
+            "id": 215523089,
+            "node_id": "U_kgDODNifEQ",
+            "avatar_url": "https://avatars.githubusercontent.com/u/215523089?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/JCRABURN",
+            "html_url": "https://github.com/JCRABURN",
+            "followers_url": "https://api.github.com/users/JCRABURN/followers",
+            "following_url": "https://api.github.com/users/JCRABURN/following{/other_user}",
+            "gists_url": "https://api.github.com/users/JCRABURN/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/JCRABURN/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/JCRABURN/subscriptions",
+            "organizations_url": "https://api.github.com/users/JCRABURN/orgs",
+            "repos_url": "https://api.github.com/users/JCRABURN/repos",
+            "events_url": "https://api.github.com/users/JCRABURN/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/JCRABURN/received_events",
+            "type": "User",
+            "user_view_type": "public",
+            "site_admin": false
+          },
+          "body": "One final taxonomy issue remains; do not merge yet.\n\n`BACKDOOR_FAILURE` is now reachable, but it is being applied to favorites as well as underdogs. That is not consistent with the betting meaning used by the paired `BACKDOOR_COVER` rule. A backdoor cover requires a team to lose outright while still covering, which is inherently an underdog situation; the failure analogue should likewise be limited to a selected underdog making a late score toward the number but still missing it.\n\nThree of the seven newly classified Week 5 failures are selected favorites, not backdoor attempts: Texas State -4.5 at San Diego State, Tulsa -1.5 vs North Texas, and Massachusetts -5.5 vs Eastern Michigan. Those are failed comeback/frontdoor attempts and should remain `LATE_SCORE_NONDETERMINATIVE` under the current taxonomy because there is no `LATE_FRONTDOOR_FAILURE` category.\n\nPlease require selected spread > 0 for `BACKDOOR_FAILURE` (derive selected spread from side + locked home spread), add a negative test proving a favorite that scores late but still loses ATS is not labeled a backdoor failure, regenerate the five affected postgame artifacts, and rerun the focused/full suites. The four true underdog failures should remain: Cincinnati +7.5, Coastal Carolina +2.5, Delaware +7.5, and UL Monroe +13.5.\n\nNo ATS/totals/decision grading should change. Frozen pregame inputs must remain byte-identical.",
+          "commit_id": "4cb6a52f9871a504ecaca4daf8d8867a761a141c",
+          "state": "commented",
+          "html_url": "https://github.com/JCRABURN/cfb-betting-system-v3/pull/32#pullrequestreview-5433807852",
+          "pull_request_url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3/pulls/32",
+          "_links": {
+            "html": {
+              "href": "https://github.com/JCRABURN/cfb-betting-system-v3/pull/32#pullrequestreview-5433807852"
+            },
+            "pull_request": {
+              "href": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3/pulls/32"
+            }
+          },
+          "submitted_at": "2026-10-06T19:50:01Z",
+          "updated_at": "2026-10-06T19:50:01Z"
+        },
+        "pull_request": {
+          "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3/pulls/32",
+          "id": 4760490710,
+          "number": 32,
+          "head": {
+            "ref": "codex/2026-week5-postgame-audit",
+            "sha": "028325c3352ba09f6a63d28e6b9f6ba1be8fdf07",
+            "repo": {
+              "id": 1323187714,
+              "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3",
+              "name": "cfb-betting-system-v3"
+            }
+          },
+          "base": {
+            "ref": "main",
+            "sha": "2e9a8a42c95c9552f119dc4437d15547302b6c9e",
+            "repo": {
+              "id": 1323187714,
+              "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3",
+              "name": "cfb-betting-system-v3"
+            }
+          }
+        },
+        "action": "created"
+      },
+      "public": true,
+      "created_at": "2026-10-06T19:50:03Z"
+    },
+    {
+      "id": "23179839204",
+      "type": "PushEvent",
+      "actor": {
+        "id": 215523089,
+        "login": "JCRABURN",
+        "display_login": "JCRABURN",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/JCRABURN",
+        "avatar_url": "https://avatars.githubusercontent.com/u/215523089?"
+      },
+      "repo": {
+        "id": 1323187714,
+        "name": "JCRABURN/cfb-betting-system-v3",
+        "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3"
+      },
+      "payload": {
+        "repository_id": 1323187714,
+        "push_id": 45637446836,
+        "ref": "refs/heads/codex/2026-week5-postgame-audit",
+        "head": "4cb6a52f9871a504ecaca4daf8d8867a761a141c",
+        "before": "141d9797ee92d340bd0cdde9aec97e359ff88484"
+      },
+      "public": true,
+      "created_at": "2026-10-06T16:08:55Z"
+    },
+    {
+      "id": "16560466435",
+      "type": "PullRequestReviewEvent",
+      "actor": {
+        "id": 215523089,
+        "login": "JCRABURN",
+        "display_login": "JCRABURN",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/JCRABURN",
+        "avatar_url": "https://avatars.githubusercontent.com/u/215523089?"
+      },
+      "repo": {
+        "id": 1323187714,
+        "name": "JCRABURN/cfb-betting-system-v3",
+        "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3"
+      },
+      "payload": {
+        "review": {
+          "id": 5431017540,
+          "node_id": "PRR_kwDOTt4-As8AAAABQ7bARA",
+          "user": {
+            "login": "JCRABURN",
+            "id": 215523089,
+            "node_id": "U_kgDODNifEQ",
+            "avatar_url": "https://avatars.githubusercontent.com/u/215523089?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/JCRABURN",
+            "html_url": "https://github.com/JCRABURN",
+            "followers_url": "https://api.github.com/users/JCRABURN/followers",
+            "following_url": "https://api.github.com/users/JCRABURN/following{/other_user}",
+            "gists_url": "https://api.github.com/users/JCRABURN/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/JCRABURN/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/JCRABURN/subscriptions",
+            "organizations_url": "https://api.github.com/users/JCRABURN/orgs",
+            "repos_url": "https://api.github.com/users/JCRABURN/repos",
+            "events_url": "https://api.github.com/users/JCRABURN/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/JCRABURN/received_events",
+            "type": "User",
+            "user_view_type": "public",
+            "site_admin": false
+          },
+          "body": "Review found one postgame-audit correctness blocker before merge.\n\nThe ATS/totals grading, 56/56 score reconciliation, frozen-line custody, CLV fail-closed behavior, cumulative arithmetic, and no-policy-change conclusion look sound. However, `BACKDOOR_FAILURE` in `classify_late_score()` is effectively unreachable.\n\nWhy: the function first skips any late play where `before == after`. A score by the selected team can only improve (or leave unchanged) that team's ATS margin; it cannot change the result from WIN/PUSH to LOSS. Therefore the later branch `elif after == 'LOSS' and selected_scored: BACKDOOR_FAILURE` cannot fire in a normal scoring sequence.\n\nThe current adversarial test explicitly encodes the problem: away +3.5, trailing 20-0, scores a late TD to make it 20-7, still fails to cover, and is labeled `LATE_SCORE_NONDETERMINATIVE`. Under the requested audit taxonomy, that is the case that should be evaluated as a backdoor attempt/failure rather than making BACKDOOR_FAILURE dead code.\n\nPlease define the taxonomy explicitly and make BACKDOOR_FAILURE reachable from scoring-sequence evidence. Add a test for a selected underdog scoring in the final five minutes while trailing, improving the ATS margin but still finishing short of the locked spread. Preserve `LATE_SCORE_NONDETERMINATIVE` for late scores that are not a credible backdoor attempt or do not concern the selected side. Regenerate only the postgame audit artifacts; do not touch frozen pregame inputs, locked lines, model outputs, or v2.8 policy.\n\nAfter that, rerun the focused postgame tests and full suite. I expect PR #32 to be mergeable if the audit counts/artifact hashes remain internally consistent.",
+          "commit_id": "d211d0cca64b70c93c6d66dbb9536ced02546551",
+          "state": "commented",
+          "html_url": "https://github.com/JCRABURN/cfb-betting-system-v3/pull/32#pullrequestreview-5431017540",
+          "pull_request_url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3/pulls/32",
+          "_links": {
+            "html": {
+              "href": "https://github.com/JCRABURN/cfb-betting-system-v3/pull/32#pullrequestreview-5431017540"
+            },
+            "pull_request": {
+              "href": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3/pulls/32"
+            }
+          },
+          "submitted_at": "2026-10-06T15:45:40Z",
+          "updated_at": "2026-10-06T15:45:40Z"
+        },
+        "pull_request": {
+          "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3/pulls/32",
+          "id": 4760490710,
+          "number": 32,
+          "head": {
+            "ref": "codex/2026-week5-postgame-audit",
+            "sha": "028325c3352ba09f6a63d28e6b9f6ba1be8fdf07",
+            "repo": {
+              "id": 1323187714,
+              "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3",
+              "name": "cfb-betting-system-v3"
+            }
+          },
+          "base": {
+            "ref": "main",
+            "sha": "2e9a8a42c95c9552f119dc4437d15547302b6c9e",
+            "repo": {
+              "id": 1323187714,
+              "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3",
+              "name": "cfb-betting-system-v3"
+            }
+          }
+        },
+        "action": "created"
+      },
+      "public": true,
+      "created_at": "2026-10-06T16:11:56Z"
+    },
+    {
+      "id": "16553977377",
+      "type": "PullRequestReviewEvent",
+      "actor": {
+        "id": 215523089,
+        "login": "JCRABURN",
+        "display_login": "JCRABURN",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/JCRABURN",
+        "avatar_url": "https://avatars.githubusercontent.com/u/215523089?"
+      },
+      "repo": {
+        "id": 1323187714,
+        "name": "JCRABURN/cfb-betting-system-v3",
+        "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3"
+      },
+      "payload": {
+        "review": {
+          "id": 5429684014,
+          "node_id": "PRR_kwDOTt4-As8AAAABQ6JnLg",
+          "user": {
+            "login": "JCRABURN",
+            "id": 215523089,
+            "node_id": "U_kgDODNifEQ",
+            "avatar_url": "https://avatars.githubusercontent.com/u/215523089?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/JCRABURN",
+            "html_url": "https://github.com/JCRABURN",
+            "followers_url": "https://api.github.com/users/JCRABURN/followers",
+            "following_url": "https://api.github.com/users/JCRABURN/following{/other_user}",
+            "gists_url": "https://api.github.com/users/JCRABURN/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/JCRABURN/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/JCRABURN/subscriptions",
+            "organizations_url": "https://api.github.com/users/JCRABURN/orgs",
+            "repos_url": "https://api.github.com/users/JCRABURN/repos",
+            "events_url": "https://api.github.com/users/JCRABURN/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/JCRABURN/received_events",
+            "type": "User",
+            "user_view_type": "public",
+            "site_admin": false
+          },
+          "body": "Final review passed.\n\nThe exact-kickoff bug is fixed correctly: generated_at < kickoff proceeds; generated_at == kickoff, generated_at > kickoff, and invalid kickoff timestamps fail closed before get_pregame_stats. The new adversarial spy test exercises one second before, exact kickoff, one second after, and invalid kickoff.\n\nThe two remediation commits touch only business_entities/weekly_controller.py and tests/test_week5_execution.py. Week 5 artifacts and locked-line custody are unchanged per the PR's 106/106 checksum verification. Reported validation is 15 focused tests and 590 full-suite tests passing, plus migration/cloud/repo-safety and diff checks.\n\nApproved for merge. PR #31 remains separate optional research and is not part of this approval.",
+          "commit_id": "09a979e31ebedce5f0a453322ef1b918f11f8909",
+          "state": "commented",
+          "html_url": "https://github.com/JCRABURN/cfb-betting-system-v3/pull/29#pullrequestreview-5429684014",
+          "pull_request_url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3/pulls/29",
+          "_links": {
+            "html": {
+              "href": "https://github.com/JCRABURN/cfb-betting-system-v3/pull/29#pullrequestreview-5429684014"
+            },
+            "pull_request": {
+              "href": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3/pulls/29"
+            }
+          },
+          "submitted_at": "2026-10-06T14:12:25Z",
+          "updated_at": "2026-10-06T14:12:25Z"
+        },
+        "pull_request": {
+          "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3/pulls/29",
+          "id": 4699134355,
+          "number": 29,
+          "head": {
+            "ref": "codex/2026-week5-execution",
+            "sha": "09a979e31ebedce5f0a453322ef1b918f11f8909",
+            "repo": {
+              "id": 1323187714,
+              "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3",
+              "name": "cfb-betting-system-v3"
+            }
+          },
+          "base": {
+            "ref": "main",
+            "sha": "626fc187cddc3b0ad0b1a59337ea5464bc685039",
+            "repo": {
+              "id": 1323187714,
+              "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3",
+              "name": "cfb-betting-system-v3"
+            }
+          }
+        },
+        "action": "created"
+      },
+      "public": true,
+      "created_at": "2026-10-06T15:09:40Z"
+    },
+    {
+      "id": "16552269628",
+      "type": "PullRequestEvent",
+      "actor": {
+        "id": 215523089,
+        "login": "JCRABURN",
+        "display_login": "JCRABURN",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/JCRABURN",
+        "avatar_url": "https://avatars.githubusercontent.com/u/215523089?"
+      },
+      "repo": {
+        "id": 1323187714,
+        "name": "JCRABURN/cfb-betting-system-v3",
+        "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3"
+      },
+      "payload": {
+        "action": "opened",
+        "number": 32,
+        "pull_request": {
+          "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3/pulls/32",
+          "id": 4760490710,
+          "number": 32,
+          "head": {
+            "ref": "codex/2026-week5-postgame-audit",
+            "sha": "028325c3352ba09f6a63d28e6b9f6ba1be8fdf07",
+            "repo": {
+              "id": 1323187714,
+              "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3",
+              "name": "cfb-betting-system-v3"
+            }
+          },
+          "base": {
+            "ref": "main",
+            "sha": "2e9a8a42c95c9552f119dc4437d15547302b6c9e",
+            "repo": {
+              "id": 1323187714,
+              "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3",
+              "name": "cfb-betting-system-v3"
+            }
+          }
+        }
+      },
+      "public": true,
+      "created_at": "2026-10-06T14:51:26Z"
+    },
+    {
+      "id": "23170256712",
+      "type": "PushEvent",
+      "actor": {
+        "id": 215523089,
+        "login": "JCRABURN",
+        "display_login": "JCRABURN",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/JCRABURN",
+        "avatar_url": "https://avatars.githubusercontent.com/u/215523089?"
+      },
+      "repo": {
+        "id": 1323187714,
+        "name": "JCRABURN/cfb-betting-system-v3",
+        "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3"
+      },
+      "payload": {
+        "repository_id": 1323187714,
+        "push_id": 45625748456,
+        "ref": "refs/heads/main",
+        "head": "2e9a8a42c95c9552f119dc4437d15547302b6c9e",
+        "before": "626fc187cddc3b0ad0b1a59337ea5464bc685039"
+      },
+      "public": true,
+      "created_at": "2026-10-06T14:12:38Z"
+    },
+    {
+      "id": "16548638833",
+      "type": "PullRequestEvent",
+      "actor": {
+        "id": 215523089,
+        "login": "JCRABURN",
+        "display_login": "JCRABURN",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/JCRABURN",
+        "avatar_url": "https://avatars.githubusercontent.com/u/215523089?"
+      },
+      "repo": {
+        "id": 1323187714,
+        "name": "JCRABURN/cfb-betting-system-v3",
+        "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3"
+      },
+      "payload": {
+        "action": "merged",
+        "number": 29,
+        "pull_request": {
+          "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3/pulls/29",
+          "id": 4699134355,
+          "number": 29,
+          "head": {
+            "ref": "codex/2026-week5-execution",
+            "sha": "09a979e31ebedce5f0a453322ef1b918f11f8909",
+            "repo": {
+              "id": 1323187714,
+              "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3",
+              "name": "cfb-betting-system-v3"
+            }
+          },
+          "base": {
+            "ref": "main",
+            "sha": "626fc187cddc3b0ad0b1a59337ea5464bc685039",
+            "repo": {
+              "id": 1323187714,
+              "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3",
+              "name": "cfb-betting-system-v3"
+            }
+          }
+        }
+      },
+      "public": true,
+      "created_at": "2026-10-06T14:12:36Z"
+    },
+    {
+      "id": "23170113576",
+      "type": "PushEvent",
+      "actor": {
+        "id": 215523089,
+        "login": "JCRABURN",
+        "display_login": "JCRABURN",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/JCRABURN",
+        "avatar_url": "https://avatars.githubusercontent.com/u/215523089?"
+      },
+      "repo": {
+        "id": 1323187714,
+        "name": "JCRABURN/cfb-betting-system-v3",
+        "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3"
+      },
+      "payload": {
+        "repository_id": 1323187714,
+        "push_id": 45625466354,
+        "ref": "refs/heads/codex/2026-week5-execution",
+        "head": "09a979e31ebedce5f0a453322ef1b918f11f8909",
+        "before": "8790653d24783ef20d1f20884c970697fcfb4e27"
+      },
+      "public": true,
+      "created_at": "2026-10-06T14:09:54Z"
+    },
+    {
+      "id": "23169828069",
+      "type": "PushEvent",
+      "actor": {
+        "id": 215523089,
+        "login": "JCRABURN",
+        "display_login": "JCRABURN",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/JCRABURN",
+        "avatar_url": "https://avatars.githubusercontent.com/u/215523089?"
+      },
+      "repo": {
+        "id": 1323187714,
+        "name": "JCRABURN/cfb-betting-system-v3",
+        "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3"
+      },
+      "payload": {
+        "repository_id": 1323187714,
+        "push_id": 45624949207,
+        "ref": "refs/heads/codex/2026-week5-execution",
+        "head": "8790653d24783ef20d1f20884c970697fcfb4e27",
+        "before": "1be2a2bd97ef782fb29ea51513eb7cb103de0dcc"
+      },
+      "public": true,
+      "created_at": "2026-10-06T14:04:52Z"
+    },
+    {
+      "id": "23168760294",
+      "type": "PushEvent",
+      "actor": {
+        "id": 215523089,
+        "login": "JCRABURN",
+        "display_login": "JCRABURN",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/JCRABURN",
+        "avatar_url": "https://avatars.githubusercontent.com/u/215523089?"
+      },
+      "repo": {
+        "id": 1323187714,
+        "name": "JCRABURN/cfb-betting-system-v3",
+        "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3"
+      },
+      "payload": {
+        "repository_id": 1323187714,
+        "push_id": 45623742974,
+        "ref": "refs/heads/main",
+        "head": "626fc187cddc3b0ad0b1a59337ea5464bc685039",
+        "before": "5f71c25ce2d2768b4def64c1c35294367dfd0004"
+      },
+      "public": true,
+      "created_at": "2026-10-06T13:53:10Z"
+    },
+    {
+      "id": "16546860232",
+      "type": "PullRequestReviewEvent",
+      "actor": {
+        "id": 215523089,
+        "login": "JCRABURN",
+        "display_login": "JCRABURN",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/JCRABURN",
+        "avatar_url": "https://avatars.githubusercontent.com/u/215523089?"
+      },
+      "repo": {
+        "id": 1323187714,
+        "name": "JCRABURN/cfb-betting-system-v3",
+        "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3"
+      },
+      "payload": {
+        "review": {
+          "id": 5429408609,
+          "node_id": "PRR_kwDOTt4-As8AAAABQ54zYQ",
+          "user": {
+            "login": "JCRABURN",
+            "id": 215523089,
+            "node_id": "U_kgDODNifEQ",
+            "avatar_url": "https://avatars.githubusercontent.com/u/215523089?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/JCRABURN",
+            "html_url": "https://github.com/JCRABURN",
+            "followers_url": "https://api.github.com/users/JCRABURN/followers",
+            "following_url": "https://api.github.com/users/JCRABURN/following{/other_user}",
+            "gists_url": "https://api.github.com/users/JCRABURN/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/JCRABURN/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/JCRABURN/subscriptions",
+            "organizations_url": "https://api.github.com/users/JCRABURN/orgs",
+            "repos_url": "https://api.github.com/users/JCRABURN/repos",
+            "events_url": "https://api.github.com/users/JCRABURN/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/JCRABURN/received_events",
+            "type": "User",
+            "user_view_type": "public",
+            "site_admin": false
+          },
+          "body": "Re-review found one correctness blocker before merge.\n\n`business_entities/weekly_controller.py` adds:\n`if not timestamp_on_or_before(conn, generated_at.isoformat(), game[2]): skip`.\n\n`timestamp_on_or_before()` is inclusive (`earlier <= later`), so a card generated exactly at kickoff is still allowed through to feature access/prediction. The repository contract requires pre-kickoff point-in-time safety, and the totals path already rejects exact kickoff (`kickoff <= generated_at`).\n\nFix the ATS guard to reject generated_at >= kickoff, using the same strict-before-kickoff semantics as the rest of the governed card path. Add an adversarial test proving both exact-kickoff and post-kickoff targets are skipped before feature access, while a target one instant before kickoff remains eligible. Preserve the existing Week 5 artifacts; this is a correctness bug fix, not permission to regenerate historical picks.\n\nPR #30 is now merged to main (merge commit 626fc187), and I retargeted #29 to main. After this cutoff fix and passing tests, #29 should be ready for final merge.",
+          "commit_id": "1be2a2bd97ef782fb29ea51513eb7cb103de0dcc",
+          "state": "commented",
+          "html_url": "https://github.com/JCRABURN/cfb-betting-system-v3/pull/29#pullrequestreview-5429408609",
+          "pull_request_url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3/pulls/29",
+          "_links": {
+            "html": {
+              "href": "https://github.com/JCRABURN/cfb-betting-system-v3/pull/29#pullrequestreview-5429408609"
+            },
+            "pull_request": {
+              "href": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3/pulls/29"
+            }
+          },
+          "submitted_at": "2026-10-06T13:53:42Z",
+          "updated_at": "2026-10-06T13:53:42Z"
+        },
+        "pull_request": {
+          "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3/pulls/29",
+          "id": 4699134355,
+          "number": 29,
+          "head": {
+            "ref": "codex/2026-week5-execution",
+            "sha": "09a979e31ebedce5f0a453322ef1b918f11f8909",
+            "repo": {
+              "id": 1323187714,
+              "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3",
+              "name": "cfb-betting-system-v3"
+            }
+          },
+          "base": {
+            "ref": "main",
+            "sha": "626fc187cddc3b0ad0b1a59337ea5464bc685039",
+            "repo": {
+              "id": 1323187714,
+              "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3",
+              "name": "cfb-betting-system-v3"
+            }
+          }
+        },
+        "action": "created"
+      },
+      "public": true,
+      "created_at": "2026-10-06T13:53:44Z"
+    },
+    {
+      "id": "16546807899",
+      "type": "PullRequestEvent",
+      "actor": {
+        "id": 215523089,
+        "login": "JCRABURN",
+        "display_login": "JCRABURN",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/JCRABURN",
+        "avatar_url": "https://avatars.githubusercontent.com/u/215523089?"
+      },
+      "repo": {
+        "id": 1323187714,
+        "name": "JCRABURN/cfb-betting-system-v3",
+        "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3"
+      },
+      "payload": {
+        "action": "merged",
+        "number": 30,
+        "pull_request": {
+          "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3/pulls/30",
+          "id": 4704103655,
+          "number": 30,
+          "head": {
+            "ref": "codex/week5-totals-dependency",
+            "sha": "fc78714f5955390e4ab41bf6450a4c9fbbbc6b86",
+            "repo": {
+              "id": 1323187714,
+              "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3",
+              "name": "cfb-betting-system-v3"
+            }
+          },
+          "base": {
+            "ref": "main",
+            "sha": "5f71c25ce2d2768b4def64c1c35294367dfd0004",
+            "repo": {
+              "id": 1323187714,
+              "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3",
+              "name": "cfb-betting-system-v3"
+            }
+          }
+        }
+      },
+      "public": true,
+      "created_at": "2026-10-06T13:53:09Z"
+    },
+    {
+      "id": "16546800919",
+      "type": "PullRequestReviewEvent",
+      "actor": {
+        "id": 215523089,
+        "login": "JCRABURN",
+        "display_login": "JCRABURN",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/JCRABURN",
+        "avatar_url": "https://avatars.githubusercontent.com/u/215523089?"
+      },
+      "repo": {
+        "id": 1323187714,
+        "name": "JCRABURN/cfb-betting-system-v3",
+        "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3"
+      },
+      "payload": {
+        "review": {
+          "id": 5429400448,
+          "node_id": "PRR_kwDOTt4-As8AAAABQ54TgA",
+          "user": {
+            "login": "JCRABURN",
+            "id": 215523089,
+            "node_id": "U_kgDODNifEQ",
+            "avatar_url": "https://avatars.githubusercontent.com/u/215523089?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/JCRABURN",
+            "html_url": "https://github.com/JCRABURN",
+            "followers_url": "https://api.github.com/users/JCRABURN/followers",
+            "following_url": "https://api.github.com/users/JCRABURN/following{/other_user}",
+            "gists_url": "https://api.github.com/users/JCRABURN/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/JCRABURN/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/JCRABURN/subscriptions",
+            "organizations_url": "https://api.github.com/users/JCRABURN/orgs",
+            "repos_url": "https://api.github.com/users/JCRABURN/repos",
+            "events_url": "https://api.github.com/users/JCRABURN/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/JCRABURN/received_events",
+            "type": "User",
+            "user_view_type": "public",
+            "site_admin": false
+          },
+          "body": "Re-review passed. The Week 5 dependency is now narrowed to migration 21 only; migration 22/correlation/audit research is isolated in PR #31. The component-score custody belongs with the shadow prediction schema because the Week 5 runner writes it, and the migration verifies the table/triggers. Reported full-suite (575), migration-copy, cloud-migration, repo-safety, and whitespace checks are consistent with the diff. I consider PR #30 ready to merge.",
+          "commit_id": "fc78714f5955390e4ab41bf6450a4c9fbbbc6b86",
+          "state": "commented",
+          "html_url": "https://github.com/JCRABURN/cfb-betting-system-v3/pull/30#pullrequestreview-5429400448",
+          "pull_request_url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3/pulls/30",
+          "_links": {
+            "html": {
+              "href": "https://github.com/JCRABURN/cfb-betting-system-v3/pull/30#pullrequestreview-5429400448"
+            },
+            "pull_request": {
+              "href": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3/pulls/30"
+            }
+          },
+          "submitted_at": "2026-10-06T13:53:03Z",
+          "updated_at": "2026-10-06T13:53:03Z"
+        },
+        "pull_request": {
+          "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3/pulls/30",
+          "id": 4704103655,
+          "number": 30,
+          "head": {
+            "ref": "codex/week5-totals-dependency",
+            "sha": "fc78714f5955390e4ab41bf6450a4c9fbbbc6b86",
+            "repo": {
+              "id": 1323187714,
+              "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3",
+              "name": "cfb-betting-system-v3"
+            }
+          },
+          "base": {
+            "ref": "main",
+            "sha": "5f71c25ce2d2768b4def64c1c35294367dfd0004",
+            "repo": {
+              "id": 1323187714,
+              "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3",
+              "name": "cfb-betting-system-v3"
+            }
+          }
+        },
+        "action": "created"
+      },
+      "public": true,
+      "created_at": "2026-10-06T13:53:05Z"
+    },
+    {
+      "id": "23168203128",
+      "type": "PushEvent",
+      "actor": {
+        "id": 215523089,
+        "login": "JCRABURN",
+        "display_login": "JCRABURN",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/JCRABURN",
+        "avatar_url": "https://avatars.githubusercontent.com/u/215523089?"
+      },
+      "repo": {
+        "id": 1323187714,
+        "name": "JCRABURN/cfb-betting-system-v3",
+        "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3"
+      },
+      "payload": {
+        "repository_id": 1323187714,
+        "push_id": 45623154440,
+        "ref": "refs/heads/codex/2026-week5-execution",
+        "head": "1be2a2bd97ef782fb29ea51513eb7cb103de0dcc",
+        "before": "fdddc3834bb252b0f7118c9aa7ee95114bb87ca1"
+      },
+      "public": true,
+      "created_at": "2026-10-06T13:47:16Z"
+    },
+    {
+      "id": "16546218848",
+      "type": "PullRequestEvent",
+      "actor": {
+        "id": 215523089,
+        "login": "JCRABURN",
+        "display_login": "JCRABURN",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/JCRABURN",
+        "avatar_url": "https://avatars.githubusercontent.com/u/215523089?"
+      },
+      "repo": {
+        "id": 1323187714,
+        "name": "JCRABURN/cfb-betting-system-v3",
+        "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3"
+      },
+      "payload": {
+        "action": "opened",
+        "number": 31,
+        "pull_request": {
+          "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3/pulls/31",
+          "id": 4759649670,
+          "number": 31,
+          "head": {
+            "ref": "codex/week5-migration22-research",
+            "sha": "b5c269bb7d8121bc3f5384ac7a8548ed4959666b",
+            "repo": {
+              "id": 1323187714,
+              "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3",
+              "name": "cfb-betting-system-v3"
+            }
+          },
+          "base": {
+            "ref": "codex/week5-totals-dependency",
+            "sha": "fc78714f5955390e4ab41bf6450a4c9fbbbc6b86",
+            "repo": {
+              "id": 1323187714,
+              "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3",
+              "name": "cfb-betting-system-v3"
+            }
+          }
+        }
+      },
+      "public": true,
+      "created_at": "2026-10-06T13:46:54Z"
+    },
+    {
+      "id": "22920173199",
+      "type": "PushEvent",
+      "actor": {
+        "id": 215523089,
+        "login": "JCRABURN",
+        "display_login": "JCRABURN",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/JCRABURN",
+        "avatar_url": "https://avatars.githubusercontent.com/u/215523089?"
+      },
+      "repo": {
+        "id": 1323187714,
+        "name": "JCRABURN/cfb-betting-system-v3",
+        "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3"
+      },
+      "payload": {
+        "repository_id": 1323187714,
+        "push_id": 45246318046,
+        "ref": "refs/heads/codex/week5-totals-dependency",
+        "head": "fc78714f5955390e4ab41bf6450a4c9fbbbc6b86",
+        "before": "abc0265b23fc5b5aa609d3fd5991e30f92607a7e"
+      },
+      "public": true,
+      "created_at": "2026-10-02T11:35:47Z"
+    },
+    {
+      "id": "22850546677",
+      "type": "PushEvent",
+      "actor": {
+        "id": 215523089,
+        "login": "JCRABURN",
+        "display_login": "JCRABURN",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/JCRABURN",
+        "avatar_url": "https://avatars.githubusercontent.com/u/215523089?"
+      },
+      "repo": {
+        "id": 1323187714,
+        "name": "JCRABURN/cfb-betting-system-v3",
+        "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3"
+      },
+      "payload": {
+        "repository_id": 1323187714,
+        "push_id": 45149829304,
+        "ref": "refs/heads/codex/2026-week5-execution",
+        "head": "90c838815301f6c3800800a96c29d7cf887a2437",
+        "before": "417b77e7ffbc0ae8e8bda793a9ee3822a2ca8f79"
+      },
+      "public": true,
+      "created_at": "2026-10-01T13:40:02Z"
+    },
+    {
+      "id": "22833093757",
+      "type": "CreateEvent",
+      "actor": {
+        "id": 215523089,
+        "login": "JCRABURN",
+        "display_login": "JCRABURN",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/JCRABURN",
+        "avatar_url": "https://avatars.githubusercontent.com/u/215523089?"
+      },
+      "repo": {
+        "id": 1323187714,
+        "name": "JCRABURN/cfb-betting-system-v3",
+        "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3"
+      },
+      "payload": {
+        "ref": "codex/2026-week5-v4-preserved",
+        "ref_type": "branch",
+        "full_ref": "refs/heads/codex/2026-week5-v4-preserved",
+        "master_branch": "main",
+        "description": null,
+        "pusher_type": "user"
+      },
+      "public": true,
+      "created_at": "2026-10-01T13:09:48Z"
+    },
+    {
+      "id": "22799744317",
+      "type": "PushEvent",
+      "actor": {
+        "id": 215523089,
+        "login": "JCRABURN",
+        "display_login": "JCRABURN",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/JCRABURN",
+        "avatar_url": "https://avatars.githubusercontent.com/u/215523089?"
+      },
+      "repo": {
+        "id": 1323187714,
+        "name": "JCRABURN/cfb-betting-system-v3",
+        "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3"
+      },
+      "payload": {
+        "repository_id": 1323187714,
+        "push_id": 45101265549,
+        "ref": "refs/heads/data/2026-week5-splashsports-20260930",
+        "head": "a37fd175dce165905cc667c7496684ed0367a578",
+        "before": "1fccc5ab29209bea21136d9041873624f0e13b25"
+      },
+      "public": true,
+      "created_at": "2026-10-01T03:07:22Z"
+    },
+    {
+      "id": "22792736715",
+      "type": "PushEvent",
+      "actor": {
+        "id": 215523089,
+        "login": "JCRABURN",
+        "display_login": "JCRABURN",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/JCRABURN",
+        "avatar_url": "https://avatars.githubusercontent.com/u/215523089?"
+      },
+      "repo": {
+        "id": 1323187714,
+        "name": "JCRABURN/cfb-betting-system-v3",
+        "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3"
+      },
+      "payload": {
+        "repository_id": 1323187714,
+        "push_id": 45101343145,
+        "ref": "refs/heads/main",
+        "head": "5f71c25ce2d2768b4def64c1c35294367dfd0004",
+        "before": "1fccc5ab29209bea21136d9041873624f0e13b25"
+      },
+      "public": true,
+      "created_at": "2026-10-01T03:08:39Z"
+    },
+    {
+      "id": "22736460741",
+      "type": "PushEvent",
+      "actor": {
+        "id": 215523089,
+        "login": "JCRABURN",
+        "display_login": "JCRABURN",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/JCRABURN",
+        "avatar_url": "https://avatars.githubusercontent.com/u/215523089?"
+      },
+      "repo": {
+        "id": 1323187714,
+        "name": "JCRABURN/cfb-betting-system-v3",
+        "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3"
+      },
+      "payload": {
+        "repository_id": 1323187714,
+        "push_id": 45150207680,
+        "ref": "refs/heads/codex/2026-week5-execution",
+        "head": "fdddc3834bb252b0f7118c9aa7ee95114bb87ca1",
+        "before": "90c838815301f6c3800800a96c29d7cf887a2437"
+      },
+      "public": true,
+      "created_at": "2026-10-01T13:43:54Z"
+    },
+    {
+      "id": "16195605536",
+      "type": "PullRequestReviewEvent",
+      "actor": {
+        "id": 215523089,
+        "login": "JCRABURN",
+        "display_login": "JCRABURN",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/JCRABURN",
+        "avatar_url": "https://avatars.githubusercontent.com/u/215523089?"
+      },
+      "repo": {
+        "id": 1323187714,
+        "name": "JCRABURN/cfb-betting-system-v3",
+        "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3"
+      },
+      "payload": {
+        "review": {
+          "id": 5380241124,
+          "node_id": "PRR_kwDOTt4-As8AAAABQK_25A",
+          "user": {
+            "login": "JCRABURN",
+            "id": 215523089,
+            "node_id": "U_kgDODNifEQ",
+            "avatar_url": "https://avatars.githubusercontent.com/u/215523089?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/JCRABURN",
+            "html_url": "https://github.com/JCRABURN",
+            "followers_url": "https://api.github.com/users/JCRABURN/followers",
+            "following_url": "https://api.github.com/users/JCRABURN/following{/other_user}",
+            "gists_url": "https://api.github.com/users/JCRABURN/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/JCRABURN/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/JCRABURN/subscriptions",
+            "organizations_url": "https://api.github.com/users/JCRABURN/orgs",
+            "repos_url": "https://api.github.com/users/JCRABURN/repos",
+            "events_url": "https://api.github.com/users/JCRABURN/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/JCRABURN/received_events",
+            "type": "User",
+            "user_view_type": "public",
+            "site_admin": false
+          },
+          "body": "Week 5 decision-review remediation is materially better. The governed Top 5 is now labeled correctly as deterministic/not strength-ranked, the shadow uncertainty is explicitly treated as non-discriminating, the 23 large ATS edges were adjudicated, and the five-game human decision shortlist is separated from official policy.\n\nI would keep this PR unmerged until PR #30 is narrowed to the actually required migration-21 dependency. After that rebase/retarget, this Week 5 execution PR is suitable for final review. Do not reintroduce migration 22/23 through the execution branch.\n\nFor the current contest decision, the five-game shortlist is usable as a human-review card with the stated caveats; do not promote it to an official model Top 5 or sportsbook recommendation.",
+          "commit_id": "fdddc3834bb252b0f7118c9aa7ee95114bb87ca1",
+          "state": "commented",
+          "html_url": "https://github.com/JCRABURN/cfb-betting-system-v3/pull/29#pullrequestreview-5380241124",
+          "pull_request_url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3/pulls/29",
+          "_links": {
+            "html": {
+              "href": "https://github.com/JCRABURN/cfb-betting-system-v3/pull/29#pullrequestreview-5380241124"
+            },
+            "pull_request": {
+              "href": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3/pulls/29"
+            }
+          },
+          "submitted_at": "2026-10-01T13:54:38Z",
+          "updated_at": "2026-10-01T13:54:38Z"
+        },
+        "pull_request": {
+          "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3/pulls/29",
+          "id": 4699134355,
+          "number": 29,
+          "head": {
+            "ref": "codex/2026-week5-execution",
+            "sha": "09a979e31ebedce5f0a453322ef1b918f11f8909",
+            "repo": {
+              "id": 1323187714,
+              "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3",
+              "name": "cfb-betting-system-v3"
+            }
+          },
+          "base": {
+            "ref": "main",
+            "sha": "626fc187cddc3b0ad0b1a59337ea5464bc685039",
+            "repo": {
+              "id": 1323187714,
+              "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3",
+              "name": "cfb-betting-system-v3"
+            }
+          }
+        },
+        "action": "created"
+      },
+      "public": true,
+      "created_at": "2026-10-01T13:54:46Z"
+    },
+    {
+      "id": "16195593305",
+      "type": "PullRequestReviewEvent",
+      "actor": {
+        "id": 215523089,
+        "login": "JCRABURN",
+        "display_login": "JCRABURN",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/JCRABURN",
+        "avatar_url": "https://avatars.githubusercontent.com/u/215523089?"
+      },
+      "repo": {
+        "id": 1323187714,
+        "name": "JCRABURN/cfb-betting-system-v3",
+        "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3"
+      },
+      "payload": {
+        "review": {
+          "id": 5380240488,
+          "node_id": "PRR_kwDOTt4-As8AAAABQK_0aA",
+          "user": {
+            "login": "JCRABURN",
+            "id": 215523089,
+            "node_id": "U_kgDODNifEQ",
+            "avatar_url": "https://avatars.githubusercontent.com/u/215523089?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/JCRABURN",
+            "html_url": "https://github.com/JCRABURN",
+            "followers_url": "https://api.github.com/users/JCRABURN/followers",
+            "following_url": "https://api.github.com/users/JCRABURN/following{/other_user}",
+            "gists_url": "https://api.github.com/users/JCRABURN/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/JCRABURN/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/JCRABURN/subscriptions",
+            "organizations_url": "https://api.github.com/users/JCRABURN/orgs",
+            "repos_url": "https://api.github.com/users/JCRABURN/repos",
+            "events_url": "https://api.github.com/users/JCRABURN/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/JCRABURN/received_events",
+            "type": "User",
+            "user_view_type": "public",
+            "site_admin": false
+          },
+          "body": "Review: do not merge this dependency PR as currently scoped.\n\nThe split from Week 5 execution is an improvement, but this PR still combines the required migration-21 totals/unified shadow dependency with migration 22 and its audit/correlation framework. The PR body itself states migration 22 is optional and is not used to choose Week 5 picks. AGENTS.md requires narrowly scoped changes and says not to combine unrelated schema/model changes.\n\nPlease split this again: make the Week 5 dependency contain only migration 21 plus the exact shadow totals/unified modules, exports, docs, and tests required to replay the Week 5 shadow card. Put migration 22, correlation-aware Top 5, totals postgame audits, and mixed-market audit infrastructure in a separate research PR.\n\nThe reported 580-test full-suite and migration-copy verification are encouraging, but there are no GitHub CI/status checks on head abc0265. Preserve the exact local verification evidence.\n\nOnce the dependency is narrowed to migration 21 only and tests still pass, I am comfortable re-reviewing it quickly.",
+          "commit_id": "abc0265b23fc5b5aa609d3fd5991e30f92607a7e",
+          "state": "commented",
+          "html_url": "https://github.com/JCRABURN/cfb-betting-system-v3/pull/30#pullrequestreview-5380240488",
+          "pull_request_url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3/pulls/30",
+          "_links": {
+            "html": {
+              "href": "https://github.com/JCRABURN/cfb-betting-system-v3/pull/30#pullrequestreview-5380240488"
+            },
+            "pull_request": {
+              "href": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3/pulls/30"
+            }
+          },
+          "submitted_at": "2026-10-01T13:54:35Z",
+          "updated_at": "2026-10-01T13:54:36Z"
+        },
+        "pull_request": {
+          "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3/pulls/30",
+          "id": 4704103655,
+          "number": 30,
+          "head": {
+            "ref": "codex/week5-totals-dependency",
+            "sha": "fc78714f5955390e4ab41bf6450a4c9fbbbc6b86",
+            "repo": {
+              "id": 1323187714,
+              "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3",
+              "name": "cfb-betting-system-v3"
+            }
+          },
+          "base": {
+            "ref": "main",
+            "sha": "5f71c25ce2d2768b4def64c1c35294367dfd0004",
+            "repo": {
+              "id": 1323187714,
+              "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3",
+              "name": "cfb-betting-system-v3"
+            }
+          }
+        },
+        "action": "created"
+      },
+      "public": true,
+      "created_at": "2026-10-01T13:54:37Z"
+    },
+    {
+      "id": "22693282564",
+      "type": "CreateEvent",
+      "actor": {
+        "id": 215523089,
+        "login": "JCRABURN",
+        "display_login": "JCRABURN",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/JCRABURN",
+        "avatar_url": "https://avatars.githubusercontent.com/u/215523089?"
+      },
+      "repo": {
+        "id": 1323187714,
+        "name": "JCRABURN/cfb-betting-system-v3",
+        "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3"
+      },
+      "payload": {
+        "ref": "codex/week5-totals-dependency",
+        "ref_type": "branch",
+        "full_ref": "refs/heads/codex/week5-totals-dependency",
+        "master_branch": "main",
+        "description": null,
+        "pusher_type": "user"
+      },
+      "public": true,
+      "created_at": "2026-10-01T13:11:35Z"
+    },
+    {
+      "id": "16191969492",
+      "type": "PullRequestEvent",
+      "actor": {
+        "id": 215523089,
+        "login": "JCRABURN",
+        "display_login": "JCRABURN",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/JCRABURN",
+        "avatar_url": "https://avatars.githubusercontent.com/u/215523089?"
+      },
+      "repo": {
+        "id": 1323187714,
+        "name": "JCRABURN/cfb-betting-system-v3",
+        "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3"
+      },
+      "payload": {
+        "action": "opened",
+        "number": 30,
+        "pull_request": {
+          "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3/pulls/30",
+          "id": 4704103655,
+          "number": 30,
+          "head": {
+            "ref": "codex/week5-totals-dependency",
+            "sha": "fc78714f5955390e4ab41bf6450a4c9fbbbc6b86",
+            "repo": {
+              "id": 1323187714,
+              "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3",
+              "name": "cfb-betting-system-v3"
+            }
+          },
+          "base": {
+            "ref": "main",
+            "sha": "5f71c25ce2d2768b4def64c1c35294367dfd0004",
+            "repo": {
+              "id": 1323187714,
+              "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3",
+              "name": "cfb-betting-system-v3"
+            }
+          }
+        }
+      },
+      "public": true,
+      "created_at": "2026-10-01T13:11:49Z"
+    },
+    {
+      "id": "16182576695",
+      "type": "PullRequestReviewEvent",
+      "actor": {
+        "id": 215523089,
+        "login": "JCRABURN",
+        "display_login": "JCRABURN",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/JCRABURN",
+        "avatar_url": "https://avatars.githubusercontent.com/u/215523089?"
+      },
+      "repo": {
+        "id": 1323187714,
+        "name": "JCRABURN/cfb-betting-system-v3",
+        "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3"
+      },
+      "payload": {
+        "review": {
+          "id": 5378414862,
+          "node_id": "PRR_kwDOTt4-As8AAAABQJQZDg",
+          "user": {
+            "login": "JCRABURN",
+            "id": 215523089,
+            "node_id": "U_kgDODNifEQ",
+            "avatar_url": "https://avatars.githubusercontent.com/u/215523089?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/JCRABURN",
+            "html_url": "https://github.com/JCRABURN",
+            "followers_url": "https://api.github.com/users/JCRABURN/followers",
+            "following_url": "https://api.github.com/users/JCRABURN/following{/other_user}",
+            "gists_url": "https://api.github.com/users/JCRABURN/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/JCRABURN/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/JCRABURN/subscriptions",
+            "organizations_url": "https://api.github.com/users/JCRABURN/orgs",
+            "repos_url": "https://api.github.com/users/JCRABURN/repos",
+            "events_url": "https://api.github.com/users/JCRABURN/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/JCRABURN/received_events",
+            "type": "User",
+            "user_view_type": "public",
+            "site_admin": false
+          },
+          "body": "Review complete. I do not recommend merging this PR yet.\n\n1. Scope/review boundary: this PR is 130 files / 22k+ additions and folds migrations 21-22 plus research/model infrastructure from still-open PRs #26/#27 into the Week 5 execution PR. AGENTS.md requires narrowly scoped changes and separate review boundaries; this should not bypass those prerequisite reviews. Either merge/review the prerequisite infrastructure separately first, or split this PR so Week 5 execution/evidence is isolated.\n\n2. Pick-readiness is overstated. The governed ATS model has no game-specific uncertainty, assigns Confidence 1 to all 56 games, and its 'Top 5' is deterministic locked-line order rather than a reliability ranking. The report documents this correctly, but it should not be represented as the best five ATS bets.\n\n3. The combined Top 5 is entirely totals from a shadow model whose cited rolling-origin test is negative ROI (-1.62% at -110) with raw, uncalibrated probabilities. Keep this explicitly research-only and do not promote it as the week's best betting card.\n\n4. Context is materially incomplete: ESPN injury coverage contains only three team groups and expected QBs are unverified. The Week 5 card should be rerun after a documented QB/injury pass (or the report should say that the card is not context-ready).\n\n5. There are no GitHub CI/status checks attached to head 417b77e, despite the local 587-pass claim. At minimum preserve the exact local command/results in the PR and, if repository CI is available, run it before merge.\n\nPositive findings: the 56-game line reconciliation, immutable lock custody, ATS sign convention, point-in-time kickoff guard, and archived execution evidence look directionally sound. I am not asking for curve-fitting or a midweek policy change; the blockers are review scope and readiness labeling.",
+          "commit_id": "417b77e7ffbc0ae8e8bda793a9ee3822a2ca8f79",
+          "state": "commented",
+          "html_url": "https://github.com/JCRABURN/cfb-betting-system-v3/pull/29#pullrequestreview-5378414862",
+          "pull_request_url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3/pulls/29",
+          "_links": {
+            "html": {
+              "href": "https://github.com/JCRABURN/cfb-betting-system-v3/pull/29#pullrequestreview-5378414862"
+            },
+            "pull_request": {
+              "href": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3/pulls/29"
+            }
+          },
+          "submitted_at": "2026-10-01T11:06:02Z",
+          "updated_at": "2026-10-01T11:06:02Z"
+        },
+        "pull_request": {
+          "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3/pulls/29",
+          "id": 4699134355,
+          "number": 29,
+          "head": {
+            "ref": "codex/2026-week5-execution",
+            "sha": "09a979e31ebedce5f0a453322ef1b918f11f8909",
+            "repo": {
+              "id": 1323187714,
+              "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3",
+              "name": "cfb-betting-system-v3"
+            }
+          },
+          "base": {
+            "ref": "main",
+            "sha": "626fc187cddc3b0ad0b1a59337ea5464bc685039",
+            "repo": {
+              "id": 1323187714,
+              "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3",
+              "name": "cfb-betting-system-v3"
+            }
+          }
+        },
+        "action": "created"
+      },
+      "public": true,
+      "created_at": "2026-10-01T11:06:03Z"
+    },
+    {
+      "id": "22680189575",
+      "type": "CreateEvent",
+      "actor": {
+        "id": 215523089,
+        "login": "JCRABURN",
+        "display_login": "JCRABURN",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/JCRABURN",
+        "avatar_url": "https://avatars.githubusercontent.com/u/215523089?"
+      },
+      "repo": {
+        "id": 1323187714,
+        "name": "JCRABURN/cfb-betting-system-v3",
+        "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3"
+      },
+      "payload": {
+        "ref": "codex/2026-week5-execution",
+        "ref_type": "branch",
+        "full_ref": "refs/heads/codex/2026-week5-execution",
+        "master_branch": "main",
+        "description": null,
+        "pusher_type": "user"
+      },
+      "public": true,
+      "created_at": "2026-10-01T04:02:00Z"
+    },
+    {
+      "id": "22677956856",
+      "type": "CreateEvent",
+      "actor": {
+        "id": 215523089,
+        "login": "JCRABURN",
+        "display_login": "JCRABURN",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/JCRABURN",
+        "avatar_url": "https://avatars.githubusercontent.com/u/215523089?"
+      },
+      "repo": {
+        "id": 1323187714,
+        "name": "JCRABURN/cfb-betting-system-v3",
+        "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3"
+      },
+      "payload": {
+        "ref": "data/2026-week5-splashsports-20260930",
+        "ref_type": "branch",
+        "full_ref": "refs/heads/data/2026-week5-splashsports-20260930",
+        "master_branch": "main",
+        "description": null,
+        "pusher_type": "user"
+      },
+      "public": true,
+      "created_at": "2026-10-01T03:07:02Z"
+    },
+    {
+      "id": "16157610792",
+      "type": "PullRequestEvent",
+      "actor": {
+        "id": 215523089,
+        "login": "JCRABURN",
+        "display_login": "JCRABURN",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/JCRABURN",
+        "avatar_url": "https://avatars.githubusercontent.com/u/215523089?"
+      },
+      "repo": {
+        "id": 1323187714,
+        "name": "JCRABURN/cfb-betting-system-v3",
+        "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3"
+      },
+      "payload": {
+        "action": "opened",
+        "number": 29,
+        "pull_request": {
+          "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3/pulls/29",
+          "id": 4699134355,
+          "number": 29,
+          "head": {
+            "ref": "codex/2026-week5-execution",
+            "sha": "09a979e31ebedce5f0a453322ef1b918f11f8909",
+            "repo": {
+              "id": 1323187714,
+              "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3",
+              "name": "cfb-betting-system-v3"
+            }
+          },
+          "base": {
+            "ref": "main",
+            "sha": "626fc187cddc3b0ad0b1a59337ea5464bc685039",
+            "repo": {
+              "id": 1323187714,
+              "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3",
+              "name": "cfb-betting-system-v3"
+            }
+          }
+        }
+      },
+      "public": true,
+      "created_at": "2026-10-01T04:02:39Z"
+    },
+    {
+      "id": "16155199222",
+      "type": "PullRequestEvent",
+      "actor": {
+        "id": 215523089,
+        "login": "JCRABURN",
+        "display_login": "JCRABURN",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/JCRABURN",
+        "avatar_url": "https://avatars.githubusercontent.com/u/215523089?"
+      },
+      "repo": {
+        "id": 1323187714,
+        "name": "JCRABURN/cfb-betting-system-v3",
+        "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3"
+      },
+      "payload": {
+        "action": "merged",
+        "number": 28,
+        "pull_request": {
+          "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3/pulls/28",
+          "id": 4698717952,
+          "number": 28,
+          "head": {
+            "ref": "data/2026-week5-splashsports-20260930",
+            "sha": "70374e37cbe565309ffa907770f02a63c8f0bc02",
+            "repo": {
+              "id": 1323187714,
+              "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3",
+              "name": "cfb-betting-system-v3"
+            }
+          },
+          "base": {
+            "ref": "main",
+            "sha": "1fccc5ab29209bea21136d9041873624f0e13b25",
+            "repo": {
+              "id": 1323187714,
+              "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3",
+              "name": "cfb-betting-system-v3"
+            }
+          }
+        }
+      },
+      "public": true,
+      "created_at": "2026-10-01T03:08:38Z"
+    },
+    {
+      "id": "16155163155",
+      "type": "PullRequestEvent",
+      "actor": {
+        "id": 215523089,
+        "login": "JCRABURN",
+        "display_login": "JCRABURN",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/JCRABURN",
+        "avatar_url": "https://avatars.githubusercontent.com/u/215523089?"
+      },
+      "repo": {
+        "id": 1323187714,
+        "name": "JCRABURN/cfb-betting-system-v3",
+        "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3"
+      },
+      "payload": {
+        "action": "opened",
+        "number": 28,
+        "pull_request": {
+          "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3/pulls/28",
+          "id": 4698717952,
+          "number": 28,
+          "head": {
+            "ref": "data/2026-week5-splashsports-20260930",
+            "sha": "70374e37cbe565309ffa907770f02a63c8f0bc02",
+            "repo": {
+              "id": 1323187714,
+              "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3",
+              "name": "cfb-betting-system-v3"
+            }
+          },
+          "base": {
+            "ref": "main",
+            "sha": "1fccc5ab29209bea21136d9041873624f0e13b25",
+            "repo": {
+              "id": 1323187714,
+              "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3",
+              "name": "cfb-betting-system-v3"
+            }
+          }
+        }
+      },
+      "public": true,
+      "created_at": "2026-10-01T03:07:44Z"
+    },
+    {
+      "id": "22651828063",
+      "type": "PushEvent",
+      "actor": {
+        "id": 215523089,
+        "login": "JCRABURN",
+        "display_login": "JCRABURN",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/JCRABURN",
+        "avatar_url": "https://avatars.githubusercontent.com/u/215523089?"
+      },
+      "repo": {
+        "id": 1323187714,
+        "name": "JCRABURN/cfb-betting-system-v3",
+        "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3"
+      },
+      "payload": {
+        "repository_id": 1323187714,
+        "push_id": 45101280931,
+        "ref": "refs/heads/data/2026-week5-splashsports-20260930",
+        "head": "70374e37cbe565309ffa907770f02a63c8f0bc02",
+        "before": "a37fd175dce165905cc667c7496684ed0367a578"
+      },
+      "public": true,
+      "created_at": "2026-10-01T03:07:37Z"
+    }
+  ]
+}

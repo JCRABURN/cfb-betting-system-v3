@@ -90,3 +90,5 @@ outputs/2026-week9-verification/** -text whitespace=cr-at-eol
 # New Week 8 audit evidence is byte-preserved; original artifacts are untouched.
 outputs/2026-week8-postgame-audit/** -text whitespace=cr-at-eol
 outputs/2026-week8-audit-research/** -text whitespace=cr-at-eol
+# Preserve the new CI investigation and separately derived reading-copy bytes.
+outputs/2026-ci-merge-gates/** -text whitespace=cr-at-eol
