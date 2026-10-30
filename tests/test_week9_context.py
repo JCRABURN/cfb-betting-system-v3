@@ -1,7 +1,7 @@
 from datetime import datetime,timezone
 import pytest
 from scripts.capture_week9_context import official_article_links,capture
-from scripts.review_week9_context import ROOT,build,distance,main
+from scripts.replay_week9_compat import ROOT,build,distance,main
 
 def test_official_links_exclude_share_endpoints_other_hosts_and_future_news():
     base='https://example.edu/sports/football'
