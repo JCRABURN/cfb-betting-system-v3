@@ -1,0 +1,59 @@
+{
+  "records": [
+    {
+      "name": "sunbelt-availability",
+      "url": "https://sunbeltsports.org/news/2025/8/11/football-availability-report-new.aspx",
+      "requested_at_utc": "2026-10-29T21:34:27.837854+00:00",
+      "status": "CAPTURED",
+      "http_status": 200,
+      "received_at_utc": "2026-10-29T21:34:28.004733+00:00",
+      "path": "sunbelt-availability.html.gz",
+      "sha256": "86b5de0b83d17fa018119d0aa4a81b49a8b4f1c63cca5574dc123e018b6a59c9",
+      "resolved_url": "https://sunbeltsports.org/news/2025/8/11/football-availability-report-new.aspx"
+    },
+    {
+      "name": "american-football",
+      "url": "https://theamerican.org/sports/football",
+      "requested_at_utc": "2026-10-29T21:34:28.004733+00:00",
+      "status": "CAPTURED",
+      "http_status": 200,
+      "received_at_utc": "2026-10-29T21:34:28.648536+00:00",
+      "path": "american-football.html.gz",
+      "sha256": "7465f356d46ebca5c76713c6504b4aa256b22242bfd30a814790a85533b3cbe2",
+      "resolved_url": "https://theamerican.org/sports/football"
+    },
+    {
+      "name": "troy-secondary",
+      "url": "https://kickoffstatus.com/games/2026-10-29-troy-at-james-madison/",
+      "requested_at_utc": "2026-10-29T21:34:28.654510+00:00",
+      "status": "CAPTURED",
+      "http_status": 200,
+      "received_at_utc": "2026-10-29T21:34:28.857201+00:00",
+      "path": "troy-secondary.html.gz",
+      "sha256": "da57e16880e877780163652277271b8ad607466720bcff6cce94443c2d629ed8",
+      "resolved_url": "https://kickoffstatus.com/games/2026-10-29-troy-at-james-madison/"
+    },
+    {
+      "name": "fau-unt-secondary",
+      "url": "https://kickoffstatus.com/games/2026-10-29-florida-atlantic-at-north-texas/",
+      "requested_at_utc": "2026-10-29T21:34:28.857201+00:00",
+      "status": "CAPTURED",
+      "http_status": 200,
+      "received_at_utc": "2026-10-29T21:34:29.035097+00:00",
+      "path": "fau-unt-secondary.html.gz",
+      "sha256": "a63d64fcac335a5301d0cbdaf9c5465ffa6f8038707967a03b2f10df55eaf5e8",
+      "resolved_url": "https://kickoffstatus.com/games/2026-10-29-florida-atlantic-at-north-texas/"
+    },
+    {
+      "name": "jmu-local-report",
+      "url": "https://www.whsv.com/2026/10/29/jmu-seeks-bounce-back-against-troy-rematch-last-seasons-sun-belt-title-game/",
+      "requested_at_utc": "2026-10-29T21:34:29.035097+00:00",
+      "status": "CAPTURED",
+      "http_status": 200,
+      "received_at_utc": "2026-10-29T21:34:29.379976+00:00",
+      "path": "jmu-local-report.html.gz",
+      "sha256": "7a4a3c8aa5d7182a03cc4e5a101a454529e5f17a4dfe6201f1e1cdd6ba4a1e21",
+      "resolved_url": "https://www.whsv.com/2026/10/29/jmu-seeks-bounce-back-against-troy-rematch-last-seasons-sun-belt-title-game/"
+    }
+  ]
+}

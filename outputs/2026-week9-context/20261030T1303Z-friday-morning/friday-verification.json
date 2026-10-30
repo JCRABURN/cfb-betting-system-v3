@@ -1,0 +1,72 @@
+{
+  "tested_commit": "6e1948dd9b675a3f1226350ce5b40a6556e09f7a",
+  "runtime": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "started_at_utc": "2026-10-30T13:11:11.216324+00:00",
+  "completed_at_utc": "2026-10-30T13:11:32.391357+00:00",
+  "gates": [
+    {
+      "command": [
+        "C:\\Users\\jraburn\\Documents\\GitHub\\cfb-betting-system-v3\\.venv\\Scripts\\python.exe",
+        "-m",
+        "scripts.seal_week9_board",
+        "--verify"
+      ],
+      "exit_code": 0,
+      "stdout": "{\n  \"status\": \"SEALED_PROSPECTIVE_RESEARCH_BOARD\",\n  \"eligible_games\": 54,\n  \"ats_selections\": 54,\n  \"total_selections\": 54,\n  \"excluded_elapsed_games\": 2,\n  \"first_eligible_kickoff_utc\": \"2026-10-28T23:00:00+00:00\",\n  \"model_code_commit\": \"93f818fea5dc49a49b6bb1c1a569d8f25817c898\",\n  \"clv_status\": \"INCOMPLETE\",\n  \"model_policy_change\": false,\n  \"combined_top5\": \"UNCALIBRATED_RESEARCH_ONLY\"\n}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "C:\\Users\\jraburn\\Documents\\GitHub\\cfb-betting-system-v3\\.venv\\Scripts\\python.exe",
+        "-m",
+        "scripts.review_week9_context",
+        "--capture",
+        "outputs\\2026-week9-context\\20261030T1303Z-friday-morning",
+        "--verify"
+      ],
+      "exit_code": 0,
+      "stdout": "{\"context_games\": 54, \"owner_approval\": \"PENDING\", \"model_adjustments\": 0}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "C:\\Users\\jraburn\\Documents\\GitHub\\cfb-betting-system-v3\\.venv\\Scripts\\python.exe",
+        "-m",
+        "scripts.review_week9_context",
+        "--capture",
+        "outputs/2026-week9-context/20261029T2133Z-thursday-pregame",
+        "--verify"
+      ],
+      "exit_code": 0,
+      "stdout": "{\"context_games\": 54, \"owner_approval\": \"PENDING\", \"model_adjustments\": 0}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "C:\\Users\\jraburn\\Documents\\GitHub\\cfb-betting-system-v3\\.venv\\Scripts\\python.exe",
+        "-m",
+        "scripts.verify_week9_owner_review",
+        "outputs/2026-week9-owner-review/20261030-friday-morning/owner_review_shortlist.json"
+      ],
+      "exit_code": 0,
+      "stdout": "{\n  \"verified_candidates\": 10,\n  \"recommended_five\": 5,\n  \"owner_approval\": \"PENDING\",\n  \"frozen_values_unchanged\": true\n}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "C:\\Users\\jraburn\\Documents\\GitHub\\cfb-betting-system-v3\\.venv\\Scripts\\python.exe",
+        "-m",
+        "pytest",
+        "-q",
+        "tests/test_week9_context.py"
+      ],
+      "exit_code": 0,
+      "stdout": "....                                                                     [100%]\n4 passed in 9.18s\n",
+      "stderr": ""
+    }
+  ],
+  "started_rows_identical": true,
+  "supplement_raw_hashes_match": true,
+  "head_after": "6e1948dd9b675a3f1226350ce5b40a6556e09f7a",
+  "tracked_diff": ""
+}
