@@ -14,7 +14,12 @@ permissions:
 
 jobs:
   test:
-    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+        python: ['3.11.17', '3.12.14']
+    runs-on: ${{ matrix.os }}
     timeout-minutes: 15
 
     steps:
@@ -24,7 +29,7 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: '3.11'
+          python-version: ${{ matrix.python }}
           cache: pip
           cache-dependency-path: requirements-dev.txt
 
@@ -42,3 +47,15 @@ jobs:
 
       - name: Run complete test suite
         run: python -m pytest -q
+
+      - name: Capture native replay comparisons
+        if: always()
+        run: python -m scripts.diagnose_cross_platform_replay --output replay-diagnostics
+
+      - name: Archive replay comparisons
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: replay-${{ matrix.os }}-${{ matrix.python }}
+          path: replay-diagnostics/
+          if-no-files-found: error
