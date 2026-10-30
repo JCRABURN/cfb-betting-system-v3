@@ -1,7 +1,7 @@
 import copy
 import json
 import pytest
-from scripts import build_week8_postgame_audit as audit
+from scripts.replay_compat_v1 import week8 as audit
 from scripts import week8_scoring_sequence_review as scoring
 
 def test_full_104_grades_read_only_replay():
@@ -57,8 +57,8 @@ def test_scoring_sequence_cannot_use_final_alone_or_reversed_order():
     with pytest.raises(ValueError):scoring.validate_sequence(plays,7,14)
 
 def test_numerical_research_replays_and_prior_folds_exclude_test_week():
-    from scripts.week8_numerical_research import main
-    data=main(True)
+    from scripts.replay_compat_v1 import week8_research
+    data=week8_research.main(True)
     assert data['status']=='RESEARCH_ONLY_NOT_DEPLOYED'
     assert [(r['prior_training_n'],r['test_n']) for r in data['prior_week_bias_correction']]==[(56,58),(114,59),(173,52)]
     assert data['prior_week_bias_correction'][0]['candidate_mae']>data['prior_week_bias_correction'][0]['baseline_mae']

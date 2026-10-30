@@ -10,7 +10,7 @@ from pathlib import Path
 import pytest
 
 from scripts import build_week6_postgame_audit as week6
-from scripts import verify_week7_audit_integrity as strict
+from scripts.replay_compat_v1 import strict
 
 
 @pytest.mark.parametrize("name", week6.AUDIT_OUTPUTS)

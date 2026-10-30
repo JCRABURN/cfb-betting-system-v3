@@ -17,16 +17,24 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        os: [ubuntu-latest, windows-latest]
-        python: ['3.11.17', '3.12.14']
+        include:
+          - os: ubuntu-latest
+            python: '3.11.17'
+          - os: ubuntu-latest
+            python: '3.12.14'
+          - os: windows-latest
+            python: '3.11.9'
+          - os: windows-latest
+            python: '3.12.10'
     runs-on: ${{ matrix.os }}
-    timeout-minutes: 15
+    timeout-minutes: 25
 
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
 
       - name: Set up Python
+        id: python
         uses: actions/setup-python@v5
         with:
           python-version: ${{ matrix.python }}
@@ -49,7 +57,7 @@ jobs:
         run: python -m pytest -q
 
       - name: Capture native replay comparisons
-        if: always()
+        if: always() && steps.python.outcome == 'success'
         run: python -m scripts.diagnose_cross_platform_replay --output replay-diagnostics
 
       - name: Archive replay comparisons
