@@ -6,7 +6,7 @@ from dataclasses import replace
 
 import pytest
 
-from scripts import build_week7_postgame_audit as original
+from scripts.replay_compat_v1 import week7 as original
 from scripts import research_week7_acceptance as research
 
 
