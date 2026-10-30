@@ -1,0 +1,34 @@
+{
+  "purpose": "READING_COPIES_ONLY_NOT_REPLACEMENT_SOURCE_EVIDENCE",
+  "normalization": "ASCII line-end spaces/tabs removed; LF; one final newline",
+  "raw_git_diff_check_suppressed": false,
+  "records": [
+    {
+      "source_text": "outputs/2026-week9-context/20261028T2310Z-thursday-gate/supplement/fau-notes-plain.txt",
+      "source_text_sha256": "6d5109d09086ab49700be6c2bf3a4dfe1405a092543d6e54bc81e08ac69b5f82",
+      "source_pdf": "outputs/2026-week9-context/20261028T2310Z-thursday-gate/supplement/fau-notes.pdf",
+      "source_pdf_sha256": "778770ce550e783411d0fc130e26b37f43f95c299d6706f094c986b6ea16ff09",
+      "reading_copy": "fau-notes-review.txt",
+      "reading_copy_sha256": "95397b00c05de0ae7e6f9625a8f09805461f2545b2535f3e3b24b204bb3b5331",
+      "lines_with_trailing_horizontal_whitespace": 4589
+    },
+    {
+      "source_text": "outputs/2026-week9-context/20261028T2310Z-thursday-gate/supplement/jmu-notes-plain.txt",
+      "source_text_sha256": "e1ec568fd79da741dd7bb1cb3f12a1f6ff43b44f69de12ccd599c9d2daa7d2e7",
+      "source_pdf": "outputs/2026-week9-context/20261028T2310Z-thursday-gate/supplement/jmu-notes.pdf",
+      "source_pdf_sha256": "c84fbd1f4944438ab64e5950c8b485b1379b0e25171c49fbafdc0b08ea83a2aa",
+      "reading_copy": "jmu-notes-review.txt",
+      "reading_copy_sha256": "1be004998ebe380df575f3c9304d7a479f155d3082a6023f15ffa0d5053f314d",
+      "lines_with_trailing_horizontal_whitespace": 1397
+    },
+    {
+      "source_text": "outputs/2026-week9-context/20261028T2310Z-thursday-gate/supplement/unt-notes-plain.txt",
+      "source_text_sha256": "cea10a8ddaec7db5bbc042321d5aca6990b3e9fb75b1087f1da0c3da0a28ad9f",
+      "source_pdf": "outputs/2026-week9-context/20261028T2310Z-thursday-gate/supplement/unt-notes.pdf",
+      "source_pdf_sha256": "7ec2239a25dcda5aaccd23125934ed2689d2bb2d5f26145808f7bcca46bcb075",
+      "reading_copy": "unt-notes-review.txt",
+      "reading_copy_sha256": "903360965ec77a82796e9add3fb537d8a7111efff5e2797cd61f943291a95241",
+      "lines_with_trailing_horizontal_whitespace": 433
+    }
+  ]
+}

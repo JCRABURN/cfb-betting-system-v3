@@ -1,0 +1,60 @@
+{
+  "records": [
+    {
+      "url": "https://sjsuspartans.com/news/2026/10/24/spartans-drop-game-to-nevada-on-the-road",
+      "requested_at_utc": "2026-10-28T22:40:38.603947+00:00",
+      "received_at_utc": "2026-10-28T22:40:39.043828+00:00",
+      "http_status": 200,
+      "response_date": "Wed, 28 Oct 2026 22:40:39 GMT",
+      "last_modified": null,
+      "path": "source-0.html.gz",
+      "sha256": "318afb950d757bef64028b6efda6ce57ec6107a7c0c7bc1fec5eb2ac8cd352a1",
+      "status": "CAPTURED"
+    },
+    {
+      "url": "https://golobos.com/news/2026/10/27/lobos-look-to-stay-hot-head-to-san-jose",
+      "requested_at_utc": "2026-10-28T22:40:39.062621+00:00",
+      "received_at_utc": "2026-10-28T22:40:39.668302+00:00",
+      "http_status": 200,
+      "response_date": "Wed, 28 Oct 2026 22:40:39 GMT",
+      "last_modified": null,
+      "path": "source-1.html.gz",
+      "sha256": "3ab4e3a33a4e8c1f92b51e0d2ca25aa3b29643df4cf01a1dddcc044c4a9d5f52",
+      "status": "CAPTURED"
+    },
+    {
+      "url": "https://fausports.com/news/2026/10/28/football-countdown-to-kickoff-game-8-at-north-texas",
+      "requested_at_utc": "2026-10-28T22:40:39.698786+00:00",
+      "received_at_utc": "2026-10-28T22:40:40.541097+00:00",
+      "http_status": 200,
+      "response_date": "Wed, 28 Oct 2026 22:40:40 GMT",
+      "last_modified": "Wed, 28 Oct 2026 22:40:40 GMT",
+      "path": "source-2.html.gz",
+      "sha256": "7703c29c469d78c398ead7fc651561dfa9515c2b8c0307262faaf3bb91eb57bf",
+      "status": "CAPTURED"
+    },
+    {
+      "url": "https://meangreensports.com/sports/football/stats/2026",
+      "requested_at_utc": "2026-10-28T22:40:40.556665+00:00",
+      "received_at_utc": "2026-10-28T22:40:41.502316+00:00",
+      "http_status": 200,
+      "response_date": "Wed, 28 Oct 2026 22:40:41 GMT",
+      "last_modified": "Wed, 28 Oct 2026 22:40:41 GMT",
+      "path": "source-3.html.gz",
+      "sha256": "acf041116164b71218ed9bd4973c0c19825306d8baeb1b466aa292dec0392019",
+      "status": "CAPTURED"
+    },
+    {
+      "url": "https://navysports.com/news/2026/10/26/football-navy-and-5-6-notre-dame-set-for-99th-meeting-saturday-at-gillette-stadium.aspx",
+      "requested_at_utc": "2026-10-28T22:40:41.526036+00:00",
+      "received_at_utc": "2026-10-28T22:40:41.620381+00:00",
+      "http_status": 404,
+      "response_date": "Wed, 28 Oct 2026 22:40:41 GMT",
+      "last_modified": null,
+      "path": "source-4.html.gz",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "status": "UNAVAILABLE_HTTP_ERROR"
+    }
+  ],
+  "purpose": "SEPARATE_PREGAME_CONTEXT_NOT_MODEL_INPUT"
+}

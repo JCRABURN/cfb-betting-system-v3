@@ -1,0 +1,62 @@
+[
+  {
+    "game_id": 401871071,
+    "url": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401871071",
+    "requested_at_utc": "2026-10-28T13:39:15.295353+00:00",
+    "received_at_utc": "2026-10-28T13:39:15.547792+00:00",
+    "sha256": "666168219bfeaf2ccdbd9be20f193ab67cb424c6402ea34fd95e85866f6ddda3",
+    "raw_path": "espn-401871071.json.gz",
+    "status": {
+      "id": "3",
+      "name": "STATUS_FINAL",
+      "state": "post",
+      "completed": true,
+      "description": "Final",
+      "detail": "Final",
+      "shortDetail": "Final"
+    },
+    "teams": [
+      {
+        "name": "Western Kentucky Hilltoppers",
+        "home_away": "home",
+        "score": "21"
+      },
+      {
+        "name": "Delaware Blue Hens",
+        "home_away": "away",
+        "score": "35"
+      }
+    ],
+    "model_use": "EXCLUDED_NO_RETROACTIVE_FORECAST"
+  },
+  {
+    "game_id": 401871072,
+    "url": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401871072",
+    "requested_at_utc": "2026-10-28T13:39:15.574493+00:00",
+    "received_at_utc": "2026-10-28T13:39:15.705007+00:00",
+    "sha256": "ecfeb4c3f707b058011a4a5458418c8a55513e018af39938bf1399f84cd8b693",
+    "raw_path": "espn-401871072.json.gz",
+    "status": {
+      "id": "3",
+      "name": "STATUS_FINAL",
+      "state": "post",
+      "completed": true,
+      "description": "Final",
+      "detail": "Final",
+      "shortDetail": "Final"
+    },
+    "teams": [
+      {
+        "name": "Missouri State Bears",
+        "home_away": "home",
+        "score": "24"
+      },
+      {
+        "name": "Sam Houston Bearkats",
+        "home_away": "away",
+        "score": "3"
+      }
+    ],
+    "model_use": "EXCLUDED_NO_RETROACTIVE_FORECAST"
+  }
+]

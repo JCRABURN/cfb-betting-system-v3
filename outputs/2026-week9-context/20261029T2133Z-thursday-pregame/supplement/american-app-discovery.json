@@ -1,0 +1,8 @@
+{
+  "asset_url": "https://app.hdintelligence.com/assets/index-Tw7ProWL.js",
+  "requested_at_utc": "2026-10-29T21:36:08.096950+00:00",
+  "received_at_utc": "2026-10-29T21:36:10.172063+00:00",
+  "http_status": 200,
+  "asset_sha256": "54d295224312f8c20e5780e4f66d91d7665a3ea5d73ee53e79e3a1816d8174ac",
+  "purpose": "Identify public report endpoint used by official conference embed; no authenticated routes accessed"
+}

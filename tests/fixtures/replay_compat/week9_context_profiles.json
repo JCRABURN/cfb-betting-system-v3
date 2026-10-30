@@ -1,0 +1,48 @@
+{
+  "version": "historical-context-replay-v1",
+  "source_code_sha256_lf": "f75db9986f26d7713354aa6b8628241d79e72983336bea8eb83b0b3f4ab3c9c8",
+  "captures": [
+    {
+      "capture_path": "outputs/2026-week9-context/20261028T1320Z",
+      "capture_manifest_sha256": "b14fa027b0a59d4f10c39ace52fe439dca8996c83b3148031cba38974007b8e6",
+      "derived_context_sha256": "1348ca065f46d99e011fb6b6f179978849b7fa7402e0042e128e5055bcb140f1",
+      "timezone_provider": "UNAVAILABLE_AT_ORIGINAL_GENERATION",
+      "model_adjustments": 0
+    },
+    {
+      "capture_path": "outputs/2026-week9-context/20261028T2237Z",
+      "capture_manifest_sha256": "830089567ee457b3e518d38691313d636886e886724d1ddc9c60515f10bcc363",
+      "derived_context_sha256": "b96e6eb4ca6823611f3ef9e338b7757574d44163a38f094308ec14ce6bd6f03f",
+      "timezone_provider": "UNAVAILABLE_AT_ORIGINAL_GENERATION",
+      "model_adjustments": 0
+    },
+    {
+      "capture_path": "outputs/2026-week9-context/20261028T2310Z-thursday-gate",
+      "capture_manifest_sha256": "153d08febf4ee9cd25806176a251b9b00c59754a6a1a9aaf9668cc145ce50afd",
+      "derived_context_sha256": "e71cd8b8cf106f7161e8f3104340aee68520d563eb7c2f7f63f03719fc7c908c",
+      "timezone_provider": "UNAVAILABLE_AT_ORIGINAL_GENERATION",
+      "model_adjustments": 0
+    },
+    {
+      "capture_path": "outputs/2026-week9-context/20261029T1147Z-thursday-gate",
+      "capture_manifest_sha256": "819ee6d11472b88980aec4724479310067ceb13b3290d9d35d81a23051fddd10",
+      "derived_context_sha256": "501896daf6621c0e6279e09266488c32b5d111018fe0866024e3d24004a582f9",
+      "timezone_provider": "UNAVAILABLE_AT_ORIGINAL_GENERATION",
+      "model_adjustments": 0
+    },
+    {
+      "capture_path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame",
+      "capture_manifest_sha256": "a4a7ef22981930be42195bf43e4b1e70450850d613ee1a95ce9b420958573d55",
+      "derived_context_sha256": "c6e3c694ebaa65c72404e09e4213db80d845ab9dff2c08373dc1df0d0033b787",
+      "timezone_provider": "UNAVAILABLE_AT_ORIGINAL_GENERATION",
+      "model_adjustments": 0
+    },
+    {
+      "capture_path": "outputs/2026-week9-context/20261030T1303Z-friday-morning",
+      "capture_manifest_sha256": "a6d8fe9dc3831e0bc09ebe5d46643719dadaa4afd7b659c504ab1f525ae9c86e",
+      "derived_context_sha256": "1b8f9ac705c75042e5515bda4032925cab59daf35b02f48ef707f0c0a621c9c7",
+      "timezone_provider": "UNAVAILABLE_AT_ORIGINAL_GENERATION",
+      "model_adjustments": 0
+    }
+  ]
+}

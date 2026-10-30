@@ -1,0 +1,22 @@
+{
+  "source_path": "outputs/week1-picks-2026-09-01/2026-week1-model-picks.xlsx",
+  "sha256": "e0afdaac52fdb3f0f699473820360f5f00738990c781124c5cb3037bea396bfb",
+  "filesystem_creation_time_utc": "2026-09-01T20:17:18Z",
+  "filesystem_last_write_time_utc": "2026-09-01T20:19:43Z",
+  "git_custody": "UNTRACKED_LOCAL_WORKBOOK_NO_PREGAME_IMMUTABLE_HASH_RECOVERED",
+  "sheets": [
+    "Summary",
+    "All 43 Picks",
+    "Official Top 5",
+    "Decision Pick 5",
+    "Raw Edge Top 10"
+  ],
+  "inspected_range": "All 43 Picks!A4:Q47",
+  "ats_rows": 43,
+  "matched_audit_matchups": 43,
+  "unmatched": [],
+  "projection_line_selection_differences_at_1e_6": [],
+  "total_forecasts_available": false,
+  "interpretation": "Local pregame-labeled preview corroboration only. Mutable filesystem dates do not independently establish pregame custody; do not promote Week 1 into the sealed inference sample.",
+  "normalization": "Existing ingestion.CanonicalTeamResolver, source DB schools, DEFAULT_TEAM_ALIASES, provider SplashSports; no custom aliases"
+}

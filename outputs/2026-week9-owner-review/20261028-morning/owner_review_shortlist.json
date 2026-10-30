@@ -1,0 +1,2386 @@
+{
+  "version": "week9-owner-review-20261028-morning-v1",
+  "created_at_utc": "2026-10-28T13:30:43.546654+00:00",
+  "sealed_board_sha256": "77aea6d0eefecc6dce014524610294da617d7dab2b6e903a59f8664f664e5460",
+  "owner_approval": "PENDING",
+  "model_policy_changed": false,
+  "ranking_method": "Qualitative owner-review judgment using separately reviewed availability, matchup and uncertainty; no market quota, score pooling or numerical forecast adjustment. No trained reliability or wager recommendation is asserted.",
+  "scale_diagnostic": {
+    "max_ats_score": 0.5975948916208462,
+    "totals_scores_above_max_ats": 18,
+    "original_combined_top5_all_totals": true
+  },
+  "selections": [
+    {
+      "owner_review_rank": 1,
+      "recommended_five": true,
+      "game_id": 401858505,
+      "market": "ATS",
+      "away": "Northwestern",
+      "home": "Oregon",
+      "selection": "Northwestern",
+      "locked_line": 3.5,
+      "frozen_projection_home_margin_or_total": -3.9257035349943417,
+      "selected_forecast_edge": 7.425703534994342,
+      "frozen_confidence": 1,
+      "frozen_confidence_kind": "GOVERNED_ATS",
+      "human_review_confidence_1_to_5": 3,
+      "human_confidence_status": "ORDINAL_JUDGMENT_NOT_CALIBRATED_PROBABILITY;SEPARATE_FROM_FROZEN_CONFIDENCE",
+      "original_market_research_rank": 4,
+      "research_score_not_calibrated": 0.5371285176749717,
+      "supporting_evidence": "Oregon reports Dante Moore is not expected back this season; Jay Johnson takes over coordination after Drew Mehringer dismissal. Northwestern QB Aidan Chiles produced five touchdowns last game. The frozen model projects Northwestern ahead by 3.93; +3.5 offers 7.43 points of forecast disagreement.",
+      "risk_and_exclusion_reason": "Road travel about 1,779 geodesic miles; new Oregon coordinator could improve performance. Raiola/Thomas/Smith depth remains unsettled; no quantified QB adjustment. Final OL/defensive availability unconfirmed.",
+      "sources": [
+        {
+          "url": "https://nusports.com/news/2026/10/26/aidan-chiles-named-big-ten-offensive-player-of-the-week-again",
+          "captured_at_utc": "2026-10-28T13:20:52.482774+00:00",
+          "sha256": "17d372d5d36f66aac35253ef52cb9e6c6697a86c856729f46fed3b8ae2d032de"
+        },
+        {
+          "url": "https://goducks.com/news/2026/10/26/football-moore-unlikely-to-return-for-ducks-in-2026",
+          "captured_at_utc": "2026-10-28T13:20:51.567200+00:00",
+          "sha256": "399041c67a51c5a9812fad62b38da8708e705321443fceaf186bd9a1c70456d8"
+        }
+      ],
+      "weather": {
+        "status": "CAPTURED",
+        "applicability": "OUTDOOR_FORECAST_NOT_OBSERVATION",
+        "hours": [
+          {
+            "detailedForecast": "",
+            "dewpoint": {
+              "unitCode": "wmoUnit:degC",
+              "value": 6.666666666666667
+            },
+            "endTime": "2026-10-31T13:00:00-07:00",
+            "icon": "https://api.weather.gov/icons/land/day/bkn?size=small",
+            "isDaytime": true,
+            "name": "",
+            "number": 79,
+            "probabilityOfPrecipitation": {
+              "unitCode": "wmoUnit:percent",
+              "value": 10
+            },
+            "relativeHumidity": {
+              "unitCode": "wmoUnit:percent",
+              "value": 87
+            },
+            "shortForecast": "Partly Sunny",
+            "startTime": "2026-10-31T12:00:00-07:00",
+            "temperature": 48,
+            "temperatureTrend": null,
+            "temperatureUnit": "F",
+            "windDirection": "",
+            "windSpeed": "0 mph"
+          },
+          {
+            "detailedForecast": "",
+            "dewpoint": {
+              "unitCode": "wmoUnit:degC",
+              "value": 7.777777777777778
+            },
+            "endTime": "2026-10-31T14:00:00-07:00",
+            "icon": "https://api.weather.gov/icons/land/day/bkn?size=small",
+            "isDaytime": true,
+            "name": "",
+            "number": 80,
+            "probabilityOfPrecipitation": {
+              "unitCode": "wmoUnit:percent",
+              "value": 10
+            },
+            "relativeHumidity": {
+              "unitCode": "wmoUnit:percent",
+              "value": 83
+            },
+            "shortForecast": "Partly Sunny",
+            "startTime": "2026-10-31T13:00:00-07:00",
+            "temperature": 51,
+            "temperatureTrend": null,
+            "temperatureUnit": "F",
+            "windDirection": "",
+            "windSpeed": "0 mph"
+          },
+          {
+            "detailedForecast": "",
+            "dewpoint": {
+              "unitCode": "wmoUnit:degC",
+              "value": 7.777777777777778
+            },
+            "endTime": "2026-10-31T15:00:00-07:00",
+            "icon": "https://api.weather.gov/icons/land/day/bkn?size=small",
+            "isDaytime": true,
+            "name": "",
+            "number": 81,
+            "probabilityOfPrecipitation": {
+              "unitCode": "wmoUnit:percent",
+              "value": 10
+            },
+            "relativeHumidity": {
+              "unitCode": "wmoUnit:percent",
+              "value": 79
+            },
+            "shortForecast": "Partly Sunny",
+            "startTime": "2026-10-31T14:00:00-07:00",
+            "temperature": 52,
+            "temperatureTrend": null,
+            "temperatureUnit": "F",
+            "windDirection": "WSW",
+            "windSpeed": "2 mph"
+          },
+          {
+            "detailedForecast": "",
+            "dewpoint": {
+              "unitCode": "wmoUnit:degC",
+              "value": 7.777777777777778
+            },
+            "endTime": "2026-10-31T16:00:00-07:00",
+            "icon": "https://api.weather.gov/icons/land/day/bkn?size=small",
+            "isDaytime": true,
+            "name": "",
+            "number": 82,
+            "probabilityOfPrecipitation": {
+              "unitCode": "wmoUnit:percent",
+              "value": 10
+            },
+            "relativeHumidity": {
+              "unitCode": "wmoUnit:percent",
+              "value": 76
+            },
+            "shortForecast": "Partly Sunny",
+            "startTime": "2026-10-31T15:00:00-07:00",
+            "temperature": 53,
+            "temperatureTrend": null,
+            "temperatureUnit": "F",
+            "windDirection": "WSW",
+            "windSpeed": "2 mph"
+          }
+        ]
+      },
+      "away_travel_rest": {
+        "days_between_fbs_kickoffs": 7.145833333333333,
+        "fbs_only_splits_through_week8": {
+          "AWAY": {
+            "mean_points_against": 25.0,
+            "mean_points_for": 23.5,
+            "n": 2
+          },
+          "HOME": {
+            "mean_points_against": 12.0,
+            "mean_points_for": 40.5,
+            "n": 4
+          },
+          "NEUTRAL": {
+            "mean_points_against": null,
+            "mean_points_for": null,
+            "n": 0
+          }
+        },
+        "frozen_epa_package": {
+          "as_of_season": 2026,
+          "as_of_week": 8,
+          "defense_epa_play": 0.04100506884915428,
+          "defense_success_rate": 0.4223744292237443,
+          "havoc_rate": 0.167,
+          "is_prior_season_fallback": false,
+          "offense_epa_play": 0.3525407116495901,
+          "offense_success_rate": 0.5106888361045131
+        },
+        "home_stadium_to_venue_great_circle_miles": 1778.6,
+        "last_fbs_game_id": 401858498,
+        "last_fbs_kickoff": "2026-10-24T16:00:00.000Z",
+        "origin_timezone": "America/Chicago",
+        "time_zone_offset_status": "UNAVAILABLE_LOCAL_TZDATA;SOURCE_ZONE_NAMES_RETAINED",
+        "time_zone_shift_hours": null,
+        "travel_limit": "Geodesic stadium proxy, not verified team itinerary; rest is kickoff-to-kickoff, not full rest days",
+        "venue_timezone": "America/Los_Angeles"
+      },
+      "home_travel_rest": {
+        "days_between_fbs_kickoffs": 7.020833333333333,
+        "fbs_only_splits_through_week8": {
+          "AWAY": {
+            "mean_points_against": 29.0,
+            "mean_points_for": 27.333333333333332,
+            "n": 3
+          },
+          "HOME": {
+            "mean_points_against": 19.333333333333332,
+            "mean_points_for": 22.0,
+            "n": 3
+          },
+          "NEUTRAL": {
+            "mean_points_against": null,
+            "mean_points_for": null,
+            "n": 0
+          }
+        },
+        "frozen_epa_package": {
+          "as_of_season": 2026,
+          "as_of_week": 8,
+          "defense_epa_play": 0.001946035151077774,
+          "defense_success_rate": 0.3673469387755102,
+          "havoc_rate": 0.166,
+          "is_prior_season_fallback": false,
+          "offense_epa_play": 0.09311908946750025,
+          "offense_success_rate": 0.4116331096196868
+        },
+        "home_stadium_to_venue_great_circle_miles": 0.0,
+        "last_fbs_game_id": 401858495,
+        "last_fbs_kickoff": "2026-10-24T19:00:00.000Z",
+        "origin_timezone": "America/Los_Angeles",
+        "time_zone_offset_status": "UNAVAILABLE_LOCAL_TZDATA;SOURCE_ZONE_NAMES_RETAINED",
+        "time_zone_shift_hours": null,
+        "travel_limit": "Geodesic stadium proxy, not verified team itinerary; rest is kickoff-to-kickoff, not full rest days",
+        "venue_timezone": "America/Los_Angeles"
+      },
+      "current_market_context_only": [
+        {
+          "awayMoneyline": 145,
+          "formattedSpread": "Oregon -3.5",
+          "homeMoneyline": -175,
+          "overUnder": 47.5,
+          "overUnderOpen": 50.5,
+          "provider": "DraftKings",
+          "spread": -3.5,
+          "spreadOpen": -7.5
+        },
+        {
+          "awayMoneyline": 150,
+          "formattedSpread": "Oregon -3.5",
+          "homeMoneyline": -175,
+          "overUnder": 47.5,
+          "overUnderOpen": 50,
+          "provider": "Bovada",
+          "spread": -3.5,
+          "spreadOpen": -3.5
+        }
+      ],
+      "numeric_projection_adjustment": 0,
+      "created_at_utc": "2026-10-28T13:30:43.546654+00:00",
+      "author": "Codex contextual owner-review research",
+      "supersedes": null,
+      "owner_approval": "PENDING"
+    },
+    {
+      "owner_review_rank": 2,
+      "recommended_five": true,
+      "game_id": 401859185,
+      "market": "ATS",
+      "away": "Notre Dame",
+      "home": "Navy",
+      "selection": "Navy",
+      "locked_line": 30.5,
+      "frozen_projection_home_margin_or_total": -10.981021675830757,
+      "selected_forecast_edge": 19.518978324169243,
+      "frozen_confidence": 1,
+      "frozen_confidence_kind": "GOVERNED_ATS",
+      "human_review_confidence_1_to_5": 2,
+      "human_confidence_status": "ORDINAL_JUDGMENT_NOT_CALIBRATED_PROBABILITY;SEPARATE_FROM_FROZEN_CONFIDENCE",
+      "original_market_research_rank": 1,
+      "research_score_not_calibrated": 0.5975948916208462,
+      "supporting_evidence": "Largest ATS research edge: Navy +30.5 against forecast Notre Dame by 10.98. Navy rushing scheme offers a plausible way to limit possessions. Retain neutral-site designation: Gillette Stadium, not Annapolis.",
+      "risk_and_exclusion_reason": "Notre Dame has roughly 14 days between games versus Navy 7. Official preview describes strong Irish run defense; Navy QB workload and inexperienced roster add risk. Jackson Gutierrez is the recent Navy starter; final backup, OL and defensive availability unconfirmed. Preview was accessible through web retrieval but direct archival retry returned 404.",
+      "sources": [
+        {
+          "url": "https://navysports.com/news/2026/10/26/football-navy-and-5-6-notre-dame-set-for-99th-meeting-saturday-at-gillette-stadium.aspx",
+          "source_status": "WEB_TOOL_RETRIEVAL;DIRECT_ARCHIVE_404;AVAILABILITY_UNCERTAINTY"
+        }
+      ],
+      "weather": {
+        "status": "CAPTURED",
+        "applicability": "OUTDOOR_FORECAST_NOT_OBSERVATION",
+        "hours": [
+          {
+            "detailedForecast": "",
+            "dewpoint": {
+              "unitCode": "wmoUnit:degC",
+              "value": 1.1111111111111112
+            },
+            "endTime": "2026-10-31T13:00:00-04:00",
+            "icon": "https://api.weather.gov/icons/land/day/skc?size=small",
+            "isDaytime": true,
+            "name": "",
+            "number": 76,
+            "probabilityOfPrecipitation": {
+              "unitCode": "wmoUnit:percent",
+              "value": 0
+            },
+            "relativeHumidity": {
+              "unitCode": "wmoUnit:percent",
+              "value": 48
+            },
+            "shortForecast": "Sunny",
+            "startTime": "2026-10-31T12:00:00-04:00",
+            "temperature": 53,
+            "temperatureTrend": null,
+            "temperatureUnit": "F",
+            "windDirection": "NW",
+            "windSpeed": "7 mph"
+          },
+          {
+            "detailedForecast": "",
+            "dewpoint": {
+              "unitCode": "wmoUnit:degC",
+              "value": 0
+            },
+            "endTime": "2026-10-31T14:00:00-04:00",
+            "icon": "https://api.weather.gov/icons/land/day/skc?size=small",
+            "isDaytime": true,
+            "name": "",
+            "number": 77,
+            "probabilityOfPrecipitation": {
+              "unitCode": "wmoUnit:percent",
+              "value": 0
+            },
+            "relativeHumidity": {
+              "unitCode": "wmoUnit:percent",
+              "value": 41
+            },
+            "shortForecast": "Sunny",
+            "startTime": "2026-10-31T13:00:00-04:00",
+            "temperature": 55,
+            "temperatureTrend": null,
+            "temperatureUnit": "F",
+            "windDirection": "NW",
+            "windSpeed": "7 mph"
+          },
+          {
+            "detailedForecast": "",
+            "dewpoint": {
+              "unitCode": "wmoUnit:degC",
+              "value": -0.5555555555555556
+            },
+            "endTime": "2026-10-31T15:00:00-04:00",
+            "icon": "https://api.weather.gov/icons/land/day/skc?size=small",
+            "isDaytime": true,
+            "name": "",
+            "number": 78,
+            "probabilityOfPrecipitation": {
+              "unitCode": "wmoUnit:percent",
+              "value": 0
+            },
+            "relativeHumidity": {
+              "unitCode": "wmoUnit:percent",
+              "value": 38
+            },
+            "shortForecast": "Sunny",
+            "startTime": "2026-10-31T14:00:00-04:00",
+            "temperature": 56,
+            "temperatureTrend": null,
+            "temperatureUnit": "F",
+            "windDirection": "NW",
+            "windSpeed": "6 mph"
+          }
+        ]
+      },
+      "away_travel_rest": {
+        "days_between_fbs_kickoffs": 13.6875,
+        "fbs_only_splits_through_week8": {
+          "AWAY": {
+            "mean_points_against": 21.333333333333332,
+            "mean_points_for": 36.666666666666664,
+            "n": 3
+          },
+          "HOME": {
+            "mean_points_against": 5.666666666666667,
+            "mean_points_for": 45.666666666666664,
+            "n": 3
+          },
+          "NEUTRAL": {
+            "mean_points_against": 13.0,
+            "mean_points_for": 41.0,
+            "n": 1
+          }
+        },
+        "frozen_epa_package": {
+          "as_of_season": 2026,
+          "as_of_week": 8,
+          "defense_epa_play": -0.08176063571567722,
+          "defense_success_rate": 0.34516129032258064,
+          "havoc_rate": 0.206,
+          "is_prior_season_fallback": false,
+          "offense_epa_play": 0.35741214232173507,
+          "offense_success_rate": 0.509090909090909
+        },
+        "home_stadium_to_venue_great_circle_miles": 769.4,
+        "last_fbs_game_id": 401856809,
+        "last_fbs_kickoff": "2026-10-17T23:30:00.000Z",
+        "origin_timezone": "America/Indiana/Indianapolis",
+        "time_zone_offset_status": "UNAVAILABLE_LOCAL_TZDATA;SOURCE_ZONE_NAMES_RETAINED",
+        "time_zone_shift_hours": null,
+        "travel_limit": "Geodesic stadium proxy, not verified team itinerary; rest is kickoff-to-kickoff, not full rest days",
+        "venue_timezone": "America/New_York"
+      },
+      "home_travel_rest": {
+        "days_between_fbs_kickoffs": 6.854166666666667,
+        "fbs_only_splits_through_week8": {
+          "AWAY": {
+            "mean_points_against": 28.5,
+            "mean_points_for": 23.25,
+            "n": 4
+          },
+          "HOME": {
+            "mean_points_against": 37.5,
+            "mean_points_for": 36.5,
+            "n": 2
+          },
+          "NEUTRAL": {
+            "mean_points_against": null,
+            "mean_points_for": null,
+            "n": 0
+          }
+        },
+        "frozen_epa_package": {
+          "as_of_season": 2026,
+          "as_of_week": 8,
+          "defense_epa_play": 0.1762256014896458,
+          "defense_success_rate": 0.40415704387990764,
+          "havoc_rate": 0.133,
+          "is_prior_season_fallback": false,
+          "offense_epa_play": 0.19396664470849279,
+          "offense_success_rate": 0.47297297297297297
+        },
+        "home_stadium_to_venue_great_circle_miles": 349.0,
+        "last_fbs_game_id": 401862810,
+        "last_fbs_kickoff": "2026-10-24T19:30:00.000Z",
+        "origin_timezone": "America/New_York",
+        "time_zone_offset_status": "UNAVAILABLE_LOCAL_TZDATA;SOURCE_ZONE_NAMES_RETAINED",
+        "time_zone_shift_hours": null,
+        "travel_limit": "Geodesic stadium proxy, not verified team itinerary; rest is kickoff-to-kickoff, not full rest days",
+        "venue_timezone": "America/New_York"
+      },
+      "current_market_context_only": [
+        {
+          "awayMoneyline": null,
+          "formattedSpread": "Notre Dame -30.5",
+          "homeMoneyline": null,
+          "overUnder": 57,
+          "overUnderOpen": 53.5,
+          "provider": "Bovada",
+          "spread": 30.5,
+          "spreadOpen": 29.5
+        },
+        {
+          "awayMoneyline": -6500,
+          "formattedSpread": "Notre Dame -30.5",
+          "homeMoneyline": 2000,
+          "overUnder": 56.5,
+          "overUnderOpen": 53.5,
+          "provider": "DraftKings",
+          "spread": 30.5,
+          "spreadOpen": 28.5
+        }
+      ],
+      "numeric_projection_adjustment": 0,
+      "created_at_utc": "2026-10-28T13:30:43.546654+00:00",
+      "author": "Codex contextual owner-review research",
+      "supersedes": null,
+      "owner_approval": "PENDING"
+    },
+    {
+      "owner_review_rank": 3,
+      "recommended_five": true,
+      "game_id": 401871095,
+      "market": "TOTAL",
+      "away": "Southern Miss",
+      "home": "UL Monroe",
+      "selection": "under",
+      "locked_line": 56.5,
+      "frozen_projection_home_margin_or_total": 47.77896800273346,
+      "selected_forecast_edge": 8.721031997266543,
+      "frozen_confidence": 3,
+      "frozen_confidence_kind": "UNCALIBRATED_TOTALS_RESEARCH",
+      "human_review_confidence_1_to_5": 2,
+      "human_confidence_status": "ORDINAL_JUDGMENT_NOT_CALIBRATED_PROBABILITY;SEPARATE_FROM_FROZEN_CONFIDENCE",
+      "original_market_research_rank": 4,
+      "research_score_not_calibrated": 0.6987188616096771,
+      "supporting_evidence": "Under 56.5 versus 47.78 forecast. Southern Miss coach describes ULM as a clock-consuming physical offense and confirms two OL starters were absent last week; Greg/Luke return is day-to-day. Locked total is one point above separately captured DraftKings 55.5.",
+      "risk_and_exclusion_reason": "Southern Miss just gained 286 rushing yards; defensive breakdowns and return scores can defeat the Under. WR Jeremiah Dillon is out for wrist surgery. Landry Lyddy/Aidan Armenta are provider passing leaders, not confirmed game-day starters; backups unverified. Rain and possible storms are a forecast, not a point adjustment.",
+      "sources": [
+        {
+          "url": "https://southernmiss.com/news/2026/10/24/late-touchdown-lifts-football-over-louisiana-35-31-in-homecoming-victory",
+          "captured_at_utc": "2026-10-28T13:20:56.698001+00:00",
+          "sha256": "2c6230d2edeae26f1f595f28becb3987e92c95418b84bb4a4fc81c8ee0dc26b5"
+        },
+        {
+          "url": "https://southernmiss.com/news/2026/10/26/football-blake-anderson-weekly-news-conference-the-ulm-game",
+          "captured_at_utc": "2026-10-28T13:20:57.811507+00:00",
+          "sha256": "ad0fce91af729437f968450b803b323708e32c8ab60b7d214184f1640ea71251"
+        }
+      ],
+      "weather": {
+        "status": "CAPTURED",
+        "applicability": "OUTDOOR_FORECAST_NOT_OBSERVATION",
+        "hours": [
+          {
+            "detailedForecast": "",
+            "dewpoint": {
+              "unitCode": "wmoUnit:degC",
+              "value": 17.77777777777778
+            },
+            "endTime": "2026-10-31T15:00:00-05:00",
+            "icon": "https://api.weather.gov/icons/land/day/tsra,50?size=small",
+            "isDaytime": true,
+            "name": "",
+            "number": 79,
+            "probabilityOfPrecipitation": {
+              "unitCode": "wmoUnit:percent",
+              "value": 54
+            },
+            "relativeHumidity": {
+              "unitCode": "wmoUnit:percent",
+              "value": 58
+            },
+            "shortForecast": "Chance Showers And Thunderstorms",
+            "startTime": "2026-10-31T14:00:00-05:00",
+            "temperature": 80,
+            "temperatureTrend": null,
+            "temperatureUnit": "F",
+            "windDirection": "SE",
+            "windSpeed": "5 mph"
+          },
+          {
+            "detailedForecast": "",
+            "dewpoint": {
+              "unitCode": "wmoUnit:degC",
+              "value": 17.77777777777778
+            },
+            "endTime": "2026-10-31T16:00:00-05:00",
+            "icon": "https://api.weather.gov/icons/land/day/tsra,50?size=small",
+            "isDaytime": true,
+            "name": "",
+            "number": 80,
+            "probabilityOfPrecipitation": {
+              "unitCode": "wmoUnit:percent",
+              "value": 54
+            },
+            "relativeHumidity": {
+              "unitCode": "wmoUnit:percent",
+              "value": 56
+            },
+            "shortForecast": "Chance Showers And Thunderstorms",
+            "startTime": "2026-10-31T15:00:00-05:00",
+            "temperature": 81,
+            "temperatureTrend": null,
+            "temperatureUnit": "F",
+            "windDirection": "SE",
+            "windSpeed": "5 mph"
+          },
+          {
+            "detailedForecast": "",
+            "dewpoint": {
+              "unitCode": "wmoUnit:degC",
+              "value": 17.77777777777778
+            },
+            "endTime": "2026-10-31T17:00:00-05:00",
+            "icon": "https://api.weather.gov/icons/land/day/tsra,50?size=small",
+            "isDaytime": true,
+            "name": "",
+            "number": 81,
+            "probabilityOfPrecipitation": {
+              "unitCode": "wmoUnit:percent",
+              "value": 54
+            },
+            "relativeHumidity": {
+              "unitCode": "wmoUnit:percent",
+              "value": 58
+            },
+            "shortForecast": "Chance Showers And Thunderstorms",
+            "startTime": "2026-10-31T16:00:00-05:00",
+            "temperature": 80,
+            "temperatureTrend": null,
+            "temperatureUnit": "F",
+            "windDirection": "SE",
+            "windSpeed": "5 mph"
+          },
+          {
+            "detailedForecast": "",
+            "dewpoint": {
+              "unitCode": "wmoUnit:degC",
+              "value": 18.333333333333332
+            },
+            "endTime": "2026-10-31T18:00:00-05:00",
+            "icon": "https://api.weather.gov/icons/land/day/tsra,50?size=small",
+            "isDaytime": true,
+            "name": "",
+            "number": 82,
+            "probabilityOfPrecipitation": {
+              "unitCode": "wmoUnit:percent",
+              "value": 54
+            },
+            "relativeHumidity": {
+              "unitCode": "wmoUnit:percent",
+              "value": 64
+            },
+            "shortForecast": "Chance Showers And Thunderstorms",
+            "startTime": "2026-10-31T17:00:00-05:00",
+            "temperature": 78,
+            "temperatureTrend": null,
+            "temperatureUnit": "F",
+            "windDirection": "E",
+            "windSpeed": "5 mph"
+          }
+        ]
+      },
+      "away_travel_rest": {
+        "days_between_fbs_kickoffs": 6.9375,
+        "fbs_only_splits_through_week8": {
+          "AWAY": {
+            "mean_points_against": 40.666666666666664,
+            "mean_points_for": 21.0,
+            "n": 3
+          },
+          "HOME": {
+            "mean_points_against": 34.0,
+            "mean_points_for": 22.666666666666668,
+            "n": 3
+          },
+          "NEUTRAL": {
+            "mean_points_against": null,
+            "mean_points_for": null,
+            "n": 0
+          }
+        },
+        "frozen_epa_package": {
+          "as_of_season": 2026,
+          "as_of_week": 8,
+          "defense_epa_play": 0.1647416221550552,
+          "defense_success_rate": 0.42946058091286304,
+          "havoc_rate": 0.134,
+          "is_prior_season_fallback": false,
+          "offense_epa_play": 0.01647659087030362,
+          "offense_success_rate": 0.41627906976744183
+        },
+        "home_stadium_to_venue_great_circle_miles": 180.6,
+        "last_fbs_game_id": 401869967,
+        "last_fbs_kickoff": "2026-10-24T21:00:00.000Z",
+        "origin_timezone": "America/Chicago",
+        "time_zone_offset_status": "UNAVAILABLE_LOCAL_TZDATA;SOURCE_ZONE_NAMES_RETAINED",
+        "time_zone_shift_hours": null,
+        "travel_limit": "Geodesic stadium proxy, not verified team itinerary; rest is kickoff-to-kickoff, not full rest days",
+        "venue_timezone": "America/Chicago"
+      },
+      "home_travel_rest": {
+        "days_between_fbs_kickoffs": 6.979166666666667,
+        "fbs_only_splits_through_week8": {
+          "AWAY": {
+            "mean_points_against": 38.5,
+            "mean_points_for": 22.25,
+            "n": 4
+          },
+          "HOME": {
+            "mean_points_against": 34.5,
+            "mean_points_for": 8.5,
+            "n": 2
+          },
+          "NEUTRAL": {
+            "mean_points_against": null,
+            "mean_points_for": null,
+            "n": 0
+          }
+        },
+        "frozen_epa_package": {
+          "as_of_season": 2026,
+          "as_of_week": 8,
+          "defense_epa_play": 0.22193600299306218,
+          "defense_success_rate": 0.4590909090909091,
+          "havoc_rate": 0.124,
+          "is_prior_season_fallback": false,
+          "offense_epa_play": -0.053326991889346406,
+          "offense_success_rate": 0.4080604534005038
+        },
+        "home_stadium_to_venue_great_circle_miles": 0.0,
+        "last_fbs_game_id": 401871094,
+        "last_fbs_kickoff": "2026-10-24T20:00:00.000Z",
+        "origin_timezone": "America/Chicago",
+        "time_zone_offset_status": "UNAVAILABLE_LOCAL_TZDATA;SOURCE_ZONE_NAMES_RETAINED",
+        "time_zone_shift_hours": null,
+        "travel_limit": "Geodesic stadium proxy, not verified team itinerary; rest is kickoff-to-kickoff, not full rest days",
+        "venue_timezone": "America/Chicago"
+      },
+      "current_market_context_only": [
+        {
+          "awayMoneyline": -170,
+          "formattedSpread": "Southern Miss -3.5",
+          "homeMoneyline": 142,
+          "overUnder": 55.5,
+          "overUnderOpen": 52.5,
+          "provider": "DraftKings",
+          "spread": 3.5,
+          "spreadOpen": 3
+        },
+        {
+          "awayMoneyline": -150,
+          "formattedSpread": "Southern Miss -3.5",
+          "homeMoneyline": 130,
+          "overUnder": 56,
+          "overUnderOpen": 53.5,
+          "provider": "Bovada",
+          "spread": 3.5,
+          "spreadOpen": 3
+        }
+      ],
+      "numeric_projection_adjustment": 0,
+      "created_at_utc": "2026-10-28T13:30:43.546654+00:00",
+      "author": "Codex contextual owner-review research",
+      "supersedes": null,
+      "owner_approval": "PENDING"
+    },
+    {
+      "owner_review_rank": 4,
+      "recommended_five": true,
+      "game_id": 401864529,
+      "market": "ATS",
+      "away": "New Mexico",
+      "home": "San José State",
+      "selection": "San José State",
+      "locked_line": 14.5,
+      "frozen_projection_home_margin_or_total": -7.27123745248692,
+      "selected_forecast_edge": 7.22876254751308,
+      "frozen_confidence": 1,
+      "frozen_confidence_kind": "GOVERNED_ATS",
+      "human_review_confidence_1_to_5": 1,
+      "human_confidence_status": "ORDINAL_JUDGMENT_NOT_CALIBRATED_PROBABILITY;SEPARATE_FROM_FROZEN_CONFIDENCE",
+      "original_market_research_rank": 5,
+      "research_score_not_calibrated": 0.5361438127375654,
+      "supporting_evidence": "San Jose State +14.5 versus forecast New Mexico by 7.27. Official SJSU preview reports 19.7 points allowed per game over its last seven games and documents defensive front production. Home underdog has 7.23 forecast points of cushion.",
+      "risk_and_exclusion_reason": "New Mexico is 6-1; SJSU preview references both recent freshman starter Daniel Rolovich and season passer Luke Weaver without a definitive Saturday starter. QB/backup, OL and defensive availability need refresh. This is a low-conviction contest alternative, not a validated wager.",
+      "sources": [
+        {
+          "url": "https://sjsuspartans.com/news/2026/10/26/spartans-host-new-mexico-on-mw-and-nbc-sports-bay-area",
+          "captured_at_utc": "2026-10-28T13:20:51.695889+00:00",
+          "sha256": "9c40f59e0734fa618f51166df83111f13bfee4e7d74d41ffe6fd6b3f42f154bf"
+        }
+      ],
+      "weather": {
+        "status": "CAPTURED",
+        "applicability": "OUTDOOR_FORECAST_NOT_OBSERVATION",
+        "hours": [
+          {
+            "detailedForecast": "",
+            "dewpoint": {
+              "unitCode": "wmoUnit:degC",
+              "value": 10
+            },
+            "endTime": "2026-10-31T14:00:00-07:00",
+            "icon": "https://api.weather.gov/icons/land/day/bkn?size=small",
+            "isDaytime": true,
+            "name": "",
+            "number": 80,
+            "probabilityOfPrecipitation": {
+              "unitCode": "wmoUnit:percent",
+              "value": 6
+            },
+            "relativeHumidity": {
+              "unitCode": "wmoUnit:percent",
+              "value": 60
+            },
+            "shortForecast": "Mostly Cloudy",
+            "startTime": "2026-10-31T13:00:00-07:00",
+            "temperature": 64,
+            "temperatureTrend": null,
+            "temperatureUnit": "F",
+            "windDirection": "NW",
+            "windSpeed": "1 mph"
+          },
+          {
+            "detailedForecast": "",
+            "dewpoint": {
+              "unitCode": "wmoUnit:degC",
+              "value": 9.444444444444445
+            },
+            "endTime": "2026-10-31T15:00:00-07:00",
+            "icon": "https://api.weather.gov/icons/land/day/bkn?size=small",
+            "isDaytime": true,
+            "name": "",
+            "number": 81,
+            "probabilityOfPrecipitation": {
+              "unitCode": "wmoUnit:percent",
+              "value": 6
+            },
+            "relativeHumidity": {
+              "unitCode": "wmoUnit:percent",
+              "value": 57
+            },
+            "shortForecast": "Mostly Cloudy",
+            "startTime": "2026-10-31T14:00:00-07:00",
+            "temperature": 64,
+            "temperatureTrend": null,
+            "temperatureUnit": "F",
+            "windDirection": "NW",
+            "windSpeed": "3 mph"
+          },
+          {
+            "detailedForecast": "",
+            "dewpoint": {
+              "unitCode": "wmoUnit:degC",
+              "value": 9.444444444444445
+            },
+            "endTime": "2026-10-31T16:00:00-07:00",
+            "icon": "https://api.weather.gov/icons/land/day/bkn?size=small",
+            "isDaytime": true,
+            "name": "",
+            "number": 82,
+            "probabilityOfPrecipitation": {
+              "unitCode": "wmoUnit:percent",
+              "value": 6
+            },
+            "relativeHumidity": {
+              "unitCode": "wmoUnit:percent",
+              "value": 57
+            },
+            "shortForecast": "Mostly Cloudy",
+            "startTime": "2026-10-31T15:00:00-07:00",
+            "temperature": 64,
+            "temperatureTrend": null,
+            "temperatureUnit": "F",
+            "windDirection": "NW",
+            "windSpeed": "3 mph"
+          }
+        ]
+      },
+      "away_travel_rest": {
+        "days_between_fbs_kickoffs": 6.75,
+        "fbs_only_splits_through_week8": {
+          "AWAY": {
+            "mean_points_against": 14.0,
+            "mean_points_for": 23.0,
+            "n": 3
+          },
+          "HOME": {
+            "mean_points_against": 10.0,
+            "mean_points_for": 40.0,
+            "n": 3
+          },
+          "NEUTRAL": {
+            "mean_points_against": null,
+            "mean_points_for": null,
+            "n": 0
+          }
+        },
+        "frozen_epa_package": {
+          "as_of_season": 2026,
+          "as_of_week": 8,
+          "defense_epa_play": -0.18131636083743463,
+          "defense_success_rate": 0.3058823529411765,
+          "havoc_rate": 0.254,
+          "is_prior_season_fallback": false,
+          "offense_epa_play": 0.1564860218778671,
+          "offense_success_rate": 0.41621621621621624
+        },
+        "home_stadium_to_venue_great_circle_miles": 862.9,
+        "last_fbs_game_id": 401864527,
+        "last_fbs_kickoff": "2026-10-25T02:00:00.000Z",
+        "origin_timezone": "America/Denver",
+        "time_zone_offset_status": "UNAVAILABLE_LOCAL_TZDATA;SOURCE_ZONE_NAMES_RETAINED",
+        "time_zone_shift_hours": null,
+        "travel_limit": "Geodesic stadium proxy, not verified team itinerary; rest is kickoff-to-kickoff, not full rest days",
+        "venue_timezone": "America/Los_Angeles"
+      },
+      "home_travel_rest": {
+        "days_between_fbs_kickoffs": 6.958333333333333,
+        "fbs_only_splits_through_week8": {
+          "AWAY": {
+            "mean_points_against": 23.6,
+            "mean_points_for": 22.0,
+            "n": 5
+          },
+          "HOME": {
+            "mean_points_against": 21.0,
+            "mean_points_for": 11.5,
+            "n": 2
+          },
+          "NEUTRAL": {
+            "mean_points_against": null,
+            "mean_points_for": null,
+            "n": 0
+          }
+        },
+        "frozen_epa_package": {
+          "as_of_season": 2026,
+          "as_of_week": 8,
+          "defense_epa_play": 0.06515070225023722,
+          "defense_success_rate": 0.42782608695652175,
+          "havoc_rate": 0.154,
+          "is_prior_season_fallback": false,
+          "offense_epa_play": 0.08724629861608747,
+          "offense_success_rate": 0.3796477495107632
+        },
+        "home_stadium_to_venue_great_circle_miles": 0.0,
+        "last_fbs_game_id": 401864528,
+        "last_fbs_kickoff": "2026-10-24T21:00:00.000Z",
+        "origin_timezone": "America/Los_Angeles",
+        "time_zone_offset_status": "UNAVAILABLE_LOCAL_TZDATA;SOURCE_ZONE_NAMES_RETAINED",
+        "time_zone_shift_hours": null,
+        "travel_limit": "Geodesic stadium proxy, not verified team itinerary; rest is kickoff-to-kickoff, not full rest days",
+        "venue_timezone": "America/Los_Angeles"
+      },
+      "current_market_context_only": [
+        {
+          "awayMoneyline": -675,
+          "formattedSpread": "New Mexico -14.5",
+          "homeMoneyline": 490,
+          "overUnder": 42.5,
+          "overUnderOpen": 42.5,
+          "provider": "DraftKings",
+          "spread": 14.5,
+          "spreadOpen": 14.5
+        },
+        {
+          "awayMoneyline": -700,
+          "formattedSpread": "New Mexico -15.0",
+          "homeMoneyline": 475,
+          "overUnder": 42,
+          "overUnderOpen": 41.5,
+          "provider": "Bovada",
+          "spread": 15,
+          "spreadOpen": 15
+        }
+      ],
+      "numeric_projection_adjustment": 0,
+      "created_at_utc": "2026-10-28T13:30:43.546654+00:00",
+      "author": "Codex contextual owner-review research",
+      "supersedes": null,
+      "owner_approval": "PENDING"
+    },
+    {
+      "owner_review_rank": 5,
+      "recommended_five": true,
+      "game_id": 401862812,
+      "market": "TOTAL",
+      "away": "Florida Atlantic",
+      "home": "North Texas",
+      "selection": "under",
+      "locked_line": 77.5,
+      "frozen_projection_home_margin_or_total": 59.78525616655543,
+      "selected_forecast_edge": 17.714743833444572,
+      "frozen_confidence": 5,
+      "frozen_confidence_kind": "UNCALIBRATED_TOTALS_RESEARCH",
+      "human_review_confidence_1_to_5": 1,
+      "human_confidence_status": "ORDINAL_JUDGMENT_NOT_CALIBRATED_PROBABILITY;SEPARATE_FROM_FROZEN_CONFIDENCE",
+      "original_market_research_rank": 1,
+      "research_score_not_calibrated": 0.8549084515774896,
+      "supporting_evidence": "Under 77.5 versus 59.79 forecast, the largest totals gap at 17.71 points. Retained as the fifth contest-review choice on the unusually high locked threshold; no score of .8549 is treated as an 85.5% win probability.",
+      "risk_and_exclusion_reason": "Most fragile recommendation: UNT averages 43.1 points and 525.7 yards; FAU defense ranks near the bottom and Easton Messer is a major return threat. Prior games totaled 88 and 100. Veltkamp and Tayven Jackson are recent leaders; final availability and backups unverified. EPA-only totals omit possession and special-teams risks.",
+      "sources": [
+        {
+          "url": "https://fausports.com/news/2026/10/24/football-messers-five-touchdowns-lead-owls-to-nail-biting-homecoming-win",
+          "captured_at_utc": "2026-10-28T13:20:53.067455+00:00",
+          "sha256": "c2e31081e00129a3977d049e4c91f3190fe71dd8d32c422e906d378b9e25b9dc"
+        },
+        {
+          "url": "https://meangreensports.com/news/2026/10/26/football-unt-hosting-fau-on-espn-in-national-spotlight",
+          "captured_at_utc": "2026-10-28T13:20:53.950045+00:00",
+          "sha256": "a55e06d96dc45e99954158f6bbe6e81088cd11ed2538903a212bce658797cb35"
+        }
+      ],
+      "weather": {
+        "status": "CAPTURED",
+        "applicability": "OUTDOOR_FORECAST_NOT_OBSERVATION",
+        "hours": [
+          {
+            "detailedForecast": "",
+            "dewpoint": {
+              "unitCode": "wmoUnit:degC",
+              "value": 18.333333333333332
+            },
+            "endTime": "2026-10-29T19:00:00-05:00",
+            "icon": "https://api.weather.gov/icons/land/night/bkn?size=small",
+            "isDaytime": false,
+            "name": "",
+            "number": 35,
+            "probabilityOfPrecipitation": {
+              "unitCode": "wmoUnit:percent",
+              "value": 10
+            },
+            "relativeHumidity": {
+              "unitCode": "wmoUnit:percent",
+              "value": 58
+            },
+            "shortForecast": "Mostly Cloudy",
+            "startTime": "2026-10-29T18:00:00-05:00",
+            "temperature": 81,
+            "temperatureTrend": null,
+            "temperatureUnit": "F",
+            "windDirection": "SSE",
+            "windSpeed": "5 mph"
+          },
+          {
+            "detailedForecast": "",
+            "dewpoint": {
+              "unitCode": "wmoUnit:degC",
+              "value": 18.333333333333332
+            },
+            "endTime": "2026-10-29T20:00:00-05:00",
+            "icon": "https://api.weather.gov/icons/land/night/rain_showers,20?size=small",
+            "isDaytime": false,
+            "name": "",
+            "number": 36,
+            "probabilityOfPrecipitation": {
+              "unitCode": "wmoUnit:percent",
+              "value": 15
+            },
+            "relativeHumidity": {
+              "unitCode": "wmoUnit:percent",
+              "value": 62
+            },
+            "shortForecast": "Slight Chance Rain Showers",
+            "startTime": "2026-10-29T19:00:00-05:00",
+            "temperature": 79,
+            "temperatureTrend": null,
+            "temperatureUnit": "F",
+            "windDirection": "SSE",
+            "windSpeed": "5 mph"
+          },
+          {
+            "detailedForecast": "",
+            "dewpoint": {
+              "unitCode": "wmoUnit:degC",
+              "value": 17.77777777777778
+            },
+            "endTime": "2026-10-29T21:00:00-05:00",
+            "icon": "https://api.weather.gov/icons/land/night/rain_showers,20?size=small",
+            "isDaytime": false,
+            "name": "",
+            "number": 37,
+            "probabilityOfPrecipitation": {
+              "unitCode": "wmoUnit:percent",
+              "value": 15
+            },
+            "relativeHumidity": {
+              "unitCode": "wmoUnit:percent",
+              "value": 69
+            },
+            "shortForecast": "Slight Chance Rain Showers",
+            "startTime": "2026-10-29T20:00:00-05:00",
+            "temperature": 75,
+            "temperatureTrend": null,
+            "temperatureUnit": "F",
+            "windDirection": "SSE",
+            "windSpeed": "5 mph"
+          },
+          {
+            "detailedForecast": "",
+            "dewpoint": {
+              "unitCode": "wmoUnit:degC",
+              "value": 17.77777777777778
+            },
+            "endTime": "2026-10-29T22:00:00-05:00",
+            "icon": "https://api.weather.gov/icons/land/night/rain_showers,20?size=small",
+            "isDaytime": false,
+            "name": "",
+            "number": 38,
+            "probabilityOfPrecipitation": {
+              "unitCode": "wmoUnit:percent",
+              "value": 15
+            },
+            "relativeHumidity": {
+              "unitCode": "wmoUnit:percent",
+              "value": 71
+            },
+            "shortForecast": "Slight Chance Rain Showers",
+            "startTime": "2026-10-29T21:00:00-05:00",
+            "temperature": 74,
+            "temperatureTrend": null,
+            "temperatureUnit": "F",
+            "windDirection": "S",
+            "windSpeed": "5 mph"
+          }
+        ]
+      },
+      "away_travel_rest": {
+        "days_between_fbs_kickoffs": 5.3125,
+        "fbs_only_splits_through_week8": {
+          "AWAY": {
+            "mean_points_against": 46.333333333333336,
+            "mean_points_for": 30.0,
+            "n": 3
+          },
+          "HOME": {
+            "mean_points_against": 29.666666666666668,
+            "mean_points_for": 35.0,
+            "n": 3
+          },
+          "NEUTRAL": {
+            "mean_points_against": null,
+            "mean_points_for": null,
+            "n": 0
+          }
+        },
+        "frozen_epa_package": {
+          "as_of_season": 2026,
+          "as_of_week": 8,
+          "defense_epa_play": 0.26321114020772024,
+          "defense_success_rate": 0.4350282485875706,
+          "havoc_rate": 0.133,
+          "is_prior_season_fallback": false,
+          "offense_epa_play": 0.24424646839851272,
+          "offense_success_rate": 0.4799054373522459
+        },
+        "home_stadium_to_venue_great_circle_miles": 1124.4,
+        "last_fbs_game_id": 401862809,
+        "last_fbs_kickoff": "2026-10-24T16:00:00.000Z",
+        "origin_timezone": "America/New_York",
+        "time_zone_offset_status": "UNAVAILABLE_LOCAL_TZDATA;SOURCE_ZONE_NAMES_RETAINED",
+        "time_zone_shift_hours": null,
+        "travel_limit": "Geodesic stadium proxy, not verified team itinerary; rest is kickoff-to-kickoff, not full rest days",
+        "venue_timezone": "America/Chicago"
+      },
+      "home_travel_rest": {
+        "days_between_fbs_kickoffs": 5.166666666666667,
+        "fbs_only_splits_through_week8": {
+          "AWAY": {
+            "mean_points_against": 46.0,
+            "mean_points_for": 36.25,
+            "n": 4
+          },
+          "HOME": {
+            "mean_points_against": 8.0,
+            "mean_points_for": 47.0,
+            "n": 2
+          },
+          "NEUTRAL": {
+            "mean_points_against": null,
+            "mean_points_for": null,
+            "n": 0
+          }
+        },
+        "frozen_epa_package": {
+          "as_of_season": 2026,
+          "as_of_week": 8,
+          "defense_epa_play": 0.12787768724220705,
+          "defense_success_rate": 0.44549763033175355,
+          "havoc_rate": 0.163,
+          "is_prior_season_fallback": false,
+          "offense_epa_play": 0.3728209603419161,
+          "offense_success_rate": 0.4976190476190476
+        },
+        "home_stadium_to_venue_great_circle_miles": 0.0,
+        "last_fbs_game_id": 401862810,
+        "last_fbs_kickoff": "2026-10-24T19:30:00.000Z",
+        "origin_timezone": "America/Chicago",
+        "time_zone_offset_status": "UNAVAILABLE_LOCAL_TZDATA;SOURCE_ZONE_NAMES_RETAINED",
+        "time_zone_shift_hours": null,
+        "travel_limit": "Geodesic stadium proxy, not verified team itinerary; rest is kickoff-to-kickoff, not full rest days",
+        "venue_timezone": "America/Chicago"
+      },
+      "current_market_context_only": [
+        {
+          "awayMoneyline": 390,
+          "formattedSpread": "North Texas -13.5",
+          "homeMoneyline": -520,
+          "overUnder": 77.5,
+          "overUnderOpen": 69.5,
+          "provider": "DraftKings",
+          "spread": -13.5,
+          "spreadOpen": -12.5
+        },
+        {
+          "awayMoneyline": 375,
+          "formattedSpread": "North Texas -14.0",
+          "homeMoneyline": -525,
+          "overUnder": 77,
+          "overUnderOpen": 72.5,
+          "provider": "Bovada",
+          "spread": -14,
+          "spreadOpen": -13
+        }
+      ],
+      "numeric_projection_adjustment": 0,
+      "created_at_utc": "2026-10-28T13:30:43.546654+00:00",
+      "author": "Codex contextual owner-review research",
+      "supersedes": null,
+      "owner_approval": "PENDING"
+    },
+    {
+      "owner_review_rank": 6,
+      "recommended_five": false,
+      "game_id": 401860910,
+      "market": "TOTAL",
+      "away": "Colorado State",
+      "home": "Utah State",
+      "selection": "under",
+      "locked_line": 63.5,
+      "frozen_projection_home_margin_or_total": 52.4386672266115,
+      "selected_forecast_edge": 11.0613327733885,
+      "frozen_confidence": 4,
+      "frozen_confidence_kind": "UNCALIBRATED_TOTALS_RESEARCH",
+      "human_review_confidence_1_to_5": 1,
+      "human_confidence_status": "ORDINAL_JUDGMENT_NOT_CALIBRATED_PROBABILITY;SEPARATE_FROM_FROZEN_CONFIDENCE",
+      "original_market_research_rank": 2,
+      "research_score_not_calibrated": 0.7455190960560069,
+      "supporting_evidence": "Under 63.5 versus 52.44 forecast remains research rank 2. Utah State held Texas State to 250 yards last week; rain is forecast in Logan.",
+      "risk_and_exclusion_reason": "Excluded from five: CSU scored 56 on Hejny return and its last game totaled 105; coach reports three OL combinations and five corner/nickel combinations. Those personnel effects are not resolved in the frozen four-EPA-input model. Light winds do not justify a mechanical Under adjustment.",
+      "sources": [
+        {
+          "url": "https://csurams.com/news/2026/10/24/football-rams-snap-skid-with-first-pac-12-win",
+          "captured_at_utc": "2026-10-28T13:20:55.633817+00:00",
+          "sha256": "6177104751401006d5827a43b9aaa64e151f564d9115e410614880bc2045df2d"
+        },
+        {
+          "url": "https://csurams.com/news/2026/10/26/football-monday-presser-depth-of-roster-has-been-tested",
+          "captured_at_utc": "2026-10-28T13:20:56.378883+00:00",
+          "sha256": "fcd4dd35d01c7449a0d2a4a32e458f42c17c990bd02e0facec1b7908a63576f7"
+        }
+      ],
+      "weather": {
+        "status": "CAPTURED",
+        "applicability": "OUTDOOR_FORECAST_NOT_OBSERVATION",
+        "hours": [
+          {
+            "detailedForecast": "",
+            "dewpoint": {
+              "unitCode": "wmoUnit:degC",
+              "value": 8.88888888888889
+            },
+            "endTime": "2026-10-31T14:00:00-06:00",
+            "icon": "https://api.weather.gov/icons/land/day/tsra,80?size=small",
+            "isDaytime": true,
+            "name": "",
+            "number": 79,
+            "probabilityOfPrecipitation": {
+              "unitCode": "wmoUnit:percent",
+              "value": 75
+            },
+            "relativeHumidity": {
+              "unitCode": "wmoUnit:percent",
+              "value": 87
+            },
+            "shortForecast": "Showers And Thunderstorms",
+            "startTime": "2026-10-31T13:00:00-06:00",
+            "temperature": 52,
+            "temperatureTrend": null,
+            "temperatureUnit": "F",
+            "windDirection": "SSW",
+            "windSpeed": "2 mph"
+          },
+          {
+            "detailedForecast": "",
+            "dewpoint": {
+              "unitCode": "wmoUnit:degC",
+              "value": 9.444444444444445
+            },
+            "endTime": "2026-10-31T15:00:00-06:00",
+            "icon": "https://api.weather.gov/icons/land/day/tsra,80?size=small",
+            "isDaytime": true,
+            "name": "",
+            "number": 80,
+            "probabilityOfPrecipitation": {
+              "unitCode": "wmoUnit:percent",
+              "value": 75
+            },
+            "relativeHumidity": {
+              "unitCode": "wmoUnit:percent",
+              "value": 82
+            },
+            "shortForecast": "Showers And Thunderstorms",
+            "startTime": "2026-10-31T14:00:00-06:00",
+            "temperature": 54,
+            "temperatureTrend": null,
+            "temperatureUnit": "F",
+            "windDirection": "SSW",
+            "windSpeed": "2 mph"
+          },
+          {
+            "detailedForecast": "",
+            "dewpoint": {
+              "unitCode": "wmoUnit:degC",
+              "value": 8.88888888888889
+            },
+            "endTime": "2026-10-31T16:00:00-06:00",
+            "icon": "https://api.weather.gov/icons/land/day/tsra,80?size=small",
+            "isDaytime": true,
+            "name": "",
+            "number": 81,
+            "probabilityOfPrecipitation": {
+              "unitCode": "wmoUnit:percent",
+              "value": 75
+            },
+            "relativeHumidity": {
+              "unitCode": "wmoUnit:percent",
+              "value": 78
+            },
+            "shortForecast": "Showers And Thunderstorms",
+            "startTime": "2026-10-31T15:00:00-06:00",
+            "temperature": 55,
+            "temperatureTrend": null,
+            "temperatureUnit": "F",
+            "windDirection": "SW",
+            "windSpeed": "3 mph"
+          },
+          {
+            "detailedForecast": "",
+            "dewpoint": {
+              "unitCode": "wmoUnit:degC",
+              "value": 8.88888888888889
+            },
+            "endTime": "2026-10-31T17:00:00-06:00",
+            "icon": "https://api.weather.gov/icons/land/day/tsra,80?size=small",
+            "isDaytime": true,
+            "name": "",
+            "number": 82,
+            "probabilityOfPrecipitation": {
+              "unitCode": "wmoUnit:percent",
+              "value": 75
+            },
+            "relativeHumidity": {
+              "unitCode": "wmoUnit:percent",
+              "value": 76
+            },
+            "shortForecast": "Showers And Thunderstorms",
+            "startTime": "2026-10-31T16:00:00-06:00",
+            "temperature": 55,
+            "temperatureTrend": null,
+            "temperatureUnit": "F",
+            "windDirection": "SW",
+            "windSpeed": "3 mph"
+          }
+        ]
+      },
+      "away_travel_rest": {
+        "days_between_fbs_kickoffs": 6.875,
+        "fbs_only_splits_through_week8": {
+          "AWAY": {
+            "mean_points_against": 62.5,
+            "mean_points_for": 36.0,
+            "n": 2
+          },
+          "HOME": {
+            "mean_points_against": 39.75,
+            "mean_points_for": 35.0,
+            "n": 4
+          },
+          "NEUTRAL": {
+            "mean_points_against": null,
+            "mean_points_for": null,
+            "n": 0
+          }
+        },
+        "frozen_epa_package": {
+          "as_of_season": 2026,
+          "as_of_week": 8,
+          "defense_epa_play": 0.3521593921438575,
+          "defense_success_rate": 0.543859649122807,
+          "havoc_rate": 0.135,
+          "is_prior_season_fallback": false,
+          "offense_epa_play": 0.2989689456651272,
+          "offense_success_rate": 0.4782608695652174
+        },
+        "home_stadium_to_venue_great_circle_miles": 359.0,
+        "last_fbs_game_id": 401860905,
+        "last_fbs_kickoff": "2026-10-24T22:30:00.000Z",
+        "origin_timezone": "America/Denver",
+        "time_zone_offset_status": "UNAVAILABLE_LOCAL_TZDATA;SOURCE_ZONE_NAMES_RETAINED",
+        "time_zone_shift_hours": null,
+        "travel_limit": "Geodesic stadium proxy, not verified team itinerary; rest is kickoff-to-kickoff, not full rest days",
+        "venue_timezone": "America/Denver"
+      },
+      "home_travel_rest": {
+        "days_between_fbs_kickoffs": 6.833333333333333,
+        "fbs_only_splits_through_week8": {
+          "AWAY": {
+            "mean_points_against": 26.5,
+            "mean_points_for": 12.25,
+            "n": 4
+          },
+          "HOME": {
+            "mean_points_against": 13.0,
+            "mean_points_for": 19.0,
+            "n": 2
+          },
+          "NEUTRAL": {
+            "mean_points_against": null,
+            "mean_points_for": null,
+            "n": 0
+          }
+        },
+        "frozen_epa_package": {
+          "as_of_season": 2026,
+          "as_of_week": 8,
+          "defense_epa_play": 0.03866863840099984,
+          "defense_success_rate": 0.401673640167364,
+          "havoc_rate": 0.141,
+          "is_prior_season_fallback": false,
+          "offense_epa_play": -0.039496497777594744,
+          "offense_success_rate": 0.3611111111111111
+        },
+        "home_stadium_to_venue_great_circle_miles": 0.0,
+        "last_fbs_game_id": 401860906,
+        "last_fbs_kickoff": "2026-10-24T23:30:00.000Z",
+        "origin_timezone": "America/Denver",
+        "time_zone_offset_status": "UNAVAILABLE_LOCAL_TZDATA;SOURCE_ZONE_NAMES_RETAINED",
+        "time_zone_shift_hours": null,
+        "travel_limit": "Geodesic stadium proxy, not verified team itinerary; rest is kickoff-to-kickoff, not full rest days",
+        "venue_timezone": "America/Denver"
+      },
+      "current_market_context_only": [
+        {
+          "awayMoneyline": 200,
+          "formattedSpread": "Utah State -6.5",
+          "homeMoneyline": -245,
+          "overUnder": 63.5,
+          "overUnderOpen": 64.5,
+          "provider": "DraftKings",
+          "spread": -6.5,
+          "spreadOpen": -3.5
+        },
+        {
+          "awayMoneyline": 200,
+          "formattedSpread": "Utah State -6.5",
+          "homeMoneyline": -250,
+          "overUnder": 63,
+          "overUnderOpen": 64,
+          "provider": "Bovada",
+          "spread": -6.5,
+          "spreadOpen": -6.5
+        }
+      ],
+      "numeric_projection_adjustment": 0,
+      "created_at_utc": "2026-10-28T13:30:43.546654+00:00",
+      "author": "Codex contextual owner-review research",
+      "supersedes": null,
+      "owner_approval": "PENDING"
+    },
+    {
+      "owner_review_rank": 7,
+      "recommended_five": false,
+      "game_id": 401858278,
+      "market": "TOTAL",
+      "away": "SMU",
+      "home": "Syracuse",
+      "selection": "under",
+      "locked_line": 58.5,
+      "frozen_projection_home_margin_or_total": 49.830782526761865,
+      "selected_forecast_edge": 8.669217473238135,
+      "frozen_confidence": 3,
+      "frozen_confidence_kind": "UNCALIBRATED_TOTALS_RESEARCH",
+      "human_review_confidence_1_to_5": 1,
+      "human_confidence_status": "ORDINAL_JUDGMENT_NOT_CALIBRATED_PROBABILITY;SEPARATE_FROM_FROZEN_CONFIDENCE",
+      "original_market_research_rank": 5,
+      "research_score_not_calibrated": 0.6976402442035272,
+      "supporting_evidence": "Under 58.5 versus 49.83 forecast. SMU defense allows 303.3 yards per game; the frozen gap remains available for comparison.",
+      "risk_and_exclusion_reason": "Excluded: Syracuse confirms Steve Angeli back under center, and SMU Kevin Jennings leads a productive offense with recent OL recognition. Dome removes outdoor weather support; the 59-point SMU game last week exposes upper-tail risk. Backup/OL injury status not fully verified.",
+      "sources": [
+        {
+          "url": "https://smumustangs.com/news/2026/10/27/football-no-19-smu-on-the-road-to-take-on-syracuse-saturday-at-11-am-ct",
+          "captured_at_utc": "2026-10-28T13:20:58.481720+00:00",
+          "sha256": "e9f36aef504b67f231a0a331645e010486a5029e57a59c4b09aa25824480f503"
+        },
+        {
+          "url": "https://cuse.com/news/2026/10/26/football-orange-set-for-halloween-battle-with-19-smu",
+          "captured_at_utc": "2026-10-28T13:21:01.418010+00:00",
+          "sha256": "29c7c3716269f8a91a6e7dd4fc3cf1b4f10610b87e4f46abbdfe72f3e3b78bba"
+        }
+      ],
+      "weather": {
+        "status": "CAPTURED",
+        "applicability": "INDOOR_EXTERNAL_WEATHER_NOT_APPLIED",
+        "hours": [
+          {
+            "detailedForecast": "",
+            "dewpoint": {
+              "unitCode": "wmoUnit:degC",
+              "value": 3.888888888888889
+            },
+            "endTime": "2026-10-31T13:00:00-04:00",
+            "icon": "https://api.weather.gov/icons/land/day/sct?size=small",
+            "isDaytime": true,
+            "name": "",
+            "number": 76,
+            "probabilityOfPrecipitation": {
+              "unitCode": "wmoUnit:percent",
+              "value": 0
+            },
+            "relativeHumidity": {
+              "unitCode": "wmoUnit:percent",
+              "value": 59
+            },
+            "shortForecast": "Mostly Sunny",
+            "startTime": "2026-10-31T12:00:00-04:00",
+            "temperature": 53,
+            "temperatureTrend": null,
+            "temperatureUnit": "F",
+            "windDirection": "NW",
+            "windSpeed": "2 mph"
+          },
+          {
+            "detailedForecast": "",
+            "dewpoint": {
+              "unitCode": "wmoUnit:degC",
+              "value": 2.7777777777777777
+            },
+            "endTime": "2026-10-31T14:00:00-04:00",
+            "icon": "https://api.weather.gov/icons/land/day/sct?size=small",
+            "isDaytime": true,
+            "name": "",
+            "number": 77,
+            "probabilityOfPrecipitation": {
+              "unitCode": "wmoUnit:percent",
+              "value": 0
+            },
+            "relativeHumidity": {
+              "unitCode": "wmoUnit:percent",
+              "value": 51
+            },
+            "shortForecast": "Mostly Sunny",
+            "startTime": "2026-10-31T13:00:00-04:00",
+            "temperature": 55,
+            "temperatureTrend": null,
+            "temperatureUnit": "F",
+            "windDirection": "NW",
+            "windSpeed": "2 mph"
+          },
+          {
+            "detailedForecast": "",
+            "dewpoint": {
+              "unitCode": "wmoUnit:degC",
+              "value": 1.6666666666666667
+            },
+            "endTime": "2026-10-31T15:00:00-04:00",
+            "icon": "https://api.weather.gov/icons/land/day/sct?size=small",
+            "isDaytime": true,
+            "name": "",
+            "number": 78,
+            "probabilityOfPrecipitation": {
+              "unitCode": "wmoUnit:percent",
+              "value": 0
+            },
+            "relativeHumidity": {
+              "unitCode": "wmoUnit:percent",
+              "value": 45
+            },
+            "shortForecast": "Mostly Sunny",
+            "startTime": "2026-10-31T14:00:00-04:00",
+            "temperature": 56,
+            "temperatureTrend": null,
+            "temperatureUnit": "F",
+            "windDirection": "NW",
+            "windSpeed": "3 mph"
+          }
+        ]
+      },
+      "away_travel_rest": {
+        "days_between_fbs_kickoffs": 7.0,
+        "fbs_only_splits_through_week8": {
+          "AWAY": {
+            "mean_points_against": 32.5,
+            "mean_points_for": 29.0,
+            "n": 2
+          },
+          "HOME": {
+            "mean_points_against": 18.25,
+            "mean_points_for": 35.25,
+            "n": 4
+          },
+          "NEUTRAL": {
+            "mean_points_against": null,
+            "mean_points_for": null,
+            "n": 0
+          }
+        },
+        "frozen_epa_package": {
+          "as_of_season": 2026,
+          "as_of_week": 8,
+          "defense_epa_play": 0.07193485835056128,
+          "defense_success_rate": 0.3781094527363184,
+          "havoc_rate": 0.193,
+          "is_prior_season_fallback": false,
+          "offense_epa_play": 0.2405530533902235,
+          "offense_success_rate": 0.49330357142857145
+        },
+        "home_stadium_to_venue_great_circle_miles": 1322.0,
+        "last_fbs_game_id": 401858270,
+        "last_fbs_kickoff": "2026-10-24T16:00:00.000Z",
+        "origin_timezone": "America/Chicago",
+        "time_zone_offset_status": "UNAVAILABLE_LOCAL_TZDATA;SOURCE_ZONE_NAMES_RETAINED",
+        "time_zone_shift_hours": null,
+        "travel_limit": "Geodesic stadium proxy, not verified team itinerary; rest is kickoff-to-kickoff, not full rest days",
+        "venue_timezone": "America/New_York"
+      },
+      "home_travel_rest": {
+        "days_between_fbs_kickoffs": 6.6875,
+        "fbs_only_splits_through_week8": {
+          "AWAY": {
+            "mean_points_against": 31.5,
+            "mean_points_for": 27.75,
+            "n": 4
+          },
+          "HOME": {
+            "mean_points_against": 27.5,
+            "mean_points_for": 22.0,
+            "n": 2
+          },
+          "NEUTRAL": {
+            "mean_points_against": null,
+            "mean_points_for": null,
+            "n": 0
+          }
+        },
+        "frozen_epa_package": {
+          "as_of_season": 2026,
+          "as_of_week": 8,
+          "defense_epa_play": 0.09522104950881431,
+          "defense_success_rate": 0.4264705882352941,
+          "havoc_rate": 0.184,
+          "is_prior_season_fallback": false,
+          "offense_epa_play": 0.0607600549594912,
+          "offense_success_rate": 0.42230347349177333
+        },
+        "home_stadium_to_venue_great_circle_miles": 0.0,
+        "last_fbs_game_id": 401858275,
+        "last_fbs_kickoff": "2026-10-24T23:30:00.000Z",
+        "origin_timezone": "America/New_York",
+        "time_zone_offset_status": "UNAVAILABLE_LOCAL_TZDATA;SOURCE_ZONE_NAMES_RETAINED",
+        "time_zone_shift_hours": null,
+        "travel_limit": "Geodesic stadium proxy, not verified team itinerary; rest is kickoff-to-kickoff, not full rest days",
+        "venue_timezone": "America/New_York"
+      },
+      "current_market_context_only": [
+        {
+          "awayMoneyline": -360,
+          "formattedSpread": "SMU -10",
+          "homeMoneyline": 285,
+          "overUnder": 58.5,
+          "overUnderOpen": 55.5,
+          "provider": "DraftKings",
+          "spread": 10,
+          "spreadOpen": 12.5
+        },
+        {
+          "awayMoneyline": -370,
+          "formattedSpread": "SMU -10.0",
+          "homeMoneyline": 285,
+          "overUnder": 58.5,
+          "overUnderOpen": 58.5,
+          "provider": "Bovada",
+          "spread": 10,
+          "spreadOpen": 9.5
+        }
+      ],
+      "numeric_projection_adjustment": 0,
+      "created_at_utc": "2026-10-28T13:30:43.546654+00:00",
+      "author": "Codex contextual owner-review research",
+      "supersedes": null,
+      "owner_approval": "PENDING"
+    },
+    {
+      "owner_review_rank": 8,
+      "recommended_five": false,
+      "game_id": 401858502,
+      "market": "TOTAL",
+      "away": "Wisconsin",
+      "home": "Iowa",
+      "selection": "over",
+      "locked_line": 36.5,
+      "frozen_projection_home_margin_or_total": 45.49697633927708,
+      "selected_forecast_edge": 8.996976339277083,
+      "frozen_confidence": 4,
+      "frozen_confidence_kind": "UNCALIBRATED_TOTALS_RESEARCH",
+      "human_review_confidence_1_to_5": 1,
+      "human_confidence_status": "ORDINAL_JUDGMENT_NOT_CALIBRATED_PROBABILITY;SEPARATE_FROM_FROZEN_CONFIDENCE",
+      "original_market_research_rank": 3,
+      "research_score_not_calibrated": 0.7044337393614349,
+      "supporting_evidence": "Over 36.5 versus 45.50 forecast is totals rank 3; very low locked threshold offers a 9.00-point raw gap.",
+      "risk_and_exclusion_reason": "Excluded: Iowa plans Hank Brown with Jeremy Hecklinski available in the rotation; RB Kamari Moulton is out for season. Iowa allowed 14.3 points per game; Wisconsin held USC to 7 and negative rushing yardage. Rain is possible. Those conflicts outweigh treating an uncalibrated .7044 score as high confidence.",
+      "sources": [
+        {
+          "url": "https://uwbadgers.com/news/2026/10/24/football-badgers-take-down-no-16-usc-24-7",
+          "captured_at_utc": "2026-10-28T13:20:54.169359+00:00",
+          "sha256": "4037554ddf1617de55cca9758ae87452286a2a1e9cc34fa2c2672b97bc44f741"
+        },
+        {
+          "url": "https://hawkeyesports.com/news/2026/10/27/kirk-ferentz-news-conference-transcript-10272026",
+          "captured_at_utc": "2026-10-28T13:20:56.513549+00:00",
+          "sha256": "efa1464346dc8b7722bfef1a189a28800d081cbc498ca7354471982c1ddce33e"
+        }
+      ],
+      "weather": {
+        "status": "CAPTURED",
+        "applicability": "OUTDOOR_FORECAST_NOT_OBSERVATION",
+        "hours": [
+          {
+            "detailedForecast": "",
+            "dewpoint": {
+              "unitCode": "wmoUnit:degC",
+              "value": 12.222222222222221
+            },
+            "endTime": "2026-10-31T12:00:00-05:00",
+            "icon": "https://api.weather.gov/icons/land/day/rain_showers,50?size=small",
+            "isDaytime": true,
+            "name": "",
+            "number": 76,
+            "probabilityOfPrecipitation": {
+              "unitCode": "wmoUnit:percent",
+              "value": 51
+            },
+            "relativeHumidity": {
+              "unitCode": "wmoUnit:percent",
+              "value": 81
+            },
+            "shortForecast": "Chance Rain Showers",
+            "startTime": "2026-10-31T11:00:00-05:00",
+            "temperature": 60,
+            "temperatureTrend": null,
+            "temperatureUnit": "F",
+            "windDirection": "E",
+            "windSpeed": "5 mph"
+          },
+          {
+            "detailedForecast": "",
+            "dewpoint": {
+              "unitCode": "wmoUnit:degC",
+              "value": 12.777777777777779
+            },
+            "endTime": "2026-10-31T13:00:00-05:00",
+            "icon": "https://api.weather.gov/icons/land/day/rain_showers,50?size=small",
+            "isDaytime": true,
+            "name": "",
+            "number": 77,
+            "probabilityOfPrecipitation": {
+              "unitCode": "wmoUnit:percent",
+              "value": 51
+            },
+            "relativeHumidity": {
+              "unitCode": "wmoUnit:percent",
+              "value": 78
+            },
+            "shortForecast": "Chance Rain Showers",
+            "startTime": "2026-10-31T12:00:00-05:00",
+            "temperature": 62,
+            "temperatureTrend": null,
+            "temperatureUnit": "F",
+            "windDirection": "E",
+            "windSpeed": "5 mph"
+          },
+          {
+            "detailedForecast": "",
+            "dewpoint": {
+              "unitCode": "wmoUnit:degC",
+              "value": 12.777777777777779
+            },
+            "endTime": "2026-10-31T14:00:00-05:00",
+            "icon": "https://api.weather.gov/icons/land/day/rain_showers,20?size=small",
+            "isDaytime": true,
+            "name": "",
+            "number": 78,
+            "probabilityOfPrecipitation": {
+              "unitCode": "wmoUnit:percent",
+              "value": 24
+            },
+            "relativeHumidity": {
+              "unitCode": "wmoUnit:percent",
+              "value": 70
+            },
+            "shortForecast": "Slight Chance Rain Showers",
+            "startTime": "2026-10-31T13:00:00-05:00",
+            "temperature": 65,
+            "temperatureTrend": null,
+            "temperatureUnit": "F",
+            "windDirection": "E",
+            "windSpeed": "5 mph"
+          }
+        ]
+      },
+      "away_travel_rest": {
+        "days_between_fbs_kickoffs": 6.6875,
+        "fbs_only_splits_through_week8": {
+          "AWAY": {
+            "mean_points_against": 18.5,
+            "mean_points_for": 15.5,
+            "n": 2
+          },
+          "HOME": {
+            "mean_points_against": 6.666666666666667,
+            "mean_points_for": 36.333333333333336,
+            "n": 3
+          },
+          "NEUTRAL": {
+            "mean_points_against": 41.0,
+            "mean_points_for": 13.0,
+            "n": 1
+          }
+        },
+        "frozen_epa_package": {
+          "as_of_season": 2026,
+          "as_of_week": 8,
+          "defense_epa_play": -0.06724734209102991,
+          "defense_success_rate": 0.378021978021978,
+          "havoc_rate": 0.172,
+          "is_prior_season_fallback": false,
+          "offense_epa_play": 0.11446843563120261,
+          "offense_success_rate": 0.38961038961038963
+        },
+        "home_stadium_to_venue_great_circle_miles": 146.4,
+        "last_fbs_game_id": 401858500,
+        "last_fbs_kickoff": "2026-10-24T23:30:00.000Z",
+        "origin_timezone": "America/Chicago",
+        "time_zone_offset_status": "UNAVAILABLE_LOCAL_TZDATA;SOURCE_ZONE_NAMES_RETAINED",
+        "time_zone_shift_hours": null,
+        "travel_limit": "Geodesic stadium proxy, not verified team itinerary; rest is kickoff-to-kickoff, not full rest days",
+        "venue_timezone": "America/Chicago"
+      },
+      "home_travel_rest": {
+        "days_between_fbs_kickoffs": 6.854166666666667,
+        "fbs_only_splits_through_week8": {
+          "AWAY": {
+            "mean_points_against": 18.666666666666668,
+            "mean_points_for": 23.666666666666668,
+            "n": 3
+          },
+          "HOME": {
+            "mean_points_against": 14.666666666666666,
+            "mean_points_for": 23.333333333333332,
+            "n": 3
+          },
+          "NEUTRAL": {
+            "mean_points_against": null,
+            "mean_points_for": null,
+            "n": 0
+          }
+        },
+        "frozen_epa_package": {
+          "as_of_season": 2026,
+          "as_of_week": 8,
+          "defense_epa_play": 0.031119524062589655,
+          "defense_success_rate": 0.3523035230352303,
+          "havoc_rate": 0.175,
+          "is_prior_season_fallback": false,
+          "offense_epa_play": 0.12546904413099416,
+          "offense_success_rate": 0.444743935309973
+        },
+        "home_stadium_to_venue_great_circle_miles": 0.0,
+        "last_fbs_game_id": 401858497,
+        "last_fbs_kickoff": "2026-10-24T19:30:00.000Z",
+        "origin_timezone": "America/Chicago",
+        "time_zone_offset_status": "UNAVAILABLE_LOCAL_TZDATA;SOURCE_ZONE_NAMES_RETAINED",
+        "time_zone_shift_hours": null,
+        "travel_limit": "Geodesic stadium proxy, not verified team itinerary; rest is kickoff-to-kickoff, not full rest days",
+        "venue_timezone": "America/Chicago"
+      },
+      "current_market_context_only": [
+        {
+          "awayMoneyline": 142,
+          "formattedSpread": "Iowa -3.5",
+          "homeMoneyline": -170,
+          "overUnder": 36.5,
+          "overUnderOpen": 39.5,
+          "provider": "DraftKings",
+          "spread": -3.5,
+          "spreadOpen": -4.5
+        },
+        {
+          "awayMoneyline": 140,
+          "formattedSpread": "Iowa -3.5",
+          "homeMoneyline": -165,
+          "overUnder": 37,
+          "overUnderOpen": 37,
+          "provider": "Bovada",
+          "spread": -3.5,
+          "spreadOpen": -3.5
+        }
+      ],
+      "numeric_projection_adjustment": 0,
+      "created_at_utc": "2026-10-28T13:30:43.546654+00:00",
+      "author": "Codex contextual owner-review research",
+      "supersedes": null,
+      "owner_approval": "PENDING"
+    },
+    {
+      "owner_review_rank": 9,
+      "recommended_five": false,
+      "game_id": 401869963,
+      "market": "ATS",
+      "away": "Troy",
+      "home": "James Madison",
+      "selection": "Troy",
+      "locked_line": 20.5,
+      "frozen_projection_home_margin_or_total": 11.212407998613799,
+      "selected_forecast_edge": 9.287592001386201,
+      "frozen_confidence": 1,
+      "frozen_confidence_kind": "GOVERNED_ATS",
+      "human_review_confidence_1_to_5": 1,
+      "human_confidence_status": "ORDINAL_JUDGMENT_NOT_CALIBRATED_PROBABILITY;SEPARATE_FROM_FROZEN_CONFIDENCE",
+      "original_market_research_rank": 3,
+      "research_score_not_calibrated": 0.546437960006931,
+      "supporting_evidence": "Troy +20.5 versus forecast JMU by 11.21 retains a 9.29-point gap and original ATS rank 3.",
+      "risk_and_exclusion_reason": "Excluded: Goose Crowder played with a documented shoulder injury; Troy managed 47 passing yards and also used Kilcrease. Final starter/backup health unresolved; only about five days between games, versus seven for JMU. No arbitrary injury point deduction is applied.",
+      "sources": [
+        {
+          "url": "https://troytrojans.com/news/2026/10/24/football-notebook-troy-vs-ulm",
+          "captured_at_utc": "2026-10-28T13:20:48.170133+00:00",
+          "sha256": "aac2021ccf1e37f9f3d9e8457e2b82bd8205f659360c9fdface09b289ca10d36"
+        },
+        {
+          "url": "https://jmusports.com/news/2026/10/27/football-jmu-takes-on-troy-in-sun-belt-championship-rematch",
+          "captured_at_utc": "2026-10-28T13:20:48.285017+00:00",
+          "sha256": "25d2be94e912d93de90a2fd99d75fb1d089e72620e45ce1b8acaafbc81c50dd8"
+        }
+      ],
+      "weather": {
+        "status": "CAPTURED",
+        "applicability": "OUTDOOR_FORECAST_NOT_OBSERVATION",
+        "hours": [
+          {
+            "detailedForecast": "",
+            "dewpoint": {
+              "unitCode": "wmoUnit:degC",
+              "value": 10.555555555555555
+            },
+            "endTime": "2026-10-29T20:00:00-04:00",
+            "icon": "https://api.weather.gov/icons/land/night/skc?size=small",
+            "isDaytime": false,
+            "name": "",
+            "number": 35,
+            "probabilityOfPrecipitation": {
+              "unitCode": "wmoUnit:percent",
+              "value": 0
+            },
+            "relativeHumidity": {
+              "unitCode": "wmoUnit:percent",
+              "value": 63
+            },
+            "shortForecast": "Clear",
+            "startTime": "2026-10-29T19:00:00-04:00",
+            "temperature": 64,
+            "temperatureTrend": null,
+            "temperatureUnit": "F",
+            "windDirection": "",
+            "windSpeed": "0 mph"
+          },
+          {
+            "detailedForecast": "",
+            "dewpoint": {
+              "unitCode": "wmoUnit:degC",
+              "value": 10.555555555555555
+            },
+            "endTime": "2026-10-29T21:00:00-04:00",
+            "icon": "https://api.weather.gov/icons/land/night/skc?size=small",
+            "isDaytime": false,
+            "name": "",
+            "number": 36,
+            "probabilityOfPrecipitation": {
+              "unitCode": "wmoUnit:percent",
+              "value": 0
+            },
+            "relativeHumidity": {
+              "unitCode": "wmoUnit:percent",
+              "value": 75
+            },
+            "shortForecast": "Clear",
+            "startTime": "2026-10-29T20:00:00-04:00",
+            "temperature": 59,
+            "temperatureTrend": null,
+            "temperatureUnit": "F",
+            "windDirection": "",
+            "windSpeed": "0 mph"
+          },
+          {
+            "detailedForecast": "",
+            "dewpoint": {
+              "unitCode": "wmoUnit:degC",
+              "value": 10.555555555555555
+            },
+            "endTime": "2026-10-29T22:00:00-04:00",
+            "icon": "https://api.weather.gov/icons/land/night/skc?size=small",
+            "isDaytime": false,
+            "name": "",
+            "number": 37,
+            "probabilityOfPrecipitation": {
+              "unitCode": "wmoUnit:percent",
+              "value": 0
+            },
+            "relativeHumidity": {
+              "unitCode": "wmoUnit:percent",
+              "value": 83
+            },
+            "shortForecast": "Clear",
+            "startTime": "2026-10-29T21:00:00-04:00",
+            "temperature": 56,
+            "temperatureTrend": null,
+            "temperatureUnit": "F",
+            "windDirection": "",
+            "windSpeed": "0 mph"
+          },
+          {
+            "detailedForecast": "",
+            "dewpoint": {
+              "unitCode": "wmoUnit:degC",
+              "value": 10
+            },
+            "endTime": "2026-10-29T23:00:00-04:00",
+            "icon": "https://api.weather.gov/icons/land/night/skc?size=small",
+            "isDaytime": false,
+            "name": "",
+            "number": 38,
+            "probabilityOfPrecipitation": {
+              "unitCode": "wmoUnit:percent",
+              "value": 0
+            },
+            "relativeHumidity": {
+              "unitCode": "wmoUnit:percent",
+              "value": 86
+            },
+            "shortForecast": "Clear",
+            "startTime": "2026-10-29T22:00:00-04:00",
+            "temperature": 54,
+            "temperatureTrend": null,
+            "temperatureUnit": "F",
+            "windDirection": "",
+            "windSpeed": "0 mph"
+          }
+        ]
+      },
+      "away_travel_rest": {
+        "days_between_fbs_kickoffs": 5.145833333333333,
+        "fbs_only_splits_through_week8": {
+          "AWAY": {
+            "mean_points_against": 27.0,
+            "mean_points_for": 11.0,
+            "n": 3
+          },
+          "HOME": {
+            "mean_points_against": 25.333333333333332,
+            "mean_points_for": 31.0,
+            "n": 3
+          },
+          "NEUTRAL": {
+            "mean_points_against": null,
+            "mean_points_for": null,
+            "n": 0
+          }
+        },
+        "frozen_epa_package": {
+          "as_of_season": 2026,
+          "as_of_week": 8,
+          "defense_epa_play": 0.06410277701987423,
+          "defense_success_rate": 0.4055299539170507,
+          "havoc_rate": 0.159,
+          "is_prior_season_fallback": false,
+          "offense_epa_play": 0.06733429055063696,
+          "offense_success_rate": 0.3991683991683992
+        },
+        "home_stadium_to_venue_great_circle_miles": 608.1,
+        "last_fbs_game_id": 401871094,
+        "last_fbs_kickoff": "2026-10-24T20:00:00.000Z",
+        "origin_timezone": "America/Chicago",
+        "time_zone_offset_status": "UNAVAILABLE_LOCAL_TZDATA;SOURCE_ZONE_NAMES_RETAINED",
+        "time_zone_shift_hours": null,
+        "travel_limit": "Geodesic stadium proxy, not verified team itinerary; rest is kickoff-to-kickoff, not full rest days",
+        "venue_timezone": "America/New_York"
+      },
+      "home_travel_rest": {
+        "days_between_fbs_kickoffs": 7.020833333333333,
+        "fbs_only_splits_through_week8": {
+          "AWAY": {
+            "mean_points_against": 22.75,
+            "mean_points_for": 32.5,
+            "n": 4
+          },
+          "HOME": {
+            "mean_points_against": 17.333333333333332,
+            "mean_points_for": 38.0,
+            "n": 3
+          },
+          "NEUTRAL": {
+            "mean_points_against": null,
+            "mean_points_for": null,
+            "n": 0
+          }
+        },
+        "frozen_epa_package": {
+          "as_of_season": 2026,
+          "as_of_week": 8,
+          "defense_epa_play": 0.020176995318714634,
+          "defense_success_rate": 0.38519924098671726,
+          "havoc_rate": 0.162,
+          "is_prior_season_fallback": false,
+          "offense_epa_play": 0.23446617703144873,
+          "offense_success_rate": 0.44573643410852715
+        },
+        "home_stadium_to_venue_great_circle_miles": 0.0,
+        "last_fbs_game_id": 401869845,
+        "last_fbs_kickoff": "2026-10-22T23:00:00.000Z",
+        "origin_timezone": "America/New_York",
+        "time_zone_offset_status": "UNAVAILABLE_LOCAL_TZDATA;SOURCE_ZONE_NAMES_RETAINED",
+        "time_zone_shift_hours": null,
+        "travel_limit": "Geodesic stadium proxy, not verified team itinerary; rest is kickoff-to-kickoff, not full rest days",
+        "venue_timezone": "America/New_York"
+      },
+      "current_market_context_only": [
+        {
+          "awayMoneyline": 900,
+          "formattedSpread": "James Madison -21",
+          "homeMoneyline": -1600,
+          "overUnder": 49.5,
+          "overUnderOpen": 52.5,
+          "provider": "DraftKings",
+          "spread": -21,
+          "spreadOpen": -17.5
+        },
+        {
+          "awayMoneyline": 775,
+          "formattedSpread": "James Madison -21.0",
+          "homeMoneyline": -1500,
+          "overUnder": 49.5,
+          "overUnderOpen": 52.5,
+          "provider": "Bovada",
+          "spread": -21,
+          "spreadOpen": -21
+        }
+      ],
+      "numeric_projection_adjustment": 0,
+      "created_at_utc": "2026-10-28T13:30:43.546654+00:00",
+      "author": "Codex contextual owner-review research",
+      "supersedes": null,
+      "owner_approval": "PENDING"
+    },
+    {
+      "owner_review_rank": 10,
+      "recommended_five": false,
+      "game_id": 401856737,
+      "market": "ATS",
+      "away": "Mississippi State",
+      "home": "Texas",
+      "selection": "Mississippi State",
+      "locked_line": 20.5,
+      "frozen_projection_home_margin_or_total": 5.4574027354594135,
+      "selected_forecast_edge": 15.042597264540586,
+      "frozen_confidence": 1,
+      "frozen_confidence_kind": "GOVERNED_ATS",
+      "human_review_confidence_1_to_5": 1,
+      "human_confidence_status": "ORDINAL_JUDGMENT_NOT_CALIBRATED_PROBABILITY;SEPARATE_FROM_FROZEN_CONFIDENCE",
+      "original_market_research_rank": 2,
+      "research_score_not_calibrated": 0.5752129863227029,
+      "supporting_evidence": "Mississippi State +20.5 versus forecast Texas by 5.46 remains ATS research rank 2 and a 15.04-point raw gap.",
+      "risk_and_exclusion_reason": "Excluded: October 27 official statement confirms Kamario Taylor out for remainder of season with foot surgery. Season aggregate EPA and ESPN passing-leader listing do not establish current QB capability. Replacement starter/backup effectiveness and OL availability need confirmation. Texas defensive efficiency is a further concern.",
+      "sources": [
+        {
+          "url": "https://hailstate.com/news/2026/10/27/football-statements-on-status-of-quarterback-kamario-taylor",
+          "captured_at_utc": "2026-10-28T13:20:49.557525+00:00",
+          "sha256": "9ec76f678c0e738db4ebef41ffe3c93cc4f1a51803671be51d78d24386de623d"
+        },
+        {
+          "url": "https://texaslonghorns.com/news/2026/10/26/no-11-11-footballs-biles-named-sec-co-defensive-player-of-the-week",
+          "captured_at_utc": "2026-10-28T13:20:52.743850+00:00",
+          "sha256": "3c00a38109fe5b4f7e8022c1e67fc7bfc84513fe8b78be17ce6a0016f270a7da"
+        }
+      ],
+      "weather": {
+        "status": "CAPTURED",
+        "applicability": "OUTDOOR_FORECAST_NOT_OBSERVATION",
+        "hours": [
+          {
+            "detailedForecast": "",
+            "dewpoint": {
+              "unitCode": "wmoUnit:degC",
+              "value": 18.88888888888889
+            },
+            "endTime": "2026-10-31T19:00:00-05:00",
+            "icon": "https://api.weather.gov/icons/land/night/rain_showers,20?size=small",
+            "isDaytime": false,
+            "name": "",
+            "number": 84,
+            "probabilityOfPrecipitation": {
+              "unitCode": "wmoUnit:percent",
+              "value": 17
+            },
+            "relativeHumidity": {
+              "unitCode": "wmoUnit:percent",
+              "value": 62
+            },
+            "shortForecast": "Slight Chance Rain Showers",
+            "startTime": "2026-10-31T18:00:00-05:00",
+            "temperature": 80,
+            "temperatureTrend": null,
+            "temperatureUnit": "F",
+            "windDirection": "",
+            "windSpeed": "0 mph"
+          },
+          {
+            "detailedForecast": "",
+            "dewpoint": {
+              "unitCode": "wmoUnit:degC",
+              "value": 18.88888888888889
+            },
+            "endTime": "2026-10-31T20:00:00-05:00",
+            "icon": "https://api.weather.gov/icons/land/night/sct?size=small",
+            "isDaytime": false,
+            "name": "",
+            "number": 85,
+            "probabilityOfPrecipitation": {
+              "unitCode": "wmoUnit:percent",
+              "value": 4
+            },
+            "relativeHumidity": {
+              "unitCode": "wmoUnit:percent",
+              "value": 69
+            },
+            "shortForecast": "Partly Cloudy",
+            "startTime": "2026-10-31T19:00:00-05:00",
+            "temperature": 77,
+            "temperatureTrend": null,
+            "temperatureUnit": "F",
+            "windDirection": "",
+            "windSpeed": "0 mph"
+          },
+          {
+            "detailedForecast": "",
+            "dewpoint": {
+              "unitCode": "wmoUnit:degC",
+              "value": 18.88888888888889
+            },
+            "endTime": "2026-10-31T21:00:00-05:00",
+            "icon": "https://api.weather.gov/icons/land/night/sct?size=small",
+            "isDaytime": false,
+            "name": "",
+            "number": 86,
+            "probabilityOfPrecipitation": {
+              "unitCode": "wmoUnit:percent",
+              "value": 4
+            },
+            "relativeHumidity": {
+              "unitCode": "wmoUnit:percent",
+              "value": 74
+            },
+            "shortForecast": "Partly Cloudy",
+            "startTime": "2026-10-31T20:00:00-05:00",
+            "temperature": 75,
+            "temperatureTrend": null,
+            "temperatureUnit": "F",
+            "windDirection": "",
+            "windSpeed": "0 mph"
+          },
+          {
+            "detailedForecast": "",
+            "dewpoint": {
+              "unitCode": "wmoUnit:degC",
+              "value": 18.88888888888889
+            },
+            "endTime": "2026-10-31T22:00:00-05:00",
+            "icon": "https://api.weather.gov/icons/land/night/sct?size=small",
+            "isDaytime": false,
+            "name": "",
+            "number": 87,
+            "probabilityOfPrecipitation": {
+              "unitCode": "wmoUnit:percent",
+              "value": 4
+            },
+            "relativeHumidity": {
+              "unitCode": "wmoUnit:percent",
+              "value": 79
+            },
+            "shortForecast": "Partly Cloudy",
+            "startTime": "2026-10-31T21:00:00-05:00",
+            "temperature": 73,
+            "temperatureTrend": null,
+            "temperatureUnit": "F",
+            "windDirection": "",
+            "windSpeed": "0 mph"
+          }
+        ]
+      },
+      "away_travel_rest": {
+        "days_between_fbs_kickoffs": 7.166666666666667,
+        "fbs_only_splits_through_week8": {
+          "AWAY": {
+            "mean_points_against": 26.0,
+            "mean_points_for": 26.333333333333332,
+            "n": 3
+          },
+          "HOME": {
+            "mean_points_against": 29.0,
+            "mean_points_for": 32.75,
+            "n": 4
+          },
+          "NEUTRAL": {
+            "mean_points_against": null,
+            "mean_points_for": null,
+            "n": 0
+          }
+        },
+        "frozen_epa_package": {
+          "as_of_season": 2026,
+          "as_of_week": 8,
+          "defense_epa_play": 0.14083055073404088,
+          "defense_success_rate": 0.44110854503464203,
+          "havoc_rate": 0.155,
+          "is_prior_season_fallback": false,
+          "offense_epa_play": 0.14341418285158197,
+          "offense_success_rate": 0.4552058111380145
+        },
+        "home_stadium_to_venue_great_circle_miles": 568.2,
+        "last_fbs_game_id": 401856730,
+        "last_fbs_kickoff": "2026-10-24T19:30:00.000Z",
+        "origin_timezone": "America/Chicago",
+        "time_zone_offset_status": "UNAVAILABLE_LOCAL_TZDATA;SOURCE_ZONE_NAMES_RETAINED",
+        "time_zone_shift_hours": null,
+        "travel_limit": "Geodesic stadium proxy, not verified team itinerary; rest is kickoff-to-kickoff, not full rest days",
+        "venue_timezone": "America/Chicago"
+      },
+      "home_travel_rest": {
+        "days_between_fbs_kickoffs": 7.0,
+        "fbs_only_splits_through_week8": {
+          "AWAY": {
+            "mean_points_against": 17.0,
+            "mean_points_for": 20.0,
+            "n": 1
+          },
+          "HOME": {
+            "mean_points_against": 18.0,
+            "mean_points_for": 34.2,
+            "n": 5
+          },
+          "NEUTRAL": {
+            "mean_points_against": 27.0,
+            "mean_points_for": 24.0,
+            "n": 1
+          }
+        },
+        "frozen_epa_package": {
+          "as_of_season": 2026,
+          "as_of_week": 8,
+          "defense_epa_play": -0.004478105492887235,
+          "defense_success_rate": 0.34375,
+          "havoc_rate": 0.198,
+          "is_prior_season_fallback": false,
+          "offense_epa_play": 0.04515159783615549,
+          "offense_success_rate": 0.42035398230088494
+        },
+        "home_stadium_to_venue_great_circle_miles": 0.0,
+        "last_fbs_game_id": 401856732,
+        "last_fbs_kickoff": "2026-10-24T23:30:00.000Z",
+        "origin_timezone": "America/Chicago",
+        "time_zone_offset_status": "UNAVAILABLE_LOCAL_TZDATA;SOURCE_ZONE_NAMES_RETAINED",
+        "time_zone_shift_hours": null,
+        "travel_limit": "Geodesic stadium proxy, not verified team itinerary; rest is kickoff-to-kickoff, not full rest days",
+        "venue_timezone": "America/Chicago"
+      },
+      "current_market_context_only": [
+        {
+          "awayMoneyline": 850,
+          "formattedSpread": "Texas -20.5",
+          "homeMoneyline": -1450,
+          "overUnder": 50.5,
+          "overUnderOpen": 50.5,
+          "provider": "DraftKings",
+          "spread": -20.5,
+          "spreadOpen": -20.5
+        },
+        {
+          "awayMoneyline": 850,
+          "formattedSpread": "Texas -20.5",
+          "homeMoneyline": -1800,
+          "overUnder": 50.5,
+          "overUnderOpen": 50.5,
+          "provider": "Bovada",
+          "spread": -20.5,
+          "spreadOpen": -21
+        }
+      ],
+      "numeric_projection_adjustment": 0,
+      "created_at_utc": "2026-10-28T13:30:43.546654+00:00",
+      "author": "Codex contextual owner-review research",
+      "supersedes": null,
+      "owner_approval": "PENDING"
+    }
+  ]
+}

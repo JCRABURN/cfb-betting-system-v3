@@ -1,0 +1,2826 @@
+{
+  "created_at_utc": "2026-10-30T13:15:35.937156+00:00",
+  "parent_head": "6e1948dd9b675a3f1226350ce5b40a6556e09f7a",
+  "files": [
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/article-boise-state-0.gz",
+      "sha256": "bf22e62452986d913e24f2f2bee925006752ebd095f7c97ff7e6affc8250d39f"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/article-boise-state-0.txt",
+      "sha256": "82e6d05059321138d6784ff32028fcd12874a8a05b5d96c3f17b16910417f23f"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/article-boise-state-1.gz",
+      "sha256": "606d960a2e7c094c7b195dbadd0baefb3aa88dcac7a7ac17106b2a67b347e0af"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/article-boise-state-1.txt",
+      "sha256": "f4095a2741ac2fcb36e9ad99c281aabfb4c375b66dfd1386a931c503a61ed214"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/article-boise-state-2.gz",
+      "sha256": "14ea83f26a8af03151f34d2434bd52003dc73dfc5dcfa98f65eb3feca878aed0"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/article-boise-state-2.txt",
+      "sha256": "f37a089a4f31c96ea8efc60143f1f9ee1d35c95b21c1f3ead2a5978b00cd2610"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/article-boise-state-3.gz",
+      "sha256": "9acf83304c1b983e2eed28627574116b16bc2135cd331e950bcb5278837eb612"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/article-boise-state-3.txt",
+      "sha256": "83323e94b005e51533548ad801fde71ecbcd959f48929a182cc8d9244b7f0333"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/article-boise-state-4.gz",
+      "sha256": "466a41b06eec9042d618fb452e1447e908c15929f8b38eb7032910c5f1b7d128"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/article-boise-state-4.txt",
+      "sha256": "17879d5b07f282603b21530f22c41f3877d9b039c08b42dc703152f798af073d"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/article-colorado-state-0.gz",
+      "sha256": "37e7c9def85c67f410f8148839affda1c378292654dd8e0e52a87df4be94c4e9"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/article-colorado-state-0.txt",
+      "sha256": "fc1ccaefc01a3d6b1de09219e5ebb6c1b0c2ebf46fa4b539507415c77da5394f"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/article-colorado-state-1.gz",
+      "sha256": "df76efd49c36c9a95844f31507be0ac8db76ff730d1f29c29ae92550a5827ec5"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/article-colorado-state-1.txt",
+      "sha256": "a3d63e229794826ea9ae6e46729663a922c1876462660ed76e5fde29086e5414"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/article-colorado-state-2.gz",
+      "sha256": "c260906ac9814b6190b8d7c4cb4eba26848e72cbb102eed1bf6dd67b54b179af"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/article-colorado-state-2.txt",
+      "sha256": "f7bb3d7a024a16e3468890685e2d801c96077c6072a2ec39226048358d95a125"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/article-colorado-state-3.gz",
+      "sha256": "7fb7e2f16242557f1ffac5530583d61c6dfb527c48f27d49aca81e11accfcbf3"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/article-colorado-state-3.txt",
+      "sha256": "5e4682eeb43e8750e26716555e74d3af934e245cbfd8eb7439c19eb9e81a03bc"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/article-colorado-state-4.gz",
+      "sha256": "5210b5fad4bf421e78a6498a1b9ae3b1253fefe111eb5dfb196d0313d261f58c"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/article-colorado-state-4.txt",
+      "sha256": "16ae55fd46f02babbec0ad41dcae9b0ee49f9d29a32cc637261f2384585b39e6"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/article-colorado-state-5.gz",
+      "sha256": "8a17f0d3c4f9ab299cdd7437aaa8970919076b5c4dd71d8b65d268a224eb8f7b"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/article-colorado-state-5.txt",
+      "sha256": "84808a0aa53ce7d6a30dc7912d65a724898bd050e208f99ad060e665b02adf19"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/article-colorado-state-6.gz",
+      "sha256": "5de62f8f41a2a1609d7bbec6f42e7516c3624658cf9f5f26128e0ade5efeef6d"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/article-colorado-state-6.txt",
+      "sha256": "dfbd0c4d3d3d43547757774f1514fb35f28c4e1e8c632ec41f059cc4d73734dc"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/article-colorado-state-7.gz",
+      "sha256": "109ed42f4330344fd4f8abee344cb0a3805b0cba3365e0db7890da0af98cffbc"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/article-colorado-state-7.txt",
+      "sha256": "c9cb61ca8faf448ba46443b09a775a699c01aa56b75c2a6bad56898cd31ac4f7"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/article-florida-atlantic-0.gz",
+      "sha256": "77be20f0e68afee4d85a390b75c3be3857b950699bec910a8b4b6c95fd6e9f27"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/article-florida-atlantic-0.txt",
+      "sha256": "ea2ce6a7512463bd3af76c6cc6434cd23989681609a1494a73257d762d7cfe3d"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/article-florida-atlantic-1.gz",
+      "sha256": "2bc26bb812a1354e5d56b16bf396d5a71b27a0f52569ec8a904cb45a4adf73fe"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/article-florida-atlantic-1.txt",
+      "sha256": "f386c740e6b6e549481bd67f78783ab49c5d48346b0970bad18fd65b39048c70"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/article-florida-atlantic-2.gz",
+      "sha256": "3a3aea01d94288003e6df273ef376cfcbec40dc02671ad325eceb702ab9e8fb7"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/article-florida-atlantic-2.txt",
+      "sha256": "45d8148ee388f68456551499100c145495fcbb060a6d312b3096122c37888e9f"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/article-florida-atlantic-3.gz",
+      "sha256": "581d7f18503ae45a217e8955e712b322e47c4359ea755069048bd42fb0be426c"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/article-florida-atlantic-3.txt",
+      "sha256": "d423d333d7ec4109fbdcedd5b8e7a8a469d11a48e3c76929ddc5c49c2327fd2e"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/article-iowa-0.gz",
+      "sha256": "de2677a917b19e23d220f16e398b9275df55977f1e68e7890d55304ce8c6bdab"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/article-iowa-0.txt",
+      "sha256": "2640cc9deb782be322f303873daf4f8dcc8489779c776939163b4c1125f42553"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/article-iowa-1.gz",
+      "sha256": "72a0e64b1ea591e0b6e49fce6dcb8d4e308485207ec7784fde69ab9e4f49942a"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/article-iowa-1.txt",
+      "sha256": "f3bcf8376ac0906896ec838ca1b9e5e51013d1357a72c574e9263f742b66bd7d"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/article-iowa-2.gz",
+      "sha256": "de44beb1759e118a6668ae3cb37165722867514b1eb31a555b45e6b868b549aa"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/article-iowa-2.txt",
+      "sha256": "7d8bd0c0089eb8bdb5534884a3d38e7b762f7b9d36c8ee2b2660dac7b4bdaaab"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/article-iowa-3.gz",
+      "sha256": "ea5c9a742213af2d7cc62d71cd3e7fa667f925367995f23e203933efeb673528"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/article-iowa-3.txt",
+      "sha256": "343d6d87587455e79069a7dd3318ed73059fe4ffdfaf3caf7a86c05f54b00c46"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/article-iowa-4.gz",
+      "sha256": "8b6c91ae7e49ced0757ed185fb41355d70bcb45b1e7a762d44d3132ef0a13d7d"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/article-iowa-4.txt",
+      "sha256": "54c6236680ae2b52dba840c384eb30a5d0ba75d2b7fbccc0b4a2012753979e70"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/article-iowa-5.gz",
+      "sha256": "55e39a4a3e2caac013946b5faccb7a3b00d78a5c150a9af1105f161d540e6297"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/article-iowa-5.txt",
+      "sha256": "8b4d6cb80a58458294f18803277d06d0b9ce1c04525f7a59e4a86a3b8adaeb4e"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/article-james-madison-0.gz",
+      "sha256": "7943eafd085a4499634cedd28937015862bffa0a8f151ea235339bcf9c1ee9f3"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/article-james-madison-0.txt",
+      "sha256": "b25414ee980de3dfce09894c73415a77a7af993f89daaa1faf3d9f1d2d90232b"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/article-james-madison-1.gz",
+      "sha256": "bdea32f145bd41c6671cd66ccaafeb57414e6a372278171cdff9127f36e3e8f0"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/article-james-madison-1.txt",
+      "sha256": "8aa9d0c337dfb850144eca932bf3b9fdf180f5103fc5e16bf2d4b67db76500e8"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/article-mississippi-state-0.gz",
+      "sha256": "b113da2bed3ce88cac4c0ef2e080611a24d18d9eddfb0be0179ea94969d2713d"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/article-mississippi-state-0.txt",
+      "sha256": "af7895b12342e0834a9af01c77cd11d1d995bcdd85d5959cdc41053fa6b0a089"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/article-mississippi-state-1.gz",
+      "sha256": "245f037e29a0a37b6022adee949adb67ca7e4b9373d475b9b342febaab17fa1f"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/article-mississippi-state-1.txt",
+      "sha256": "fcefa3ae5bf2af128b556b7380be4da7d2c186886469dfbf727eda313ed26ca1"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/article-mississippi-state-2.gz",
+      "sha256": "7fac077a1d481692a4328c872e8d0aa156ca015af2b96b66845ec5d32de7fa20"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/article-mississippi-state-2.txt",
+      "sha256": "0c047001c19b67ee1dedf1cbca27443df06f3a6eeed6f0410fe88b27e6cac26e"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/article-mississippi-state-3.gz",
+      "sha256": "dcbb082118dce11a99e45b5f055370a50731b71337c63a011690703182a35554"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/article-mississippi-state-3.txt",
+      "sha256": "f419336c1dde596d120c758e8ebc02ae62872d5bcd6202bd35f0293dbc382f21"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/article-mississippi-state-4.gz",
+      "sha256": "a7158606dcd1a65bd2286ce2ce674b91451df9d32ed2cb260b1c0e077c2bc162"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/article-mississippi-state-4.txt",
+      "sha256": "8bf1704908d54efab75fc697fcce0b371c8d93d11abebbba5cf511c5e6e29695"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/article-mississippi-state-5.gz",
+      "sha256": "2cbfaf366512cfa6948dcbe2da5ba561e7c44dbfb870a851ac156cbc515ca1a2"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/article-mississippi-state-5.txt",
+      "sha256": "b33cf418ef97df155cc2bdf925b764ec7e277c527e4142e5831649488bfccf84"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/article-mississippi-state-6.gz",
+      "sha256": "a8855da546042d6fab9eb87b74f9ccb6939b5238478e17f68d99101146524357"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/article-mississippi-state-6.txt",
+      "sha256": "6ddc440337d1768bf00c88ad2b56cd8cb1bc4ea3dfde0861f76fb1b89d98902e"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/article-north-texas-0.gz",
+      "sha256": "2c8d7f7e2681663d3c00713a4ab136c77c905566a00e23515d3441426dc74f34"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/article-north-texas-0.txt",
+      "sha256": "1b401d102c80676f8d2da8d2e595e79ec27ef27a029b3a44e7f6357752cedf8a"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/article-north-texas-1.gz",
+      "sha256": "9a0c05bb1a0cc1655daf601e6896e48568133fdff72b75194de639eefe8cc5f3"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/article-north-texas-1.txt",
+      "sha256": "aa0ff4c639c5f661d643158df25fa520ea1f15f9f304904332cb89aa5cf4983f"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/article-north-texas-2.gz",
+      "sha256": "7fa088302137e07ee3ad99ae918d319741b849f1794fb08ec4237bf26aa118e4"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/article-north-texas-2.txt",
+      "sha256": "70c1c63a3945c1088cbe8c00b7bf5d97c6d2cb7943492789a06abf10e6884986"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/article-north-texas-3.gz",
+      "sha256": "57c0888bdbb6a9d52f574337c406be15b6dccd487ef008594c9b5ed73aa551fd"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/article-north-texas-3.txt",
+      "sha256": "d865a35f3bd6641fc814acde924fde5a9390b3be0335caca51481e26cb27c00d"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/article-northwestern-0.gz",
+      "sha256": "7ff02323e6ba140993f6f272798108172ca9b071e2be3e726c2012a377bdf1d2"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/article-northwestern-0.txt",
+      "sha256": "cbea0e4acbceb7281d04d1db5ee967debf97d7fd506ef53ede5a14519de360f4"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/article-northwestern-1.gz",
+      "sha256": "f5d0a0c09befe4073c62eb83d6b49e1f8f658945c0224597b9e7a6513527ccbe"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/article-northwestern-1.txt",
+      "sha256": "e0e33f690103460d7ac82028b63e3fb081f4214338f5c386e78c1c4c022dd178"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/article-northwestern-2.gz",
+      "sha256": "62d0f2d59128e5b08600d65fe57224c6e8fbe70ddc89292743879e988a629533"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/article-northwestern-2.txt",
+      "sha256": "9ef0d1c27c1be116a9edf1a37bf1d04f8fd1b001b912ac24266e9494b991abab"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/article-northwestern-3.gz",
+      "sha256": "581be98a7d318775ea7210163ae52525b359573951cb93abe5d465c296e8b875"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/article-northwestern-3.txt",
+      "sha256": "177794bcbaee0e76163eb4d0fb61f864cc3cd5c189b77f3ac8c9e3637b08e1cd"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/article-notre-dame-0.gz",
+      "sha256": "43fa13abd0371b775a53c327ce3cdb005c399b7c48a70b6b9ae5657a02e49810"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/article-notre-dame-0.txt",
+      "sha256": "609d467aa3376ee0bf730669f78a84fb31e7eac5875f07d4b46a5d49c145485a"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/article-notre-dame-1.gz",
+      "sha256": "7d4283d660d03ade87df8208c4847f7199eb1c6aece1c7dc28dbcb836ec73242"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/article-notre-dame-1.txt",
+      "sha256": "f42532be2c76cf9e60b580ae921ea2e16fca0b306621554ac3c1ac7c38b0328b"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/article-oregon-0.gz",
+      "sha256": "79d9875818221010b0a1c5edc886c67b7d53558e132625c98e932709f973d2a8"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/article-oregon-0.txt",
+      "sha256": "57973bd4b4b9e65375dc8335bccd1bc5195b2f0d815a5ddae012205642040635"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/article-oregon-1.gz",
+      "sha256": "16417e1cce055adfebd836f98bdbbd519fde23cedcf89c571e821e7f5da405ac"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/article-oregon-1.txt",
+      "sha256": "98e79179bf82a2ca01517f200d103b19599bbb3f8474aeb7b44b3c6a578d3adf"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/article-oregon-2.gz",
+      "sha256": "640d1bca3a7f6e6028be668c574ef9c04594d5205ef30b87cc4fa794f4dc6ab2"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/article-oregon-2.txt",
+      "sha256": "660b2cc00668710e39683d98f68b4bc8e6d11eda425e5a5224ece21644aa6995"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/article-oregon-3.gz",
+      "sha256": "2e30e822f492ee56b5a1683d62d8888d0d664c83cb79cbaf8a79d7263f02e037"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/article-oregon-3.txt",
+      "sha256": "b6710b53957af23e402d13d2a66e68e9a50d3a767a05afcc5a18e83d54ded9bd"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/article-oregon-4.gz",
+      "sha256": "4f6b9a58014832596ec05c641d413e757723984882e9e2fc3e6aa37fe3b718b5"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/article-oregon-4.txt",
+      "sha256": "1c30c7e364a82446e9f70c9080c79251e37ad2d22b54704a023c9ec5944aa11a"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/article-san-jose-state-0.gz",
+      "sha256": "24f58f81e76da8ff7a9d9fd8dde02ca2ab8c6b6235a57bff96a37bd79a01a498"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/article-san-jose-state-0.txt",
+      "sha256": "1227ecdc6de9a111ad893d538dfe57d3f396a09e46ddfccc8cd3955b980ff4fe"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/article-san-jose-state-1.gz",
+      "sha256": "5e92fbadc05578aa7ea21c980f436f206fed2bb6544e25b383cd0748b63ee973"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/article-san-jose-state-1.txt",
+      "sha256": "bf6114a9e73915e801258f79c0179a2fec43218514e58432121e03a5cb59f4f8"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/article-san-jose-state-2.gz",
+      "sha256": "ecf4ce4433d0cfc06769df1c6e485b495efb6c062aa8d35071398fd071f220b0"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/article-san-jose-state-2.txt",
+      "sha256": "a8c0054493a06b3a98c33bda1b244d20e3389bc458cf11e77827a2202759f500"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/article-smu-0.gz",
+      "sha256": "69423ae770f8e669b6c5d884b6b9b248dc7fe101551be47c2d3635976a81cae3"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/article-smu-0.txt",
+      "sha256": "4ad61ce1427c79f9354f58a56a1ef82207a49b95c239474e94f1a26eaafe66f3"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/article-smu-1.gz",
+      "sha256": "6c92f7d9c6be5b85504aa2b03acd25b1eebbd1ad4e83e21df438a0dc883a3ec0"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/article-smu-1.txt",
+      "sha256": "9c0a0b8f5fd9df69362e4782b274ddca147f1c3e743b1b599a97b0438442041a"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/article-smu-2.gz",
+      "sha256": "aec718408960a45049ab22e6364727135179549542428c913861cdf460e157db"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/article-smu-2.txt",
+      "sha256": "0f922fe7a05a84ad3c2852620e9f4b5991ed305be8e418b83d172fe78c8e0be5"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/article-smu-3.gz",
+      "sha256": "e7d2c3fcde00b8218edd5289fdd213c958dd1721fd84f0467bcaf8e9af948fc8"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/article-smu-3.txt",
+      "sha256": "93434db75fb2a84c747710e0257b3de3734e00b78e5769f81486854bcb8b111d"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/article-smu-4.gz",
+      "sha256": "b00bc614aee5509e9b74dd815cf43aefd49c6cb4c670dde340dd24adc392986d"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/article-smu-4.txt",
+      "sha256": "02dc12be85909e3b6d8a3cfc189247b38f7e45b281c82174c3291056e38d774d"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/article-southern-miss-0.gz",
+      "sha256": "cebde307aa0fff2ddd0093177a405f8a506b19f20a488706085b6b06ac839bcd"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/article-southern-miss-0.txt",
+      "sha256": "d160453b91473433a0ca6e1da60765b720a72b0b71f43cf9403203332807db34"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/article-southern-miss-1.gz",
+      "sha256": "a2ab0e414d57b2cfc1fcc78596a43efc0ee15a1686b42ac4a2856f25b494089a"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/article-southern-miss-1.txt",
+      "sha256": "244218cc5fec0180a1a92e8e961d17d4e16d70cc80b3d5bf017faeb7d47cca66"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/article-southern-miss-2.gz",
+      "sha256": "d690ef05ee26af489121ab4a392665e649f64165cfe511de24da619f7675a57a"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/article-southern-miss-2.txt",
+      "sha256": "2a87497bd9822a2ba22ceea7d93957b5a6d48b1dad6a21da2851bfa739e74649"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/article-southern-miss-3.gz",
+      "sha256": "3eeb728051e50a8dfe5f7353e8b7a150ab74a3dd921ff0e8c61a51603ae0ff3a"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/article-southern-miss-3.txt",
+      "sha256": "c966e08bba382ce51eb8b4583a0ff8e0f65e3f7122ea759db19a3caf9b12293b"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/article-southern-miss-4.gz",
+      "sha256": "4e0d62d5dee77d02d4f710b8c2d24dd182a70e65c18493c579b5ba0290bf5d1b"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/article-southern-miss-4.txt",
+      "sha256": "91b3faa41eccdc5929f9179fb52ae440486e4cc4696f09352b2660d151c8335e"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/article-syracuse-0.gz",
+      "sha256": "363a7101ca0d3cac3ea9349aa6a6b4c094c92d9f324fa4658a15e39252bbb839"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/article-syracuse-0.txt",
+      "sha256": "823ed6c0202f10f80673d0ee57a2f057e0588b941d6f655293eb4b64b8ce735a"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/article-syracuse-1.gz",
+      "sha256": "f40e2d198c52c976d21615dd7352b9a327b850761ef1aba409b7bfc1e4f2c82d"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/article-syracuse-1.txt",
+      "sha256": "3e006e2752db39f0380841fc5ecd5b071c5f211fc55ef4156c9cba0adcadb402"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/article-syracuse-2.gz",
+      "sha256": "08cbc988b069bd099f2aa160afe5e7be29bb78cb445c8c74a7675ff29e5f0a3d"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/article-syracuse-2.txt",
+      "sha256": "78d7b4e6bd33e0a74f4d2ea25fda5fcd503e307f6bea9324ae9cfc8233384633"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/article-syracuse-3.gz",
+      "sha256": "c7ee040c811ec0ee80577bcf218b51ebd85cb11592e5ae8665bcbc59aa75b2e5"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/article-syracuse-3.txt",
+      "sha256": "544411e400a9653a74661251c866cb76ca2bf4c326ee7d48f288fb299107af77"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/article-syracuse-4.gz",
+      "sha256": "80bba66c89a1199c209286fe9bf6e47c8e4f7aaf37528216ca1a6eb15ac71e7a"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/article-syracuse-4.txt",
+      "sha256": "b889e1aedbc4a6d57da33e01906660c2d742a32d62e412c6862fce03c7a7274d"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/article-syracuse-5.gz",
+      "sha256": "07d24d25cb9f3416e5bb504351a5e5ef7b24480250e6fdd2ee2441bc6cb7a30a"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/article-syracuse-5.txt",
+      "sha256": "510ad1adc46b2db5323f0c6cf26f265b3cc8430d24a35ce2e9252d920fab87d1"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/article-syracuse-6.gz",
+      "sha256": "8d83541e92b0434fe83e13c6645a699bf8edebd4ab63a0577c7539bf1d75a3d2"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/article-syracuse-6.txt",
+      "sha256": "78f21d9edca0111b4ad0e121d08972f9d07cf44dd05d91583e9efcb2762a3413"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/article-texas-0.gz",
+      "sha256": "c1c1461df829b0e81438cd2db88b219d49d212ae28be0753344c8de1a47d1719"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/article-texas-0.txt",
+      "sha256": "5a40959c49fc99bd4b92c3eaa87ae0ce36bc4d59f342884c125876bfd9c7823d"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/article-texas-1.gz",
+      "sha256": "a9332e3f0cec65a773638fc6d2c86839a513ba05538f47627de5f46a939597b8"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/article-texas-1.txt",
+      "sha256": "5659c0304e330c14f10c137c37cff869b36e07744b697ae5c1c88d1f0d3550f5"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/article-texas-2.gz",
+      "sha256": "ca7e54c278f348e38ebb28e6c340f2f1b508771ab01f7e0e34d9152d21b4f92c"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/article-texas-2.txt",
+      "sha256": "aa382cd2a0bbc3127a21f92a401619cdca029c0981e9a08f0b1769b9d2b94b0f"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/article-texas-3.gz",
+      "sha256": "f97d930e08144916d1a740504b6831cc537ecc12c502e17f141e253744de2bf0"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/article-texas-3.txt",
+      "sha256": "fff92b78c8574e0631e76fd9d65e5e931d2a55589a1239a969989443f0193724"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/article-texas-4.gz",
+      "sha256": "6b0bb6b8a4a708e2aa607baec1cf90adee006750be5dcc0d4eec85c2bdf227b0"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/article-texas-4.txt",
+      "sha256": "06f3afa9c2bcc13912168eeeec01332df44b88c406734bab14ab2b2ea6b0fba2"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/article-texas-5.gz",
+      "sha256": "8935038767a4197dbeec188145bcfad74b8f2515b3e1a3af99878b761e7a87f4"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/article-texas-5.txt",
+      "sha256": "25a20b0f6da8311977d8a1970cfbe089a4a9affec0d0077ef6b30d9d4a0e1da7"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/article-troy-0.gz",
+      "sha256": "9f87d2e572d84639d51541b1540f02731982d01a677dbbc97f105f0e357e835a"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/article-troy-0.txt",
+      "sha256": "8823ac2375cf81d857c94ce41cb09219770f521f459708695dd3e47215b5ff5d"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/article-troy-1.gz",
+      "sha256": "46c94629a843c16ac32d67cb2ddfddd8b476dd073dca4b8b80786814fef8fc95"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/article-troy-1.txt",
+      "sha256": "e874aa70771aaf8cef8b3ed788fe4cd8a900d1297f91553083abd846b3b2d150"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/article-troy-2.gz",
+      "sha256": "75cc0fe5003f5af0b53c14dc21ab7e87c2f5fb3cdba662ce929a81d97766c80e"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/article-troy-2.txt",
+      "sha256": "46804f17b3b3fdb5c62c086f9f7ed258d69dabc9e4494d9a26cc765007a9e68f"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/article-troy-3.gz",
+      "sha256": "ded1bbe75f66482d87aab65f4ea2de6175091e84c4b3f0dcaa4870677035c71a"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/article-troy-3.txt",
+      "sha256": "36d657159e46cebd28aa77d558fc44dcac364c8b6be055b2fdf940f686cbc5cb"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/article-troy-4.gz",
+      "sha256": "3c48a1a9280f82127b1d772f658a38b7f8987f85037c98c009ca118fe5da8c40"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/article-troy-4.txt",
+      "sha256": "253ae8c3fd07bfb0834280875094d72b8d8e98af71f6bd7684b6d596c7c1b611"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/article-troy-5.gz",
+      "sha256": "1e3cb68859881fdc6e6ff281ecd5cc9e3ffa0a468a809ac615a375628367b573"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/article-troy-5.txt",
+      "sha256": "b3a3ab6c2bc91f677e738d00cc2b8e199b0ed70a3279e4f016a76206c8cd42a9"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/article-wisconsin-0.gz",
+      "sha256": "8de783ba3ad6460b288ec437b72a3f1b3c0d66b0ba2ff658283ef5b707be1912"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/article-wisconsin-0.txt",
+      "sha256": "17d28cee5ed3daef30b6cc3c4342ee3fe79c8537516b69ed937394275046ee47"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/article-wisconsin-1.gz",
+      "sha256": "e8a4e77cfca8f0fda16e6fbb1f08a848892695728b071d463253d14af5a2705f"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/article-wisconsin-1.txt",
+      "sha256": "62bd06f641929a2f9bc50764d95081d38c4ab689b8c1ae86b44ac5d7be8e0ac5"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/article-wisconsin-2.gz",
+      "sha256": "cde7525e28d490860ae5a672fb1c4c6ecf6ffde163840d533d3406bf47558384"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/article-wisconsin-2.txt",
+      "sha256": "908631e79d329cee7e4b0be1f05a638c5f4006b4dbe2e71f8e9e40398227460c"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/article-wisconsin-3.gz",
+      "sha256": "1bf21b40b4a5040467d46922e4349e0ce9f092d5ab87850b187c10bef00ca23b"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/article-wisconsin-3.txt",
+      "sha256": "e52f780da01431022015db69e9dfe49b1f3530ec646626b939dda88ddc49d989"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/article-wisconsin-4.gz",
+      "sha256": "048c24c55c5f33d462a2c02d906b795413bcae690d1d11d0a349e5fca078724d"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/article-wisconsin-4.txt",
+      "sha256": "696fcad88c8d7efbcee18da1b25fe5d9805fefe10dde20e79f4173d890793bc8"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/article-wisconsin-5.gz",
+      "sha256": "60b9024f4c18b625dc71a01af0d989040883104f51a62333a630e7055857c26e"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/article-wisconsin-5.txt",
+      "sha256": "22f3e1c8a141b32e6d6489e9eebb88ae3bbcc081b046fb74accc968fd24c2598"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/article-wisconsin-6.gz",
+      "sha256": "956f6e13e6f9cf75f40f9e11fbe57470c8fd9d40bd23a0a1a75108a9a352c5b7"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/article-wisconsin-6.txt",
+      "sha256": "c2a96fa0bb2e8db6558618047a10e25a71d4727de39de722aab144eae9ebc951"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/capture-manifest.json",
+      "sha256": "a4a7ef22981930be42195bf43e4b1e70450850d613ee1a95ce9b420958573d55"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/cfbd-current-week9-lines.gz",
+      "sha256": "a1dd247c6706e6cc1a436ff1f191fc94579be886c59a18a9197dc8db39a3d44e"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/cfbd-venues.gz",
+      "sha256": "c19a7fa1c7bbe71db05b3b24a28042bd5eca13cce07ce7ec69a81fd13c60ab61"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/derived_context_board.json",
+      "sha256": "c6e3c694ebaa65c72404e09e4213db80d845ab9dff2c08373dc1df0d0033b787"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/espn-401856733.gz",
+      "sha256": "a3349ffaeb0c4193e66ecc0252ab36d18f0c45549f9dd659f1641d99503a25b7"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/espn-401856734.gz",
+      "sha256": "2f8b27ff42437efb259a3440866df0b0e72147faf237bf5c35ae6bfc825635b2"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/espn-401856735.gz",
+      "sha256": "b7993f0b08927b484466037650f246d26e23c64fb13e10177afd2a2107eace4f"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/espn-401856736.gz",
+      "sha256": "f058c822e6db5bf087bab2a28c9bd4bcf80991c6f6e6af7af54409bacc3ed4d9"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/espn-401856737.gz",
+      "sha256": "6bf07703c14ec68b97fe80b4f9fcc088428fd90cbec9e46a9d863f4309a2c28c"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/espn-401856842.gz",
+      "sha256": "929b22f4f0391f1ddf96982ed1ba28a5a5ab1c0b264d04782dbab5f387174a27"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/espn-401856843.gz",
+      "sha256": "d63f6d08ef1310e8dc5b6e8befaee3efb684939b5121e0b95a269483312119e6"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/espn-401856844.gz",
+      "sha256": "16c793bc22af7f6afdf34ad1ad4499fea00f98a6cc0c9a6fcc8ad9b7ccc7979b"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/espn-401856845.gz",
+      "sha256": "f0f861eb6f3ca50929a7b9407cee266a82a8f2aa19f141b82d303e0142f2322a"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/espn-401856846.gz",
+      "sha256": "870c28c6ad667e6cf6f4dbc08501f98c388ab1e0d30f19d8cbac6b435501c2b8"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/espn-401856847.gz",
+      "sha256": "9b33fe1176c68a2893665a51a118f19e93279278f7f0f63b1e11375bb56d3595"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/espn-401856848.gz",
+      "sha256": "6d447b5407d53738e9da4340836b538e992caf5b70766d7f6f1d9bb34a4fa27f"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/espn-401858277.gz",
+      "sha256": "db5b97efc53d451bebe49746990899807fd5deecccc338f1efb9641c7fd393d9"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/espn-401858278.gz",
+      "sha256": "3bda91e55bcdd9ae1c45703cae21f9eb2243cb7981e342deedebc39b062c5d9f"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/espn-401858279.gz",
+      "sha256": "b0567ed148a19210dbc89909ddd851d1ea1ec364752272ca88c4c8dbe5fa7502"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/espn-401858280.gz",
+      "sha256": "8f6fabd6926739881845babbb231397c778de36bd845e22a8455193d4c077683"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/espn-401858281.gz",
+      "sha256": "1c56027203b8956aa0030db7d8063e84f7096336186ceb69e9d71ddd8f731af0"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/espn-401858282.gz",
+      "sha256": "ac23df3326bf666165c6bbf0311dc39ed65af8ec8197eacda077fcf8af941e37"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/espn-401858283.gz",
+      "sha256": "d729a6014d57f5222310d81341cd17332d5ff99c874669b46c225f81525e56cd"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/espn-401858284.gz",
+      "sha256": "c4f81befba2b5abae6a9c7a9a84ed2dbdb3dc63556b8a245de9148f6afae8900"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/espn-401858501.gz",
+      "sha256": "12a8f4370a9c5600db46601c5b2c0df74683db235abbb3bc4d721ddb20c2a6bf"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/espn-401858502.gz",
+      "sha256": "f3f182b8ca93fd37ee4fe5c0b20f06e1afce2326a470856fa162116ccfee527f"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/espn-401858503.gz",
+      "sha256": "d83a1b0cfd02cc30b8f8b1f09efd154ab3eef5b61be20ed593aaf498bef95d88"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/espn-401858504.gz",
+      "sha256": "0654437dd2e90253f25365ab0a956aec8b92c2c9e49888c61cd9c54a41d0ea91"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/espn-401858505.gz",
+      "sha256": "27953856d729125e6f21773e05f8118d8d0be5ac94c7aec1f5938c8aed1528ce"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/espn-401858506.gz",
+      "sha256": "4fb7c36cc79684be9d01aa8a146f47e11d2634f67ab5293c5344796a1b1a6fab"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/espn-401858507.gz",
+      "sha256": "bbe0e8e358f06534d09a9a69da276a869eb0d9503c6b6f2bd26b1c4b53b659b9"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/espn-401858508.gz",
+      "sha256": "1c45a230958fd18de9c667c3fcfaf4fc15948668ad59a17b7e3c3c5401545610"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/espn-401858509.gz",
+      "sha256": "a49c5494803e49c62e1a1314cf5d857c0140909019d506062428936c5d1bcd19"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/espn-401859185.gz",
+      "sha256": "8162cec18207ac07e83d4e814e307df99f96c766977b5835ade776d93eabad8c"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/espn-401860908.gz",
+      "sha256": "f50d9f55d027c1ff165de51ef1cb3cf1ca3511481688fbaf760e77e568c64fa4"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/espn-401860909.gz",
+      "sha256": "9f08124386a045f787072104d998814cc8fe963481b41cc99b17768620cdc500"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/espn-401860910.gz",
+      "sha256": "163a539f7da8e345d1c0808edf747062a9406873e5a8694450a40c55775ecf1f"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/espn-401860924.gz",
+      "sha256": "773a419416bbb88479e9430964aa144ac12bc2dfff5ebc046f0284469046348e"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/espn-401861966.gz",
+      "sha256": "a3b41e135be23f2915d8c7ff3a472d6d1244777dcbaf747b43716ee2dd45c644"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/espn-401862812.gz",
+      "sha256": "49c4efb5758376b828a7d0641e11c1044bf6c9764b13bdfb55b6abe0bae19d24"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/espn-401862813.gz",
+      "sha256": "2fd97105acef3d7f1e3697abc5adfbb29208c4746257f4e7ed2e1f18fc5368b7"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/espn-401862814.gz",
+      "sha256": "c2453ec5fa027edf363e095950784b65088d958faa4490a2fac78f27519ee943"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/espn-401862815.gz",
+      "sha256": "9cfb14fc275126a54258b386bb3a58a59e56d447a059e1b69e7d1c4d18e30067"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/espn-401862816.gz",
+      "sha256": "375787a41f2d9e3d37fb4214e5c53754509f217d5d526d710da0e2989d861550"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/espn-401864529.gz",
+      "sha256": "82fd895ec1cb55591bc622c0bcb5617a1464d2fe6ea05623197a9949f9ded382"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/espn-401864530.gz",
+      "sha256": "685cdb2a61738254a92671e505a24d5327d00ba2eb8626022f30aacba8d954f7"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/espn-401864531.gz",
+      "sha256": "43ecd1f1e17cec56fabf58a1b7773646eaec958830e2a5cb7900f4d717d5dc38"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/espn-401866451.gz",
+      "sha256": "71526dd4773887e6819f2c8af3f3c014546625467982da2cd9e7a10365a61dc9"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/espn-401866452.gz",
+      "sha256": "a474452b896bcc54a935ee4fb6265bbe15feab9a4ca8a342c5ea1bbd1699caa9"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/espn-401869846.gz",
+      "sha256": "7b82008d47acd506fbac908448ea33d57c13153f19ae9ef65870d42c50b83782"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/espn-401869944.gz",
+      "sha256": "fa273f16513022786cc64ff4ad3f6c863a320407f6f8d0cb76c7f5b88516634c"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/espn-401869963.gz",
+      "sha256": "e2ff56f5a2d46bc52b9e285873d158cb481ad9057a59b18c8b68fd3ac23d5acb"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/espn-401871059.gz",
+      "sha256": "1e322ce11dc78d3ca1cd0fed403e5fddc4107a9cb5c3f60ba1fa6c1ae796f759"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/espn-401871095.gz",
+      "sha256": "3aff4cf96c5c5597292ca8b46fadaff681043050d5aaeaa01c0ce7b9626fb45c"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/espn-401871096.gz",
+      "sha256": "1d27a3162cbe3688bc6b354642767ade26be84229b3f80a7ab0bbe4249b8ed46"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/espn-401871097.gz",
+      "sha256": "bb1e7da275c0f474f98008aa7c28e47b8c5865d329ad24041f31e5d3fa58ef0f"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/official-boise-state.gz",
+      "sha256": "f9bc281c57547982f17bb37f218fcd351f1a732051478b02b5a5cf66e4792c59"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/official-colorado-state.gz",
+      "sha256": "b3157392d17a5a4d424beab809a95fa42e80d5fe8f96d1773a345b214fac8deb"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/official-florida-atlantic.gz",
+      "sha256": "425a34c68b91cc4444b3320fc2bf40c31e29dd02f89bb00aadb4150f98cf7ba8"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/official-iowa.gz",
+      "sha256": "f63c18366ee7924ff75002c09e4b86e9a327e050f20f4325b37dafd3f0019b74"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/official-james-madison.gz",
+      "sha256": "23e3e1ec44e3d45c329aacf94e9d6f12c7053c38266bc3b10202d0c9158ba8ed"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/official-mississippi-state.gz",
+      "sha256": "c5ff5fd3cd4dbf7192aafc63fce063d5c1d8e30f17cac77d1adea3bbfb80cc04"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/official-navy.gz",
+      "sha256": "875536796cc5a9b0997bbfeef0ee97677be9a5688aa0175a30f9973a8102b5b1"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/official-new-mexico.gz",
+      "sha256": "43bae4dba6ea137ad4d137219aab1f551f1d09361efbd5ba1beafd221cb24a19"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/official-north-texas.gz",
+      "sha256": "ff4da01fc10116f717288ad7fc39f889388cdb75ae5a60031f425845a7132909"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/official-northwestern.gz",
+      "sha256": "259064ef71c77c8419757ac17b5e19defe24512f2f968a71778ea4d18e1b0959"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/official-notre-dame.gz",
+      "sha256": "c28727fc98adc415f438323f52adb68e30588655d7804ba5bed42b107ff0992b"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/official-oregon.gz",
+      "sha256": "fde4e797b8e2b02d9c51651f80cd0d9762fd73ec91f85768eb239cfe4429429c"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/official-san-jose-state.gz",
+      "sha256": "16566ab767f602e5688af23aac05f3503e16357dba3c63c4c7851d7328bf4268"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/official-smu.gz",
+      "sha256": "6367d4a9fb12643fa56d87d1343ac6807e40e5ba85c28d4d912cfdeff23dd0ad"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/official-southern-miss.gz",
+      "sha256": "543fac676b396331e49badc1d59023c379bd9b2d963c3cdb87c122388f6a8f70"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/official-syracuse.gz",
+      "sha256": "3436fd4b8147c50f7e70a66e6bd58315c81a5e53c81f09c669408218876f441b"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/official-texas-state.gz",
+      "sha256": "2dc31ae6329a87ab4a99e928e3e4ff2fe1cd01ba0631e7db9d7f9ad5d247c7c5"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/official-texas.gz",
+      "sha256": "f29e11aea4634df99a3944e4c4ba1beb3e2128931069c60d77fb33d994c7fe01"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/official-troy.gz",
+      "sha256": "f1a964970b93eaaffc660c1803b68080d0617844ece7db708baaa19a9bffd2bc"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/official-ul-monroe.gz",
+      "sha256": "efff4aa217d7353983cb7c47840ce0dfc5c3ac265dc1e919661ad5ecf83cb5ab"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/official-utah-state.gz",
+      "sha256": "9723045231e4fda00f664a012cb43b5d64bbf8314059339965cd7e269bdaec13"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/official-wisconsin.gz",
+      "sha256": "ca9750126fd15ca24243920922ddd8f8cf7872f79e8e0383cc33871222da65ba"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/supplement/american-app-discovery.json",
+      "sha256": "540825401648fe3feec4b63f92228555d49b36eacb49e4790875e00e23a61865"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/supplement/american-availability-custody.json",
+      "sha256": "28d8be225bfba08f2049af65deff1954db8cf1dab16c3f906f7a74fed711844d"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/supplement/american-availability.html.gz",
+      "sha256": "89e5eb86bd2348abd4cef96c339a00ba03359759f45c529824fa7be1879e1f60"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/supplement/american-availability.txt",
+      "sha256": "5245e3f669b264df748ec34360b09980ee8201df919f7a29885eceb5559e0a72"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/supplement/american-football.html.gz",
+      "sha256": "8cafca2156dc51ba1a5e6d6f44e1ac9244556fca7c0592468690ed50c9a72d7c"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/supplement/american-football.txt",
+      "sha256": "9ceabd24eff8acb3aaa936f8d810ea4960393be2b2c5757f80a25d1b37303f71"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/supplement/american-official-app.gz",
+      "sha256": "9a3cc4e1f865911821d442cb148a4b54ad1fcfe8a1551103e537119f00a9b510"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/supplement/capture-manifest.json",
+      "sha256": "3a2cb6a1d7bc054de1b11095ffb2478e253c0a711d9db9d61ebe925d0d7568a6"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/supplement/fau-unt-secondary.html.gz",
+      "sha256": "cc5758e79c1c0e0019c335e5c37d7ca98daefe891fc5bb602bd501168d8f6654"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/supplement/fau-unt-secondary.txt",
+      "sha256": "2a50a71e941bef889537f06aadf4094498bbfe8bc7b7a9a14720ace7b7ff7335"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/supplement/jmu-local-report.html.gz",
+      "sha256": "9e092b30a5bf770ed3a1ca1facc0fa01db061930551ef51b88a8b327b1528256"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/supplement/jmu-local-report.txt",
+      "sha256": "edcab00d7cc0dd12ce9e01bbd0e78552c16fc80c353d4aef63a2c99ceeb37625"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/supplement/official-endpoints-custody.json",
+      "sha256": "c658f480465db0f0e0cd635a6aa8a254402a94fae681eef72c76381b6ac51d58"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/supplement/sunbelt-availability.html.gz",
+      "sha256": "a925ba0c0cb7309bf8d0c06ea9762f9a346b6716a065ec97091623849111a695"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/supplement/sunbelt-availability.txt",
+      "sha256": "90ec8519119b5f1364877be20af1061156085db9899c3986a9b69ae8e91c6f4e"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/supplement/sunbelt-official-report.gz",
+      "sha256": "5cf63dd99cc420baf5d1b6324baafb52fc73a4acffe745565ea8b8d9b741a862"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/supplement/troy-secondary.html.gz",
+      "sha256": "6ce08b51ec8dcaa982549ea7d2dbbfe851f4881fd01a34e45e62baf15c7ad6d7"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/supplement/troy-secondary.txt",
+      "sha256": "a1fa0c6b1a490a96099f76ae76a03d0cb6a0613f0e570a428decb5e1cc5deb17"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/weather-hourly-401856733.gz",
+      "sha256": "b5f1bca65f8cb0c5602878fa969e53ef6946ecfface2f7780686954342468425"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/weather-hourly-401856734.gz",
+      "sha256": "e7484341f4dca614225cd7ce4dfd7f9c92c0d2f85b3f3b8c2e75b65d82252d87"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/weather-hourly-401856735.gz",
+      "sha256": "408474ca3d16301a42d1433822dd70e2160aff2dc21c2f6b8928f99a2bdfb001"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/weather-hourly-401856736.gz",
+      "sha256": "e47987a9fea62c6b1b79a4c0553ffe9cebe7f9c5f1f72b06cbafb273fd0af8e7"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/weather-hourly-401856737.gz",
+      "sha256": "7ecb62de82d5bc2b84732dae5b76f104c52c4bb06892c4d9d96b72cc9f6107c7"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/weather-hourly-401856842.gz",
+      "sha256": "0e82460b94492381e3cebdd59591345c4ebf4c94987d1511db1832cdc861c8d6"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/weather-hourly-401856843.gz",
+      "sha256": "23b4a286239534ef6f2cd3e0b2d94ee9b31e7cb5e06b0999a09a0146d47af157"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/weather-hourly-401856844.gz",
+      "sha256": "405a7cd7fbc32f97d2997a76f3fcecf7dee68cec61ab310c90265e0ec892e161"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/weather-hourly-401856845.gz",
+      "sha256": "74be3b446e715f6e56ee91b208f5044373f1559e72cea64604c6425ae5e3e29f"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/weather-hourly-401856846.gz",
+      "sha256": "c6e8ab6c95f76272eb3efd089045156c98b1d2a0afde2c4c91c8d84e898a8042"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/weather-hourly-401856847.gz",
+      "sha256": "5a7c1d1cd4b3672462f15a312c8c43a69d2e54e57397165fd266cd4967b52590"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/weather-hourly-401856848.gz",
+      "sha256": "98d01be792e5a738a4870950952557e3809387211137d6a87fca190328454d79"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/weather-hourly-401858277.gz",
+      "sha256": "3bf52556232b9367621644ed67e61df8543988488572e95bdbc16bc777184b1a"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/weather-hourly-401858278.gz",
+      "sha256": "30d486414e5108ba9d1653946ab31ef5b1e80a5cac546a59859c423a55645cea"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/weather-hourly-401858279.gz",
+      "sha256": "7fbc7383e940be177e2b57fed97bff9a972af50609bce9b6d846fe63e8812a47"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/weather-hourly-401858280.gz",
+      "sha256": "a6883fd85727613cde17590297aab34e81251956b63b7065ba6f8f2057c93d6e"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/weather-hourly-401858281.gz",
+      "sha256": "fd5c5d1e7d445c270247e83088eed59ab75779c4c454c5cdab5a50498688a4d5"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/weather-hourly-401858282.gz",
+      "sha256": "3345af6ddc432ed4ad6be54ddd242dd8d0ded9e557b32bb4879c03624a2af7f7"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/weather-hourly-401858283.gz",
+      "sha256": "a84cddd45fa6bec8fff5c155770db779b3e140d176b6b2e57fad82a360d88d1c"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/weather-hourly-401858284.gz",
+      "sha256": "f7f25c34e6a12594ddbb70d0d2dd10cc393b0737b983e7358e55fbe47ac4e92a"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/weather-hourly-401858501.gz",
+      "sha256": "547f1f582588e26e2d95322b465291fdf833d87dc7492393b35c67772135dc07"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/weather-hourly-401858502.gz",
+      "sha256": "b0b35558f9a9b59ae7f15e395da28b47fa276fb6f6be1f163d2c786d85ee4725"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/weather-hourly-401858503.gz",
+      "sha256": "eaeaedb149a8c589660bd71c758df0be0e65286137a75b3cc660e882e8d8fabf"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/weather-hourly-401858504.gz",
+      "sha256": "cbc88a55722a36a7e009001fb8d7857c1fe2bd2fa44dccafec7c6056074e5d77"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/weather-hourly-401858505.gz",
+      "sha256": "c934a81168b39e45cf9bf34de8469bd473d39dcf6778f4a3f78b37616fefa917"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/weather-hourly-401858506.gz",
+      "sha256": "d805342b26d5683df5c7ed9c51e2cca6b3166568d425930f40c4986eb0ab44c1"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/weather-hourly-401858507.gz",
+      "sha256": "04a87afae65784be1a4e96f9129269e3660cbc63d96f36b570f3320a3bf36f33"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/weather-hourly-401858508.gz",
+      "sha256": "8796396450c8e0dbc8ae0de05c32d7d46c9755b118f04f1bcebb199a8cd5e5a7"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/weather-hourly-401858509.gz",
+      "sha256": "cbdcc5ff782c701a6db394c073bcd606939ced6b904ed3dba28f124c45763aeb"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/weather-hourly-401859185.gz",
+      "sha256": "c245321ff4cb07bf1f5f58418b99aec988658d113a7cf6d07a9eec406495fcfe"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/weather-hourly-401860908.gz",
+      "sha256": "1dbdd3d48af83e499b43fb4b26c9a1f2be0ff63d3d6a396a9615be2ce635408c"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/weather-hourly-401860909.gz",
+      "sha256": "a6e9236f36c1429a6c69100ce53778f057b77c3c24c89bc14b480c202f61ac2a"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/weather-hourly-401860910.gz",
+      "sha256": "bfcf7ef1462ecd5025f53b14124f75d8cda8d89e3d10c7a99b5b3356ade15bde"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/weather-hourly-401860924.gz",
+      "sha256": "ec085f106c9a90d62b6092ad410ab0c61f61d628efe6203938eb29e7debbecae"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/weather-hourly-401861966.gz",
+      "sha256": "2fc0591829e460beb093517fd8d13f662545c36a96b1bb1e232525e2ddbf3dfd"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/weather-hourly-401862812.gz",
+      "sha256": "04ec06dec777f3c025192e2a82651ac6fb0563f87eceb21231280dc4c895c7ca"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/weather-hourly-401862813.gz",
+      "sha256": "681b7511909a3e0ad122dae2ff09e03ea6c5d8aa6b673469803b50eddd7f3e9f"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/weather-hourly-401862814.gz",
+      "sha256": "c2098729f43049e89f5a7dde00c3e4811d2a927d4a759e54dc47ae41f6bfa6a8"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/weather-hourly-401862815.gz",
+      "sha256": "5aa6bf0e59c2608781c81b0e4f774517ec7f03e3437501022fe3a6ed40a3e774"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/weather-hourly-401862816.gz",
+      "sha256": "ba7b26eb19e3bc9ad26a318f7c992eb6600ed7f0670acfed7381b7a65c2a124f"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/weather-hourly-401864529.gz",
+      "sha256": "95bd47abcca3f73b5177a3348404e48aae09fdbab68196177f1e4e95c10835b0"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/weather-hourly-401864530.gz",
+      "sha256": "2db711e0e5820a3168d13c3504e6d2784c74e9c3f2a2021e327885fedb265bbe"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/weather-hourly-401864531.gz",
+      "sha256": "0ed9075da0698ffabcb693f8ac5b34bdacb025b6f5adf2e0bfa854418d9527a6"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/weather-hourly-401866451.gz",
+      "sha256": "2008eb87b7192c937fbebec5b54119403ad55967c1b7fa25b17c5796606f13ed"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/weather-hourly-401866452.gz",
+      "sha256": "61f9ab2fdcd52fdeb0cb56b4574e16fabb9b02cf097048260f6de431a3e28885"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/weather-hourly-401869846.gz",
+      "sha256": "a9cb6ca5cd9e8e7a8e7a6a3f0369954d29d1cb6244009137b5a0173e455deea2"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/weather-hourly-401869944.gz",
+      "sha256": "d1692a560f7c4d4d6eef181a5294628ca0141c87f3dabd830b920897a296fd68"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/weather-hourly-401869963.gz",
+      "sha256": "8424c22fcff9e425f10eecdd7be3f17626cfec0df14c19f2911d39daf68cb543"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/weather-hourly-401871059.gz",
+      "sha256": "a09b5bbdd872a32cc53c3b43543ecb09da39d9aa34bf7787b86e91e88446f092"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/weather-hourly-401871095.gz",
+      "sha256": "a699a0b959c609d3070901cf4daf2fb6a6a2ebad02ecc7b845030ed61a6ac2fc"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/weather-hourly-401871096.gz",
+      "sha256": "29fa5ea9acf148d1613a163712a1bca7d0c5daa5d57bc005ff8bef6bc159a297"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/weather-hourly-401871097.gz",
+      "sha256": "c369ff332212b3d4cae87d39db6e150e72d3d55ac0aaae318d8b3fe18c542bb9"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/weather-point-401856733.gz",
+      "sha256": "4adf1e76190418c4909946cd8bca1c6e75672513885b8a92bdbdec52c8a9a2e6"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/weather-point-401856734.gz",
+      "sha256": "c8d834a7a2fb9f3c8755e816833e19121d3adb4b735eafb8beee9e75962f0f6d"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/weather-point-401856735.gz",
+      "sha256": "b376443488b01a34ebe9dafad931b6fe8d154d903b41c5a72833bd838dd56017"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/weather-point-401856736.gz",
+      "sha256": "30483e297a9653844cb76131e76e31adb2db6519a6f1340d1720dcd5fc78bb87"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/weather-point-401856737.gz",
+      "sha256": "55f277185edb7746276960e7e53227a20e949f61df945ea29a41bb633ff807ab"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/weather-point-401856842.gz",
+      "sha256": "ce3ce319a964b6e00c7e233ffc6b407a258daed7a9dfbcaad361d783fcdad0ca"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/weather-point-401856843.gz",
+      "sha256": "b781f923b554683c29083b1e6d569ee37f906c596846313b818d64edc7a2ddbf"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/weather-point-401856844.gz",
+      "sha256": "c41ca5e638b70de8c792abc8213b814d6891aadb3a3ffe63ded1c3cb42bcc31e"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/weather-point-401856845.gz",
+      "sha256": "6b982c0a318f40f493cc6b703e5eb4ee00962f48077c64f9e560c41f74d4735c"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/weather-point-401856846.gz",
+      "sha256": "d6097ed5167ac261ca53d2980de2628557d8d7fb54958c8e8981b31447229318"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/weather-point-401856847.gz",
+      "sha256": "e4b515805a5f3878e94aabf1285bc639801a4bba85c3d6521dabf8bf0379d02f"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/weather-point-401856848.gz",
+      "sha256": "ab23384a62a1fedd312bb5aa998d38dfe556d947581537055888af1473900222"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/weather-point-401858277.gz",
+      "sha256": "284d9a3a08c3e86bb0f3de80696a69f4b07cfe9f3b671a8ccfaafc732273496d"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/weather-point-401858278.gz",
+      "sha256": "6b65a6f21a79925738c1389cdfdc1aae6dffa83b3e81bf13d859c9523b3c062a"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/weather-point-401858279.gz",
+      "sha256": "c33fe063cd4beff2f7e2420c6d43256df195313686175a76192cdadd92399baa"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/weather-point-401858280.gz",
+      "sha256": "029480d0b90b0c880b1fd29a70ff5ea63ed6552ea685473b60fc34a8ef2433ea"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/weather-point-401858281.gz",
+      "sha256": "225cebdd2f27acee01a91cd88560bc5b793bc5d19e43c4f3da7cbee11be51074"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/weather-point-401858282.gz",
+      "sha256": "1a49bb03b5b0a9219213396fd9ff96b8f9e7d7e791d01bb5bb5ed7594efe4b60"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/weather-point-401858283.gz",
+      "sha256": "c0bb4792abd2389e879116f6773ec8a43da7cccac0368b33c0cd2216ef73102f"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/weather-point-401858284.gz",
+      "sha256": "bd6e93bfa5c97ebe3722bd4f6759b7d8bb6ae83a2620af9490cd3b68dcdc1511"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/weather-point-401858501.gz",
+      "sha256": "47588f811320a1b09af8214a57f6add0cc6c0531da1c1cd1df5ac8c8a5de0a7e"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/weather-point-401858502.gz",
+      "sha256": "34cd83315e3622c416d19744f8955fa352a1cc9e6966fd3d805f0036d80ee38a"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/weather-point-401858503.gz",
+      "sha256": "1ce7d74b25ae44b47f3ece0015574e13e1fea922ffdf3e4ed1e17bc88875f3a0"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/weather-point-401858504.gz",
+      "sha256": "65db1e3d9343f556c4d7b1cb4a615c602b14e4113f38f40a8f6da18052c00f94"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/weather-point-401858505.gz",
+      "sha256": "30339b6f9c5069c2f1604d2e51eda91f28d236900e5cf0529d60597db9942f8c"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/weather-point-401858506.gz",
+      "sha256": "14d4a884feaf573686ff4548b715f9f9449dc83553ffb3ae994c12b6fc84b0ae"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/weather-point-401858507.gz",
+      "sha256": "0eee742f289871ba513462f154e7b67405ee0f2ada84769d903df9280480585c"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/weather-point-401858508.gz",
+      "sha256": "e1ceeedbd8ef33671eca9ec0934837d4d2f1d8edf383912f7bf19850cabfe5e9"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/weather-point-401858509.gz",
+      "sha256": "2516957d901394d8adfbacf95a7a54bb9954a1bc49d6629f2092fb2772a92cd6"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/weather-point-401859185.gz",
+      "sha256": "07dbd25e3c112447358120d1f08146881295e5112b216113ed68e66533f93e70"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/weather-point-401860908.gz",
+      "sha256": "12477370d4ca4b1063cccf2cfdffacae6d22cfc3339b4eaafe11c69d91f839b1"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/weather-point-401860909.gz",
+      "sha256": "6b768c85d3f5c939837b97513d1316ab74e8c5dacc0c374a7a1051dc7eece937"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/weather-point-401860910.gz",
+      "sha256": "67b1c5fdd7fbbe7ae9c220f254dadb8cee521ef5f49f1ebacc821e2a5edbbc51"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/weather-point-401860924.gz",
+      "sha256": "8d1666e8e3ae6635dbc70308602786d9ca381e9b75a8c2f2156db5cda440a7c6"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/weather-point-401861966.gz",
+      "sha256": "46fa83d36e504fb6c181b257f579172ff5b26719c450341b6afb8f1fffd42e6c"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/weather-point-401862812.gz",
+      "sha256": "e729443b5ee3e047d86c75d0a2fd04c2ff57e83ab286fb583b1918800ea68b01"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/weather-point-401862813.gz",
+      "sha256": "77f6a448f7c61b12f1f77c766b007cd5f86b37542719529261f8270e2b6ad5d8"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/weather-point-401862814.gz",
+      "sha256": "8c91bf7496db124ab935d2f1a18becee835eec3639dd1a3698561700eb6f89d1"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/weather-point-401862815.gz",
+      "sha256": "b99d8feedc84af9da58173a552d4bb226e350a61c41fddde3f0aacaa71128b22"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/weather-point-401862816.gz",
+      "sha256": "879162771ac7753e96ce259f4ecb83d393b20b5a7ec50375d4d179303bba90db"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/weather-point-401864529.gz",
+      "sha256": "1449f8c4a155af9b50a0cafef50f3e87796aced119b8ec22d151793b1ddf2c57"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/weather-point-401864530.gz",
+      "sha256": "b681f0b97b57f19e7f1d3c0e439fcc15f2066e5521901c0409fa6acf3306b8c8"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/weather-point-401864531.gz",
+      "sha256": "0438e9887d4fc27f13107ea5742f0111207ebb0662bd8c9f82f8b9107f0e296c"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/weather-point-401866451.gz",
+      "sha256": "31a042a4ef3f93047a7056d3e9edd2471a06beb3f651f98004855b5349ea4163"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/weather-point-401866452.gz",
+      "sha256": "5e33291c207b3f97045d9da4a2d0b7924bb749feb838dd16ee28fc51569e2771"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/weather-point-401869846.gz",
+      "sha256": "cea6d09cedc0a4de921d4ee227986decd33751f5d8e2ae2f54591a366168ecb4"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/weather-point-401869944.gz",
+      "sha256": "bcae1c437a9675da98993b3d944bc9c44c6fde32a77e2a9f33dbbcb571a489e0"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/weather-point-401869963.gz",
+      "sha256": "62a01f9ac8b8f7cc883532325d01bccc787172df2ee8e25868ae9a2533398722"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/weather-point-401871059.gz",
+      "sha256": "666ce20494768bd899c48a843ca9577a4220dc7cb5900705401960112da98f4d"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/weather-point-401871095.gz",
+      "sha256": "db96cc101434417397da6ea4befef7cc58d13c4ec507ce8868bdb1fb0573dfb8"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/weather-point-401871096.gz",
+      "sha256": "e59479294074d3ca60a10129e0f7300ded4a0c819aa14c24af2f1065464181fc"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/weather-point-401871097.gz",
+      "sha256": "fc836b9ba72ec421afedb9c30c8411d50dd5bfca9c4d4bf073e206b0d95654b5"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/article-boise-state-0.gz",
+      "sha256": "c0316f5ec30241f8b118b4ab6f61efe26d08b9d306922181ec0b0e5fb6ddc955"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/article-boise-state-0.txt",
+      "sha256": "82e6d05059321138d6784ff32028fcd12874a8a05b5d96c3f17b16910417f23f"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/article-boise-state-1.gz",
+      "sha256": "2824520668e715f66204fc325c5a7647ec0f43020b4a66e8391f900122b57fbb"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/article-boise-state-1.txt",
+      "sha256": "f4095a2741ac2fcb36e9ad99c281aabfb4c375b66dfd1386a931c503a61ed214"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/article-boise-state-2.gz",
+      "sha256": "81ab12865e5a64daa0d4fe42e9e0802152444550893caf239a7a61a777859f94"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/article-boise-state-2.txt",
+      "sha256": "f37a089a4f31c96ea8efc60143f1f9ee1d35c95b21c1f3ead2a5978b00cd2610"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/article-boise-state-3.gz",
+      "sha256": "e31aa76979a16f0095cbc0ac3196085b2126e5c37af7364c1d13821c36557517"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/article-boise-state-3.txt",
+      "sha256": "83323e94b005e51533548ad801fde71ecbcd959f48929a182cc8d9244b7f0333"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/article-boise-state-4.gz",
+      "sha256": "cc8d5c11805e8f5a1bb357a0a1e014e8532d6c9004f5888e2f07b3b3aa0b24dc"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/article-boise-state-4.txt",
+      "sha256": "17879d5b07f282603b21530f22c41f3877d9b039c08b42dc703152f798af073d"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/article-colorado-state-0.gz",
+      "sha256": "025c6a3f0aef08fc02df6e787a0ae784249c58788d41b487b3edb6e5b9a5f825"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/article-colorado-state-0.txt",
+      "sha256": "fc1ccaefc01a3d6b1de09219e5ebb6c1b0c2ebf46fa4b539507415c77da5394f"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/article-colorado-state-1.gz",
+      "sha256": "0fa9f032d63b4e7a23dfe062bedc65e29625960a0ad99831e6b4f909f1d4fe35"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/article-colorado-state-1.txt",
+      "sha256": "a3d63e229794826ea9ae6e46729663a922c1876462660ed76e5fde29086e5414"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/article-colorado-state-2.gz",
+      "sha256": "4d9ae9f6204d0fa694d11c5bc6c901872d8e0730c242197b0349683f6e40cc5e"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/article-colorado-state-2.txt",
+      "sha256": "f7bb3d7a024a16e3468890685e2d801c96077c6072a2ec39226048358d95a125"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/article-colorado-state-3.gz",
+      "sha256": "6c70c5d64d52f5e3225c9cdc78271bdf9fa3bd21ae56d216c46a8fa77bef18ae"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/article-colorado-state-3.txt",
+      "sha256": "5e4682eeb43e8750e26716555e74d3af934e245cbfd8eb7439c19eb9e81a03bc"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/article-colorado-state-4.gz",
+      "sha256": "8f34ef2283c9148ec624d29a929d536a670986cda5e97b8694b12d603db812ab"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/article-colorado-state-4.txt",
+      "sha256": "16ae55fd46f02babbec0ad41dcae9b0ee49f9d29a32cc637261f2384585b39e6"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/article-colorado-state-5.gz",
+      "sha256": "0ee070255517cf58f69e8afd6e7ffcfef4f679734048a4a094e18c86439c4277"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/article-colorado-state-5.txt",
+      "sha256": "ed614f09f249ba7f8c08932989835fe682dfb1a1ca6278aed0da9c751031e715"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/article-colorado-state-6.gz",
+      "sha256": "99ab4efc53068f1c8e4d42f3511f710b9d0863726cd34b3d5ea04446c56c2091"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/article-colorado-state-6.txt",
+      "sha256": "dfbd0c4d3d3d43547757774f1514fb35f28c4e1e8c632ec41f059cc4d73734dc"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/article-colorado-state-7.gz",
+      "sha256": "cd94aa46a3840e6f04a4ece2ea795dafb79bb5f6507f8749489f9828a14af3b6"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/article-colorado-state-7.txt",
+      "sha256": "c9cb61ca8faf448ba46443b09a775a699c01aa56b75c2a6bad56898cd31ac4f7"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/article-iowa-0.gz",
+      "sha256": "03ec480359f6a84eb92dcb4dfa2bf48c14b75739f593d99ed46350f28e344c37"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/article-iowa-0.txt",
+      "sha256": "2640cc9deb782be322f303873daf4f8dcc8489779c776939163b4c1125f42553"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/article-iowa-1.gz",
+      "sha256": "727a89d820b6a02a64abdeb135edc706e6434bc2bc1302fb92ed533a9707a50f"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/article-iowa-1.txt",
+      "sha256": "f3bcf8376ac0906896ec838ca1b9e5e51013d1357a72c574e9263f742b66bd7d"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/article-iowa-2.gz",
+      "sha256": "9984f3120122e3a94b2eedc18c1610bdf8774bf82228f88c94476e207e20bf9e"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/article-iowa-2.txt",
+      "sha256": "7d8bd0c0089eb8bdb5534884a3d38e7b762f7b9d36c8ee2b2660dac7b4bdaaab"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/article-iowa-3.gz",
+      "sha256": "ecab0686de37e7f8323a1229fd8aa0f3fb2a2c757e7cc4ac39444bd65af2006c"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/article-iowa-3.txt",
+      "sha256": "343d6d87587455e79069a7dd3318ed73059fe4ffdfaf3caf7a86c05f54b00c46"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/article-iowa-4.gz",
+      "sha256": "eabc32e28f16d87474ef6f2caa0fb8f3801e533baf1a341d991f9e14c1bd1240"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/article-iowa-4.txt",
+      "sha256": "54c6236680ae2b52dba840c384eb30a5d0ba75d2b7fbccc0b4a2012753979e70"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/article-iowa-5.gz",
+      "sha256": "f9f6cead1774a3be71bcc4c4b0a6dbe0372b747ab9a626db790bd1d1185dc537"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/article-iowa-5.txt",
+      "sha256": "8b4d6cb80a58458294f18803277d06d0b9ce1c04525f7a59e4a86a3b8adaeb4e"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/article-mississippi-state-0.gz",
+      "sha256": "fcadae8d189792501145c727f7a3df8632101eba25ae30869da9e92094d25076"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/article-mississippi-state-0.txt",
+      "sha256": "af7895b12342e0834a9af01c77cd11d1d995bcdd85d5959cdc41053fa6b0a089"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/article-mississippi-state-1.gz",
+      "sha256": "b0b8755b9b0517d6775d3d8f325ad71815a470babda9f3d701acf2c1517c3b5f"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/article-mississippi-state-1.txt",
+      "sha256": "fcefa3ae5bf2af128b556b7380be4da7d2c186886469dfbf727eda313ed26ca1"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/article-mississippi-state-2.gz",
+      "sha256": "4231e090c1a056cbe88e8c78f2bb47d728db0eca7bc41b89e1b8efb7c001faed"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/article-mississippi-state-2.txt",
+      "sha256": "0c047001c19b67ee1dedf1cbca27443df06f3a6eeed6f0410fe88b27e6cac26e"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/article-mississippi-state-3.gz",
+      "sha256": "dcbb082118dce11a99e45b5f055370a50731b71337c63a011690703182a35554"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/article-mississippi-state-3.txt",
+      "sha256": "f419336c1dde596d120c758e8ebc02ae62872d5bcd6202bd35f0293dbc382f21"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/article-mississippi-state-4.gz",
+      "sha256": "9e3ef63ca2b82a45887f7c1d3e696e405d46fa63e1852d393114f107a5fcbee3"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/article-mississippi-state-4.txt",
+      "sha256": "8bf1704908d54efab75fc697fcce0b371c8d93d11abebbba5cf511c5e6e29695"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/article-mississippi-state-5.gz",
+      "sha256": "dc1f761bf923eb22a5af9827b9e566de39617f26f9563e690cc281442523bb70"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/article-mississippi-state-5.txt",
+      "sha256": "b33cf418ef97df155cc2bdf925b764ec7e277c527e4142e5831649488bfccf84"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/article-mississippi-state-6.gz",
+      "sha256": "8f6f12bc13d80e10792fdf69debf75368ada689d32f57559b6ddf61250da96be"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/article-mississippi-state-6.txt",
+      "sha256": "6ddc440337d1768bf00c88ad2b56cd8cb1bc4ea3dfde0861f76fb1b89d98902e"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/article-northwestern-0.gz",
+      "sha256": "7fc45d91fc1c59395b4a89043f1416c8fb4b9d90fb3485bc1920c0eab0840967"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/article-northwestern-0.txt",
+      "sha256": "cbea0e4acbceb7281d04d1db5ee967debf97d7fd506ef53ede5a14519de360f4"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/article-northwestern-1.gz",
+      "sha256": "bbdfd7c00ecbf1af351e93853ec1175e74bc97c537f2b5143d92dbf4abc95843"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/article-northwestern-1.txt",
+      "sha256": "e0e33f690103460d7ac82028b63e3fb081f4214338f5c386e78c1c4c022dd178"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/article-northwestern-2.gz",
+      "sha256": "463f94b3fd5feaeeff188e38f1edd9ada25e4b9c821694b85b57061aa4ffed12"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/article-northwestern-2.txt",
+      "sha256": "d2dcb68201ffaa2ce14c0d6f20d8517f6d6cdce75b8d0beeeda44e2086b2d844"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/article-northwestern-3.gz",
+      "sha256": "0ce30a168e483f683edd1bfb6036b0c7c97a8fd21f83149908f0fb97134c0353"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/article-northwestern-3.txt",
+      "sha256": "310c464b57e2f54c5e6fb3c21e34ea70202278c9a41aee02219c5a09bcc6c626"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/article-notre-dame-0.gz",
+      "sha256": "dd4162750017b40fcde8e7132a1f7d47ef9a55fa8e70f5f4831c5082c8b6ddb4"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/article-notre-dame-0.txt",
+      "sha256": "609d467aa3376ee0bf730669f78a84fb31e7eac5875f07d4b46a5d49c145485a"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/article-notre-dame-1.gz",
+      "sha256": "408b0e082197edf96a9c4d079ffcf54bc570acc40ad4b11246497335b808d6a6"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/article-notre-dame-1.txt",
+      "sha256": "f42532be2c76cf9e60b580ae921ea2e16fca0b306621554ac3c1ac7c38b0328b"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/article-oregon-0.gz",
+      "sha256": "30af90747d5fd6d7484badf275f05d73502c70002d84c204593b38f4938ff7a3"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/article-oregon-0.txt",
+      "sha256": "f8c5725469ca5eb0503ee89c36a3a07815b0d3ec899aa317da2ab6472def0ed6"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/article-oregon-1.gz",
+      "sha256": "4ae0505251bf9aed9ed64f73be5985f8f642c0dc327453652593e6895bfc60a1"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/article-oregon-1.txt",
+      "sha256": "cb333b606262243d6149e895e3c21b13c83408e65526bfe2baadb12d522a8b26"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/article-oregon-2.gz",
+      "sha256": "4a402782b3dbbd23370e625b7d9177ece4bcedc941f05079a9cb21290845258e"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/article-oregon-2.txt",
+      "sha256": "2852e6d20fdf09fb060560c7f826dc42c576e4cf183d51e14330393d1efe7ab9"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/article-oregon-3.gz",
+      "sha256": "385398546336adec2bb417c6a718c14bd3b5fa05f203e4dc9850eff8460e0896"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/article-oregon-3.txt",
+      "sha256": "41b73729b4d04fb9bb69af14c84e56d40f88bb5a62ff62f7384d7e8f6b7d8153"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/article-oregon-4.gz",
+      "sha256": "37f5a5f9651fca83ae464ca3dd73e9bdba0f1d4f1845be296d4dff92176c3ec8"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/article-oregon-4.txt",
+      "sha256": "1c30c7e364a82446e9f70c9080c79251e37ad2d22b54704a023c9ec5944aa11a"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/article-san-jose-state-0.gz",
+      "sha256": "44bd3d70387a93c2e78f49fe72c98ef872749eaa04c8f0f55aae10a61c38ca3d"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/article-san-jose-state-0.txt",
+      "sha256": "1227ecdc6de9a111ad893d538dfe57d3f396a09e46ddfccc8cd3955b980ff4fe"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/article-san-jose-state-1.gz",
+      "sha256": "34ef01b1cbeb667e48540a3083fb878095da9a21586dd1525709b038ded02b90"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/article-san-jose-state-1.txt",
+      "sha256": "bf6114a9e73915e801258f79c0179a2fec43218514e58432121e03a5cb59f4f8"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/article-san-jose-state-2.gz",
+      "sha256": "4874e468c79c67337ef2c8c58540be9e28ac70fa8ade2adf9eac343f45b0fb7b"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/article-san-jose-state-2.txt",
+      "sha256": "a8c0054493a06b3a98c33bda1b244d20e3389bc458cf11e77827a2202759f500"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/article-smu-0.gz",
+      "sha256": "21546917e711443fa219612eec15ed7b3dc1ef629cc9d573c2287645bb46ce00"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/article-smu-0.txt",
+      "sha256": "4ad61ce1427c79f9354f58a56a1ef82207a49b95c239474e94f1a26eaafe66f3"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/article-smu-1.gz",
+      "sha256": "a738e02a9abd606eb11642407831a54999a496e5b65f4f0512a96d2b01b4a54f"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/article-smu-1.txt",
+      "sha256": "9c0a0b8f5fd9df69362e4782b274ddca147f1c3e743b1b599a97b0438442041a"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/article-smu-2.gz",
+      "sha256": "e9c9b7bdb5e7d1c37dde1d9bf4c129e7178e0d16950f9727e7f758d745ee5b1d"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/article-smu-2.txt",
+      "sha256": "0f922fe7a05a84ad3c2852620e9f4b5991ed305be8e418b83d172fe78c8e0be5"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/article-smu-3.gz",
+      "sha256": "3425e848214fb8e94b4e2d242dfdbb2a14f3c28805abb1774e666f000d8349ad"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/article-smu-3.txt",
+      "sha256": "93434db75fb2a84c747710e0257b3de3734e00b78e5769f81486854bcb8b111d"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/article-smu-4.gz",
+      "sha256": "a7c7fa3e02123ba3518ab10d922ec6858462f20af6b697fb6048d8b3c143c8f7"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/article-smu-4.txt",
+      "sha256": "27a1206a190e1bfbd169d37f0b8c78cce021f68d0a005895e46410aa2596016c"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/article-southern-miss-0.gz",
+      "sha256": "13daaff01643dbf4c7ab0c5c14827f9734d58b6c244d552293313f42f8177395"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/article-southern-miss-0.txt",
+      "sha256": "d160453b91473433a0ca6e1da60765b720a72b0b71f43cf9403203332807db34"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/article-southern-miss-1.gz",
+      "sha256": "bd7d7ab9e1f2c5c870dd8fb7747b30bb96fe0d57d223adef899df8749be81b1f"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/article-southern-miss-1.txt",
+      "sha256": "244218cc5fec0180a1a92e8e961d17d4e16d70cc80b3d5bf017faeb7d47cca66"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/article-southern-miss-2.gz",
+      "sha256": "555de8d528f39a537308ec6f402873a09dd938bfedefb691200bf8963fc089a6"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/article-southern-miss-2.txt",
+      "sha256": "2a87497bd9822a2ba22ceea7d93957b5a6d48b1dad6a21da2851bfa739e74649"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/article-southern-miss-3.gz",
+      "sha256": "292c36edb05df1b1a0ad8f1c6d56e964325895796cc7dc30e1646b09086fec35"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/article-southern-miss-3.txt",
+      "sha256": "c966e08bba382ce51eb8b4583a0ff8e0f65e3f7122ea759db19a3caf9b12293b"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/article-southern-miss-4.gz",
+      "sha256": "f7d489e729394c31276ce3039990cb2952e0221a78c2df76b0e8e98734abfeee"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/article-southern-miss-4.txt",
+      "sha256": "91b3faa41eccdc5929f9179fb52ae440486e4cc4696f09352b2660d151c8335e"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/article-syracuse-0.gz",
+      "sha256": "6e246084ee8db92083554ad7462b06608a2d6d33e5d17a1b70ae1a337e22929f"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/article-syracuse-0.txt",
+      "sha256": "ab9bcf34fa27593afb57ace71d28e6d210dc1fc4dfc32e6e720691e2b3d41d1d"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/article-syracuse-1.gz",
+      "sha256": "31fc20dda22d350bb72101c23e78d026d577718752ce429369ee166aca994a15"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/article-syracuse-1.txt",
+      "sha256": "64c928327fa1416a23c1e282959a4defbd9ea5a5ac46e97f8afc327d81bc705e"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/article-syracuse-2.gz",
+      "sha256": "3c8ec9b071c0901242ad82491b26cf848b532f3cd02b03153986ac33200f0e84"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/article-syracuse-2.txt",
+      "sha256": "8a8fbb62ab8dd4a36b4a19bbebe857a214e20fbd563e87f1a40a73a80563daf7"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/article-syracuse-3.gz",
+      "sha256": "d2eb838e733299d78f081e35dcb2b38b81445c86b14363d2db134fefaae2b602"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/article-syracuse-3.txt",
+      "sha256": "3267e6a549ae7eccfbd9309227d9b1ceead2eac8649d2683b77e813ba909a420"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/article-syracuse-4.gz",
+      "sha256": "3be5cb9d895ba7976c5898d4bd1f43fea90df83453c885e1a7988a82eca411b2"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/article-syracuse-4.txt",
+      "sha256": "667ca1f29e14b9ff7b0b361bca8d8364404be57decf20dcba93a040a2e8e99d6"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/article-syracuse-5.gz",
+      "sha256": "9387d02e2d60ae6059d9cc6a062bbf7fe7eb2f71bec88162f20d16bbfd042809"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/article-syracuse-5.txt",
+      "sha256": "17d7104ff12356f712ed65661132888951d69b9f2e8fe6f064cc1103638d2cf9"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/article-syracuse-6.gz",
+      "sha256": "9577dfc135befdfb53e072e96cdd0ebe6cdbca43f21fced0a83116dcf19bc312"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/article-syracuse-6.txt",
+      "sha256": "47661168f5dced7f3161d06a50ea6c39d91e030c352ca006024ef295bb9c754c"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/article-syracuse-7.gz",
+      "sha256": "cbac7a119182635723947e2e8af2cfe42de6fce9f9420a319ca2f31212c5b036"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/article-syracuse-7.txt",
+      "sha256": "a02322b5e140569ce3e0e005a0a77e331d88b485af1e52bceda29f25cf9576df"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/article-texas-0.gz",
+      "sha256": "c075458b8f9086cf8fdadbb9ceb94a8bb9ffb88afa2286ffd3cbd14d57257f68"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/article-texas-0.txt",
+      "sha256": "5659c0304e330c14f10c137c37cff869b36e07744b697ae5c1c88d1f0d3550f5"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/article-texas-1.gz",
+      "sha256": "abf39e73e0365498f725eb6fa8b025bd48ae26f140b8cbeecfae93993606b0ec"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/article-texas-1.txt",
+      "sha256": "7bb1125c1dbe52f66a2b793a85ae9a2726b41ac92a851048fe1c87fa06239030"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/article-texas-2.gz",
+      "sha256": "b6f3d8ba4d168bee57a51b314adda4f3205b28a43f208261074f67dab023ab7a"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/article-texas-2.txt",
+      "sha256": "fff92b78c8574e0631e76fd9d65e5e931d2a55589a1239a969989443f0193724"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/article-texas-3.gz",
+      "sha256": "0dd32c33bae215433dfca832d28480b9f7bddbfb50c2693a1ce72a05c2c98fd6"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/article-texas-3.txt",
+      "sha256": "d21a5d33bf740ca55f59a499585ecf262df1c112b9cb83219b85a0143298b2b0"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/article-texas-4.gz",
+      "sha256": "10d691d3cfad599746d5b8702e205caf9c2a93d6acffc3161bab23dacdb609f1"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/article-texas-4.txt",
+      "sha256": "cc9c8a874d28b53d57c1d55cbe0a08e9b676e0868b734af934dcf3b314aa1ec5"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/article-texas-5.gz",
+      "sha256": "b90e58ff3590c736543094b4f6a2d8f0a88eaa18d9662dabca7403fd3acb14a3"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/article-texas-5.txt",
+      "sha256": "06989ac63e140f08f72bf4b68a59c92d3e363d6c0e1f482f7bfd0a732570dc17"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/article-wisconsin-0.gz",
+      "sha256": "127a0bd147a105de5c63e9527bbc121614b015add4f0eee3eb1f4a915772b184"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/article-wisconsin-0.txt",
+      "sha256": "62bd06f641929a2f9bc50764d95081d38c4ab689b8c1ae86b44ac5d7be8e0ac5"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/article-wisconsin-1.gz",
+      "sha256": "23d7b6557e90423e92efa0620758cb330940b7f57272d5b5258acfd31ab274f9"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/article-wisconsin-1.txt",
+      "sha256": "908631e79d329cee7e4b0be1f05a638c5f4006b4dbe2e71f8e9e40398227460c"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/article-wisconsin-2.gz",
+      "sha256": "42cd4a50c9d3b8fbd30c89f3ca84e1abbd49fdcd66feaa3e0ead5bd337551ed2"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/article-wisconsin-2.txt",
+      "sha256": "e52f780da01431022015db69e9dfe49b1f3530ec646626b939dda88ddc49d989"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/article-wisconsin-3.gz",
+      "sha256": "ecc72a595126327a49d47499af17cd2f7662d6787b94583b8ce8710f175c109c"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/article-wisconsin-3.txt",
+      "sha256": "696fcad88c8d7efbcee18da1b25fe5d9805fefe10dde20e79f4173d890793bc8"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/article-wisconsin-4.gz",
+      "sha256": "6f158ae4d7b517e07618a403ee1635bce74aac674f3d964c081dd285ef1dccb5"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/article-wisconsin-4.txt",
+      "sha256": "22f3e1c8a141b32e6d6489e9eebb88ae3bbcc081b046fb74accc968fd24c2598"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/article-wisconsin-5.gz",
+      "sha256": "956f6e13e6f9cf75f40f9e11fbe57470c8fd9d40bd23a0a1a75108a9a352c5b7"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/article-wisconsin-5.txt",
+      "sha256": "c2a96fa0bb2e8db6558618047a10e25a71d4727de39de722aab144eae9ebc951"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/capture-manifest.json",
+      "sha256": "a6d8fe9dc3831e0bc09ebe5d46643719dadaa4afd7b659c504ab1f525ae9c86e"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/cfbd-current-week9-lines.gz",
+      "sha256": "61df084adabb66586ab9d10266bd5fe4706aa55d34b2513923b6cb0abd41e436"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/cfbd-venues.gz",
+      "sha256": "c19a7fa1c7bbe71db05b3b24a28042bd5eca13cce07ce7ec69a81fd13c60ab61"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/derived_context_board.json",
+      "sha256": "1b8f9ac705c75042e5515bda4032925cab59daf35b02f48ef707f0c0a621c9c7"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/espn-401856733.gz",
+      "sha256": "d3b0664a71c88c57bb1f4d0d009dac1ef0f0dba748811b8cc512dbfd9b203f90"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/espn-401856734.gz",
+      "sha256": "a8cf5ed3795b68066c59bfe7357a2a27abaa7d83f9a857499e2d56a2e95a509a"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/espn-401856735.gz",
+      "sha256": "d143dd3f4e23c3ffb00c1125c673d7fc5f80698065db29ebebc54d574b3758c3"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/espn-401856736.gz",
+      "sha256": "de1460c81fff90b08add9eb7b18bc0cb9d1a210593c28a08d760e77cc282cdd3"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/espn-401856737.gz",
+      "sha256": "e38acf4403e9dfae6f2357fa85eb29119f9676bd512421a32f739e69843398f8"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/espn-401856842.gz",
+      "sha256": "adba2241f87393ec8e20985ce51359d0321b33e8e0e5a2dc54ddce45eaea0b8a"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/espn-401856843.gz",
+      "sha256": "59e52fb93c64789c6c156755280b10f0389a9c2bfc6a1c922d8829dbecc01f55"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/espn-401856844.gz",
+      "sha256": "220efe9e457d00c682254a96d4a6a631cb15d860d02bb6aeb1f36cc55efd9a71"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/espn-401856845.gz",
+      "sha256": "37342a680449dda4cf8a1c80772c734bb0425eb95eed08aa49f8f3587104b52f"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/espn-401856846.gz",
+      "sha256": "10eb51e985491fa555a65974f0a802d7d26e6ea01c1d83487715d166d42ddfd2"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/espn-401856847.gz",
+      "sha256": "08b72247b4267bbc38782d7db80ad5dcd806a6c82dfc1bde744bbbfa6aafed72"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/espn-401856848.gz",
+      "sha256": "abdfc44845137dde348855aef65c2272334691eca37de35527388e34bb4d1508"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/espn-401858277.gz",
+      "sha256": "46651ad9b0d175dcd20ba981dffe8eccf6d31de790f79d3d4cf6afeb77d06992"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/espn-401858278.gz",
+      "sha256": "5617c1b83788f234ec0052743be08779576fee041421c9fcfa664a210e28bdf8"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/espn-401858279.gz",
+      "sha256": "ee566b3b30643dd2fb4e8001efb9f0e62f45c0cb88bed966595bcefbd92a3db0"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/espn-401858280.gz",
+      "sha256": "dc2bef8d570bff7af5e0e8127695e781651e45c10629c56682aedbc9c8e3d6f1"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/espn-401858281.gz",
+      "sha256": "014aaba12926e2099666648cae8447c428fdd8f605bca692d4f71ae4d3f3969b"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/espn-401858282.gz",
+      "sha256": "99a7ddc80e0c4ba51f9b60196f0b9739c5ebec8408fa3cf08b8c891e83acbedb"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/espn-401858283.gz",
+      "sha256": "35d732cb953b8fbbdc9c4c0654d0e257f1ee9648b9024e3ad06f419601538909"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/espn-401858284.gz",
+      "sha256": "87d7595e002d98acd550c4fbd1ac035790945f492ba28efdd5e47031e503f82b"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/espn-401858501.gz",
+      "sha256": "d942dd75ff95d4483a6a8f633313a53fab4497b3eb4efe9738e9d783e31f9de9"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/espn-401858502.gz",
+      "sha256": "46b12654c6c3c88467c278a0bb498e30918241d2df4f98b36cb2b7e56cd6ea1d"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/espn-401858503.gz",
+      "sha256": "f2eef2cf5136285e58d60487736cfb9e9fa7069aee111d16b82f46a60e5a55e3"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/espn-401858504.gz",
+      "sha256": "3f02f8f59418600a35c97d2aea85b0ad49db36323e541383ea82d102a668e1cb"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/espn-401858505.gz",
+      "sha256": "122787d5d873c5a5e825854b07ad4f4ecbcd531c10631a39c973e08e21d2687c"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/espn-401858506.gz",
+      "sha256": "675693288d9371079977018329dad360dd6aa2fab5050b7ada9e4a784affc00e"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/espn-401858507.gz",
+      "sha256": "baaa4e2e374e6bc046feab4e22e6a770327039bba530d5d64807cacd79f95b7b"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/espn-401858508.gz",
+      "sha256": "20264ba3b7bf270a61cd15ee2fd723badcc1feb06ea6a2a931744cfa4f642cbf"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/espn-401858509.gz",
+      "sha256": "843a0d0248afbfe562b7ee01f046d4a7161d9f03cd6f709de82ce10727c4197f"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/espn-401859185.gz",
+      "sha256": "e354e4a388f2bf8d0546e38a6714928b7b437e0fe4f2a795d838c55d5e941407"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/espn-401860908.gz",
+      "sha256": "f00b8a276908e724690efc1d68769e9e2cfa5ef3ff290b14698ebe2d4fd74e81"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/espn-401860909.gz",
+      "sha256": "a69e133a90d52940d61ec238869b8106bd56ae7cd3d259eb0d3fc4fa57d7c923"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/espn-401860910.gz",
+      "sha256": "9ea0c274c0d1cff08a989a13c1dea03c1d870dde76b34a3b18a92010872e2dc9"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/espn-401860924.gz",
+      "sha256": "1480c90746c3de980ba432c917f10c85c4f83338df4a1cdc8880159752d79bfa"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/espn-401861966.gz",
+      "sha256": "174b17d49cfb19c3d93541968c519ba8f49dfe430556b0f783ed91e44d1de286"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/espn-401862813.gz",
+      "sha256": "917500728d4e7d9ea65399b6590c9f5b10029d05dc6863e88b8f2c7a5aa1425c"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/espn-401862814.gz",
+      "sha256": "702bf349ab6df15a9bc5430ecffdf2ed6d1361c9bc9ec40811ab2ae816053759"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/espn-401862815.gz",
+      "sha256": "1df1676dadffb6dea05d693d6fb8c085962b6cc3a0860abe1b3d7ed93949fe73"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/espn-401862816.gz",
+      "sha256": "b4a54d3485d621c32a5e887444ffcf64bb30f340ce6d8297fcd88d80d5608bc5"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/espn-401864529.gz",
+      "sha256": "56d47cb0918ffbda8f88aaba64d0ce11c507d9bf897785f546db4d65eb53d15f"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/espn-401864530.gz",
+      "sha256": "7ab74e6a5780f9354c82957bd2ed5f7f0a6d4004404f6d5e60bc5b20cd50c21a"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/espn-401864531.gz",
+      "sha256": "e44ac0c48fb08edf0e2b649b7843f3a81a887224ed025cd484d86b865d11bfa0"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/espn-401866451.gz",
+      "sha256": "b9aa676697bdf41ee5e08941b07a57a8bd9a5ce491b0b02e75b9346740470308"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/espn-401866452.gz",
+      "sha256": "cc9888a40e9d5d076b080bd2cf69a3977093f11b014bd2e7224e998e5187f131"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/espn-401869846.gz",
+      "sha256": "26e136b8d40c6c36463f56978814abb289ee6cdbbf5b3d16b1ed301b987add6b"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/espn-401869944.gz",
+      "sha256": "7c0d4b6077345d32387fb295d1f499a6408255c0b4cfa9b63c9e7b7dd577f930"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/espn-401871059.gz",
+      "sha256": "ae6b88a4f56b12484888df1aaaebcff39173b3bff0ebf8620d9f416e5a52d7db"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/espn-401871095.gz",
+      "sha256": "f8b533d2590a29b0101e22cd0fd82cf7f90968a6a17e5202c81f73b7fff48ae6"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/espn-401871096.gz",
+      "sha256": "263a63f7c89676566b45ebd53e1aacdaee9d89c4423c6be1c5b217862b08f9d5"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/espn-401871097.gz",
+      "sha256": "11e795e90bd446819ba6cc201b2a90a63f262e62ce411b64dcb0b96550a560e7"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/finalize_friday_review.py",
+      "sha256": "76df114a40d735caf7372437cf40ee09f03889cc6022028841e773b23adb974c"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/friday-verification.json",
+      "sha256": "2c6e81376809a45d593fc311a7b9bfdd9aeb22794a91158a9ff43d25dc7ead05"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/market-observations.json",
+      "sha256": "1fb8545210d08900d29163090fd66890eab979f6fd7fa4dad28b10665189050b"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/official-boise-state.gz",
+      "sha256": "61c43c3bf439312055813623e410fff151e84bc01598f21a88ffa719035bb60e"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/official-colorado-state.gz",
+      "sha256": "a2b64b68b37818fc8698505f2fb4ce91ebdc707890498232f0a9ef8695f029b9"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/official-iowa.gz",
+      "sha256": "cea00c84bfc6a420ea3d5fe9fe83cf7dd55ef0684570128b08344293f8dac8d3"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/official-mississippi-state.gz",
+      "sha256": "62b78a2d19659aec5a45e770f86b7116e8c07072821efb9f027c222f77542b94"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/official-navy.gz",
+      "sha256": "f01569103e3f69a26232d5575fd8c48d1cca48b4581b1cdd35f4db0bfd81c94f"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/official-new-mexico.gz",
+      "sha256": "8784dbb019810b831cf76f444abe99bcab914e8ce0eb64214bd90df1d45be953"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/official-northwestern.gz",
+      "sha256": "6653319126764e887fe98944a9742bfffc9b03209287d4eab84cea894713f15b"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/official-notre-dame.gz",
+      "sha256": "e781b2a2456be58c231dfb19bb2f707bced5377832e4aede723c2f86b549ef60"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/official-oregon.gz",
+      "sha256": "2e9972a53aa68f11b06d93f83dc1312724076715f996fe76d17eac914bccddda"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/official-san-jose-state.gz",
+      "sha256": "4795fa88b85dc4d6c2ae8d857d782796f663040eba0884a54c549b897e2f34bc"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/official-smu.gz",
+      "sha256": "c138b4e2af30ffc6e9d633aca839bdc42946fceffa4ddc2f531e53f531f20eb3"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/official-southern-miss.gz",
+      "sha256": "0faeb0de8ba1f8a4fb65639c32185ebec67d32d68112857a31ef1c246b088a47"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/official-syracuse.gz",
+      "sha256": "ce78729e093f8cf4897af3f4e219a3a9fb48ce617ef4fd801fd3ba0a5b4f4f49"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/official-texas-state.gz",
+      "sha256": "2b7052d4816f422f88aeb9a255bba33856f9bceb444306c5cbeeeeb6075ee4cd"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/official-texas.gz",
+      "sha256": "63646befe5bff8389d6ca367ea0fc78647d5eac960843281d252ca2a19ab1327"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/official-ul-monroe.gz",
+      "sha256": "5fa36bb78fd92d619845ca0dd89d8c546bbb9346034211d643c0bb08301b767d"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/official-utah-state.gz",
+      "sha256": "3e4d5e69486232dacec3249286884bd1c5a2f371c63141e6868005f3a87468ac"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/official-wisconsin.gz",
+      "sha256": "4aab87e24c0027e5fab2386d6a75031b55b5a562f0e8fb4246643853abcba381"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/supplement/american-app-custody.json",
+      "sha256": "53cdf8e0d7f9e776054784e1a2ea833601370a8e01ab081633c44a8fbc407aba"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/supplement/american-app.html.gz",
+      "sha256": "9a3cc4e1f865911821d442cb148a4b54ad1fcfe8a1551103e537119f00a9b510"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/supplement/american-availability-canonical.gz",
+      "sha256": "760199cc90e6caedee7c01aa07b61ba4991cb2beac13230a9cc950fdaf7b491c"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/supplement/american-availability-canonical.txt",
+      "sha256": "5245e3f669b264df748ec34360b09980ee8201df919f7a29885eceb5559e0a72"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/supplement/canonical-manifest.json",
+      "sha256": "09dbbfd6ecfd64a2fcd09e2b1dbf051ce206ae721d040477b69d48b8a984efab"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/supplement/manifest.json",
+      "sha256": "ddeaed963966fdd88fa4c1e722f9316fe7fef600f38b1ebb79b669333d01b6f0"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/supplement/navy-preview-canonical.gz",
+      "sha256": "0f6f1582e0c0638ddc12f083fec53d38d1519f04d9c5da9c6b611655b773c79c"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/supplement/navy-preview-canonical.txt",
+      "sha256": "8b961072d2d6944ebf52a713187c1341fabf88ca2305570fc21d8ca31ef5b3b4"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/supplement/southern-miss-ulm-qualified-report.json",
+      "sha256": "38054f473a089a244003c4285c663b961c4f6249d7f06dcc3f73795c3de756df"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/supplement/sunbelt-official-page-canonical.gz",
+      "sha256": "de85afda29a1d801f20ada956b15ea3df6710af4dc9c8135d1f792607401b9f8"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/supplement/sunbelt-official-page-canonical.txt",
+      "sha256": "90ec8519119b5f1364877be20af1061156085db9899c3986a9b69ae8e91c6f4e"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/supplement/sunbelt-report.gz",
+      "sha256": "8b3eb523f5ee9102a55dcca21e0630083446d6eb503756564b0084d3cb56c3e8"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/supplement/texas-state-preview-canonical.gz",
+      "sha256": "cde12f9307419f4b103d095d34961772abdd5f51c4677e49016f62ba71d4b51e"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/supplement/texas-state-preview-canonical.txt",
+      "sha256": "476a0f598a46db68d64e8e800fefe3f6ceeebe8c0e268633d40e6a4803834fdc"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/weather-hourly-401856733.gz",
+      "sha256": "a4894b030f60b6e05109b543a453d292aa6043e863d92a6b4387e583c31f7891"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/weather-hourly-401856734.gz",
+      "sha256": "c9680ba3a0ca181aec626e718831229af9a7caf9c9acc84fbdb53f2e6fce5e8f"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/weather-hourly-401856735.gz",
+      "sha256": "bfdb29a6b4a890baa12360e8f0ca10a2d7f8680a994a84ef188bccb11a4a1dfc"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/weather-hourly-401856736.gz",
+      "sha256": "404bc63cdf397dadc039c9731003d34836a99fd3288ccc64cc0988a20a1e8a43"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/weather-hourly-401856737.gz",
+      "sha256": "b17d18c086a38fd57804a0e62e23094f7775e3f742725b65ddd5dfe7c0bb3910"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/weather-hourly-401856842.gz",
+      "sha256": "adac1d30ee105416926a6eef89534f7a58eb3dfdadf35731894c689d25ce402e"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/weather-hourly-401856843.gz",
+      "sha256": "94f1248d408d830b0a357d5c2db0a7b7b719d523d72557ed628512958da8d450"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/weather-hourly-401856844.gz",
+      "sha256": "5bc23a9cef5710e10f39bb743d5c946f35f229d0b0e90d3fe488bb81a4fba7f2"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/weather-hourly-401856845.gz",
+      "sha256": "f641bfe9bbf77647af9e2c11c5f9ba1795cece19cb895c3e2ac03ff68ef29b3b"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/weather-hourly-401856846.gz",
+      "sha256": "6cfdbaac8594363dd8ae6707ceec9a2c422897fcdbab091b00369ce46859b9bb"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/weather-hourly-401856847.gz",
+      "sha256": "dbbd139b1cfadee1420f50226e09421723784767632f8bd36848bd2786639935"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/weather-hourly-401856848.gz",
+      "sha256": "2d4b25fc89938f9966f453c1e7ef1e0c210c449bd15816a0aaf54f0fab9b78b1"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/weather-hourly-401858277.gz",
+      "sha256": "0f7138f50794acf6bee3961d722421e04d3552aa35c74af2adeb10e1c88fb077"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/weather-hourly-401858278.gz",
+      "sha256": "00c53cda6d67f235f9a8709f7111ace13505e3a29dacabee0c426d06902549c0"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/weather-hourly-401858279.gz",
+      "sha256": "bff8445a56490c28988ca33034722d56a1a323c03a8fbb988f05bf8d8d001b56"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/weather-hourly-401858280.gz",
+      "sha256": "972cdd7f7676e74ee23c3263d6469e14493fc564e1cd780fcad816d7e60b22fc"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/weather-hourly-401858281.gz",
+      "sha256": "50fedab888b29204fc6299285a36cc7dc046d59c280d783857dbebcb7b41b3a6"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/weather-hourly-401858282.gz",
+      "sha256": "50e80b289ffca30d052edc38f3b027eda6e1c351ac7262173598b975665c7cc8"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/weather-hourly-401858283.gz",
+      "sha256": "6665168ae83f16303f6258855fbfe3ee1912668c87cf120eb35846fc2d81d92d"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/weather-hourly-401858284.gz",
+      "sha256": "38f18207210bbc1dd3f18a7f72889973abdcc44d91328c11e165ba7c4c6ad72b"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/weather-hourly-401858501.gz",
+      "sha256": "78a90ac1ff5362741fc7ab5c03e7c7008225144c28baf68f55f8eea9faa3fae3"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/weather-hourly-401858502.gz",
+      "sha256": "1427c11ca539bca54e678ca1334e6505f13df782d58f1be72bdc1d6bcce87b16"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/weather-hourly-401858503.gz",
+      "sha256": "0d0472c1a0afbcad51d0df675803f726a5bdc6f3f3e823eb6f428bc328cf3bcc"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/weather-hourly-401858504.gz",
+      "sha256": "d61eb705090e5b0542b8a10e7c3d02eb6f1b9c2cacaf7dab62694436cc777601"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/weather-hourly-401858505.gz",
+      "sha256": "a7cb3852b6cf253916992999e45caca169c9a06d87a09b3f4840ea185798b825"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/weather-hourly-401858506.gz",
+      "sha256": "9c1be2f347b2f075e373125b2faf57f8b10e4ac6cffe2d3f7f2cc5e6819c1f8c"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/weather-hourly-401858507.gz",
+      "sha256": "a85ac8759e315f228275521bec32875a786e11841726db33e92465aeab509477"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/weather-hourly-401858508.gz",
+      "sha256": "404f9cb3c6fb8af6b05576628ab5a0379cc3ace59010293f215ce50548f2d236"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/weather-hourly-401858509.gz",
+      "sha256": "55015bb09fb68cdc6c24c05b4cd417cd8beecb198c4fa36e1d5889cb67d173c5"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/weather-hourly-401859185.gz",
+      "sha256": "ac38dd2638b3420fc7a0addbf1061b13fbccc68e4c8e0ec1ce968ec1af811808"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/weather-hourly-401860908.gz",
+      "sha256": "c64d917c51b50a0a218439de8ce9dda3835cd77dbdeeba6b14a0a512eff8f07b"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/weather-hourly-401860909.gz",
+      "sha256": "d4148176ccb37c8b7d762889a85fb6b55a61f166c6a5ff47f2e2cde481567ee3"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/weather-hourly-401860910.gz",
+      "sha256": "9fef820208ef7f98a958840b2a7b2f4cae83b8be9f8f66739586c7d4537543b7"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/weather-hourly-401860924.gz",
+      "sha256": "24ce128072ba9e837607dedb821a9adc01ad599bbc15872832964264b0ec0281"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/weather-hourly-401861966.gz",
+      "sha256": "7f90a5a1a3d95337f078caec53a9d475fa36f9e3aff3649b6f5d5a4f58ff01e7"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/weather-hourly-401862813.gz",
+      "sha256": "f0d444e157f971b7b0c0313a2c7857dc405794caf1eb8ebc60decd67484aaac9"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/weather-hourly-401862814.gz",
+      "sha256": "877add62c8e04cbd246688aec16c0cd5c72e81290a3fe37e1ac37da4b003aa0b"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/weather-hourly-401862815.gz",
+      "sha256": "694a92d83e5555acd72036410242becee802902188807cd74c5e41d4ffaa1b51"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/weather-hourly-401862816.gz",
+      "sha256": "b72277f141b0b32860f79590888c686927b8848aa23806d67ed239b850785218"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/weather-hourly-401864529.gz",
+      "sha256": "e0e03716e72eb6c52d4c8db5f7fadf79492206a06de4b588212478f53a05419f"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/weather-hourly-401864530.gz",
+      "sha256": "83932c285625cd8d4309b9461a0e2a00b19e635c5d65b93a4dae22d4f5e55999"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/weather-hourly-401864531.gz",
+      "sha256": "627bfc2a821ad4deb6c1bc818cd9f8926507ae0a4cd244ce4566a7dc63fa5864"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/weather-hourly-401866451.gz",
+      "sha256": "db1fd37d7cefad0308a15a2de3d1aa18f4e85dd2f5f8e2e0f974ccfdaaaeac00"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/weather-hourly-401866452.gz",
+      "sha256": "7ee789e772259b61921b1068af590fc2c4438f3c7699f6df69e3e98ce8302c51"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/weather-hourly-401869846.gz",
+      "sha256": "7e1b72712cd7ee645bbcd3f0ea54caaa618407f1c9abc04f92bc5da13d4bfc6b"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/weather-hourly-401869944.gz",
+      "sha256": "63ab9b67e2d209a6be2b4d93ed03b87c0c81e33d163e55a2ab0cbb19c90ad6d5"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/weather-hourly-401871059.gz",
+      "sha256": "2e00261672f70a3b8c8a9734d72e82b725867d0b5a7f463ac99043af70ce068f"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/weather-hourly-401871095.gz",
+      "sha256": "23e7c7fb9ca90e9a8eb51c3c61f12f441a2eebf2f3456aaddb42df30dcfff360"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/weather-hourly-401871096.gz",
+      "sha256": "397b4683a355682df3ba0d2d440743f2d8e6252a2173490aa2256dc65c7c6bcd"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/weather-hourly-401871097.gz",
+      "sha256": "69d62273397fca39c72b72f2915d2790a24e8cf7d381bd9ae9dff5a1bce4ffba"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/weather-point-401856733.gz",
+      "sha256": "055d0515e4f2fd337d26f5e4934f879084d0deafc45c0ebb4af40ef1923d27c6"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/weather-point-401856734.gz",
+      "sha256": "a381c941c8ee61f702a9c4f2974cf22e04a44ed3e692900b89ac9a1fc44b135e"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/weather-point-401856735.gz",
+      "sha256": "1d07a7fa580174bb627eccdd6436af70cc9dedb2f489dacebd03c178cea0a5c9"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/weather-point-401856736.gz",
+      "sha256": "cdf80a6b3d403568f69a6545f77dfc507a273d4b375efcd0ecdee8aaab4d883d"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/weather-point-401856737.gz",
+      "sha256": "c66472ab7c1ab6697eeb694b5cd089eb38171d878d69a44b15590b890c2ec71a"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/weather-point-401856842.gz",
+      "sha256": "bf624bfa5465fd0379e1e5f6d49b4646f9a82b8cda74c2714538da95e482281a"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/weather-point-401856843.gz",
+      "sha256": "b8f5e157dd0d71ac8f162793a19b6360d82e3a1eba997ad56f19fbc2b85579e5"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/weather-point-401856844.gz",
+      "sha256": "ed3d6f7919088a6d546b7d1381fb1ac21523ab7a75f7b125fbf5044a95802176"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/weather-point-401856845.gz",
+      "sha256": "6b982c0a318f40f493cc6b703e5eb4ee00962f48077c64f9e560c41f74d4735c"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/weather-point-401856846.gz",
+      "sha256": "d6097ed5167ac261ca53d2980de2628557d8d7fb54958c8e8981b31447229318"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/weather-point-401856847.gz",
+      "sha256": "dbc84034448397b46e3ad260e2bb76691ddbb5576d0621c3089123e646939c19"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/weather-point-401856848.gz",
+      "sha256": "ab23384a62a1fedd312bb5aa998d38dfe556d947581537055888af1473900222"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/weather-point-401858277.gz",
+      "sha256": "06d2b577b7a2616affe515a01fb22a679bbf91858edbe0bce1daf30fd6c97816"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/weather-point-401858278.gz",
+      "sha256": "40f54f968b423eba3d72e5ee136bc81c1f04a342d0c7d0c54ba1399aa4051b28"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/weather-point-401858279.gz",
+      "sha256": "e016ce9d28b174ad6f43f26e30c21572f343c064c269cdaf5bf606b104248a4d"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/weather-point-401858280.gz",
+      "sha256": "98d4f1a653a8ec7396e921b3c5c8f37405ef912b14c16f99083043cad56e2270"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/weather-point-401858281.gz",
+      "sha256": "d85bdfee96259965737587654c43c2a9d0a0da22c0d9265a8c392d5f92ed0cef"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/weather-point-401858282.gz",
+      "sha256": "1a49bb03b5b0a9219213396fd9ff96b8f9e7d7e791d01bb5bb5ed7594efe4b60"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/weather-point-401858283.gz",
+      "sha256": "d16f59f1b441d0f590cc43c6768d846efd4133d6becefdd491dea3604b1e3d79"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/weather-point-401858284.gz",
+      "sha256": "bd6e93bfa5c97ebe3722bd4f6759b7d8bb6ae83a2620af9490cd3b68dcdc1511"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/weather-point-401858501.gz",
+      "sha256": "371258f28345bf49950378cc39f45f64cae4e21f47ef743856c1c6d506ac91ce"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/weather-point-401858502.gz",
+      "sha256": "34cd83315e3622c416d19744f8955fa352a1cc9e6966fd3d805f0036d80ee38a"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/weather-point-401858503.gz",
+      "sha256": "430983646a5b0223e5c41d41506b6809f3a6eace0d50e4eda2b0608e41af9a36"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/weather-point-401858504.gz",
+      "sha256": "65db1e3d9343f556c4d7b1cb4a615c602b14e4113f38f40a8f6da18052c00f94"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/weather-point-401858505.gz",
+      "sha256": "da237fda9203d508f51584f2281a5f844f9068a4efee1015e697090a777ec278"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/weather-point-401858506.gz",
+      "sha256": "854db64efc1240a1420275e450772826dbe0b5e90ac7fcfd05224cbc9ebecb59"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/weather-point-401858507.gz",
+      "sha256": "d25f1df1e3f8b13e84d3a30e1a6af9dd4a9520e5a1ff62015bdcd75548c59980"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/weather-point-401858508.gz",
+      "sha256": "e302878bcb4a2f7c1641a4998ec86b30ea5efd3d6805794e9a42932ae3e86133"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/weather-point-401858509.gz",
+      "sha256": "1e2ff5956c42a1217dc1cb4f12d57834ea56790653e452987fc82ac86ed313b6"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/weather-point-401859185.gz",
+      "sha256": "07dbd25e3c112447358120d1f08146881295e5112b216113ed68e66533f93e70"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/weather-point-401860908.gz",
+      "sha256": "7082cccb5c95c10fbc8d68496b9fff721cd35662011a0bba73d71e06c2509aef"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/weather-point-401860909.gz",
+      "sha256": "e830bae875b17108ddd401a0eb40b70915dab2839500abba30bb15a4d222e20c"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/weather-point-401860910.gz",
+      "sha256": "9d24664a281ba2e18e7f700c3b0de375fea3dcdf0d29ea30e0cf25f69f563624"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/weather-point-401860924.gz",
+      "sha256": "a856f199a11ea8e7b06ad360ebf1bf242683c5db14ca138bb4917681354bbb3a"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/weather-point-401861966.gz",
+      "sha256": "518c646516a67469094978a8b8717748e839f7fe483e139c816bd51ecedfff6e"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/weather-point-401862813.gz",
+      "sha256": "2a8acb4897bfb21a5fdc02bea45c0413f4f9cb82cc0497ee598e4be79121956a"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/weather-point-401862814.gz",
+      "sha256": "fecf33f2350b56d2b0bdaa2e303cb8eb49bf1d906b059a9701ee4fcbfbd80ddf"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/weather-point-401862815.gz",
+      "sha256": "5b634f685b7fde42764533f1ce7a552d3c2038ca0bcc2b9eedaaf225a16d79c1"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/weather-point-401862816.gz",
+      "sha256": "85dd89b631c218fa5728f02a6e07cef6158617a4e16d9b2269e23b3ad284bc43"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/weather-point-401864529.gz",
+      "sha256": "1449f8c4a155af9b50a0cafef50f3e87796aced119b8ec22d151793b1ddf2c57"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/weather-point-401864530.gz",
+      "sha256": "d56fb43bb40832c5a3c881b742b54579822e7c8085c9df377a8ff391ab5763c0"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/weather-point-401864531.gz",
+      "sha256": "32541ed4e1b2953ae6506fa532871638b0da2e9a6942eeb2e01846811435fb7b"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/weather-point-401866451.gz",
+      "sha256": "c6053256c0bf47bb7841f8c9f545dacef0d96724e0bc3d8ca19211b46f5cbdd5"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/weather-point-401866452.gz",
+      "sha256": "9554c3be0666a0900f806a83b8646d136f585711275632109030055f1975036e"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/weather-point-401869846.gz",
+      "sha256": "ffff7481f58e0c0d3a3c67d53c62d038582e5fab14d146e5e6d9475c6c31fb51"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/weather-point-401869944.gz",
+      "sha256": "bcae1c437a9675da98993b3d944bc9c44c6fde32a77e2a9f33dbbcb571a489e0"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/weather-point-401871059.gz",
+      "sha256": "97070643e743757b6574d4045b9a546debdb8a7fc05669035d552b5560e1227b"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/weather-point-401871095.gz",
+      "sha256": "afcc274049e2f3302a27232d295b1d95b1904e40d0fdb1c5d77696e28964fb02"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/weather-point-401871096.gz",
+      "sha256": "e59479294074d3ca60a10129e0f7300ded4a0c819aa14c24af2f1065464181fc"
+    },
+    {
+      "path": "outputs/2026-week9-context/20261030T1303Z-friday-morning/weather-point-401871097.gz",
+      "sha256": "fc836b9ba72ec421afedb9c30c8411d50dd5bfca9c4d4bf073e206b0d95654b5"
+    },
+    {
+      "path": "outputs/2026-week9-owner-review/20261030-friday-morning/OWNER_REVIEW.md",
+      "sha256": "27ac7ddea280e76dbc8175f32aa0fdd88286427a5643b4684aaf01f80563b660"
+    },
+    {
+      "path": "outputs/2026-week9-owner-review/20261030-friday-morning/owner_review_shortlist.json",
+      "sha256": "9e534b118d96fcaa9c6a686ebf8926461ea6bee6ffd93f1b5efdea53853f9828"
+    },
+    {
+      "path": "outputs/2026-week9-owner-review/20261030-friday-morning/review-custody.json",
+      "sha256": "77edea6a14b750ef33bd3a54caac635b325a36ce167cf0e82f23c247403e57a3"
+    }
+  ],
+  "all_additive": true,
+  "application_code_changes": false,
+  "remote_push": false,
+  "review": "All ten candidate comparisons, exact frozen started rows, source manifests/hashes, derived replay and new helper reviewed; raw source captures retained."
+}

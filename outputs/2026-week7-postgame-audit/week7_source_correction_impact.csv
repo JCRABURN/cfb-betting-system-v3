@@ -1,0 +1,7 @@
+game_id,away,home,original_line_invalidated,original_selection,original_result_counterfactual_only,corrected_line,corrected_selection,corrected_result,actual_total
+401860923,Colorado State,Texas State,72.5,under,LOSS,69.5,under,LOSS,93
+401856809,Notre Dame,BYU,47.5,over,WIN,46.5,over,WIN,52
+401862801,Memphis,Tulane,53.5,under,WIN,54.5,under,WIN,48
+401864524,UNLV,Air Force,47.5,under,LOSS,48.5,under,LOSS,72
+401864521,New Mexico,Hawai'i,45.5,over,LOSS,44.5,over,LOSS,31
+401864520,Nevada,North Dakota State,44.5,under,LOSS,43.5,over,WIN,48

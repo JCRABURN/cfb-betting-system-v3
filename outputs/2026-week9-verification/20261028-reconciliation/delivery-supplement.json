@@ -1,0 +1,10 @@
+{
+  "original_delivery_manifest_sha256": "d9a61648235e6e660cbbaf60bc202e1255c6f6945ec4af42b0e3e31ac1055ed2",
+  "additional_file": "outputs/2026-week9-verification/20261028-reconciliation/DIFF_REVIEW.md",
+  "additional_file_sha256": "2c371320536637ac7fe25487d24d9aeb2796d551b609f9b887c071cdaa657b07",
+  "companion_self_path": "outputs/2026-week9-verification/20261028-reconciliation/delivery-supplement.json",
+  "initial_manifest_file_count": 757,
+  "final_delivery_file_count": 759,
+  "diff_check_exit_code": 2,
+  "known_pdf_extract_whitespace_findings": 6419
+}

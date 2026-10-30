@@ -1,0 +1,9 @@
+{
+  "status": "ADDITIVE_CAPTURE_CODE_CUSTODY_CLARIFICATION",
+  "original_capture_manifest_unchanged": true,
+  "capture_manifest_head_commit": "43807ae374b9db143c1d9675d7a7cafe6e2f28ba",
+  "capture_wrapper_committed_at": "93f818fea5dc49a49b6bb1c1a569d8f25817c898",
+  "capture_wrapper_path": "scripts/capture_week9_core.py",
+  "capture_wrapper_sha256_lf": "1d86af170e11d74e1da6662a200339fc6165b9aafeb786979bd9c6766b15844c",
+  "explanation": "The source capture manifest records repository HEAD at request time. The new Week 9 capture adapter was uncommitted at that instant; that HEAD alone does not contain its code. The adapter was committed in 93f818f before prediction and sealing. Raw provider payloads and actual request/receipt times are preserved; no source manifest or historical timestamp is rewritten. Prediction/sealing code identity is separately pinned to 93f818f."
+}

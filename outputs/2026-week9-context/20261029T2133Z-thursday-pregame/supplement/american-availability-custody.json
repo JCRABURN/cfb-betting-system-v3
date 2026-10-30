@@ -1,0 +1,10 @@
+{
+  "name": "american-availability",
+  "url": "https://theamerican.org/sports/2026/8/6/football_player_availability.aspx",
+  "requested_at_utc": "2026-10-29T21:35:06.154122+00:00",
+  "received_at_utc": "2026-10-29T21:35:06.689276+00:00",
+  "http_status": 200,
+  "status": "CAPTURED",
+  "path": "american-availability.html.gz",
+  "sha256": "f0cb30cb7c2354a7e8a3a016b0768770e6cfa4b4532ac3e439140ffb244ae539"
+}

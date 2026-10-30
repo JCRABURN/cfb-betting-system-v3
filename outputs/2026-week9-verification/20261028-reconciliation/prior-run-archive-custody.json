@@ -1,0 +1,26 @@
+{
+  "records": [
+    {
+      "original_path": "outputs\\2026-week9-verification\\20261028-evening-full-suite.txt",
+      "archive_path": "prior-e3a9a10-203.82s.txt",
+      "sha256": "ae1d0f99e5ce0bc3116af59faecf658afab9ce556345dc9e5aa8d74d2b87541d",
+      "archived_at_utc": "2026-10-28T23:09:38.904921+00:00",
+      "file_mtime_utc_not_execution_proof": "2026-10-28T22:41:00.659981+00:00"
+    },
+    {
+      "original_path": "C:\\Users\\jraburn\\AppData\\Local\\Temp\\week9-db007694-full-suite.txt",
+      "archive_path": "prior-db007694-240.94s.txt",
+      "sha256": "50b4b834f2fd7e32b3ce940a0df030f70dd855981f67e96de8579ff139d78c67",
+      "archived_at_utc": "2026-10-28T23:09:38.906603+00:00",
+      "file_mtime_utc_not_execution_proof": "2026-10-28T22:55:14.568439+00:00"
+    },
+    {
+      "original_path": "C:\\Users\\jraburn\\AppData\\Local\\Temp\\week9-db007694-final-gates.json",
+      "archive_path": "prior-db007694-final-gates.json",
+      "sha256": "ca945c6d88f95c1d44819ed5607b13df4636f7726431e5dc0b991286bd8dbf4a",
+      "archived_at_utc": "2026-10-28T23:09:38.918141+00:00",
+      "file_mtime_utc_not_execution_proof": "2026-10-28T22:51:58.908861+00:00"
+    }
+  ],
+  "limitation": "Old pytest text logs do not embed a commit SHA. Attribution also relies on the contemporaneous tool execution transcript and separate gate metadata. This archival timestamp is not an original execution timestamp."
+}

@@ -1,0 +1,48 @@
+{
+  "records": [
+    {
+      "name": "texas-state-preview-canonical",
+      "url": "https://txst.com/news/2026/10/29/football-game-preview-txst-vs-no-20-boise-state",
+      "requested_at_utc": "2026-10-30T13:06:07.104141+00:00",
+      "http_status": 200,
+      "received_at_utc": "2026-10-30T13:06:07.712415+00:00",
+      "resolved_url": "https://txst.com/news/2026/10/29/football-game-preview-txst-vs-no-20-boise-state",
+      "path": "texas-state-preview-canonical.gz",
+      "sha256": "4c12c690f192ee11df7846c4099f7a71cb4bcef6565562884f48cbca37fed17a",
+      "status": "CAPTURED"
+    },
+    {
+      "name": "navy-preview-canonical",
+      "url": "https://navysports.com/news/2026/10/26/football-navy-and-5-6-notre-dame-set-for-99th-meeting-saturday-at-gillette-stadium",
+      "requested_at_utc": "2026-10-30T13:06:07.748269+00:00",
+      "http_status": 200,
+      "received_at_utc": "2026-10-30T13:06:08.804928+00:00",
+      "resolved_url": "https://navysports.com/news/2026/10/26/football-navy-and-5-6-notre-dame-set-for-99th-meeting-saturday-at-gillette-stadium",
+      "path": "navy-preview-canonical.gz",
+      "sha256": "e25fea6e17ba7e078be5b9d37cf467eef90cf720b42ec3ef827c1a7e38434481",
+      "status": "CAPTURED"
+    },
+    {
+      "name": "american-availability-canonical",
+      "url": "https://theamerican.org/sports/2026/8/6/football_player_availability",
+      "requested_at_utc": "2026-10-30T13:06:08.841079+00:00",
+      "http_status": 200,
+      "received_at_utc": "2026-10-30T13:06:08.917867+00:00",
+      "resolved_url": "https://theamerican.org/sports/2026/8/6/football_player_availability",
+      "path": "american-availability-canonical.gz",
+      "sha256": "6d4acce6dd9b56225023f63efdd85da193e89c9ab03e4e80eea6eabe12283802",
+      "status": "CAPTURED"
+    },
+    {
+      "name": "sunbelt-official-page-canonical",
+      "url": "https://sunbeltsports.org/news/2025/8/11/football-availability-report-new",
+      "requested_at_utc": "2026-10-30T13:06:08.924522+00:00",
+      "http_status": 200,
+      "received_at_utc": "2026-10-30T13:06:09.145243+00:00",
+      "resolved_url": "https://sunbeltsports.org/news/2025/8/11/football-availability-report-new",
+      "path": "sunbelt-official-page-canonical.gz",
+      "sha256": "9455aa3be0c3613fdccf6f8dd118be436c6ed56837a09415e650eb3e7e3244cd",
+      "status": "CAPTURED"
+    }
+  ]
+}

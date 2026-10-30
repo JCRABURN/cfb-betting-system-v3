@@ -1,0 +1,36 @@
+{
+  "season": 2026,
+  "week": 9,
+  "contest_key": "splashsports-cfb-2026-w09",
+  "source": "SplashSports",
+  "authoritative_locked_lines": true,
+  "source_received_at_utc": "2026-10-28T02:34:11.151000+00:00",
+  "source_timestamp_kind": "chat_received",
+  "source_capture_time": null,
+  "original_posting_time": null,
+  "spread_convention": "home_team_spread",
+  "total_convention": "contest_over_under",
+  "game_time_zone": "America/Chicago",
+  "timezone_verification": "All 54 eligible displayed times reconcile to captured UTC schedule using Chicago CDT; timezone not printed on image",
+  "game_count": 54,
+  "raw_file_sha256": "c319e3fad069420df2cc4bb51cb71ae315cad7ebd5fd7368d2dddb59a36ec29e",
+  "canonical_csv_sha256": "c319e3fad069420df2cc4bb51cb71ae315cad7ebd5fd7368d2dddb59a36ec29e",
+  "original_pr43_csv_sha256": "9be32a172ed684b9799a8979170b9c45d372050266557774220a227eb9ec2ace",
+  "independent_review_sha256": "7c74f23a629a89c7f83f587bf17b6c2d1062235a0aa6d3e453ece5ed8384ab2c",
+  "screenshot_custody_sha256": "ef40b9b0921c8bf351a8a008800db638e874b56b0b42b0687d0ece837521503a",
+  "excluded_completed_games": [
+    {
+      "game_id": 401871071,
+      "reason": "FINAL_BEFORE_SOURCE_RECEIPT_NOT_PROSPECTIVE",
+      "source_csv_row": 2
+    },
+    {
+      "game_id": 401871072,
+      "reason": "LIVE_AT_SOURCE_RECEIPT_NOT_PROSPECTIVE",
+      "source_csv_row": 3
+    }
+  ],
+  "unlined_fbs_games": [],
+  "prepared_at_utc": "2026-10-28T03:06:17.065191+00:00",
+  "source_authorization": "Owner supplied card in Review PR 38 Audit and requested Week 9 execution; Tuesday elapsed games excluded"
+}
