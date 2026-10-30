@@ -4,7 +4,7 @@ import copy
 
 import pytest
 
-from scripts import build_week7_postgame_audit as audit
+from scripts.replay_compat_v1 import week7 as audit
 from scripts import capture_week7_postgame_evidence as capture
 
 
