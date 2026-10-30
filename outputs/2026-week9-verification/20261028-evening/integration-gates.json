@@ -1,0 +1,67 @@
+{
+  "tested_commit": "e3a9a10ed63c0aa003d16e88208331d1ff81e170",
+  "verified_at_utc": "2026-10-28T22:42:38.461660+00:00",
+  "commands": [
+    {
+      "command": "python -m scripts.verify_week7_audit_integrity",
+      "exit_code": 0,
+      "stdout": "{\n  \"grading_status\": \"COMPLETE_59_ATS_59_TOTALS\",\n  \"formal_audit_status\": \"INCOMPLETE_CLV_CUSTODY\",\n  \"research\": {\n    \"exact_custody_checks\": 419,\n    \"replayed_research_outputs\": 10,\n    \"historical_checkout_diagnosis_preserved\": true\n  }\n}\n",
+      "stderr": ""
+    },
+    {
+      "command": "python -m scripts.seal_week8_board --verify",
+      "exit_code": 0,
+      "stdout": "{\n  \"status\": \"SEALED_PROSPECTIVE_RESEARCH_BOARD\",\n  \"eligible_games\": 52,\n  \"ats_selections\": 52,\n  \"total_selections\": 52,\n  \"excluded_elapsed_games\": 4,\n  \"first_eligible_kickoff_utc\": \"2026-10-22T23:00:00+00:00\",\n  \"model_code_commit\": \"ecc2d2100eba99e24a1d94106b43a62912487eea\",\n  \"clv_status\": \"INCOMPLETE\",\n  \"model_policy_change\": false,\n  \"combined_top5\": \"UNCALIBRATED_RESEARCH_ONLY\"\n}\n",
+      "stderr": ""
+    },
+    {
+      "command": "python -m scripts.build_week8_postgame_audit --verify",
+      "exit_code": 0,
+      "stdout": "{\n  \"grading_status\": \"COMPLETE_52_ATS_52_TOTALS\",\n  \"clv_status\": \"INCOMPLETE\",\n  \"output_files\": 8,\n  \"evidence_files\": 57,\n  \"protected_files\": 47\n}\n",
+      "stderr": ""
+    },
+    {
+      "command": "python -m scripts.week8_scoring_sequence_review --verify",
+      "exit_code": 0,
+      "stdout": "{\"games\": 52, \"validated\": 52, \"backdoor_covers\": []}\n",
+      "stderr": ""
+    },
+    {
+      "command": "python -m scripts.week8_numerical_research --verify",
+      "exit_code": 0,
+      "stdout": "{\n  \"status\": \"RESEARCH_ONLY_NOT_DEPLOYED\",\n  \"prior_week_bias_correction\": [\n    {\n      \"test_week\": 6,\n      \"prior_training_n\": 56,\n      \"test_n\": 58,\n      \"prior_bias\": 2.4478295180523935,\n      \"baseline_mae\": 12.43003044803628,\n      \"candidate_mae\": 12.84261467105481,\n      \"baseline_rmse\": 16.278069078260607,\n      \"candidate_rmse\": 16.306658073570397\n    },\n    {\n      \"test_week\": 7,\n      \"prior_training_n\": 114,\n      \"test_n\": 59,\n      \"prior_bias\": 1.7283249873127617,\n      \"baseline_mae\": 12.939958905721614,\n      \"candidate_mae\": 12.807727064200499,\n      \"baseline_rmse\": 15.610982366133085,\n      \"candidate_rmse\": 15.566579760655621\n    },\n    {\n      \"test_week\": 8,\n      \"prior_training_n\": 173,\n      \"test_n\": 52,\n      \"prior_bias\": 1.5701950148728827,\n      \"baseline_mae\": 15.010405353992184,\n      \"candidate_mae\": 14.80981786408742,\n      \"baseline_rmse\": 18.95490162840772,\n      \"candidate_rmse\": 18.62941226878878\n    }\n  ],\n  \"score_shrinkage_exploratory_grid\": [\n    {\n      \"strength\": 0,\n      \"test_weeks\": [\n        6,\n        7,\n        8\n      ],\n      \"n\": 169,\n      \"brier\": 0.25,\n      \"log_loss\": 0.6931471805599453\n    },\n    {\n      \"strength\": 0.25,\n      \"test_weeks\": [\n        6,\n        7,\n        8\n      ],\n      \"n\": 169,\n      \"brier\": 0.25078326043193316,\n      \"log_loss\": 0.6947263865828939\n    },\n    {\n      \"strength\": 0.5,\n      \"test_weeks\": [\n        6,\n        7,\n        8\n      ],\n      \"n\": 169,\n      \"brier\": 0.2528482260357947,\n      \"log_loss\": 0.6989799881038625\n    },\n    {\n      \"strength\": 1,\n      \"test_weeks\": [\n        6,\n        7,\n        8\n      ],\n      \"n\": 169,\n      \"brier\": 0.2608232727593028,\n      \"log_loss\": 0.7165438191132817\n    }\n  ],\n  \"limitation\": \"Bias uses only earlier weeks in each fold, but the candidate was proposed after viewing these results. Shrinkage grid is retrospective exploration, not independent validation.\"\n}\n",
+      "stderr": ""
+    },
+    {
+      "command": "python -m scripts.seal_week9_board --verify",
+      "exit_code": 0,
+      "stdout": "{\n  \"status\": \"SEALED_PROSPECTIVE_RESEARCH_BOARD\",\n  \"eligible_games\": 54,\n  \"ats_selections\": 54,\n  \"total_selections\": 54,\n  \"excluded_elapsed_games\": 2,\n  \"first_eligible_kickoff_utc\": \"2026-10-28T23:00:00+00:00\",\n  \"model_code_commit\": \"93f818fea5dc49a49b6bb1c1a569d8f25817c898\",\n  \"clv_status\": \"INCOMPLETE\",\n  \"model_policy_change\": false,\n  \"combined_top5\": \"UNCALIBRATED_RESEARCH_ONLY\"\n}\n",
+      "stderr": ""
+    },
+    {
+      "command": "python -m scripts.review_week9_context --capture outputs/2026-week9-context/20261028T2237Z --verify",
+      "exit_code": 0,
+      "stdout": "{\"context_games\": 54, \"owner_approval\": \"PENDING\", \"model_adjustments\": 0}\n",
+      "stderr": ""
+    }
+  ],
+  "ancestry_verified": [
+    "922f1f8f8c66ef14674eb9aa20db144a45dada68",
+    "43807ae374b9db143c1d9675d7a7cafe6e2f28ba",
+    "78ed6eb5540f66ba3193f91366c802e27e3cb9c7",
+    "7f42da36f9aef4666bb715d49babde7ee374defa",
+    "abb4eb26bd1140e66972d2f1143cd587e80960b4"
+  ],
+  "protected_exact_bytes": {
+    "week8": 66,
+    "week9": 44
+  },
+  "source_database_sha256": "09d0bcda684356001bacf8bc9e42939add56b053f405564d9be924e39c0cf842",
+  "refit_all_numerical_fields_exact": true,
+  "excluded_runtime_metadata": [
+    "generated_at_utc"
+  ],
+  "original_component_capture_utc": "2026-10-28T03:07:48.001022+00:00",
+  "replay_component_capture_utc": "2026-10-28T22:42:31.631890+00:00",
+  "disposable_database_unchanged": true
+}

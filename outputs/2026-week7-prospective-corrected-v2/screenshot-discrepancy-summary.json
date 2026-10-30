@@ -1,0 +1,113 @@
+{
+  "games_checked": 59,
+  "exact_games": 53,
+  "games_with_discrepancies": 6,
+  "field_discrepancies": {
+    "Total": 6
+  },
+  "screenshot_count": 8,
+  "original_csv_sha256": "e7bf35fbc13a429474e35539ca8ecc7b91a13c19411d7a050f9dbd91260f0b7b",
+  "screenshot_transcription_sha256": "d010461566cd995697763c2bec4dc1597250f29130c49009df436531ae2dd10a",
+  "screenshot_sources": {
+    "Screenshot 2026-10-13 140758.png": {
+      "sha256": "a457ae53d69805393b137a37dd80bae885b2b53aa5da6318c968234e859b3ef7",
+      "rows_supported": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    "Screenshot 2026-10-13 140815.png": {
+      "sha256": "ddf1dfbd2b812b98d365d360e4bb76f93fcfafe886f5b8f07c28c432ab32da67",
+      "rows_supported": [
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ]
+    },
+    "Screenshot 2026-10-13 140831.png": {
+      "sha256": "ad65bef63fea48be864474d14086d9fec050159e13c9ee98e4eedf6edbd0304e",
+      "rows_supported": [
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ]
+    },
+    "Screenshot 2026-10-13 140848.png": {
+      "sha256": "338b172b8c83b5c082d0f00a166909677337b457b10496311925b35ba3b102fd",
+      "rows_supported": [
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31
+      ]
+    },
+    "Screenshot 2026-10-13 140904.png": {
+      "sha256": "234290835001ab9c6ec48c245ea9e0a0c63606f6669e7c49aaae6636dec3801f",
+      "rows_supported": [
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39
+      ]
+    },
+    "Screenshot 2026-10-13 140919.png": {
+      "sha256": "4d8405730dc9fb9706606ed2b91f92eb934f19071349661aa700e50d0457934d",
+      "rows_supported": [
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47
+      ]
+    },
+    "Screenshot 2026-10-13 140935.png": {
+      "sha256": "7a72bb54267f2d39100663c51a5fe1bb78560b8b9bc6148b89a633cce23963c5",
+      "rows_supported": [
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55
+      ]
+    },
+    "Screenshot 2026-10-13 141004.png": {
+      "sha256": "b0b074e17624dfb0f2214f4432b6ee351d934778e8ee829f8b90cf7158e420ae",
+      "rows_supported": [
+        56,
+        57,
+        58,
+        59
+      ]
+    }
+  },
+  "reconciled_at_utc": "2026-10-13T19:18:48.090218+00:00"
+}

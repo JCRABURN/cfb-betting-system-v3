@@ -1,0 +1,22 @@
+[
+  {
+    "pr": 44,
+    "run_id": 41060138183,
+    "job_id": 124077512447,
+    "workflow_url": "https://github.com/JCRABURN/cfb-betting-system-v3/actions/runs/41060138183",
+    "requested_at_utc": "2026-10-30T13:07:42.076836+00:00",
+    "received_at_utc": "2026-10-30T13:07:42.768265+00:00",
+    "path": "pr44-run-41060138183-job-124077512447.log.gz",
+    "raw_sha256": "00282f856000997590ac9ccc78083ceca8a42cf7e3de6d491d7b32edcc7313f3"
+  },
+  {
+    "pr": 45,
+    "run_id": 41060143806,
+    "job_id": 124077530879,
+    "workflow_url": "https://github.com/JCRABURN/cfb-betting-system-v3/actions/runs/41060143806",
+    "requested_at_utc": "2026-10-30T13:07:43.049133+00:00",
+    "received_at_utc": "2026-10-30T13:07:43.567886+00:00",
+    "path": "pr45-run-41060143806-job-124077530879.log.gz",
+    "raw_sha256": "085fb96c24c8874485ea5e72d7c4f76e53a081569b785e4118a624a9bc0f09b6"
+  }
+]

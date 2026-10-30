@@ -1,0 +1,12 @@
+{
+  "tested_commit": "922f1f8f8c66ef14674eb9aa20db144a45dada68",
+  "started_at_utc": "2026-10-29T21:42:14.200320+00:00",
+  "cwd": "C:\\Users\\jraburn\\Documents\\GitHub\\cfb-betting-system-v3\\.worktrees\\pr44-verification",
+  "command": [
+    "C:/Users/jraburn/Documents/GitHub/cfb-betting-system-v3/.venv/Scripts/python.exe",
+    "-m",
+    "pytest",
+    "-q"
+  ],
+  "tracked_diff_before": ""
+}
