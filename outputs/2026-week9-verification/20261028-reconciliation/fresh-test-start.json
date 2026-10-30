@@ -1,0 +1,12 @@
+{
+  "command": [
+    "C:\\Users\\jraburn\\Documents\\GitHub\\cfb-betting-system-v3\\.venv\\Scripts\\python.exe",
+    "-m",
+    "pytest",
+    "-q"
+  ],
+  "cwd": "C:\\Users\\jraburn\\Documents\\GitHub\\cfb-betting-system-v3\\.worktrees\\week9-execution",
+  "head_before": "db007694d3ee87d3a2b85feacd1fd9b7a2d10fb0",
+  "started_at_utc": "2026-10-28T23:09:39.055997+00:00",
+  "tracked_diff_before": ""
+}

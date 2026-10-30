@@ -1,1 +1,92 @@
 outputs/2026-week6-execution-20261006T2133Z/** text eol=lf
+outputs/2026-week6-postgame-audit/** text eol=lf
+outputs/2026-week6-postgame-audit/**/*.gz -text
+production-weeks/2026-week7-splashsports.csv -text
+outputs/2026-week7-prospective/** -text whitespace=cr-at-eol
+production-weeks/2026-week7-splashsports-corrected-v2.csv -text whitespace=cr-at-eol
+production-weeks/2026-week7-splashsports-corrected-v2-lock-metadata.json -text
+production-weeks/2026-week7-screenshot-transcription-v2.csv -text
+outputs/2026-week7-prospective-corrected-v2/** -text whitespace=cr-at-eol
+outputs/2026-week7-owner-review/OWNER-APPROVED-WEEK-7-CONTEST-FIVE-CORRECTED-V2.json -text
+outputs/2026-week7-owner-review/OWNER-APPROVED-WEEK-7-CORRECTED-V2-CUSTODY-VERIFICATION.json -text
+outputs/2026-week7-owner-review/WEEK-7-CORRECTED-MONITORING-RESUME.json -text
+outputs/2026-week7-owner-review/OWNER-APPROVED-WEEK-7-CONTEST-FIVE.json -text
+outputs/2026-week7-postgame-audit/** text eol=lf
+outputs/2026-week7-postgame-audit/**/*.gz -text
+
+# Reproduce sealed Week 5 bytes at checkout; historical blobs and hashes stay unchanged.
+outputs/2026-week5-execution-20260930-v4/** -text
+outputs/2026-week5-review-20261001/** -text
+outputs/2026-week5-postgame-audit/** -text
+outputs/2026-week5-execution-20260930-v4/prior-evidence/week1-postgame-audit.csv text eol=crlf
+outputs/2026-week5-execution-20260930-v4/prior-evidence/week2-audit.json text eol=crlf
+outputs/2026-week5-execution-20260930-v4/prior-evidence/week3-ats-card.json text eol=crlf
+outputs/2026-week5-execution-20260930-v4/prior-evidence/week3-totals-card.json text eol=crlf
+outputs/2026-week5-execution-20260930-v4/provider-evidence/capture-manifest.json text eol=crlf
+outputs/2026-week5-execution-20260930-v4/provider-evidence/cfbd-venues-manifest.json text eol=crlf
+outputs/2026-week5-execution-20260930-v4/provider-evidence/espn-injuries-manifest.json text eol=crlf
+outputs/2026-week5-execution-20260930-v4/provider-evidence/odds-current-manifest.json text eol=crlf
+outputs/2026-week5-execution-20260930-v4/provider-evidence/weather-manifest.json text eol=crlf
+outputs/2026-week5-execution-20260930-v4/week5_ats_full_card.csv text eol=crlf
+outputs/2026-week5-execution-20260930-v4/week5_card_manifest.json text eol=crlf
+outputs/2026-week5-execution-20260930-v4/week5_combined_top5.csv text eol=crlf
+outputs/2026-week5-execution-20260930-v4/week5_context_review.csv text eol=crlf
+outputs/2026-week5-execution-20260930-v4/week5_data_freshness.json text eol=crlf
+outputs/2026-week5-execution-20260930-v4/week5_execution_report.md text eol=crlf
+outputs/2026-week5-execution-20260930-v4/week5_ingestion_manifest.json text eol=crlf
+outputs/2026-week5-execution-20260930-v4/week5_ingestion_reconciliation.csv text eol=crlf
+outputs/2026-week5-execution-20260930-v4/week5_model_manifest.json text eol=crlf
+outputs/2026-week5-execution-20260930-v4/week5_official_ats_top5.csv text eol=crlf
+outputs/2026-week5-execution-20260930-v4/week5_prior_performance_audit.json text eol=crlf
+outputs/2026-week5-execution-20260930-v4/week5_shadow_ats_top5.csv text eol=crlf
+outputs/2026-week5-execution-20260930-v4/week5_shadow_totals_top5.csv text eol=crlf
+outputs/2026-week5-execution-20260930-v4/week5_top_pick_adversarial_review.json text eol=crlf
+outputs/2026-week5-execution-20260930-v4/week5_totals_full_card.csv text eol=crlf
+outputs/2026-week5-execution-20260930-v4/week5_totals_oos_evidence.json text eol=crlf
+outputs/2026-week5-postgame-audit/provider-evidence/capture-manifest.json text eol=crlf
+outputs/2026-week5-postgame-audit/week5_ats_audit.csv text eol=crlf
+outputs/2026-week5-postgame-audit/week5_clv_audit.csv text eol=crlf
+outputs/2026-week5-postgame-audit/week5_cumulative_2026_diagnostics.json text eol=crlf
+outputs/2026-week5-postgame-audit/week5_decision_shortlist_audit.csv text eol=crlf
+outputs/2026-week5-postgame-audit/week5_diagnostics.json text eol=crlf
+outputs/2026-week5-postgame-audit/week5_final_results.csv text eol=crlf
+outputs/2026-week5-postgame-audit/week5_hook_key_number_audit.csv text eol=crlf
+outputs/2026-week5-postgame-audit/week5_large_edge_diagnostics.csv text eol=crlf
+outputs/2026-week5-postgame-audit/week5_late_score_audit.csv text eol=crlf
+outputs/2026-week5-postgame-audit/week5_lessons_learned.md text eol=crlf
+outputs/2026-week5-postgame-audit/week5_logic_failure_audit.csv text eol=crlf
+outputs/2026-week5-postgame-audit/week5_postgame_report.md text eol=crlf
+outputs/2026-week5-postgame-audit/week5_totals_audit.csv text eol=crlf
+outputs/2026-week5-postgame-audit/week5_v29_recommendations.md text eol=crlf
+outputs/2026-week5-review-20261001/provider-evidence/capture-manifest.json text eol=crlf
+outputs/2026-week5-review-20261001/provider-evidence/espn-game-preview-qb-evidence.json text eol=crlf
+outputs/2026-week5-review-20261001/provider-evidence/weather-kickoff-review.json text eol=crlf
+outputs/2026-week5-review-20261001/v4-custody-manifest.json text eol=crlf
+outputs/2026-week5-review-20261001/week5_analytical_ats_shortlist.csv text eol=crlf
+outputs/2026-week5-review-20261001/week5_decision_shortlist.csv text eol=crlf
+outputs/2026-week5-review-20261001/week5_final_review.md text eol=crlf
+outputs/2026-week5-review-20261001/week5_large_ats_edge_adjudication.csv text eol=crlf
+outputs/2026-week5-review-20261001/week5_large_ats_edge_audit.csv text eol=crlf
+outputs/2026-week5-review-20261001/week5_market_weather_review.csv text eol=crlf
+outputs/2026-week5-review-20261001/week5_qb_injury_review.csv text eol=crlf
+outputs/2026-week5-review-20261001/week5_shadow_totals_watchlist.csv text eol=crlf
+outputs/2026-week5-review-20261001/week5_top5_adversarial_review.csv text eol=crlf
+data/ingest/2026-week8-splashsports-screen-capture.csv -text
+outputs/2026-week8-prospective/** -text whitespace=cr-at-eol
+production-weeks/2026-week8* -text
+data/ingest/2026-week8-independent-screenshot-review.csv -text
+outputs/2026-week8-prospective-v2/** -text whitespace=cr-at-eol
+
+# Preserve Week 9 custody bytes without checkout conversion.
+data/ingest/2026-week9* -text
+production-weeks/2026-week9* -text
+outputs/2026-week9-prospective/** -text whitespace=cr-at-eol
+
+# Context and human review are separate, immutable evidence versions.
+outputs/2026-week9-context/** -text whitespace=cr-at-eol
+outputs/2026-week9-owner-review/** -text whitespace=cr-at-eol
+outputs/2026-week9-elapsed-results/** -text whitespace=cr-at-eol
+outputs/2026-week9-verification/** -text whitespace=cr-at-eol
+# New Week 8 audit evidence is byte-preserved; original artifacts are untouched.
+outputs/2026-week8-postgame-audit/** -text whitespace=cr-at-eol
+outputs/2026-week8-audit-research/** -text whitespace=cr-at-eol

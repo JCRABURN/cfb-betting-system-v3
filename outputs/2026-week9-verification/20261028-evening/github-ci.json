@@ -1,0 +1,121 @@
+{
+  "retrieved_at_utc": "2026-10-28 22:45:32 UTC",
+  "prs": [
+    {
+      "pr": "44",
+      "head": "922f1f8f8c66ef14674eb9aa20db144a45dada68",
+      "check_runs": {
+        "total_count": 0,
+        "check_runs": []
+      },
+      "status": {
+        "state": "pending",
+        "total_count": 0,
+        "statuses": []
+      },
+      "pr_workflow_runs": [],
+      "reviews": [
+        {
+          "id": 5690612629,
+          "node_id": "PRR_kwDOTt4-As8AAAABUy_blQ",
+          "user": {
+            "login": "JCRABURN",
+            "id": 215523089,
+            "node_id": "U_kgDODNifEQ",
+            "avatar_url": "https://avatars.githubusercontent.com/u/215523089?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/JCRABURN",
+            "html_url": "https://github.com/JCRABURN",
+            "followers_url": "https://api.github.com/users/JCRABURN/followers",
+            "following_url": "https://api.github.com/users/JCRABURN/following{/other_user}",
+            "gists_url": "https://api.github.com/users/JCRABURN/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/JCRABURN/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/JCRABURN/subscriptions",
+            "organizations_url": "https://api.github.com/users/JCRABURN/orgs",
+            "repos_url": "https://api.github.com/users/JCRABURN/repos",
+            "events_url": "https://api.github.com/users/JCRABURN/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/JCRABURN/received_events",
+            "type": "User",
+            "user_view_type": "public",
+            "site_admin": false
+          },
+          "body": "Review of frozen Week 8 audit evidence: 52 ATS + 52 totals, 26–26 and 23–29, correctly preserved as separate cohorts with no invented owner-approved five. Research diagnostics properly distinguish calibration defects and CLV INCOMPLETE; no policy promotion. The audit-only diff against #42 is additive (78 files, one commit). Prior to merge, independently verify the integration tree and sealed source identities at the exact head, and preserve the repaired #41 ancestry; no GitHub CI checks/reviews are currently registered at this head. Historical missing CLV is not a reason to discard valid postgame arithmetic. No approval or merge is implied by this comment.",
+          "state": "COMMENTED",
+          "html_url": "https://github.com/JCRABURN/cfb-betting-system-v3/pull/44#pullrequestreview-5690612629",
+          "pull_request_url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3/pulls/44",
+          "author_association": "OWNER",
+          "_links": {
+            "html": {
+              "href": "https://github.com/JCRABURN/cfb-betting-system-v3/pull/44#pullrequestreview-5690612629"
+            },
+            "pull_request": {
+              "href": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3/pulls/44"
+            }
+          },
+          "is_copilot_code_review": false,
+          "copilot_code_review_effort": null,
+          "submitted_at": "2026-10-28T22:36:32Z",
+          "commit_id": "922f1f8f8c66ef14674eb9aa20db144a45dada68"
+        }
+      ]
+    },
+    {
+      "pr": "45",
+      "head": "e3a9a10ed63c0aa003d16e88208331d1ff81e170",
+      "check_runs": {
+        "total_count": 0,
+        "check_runs": []
+      },
+      "status": {
+        "state": "pending",
+        "total_count": 0,
+        "statuses": []
+      },
+      "pr_workflow_runs": [],
+      "reviews": [
+        {
+          "id": 5690613152,
+          "node_id": "PRR_kwDOTt4-As8AAAABUy_doA",
+          "user": {
+            "login": "JCRABURN",
+            "id": 215523089,
+            "node_id": "U_kgDODNifEQ",
+            "avatar_url": "https://avatars.githubusercontent.com/u/215523089?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/JCRABURN",
+            "html_url": "https://github.com/JCRABURN",
+            "followers_url": "https://api.github.com/users/JCRABURN/followers",
+            "following_url": "https://api.github.com/users/JCRABURN/following{/other_user}",
+            "gists_url": "https://api.github.com/users/JCRABURN/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/JCRABURN/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/JCRABURN/subscriptions",
+            "organizations_url": "https://api.github.com/users/JCRABURN/orgs",
+            "repos_url": "https://api.github.com/users/JCRABURN/repos",
+            "events_url": "https://api.github.com/users/JCRABURN/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/JCRABURN/received_events",
+            "type": "User",
+            "user_view_type": "public",
+            "site_admin": false
+          },
+          "body": "Week 9 review: 56 screenshot games reconcile; 2 elapsed Tuesday games excluded; frozen 54 ATS + 54 totals and source/lock custody are documented. Owner approval is expressly PENDING, and frozen model ranking is separated from the subjective five. Do not treat the proposed Northwestern/Navy/Southern Miss/SJSU/FAU list as approved. Key decision risks: governed ATS confidence is uniformly 1; mixed ATS/totals score scales are not calibrated; SJSU +14.5 and FAU–UNT Under 77.5 have human confidence 1 and unresolved QB/pace/possession risks. Current Week 9 market quotes lack historical closing-line timestamps; start capture of time-qualified quotes before kickoff where available, without modifying locked contest lines. No GitHub CI statuses or PR-triggered runs/reviews exist at head; the 809 locally reported passes are not an independent CI pass. Rerun strict gates on the final integration head and obtain independent review before merging. No v2.8 changes or retrospective rewrites.",
+          "state": "COMMENTED",
+          "html_url": "https://github.com/JCRABURN/cfb-betting-system-v3/pull/45#pullrequestreview-5690613152",
+          "pull_request_url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3/pulls/45",
+          "author_association": "OWNER",
+          "_links": {
+            "html": {
+              "href": "https://github.com/JCRABURN/cfb-betting-system-v3/pull/45#pullrequestreview-5690613152"
+            },
+            "pull_request": {
+              "href": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3/pulls/45"
+            }
+          },
+          "is_copilot_code_review": false,
+          "copilot_code_review_effort": null,
+          "submitted_at": "2026-10-28T22:36:36Z",
+          "commit_id": "e3a9a10ed63c0aa003d16e88208331d1ff81e170"
+        }
+      ]
+    }
+  ]
+}

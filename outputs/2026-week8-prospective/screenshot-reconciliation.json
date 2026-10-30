@@ -1,0 +1,642 @@
+{
+  "unique_games": 56,
+  "image_observations": 57,
+  "upcoming": 53,
+  "completed_exclusions": [
+    {
+      "game_id": 401871055,
+      "reason": "FINAL_BEFORE_SOURCE_RECEIPT_NOT_PROSPECTIVE",
+      "source_csv_row": 2
+    },
+    {
+      "game_id": 401871069,
+      "reason": "FINAL_BEFORE_SOURCE_RECEIPT_NOT_PROSPECTIVE",
+      "source_csv_row": 3
+    },
+    {
+      "game_id": 401871092,
+      "reason": "FINAL_BEFORE_SOURCE_RECEIPT_NOT_PROSPECTIVE",
+      "source_csv_row": 4
+    }
+  ],
+  "discrepancies": [],
+  "rows": [
+    {
+      "game_id": 401871055,
+      "source_csv_row": 2,
+      "screenshots": [
+        "splashsports-01.png:row-1"
+      ],
+      "canonical_away": "Middle Tennessee",
+      "canonical_home": "Florida International",
+      "status": "FINAL",
+      "spread_total_match": true
+    },
+    {
+      "game_id": 401871069,
+      "source_csv_row": 3,
+      "screenshots": [
+        "splashsports-01.png:row-2"
+      ],
+      "canonical_away": "Missouri State",
+      "canonical_home": "Delaware",
+      "status": "FINAL",
+      "spread_total_match": true
+    },
+    {
+      "game_id": 401871092,
+      "source_csv_row": 4,
+      "screenshots": [
+        "splashsports-01.png:row-3"
+      ],
+      "canonical_away": "South Alabama",
+      "canonical_home": "Marshall",
+      "status": "FINAL",
+      "spread_total_match": true
+    },
+    {
+      "game_id": 401871070,
+      "source_csv_row": 5,
+      "screenshots": [
+        "splashsports-01.png:row-4"
+      ],
+      "canonical_away": "New Mexico State",
+      "canonical_home": "Sam Houston",
+      "status": "PREGAME",
+      "spread_total_match": true
+    },
+    {
+      "game_id": 401871056,
+      "source_csv_row": 6,
+      "screenshots": [
+        "splashsports-01.png:row-5"
+      ],
+      "canonical_away": "Liberty",
+      "canonical_home": "Kennesaw State",
+      "status": "PREGAME",
+      "spread_total_match": true
+    },
+    {
+      "game_id": 401869845,
+      "source_csv_row": 7,
+      "screenshots": [
+        "splashsports-01.png:row-6"
+      ],
+      "canonical_away": "James Madison",
+      "canonical_home": "App State",
+      "status": "PREGAME",
+      "spread_total_match": true
+    },
+    {
+      "game_id": 401862807,
+      "source_csv_row": 8,
+      "screenshots": [
+        "splashsports-01.png:row-7"
+      ],
+      "canonical_away": "East Carolina",
+      "canonical_home": "Memphis",
+      "status": "PREGAME",
+      "spread_total_match": true
+    },
+    {
+      "game_id": 401858271,
+      "source_csv_row": 9,
+      "screenshots": [
+        "splashsports-01.png:row-8"
+      ],
+      "canonical_away": "Duke",
+      "canonical_home": "Virginia",
+      "status": "PREGAME",
+      "spread_total_match": true
+    },
+    {
+      "game_id": 401861965,
+      "source_csv_row": 10,
+      "screenshots": [
+        "splashsports-02.png:row-1"
+      ],
+      "canonical_away": "Massachusetts",
+      "canonical_home": "UConn",
+      "status": "PREGAME",
+      "spread_total_match": true
+    },
+    {
+      "game_id": 401862808,
+      "source_csv_row": 11,
+      "screenshots": [
+        "splashsports-02.png:row-2"
+      ],
+      "canonical_away": "Army",
+      "canonical_home": "Tulsa",
+      "status": "PREGAME",
+      "spread_total_match": true
+    },
+    {
+      "game_id": 401864525,
+      "source_csv_row": 12,
+      "screenshots": [
+        "splashsports-02.png:row-3"
+      ],
+      "canonical_away": "Air Force",
+      "canonical_home": "Wyoming",
+      "status": "PREGAME",
+      "spread_total_match": true
+    },
+    {
+      "game_id": 401858272,
+      "source_csv_row": 13,
+      "screenshots": [
+        "splashsports-02.png:row-4"
+      ],
+      "canonical_away": "NC State",
+      "canonical_home": "Stanford",
+      "status": "PREGAME",
+      "spread_total_match": true
+    },
+    {
+      "game_id": 401862809,
+      "source_csv_row": 14,
+      "screenshots": [
+        "splashsports-02.png:row-5"
+      ],
+      "canonical_away": "Rice",
+      "canonical_home": "Florida Atlantic",
+      "status": "PREGAME",
+      "spread_total_match": true
+    },
+    {
+      "game_id": 401858496,
+      "source_csv_row": 15,
+      "screenshots": [
+        "splashsports-02.png:row-6"
+      ],
+      "canonical_away": "Indiana",
+      "canonical_home": "Michigan",
+      "status": "PREGAME",
+      "spread_total_match": true
+    },
+    {
+      "game_id": 401858498,
+      "source_csv_row": 16,
+      "screenshots": [
+        "splashsports-02.png:row-7"
+      ],
+      "canonical_away": "Rutgers",
+      "canonical_home": "Northwestern",
+      "status": "PREGAME",
+      "spread_total_match": true
+    },
+    {
+      "game_id": 401856840,
+      "source_csv_row": 17,
+      "screenshots": [
+        "splashsports-02.png:row-8"
+      ],
+      "canonical_away": "Texas Tech",
+      "canonical_home": "Cincinnati",
+      "status": "PREGAME",
+      "spread_total_match": true
+    },
+    {
+      "game_id": 401858270,
+      "source_csv_row": 18,
+      "screenshots": [
+        "splashsports-02.png:row-9"
+      ],
+      "canonical_away": "California",
+      "canonical_home": "SMU",
+      "status": "PREGAME",
+      "spread_total_match": true
+    },
+    {
+      "game_id": 401856728,
+      "source_csv_row": 19,
+      "screenshots": [
+        "splashsports-02.png:row-10"
+      ],
+      "canonical_away": "LSU",
+      "canonical_home": "Auburn",
+      "status": "PREGAME",
+      "spread_total_match": true
+    },
+    {
+      "game_id": 401856841,
+      "source_csv_row": 20,
+      "screenshots": [
+        "splashsports-03.png:row-1"
+      ],
+      "canonical_away": "West Virginia",
+      "canonical_home": "TCU",
+      "status": "PREGAME",
+      "spread_total_match": true
+    },
+    {
+      "game_id": 401866450,
+      "source_csv_row": 21,
+      "screenshots": [
+        "splashsports-03.png:row-2"
+      ],
+      "canonical_away": "Western Michigan",
+      "canonical_home": "Toledo",
+      "status": "PREGAME",
+      "spread_total_match": true
+    },
+    {
+      "game_id": 401858274,
+      "source_csv_row": 22,
+      "screenshots": [
+        "splashsports-03.png:row-3"
+      ],
+      "canonical_away": "Pittsburgh",
+      "canonical_home": "Miami",
+      "status": "PREGAME",
+      "spread_total_match": true
+    },
+    {
+      "game_id": 401856834,
+      "source_csv_row": 23,
+      "screenshots": [
+        "splashsports-03.png:row-4"
+      ],
+      "canonical_away": "Baylor",
+      "canonical_home": "Kansas",
+      "status": "PREGAME",
+      "spread_total_match": true
+    },
+    {
+      "game_id": 401866446,
+      "source_csv_row": 24,
+      "screenshots": [
+        "splashsports-03.png:row-5"
+      ],
+      "canonical_away": "Akron",
+      "canonical_home": "Kent State",
+      "status": "PREGAME",
+      "spread_total_match": true
+    },
+    {
+      "game_id": 401866476,
+      "source_csv_row": 25,
+      "screenshots": [
+        "splashsports-03.png:row-6"
+      ],
+      "canonical_away": "Miami (OH)",
+      "canonical_home": "Central Michigan",
+      "status": "PREGAME",
+      "spread_total_match": true
+    },
+    {
+      "game_id": 401858495,
+      "source_csv_row": 26,
+      "screenshots": [
+        "splashsports-03.png:row-7"
+      ],
+      "canonical_away": "Oregon",
+      "canonical_home": "Illinois",
+      "status": "PREGAME",
+      "spread_total_match": true
+    },
+    {
+      "game_id": 401856727,
+      "source_csv_row": 27,
+      "screenshots": [
+        "splashsports-03.png:row-8"
+      ],
+      "canonical_away": "Texas A&M",
+      "canonical_home": "Alabama",
+      "status": "PREGAME",
+      "spread_total_match": true
+    },
+    {
+      "game_id": 401864526,
+      "source_csv_row": 28,
+      "screenshots": [
+        "splashsports-03.png:row-9"
+      ],
+      "canonical_away": "Hawai'i",
+      "canonical_home": "Northern Illinois",
+      "status": "PREGAME",
+      "spread_total_match": true
+    },
+    {
+      "game_id": 401856731,
+      "source_csv_row": 29,
+      "screenshots": [
+        "splashsports-03.png:row-10"
+      ],
+      "canonical_away": "Tennessee",
+      "canonical_home": "South Carolina",
+      "status": "PREGAME",
+      "spread_total_match": true
+    },
+    {
+      "game_id": 401858499,
+      "source_csv_row": 30,
+      "screenshots": [
+        "splashsports-03.png:row-11"
+      ],
+      "canonical_away": "Michigan State",
+      "canonical_home": "UCLA",
+      "status": "PREGAME",
+      "spread_total_match": true
+    },
+    {
+      "game_id": 401858273,
+      "source_csv_row": 31,
+      "screenshots": [
+        "splashsports-04.png:row-1"
+      ],
+      "canonical_away": "Boston College",
+      "canonical_home": "Georgia Tech",
+      "status": "PREGAME",
+      "spread_total_match": true
+    },
+    {
+      "game_id": 401866447,
+      "source_csv_row": 32,
+      "screenshots": [
+        "splashsports-04.png:row-2"
+      ],
+      "canonical_away": "Sacramento State",
+      "canonical_home": "Ball State",
+      "status": "PREGAME",
+      "spread_total_match": true
+    },
+    {
+      "game_id": 401862810,
+      "source_csv_row": 33,
+      "screenshots": [
+        "splashsports-04.png:row-3"
+      ],
+      "canonical_away": "North Texas",
+      "canonical_home": "Navy",
+      "status": "PREGAME",
+      "spread_total_match": true
+    },
+    {
+      "game_id": 401856835,
+      "source_csv_row": 34,
+      "screenshots": [
+        "splashsports-04.png:row-4"
+      ],
+      "canonical_away": "BYU",
+      "canonical_home": "UCF",
+      "status": "PREGAME",
+      "spread_total_match": true
+    },
+    {
+      "game_id": 401856730,
+      "source_csv_row": 35,
+      "screenshots": [
+        "splashsports-04.png:row-5"
+      ],
+      "canonical_away": "Oklahoma",
+      "canonical_home": "Mississippi State",
+      "status": "PREGAME",
+      "spread_total_match": true
+    },
+    {
+      "game_id": 401866448,
+      "source_csv_row": 36,
+      "screenshots": [
+        "splashsports-04.png:row-6"
+      ],
+      "canonical_away": "Bowling Green",
+      "canonical_home": "Buffalo",
+      "status": "PREGAME",
+      "spread_total_match": true
+    },
+    {
+      "game_id": 401858497,
+      "source_csv_row": 37,
+      "screenshots": [
+        "splashsports-04.png:row-7"
+      ],
+      "canonical_away": "Iowa",
+      "canonical_home": "Minnesota",
+      "status": "PREGAME",
+      "spread_total_match": true
+    },
+    {
+      "game_id": 401856839,
+      "source_csv_row": 38,
+      "screenshots": [
+        "splashsports-04.png:row-8"
+      ],
+      "canonical_away": "Kansas State",
+      "canonical_home": "Arizona State",
+      "status": "PREGAME",
+      "spread_total_match": true
+    },
+    {
+      "game_id": 401866449,
+      "source_csv_row": 39,
+      "screenshots": [
+        "splashsports-04.png:row-9"
+      ],
+      "canonical_away": "Eastern Michigan",
+      "canonical_home": "Ohio",
+      "status": "PREGAME",
+      "spread_total_match": true
+    },
+    {
+      "game_id": 401871094,
+      "source_csv_row": 40,
+      "screenshots": [
+        "splashsports-04.png:row-10"
+      ],
+      "canonical_away": "UL Monroe",
+      "canonical_home": "Troy",
+      "status": "PREGAME",
+      "spread_total_match": true
+    },
+    {
+      "game_id": 401864528,
+      "source_csv_row": 41,
+      "screenshots": [
+        "splashsports-05.png:row-1"
+      ],
+      "canonical_away": "San Jos\u00e9 State",
+      "canonical_home": "Nevada",
+      "status": "PREGAME",
+      "spread_total_match": true
+    },
+    {
+      "game_id": 401869967,
+      "source_csv_row": 42,
+      "screenshots": [
+        "splashsports-05.png:row-2"
+      ],
+      "canonical_away": "Louisiana",
+      "canonical_home": "Southern Miss",
+      "status": "PREGAME",
+      "spread_total_match": true
+    },
+    {
+      "game_id": 401871093,
+      "source_csv_row": 43,
+      "screenshots": [
+        "splashsports-05.png:row-3"
+      ],
+      "canonical_away": "Old Dominion",
+      "canonical_home": "Louisiana Tech",
+      "status": "PREGAME",
+      "spread_total_match": true
+    },
+    {
+      "game_id": 401860907,
+      "source_csv_row": 44,
+      "screenshots": [
+        "splashsports-05.png:row-4"
+      ],
+      "canonical_away": "Boise State",
+      "canonical_home": "Washington State",
+      "status": "PREGAME",
+      "spread_total_match": true
+    },
+    {
+      "game_id": 401860905,
+      "source_csv_row": 45,
+      "screenshots": [
+        "splashsports-05.png:row-5"
+      ],
+      "canonical_away": "San Diego State",
+      "canonical_home": "Colorado State",
+      "status": "PREGAME",
+      "spread_total_match": true
+    },
+    {
+      "game_id": 401858276,
+      "source_csv_row": 46,
+      "screenshots": [
+        "splashsports-05.png:row-6"
+      ],
+      "canonical_away": "Virginia Tech",
+      "canonical_home": "Clemson",
+      "status": "PREGAME",
+      "spread_total_match": true
+    },
+    {
+      "game_id": 401869935,
+      "source_csv_row": 47,
+      "screenshots": [
+        "splashsports-05.png:row-7"
+      ],
+      "canonical_away": "Georgia State",
+      "canonical_home": "Arkansas State",
+      "status": "PREGAME",
+      "spread_total_match": true
+    },
+    {
+      "game_id": 401856836,
+      "source_csv_row": 48,
+      "screenshots": [
+        "splashsports-05.png:row-8"
+      ],
+      "canonical_away": "Colorado",
+      "canonical_home": "Oklahoma State",
+      "status": "PREGAME",
+      "spread_total_match": true
+    },
+    {
+      "game_id": 401858500,
+      "source_csv_row": 49,
+      "screenshots": [
+        "splashsports-05.png:row-9"
+      ],
+      "canonical_away": "USC",
+      "canonical_home": "Wisconsin",
+      "status": "PREGAME",
+      "spread_total_match": true
+    },
+    {
+      "game_id": 401860906,
+      "source_csv_row": 50,
+      "screenshots": [
+        "splashsports-05.png:row-10"
+      ],
+      "canonical_away": "Utah State",
+      "canonical_home": "Texas State",
+      "status": "PREGAME",
+      "spread_total_match": true
+    },
+    {
+      "game_id": 401856732,
+      "source_csv_row": 51,
+      "screenshots": [
+        "splashsports-05.png:row-11",
+        "splashsports-06.png:row-1"
+      ],
+      "canonical_away": "Ole Miss",
+      "canonical_home": "Texas",
+      "status": "PREGAME",
+      "spread_total_match": true
+    },
+    {
+      "game_id": 401856838,
+      "source_csv_row": 52,
+      "screenshots": [
+        "splashsports-06.png:row-2"
+      ],
+      "canonical_away": "Iowa State",
+      "canonical_home": "Arizona",
+      "status": "PREGAME",
+      "spread_total_match": true
+    },
+    {
+      "game_id": 401856729,
+      "source_csv_row": 53,
+      "screenshots": [
+        "splashsports-06.png:row-3"
+      ],
+      "canonical_away": "Vanderbilt",
+      "canonical_home": "Kentucky",
+      "status": "PREGAME",
+      "spread_total_match": true
+    },
+    {
+      "game_id": 401858275,
+      "source_csv_row": 54,
+      "screenshots": [
+        "splashsports-06.png:row-4"
+      ],
+      "canonical_away": "Syracuse",
+      "canonical_home": "North Carolina",
+      "status": "PREGAME",
+      "spread_total_match": true
+    },
+    {
+      "game_id": 401862811,
+      "source_csv_row": 55,
+      "screenshots": [
+        "splashsports-06.png:row-5"
+      ],
+      "canonical_away": "UTSA",
+      "canonical_home": "Tulane",
+      "status": "PREGAME",
+      "spread_total_match": true
+    },
+    {
+      "game_id": 401864527,
+      "source_csv_row": 56,
+      "screenshots": [
+        "splashsports-06.png:row-6"
+      ],
+      "canonical_away": "North Dakota State",
+      "canonical_home": "New Mexico",
+      "status": "PREGAME",
+      "spread_total_match": true
+    },
+    {
+      "game_id": 401856837,
+      "source_csv_row": 57,
+      "screenshots": [
+        "splashsports-06.png:row-7"
+      ],
+      "canonical_away": "Houston",
+      "canonical_home": "Utah",
+      "status": "PREGAME",
+      "spread_total_match": true
+    }
+  ]
+}

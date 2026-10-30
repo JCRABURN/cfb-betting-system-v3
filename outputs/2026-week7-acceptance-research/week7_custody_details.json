@@ -1,0 +1,27 @@
+{
+  "approval_containing_commit": "cfbe724fc9687dea24bd50409bcc4a4c2214aec4",
+  "approval_parent_context_commit": "d3ffcc24316af7deee7f9f0aebce9b46cb3fac80",
+  "approval_sha256": "31dd412b3e6c16f3f871e4dc0276c3b2c84c2faae95715ac20eb39d648042568",
+  "component_games_reproduced": 59,
+  "first_kickoff_utc": "2026-10-13T23:00:00+00:00",
+  "formal_audit_status": "INCOMPLETE_CLV_CUSTODY",
+  "locked_card_sha256": "d9c3c8b517875743b1c78c1ff3a5f190f83bcdb570eff8449752a6cf9fdbd568",
+  "lookahead_conclusion": "NO_CONTAMINATION_DETECTED_IN_SEALED_INPUTS;NOT_AN_INDEPENDENT_PROVIDER_HISTORY_CERTIFICATION",
+  "source_database_sha256": "09d0bcda684356001bacf8bc9e42939add56b053f405564d9be924e39c0cf842",
+  "timestamps": {
+    "card": "2026-10-13T19:21:01.178085+00:00",
+    "context-initial/cfbd-venues/requested_at": "2026-10-13T18:33:25.937686+00:00",
+    "context-initial/espn-game-preview-qb-evidence/requested_at": "2026-10-13T18:33:28.950785+00:00",
+    "context-initial/espn-injuries/requested_at": "2026-10-13T18:33:27.124838+00:00",
+    "context-initial/weather-kickoff/requested_at": "2026-10-13T18:33:33.818116+00:00",
+    "core-initial/cfbd-2026-fbs-teams/received_at_utc": "2026-10-13T14:07:10.496313+00:00",
+    "core-initial/cfbd-2026-fbs-teams/requested_at_utc": "2026-10-13T14:07:10.348817+00:00",
+    "core-initial/cfbd-2026-games/received_at_utc": "2026-10-13T14:07:10.327670+00:00",
+    "core-initial/cfbd-2026-games/requested_at_utc": "2026-10-13T14:07:09.630835+00:00",
+    "core-initial/cfbd-week6-advanced/received_at_utc": "2026-10-13T14:07:24.360372+00:00",
+    "core-initial/cfbd-week6-advanced/requested_at_utc": "2026-10-13T14:07:10.500977+00:00",
+    "owner_approval_observed": "2026-10-13T19:37:43Z",
+    "seal": "2026-10-13T19:25:34.237990+00:00"
+  },
+  "training_limitation": "Fitted arithmetic and feature cutoffs independently checked; entire 4944-row totals training matrix not refit in this diagnostic run."
+}

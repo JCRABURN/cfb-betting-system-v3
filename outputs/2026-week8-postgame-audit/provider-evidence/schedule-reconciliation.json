@@ -1,0 +1,11 @@
+[
+  {
+    "game_id": "401864527",
+    "away": "North Dakota State",
+    "home": "New Mexico",
+    "frozen_scheduled_kickoff": "2026-10-25T02:00:00.000Z",
+    "postgame_espn_kickoff": "2026-10-25T02:20Z",
+    "reason": "POSTGAME_PROVIDER_START_TIME_DIFFERS_FROM_FROZEN_SCHEDULE;ORIGINAL_UNCHANGED",
+    "affects_pregame_custody": false
+  }
+]

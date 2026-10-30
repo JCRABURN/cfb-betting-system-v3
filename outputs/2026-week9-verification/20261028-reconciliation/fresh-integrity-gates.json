@@ -1,0 +1,663 @@
+{
+  "verified_at_utc": "2026-10-29T11:56:23.516234+00:00",
+  "tested_head": "db007694d3ee87d3a2b85feacd1fd9b7a2d10fb0",
+  "prior_head": "e3a9a10ed63c0aa003d16e88208331d1ff81e170",
+  "diff": {
+    "added": 389,
+    "modified": 0,
+    "deleted": 0,
+    "scope": "outputs/2026-week9-* evidence/documentation only"
+  },
+  "ancestors": [
+    "abb4eb26bd1140e66972d2f1143cd587e80960b4",
+    "78ed6eb5540f66ba3193f91366c802e27e3cb9c7",
+    "7f42da36f9aef4666bb715d49babde7ee374defa",
+    "43807ae374b9db143c1d9675d7a7cafe6e2f28ba",
+    "922f1f8f8c66ef14674eb9aa20db144a45dada68",
+    "e3a9a10ed63c0aa003d16e88208331d1ff81e170"
+  ],
+  "protected_files": [
+    {
+      "path": "outputs/2026-week8-audit-research/LESSONS_LEARNED.md",
+      "base": "922f1f8f8c66ef14674eb9aa20db144a45dada68",
+      "sha256": "4a741290125235de3b587e957675c7b6582d95d60d55ef562d34f453be293c61"
+    },
+    {
+      "path": "outputs/2026-week8-audit-research/TEXAS_STATE_PACE.md",
+      "base": "922f1f8f8c66ef14674eb9aa20db144a45dada68",
+      "sha256": "5aebed59d4d9b74792eacaeec5ecf0a57aa3b7a439eb77975c9793f652f4b1a9"
+    },
+    {
+      "path": "outputs/2026-week8-audit-research/numerical_research_candidates.json",
+      "base": "922f1f8f8c66ef14674eb9aa20db144a45dada68",
+      "sha256": "36d867cf1f808d2a2022ebfcae8837d06e2b8128d2f1dbb67077953b5babeb46"
+    },
+    {
+      "path": "outputs/2026-week8-audit-research/week8_scoring_sequence_review.json",
+      "base": "922f1f8f8c66ef14674eb9aa20db144a45dada68",
+      "sha256": "49f5bae587fda889c54ec6cf6e00aecc0c5b53fb3cf6bb2b3715c5df6b50cd98"
+    },
+    {
+      "path": "outputs/2026-week8-postgame-audit/cross_week_diagnostics.json",
+      "base": "922f1f8f8c66ef14674eb9aa20db144a45dada68",
+      "sha256": "88d5974fedbd925514b6be06b06e70e3c1eb54734a3181a951d1bda90ebc07e6"
+    },
+    {
+      "path": "outputs/2026-week8-postgame-audit/cross_week_tables.md",
+      "base": "922f1f8f8c66ef14674eb9aa20db144a45dada68",
+      "sha256": "8a295f194fa715b71c4259337b2d74b1fb3b46678c978d6ab3acdb401d462b13"
+    },
+    {
+      "path": "outputs/2026-week8-postgame-audit/provider-evidence/capture-manifest.json",
+      "base": "922f1f8f8c66ef14674eb9aa20db144a45dada68",
+      "sha256": "60a6c83e497d860469c0403615ff3b67c0c974c4e0332e31a288748e7f717ca5"
+    },
+    {
+      "path": "outputs/2026-week8-postgame-audit/provider-evidence/cfbd-2026-games.json",
+      "base": "922f1f8f8c66ef14674eb9aa20db144a45dada68",
+      "sha256": "e60ca5c2fa68c33ffeeee8592f5f3a0e223bb865cbbab16d05ea86e6ae15351c"
+    },
+    {
+      "path": "outputs/2026-week8-postgame-audit/provider-evidence/cfbd-capture-manifest.json",
+      "base": "922f1f8f8c66ef14674eb9aa20db144a45dada68",
+      "sha256": "d383abcd35abd1e4037339dc209555ee39d28e9ae5c9e8a650b0c352766e12b6"
+    },
+    {
+      "path": "outputs/2026-week8-postgame-audit/provider-evidence/espn-game-401856727.json.gz",
+      "base": "922f1f8f8c66ef14674eb9aa20db144a45dada68",
+      "sha256": "2e56f164a8b5022ed33e2bbc9996800dc21676e3032ad12633f7a302115680ae"
+    },
+    {
+      "path": "outputs/2026-week8-postgame-audit/provider-evidence/espn-game-401856728.json.gz",
+      "base": "922f1f8f8c66ef14674eb9aa20db144a45dada68",
+      "sha256": "0a5a36b8fc816ec00778057c99806f3ab21f1acbe9a63ce718cb5b92bf499a86"
+    },
+    {
+      "path": "outputs/2026-week8-postgame-audit/provider-evidence/espn-game-401856729.json.gz",
+      "base": "922f1f8f8c66ef14674eb9aa20db144a45dada68",
+      "sha256": "1ba6248242e5b5f039cc15a27b93ca2965576f34cb55a31408934c53fa297949"
+    },
+    {
+      "path": "outputs/2026-week8-postgame-audit/provider-evidence/espn-game-401856730.json.gz",
+      "base": "922f1f8f8c66ef14674eb9aa20db144a45dada68",
+      "sha256": "0e9568c28964f53e79d78361a8ccd6f2864fbe0f072038d473c4e3e056d2eb4a"
+    },
+    {
+      "path": "outputs/2026-week8-postgame-audit/provider-evidence/espn-game-401856731.json.gz",
+      "base": "922f1f8f8c66ef14674eb9aa20db144a45dada68",
+      "sha256": "e573ab31e78d34d500e6b9f72870cffa865924e3b18dcfd3fc6e80c955d99c77"
+    },
+    {
+      "path": "outputs/2026-week8-postgame-audit/provider-evidence/espn-game-401856732.json.gz",
+      "base": "922f1f8f8c66ef14674eb9aa20db144a45dada68",
+      "sha256": "07e5cb3e3b4f1d3bcb7616a30bec71c22ebf14b09fae6bf65569df02e9ab3299"
+    },
+    {
+      "path": "outputs/2026-week8-postgame-audit/provider-evidence/espn-game-401856834.json.gz",
+      "base": "922f1f8f8c66ef14674eb9aa20db144a45dada68",
+      "sha256": "2b1fa5b4fab4a0270bc95aa5ee2360cbd874fb49cc1aa9702c1935f31ccd30a1"
+    },
+    {
+      "path": "outputs/2026-week8-postgame-audit/provider-evidence/espn-game-401856835.json.gz",
+      "base": "922f1f8f8c66ef14674eb9aa20db144a45dada68",
+      "sha256": "1bd7cb1dc40c783ba8550d28f0bfb21e7523af1ba701babf24a7fa562815fec8"
+    },
+    {
+      "path": "outputs/2026-week8-postgame-audit/provider-evidence/espn-game-401856836.json.gz",
+      "base": "922f1f8f8c66ef14674eb9aa20db144a45dada68",
+      "sha256": "f59514970e2b293ff0a500b4d1b18f53f5cc02ca8748b43332e4066faf714bb1"
+    },
+    {
+      "path": "outputs/2026-week8-postgame-audit/provider-evidence/espn-game-401856837.json.gz",
+      "base": "922f1f8f8c66ef14674eb9aa20db144a45dada68",
+      "sha256": "49185c506e3edba9f053b134b711fce1fc9d8cd191820156c806e7926018461c"
+    },
+    {
+      "path": "outputs/2026-week8-postgame-audit/provider-evidence/espn-game-401856838.json.gz",
+      "base": "922f1f8f8c66ef14674eb9aa20db144a45dada68",
+      "sha256": "c7156b2566d99171e369e998108f06c387232672f454e1e35fbab28da7fe967e"
+    },
+    {
+      "path": "outputs/2026-week8-postgame-audit/provider-evidence/espn-game-401856839.json.gz",
+      "base": "922f1f8f8c66ef14674eb9aa20db144a45dada68",
+      "sha256": "db8c380acc6c764992265614504ae4779f3f796f0ef70c2f7a37382424ce6300"
+    },
+    {
+      "path": "outputs/2026-week8-postgame-audit/provider-evidence/espn-game-401856840.json.gz",
+      "base": "922f1f8f8c66ef14674eb9aa20db144a45dada68",
+      "sha256": "a1373ea2d78f6481709a175dcd89b1006f80bc857a0877fb99cd3ef50957b6bc"
+    },
+    {
+      "path": "outputs/2026-week8-postgame-audit/provider-evidence/espn-game-401856841.json.gz",
+      "base": "922f1f8f8c66ef14674eb9aa20db144a45dada68",
+      "sha256": "c69b37ea117762781b465d7bdcea9a5295f1cd039b0ec9282d02c3c3c2af7a15"
+    },
+    {
+      "path": "outputs/2026-week8-postgame-audit/provider-evidence/espn-game-401858270.json.gz",
+      "base": "922f1f8f8c66ef14674eb9aa20db144a45dada68",
+      "sha256": "3f93814e6440db927cffb28c9096eac052778efcfd2c8a36ff732e0985ef166c"
+    },
+    {
+      "path": "outputs/2026-week8-postgame-audit/provider-evidence/espn-game-401858271.json.gz",
+      "base": "922f1f8f8c66ef14674eb9aa20db144a45dada68",
+      "sha256": "3df61e29bf2c7e457d446ce4d352b90888c172170b1d4a014e069834283b39b0"
+    },
+    {
+      "path": "outputs/2026-week8-postgame-audit/provider-evidence/espn-game-401858272.json.gz",
+      "base": "922f1f8f8c66ef14674eb9aa20db144a45dada68",
+      "sha256": "237383d67311c9eec71d2e492ae9b1d8ac44673a42f167e4898d73decaffc8a2"
+    },
+    {
+      "path": "outputs/2026-week8-postgame-audit/provider-evidence/espn-game-401858273.json.gz",
+      "base": "922f1f8f8c66ef14674eb9aa20db144a45dada68",
+      "sha256": "0e9281bf483d2f54562be2d4bcd4c0063d632694a8e2280078078fac30566964"
+    },
+    {
+      "path": "outputs/2026-week8-postgame-audit/provider-evidence/espn-game-401858274.json.gz",
+      "base": "922f1f8f8c66ef14674eb9aa20db144a45dada68",
+      "sha256": "35093b56424dce52149804961b047604ce88a9ce6af522ff330f8d5511f3096d"
+    },
+    {
+      "path": "outputs/2026-week8-postgame-audit/provider-evidence/espn-game-401858275.json.gz",
+      "base": "922f1f8f8c66ef14674eb9aa20db144a45dada68",
+      "sha256": "32cd904bb8e75da52444e59a2852d10f928bf318ecfe635a1042ada7fb3b3505"
+    },
+    {
+      "path": "outputs/2026-week8-postgame-audit/provider-evidence/espn-game-401858276.json.gz",
+      "base": "922f1f8f8c66ef14674eb9aa20db144a45dada68",
+      "sha256": "d560225c42a97f37b890fdd255bf51c5513e4798c876f348844531081f376939"
+    },
+    {
+      "path": "outputs/2026-week8-postgame-audit/provider-evidence/espn-game-401858495.json.gz",
+      "base": "922f1f8f8c66ef14674eb9aa20db144a45dada68",
+      "sha256": "81013bcba9ebdc8442f7a588a8d60498ebbe506695439a8c3e4cf71abe8b1244"
+    },
+    {
+      "path": "outputs/2026-week8-postgame-audit/provider-evidence/espn-game-401858496.json.gz",
+      "base": "922f1f8f8c66ef14674eb9aa20db144a45dada68",
+      "sha256": "e6d5aadc1ba9b1248bc9eff240aea8b13d08fce1cead192a2203246517537391"
+    },
+    {
+      "path": "outputs/2026-week8-postgame-audit/provider-evidence/espn-game-401858497.json.gz",
+      "base": "922f1f8f8c66ef14674eb9aa20db144a45dada68",
+      "sha256": "83a60d4b5f0dd333a7dfe2b0332a603dde094bb635642cd00347e8a9488794db"
+    },
+    {
+      "path": "outputs/2026-week8-postgame-audit/provider-evidence/espn-game-401858498.json.gz",
+      "base": "922f1f8f8c66ef14674eb9aa20db144a45dada68",
+      "sha256": "2d64813ed0dc899fd225166952c8c79a5d4ca38f5335c7cc31edd65dc70b65ee"
+    },
+    {
+      "path": "outputs/2026-week8-postgame-audit/provider-evidence/espn-game-401858499.json.gz",
+      "base": "922f1f8f8c66ef14674eb9aa20db144a45dada68",
+      "sha256": "c01b53237badcd2595c798eb16b5026193804a157153bba061a12a00b681d741"
+    },
+    {
+      "path": "outputs/2026-week8-postgame-audit/provider-evidence/espn-game-401858500.json.gz",
+      "base": "922f1f8f8c66ef14674eb9aa20db144a45dada68",
+      "sha256": "4cd4ca01a89ceea9bc2adf8d81a44b788a9c8883943392c8ab5b42d482822842"
+    },
+    {
+      "path": "outputs/2026-week8-postgame-audit/provider-evidence/espn-game-401860905.json.gz",
+      "base": "922f1f8f8c66ef14674eb9aa20db144a45dada68",
+      "sha256": "3aa218aced59ae62e7196ba92519f9cbee6d26e379a7b8a3c984f81927cf473d"
+    },
+    {
+      "path": "outputs/2026-week8-postgame-audit/provider-evidence/espn-game-401860906.json.gz",
+      "base": "922f1f8f8c66ef14674eb9aa20db144a45dada68",
+      "sha256": "2d898e6026c44502bc2fc1174097b363f1f0666f6d05d034f123ed7a5ae92e66"
+    },
+    {
+      "path": "outputs/2026-week8-postgame-audit/provider-evidence/espn-game-401860907.json.gz",
+      "base": "922f1f8f8c66ef14674eb9aa20db144a45dada68",
+      "sha256": "6159dc2a1c8234bd96395862596e58dbc17469b2045a42628385c2c87e14280b"
+    },
+    {
+      "path": "outputs/2026-week8-postgame-audit/provider-evidence/espn-game-401861965.json.gz",
+      "base": "922f1f8f8c66ef14674eb9aa20db144a45dada68",
+      "sha256": "419ef98c02756cdb4bf2b44f9e5715b161953a6a80da752e9e144bf17db10468"
+    },
+    {
+      "path": "outputs/2026-week8-postgame-audit/provider-evidence/espn-game-401862807.json.gz",
+      "base": "922f1f8f8c66ef14674eb9aa20db144a45dada68",
+      "sha256": "31b6aa7bb000e3a7570205f18248b93d089ad9af2e8812c04e19fadf56134456"
+    },
+    {
+      "path": "outputs/2026-week8-postgame-audit/provider-evidence/espn-game-401862808.json.gz",
+      "base": "922f1f8f8c66ef14674eb9aa20db144a45dada68",
+      "sha256": "699174d9f05ea12f277a98a4d18ecac3cc5fe18847f947674e4c0a88df4687ca"
+    },
+    {
+      "path": "outputs/2026-week8-postgame-audit/provider-evidence/espn-game-401862809.json.gz",
+      "base": "922f1f8f8c66ef14674eb9aa20db144a45dada68",
+      "sha256": "38e7c7bbe11bcfc7c05f5d7f6a967a96e98e7173f808b5d4b4e15f4d5bf966c4"
+    },
+    {
+      "path": "outputs/2026-week8-postgame-audit/provider-evidence/espn-game-401862810.json.gz",
+      "base": "922f1f8f8c66ef14674eb9aa20db144a45dada68",
+      "sha256": "924328df2885c10d974396043daa78c60cf38bddaf5d587b63dd379bb478d737"
+    },
+    {
+      "path": "outputs/2026-week8-postgame-audit/provider-evidence/espn-game-401862811.json.gz",
+      "base": "922f1f8f8c66ef14674eb9aa20db144a45dada68",
+      "sha256": "a5fec8e857a326bc2dd27cb17d08cfff0e33a3276fd43147cd8302e1a5079c09"
+    },
+    {
+      "path": "outputs/2026-week8-postgame-audit/provider-evidence/espn-game-401864525.json.gz",
+      "base": "922f1f8f8c66ef14674eb9aa20db144a45dada68",
+      "sha256": "436d0d3bf0d0a02405d9d5ad1314bd801fb834c812c391c214fd5213bce69042"
+    },
+    {
+      "path": "outputs/2026-week8-postgame-audit/provider-evidence/espn-game-401864526.json.gz",
+      "base": "922f1f8f8c66ef14674eb9aa20db144a45dada68",
+      "sha256": "e192deddc769d727316e4eab0a973cc2d74d6ddb3a3caa6a13b9796e0fa437ad"
+    },
+    {
+      "path": "outputs/2026-week8-postgame-audit/provider-evidence/espn-game-401864527.json.gz",
+      "base": "922f1f8f8c66ef14674eb9aa20db144a45dada68",
+      "sha256": "b23d3a106413fbb8f7bffa6b24ccc8f9abbfaa1bb9a38c741a5c9291d4294c4d"
+    },
+    {
+      "path": "outputs/2026-week8-postgame-audit/provider-evidence/espn-game-401864528.json.gz",
+      "base": "922f1f8f8c66ef14674eb9aa20db144a45dada68",
+      "sha256": "c8311bc60cecbf3cfb2e70a60fcadfffdf4b261257dd68e73a88a5f6534e4c5f"
+    },
+    {
+      "path": "outputs/2026-week8-postgame-audit/provider-evidence/espn-game-401866446.json.gz",
+      "base": "922f1f8f8c66ef14674eb9aa20db144a45dada68",
+      "sha256": "c1f7738a0d49b5e40105d7d731db14b9f10dde7487371ba6ec4a6368f9c5ad21"
+    },
+    {
+      "path": "outputs/2026-week8-postgame-audit/provider-evidence/espn-game-401866447.json.gz",
+      "base": "922f1f8f8c66ef14674eb9aa20db144a45dada68",
+      "sha256": "a19559b26c36c36b62f24fa6aab9ce8d1cecbd302a5bbccc84a7f0aefe80fad0"
+    },
+    {
+      "path": "outputs/2026-week8-postgame-audit/provider-evidence/espn-game-401866448.json.gz",
+      "base": "922f1f8f8c66ef14674eb9aa20db144a45dada68",
+      "sha256": "792abc0fc5c35aae224e6021416c6a17c348c9ebf178570ae7ed626a9c03650a"
+    },
+    {
+      "path": "outputs/2026-week8-postgame-audit/provider-evidence/espn-game-401866449.json.gz",
+      "base": "922f1f8f8c66ef14674eb9aa20db144a45dada68",
+      "sha256": "73a8353c0b414178059e6a2843470e41a24e791f4e38d5c6e33581c3d891e3c0"
+    },
+    {
+      "path": "outputs/2026-week8-postgame-audit/provider-evidence/espn-game-401866450.json.gz",
+      "base": "922f1f8f8c66ef14674eb9aa20db144a45dada68",
+      "sha256": "138f5c27ffef1674bc0b75955c15ce86aa66c65bb2c2d132b5ca9a37d5fc2a10"
+    },
+    {
+      "path": "outputs/2026-week8-postgame-audit/provider-evidence/espn-game-401866476.json.gz",
+      "base": "922f1f8f8c66ef14674eb9aa20db144a45dada68",
+      "sha256": "c393102c8b81ef047072422cf199781d5ab4479aecb1a63b88557f90c21dabbf"
+    },
+    {
+      "path": "outputs/2026-week8-postgame-audit/provider-evidence/espn-game-401869845.json.gz",
+      "base": "922f1f8f8c66ef14674eb9aa20db144a45dada68",
+      "sha256": "30e42a2ca812d1cce093658f29fa558ab3d5ed20ef63cf7c4455a284a296e92d"
+    },
+    {
+      "path": "outputs/2026-week8-postgame-audit/provider-evidence/espn-game-401869935.json.gz",
+      "base": "922f1f8f8c66ef14674eb9aa20db144a45dada68",
+      "sha256": "56a6df17af3307120f4aa5e66dad0245a2487d5e295f13cb3dc800cc6424a0a7"
+    },
+    {
+      "path": "outputs/2026-week8-postgame-audit/provider-evidence/espn-game-401869967.json.gz",
+      "base": "922f1f8f8c66ef14674eb9aa20db144a45dada68",
+      "sha256": "ce401f3b135eaea9285cf246cd3e33edcc6ecc6791ab5a271a7cd7b0368c3c27"
+    },
+    {
+      "path": "outputs/2026-week8-postgame-audit/provider-evidence/espn-game-401871056.json.gz",
+      "base": "922f1f8f8c66ef14674eb9aa20db144a45dada68",
+      "sha256": "6db62a55712e8b1848a7f807f37855bc6d7b1c79eea7c69ddb2c761d694f0014"
+    },
+    {
+      "path": "outputs/2026-week8-postgame-audit/provider-evidence/espn-game-401871093.json.gz",
+      "base": "922f1f8f8c66ef14674eb9aa20db144a45dada68",
+      "sha256": "4554e0e5ebb3b9f99e40c3ada397bbc660c105d5f1a0fcf06d0fafdb8d76bb1c"
+    },
+    {
+      "path": "outputs/2026-week8-postgame-audit/provider-evidence/espn-game-401871094.json.gz",
+      "base": "922f1f8f8c66ef14674eb9aa20db144a45dada68",
+      "sha256": "f6ccb6d15cc99d36d9cabc0fd5849d43d25236f22bb722d43f42c4f1c650447d"
+    },
+    {
+      "path": "outputs/2026-week8-postgame-audit/provider-evidence/espn-week8-scoreboard.json.gz",
+      "base": "922f1f8f8c66ef14674eb9aa20db144a45dada68",
+      "sha256": "93b8f2837be46587c571371b7a66257b0042e8ce91a63c306769da61e860497b"
+    },
+    {
+      "path": "outputs/2026-week8-postgame-audit/provider-evidence/schedule-reconciliation.json",
+      "base": "922f1f8f8c66ef14674eb9aa20db144a45dada68",
+      "sha256": "a76b88129a6abaaa4b769a34b12d1db14dd287f3e69d128d429fd3eafac67489"
+    },
+    {
+      "path": "outputs/2026-week8-postgame-audit/week8_ats_audit.csv",
+      "base": "922f1f8f8c66ef14674eb9aa20db144a45dada68",
+      "sha256": "74aa1c4b2766e8972f33fcba94cfa1241cdd09e90dabec61b6f89e5984b5791a"
+    },
+    {
+      "path": "outputs/2026-week8-postgame-audit/week8_cohort_membership.csv",
+      "base": "922f1f8f8c66ef14674eb9aa20db144a45dada68",
+      "sha256": "5a8c7ac78e173e0dcefb48f1acdeb5bbb24d01db9ee5d1166b8ffb6ff59a56fc"
+    },
+    {
+      "path": "outputs/2026-week8-postgame-audit/week8_diagnostics.json",
+      "base": "922f1f8f8c66ef14674eb9aa20db144a45dada68",
+      "sha256": "738fdaf68ab42c63e1630ac8ceee56a1821bcfc56e33fdeea0038bf7770f0d6a"
+    },
+    {
+      "path": "outputs/2026-week8-postgame-audit/week8_final_results.csv",
+      "base": "922f1f8f8c66ef14674eb9aa20db144a45dada68",
+      "sha256": "5b885bf098485b7942b3f59d5bb6869520c0f703366e34a6be2b5872f955923e"
+    },
+    {
+      "path": "outputs/2026-week8-postgame-audit/week8_postgame_manifest.json",
+      "base": "922f1f8f8c66ef14674eb9aa20db144a45dada68",
+      "sha256": "c7b0a53b0d55ad6fd6dfc629bb76dcde0edc449870ff4cbe40734022c310a472"
+    },
+    {
+      "path": "outputs/2026-week8-postgame-audit/week8_postgame_report.md",
+      "base": "922f1f8f8c66ef14674eb9aa20db144a45dada68",
+      "sha256": "474b81b69aedca0b63d407a694313d815af297d27c710c06b853abc512509778"
+    },
+    {
+      "path": "outputs/2026-week8-postgame-audit/week8_totals_audit.csv",
+      "base": "922f1f8f8c66ef14674eb9aa20db144a45dada68",
+      "sha256": "a7175b6aa042e424b5d78ec22c9f906fbbd9195cace1f622cb4503858735a1d5"
+    },
+    {
+      "path": "outputs/2026-week9-owner-review/20261028-morning/OWNER_REVIEW.md",
+      "base": "e3a9a10ed63c0aa003d16e88208331d1ff81e170",
+      "sha256": "400faacd91ade1ec65954d3e3267ea56714c1b97904e00d200422e6b9f388b52"
+    },
+    {
+      "path": "outputs/2026-week9-owner-review/20261028-morning/PROJECTION_COMPONENTS.md",
+      "base": "e3a9a10ed63c0aa003d16e88208331d1ff81e170",
+      "sha256": "9f6f1516a6374c4dda4ba0b23cac77b932b65675b9bfac1324b84f4885c3ac79"
+    },
+    {
+      "path": "outputs/2026-week9-owner-review/20261028-morning/owner_review_shortlist.json",
+      "base": "e3a9a10ed63c0aa003d16e88208331d1ff81e170",
+      "sha256": "1a6b8ab4fd5b01c12bba6b1c8a7aae0641e190a20c79807d9e3a62b3c7261bed"
+    },
+    {
+      "path": "outputs/2026-week9-owner-review/20261028-morning/review-custody.json",
+      "base": "e3a9a10ed63c0aa003d16e88208331d1ff81e170",
+      "sha256": "adec781229c41f19f180ef2da234451aae94979b01ca312c1af0feb7e660f0bb"
+    },
+    {
+      "path": "outputs/2026-week9-prospective/WEEK9_BOARD.md",
+      "base": "e3a9a10ed63c0aa003d16e88208331d1ff81e170",
+      "sha256": "874fcf673f52712d0aaa13286e9f73c6273de1c523b01a4d8583c7a3cda6d537"
+    },
+    {
+      "path": "outputs/2026-week9-prospective/core-initial/capture-manifest.json",
+      "base": "e3a9a10ed63c0aa003d16e88208331d1ff81e170",
+      "sha256": "d383abcd35abd1e4037339dc209555ee39d28e9ae5c9e8a650b0c352766e12b6"
+    },
+    {
+      "path": "outputs/2026-week9-prospective/core-initial/cfbd-2026-fbs-teams.json",
+      "base": "e3a9a10ed63c0aa003d16e88208331d1ff81e170",
+      "sha256": "99441fa547a34880c34cb9a2350ab675d4d9fd90d7a437ef827333cb02a0c317"
+    },
+    {
+      "path": "outputs/2026-week9-prospective/core-initial/cfbd-2026-games.json",
+      "base": "e3a9a10ed63c0aa003d16e88208331d1ff81e170",
+      "sha256": "e60ca5c2fa68c33ffeeee8592f5f3a0e223bb865cbbab16d05ea86e6ae15351c"
+    },
+    {
+      "path": "outputs/2026-week9-prospective/core-initial/cfbd-week8-advanced.json",
+      "base": "e3a9a10ed63c0aa003d16e88208331d1ff81e170",
+      "sha256": "53a5ff026e55137082c346a19b9064b52965a44cb4d9192c71d51040471f1cc2"
+    },
+    {
+      "path": "outputs/2026-week9-prospective/provider-evidence/cfbd-week2-games.derived.json",
+      "base": "e3a9a10ed63c0aa003d16e88208331d1ff81e170",
+      "sha256": "d38b5821d24d1e68998a878dcb5459e7c91edf622b275fc1d7b07cc1e3c37532"
+    },
+    {
+      "path": "outputs/2026-week9-prospective/provider-evidence/cfbd-week3-games.derived.json",
+      "base": "e3a9a10ed63c0aa003d16e88208331d1ff81e170",
+      "sha256": "02a826444368e1ba72b0f2b47b2f2858ab3fb13dc245ba0eb2967dbea9aa6c2c"
+    },
+    {
+      "path": "outputs/2026-week9-prospective/provider-evidence/cfbd-week4-advanced.derived.json",
+      "base": "e3a9a10ed63c0aa003d16e88208331d1ff81e170",
+      "sha256": "6852b017d8802e4113d28749d0592c7638e78cb84936afe6da55068d6a67cecf"
+    },
+    {
+      "path": "outputs/2026-week9-prospective/provider-evidence/cfbd-week4-games.derived.json",
+      "base": "e3a9a10ed63c0aa003d16e88208331d1ff81e170",
+      "sha256": "0b7d8488715e15ebdf035114542242fa303d30f58a62b778e27799c6e92cc0f6"
+    },
+    {
+      "path": "outputs/2026-week9-prospective/provider-evidence/cfbd-week5-advanced.derived.json",
+      "base": "e3a9a10ed63c0aa003d16e88208331d1ff81e170",
+      "sha256": "7e3566d6367b11b466afe04fabb43bc730c2a64f186485486a0e6e181f35c33f"
+    },
+    {
+      "path": "outputs/2026-week9-prospective/provider-evidence/cfbd-week5-games.derived.json",
+      "base": "e3a9a10ed63c0aa003d16e88208331d1ff81e170",
+      "sha256": "66d6ad0e4d370cf39fa39c79b7a215e6886526d4b8746d2b8147acd1b304c298"
+    },
+    {
+      "path": "outputs/2026-week9-prospective/provider-evidence/cfbd-week6-advanced.derived.json",
+      "base": "e3a9a10ed63c0aa003d16e88208331d1ff81e170",
+      "sha256": "bf05a1e6713cd10cf39aabda53a8405a75401c00c61bf388d79f6d7a03c1cded"
+    },
+    {
+      "path": "outputs/2026-week9-prospective/provider-evidence/cfbd-week6-games.derived.json",
+      "base": "e3a9a10ed63c0aa003d16e88208331d1ff81e170",
+      "sha256": "ff7bbe922b0566eda1291ebace87e57364e600ad025b9ec5478dfb2987e24a22"
+    },
+    {
+      "path": "outputs/2026-week9-prospective/provider-evidence/cfbd-week7-advanced.derived.json",
+      "base": "e3a9a10ed63c0aa003d16e88208331d1ff81e170",
+      "sha256": "13c67d579d2250786a2c625d9524b88cee875f463e4cc5c14b2acbac166f84c6"
+    },
+    {
+      "path": "outputs/2026-week9-prospective/provider-evidence/cfbd-week7-games.derived.json",
+      "base": "e3a9a10ed63c0aa003d16e88208331d1ff81e170",
+      "sha256": "889a1c463bc01be8fe3fce5ea34af35744475969aa5c31804dc86ae16312ef8b"
+    },
+    {
+      "path": "outputs/2026-week9-prospective/provider-evidence/cfbd-week8-advanced.derived.json",
+      "base": "e3a9a10ed63c0aa003d16e88208331d1ff81e170",
+      "sha256": "53a5ff026e55137082c346a19b9064b52965a44cb4d9192c71d51040471f1cc2"
+    },
+    {
+      "path": "outputs/2026-week9-prospective/provider-evidence/cfbd-week8-games.derived.json",
+      "base": "e3a9a10ed63c0aa003d16e88208331d1ff81e170",
+      "sha256": "f1bf84959bf0ffcd795b1f403a1ce7e57793d46fae8175f8daeb566e657c725e"
+    },
+    {
+      "path": "outputs/2026-week9-prospective/provider-evidence/cfbd-week9-games.derived.json",
+      "base": "e3a9a10ed63c0aa003d16e88208331d1ff81e170",
+      "sha256": "6ba5126e671fb8b8ce849066eb0dae18deaaa0383dfb5e4f590ac070ef0ea516"
+    },
+    {
+      "path": "outputs/2026-week9-prospective/screenshot-reconciliation.json",
+      "base": "e3a9a10ed63c0aa003d16e88208331d1ff81e170",
+      "sha256": "cbfcef6c28c7ebc2c7f5ecd5c92d00414d0dce25e8e1b24f64d8d9bab27fdf74"
+    },
+    {
+      "path": "outputs/2026-week9-prospective/source-evidence/screenshot-custody.json",
+      "base": "e3a9a10ed63c0aa003d16e88208331d1ff81e170",
+      "sha256": "ef40b9b0921c8bf351a8a008800db638e874b56b0b42b0687d0ece837521503a"
+    },
+    {
+      "path": "outputs/2026-week9-prospective/source-evidence/splashsports-01.png",
+      "base": "e3a9a10ed63c0aa003d16e88208331d1ff81e170",
+      "sha256": "d9a32908f1b955191ca814579f3a3bee027258b417b23a39732b193506d65c6c"
+    },
+    {
+      "path": "outputs/2026-week9-prospective/source-evidence/splashsports-02.png",
+      "base": "e3a9a10ed63c0aa003d16e88208331d1ff81e170",
+      "sha256": "4f2bc3d7027867c3f299e54b432fb5869393ba3cb0feba8030a3b4b7e54e2411"
+    },
+    {
+      "path": "outputs/2026-week9-prospective/source-evidence/splashsports-03.png",
+      "base": "e3a9a10ed63c0aa003d16e88208331d1ff81e170",
+      "sha256": "4bcb1bac2acb7311e30dd6a7350da5fd17e325fec3067342bdb08f5fc90791f4"
+    },
+    {
+      "path": "outputs/2026-week9-prospective/source-evidence/splashsports-04.png",
+      "base": "e3a9a10ed63c0aa003d16e88208331d1ff81e170",
+      "sha256": "5404c25c3bf4f6610bc22f14c6483981ccbf8b76357f657a4476e6783420dee7"
+    },
+    {
+      "path": "outputs/2026-week9-prospective/source-evidence/splashsports-05.png",
+      "base": "e3a9a10ed63c0aa003d16e88208331d1ff81e170",
+      "sha256": "7797abcbaeae11af0c7e9a3ee61ddfcea9ecf12b8067636b78ad98691e638763"
+    },
+    {
+      "path": "outputs/2026-week9-prospective/source-evidence/splashsports-06.png",
+      "base": "e3a9a10ed63c0aa003d16e88208331d1ff81e170",
+      "sha256": "2062db1db0349e3bed95dfbf89d78ee12dc6df6cc53a85fb35527a8197615834"
+    },
+    {
+      "path": "outputs/2026-week9-prospective/week9_ats_full_card.csv",
+      "base": "e3a9a10ed63c0aa003d16e88208331d1ff81e170",
+      "sha256": "a427103e3e4cc0ec382db2c748853d79b6e9aedf955f65f59a09241523cec6b0"
+    },
+    {
+      "path": "outputs/2026-week9-prospective/week9_ats_research_full_board.csv",
+      "base": "e3a9a10ed63c0aa003d16e88208331d1ff81e170",
+      "sha256": "68f4ccb62ce0c64ea19434ff47c102e16eb788448af131968b45837bd0bfcde9"
+    },
+    {
+      "path": "outputs/2026-week9-prospective/week9_ats_research_top10.csv",
+      "base": "e3a9a10ed63c0aa003d16e88208331d1ff81e170",
+      "sha256": "2289f1add7effc71916460dc34a64217c37cb3cf2cb163d21d1da6c7d8266193"
+    },
+    {
+      "path": "outputs/2026-week9-prospective/week9_ats_research_top5.csv",
+      "base": "e3a9a10ed63c0aa003d16e88208331d1ff81e170",
+      "sha256": "3d78eb52dd658281e91144380545343dda29b85389d3deeaa894d05b85ac50ba"
+    },
+    {
+      "path": "outputs/2026-week9-prospective/week9_card_manifest.json",
+      "base": "e3a9a10ed63c0aa003d16e88208331d1ff81e170",
+      "sha256": "8e91fc2e36caad269f4539cccbd5d7e70c5f5f6b66ebb391407a8fcb0c169bb5"
+    },
+    {
+      "path": "outputs/2026-week9-prospective/week9_human_review_shortlist.csv",
+      "base": "e3a9a10ed63c0aa003d16e88208331d1ff81e170",
+      "sha256": "7a1ab535f1eadff5fc942fb35f552a2ef2d45a8af16c74d0fbc539afa448b3aa"
+    },
+    {
+      "path": "outputs/2026-week9-prospective/week9_ingestion_manifest.json",
+      "base": "e3a9a10ed63c0aa003d16e88208331d1ff81e170",
+      "sha256": "ad80376255f6704f20731778efdd35f06432fecd48d78b88396fda478073d43f"
+    },
+    {
+      "path": "outputs/2026-week9-prospective/week9_ingestion_reconciliation.csv",
+      "base": "e3a9a10ed63c0aa003d16e88208331d1ff81e170",
+      "sha256": "d2b8d35bcff25b348e9fa2f44dc43506e7d9f6072773bf4c5d33dfcb584d97e6"
+    },
+    {
+      "path": "outputs/2026-week9-prospective/week9_initial_seal_manifest.json",
+      "base": "e3a9a10ed63c0aa003d16e88208331d1ff81e170",
+      "sha256": "77aea6d0eefecc6dce014524610294da617d7dab2b6e903a59f8664f664e5460"
+    },
+    {
+      "path": "outputs/2026-week9-prospective/week9_legacy_mixed_research_top5.csv",
+      "base": "e3a9a10ed63c0aa003d16e88208331d1ff81e170",
+      "sha256": "514ae20635adc488c76ff863419b154146cc15c242f1e41b0f97de18c7caf0ca"
+    },
+    {
+      "path": "outputs/2026-week9-prospective/week9_locked_line_snapshot.json",
+      "base": "e3a9a10ed63c0aa003d16e88208331d1ff81e170",
+      "sha256": "3c217e3f744573cb884696996b6cb7da8243b4f4eb5041257fe034889915a296"
+    },
+    {
+      "path": "outputs/2026-week9-prospective/week9_model_manifest.json",
+      "base": "e3a9a10ed63c0aa003d16e88208331d1ff81e170",
+      "sha256": "3683c48770eb1d65f9754a997d14dbd51b4e0341982c5d9f09f5838d45157292"
+    },
+    {
+      "path": "outputs/2026-week9-prospective/week9_raw_model_components.json",
+      "base": "e3a9a10ed63c0aa003d16e88208331d1ff81e170",
+      "sha256": "199ba0190a3f65602a87d542673acde4da7e5a0d274963e239c86cf115d7151f"
+    },
+    {
+      "path": "outputs/2026-week9-prospective/week9_totals_full_card.csv",
+      "base": "e3a9a10ed63c0aa003d16e88208331d1ff81e170",
+      "sha256": "a66c65ea99641f5a7634be1ec81664664924c487aa7d2ef0de005fbcb8561871"
+    },
+    {
+      "path": "outputs/2026-week9-prospective/week9_totals_research_full_board.csv",
+      "base": "e3a9a10ed63c0aa003d16e88208331d1ff81e170",
+      "sha256": "28b9ddad4acf5757131786ad5a0d9838b178544a54ef2bffa5caf3724d8166a8"
+    },
+    {
+      "path": "outputs/2026-week9-prospective/week9_totals_research_top10.csv",
+      "base": "e3a9a10ed63c0aa003d16e88208331d1ff81e170",
+      "sha256": "31ee1eacaa67c61ac167f6fa17b16ba5918e8aa9958bf86da714636b3f0cee43"
+    },
+    {
+      "path": "outputs/2026-week9-prospective/week9_totals_research_top5.csv",
+      "base": "e3a9a10ed63c0aa003d16e88208331d1ff81e170",
+      "sha256": "cfbd94b5794b74deeb86e446ed7cb8bf6cb97c8c1ef6d7c242cc1b0231d1b079"
+    },
+    {
+      "path": "outputs/2026-week9-prospective/week9_v28_governed_top5.csv",
+      "base": "e3a9a10ed63c0aa003d16e88208331d1ff81e170",
+      "sha256": "a59045692cafd82044ca57518aa792adbcd506ac6b0c7ea8fe2c6e46b556507d"
+    }
+  ],
+  "source_database_sha256": "09d0bcda684356001bacf8bc9e42939add56b053f405564d9be924e39c0cf842",
+  "commands": [
+    {
+      "command": "python -m scripts.verify_week7_audit_integrity",
+      "exit_code": 0,
+      "stdout": "{\n  \"grading_status\": \"COMPLETE_59_ATS_59_TOTALS\",\n  \"formal_audit_status\": \"INCOMPLETE_CLV_CUSTODY\",\n  \"research\": {\n    \"exact_custody_checks\": 419,\n    \"replayed_research_outputs\": 10,\n    \"historical_checkout_diagnosis_preserved\": true\n  }\n}\n",
+      "stderr": ""
+    },
+    {
+      "command": "python -m scripts.seal_week8_board --verify",
+      "exit_code": 0,
+      "stdout": "{\n  \"status\": \"SEALED_PROSPECTIVE_RESEARCH_BOARD\",\n  \"eligible_games\": 52,\n  \"ats_selections\": 52,\n  \"total_selections\": 52,\n  \"excluded_elapsed_games\": 4,\n  \"first_eligible_kickoff_utc\": \"2026-10-22T23:00:00+00:00\",\n  \"model_code_commit\": \"ecc2d2100eba99e24a1d94106b43a62912487eea\",\n  \"clv_status\": \"INCOMPLETE\",\n  \"model_policy_change\": false,\n  \"combined_top5\": \"UNCALIBRATED_RESEARCH_ONLY\"\n}\n",
+      "stderr": ""
+    },
+    {
+      "command": "python -m scripts.build_week8_postgame_audit --verify",
+      "exit_code": 0,
+      "stdout": "{\n  \"grading_status\": \"COMPLETE_52_ATS_52_TOTALS\",\n  \"clv_status\": \"INCOMPLETE\",\n  \"output_files\": 8,\n  \"evidence_files\": 57,\n  \"protected_files\": 47\n}\n",
+      "stderr": ""
+    },
+    {
+      "command": "python -m scripts.week8_scoring_sequence_review --verify",
+      "exit_code": 0,
+      "stdout": "{\"games\": 52, \"validated\": 52, \"backdoor_covers\": []}\n",
+      "stderr": ""
+    },
+    {
+      "command": "python -m scripts.week8_numerical_research --verify",
+      "exit_code": 0,
+      "stdout": "{\n  \"status\": \"RESEARCH_ONLY_NOT_DEPLOYED\",\n  \"prior_week_bias_correction\": [\n    {\n      \"test_week\": 6,\n      \"prior_training_n\": 56,\n      \"test_n\": 58,\n      \"prior_bias\": 2.4478295180523935,\n      \"baseline_mae\": 12.43003044803628,\n      \"candidate_mae\": 12.84261467105481,\n      \"baseline_rmse\": 16.278069078260607,\n      \"candidate_rmse\": 16.306658073570397\n    },\n    {\n      \"test_week\": 7,\n      \"prior_training_n\": 114,\n      \"test_n\": 59,\n      \"prior_bias\": 1.7283249873127617,\n      \"baseline_mae\": 12.939958905721614,\n      \"candidate_mae\": 12.807727064200499,\n      \"baseline_rmse\": 15.610982366133085,\n      \"candidate_rmse\": 15.566579760655621\n    },\n    {\n      \"test_week\": 8,\n      \"prior_training_n\": 173,\n      \"test_n\": 52,\n      \"prior_bias\": 1.5701950148728827,\n      \"baseline_mae\": 15.010405353992184,\n      \"candidate_mae\": 14.80981786408742,\n      \"baseline_rmse\": 18.95490162840772,\n      \"candidate_rmse\": 18.62941226878878\n    }\n  ],\n  \"score_shrinkage_exploratory_grid\": [\n    {\n      \"strength\": 0,\n      \"test_weeks\": [\n        6,\n        7,\n        8\n      ],\n      \"n\": 169,\n      \"brier\": 0.25,\n      \"log_loss\": 0.6931471805599453\n    },\n    {\n      \"strength\": 0.25,\n      \"test_weeks\": [\n        6,\n        7,\n        8\n      ],\n      \"n\": 169,\n      \"brier\": 0.25078326043193316,\n      \"log_loss\": 0.6947263865828939\n    },\n    {\n      \"strength\": 0.5,\n      \"test_weeks\": [\n        6,\n        7,\n        8\n      ],\n      \"n\": 169,\n      \"brier\": 0.2528482260357947,\n      \"log_loss\": 0.6989799881038625\n    },\n    {\n      \"strength\": 1,\n      \"test_weeks\": [\n        6,\n        7,\n        8\n      ],\n      \"n\": 169,\n      \"brier\": 0.2608232727593028,\n      \"log_loss\": 0.7165438191132817\n    }\n  ],\n  \"limitation\": \"Bias uses only earlier weeks in each fold, but the candidate was proposed after viewing these results. Shrinkage grid is retrospective exploration, not independent validation.\"\n}\n",
+      "stderr": ""
+    },
+    {
+      "command": "python -m scripts.seal_week9_board --verify",
+      "exit_code": 0,
+      "stdout": "{\n  \"status\": \"SEALED_PROSPECTIVE_RESEARCH_BOARD\",\n  \"eligible_games\": 54,\n  \"ats_selections\": 54,\n  \"total_selections\": 54,\n  \"excluded_elapsed_games\": 2,\n  \"first_eligible_kickoff_utc\": \"2026-10-28T23:00:00+00:00\",\n  \"model_code_commit\": \"93f818fea5dc49a49b6bb1c1a569d8f25817c898\",\n  \"clv_status\": \"INCOMPLETE\",\n  \"model_policy_change\": false,\n  \"combined_top5\": \"UNCALIBRATED_RESEARCH_ONLY\"\n}\n",
+      "stderr": ""
+    },
+    {
+      "command": "python -m scripts.review_week9_context --capture outputs/2026-week9-context/20261029T1147Z-thursday-gate --verify",
+      "exit_code": 0,
+      "stdout": "{\"context_games\": 54, \"owner_approval\": \"PENDING\", \"model_adjustments\": 0}\n",
+      "stderr": ""
+    },
+    {
+      "command": "python -m scripts.verify_week9_owner_review outputs/2026-week9-owner-review/20261029-morning-decision/owner_review_shortlist.json",
+      "exit_code": 0,
+      "stdout": "{\n  \"verified_candidates\": 10,\n  \"recommended_five\": 5,\n  \"owner_approval\": \"PENDING\",\n  \"frozen_values_unchanged\": true\n}\n",
+      "stderr": ""
+    }
+  ],
+  "replay_scope": "Read-only frozen formula, card/rank and audit replay. Full pregame DB refit previously recorded at 22:42 UTC Oct28; no kickoff guard bypass or new forecasts."
+}
