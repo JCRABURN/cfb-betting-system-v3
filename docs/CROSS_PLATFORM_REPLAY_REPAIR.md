@@ -152,8 +152,14 @@ changed during this repair. PR #46 received an authorized reopened event at its
 unchanged original head (run 41071724168, 812 passed/six failed), followed by
 the successful repaired integration event above; no empty trigger commit was used.
 
-Safe dependency order after review is repaired #41 (which contains #35-#40),
-#42, #43 and repaired #44 in either order, #45, #46, then #47. The common
+The logical dependency order is #41 (which contains #35-#40), #42, then #43
+and #44, then #45, #46 and #47. This is not approval to merge older standalone
+heads: the successful CI cited here covers the cumulative repaired #44/#45
+trees, not separate #41/#42/#43 heads. Prefer reviewing and integrating the
+tested cumulative #44 tree (which already contains #41/#42), then #45 (which
+also contains #43), then #46 and #47. If separate earlier PR merges are desired,
+first apply the applicable compatibility repair and obtain their own passing
+CI and independent approval. The common
 compatibility changes were cherry-picked into #44 so its actual tree passes;
 #45 merged that exact #44 head, #46 merged #45, and #47 merged #46. Do not
 merge the unrepaired ancestors independently. Recheck generated merge SHA and
