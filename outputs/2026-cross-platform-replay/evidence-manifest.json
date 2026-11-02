@@ -1,0 +1,2510 @@
+{
+  "purpose": "Additive failure and repair verification evidence; not a replacement historical manifest",
+  "files": [
+    {
+      "path": "baseline-matrix/124117238137.log.gz",
+      "sha256": "be1fb99e31e0cdbe211c727bedb2aee0ead5b1bba7c9c7a8c45757c02a381861",
+      "bytes": 11547
+    },
+    {
+      "path": "baseline-matrix/124117238416.log.gz",
+      "sha256": "d47d0b6e1bbaecc218f64e8dab024f32a1227c1770b64e59b6692589a826d733",
+      "bytes": 4517
+    },
+    {
+      "path": "baseline-matrix/124117274083.log.gz",
+      "sha256": "799210463f52ce6dcd4ba63d4362ede6bb5b283c8b66126dbc07c518cdd9887f",
+      "bytes": 4478
+    },
+    {
+      "path": "baseline-matrix/124117297186.log.gz",
+      "sha256": "7991be957fb7f79a6929be9d5a522d8c7957824468b7428ebc7847759a03b09a",
+      "bytes": 11204
+    },
+    {
+      "path": "baseline-matrix/artifacts.json",
+      "sha256": "c4c7065ea93dd5237b541444d959c160081fb292bcb2cf870959bc316786e681",
+      "bytes": 3658
+    },
+    {
+      "path": "baseline-matrix/jobs.json",
+      "sha256": "8b34e152baea5d63a07195eb4ab62f5fe20a7e76dbb057f22283b240dfd6eef3",
+      "bytes": 18179
+    },
+    {
+      "path": "baseline-matrix/replay-ubuntu-latest-3.11.17/2026-week7-postgame-audit--week7_ats_audit.csv",
+      "sha256": "48a4171a57ea53dd18507a2e04721c1c77a7155f48c9f93704fd23bec3067dc8",
+      "bytes": 30898
+    },
+    {
+      "path": "baseline-matrix/replay-ubuntu-latest-3.11.17/2026-week7-postgame-audit--week7_cohort_membership.csv",
+      "sha256": "c64ccdbac799b08ab5f1634c5ddc3a193588111c8d4ea8612bcdd6edfc33156c",
+      "bytes": 15328
+    },
+    {
+      "path": "baseline-matrix/replay-ubuntu-latest-3.11.17/2026-week7-postgame-audit--week7_diagnostics.json",
+      "sha256": "4bf90ed78907f445442e8878841cf36bd18f6d97cd89652a3fd8efac5dea6969",
+      "bytes": 49682
+    },
+    {
+      "path": "baseline-matrix/replay-ubuntu-latest-3.11.17/2026-week7-postgame-audit--week7_final_results.csv",
+      "sha256": "bb59bf47455cc155d62f93e401dd043de7efb00d164866321e7ba1757cd57884",
+      "bytes": 11570
+    },
+    {
+      "path": "baseline-matrix/replay-ubuntu-latest-3.11.17/2026-week7-postgame-audit--week7_owner_approved_five_audit.csv",
+      "sha256": "bef7e456e1a653c0fb9d7318f6400cb8240bb46972155ad573c0075dd461fd86",
+      "bytes": 3215
+    },
+    {
+      "path": "baseline-matrix/replay-ubuntu-latest-3.11.17/2026-week7-postgame-audit--week7_postgame_report.md",
+      "sha256": "31562fbc6b646def90b3bf212efbd40eb021d585ee7d1dcb26cd30cc48609fc0",
+      "bytes": 5721
+    },
+    {
+      "path": "baseline-matrix/replay-ubuntu-latest-3.11.17/2026-week7-postgame-audit--week7_source_correction_impact.csv",
+      "sha256": "56ddb9acfcaf36d2eaa71fd895f4c1fda7878f5182c8008a6781e724109dc4cb",
+      "bytes": 541
+    },
+    {
+      "path": "baseline-matrix/replay-ubuntu-latest-3.11.17/2026-week7-postgame-audit--week7_totals_audit.csv",
+      "sha256": "d7dce91e9e5e26893f84e683a34f3817ed69200703cbe0f974cc194fbbff0dfb",
+      "bytes": 27463
+    },
+    {
+      "path": "baseline-matrix/replay-ubuntu-latest-3.11.17/2026-week8-audit-research--numerical_research_candidates.json",
+      "sha256": "838bc56b1b5634c6de5b0b22223193347d5d874c602062cdfe3924695ecd118c",
+      "bytes": 1939
+    },
+    {
+      "path": "baseline-matrix/replay-ubuntu-latest-3.11.17/2026-week8-postgame-audit--cross_week_diagnostics.json",
+      "sha256": "16aa60100666b9f577d419576bf998d6aa4d55340b463f5ebc821b49c3aa9316",
+      "bytes": 133928
+    },
+    {
+      "path": "baseline-matrix/replay-ubuntu-latest-3.11.17/2026-week8-postgame-audit--cross_week_tables.md",
+      "sha256": "8a295f194fa715b71c4259337b2d74b1fb3b46678c978d6ab3acdb401d462b13",
+      "bytes": 17656
+    },
+    {
+      "path": "baseline-matrix/replay-ubuntu-latest-3.11.17/2026-week8-postgame-audit--week8_ats_audit.csv",
+      "sha256": "74aa1c4b2766e8972f33fcba94cfa1241cdd09e90dabec61b6f89e5984b5791a",
+      "bytes": 28547
+    },
+    {
+      "path": "baseline-matrix/replay-ubuntu-latest-3.11.17/2026-week8-postgame-audit--week8_cohort_membership.csv",
+      "sha256": "5a8c7ac78e173e0dcefb48f1acdeb5bbb24d01db9ee5d1166b8ffb6ff59a56fc",
+      "bytes": 13415
+    },
+    {
+      "path": "baseline-matrix/replay-ubuntu-latest-3.11.17/2026-week8-postgame-audit--week8_diagnostics.json",
+      "sha256": "9a17461c4d9b672e57f445ba900487f33fc9ca79d534cbbfbaac2d414ec1f20c",
+      "bytes": 21198
+    },
+    {
+      "path": "baseline-matrix/replay-ubuntu-latest-3.11.17/2026-week8-postgame-audit--week8_final_results.csv",
+      "sha256": "5b885bf098485b7942b3f59d5bb6869520c0f703366e34a6be2b5872f955923e",
+      "bytes": 10159
+    },
+    {
+      "path": "baseline-matrix/replay-ubuntu-latest-3.11.17/2026-week8-postgame-audit--week8_postgame_manifest.json",
+      "sha256": "e157f3b1a95653e228b0d27960ade84bcd847b178ee1f5d65afbc5c7157cb738",
+      "bytes": 15446
+    },
+    {
+      "path": "baseline-matrix/replay-ubuntu-latest-3.11.17/2026-week8-postgame-audit--week8_postgame_report.md",
+      "sha256": "474b81b69aedca0b63d407a694313d815af297d27c710c06b853abc512509778",
+      "bytes": 3165
+    },
+    {
+      "path": "baseline-matrix/replay-ubuntu-latest-3.11.17/2026-week8-postgame-audit--week8_totals_audit.csv",
+      "sha256": "a7175b6aa042e424b5d78ec22c9f906fbbd9195cace1f622cb4503858735a1d5",
+      "bytes": 25503
+    },
+    {
+      "path": "baseline-matrix/replay-ubuntu-latest-3.11.17/20261028T1320Z--derived_context_board.json",
+      "sha256": "4f6fadfc893bb89a44daa794dba566c138fa49c532a694f0fb5fb8edecc2b116",
+      "bytes": 527050
+    },
+    {
+      "path": "baseline-matrix/replay-ubuntu-latest-3.11.17/comparison.json",
+      "sha256": "1da4774a3dc48034332c89238e258ced9bb0dfe8d1cd35aa20cc7bb65e16ef17",
+      "bytes": 212928
+    },
+    {
+      "path": "baseline-matrix/replay-ubuntu-latest-3.12.14/2026-week7-postgame-audit--week7_ats_audit.csv",
+      "sha256": "48a4171a57ea53dd18507a2e04721c1c77a7155f48c9f93704fd23bec3067dc8",
+      "bytes": 30898
+    },
+    {
+      "path": "baseline-matrix/replay-ubuntu-latest-3.12.14/2026-week7-postgame-audit--week7_cohort_membership.csv",
+      "sha256": "c64ccdbac799b08ab5f1634c5ddc3a193588111c8d4ea8612bcdd6edfc33156c",
+      "bytes": 15328
+    },
+    {
+      "path": "baseline-matrix/replay-ubuntu-latest-3.12.14/2026-week7-postgame-audit--week7_diagnostics.json",
+      "sha256": "ec46f6b0a9eed4af66e8dfefcf6036fdcb0c56348ccfdf1246619e7a49f59c8d",
+      "bytes": 49682
+    },
+    {
+      "path": "baseline-matrix/replay-ubuntu-latest-3.12.14/2026-week7-postgame-audit--week7_final_results.csv",
+      "sha256": "bb59bf47455cc155d62f93e401dd043de7efb00d164866321e7ba1757cd57884",
+      "bytes": 11570
+    },
+    {
+      "path": "baseline-matrix/replay-ubuntu-latest-3.12.14/2026-week7-postgame-audit--week7_owner_approved_five_audit.csv",
+      "sha256": "bef7e456e1a653c0fb9d7318f6400cb8240bb46972155ad573c0075dd461fd86",
+      "bytes": 3215
+    },
+    {
+      "path": "baseline-matrix/replay-ubuntu-latest-3.12.14/2026-week7-postgame-audit--week7_postgame_report.md",
+      "sha256": "31562fbc6b646def90b3bf212efbd40eb021d585ee7d1dcb26cd30cc48609fc0",
+      "bytes": 5721
+    },
+    {
+      "path": "baseline-matrix/replay-ubuntu-latest-3.12.14/2026-week7-postgame-audit--week7_source_correction_impact.csv",
+      "sha256": "56ddb9acfcaf36d2eaa71fd895f4c1fda7878f5182c8008a6781e724109dc4cb",
+      "bytes": 541
+    },
+    {
+      "path": "baseline-matrix/replay-ubuntu-latest-3.12.14/2026-week7-postgame-audit--week7_totals_audit.csv",
+      "sha256": "d7dce91e9e5e26893f84e683a34f3817ed69200703cbe0f974cc194fbbff0dfb",
+      "bytes": 27463
+    },
+    {
+      "path": "baseline-matrix/replay-ubuntu-latest-3.12.14/2026-week8-audit-research--numerical_research_candidates.json",
+      "sha256": "36d867cf1f808d2a2022ebfcae8837d06e2b8128d2f1dbb67077953b5babeb46",
+      "bytes": 1939
+    },
+    {
+      "path": "baseline-matrix/replay-ubuntu-latest-3.12.14/2026-week8-postgame-audit--cross_week_diagnostics.json",
+      "sha256": "88d5974fedbd925514b6be06b06e70e3c1eb54734a3181a951d1bda90ebc07e6",
+      "bytes": 133944
+    },
+    {
+      "path": "baseline-matrix/replay-ubuntu-latest-3.12.14/2026-week8-postgame-audit--cross_week_tables.md",
+      "sha256": "8a295f194fa715b71c4259337b2d74b1fb3b46678c978d6ab3acdb401d462b13",
+      "bytes": 17656
+    },
+    {
+      "path": "baseline-matrix/replay-ubuntu-latest-3.12.14/2026-week8-postgame-audit--week8_ats_audit.csv",
+      "sha256": "74aa1c4b2766e8972f33fcba94cfa1241cdd09e90dabec61b6f89e5984b5791a",
+      "bytes": 28547
+    },
+    {
+      "path": "baseline-matrix/replay-ubuntu-latest-3.12.14/2026-week8-postgame-audit--week8_cohort_membership.csv",
+      "sha256": "5a8c7ac78e173e0dcefb48f1acdeb5bbb24d01db9ee5d1166b8ffb6ff59a56fc",
+      "bytes": 13415
+    },
+    {
+      "path": "baseline-matrix/replay-ubuntu-latest-3.12.14/2026-week8-postgame-audit--week8_diagnostics.json",
+      "sha256": "738fdaf68ab42c63e1630ac8ceee56a1821bcfc56e33fdeea0038bf7770f0d6a",
+      "bytes": 21198
+    },
+    {
+      "path": "baseline-matrix/replay-ubuntu-latest-3.12.14/2026-week8-postgame-audit--week8_final_results.csv",
+      "sha256": "5b885bf098485b7942b3f59d5bb6869520c0f703366e34a6be2b5872f955923e",
+      "bytes": 10159
+    },
+    {
+      "path": "baseline-matrix/replay-ubuntu-latest-3.12.14/2026-week8-postgame-audit--week8_postgame_manifest.json",
+      "sha256": "c7b0a53b0d55ad6fd6dfc629bb76dcde0edc449870ff4cbe40734022c310a472",
+      "bytes": 15446
+    },
+    {
+      "path": "baseline-matrix/replay-ubuntu-latest-3.12.14/2026-week8-postgame-audit--week8_postgame_report.md",
+      "sha256": "474b81b69aedca0b63d407a694313d815af297d27c710c06b853abc512509778",
+      "bytes": 3165
+    },
+    {
+      "path": "baseline-matrix/replay-ubuntu-latest-3.12.14/2026-week8-postgame-audit--week8_totals_audit.csv",
+      "sha256": "a7175b6aa042e424b5d78ec22c9f906fbbd9195cace1f622cb4503858735a1d5",
+      "bytes": 25503
+    },
+    {
+      "path": "baseline-matrix/replay-ubuntu-latest-3.12.14/20261028T1320Z--derived_context_board.json",
+      "sha256": "4f6fadfc893bb89a44daa794dba566c138fa49c532a694f0fb5fb8edecc2b116",
+      "bytes": 527050
+    },
+    {
+      "path": "baseline-matrix/replay-ubuntu-latest-3.12.14/comparison.json",
+      "sha256": "859300511292f34a4c15276ae9ff83c7433bdfba8137a3afa2f38dab057c919b",
+      "bytes": 61274
+    },
+    {
+      "path": "baseline-matrix/replay-windows-latest-3.11.17/2026-week7-postgame-audit--week7_ats_audit.csv",
+      "sha256": "48a4171a57ea53dd18507a2e04721c1c77a7155f48c9f93704fd23bec3067dc8",
+      "bytes": 30898
+    },
+    {
+      "path": "baseline-matrix/replay-windows-latest-3.11.17/2026-week7-postgame-audit--week7_cohort_membership.csv",
+      "sha256": "c64ccdbac799b08ab5f1634c5ddc3a193588111c8d4ea8612bcdd6edfc33156c",
+      "bytes": 15328
+    },
+    {
+      "path": "baseline-matrix/replay-windows-latest-3.11.17/2026-week7-postgame-audit--week7_diagnostics.json",
+      "sha256": "ec46f6b0a9eed4af66e8dfefcf6036fdcb0c56348ccfdf1246619e7a49f59c8d",
+      "bytes": 49682
+    },
+    {
+      "path": "baseline-matrix/replay-windows-latest-3.11.17/2026-week7-postgame-audit--week7_final_results.csv",
+      "sha256": "bb59bf47455cc155d62f93e401dd043de7efb00d164866321e7ba1757cd57884",
+      "bytes": 11570
+    },
+    {
+      "path": "baseline-matrix/replay-windows-latest-3.11.17/2026-week7-postgame-audit--week7_owner_approved_five_audit.csv",
+      "sha256": "bef7e456e1a653c0fb9d7318f6400cb8240bb46972155ad573c0075dd461fd86",
+      "bytes": 3215
+    },
+    {
+      "path": "baseline-matrix/replay-windows-latest-3.11.17/2026-week7-postgame-audit--week7_postgame_report.md",
+      "sha256": "31562fbc6b646def90b3bf212efbd40eb021d585ee7d1dcb26cd30cc48609fc0",
+      "bytes": 5721
+    },
+    {
+      "path": "baseline-matrix/replay-windows-latest-3.11.17/2026-week7-postgame-audit--week7_source_correction_impact.csv",
+      "sha256": "56ddb9acfcaf36d2eaa71fd895f4c1fda7878f5182c8008a6781e724109dc4cb",
+      "bytes": 541
+    },
+    {
+      "path": "baseline-matrix/replay-windows-latest-3.11.17/2026-week7-postgame-audit--week7_totals_audit.csv",
+      "sha256": "d7dce91e9e5e26893f84e683a34f3817ed69200703cbe0f974cc194fbbff0dfb",
+      "bytes": 27463
+    },
+    {
+      "path": "baseline-matrix/replay-windows-latest-3.11.17/2026-week8-audit-research--numerical_research_candidates.json",
+      "sha256": "36d867cf1f808d2a2022ebfcae8837d06e2b8128d2f1dbb67077953b5babeb46",
+      "bytes": 1939
+    },
+    {
+      "path": "baseline-matrix/replay-windows-latest-3.11.17/2026-week8-postgame-audit--cross_week_diagnostics.json",
+      "sha256": "88d5974fedbd925514b6be06b06e70e3c1eb54734a3181a951d1bda90ebc07e6",
+      "bytes": 133944
+    },
+    {
+      "path": "baseline-matrix/replay-windows-latest-3.11.17/2026-week8-postgame-audit--cross_week_tables.md",
+      "sha256": "8a295f194fa715b71c4259337b2d74b1fb3b46678c978d6ab3acdb401d462b13",
+      "bytes": 17656
+    },
+    {
+      "path": "baseline-matrix/replay-windows-latest-3.11.17/2026-week8-postgame-audit--week8_ats_audit.csv",
+      "sha256": "74aa1c4b2766e8972f33fcba94cfa1241cdd09e90dabec61b6f89e5984b5791a",
+      "bytes": 28547
+    },
+    {
+      "path": "baseline-matrix/replay-windows-latest-3.11.17/2026-week8-postgame-audit--week8_cohort_membership.csv",
+      "sha256": "5a8c7ac78e173e0dcefb48f1acdeb5bbb24d01db9ee5d1166b8ffb6ff59a56fc",
+      "bytes": 13415
+    },
+    {
+      "path": "baseline-matrix/replay-windows-latest-3.11.17/2026-week8-postgame-audit--week8_diagnostics.json",
+      "sha256": "738fdaf68ab42c63e1630ac8ceee56a1821bcfc56e33fdeea0038bf7770f0d6a",
+      "bytes": 21198
+    },
+    {
+      "path": "baseline-matrix/replay-windows-latest-3.11.17/2026-week8-postgame-audit--week8_final_results.csv",
+      "sha256": "5b885bf098485b7942b3f59d5bb6869520c0f703366e34a6be2b5872f955923e",
+      "bytes": 10159
+    },
+    {
+      "path": "baseline-matrix/replay-windows-latest-3.11.17/2026-week8-postgame-audit--week8_postgame_manifest.json",
+      "sha256": "c7b0a53b0d55ad6fd6dfc629bb76dcde0edc449870ff4cbe40734022c310a472",
+      "bytes": 15446
+    },
+    {
+      "path": "baseline-matrix/replay-windows-latest-3.11.17/2026-week8-postgame-audit--week8_postgame_report.md",
+      "sha256": "474b81b69aedca0b63d407a694313d815af297d27c710c06b853abc512509778",
+      "bytes": 3165
+    },
+    {
+      "path": "baseline-matrix/replay-windows-latest-3.11.17/2026-week8-postgame-audit--week8_totals_audit.csv",
+      "sha256": "a7175b6aa042e424b5d78ec22c9f906fbbd9195cace1f622cb4503858735a1d5",
+      "bytes": 25503
+    },
+    {
+      "path": "baseline-matrix/replay-windows-latest-3.11.17/20261028T1320Z--derived_context_board.json",
+      "sha256": "1348ca065f46d99e011fb6b6f179978849b7fa7402e0042e128e5055bcb140f1",
+      "bytes": 531033
+    },
+    {
+      "path": "baseline-matrix/replay-windows-latest-3.11.17/comparison.json",
+      "sha256": "5c35b46f4597b3a4f28930bbbcbd87a59910ffb81adc0db5ce7af22598a7dc42",
+      "bytes": 8772
+    },
+    {
+      "path": "baseline-matrix/replay-windows-latest-3.12.14/2026-week7-postgame-audit--week7_ats_audit.csv",
+      "sha256": "48a4171a57ea53dd18507a2e04721c1c77a7155f48c9f93704fd23bec3067dc8",
+      "bytes": 30898
+    },
+    {
+      "path": "baseline-matrix/replay-windows-latest-3.12.14/2026-week7-postgame-audit--week7_cohort_membership.csv",
+      "sha256": "c64ccdbac799b08ab5f1634c5ddc3a193588111c8d4ea8612bcdd6edfc33156c",
+      "bytes": 15328
+    },
+    {
+      "path": "baseline-matrix/replay-windows-latest-3.12.14/2026-week7-postgame-audit--week7_diagnostics.json",
+      "sha256": "ec46f6b0a9eed4af66e8dfefcf6036fdcb0c56348ccfdf1246619e7a49f59c8d",
+      "bytes": 49682
+    },
+    {
+      "path": "baseline-matrix/replay-windows-latest-3.12.14/2026-week7-postgame-audit--week7_final_results.csv",
+      "sha256": "bb59bf47455cc155d62f93e401dd043de7efb00d164866321e7ba1757cd57884",
+      "bytes": 11570
+    },
+    {
+      "path": "baseline-matrix/replay-windows-latest-3.12.14/2026-week7-postgame-audit--week7_owner_approved_five_audit.csv",
+      "sha256": "bef7e456e1a653c0fb9d7318f6400cb8240bb46972155ad573c0075dd461fd86",
+      "bytes": 3215
+    },
+    {
+      "path": "baseline-matrix/replay-windows-latest-3.12.14/2026-week7-postgame-audit--week7_postgame_report.md",
+      "sha256": "31562fbc6b646def90b3bf212efbd40eb021d585ee7d1dcb26cd30cc48609fc0",
+      "bytes": 5721
+    },
+    {
+      "path": "baseline-matrix/replay-windows-latest-3.12.14/2026-week7-postgame-audit--week7_source_correction_impact.csv",
+      "sha256": "56ddb9acfcaf36d2eaa71fd895f4c1fda7878f5182c8008a6781e724109dc4cb",
+      "bytes": 541
+    },
+    {
+      "path": "baseline-matrix/replay-windows-latest-3.12.14/2026-week7-postgame-audit--week7_totals_audit.csv",
+      "sha256": "d7dce91e9e5e26893f84e683a34f3817ed69200703cbe0f974cc194fbbff0dfb",
+      "bytes": 27463
+    },
+    {
+      "path": "baseline-matrix/replay-windows-latest-3.12.14/2026-week8-audit-research--numerical_research_candidates.json",
+      "sha256": "36d867cf1f808d2a2022ebfcae8837d06e2b8128d2f1dbb67077953b5babeb46",
+      "bytes": 1939
+    },
+    {
+      "path": "baseline-matrix/replay-windows-latest-3.12.14/2026-week8-postgame-audit--cross_week_diagnostics.json",
+      "sha256": "88d5974fedbd925514b6be06b06e70e3c1eb54734a3181a951d1bda90ebc07e6",
+      "bytes": 133944
+    },
+    {
+      "path": "baseline-matrix/replay-windows-latest-3.12.14/2026-week8-postgame-audit--cross_week_tables.md",
+      "sha256": "8a295f194fa715b71c4259337b2d74b1fb3b46678c978d6ab3acdb401d462b13",
+      "bytes": 17656
+    },
+    {
+      "path": "baseline-matrix/replay-windows-latest-3.12.14/2026-week8-postgame-audit--week8_ats_audit.csv",
+      "sha256": "74aa1c4b2766e8972f33fcba94cfa1241cdd09e90dabec61b6f89e5984b5791a",
+      "bytes": 28547
+    },
+    {
+      "path": "baseline-matrix/replay-windows-latest-3.12.14/2026-week8-postgame-audit--week8_cohort_membership.csv",
+      "sha256": "5a8c7ac78e173e0dcefb48f1acdeb5bbb24d01db9ee5d1166b8ffb6ff59a56fc",
+      "bytes": 13415
+    },
+    {
+      "path": "baseline-matrix/replay-windows-latest-3.12.14/2026-week8-postgame-audit--week8_diagnostics.json",
+      "sha256": "738fdaf68ab42c63e1630ac8ceee56a1821bcfc56e33fdeea0038bf7770f0d6a",
+      "bytes": 21198
+    },
+    {
+      "path": "baseline-matrix/replay-windows-latest-3.12.14/2026-week8-postgame-audit--week8_final_results.csv",
+      "sha256": "5b885bf098485b7942b3f59d5bb6869520c0f703366e34a6be2b5872f955923e",
+      "bytes": 10159
+    },
+    {
+      "path": "baseline-matrix/replay-windows-latest-3.12.14/2026-week8-postgame-audit--week8_postgame_manifest.json",
+      "sha256": "c7b0a53b0d55ad6fd6dfc629bb76dcde0edc449870ff4cbe40734022c310a472",
+      "bytes": 15446
+    },
+    {
+      "path": "baseline-matrix/replay-windows-latest-3.12.14/2026-week8-postgame-audit--week8_postgame_report.md",
+      "sha256": "474b81b69aedca0b63d407a694313d815af297d27c710c06b853abc512509778",
+      "bytes": 3165
+    },
+    {
+      "path": "baseline-matrix/replay-windows-latest-3.12.14/2026-week8-postgame-audit--week8_totals_audit.csv",
+      "sha256": "a7175b6aa042e424b5d78ec22c9f906fbbd9195cace1f622cb4503858735a1d5",
+      "bytes": 25503
+    },
+    {
+      "path": "baseline-matrix/replay-windows-latest-3.12.14/20261028T1320Z--derived_context_board.json",
+      "sha256": "1348ca065f46d99e011fb6b6f179978849b7fa7402e0042e128e5055bcb140f1",
+      "bytes": 531033
+    },
+    {
+      "path": "baseline-matrix/replay-windows-latest-3.12.14/comparison.json",
+      "sha256": "6f6f0c6de1ebb4ea0ebca9f341de1c314b2f51e1741db4c943ea5e09bfe5410d",
+      "bytes": 8772
+    },
+    {
+      "path": "ci/41071724168/124117289512.log.gz",
+      "sha256": "a27f2e68d14c565f6204a2ac3edd0aae1c8d9b111c2030865bd629927a225bd7",
+      "bytes": 10431
+    },
+    {
+      "path": "ci/41071724168/artifacts.json",
+      "sha256": "f7417e1fb877d3f5934f143cc38ad9e2905476e8f5ac6776507d09441efcd6f6",
+      "bytes": 42
+    },
+    {
+      "path": "ci/41071724168/jobs.json",
+      "sha256": "78a66ae742778073665c3cd2def84d951b0fabde147d461c9b2b61d864b5a400",
+      "bytes": 4019
+    },
+    {
+      "path": "ci/41071724168/run.json",
+      "sha256": "d76b5c5610b5e8e67c34eecd324258177b2ca04479575971c347476d0940e9dd",
+      "bytes": 15053
+    },
+    {
+      "path": "ci/41101927943/124220476690.log.gz",
+      "sha256": "d55e1b852bf67f74914569bcf91a694b0a1fbe92a0f4134eba9882cfc90d36fb",
+      "bytes": 8934
+    },
+    {
+      "path": "ci/41101927943/124220476895.log.gz",
+      "sha256": "604874412115f14bdbbeeb23993ba1a0ab6fcb90d9b1e964ab27392465a240db",
+      "bytes": 8796
+    },
+    {
+      "path": "ci/41101927943/124220476921.log.gz",
+      "sha256": "fec015cc7baec49c447457f4ff0ec8099f6383d1be4b39706693d128c5db29cb",
+      "bytes": 11085
+    },
+    {
+      "path": "ci/41101927943/124220476998.log.gz",
+      "sha256": "3ea3c0dfa9cb764c6cdff3aef6e949ae325ff658d112c342644974d4fad5fc9d",
+      "bytes": 10230
+    },
+    {
+      "path": "ci/41101927943/artifacts.json",
+      "sha256": "826f586c0a355ff43f8cafa4af0b24f618b034d2a049efce9082cb1743048109",
+      "bytes": 3657
+    },
+    {
+      "path": "ci/41101927943/jobs.json",
+      "sha256": "9b36ccf83249fd5385fcc439266eff421079add3de20ea81c570e1f9fde25175",
+      "bytes": 19318
+    },
+    {
+      "path": "ci/41101927943/run.json",
+      "sha256": "1bf08170d6fd5b721094c1d577d349ce761fcc6bfd87a8a762f8133fcbe1908c",
+      "bytes": 15075
+    },
+    {
+      "path": "ci/41101927943/u3.11.17/replay-diagnostics/2026-week7-postgame-audit--week7_ats_audit.csv",
+      "sha256": "48a4171a57ea53dd18507a2e04721c1c77a7155f48c9f93704fd23bec3067dc8",
+      "bytes": 30898
+    },
+    {
+      "path": "ci/41101927943/u3.11.17/replay-diagnostics/2026-week7-postgame-audit--week7_cohort_membership.csv",
+      "sha256": "c64ccdbac799b08ab5f1634c5ddc3a193588111c8d4ea8612bcdd6edfc33156c",
+      "bytes": 15328
+    },
+    {
+      "path": "ci/41101927943/u3.11.17/replay-diagnostics/2026-week7-postgame-audit--week7_diagnostics.json",
+      "sha256": "4bf90ed78907f445442e8878841cf36bd18f6d97cd89652a3fd8efac5dea6969",
+      "bytes": 49682
+    },
+    {
+      "path": "ci/41101927943/u3.11.17/replay-diagnostics/2026-week7-postgame-audit--week7_final_results.csv",
+      "sha256": "bb59bf47455cc155d62f93e401dd043de7efb00d164866321e7ba1757cd57884",
+      "bytes": 11570
+    },
+    {
+      "path": "ci/41101927943/u3.11.17/replay-diagnostics/2026-week7-postgame-audit--week7_owner_approved_five_audit.csv",
+      "sha256": "bef7e456e1a653c0fb9d7318f6400cb8240bb46972155ad573c0075dd461fd86",
+      "bytes": 3215
+    },
+    {
+      "path": "ci/41101927943/u3.11.17/replay-diagnostics/2026-week7-postgame-audit--week7_postgame_report.md",
+      "sha256": "31562fbc6b646def90b3bf212efbd40eb021d585ee7d1dcb26cd30cc48609fc0",
+      "bytes": 5721
+    },
+    {
+      "path": "ci/41101927943/u3.11.17/replay-diagnostics/2026-week7-postgame-audit--week7_source_correction_impact.csv",
+      "sha256": "56ddb9acfcaf36d2eaa71fd895f4c1fda7878f5182c8008a6781e724109dc4cb",
+      "bytes": 541
+    },
+    {
+      "path": "ci/41101927943/u3.11.17/replay-diagnostics/2026-week7-postgame-audit--week7_totals_audit.csv",
+      "sha256": "d7dce91e9e5e26893f84e683a34f3817ed69200703cbe0f974cc194fbbff0dfb",
+      "bytes": 27463
+    },
+    {
+      "path": "ci/41101927943/u3.11.17/replay-diagnostics/2026-week8-audit-research--numerical_research_candidates.json",
+      "sha256": "838bc56b1b5634c6de5b0b22223193347d5d874c602062cdfe3924695ecd118c",
+      "bytes": 1939
+    },
+    {
+      "path": "ci/41101927943/u3.11.17/replay-diagnostics/2026-week8-postgame-audit--cross_week_diagnostics.json",
+      "sha256": "16aa60100666b9f577d419576bf998d6aa4d55340b463f5ebc821b49c3aa9316",
+      "bytes": 133928
+    },
+    {
+      "path": "ci/41101927943/u3.11.17/replay-diagnostics/2026-week8-postgame-audit--cross_week_tables.md",
+      "sha256": "8a295f194fa715b71c4259337b2d74b1fb3b46678c978d6ab3acdb401d462b13",
+      "bytes": 17656
+    },
+    {
+      "path": "ci/41101927943/u3.11.17/replay-diagnostics/2026-week8-postgame-audit--week8_ats_audit.csv",
+      "sha256": "74aa1c4b2766e8972f33fcba94cfa1241cdd09e90dabec61b6f89e5984b5791a",
+      "bytes": 28547
+    },
+    {
+      "path": "ci/41101927943/u3.11.17/replay-diagnostics/2026-week8-postgame-audit--week8_cohort_membership.csv",
+      "sha256": "5a8c7ac78e173e0dcefb48f1acdeb5bbb24d01db9ee5d1166b8ffb6ff59a56fc",
+      "bytes": 13415
+    },
+    {
+      "path": "ci/41101927943/u3.11.17/replay-diagnostics/2026-week8-postgame-audit--week8_diagnostics.json",
+      "sha256": "9a17461c4d9b672e57f445ba900487f33fc9ca79d534cbbfbaac2d414ec1f20c",
+      "bytes": 21198
+    },
+    {
+      "path": "ci/41101927943/u3.11.17/replay-diagnostics/2026-week8-postgame-audit--week8_final_results.csv",
+      "sha256": "5b885bf098485b7942b3f59d5bb6869520c0f703366e34a6be2b5872f955923e",
+      "bytes": 10159
+    },
+    {
+      "path": "ci/41101927943/u3.11.17/replay-diagnostics/2026-week8-postgame-audit--week8_postgame_manifest.json",
+      "sha256": "e157f3b1a95653e228b0d27960ade84bcd847b178ee1f5d65afbc5c7157cb738",
+      "bytes": 15446
+    },
+    {
+      "path": "ci/41101927943/u3.11.17/replay-diagnostics/2026-week8-postgame-audit--week8_postgame_report.md",
+      "sha256": "474b81b69aedca0b63d407a694313d815af297d27c710c06b853abc512509778",
+      "bytes": 3165
+    },
+    {
+      "path": "ci/41101927943/u3.11.17/replay-diagnostics/2026-week8-postgame-audit--week8_totals_audit.csv",
+      "sha256": "a7175b6aa042e424b5d78ec22c9f906fbbd9195cace1f622cb4503858735a1d5",
+      "bytes": 25503
+    },
+    {
+      "path": "ci/41101927943/u3.11.17/replay-diagnostics/20261028T1320Z--derived_context_board.json",
+      "sha256": "4f6fadfc893bb89a44daa794dba566c138fa49c532a694f0fb5fb8edecc2b116",
+      "bytes": 527050
+    },
+    {
+      "path": "ci/41101927943/u3.11.17/replay-diagnostics/comparison.json",
+      "sha256": "fbe3c8943b62eb9b1d8774712527f8c254d7af15e68347ce67a1cbe72f7b0f1a",
+      "bytes": 212928
+    },
+    {
+      "path": "ci/41101927943/u3.11.17/replay-verification/compatibility.json",
+      "sha256": "b5df24a29f0fc9f7a95fc5c0882c8da59062d726746952981e5a0f6b05fa484b",
+      "bytes": 7985
+    },
+    {
+      "path": "ci/41101927943/u3.12.14/replay-diagnostics/2026-week7-postgame-audit--week7_ats_audit.csv",
+      "sha256": "48a4171a57ea53dd18507a2e04721c1c77a7155f48c9f93704fd23bec3067dc8",
+      "bytes": 30898
+    },
+    {
+      "path": "ci/41101927943/u3.12.14/replay-diagnostics/2026-week7-postgame-audit--week7_cohort_membership.csv",
+      "sha256": "c64ccdbac799b08ab5f1634c5ddc3a193588111c8d4ea8612bcdd6edfc33156c",
+      "bytes": 15328
+    },
+    {
+      "path": "ci/41101927943/u3.12.14/replay-diagnostics/2026-week7-postgame-audit--week7_diagnostics.json",
+      "sha256": "ec46f6b0a9eed4af66e8dfefcf6036fdcb0c56348ccfdf1246619e7a49f59c8d",
+      "bytes": 49682
+    },
+    {
+      "path": "ci/41101927943/u3.12.14/replay-diagnostics/2026-week7-postgame-audit--week7_final_results.csv",
+      "sha256": "bb59bf47455cc155d62f93e401dd043de7efb00d164866321e7ba1757cd57884",
+      "bytes": 11570
+    },
+    {
+      "path": "ci/41101927943/u3.12.14/replay-diagnostics/2026-week7-postgame-audit--week7_owner_approved_five_audit.csv",
+      "sha256": "bef7e456e1a653c0fb9d7318f6400cb8240bb46972155ad573c0075dd461fd86",
+      "bytes": 3215
+    },
+    {
+      "path": "ci/41101927943/u3.12.14/replay-diagnostics/2026-week7-postgame-audit--week7_postgame_report.md",
+      "sha256": "31562fbc6b646def90b3bf212efbd40eb021d585ee7d1dcb26cd30cc48609fc0",
+      "bytes": 5721
+    },
+    {
+      "path": "ci/41101927943/u3.12.14/replay-diagnostics/2026-week7-postgame-audit--week7_source_correction_impact.csv",
+      "sha256": "56ddb9acfcaf36d2eaa71fd895f4c1fda7878f5182c8008a6781e724109dc4cb",
+      "bytes": 541
+    },
+    {
+      "path": "ci/41101927943/u3.12.14/replay-diagnostics/2026-week7-postgame-audit--week7_totals_audit.csv",
+      "sha256": "d7dce91e9e5e26893f84e683a34f3817ed69200703cbe0f974cc194fbbff0dfb",
+      "bytes": 27463
+    },
+    {
+      "path": "ci/41101927943/u3.12.14/replay-diagnostics/2026-week8-audit-research--numerical_research_candidates.json",
+      "sha256": "36d867cf1f808d2a2022ebfcae8837d06e2b8128d2f1dbb67077953b5babeb46",
+      "bytes": 1939
+    },
+    {
+      "path": "ci/41101927943/u3.12.14/replay-diagnostics/2026-week8-postgame-audit--cross_week_diagnostics.json",
+      "sha256": "88d5974fedbd925514b6be06b06e70e3c1eb54734a3181a951d1bda90ebc07e6",
+      "bytes": 133944
+    },
+    {
+      "path": "ci/41101927943/u3.12.14/replay-diagnostics/2026-week8-postgame-audit--cross_week_tables.md",
+      "sha256": "8a295f194fa715b71c4259337b2d74b1fb3b46678c978d6ab3acdb401d462b13",
+      "bytes": 17656
+    },
+    {
+      "path": "ci/41101927943/u3.12.14/replay-diagnostics/2026-week8-postgame-audit--week8_ats_audit.csv",
+      "sha256": "74aa1c4b2766e8972f33fcba94cfa1241cdd09e90dabec61b6f89e5984b5791a",
+      "bytes": 28547
+    },
+    {
+      "path": "ci/41101927943/u3.12.14/replay-diagnostics/2026-week8-postgame-audit--week8_cohort_membership.csv",
+      "sha256": "5a8c7ac78e173e0dcefb48f1acdeb5bbb24d01db9ee5d1166b8ffb6ff59a56fc",
+      "bytes": 13415
+    },
+    {
+      "path": "ci/41101927943/u3.12.14/replay-diagnostics/2026-week8-postgame-audit--week8_diagnostics.json",
+      "sha256": "738fdaf68ab42c63e1630ac8ceee56a1821bcfc56e33fdeea0038bf7770f0d6a",
+      "bytes": 21198
+    },
+    {
+      "path": "ci/41101927943/u3.12.14/replay-diagnostics/2026-week8-postgame-audit--week8_final_results.csv",
+      "sha256": "5b885bf098485b7942b3f59d5bb6869520c0f703366e34a6be2b5872f955923e",
+      "bytes": 10159
+    },
+    {
+      "path": "ci/41101927943/u3.12.14/replay-diagnostics/2026-week8-postgame-audit--week8_postgame_manifest.json",
+      "sha256": "c7b0a53b0d55ad6fd6dfc629bb76dcde0edc449870ff4cbe40734022c310a472",
+      "bytes": 15446
+    },
+    {
+      "path": "ci/41101927943/u3.12.14/replay-diagnostics/2026-week8-postgame-audit--week8_postgame_report.md",
+      "sha256": "474b81b69aedca0b63d407a694313d815af297d27c710c06b853abc512509778",
+      "bytes": 3165
+    },
+    {
+      "path": "ci/41101927943/u3.12.14/replay-diagnostics/2026-week8-postgame-audit--week8_totals_audit.csv",
+      "sha256": "a7175b6aa042e424b5d78ec22c9f906fbbd9195cace1f622cb4503858735a1d5",
+      "bytes": 25503
+    },
+    {
+      "path": "ci/41101927943/u3.12.14/replay-diagnostics/20261028T1320Z--derived_context_board.json",
+      "sha256": "4f6fadfc893bb89a44daa794dba566c138fa49c532a694f0fb5fb8edecc2b116",
+      "bytes": 527050
+    },
+    {
+      "path": "ci/41101927943/u3.12.14/replay-diagnostics/comparison.json",
+      "sha256": "4f14d1f974229402a99d6cbb903296aeec0ccbf41a6e294751af15ccc86c5181",
+      "bytes": 61274
+    },
+    {
+      "path": "ci/41101927943/u3.12.14/replay-verification/compatibility.json",
+      "sha256": "b5df24a29f0fc9f7a95fc5c0882c8da59062d726746952981e5a0f6b05fa484b",
+      "bytes": 7985
+    },
+    {
+      "path": "ci/41101927943/w3.11.9/replay-diagnostics/2026-week7-postgame-audit--week7_ats_audit.csv",
+      "sha256": "48a4171a57ea53dd18507a2e04721c1c77a7155f48c9f93704fd23bec3067dc8",
+      "bytes": 30898
+    },
+    {
+      "path": "ci/41101927943/w3.11.9/replay-diagnostics/2026-week7-postgame-audit--week7_cohort_membership.csv",
+      "sha256": "c64ccdbac799b08ab5f1634c5ddc3a193588111c8d4ea8612bcdd6edfc33156c",
+      "bytes": 15328
+    },
+    {
+      "path": "ci/41101927943/w3.11.9/replay-diagnostics/2026-week7-postgame-audit--week7_diagnostics.json",
+      "sha256": "4bf90ed78907f445442e8878841cf36bd18f6d97cd89652a3fd8efac5dea6969",
+      "bytes": 49682
+    },
+    {
+      "path": "ci/41101927943/w3.11.9/replay-diagnostics/2026-week7-postgame-audit--week7_final_results.csv",
+      "sha256": "bb59bf47455cc155d62f93e401dd043de7efb00d164866321e7ba1757cd57884",
+      "bytes": 11570
+    },
+    {
+      "path": "ci/41101927943/w3.11.9/replay-diagnostics/2026-week7-postgame-audit--week7_owner_approved_five_audit.csv",
+      "sha256": "bef7e456e1a653c0fb9d7318f6400cb8240bb46972155ad573c0075dd461fd86",
+      "bytes": 3215
+    },
+    {
+      "path": "ci/41101927943/w3.11.9/replay-diagnostics/2026-week7-postgame-audit--week7_postgame_report.md",
+      "sha256": "31562fbc6b646def90b3bf212efbd40eb021d585ee7d1dcb26cd30cc48609fc0",
+      "bytes": 5721
+    },
+    {
+      "path": "ci/41101927943/w3.11.9/replay-diagnostics/2026-week7-postgame-audit--week7_source_correction_impact.csv",
+      "sha256": "56ddb9acfcaf36d2eaa71fd895f4c1fda7878f5182c8008a6781e724109dc4cb",
+      "bytes": 541
+    },
+    {
+      "path": "ci/41101927943/w3.11.9/replay-diagnostics/2026-week7-postgame-audit--week7_totals_audit.csv",
+      "sha256": "d7dce91e9e5e26893f84e683a34f3817ed69200703cbe0f974cc194fbbff0dfb",
+      "bytes": 27463
+    },
+    {
+      "path": "ci/41101927943/w3.11.9/replay-diagnostics/2026-week8-audit-research--numerical_research_candidates.json",
+      "sha256": "838bc56b1b5634c6de5b0b22223193347d5d874c602062cdfe3924695ecd118c",
+      "bytes": 1939
+    },
+    {
+      "path": "ci/41101927943/w3.11.9/replay-diagnostics/2026-week8-postgame-audit--cross_week_diagnostics.json",
+      "sha256": "16aa60100666b9f577d419576bf998d6aa4d55340b463f5ebc821b49c3aa9316",
+      "bytes": 133928
+    },
+    {
+      "path": "ci/41101927943/w3.11.9/replay-diagnostics/2026-week8-postgame-audit--cross_week_tables.md",
+      "sha256": "8a295f194fa715b71c4259337b2d74b1fb3b46678c978d6ab3acdb401d462b13",
+      "bytes": 17656
+    },
+    {
+      "path": "ci/41101927943/w3.11.9/replay-diagnostics/2026-week8-postgame-audit--week8_ats_audit.csv",
+      "sha256": "74aa1c4b2766e8972f33fcba94cfa1241cdd09e90dabec61b6f89e5984b5791a",
+      "bytes": 28547
+    },
+    {
+      "path": "ci/41101927943/w3.11.9/replay-diagnostics/2026-week8-postgame-audit--week8_cohort_membership.csv",
+      "sha256": "5a8c7ac78e173e0dcefb48f1acdeb5bbb24d01db9ee5d1166b8ffb6ff59a56fc",
+      "bytes": 13415
+    },
+    {
+      "path": "ci/41101927943/w3.11.9/replay-diagnostics/2026-week8-postgame-audit--week8_diagnostics.json",
+      "sha256": "9a17461c4d9b672e57f445ba900487f33fc9ca79d534cbbfbaac2d414ec1f20c",
+      "bytes": 21198
+    },
+    {
+      "path": "ci/41101927943/w3.11.9/replay-diagnostics/2026-week8-postgame-audit--week8_final_results.csv",
+      "sha256": "5b885bf098485b7942b3f59d5bb6869520c0f703366e34a6be2b5872f955923e",
+      "bytes": 10159
+    },
+    {
+      "path": "ci/41101927943/w3.11.9/replay-diagnostics/2026-week8-postgame-audit--week8_postgame_manifest.json",
+      "sha256": "e157f3b1a95653e228b0d27960ade84bcd847b178ee1f5d65afbc5c7157cb738",
+      "bytes": 15446
+    },
+    {
+      "path": "ci/41101927943/w3.11.9/replay-diagnostics/2026-week8-postgame-audit--week8_postgame_report.md",
+      "sha256": "474b81b69aedca0b63d407a694313d815af297d27c710c06b853abc512509778",
+      "bytes": 3165
+    },
+    {
+      "path": "ci/41101927943/w3.11.9/replay-diagnostics/2026-week8-postgame-audit--week8_totals_audit.csv",
+      "sha256": "a7175b6aa042e424b5d78ec22c9f906fbbd9195cace1f622cb4503858735a1d5",
+      "bytes": 25503
+    },
+    {
+      "path": "ci/41101927943/w3.11.9/replay-diagnostics/20261028T1320Z--derived_context_board.json",
+      "sha256": "4f6fadfc893bb89a44daa794dba566c138fa49c532a694f0fb5fb8edecc2b116",
+      "bytes": 527050
+    },
+    {
+      "path": "ci/41101927943/w3.11.9/replay-diagnostics/comparison.json",
+      "sha256": "678819d3be1f9b10135ff75ff3cfaa168a20f296f4b208e822b4480a576c19a8",
+      "bytes": 212875
+    },
+    {
+      "path": "ci/41101927943/w3.11.9/replay-verification/compatibility.json",
+      "sha256": "b5df24a29f0fc9f7a95fc5c0882c8da59062d726746952981e5a0f6b05fa484b",
+      "bytes": 7985
+    },
+    {
+      "path": "ci/41101927943/w3.12.10/replay-diagnostics/2026-week7-postgame-audit--week7_ats_audit.csv",
+      "sha256": "48a4171a57ea53dd18507a2e04721c1c77a7155f48c9f93704fd23bec3067dc8",
+      "bytes": 30898
+    },
+    {
+      "path": "ci/41101927943/w3.12.10/replay-diagnostics/2026-week7-postgame-audit--week7_cohort_membership.csv",
+      "sha256": "c64ccdbac799b08ab5f1634c5ddc3a193588111c8d4ea8612bcdd6edfc33156c",
+      "bytes": 15328
+    },
+    {
+      "path": "ci/41101927943/w3.12.10/replay-diagnostics/2026-week7-postgame-audit--week7_diagnostics.json",
+      "sha256": "ec46f6b0a9eed4af66e8dfefcf6036fdcb0c56348ccfdf1246619e7a49f59c8d",
+      "bytes": 49682
+    },
+    {
+      "path": "ci/41101927943/w3.12.10/replay-diagnostics/2026-week7-postgame-audit--week7_final_results.csv",
+      "sha256": "bb59bf47455cc155d62f93e401dd043de7efb00d164866321e7ba1757cd57884",
+      "bytes": 11570
+    },
+    {
+      "path": "ci/41101927943/w3.12.10/replay-diagnostics/2026-week7-postgame-audit--week7_owner_approved_five_audit.csv",
+      "sha256": "bef7e456e1a653c0fb9d7318f6400cb8240bb46972155ad573c0075dd461fd86",
+      "bytes": 3215
+    },
+    {
+      "path": "ci/41101927943/w3.12.10/replay-diagnostics/2026-week7-postgame-audit--week7_postgame_report.md",
+      "sha256": "31562fbc6b646def90b3bf212efbd40eb021d585ee7d1dcb26cd30cc48609fc0",
+      "bytes": 5721
+    },
+    {
+      "path": "ci/41101927943/w3.12.10/replay-diagnostics/2026-week7-postgame-audit--week7_source_correction_impact.csv",
+      "sha256": "56ddb9acfcaf36d2eaa71fd895f4c1fda7878f5182c8008a6781e724109dc4cb",
+      "bytes": 541
+    },
+    {
+      "path": "ci/41101927943/w3.12.10/replay-diagnostics/2026-week7-postgame-audit--week7_totals_audit.csv",
+      "sha256": "d7dce91e9e5e26893f84e683a34f3817ed69200703cbe0f974cc194fbbff0dfb",
+      "bytes": 27463
+    },
+    {
+      "path": "ci/41101927943/w3.12.10/replay-diagnostics/2026-week8-audit-research--numerical_research_candidates.json",
+      "sha256": "36d867cf1f808d2a2022ebfcae8837d06e2b8128d2f1dbb67077953b5babeb46",
+      "bytes": 1939
+    },
+    {
+      "path": "ci/41101927943/w3.12.10/replay-diagnostics/2026-week8-postgame-audit--cross_week_diagnostics.json",
+      "sha256": "88d5974fedbd925514b6be06b06e70e3c1eb54734a3181a951d1bda90ebc07e6",
+      "bytes": 133944
+    },
+    {
+      "path": "ci/41101927943/w3.12.10/replay-diagnostics/2026-week8-postgame-audit--cross_week_tables.md",
+      "sha256": "8a295f194fa715b71c4259337b2d74b1fb3b46678c978d6ab3acdb401d462b13",
+      "bytes": 17656
+    },
+    {
+      "path": "ci/41101927943/w3.12.10/replay-diagnostics/2026-week8-postgame-audit--week8_ats_audit.csv",
+      "sha256": "74aa1c4b2766e8972f33fcba94cfa1241cdd09e90dabec61b6f89e5984b5791a",
+      "bytes": 28547
+    },
+    {
+      "path": "ci/41101927943/w3.12.10/replay-diagnostics/2026-week8-postgame-audit--week8_cohort_membership.csv",
+      "sha256": "5a8c7ac78e173e0dcefb48f1acdeb5bbb24d01db9ee5d1166b8ffb6ff59a56fc",
+      "bytes": 13415
+    },
+    {
+      "path": "ci/41101927943/w3.12.10/replay-diagnostics/2026-week8-postgame-audit--week8_diagnostics.json",
+      "sha256": "738fdaf68ab42c63e1630ac8ceee56a1821bcfc56e33fdeea0038bf7770f0d6a",
+      "bytes": 21198
+    },
+    {
+      "path": "ci/41101927943/w3.12.10/replay-diagnostics/2026-week8-postgame-audit--week8_final_results.csv",
+      "sha256": "5b885bf098485b7942b3f59d5bb6869520c0f703366e34a6be2b5872f955923e",
+      "bytes": 10159
+    },
+    {
+      "path": "ci/41101927943/w3.12.10/replay-diagnostics/2026-week8-postgame-audit--week8_postgame_manifest.json",
+      "sha256": "c7b0a53b0d55ad6fd6dfc629bb76dcde0edc449870ff4cbe40734022c310a472",
+      "bytes": 15446
+    },
+    {
+      "path": "ci/41101927943/w3.12.10/replay-diagnostics/2026-week8-postgame-audit--week8_postgame_report.md",
+      "sha256": "474b81b69aedca0b63d407a694313d815af297d27c710c06b853abc512509778",
+      "bytes": 3165
+    },
+    {
+      "path": "ci/41101927943/w3.12.10/replay-diagnostics/2026-week8-postgame-audit--week8_totals_audit.csv",
+      "sha256": "a7175b6aa042e424b5d78ec22c9f906fbbd9195cace1f622cb4503858735a1d5",
+      "bytes": 25503
+    },
+    {
+      "path": "ci/41101927943/w3.12.10/replay-diagnostics/20261028T1320Z--derived_context_board.json",
+      "sha256": "4f6fadfc893bb89a44daa794dba566c138fa49c532a694f0fb5fb8edecc2b116",
+      "bytes": 527050
+    },
+    {
+      "path": "ci/41101927943/w3.12.10/replay-diagnostics/comparison.json",
+      "sha256": "1f44a6e01ac8682e5a957bd630c769307b4050951036d3a10c47851b6c043912",
+      "bytes": 61395
+    },
+    {
+      "path": "ci/41101927943/w3.12.10/replay-verification/compatibility.json",
+      "sha256": "b5df24a29f0fc9f7a95fc5c0882c8da59062d726746952981e5a0f6b05fa484b",
+      "bytes": 7985
+    },
+    {
+      "path": "ci/41102004369/124220661063.log.gz",
+      "sha256": "e9c4dcad2e15c5422ae54278e45be9aa1673f5576ab0d53b75e05bfca644f0c7",
+      "bytes": 10171
+    },
+    {
+      "path": "ci/41102004369/124220661227.log.gz",
+      "sha256": "2839db2940da00948676ce1aa6ee9db500f273f13b7b64b9dd0feceda904a09b",
+      "bytes": 8745
+    },
+    {
+      "path": "ci/41102004369/124220661239.log.gz",
+      "sha256": "39fe271072a205f7c6f7fed296a6c26bc5cd48bc70756e073e2cadfe76e6e1ac",
+      "bytes": 11123
+    },
+    {
+      "path": "ci/41102004369/124220661310.log.gz",
+      "sha256": "2773887f0f27486008b5156496d2ec6360c21b693aa0f6b0e3878c9f18339fd9",
+      "bytes": 8582
+    },
+    {
+      "path": "ci/41102004369/artifacts.json",
+      "sha256": "0e4065805ed60b4b506ca35f2d66ca2e32d2c1325d6714b5c0ab962a716b7666",
+      "bytes": 3651
+    },
+    {
+      "path": "ci/41102004369/jobs.json",
+      "sha256": "68d31b1e71bf9a55cabcd9458dcb22268770c1e84b00e9cbdd62336aa65bc9dd",
+      "bytes": 19314
+    },
+    {
+      "path": "ci/41102004369/run.json",
+      "sha256": "b3b92853c9d533fc1d51cda6f8f37f2bda1e012bd5bdc4b0cab58c53db8e5fbd",
+      "bytes": 15080
+    },
+    {
+      "path": "ci/41102004369/u3.11.17/replay-diagnostics/2026-week7-postgame-audit--week7_ats_audit.csv",
+      "sha256": "48a4171a57ea53dd18507a2e04721c1c77a7155f48c9f93704fd23bec3067dc8",
+      "bytes": 30898
+    },
+    {
+      "path": "ci/41102004369/u3.11.17/replay-diagnostics/2026-week7-postgame-audit--week7_cohort_membership.csv",
+      "sha256": "c64ccdbac799b08ab5f1634c5ddc3a193588111c8d4ea8612bcdd6edfc33156c",
+      "bytes": 15328
+    },
+    {
+      "path": "ci/41102004369/u3.11.17/replay-diagnostics/2026-week7-postgame-audit--week7_diagnostics.json",
+      "sha256": "4bf90ed78907f445442e8878841cf36bd18f6d97cd89652a3fd8efac5dea6969",
+      "bytes": 49682
+    },
+    {
+      "path": "ci/41102004369/u3.11.17/replay-diagnostics/2026-week7-postgame-audit--week7_final_results.csv",
+      "sha256": "bb59bf47455cc155d62f93e401dd043de7efb00d164866321e7ba1757cd57884",
+      "bytes": 11570
+    },
+    {
+      "path": "ci/41102004369/u3.11.17/replay-diagnostics/2026-week7-postgame-audit--week7_owner_approved_five_audit.csv",
+      "sha256": "bef7e456e1a653c0fb9d7318f6400cb8240bb46972155ad573c0075dd461fd86",
+      "bytes": 3215
+    },
+    {
+      "path": "ci/41102004369/u3.11.17/replay-diagnostics/2026-week7-postgame-audit--week7_postgame_report.md",
+      "sha256": "31562fbc6b646def90b3bf212efbd40eb021d585ee7d1dcb26cd30cc48609fc0",
+      "bytes": 5721
+    },
+    {
+      "path": "ci/41102004369/u3.11.17/replay-diagnostics/2026-week7-postgame-audit--week7_source_correction_impact.csv",
+      "sha256": "56ddb9acfcaf36d2eaa71fd895f4c1fda7878f5182c8008a6781e724109dc4cb",
+      "bytes": 541
+    },
+    {
+      "path": "ci/41102004369/u3.11.17/replay-diagnostics/2026-week7-postgame-audit--week7_totals_audit.csv",
+      "sha256": "d7dce91e9e5e26893f84e683a34f3817ed69200703cbe0f974cc194fbbff0dfb",
+      "bytes": 27463
+    },
+    {
+      "path": "ci/41102004369/u3.11.17/replay-diagnostics/2026-week8-audit-research--numerical_research_candidates.json",
+      "sha256": "838bc56b1b5634c6de5b0b22223193347d5d874c602062cdfe3924695ecd118c",
+      "bytes": 1939
+    },
+    {
+      "path": "ci/41102004369/u3.11.17/replay-diagnostics/2026-week8-postgame-audit--cross_week_diagnostics.json",
+      "sha256": "16aa60100666b9f577d419576bf998d6aa4d55340b463f5ebc821b49c3aa9316",
+      "bytes": 133928
+    },
+    {
+      "path": "ci/41102004369/u3.11.17/replay-diagnostics/2026-week8-postgame-audit--cross_week_tables.md",
+      "sha256": "8a295f194fa715b71c4259337b2d74b1fb3b46678c978d6ab3acdb401d462b13",
+      "bytes": 17656
+    },
+    {
+      "path": "ci/41102004369/u3.11.17/replay-diagnostics/2026-week8-postgame-audit--week8_ats_audit.csv",
+      "sha256": "74aa1c4b2766e8972f33fcba94cfa1241cdd09e90dabec61b6f89e5984b5791a",
+      "bytes": 28547
+    },
+    {
+      "path": "ci/41102004369/u3.11.17/replay-diagnostics/2026-week8-postgame-audit--week8_cohort_membership.csv",
+      "sha256": "5a8c7ac78e173e0dcefb48f1acdeb5bbb24d01db9ee5d1166b8ffb6ff59a56fc",
+      "bytes": 13415
+    },
+    {
+      "path": "ci/41102004369/u3.11.17/replay-diagnostics/2026-week8-postgame-audit--week8_diagnostics.json",
+      "sha256": "9a17461c4d9b672e57f445ba900487f33fc9ca79d534cbbfbaac2d414ec1f20c",
+      "bytes": 21198
+    },
+    {
+      "path": "ci/41102004369/u3.11.17/replay-diagnostics/2026-week8-postgame-audit--week8_final_results.csv",
+      "sha256": "5b885bf098485b7942b3f59d5bb6869520c0f703366e34a6be2b5872f955923e",
+      "bytes": 10159
+    },
+    {
+      "path": "ci/41102004369/u3.11.17/replay-diagnostics/2026-week8-postgame-audit--week8_postgame_manifest.json",
+      "sha256": "e157f3b1a95653e228b0d27960ade84bcd847b178ee1f5d65afbc5c7157cb738",
+      "bytes": 15446
+    },
+    {
+      "path": "ci/41102004369/u3.11.17/replay-diagnostics/2026-week8-postgame-audit--week8_postgame_report.md",
+      "sha256": "474b81b69aedca0b63d407a694313d815af297d27c710c06b853abc512509778",
+      "bytes": 3165
+    },
+    {
+      "path": "ci/41102004369/u3.11.17/replay-diagnostics/2026-week8-postgame-audit--week8_totals_audit.csv",
+      "sha256": "a7175b6aa042e424b5d78ec22c9f906fbbd9195cace1f622cb4503858735a1d5",
+      "bytes": 25503
+    },
+    {
+      "path": "ci/41102004369/u3.11.17/replay-diagnostics/comparison.json",
+      "sha256": "eb2ddee9f8ab4d2fd5e29638e878a9a79c4b055de2124fd2c332b1eb56ebbc91",
+      "bytes": 160301
+    },
+    {
+      "path": "ci/41102004369/u3.11.17/replay-verification/compatibility.json",
+      "sha256": "e527788865e3f0583cc25d90464a1618ed22af2ffc9023ec9b5f0fbe37ca04b5",
+      "bytes": 5667
+    },
+    {
+      "path": "ci/41102004369/u3.12.14/replay-diagnostics/2026-week7-postgame-audit--week7_ats_audit.csv",
+      "sha256": "48a4171a57ea53dd18507a2e04721c1c77a7155f48c9f93704fd23bec3067dc8",
+      "bytes": 30898
+    },
+    {
+      "path": "ci/41102004369/u3.12.14/replay-diagnostics/2026-week7-postgame-audit--week7_cohort_membership.csv",
+      "sha256": "c64ccdbac799b08ab5f1634c5ddc3a193588111c8d4ea8612bcdd6edfc33156c",
+      "bytes": 15328
+    },
+    {
+      "path": "ci/41102004369/u3.12.14/replay-diagnostics/2026-week7-postgame-audit--week7_diagnostics.json",
+      "sha256": "ec46f6b0a9eed4af66e8dfefcf6036fdcb0c56348ccfdf1246619e7a49f59c8d",
+      "bytes": 49682
+    },
+    {
+      "path": "ci/41102004369/u3.12.14/replay-diagnostics/2026-week7-postgame-audit--week7_final_results.csv",
+      "sha256": "bb59bf47455cc155d62f93e401dd043de7efb00d164866321e7ba1757cd57884",
+      "bytes": 11570
+    },
+    {
+      "path": "ci/41102004369/u3.12.14/replay-diagnostics/2026-week7-postgame-audit--week7_owner_approved_five_audit.csv",
+      "sha256": "bef7e456e1a653c0fb9d7318f6400cb8240bb46972155ad573c0075dd461fd86",
+      "bytes": 3215
+    },
+    {
+      "path": "ci/41102004369/u3.12.14/replay-diagnostics/2026-week7-postgame-audit--week7_postgame_report.md",
+      "sha256": "31562fbc6b646def90b3bf212efbd40eb021d585ee7d1dcb26cd30cc48609fc0",
+      "bytes": 5721
+    },
+    {
+      "path": "ci/41102004369/u3.12.14/replay-diagnostics/2026-week7-postgame-audit--week7_source_correction_impact.csv",
+      "sha256": "56ddb9acfcaf36d2eaa71fd895f4c1fda7878f5182c8008a6781e724109dc4cb",
+      "bytes": 541
+    },
+    {
+      "path": "ci/41102004369/u3.12.14/replay-diagnostics/2026-week7-postgame-audit--week7_totals_audit.csv",
+      "sha256": "d7dce91e9e5e26893f84e683a34f3817ed69200703cbe0f974cc194fbbff0dfb",
+      "bytes": 27463
+    },
+    {
+      "path": "ci/41102004369/u3.12.14/replay-diagnostics/2026-week8-audit-research--numerical_research_candidates.json",
+      "sha256": "36d867cf1f808d2a2022ebfcae8837d06e2b8128d2f1dbb67077953b5babeb46",
+      "bytes": 1939
+    },
+    {
+      "path": "ci/41102004369/u3.12.14/replay-diagnostics/2026-week8-postgame-audit--cross_week_diagnostics.json",
+      "sha256": "88d5974fedbd925514b6be06b06e70e3c1eb54734a3181a951d1bda90ebc07e6",
+      "bytes": 133944
+    },
+    {
+      "path": "ci/41102004369/u3.12.14/replay-diagnostics/2026-week8-postgame-audit--cross_week_tables.md",
+      "sha256": "8a295f194fa715b71c4259337b2d74b1fb3b46678c978d6ab3acdb401d462b13",
+      "bytes": 17656
+    },
+    {
+      "path": "ci/41102004369/u3.12.14/replay-diagnostics/2026-week8-postgame-audit--week8_ats_audit.csv",
+      "sha256": "74aa1c4b2766e8972f33fcba94cfa1241cdd09e90dabec61b6f89e5984b5791a",
+      "bytes": 28547
+    },
+    {
+      "path": "ci/41102004369/u3.12.14/replay-diagnostics/2026-week8-postgame-audit--week8_cohort_membership.csv",
+      "sha256": "5a8c7ac78e173e0dcefb48f1acdeb5bbb24d01db9ee5d1166b8ffb6ff59a56fc",
+      "bytes": 13415
+    },
+    {
+      "path": "ci/41102004369/u3.12.14/replay-diagnostics/2026-week8-postgame-audit--week8_diagnostics.json",
+      "sha256": "738fdaf68ab42c63e1630ac8ceee56a1821bcfc56e33fdeea0038bf7770f0d6a",
+      "bytes": 21198
+    },
+    {
+      "path": "ci/41102004369/u3.12.14/replay-diagnostics/2026-week8-postgame-audit--week8_final_results.csv",
+      "sha256": "5b885bf098485b7942b3f59d5bb6869520c0f703366e34a6be2b5872f955923e",
+      "bytes": 10159
+    },
+    {
+      "path": "ci/41102004369/u3.12.14/replay-diagnostics/2026-week8-postgame-audit--week8_postgame_manifest.json",
+      "sha256": "c7b0a53b0d55ad6fd6dfc629bb76dcde0edc449870ff4cbe40734022c310a472",
+      "bytes": 15446
+    },
+    {
+      "path": "ci/41102004369/u3.12.14/replay-diagnostics/2026-week8-postgame-audit--week8_postgame_report.md",
+      "sha256": "474b81b69aedca0b63d407a694313d815af297d27c710c06b853abc512509778",
+      "bytes": 3165
+    },
+    {
+      "path": "ci/41102004369/u3.12.14/replay-diagnostics/2026-week8-postgame-audit--week8_totals_audit.csv",
+      "sha256": "a7175b6aa042e424b5d78ec22c9f906fbbd9195cace1f622cb4503858735a1d5",
+      "bytes": 25503
+    },
+    {
+      "path": "ci/41102004369/u3.12.14/replay-diagnostics/comparison.json",
+      "sha256": "dd55f673e9c3ef77593a24c7207ff7999e19cf0ee9c52a5d94468cb08a986646",
+      "bytes": 8647
+    },
+    {
+      "path": "ci/41102004369/u3.12.14/replay-verification/compatibility.json",
+      "sha256": "e527788865e3f0583cc25d90464a1618ed22af2ffc9023ec9b5f0fbe37ca04b5",
+      "bytes": 5667
+    },
+    {
+      "path": "ci/41102004369/w3.11.9/replay-diagnostics/2026-week7-postgame-audit--week7_ats_audit.csv",
+      "sha256": "48a4171a57ea53dd18507a2e04721c1c77a7155f48c9f93704fd23bec3067dc8",
+      "bytes": 30898
+    },
+    {
+      "path": "ci/41102004369/w3.11.9/replay-diagnostics/2026-week7-postgame-audit--week7_cohort_membership.csv",
+      "sha256": "c64ccdbac799b08ab5f1634c5ddc3a193588111c8d4ea8612bcdd6edfc33156c",
+      "bytes": 15328
+    },
+    {
+      "path": "ci/41102004369/w3.11.9/replay-diagnostics/2026-week7-postgame-audit--week7_diagnostics.json",
+      "sha256": "4bf90ed78907f445442e8878841cf36bd18f6d97cd89652a3fd8efac5dea6969",
+      "bytes": 49682
+    },
+    {
+      "path": "ci/41102004369/w3.11.9/replay-diagnostics/2026-week7-postgame-audit--week7_final_results.csv",
+      "sha256": "bb59bf47455cc155d62f93e401dd043de7efb00d164866321e7ba1757cd57884",
+      "bytes": 11570
+    },
+    {
+      "path": "ci/41102004369/w3.11.9/replay-diagnostics/2026-week7-postgame-audit--week7_owner_approved_five_audit.csv",
+      "sha256": "bef7e456e1a653c0fb9d7318f6400cb8240bb46972155ad573c0075dd461fd86",
+      "bytes": 3215
+    },
+    {
+      "path": "ci/41102004369/w3.11.9/replay-diagnostics/2026-week7-postgame-audit--week7_postgame_report.md",
+      "sha256": "31562fbc6b646def90b3bf212efbd40eb021d585ee7d1dcb26cd30cc48609fc0",
+      "bytes": 5721
+    },
+    {
+      "path": "ci/41102004369/w3.11.9/replay-diagnostics/2026-week7-postgame-audit--week7_source_correction_impact.csv",
+      "sha256": "56ddb9acfcaf36d2eaa71fd895f4c1fda7878f5182c8008a6781e724109dc4cb",
+      "bytes": 541
+    },
+    {
+      "path": "ci/41102004369/w3.11.9/replay-diagnostics/2026-week7-postgame-audit--week7_totals_audit.csv",
+      "sha256": "d7dce91e9e5e26893f84e683a34f3817ed69200703cbe0f974cc194fbbff0dfb",
+      "bytes": 27463
+    },
+    {
+      "path": "ci/41102004369/w3.11.9/replay-diagnostics/2026-week8-audit-research--numerical_research_candidates.json",
+      "sha256": "838bc56b1b5634c6de5b0b22223193347d5d874c602062cdfe3924695ecd118c",
+      "bytes": 1939
+    },
+    {
+      "path": "ci/41102004369/w3.11.9/replay-diagnostics/2026-week8-postgame-audit--cross_week_diagnostics.json",
+      "sha256": "16aa60100666b9f577d419576bf998d6aa4d55340b463f5ebc821b49c3aa9316",
+      "bytes": 133928
+    },
+    {
+      "path": "ci/41102004369/w3.11.9/replay-diagnostics/2026-week8-postgame-audit--cross_week_tables.md",
+      "sha256": "8a295f194fa715b71c4259337b2d74b1fb3b46678c978d6ab3acdb401d462b13",
+      "bytes": 17656
+    },
+    {
+      "path": "ci/41102004369/w3.11.9/replay-diagnostics/2026-week8-postgame-audit--week8_ats_audit.csv",
+      "sha256": "74aa1c4b2766e8972f33fcba94cfa1241cdd09e90dabec61b6f89e5984b5791a",
+      "bytes": 28547
+    },
+    {
+      "path": "ci/41102004369/w3.11.9/replay-diagnostics/2026-week8-postgame-audit--week8_cohort_membership.csv",
+      "sha256": "5a8c7ac78e173e0dcefb48f1acdeb5bbb24d01db9ee5d1166b8ffb6ff59a56fc",
+      "bytes": 13415
+    },
+    {
+      "path": "ci/41102004369/w3.11.9/replay-diagnostics/2026-week8-postgame-audit--week8_diagnostics.json",
+      "sha256": "9a17461c4d9b672e57f445ba900487f33fc9ca79d534cbbfbaac2d414ec1f20c",
+      "bytes": 21198
+    },
+    {
+      "path": "ci/41102004369/w3.11.9/replay-diagnostics/2026-week8-postgame-audit--week8_final_results.csv",
+      "sha256": "5b885bf098485b7942b3f59d5bb6869520c0f703366e34a6be2b5872f955923e",
+      "bytes": 10159
+    },
+    {
+      "path": "ci/41102004369/w3.11.9/replay-diagnostics/2026-week8-postgame-audit--week8_postgame_manifest.json",
+      "sha256": "e157f3b1a95653e228b0d27960ade84bcd847b178ee1f5d65afbc5c7157cb738",
+      "bytes": 15446
+    },
+    {
+      "path": "ci/41102004369/w3.11.9/replay-diagnostics/2026-week8-postgame-audit--week8_postgame_report.md",
+      "sha256": "474b81b69aedca0b63d407a694313d815af297d27c710c06b853abc512509778",
+      "bytes": 3165
+    },
+    {
+      "path": "ci/41102004369/w3.11.9/replay-diagnostics/2026-week8-postgame-audit--week8_totals_audit.csv",
+      "sha256": "a7175b6aa042e424b5d78ec22c9f906fbbd9195cace1f622cb4503858735a1d5",
+      "bytes": 25503
+    },
+    {
+      "path": "ci/41102004369/w3.11.9/replay-diagnostics/comparison.json",
+      "sha256": "c3682c924cd21c2322a6fca658187b3571f9af39e2b089a2cc1a592dffeb582e",
+      "bytes": 160248
+    },
+    {
+      "path": "ci/41102004369/w3.11.9/replay-verification/compatibility.json",
+      "sha256": "e527788865e3f0583cc25d90464a1618ed22af2ffc9023ec9b5f0fbe37ca04b5",
+      "bytes": 5667
+    },
+    {
+      "path": "ci/41102004369/w3.12.10/replay-diagnostics/2026-week7-postgame-audit--week7_ats_audit.csv",
+      "sha256": "48a4171a57ea53dd18507a2e04721c1c77a7155f48c9f93704fd23bec3067dc8",
+      "bytes": 30898
+    },
+    {
+      "path": "ci/41102004369/w3.12.10/replay-diagnostics/2026-week7-postgame-audit--week7_cohort_membership.csv",
+      "sha256": "c64ccdbac799b08ab5f1634c5ddc3a193588111c8d4ea8612bcdd6edfc33156c",
+      "bytes": 15328
+    },
+    {
+      "path": "ci/41102004369/w3.12.10/replay-diagnostics/2026-week7-postgame-audit--week7_diagnostics.json",
+      "sha256": "ec46f6b0a9eed4af66e8dfefcf6036fdcb0c56348ccfdf1246619e7a49f59c8d",
+      "bytes": 49682
+    },
+    {
+      "path": "ci/41102004369/w3.12.10/replay-diagnostics/2026-week7-postgame-audit--week7_final_results.csv",
+      "sha256": "bb59bf47455cc155d62f93e401dd043de7efb00d164866321e7ba1757cd57884",
+      "bytes": 11570
+    },
+    {
+      "path": "ci/41102004369/w3.12.10/replay-diagnostics/2026-week7-postgame-audit--week7_owner_approved_five_audit.csv",
+      "sha256": "bef7e456e1a653c0fb9d7318f6400cb8240bb46972155ad573c0075dd461fd86",
+      "bytes": 3215
+    },
+    {
+      "path": "ci/41102004369/w3.12.10/replay-diagnostics/2026-week7-postgame-audit--week7_postgame_report.md",
+      "sha256": "31562fbc6b646def90b3bf212efbd40eb021d585ee7d1dcb26cd30cc48609fc0",
+      "bytes": 5721
+    },
+    {
+      "path": "ci/41102004369/w3.12.10/replay-diagnostics/2026-week7-postgame-audit--week7_source_correction_impact.csv",
+      "sha256": "56ddb9acfcaf36d2eaa71fd895f4c1fda7878f5182c8008a6781e724109dc4cb",
+      "bytes": 541
+    },
+    {
+      "path": "ci/41102004369/w3.12.10/replay-diagnostics/2026-week7-postgame-audit--week7_totals_audit.csv",
+      "sha256": "d7dce91e9e5e26893f84e683a34f3817ed69200703cbe0f974cc194fbbff0dfb",
+      "bytes": 27463
+    },
+    {
+      "path": "ci/41102004369/w3.12.10/replay-diagnostics/2026-week8-audit-research--numerical_research_candidates.json",
+      "sha256": "36d867cf1f808d2a2022ebfcae8837d06e2b8128d2f1dbb67077953b5babeb46",
+      "bytes": 1939
+    },
+    {
+      "path": "ci/41102004369/w3.12.10/replay-diagnostics/2026-week8-postgame-audit--cross_week_diagnostics.json",
+      "sha256": "88d5974fedbd925514b6be06b06e70e3c1eb54734a3181a951d1bda90ebc07e6",
+      "bytes": 133944
+    },
+    {
+      "path": "ci/41102004369/w3.12.10/replay-diagnostics/2026-week8-postgame-audit--cross_week_tables.md",
+      "sha256": "8a295f194fa715b71c4259337b2d74b1fb3b46678c978d6ab3acdb401d462b13",
+      "bytes": 17656
+    },
+    {
+      "path": "ci/41102004369/w3.12.10/replay-diagnostics/2026-week8-postgame-audit--week8_ats_audit.csv",
+      "sha256": "74aa1c4b2766e8972f33fcba94cfa1241cdd09e90dabec61b6f89e5984b5791a",
+      "bytes": 28547
+    },
+    {
+      "path": "ci/41102004369/w3.12.10/replay-diagnostics/2026-week8-postgame-audit--week8_cohort_membership.csv",
+      "sha256": "5a8c7ac78e173e0dcefb48f1acdeb5bbb24d01db9ee5d1166b8ffb6ff59a56fc",
+      "bytes": 13415
+    },
+    {
+      "path": "ci/41102004369/w3.12.10/replay-diagnostics/2026-week8-postgame-audit--week8_diagnostics.json",
+      "sha256": "738fdaf68ab42c63e1630ac8ceee56a1821bcfc56e33fdeea0038bf7770f0d6a",
+      "bytes": 21198
+    },
+    {
+      "path": "ci/41102004369/w3.12.10/replay-diagnostics/2026-week8-postgame-audit--week8_final_results.csv",
+      "sha256": "5b885bf098485b7942b3f59d5bb6869520c0f703366e34a6be2b5872f955923e",
+      "bytes": 10159
+    },
+    {
+      "path": "ci/41102004369/w3.12.10/replay-diagnostics/2026-week8-postgame-audit--week8_postgame_manifest.json",
+      "sha256": "c7b0a53b0d55ad6fd6dfc629bb76dcde0edc449870ff4cbe40734022c310a472",
+      "bytes": 15446
+    },
+    {
+      "path": "ci/41102004369/w3.12.10/replay-diagnostics/2026-week8-postgame-audit--week8_postgame_report.md",
+      "sha256": "474b81b69aedca0b63d407a694313d815af297d27c710c06b853abc512509778",
+      "bytes": 3165
+    },
+    {
+      "path": "ci/41102004369/w3.12.10/replay-diagnostics/2026-week8-postgame-audit--week8_totals_audit.csv",
+      "sha256": "a7175b6aa042e424b5d78ec22c9f906fbbd9195cace1f622cb4503858735a1d5",
+      "bytes": 25503
+    },
+    {
+      "path": "ci/41102004369/w3.12.10/replay-diagnostics/comparison.json",
+      "sha256": "8c6089286f4904405fadc3d9afcf802344efe4b7525eacc3e0f500a77bcabf33",
+      "bytes": 8768
+    },
+    {
+      "path": "ci/41102004369/w3.12.10/replay-verification/compatibility.json",
+      "sha256": "e527788865e3f0583cc25d90464a1618ed22af2ffc9023ec9b5f0fbe37ca04b5",
+      "bytes": 5667
+    },
+    {
+      "path": "ci/41102071702/124220826134.log.gz",
+      "sha256": "b03c5c16381c79cd4bd408cce7f7397e077310b8476de0c519861f1b34701eb7",
+      "bytes": 8820
+    },
+    {
+      "path": "ci/41102071702/124220826335.log.gz",
+      "sha256": "55034e4b43182f98ff9660f91510877e4f13893742ac0bea779788efc0a34ed8",
+      "bytes": 11159
+    },
+    {
+      "path": "ci/41102071702/124220826358.log.gz",
+      "sha256": "90550e442b052f6d91a0f730b5aeade4fab3b9190e53b2cab17220fda0c3771e",
+      "bytes": 10649
+    },
+    {
+      "path": "ci/41102071702/124220826469.log.gz",
+      "sha256": "4edd57ed716deb528d2891cdbeaef259ec74f7e9812abe4c3a8ec2b2c164d429",
+      "bytes": 9344
+    },
+    {
+      "path": "ci/41102071702/artifacts.json",
+      "sha256": "1e5ee64abc93d3a068d0cfbf65a2ca9c8bea1ee5ebf88f3115c9b38c9fbe4bcb",
+      "bytes": 3681
+    },
+    {
+      "path": "ci/41102071702/jobs.json",
+      "sha256": "fd1af5fb895b48f5c44f8b2f929516dbf9da55383fc7d891b4d5a80bf81432f7",
+      "bytes": 19342
+    },
+    {
+      "path": "ci/41102071702/run.json",
+      "sha256": "920c64d5266c264a04e7e7ef82c12dfe6eddaaa5b5fd7a603a4a267ab5fbd8d3",
+      "bytes": 15090
+    },
+    {
+      "path": "ci/41102071702/u3.11.17/replay-diagnostics/2026-week7-postgame-audit--week7_ats_audit.csv",
+      "sha256": "48a4171a57ea53dd18507a2e04721c1c77a7155f48c9f93704fd23bec3067dc8",
+      "bytes": 30898
+    },
+    {
+      "path": "ci/41102071702/u3.11.17/replay-diagnostics/2026-week7-postgame-audit--week7_cohort_membership.csv",
+      "sha256": "c64ccdbac799b08ab5f1634c5ddc3a193588111c8d4ea8612bcdd6edfc33156c",
+      "bytes": 15328
+    },
+    {
+      "path": "ci/41102071702/u3.11.17/replay-diagnostics/2026-week7-postgame-audit--week7_diagnostics.json",
+      "sha256": "4bf90ed78907f445442e8878841cf36bd18f6d97cd89652a3fd8efac5dea6969",
+      "bytes": 49682
+    },
+    {
+      "path": "ci/41102071702/u3.11.17/replay-diagnostics/2026-week7-postgame-audit--week7_final_results.csv",
+      "sha256": "bb59bf47455cc155d62f93e401dd043de7efb00d164866321e7ba1757cd57884",
+      "bytes": 11570
+    },
+    {
+      "path": "ci/41102071702/u3.11.17/replay-diagnostics/2026-week7-postgame-audit--week7_owner_approved_five_audit.csv",
+      "sha256": "bef7e456e1a653c0fb9d7318f6400cb8240bb46972155ad573c0075dd461fd86",
+      "bytes": 3215
+    },
+    {
+      "path": "ci/41102071702/u3.11.17/replay-diagnostics/2026-week7-postgame-audit--week7_postgame_report.md",
+      "sha256": "31562fbc6b646def90b3bf212efbd40eb021d585ee7d1dcb26cd30cc48609fc0",
+      "bytes": 5721
+    },
+    {
+      "path": "ci/41102071702/u3.11.17/replay-diagnostics/2026-week7-postgame-audit--week7_source_correction_impact.csv",
+      "sha256": "56ddb9acfcaf36d2eaa71fd895f4c1fda7878f5182c8008a6781e724109dc4cb",
+      "bytes": 541
+    },
+    {
+      "path": "ci/41102071702/u3.11.17/replay-diagnostics/2026-week7-postgame-audit--week7_totals_audit.csv",
+      "sha256": "d7dce91e9e5e26893f84e683a34f3817ed69200703cbe0f974cc194fbbff0dfb",
+      "bytes": 27463
+    },
+    {
+      "path": "ci/41102071702/u3.11.17/replay-diagnostics/2026-week8-audit-research--numerical_research_candidates.json",
+      "sha256": "838bc56b1b5634c6de5b0b22223193347d5d874c602062cdfe3924695ecd118c",
+      "bytes": 1939
+    },
+    {
+      "path": "ci/41102071702/u3.11.17/replay-diagnostics/2026-week8-postgame-audit--cross_week_diagnostics.json",
+      "sha256": "16aa60100666b9f577d419576bf998d6aa4d55340b463f5ebc821b49c3aa9316",
+      "bytes": 133928
+    },
+    {
+      "path": "ci/41102071702/u3.11.17/replay-diagnostics/2026-week8-postgame-audit--cross_week_tables.md",
+      "sha256": "8a295f194fa715b71c4259337b2d74b1fb3b46678c978d6ab3acdb401d462b13",
+      "bytes": 17656
+    },
+    {
+      "path": "ci/41102071702/u3.11.17/replay-diagnostics/2026-week8-postgame-audit--week8_ats_audit.csv",
+      "sha256": "74aa1c4b2766e8972f33fcba94cfa1241cdd09e90dabec61b6f89e5984b5791a",
+      "bytes": 28547
+    },
+    {
+      "path": "ci/41102071702/u3.11.17/replay-diagnostics/2026-week8-postgame-audit--week8_cohort_membership.csv",
+      "sha256": "5a8c7ac78e173e0dcefb48f1acdeb5bbb24d01db9ee5d1166b8ffb6ff59a56fc",
+      "bytes": 13415
+    },
+    {
+      "path": "ci/41102071702/u3.11.17/replay-diagnostics/2026-week8-postgame-audit--week8_diagnostics.json",
+      "sha256": "9a17461c4d9b672e57f445ba900487f33fc9ca79d534cbbfbaac2d414ec1f20c",
+      "bytes": 21198
+    },
+    {
+      "path": "ci/41102071702/u3.11.17/replay-diagnostics/2026-week8-postgame-audit--week8_final_results.csv",
+      "sha256": "5b885bf098485b7942b3f59d5bb6869520c0f703366e34a6be2b5872f955923e",
+      "bytes": 10159
+    },
+    {
+      "path": "ci/41102071702/u3.11.17/replay-diagnostics/2026-week8-postgame-audit--week8_postgame_manifest.json",
+      "sha256": "e157f3b1a95653e228b0d27960ade84bcd847b178ee1f5d65afbc5c7157cb738",
+      "bytes": 15446
+    },
+    {
+      "path": "ci/41102071702/u3.11.17/replay-diagnostics/2026-week8-postgame-audit--week8_postgame_report.md",
+      "sha256": "474b81b69aedca0b63d407a694313d815af297d27c710c06b853abc512509778",
+      "bytes": 3165
+    },
+    {
+      "path": "ci/41102071702/u3.11.17/replay-diagnostics/2026-week8-postgame-audit--week8_totals_audit.csv",
+      "sha256": "a7175b6aa042e424b5d78ec22c9f906fbbd9195cace1f622cb4503858735a1d5",
+      "bytes": 25503
+    },
+    {
+      "path": "ci/41102071702/u3.11.17/replay-diagnostics/20261028T1320Z--derived_context_board.json",
+      "sha256": "4f6fadfc893bb89a44daa794dba566c138fa49c532a694f0fb5fb8edecc2b116",
+      "bytes": 527050
+    },
+    {
+      "path": "ci/41102071702/u3.11.17/replay-diagnostics/comparison.json",
+      "sha256": "c6566b27b6416ded018324f2966c744fdc00025c153b8685bee238d0291eb814",
+      "bytes": 212928
+    },
+    {
+      "path": "ci/41102071702/u3.11.17/replay-verification/compatibility.json",
+      "sha256": "4561ec8e4d1fd999c66f913063018117a886d3a078bce89039b00125f9975b81",
+      "bytes": 9179
+    },
+    {
+      "path": "ci/41102071702/u3.12.14/replay-diagnostics/2026-week7-postgame-audit--week7_ats_audit.csv",
+      "sha256": "48a4171a57ea53dd18507a2e04721c1c77a7155f48c9f93704fd23bec3067dc8",
+      "bytes": 30898
+    },
+    {
+      "path": "ci/41102071702/u3.12.14/replay-diagnostics/2026-week7-postgame-audit--week7_cohort_membership.csv",
+      "sha256": "c64ccdbac799b08ab5f1634c5ddc3a193588111c8d4ea8612bcdd6edfc33156c",
+      "bytes": 15328
+    },
+    {
+      "path": "ci/41102071702/u3.12.14/replay-diagnostics/2026-week7-postgame-audit--week7_diagnostics.json",
+      "sha256": "ec46f6b0a9eed4af66e8dfefcf6036fdcb0c56348ccfdf1246619e7a49f59c8d",
+      "bytes": 49682
+    },
+    {
+      "path": "ci/41102071702/u3.12.14/replay-diagnostics/2026-week7-postgame-audit--week7_final_results.csv",
+      "sha256": "bb59bf47455cc155d62f93e401dd043de7efb00d164866321e7ba1757cd57884",
+      "bytes": 11570
+    },
+    {
+      "path": "ci/41102071702/u3.12.14/replay-diagnostics/2026-week7-postgame-audit--week7_owner_approved_five_audit.csv",
+      "sha256": "bef7e456e1a653c0fb9d7318f6400cb8240bb46972155ad573c0075dd461fd86",
+      "bytes": 3215
+    },
+    {
+      "path": "ci/41102071702/u3.12.14/replay-diagnostics/2026-week7-postgame-audit--week7_postgame_report.md",
+      "sha256": "31562fbc6b646def90b3bf212efbd40eb021d585ee7d1dcb26cd30cc48609fc0",
+      "bytes": 5721
+    },
+    {
+      "path": "ci/41102071702/u3.12.14/replay-diagnostics/2026-week7-postgame-audit--week7_source_correction_impact.csv",
+      "sha256": "56ddb9acfcaf36d2eaa71fd895f4c1fda7878f5182c8008a6781e724109dc4cb",
+      "bytes": 541
+    },
+    {
+      "path": "ci/41102071702/u3.12.14/replay-diagnostics/2026-week7-postgame-audit--week7_totals_audit.csv",
+      "sha256": "d7dce91e9e5e26893f84e683a34f3817ed69200703cbe0f974cc194fbbff0dfb",
+      "bytes": 27463
+    },
+    {
+      "path": "ci/41102071702/u3.12.14/replay-diagnostics/2026-week8-audit-research--numerical_research_candidates.json",
+      "sha256": "36d867cf1f808d2a2022ebfcae8837d06e2b8128d2f1dbb67077953b5babeb46",
+      "bytes": 1939
+    },
+    {
+      "path": "ci/41102071702/u3.12.14/replay-diagnostics/2026-week8-postgame-audit--cross_week_diagnostics.json",
+      "sha256": "88d5974fedbd925514b6be06b06e70e3c1eb54734a3181a951d1bda90ebc07e6",
+      "bytes": 133944
+    },
+    {
+      "path": "ci/41102071702/u3.12.14/replay-diagnostics/2026-week8-postgame-audit--cross_week_tables.md",
+      "sha256": "8a295f194fa715b71c4259337b2d74b1fb3b46678c978d6ab3acdb401d462b13",
+      "bytes": 17656
+    },
+    {
+      "path": "ci/41102071702/u3.12.14/replay-diagnostics/2026-week8-postgame-audit--week8_ats_audit.csv",
+      "sha256": "74aa1c4b2766e8972f33fcba94cfa1241cdd09e90dabec61b6f89e5984b5791a",
+      "bytes": 28547
+    },
+    {
+      "path": "ci/41102071702/u3.12.14/replay-diagnostics/2026-week8-postgame-audit--week8_cohort_membership.csv",
+      "sha256": "5a8c7ac78e173e0dcefb48f1acdeb5bbb24d01db9ee5d1166b8ffb6ff59a56fc",
+      "bytes": 13415
+    },
+    {
+      "path": "ci/41102071702/u3.12.14/replay-diagnostics/2026-week8-postgame-audit--week8_diagnostics.json",
+      "sha256": "738fdaf68ab42c63e1630ac8ceee56a1821bcfc56e33fdeea0038bf7770f0d6a",
+      "bytes": 21198
+    },
+    {
+      "path": "ci/41102071702/u3.12.14/replay-diagnostics/2026-week8-postgame-audit--week8_final_results.csv",
+      "sha256": "5b885bf098485b7942b3f59d5bb6869520c0f703366e34a6be2b5872f955923e",
+      "bytes": 10159
+    },
+    {
+      "path": "ci/41102071702/u3.12.14/replay-diagnostics/2026-week8-postgame-audit--week8_postgame_manifest.json",
+      "sha256": "c7b0a53b0d55ad6fd6dfc629bb76dcde0edc449870ff4cbe40734022c310a472",
+      "bytes": 15446
+    },
+    {
+      "path": "ci/41102071702/u3.12.14/replay-diagnostics/2026-week8-postgame-audit--week8_postgame_report.md",
+      "sha256": "474b81b69aedca0b63d407a694313d815af297d27c710c06b853abc512509778",
+      "bytes": 3165
+    },
+    {
+      "path": "ci/41102071702/u3.12.14/replay-diagnostics/2026-week8-postgame-audit--week8_totals_audit.csv",
+      "sha256": "a7175b6aa042e424b5d78ec22c9f906fbbd9195cace1f622cb4503858735a1d5",
+      "bytes": 25503
+    },
+    {
+      "path": "ci/41102071702/u3.12.14/replay-diagnostics/20261028T1320Z--derived_context_board.json",
+      "sha256": "4f6fadfc893bb89a44daa794dba566c138fa49c532a694f0fb5fb8edecc2b116",
+      "bytes": 527050
+    },
+    {
+      "path": "ci/41102071702/u3.12.14/replay-diagnostics/comparison.json",
+      "sha256": "5c4b0a7ad57cddbd977e78900e8df87a89702d48f1eb28e229c48cd0302e0e23",
+      "bytes": 61274
+    },
+    {
+      "path": "ci/41102071702/u3.12.14/replay-verification/compatibility.json",
+      "sha256": "4561ec8e4d1fd999c66f913063018117a886d3a078bce89039b00125f9975b81",
+      "bytes": 9179
+    },
+    {
+      "path": "ci/41102071702/w3.11.9/replay-diagnostics/2026-week7-postgame-audit--week7_ats_audit.csv",
+      "sha256": "48a4171a57ea53dd18507a2e04721c1c77a7155f48c9f93704fd23bec3067dc8",
+      "bytes": 30898
+    },
+    {
+      "path": "ci/41102071702/w3.11.9/replay-diagnostics/2026-week7-postgame-audit--week7_cohort_membership.csv",
+      "sha256": "c64ccdbac799b08ab5f1634c5ddc3a193588111c8d4ea8612bcdd6edfc33156c",
+      "bytes": 15328
+    },
+    {
+      "path": "ci/41102071702/w3.11.9/replay-diagnostics/2026-week7-postgame-audit--week7_diagnostics.json",
+      "sha256": "4bf90ed78907f445442e8878841cf36bd18f6d97cd89652a3fd8efac5dea6969",
+      "bytes": 49682
+    },
+    {
+      "path": "ci/41102071702/w3.11.9/replay-diagnostics/2026-week7-postgame-audit--week7_final_results.csv",
+      "sha256": "bb59bf47455cc155d62f93e401dd043de7efb00d164866321e7ba1757cd57884",
+      "bytes": 11570
+    },
+    {
+      "path": "ci/41102071702/w3.11.9/replay-diagnostics/2026-week7-postgame-audit--week7_owner_approved_five_audit.csv",
+      "sha256": "bef7e456e1a653c0fb9d7318f6400cb8240bb46972155ad573c0075dd461fd86",
+      "bytes": 3215
+    },
+    {
+      "path": "ci/41102071702/w3.11.9/replay-diagnostics/2026-week7-postgame-audit--week7_postgame_report.md",
+      "sha256": "31562fbc6b646def90b3bf212efbd40eb021d585ee7d1dcb26cd30cc48609fc0",
+      "bytes": 5721
+    },
+    {
+      "path": "ci/41102071702/w3.11.9/replay-diagnostics/2026-week7-postgame-audit--week7_source_correction_impact.csv",
+      "sha256": "56ddb9acfcaf36d2eaa71fd895f4c1fda7878f5182c8008a6781e724109dc4cb",
+      "bytes": 541
+    },
+    {
+      "path": "ci/41102071702/w3.11.9/replay-diagnostics/2026-week7-postgame-audit--week7_totals_audit.csv",
+      "sha256": "d7dce91e9e5e26893f84e683a34f3817ed69200703cbe0f974cc194fbbff0dfb",
+      "bytes": 27463
+    },
+    {
+      "path": "ci/41102071702/w3.11.9/replay-diagnostics/2026-week8-audit-research--numerical_research_candidates.json",
+      "sha256": "838bc56b1b5634c6de5b0b22223193347d5d874c602062cdfe3924695ecd118c",
+      "bytes": 1939
+    },
+    {
+      "path": "ci/41102071702/w3.11.9/replay-diagnostics/2026-week8-postgame-audit--cross_week_diagnostics.json",
+      "sha256": "16aa60100666b9f577d419576bf998d6aa4d55340b463f5ebc821b49c3aa9316",
+      "bytes": 133928
+    },
+    {
+      "path": "ci/41102071702/w3.11.9/replay-diagnostics/2026-week8-postgame-audit--cross_week_tables.md",
+      "sha256": "8a295f194fa715b71c4259337b2d74b1fb3b46678c978d6ab3acdb401d462b13",
+      "bytes": 17656
+    },
+    {
+      "path": "ci/41102071702/w3.11.9/replay-diagnostics/2026-week8-postgame-audit--week8_ats_audit.csv",
+      "sha256": "74aa1c4b2766e8972f33fcba94cfa1241cdd09e90dabec61b6f89e5984b5791a",
+      "bytes": 28547
+    },
+    {
+      "path": "ci/41102071702/w3.11.9/replay-diagnostics/2026-week8-postgame-audit--week8_cohort_membership.csv",
+      "sha256": "5a8c7ac78e173e0dcefb48f1acdeb5bbb24d01db9ee5d1166b8ffb6ff59a56fc",
+      "bytes": 13415
+    },
+    {
+      "path": "ci/41102071702/w3.11.9/replay-diagnostics/2026-week8-postgame-audit--week8_diagnostics.json",
+      "sha256": "9a17461c4d9b672e57f445ba900487f33fc9ca79d534cbbfbaac2d414ec1f20c",
+      "bytes": 21198
+    },
+    {
+      "path": "ci/41102071702/w3.11.9/replay-diagnostics/2026-week8-postgame-audit--week8_final_results.csv",
+      "sha256": "5b885bf098485b7942b3f59d5bb6869520c0f703366e34a6be2b5872f955923e",
+      "bytes": 10159
+    },
+    {
+      "path": "ci/41102071702/w3.11.9/replay-diagnostics/2026-week8-postgame-audit--week8_postgame_manifest.json",
+      "sha256": "e157f3b1a95653e228b0d27960ade84bcd847b178ee1f5d65afbc5c7157cb738",
+      "bytes": 15446
+    },
+    {
+      "path": "ci/41102071702/w3.11.9/replay-diagnostics/2026-week8-postgame-audit--week8_postgame_report.md",
+      "sha256": "474b81b69aedca0b63d407a694313d815af297d27c710c06b853abc512509778",
+      "bytes": 3165
+    },
+    {
+      "path": "ci/41102071702/w3.11.9/replay-diagnostics/2026-week8-postgame-audit--week8_totals_audit.csv",
+      "sha256": "a7175b6aa042e424b5d78ec22c9f906fbbd9195cace1f622cb4503858735a1d5",
+      "bytes": 25503
+    },
+    {
+      "path": "ci/41102071702/w3.11.9/replay-diagnostics/20261028T1320Z--derived_context_board.json",
+      "sha256": "4f6fadfc893bb89a44daa794dba566c138fa49c532a694f0fb5fb8edecc2b116",
+      "bytes": 527050
+    },
+    {
+      "path": "ci/41102071702/w3.11.9/replay-diagnostics/comparison.json",
+      "sha256": "f4dfc15032c49bf22e472e562c4e9833a1f596faebd57ba33fddf5138381c7d1",
+      "bytes": 212875
+    },
+    {
+      "path": "ci/41102071702/w3.11.9/replay-verification/compatibility.json",
+      "sha256": "4561ec8e4d1fd999c66f913063018117a886d3a078bce89039b00125f9975b81",
+      "bytes": 9179
+    },
+    {
+      "path": "ci/41102071702/w3.12.10/replay-diagnostics/2026-week7-postgame-audit--week7_ats_audit.csv",
+      "sha256": "48a4171a57ea53dd18507a2e04721c1c77a7155f48c9f93704fd23bec3067dc8",
+      "bytes": 30898
+    },
+    {
+      "path": "ci/41102071702/w3.12.10/replay-diagnostics/2026-week7-postgame-audit--week7_cohort_membership.csv",
+      "sha256": "c64ccdbac799b08ab5f1634c5ddc3a193588111c8d4ea8612bcdd6edfc33156c",
+      "bytes": 15328
+    },
+    {
+      "path": "ci/41102071702/w3.12.10/replay-diagnostics/2026-week7-postgame-audit--week7_diagnostics.json",
+      "sha256": "ec46f6b0a9eed4af66e8dfefcf6036fdcb0c56348ccfdf1246619e7a49f59c8d",
+      "bytes": 49682
+    },
+    {
+      "path": "ci/41102071702/w3.12.10/replay-diagnostics/2026-week7-postgame-audit--week7_final_results.csv",
+      "sha256": "bb59bf47455cc155d62f93e401dd043de7efb00d164866321e7ba1757cd57884",
+      "bytes": 11570
+    },
+    {
+      "path": "ci/41102071702/w3.12.10/replay-diagnostics/2026-week7-postgame-audit--week7_owner_approved_five_audit.csv",
+      "sha256": "bef7e456e1a653c0fb9d7318f6400cb8240bb46972155ad573c0075dd461fd86",
+      "bytes": 3215
+    },
+    {
+      "path": "ci/41102071702/w3.12.10/replay-diagnostics/2026-week7-postgame-audit--week7_postgame_report.md",
+      "sha256": "31562fbc6b646def90b3bf212efbd40eb021d585ee7d1dcb26cd30cc48609fc0",
+      "bytes": 5721
+    },
+    {
+      "path": "ci/41102071702/w3.12.10/replay-diagnostics/2026-week7-postgame-audit--week7_source_correction_impact.csv",
+      "sha256": "56ddb9acfcaf36d2eaa71fd895f4c1fda7878f5182c8008a6781e724109dc4cb",
+      "bytes": 541
+    },
+    {
+      "path": "ci/41102071702/w3.12.10/replay-diagnostics/2026-week7-postgame-audit--week7_totals_audit.csv",
+      "sha256": "d7dce91e9e5e26893f84e683a34f3817ed69200703cbe0f974cc194fbbff0dfb",
+      "bytes": 27463
+    },
+    {
+      "path": "ci/41102071702/w3.12.10/replay-diagnostics/2026-week8-audit-research--numerical_research_candidates.json",
+      "sha256": "36d867cf1f808d2a2022ebfcae8837d06e2b8128d2f1dbb67077953b5babeb46",
+      "bytes": 1939
+    },
+    {
+      "path": "ci/41102071702/w3.12.10/replay-diagnostics/2026-week8-postgame-audit--cross_week_diagnostics.json",
+      "sha256": "88d5974fedbd925514b6be06b06e70e3c1eb54734a3181a951d1bda90ebc07e6",
+      "bytes": 133944
+    },
+    {
+      "path": "ci/41102071702/w3.12.10/replay-diagnostics/2026-week8-postgame-audit--cross_week_tables.md",
+      "sha256": "8a295f194fa715b71c4259337b2d74b1fb3b46678c978d6ab3acdb401d462b13",
+      "bytes": 17656
+    },
+    {
+      "path": "ci/41102071702/w3.12.10/replay-diagnostics/2026-week8-postgame-audit--week8_ats_audit.csv",
+      "sha256": "74aa1c4b2766e8972f33fcba94cfa1241cdd09e90dabec61b6f89e5984b5791a",
+      "bytes": 28547
+    },
+    {
+      "path": "ci/41102071702/w3.12.10/replay-diagnostics/2026-week8-postgame-audit--week8_cohort_membership.csv",
+      "sha256": "5a8c7ac78e173e0dcefb48f1acdeb5bbb24d01db9ee5d1166b8ffb6ff59a56fc",
+      "bytes": 13415
+    },
+    {
+      "path": "ci/41102071702/w3.12.10/replay-diagnostics/2026-week8-postgame-audit--week8_diagnostics.json",
+      "sha256": "738fdaf68ab42c63e1630ac8ceee56a1821bcfc56e33fdeea0038bf7770f0d6a",
+      "bytes": 21198
+    },
+    {
+      "path": "ci/41102071702/w3.12.10/replay-diagnostics/2026-week8-postgame-audit--week8_final_results.csv",
+      "sha256": "5b885bf098485b7942b3f59d5bb6869520c0f703366e34a6be2b5872f955923e",
+      "bytes": 10159
+    },
+    {
+      "path": "ci/41102071702/w3.12.10/replay-diagnostics/2026-week8-postgame-audit--week8_postgame_manifest.json",
+      "sha256": "c7b0a53b0d55ad6fd6dfc629bb76dcde0edc449870ff4cbe40734022c310a472",
+      "bytes": 15446
+    },
+    {
+      "path": "ci/41102071702/w3.12.10/replay-diagnostics/2026-week8-postgame-audit--week8_postgame_report.md",
+      "sha256": "474b81b69aedca0b63d407a694313d815af297d27c710c06b853abc512509778",
+      "bytes": 3165
+    },
+    {
+      "path": "ci/41102071702/w3.12.10/replay-diagnostics/2026-week8-postgame-audit--week8_totals_audit.csv",
+      "sha256": "a7175b6aa042e424b5d78ec22c9f906fbbd9195cace1f622cb4503858735a1d5",
+      "bytes": 25503
+    },
+    {
+      "path": "ci/41102071702/w3.12.10/replay-diagnostics/20261028T1320Z--derived_context_board.json",
+      "sha256": "4f6fadfc893bb89a44daa794dba566c138fa49c532a694f0fb5fb8edecc2b116",
+      "bytes": 527050
+    },
+    {
+      "path": "ci/41102071702/w3.12.10/replay-diagnostics/comparison.json",
+      "sha256": "bddf9599e35d668c42e43a9e8597cc18adb2ef5eb614a6b476bdf59e004cf81d",
+      "bytes": 61395
+    },
+    {
+      "path": "ci/41102071702/w3.12.10/replay-verification/compatibility.json",
+      "sha256": "4561ec8e4d1fd999c66f913063018117a886d3a078bce89039b00125f9975b81",
+      "bytes": 9179
+    },
+    {
+      "path": "ci/41102087073/124220863949.log.gz",
+      "sha256": "e06624b58e64dbcacc3027b37e31e8f32ff9c0201dedbc381abc3b0d0484cceb",
+      "bytes": 8839
+    },
+    {
+      "path": "ci/41102087073/124220864198.log.gz",
+      "sha256": "6b21e549e0c3ab5e0098a54c5178a8903fdb349584168312a80a12a345e3fbaf",
+      "bytes": 10712
+    },
+    {
+      "path": "ci/41102087073/124220864205.log.gz",
+      "sha256": "fde57e19a9aeb2f29cc8ad445fa2dca24d0c9488966262b14b3f1869c6833195",
+      "bytes": 9332
+    },
+    {
+      "path": "ci/41102087073/124220864236.log.gz",
+      "sha256": "e30cf9d67a6e53cb1c19e4c50b4a2d350543e1bd89e7d23b286080c3eb2f8c36",
+      "bytes": 11149
+    },
+    {
+      "path": "ci/41102087073/artifacts.json",
+      "sha256": "072240089080c3af5671730164ac60ee9599176cd2bdde1dc2018fe3c20306f0",
+      "bytes": 3629
+    },
+    {
+      "path": "ci/41102087073/jobs.json",
+      "sha256": "3c689f83d734b96b4ca29a15508e211a9285806bba887a64e74427936714f38b",
+      "bytes": 19290
+    },
+    {
+      "path": "ci/41102087073/run.json",
+      "sha256": "06458f0df0c3efa0e00a1e57e55621fa8c4fca9ea9f78d0f3b99d45a70cee6fd",
+      "bytes": 15065
+    },
+    {
+      "path": "ci/41102087073/u3.11.17/replay-diagnostics/2026-week7-postgame-audit--week7_ats_audit.csv",
+      "sha256": "48a4171a57ea53dd18507a2e04721c1c77a7155f48c9f93704fd23bec3067dc8",
+      "bytes": 30898
+    },
+    {
+      "path": "ci/41102087073/u3.11.17/replay-diagnostics/2026-week7-postgame-audit--week7_cohort_membership.csv",
+      "sha256": "c64ccdbac799b08ab5f1634c5ddc3a193588111c8d4ea8612bcdd6edfc33156c",
+      "bytes": 15328
+    },
+    {
+      "path": "ci/41102087073/u3.11.17/replay-diagnostics/2026-week7-postgame-audit--week7_diagnostics.json",
+      "sha256": "4bf90ed78907f445442e8878841cf36bd18f6d97cd89652a3fd8efac5dea6969",
+      "bytes": 49682
+    },
+    {
+      "path": "ci/41102087073/u3.11.17/replay-diagnostics/2026-week7-postgame-audit--week7_final_results.csv",
+      "sha256": "bb59bf47455cc155d62f93e401dd043de7efb00d164866321e7ba1757cd57884",
+      "bytes": 11570
+    },
+    {
+      "path": "ci/41102087073/u3.11.17/replay-diagnostics/2026-week7-postgame-audit--week7_owner_approved_five_audit.csv",
+      "sha256": "bef7e456e1a653c0fb9d7318f6400cb8240bb46972155ad573c0075dd461fd86",
+      "bytes": 3215
+    },
+    {
+      "path": "ci/41102087073/u3.11.17/replay-diagnostics/2026-week7-postgame-audit--week7_postgame_report.md",
+      "sha256": "31562fbc6b646def90b3bf212efbd40eb021d585ee7d1dcb26cd30cc48609fc0",
+      "bytes": 5721
+    },
+    {
+      "path": "ci/41102087073/u3.11.17/replay-diagnostics/2026-week7-postgame-audit--week7_source_correction_impact.csv",
+      "sha256": "56ddb9acfcaf36d2eaa71fd895f4c1fda7878f5182c8008a6781e724109dc4cb",
+      "bytes": 541
+    },
+    {
+      "path": "ci/41102087073/u3.11.17/replay-diagnostics/2026-week7-postgame-audit--week7_totals_audit.csv",
+      "sha256": "d7dce91e9e5e26893f84e683a34f3817ed69200703cbe0f974cc194fbbff0dfb",
+      "bytes": 27463
+    },
+    {
+      "path": "ci/41102087073/u3.11.17/replay-diagnostics/2026-week8-audit-research--numerical_research_candidates.json",
+      "sha256": "838bc56b1b5634c6de5b0b22223193347d5d874c602062cdfe3924695ecd118c",
+      "bytes": 1939
+    },
+    {
+      "path": "ci/41102087073/u3.11.17/replay-diagnostics/2026-week8-postgame-audit--cross_week_diagnostics.json",
+      "sha256": "16aa60100666b9f577d419576bf998d6aa4d55340b463f5ebc821b49c3aa9316",
+      "bytes": 133928
+    },
+    {
+      "path": "ci/41102087073/u3.11.17/replay-diagnostics/2026-week8-postgame-audit--cross_week_tables.md",
+      "sha256": "8a295f194fa715b71c4259337b2d74b1fb3b46678c978d6ab3acdb401d462b13",
+      "bytes": 17656
+    },
+    {
+      "path": "ci/41102087073/u3.11.17/replay-diagnostics/2026-week8-postgame-audit--week8_ats_audit.csv",
+      "sha256": "74aa1c4b2766e8972f33fcba94cfa1241cdd09e90dabec61b6f89e5984b5791a",
+      "bytes": 28547
+    },
+    {
+      "path": "ci/41102087073/u3.11.17/replay-diagnostics/2026-week8-postgame-audit--week8_cohort_membership.csv",
+      "sha256": "5a8c7ac78e173e0dcefb48f1acdeb5bbb24d01db9ee5d1166b8ffb6ff59a56fc",
+      "bytes": 13415
+    },
+    {
+      "path": "ci/41102087073/u3.11.17/replay-diagnostics/2026-week8-postgame-audit--week8_diagnostics.json",
+      "sha256": "9a17461c4d9b672e57f445ba900487f33fc9ca79d534cbbfbaac2d414ec1f20c",
+      "bytes": 21198
+    },
+    {
+      "path": "ci/41102087073/u3.11.17/replay-diagnostics/2026-week8-postgame-audit--week8_final_results.csv",
+      "sha256": "5b885bf098485b7942b3f59d5bb6869520c0f703366e34a6be2b5872f955923e",
+      "bytes": 10159
+    },
+    {
+      "path": "ci/41102087073/u3.11.17/replay-diagnostics/2026-week8-postgame-audit--week8_postgame_manifest.json",
+      "sha256": "e157f3b1a95653e228b0d27960ade84bcd847b178ee1f5d65afbc5c7157cb738",
+      "bytes": 15446
+    },
+    {
+      "path": "ci/41102087073/u3.11.17/replay-diagnostics/2026-week8-postgame-audit--week8_postgame_report.md",
+      "sha256": "474b81b69aedca0b63d407a694313d815af297d27c710c06b853abc512509778",
+      "bytes": 3165
+    },
+    {
+      "path": "ci/41102087073/u3.11.17/replay-diagnostics/2026-week8-postgame-audit--week8_totals_audit.csv",
+      "sha256": "a7175b6aa042e424b5d78ec22c9f906fbbd9195cace1f622cb4503858735a1d5",
+      "bytes": 25503
+    },
+    {
+      "path": "ci/41102087073/u3.11.17/replay-diagnostics/20261028T1320Z--derived_context_board.json",
+      "sha256": "4f6fadfc893bb89a44daa794dba566c138fa49c532a694f0fb5fb8edecc2b116",
+      "bytes": 527050
+    },
+    {
+      "path": "ci/41102087073/u3.11.17/replay-diagnostics/comparison.json",
+      "sha256": "625ed222749fe6c0db0255f3538834aa1208f07634a637719b4608d5d6bac5f1",
+      "bytes": 212928
+    },
+    {
+      "path": "ci/41102087073/u3.11.17/replay-verification/compatibility.json",
+      "sha256": "4561ec8e4d1fd999c66f913063018117a886d3a078bce89039b00125f9975b81",
+      "bytes": 9179
+    },
+    {
+      "path": "ci/41102087073/u3.12.14/replay-diagnostics/2026-week7-postgame-audit--week7_ats_audit.csv",
+      "sha256": "48a4171a57ea53dd18507a2e04721c1c77a7155f48c9f93704fd23bec3067dc8",
+      "bytes": 30898
+    },
+    {
+      "path": "ci/41102087073/u3.12.14/replay-diagnostics/2026-week7-postgame-audit--week7_cohort_membership.csv",
+      "sha256": "c64ccdbac799b08ab5f1634c5ddc3a193588111c8d4ea8612bcdd6edfc33156c",
+      "bytes": 15328
+    },
+    {
+      "path": "ci/41102087073/u3.12.14/replay-diagnostics/2026-week7-postgame-audit--week7_diagnostics.json",
+      "sha256": "ec46f6b0a9eed4af66e8dfefcf6036fdcb0c56348ccfdf1246619e7a49f59c8d",
+      "bytes": 49682
+    },
+    {
+      "path": "ci/41102087073/u3.12.14/replay-diagnostics/2026-week7-postgame-audit--week7_final_results.csv",
+      "sha256": "bb59bf47455cc155d62f93e401dd043de7efb00d164866321e7ba1757cd57884",
+      "bytes": 11570
+    },
+    {
+      "path": "ci/41102087073/u3.12.14/replay-diagnostics/2026-week7-postgame-audit--week7_owner_approved_five_audit.csv",
+      "sha256": "bef7e456e1a653c0fb9d7318f6400cb8240bb46972155ad573c0075dd461fd86",
+      "bytes": 3215
+    },
+    {
+      "path": "ci/41102087073/u3.12.14/replay-diagnostics/2026-week7-postgame-audit--week7_postgame_report.md",
+      "sha256": "31562fbc6b646def90b3bf212efbd40eb021d585ee7d1dcb26cd30cc48609fc0",
+      "bytes": 5721
+    },
+    {
+      "path": "ci/41102087073/u3.12.14/replay-diagnostics/2026-week7-postgame-audit--week7_source_correction_impact.csv",
+      "sha256": "56ddb9acfcaf36d2eaa71fd895f4c1fda7878f5182c8008a6781e724109dc4cb",
+      "bytes": 541
+    },
+    {
+      "path": "ci/41102087073/u3.12.14/replay-diagnostics/2026-week7-postgame-audit--week7_totals_audit.csv",
+      "sha256": "d7dce91e9e5e26893f84e683a34f3817ed69200703cbe0f974cc194fbbff0dfb",
+      "bytes": 27463
+    },
+    {
+      "path": "ci/41102087073/u3.12.14/replay-diagnostics/2026-week8-audit-research--numerical_research_candidates.json",
+      "sha256": "36d867cf1f808d2a2022ebfcae8837d06e2b8128d2f1dbb67077953b5babeb46",
+      "bytes": 1939
+    },
+    {
+      "path": "ci/41102087073/u3.12.14/replay-diagnostics/2026-week8-postgame-audit--cross_week_diagnostics.json",
+      "sha256": "88d5974fedbd925514b6be06b06e70e3c1eb54734a3181a951d1bda90ebc07e6",
+      "bytes": 133944
+    },
+    {
+      "path": "ci/41102087073/u3.12.14/replay-diagnostics/2026-week8-postgame-audit--cross_week_tables.md",
+      "sha256": "8a295f194fa715b71c4259337b2d74b1fb3b46678c978d6ab3acdb401d462b13",
+      "bytes": 17656
+    },
+    {
+      "path": "ci/41102087073/u3.12.14/replay-diagnostics/2026-week8-postgame-audit--week8_ats_audit.csv",
+      "sha256": "74aa1c4b2766e8972f33fcba94cfa1241cdd09e90dabec61b6f89e5984b5791a",
+      "bytes": 28547
+    },
+    {
+      "path": "ci/41102087073/u3.12.14/replay-diagnostics/2026-week8-postgame-audit--week8_cohort_membership.csv",
+      "sha256": "5a8c7ac78e173e0dcefb48f1acdeb5bbb24d01db9ee5d1166b8ffb6ff59a56fc",
+      "bytes": 13415
+    },
+    {
+      "path": "ci/41102087073/u3.12.14/replay-diagnostics/2026-week8-postgame-audit--week8_diagnostics.json",
+      "sha256": "738fdaf68ab42c63e1630ac8ceee56a1821bcfc56e33fdeea0038bf7770f0d6a",
+      "bytes": 21198
+    },
+    {
+      "path": "ci/41102087073/u3.12.14/replay-diagnostics/2026-week8-postgame-audit--week8_final_results.csv",
+      "sha256": "5b885bf098485b7942b3f59d5bb6869520c0f703366e34a6be2b5872f955923e",
+      "bytes": 10159
+    },
+    {
+      "path": "ci/41102087073/u3.12.14/replay-diagnostics/2026-week8-postgame-audit--week8_postgame_manifest.json",
+      "sha256": "c7b0a53b0d55ad6fd6dfc629bb76dcde0edc449870ff4cbe40734022c310a472",
+      "bytes": 15446
+    },
+    {
+      "path": "ci/41102087073/u3.12.14/replay-diagnostics/2026-week8-postgame-audit--week8_postgame_report.md",
+      "sha256": "474b81b69aedca0b63d407a694313d815af297d27c710c06b853abc512509778",
+      "bytes": 3165
+    },
+    {
+      "path": "ci/41102087073/u3.12.14/replay-diagnostics/2026-week8-postgame-audit--week8_totals_audit.csv",
+      "sha256": "a7175b6aa042e424b5d78ec22c9f906fbbd9195cace1f622cb4503858735a1d5",
+      "bytes": 25503
+    },
+    {
+      "path": "ci/41102087073/u3.12.14/replay-diagnostics/20261028T1320Z--derived_context_board.json",
+      "sha256": "4f6fadfc893bb89a44daa794dba566c138fa49c532a694f0fb5fb8edecc2b116",
+      "bytes": 527050
+    },
+    {
+      "path": "ci/41102087073/u3.12.14/replay-diagnostics/comparison.json",
+      "sha256": "4230a18acfbeeeedf2a82a6123d35b38648abc012c007a206ac89ba2e320be60",
+      "bytes": 61274
+    },
+    {
+      "path": "ci/41102087073/u3.12.14/replay-verification/compatibility.json",
+      "sha256": "4561ec8e4d1fd999c66f913063018117a886d3a078bce89039b00125f9975b81",
+      "bytes": 9179
+    },
+    {
+      "path": "ci/41102087073/w3.11.9/replay-diagnostics/2026-week7-postgame-audit--week7_ats_audit.csv",
+      "sha256": "48a4171a57ea53dd18507a2e04721c1c77a7155f48c9f93704fd23bec3067dc8",
+      "bytes": 30898
+    },
+    {
+      "path": "ci/41102087073/w3.11.9/replay-diagnostics/2026-week7-postgame-audit--week7_cohort_membership.csv",
+      "sha256": "c64ccdbac799b08ab5f1634c5ddc3a193588111c8d4ea8612bcdd6edfc33156c",
+      "bytes": 15328
+    },
+    {
+      "path": "ci/41102087073/w3.11.9/replay-diagnostics/2026-week7-postgame-audit--week7_diagnostics.json",
+      "sha256": "4bf90ed78907f445442e8878841cf36bd18f6d97cd89652a3fd8efac5dea6969",
+      "bytes": 49682
+    },
+    {
+      "path": "ci/41102087073/w3.11.9/replay-diagnostics/2026-week7-postgame-audit--week7_final_results.csv",
+      "sha256": "bb59bf47455cc155d62f93e401dd043de7efb00d164866321e7ba1757cd57884",
+      "bytes": 11570
+    },
+    {
+      "path": "ci/41102087073/w3.11.9/replay-diagnostics/2026-week7-postgame-audit--week7_owner_approved_five_audit.csv",
+      "sha256": "bef7e456e1a653c0fb9d7318f6400cb8240bb46972155ad573c0075dd461fd86",
+      "bytes": 3215
+    },
+    {
+      "path": "ci/41102087073/w3.11.9/replay-diagnostics/2026-week7-postgame-audit--week7_postgame_report.md",
+      "sha256": "31562fbc6b646def90b3bf212efbd40eb021d585ee7d1dcb26cd30cc48609fc0",
+      "bytes": 5721
+    },
+    {
+      "path": "ci/41102087073/w3.11.9/replay-diagnostics/2026-week7-postgame-audit--week7_source_correction_impact.csv",
+      "sha256": "56ddb9acfcaf36d2eaa71fd895f4c1fda7878f5182c8008a6781e724109dc4cb",
+      "bytes": 541
+    },
+    {
+      "path": "ci/41102087073/w3.11.9/replay-diagnostics/2026-week7-postgame-audit--week7_totals_audit.csv",
+      "sha256": "d7dce91e9e5e26893f84e683a34f3817ed69200703cbe0f974cc194fbbff0dfb",
+      "bytes": 27463
+    },
+    {
+      "path": "ci/41102087073/w3.11.9/replay-diagnostics/2026-week8-audit-research--numerical_research_candidates.json",
+      "sha256": "838bc56b1b5634c6de5b0b22223193347d5d874c602062cdfe3924695ecd118c",
+      "bytes": 1939
+    },
+    {
+      "path": "ci/41102087073/w3.11.9/replay-diagnostics/2026-week8-postgame-audit--cross_week_diagnostics.json",
+      "sha256": "16aa60100666b9f577d419576bf998d6aa4d55340b463f5ebc821b49c3aa9316",
+      "bytes": 133928
+    },
+    {
+      "path": "ci/41102087073/w3.11.9/replay-diagnostics/2026-week8-postgame-audit--cross_week_tables.md",
+      "sha256": "8a295f194fa715b71c4259337b2d74b1fb3b46678c978d6ab3acdb401d462b13",
+      "bytes": 17656
+    },
+    {
+      "path": "ci/41102087073/w3.11.9/replay-diagnostics/2026-week8-postgame-audit--week8_ats_audit.csv",
+      "sha256": "74aa1c4b2766e8972f33fcba94cfa1241cdd09e90dabec61b6f89e5984b5791a",
+      "bytes": 28547
+    },
+    {
+      "path": "ci/41102087073/w3.11.9/replay-diagnostics/2026-week8-postgame-audit--week8_cohort_membership.csv",
+      "sha256": "5a8c7ac78e173e0dcefb48f1acdeb5bbb24d01db9ee5d1166b8ffb6ff59a56fc",
+      "bytes": 13415
+    },
+    {
+      "path": "ci/41102087073/w3.11.9/replay-diagnostics/2026-week8-postgame-audit--week8_diagnostics.json",
+      "sha256": "9a17461c4d9b672e57f445ba900487f33fc9ca79d534cbbfbaac2d414ec1f20c",
+      "bytes": 21198
+    },
+    {
+      "path": "ci/41102087073/w3.11.9/replay-diagnostics/2026-week8-postgame-audit--week8_final_results.csv",
+      "sha256": "5b885bf098485b7942b3f59d5bb6869520c0f703366e34a6be2b5872f955923e",
+      "bytes": 10159
+    },
+    {
+      "path": "ci/41102087073/w3.11.9/replay-diagnostics/2026-week8-postgame-audit--week8_postgame_manifest.json",
+      "sha256": "e157f3b1a95653e228b0d27960ade84bcd847b178ee1f5d65afbc5c7157cb738",
+      "bytes": 15446
+    },
+    {
+      "path": "ci/41102087073/w3.11.9/replay-diagnostics/2026-week8-postgame-audit--week8_postgame_report.md",
+      "sha256": "474b81b69aedca0b63d407a694313d815af297d27c710c06b853abc512509778",
+      "bytes": 3165
+    },
+    {
+      "path": "ci/41102087073/w3.11.9/replay-diagnostics/2026-week8-postgame-audit--week8_totals_audit.csv",
+      "sha256": "a7175b6aa042e424b5d78ec22c9f906fbbd9195cace1f622cb4503858735a1d5",
+      "bytes": 25503
+    },
+    {
+      "path": "ci/41102087073/w3.11.9/replay-diagnostics/20261028T1320Z--derived_context_board.json",
+      "sha256": "4f6fadfc893bb89a44daa794dba566c138fa49c532a694f0fb5fb8edecc2b116",
+      "bytes": 527050
+    },
+    {
+      "path": "ci/41102087073/w3.11.9/replay-diagnostics/comparison.json",
+      "sha256": "c8ecdcffd462bff43dfaaae766218f4d693038291acc75998b60c40992ffeb0f",
+      "bytes": 212875
+    },
+    {
+      "path": "ci/41102087073/w3.11.9/replay-verification/compatibility.json",
+      "sha256": "4561ec8e4d1fd999c66f913063018117a886d3a078bce89039b00125f9975b81",
+      "bytes": 9179
+    },
+    {
+      "path": "ci/41102087073/w3.12.10/replay-diagnostics/2026-week7-postgame-audit--week7_ats_audit.csv",
+      "sha256": "48a4171a57ea53dd18507a2e04721c1c77a7155f48c9f93704fd23bec3067dc8",
+      "bytes": 30898
+    },
+    {
+      "path": "ci/41102087073/w3.12.10/replay-diagnostics/2026-week7-postgame-audit--week7_cohort_membership.csv",
+      "sha256": "c64ccdbac799b08ab5f1634c5ddc3a193588111c8d4ea8612bcdd6edfc33156c",
+      "bytes": 15328
+    },
+    {
+      "path": "ci/41102087073/w3.12.10/replay-diagnostics/2026-week7-postgame-audit--week7_diagnostics.json",
+      "sha256": "ec46f6b0a9eed4af66e8dfefcf6036fdcb0c56348ccfdf1246619e7a49f59c8d",
+      "bytes": 49682
+    },
+    {
+      "path": "ci/41102087073/w3.12.10/replay-diagnostics/2026-week7-postgame-audit--week7_final_results.csv",
+      "sha256": "bb59bf47455cc155d62f93e401dd043de7efb00d164866321e7ba1757cd57884",
+      "bytes": 11570
+    },
+    {
+      "path": "ci/41102087073/w3.12.10/replay-diagnostics/2026-week7-postgame-audit--week7_owner_approved_five_audit.csv",
+      "sha256": "bef7e456e1a653c0fb9d7318f6400cb8240bb46972155ad573c0075dd461fd86",
+      "bytes": 3215
+    },
+    {
+      "path": "ci/41102087073/w3.12.10/replay-diagnostics/2026-week7-postgame-audit--week7_postgame_report.md",
+      "sha256": "31562fbc6b646def90b3bf212efbd40eb021d585ee7d1dcb26cd30cc48609fc0",
+      "bytes": 5721
+    },
+    {
+      "path": "ci/41102087073/w3.12.10/replay-diagnostics/2026-week7-postgame-audit--week7_source_correction_impact.csv",
+      "sha256": "56ddb9acfcaf36d2eaa71fd895f4c1fda7878f5182c8008a6781e724109dc4cb",
+      "bytes": 541
+    },
+    {
+      "path": "ci/41102087073/w3.12.10/replay-diagnostics/2026-week7-postgame-audit--week7_totals_audit.csv",
+      "sha256": "d7dce91e9e5e26893f84e683a34f3817ed69200703cbe0f974cc194fbbff0dfb",
+      "bytes": 27463
+    },
+    {
+      "path": "ci/41102087073/w3.12.10/replay-diagnostics/2026-week8-audit-research--numerical_research_candidates.json",
+      "sha256": "36d867cf1f808d2a2022ebfcae8837d06e2b8128d2f1dbb67077953b5babeb46",
+      "bytes": 1939
+    },
+    {
+      "path": "ci/41102087073/w3.12.10/replay-diagnostics/2026-week8-postgame-audit--cross_week_diagnostics.json",
+      "sha256": "88d5974fedbd925514b6be06b06e70e3c1eb54734a3181a951d1bda90ebc07e6",
+      "bytes": 133944
+    },
+    {
+      "path": "ci/41102087073/w3.12.10/replay-diagnostics/2026-week8-postgame-audit--cross_week_tables.md",
+      "sha256": "8a295f194fa715b71c4259337b2d74b1fb3b46678c978d6ab3acdb401d462b13",
+      "bytes": 17656
+    },
+    {
+      "path": "ci/41102087073/w3.12.10/replay-diagnostics/2026-week8-postgame-audit--week8_ats_audit.csv",
+      "sha256": "74aa1c4b2766e8972f33fcba94cfa1241cdd09e90dabec61b6f89e5984b5791a",
+      "bytes": 28547
+    },
+    {
+      "path": "ci/41102087073/w3.12.10/replay-diagnostics/2026-week8-postgame-audit--week8_cohort_membership.csv",
+      "sha256": "5a8c7ac78e173e0dcefb48f1acdeb5bbb24d01db9ee5d1166b8ffb6ff59a56fc",
+      "bytes": 13415
+    },
+    {
+      "path": "ci/41102087073/w3.12.10/replay-diagnostics/2026-week8-postgame-audit--week8_diagnostics.json",
+      "sha256": "738fdaf68ab42c63e1630ac8ceee56a1821bcfc56e33fdeea0038bf7770f0d6a",
+      "bytes": 21198
+    },
+    {
+      "path": "ci/41102087073/w3.12.10/replay-diagnostics/2026-week8-postgame-audit--week8_final_results.csv",
+      "sha256": "5b885bf098485b7942b3f59d5bb6869520c0f703366e34a6be2b5872f955923e",
+      "bytes": 10159
+    },
+    {
+      "path": "ci/41102087073/w3.12.10/replay-diagnostics/2026-week8-postgame-audit--week8_postgame_manifest.json",
+      "sha256": "c7b0a53b0d55ad6fd6dfc629bb76dcde0edc449870ff4cbe40734022c310a472",
+      "bytes": 15446
+    },
+    {
+      "path": "ci/41102087073/w3.12.10/replay-diagnostics/2026-week8-postgame-audit--week8_postgame_report.md",
+      "sha256": "474b81b69aedca0b63d407a694313d815af297d27c710c06b853abc512509778",
+      "bytes": 3165
+    },
+    {
+      "path": "ci/41102087073/w3.12.10/replay-diagnostics/2026-week8-postgame-audit--week8_totals_audit.csv",
+      "sha256": "a7175b6aa042e424b5d78ec22c9f906fbbd9195cace1f622cb4503858735a1d5",
+      "bytes": 25503
+    },
+    {
+      "path": "ci/41102087073/w3.12.10/replay-diagnostics/20261028T1320Z--derived_context_board.json",
+      "sha256": "4f6fadfc893bb89a44daa794dba566c138fa49c532a694f0fb5fb8edecc2b116",
+      "bytes": 527050
+    },
+    {
+      "path": "ci/41102087073/w3.12.10/replay-diagnostics/comparison.json",
+      "sha256": "7986be3a039a3bfcf6753a49c64972236a592abe98fdc59e2b90add71de8433f",
+      "bytes": 61395
+    },
+    {
+      "path": "ci/41102087073/w3.12.10/replay-verification/compatibility.json",
+      "sha256": "4561ec8e4d1fd999c66f913063018117a886d3a078bce89039b00125f9975b81",
+      "bytes": 9179
+    },
+    {
+      "path": "ci/actions-permissions.json",
+      "sha256": "27a17e995f96d2bec00ff5df114b1b137188521d353d352a5021f9961f28e515",
+      "bytes": 83
+    },
+    {
+      "path": "ci/pr44-reviews.json",
+      "sha256": "e4aed66b2dd9bc13bca86e3c25f9b5fd9bec827dfe07c26667a9b9c85e4dce0a",
+      "bytes": 2583
+    },
+    {
+      "path": "ci/pr44.json",
+      "sha256": "c5604d58549aca3a4b0b219fd4ec82f70321fbac45da8fae28dee1372b699651",
+      "bytes": 25500
+    },
+    {
+      "path": "ci/pr45-reviews.json",
+      "sha256": "41cf3108c75f89cd3ac15d58367c12cb2c4a6f0ef6e6f9a482ba303609ee0e6c",
+      "bytes": 6224
+    },
+    {
+      "path": "ci/pr45.json",
+      "sha256": "9f095c4a55fae80e45a27400a14906c197a8a9b89301845d8721e4b23d178b43",
+      "bytes": 32338
+    },
+    {
+      "path": "ci/pr46-reviews.json",
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "bytes": 3
+    },
+    {
+      "path": "ci/pr46.json",
+      "sha256": "4bb25b8cf7c6d7ae47fbf70cad6b3f736b00bd32a845a7b3682d81c0050aee8d",
+      "bytes": 27621
+    },
+    {
+      "path": "ci/pr47-reviews.json",
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "bytes": 3
+    },
+    {
+      "path": "ci/pr47.json",
+      "sha256": "383e79695d61630503c9c4d94060884eaea13f228fc803200defd1922621b504",
+      "bytes": 19583
+    },
+    {
+      "path": "ci/summary.json",
+      "sha256": "9124b7c58634ef483a2ac3a7211226ad2748a772b8bcdcc75fbc75a6b2bacac3",
+      "bytes": 35996
+    },
+    {
+      "path": "ci/token-permissions.json",
+      "sha256": "a478bb51ea2a568fdac1910841fb633a4c57387b6e78a0068bf62266031ceff4",
+      "bytes": 90
+    },
+    {
+      "path": "ci/workflows.json",
+      "sha256": "879ec8ce054e29f8869e39014c09636bc19a1ee3a889cf8e9ca517cdf3259fe7",
+      "bytes": 4670
+    },
+    {
+      "path": "diagnostic-pr-and-pr46-trigger.json",
+      "sha256": "90d38c018dc7621959f81a300fafb097ec1ddca3350a9b67dd3e6f03d6080313",
+      "bytes": 108709
+    },
+    {
+      "path": "diagnostic-runs.json",
+      "sha256": "e74af86acdabac6491ff11a543f261715738d5eac276629135f2b2bc493bab73",
+      "bytes": 64317
+    },
+    {
+      "path": "findings/cross-platform-agreement.json",
+      "sha256": "24e7cbc30aacb43c83d98a728d3797d0c6b93a161333def166d36149b8864005",
+      "bytes": 25835
+    },
+    {
+      "path": "findings/extra-gates/1.log",
+      "sha256": "d7e1fa896026de76a6b79a19768f46e7a926f76e8efeaf0b3654b8b56488a5e5",
+      "bytes": 396
+    },
+    {
+      "path": "findings/extra-gates/2.log",
+      "sha256": "391c310dfc664871b8aeff98c1a91d894d877a33c03581170a638bad9e9d9fcb",
+      "bytes": 54
+    },
+    {
+      "path": "findings/extra-gates/3.log",
+      "sha256": "421c701f0581b7bc5925a9c10ccfc602caef9c84b1202384d99701f680363108",
+      "bytes": 124
+    },
+    {
+      "path": "findings/extra-gates/4.log",
+      "sha256": "d600de6e99522189f1c5fcea8cf3e7798b5e7bd07a0103268401dde30cc95aee",
+      "bytes": 123
+    },
+    {
+      "path": "findings/extra-gates/commands.json",
+      "sha256": "40a25b15f0952b08fe5648874ae075a95694636f6269ba3516f2269027a3381b",
+      "bytes": 1148
+    },
+    {
+      "path": "findings/historical-full-diff-whitespace.log.gz",
+      "sha256": "66951be33886c50bdd5e57b26dfd5df73191c6a81962a19951bd87e9417c73a5",
+      "bytes": 132045
+    },
+    {
+      "path": "findings/protected-artifacts-and-ancestry.json",
+      "sha256": "49928b1483becdd180e6e063427be76545324ca8bd6cdeaa87982431b2cb285d",
+      "bytes": 306450
+    },
+    {
+      "path": "findings/root-causes-and-field-differences.json",
+      "sha256": "0d401f2a07ee705f1a1378335596312f78d924cdace063eb70fb47c81cfd4d8b",
+      "bytes": 651135
+    },
+    {
+      "path": "findings/whitespace-check.json",
+      "sha256": "f822ace4986cf178199d8dd29337ebcaf4330b3cb2b6ce0abe2f4b6f5c44a438",
+      "bytes": 775417
+    },
+    {
+      "path": "local-native-windows312/2026-week7-postgame-audit--week7_ats_audit.csv",
+      "sha256": "48a4171a57ea53dd18507a2e04721c1c77a7155f48c9f93704fd23bec3067dc8",
+      "bytes": 30898
+    },
+    {
+      "path": "local-native-windows312/2026-week7-postgame-audit--week7_cohort_membership.csv",
+      "sha256": "c64ccdbac799b08ab5f1634c5ddc3a193588111c8d4ea8612bcdd6edfc33156c",
+      "bytes": 15328
+    },
+    {
+      "path": "local-native-windows312/2026-week7-postgame-audit--week7_diagnostics.json",
+      "sha256": "ec46f6b0a9eed4af66e8dfefcf6036fdcb0c56348ccfdf1246619e7a49f59c8d",
+      "bytes": 49682
+    },
+    {
+      "path": "local-native-windows312/2026-week7-postgame-audit--week7_final_results.csv",
+      "sha256": "bb59bf47455cc155d62f93e401dd043de7efb00d164866321e7ba1757cd57884",
+      "bytes": 11570
+    },
+    {
+      "path": "local-native-windows312/2026-week7-postgame-audit--week7_owner_approved_five_audit.csv",
+      "sha256": "bef7e456e1a653c0fb9d7318f6400cb8240bb46972155ad573c0075dd461fd86",
+      "bytes": 3215
+    },
+    {
+      "path": "local-native-windows312/2026-week7-postgame-audit--week7_postgame_report.md",
+      "sha256": "31562fbc6b646def90b3bf212efbd40eb021d585ee7d1dcb26cd30cc48609fc0",
+      "bytes": 5721
+    },
+    {
+      "path": "local-native-windows312/2026-week7-postgame-audit--week7_source_correction_impact.csv",
+      "sha256": "56ddb9acfcaf36d2eaa71fd895f4c1fda7878f5182c8008a6781e724109dc4cb",
+      "bytes": 541
+    },
+    {
+      "path": "local-native-windows312/2026-week7-postgame-audit--week7_totals_audit.csv",
+      "sha256": "d7dce91e9e5e26893f84e683a34f3817ed69200703cbe0f974cc194fbbff0dfb",
+      "bytes": 27463
+    },
+    {
+      "path": "local-native-windows312/2026-week8-audit-research--numerical_research_candidates.json",
+      "sha256": "36d867cf1f808d2a2022ebfcae8837d06e2b8128d2f1dbb67077953b5babeb46",
+      "bytes": 1939
+    },
+    {
+      "path": "local-native-windows312/2026-week8-postgame-audit--cross_week_diagnostics.json",
+      "sha256": "88d5974fedbd925514b6be06b06e70e3c1eb54734a3181a951d1bda90ebc07e6",
+      "bytes": 133944
+    },
+    {
+      "path": "local-native-windows312/2026-week8-postgame-audit--cross_week_tables.md",
+      "sha256": "8a295f194fa715b71c4259337b2d74b1fb3b46678c978d6ab3acdb401d462b13",
+      "bytes": 17656
+    },
+    {
+      "path": "local-native-windows312/2026-week8-postgame-audit--week8_ats_audit.csv",
+      "sha256": "74aa1c4b2766e8972f33fcba94cfa1241cdd09e90dabec61b6f89e5984b5791a",
+      "bytes": 28547
+    },
+    {
+      "path": "local-native-windows312/2026-week8-postgame-audit--week8_cohort_membership.csv",
+      "sha256": "5a8c7ac78e173e0dcefb48f1acdeb5bbb24d01db9ee5d1166b8ffb6ff59a56fc",
+      "bytes": 13415
+    },
+    {
+      "path": "local-native-windows312/2026-week8-postgame-audit--week8_diagnostics.json",
+      "sha256": "738fdaf68ab42c63e1630ac8ceee56a1821bcfc56e33fdeea0038bf7770f0d6a",
+      "bytes": 21198
+    },
+    {
+      "path": "local-native-windows312/2026-week8-postgame-audit--week8_final_results.csv",
+      "sha256": "5b885bf098485b7942b3f59d5bb6869520c0f703366e34a6be2b5872f955923e",
+      "bytes": 10159
+    },
+    {
+      "path": "local-native-windows312/2026-week8-postgame-audit--week8_postgame_manifest.json",
+      "sha256": "c7b0a53b0d55ad6fd6dfc629bb76dcde0edc449870ff4cbe40734022c310a472",
+      "bytes": 15446
+    },
+    {
+      "path": "local-native-windows312/2026-week8-postgame-audit--week8_postgame_report.md",
+      "sha256": "474b81b69aedca0b63d407a694313d815af297d27c710c06b853abc512509778",
+      "bytes": 3165
+    },
+    {
+      "path": "local-native-windows312/2026-week8-postgame-audit--week8_totals_audit.csv",
+      "sha256": "a7175b6aa042e424b5d78ec22c9f906fbbd9195cace1f622cb4503858735a1d5",
+      "bytes": 25503
+    },
+    {
+      "path": "local-native-windows312/20261028T1320Z--derived_context_board.json",
+      "sha256": "1348ca065f46d99e011fb6b6f179978849b7fa7402e0042e128e5055bcb140f1",
+      "bytes": 531033
+    },
+    {
+      "path": "local-native-windows312/comparison.json",
+      "sha256": "a669d7ae7be377dc31337658bb92d00a5080f68785838ae8088cd4cef0884695",
+      "bytes": 8901
+    },
+    {
+      "path": "local-windows312-final-integration/1.log",
+      "sha256": "2d9daa25908fc452df86a094c6ef419a65bf134d5fad077b4a46c1af90790740",
+      "bytes": 8800
+    },
+    {
+      "path": "local-windows312-final-integration/2.log",
+      "sha256": "c6d7234066e3dca8169cd5ae5a51604bb28cc6876a206e694698965082a34b2d",
+      "bytes": 57
+    },
+    {
+      "path": "local-windows312-final-integration/3.log",
+      "sha256": "1036b349cec464a645c84ff6e9fb55966ddf6b773a4888bd2c58310f8336ad62",
+      "bytes": 3731
+    },
+    {
+      "path": "local-windows312-final-integration/4.log",
+      "sha256": "d79b6fd379ef5a6027096b1f1cc61e1c177ca9b84f544b53e2d0332591fa0891",
+      "bytes": 88
+    },
+    {
+      "path": "local-windows312-final-integration/5.log",
+      "sha256": "b77ec74fea02665f330c76f5a51b6dcde977ffc5b2b9ab162247656654c48372",
+      "bytes": 189
+    },
+    {
+      "path": "local-windows312-final-integration/compatibility.json",
+      "sha256": "4561ec8e4d1fd999c66f913063018117a886d3a078bce89039b00125f9975b81",
+      "bytes": 9179
+    },
+    {
+      "path": "local-windows312-final-integration/receipt.json",
+      "sha256": "3e16023386893c90c75bdf117f0417873a36c754e9d218c52fb5c6b560c33e91",
+      "bytes": 2629
+    }
+  ]
+}

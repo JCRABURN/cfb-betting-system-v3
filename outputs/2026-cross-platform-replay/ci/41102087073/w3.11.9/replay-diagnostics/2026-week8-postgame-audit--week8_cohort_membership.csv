@@ -1,0 +1,249 @@
+cohort,market,game_id,selection,locked_line,result,research_rank
+governed_v28_top5,ATS,401861965,Massachusetts,14.5,LOSS,1
+governed_v28_top5,ATS,401869845,App State,10.5,WIN,9
+governed_v28_top5,ATS,401871056,Kennesaw State,10.5,LOSS,15
+governed_v28_top5,ATS,401862807,East Carolina,10.5,WIN,23
+governed_v28_top5,ATS,401858271,Virginia,-1.5,LOSS,39
+ats_full,ATS,401861965,Massachusetts,14.5,LOSS,1
+ats_full,ATS,401856840,Cincinnati,10.5,WIN,2
+ats_full,ATS,401860905,Colorado State,1.5,WIN,3
+ats_full,ATS,401856730,Mississippi State,4.5,LOSS,4
+ats_full,ATS,401858499,UCLA,-13.5,WIN,5
+ats_full,ATS,401856836,Colorado,13.5,LOSS,6
+ats_full,ATS,401856731,Tennessee,2.5,LOSS,7
+ats_full,ATS,401858495,Illinois,8.5,WIN,8
+ats_full,ATS,401869845,App State,10.5,WIN,9
+ats_full,ATS,401866450,Toledo,-2.5,WIN,10
+ats_full,ATS,401858272,Stanford,7.5,WIN,11
+ats_full,ATS,401858274,Pittsburgh,20.5,LOSS,12
+ats_full,ATS,401866447,Sacramento State,13.5,LOSS,13
+ats_full,ATS,401858500,Wisconsin,2.5,WIN,14
+ats_full,ATS,401871056,Kennesaw State,10.5,LOSS,15
+ats_full,ATS,401858496,Michigan,7.5,WIN,16
+ats_full,ATS,401858276,Virginia Tech,2.5,WIN,17
+ats_full,ATS,401856841,TCU,-8.5,LOSS,18
+ats_full,ATS,401856834,Kansas,2.5,WIN,19
+ats_full,ATS,401856838,Arizona,-9.5,WIN,20
+ats_full,ATS,401856727,Texas A&M,14.5,WIN,21
+ats_full,ATS,401858270,California,19.5,LOSS,22
+ats_full,ATS,401862807,East Carolina,10.5,WIN,23
+ats_full,ATS,401864528,San José State,4.5,LOSS,24
+ats_full,ATS,401866448,Buffalo,-3.5,WIN,25
+ats_full,ATS,401856732,Ole Miss,3.5,LOSS,26
+ats_full,ATS,401858497,Minnesota,6.5,WIN,27
+ats_full,ATS,401866446,Kent State,-2.5,WIN,28
+ats_full,ATS,401860907,Washington State,13.5,LOSS,29
+ats_full,ATS,401869967,Southern Miss,10.5,WIN,30
+ats_full,ATS,401866476,Miami (OH),-2.5,LOSS,31
+ats_full,ATS,401866449,Eastern Michigan,12.5,WIN,32
+ats_full,ATS,401862810,Navy,2.5,LOSS,33
+ats_full,ATS,401856835,UCF,6.5,WIN,34
+ats_full,ATS,401862808,Tulsa,-1.5,LOSS,35
+ats_full,ATS,401864527,New Mexico,-4.5,WIN,36
+ats_full,ATS,401856728,Auburn,7.5,LOSS,37
+ats_full,ATS,401860906,Texas State,-12.5,LOSS,38
+ats_full,ATS,401858271,Virginia,-1.5,LOSS,39
+ats_full,ATS,401864526,Northern Illinois,3.5,LOSS,40
+ats_full,ATS,401864525,Wyoming,5.5,WIN,41
+ats_full,ATS,401871094,Troy,-15.5,LOSS,42
+ats_full,ATS,401858275,Syracuse,8.5,WIN,43
+ats_full,ATS,401862809,Florida Atlantic,-7.5,LOSS,44
+ats_full,ATS,401869935,Georgia State,-2.5,LOSS,45
+ats_full,ATS,401862811,Tulane,2.5,LOSS,46
+ats_full,ATS,401856837,Utah,-6.5,WIN,47
+ats_full,ATS,401856839,Arizona State,3.5,WIN,48
+ats_full,ATS,401856729,Vanderbilt,11.5,LOSS,49
+ats_full,ATS,401858498,Rutgers,16.5,LOSS,50
+ats_full,ATS,401858273,Boston College,4.5,WIN,51
+ats_full,ATS,401871093,Old Dominion,12.5,LOSS,52
+ats_research_top5,ATS,401861965,Massachusetts,14.5,LOSS,1
+ats_research_top5,ATS,401856840,Cincinnati,10.5,WIN,2
+ats_research_top5,ATS,401860905,Colorado State,1.5,WIN,3
+ats_research_top5,ATS,401856730,Mississippi State,4.5,LOSS,4
+ats_research_top5,ATS,401858499,UCLA,-13.5,WIN,5
+ats_research_top10,ATS,401861965,Massachusetts,14.5,LOSS,1
+ats_research_top10,ATS,401856840,Cincinnati,10.5,WIN,2
+ats_research_top10,ATS,401860905,Colorado State,1.5,WIN,3
+ats_research_top10,ATS,401856730,Mississippi State,4.5,LOSS,4
+ats_research_top10,ATS,401858499,UCLA,-13.5,WIN,5
+ats_research_top10,ATS,401856836,Colorado,13.5,LOSS,6
+ats_research_top10,ATS,401856731,Tennessee,2.5,LOSS,7
+ats_research_top10,ATS,401858495,Illinois,8.5,WIN,8
+ats_research_top10,ATS,401869845,App State,10.5,WIN,9
+ats_research_top10,ATS,401866450,Toledo,-2.5,WIN,10
+ats_research_remaining47,ATS,401856836,Colorado,13.5,LOSS,6
+ats_research_remaining47,ATS,401856731,Tennessee,2.5,LOSS,7
+ats_research_remaining47,ATS,401858495,Illinois,8.5,WIN,8
+ats_research_remaining47,ATS,401869845,App State,10.5,WIN,9
+ats_research_remaining47,ATS,401866450,Toledo,-2.5,WIN,10
+ats_research_remaining47,ATS,401858272,Stanford,7.5,WIN,11
+ats_research_remaining47,ATS,401858274,Pittsburgh,20.5,LOSS,12
+ats_research_remaining47,ATS,401866447,Sacramento State,13.5,LOSS,13
+ats_research_remaining47,ATS,401858500,Wisconsin,2.5,WIN,14
+ats_research_remaining47,ATS,401871056,Kennesaw State,10.5,LOSS,15
+ats_research_remaining47,ATS,401858496,Michigan,7.5,WIN,16
+ats_research_remaining47,ATS,401858276,Virginia Tech,2.5,WIN,17
+ats_research_remaining47,ATS,401856841,TCU,-8.5,LOSS,18
+ats_research_remaining47,ATS,401856834,Kansas,2.5,WIN,19
+ats_research_remaining47,ATS,401856838,Arizona,-9.5,WIN,20
+ats_research_remaining47,ATS,401856727,Texas A&M,14.5,WIN,21
+ats_research_remaining47,ATS,401858270,California,19.5,LOSS,22
+ats_research_remaining47,ATS,401862807,East Carolina,10.5,WIN,23
+ats_research_remaining47,ATS,401864528,San José State,4.5,LOSS,24
+ats_research_remaining47,ATS,401866448,Buffalo,-3.5,WIN,25
+ats_research_remaining47,ATS,401856732,Ole Miss,3.5,LOSS,26
+ats_research_remaining47,ATS,401858497,Minnesota,6.5,WIN,27
+ats_research_remaining47,ATS,401866446,Kent State,-2.5,WIN,28
+ats_research_remaining47,ATS,401860907,Washington State,13.5,LOSS,29
+ats_research_remaining47,ATS,401869967,Southern Miss,10.5,WIN,30
+ats_research_remaining47,ATS,401866476,Miami (OH),-2.5,LOSS,31
+ats_research_remaining47,ATS,401866449,Eastern Michigan,12.5,WIN,32
+ats_research_remaining47,ATS,401862810,Navy,2.5,LOSS,33
+ats_research_remaining47,ATS,401856835,UCF,6.5,WIN,34
+ats_research_remaining47,ATS,401862808,Tulsa,-1.5,LOSS,35
+ats_research_remaining47,ATS,401864527,New Mexico,-4.5,WIN,36
+ats_research_remaining47,ATS,401856728,Auburn,7.5,LOSS,37
+ats_research_remaining47,ATS,401860906,Texas State,-12.5,LOSS,38
+ats_research_remaining47,ATS,401858271,Virginia,-1.5,LOSS,39
+ats_research_remaining47,ATS,401864526,Northern Illinois,3.5,LOSS,40
+ats_research_remaining47,ATS,401864525,Wyoming,5.5,WIN,41
+ats_research_remaining47,ATS,401871094,Troy,-15.5,LOSS,42
+ats_research_remaining47,ATS,401858275,Syracuse,8.5,WIN,43
+ats_research_remaining47,ATS,401862809,Florida Atlantic,-7.5,LOSS,44
+ats_research_remaining47,ATS,401869935,Georgia State,-2.5,LOSS,45
+ats_research_remaining47,ATS,401862811,Tulane,2.5,LOSS,46
+ats_research_remaining47,ATS,401856837,Utah,-6.5,WIN,47
+ats_research_remaining47,ATS,401856839,Arizona State,3.5,WIN,48
+ats_research_remaining47,ATS,401856729,Vanderbilt,11.5,LOSS,49
+ats_research_remaining47,ATS,401858498,Rutgers,16.5,LOSS,50
+ats_research_remaining47,ATS,401858273,Boston College,4.5,WIN,51
+ats_research_remaining47,ATS,401871093,Old Dominion,12.5,LOSS,52
+total_full,TOTAL,401866476,over,40.5,WIN,1
+total_full,TOTAL,401860905,under,64.5,LOSS,2
+total_full,TOTAL,401860906,under,60.5,WIN,3
+total_full,TOTAL,401856836,under,55.5,LOSS,4
+total_full,TOTAL,401856834,under,53.5,WIN,5
+total_full,TOTAL,401862807,under,54.5,LOSS,6
+total_full,TOTAL,401858497,over,40.5,LOSS,7
+total_full,TOTAL,401869935,under,58.5,LOSS,8
+total_full,TOTAL,401869845,under,55.5,LOSS,9
+total_full,TOTAL,401864525,over,44.5,LOSS,10
+total_full,TOTAL,401856841,under,55.5,WIN,11
+total_full,TOTAL,401858496,over,41.5,LOSS,12
+total_full,TOTAL,401858271,over,47.5,LOSS,13
+total_full,TOTAL,401862810,under,62.5,LOSS,14
+total_full,TOTAL,401856839,under,56.5,WIN,15
+total_full,TOTAL,401869967,under,52.5,LOSS,16
+total_full,TOTAL,401858270,under,53.5,LOSS,17
+total_full,TOTAL,401856835,over,43.5,WIN,18
+total_full,TOTAL,401856728,under,50.5,LOSS,19
+total_full,TOTAL,401856732,under,53.5,LOSS,20
+total_full,TOTAL,401871093,under,45.5,WIN,21
+total_full,TOTAL,401866450,over,46.5,WIN,22
+total_full,TOTAL,401866449,over,48.5,LOSS,23
+total_full,TOTAL,401858276,under,49.5,WIN,24
+total_full,TOTAL,401864528,over,45.5,LOSS,25
+total_full,TOTAL,401858495,over,50.5,LOSS,26
+total_full,TOTAL,401856840,under,56.5,LOSS,27
+total_full,TOTAL,401871094,under,50.5,WIN,28
+total_full,TOTAL,401858498,under,58.5,WIN,29
+total_full,TOTAL,401860907,under,51.5,WIN,30
+total_full,TOTAL,401856731,under,50.5,LOSS,31
+total_full,TOTAL,401856727,under,50.5,LOSS,32
+total_full,TOTAL,401862811,under,51.5,LOSS,33
+total_full,TOTAL,401864526,over,47.5,WIN,34
+total_full,TOTAL,401856729,under,51.5,WIN,35
+total_full,TOTAL,401856837,under,56.5,WIN,36
+total_full,TOTAL,401858272,over,55.5,WIN,37
+total_full,TOTAL,401858500,over,49.5,LOSS,38
+total_full,TOTAL,401866448,over,44.5,WIN,39
+total_full,TOTAL,401858499,over,44.5,LOSS,40
+total_full,TOTAL,401858274,over,50.5,WIN,41
+total_full,TOTAL,401862808,over,53.5,WIN,42
+total_full,TOTAL,401862809,under,53.5,LOSS,43
+total_full,TOTAL,401866446,over,46.5,WIN,44
+total_full,TOTAL,401871056,under,49.5,WIN,45
+total_full,TOTAL,401856730,over,44.5,LOSS,46
+total_full,TOTAL,401866447,under,50.5,LOSS,47
+total_full,TOTAL,401856838,under,50.5,WIN,48
+total_full,TOTAL,401858275,under,46.5,LOSS,49
+total_full,TOTAL,401858273,over,49.5,WIN,50
+total_full,TOTAL,401861965,under,49.5,LOSS,51
+total_full,TOTAL,401864527,over,41.5,LOSS,52
+total_research_top5,TOTAL,401866476,over,40.5,WIN,1
+total_research_top5,TOTAL,401860905,under,64.5,LOSS,2
+total_research_top5,TOTAL,401860906,under,60.5,WIN,3
+total_research_top5,TOTAL,401856836,under,55.5,LOSS,4
+total_research_top5,TOTAL,401856834,under,53.5,WIN,5
+total_research_top10,TOTAL,401866476,over,40.5,WIN,1
+total_research_top10,TOTAL,401860905,under,64.5,LOSS,2
+total_research_top10,TOTAL,401860906,under,60.5,WIN,3
+total_research_top10,TOTAL,401856836,under,55.5,LOSS,4
+total_research_top10,TOTAL,401856834,under,53.5,WIN,5
+total_research_top10,TOTAL,401862807,under,54.5,LOSS,6
+total_research_top10,TOTAL,401858497,over,40.5,LOSS,7
+total_research_top10,TOTAL,401869935,under,58.5,LOSS,8
+total_research_top10,TOTAL,401869845,under,55.5,LOSS,9
+total_research_top10,TOTAL,401864525,over,44.5,LOSS,10
+total_research_remaining47,TOTAL,401862807,under,54.5,LOSS,6
+total_research_remaining47,TOTAL,401858497,over,40.5,LOSS,7
+total_research_remaining47,TOTAL,401869935,under,58.5,LOSS,8
+total_research_remaining47,TOTAL,401869845,under,55.5,LOSS,9
+total_research_remaining47,TOTAL,401864525,over,44.5,LOSS,10
+total_research_remaining47,TOTAL,401856841,under,55.5,WIN,11
+total_research_remaining47,TOTAL,401858496,over,41.5,LOSS,12
+total_research_remaining47,TOTAL,401858271,over,47.5,LOSS,13
+total_research_remaining47,TOTAL,401862810,under,62.5,LOSS,14
+total_research_remaining47,TOTAL,401856839,under,56.5,WIN,15
+total_research_remaining47,TOTAL,401869967,under,52.5,LOSS,16
+total_research_remaining47,TOTAL,401858270,under,53.5,LOSS,17
+total_research_remaining47,TOTAL,401856835,over,43.5,WIN,18
+total_research_remaining47,TOTAL,401856728,under,50.5,LOSS,19
+total_research_remaining47,TOTAL,401856732,under,53.5,LOSS,20
+total_research_remaining47,TOTAL,401871093,under,45.5,WIN,21
+total_research_remaining47,TOTAL,401866450,over,46.5,WIN,22
+total_research_remaining47,TOTAL,401866449,over,48.5,LOSS,23
+total_research_remaining47,TOTAL,401858276,under,49.5,WIN,24
+total_research_remaining47,TOTAL,401864528,over,45.5,LOSS,25
+total_research_remaining47,TOTAL,401858495,over,50.5,LOSS,26
+total_research_remaining47,TOTAL,401856840,under,56.5,LOSS,27
+total_research_remaining47,TOTAL,401871094,under,50.5,WIN,28
+total_research_remaining47,TOTAL,401858498,under,58.5,WIN,29
+total_research_remaining47,TOTAL,401860907,under,51.5,WIN,30
+total_research_remaining47,TOTAL,401856731,under,50.5,LOSS,31
+total_research_remaining47,TOTAL,401856727,under,50.5,LOSS,32
+total_research_remaining47,TOTAL,401862811,under,51.5,LOSS,33
+total_research_remaining47,TOTAL,401864526,over,47.5,WIN,34
+total_research_remaining47,TOTAL,401856729,under,51.5,WIN,35
+total_research_remaining47,TOTAL,401856837,under,56.5,WIN,36
+total_research_remaining47,TOTAL,401858272,over,55.5,WIN,37
+total_research_remaining47,TOTAL,401858500,over,49.5,LOSS,38
+total_research_remaining47,TOTAL,401866448,over,44.5,WIN,39
+total_research_remaining47,TOTAL,401858499,over,44.5,LOSS,40
+total_research_remaining47,TOTAL,401858274,over,50.5,WIN,41
+total_research_remaining47,TOTAL,401862808,over,53.5,WIN,42
+total_research_remaining47,TOTAL,401862809,under,53.5,LOSS,43
+total_research_remaining47,TOTAL,401866446,over,46.5,WIN,44
+total_research_remaining47,TOTAL,401871056,under,49.5,WIN,45
+total_research_remaining47,TOTAL,401856730,over,44.5,LOSS,46
+total_research_remaining47,TOTAL,401866447,under,50.5,LOSS,47
+total_research_remaining47,TOTAL,401856838,under,50.5,WIN,48
+total_research_remaining47,TOTAL,401858275,under,46.5,LOSS,49
+total_research_remaining47,TOTAL,401858273,over,49.5,WIN,50
+total_research_remaining47,TOTAL,401861965,under,49.5,LOSS,51
+total_research_remaining47,TOTAL,401864527,over,41.5,LOSS,52
+legacy_mixed_research_top5,TOTAL,401866476,over,40.5,WIN,1
+legacy_mixed_research_top5,TOTAL,401860905,under,64.5,LOSS,2
+legacy_mixed_research_top5,TOTAL,401860906,under,60.5,WIN,3
+legacy_mixed_research_top5,TOTAL,401856836,under,55.5,LOSS,4
+legacy_mixed_research_top5,TOTAL,401856834,under,53.5,WIN,5
+human_review_candidate_board,ATS,401861965,Massachusetts,14.5,LOSS,1
+human_review_candidate_board,ATS,401856840,Cincinnati,10.5,WIN,2
+human_review_candidate_board,ATS,401860905,Colorado State,1.5,WIN,3
+human_review_candidate_board,ATS,401856730,Mississippi State,4.5,LOSS,4
+human_review_candidate_board,ATS,401858499,UCLA,-13.5,WIN,5
+human_review_candidate_board,TOTAL,401866476,over,40.5,WIN,1
+human_review_candidate_board,TOTAL,401860905,under,64.5,LOSS,2
+human_review_candidate_board,TOTAL,401860906,under,60.5,WIN,3
+human_review_candidate_board,TOTAL,401856836,under,55.5,LOSS,4
+human_review_candidate_board,TOTAL,401856834,under,53.5,WIN,5

@@ -1,0 +1,208 @@
+{
+  "comparisons": [
+    {
+      "archived_sha256": "ec46f6b0a9eed4af66e8dfefcf6036fdcb0c56348ccfdf1246619e7a49f59c8d",
+      "byte_identical": true,
+      "computed_sha256": "ec46f6b0a9eed4af66e8dfefcf6036fdcb0c56348ccfdf1246619e7a49f59c8d",
+      "differences": [],
+      "first_different_byte": null,
+      "path": "outputs/2026-week7-postgame-audit/week7_diagnostics.json"
+    },
+    {
+      "archived_sha256": "bb59bf47455cc155d62f93e401dd043de7efb00d164866321e7ba1757cd57884",
+      "byte_identical": true,
+      "computed_sha256": "bb59bf47455cc155d62f93e401dd043de7efb00d164866321e7ba1757cd57884",
+      "differences": [],
+      "first_different_byte": null,
+      "path": "outputs/2026-week7-postgame-audit/week7_final_results.csv"
+    },
+    {
+      "archived_sha256": "48a4171a57ea53dd18507a2e04721c1c77a7155f48c9f93704fd23bec3067dc8",
+      "byte_identical": true,
+      "computed_sha256": "48a4171a57ea53dd18507a2e04721c1c77a7155f48c9f93704fd23bec3067dc8",
+      "differences": [],
+      "first_different_byte": null,
+      "path": "outputs/2026-week7-postgame-audit/week7_ats_audit.csv"
+    },
+    {
+      "archived_sha256": "d7dce91e9e5e26893f84e683a34f3817ed69200703cbe0f974cc194fbbff0dfb",
+      "byte_identical": true,
+      "computed_sha256": "d7dce91e9e5e26893f84e683a34f3817ed69200703cbe0f974cc194fbbff0dfb",
+      "differences": [],
+      "first_different_byte": null,
+      "path": "outputs/2026-week7-postgame-audit/week7_totals_audit.csv"
+    },
+    {
+      "archived_sha256": "bef7e456e1a653c0fb9d7318f6400cb8240bb46972155ad573c0075dd461fd86",
+      "byte_identical": true,
+      "computed_sha256": "bef7e456e1a653c0fb9d7318f6400cb8240bb46972155ad573c0075dd461fd86",
+      "differences": [],
+      "first_different_byte": null,
+      "path": "outputs/2026-week7-postgame-audit/week7_owner_approved_five_audit.csv"
+    },
+    {
+      "archived_sha256": "c64ccdbac799b08ab5f1634c5ddc3a193588111c8d4ea8612bcdd6edfc33156c",
+      "byte_identical": true,
+      "computed_sha256": "c64ccdbac799b08ab5f1634c5ddc3a193588111c8d4ea8612bcdd6edfc33156c",
+      "differences": [],
+      "first_different_byte": null,
+      "path": "outputs/2026-week7-postgame-audit/week7_cohort_membership.csv"
+    },
+    {
+      "archived_sha256": "56ddb9acfcaf36d2eaa71fd895f4c1fda7878f5182c8008a6781e724109dc4cb",
+      "byte_identical": true,
+      "computed_sha256": "56ddb9acfcaf36d2eaa71fd895f4c1fda7878f5182c8008a6781e724109dc4cb",
+      "differences": [],
+      "first_different_byte": null,
+      "path": "outputs/2026-week7-postgame-audit/week7_source_correction_impact.csv"
+    },
+    {
+      "archived_sha256": "31562fbc6b646def90b3bf212efbd40eb021d585ee7d1dcb26cd30cc48609fc0",
+      "byte_identical": true,
+      "computed_sha256": "31562fbc6b646def90b3bf212efbd40eb021d585ee7d1dcb26cd30cc48609fc0",
+      "differences": [],
+      "first_different_byte": null,
+      "path": "outputs/2026-week7-postgame-audit/week7_postgame_report.md"
+    },
+    {
+      "archived_sha256": "738fdaf68ab42c63e1630ac8ceee56a1821bcfc56e33fdeea0038bf7770f0d6a",
+      "byte_identical": true,
+      "computed_sha256": "738fdaf68ab42c63e1630ac8ceee56a1821bcfc56e33fdeea0038bf7770f0d6a",
+      "differences": [],
+      "first_different_byte": null,
+      "path": "outputs/2026-week8-postgame-audit/week8_diagnostics.json"
+    },
+    {
+      "archived_sha256": "88d5974fedbd925514b6be06b06e70e3c1eb54734a3181a951d1bda90ebc07e6",
+      "byte_identical": true,
+      "computed_sha256": "88d5974fedbd925514b6be06b06e70e3c1eb54734a3181a951d1bda90ebc07e6",
+      "differences": [],
+      "first_different_byte": null,
+      "path": "outputs/2026-week8-postgame-audit/cross_week_diagnostics.json"
+    },
+    {
+      "archived_sha256": "474b81b69aedca0b63d407a694313d815af297d27c710c06b853abc512509778",
+      "byte_identical": true,
+      "computed_sha256": "474b81b69aedca0b63d407a694313d815af297d27c710c06b853abc512509778",
+      "differences": [],
+      "first_different_byte": null,
+      "path": "outputs/2026-week8-postgame-audit/week8_postgame_report.md"
+    },
+    {
+      "archived_sha256": "8a295f194fa715b71c4259337b2d74b1fb3b46678c978d6ab3acdb401d462b13",
+      "byte_identical": true,
+      "computed_sha256": "8a295f194fa715b71c4259337b2d74b1fb3b46678c978d6ab3acdb401d462b13",
+      "differences": [],
+      "first_different_byte": null,
+      "path": "outputs/2026-week8-postgame-audit/cross_week_tables.md"
+    },
+    {
+      "archived_sha256": "5b885bf098485b7942b3f59d5bb6869520c0f703366e34a6be2b5872f955923e",
+      "byte_identical": true,
+      "computed_sha256": "5b885bf098485b7942b3f59d5bb6869520c0f703366e34a6be2b5872f955923e",
+      "differences": [],
+      "first_different_byte": null,
+      "path": "outputs/2026-week8-postgame-audit/week8_final_results.csv"
+    },
+    {
+      "archived_sha256": "74aa1c4b2766e8972f33fcba94cfa1241cdd09e90dabec61b6f89e5984b5791a",
+      "byte_identical": true,
+      "computed_sha256": "74aa1c4b2766e8972f33fcba94cfa1241cdd09e90dabec61b6f89e5984b5791a",
+      "differences": [],
+      "first_different_byte": null,
+      "path": "outputs/2026-week8-postgame-audit/week8_ats_audit.csv"
+    },
+    {
+      "archived_sha256": "a7175b6aa042e424b5d78ec22c9f906fbbd9195cace1f622cb4503858735a1d5",
+      "byte_identical": true,
+      "computed_sha256": "a7175b6aa042e424b5d78ec22c9f906fbbd9195cace1f622cb4503858735a1d5",
+      "differences": [],
+      "first_different_byte": null,
+      "path": "outputs/2026-week8-postgame-audit/week8_totals_audit.csv"
+    },
+    {
+      "archived_sha256": "5a8c7ac78e173e0dcefb48f1acdeb5bbb24d01db9ee5d1166b8ffb6ff59a56fc",
+      "byte_identical": true,
+      "computed_sha256": "5a8c7ac78e173e0dcefb48f1acdeb5bbb24d01db9ee5d1166b8ffb6ff59a56fc",
+      "differences": [],
+      "first_different_byte": null,
+      "path": "outputs/2026-week8-postgame-audit/week8_cohort_membership.csv"
+    },
+    {
+      "archived_sha256": "c7b0a53b0d55ad6fd6dfc629bb76dcde0edc449870ff4cbe40734022c310a472",
+      "byte_identical": true,
+      "computed_sha256": "c7b0a53b0d55ad6fd6dfc629bb76dcde0edc449870ff4cbe40734022c310a472",
+      "differences": [],
+      "first_different_byte": null,
+      "path": "outputs/2026-week8-postgame-audit/week8_postgame_manifest.json"
+    },
+    {
+      "archived_sha256": "36d867cf1f808d2a2022ebfcae8837d06e2b8128d2f1dbb67077953b5babeb46",
+      "byte_identical": true,
+      "computed_sha256": "36d867cf1f808d2a2022ebfcae8837d06e2b8128d2f1dbb67077953b5babeb46",
+      "differences": [],
+      "first_different_byte": null,
+      "path": "outputs/2026-week8-audit-research/numerical_research_candidates.json"
+    }
+  ],
+  "controls": [
+    {
+      "differences": [],
+      "intervention": "Only module-local sum replaced with explicit Neumaier arithmetic",
+      "module": "scripts.build_week7_postgame_audit"
+    },
+    {
+      "differences": [],
+      "intervention": "Only module-local sum replaced with explicit Neumaier arithmetic",
+      "module": "scripts.build_week8_postgame_audit"
+    },
+    {
+      "differences": [],
+      "intervention": "Only module-local sum replaced with explicit Neumaier arithmetic",
+      "module": "scripts.week8_numerical_research"
+    }
+  ],
+  "environment": {
+    "commit": "8c755db43fb91ce52c4584eb0f31d4e3340dd2f7",
+    "compensated_probe": 1.0,
+    "float_format": "sys.float_info(max=1.7976931348623157e+308, max_exp=1024, max_10_exp=308, min=2.2250738585072014e-308, min_exp=-1021, min_10_exp=-307, dig=15, mant_dig=53, epsilon=2.220446049250313e-16, radix=2, rounds=1)",
+    "git_status": "",
+    "machine": "AMD64",
+    "math_log_probe": "-0x1.6d3c324e13f50p-2",
+    "packages": {
+      "Pygments": "2.20.0",
+      "argcomplete": "3.7.2",
+      "certifi": "2026.7.22",
+      "charset-normalizer": "3.4.9",
+      "click": "8.5.0",
+      "colorama": "0.4.6",
+      "filelock": "4.2.4",
+      "idna": "3.18",
+      "iniconfig": "2.3.0",
+      "packaging": "26.3",
+      "pip": "26.2.2",
+      "pipx": "1.18.4",
+      "platformdirs": "4.13.5",
+      "pluggy": "1.6.0",
+      "psycopg": "3.3.4",
+      "psycopg-binary": "3.3.4",
+      "pytest": "9.1.1",
+      "requests": "2.34.2",
+      "typing_extensions": "4.16.0",
+      "tzdata": "2026.6",
+      "urllib3": "2.7.0",
+      "userpath": "1.9.2"
+    },
+    "parents": "",
+    "platform": "Windows-2025Server-10.0.26100-SP0",
+    "python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+    "requirements_sha256": {
+      "requirements-dev.txt": "089d9c094500662925d623fb46b0e2ebff64a7febf95809b63ea2da8c70ef93f",
+      "requirements.txt": "5a2cb3b8e154f349ba016c1f7de9e817134d4a9f7a78a28d18a611d1f4adf305"
+    },
+    "sum_probe": 1.0,
+    "tzpath": [],
+    "utc": "2026-10-30T18:06:25.418443+00:00"
+  },
+  "week8_manifest_differences": []
+}

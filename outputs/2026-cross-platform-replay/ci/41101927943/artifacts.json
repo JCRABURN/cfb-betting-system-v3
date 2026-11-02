@@ -1,0 +1,85 @@
+{
+  "total_count": 4,
+  "artifacts": [
+    {
+      "id": 13000780337,
+      "node_id": "MDg6QXJ0aWZhY3QxMzAwMDc4MDMzNw==",
+      "name": "replay-windows-latest-3.12.10",
+      "size_in_bytes": 143980,
+      "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3/actions/artifacts/13000780337",
+      "archive_download_url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3/actions/artifacts/13000780337/zip",
+      "expired": false,
+      "digest": "sha256:c027bec5f4e034f08afc3ec2fa19c95aac5ac5c84ad4d61b267745962885a46b",
+      "created_at": "2026-10-30T18:03:37Z",
+      "updated_at": "2026-10-30T18:03:37Z",
+      "expires_at": "2027-01-28T17:50:54Z",
+      "workflow_run": {
+        "id": 41101927943,
+        "repository_id": 1323187714,
+        "head_repository_id": 1323187714,
+        "head_branch": "codex/cross-platform-replay",
+        "head_sha": "9f310e1a3a1fd0412ca71f695ba5abd3ca71b6f3"
+      }
+    },
+    {
+      "id": 13000077662,
+      "node_id": "MDg6QXJ0aWZhY3QxMzAwMDA3NzY2Mg==",
+      "name": "replay-windows-latest-3.11.9",
+      "size_in_bytes": 159482,
+      "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3/actions/artifacts/13000077662",
+      "archive_download_url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3/actions/artifacts/13000077662/zip",
+      "expired": false,
+      "digest": "sha256:05ab58d295ca1b98e79608104c74f06cf627f9aed7654f1a4ee7e202db34f867",
+      "created_at": "2026-10-30T18:05:55Z",
+      "updated_at": "2026-10-30T18:05:55Z",
+      "expires_at": "2027-01-28T17:50:54Z",
+      "workflow_run": {
+        "id": 41101927943,
+        "repository_id": 1323187714,
+        "head_repository_id": 1323187714,
+        "head_branch": "codex/cross-platform-replay",
+        "head_sha": "9f310e1a3a1fd0412ca71f695ba5abd3ca71b6f3"
+      }
+    },
+    {
+      "id": 12998464624,
+      "node_id": "MDg6QXJ0aWZhY3QxMjk5ODQ2NDYyNA==",
+      "name": "replay-ubuntu-latest-3.12.14",
+      "size_in_bytes": 143915,
+      "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3/actions/artifacts/12998464624",
+      "archive_download_url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3/actions/artifacts/12998464624/zip",
+      "expired": false,
+      "digest": "sha256:ed24a5b163c4f2db87b1a88289cdb13e6ce21f88973c1d31522aae1e133af143",
+      "created_at": "2026-10-30T17:58:19Z",
+      "updated_at": "2026-10-30T17:58:19Z",
+      "expires_at": "2027-01-28T17:50:54Z",
+      "workflow_run": {
+        "id": 41101927943,
+        "repository_id": 1323187714,
+        "head_repository_id": 1323187714,
+        "head_branch": "codex/cross-platform-replay",
+        "head_sha": "9f310e1a3a1fd0412ca71f695ba5abd3ca71b6f3"
+      }
+    },
+    {
+      "id": 12997609984,
+      "node_id": "MDg6QXJ0aWZhY3QxMjk5NzYwOTk4NA==",
+      "name": "replay-ubuntu-latest-3.11.17",
+      "size_in_bytes": 159491,
+      "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3/actions/artifacts/12997609984",
+      "archive_download_url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3/actions/artifacts/12997609984/zip",
+      "expired": false,
+      "digest": "sha256:432909975aca282148ad451d46d6086fc1dfbc859bf075e78f92daa90d125800",
+      "created_at": "2026-10-30T17:58:08Z",
+      "updated_at": "2026-10-30T17:58:08Z",
+      "expires_at": "2027-01-28T17:50:54Z",
+      "workflow_run": {
+        "id": 41101927943,
+        "repository_id": 1323187714,
+        "head_repository_id": 1323187714,
+        "head_branch": "codex/cross-platform-replay",
+        "head_sha": "9f310e1a3a1fd0412ca71f695ba5abd3ca71b6f3"
+      }
+    }
+  ]
+}
