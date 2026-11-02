@@ -1,0 +1,8 @@
+{
+  "url": "https://app.hdintelligence.com/?source=American&sport=Football&conf=American&type=report",
+  "requested_at_utc": "2026-10-30T13:06:53.946392+00:00",
+  "received_at_utc": "2026-10-30T13:06:54.118279+00:00",
+  "sha256": "e687d4faaa2e14372c379db6a9e933badedc0670600b6c293148498166e4447b",
+  "path": "american-app.html.gz",
+  "http_status": 200
+}
