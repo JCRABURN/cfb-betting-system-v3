@@ -1,0 +1,251 @@
+{
+  "retrieved_at_utc": "2026-11-04T19:26:09.187008+00:00",
+  "run_id": 41859414614,
+  "source_sha": "f7fbfed28f55e556d9a9fc738205937c962f826f",
+  "url": "https://github.com/JCRABURN/cfb-betting-system-v3/actions/runs/41859414614",
+  "conclusion": "success",
+  "jobs": [
+    {
+      "job": "test (ubuntu-latest, 3.11.17)",
+      "id": 126676769594,
+      "url": "https://github.com/JCRABURN/cfb-betting-system-v3/actions/runs/41859414614/job/126676769594",
+      "conclusion": "success",
+      "raw_log_sha256": "99d1d3a23ab33c47863ee88ea7bc223682dbdbc902c9485b57622c642ea89f82",
+      "test_summary": [
+        "2026-11-04T15:40:43.7557764Z 885 passed in 271.13s (0:04:31)"
+      ],
+      "checkout_sha_lines": [
+        "2026-11-04T15:36:00.3499004Z Commit: 21505ad2541d5be6135ed84fc33697146cf75b8e",
+        "2026-11-04T15:36:00.6816281Z Download action repository 'actions/checkout@v4' (SHA:11d5960a326750d5838078e36cf38b85af677262)",
+        "2026-11-04T15:36:00.7693181Z Download action repository 'actions/setup-python@v5' (SHA:a26af69be951a213d495a4c3e4e4022e16d87065)",
+        "2026-11-04T15:36:00.8394277Z Download action repository 'actions/upload-artifact@v4' (SHA:ea165f8d65b6e75b540449e92b4886f43607fa02)",
+        "2026-11-04T15:36:01.4691545Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +c19b209aaa75895d2ca63032068d399afeebfab0:refs/remotes/pull/48/merge",
+        "2026-11-04T15:36:06.8770776Z  * [new ref]         c19b209aaa75895d2ca63032068d399afeebfab0 -> pull/48/merge",
+        "2026-11-04T15:36:07.3923778Z HEAD is now at c19b209 Merge f7fbfed28f55e556d9a9fc738205937c962f826f into abb4eb26bd1140e66972d2f1143cd587e80960b4",
+        "2026-11-04T15:36:07.4055599Z c19b209aaa75895d2ca63032068d399afeebfab0",
+        "2026-11-04T15:36:12.0866887Z Source SHA-256 before: 09d0bcda684356001bacf8bc9e42939add56b053f405564d9be924e39c0cf842",
+        "2026-11-04T15:36:12.0867591Z Source SHA-256 after: 09d0bcda684356001bacf8bc9e42939add56b053f405564d9be924e39c0cf842",
+        "2026-11-04T15:42:02.9968996Z SHA256 digest of uploaded artifact zip is fec5b03911587d075edb173e5ce45a30b7b95fb34017bda2842f62fedfd9e8ab",
+        "2026-11-04T15:42:04.6397854Z Cache saved with the key: setup-python-Linux-x64-26.04-Ubuntu-python-3.11.17-pip-deb30e4bae97a4a4bdb7909d9e623cb2f8fe68906551ed8fa49b166db8ed4f7c"
+      ],
+      "formal_audit_gate": {
+        "name": "Verify exact Week 9 formal postgame audit",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 10,
+        "started_at": "2026-11-04T15:41:53Z",
+        "completed_at": "2026-11-04T15:41:55Z"
+      }
+    },
+    {
+      "job": "test (ubuntu-latest, 3.12.14)",
+      "id": 126676769763,
+      "url": "https://github.com/JCRABURN/cfb-betting-system-v3/actions/runs/41859414614/job/126676769763",
+      "conclusion": "success",
+      "raw_log_sha256": "a5041359563b68cdbb15506c092c16b876e937bb8c10c9d092facb26f3900d04",
+      "test_summary": [
+        "2026-11-04T15:44:19.3760450Z 885 passed, 39 warnings in 473.04s (0:07:53)"
+      ],
+      "checkout_sha_lines": [
+        "2026-11-04T15:36:08.0335355Z Commit: 21505ad2541d5be6135ed84fc33697146cf75b8e",
+        "2026-11-04T15:36:08.3663722Z Download action repository 'actions/checkout@v4' (SHA:11d5960a326750d5838078e36cf38b85af677262)",
+        "2026-11-04T15:36:08.5066774Z Download action repository 'actions/setup-python@v5' (SHA:a26af69be951a213d495a4c3e4e4022e16d87065)",
+        "2026-11-04T15:36:08.6212871Z Download action repository 'actions/upload-artifact@v4' (SHA:ea165f8d65b6e75b540449e92b4886f43607fa02)",
+        "2026-11-04T15:36:09.3590535Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +c19b209aaa75895d2ca63032068d399afeebfab0:refs/remotes/pull/48/merge",
+        "2026-11-04T15:36:12.0986594Z  * [new ref]         c19b209aaa75895d2ca63032068d399afeebfab0 -> pull/48/merge",
+        "2026-11-04T15:36:12.7831573Z HEAD is now at c19b209 Merge f7fbfed28f55e556d9a9fc738205937c962f826f into abb4eb26bd1140e66972d2f1143cd587e80960b4",
+        "2026-11-04T15:36:12.7953216Z c19b209aaa75895d2ca63032068d399afeebfab0",
+        "2026-11-04T15:36:25.5309476Z Source SHA-256 before: 09d0bcda684356001bacf8bc9e42939add56b053f405564d9be924e39c0cf842",
+        "2026-11-04T15:36:25.5310623Z Source SHA-256 after: 09d0bcda684356001bacf8bc9e42939add56b053f405564d9be924e39c0cf842",
+        "2026-11-04T15:46:45.5611671Z SHA256 digest of uploaded artifact zip is c0d8d1d07a7b848d610b7cd39bc4d2928862a0a7a2199ddcd8d68955e7a5e885",
+        "2026-11-04T15:46:47.4302207Z Cache saved with the key: setup-python-Linux-x64-26.04-Ubuntu-python-3.12.14-pip-deb30e4bae97a4a4bdb7909d9e623cb2f8fe68906551ed8fa49b166db8ed4f7c"
+      ],
+      "formal_audit_gate": {
+        "name": "Verify exact Week 9 formal postgame audit",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 10,
+        "started_at": "2026-11-04T15:46:31Z",
+        "completed_at": "2026-11-04T15:46:34Z"
+      }
+    },
+    {
+      "job": "test (windows-latest, 3.11.9)",
+      "id": 126676769888,
+      "url": "https://github.com/JCRABURN/cfb-betting-system-v3/actions/runs/41859414614/job/126676769888",
+      "conclusion": "success",
+      "raw_log_sha256": "b0edb15219fb40f13be9663008fbe8e2858e0055b4bd4c8e1d2f3b9a48e820c3",
+      "test_summary": [
+        "2026-11-04T15:49:59.4150920Z 885 passed in 806.11s (0:13:26)\r"
+      ],
+      "checkout_sha_lines": [
+        "2026-11-04T15:36:00.7328762Z Commit: 21505ad2541d5be6135ed84fc33697146cf75b8e\r",
+        "2026-11-04T15:36:01.0766604Z Download action repository 'actions/checkout@v4' (SHA:11d5960a326750d5838078e36cf38b85af677262)\r",
+        "2026-11-04T15:36:01.2089889Z Download action repository 'actions/setup-python@v5' (SHA:a26af69be951a213d495a4c3e4e4022e16d87065)\r",
+        "2026-11-04T15:36:01.3534408Z Download action repository 'actions/upload-artifact@v4' (SHA:ea165f8d65b6e75b540449e92b4886f43607fa02)\r",
+        "2026-11-04T15:36:06.6622839Z [command]\"C:\\Program Files\\Git\\bin\\git.exe\" -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +c19b209aaa75895d2ca63032068d399afeebfab0:refs/remotes/pull/48/merge\r",
+        "2026-11-04T15:36:11.9861395Z  * [new ref]         c19b209aaa75895d2ca63032068d399afeebfab0 -> pull/48/merge\r",
+        "2026-11-04T15:36:14.0069514Z HEAD is now at c19b209 Merge f7fbfed28f55e556d9a9fc738205937c962f826f into abb4eb26bd1140e66972d2f1143cd587e80960b4\r",
+        "2026-11-04T15:36:14.1120318Z c19b209aaa75895d2ca63032068d399afeebfab0\r",
+        "2026-11-04T15:36:31.3478841Z Source SHA-256 before: 09d0bcda684356001bacf8bc9e42939add56b053f405564d9be924e39c0cf842\r",
+        "2026-11-04T15:36:31.3479936Z Source SHA-256 after: 09d0bcda684356001bacf8bc9e42939add56b053f405564d9be924e39c0cf842\r",
+        "2026-11-04T15:52:50.7930488Z SHA256 digest of uploaded artifact zip is 85aea3d995188914da79f534499e4a504e5c0d01bc98b274ad55d93ad86508cd\r",
+        "2026-11-04T15:52:52.7654735Z Cache saved with the key: setup-python-Windows-x64-python-3.11.9-pip-6f76b6bf17ff0d1fdcde83ece5c47f216a7a7dc0ff541630aad7b011ddf200cd\r"
+      ],
+      "formal_audit_gate": {
+        "name": "Verify exact Week 9 formal postgame audit",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 10,
+        "started_at": "2026-11-04T15:52:32Z",
+        "completed_at": "2026-11-04T15:52:36Z"
+      }
+    },
+    {
+      "job": "test (windows-latest, 3.12.10)",
+      "id": 126676770103,
+      "url": "https://github.com/JCRABURN/cfb-betting-system-v3/actions/runs/41859414614/job/126676770103",
+      "conclusion": "success",
+      "raw_log_sha256": "89855ed441bfe30e9bfd7b93516c9f8f1819ae8a7764d3e52cbf5a4af8851042",
+      "test_summary": [
+        "2026-11-04T15:52:38.7854635Z 885 passed, 39 warnings in 964.19s (0:16:04)\r"
+      ],
+      "checkout_sha_lines": [
+        "2026-11-04T15:36:01.1945136Z Commit: 21505ad2541d5be6135ed84fc33697146cf75b8e\r",
+        "2026-11-04T15:36:01.4791789Z Download action repository 'actions/checkout@v4' (SHA:11d5960a326750d5838078e36cf38b85af677262)\r",
+        "2026-11-04T15:36:01.6128958Z Download action repository 'actions/setup-python@v5' (SHA:a26af69be951a213d495a4c3e4e4022e16d87065)\r",
+        "2026-11-04T15:36:01.7868293Z Download action repository 'actions/upload-artifact@v4' (SHA:ea165f8d65b6e75b540449e92b4886f43607fa02)\r",
+        "2026-11-04T15:36:06.4035263Z [command]\"C:\\Program Files\\Git\\bin\\git.exe\" -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +c19b209aaa75895d2ca63032068d399afeebfab0:refs/remotes/pull/48/merge\r",
+        "2026-11-04T15:36:11.4949656Z  * [new ref]         c19b209aaa75895d2ca63032068d399afeebfab0 -> pull/48/merge\r",
+        "2026-11-04T15:36:13.5182866Z HEAD is now at c19b209 Merge f7fbfed28f55e556d9a9fc738205937c962f826f into abb4eb26bd1140e66972d2f1143cd587e80960b4\r",
+        "2026-11-04T15:36:13.6224536Z c19b209aaa75895d2ca63032068d399afeebfab0\r",
+        "2026-11-04T15:36:32.3304725Z Source SHA-256 before: 09d0bcda684356001bacf8bc9e42939add56b053f405564d9be924e39c0cf842\r",
+        "2026-11-04T15:36:32.3306138Z Source SHA-256 after: 09d0bcda684356001bacf8bc9e42939add56b053f405564d9be924e39c0cf842\r",
+        "2026-11-04T15:55:22.3612380Z SHA256 digest of uploaded artifact zip is edc0fda04763551fa2897fd39c4aeb24c654f089614d6af665c4c65dd950d96b\r",
+        "2026-11-04T15:55:24.4514017Z Cache saved with the key: setup-python-Windows-x64-python-3.12.10-pip-6f76b6bf17ff0d1fdcde83ece5c47f216a7a7dc0ff541630aad7b011ddf200cd\r"
+      ],
+      "formal_audit_gate": {
+        "name": "Verify exact Week 9 formal postgame audit",
+        "status": "completed",
+        "conclusion": "success",
+        "number": 10,
+        "started_at": "2026-11-04T15:55:04Z",
+        "completed_at": "2026-11-04T15:55:08Z"
+      }
+    }
+  ],
+  "artifacts": [
+    {
+      "name": "replay-windows-latest-3.12.10",
+      "zip_file": "w3.12.10.zip",
+      "sha256": "edc0fda04763551fa2897fd39c4aeb24c654f089614d6af665c4c65dd950d96b",
+      "members": [
+        "replay-diagnostics/2026-week7-postgame-audit--week7_ats_audit.csv",
+        "replay-diagnostics/2026-week7-postgame-audit--week7_cohort_membership.csv",
+        "replay-diagnostics/2026-week7-postgame-audit--week7_diagnostics.json",
+        "replay-diagnostics/2026-week7-postgame-audit--week7_final_results.csv",
+        "replay-diagnostics/2026-week7-postgame-audit--week7_owner_approved_five_audit.csv",
+        "replay-diagnostics/2026-week7-postgame-audit--week7_postgame_report.md",
+        "replay-diagnostics/2026-week7-postgame-audit--week7_source_correction_impact.csv",
+        "replay-diagnostics/2026-week7-postgame-audit--week7_totals_audit.csv",
+        "replay-diagnostics/2026-week8-audit-research--numerical_research_candidates.json",
+        "replay-diagnostics/2026-week8-postgame-audit--cross_week_diagnostics.json",
+        "replay-diagnostics/2026-week8-postgame-audit--cross_week_tables.md",
+        "replay-diagnostics/2026-week8-postgame-audit--week8_ats_audit.csv",
+        "replay-diagnostics/2026-week8-postgame-audit--week8_cohort_membership.csv",
+        "replay-diagnostics/2026-week8-postgame-audit--week8_diagnostics.json",
+        "replay-diagnostics/2026-week8-postgame-audit--week8_final_results.csv",
+        "replay-diagnostics/2026-week8-postgame-audit--week8_postgame_manifest.json",
+        "replay-diagnostics/2026-week8-postgame-audit--week8_postgame_report.md",
+        "replay-diagnostics/2026-week8-postgame-audit--week8_totals_audit.csv",
+        "replay-diagnostics/20261028T1320Z--derived_context_board.json",
+        "replay-diagnostics/comparison.json",
+        "replay-verification/compatibility.json"
+      ]
+    },
+    {
+      "name": "replay-ubuntu-latest-3.12.14",
+      "zip_file": "u3.12.14.zip",
+      "sha256": "c0d8d1d07a7b848d610b7cd39bc4d2928862a0a7a2199ddcd8d68955e7a5e885",
+      "members": [
+        "replay-diagnostics/2026-week7-postgame-audit--week7_ats_audit.csv",
+        "replay-diagnostics/2026-week7-postgame-audit--week7_cohort_membership.csv",
+        "replay-diagnostics/2026-week7-postgame-audit--week7_diagnostics.json",
+        "replay-diagnostics/2026-week7-postgame-audit--week7_final_results.csv",
+        "replay-diagnostics/2026-week7-postgame-audit--week7_owner_approved_five_audit.csv",
+        "replay-diagnostics/2026-week7-postgame-audit--week7_postgame_report.md",
+        "replay-diagnostics/2026-week7-postgame-audit--week7_source_correction_impact.csv",
+        "replay-diagnostics/2026-week7-postgame-audit--week7_totals_audit.csv",
+        "replay-diagnostics/2026-week8-audit-research--numerical_research_candidates.json",
+        "replay-diagnostics/2026-week8-postgame-audit--cross_week_diagnostics.json",
+        "replay-diagnostics/2026-week8-postgame-audit--cross_week_tables.md",
+        "replay-diagnostics/2026-week8-postgame-audit--week8_ats_audit.csv",
+        "replay-diagnostics/2026-week8-postgame-audit--week8_cohort_membership.csv",
+        "replay-diagnostics/2026-week8-postgame-audit--week8_diagnostics.json",
+        "replay-diagnostics/2026-week8-postgame-audit--week8_final_results.csv",
+        "replay-diagnostics/2026-week8-postgame-audit--week8_postgame_manifest.json",
+        "replay-diagnostics/2026-week8-postgame-audit--week8_postgame_report.md",
+        "replay-diagnostics/2026-week8-postgame-audit--week8_totals_audit.csv",
+        "replay-diagnostics/20261028T1320Z--derived_context_board.json",
+        "replay-diagnostics/comparison.json",
+        "replay-verification/compatibility.json"
+      ]
+    },
+    {
+      "name": "replay-windows-latest-3.11.9",
+      "zip_file": "w3.11.9.zip",
+      "sha256": "85aea3d995188914da79f534499e4a504e5c0d01bc98b274ad55d93ad86508cd",
+      "members": [
+        "replay-diagnostics/2026-week7-postgame-audit--week7_ats_audit.csv",
+        "replay-diagnostics/2026-week7-postgame-audit--week7_diagnostics.json",
+        "replay-diagnostics/2026-week7-postgame-audit--week7_cohort_membership.csv",
+        "replay-diagnostics/2026-week7-postgame-audit--week7_final_results.csv",
+        "replay-diagnostics/2026-week7-postgame-audit--week7_owner_approved_five_audit.csv",
+        "replay-diagnostics/2026-week7-postgame-audit--week7_postgame_report.md",
+        "replay-diagnostics/2026-week7-postgame-audit--week7_source_correction_impact.csv",
+        "replay-diagnostics/2026-week7-postgame-audit--week7_totals_audit.csv",
+        "replay-diagnostics/2026-week8-audit-research--numerical_research_candidates.json",
+        "replay-diagnostics/2026-week8-postgame-audit--cross_week_diagnostics.json",
+        "replay-diagnostics/2026-week8-postgame-audit--cross_week_tables.md",
+        "replay-diagnostics/2026-week8-postgame-audit--week8_ats_audit.csv",
+        "replay-diagnostics/2026-week8-postgame-audit--week8_cohort_membership.csv",
+        "replay-diagnostics/2026-week8-postgame-audit--week8_diagnostics.json",
+        "replay-diagnostics/2026-week8-postgame-audit--week8_final_results.csv",
+        "replay-diagnostics/2026-week8-postgame-audit--week8_postgame_manifest.json",
+        "replay-diagnostics/2026-week8-postgame-audit--week8_postgame_report.md",
+        "replay-diagnostics/2026-week8-postgame-audit--week8_totals_audit.csv",
+        "replay-diagnostics/20261028T1320Z--derived_context_board.json",
+        "replay-diagnostics/comparison.json",
+        "replay-verification/compatibility.json"
+      ]
+    },
+    {
+      "name": "replay-ubuntu-latest-3.11.17",
+      "zip_file": "u3.11.17.zip",
+      "sha256": "fec5b03911587d075edb173e5ce45a30b7b95fb34017bda2842f62fedfd9e8ab",
+      "members": [
+        "replay-diagnostics/2026-week7-postgame-audit--week7_ats_audit.csv",
+        "replay-diagnostics/2026-week7-postgame-audit--week7_cohort_membership.csv",
+        "replay-diagnostics/2026-week7-postgame-audit--week7_diagnostics.json",
+        "replay-diagnostics/2026-week7-postgame-audit--week7_final_results.csv",
+        "replay-diagnostics/2026-week7-postgame-audit--week7_owner_approved_five_audit.csv",
+        "replay-diagnostics/2026-week7-postgame-audit--week7_postgame_report.md",
+        "replay-diagnostics/2026-week7-postgame-audit--week7_source_correction_impact.csv",
+        "replay-diagnostics/2026-week7-postgame-audit--week7_totals_audit.csv",
+        "replay-diagnostics/2026-week8-audit-research--numerical_research_candidates.json",
+        "replay-diagnostics/2026-week8-postgame-audit--cross_week_diagnostics.json",
+        "replay-diagnostics/2026-week8-postgame-audit--cross_week_tables.md",
+        "replay-diagnostics/2026-week8-postgame-audit--week8_ats_audit.csv",
+        "replay-diagnostics/2026-week8-postgame-audit--week8_cohort_membership.csv",
+        "replay-diagnostics/2026-week8-postgame-audit--week8_diagnostics.json",
+        "replay-diagnostics/2026-week8-postgame-audit--week8_final_results.csv",
+        "replay-diagnostics/2026-week8-postgame-audit--week8_postgame_manifest.json",
+        "replay-diagnostics/2026-week8-postgame-audit--week8_postgame_report.md",
+        "replay-diagnostics/2026-week8-postgame-audit--week8_totals_audit.csv",
+        "replay-diagnostics/20261028T1320Z--derived_context_board.json",
+        "replay-diagnostics/comparison.json",
+        "replay-verification/compatibility.json"
+      ]
+    }
+  ]
+}

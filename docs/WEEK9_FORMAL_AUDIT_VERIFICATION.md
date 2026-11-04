@@ -68,10 +68,11 @@ and six-decimal preliminary forecast errors reconcile. All 54 scoring sequences
 validate. The focused suite passed **35 tests in 5.13 seconds** on the uncommitted
 implementation based on `190c8949...`; this is not a claim about a later commit.
 
-Complete-suite, safety, dependency replay and GitHub CI receipts are recorded in
-the separate final verification delivery record with their actual source/tested
-merge identities. Until those receipts exist, their status is PENDING; do not
-reinterpret the focused test result as a full-suite pass.
+Complete-suite, safety, dependency replay and GitHub CI receipts are now recorded
+in `docs/WEEK9_FORMAL_AUDIT_DELIVERY.md` and
+`outputs/2026-week9-postgame-verification/receipt-manifest-v1.json`, with their
+actual source/tested merge identities. The focused result above remains a
+distinct earlier run; it is not substituted for the complete-suite receipts.
 
 ## Data quality and remaining limitations
 

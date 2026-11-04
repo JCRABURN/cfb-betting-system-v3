@@ -1,0 +1,30 @@
+{
+  "verified_at_utc": "2026-11-04T19:28:55.248361+00:00",
+  "source_sha": "f7fbfed28f55e556d9a9fc738205937c962f826f",
+  "tested_merge_sha": "c19b209aaa75895d2ca63032068d399afeebfab0",
+  "four_environment_exact_output_identities_agree": true,
+  "exact_historical_outputs": 23,
+  "formal_audit_outputs": 21,
+  "formal_audit_gate_passed_all_jobs": true,
+  "reviews": {
+    "44": [
+      {
+        "state": "COMMENTED",
+        "login": "JCRABURN"
+      }
+    ],
+    "45": [
+      {
+        "state": "COMMENTED",
+        "login": "JCRABURN"
+      },
+      {
+        "state": "COMMENTED",
+        "login": "JCRABURN"
+      }
+    ],
+    "46": [],
+    "47": [],
+    "48": []
+  }
+}

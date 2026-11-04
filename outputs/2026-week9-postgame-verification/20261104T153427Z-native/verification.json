@@ -1,0 +1,87 @@
+{
+  "source_commit": "f7fbfed28f55e556d9a9fc738205937c962f826f",
+  "source_tree": "6c90f9241fcdb4b6873a471b8503d06d6c51c25b",
+  "started_at_utc": "2026-11-04T15:34:27.678026+00:00",
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.22621-SP0",
+  "commands": [
+    {
+      "command": [
+        "C:\\Users\\jraburn\\Documents\\GitHub\\cfb-betting-system-v3\\.venv\\Scripts\\python.exe",
+        "-X",
+        "utf8",
+        "-m",
+        "pytest",
+        "-q"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 408.807,
+      "log": "01.log"
+    },
+    {
+      "command": [
+        "C:\\Users\\jraburn\\Documents\\GitHub\\cfb-betting-system-v3\\.venv\\Scripts\\python.exe",
+        "-X",
+        "utf8",
+        "scripts/verify_repo_safety.py"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.14,
+      "log": "02.log"
+    },
+    {
+      "command": [
+        "C:\\Users\\jraburn\\Documents\\GitHub\\cfb-betting-system-v3\\.venv\\Scripts\\python.exe",
+        "-X",
+        "utf8",
+        "-m",
+        "scripts.verify_migrations"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 1.456,
+      "log": "03.log"
+    },
+    {
+      "command": [
+        "C:\\Users\\jraburn\\Documents\\GitHub\\cfb-betting-system-v3\\.venv\\Scripts\\python.exe",
+        "-X",
+        "utf8",
+        "-m",
+        "scripts.verify_cloud_migrations"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.457,
+      "log": "04.log"
+    },
+    {
+      "command": [
+        "C:\\Users\\jraburn\\Documents\\GitHub\\cfb-betting-system-v3\\.venv\\Scripts\\python.exe",
+        "-X",
+        "utf8",
+        "-m",
+        "scripts.verify_replay_compat",
+        "--output",
+        "C:\\Users\\jraburn\\Documents\\GitHub\\cfb-betting-system-v3\\.worktrees\\week9-formal-audit\\outputs\\2026-week9-postgame-verification\\20261104T153427Z-native\\compatibility.json"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 123.108,
+      "log": "05.log"
+    },
+    {
+      "command": [
+        "C:\\Users\\jraburn\\Documents\\GitHub\\cfb-betting-system-v3\\.venv\\Scripts\\python.exe",
+        "-X",
+        "utf8",
+        "-m",
+        "scripts.build_week9_formal_audit",
+        "--verify"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 20.879,
+      "log": "06.log"
+    }
+  ],
+  "completed_at_utc": "2026-11-04T15:43:42.720988+00:00",
+  "head_after": "f7fbfed28f55e556d9a9fc738205937c962f826f",
+  "passed": true
+}
