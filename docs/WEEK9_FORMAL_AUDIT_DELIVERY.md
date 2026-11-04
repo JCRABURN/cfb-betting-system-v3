@@ -1,5 +1,22 @@
 # Week 9 audit delivery and exact verification provenance
 
+**Process-diagnostic supersession:** after the initial CI passed, direct review
+of scoring descriptions found four defensive fumble-return touchdowns labeled
+`Sack` by the providers. The v1 type-only non-offensive classifier omitted those
+events. The separate `outputs/2026-week9-postgame-audit/process-v2/` version
+corrects the affected process rows and subgroups using matching ESPN/CFBD play
+IDs, scoring-team orientation, clocks, post-play scores and descriptions.
+All 54 finals, 108 grades, original v1 files and original source hashes remain
+unchanged. `SCORING_PROCESS_SUPERSESSION.md` identifies the exact numerical
+changes. `scripts/week9_scoring_process_v2.py`, ten new adversarial tests and an
+additional read-only CI gate verify this correction. The 885-test runs below
+precede this discovery; the final head must pass its own 895-test suite and both
+audit replay gates. Do not present an earlier green run as testing this fix.
+The combined focused command `python -X utf8 -m pytest -q
+tests/test_week9_formal_audit.py tests/test_week9_scoring_process_v2.py` passed
+45 tests in 8.57 seconds on the uncommitted process-v2 implementation. Final-head
+native and GitHub results are recorded in the PR's completion record separately.
+
 The formal audit reconciles 54 eligible finals from separately captured ESPN and
 CFBD responses and grades all 54 ATS and 54 totals selections. All preliminary
 scores and grades agree; no historical correction is needed. The independent
@@ -114,8 +131,10 @@ approval artifact is invented.
 Implementation change scope is the eight new capture/audit modules, one new
 35-case test module, the custody fixture, 21 audit outputs, timestamped source
 captures, documentation, byte-preserving attributes and one added read-only
-step in the existing CI workflow. The final delivery adds only verification
-receipts and documentation. No schema, database, v2.8 policy, source line,
+step in the existing CI workflow. The first delivery commit adds only verification
+receipts and documentation; the later process-v2 correction adds one separately
+versioned module, one ten-case test module and five supplemental outputs.
+No schema, database, v2.8 policy, source line,
 historical score/forecast, model output or unrelated application file changes.
 Full file inventories and hashes are in the manifests and PR diff.
 

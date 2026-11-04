@@ -1,0 +1,108 @@
+{
+  "added_events": [
+    {
+      "cfbd_plays_raw_sha256": "a9304bf4df53cb8327c4d39d8b9d7ef3d19ed7916bc0a82e679d0ff3edab920f",
+      "cfbd_text": "(00:44) No Huddle-Shotgun #9 T.Jones Jr. sacked for loss of 3 yards to the UGA34 (#3 Q.Johnson), fumble by #9 T.Jones Jr. recovered by UGA #9 C.Cole at UGA34 #9 C.Cole return 66 yards to the UF 00 TOUCHDOWN, clock 00:29 #91 P.Woodring kick attempt good (H: #14 G.Stockton, LS: #51 W.Snellings)",
+      "classification_basis": "Validated scoring sequence + scoring team is CFBD defense + matched play ID/clock/post-play scores + corroborated fumble-return descriptions",
+      "clock": "0:29",
+      "event_id": "401856734354",
+      "game_id": "401856734",
+      "original_cfbd_type": "Sack",
+      "original_espn_type": "Sack",
+      "period": 2,
+      "points_including_bundled_conversion": 7,
+      "scoring_team": "Georgia",
+      "source_sha256": "d681948dc08378c5b205f9cda99bf458918364e8b794b76f114479875fcc97cc",
+      "text": "Chris Cole 66 Yd Fumble Return (Peyton Woodring Kick)",
+      "type": "DERIVED_DEFENSIVE_FUMBLE_RETURN_TOUCHDOWN"
+    },
+    {
+      "cfbd_plays_raw_sha256": "a9304bf4df53cb8327c4d39d8b9d7ef3d19ed7916bc0a82e679d0ff3edab920f",
+      "cfbd_text": "(01:27) No Huddle-Shotgun #17 A.Swann sacked for loss of 5 yards to the TEXAS39 (#3 R.Biles), fumble by #17 A.Swann recovered by TEXAS #88 M.Watson at TEXAS39 #88 M.Watson return 61 yards to the MS ST00 TOUCHDOWN, clock 01:13 #44 G.Spetic kick attempt good (H: #43 M.Chiumento, LS: #47 T.Dubuc)",
+      "classification_basis": "Validated scoring sequence + scoring team is CFBD defense + matched play ID/clock/post-play scores + corroborated fumble-return descriptions",
+      "clock": "1:13",
+      "event_id": "401856737349",
+      "game_id": "401856737",
+      "original_cfbd_type": "Sack",
+      "original_espn_type": "Sack",
+      "period": 2,
+      "points_including_bundled_conversion": 7,
+      "scoring_team": "Texas",
+      "source_sha256": "93547169d0255c6f5ee11afde083052e1684a557d8623567b7f3cb6060ea5a5a",
+      "text": "Maraad Watson 61 Yd Fumble Return (Gianni Spetic Kick)",
+      "type": "DERIVED_DEFENSIVE_FUMBLE_RETURN_TOUCHDOWN"
+    },
+    {
+      "cfbd_plays_raw_sha256": "a9304bf4df53cb8327c4d39d8b9d7ef3d19ed7916bc0a82e679d0ff3edab920f",
+      "cfbd_text": "Shotgun #5 R.Burton sacked for loss of 11 yards to the UAB06 (#1 C.Hicks), fumble by #5 R.Burton recovered by USF #11 A.Redwood at UAB06 #11 A.Redwood return 6 yards to the UAB00 TOUCHDOWN, clock 00:37 #7 N.Gramatica kick attempt good (H: #39 L.Goater, LS: #49 E.Bonnett)",
+      "classification_basis": "Validated scoring sequence + scoring team is CFBD defense + matched play ID/clock/post-play scores + corroborated fumble-return descriptions",
+      "clock": "0:37",
+      "event_id": "401862816313",
+      "game_id": "401862816",
+      "original_cfbd_type": "Sack",
+      "original_espn_type": "Sack",
+      "period": 2,
+      "points_including_bundled_conversion": 7,
+      "scoring_team": "South Florida",
+      "source_sha256": "c62790b74021ca9e13cdcdd446428609019bc3f9cc6c338a533174d207a14fa8",
+      "text": "Asani Redwood 6 Yd Fumble Return (Nico Gramatica Kick)",
+      "type": "DERIVED_DEFENSIVE_FUMBLE_RETURN_TOUCHDOWN"
+    },
+    {
+      "cfbd_plays_raw_sha256": "a9304bf4df53cb8327c4d39d8b9d7ef3d19ed7916bc0a82e679d0ff3edab920f",
+      "cfbd_text": "No Huddle-Shotgun #5 R.Burton sacked for loss of 6 yards to the UAB13 (#1 C.Hicks), fumble by #5 R.Burton recovered by USF #0 G.Howard at UAB13 #0 G.Howard return 13 yards to the UAB00 TOUCHDOWN, clock 12:28. The previous play is under automatic review - \"Fumble\". CALL UPHELD #7 N.Gramatica kick attempt good (H: #39 L.Goater, LS: #49 E.Bonnett)",
+      "classification_basis": "Validated scoring sequence + scoring team is CFBD defense + matched play ID/clock/post-play scores + corroborated fumble-return descriptions",
+      "clock": "12:28",
+      "event_id": "401862816521",
+      "game_id": "401862816",
+      "original_cfbd_type": "Sack",
+      "original_espn_type": "Sack",
+      "period": 4,
+      "points_including_bundled_conversion": 7,
+      "scoring_team": "South Florida",
+      "source_sha256": "c62790b74021ca9e13cdcdd446428609019bc3f9cc6c338a533174d207a14fa8",
+      "text": "Grayson Howard 13 Yd Fumble Return (Nico Gramatica Kick)",
+      "type": "DERIVED_DEFENSIVE_FUMBLE_RETURN_TOUCHDOWN"
+    }
+  ],
+  "changed_games": [
+    {
+      "away": "Florida",
+      "corrected_events": 1,
+      "corrected_points": 7,
+      "game_id": "401856734",
+      "home": "Georgia",
+      "prior_events": 0,
+      "prior_points": 0
+    },
+    {
+      "away": "Mississippi State",
+      "corrected_events": 1,
+      "corrected_points": 7,
+      "game_id": "401856737",
+      "home": "Texas",
+      "prior_events": 0,
+      "prior_points": 0
+    },
+    {
+      "away": "UAB",
+      "corrected_events": 2,
+      "corrected_points": 14,
+      "game_id": "401862816",
+      "home": "South Florida",
+      "prior_events": 0,
+      "prior_points": 0
+    }
+  ],
+  "historical_source_bytes_changed": false,
+  "original_audit_manifest_sha256": "c7da0a3fca9dd1c97f43c476eb1e4bc3e903db404a51cf399ba3af94297b947d",
+  "original_grading_sha256": {
+    "week9_ats_audit.csv": "074686ce44d8518e8f93ead53ad41080abe09823c3c30a1a3dfa06a5173c0f82",
+    "week9_totals_audit.csv": "f5ae4dabedcb07430161eeebfa27d01d4f64d06733480370a61372bc2228cd46"
+  },
+  "root_cause": "Provider playType labels the initiating sack, not the resulting defensive fumble-return touchdown. Type-only v1 classification omitted four touchdowns.",
+  "score_or_grade_changes": 0,
+  "selection_line_forecast_confidence_rank_changes": 0,
+  "status": "VERIFIED_ADDITIVE_PROCESS_SUPERSESSION",
+  "version": "week9-scoring-process-v2"
+}
