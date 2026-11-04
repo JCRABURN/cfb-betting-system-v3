@@ -59,6 +59,9 @@ jobs:
       - name: Verify exact historical audit and prospective custody
         run: python -m scripts.verify_replay_compat --output replay-verification/compatibility.json
 
+      - name: Verify exact Week 9 formal postgame audit
+        run: python -m scripts.build_week9_formal_audit --verify
+
       - name: Capture native replay comparisons
         if: always() && steps.python.outcome == 'success'
         run: python -m scripts.diagnose_cross_platform_replay --output replay-diagnostics

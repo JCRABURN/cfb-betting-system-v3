@@ -1,0 +1,25 @@
+{
+  "capture_code_sha256_lf": "666a6be11f76edebf86b7eb5dde788ea0dffa88bf917f6129916eb9485616f28",
+  "documentation": "https://github.com/CFBD/cfbd-python/blob/main/README.md",
+  "endpoint": "https://api.collegefootballdata.com/stats/game/advanced",
+  "http_status": 200,
+  "parameters": {
+    "excludeGarbageTime": "false",
+    "seasonType": "regular",
+    "week": 9,
+    "year": 2026
+  },
+  "parser_version": "week9-advanced-supplement-v1",
+  "path": "cfbd-advanced.json.gz",
+  "postgame_only": true,
+  "preserves_failed_response": true,
+  "provider": "CFBD",
+  "raw_bytes": 425063,
+  "raw_sha256": "22ac87087a4c864d3f6b1588653f8d9afacd69b83d855bb64af6051b067cb69f",
+  "received_at_utc": "2026-11-04T15:14:29.777815+00:00",
+  "records": 230,
+  "requested_at_utc": "2026-11-04T15:14:28.259502+00:00",
+  "status": "CAPTURED",
+  "stored_sha256": "dd76991e347c67a4b8512cafaadaa4fd4348ed098f5de0d3d37d7052f9e0ef86",
+  "supersedes_failed_request": "20261104T150801Z/cfbd-advanced.json.gz"
+}

@@ -94,3 +94,9 @@ outputs/2026-week8-audit-research/** -text whitespace=cr-at-eol
 outputs/2026-ci-merge-gates/** -text whitespace=cr-at-eol
 # Preserve native failure and successful replay evidence exactly as captured.
 outputs/2026-cross-platform-replay/** -text whitespace=cr-at-eol
+# Additive Week 9 formal audit and original preliminary evidence preserve exact bytes.
+outputs/2026-week9-postgame-preliminary/** -text whitespace=cr-at-eol
+outputs/2026-week9-postgame-evidence/** -text whitespace=cr-at-eol
+outputs/2026-week9-postgame-audit/** -text whitespace=cr-at-eol
+outputs/2026-week9-postgame-verification/** -text whitespace=cr-at-eol
+tests/fixtures/week9_formal_audit/** -text
