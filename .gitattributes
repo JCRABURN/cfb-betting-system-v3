@@ -106,3 +106,8 @@ outputs/2026-week10-verification/** -text whitespace=cr-at-eol
 data/ingest/2026-week10-splashsports-screen-capture.csv text eol=crlf
 data/ingest/2026-week10-splashsports-source-manifest.json text eol=crlf
 data/ingest/2026-week10-splashsports-README.md text eol=crlf
+
+# Separate Week10 context and owner-review evidence: preserve captured bytes.
+outputs/2026-week10-context/** -text whitespace=cr-at-eol
+outputs/2026-week10-owner-review/** -text whitespace=cr-at-eol
+docs/week10-human-context-20261105.json -text

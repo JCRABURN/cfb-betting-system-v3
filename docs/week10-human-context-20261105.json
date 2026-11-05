@@ -1,0 +1,74 @@
+{
+  "author": "Codex contextual research; owner approval pending",
+  "method": "Qualitative owner-review order only. No fitted scoring rule, diversification quota, numeric forecast adjustment, validated win probability, or policy promotion. Original combined research ranking is retained separately.",
+  "limitations": [
+    "Morning official articles and weather are snapshots, not final 90-minute availability or observed game conditions. Saturday candidates require later prospective review.",
+    "ACC and SEC reports are initial reports. A depth chart or absence from a partial injury list is not medical clearance.",
+    "Sun Belt timestamp correction: its raw response was retrieved at 19:03 UTC, after the 15:33 UTC publication. The earlier conversational warning mistakenly compared publication with the morning capture. Both actual timestamps are preserved; this afternoon recommendation may use the report.",
+    "Current separately retrieved Week9 ESPN box scores differ from some PR48 process figures. FAU-UNT now yields 1160 yards and 167 pass-attempt-plus-rush-attempt plays; prior audit records 1167 and 172. Neither historical evidence nor conclusions are superseded here. Definitions/provider revisions remain unresolved.",
+    "All uncertainty fields are frozen research-model scales, not validated intervals. Human confidence is a cautious ordinal judgment, not a win probability.",
+    "Current CFBD market observations are kept separately; no qualified historical closing price or CLV is claimed."
+  ],
+  "candidates": [
+    {
+      "game_id": 401856743, "market": "ATS", "human_confidence": 2,
+      "sources": ["SEC"],
+      "rationale": "Missouri's frozen home-win projection and defensive efficiency support taking the home underdog. The initial SEC report lists Texas LT Trevor Goosby and RB Hollywood Smothers out, with Colin Simmons, Ryan Wingo and Cam Coleman questionable. Missouri's QB room is listed available. These are contextual checks, not additional injury points.",
+      "risks": "Texas has the stronger frozen defensive efficiency. Missouri RT Josh Atkins, RB Malae Fonoti and TE Gavin Hoffman are out. A Texas win by three defeats +2.5. Initial availability can change; no independent causal injury valuation is available."
+    },
+    {
+      "game_id": 401858289, "market": "ATS", "human_confidence": 2,
+      "sources": ["ACC", "article-florida-state-1", "article-boston-college-5"],
+      "rationale": "The frozen projection favors Boston College at home. FSU's initial report lists Duce Robinson and multiple secondary players out. BC's passing defense and Mason McKenzie's rushing contribution provide a matchup basis beyond the raw spread gap.",
+      "risks": "BC starting center Michael Crounse is OUT despite appearing on the earlier depth chart; protection/communication risk is material. FSU fired Mike Norvell November 1 and appointed Rick Stockstill interim; direction of the coaching effect is unknown. +6.5 loses to a seven-point defeat."
+    },
+    {
+      "game_id": 401858292, "market": "ATS", "human_confidence": 2,
+      "sources": ["article-uconn-2", "article-north-carolina-6", "espn-401858292"],
+      "rationale": "UConn has the strongest frozen ATS research gap and home field. Its frozen offensive PPA is .229 versus UNC .145; Kalieb Osborne threw for 263 yards and two touchdowns last week.",
+      "risks": "UNC QB Billy Edwards Jr. just completed 28/34 for 341 yards and four TD against Miami. UConn allowed two second-half Air Force drives lasting over ten minutes. No complete current medical clearance for both OL/defensive units was obtained. The 12.79-point gap is smaller than the 18.28-point research uncertainty scale."
+    },
+    {
+      "game_id": 401869964, "market": "TOTAL", "human_confidence": 2,
+      "sources": ["article-james-madison-1", "article-james-madison-0", "article-southern-miss-2", "sunbelt-availability-data"],
+      "rationale": "JMU's official 18.9 points allowed per game and Southern Miss's documented protection/passing inconsistency support a modest Under lean. The game-day report confirms Pettaway out. Southern Miss is on five days' rest versus JMU seven. No numeric discount is assigned for either fact.",
+      "risks": "Replacement Seth Cromwell ran for 135 yards against Troy; JMU's 21 points came with five turnovers and are not evidence of a collapsed offense. JMU has elite return production. Southern Miss OL Luke Rogers and Greg Nunnery are now available, potentially improving protection, but snap limits are unknown. JMU DB Jayon Harvey is out and WR Kylan Billiot is a game-time decision. Mild, calm weather offers little Under support."
+    },
+    {
+      "game_id": 401862823, "market": "TOTAL", "human_confidence": 1,
+      "sources": ["article-air-force-1", "article-army-2", "article-uconn-2"],
+      "rationale": "Army's defense allowed Memphis touchdowns on seven of eleven possessions and 554 yards; its frozen defensive PPA allowed is .269. Air Force QB Kemper Hodges ran for 200 yards and four TD last week. These support retaining the original Over candidate at very low confidence.",
+      "risks": "Both offenses are heavily run-based (84.6% and 79.9% in the frozen eligible-play statistics). Eligible drives average only 9.38 and 9.12; these are volume proxies, not a possession forecast. Air Force's long drives can erase possessions. Rivalry-specific game flow and rain remain risks; recent high totals are a small, opponent-dependent sample."
+    },
+    {
+      "game_id": 401856856, "market": "TOTAL", "human_confidence": 1,
+      "sources": ["article-west-virginia-4", "article-texas-tech-1"],
+      "rationale": "First totals alternative: Texas Tech's strong run defense can suppress WVU. The frozen total is 51.58 against 65.5.",
+      "risks": "Texas Tech changed to dual-threat Thomas Castellanos before Week9, so only one game of the new offense enters the frozen inputs. WVU allows 32.3 points per game and its last three game totals were 83, 87 and 44. Texas Tech scoring and explosive runs could defeat the Under by themselves; WVU has extra rest."
+    },
+    {
+      "game_id": 401871076, "market": "ATS", "human_confidence": 1,
+      "sources": ["article-western-kentucky-1", "espn-401871076"],
+      "rationale": "Middle Tennessee's frozen home margin is +6.67 and offensive PPA exceeds WKU's. WKU scored no second-half points in its last game.",
+      "risks": "Middle Tennessee allowed 44 points to Kennesaw State, and its last score included a 100-yard kickoff-return TD. The 8.17-point gap is the smallest of these five ATS candidates and both personnel certainty and defensive reliability are weak. +1.5 provides little cushion."
+    },
+    {
+      "game_id": 401860911, "market": "ATS", "human_confidence": 1,
+      "sources": ["article-boise-state-4", "article-colorado-state-2", "pac12-availability-data", "texas-state-recap"],
+      "rationale": "Colorado State receives 17.5 with a frozen projected loss by 8.16. Boise QB Maddux Madsen is questionable, but no extra absence adjustment is invented.",
+      "risks": "CSU allows 261.1 rushing yards per game, worst nationally in its official report; Boise RB Dylan Riley averages 131.1. Boise backup Max Cutforth threw three late TD against Texas State. CSU has OL/RB uncertainty and multiple secondary absences; Boise OL Carson Rasmussen and RB Sire Gaines are out. QB uncertainty alone does not justify selection."
+    },
+    {
+      "game_id": 401862817, "market": "TOTAL", "human_confidence": 1,
+      "sources": ["article-florida-atlantic-0", "article-utsa-2", "fau-notes-download", "utsa-notes-c", "fau-week9-box"],
+      "rationale": "Exclude the original combined number one from the recommended five. FAU's official notes show Caden Veltkamp at 28.43 completions per game, 71.8% completion, 23 passing TD; Easton Messer has 74 catches. FAU leads combined return TD. The raw 16.88-point Under gap is insufficient evidence of reliability.",
+      "risks": "FAU's last three game totals are 80, 100 and 89. The currently retrieved Week9 box score has 167 combined pass/rush attempts and 1160 yards; both differ from the preserved formal audit and are labeled separately. Last week's frozen FAU-UNT projection missed by +29.21 actual-minus-forecast points. UTSA has twelve days' rest; Boca forecast is mild with only 6-7 mph wind. Depth charts identify Veltkamp/Devillier and McCown/Tennison, but complete final OL/defensive medical clearance is missing."
+    },
+    {
+      "game_id": 401860912, "market": "TOTAL", "human_confidence": 1,
+      "sources": ["article-oregon-state-1", "texas-state-recap", "pac12-availability-data", "texas-state-week9-box"],
+      "rationale": "Exclude the original combined number two. Oregon State reports 517.4 yards and 40.1 points per game, with Braden Atkinson above 300 passing yards in all eight games. Texas State scored 45 last week and its frozen offensive success rate is .493. The 56.22 forecast understates a credible high-scoring scenario without establishing its probability.",
+      "risks": "Texas State's last game included 67-, 44- and 72-yard touchdown passes, a 35-yard QB TD run and a pick-six. Its frozen Week9 total missed by +35.26 points. TXST LB Ayden Jones and DB Jayden Lawton are out; OSU DBs Ryan Whitten and Kai Wheaton are out. Corvallis rain/wind (roughly 14-21 mph in the morning forecast) could favor Under, and OSU defense improved, but neither warrants an invented point adjustment."
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "captured_at_utc": "2026-11-05T13:41:07.666609+00:00",
+  "cutoff_utc": "2026-11-06T00:30:00Z",
+  "records": [
+    {
+      "name": "fau-notes-download",
+      "url": "https://fausports.com/documents/download/2026/11/2/2026_Game_Notes__9_remediated.pdf",
+      "requested_at_utc": "2026-11-05T13:41:05.613583+00:00",
+      "path": "fau-notes-download.gz",
+      "sha256": "a5b8a19ffd9177aef09388714caed6cba484d2640f63130ad7f9b2301efffe23",
+      "http_status": 200,
+      "resolved_url": "https://fausports.com/documents/download/2026/11/2/2026_Game_Notes__9_remediated.pdf",
+      "received_at_utc": "2026-11-05T13:41:07.286430+00:00",
+      "status": "CAPTURED",
+      "content_type": "application/pdf"
+    },
+    {
+      "name": "jmu-notes-download",
+      "url": "https://jmusports.com/documents/download/2026/11/3/2026_JMU_Football_Game_Notes_-_Southern_Miss.pdf",
+      "requested_at_utc": "2026-11-05T13:41:05.615531+00:00",
+      "path": "jmu-notes-download.gz",
+      "sha256": "091f233a28ddc5ed13ae3ac26f42438d4515619f97d144d2cc646efda2e047e8",
+      "http_status": 200,
+      "resolved_url": "https://jmusports.com/documents/download/2026/11/3/2026_JMU_Football_Game_Notes_-_Southern_Miss.pdf",
+      "received_at_utc": "2026-11-05T13:41:07.567637+00:00",
+      "status": "CAPTURED",
+      "content_type": "application/pdf"
+    },
+    {
+      "name": "bc-notes-download",
+      "url": "https://bceagles.com/documents/download/2026/11/3/GAME_NINE_FSU_NOTES.pdf",
+      "requested_at_utc": "2026-11-05T13:41:05.616591+00:00",
+      "path": "bc-notes-download.gz",
+      "sha256": "86594273ec1ae48c074a8c1a70ab507877eb02d1d5261f957ad5d2505e202abb",
+      "http_status": 200,
+      "resolved_url": "https://bceagles.com/documents/download/2026/11/3/GAME_NINE_FSU_NOTES.pdf",
+      "received_at_utc": "2026-11-05T13:41:07.661607+00:00",
+      "status": "CAPTURED",
+      "content_type": "application/pdf"
+    },
+    {
+      "name": "acc-availability-app",
+      "url": "https://app.hdintelligence.com/?source=ACC&sport=Football&conf=ACC&type=report",
+      "requested_at_utc": "2026-11-05T13:41:05.617576+00:00",
+      "path": "acc-availability-app.gz",
+      "sha256": "7cf31e9eaaa397842b5bde839eb2df421908ac8a07c3fd055d7e361c4032309a",
+      "http_status": 200,
+      "resolved_url": "https://app.hdintelligence.com/?source=ACC&sport=Football&conf=ACC&type=report",
+      "received_at_utc": "2026-11-05T13:41:05.775869+00:00",
+      "status": "CAPTURED",
+      "content_type": "text/html; charset=utf-8"
+    }
+  ],
+  "capture_code_sha256": "47f66040c70aabfd3c2834f6428454f2440910db7b2ab97e9dcd83b0cd2a2960",
+  "model_adjustments": [],
+  "note": "HTTP success is not evidence of usable article content or medical clearance."
+}

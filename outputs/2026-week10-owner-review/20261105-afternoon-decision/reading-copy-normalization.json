@@ -1,0 +1,642 @@
+{
+  "note": "Before first publication, trim only derived extraction/reading-copy line whitespace. Original provider gzip/PDF bytes are unchanged. Preserve original extraction bytes and pre-packaging review/inventory separately; no decision row, decision timestamp, rank or forecast changed.",
+  "changes": [
+    {
+      "path": "outputs/2026-week10-context/20261105T133614Z-morning/article-air-force-0.txt",
+      "original_sha256": "a169e54d60e4b7f558f27cae485461a1f01b96d1b9d41f4ed8681aa46289e13c",
+      "normalized_sha256": "e295fae4f96bffb1adfae2b95741cd1ce24a14d3587f50518aa3024f29d063c5",
+      "original_bytes_archive": "outputs/2026-week10-context/20261105T133614Z-morning/article-air-force-0.original-extraction.txt.gz"
+    },
+    {
+      "path": "outputs/2026-week10-context/20261105T133614Z-morning/article-air-force-1.txt",
+      "original_sha256": "6ea78fbf113a19412c74728a76084ee60f778e9e6e23654c1f7fad1d3e469304",
+      "normalized_sha256": "6a9be98d596e17829e984768db00053dec718b1d64f6b12e619ea993b23b58bb",
+      "original_bytes_archive": "outputs/2026-week10-context/20261105T133614Z-morning/article-air-force-1.original-extraction.txt.gz"
+    },
+    {
+      "path": "outputs/2026-week10-context/20261105T133614Z-morning/article-air-force-2.txt",
+      "original_sha256": "76dca5489df3f60e7b251dfce881efc47eb2cd621e8d364de06780c9520dd302",
+      "normalized_sha256": "fc0dcea65e3852cc96d05032440b169f02cc9a5330ce07c947f8ccd3e148c841",
+      "original_bytes_archive": "outputs/2026-week10-context/20261105T133614Z-morning/article-air-force-2.original-extraction.txt.gz"
+    },
+    {
+      "path": "outputs/2026-week10-context/20261105T133614Z-morning/article-army-0.txt",
+      "original_sha256": "8ab154f8a27aa558fe07965e5a8200b8dcac6235adbdf6e8320b8090c5124c53",
+      "normalized_sha256": "e3160d8c4ccbd5a8dc32a6a52dc00f30647f8b442903e3940df6a9b79ef80d22",
+      "original_bytes_archive": "outputs/2026-week10-context/20261105T133614Z-morning/article-army-0.original-extraction.txt.gz"
+    },
+    {
+      "path": "outputs/2026-week10-context/20261105T133614Z-morning/article-army-1.txt",
+      "original_sha256": "a575ab5e47d4e6c983a8d80000565732d23e2a9fd682979e7cde70938a4e4e7a",
+      "normalized_sha256": "61d0b52a61c4f4d4522cb7f934371b6a60fcae1dbb61059361daf655ad6a869d",
+      "original_bytes_archive": "outputs/2026-week10-context/20261105T133614Z-morning/article-army-1.original-extraction.txt.gz"
+    },
+    {
+      "path": "outputs/2026-week10-context/20261105T133614Z-morning/article-army-2.txt",
+      "original_sha256": "887b0bf7ad9e1bece4bfbd5aa0d0e083dd1c026d8378ce910ec298eda999c3d7",
+      "normalized_sha256": "9df6859c808816d98c14f12af96b367fec14cba12e7bf346647cf5aeae96fcde",
+      "original_bytes_archive": "outputs/2026-week10-context/20261105T133614Z-morning/article-army-2.original-extraction.txt.gz"
+    },
+    {
+      "path": "outputs/2026-week10-context/20261105T133614Z-morning/article-army-3.txt",
+      "original_sha256": "864da1b97bff965e2924257de60d35f301149cb3ffa5dc235f91510f53c7050f",
+      "normalized_sha256": "0d57fe5767ec6da6c463c5ac1d684c29f1074a8e050ee299e258fa667707de39",
+      "original_bytes_archive": "outputs/2026-week10-context/20261105T133614Z-morning/article-army-3.original-extraction.txt.gz"
+    },
+    {
+      "path": "outputs/2026-week10-context/20261105T133614Z-morning/article-boise-state-0.txt",
+      "original_sha256": "78652851960a1f7f98666f55c2f6f81f84d36438a897701238a05e739090baec",
+      "normalized_sha256": "6ca0fb3b790d71b3ea95ba8bb71b3d8d322eaa82a146ba05240b9e9f09d29c46",
+      "original_bytes_archive": "outputs/2026-week10-context/20261105T133614Z-morning/article-boise-state-0.original-extraction.txt.gz"
+    },
+    {
+      "path": "outputs/2026-week10-context/20261105T133614Z-morning/article-boise-state-1.txt",
+      "original_sha256": "1e7a39f9acf0192385bf6e0777af75482dcd17370b58dcb21d55446d33733c2f",
+      "normalized_sha256": "9f3be16e9fb391d6d7427f724015b01705a1129c812895a61dd0be8e43a6375c",
+      "original_bytes_archive": "outputs/2026-week10-context/20261105T133614Z-morning/article-boise-state-1.original-extraction.txt.gz"
+    },
+    {
+      "path": "outputs/2026-week10-context/20261105T133614Z-morning/article-boise-state-2.txt",
+      "original_sha256": "77dd2e724d099d97d1ab999496ebd12237c8150b7e7390b77f30781695f159f6",
+      "normalized_sha256": "0e49befa042b0249b853a3a80f945dd523234a0b73fbf541c2cc12cc0bd39657",
+      "original_bytes_archive": "outputs/2026-week10-context/20261105T133614Z-morning/article-boise-state-2.original-extraction.txt.gz"
+    },
+    {
+      "path": "outputs/2026-week10-context/20261105T133614Z-morning/article-boise-state-3.txt",
+      "original_sha256": "54bec952f7b1359a18114383445c78db370c2c1a74ede4b15df93bfa55fbd0d7",
+      "normalized_sha256": "0059f49e2da737e1ee1bb1a33b90bac12afd45d9dd738f5f56634d2d8e1e19ea",
+      "original_bytes_archive": "outputs/2026-week10-context/20261105T133614Z-morning/article-boise-state-3.original-extraction.txt.gz"
+    },
+    {
+      "path": "outputs/2026-week10-context/20261105T133614Z-morning/article-boise-state-4.txt",
+      "original_sha256": "833157a048915e20cd5cc74d7ee7ed9cdbe92fd0f278aa9d5700f4eb6b63a936",
+      "normalized_sha256": "a09766985c54e4edb23001db95fc92d6dca6574b1ac76e8ad9783a6720d1c624",
+      "original_bytes_archive": "outputs/2026-week10-context/20261105T133614Z-morning/article-boise-state-4.original-extraction.txt.gz"
+    },
+    {
+      "path": "outputs/2026-week10-context/20261105T133614Z-morning/article-boston-college-0.txt",
+      "original_sha256": "517b0137def3b6a7e6575a351c64e6a68c605be7bdb52c10b35c7933b2f179da",
+      "normalized_sha256": "fcde884991167909c4faaae8bbf381eefb47c4788bf5a2e9b63e5a79b8872aa9",
+      "original_bytes_archive": "outputs/2026-week10-context/20261105T133614Z-morning/article-boston-college-0.original-extraction.txt.gz"
+    },
+    {
+      "path": "outputs/2026-week10-context/20261105T133614Z-morning/article-boston-college-1.txt",
+      "original_sha256": "7f8725f1c3ac22b78ecdb35364b550444242cae2ec4819b3e9fed7c13d97b511",
+      "normalized_sha256": "144a264d7a1ace93aad4d86ab3f4304bb68bd6cb83f8ef0da595eb6780315c68",
+      "original_bytes_archive": "outputs/2026-week10-context/20261105T133614Z-morning/article-boston-college-1.original-extraction.txt.gz"
+    },
+    {
+      "path": "outputs/2026-week10-context/20261105T133614Z-morning/article-boston-college-2.txt",
+      "original_sha256": "834e13b56dd22c77022d5afb9a50a30d48bff571a867bf0090765b1a84a84019",
+      "normalized_sha256": "aaa490e357a0c8ad5f1a9928fafe4e92c05e5bd1f391cb1f7c37c7053ad8ed96",
+      "original_bytes_archive": "outputs/2026-week10-context/20261105T133614Z-morning/article-boston-college-2.original-extraction.txt.gz"
+    },
+    {
+      "path": "outputs/2026-week10-context/20261105T133614Z-morning/article-boston-college-3.txt",
+      "original_sha256": "1f004c210234b71831c6b2bbdd108d3d13919b59a975116500a3277a72502f73",
+      "normalized_sha256": "3a94d35229654af8c8d7ae69127708e965b7306fde0c4dcd9dd728d631a5f7e9",
+      "original_bytes_archive": "outputs/2026-week10-context/20261105T133614Z-morning/article-boston-college-3.original-extraction.txt.gz"
+    },
+    {
+      "path": "outputs/2026-week10-context/20261105T133614Z-morning/article-boston-college-4.txt",
+      "original_sha256": "9d3ca89e0cbc989e9f7c567c8180f3675b1de87d8d1e12b28831b848a03b6761",
+      "normalized_sha256": "a767b8e5be873813c8e69469a1d37e5f4279c3b8ae50b5498e4237648912a404",
+      "original_bytes_archive": "outputs/2026-week10-context/20261105T133614Z-morning/article-boston-college-4.original-extraction.txt.gz"
+    },
+    {
+      "path": "outputs/2026-week10-context/20261105T133614Z-morning/article-boston-college-5.txt",
+      "original_sha256": "4a253c7393d34156dcd3be98af2a1aca8bb5d59a306f44e468ae3e6aa8e9b9f1",
+      "normalized_sha256": "7481afb61f87dc346cd8838f5850823a240d006c09a652eabb8b7a48e450895a",
+      "original_bytes_archive": "outputs/2026-week10-context/20261105T133614Z-morning/article-boston-college-5.original-extraction.txt.gz"
+    },
+    {
+      "path": "outputs/2026-week10-context/20261105T133614Z-morning/article-colorado-state-0.txt",
+      "original_sha256": "0ae323483bf180627dadfc96b66aa0b9e053ca25cdb63616ae85e4d322226341",
+      "normalized_sha256": "243ec05654d86bd51a1431a156d2515c81df4395c690414b701d72ef43d5e301",
+      "original_bytes_archive": "outputs/2026-week10-context/20261105T133614Z-morning/article-colorado-state-0.original-extraction.txt.gz"
+    },
+    {
+      "path": "outputs/2026-week10-context/20261105T133614Z-morning/article-colorado-state-1.txt",
+      "original_sha256": "cd7a2f6540bfa7522b176fe5b2a0edb5259396d6ec219b94f4063e24b9f3b08e",
+      "normalized_sha256": "6870aed4018ecabb01b54adeaaf4b6c0c1adfb3a238fd6dba4382bae0386b759",
+      "original_bytes_archive": "outputs/2026-week10-context/20261105T133614Z-morning/article-colorado-state-1.original-extraction.txt.gz"
+    },
+    {
+      "path": "outputs/2026-week10-context/20261105T133614Z-morning/article-colorado-state-2.txt",
+      "original_sha256": "67f19af5b354819ee518a427199e9d53ea886b8c0f31e362b00ab87ec4d37426",
+      "normalized_sha256": "0150308d0329c2ac40db95330ee73e69a5bf9706cc501a301406e97e5f511e57",
+      "original_bytes_archive": "outputs/2026-week10-context/20261105T133614Z-morning/article-colorado-state-2.original-extraction.txt.gz"
+    },
+    {
+      "path": "outputs/2026-week10-context/20261105T133614Z-morning/article-colorado-state-3.txt",
+      "original_sha256": "dcdf1ac588942598eed034be1c6ae782eaeff09fbcb64d13ab55dcccc843a4f2",
+      "normalized_sha256": "a9d14909ca42ab3ca32fdba2c2a0ff31e9a6d1d28531c9e5eb2ee39af1d51203",
+      "original_bytes_archive": "outputs/2026-week10-context/20261105T133614Z-morning/article-colorado-state-3.original-extraction.txt.gz"
+    },
+    {
+      "path": "outputs/2026-week10-context/20261105T133614Z-morning/article-colorado-state-4.txt",
+      "original_sha256": "7719d5c3b6212ca24bd1cd21cbda61ae11a5df4cd312b61deacb8babeb2d32f2",
+      "normalized_sha256": "28351de60a42be61dff311a5f4b61b03d37e3be52d36268a160079f939c57757",
+      "original_bytes_archive": "outputs/2026-week10-context/20261105T133614Z-morning/article-colorado-state-4.original-extraction.txt.gz"
+    },
+    {
+      "path": "outputs/2026-week10-context/20261105T133614Z-morning/article-colorado-state-5.txt",
+      "original_sha256": "8dce5994f6d237e34c9ebb9d0912c34d4bc4bf7d07002fd666f0cdb8c48be3e0",
+      "normalized_sha256": "e8e7a4938b2fe744a8006bbc56f897053a58d4c68bbf31aa4b18273ca7cdcb95",
+      "original_bytes_archive": "outputs/2026-week10-context/20261105T133614Z-morning/article-colorado-state-5.original-extraction.txt.gz"
+    },
+    {
+      "path": "outputs/2026-week10-context/20261105T133614Z-morning/article-colorado-state-6.txt",
+      "original_sha256": "7c7899c1cbba19c63e3c6d3e0f1842e25300fe821eb1a9e8d4370c23de9005df",
+      "normalized_sha256": "28339d8c159b967a6a07a1ddb7adb90b2e1466bfb4dc539ea21c646218f878f7",
+      "original_bytes_archive": "outputs/2026-week10-context/20261105T133614Z-morning/article-colorado-state-6.original-extraction.txt.gz"
+    },
+    {
+      "path": "outputs/2026-week10-context/20261105T133614Z-morning/article-florida-atlantic-0.txt",
+      "original_sha256": "a86043c3125557b38b331869b7d2f4823785eb948994180c4e3dea4551336352",
+      "normalized_sha256": "e158750d4e8fe3d7f7db69cce39ebe8a211f9b358e6adc82399389545382b415",
+      "original_bytes_archive": "outputs/2026-week10-context/20261105T133614Z-morning/article-florida-atlantic-0.original-extraction.txt.gz"
+    },
+    {
+      "path": "outputs/2026-week10-context/20261105T133614Z-morning/article-florida-atlantic-1.txt",
+      "original_sha256": "238cf123088b48229082ccf557fa59e898608d97ec146a035b7e745de1ad73ae",
+      "normalized_sha256": "c595dd7d41a984d6b42f00dbf44335658d193a4f691324679357b463e324547e",
+      "original_bytes_archive": "outputs/2026-week10-context/20261105T133614Z-morning/article-florida-atlantic-1.original-extraction.txt.gz"
+    },
+    {
+      "path": "outputs/2026-week10-context/20261105T133614Z-morning/article-florida-atlantic-2.txt",
+      "original_sha256": "24da26d257e4a68877c4a63c3365ebb514ebc76feaf1d03b7651394c8c02181e",
+      "normalized_sha256": "5e01ec286a1d7d2da64f9c6967bad90f6185701da6bb38b2c21ec0f1f08ccb2c",
+      "original_bytes_archive": "outputs/2026-week10-context/20261105T133614Z-morning/article-florida-atlantic-2.original-extraction.txt.gz"
+    },
+    {
+      "path": "outputs/2026-week10-context/20261105T133614Z-morning/article-florida-atlantic-3.txt",
+      "original_sha256": "72fb262ad44db82b61da13b9a5cecd618ec0a8a2281be5de4135febbe86e55db",
+      "normalized_sha256": "2daddbc9053ba697d20fd94441c5efb501308fa980f29faa4a933ec6b26e5751",
+      "original_bytes_archive": "outputs/2026-week10-context/20261105T133614Z-morning/article-florida-atlantic-3.original-extraction.txt.gz"
+    },
+    {
+      "path": "outputs/2026-week10-context/20261105T133614Z-morning/article-florida-state-0.txt",
+      "original_sha256": "3ea149a2804801f13de1634a173c752610d21970710f4db5c37cf96a14bfdeea",
+      "normalized_sha256": "c36a18f08de3031ce4f95ea13ef85420e76067ea38b5056eef7a2cf8b93baff3",
+      "original_bytes_archive": "outputs/2026-week10-context/20261105T133614Z-morning/article-florida-state-0.original-extraction.txt.gz"
+    },
+    {
+      "path": "outputs/2026-week10-context/20261105T133614Z-morning/article-florida-state-1.txt",
+      "original_sha256": "b26b76821045adb4c958878e583a1179b4fbb608a526a218004b509504c9ce29",
+      "normalized_sha256": "bdb400d35f91fcc0980520ccf2a38b9bda19a4d1f7999e8e105a6a8ac18a19bf",
+      "original_bytes_archive": "outputs/2026-week10-context/20261105T133614Z-morning/article-florida-state-1.original-extraction.txt.gz"
+    },
+    {
+      "path": "outputs/2026-week10-context/20261105T133614Z-morning/article-james-madison-0.txt",
+      "original_sha256": "cdadb14aa8e99ab73ee7a2fd0736524566b1a4348c2c561b0ef07e58d56b92ab",
+      "normalized_sha256": "279bf3a123c1aa6cbd2dc0d8fcc9537d9c14ffe49e83a9dfd88aed8cd3b8edb2",
+      "original_bytes_archive": "outputs/2026-week10-context/20261105T133614Z-morning/article-james-madison-0.original-extraction.txt.gz"
+    },
+    {
+      "path": "outputs/2026-week10-context/20261105T133614Z-morning/article-james-madison-1.txt",
+      "original_sha256": "f7fee614a47b8916b42f126c8496f75390bd4759fa32dffc2254414b42840d0e",
+      "normalized_sha256": "3aecaa03f2f89825214943c81707cb563723332989aaab85d21fc214d7792890",
+      "original_bytes_archive": "outputs/2026-week10-context/20261105T133614Z-morning/article-james-madison-1.original-extraction.txt.gz"
+    },
+    {
+      "path": "outputs/2026-week10-context/20261105T133614Z-morning/article-middle-tennessee-0.txt",
+      "original_sha256": "f464fdcb8e3ed014f41e1107a915bc52e117452d48f327664af24034a25df216",
+      "normalized_sha256": "a91c278b2ad63c5dae31f61699dfaf3c357e8bd64b7adf151884f19ce6d3ed9d",
+      "original_bytes_archive": "outputs/2026-week10-context/20261105T133614Z-morning/article-middle-tennessee-0.original-extraction.txt.gz"
+    },
+    {
+      "path": "outputs/2026-week10-context/20261105T133614Z-morning/article-north-carolina-0.txt",
+      "original_sha256": "5c7794383dc9d28188399d05ccc9715d0d97c81e9f678b748f635443bcb0a3a4",
+      "normalized_sha256": "45fd39ade6064d258b968ef27b21c75efc7f339f9228d78b878882a6d5e6ff2e",
+      "original_bytes_archive": "outputs/2026-week10-context/20261105T133614Z-morning/article-north-carolina-0.original-extraction.txt.gz"
+    },
+    {
+      "path": "outputs/2026-week10-context/20261105T133614Z-morning/article-north-carolina-1.txt",
+      "original_sha256": "5252932239476f083d0bb63def9329ccf8ff7c02ab15e36f8eb4156c66758948",
+      "normalized_sha256": "4f1d0c9379aceb720fc0b71c6be45012c13fd7448b382b6eaaeea29b3ff26606",
+      "original_bytes_archive": "outputs/2026-week10-context/20261105T133614Z-morning/article-north-carolina-1.original-extraction.txt.gz"
+    },
+    {
+      "path": "outputs/2026-week10-context/20261105T133614Z-morning/article-north-carolina-2.txt",
+      "original_sha256": "5404b5391a95f4be8f020fe6100698ade3e82aea99cf258c81b344d35dafe715",
+      "normalized_sha256": "4a2fd3a65898e554dcef7366ea57daf9ee686d2f3b44fba7ea23dd422ec18865",
+      "original_bytes_archive": "outputs/2026-week10-context/20261105T133614Z-morning/article-north-carolina-2.original-extraction.txt.gz"
+    },
+    {
+      "path": "outputs/2026-week10-context/20261105T133614Z-morning/article-north-carolina-3.txt",
+      "original_sha256": "83fc09e49be8b2d5c596f0d51dbf3a636ab1f935113f94ef152e8134f825cd3e",
+      "normalized_sha256": "1ef3e320f913aee201b80e9c905de8a61f09c5df6f5a8ea4c304b73a947fd0e7",
+      "original_bytes_archive": "outputs/2026-week10-context/20261105T133614Z-morning/article-north-carolina-3.original-extraction.txt.gz"
+    },
+    {
+      "path": "outputs/2026-week10-context/20261105T133614Z-morning/article-north-carolina-4.txt",
+      "original_sha256": "1dbe09003602c22eb4bc72ae398d2dade8d1ebd7e90a2c357f4673de8414a6ab",
+      "normalized_sha256": "681fd19aa6119fa5996f76deb224091fe599401780c2e018fd6407023f5b7398",
+      "original_bytes_archive": "outputs/2026-week10-context/20261105T133614Z-morning/article-north-carolina-4.original-extraction.txt.gz"
+    },
+    {
+      "path": "outputs/2026-week10-context/20261105T133614Z-morning/article-north-carolina-5.txt",
+      "original_sha256": "37f8de9bd675b3b18472c8eeadab140dae3b4aedd1d02a73666a3ebbcec6ba6f",
+      "normalized_sha256": "e86eea57837fe4760b8074474ec996e85fa648115bbe72eca50b1dd11ac23d61",
+      "original_bytes_archive": "outputs/2026-week10-context/20261105T133614Z-morning/article-north-carolina-5.original-extraction.txt.gz"
+    },
+    {
+      "path": "outputs/2026-week10-context/20261105T133614Z-morning/article-north-carolina-6.txt",
+      "original_sha256": "7b6894e1b853ead0306a6397374acc887695e056654c2c50a57bb2d47b679a4c",
+      "normalized_sha256": "2d3d5f938cdcd510a16538bd0aa439ae52fad5bd54e07fd2585e49fbab88806b",
+      "original_bytes_archive": "outputs/2026-week10-context/20261105T133614Z-morning/article-north-carolina-6.original-extraction.txt.gz"
+    },
+    {
+      "path": "outputs/2026-week10-context/20261105T133614Z-morning/article-north-carolina-7.txt",
+      "original_sha256": "a738df58d864beb53ca59198c351fd1b1ad4839d08a2cc8ab3785a235629c74f",
+      "normalized_sha256": "7c676b7f5a24776beb0b4eed04bc4ffd58f2cf3a0871bbbb4b4b38c2192ad732",
+      "original_bytes_archive": "outputs/2026-week10-context/20261105T133614Z-morning/article-north-carolina-7.original-extraction.txt.gz"
+    },
+    {
+      "path": "outputs/2026-week10-context/20261105T133614Z-morning/article-north-carolina-8.txt",
+      "original_sha256": "f0510c6587c2c35e4530cbb1f769eb2dfb1f92736b7512f35f072d349d8b2cca",
+      "normalized_sha256": "b05b6e6efb2402f92670968250a9ec8f7321f86103433dc1046451e2c8c28b0b",
+      "original_bytes_archive": "outputs/2026-week10-context/20261105T133614Z-morning/article-north-carolina-8.original-extraction.txt.gz"
+    },
+    {
+      "path": "outputs/2026-week10-context/20261105T133614Z-morning/article-oregon-state-0.txt",
+      "original_sha256": "1e521289f5cb517f193dc7fef465d524d4d8755e33e53ddbf7e434451db334a7",
+      "normalized_sha256": "bf49d4c87303717d08f272062bffa56cf684de7f7974f2ddbe495d3e38eba4e9",
+      "original_bytes_archive": "outputs/2026-week10-context/20261105T133614Z-morning/article-oregon-state-0.original-extraction.txt.gz"
+    },
+    {
+      "path": "outputs/2026-week10-context/20261105T133614Z-morning/article-oregon-state-1.txt",
+      "original_sha256": "cf1ccdd3561f57c740d6610db631df89e4cf77ce050b6068e00c6de7da4582df",
+      "normalized_sha256": "7f27a85349c425c79f9fb0c3c0ce6d3dc563bb10e04ac5b35411d59d316641cd",
+      "original_bytes_archive": "outputs/2026-week10-context/20261105T133614Z-morning/article-oregon-state-1.original-extraction.txt.gz"
+    },
+    {
+      "path": "outputs/2026-week10-context/20261105T133614Z-morning/article-oregon-state-2.txt",
+      "original_sha256": "1c29457f4142719c23c330ea98a58f985169c06f1f39b8bfac819283d8bd8913",
+      "normalized_sha256": "49a4517279914c48b5c3e4a4814fdf06259fbadf3ea0b7bd33e38bf4e80e630d",
+      "original_bytes_archive": "outputs/2026-week10-context/20261105T133614Z-morning/article-oregon-state-2.original-extraction.txt.gz"
+    },
+    {
+      "path": "outputs/2026-week10-context/20261105T133614Z-morning/article-oregon-state-3.txt",
+      "original_sha256": "0cc52f80a04a7b287ec2d729eb1fcfeb233fd3f3c90dabb15798eddc1428ad1a",
+      "normalized_sha256": "8e744457a91065dbeb23a198937ce9336752e09f0bb7a94fb7b851418c03fc18",
+      "original_bytes_archive": "outputs/2026-week10-context/20261105T133614Z-morning/article-oregon-state-3.original-extraction.txt.gz"
+    },
+    {
+      "path": "outputs/2026-week10-context/20261105T133614Z-morning/article-oregon-state-4.txt",
+      "original_sha256": "c63998cd5b4665a815de6d57ca0e9db7ea841c4302152a42220dc6452b68e54f",
+      "normalized_sha256": "e0cf3de2ffaa331076cfe7ffacd55557aa3ef6f574e03cff22d30c1c7b992dc8",
+      "original_bytes_archive": "outputs/2026-week10-context/20261105T133614Z-morning/article-oregon-state-4.original-extraction.txt.gz"
+    },
+    {
+      "path": "outputs/2026-week10-context/20261105T133614Z-morning/article-oregon-state-5.txt",
+      "original_sha256": "05dd6e6c37a6980d0b58dd11d40ab36119f6f026d58866331250b58993a26842",
+      "normalized_sha256": "9db8042c94d547e0d4126ea0b1c580883468ffcad13ce124de2d6685d00500c7",
+      "original_bytes_archive": "outputs/2026-week10-context/20261105T133614Z-morning/article-oregon-state-5.original-extraction.txt.gz"
+    },
+    {
+      "path": "outputs/2026-week10-context/20261105T133614Z-morning/article-oregon-state-6.txt",
+      "original_sha256": "2b90c6dd5161b2c17ce2f52574ec7341b0deda514611414a3d0e201e18e6461c",
+      "normalized_sha256": "da5e29a9f933e705b6e72f5c2a4f4f53233cc422f01b7c66b250a830e51680c3",
+      "original_bytes_archive": "outputs/2026-week10-context/20261105T133614Z-morning/article-oregon-state-6.original-extraction.txt.gz"
+    },
+    {
+      "path": "outputs/2026-week10-context/20261105T133614Z-morning/article-oregon-state-7.txt",
+      "original_sha256": "96b20fb4869beb9dfcfcddf46edd6c6b948298f9f0c77d39370042e20cae9a17",
+      "normalized_sha256": "28220e98e5099bb774f43b6e30daaae37c6541ed8556b7c50510738397c9045d",
+      "original_bytes_archive": "outputs/2026-week10-context/20261105T133614Z-morning/article-oregon-state-7.original-extraction.txt.gz"
+    },
+    {
+      "path": "outputs/2026-week10-context/20261105T133614Z-morning/article-southern-miss-0.txt",
+      "original_sha256": "53bfbb4aa713f65d6d1160dd3d030fd50a527a6c8382ab633e28037d0dcbd0bc",
+      "normalized_sha256": "7aac67aa7cdfae63965167525415879adbeffb2890f8ffe41d0b686c8a11f156",
+      "original_bytes_archive": "outputs/2026-week10-context/20261105T133614Z-morning/article-southern-miss-0.original-extraction.txt.gz"
+    },
+    {
+      "path": "outputs/2026-week10-context/20261105T133614Z-morning/article-southern-miss-1.txt",
+      "original_sha256": "cf9cae467a96b90ac6626721612ddb5029d575f128f452363bfa7658d3a8d2fb",
+      "normalized_sha256": "bb8eccedda1a2bcd19588237671afd94201e45d3aef38c1f942641f4d5253670",
+      "original_bytes_archive": "outputs/2026-week10-context/20261105T133614Z-morning/article-southern-miss-1.original-extraction.txt.gz"
+    },
+    {
+      "path": "outputs/2026-week10-context/20261105T133614Z-morning/article-southern-miss-2.txt",
+      "original_sha256": "c53419222e854887b4a6160f9f1853228d99cc72eea5fc709a9aaf46de6ba910",
+      "normalized_sha256": "393d9417a6b62f891ba84af654401f9b61d392f5510f7aba8c328601de397350",
+      "original_bytes_archive": "outputs/2026-week10-context/20261105T133614Z-morning/article-southern-miss-2.original-extraction.txt.gz"
+    },
+    {
+      "path": "outputs/2026-week10-context/20261105T133614Z-morning/article-southern-miss-3.txt",
+      "original_sha256": "aed1131faa5fb657a6646c49db5305715a1312eda9e05a65d87c0cfe56fdc672",
+      "normalized_sha256": "d332c72c281b7319b9562ac1e7e263c0434119c9b1b4ea59e4792e986a36e543",
+      "original_bytes_archive": "outputs/2026-week10-context/20261105T133614Z-morning/article-southern-miss-3.original-extraction.txt.gz"
+    },
+    {
+      "path": "outputs/2026-week10-context/20261105T133614Z-morning/article-southern-miss-4.txt",
+      "original_sha256": "fd5f7d455cd22b9f2714e68fcb5ffaf384ed68e9f82b5906d45b6c811037cf0c",
+      "normalized_sha256": "bc279bb3fb53cac8fd37db71974501f61fd03b13073a3e4123688177d9b54fc7",
+      "original_bytes_archive": "outputs/2026-week10-context/20261105T133614Z-morning/article-southern-miss-4.original-extraction.txt.gz"
+    },
+    {
+      "path": "outputs/2026-week10-context/20261105T133614Z-morning/article-texas-0.txt",
+      "original_sha256": "06989ac63e140f08f72bf4b68a59c92d3e363d6c0e1f482f7bfd0a732570dc17",
+      "normalized_sha256": "1db5949cdfb779522775652bf5ab90be56ed498d02b3b48335eb7224013d64b4",
+      "original_bytes_archive": "outputs/2026-week10-context/20261105T133614Z-morning/article-texas-0.original-extraction.txt.gz"
+    },
+    {
+      "path": "outputs/2026-week10-context/20261105T133614Z-morning/article-texas-1.txt",
+      "original_sha256": "8d0f4a45d53e4a8d9213f421f64d2dac85af36a41708b4489a2e5e86b850f9e7",
+      "normalized_sha256": "268696bde65b7f117e788dc1efe7de145d10b79d282d054d873ec5f775439ed6",
+      "original_bytes_archive": "outputs/2026-week10-context/20261105T133614Z-morning/article-texas-1.original-extraction.txt.gz"
+    },
+    {
+      "path": "outputs/2026-week10-context/20261105T133614Z-morning/article-texas-2.txt",
+      "original_sha256": "2efc4afd2213c3cce98f369b3a1b5a7ca72137c4d6afe8414d2619ef59eab35e",
+      "normalized_sha256": "670344eb87eb6b1ab7fdefbf7d3e1ac119c2088ded9d27a13de5f2b5a02b7ea9",
+      "original_bytes_archive": "outputs/2026-week10-context/20261105T133614Z-morning/article-texas-2.original-extraction.txt.gz"
+    },
+    {
+      "path": "outputs/2026-week10-context/20261105T133614Z-morning/article-texas-3.txt",
+      "original_sha256": "77d32ae23d5c88d5fc7d7437ab520fb2cbda83a3828bab8258b55419809d0210",
+      "normalized_sha256": "953d50edcfa917be7dc6abc488ebeb06b4d4095ada5802df3d766ab0cd5d922a",
+      "original_bytes_archive": "outputs/2026-week10-context/20261105T133614Z-morning/article-texas-3.original-extraction.txt.gz"
+    },
+    {
+      "path": "outputs/2026-week10-context/20261105T133614Z-morning/article-texas-4.txt",
+      "original_sha256": "a1948918331685b89189a16b96af99b695d5794aa026e3012bdda39d29f187ab",
+      "normalized_sha256": "2646ae75175986a688a26c9de88f63bbb8511f9470d2608f0120f476e440a877",
+      "original_bytes_archive": "outputs/2026-week10-context/20261105T133614Z-morning/article-texas-4.original-extraction.txt.gz"
+    },
+    {
+      "path": "outputs/2026-week10-context/20261105T133614Z-morning/article-texas-5.txt",
+      "original_sha256": "4f3ade58c83846691cba66cf1cec3f56898df0f95c535fd3bd7d9b312625463f",
+      "normalized_sha256": "7bb2dc8eba5a1e1b1d13e87d17c3b629b371924063c779e8070b7a1bbd2de730",
+      "original_bytes_archive": "outputs/2026-week10-context/20261105T133614Z-morning/article-texas-5.original-extraction.txt.gz"
+    },
+    {
+      "path": "outputs/2026-week10-context/20261105T133614Z-morning/article-texas-6.txt",
+      "original_sha256": "95215ae7bbceaf68f9dce4b9c770b3757a6b3aa79758254da73e682237e848d8",
+      "normalized_sha256": "319e54cfc5edeee0b40844784abadfff9a5496ea36744c795c38e6b5d4d01932",
+      "original_bytes_archive": "outputs/2026-week10-context/20261105T133614Z-morning/article-texas-6.original-extraction.txt.gz"
+    },
+    {
+      "path": "outputs/2026-week10-context/20261105T133614Z-morning/article-texas-7.txt",
+      "original_sha256": "89eb068d5aa5cff60b1f35f306385cfa6f0e311ef6a46fb1d2eb011d98721356",
+      "normalized_sha256": "9f2306558ab4c072e1ff2462dad26f3d39fdf7ab69e31ade1637c52150781639",
+      "original_bytes_archive": "outputs/2026-week10-context/20261105T133614Z-morning/article-texas-7.original-extraction.txt.gz"
+    },
+    {
+      "path": "outputs/2026-week10-context/20261105T133614Z-morning/article-texas-tech-0.txt",
+      "original_sha256": "ba24111d6907e33f577aebc13e2d580acd37bcced10058e5aa35b9c39603e0ca",
+      "normalized_sha256": "c3fc24c5e57f7c54e0e0d4816c6e7115d96b46820222f5b22c0dd9da5d0f613a",
+      "original_bytes_archive": "outputs/2026-week10-context/20261105T133614Z-morning/article-texas-tech-0.original-extraction.txt.gz"
+    },
+    {
+      "path": "outputs/2026-week10-context/20261105T133614Z-morning/article-texas-tech-1.txt",
+      "original_sha256": "f9db1b4f38ed42dece630057340a300f9b3bff292a0e17a18fe5616a01828463",
+      "normalized_sha256": "543c1d57da38815d3b6795be288d2877e928d02b8213584491de959ad61a79e9",
+      "original_bytes_archive": "outputs/2026-week10-context/20261105T133614Z-morning/article-texas-tech-1.original-extraction.txt.gz"
+    },
+    {
+      "path": "outputs/2026-week10-context/20261105T133614Z-morning/article-texas-tech-2.txt",
+      "original_sha256": "6a07118043be7da3f128736ffc9368fac17378503889f71333b4c5a1343c3038",
+      "normalized_sha256": "7b85ea7b9860a88ec2cb3fc080481ed60a5e16738c46ac8da8113a5ac6816cb9",
+      "original_bytes_archive": "outputs/2026-week10-context/20261105T133614Z-morning/article-texas-tech-2.original-extraction.txt.gz"
+    },
+    {
+      "path": "outputs/2026-week10-context/20261105T133614Z-morning/article-texas-tech-3.txt",
+      "original_sha256": "6ca63993a336c70ed470a9e501f7eff8acda0a42dddddd810f0b5634380f40e3",
+      "normalized_sha256": "9adee3f112dde7e036b195516d1344fed434b921b40bfd19271c63f1b0a20f33",
+      "original_bytes_archive": "outputs/2026-week10-context/20261105T133614Z-morning/article-texas-tech-3.original-extraction.txt.gz"
+    },
+    {
+      "path": "outputs/2026-week10-context/20261105T133614Z-morning/article-texas-tech-4.txt",
+      "original_sha256": "5e06b31b16f846afb9a4280050d0a9907d27d22ed82a00e4cd76c74052403dac",
+      "normalized_sha256": "4aadb9ee3925addcc2b06058729096227839c0d4bc9a3a00eb85638bab0b6b10",
+      "original_bytes_archive": "outputs/2026-week10-context/20261105T133614Z-morning/article-texas-tech-4.original-extraction.txt.gz"
+    },
+    {
+      "path": "outputs/2026-week10-context/20261105T133614Z-morning/article-texas-tech-5.txt",
+      "original_sha256": "d849999865fead88dce6cfc0b8f546a912d775e4b75acd3d2bd3d77dae46c412",
+      "normalized_sha256": "4dd5f51f0bcc93bed54a198db557f021e3047d56e3438122931fb356e76d2065",
+      "original_bytes_archive": "outputs/2026-week10-context/20261105T133614Z-morning/article-texas-tech-5.original-extraction.txt.gz"
+    },
+    {
+      "path": "outputs/2026-week10-context/20261105T133614Z-morning/article-uconn-0.txt",
+      "original_sha256": "b67dac62596a1e60a590d565d454c8bd4e04292aba560d4cfa6c4a17d5d86bc5",
+      "normalized_sha256": "781e991faae16a82f306d4bd278ff3f202046d506c0836d3884d57109d51d6d5",
+      "original_bytes_archive": "outputs/2026-week10-context/20261105T133614Z-morning/article-uconn-0.original-extraction.txt.gz"
+    },
+    {
+      "path": "outputs/2026-week10-context/20261105T133614Z-morning/article-uconn-1.txt",
+      "original_sha256": "8224f57af65c2a68309900cc7d16b217da1c0c8891dd2e40888d8fb4c382cf99",
+      "normalized_sha256": "d9a13b7912b5e52988c5123587116d2078d7dc82cfc855ae7dce142a395bca1c",
+      "original_bytes_archive": "outputs/2026-week10-context/20261105T133614Z-morning/article-uconn-1.original-extraction.txt.gz"
+    },
+    {
+      "path": "outputs/2026-week10-context/20261105T133614Z-morning/article-uconn-2.txt",
+      "original_sha256": "a99b8302a8471f073a1da863bac25bccadf685a19af541a4234e8239ddc88a06",
+      "normalized_sha256": "9454269420b536ac8d1c86c0f31f8142b656c505de350ebab7b0a95e35af578a",
+      "original_bytes_archive": "outputs/2026-week10-context/20261105T133614Z-morning/article-uconn-2.original-extraction.txt.gz"
+    },
+    {
+      "path": "outputs/2026-week10-context/20261105T133614Z-morning/article-utsa-0.txt",
+      "original_sha256": "61e9f259735c4e4b65c3973c178846888e649083f47aefad075fa9bc48a187e9",
+      "normalized_sha256": "565512bf83e0b2fca7d00780c85b09ecb699af2c29e5339fe5748b75fe5d1665",
+      "original_bytes_archive": "outputs/2026-week10-context/20261105T133614Z-morning/article-utsa-0.original-extraction.txt.gz"
+    },
+    {
+      "path": "outputs/2026-week10-context/20261105T133614Z-morning/article-utsa-1.txt",
+      "original_sha256": "bc828e4f59a311351a5f30f6deec1f40799faf55d0ff7b8806fd38239c76686a",
+      "normalized_sha256": "bc8d6166793c8f907d3d2fd79b21e531632d0e3bffd5f5202bfa9e31f4066363",
+      "original_bytes_archive": "outputs/2026-week10-context/20261105T133614Z-morning/article-utsa-1.original-extraction.txt.gz"
+    },
+    {
+      "path": "outputs/2026-week10-context/20261105T133614Z-morning/article-utsa-2.txt",
+      "original_sha256": "b8d7808954ae6648e2a82046a6d85b5152d0de870cda76d9eb8d8ccabb4bc9dd",
+      "normalized_sha256": "c10938ded16c513763c31ae73d0c8056a4e578cfa8a0a85bcc202b2fadde99ed",
+      "original_bytes_archive": "outputs/2026-week10-context/20261105T133614Z-morning/article-utsa-2.original-extraction.txt.gz"
+    },
+    {
+      "path": "outputs/2026-week10-context/20261105T133614Z-morning/article-west-virginia-0.txt",
+      "original_sha256": "b169fc834edba1d3b8c06f8ae706dfb3ba996cffc866b900ab1364c361f36af5",
+      "normalized_sha256": "5d0f1cf52ef17bec300ff1cc62e51bb3f0557d7a59753c3ccd32c0ea84829391",
+      "original_bytes_archive": "outputs/2026-week10-context/20261105T133614Z-morning/article-west-virginia-0.original-extraction.txt.gz"
+    },
+    {
+      "path": "outputs/2026-week10-context/20261105T133614Z-morning/article-west-virginia-1.txt",
+      "original_sha256": "499a9a15ca30d33ad8ad01a3ce01d4c730de4aaec35333c482a31f4783d906fe",
+      "normalized_sha256": "cd19f93f15df2904a66c886f22b94690c5f63e3fb5dcafdf672ff5f4ae819963",
+      "original_bytes_archive": "outputs/2026-week10-context/20261105T133614Z-morning/article-west-virginia-1.original-extraction.txt.gz"
+    },
+    {
+      "path": "outputs/2026-week10-context/20261105T133614Z-morning/article-west-virginia-2.txt",
+      "original_sha256": "6e4b6875ec4a21643b8fd7ab4ea7d6b28bd8629b012184fe740b52559acbca80",
+      "normalized_sha256": "4ded6e9115c72f7e4142cc98c97a40ff441bc683b87f37f61a8832c1e16f28a6",
+      "original_bytes_archive": "outputs/2026-week10-context/20261105T133614Z-morning/article-west-virginia-2.original-extraction.txt.gz"
+    },
+    {
+      "path": "outputs/2026-week10-context/20261105T133614Z-morning/article-west-virginia-3.txt",
+      "original_sha256": "01c00d3cb9ee8dc6d1943a3796c766819190c9bdc8438b8cc9686d3df8324dce",
+      "normalized_sha256": "8ac44ae67476a42034271f9617fc74a0b8e68dd4f20c1f9c589117e7daabdfa7",
+      "original_bytes_archive": "outputs/2026-week10-context/20261105T133614Z-morning/article-west-virginia-3.original-extraction.txt.gz"
+    },
+    {
+      "path": "outputs/2026-week10-context/20261105T133614Z-morning/article-west-virginia-4.txt",
+      "original_sha256": "9acd10265d66dc10a32e9ae27943b9e3f554b2b08befc53816507505ddd0b5c6",
+      "normalized_sha256": "4a792159186df4e5d0030b71a35b6f8465ef6717fbe185717c39d856b1913004",
+      "original_bytes_archive": "outputs/2026-week10-context/20261105T133614Z-morning/article-west-virginia-4.original-extraction.txt.gz"
+    },
+    {
+      "path": "outputs/2026-week10-context/20261105T133614Z-morning/article-western-kentucky-0.txt",
+      "original_sha256": "8d5f915d8b27c66605a0ad95a5d3bc3ee2dd0b9c55f75aabaceb8fcd5556a3a9",
+      "normalized_sha256": "6956fc5a0c89b2b47750ebc0caf243b1fe1f7e5ef14858ceb215ec00d77fd1b8",
+      "original_bytes_archive": "outputs/2026-week10-context/20261105T133614Z-morning/article-western-kentucky-0.original-extraction.txt.gz"
+    },
+    {
+      "path": "outputs/2026-week10-context/20261105T133614Z-morning/article-western-kentucky-1.txt",
+      "original_sha256": "5a26c559d65e89c1e4a0981ef17cfee1f71a8165c2b8534879c5cfc4768ec8f8",
+      "normalized_sha256": "fe3f2060d4b92541d79a99201c118dd4749f9290b86aebdc0446e10629053d2c",
+      "original_bytes_archive": "outputs/2026-week10-context/20261105T133614Z-morning/article-western-kentucky-1.original-extraction.txt.gz"
+    },
+    {
+      "path": "outputs/2026-week10-context/20261105T134010Z-supplement/acc-reports.txt",
+      "original_sha256": "5aa51fe9fe13796890baada3c4abe03c0a2fe339762dc2bc596824460cdfdea0",
+      "normalized_sha256": "cb1dc3b25bf93bb4f74f56e007a098fea7d4b132aae39c406fb880e7cc4dc5fc",
+      "original_bytes_archive": "outputs/2026-week10-context/20261105T134010Z-supplement/acc-reports.original-extraction.txt.gz"
+    },
+    {
+      "path": "outputs/2026-week10-context/20261105T134010Z-supplement/bc-notes.txt",
+      "original_sha256": "f59b7d1000ac56a94afeeb9a3f51ccf83d61641008b7e4e351293b691a0cf34a",
+      "normalized_sha256": "7f09341a616ab7230362acaf87df1cf590a4e9bb08b7e3f7e3a7bde70cba5185",
+      "original_bytes_archive": "outputs/2026-week10-context/20261105T134010Z-supplement/bc-notes.original-extraction.txt.gz"
+    },
+    {
+      "path": "outputs/2026-week10-context/20261105T134010Z-supplement/fau-notes.txt",
+      "original_sha256": "b7578057ba2f612375318a1b037fae9b2f3000f1794be639cc5ce2b9e784eca7",
+      "normalized_sha256": "2e8989d460a4994398d28042ab36619d72af88a2d7d6e068f65027c079fe07eb",
+      "original_bytes_archive": "outputs/2026-week10-context/20261105T134010Z-supplement/fau-notes.original-extraction.txt.gz"
+    },
+    {
+      "path": "outputs/2026-week10-context/20261105T134010Z-supplement/jmu-notes.txt",
+      "original_sha256": "2adc25cf865f9594e266575bcf452d7b476ffad96a0e4e2be2f3da0c76a09176",
+      "normalized_sha256": "aa14731db4f227eee8b8eed8d54f5a8c6dc805fcc9b559de0fd038fdd84e20af",
+      "original_bytes_archive": "outputs/2026-week10-context/20261105T134010Z-supplement/jmu-notes.original-extraction.txt.gz"
+    },
+    {
+      "path": "outputs/2026-week10-context/20261105T134010Z-supplement/missouri-reported-availability.txt",
+      "original_sha256": "041d62b4f661aa4364d5fcb7758b005b34ec718805d3b470acd0c38006b84fc7",
+      "normalized_sha256": "b68034dbd18f513579a4a7f3598b1afe7d9e5b5dcf5dfff0ce90c2dc7035cb7b",
+      "original_bytes_archive": "outputs/2026-week10-context/20261105T134010Z-supplement/missouri-reported-availability.original-extraction.txt.gz"
+    },
+    {
+      "path": "outputs/2026-week10-context/20261105T134010Z-supplement/sec-reports.txt",
+      "original_sha256": "f0ae9abd4fa4df9fed5d5e9bad174e0b69621c4c0ba3b8c9456c2f3423767493",
+      "normalized_sha256": "e9fb0b43a5dbaea45c18306e9c812182e2b6d714bd6457988627bf1fd58b1ddb",
+      "original_bytes_archive": "outputs/2026-week10-context/20261105T134010Z-supplement/sec-reports.original-extraction.txt.gz"
+    },
+    {
+      "path": "outputs/2026-week10-context/20261105T134010Z-supplement/texas-state-recap.txt",
+      "original_sha256": "bd1a8b7158effb95f04ae34e41cdb0e97551da1caa1b7d20d69040659459496a",
+      "normalized_sha256": "db0ef62dbb89b05ba5ecbe7f1010cf14b479c253067b0f4c684efc7afcb5455c",
+      "original_bytes_archive": "outputs/2026-week10-context/20261105T134010Z-supplement/texas-state-recap.original-extraction.txt.gz"
+    },
+    {
+      "path": "outputs/2026-week10-context/20261105T134010Z-supplement/utsa-notes-a.txt",
+      "original_sha256": "16ab78303c27021ce7009c548ac4c6abd3ac568f01044dcb871ff7757e242338",
+      "normalized_sha256": "7a54b61bd5851f05d04759a6126a513a1c747633388a95fbafb7b2b7f35fee55",
+      "original_bytes_archive": "outputs/2026-week10-context/20261105T134010Z-supplement/utsa-notes-a.original-extraction.txt.gz"
+    },
+    {
+      "path": "outputs/2026-week10-context/20261105T134010Z-supplement/utsa-notes-b.txt",
+      "original_sha256": "aaa9d2403d1047081c12756b6511c1714eff6d65cffacd774fcfa52f8cbe33ac",
+      "normalized_sha256": "3d303e9f5885b714b82b101d7f6861b8dd84cdde43ac288826e869ee2261e56d",
+      "original_bytes_archive": "outputs/2026-week10-context/20261105T134010Z-supplement/utsa-notes-b.original-extraction.txt.gz"
+    },
+    {
+      "path": "outputs/2026-week10-context/20261105T134010Z-supplement/utsa-notes-c.txt",
+      "original_sha256": "f8ee74a5435d60c46da44b6dcc8e1722a1ece8095f524a6bbf60e8097969bc1c",
+      "normalized_sha256": "21721e1284605eba77354defa00858e79c7599e197a3b352e3b1cf8da1dbd74e",
+      "original_bytes_archive": "outputs/2026-week10-context/20261105T134010Z-supplement/utsa-notes-c.original-extraction.txt.gz"
+    },
+    {
+      "path": "outputs/2026-week10-context/20261105T134105Z-supplement/acc-availability-app.txt",
+      "original_sha256": "8ecb301dae7cd273cb021762a384a0f01af185df0d3abbd2bdccccdc2147bc53",
+      "normalized_sha256": "ee4ab9e67a1daf5a4029c61086eab8918b0ffd2b9bb7e964f8d9627d36dbb0ef",
+      "original_bytes_archive": "outputs/2026-week10-context/20261105T134105Z-supplement/acc-availability-app.original-extraction.txt.gz"
+    },
+    {
+      "path": "outputs/2026-week10-context/20261105T134105Z-supplement/bc-notes-download.txt",
+      "original_sha256": "81f63eca89fb7bebacfa724fcdd81e88751d645ab63bc6feaa413f76c1ff4696",
+      "normalized_sha256": "4cae8665a34961414652e0cfe91b92e9b59263c33397b94ea6dbc7cab623aef8",
+      "original_bytes_archive": "outputs/2026-week10-context/20261105T134105Z-supplement/bc-notes-download.original-extraction.txt.gz"
+    },
+    {
+      "path": "outputs/2026-week10-context/20261105T134105Z-supplement/fau-notes-download.txt",
+      "original_sha256": "16ab78303c27021ce7009c548ac4c6abd3ac568f01044dcb871ff7757e242338",
+      "normalized_sha256": "7a54b61bd5851f05d04759a6126a513a1c747633388a95fbafb7b2b7f35fee55",
+      "original_bytes_archive": "outputs/2026-week10-context/20261105T134105Z-supplement/fau-notes-download.original-extraction.txt.gz"
+    },
+    {
+      "path": "outputs/2026-week10-context/20261105T134105Z-supplement/jmu-notes-download.txt",
+      "original_sha256": "d67d005213ca711cb52209e39fcaf178028622cf21b06f7b1be13b9625813e7a",
+      "normalized_sha256": "e313345c7174c8dbbe647e5ff45912b2032e8dab02d3570d96d860ddc3f3a78e",
+      "original_bytes_archive": "outputs/2026-week10-context/20261105T134105Z-supplement/jmu-notes-download.original-extraction.txt.gz"
+    },
+    {
+      "path": "outputs/2026-week10-context/20261105T134150Z-supplement/sec-football-reports.txt",
+      "original_sha256": "2ad53b65d71a1ca1b26403e10671a4f3433073ebe4b8ead7cbd1f4912feb9612",
+      "normalized_sha256": "04a3eb372762031d10dd548423bac9ea25035b1e3b39d96d4a9daee67e91d532",
+      "original_bytes_archive": "outputs/2026-week10-context/20261105T134150Z-supplement/sec-football-reports.original-extraction.txt.gz"
+    },
+    {
+      "path": "outputs/2026-week10-context/20261105T134216Z-discovery/availability-app-code.txt",
+      "original_sha256": "c797d74cac2744e220e4fe2a99513f2b1f7c990893ff6fc28dab3b13f64400fc",
+      "normalized_sha256": "5bed653b6ff8e3fa40ac24f074834ae6f4e03a3c51531c0784fca95a5cf7e37a",
+      "original_bytes_archive": "outputs/2026-week10-context/20261105T134216Z-discovery/availability-app-code.original-extraction.txt.gz"
+    },
+    {
+      "path": "outputs/2026-week10-context/20261105T134341Z-discovery/availability-public-screen.txt",
+      "original_sha256": "1914d77f0dde775c4ecc0e6922af8887d6aad88db559f757f57df62db8db7681",
+      "normalized_sha256": "d7d2290d0c6230518d6d27a746457f4195eaa361000556ba025e338a64c23ff1",
+      "original_bytes_archive": "outputs/2026-week10-context/20261105T134341Z-discovery/availability-public-screen.original-extraction.txt.gz"
+    },
+    {
+      "path": "outputs/2026-week10-context/20261105T134629Z-supplement/fau-week9-box.txt",
+      "original_sha256": "1ab82288a28c0c225f9d083db5d17008174fabf94c666e26f22da217f3f451c7",
+      "normalized_sha256": "c7c1aa6a4d5f9f633783e1329177762bcc92bff54194596f2a242346475c89a1",
+      "original_bytes_archive": "outputs/2026-week10-context/20261105T134629Z-supplement/fau-week9-box.original-extraction.txt.gz"
+    },
+    {
+      "path": "outputs/2026-week10-context/20261105T134629Z-supplement/pac12-availability.txt",
+      "original_sha256": "24677010212de2720705f0cc7b70fda459091aeb6c2c3790c6d7cb8d58d46771",
+      "normalized_sha256": "b2b660ffad59c32e38d878f16c897bc1f3dfceda2203542e2b0892fa8197ed29",
+      "original_bytes_archive": "outputs/2026-week10-context/20261105T134629Z-supplement/pac12-availability.original-extraction.txt.gz"
+    },
+    {
+      "path": "outputs/2026-week10-context/20261105T134629Z-supplement/sunbelt-availability.txt",
+      "original_sha256": "a1164a65c7b9ef08569c0de5b81625049984366e00e9b12eae2312a07cb577ed",
+      "normalized_sha256": "c75c98ae66bd85017dda8c99011d16e269b3acd9cf7a7c4179e6df25bf790128",
+      "original_bytes_archive": "outputs/2026-week10-context/20261105T134629Z-supplement/sunbelt-availability.original-extraction.txt.gz"
+    },
+    {
+      "path": "outputs/2026-week10-context/20261105T134629Z-supplement/texas-state-week9-box.txt",
+      "original_sha256": "35e15b5e5c21a5a4248f1a0a796fcbb564fcb9b719ade86711acfcda1c32dac6",
+      "normalized_sha256": "092589bd53d77a69c11f8152dacb51c4c98f8c40cf65d602fb3a8ae871eb4394",
+      "original_bytes_archive": "outputs/2026-week10-context/20261105T134629Z-supplement/texas-state-week9-box.original-extraction.txt.gz"
+    },
+    {
+      "path": "outputs/2026-week10-context/20261105T190345Z-availability/pac12-availability-data.txt",
+      "original_sha256": "cfdae8dd76a6b85aca42628cbe667a20c48b1f799d4fe5934b56f215eb082844",
+      "normalized_sha256": "620c2816e7c950e42af6d07341bb7df37d501a9f074cd562249a33e60f46060c",
+      "original_bytes_archive": "outputs/2026-week10-context/20261105T190345Z-availability/pac12-availability-data.original-extraction.txt.gz"
+    },
+    {
+      "path": "outputs/2026-week10-context/20261105T190345Z-availability/sunbelt-availability-data.txt",
+      "original_sha256": "81246a3a6c128037a7fabb0da0144ff53faae7ab4c0abddcb4216fb806e32079",
+      "normalized_sha256": "347c880c75f2c6d40f2c65574e4a35e244d24e3e09f6a246950850b95d6faa9f",
+      "original_bytes_archive": "outputs/2026-week10-context/20261105T190345Z-availability/sunbelt-availability-data.original-extraction.txt.gz"
+    }
+  ],
+  "normalization": "expandtabs(4), rstrip each line, one final newline; reading copies only"
+}

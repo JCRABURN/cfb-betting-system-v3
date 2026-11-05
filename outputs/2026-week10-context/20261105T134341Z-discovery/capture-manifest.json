@@ -1,0 +1,21 @@
+{
+  "captured_at_utc": "2026-11-05T13:43:41.450966+00:00",
+  "cutoff_utc": "2026-11-06T00:30:00Z",
+  "records": [
+    {
+      "name": "availability-public-screen",
+      "url": "https://app.hdintelligence.com/assets/PublishScreen-BK8AN9r7.js",
+      "requested_at_utc": "2026-11-05T13:43:41.356892+00:00",
+      "path": "availability-public-screen.gz",
+      "sha256": "d7d2290d0c6230518d6d27a746457f4195eaa361000556ba025e338a64c23ff1",
+      "http_status": 200,
+      "resolved_url": "https://app.hdintelligence.com/assets/PublishScreen-BK8AN9r7.js",
+      "received_at_utc": "2026-11-05T13:43:41.447452+00:00",
+      "status": "CAPTURED",
+      "content_type": "text/javascript; charset=utf-8"
+    }
+  ],
+  "capture_code_sha256": "47f66040c70aabfd3c2834f6428454f2440910db7b2ab97e9dcd83b0cd2a2960",
+  "model_adjustments": [],
+  "note": "HTTP success is not evidence of usable article content or medical clearance."
+}

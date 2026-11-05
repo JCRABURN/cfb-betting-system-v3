@@ -1,0 +1,41 @@
+{
+  "note": "Only new uncommitted directory labels corrected to actual first request time. Original response bytes and manifest timestamps unchanged.",
+  "changes": [
+    {
+      "initial_uncommitted_label": "20261105T133800Z-morning",
+      "actual_first_request_label": "20261105T133614Z-morning"
+    },
+    {
+      "initial_uncommitted_label": "20261105T134600Z-supplement",
+      "actual_first_request_label": "20261105T134010Z-supplement"
+    },
+    {
+      "initial_uncommitted_label": "20261105T135000Z-supplement",
+      "actual_first_request_label": "20261105T134105Z-supplement"
+    },
+    {
+      "initial_uncommitted_label": "20261105T135300Z-supplement",
+      "actual_first_request_label": "20261105T134150Z-supplement"
+    },
+    {
+      "initial_uncommitted_label": "20261105T135500Z-discovery",
+      "actual_first_request_label": "20261105T134216Z-discovery"
+    },
+    {
+      "initial_uncommitted_label": "20261105T135700Z-discovery",
+      "actual_first_request_label": "20261105T134341Z-discovery"
+    },
+    {
+      "initial_uncommitted_label": "20261105T140000Z-official-availability",
+      "actual_first_request_label": "20261105T134425Z-official-availability"
+    },
+    {
+      "initial_uncommitted_label": "20261105T140500Z-supplement",
+      "actual_first_request_label": "20261105T134629Z-supplement"
+    },
+    {
+      "initial_uncommitted_label": "20261105T190344Z-availability",
+      "actual_first_request_label": "20261105T190345Z-availability"
+    }
+  ]
+}
