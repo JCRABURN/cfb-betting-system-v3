@@ -1,0 +1,1197 @@
+{
+  "checked_at_utc": "2026-11-05T00:55:23.975458+00:00",
+  "source_commit": "9b2fc77447163360d4e94046cc490be9d6813346",
+  "source_csv_sha256": "7fc188a42c3af15b29835e25110db6402cc12e4b6ca4a6ff6f9355d39d16da3d",
+  "source_manifest_sha256": "7157f98ada62c27bb7eae4e06dbed12f640577e431d5f351de5c29fa640cd47e",
+  "source_rows": 62,
+  "fbs_schedule_games": 62,
+  "upcoming": 57,
+  "excluded": 4,
+  "source_image_bytes_available": false,
+  "official_card_status": "BLOCKED_SCREENSHOT_RECONCILIATION_AND_REVIEW_INTEGRATION_PENDING",
+  "missing_source_matchups": [
+    [
+      "Buffalo",
+      "Miami (OH)"
+    ]
+  ],
+  "rows": [
+    {
+      "source": {
+        "date": "2026-11-03",
+        "away_team": "Ohio",
+        "home_team": "Akron",
+        "away_spread": "-13.5",
+        "home_spread": "13.5",
+        "total": "50.5",
+        "status": "FINAL",
+        "final_away": "28",
+        "final_home": "20",
+        "source": "SplashSports screenshot supplied 2026-11-04 image 1 row 1"
+      },
+      "game_id": 401866453,
+      "kickoff_utc": "2026-11-04T00:00:00.000Z",
+      "status": "EXCLUDED_ELAPSED",
+      "target_score_present": true,
+      "source_spreads_opposite": true
+    },
+    {
+      "source": {
+        "date": "2026-11-03",
+        "away_team": "Buffalo",
+        "home_team": "Miami OH",
+        "away_spread": "6.5",
+        "home_spread": "-6.5",
+        "total": "44.5",
+        "status": "FINAL",
+        "final_away": "34",
+        "final_home": "31",
+        "source": "SplashSports screenshot supplied 2026-11-04 image 1 row 2"
+      },
+      "status": "NO_FBS_SCHEDULE_MATCH"
+    },
+    {
+      "source": {
+        "date": "2026-11-04",
+        "away_team": "Ball State",
+        "home_team": "Massachusetts",
+        "away_spread": "3.5",
+        "home_spread": "-3.5",
+        "total": "49.5",
+        "status": "PREGAME",
+        "final_away": "",
+        "final_home": "",
+        "source": "SplashSports screenshot supplied 2026-11-04 image 1 row 3"
+      },
+      "game_id": 401866455,
+      "kickoff_utc": "2026-11-05T00:00:00.000Z",
+      "status": "EXCLUDED_ELAPSED",
+      "target_score_present": false,
+      "source_spreads_opposite": true
+    },
+    {
+      "source": {
+        "date": "2026-11-04",
+        "away_team": "Toledo",
+        "home_team": "Sacramento State",
+        "away_spread": "-24.5",
+        "home_spread": "24.5",
+        "total": "53.5",
+        "status": "PREGAME",
+        "final_away": "",
+        "final_home": "",
+        "source": "SplashSports screenshot supplied 2026-11-04 image 1 row 4"
+      },
+      "game_id": 401866457,
+      "kickoff_utc": "2026-11-05T00:00:00.000Z",
+      "status": "EXCLUDED_ELAPSED",
+      "target_score_present": false,
+      "source_spreads_opposite": true
+    },
+    {
+      "source": {
+        "date": "2026-11-04",
+        "away_team": "Central Michigan",
+        "home_team": "Eastern Michigan",
+        "away_spread": "1.5",
+        "home_spread": "-1.5",
+        "total": "44.5",
+        "status": "PREGAME",
+        "final_away": "",
+        "final_home": "",
+        "source": "SplashSports screenshot supplied 2026-11-04 image 1 row 5"
+      },
+      "game_id": 401866456,
+      "kickoff_utc": "2026-11-05T00:30:00.000Z",
+      "status": "EXCLUDED_ELAPSED",
+      "target_score_present": false,
+      "source_spreads_opposite": true
+    },
+    {
+      "source": {
+        "date": "2026-11-05",
+        "away_team": "UTSA",
+        "home_team": "Florida Atlantic",
+        "away_spread": "-7.5",
+        "home_spread": "7.5",
+        "total": "73.5",
+        "status": "PREGAME",
+        "final_away": "",
+        "final_home": "",
+        "source": "SplashSports screenshot supplied 2026-11-04 image 1 row 6"
+      },
+      "game_id": 401862817,
+      "kickoff_utc": "2026-11-06T00:30:00.000Z",
+      "status": "UPCOMING",
+      "target_score_present": false,
+      "source_spreads_opposite": true
+    },
+    {
+      "source": {
+        "date": "2026-11-05",
+        "away_team": "James Madison",
+        "home_team": "Southern Miss",
+        "away_spread": "-14.5",
+        "home_spread": "14.5",
+        "total": "58.5",
+        "status": "PREGAME",
+        "final_away": "",
+        "final_home": "",
+        "source": "SplashSports screenshot supplied 2026-11-04 image 1 row 7"
+      },
+      "game_id": 401869964,
+      "kickoff_utc": "2026-11-06T01:00:00.000Z",
+      "status": "UPCOMING",
+      "target_score_present": false,
+      "source_spreads_opposite": true
+    },
+    {
+      "source": {
+        "date": "2026-11-06",
+        "away_team": "Virginia Tech",
+        "home_team": "SMU",
+        "away_spread": "5.5",
+        "home_spread": "-5.5",
+        "total": "56.5",
+        "status": "PREGAME",
+        "final_away": "",
+        "final_home": "",
+        "source": "SplashSports screenshot supplied 2026-11-04 image 2 row 1"
+      },
+      "game_id": 401858288,
+      "kickoff_utc": "2026-11-07T00:00:00.000Z",
+      "status": "UPCOMING",
+      "target_score_present": false,
+      "source_spreads_opposite": true
+    },
+    {
+      "source": {
+        "date": "2026-11-06",
+        "away_team": "South Florida",
+        "home_team": "East Carolina",
+        "away_spread": "1.5",
+        "home_spread": "-1.5",
+        "total": "39.5",
+        "status": "PREGAME",
+        "final_away": "",
+        "final_home": "",
+        "source": "SplashSports screenshot supplied 2026-11-04 image 2 row 2"
+      },
+      "game_id": 401862818,
+      "kickoff_utc": "2026-11-07T00:30:00.000Z",
+      "status": "UPCOMING",
+      "target_score_present": false,
+      "source_spreads_opposite": true
+    },
+    {
+      "source": {
+        "date": "2026-11-06",
+        "away_team": "Nebraska",
+        "home_team": "Illinois",
+        "away_spread": "-4.5",
+        "home_spread": "4.5",
+        "total": "50.5",
+        "status": "PREGAME",
+        "final_away": "",
+        "final_home": "",
+        "source": "SplashSports screenshot supplied 2026-11-04 image 2 row 3"
+      },
+      "game_id": 401858510,
+      "kickoff_utc": "2026-11-07T01:00:00.000Z",
+      "status": "UPCOMING",
+      "target_score_present": false,
+      "source_spreads_opposite": true
+    },
+    {
+      "source": {
+        "date": "2026-11-06",
+        "away_team": "New Mexico",
+        "home_team": "Nevada",
+        "away_spread": "-9.5",
+        "home_spread": "9.5",
+        "total": "39.5",
+        "status": "PREGAME",
+        "final_away": "",
+        "final_home": "",
+        "source": "SplashSports screenshot supplied 2026-11-04 image 2 row 4"
+      },
+      "game_id": 401864533,
+      "kickoff_utc": "2026-11-07T02:00:00.000Z",
+      "status": "UPCOMING",
+      "target_score_present": false,
+      "source_spreads_opposite": true
+    },
+    {
+      "source": {
+        "date": "2026-11-06",
+        "away_team": "TCU",
+        "home_team": "Arizona",
+        "away_spread": "9.5",
+        "home_spread": "-9.5",
+        "total": "43.5",
+        "status": "PREGAME",
+        "final_away": "",
+        "final_home": "",
+        "source": "SplashSports screenshot supplied 2026-11-04 image 2 row 5"
+      },
+      "game_id": 401856855,
+      "kickoff_utc": "2026-11-07T03:15:00.000Z",
+      "status": "UPCOMING",
+      "target_score_present": false,
+      "source_spreads_opposite": true
+    },
+    {
+      "source": {
+        "date": "2026-11-07",
+        "away_team": "Florida State",
+        "home_team": "Boston College",
+        "away_spread": "-6.5",
+        "home_spread": "6.5",
+        "total": "51.5",
+        "status": "PREGAME",
+        "final_away": "",
+        "final_home": "",
+        "source": "SplashSports screenshot supplied 2026-11-04 image 2 row 6"
+      },
+      "game_id": 401858289,
+      "kickoff_utc": "2026-11-07T17:00:00.000Z",
+      "status": "UPCOMING",
+      "target_score_present": false,
+      "source_spreads_opposite": true
+    },
+    {
+      "source": {
+        "date": "2026-11-07",
+        "away_team": "UCLA",
+        "home_team": "Minnesota",
+        "away_spread": "-5.5",
+        "home_spread": "5.5",
+        "total": "39.5",
+        "status": "PREGAME",
+        "final_away": "",
+        "final_home": "",
+        "source": "SplashSports screenshot supplied 2026-11-04 image 3 row 1"
+      },
+      "game_id": 401858512,
+      "kickoff_utc": "2026-11-07T17:00:00.000Z",
+      "status": "UPCOMING",
+      "target_score_present": false,
+      "source_spreads_opposite": true
+    },
+    {
+      "source": {
+        "date": "2026-11-07",
+        "away_team": "Clemson",
+        "home_team": "Syracuse",
+        "away_spread": "-2.5",
+        "home_spread": "2.5",
+        "total": "49.5",
+        "status": "PREGAME",
+        "final_away": "",
+        "final_home": "",
+        "source": "SplashSports screenshot supplied 2026-11-04 image 3 row 2"
+      },
+      "game_id": 401858285,
+      "kickoff_utc": "2026-11-07T17:00:00.000Z",
+      "status": "UPCOMING",
+      "target_score_present": false,
+      "source_spreads_opposite": true
+    },
+    {
+      "source": {
+        "date": "2026-11-07",
+        "away_team": "BYU",
+        "home_team": "Utah",
+        "away_spread": "4.5",
+        "home_spread": "-4.5",
+        "total": "48.5",
+        "status": "PREGAME",
+        "final_away": "",
+        "final_home": "",
+        "source": "SplashSports screenshot supplied 2026-11-04 image 3 row 3"
+      },
+      "game_id": 401856849,
+      "kickoff_utc": "2026-11-07T17:00:00.000Z",
+      "status": "UPCOMING",
+      "target_score_present": false,
+      "source_spreads_opposite": true
+    },
+    {
+      "source": {
+        "date": "2026-11-07",
+        "away_team": "Iowa State",
+        "home_team": "Baylor",
+        "away_spread": "9.5",
+        "home_spread": "-9.5",
+        "total": "51.5",
+        "status": "PREGAME",
+        "final_away": "",
+        "final_home": "",
+        "source": "SplashSports screenshot supplied 2026-11-04 image 3 row 4"
+      },
+      "game_id": 401856853,
+      "kickoff_utc": "2026-11-07T17:00:00.000Z",
+      "status": "UPCOMING",
+      "target_score_present": false,
+      "source_spreads_opposite": true
+    },
+    {
+      "source": {
+        "date": "2026-11-07",
+        "away_team": "North Carolina",
+        "home_team": "UConn",
+        "away_spread": "-6.5",
+        "home_spread": "6.5",
+        "total": "54.5",
+        "status": "PREGAME",
+        "final_away": "",
+        "final_home": "",
+        "source": "SplashSports screenshot supplied 2026-11-04 image 3 row 5"
+      },
+      "game_id": 401858292,
+      "kickoff_utc": "2026-11-07T17:00:00.000Z",
+      "status": "UPCOMING",
+      "target_score_present": false,
+      "source_spreads_opposite": true
+    },
+    {
+      "source": {
+        "date": "2026-11-07",
+        "away_team": "Texas",
+        "home_team": "Missouri",
+        "away_spread": "-2.5",
+        "home_spread": "2.5",
+        "total": "43.5",
+        "status": "PREGAME",
+        "final_away": "",
+        "final_home": "",
+        "source": "SplashSports screenshot supplied 2026-11-04 image 3 row 6"
+      },
+      "game_id": 401856743,
+      "kickoff_utc": "2026-11-07T17:00:00.000Z",
+      "status": "UPCOMING",
+      "target_score_present": false,
+      "source_spreads_opposite": true
+    },
+    {
+      "source": {
+        "date": "2026-11-07",
+        "away_team": "Tulsa",
+        "home_team": "Tulane",
+        "away_spread": "-1.5",
+        "home_spread": "1.5",
+        "total": "49.5",
+        "status": "PREGAME",
+        "final_away": "",
+        "final_home": "",
+        "source": "SplashSports screenshot supplied 2026-11-04 image 3 row 7"
+      },
+      "game_id": 401862822,
+      "kickoff_utc": "2026-11-07T17:00:00.000Z",
+      "status": "UPCOMING",
+      "target_score_present": false,
+      "source_spreads_opposite": true
+    },
+    {
+      "source": {
+        "date": "2026-11-07",
+        "away_team": "Duke",
+        "home_team": "NC State",
+        "away_spread": "-4.5",
+        "home_spread": "4.5",
+        "total": "51.5",
+        "status": "PREGAME",
+        "final_away": "",
+        "final_home": "",
+        "source": "SplashSports screenshot supplied 2026-11-04 image 3 row 8"
+      },
+      "game_id": 401858286,
+      "kickoff_utc": "2026-11-07T17:30:00.000Z",
+      "status": "UPCOMING",
+      "target_score_present": false,
+      "source_spreads_opposite": true
+    },
+    {
+      "source": {
+        "date": "2026-11-07",
+        "away_team": "Maryland",
+        "home_team": "Purdue",
+        "away_spread": "6.5",
+        "home_spread": "-6.5",
+        "total": "57.5",
+        "status": "PREGAME",
+        "final_away": "",
+        "final_home": "",
+        "source": "SplashSports screenshot supplied 2026-11-04 image 4 row 1"
+      },
+      "game_id": 401858515,
+      "kickoff_utc": "2026-11-07T17:30:00.000Z",
+      "status": "UPCOMING",
+      "target_score_present": false,
+      "source_spreads_opposite": true
+    },
+    {
+      "source": {
+        "date": "2026-11-07",
+        "away_team": "Arkansas",
+        "home_team": "Auburn",
+        "away_spread": "10.5",
+        "home_spread": "-10.5",
+        "total": "52.5",
+        "status": "PREGAME",
+        "final_away": "",
+        "final_home": "",
+        "source": "SplashSports screenshot supplied 2026-11-04 image 4 row 2"
+      },
+      "game_id": 401856738,
+      "kickoff_utc": "2026-11-07T17:45:00.000Z",
+      "status": "UPCOMING",
+      "target_score_present": false,
+      "source_spreads_opposite": true
+    },
+    {
+      "source": {
+        "date": "2026-11-07",
+        "away_team": "Old Dominion",
+        "home_team": "Coastal Carolina",
+        "away_spread": "7.5",
+        "home_spread": "-7.5",
+        "total": "44.5",
+        "status": "PREGAME",
+        "final_away": "",
+        "final_home": "",
+        "source": "SplashSports screenshot supplied 2026-11-04 image 4 row 3"
+      },
+      "game_id": 401869945,
+      "kickoff_utc": "2026-11-07T18:00:00.000Z",
+      "status": "UPCOMING",
+      "target_score_present": false,
+      "source_spreads_opposite": true
+    },
+    {
+      "source": {
+        "date": "2026-11-07",
+        "away_team": "Oklahoma State",
+        "home_team": "Kansas State",
+        "away_spread": "-4.5",
+        "home_spread": "4.5",
+        "total": "62.5",
+        "status": "PREGAME",
+        "final_away": "",
+        "final_home": "",
+        "source": "SplashSports screenshot supplied 2026-11-04 image 4 row 4"
+      },
+      "game_id": 401856854,
+      "kickoff_utc": "2026-11-07T18:00:00.000Z",
+      "status": "UPCOMING",
+      "target_score_present": false,
+      "source_spreads_opposite": true
+    },
+    {
+      "source": {
+        "date": "2026-11-07",
+        "away_team": "Georgia State",
+        "home_team": "Appalachian State",
+        "away_spread": "4.5",
+        "home_spread": "-4.5",
+        "total": "55.5",
+        "status": "PREGAME",
+        "final_away": "",
+        "final_home": "",
+        "source": "SplashSports screenshot supplied 2026-11-04 image 4 row 5"
+      },
+      "game_id": 401869927,
+      "kickoff_utc": "2026-11-07T19:30:00.000Z",
+      "status": "UPCOMING",
+      "target_score_present": false,
+      "source_spreads_opposite": true
+    },
+    {
+      "source": {
+        "date": "2026-11-07",
+        "away_team": "Louisiana-Monroe",
+        "home_team": "Arkansas State",
+        "away_spread": "14.5",
+        "home_spread": "-14.5",
+        "total": "53.5",
+        "status": "PREGAME",
+        "final_away": "",
+        "final_home": "",
+        "source": "SplashSports screenshot supplied 2026-11-04 image 4 row 6"
+      },
+      "game_id": 401869936,
+      "kickoff_utc": "2026-11-07T20:00:00.000Z",
+      "status": "UPCOMING",
+      "target_score_present": false,
+      "source_spreads_opposite": true
+    },
+    {
+      "source": {
+        "date": "2026-11-07",
+        "away_team": "Texas A&M",
+        "home_team": "South Carolina",
+        "away_spread": "7.5",
+        "home_spread": "-7.5",
+        "total": "51.5",
+        "status": "PREGAME",
+        "final_away": "",
+        "final_home": "",
+        "source": "SplashSports screenshot supplied 2026-11-04 image 4 row 7"
+      },
+      "game_id": 401856744,
+      "kickoff_utc": "2026-11-07T20:00:00.000Z",
+      "status": "UPCOMING",
+      "target_score_present": false,
+      "source_spreads_opposite": true
+    },
+    {
+      "source": {
+        "date": "2026-11-07",
+        "away_team": "Delaware",
+        "home_team": "Kennesaw State",
+        "away_spread": "-2.5",
+        "home_spread": "2.5",
+        "total": "56.5",
+        "status": "PREGAME",
+        "final_away": "",
+        "final_home": "",
+        "source": "SplashSports screenshot supplied 2026-11-04 image 4 row 8"
+      },
+      "game_id": 401871073,
+      "kickoff_utc": "2026-11-07T20:00:00.000Z",
+      "status": "UPCOMING",
+      "target_score_present": false,
+      "source_spreads_opposite": true
+    },
+    {
+      "source": {
+        "date": "2026-11-07",
+        "away_team": "Western Kentucky",
+        "home_team": "Middle Tennessee",
+        "away_spread": "-1.5",
+        "home_spread": "1.5",
+        "total": "53.5",
+        "status": "PREGAME",
+        "final_away": "",
+        "final_home": "",
+        "source": "SplashSports screenshot supplied 2026-11-04 image 5 row 1"
+      },
+      "game_id": 401871076,
+      "kickoff_utc": "2026-11-07T20:30:00.000Z",
+      "status": "UPCOMING",
+      "target_score_present": false,
+      "source_spreads_opposite": true
+    },
+    {
+      "source": {
+        "date": "2026-11-07",
+        "away_team": "Cincinnati",
+        "home_team": "Houston",
+        "away_spread": "10.5",
+        "home_spread": "-10.5",
+        "total": "62.5",
+        "status": "PREGAME",
+        "final_away": "",
+        "final_home": "",
+        "source": "SplashSports screenshot supplied 2026-11-04 image 5 row 2"
+      },
+      "game_id": 401856851,
+      "kickoff_utc": "2026-11-07T20:30:00.000Z",
+      "status": "UPCOMING",
+      "target_score_present": false,
+      "source_spreads_opposite": true
+    },
+    {
+      "source": {
+        "date": "2026-11-07",
+        "away_team": "Marshall",
+        "home_team": "Georgia Southern",
+        "away_spread": "10.5",
+        "home_spread": "-10.5",
+        "total": "54.5",
+        "status": "PREGAME",
+        "final_away": "",
+        "final_home": "",
+        "source": "SplashSports screenshot supplied 2026-11-04 image 5 row 3"
+      },
+      "game_id": 401869951,
+      "kickoff_utc": "2026-11-07T20:30:00.000Z",
+      "status": "UPCOMING",
+      "target_score_present": false,
+      "source_spreads_opposite": true
+    },
+    {
+      "source": {
+        "date": "2026-11-07",
+        "away_team": "Oregon",
+        "home_team": "Ohio State",
+        "away_spread": "7.5",
+        "home_spread": "-7.5",
+        "total": "46.5",
+        "status": "PREGAME",
+        "final_away": "",
+        "final_home": "",
+        "source": "SplashSports screenshot supplied 2026-11-04 image 5 row 4"
+      },
+      "game_id": 401858514,
+      "kickoff_utc": "2026-11-07T20:30:00.000Z",
+      "status": "UPCOMING",
+      "target_score_present": false,
+      "source_spreads_opposite": true
+    },
+    {
+      "source": {
+        "date": "2026-11-07",
+        "away_team": "Charlotte",
+        "home_team": "UAB",
+        "away_spread": "9.5",
+        "home_spread": "-9.5",
+        "total": "47.5",
+        "status": "PREGAME",
+        "final_away": "",
+        "final_home": "",
+        "source": "SplashSports screenshot supplied 2026-11-04 image 5 row 5"
+      },
+      "game_id": 401862819,
+      "kickoff_utc": "2026-11-07T20:30:00.000Z",
+      "status": "UPCOMING",
+      "target_score_present": false,
+      "source_spreads_opposite": true
+    },
+    {
+      "source": {
+        "date": "2026-11-07",
+        "away_team": "Alabama",
+        "home_team": "LSU",
+        "away_spread": "5.5",
+        "home_spread": "-5.5",
+        "total": "52.5",
+        "status": "PREGAME",
+        "final_away": "",
+        "final_home": "",
+        "source": "SplashSports screenshot supplied 2026-11-04 image 5 row 6"
+      },
+      "game_id": 401856740,
+      "kickoff_utc": "2026-11-07T20:30:00.000Z",
+      "status": "UPCOMING",
+      "target_score_present": false,
+      "source_spreads_opposite": true
+    },
+    {
+      "source": {
+        "date": "2026-11-07",
+        "away_team": "Penn State",
+        "home_team": "Washington",
+        "away_spread": "1.5",
+        "home_spread": "-1.5",
+        "total": "44.5",
+        "status": "PREGAME",
+        "final_away": "",
+        "final_home": "",
+        "source": "SplashSports screenshot supplied 2026-11-04 image 5 row 7"
+      },
+      "game_id": 401858516,
+      "kickoff_utc": "2026-11-07T20:30:00.000Z",
+      "status": "UPCOMING",
+      "target_score_present": false,
+      "source_spreads_opposite": true
+    },
+    {
+      "source": {
+        "date": "2026-11-07",
+        "away_team": "Temple",
+        "home_team": "Navy",
+        "away_spread": "7.5",
+        "home_spread": "-7.5",
+        "total": "54.5",
+        "status": "PREGAME",
+        "final_away": "",
+        "final_home": "",
+        "source": "SplashSports screenshot supplied 2026-11-04 image 5 row 8"
+      },
+      "game_id": 401862820,
+      "kickoff_utc": "2026-11-07T20:30:00.000Z",
+      "status": "UPCOMING",
+      "target_score_present": false,
+      "source_spreads_opposite": true
+    },
+    {
+      "source": {
+        "date": "2026-11-07",
+        "away_team": "UCF",
+        "home_team": "Kansas",
+        "away_spread": "2.5",
+        "home_spread": "-2.5",
+        "total": "47.5",
+        "status": "PREGAME",
+        "final_away": "",
+        "final_home": "",
+        "source": "SplashSports screenshot supplied 2026-11-04 image 6 row 1"
+      },
+      "game_id": 401856850,
+      "kickoff_utc": "2026-11-07T20:45:00.000Z",
+      "status": "UPCOMING",
+      "target_score_present": false,
+      "source_spreads_opposite": true
+    },
+    {
+      "source": {
+        "date": "2026-11-07",
+        "away_team": "Louisiana Tech",
+        "home_team": "Troy",
+        "away_spread": "-4.5",
+        "home_spread": "4.5",
+        "total": "47.5",
+        "status": "PREGAME",
+        "final_away": "",
+        "final_home": "",
+        "source": "SplashSports screenshot supplied 2026-11-04 image 6 row 2"
+      },
+      "game_id": 401871098,
+      "kickoff_utc": "2026-11-07T21:00:00.000Z",
+      "status": "UPCOMING",
+      "target_score_present": false,
+      "source_spreads_opposite": true
+    },
+    {
+      "source": {
+        "date": "2026-11-07",
+        "away_team": "Missouri State",
+        "home_team": "Florida International",
+        "away_spread": "4.5",
+        "home_spread": "-4.5",
+        "total": "49.5",
+        "status": "PREGAME",
+        "final_away": "",
+        "final_home": "",
+        "source": "SplashSports screenshot supplied 2026-11-04 image 6 row 3"
+      },
+      "game_id": 401871074,
+      "kickoff_utc": "2026-11-07T21:00:00.000Z",
+      "status": "UPCOMING",
+      "target_score_present": false,
+      "source_spreads_opposite": true
+    },
+    {
+      "source": {
+        "date": "2026-11-07",
+        "away_team": "Rice",
+        "home_team": "North Texas",
+        "away_spread": "16.5",
+        "home_spread": "-16.5",
+        "total": "64.5",
+        "status": "PREGAME",
+        "final_away": "",
+        "final_home": "",
+        "source": "SplashSports screenshot supplied 2026-11-04 image 6 row 4"
+      },
+      "game_id": 401862821,
+      "kickoff_utc": "2026-11-07T21:00:00.000Z",
+      "status": "UPCOMING",
+      "target_score_present": false,
+      "source_spreads_opposite": true
+    },
+    {
+      "source": {
+        "date": "2026-11-07",
+        "away_team": "Northern Illinois",
+        "home_team": "San Jose State",
+        "away_spread": "9.5",
+        "home_spread": "-9.5",
+        "total": "51.5",
+        "status": "PREGAME",
+        "final_away": "",
+        "final_home": "",
+        "source": "SplashSports screenshot supplied 2026-11-04 image 6 row 5"
+      },
+      "game_id": 401864534,
+      "kickoff_utc": "2026-11-07T21:00:00.000Z",
+      "status": "UPCOMING",
+      "target_score_present": false,
+      "source_spreads_opposite": true
+    },
+    {
+      "source": {
+        "date": "2026-11-07",
+        "away_team": "Rutgers",
+        "home_team": "Wisconsin",
+        "away_spread": "17.5",
+        "home_spread": "-17.5",
+        "total": "45.5",
+        "status": "PREGAME",
+        "final_away": "",
+        "final_home": "",
+        "source": "SplashSports screenshot supplied 2026-11-04 image 6 row 6"
+      },
+      "game_id": 401858517,
+      "kickoff_utc": "2026-11-07T21:15:00.000Z",
+      "status": "UPCOMING",
+      "target_score_present": false,
+      "source_spreads_opposite": true
+    },
+    {
+      "source": {
+        "date": "2026-11-07",
+        "away_team": "Vanderbilt",
+        "home_team": "Mississippi State",
+        "away_spread": "2.5",
+        "home_spread": "-2.5",
+        "total": "48.5",
+        "status": "PREGAME",
+        "final_away": "",
+        "final_home": "",
+        "source": "SplashSports screenshot supplied 2026-11-04 image 6 row 7"
+      },
+      "game_id": 401856742,
+      "kickoff_utc": "2026-11-07T21:15:00.000Z",
+      "status": "UPCOMING",
+      "target_score_present": false,
+      "source_spreads_opposite": true
+    },
+    {
+      "source": {
+        "date": "2026-11-07",
+        "away_team": "South Alabama",
+        "home_team": "Louisiana",
+        "away_spread": "8.5",
+        "home_spread": "-8.5",
+        "total": "57.5",
+        "status": "PREGAME",
+        "final_away": "",
+        "final_home": "",
+        "source": "SplashSports screenshot supplied 2026-11-04 image 6 row 8"
+      },
+      "game_id": 401869968,
+      "kickoff_utc": "2026-11-07T22:00:00.000Z",
+      "status": "UPCOMING",
+      "target_score_present": false,
+      "source_spreads_opposite": true
+    },
+    {
+      "source": {
+        "date": "2026-11-07",
+        "away_team": "Boise State",
+        "home_team": "Colorado State",
+        "away_spread": "-17.5",
+        "home_spread": "17.5",
+        "total": "68.5",
+        "status": "PREGAME",
+        "final_away": "",
+        "final_home": "",
+        "source": "SplashSports screenshot supplied 2026-11-04 image 7 row 1"
+      },
+      "game_id": 401860911,
+      "kickoff_utc": "2026-11-07T23:00:00.000Z",
+      "status": "UPCOMING",
+      "target_score_present": false,
+      "source_spreads_opposite": true
+    },
+    {
+      "source": {
+        "date": "2026-11-07",
+        "away_team": "Kentucky",
+        "home_team": "Tennessee",
+        "away_spread": "6.5",
+        "home_spread": "-6.5",
+        "total": "50.5",
+        "status": "PREGAME",
+        "final_away": "",
+        "final_home": "",
+        "source": "SplashSports screenshot supplied 2026-11-04 image 7 row 2"
+      },
+      "game_id": 401856745,
+      "kickoff_utc": "2026-11-07T23:15:00.000Z",
+      "status": "UPCOMING",
+      "target_score_present": false,
+      "source_spreads_opposite": true
+    },
+    {
+      "source": {
+        "date": "2026-11-07",
+        "away_team": "Sam Houston",
+        "home_team": "Jacksonville State",
+        "away_spread": "17.5",
+        "home_spread": "-17.5",
+        "total": "48.5",
+        "status": "PREGAME",
+        "final_away": "",
+        "final_home": "",
+        "source": "SplashSports screenshot supplied 2026-11-04 image 7 row 3"
+      },
+      "game_id": 401871075,
+      "kickoff_utc": "2026-11-08T00:00:00.000Z",
+      "status": "UPCOMING",
+      "target_score_present": false,
+      "source_spreads_opposite": true
+    },
+    {
+      "source": {
+        "date": "2026-11-07",
+        "away_team": "Miami (FL)",
+        "home_team": "Notre Dame",
+        "away_spread": "5.5",
+        "home_spread": "-5.5",
+        "total": "57.5",
+        "status": "PREGAME",
+        "final_away": "",
+        "final_home": "",
+        "source": "SplashSports screenshot supplied 2026-11-04 image 7 row 4"
+      },
+      "game_id": 401858291,
+      "kickoff_utc": "2026-11-08T00:30:00.000Z",
+      "status": "UPCOMING",
+      "target_score_present": false,
+      "source_spreads_opposite": true
+    },
+    {
+      "source": {
+        "date": "2026-11-07",
+        "away_team": "Colorado",
+        "home_team": "Arizona State",
+        "away_spread": "3.5",
+        "home_spread": "-3.5",
+        "total": "48.5",
+        "status": "PREGAME",
+        "final_away": "",
+        "final_home": "",
+        "source": "SplashSports screenshot supplied 2026-11-04 image 7 row 5"
+      },
+      "game_id": 401856852,
+      "kickoff_utc": "2026-11-08T00:30:00.000Z",
+      "status": "UPCOMING",
+      "target_score_present": false,
+      "source_spreads_opposite": true
+    },
+    {
+      "source": {
+        "date": "2026-11-07",
+        "away_team": "Iowa",
+        "home_team": "Northwestern",
+        "away_spread": "2.5",
+        "home_spread": "-2.5",
+        "total": "45.5",
+        "status": "PREGAME",
+        "final_away": "",
+        "final_home": "",
+        "source": "SplashSports screenshot supplied 2026-11-04 image 7 row 6"
+      },
+      "game_id": 401858513,
+      "kickoff_utc": "2026-11-08T00:30:00.000Z",
+      "status": "UPCOMING",
+      "target_score_present": false,
+      "source_spreads_opposite": true
+    },
+    {
+      "source": {
+        "date": "2026-11-07",
+        "away_team": "Georgia",
+        "home_team": "Ole Miss",
+        "away_spread": "-3.5",
+        "home_spread": "3.5",
+        "total": "56.5",
+        "status": "PREGAME",
+        "final_away": "",
+        "final_home": "",
+        "source": "SplashSports screenshot supplied 2026-11-04 image 7 row 7"
+      },
+      "game_id": 401856741,
+      "kickoff_utc": "2026-11-08T00:30:00.000Z",
+      "status": "UPCOMING",
+      "target_score_present": false,
+      "source_spreads_opposite": true
+    },
+    {
+      "source": {
+        "date": "2026-11-07",
+        "away_team": "Michigan State",
+        "home_team": "Michigan",
+        "away_spread": "13.5",
+        "home_spread": "-13.5",
+        "total": "40.5",
+        "status": "PREGAME",
+        "final_away": "",
+        "final_home": "",
+        "source": "SplashSports screenshot supplied 2026-11-04 image 8 row 1"
+      },
+      "game_id": 401858511,
+      "kickoff_utc": "2026-11-08T00:30:00.000Z",
+      "status": "UPCOMING",
+      "target_score_present": false,
+      "source_spreads_opposite": true
+    },
+    {
+      "source": {
+        "date": "2026-11-07",
+        "away_team": "Air Force",
+        "home_team": "Army",
+        "away_spread": "3.5",
+        "home_spread": "-3.5",
+        "total": "45.5",
+        "status": "PREGAME",
+        "final_away": "",
+        "final_home": "",
+        "source": "SplashSports screenshot supplied 2026-11-04 image 8 row 2"
+      },
+      "game_id": 401862823,
+      "kickoff_utc": "2026-11-08T00:30:00.000Z",
+      "status": "UPCOMING",
+      "target_score_present": false,
+      "source_spreads_opposite": true
+    },
+    {
+      "source": {
+        "date": "2026-11-07",
+        "away_team": "Louisville",
+        "home_team": "Georgia Tech",
+        "away_spread": "-14.5",
+        "home_spread": "14.5",
+        "total": "61.5",
+        "status": "PREGAME",
+        "final_away": "",
+        "final_home": "",
+        "source": "SplashSports screenshot supplied 2026-11-04 image 8 row 3"
+      },
+      "game_id": 401858287,
+      "kickoff_utc": "2026-11-08T00:30:00.000Z",
+      "status": "UPCOMING",
+      "target_score_present": false,
+      "source_spreads_opposite": true
+    },
+    {
+      "source": {
+        "date": "2026-11-07",
+        "away_team": "Oklahoma",
+        "home_team": "Florida",
+        "away_spread": "6.5",
+        "home_spread": "-6.5",
+        "total": "44.5",
+        "status": "PREGAME",
+        "final_away": "",
+        "final_home": "",
+        "source": "SplashSports screenshot supplied 2026-11-04 image 8 row 4"
+      },
+      "game_id": 401856739,
+      "kickoff_utc": "2026-11-08T00:45:00.000Z",
+      "status": "UPCOMING",
+      "target_score_present": false,
+      "source_spreads_opposite": true
+    },
+    {
+      "source": {
+        "date": "2026-11-07",
+        "away_team": "Liberty",
+        "home_team": "New Mexico State",
+        "away_spread": "-17.5",
+        "home_spread": "17.5",
+        "total": "46.5",
+        "status": "PREGAME",
+        "final_away": "",
+        "final_home": "",
+        "source": "SplashSports screenshot supplied 2026-11-04 image 8 row 5"
+      },
+      "game_id": 401870795,
+      "kickoff_utc": "2026-11-08T01:00:00.000Z",
+      "status": "UPCOMING",
+      "target_score_present": false,
+      "source_spreads_opposite": true
+    },
+    {
+      "source": {
+        "date": "2026-11-07",
+        "away_team": "Fresno State",
+        "home_team": "Utah State",
+        "away_spread": "-2.5",
+        "home_spread": "2.5",
+        "total": "42.5",
+        "status": "PREGAME",
+        "final_away": "",
+        "final_home": "",
+        "source": "SplashSports screenshot supplied 2026-11-04 image 8 row 6"
+      },
+      "game_id": 401860913,
+      "kickoff_utc": "2026-11-08T02:30:00.000Z",
+      "status": "UPCOMING",
+      "target_score_present": false,
+      "source_spreads_opposite": true
+    },
+    {
+      "source": {
+        "date": "2026-11-07",
+        "away_team": "West Virginia",
+        "home_team": "Texas Tech",
+        "away_spread": "16.5",
+        "home_spread": "-16.5",
+        "total": "65.5",
+        "status": "PREGAME",
+        "final_away": "",
+        "final_home": "",
+        "source": "SplashSports screenshot supplied 2026-11-04 image 8 row 7"
+      },
+      "game_id": 401856856,
+      "kickoff_utc": "2026-11-08T02:30:00.000Z",
+      "status": "UPCOMING",
+      "target_score_present": false,
+      "source_spreads_opposite": true
+    },
+    {
+      "source": {
+        "date": "2026-11-07",
+        "away_team": "Hawaii",
+        "home_team": "UTEP",
+        "away_spread": "-9.5",
+        "home_spread": "9.5",
+        "total": "48.5",
+        "status": "PREGAME",
+        "final_away": "",
+        "final_home": "",
+        "source": "SplashSports screenshot supplied 2026-11-04 image 8 row 8"
+      },
+      "game_id": 401864532,
+      "kickoff_utc": "2026-11-08T02:30:00.000Z",
+      "status": "UPCOMING",
+      "target_score_present": false,
+      "source_spreads_opposite": true
+    },
+    {
+      "source": {
+        "date": "2026-11-07",
+        "away_team": "Wyoming",
+        "home_team": "UNLV",
+        "away_spread": "6.5",
+        "home_spread": "-6.5",
+        "total": "48.5",
+        "status": "PREGAME",
+        "final_away": "",
+        "final_home": "",
+        "source": "SplashSports screenshot supplied 2026-11-04 image 8 row 9"
+      },
+      "game_id": 401864535,
+      "kickoff_utc": "2026-11-08T03:30:00.000Z",
+      "status": "UPCOMING",
+      "target_score_present": false,
+      "source_spreads_opposite": true
+    },
+    {
+      "source": {
+        "date": "2026-11-07",
+        "away_team": "Texas State",
+        "home_team": "Oregon State",
+        "away_spread": "6.5",
+        "home_spread": "-6.5",
+        "total": "72.5",
+        "status": "PREGAME",
+        "final_away": "",
+        "final_home": "",
+        "source": "SplashSports screenshot supplied 2026-11-04 image 9 row 1"
+      },
+      "game_id": 401860912,
+      "kickoff_utc": "2026-11-08T03:30:00.000Z",
+      "status": "UPCOMING",
+      "target_score_present": false,
+      "source_spreads_opposite": true
+    }
+  ],
+  "statistics_cutoff_week": 9,
+  "model_run": false,
+  "database_mutated": false
+}

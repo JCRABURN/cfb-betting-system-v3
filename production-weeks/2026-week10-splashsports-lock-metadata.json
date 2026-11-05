@@ -1,0 +1,56 @@
+{
+  "season": 2026,
+  "week": 10,
+  "contest_key": "splashsports-cfb-2026-w10",
+  "source": "SplashSports",
+  "authoritative_locked_lines": true,
+  "source_received_at_utc": "2026-11-04T15:07:58.701000+00:00",
+  "source_timestamp_kind": "chat_received",
+  "source_capture_time": null,
+  "original_posting_time": null,
+  "spread_convention": "home_team_spread",
+  "total_convention": "contest_over_under",
+  "game_time_zone": "America/Chicago",
+  "timezone_verification": "All displayed pregame times match captured UTC schedule at CST UTC-06; image itself omits timezone",
+  "game_count": 57,
+  "raw_file_sha256": "d798aea0f12896f67831ab5882c15d5be1280328f61208badfcffe0873236b7a",
+  "canonical_csv_sha256": "d798aea0f12896f67831ab5882c15d5be1280328f61208badfcffe0873236b7a",
+  "original_pr49_csv_sha256": "7fc188a42c3af15b29835e25110db6402cc12e4b6ca4a6ff6f9355d39d16da3d",
+  "screenshot_custody_sha256": "52b1792d684cef3f75515ec264af972c594d932462349bdf3640df9ebeeb7a12",
+  "excluded_completed_games": [
+    {
+      "game_id": 401866453,
+      "reason": "FINAL_AT_SCREENSHOT_RECEIPT_NOT_PROSPECTIVE",
+      "source_csv_row": 2,
+      "kickoff_utc": "2026-11-04T00:00:00+00:00"
+    },
+    {
+      "game_id": 401866454,
+      "reason": "FINAL_AT_SCREENSHOT_RECEIPT_NOT_PROSPECTIVE",
+      "source_csv_row": 3,
+      "kickoff_utc": "2026-11-04T01:00:00+00:00"
+    },
+    {
+      "game_id": 401866455,
+      "reason": "KICKOFF_ELAPSED_BEFORE_GENERATION",
+      "source_csv_row": 4,
+      "kickoff_utc": "2026-11-05T00:00:00+00:00"
+    },
+    {
+      "game_id": 401866457,
+      "reason": "KICKOFF_ELAPSED_BEFORE_GENERATION",
+      "source_csv_row": 5,
+      "kickoff_utc": "2026-11-05T00:00:00+00:00"
+    },
+    {
+      "game_id": 401866456,
+      "reason": "KICKOFF_ELAPSED_BEFORE_GENERATION",
+      "source_csv_row": 6,
+      "kickoff_utc": "2026-11-05T00:30:00+00:00"
+    }
+  ],
+  "unlined_fbs_games": [],
+  "prepared_at_utc": "2026-11-05T01:03:48.332071+00:00",
+  "owner_selection_approval": "PENDING",
+  "source_authorization": "Owner designated PR49 screenshot lines for Week10 execution; no market replacement"
+}

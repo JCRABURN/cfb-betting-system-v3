@@ -1,0 +1,47 @@
+{
+  "status": "COMPLETE",
+  "requests": [
+    {
+      "name": "games",
+      "endpoint": "https://api.collegefootballdata.com/games",
+      "parameters": {
+        "year": 2026,
+        "classification": "fbs"
+      },
+      "requested_at_utc": "2026-11-05T00:55:13.943870+00:00",
+      "received_at_utc": "2026-11-05T00:55:14.477813+00:00",
+      "status_code": 200,
+      "raw_sha256": "675ce94f92ccd4e0c728569847f0b2e86b9885b4f0dce89a0057dee3e9b1696d",
+      "path": "games.raw.json",
+      "records": 888
+    },
+    {
+      "name": "teams",
+      "endpoint": "https://api.collegefootballdata.com/teams/fbs",
+      "parameters": {
+        "year": 2026
+      },
+      "requested_at_utc": "2026-11-05T00:55:14.485838+00:00",
+      "received_at_utc": "2026-11-05T00:55:14.707543+00:00",
+      "status_code": 200,
+      "raw_sha256": "15611e4d36965423f96b01f58fbe1ea9de04f88c2909a490ddbfcab4511ea2c2",
+      "path": "teams.raw.json",
+      "records": 138
+    },
+    {
+      "name": "week9-advanced",
+      "endpoint": "https://api.collegefootballdata.com/stats/season/advanced",
+      "parameters": {
+        "year": 2026,
+        "endWeek": 9,
+        "excludeGarbageTime": "true"
+      },
+      "requested_at_utc": "2026-11-05T00:55:14.722054+00:00",
+      "received_at_utc": "2026-11-05T00:55:23.967912+00:00",
+      "status_code": 200,
+      "raw_sha256": "cd57045215bc3a563a980b90a191e7fc3ea3eb41aea33a9375ce3b0c29ebee77",
+      "path": "week9-advanced.raw.json",
+      "records": 138
+    }
+  ]
+}
