@@ -1,0 +1,4384 @@
+{
+  "ats_model": {
+    "coefficients": [
+      35.089014249343435
+    ],
+    "data_snapshot_sha256": "6e2743cdf836611bf027153c9c29a7255518ddf8b1eeec44d510c7d0af5197a2",
+    "intercept": 3.806602472343407,
+    "name": "epa_only",
+    "training_rows": 4830,
+    "training_seasons": [
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ],
+    "version": "epa-only-linear-v1"
+  },
+  "card_generated_at_utc": "2026-11-05T01:07:17.763358+00:00",
+  "code_commit_sha": "8afc2a3817fa811fdfe159c20b4b62cc6e8839e0",
+  "games": [
+    {
+      "ats": {
+        "coefficients": [
+          35.089014249343435
+        ],
+        "epa_differential": -0.15243438053661057,
+        "governed_selected_side": "home",
+        "governed_uncertainty_points": null,
+        "intercept": 3.806602472343407,
+        "prediction_generated_at": "2026-11-05T01:07:02.603615+00:00",
+        "prediction_id": 1,
+        "projected_home_margin": -1.5421696783955614,
+        "selected_margin_advantage_points": 5.957830321604439,
+        "shadow_score_not_empirically_calibrated": 0.5297891516080222,
+        "shadow_score_transform": "min(0.60,0.50+0.005*selected_margin_advantage_points)"
+      },
+      "away": "UTSA",
+      "game_id": 401862817,
+      "home": "Florida Atlantic",
+      "kickoff_utc": "2026-11-06T00:30:00+00:00",
+      "locked_home_spread": 7.5,
+      "locked_line_id": 1,
+      "non_model_context": {
+        "coaching": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "injury": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "market": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "qb": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "travel_rest": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "weather": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW"
+      },
+      "raw_point_in_time_package": {
+        "away_days_rest": 12,
+        "away_stats": {
+          "as_of_season": 2026,
+          "as_of_week": 9,
+          "defense_epa_play": 0.10645469313577301,
+          "defense_success_rate": 0.4059590316573557,
+          "havoc_rate": 0.14,
+          "is_prior_season_fallback": false,
+          "offense_epa_play": 0.213947652699429,
+          "offense_success_rate": 0.46833013435700577
+        },
+        "home_days_rest": 7,
+        "home_stats": {
+          "as_of_season": 2026,
+          "as_of_week": 9,
+          "defense_epa_play": 0.2741936614665285,
+          "defense_success_rate": 0.44419134396355353,
+          "havoc_rate": 0.124,
+          "is_prior_season_fallback": false,
+          "offense_epa_play": 0.22925224049357396,
+          "offense_success_rate": 0.46862745098039216
+        }
+      },
+      "totals": {
+        "calibration_slope": 1.0,
+        "feature_snapshot_sha256": "d43f3f2c75c853f434d151067c07cee2bb98e858100ca68e40f2a6e4d4cfe0cc",
+        "features": [
+          0.22925224049357396,
+          0.2741936614665285,
+          0.213947652699429,
+          0.10645469313577301
+        ],
+        "locked_total": 73.5,
+        "prediction_generated_at": "2026-11-05T01:07:02.603615+00:00",
+        "prediction_id": 1,
+        "projected_away_points": 29.17880677106129,
+        "projected_home_points": 27.44323666645782,
+        "projected_total": 56.62204343751911,
+        "raw_over_probability_normal_assumption": 0.15657607679389618,
+        "residual_uncertainty_points": 16.733547423270483,
+        "selected_direction": "under",
+        "shadow_selected_score_not_empirically_calibrated": 0.8434239232061038,
+        "z_score": -1.008629917826604
+      }
+    },
+    {
+      "ats": {
+        "coefficients": [
+          35.089014249343435
+        ],
+        "epa_differential": -0.3044282299069687,
+        "governed_selected_side": "home",
+        "governed_uncertainty_points": null,
+        "intercept": 3.806602472343407,
+        "prediction_generated_at": "2026-11-05T01:07:02.603615+00:00",
+        "prediction_id": 2,
+        "projected_home_margin": -6.875484024764617,
+        "selected_margin_advantage_points": 7.624515975235383,
+        "shadow_score_not_empirically_calibrated": 0.538122579876177,
+        "shadow_score_transform": "min(0.60,0.50+0.005*selected_margin_advantage_points)"
+      },
+      "away": "James Madison",
+      "game_id": 401869964,
+      "home": "Southern Miss",
+      "kickoff_utc": "2026-11-06T01:00:00+00:00",
+      "locked_home_spread": 14.5,
+      "locked_line_id": 2,
+      "non_model_context": {
+        "coaching": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "injury": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "market": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "qb": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "travel_rest": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "weather": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW"
+      },
+      "raw_point_in_time_package": {
+        "away_days_rest": 7,
+        "away_stats": {
+          "as_of_season": 2026,
+          "as_of_week": 9,
+          "defense_epa_play": -0.013540310852317753,
+          "defense_success_rate": 0.3758278145695364,
+          "havoc_rate": 0.162,
+          "is_prior_season_fallback": false,
+          "offense_epa_play": 0.18049919638293146,
+          "offense_success_rate": 0.433389544688027
+        },
+        "home_days_rest": 5,
+        "home_stats": {
+          "as_of_season": 2026,
+          "as_of_week": 9,
+          "defense_epa_play": 0.13488094671780948,
+          "defense_success_rate": 0.42526690391459077,
+          "havoc_rate": 0.139,
+          "is_prior_season_fallback": false,
+          "offense_epa_play": 0.024492224046090003,
+          "offense_success_rate": 0.4043824701195219
+        }
+      },
+      "totals": {
+        "calibration_slope": 1.0,
+        "feature_snapshot_sha256": "3f1533d3de6b6400e2bdf7a85d08993ed7bf0663f1e71bdb6fa0f6b69fd98423",
+        "features": [
+          0.024492224046090003,
+          0.13488094671780948,
+          0.18049919638293146,
+          -0.013540310852317753
+        ],
+        "locked_total": 58.5,
+        "prediction_generated_at": "2026-11-05T01:07:02.603615+00:00",
+        "prediction_id": 2,
+        "projected_away_points": 26.86290095859477,
+        "projected_home_points": 20.5527005410475,
+        "projected_total": 47.41560149964227,
+        "raw_over_probability_normal_assumption": 0.25385560083455727,
+        "residual_uncertainty_points": 16.733547423270483,
+        "selected_direction": "under",
+        "shadow_selected_score_not_empirically_calibrated": 0.7461443991654427,
+        "z_score": -0.662405778044602
+      }
+    },
+    {
+      "ats": {
+        "coefficients": [
+          35.089014249343435
+        ],
+        "epa_differential": 0.03207202400536763,
+        "governed_selected_side": "away",
+        "governed_uncertainty_points": null,
+        "intercept": 3.806602472343407,
+        "prediction_generated_at": "2026-11-05T01:07:02.603615+00:00",
+        "prediction_id": 3,
+        "projected_home_margin": 4.931978179673036,
+        "selected_margin_advantage_points": 0.5680218203269636,
+        "shadow_score_not_empirically_calibrated": 0.5028401091016348,
+        "shadow_score_transform": "min(0.60,0.50+0.005*selected_margin_advantage_points)"
+      },
+      "away": "Virginia Tech",
+      "game_id": 401858288,
+      "home": "SMU",
+      "kickoff_utc": "2026-11-07T00:00:00+00:00",
+      "locked_home_spread": -5.5,
+      "locked_line_id": 3,
+      "non_model_context": {
+        "coaching": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "injury": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "market": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "qb": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "travel_rest": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "weather": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW"
+      },
+      "raw_point_in_time_package": {
+        "away_days_rest": 13,
+        "away_stats": {
+          "as_of_season": 2026,
+          "as_of_week": 9,
+          "defense_epa_play": 0.07332816750812007,
+          "defense_success_rate": 0.3856812933025404,
+          "havoc_rate": 0.241,
+          "is_prior_season_fallback": false,
+          "offense_epa_play": 0.20195775135988933,
+          "offense_success_rate": 0.44696969696969696
+        },
+        "home_days_rest": 6,
+        "home_stats": {
+          "as_of_season": 2026,
+          "as_of_week": 9,
+          "defense_epa_play": 0.08488402140882108,
+          "defense_success_rate": 0.3860759493670886,
+          "havoc_rate": 0.177,
+          "is_prior_season_fallback": false,
+          "offense_epa_play": 0.24558562926595798,
+          "offense_success_rate": 0.49320388349514566
+        }
+      },
+      "totals": {
+        "calibration_slope": 1.0,
+        "feature_snapshot_sha256": "77b5c33a51434429075922fe4f5590d6ab522fcfab0d1d6fbb112c607c20d978",
+        "features": [
+          0.24558562926595798,
+          0.08488402140882108,
+          0.20195775135988933,
+          0.07332816750812007
+        ],
+        "locked_total": 56.5,
+        "prediction_generated_at": "2026-11-05T01:07:02.603615+00:00",
+        "prediction_id": 3,
+        "projected_away_points": 23.507377068405074,
+        "projected_home_points": 29.130803819856496,
+        "projected_total": 52.63818088826157,
+        "raw_over_probability_normal_assumption": 0.4087416749737288,
+        "residual_uncertainty_points": 16.733547423270483,
+        "selected_direction": "under",
+        "shadow_selected_score_not_empirically_calibrated": 0.5912583250262711,
+        "z_score": -0.23078305000456711
+      }
+    },
+    {
+      "ats": {
+        "coefficients": [
+          35.089014249343435
+        ],
+        "epa_differential": -0.064192729726164,
+        "governed_selected_side": "home",
+        "governed_uncertainty_points": null,
+        "intercept": 3.806602472343407,
+        "prediction_generated_at": "2026-11-05T01:07:02.603615+00:00",
+        "prediction_id": 4,
+        "projected_home_margin": 1.5541428642777864,
+        "selected_margin_advantage_points": 0.05414286427778636,
+        "shadow_score_not_empirically_calibrated": 0.5002707143213889,
+        "shadow_score_transform": "min(0.60,0.50+0.005*selected_margin_advantage_points)"
+      },
+      "away": "South Florida",
+      "game_id": 401862818,
+      "home": "East Carolina",
+      "kickoff_utc": "2026-11-07T00:30:00+00:00",
+      "locked_home_spread": -1.5,
+      "locked_line_id": 4,
+      "non_model_context": {
+        "coaching": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "injury": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "market": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "qb": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "travel_rest": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "weather": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW"
+      },
+      "raw_point_in_time_package": {
+        "away_days_rest": 6,
+        "away_stats": {
+          "as_of_season": 2026,
+          "as_of_week": 9,
+          "defense_epa_play": 0.0076830053569698345,
+          "defense_success_rate": 0.40350877192982454,
+          "havoc_rate": 0.175,
+          "is_prior_season_fallback": false,
+          "offense_epa_play": 0.10703657687162554,
+          "offense_success_rate": 0.45494505494505494
+        },
+        "home_days_rest": 6,
+        "home_stats": {
+          "as_of_season": 2026,
+          "as_of_week": 9,
+          "defense_epa_play": 0.018008890726265936,
+          "defense_success_rate": 0.36585365853658536,
+          "havoc_rate": 0.195,
+          "is_prior_season_fallback": false,
+          "offense_epa_play": 0.05316973251475766,
+          "offense_success_rate": 0.39250493096646943
+        }
+      },
+      "totals": {
+        "calibration_slope": 1.0,
+        "feature_snapshot_sha256": "184236db0c4644513f37ea2befb16b91fea9af0606015eda4915a4e80e200656",
+        "features": [
+          0.05316973251475766,
+          0.018008890726265936,
+          0.10703657687162554,
+          0.0076830053569698345
+        ],
+        "locked_total": 39.5,
+        "prediction_generated_at": "2026-11-05T01:07:02.603615+00:00",
+        "prediction_id": 4,
+        "projected_away_points": 21.222369350123767,
+        "projected_home_points": 23.680603140376245,
+        "projected_total": 44.90297249050001,
+        "raw_over_probability_normal_assumption": 0.6266079497972438,
+        "residual_uncertainty_points": 16.733547423270483,
+        "selected_direction": "over",
+        "shadow_selected_score_not_empirically_calibrated": 0.6266079497972438,
+        "z_score": 0.32288267118939623
+      }
+    },
+    {
+      "ats": {
+        "coefficients": [
+          35.089014249343435
+        ],
+        "epa_differential": -0.2877751020807673,
+        "governed_selected_side": "away",
+        "governed_uncertainty_points": null,
+        "intercept": 3.806602472343407,
+        "prediction_generated_at": "2026-11-05T01:07:02.603615+00:00",
+        "prediction_id": 5,
+        "projected_home_margin": -6.291142185174898,
+        "selected_margin_advantage_points": 1.7911421851748983,
+        "shadow_score_not_empirically_calibrated": 0.5089557109258744,
+        "shadow_score_transform": "min(0.60,0.50+0.005*selected_margin_advantage_points)"
+      },
+      "away": "Nebraska",
+      "game_id": 401858510,
+      "home": "Illinois",
+      "kickoff_utc": "2026-11-07T01:00:00+00:00",
+      "locked_home_spread": 4.5,
+      "locked_line_id": 5,
+      "non_model_context": {
+        "coaching": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "injury": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "market": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "qb": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "travel_rest": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "weather": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW"
+      },
+      "raw_point_in_time_package": {
+        "away_days_rest": 6,
+        "away_stats": {
+          "as_of_season": 2026,
+          "as_of_week": 9,
+          "defense_epa_play": -0.06193759093398759,
+          "defense_success_rate": 0.33410672853828305,
+          "havoc_rate": 0.198,
+          "is_prior_season_fallback": false,
+          "offense_epa_play": 0.1950810759008947,
+          "offense_success_rate": 0.4388888888888889
+        },
+        "home_days_rest": 6,
+        "home_stats": {
+          "as_of_season": 2026,
+          "as_of_week": 9,
+          "defense_epa_play": 0.24851557678229444,
+          "defense_success_rate": 0.45233265720081134,
+          "havoc_rate": 0.136,
+          "is_prior_season_fallback": false,
+          "offense_epa_play": 0.21775914153640943,
+          "offense_success_rate": 0.4663951120162933
+        }
+      },
+      "totals": {
+        "calibration_slope": 1.0,
+        "feature_snapshot_sha256": "f2c60beeac9d8e2305355d494e40783529d64aa7480097619e1afb368655e7ee",
+        "features": [
+          0.21775914153640943,
+          0.24851557678229444,
+          0.1950810759008947,
+          -0.06193759093398759
+        ],
+        "locked_total": 50.5,
+        "prediction_generated_at": "2026-11-05T01:07:02.603615+00:00",
+        "prediction_id": 5,
+        "projected_away_points": 29.186768119147903,
+        "projected_home_points": 23.59296109100264,
+        "projected_total": 52.77972921015054,
+        "raw_over_probability_normal_assumption": 0.5541830584573189,
+        "residual_uncertainty_points": 16.733547423270483,
+        "selected_direction": "over",
+        "shadow_selected_score_not_empirically_calibrated": 0.5541830584573189,
+        "z_score": 0.13623705437259764
+      }
+    },
+    {
+      "ats": {
+        "coefficients": [
+          35.089014249343435
+        ],
+        "epa_differential": -0.3709903272130682,
+        "governed_selected_side": "home",
+        "governed_uncertainty_points": null,
+        "intercept": 3.806602472343407,
+        "prediction_generated_at": "2026-11-05T01:07:02.603615+00:00",
+        "prediction_id": 6,
+        "projected_home_margin": -9.211082405604527,
+        "selected_margin_advantage_points": 0.28891759439547293,
+        "shadow_score_not_empirically_calibrated": 0.5014445879719773,
+        "shadow_score_transform": "min(0.60,0.50+0.005*selected_margin_advantage_points)"
+      },
+      "away": "New Mexico",
+      "game_id": 401864533,
+      "home": "Nevada",
+      "kickoff_utc": "2026-11-07T02:00:00+00:00",
+      "locked_home_spread": 9.5,
+      "locked_line_id": 6,
+      "non_model_context": {
+        "coaching": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "injury": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "market": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "qb": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "travel_rest": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "weather": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW"
+      },
+      "raw_point_in_time_package": {
+        "away_days_rest": 6,
+        "away_stats": {
+          "as_of_season": 2026,
+          "as_of_week": 9,
+          "defense_epa_play": -0.1814667528740603,
+          "defense_success_rate": 0.29974811083123426,
+          "havoc_rate": 0.255,
+          "is_prior_season_fallback": false,
+          "offense_epa_play": 0.10961610427395778,
+          "offense_success_rate": 0.42691415313225056
+        },
+        "home_days_rest": 6,
+        "home_stats": {
+          "as_of_season": 2026,
+          "as_of_week": 9,
+          "defense_epa_play": 0.09595990180979315,
+          "defense_success_rate": 0.37254901960784315,
+          "havoc_rate": 0.153,
+          "is_prior_season_fallback": false,
+          "offense_epa_play": 0.016052431744743037,
+          "offense_success_rate": 0.38911290322580644
+        }
+      },
+      "totals": {
+        "calibration_slope": 1.0,
+        "feature_snapshot_sha256": "2873c14da471dbf05996849a091d8ffd02922f30561bfbff2b4651659453b7e5",
+        "features": [
+          0.016052431744743037,
+          0.09595990180979315,
+          0.10961610427395778,
+          -0.1814667528740603
+        ],
+        "locked_total": 39.5,
+        "prediction_generated_at": "2026-11-05T01:07:02.603615+00:00",
+        "prediction_id": 6,
+        "projected_away_points": 25.122055293050877,
+        "projected_home_points": 17.392397298205147,
+        "projected_total": 42.514452591256024,
+        "raw_over_probability_normal_assumption": 0.5714803434817369,
+        "residual_uncertainty_points": 16.733547423270483,
+        "selected_direction": "over",
+        "shadow_selected_score_not_empirically_calibrated": 0.5714803434817369,
+        "z_score": 0.1801442643933336
+      }
+    },
+    {
+      "ats": {
+        "coefficients": [
+          35.089014249343435
+        ],
+        "epa_differential": 0.1281699021794867,
+        "governed_selected_side": "away",
+        "governed_uncertainty_points": null,
+        "intercept": 3.806602472343407,
+        "prediction_generated_at": "2026-11-05T01:07:02.603615+00:00",
+        "prediction_id": 7,
+        "projected_home_margin": 8.30395799625637,
+        "selected_margin_advantage_points": 1.1960420037436297,
+        "shadow_score_not_empirically_calibrated": 0.5059802100187182,
+        "shadow_score_transform": "min(0.60,0.50+0.005*selected_margin_advantage_points)"
+      },
+      "away": "TCU",
+      "game_id": 401856855,
+      "home": "Arizona",
+      "kickoff_utc": "2026-11-07T03:15:00+00:00",
+      "locked_home_spread": -9.5,
+      "locked_line_id": 7,
+      "non_model_context": {
+        "coaching": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "injury": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "market": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "qb": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "travel_rest": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "weather": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW"
+      },
+      "raw_point_in_time_package": {
+        "away_days_rest": 6,
+        "away_stats": {
+          "as_of_season": 2026,
+          "as_of_week": 9,
+          "defense_epa_play": -0.06496148512316346,
+          "defense_success_rate": 0.341948310139165,
+          "havoc_rate": 0.164,
+          "is_prior_season_fallback": false,
+          "offense_epa_play": 0.07985554087461294,
+          "offense_success_rate": 0.41030534351145037
+        },
+        "home_days_rest": 6,
+        "home_stats": {
+          "as_of_season": 2026,
+          "as_of_week": 9,
+          "defense_epa_play": -0.024190001577886963,
+          "defense_success_rate": 0.3592814371257485,
+          "havoc_rate": 0.16,
+          "is_prior_season_fallback": false,
+          "offense_epa_play": 0.24879692659937616,
+          "offense_success_rate": 0.4716599190283401
+        }
+      },
+      "totals": {
+        "calibration_slope": 1.0,
+        "feature_snapshot_sha256": "9e29420822ccd133ddf495f77f0f7a50421e3e365bcc12750e04051ad5f1d91e",
+        "features": [
+          0.24879692659937616,
+          -0.024190001577886963,
+          0.07985554087461294,
+          -0.06496148512316346
+        ],
+        "locked_total": 43.5,
+        "prediction_generated_at": "2026-11-05T01:07:02.603615+00:00",
+        "prediction_id": 7,
+        "projected_away_points": 18.13104849071832,
+        "projected_home_points": 28.150812238449273,
+        "projected_total": 46.28186072916759,
+        "raw_over_probability_normal_assumption": 0.5660177415028881,
+        "residual_uncertainty_points": 16.733547423270483,
+        "selected_direction": "over",
+        "shadow_selected_score_not_empirically_calibrated": 0.5660177415028881,
+        "z_score": 0.16624453015258436
+      }
+    },
+    {
+      "ats": {
+        "coefficients": [
+          35.089014249343435
+        ],
+        "epa_differential": 0.014115546318904111,
+        "governed_selected_side": "home",
+        "governed_uncertainty_points": null,
+        "intercept": 3.806602472343407,
+        "prediction_generated_at": "2026-11-05T01:07:02.603615+00:00",
+        "prediction_id": 8,
+        "projected_home_margin": 4.301903078264701,
+        "selected_margin_advantage_points": 10.8019030782647,
+        "shadow_score_not_empirically_calibrated": 0.5540095153913235,
+        "shadow_score_transform": "min(0.60,0.50+0.005*selected_margin_advantage_points)"
+      },
+      "away": "Florida State",
+      "game_id": 401858289,
+      "home": "Boston College",
+      "kickoff_utc": "2026-11-07T17:00:00+00:00",
+      "locked_home_spread": 6.5,
+      "locked_line_id": 8,
+      "non_model_context": {
+        "coaching": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "injury": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "market": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "qb": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "travel_rest": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "weather": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW"
+      },
+      "raw_point_in_time_package": {
+        "away_days_rest": 6,
+        "away_stats": {
+          "as_of_season": 2026,
+          "as_of_week": 9,
+          "defense_epa_play": 0.22133584528604414,
+          "defense_success_rate": 0.42884990253411304,
+          "havoc_rate": 0.148,
+          "is_prior_season_fallback": false,
+          "offense_epa_play": 0.19605846190712847,
+          "offense_success_rate": 0.43286573146292584
+        },
+        "home_days_rest": 7,
+        "home_stats": {
+          "as_of_season": 2026,
+          "as_of_week": 9,
+          "defense_epa_play": 0.04939527735328685,
+          "defense_success_rate": 0.4086444007858546,
+          "havoc_rate": 0.171,
+          "is_prior_season_fallback": false,
+          "offense_epa_play": 0.0382334402932753,
+          "offense_success_rate": 0.4109311740890688
+        }
+      },
+      "totals": {
+        "calibration_slope": 1.0,
+        "feature_snapshot_sha256": "81d426e82bdd9a9aff8cf47bc6836edec7aec358fe86e120a5f06478593ea64b",
+        "features": [
+          0.0382334402932753,
+          0.04939527735328685,
+          0.19605846190712847,
+          0.22133584528604414
+        ],
+        "locked_total": 51.5,
+        "prediction_generated_at": "2026-11-05T01:07:02.603615+00:00",
+        "prediction_id": 8,
+        "projected_away_points": 23.10438841655666,
+        "projected_home_points": 27.170339518873078,
+        "projected_total": 50.27472793542974,
+        "raw_over_probability_normal_assumption": 0.47081453367123843,
+        "residual_uncertainty_points": 16.733547423270483,
+        "selected_direction": "under",
+        "shadow_selected_score_not_empirically_calibrated": 0.5291854663287616,
+        "z_score": -0.07322249332896022
+      }
+    },
+    {
+      "ats": {
+        "coefficients": [
+          35.089014249343435
+        ],
+        "epa_differential": -0.37931346528912224,
+        "governed_selected_side": "away",
+        "governed_uncertainty_points": null,
+        "intercept": 3.806602472343407,
+        "prediction_generated_at": "2026-11-05T01:07:02.603615+00:00",
+        "prediction_id": 9,
+        "projected_home_margin": -9.50313311615444,
+        "selected_margin_advantage_points": 4.003133116154441,
+        "shadow_score_not_empirically_calibrated": 0.5200156655807722,
+        "shadow_score_transform": "min(0.60,0.50+0.005*selected_margin_advantage_points)"
+      },
+      "away": "UCLA",
+      "game_id": 401858512,
+      "home": "Minnesota",
+      "kickoff_utc": "2026-11-07T17:00:00+00:00",
+      "locked_home_spread": 5.5,
+      "locked_line_id": 9,
+      "non_model_context": {
+        "coaching": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "injury": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "market": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "qb": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "travel_rest": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "weather": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW"
+      },
+      "raw_point_in_time_package": {
+        "away_days_rest": 6,
+        "away_stats": {
+          "as_of_season": 2026,
+          "as_of_week": 9,
+          "defense_epa_play": -0.2060414929812346,
+          "defense_success_rate": 0.32119914346895073,
+          "havoc_rate": 0.212,
+          "is_prior_season_fallback": false,
+          "offense_epa_play": 0.16290224768104095,
+          "offense_success_rate": 0.46393762183235865
+        },
+        "home_days_rest": 6,
+        "home_stats": {
+          "as_of_season": 2026,
+          "as_of_week": 9,
+          "defense_epa_play": 0.011500832664322894,
+          "defense_success_rate": 0.39414414414414417,
+          "havoc_rate": 0.206,
+          "is_prior_season_fallback": false,
+          "offense_epa_play": 0.0011311080374762099,
+          "offense_success_rate": 0.36711711711711714
+        }
+      },
+      "totals": {
+        "calibration_slope": 1.0,
+        "feature_snapshot_sha256": "99e0ee6d9e6e52f1042bbd904f1093e1f1125c01cf64d45d9fb47239eff42df1",
+        "features": [
+          0.0011311080374762099,
+          0.011500832664322894,
+          0.16290224768104095,
+          -0.2060414929812346
+        ],
+        "locked_total": 39.5,
+        "prediction_generated_at": "2026-11-05T01:07:02.603615+00:00",
+        "prediction_id": 9,
+        "projected_away_points": 24.355979928361553,
+        "projected_home_points": 16.771062836486472,
+        "projected_total": 41.12704276484803,
+        "raw_over_probability_normal_assumption": 0.5387290757486393,
+        "residual_uncertainty_points": 16.733547423270483,
+        "selected_direction": "over",
+        "shadow_selected_score_not_empirically_calibrated": 0.5387290757486393,
+        "z_score": 0.09723238735292812
+      }
+    },
+    {
+      "ats": {
+        "coefficients": [
+          35.089014249343435
+        ],
+        "epa_differential": -0.01020214133452075,
+        "governed_selected_side": "home",
+        "governed_uncertainty_points": null,
+        "intercept": 3.806602472343407,
+        "prediction_generated_at": "2026-11-05T01:07:02.603615+00:00",
+        "prediction_id": 10,
+        "projected_home_margin": 3.4486193896825927,
+        "selected_margin_advantage_points": 5.948619389682593,
+        "shadow_score_not_empirically_calibrated": 0.5297430969484129,
+        "shadow_score_transform": "min(0.60,0.50+0.005*selected_margin_advantage_points)"
+      },
+      "away": "Clemson",
+      "game_id": 401858285,
+      "home": "Syracuse",
+      "kickoff_utc": "2026-11-07T17:00:00+00:00",
+      "locked_home_spread": 2.5,
+      "locked_line_id": 10,
+      "non_model_context": {
+        "coaching": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "injury": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "market": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "qb": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "travel_rest": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "weather": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW"
+      },
+      "raw_point_in_time_package": {
+        "away_days_rest": 6,
+        "away_stats": {
+          "as_of_season": 2026,
+          "as_of_week": 9,
+          "defense_epa_play": 0.023840118034945235,
+          "defense_success_rate": 0.40670859538784065,
+          "havoc_rate": 0.191,
+          "is_prior_season_fallback": false,
+          "offense_epa_play": -0.015158915637226095,
+          "offense_success_rate": 0.3634538152610442
+        },
+        "home_days_rest": 7,
+        "home_stats": {
+          "as_of_season": 2026,
+          "as_of_week": 9,
+          "defense_epa_play": 0.1211768828478831,
+          "defense_success_rate": 0.4357894736842105,
+          "havoc_rate": 0.183,
+          "is_prior_season_fallback": false,
+          "offense_epa_play": 0.07197570784119102,
+          "offense_success_rate": 0.42326332794830374
+        }
+      },
+      "totals": {
+        "calibration_slope": 1.0,
+        "feature_snapshot_sha256": "a3556ac2b4097a5afa17b6393a9f9ceabfc16705b2f2bafe45b435ae5a56b3b7",
+        "features": [
+          0.07197570784119102,
+          0.1211768828478831,
+          -0.015158915637226095,
+          0.023840118034945235
+        ],
+        "locked_total": 49.5,
+        "prediction_generated_at": "2026-11-05T01:07:02.603615+00:00",
+        "prediction_id": 10,
+        "projected_away_points": 20.7769905965262,
+        "projected_home_points": 24.635908179896262,
+        "projected_total": 45.412898776422466,
+        "raw_over_probability_normal_assumption": 0.4035201699100567,
+        "residual_uncertainty_points": 16.733547423270483,
+        "selected_direction": "under",
+        "shadow_selected_score_not_empirically_calibrated": 0.5964798300899433,
+        "z_score": -0.24424595216993933
+      }
+    },
+    {
+      "ats": {
+        "coefficients": [
+          35.089014249343435
+        ],
+        "epa_differential": 0.11512713043013031,
+        "governed_selected_side": "home",
+        "governed_uncertainty_points": null,
+        "intercept": 3.806602472343407,
+        "prediction_generated_at": "2026-11-05T01:07:02.603615+00:00",
+        "prediction_id": 11,
+        "projected_home_margin": 7.84629999249227,
+        "selected_margin_advantage_points": 3.34629999249227,
+        "shadow_score_not_empirically_calibrated": 0.5167314999624614,
+        "shadow_score_transform": "min(0.60,0.50+0.005*selected_margin_advantage_points)"
+      },
+      "away": "BYU",
+      "game_id": 401856849,
+      "home": "Utah",
+      "kickoff_utc": "2026-11-07T17:00:00+00:00",
+      "locked_home_spread": -4.5,
+      "locked_line_id": 11,
+      "non_model_context": {
+        "coaching": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "injury": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "market": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "qb": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "travel_rest": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "weather": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW"
+      },
+      "raw_point_in_time_package": {
+        "away_days_rest": 6,
+        "away_stats": {
+          "as_of_season": 2026,
+          "as_of_week": 9,
+          "defense_epa_play": 0.03225357634577692,
+          "defense_success_rate": 0.3900414937759336,
+          "havoc_rate": 0.183,
+          "is_prior_season_fallback": false,
+          "offense_epa_play": 0.23975505050450782,
+          "offense_success_rate": 0.46153846153846156
+        },
+        "home_days_rest": 6,
+        "home_stats": {
+          "as_of_season": 2026,
+          "as_of_week": 9,
+          "defense_epa_play": 0.0012004084411779158,
+          "defense_success_rate": 0.3669950738916256,
+          "havoc_rate": 0.18,
+          "is_prior_season_fallback": false,
+          "offense_epa_play": 0.32382901303003914,
+          "offense_success_rate": 0.5218340611353712
+        }
+      },
+      "totals": {
+        "calibration_slope": 1.0,
+        "feature_snapshot_sha256": "5a5f491e0673d6341ad1c7c4b729a03aa8447e99c3989f5ec7b4f0ff1b0e74d8",
+        "features": [
+          0.32382901303003914,
+          0.0012004084411779158,
+          0.23975505050450782,
+          0.03225357634577692
+        ],
+        "locked_total": 48.5,
+        "prediction_generated_at": "2026-11-05T01:07:02.603615+00:00",
+        "prediction_id": 11,
+        "projected_away_points": 21.68226028929738,
+        "projected_home_points": 30.876110290900325,
+        "projected_total": 52.5583705801977,
+        "raw_over_probability_normal_assumption": 0.5958148569607368,
+        "residual_uncertainty_points": 16.733547423270483,
+        "selected_direction": "over",
+        "shadow_selected_score_not_empirically_calibrated": 0.5958148569607368,
+        "z_score": 0.24252900341704808
+      }
+    },
+    {
+      "ats": {
+        "coefficients": [
+          35.089014249343435
+        ],
+        "epa_differential": 0.2263274143688768,
+        "governed_selected_side": "home",
+        "governed_uncertainty_points": null,
+        "intercept": 3.806602472343407,
+        "prediction_generated_at": "2026-11-05T01:07:02.603615+00:00",
+        "prediction_id": 12,
+        "projected_home_margin": 11.748208340149981,
+        "selected_margin_advantage_points": 2.248208340149981,
+        "shadow_score_not_empirically_calibrated": 0.5112410417007499,
+        "shadow_score_transform": "min(0.60,0.50+0.005*selected_margin_advantage_points)"
+      },
+      "away": "Iowa State",
+      "game_id": 401856853,
+      "home": "Baylor",
+      "kickoff_utc": "2026-11-07T17:00:00+00:00",
+      "locked_home_spread": -9.5,
+      "locked_line_id": 12,
+      "non_model_context": {
+        "coaching": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "injury": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "market": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "qb": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "travel_rest": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "weather": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW"
+      },
+      "raw_point_in_time_package": {
+        "away_days_rest": 6,
+        "away_stats": {
+          "as_of_season": 2026,
+          "as_of_week": 9,
+          "defense_epa_play": 0.17484550837969037,
+          "defense_success_rate": 0.4432773109243697,
+          "havoc_rate": 0.152,
+          "is_prior_season_fallback": false,
+          "offense_epa_play": 0.13891032276866364,
+          "offense_success_rate": 0.3907563025210084
+        },
+        "home_days_rest": 7,
+        "home_stats": {
+          "as_of_season": 2026,
+          "as_of_week": 9,
+          "defense_epa_play": -0.07969566914086756,
+          "defense_success_rate": 0.34790874524714827,
+          "havoc_rate": 0.208,
+          "is_prior_season_fallback": false,
+          "offense_epa_play": 0.11069655961698248,
+          "offense_success_rate": 0.3870967741935484
+        }
+      },
+      "totals": {
+        "calibration_slope": 1.0,
+        "feature_snapshot_sha256": "e5dfb4097914506afe2fe437312d3d6366325d82dedbc486e63fefe3eedc14e8",
+        "features": [
+          0.11069655961698248,
+          -0.07969566914086756,
+          0.13891032276866364,
+          0.17484550837969037
+        ],
+        "locked_total": 51.5,
+        "prediction_generated_at": "2026-11-05T01:07:02.603615+00:00",
+        "prediction_id": 12,
+        "projected_away_points": 17.615166238595002,
+        "projected_home_points": 29.921163296539262,
+        "projected_total": 47.536329535134264,
+        "raw_over_probability_normal_assumption": 0.4063789360290105,
+        "residual_uncertainty_points": 16.733547423270483,
+        "selected_direction": "under",
+        "shadow_selected_score_not_empirically_calibrated": 0.5936210639709896,
+        "z_score": -0.2368697063811863
+      }
+    },
+    {
+      "ats": {
+        "coefficients": [
+          35.089014249343435
+        ],
+        "epa_differential": 0.07086926019847391,
+        "governed_selected_side": "home",
+        "governed_uncertainty_points": null,
+        "intercept": 3.806602472343407,
+        "prediction_generated_at": "2026-11-05T01:07:02.603615+00:00",
+        "prediction_id": 13,
+        "projected_home_margin": 6.293334953288086,
+        "selected_margin_advantage_points": 12.793334953288085,
+        "shadow_score_not_empirically_calibrated": 0.5639666747664405,
+        "shadow_score_transform": "min(0.60,0.50+0.005*selected_margin_advantage_points)"
+      },
+      "away": "North Carolina",
+      "game_id": 401858292,
+      "home": "UConn",
+      "kickoff_utc": "2026-11-07T17:00:00+00:00",
+      "locked_home_spread": 6.5,
+      "locked_line_id": 13,
+      "non_model_context": {
+        "coaching": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "injury": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "market": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "qb": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "travel_rest": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "weather": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW"
+      },
+      "raw_point_in_time_package": {
+        "away_days_rest": 6,
+        "away_stats": {
+          "as_of_season": 2026,
+          "as_of_week": 9,
+          "defense_epa_play": 0.0748759724274828,
+          "defense_success_rate": 0.4425087108013937,
+          "havoc_rate": 0.117,
+          "is_prior_season_fallback": false,
+          "offense_epa_play": 0.1451027274581197,
+          "offense_success_rate": 0.4765957446808511
+        },
+        "home_days_rest": 6,
+        "home_stats": {
+          "as_of_season": 2026,
+          "as_of_week": 9,
+          "defense_epa_play": 0.08839020955890041,
+          "defense_success_rate": 0.4305835010060362,
+          "havoc_rate": 0.148,
+          "is_prior_season_fallback": false,
+          "offense_epa_play": 0.2294862247880112,
+          "offense_success_rate": 0.4476987447698745
+        }
+      },
+      "totals": {
+        "calibration_slope": 1.0,
+        "feature_snapshot_sha256": "e378f5c1aff93d68702c459080be1bd7999f75e77328a32260ab6f48350a8394",
+        "features": [
+          0.2294862247880112,
+          0.08839020955890041,
+          0.1451027274581197,
+          0.0748759724274828
+        ],
+        "locked_total": 54.5,
+        "prediction_generated_at": "2026-11-05T01:07:02.603615+00:00",
+        "prediction_id": 13,
+        "projected_away_points": 22.27188356318625,
+        "projected_home_points": 29.181446503753968,
+        "projected_total": 51.45333006694022,
+        "raw_over_probability_normal_assumption": 0.42776406109493925,
+        "residual_uncertainty_points": 16.733547423270483,
+        "selected_direction": "under",
+        "shadow_selected_score_not_empirically_calibrated": 0.5722359389050607,
+        "z_score": -0.18206957891205633
+      }
+    },
+    {
+      "ats": {
+        "coefficients": [
+          35.089014249343435
+        ],
+        "epa_differential": 0.10232892778471578,
+        "governed_selected_side": "home",
+        "governed_uncertainty_points": null,
+        "intercept": 3.806602472343407,
+        "prediction_generated_at": "2026-11-05T01:07:02.603615+00:00",
+        "prediction_id": 14,
+        "projected_home_margin": 7.397223677501334,
+        "selected_margin_advantage_points": 9.897223677501334,
+        "shadow_score_not_empirically_calibrated": 0.5494861183875067,
+        "shadow_score_transform": "min(0.60,0.50+0.005*selected_margin_advantage_points)"
+      },
+      "away": "Texas",
+      "game_id": 401856743,
+      "home": "Missouri",
+      "kickoff_utc": "2026-11-07T17:00:00+00:00",
+      "locked_home_spread": 2.5,
+      "locked_line_id": 14,
+      "non_model_context": {
+        "coaching": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "injury": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "market": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "qb": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "travel_rest": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "weather": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW"
+      },
+      "raw_point_in_time_package": {
+        "away_days_rest": 6,
+        "away_stats": {
+          "as_of_season": 2026,
+          "as_of_week": 9,
+          "defense_epa_play": -0.02950730883328749,
+          "defense_success_rate": 0.3353174603174603,
+          "havoc_rate": 0.2,
+          "is_prior_season_fallback": false,
+          "offense_epa_play": 0.05927534673197298,
+          "offense_success_rate": 0.41832669322709165
+        },
+        "home_days_rest": 6,
+        "home_stats": {
+          "as_of_season": 2026,
+          "as_of_week": 9,
+          "defense_epa_play": -0.013455579455941544,
+          "defense_success_rate": 0.35654008438818563,
+          "havoc_rate": 0.195,
+          "is_prior_season_fallback": false,
+          "offense_epa_play": 0.1776560038940347,
+          "offense_success_rate": 0.41295546558704455
+        }
+      },
+      "totals": {
+        "calibration_slope": 1.0,
+        "feature_snapshot_sha256": "bfed0b69c0383a62de46b2d201b6023795b278715b2c347875cd45d94c0e661a",
+        "features": [
+          0.1776560038940347,
+          -0.013455579455941544,
+          0.05927534673197298,
+          -0.02950730883328749
+        ],
+        "locked_total": 43.5,
+        "prediction_generated_at": "2026-11-05T01:07:02.603615+00:00",
+        "prediction_id": 14,
+        "projected_away_points": 18.277673112902328,
+        "projected_home_points": 27.05300361777475,
+        "projected_total": 45.33067673067708,
+        "raw_over_probability_normal_assumption": 0.543558014517634,
+        "residual_uncertainty_points": 16.733547423270483,
+        "selected_direction": "over",
+        "shadow_selected_score_not_empirically_calibrated": 0.543558014517634,
+        "z_score": 0.1094015921651645
+      }
+    },
+    {
+      "ats": {
+        "coefficients": [
+          35.089014249343435
+        ],
+        "epa_differential": -0.11023116046418026,
+        "governed_selected_side": "home",
+        "governed_uncertainty_points": null,
+        "intercept": 3.806602472343407,
+        "prediction_generated_at": "2026-11-05T01:07:02.603615+00:00",
+        "prediction_id": 15,
+        "projected_home_margin": -0.06130028790587705,
+        "selected_margin_advantage_points": 1.438699712094123,
+        "shadow_score_not_empirically_calibrated": 0.5071934985604706,
+        "shadow_score_transform": "min(0.60,0.50+0.005*selected_margin_advantage_points)"
+      },
+      "away": "Tulsa",
+      "game_id": 401862822,
+      "home": "Tulane",
+      "kickoff_utc": "2026-11-07T17:00:00+00:00",
+      "locked_home_spread": 1.5,
+      "locked_line_id": 15,
+      "non_model_context": {
+        "coaching": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "injury": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "market": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "qb": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "travel_rest": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "weather": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW"
+      },
+      "raw_point_in_time_package": {
+        "away_days_rest": 14,
+        "away_stats": {
+          "as_of_season": 2026,
+          "as_of_week": 9,
+          "defense_epa_play": 0.07526622772289156,
+          "defense_success_rate": 0.40852575488454707,
+          "havoc_rate": 0.12,
+          "is_prior_season_fallback": false,
+          "offense_epa_play": 0.1826302972902235,
+          "offense_success_rate": 0.39921722113502933
+        },
+        "home_days_rest": 7,
+        "home_stats": {
+          "as_of_season": 2026,
+          "as_of_week": 9,
+          "defense_epa_play": 0.11363390400171838,
+          "defense_success_rate": 0.42434782608695654,
+          "havoc_rate": 0.146,
+          "is_prior_season_fallback": false,
+          "offense_epa_play": 0.11076681310487008,
+          "offense_success_rate": 0.35772357723577236
+        }
+      },
+      "totals": {
+        "calibration_slope": 1.0,
+        "feature_snapshot_sha256": "cc93da761fe8ec3bd5bf8aa72ae6a2eee4e5c5ffc631c0db722d5a52c2e50d4c",
+        "features": [
+          0.11076681310487008,
+          0.11363390400171838,
+          0.1826302972902235,
+          0.07526622772289156
+        ],
+        "locked_total": 49.5,
+        "prediction_generated_at": "2026-11-05T01:07:02.603615+00:00",
+        "prediction_id": 15,
+        "projected_away_points": 24.972993938672907,
+        "projected_home_points": 25.26100023790958,
+        "projected_total": 50.233994176582485,
+        "raw_over_probability_normal_assumption": 0.5174934478249553,
+        "residual_uncertainty_points": 16.733547423270483,
+        "selected_direction": "over",
+        "shadow_selected_score_not_empirically_calibrated": 0.5174934478249553,
+        "z_score": 0.04386363261873312
+      }
+    },
+    {
+      "ats": {
+        "coefficients": [
+          35.089014249343435
+        ],
+        "epa_differential": -0.18588956514550112,
+        "governed_selected_side": "home",
+        "governed_uncertainty_points": null,
+        "intercept": 3.806602472343407,
+        "prediction_generated_at": "2026-11-05T01:07:02.603615+00:00",
+        "prediction_id": 16,
+        "projected_home_margin": -2.7160791278513363,
+        "selected_margin_advantage_points": 1.7839208721486637,
+        "shadow_score_not_empirically_calibrated": 0.5089196043607433,
+        "shadow_score_transform": "min(0.60,0.50+0.005*selected_margin_advantage_points)"
+      },
+      "away": "Duke",
+      "game_id": 401858286,
+      "home": "NC State",
+      "kickoff_utc": "2026-11-07T17:30:00+00:00",
+      "locked_home_spread": 4.5,
+      "locked_line_id": 16,
+      "non_model_context": {
+        "coaching": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "injury": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "market": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "qb": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "travel_rest": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "weather": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW"
+      },
+      "raw_point_in_time_package": {
+        "away_days_rest": 7,
+        "away_stats": {
+          "as_of_season": 2026,
+          "as_of_week": 9,
+          "defense_epa_play": 0.015442915309317561,
+          "defense_success_rate": 0.3944954128440367,
+          "havoc_rate": 0.171,
+          "is_prior_season_fallback": false,
+          "offense_epa_play": 0.23468057723611266,
+          "offense_success_rate": 0.4247422680412371
+        },
+        "home_days_rest": 7,
+        "home_stats": {
+          "as_of_season": 2026,
+          "as_of_week": 9,
+          "defense_epa_play": 0.16868047564057484,
+          "defense_success_rate": 0.42557651991614254,
+          "havoc_rate": 0.144,
+          "is_prior_season_fallback": false,
+          "offense_epa_play": 0.2020285724218688,
+          "offense_success_rate": 0.4487704918032787
+        }
+      },
+      "totals": {
+        "calibration_slope": 1.0,
+        "feature_snapshot_sha256": "0a2fa47765a7b35eb5bc490df85e1bca30d105ea7b87accbc366af563d7b7fd2",
+        "features": [
+          0.2020285724218688,
+          0.16868047564057484,
+          0.23468057723611266,
+          0.015442915309317561
+        ],
+        "locked_total": 51.5,
+        "prediction_generated_at": "2026-11-05T01:07:02.603615+00:00",
+        "prediction_id": 16,
+        "projected_away_points": 27.52159842352431,
+        "projected_home_points": 25.415703941056538,
+        "projected_total": 52.937302364580844,
+        "raw_over_probability_normal_assumption": 0.5342244466292627,
+        "residual_uncertainty_points": 16.733547423270483,
+        "selected_direction": "over",
+        "shadow_selected_score_not_empirically_calibrated": 0.5342244466292627,
+        "z_score": 0.0858934646805412
+      }
+    },
+    {
+      "ats": {
+        "coefficients": [
+          35.089014249343435
+        ],
+        "epa_differential": 0.05137831002682494,
+        "governed_selected_side": "away",
+        "governed_uncertainty_points": null,
+        "intercept": 3.806602472343407,
+        "prediction_generated_at": "2026-11-05T01:07:02.603615+00:00",
+        "prediction_id": 17,
+        "projected_home_margin": 5.609416724981852,
+        "selected_margin_advantage_points": 0.8905832750181482,
+        "shadow_score_not_empirically_calibrated": 0.5044529163750907,
+        "shadow_score_transform": "min(0.60,0.50+0.005*selected_margin_advantage_points)"
+      },
+      "away": "Maryland",
+      "game_id": 401858515,
+      "home": "Purdue",
+      "kickoff_utc": "2026-11-07T17:30:00+00:00",
+      "locked_home_spread": -6.5,
+      "locked_line_id": 17,
+      "non_model_context": {
+        "coaching": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "injury": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "market": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "qb": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "travel_rest": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "weather": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW"
+      },
+      "raw_point_in_time_package": {
+        "away_days_rest": 7,
+        "away_stats": {
+          "as_of_season": 2026,
+          "as_of_week": 9,
+          "defense_epa_play": 0.16914621144170447,
+          "defense_success_rate": 0.4437367303609342,
+          "havoc_rate": 0.148,
+          "is_prior_season_fallback": false,
+          "offense_epa_play": 0.0407146917826791,
+          "offense_success_rate": 0.3925438596491228
+        },
+        "home_days_rest": 6,
+        "home_stats": {
+          "as_of_season": 2026,
+          "as_of_week": 9,
+          "defense_epa_play": 0.2578193363678109,
+          "defense_success_rate": 0.4692144373673036,
+          "havoc_rate": 0.133,
+          "is_prior_season_fallback": false,
+          "offense_epa_play": 0.18076612673561046,
+          "offense_success_rate": 0.4321503131524008
+        }
+      },
+      "totals": {
+        "calibration_slope": 1.0,
+        "feature_snapshot_sha256": "37cad15c6d0bdf682ba7f303cef1e5ba66c5ced1b1123588d793a3289c20f774",
+        "features": [
+          0.18076612673561046,
+          0.2578193363678109,
+          0.0407146917826791,
+          0.16914621144170447
+        ],
+        "locked_total": 57.5,
+        "prediction_generated_at": "2026-11-05T01:07:02.603615+00:00",
+        "prediction_id": 17,
+        "projected_away_points": 24.240468793947663,
+        "projected_home_points": 29.245158652090236,
+        "projected_total": 53.485627446037896,
+        "raw_over_probability_normal_assumption": 0.40520401720588256,
+        "residual_uncertainty_points": 16.733547423270483,
+        "selected_direction": "under",
+        "shadow_selected_score_not_empirically_calibrated": 0.5947959827941174,
+        "z_score": -0.2398996729396137
+      }
+    },
+    {
+      "ats": {
+        "coefficients": [
+          35.089014249343435
+        ],
+        "epa_differential": 0.16491333834676677,
+        "governed_selected_side": "away",
+        "governed_uncertainty_points": null,
+        "intercept": 3.806602472343407,
+        "prediction_generated_at": "2026-11-05T01:07:02.603615+00:00",
+        "prediction_id": 18,
+        "projected_home_margin": 9.593248951499902,
+        "selected_margin_advantage_points": 0.906751048500098,
+        "shadow_score_not_empirically_calibrated": 0.5045337552425004,
+        "shadow_score_transform": "min(0.60,0.50+0.005*selected_margin_advantage_points)"
+      },
+      "away": "Arkansas",
+      "game_id": 401856738,
+      "home": "Auburn",
+      "kickoff_utc": "2026-11-07T17:45:00+00:00",
+      "locked_home_spread": -10.5,
+      "locked_line_id": 18,
+      "non_model_context": {
+        "coaching": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "injury": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "market": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "qb": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "travel_rest": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "weather": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW"
+      },
+      "raw_point_in_time_package": {
+        "away_days_rest": 6,
+        "away_stats": {
+          "as_of_season": 2026,
+          "as_of_week": 9,
+          "defense_epa_play": 0.19649056509624854,
+          "defense_success_rate": 0.4295942720763723,
+          "havoc_rate": 0.128,
+          "is_prior_season_fallback": false,
+          "offense_epa_play": 0.024584600113092422,
+          "offense_success_rate": 0.42917547568710357
+        },
+        "home_days_rest": 7,
+        "home_stats": {
+          "as_of_season": 2026,
+          "as_of_week": 9,
+          "defense_epa_play": 0.1144929794574521,
+          "defense_success_rate": 0.43523316062176165,
+          "havoc_rate": 0.149,
+          "is_prior_season_fallback": false,
+          "offense_epa_play": 0.10750035282106274,
+          "offense_success_rate": 0.39766081871345027
+        }
+      },
+      "totals": {
+        "calibration_slope": 1.0,
+        "feature_snapshot_sha256": "eebc42c2b120dfe74627a9ba4136821d23ec64acd4883c85f65d3ab9cd016169",
+        "features": [
+          0.10750035282106274,
+          0.1144929794574521,
+          0.024584600113092422,
+          0.19649056509624854
+        ],
+        "locked_total": 52.5,
+        "prediction_generated_at": "2026-11-05T01:07:02.603615+00:00",
+        "prediction_id": 18,
+        "projected_away_points": 20.141694451645513,
+        "projected_home_points": 29.402931431192343,
+        "projected_total": 49.544625882837856,
+        "raw_over_probability_normal_assumption": 0.42990590689103364,
+        "residual_uncertainty_points": 16.733547423270483,
+        "selected_direction": "under",
+        "shadow_selected_score_not_empirically_calibrated": 0.5700940931089664,
+        "z_score": -0.1766137234626208
+      }
+    },
+    {
+      "ats": {
+        "coefficients": [
+          35.089014249343435
+        ],
+        "epa_differential": 0.14851636243120628,
+        "governed_selected_side": "home",
+        "governed_uncertainty_points": null,
+        "intercept": 3.806602472343407,
+        "prediction_generated_at": "2026-11-05T01:07:02.603615+00:00",
+        "prediction_id": 19,
+        "projected_home_margin": 9.017895229952657,
+        "selected_margin_advantage_points": 1.5178952299526571,
+        "shadow_score_not_empirically_calibrated": 0.5075894761497632,
+        "shadow_score_transform": "min(0.60,0.50+0.005*selected_margin_advantage_points)"
+      },
+      "away": "Old Dominion",
+      "game_id": 401869945,
+      "home": "Coastal Carolina",
+      "kickoff_utc": "2026-11-07T18:00:00+00:00",
+      "locked_home_spread": -7.5,
+      "locked_line_id": 19,
+      "non_model_context": {
+        "coaching": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "injury": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "market": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "qb": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "travel_rest": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "weather": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW"
+      },
+      "raw_point_in_time_package": {
+        "away_days_rest": 7,
+        "away_stats": {
+          "as_of_season": 2026,
+          "as_of_week": 9,
+          "defense_epa_play": 0.0054845365910383,
+          "defense_success_rate": 0.38687392055267705,
+          "havoc_rate": 0.168,
+          "is_prior_season_fallback": false,
+          "offense_epa_play": -0.15277064471380833,
+          "offense_success_rate": 0.3181818181818182
+        },
+        "home_days_rest": 7,
+        "home_stats": {
+          "as_of_season": 2026,
+          "as_of_week": 9,
+          "defense_epa_play": 0.13676914867843804,
+          "defense_success_rate": 0.44756554307116103,
+          "havoc_rate": 0.146,
+          "is_prior_season_fallback": false,
+          "offense_epa_play": 0.1270303298047977,
+          "offense_success_rate": 0.40551181102362205
+        }
+      },
+      "totals": {
+        "calibration_slope": 1.0,
+        "feature_snapshot_sha256": "66143111cac134592de729703c8bfc649d161fee9c0e9f28592cb93aecebbe41",
+        "features": [
+          0.1270303298047977,
+          0.13676914867843804,
+          -0.15277064471380833,
+          0.0054845365910383
+        ],
+        "locked_total": 44.5,
+        "prediction_generated_at": "2026-11-05T01:07:02.603615+00:00",
+        "prediction_id": 19,
+        "projected_away_points": 17.338739082497046,
+        "projected_home_points": 26.81729809398284,
+        "projected_total": 44.156037176479884,
+        "raw_over_probability_normal_assumption": 0.4918002054667874,
+        "residual_uncertainty_points": 16.733547423270483,
+        "selected_direction": "under",
+        "shadow_selected_score_not_empirically_calibrated": 0.5081997945332126,
+        "z_score": -0.020555284233502343
+      }
+    },
+    {
+      "ats": {
+        "coefficients": [
+          35.089014249343435
+        ],
+        "epa_differential": -0.07177025000507167,
+        "governed_selected_side": "home",
+        "governed_uncertainty_points": null,
+        "intercept": 3.806602472343407,
+        "prediction_generated_at": "2026-11-05T01:07:02.603615+00:00",
+        "prediction_id": 20,
+        "projected_home_margin": 1.288255147236506,
+        "selected_margin_advantage_points": 5.788255147236506,
+        "shadow_score_not_empirically_calibrated": 0.5289412757361825,
+        "shadow_score_transform": "min(0.60,0.50+0.005*selected_margin_advantage_points)"
+      },
+      "away": "Oklahoma State",
+      "game_id": 401856854,
+      "home": "Kansas State",
+      "kickoff_utc": "2026-11-07T18:00:00+00:00",
+      "locked_home_spread": 4.5,
+      "locked_line_id": 20,
+      "non_model_context": {
+        "coaching": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "injury": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "market": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "qb": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "travel_rest": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "weather": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW"
+      },
+      "raw_point_in_time_package": {
+        "away_days_rest": 6,
+        "away_stats": {
+          "as_of_season": 2026,
+          "as_of_week": 9,
+          "defense_epa_play": 0.1417011564146476,
+          "defense_success_rate": 0.4249512670565302,
+          "havoc_rate": 0.158,
+          "is_prior_season_fallback": false,
+          "offense_epa_play": 0.22828392321351718,
+          "offense_success_rate": 0.5018248175182481
+        },
+        "home_days_rest": 7,
+        "home_stats": {
+          "as_of_season": 2026,
+          "as_of_week": 9,
+          "defense_epa_play": 0.14899559587040842,
+          "defense_success_rate": 0.37333333333333335,
+          "havoc_rate": 0.193,
+          "is_prior_season_fallback": false,
+          "offense_epa_play": 0.16380811266420633,
+          "offense_success_rate": 0.451171875
+        }
+      },
+      "totals": {
+        "calibration_slope": 1.0,
+        "feature_snapshot_sha256": "22fe61999073ce8c2f94073d611680c3d0a31c04abeafe57fbdc298322718aba",
+        "features": [
+          0.16380811266420633,
+          0.14899559587040842,
+          0.22828392321351718,
+          0.1417011564146476
+        ],
+        "locked_total": 62.5,
+        "prediction_generated_at": "2026-11-05T01:07:02.603615+00:00",
+        "prediction_id": 20,
+        "projected_away_points": 26.26577632131185,
+        "projected_home_points": 27.555396167912157,
+        "projected_total": 53.82117248922401,
+        "raw_over_probability_normal_assumption": 0.3020029772527113,
+        "residual_uncertainty_points": 16.733547423270483,
+        "selected_direction": "under",
+        "shadow_selected_score_not_empirically_calibrated": 0.6979970227472887,
+        "z_score": -0.5186483948231317
+      }
+    },
+    {
+      "ats": {
+        "coefficients": [
+          35.089014249343435
+        ],
+        "epa_differential": -0.10168139357695233,
+        "governed_selected_side": "away",
+        "governed_uncertainty_points": null,
+        "intercept": 3.806602472343407,
+        "prediction_generated_at": "2026-11-05T01:07:02.603615+00:00",
+        "prediction_id": 21,
+        "projected_home_margin": 0.23870260422862843,
+        "selected_margin_advantage_points": 4.261297395771372,
+        "shadow_score_not_empirically_calibrated": 0.5213064869788568,
+        "shadow_score_transform": "min(0.60,0.50+0.005*selected_margin_advantage_points)"
+      },
+      "away": "Georgia State",
+      "game_id": 401869927,
+      "home": "App State",
+      "kickoff_utc": "2026-11-07T19:30:00+00:00",
+      "locked_home_spread": -4.5,
+      "locked_line_id": 21,
+      "non_model_context": {
+        "coaching": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "injury": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "market": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "qb": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "travel_rest": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "weather": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW"
+      },
+      "raw_point_in_time_package": {
+        "away_days_rest": 7,
+        "away_stats": {
+          "as_of_season": 2026,
+          "as_of_week": 9,
+          "defense_epa_play": 0.09277856959947905,
+          "defense_success_rate": 0.39565217391304347,
+          "havoc_rate": 0.18,
+          "is_prior_season_fallback": false,
+          "offense_epa_play": 0.20374049900460034,
+          "offense_success_rate": 0.45322245322245325
+        },
+        "home_days_rest": 6,
+        "home_stats": {
+          "as_of_season": 2026,
+          "as_of_week": 9,
+          "defense_epa_play": 0.0866842820709723,
+          "defense_success_rate": 0.4155844155844156,
+          "havoc_rate": 0.153,
+          "is_prior_season_fallback": false,
+          "offense_epa_play": 0.09596481789914126,
+          "offense_success_rate": 0.4085603112840467
+        }
+      },
+      "totals": {
+        "calibration_slope": 1.0,
+        "feature_snapshot_sha256": "885955093cc9f3faf103bde8e8719a0fce4aa3647b3008d10d64bd8a916d9dfa",
+        "features": [
+          0.09596481789914126,
+          0.0866842820709723,
+          0.20374049900460034,
+          0.09277856959947905
+        ],
+        "locked_total": 55.5,
+        "prediction_generated_at": "2026-11-05T01:07:02.603615+00:00",
+        "prediction_id": 21,
+        "projected_away_points": 24.749022347937668,
+        "projected_home_points": 25.33841558184042,
+        "projected_total": 50.08743792977809,
+        "raw_over_probability_normal_assumption": 0.37317505850449917,
+        "residual_uncertainty_points": 16.733547423270483,
+        "selected_direction": "under",
+        "shadow_selected_score_not_empirically_calibrated": 0.6268249414955008,
+        "z_score": -0.3234557463108473
+      }
+    },
+    {
+      "ats": {
+        "coefficients": [
+          35.089014249343435
+        ],
+        "epa_differential": 0.25181644574860873,
+        "governed_selected_side": "away",
+        "governed_uncertainty_points": null,
+        "intercept": 3.806602472343407,
+        "prediction_generated_at": "2026-11-05T01:07:02.603615+00:00",
+        "prediction_id": 22,
+        "projected_home_margin": 12.642593325435357,
+        "selected_margin_advantage_points": 1.8574066745646434,
+        "shadow_score_not_empirically_calibrated": 0.5092870333728232,
+        "shadow_score_transform": "min(0.60,0.50+0.005*selected_margin_advantage_points)"
+      },
+      "away": "UL Monroe",
+      "game_id": 401869936,
+      "home": "Arkansas State",
+      "kickoff_utc": "2026-11-07T20:00:00+00:00",
+      "locked_home_spread": -14.5,
+      "locked_line_id": 22,
+      "non_model_context": {
+        "coaching": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "injury": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "market": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "qb": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "travel_rest": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "weather": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW"
+      },
+      "raw_point_in_time_package": {
+        "away_days_rest": 7,
+        "away_stats": {
+          "as_of_season": 2026,
+          "as_of_week": 9,
+          "defense_epa_play": 0.20090235100362108,
+          "defense_success_rate": 0.44140625,
+          "havoc_rate": 0.124,
+          "is_prior_season_fallback": false,
+          "offense_epa_play": -0.05193539958783688,
+          "offense_success_rate": 0.40670859538784065
+        },
+        "home_days_rest": 13,
+        "home_stats": {
+          "as_of_season": 2026,
+          "as_of_week": 9,
+          "defense_epa_play": 0.1599970812896798,
+          "defense_success_rate": 0.4498977505112474,
+          "havoc_rate": 0.119,
+          "is_prior_season_fallback": false,
+          "offense_epa_play": 0.15897577644683059,
+          "offense_success_rate": 0.46611909650924027
+        }
+      },
+      "totals": {
+        "calibration_slope": 1.0,
+        "feature_snapshot_sha256": "5839c4006cf24f8bf363f32100b5b1289984809ec43e5585a3ace26976042dca",
+        "features": [
+          0.15897577644683059,
+          0.1599970812896798,
+          -0.05193539958783688,
+          0.20090235100362108
+        ],
+        "locked_total": 53.5,
+        "prediction_generated_at": "2026-11-05T01:07:02.603615+00:00",
+        "prediction_id": 22,
+        "projected_away_points": 19.013368782187033,
+        "projected_home_points": 31.17718430567332,
+        "projected_total": 50.19055308786035,
+        "raw_over_probability_normal_assumption": 0.4216112648714534,
+        "residual_uncertainty_points": 16.733547423270483,
+        "selected_direction": "under",
+        "shadow_selected_score_not_empirically_calibrated": 0.5783887351285466,
+        "z_score": -0.19777318152738918
+      }
+    },
+    {
+      "ats": {
+        "coefficients": [
+          35.089014249343435
+        ],
+        "epa_differential": 0.03393064141006812,
+        "governed_selected_side": "away",
+        "governed_uncertainty_points": null,
+        "intercept": 3.806602472343407,
+        "prediction_generated_at": "2026-11-05T01:07:02.603615+00:00",
+        "prediction_id": 23,
+        "projected_home_margin": 4.997195232270649,
+        "selected_margin_advantage_points": 2.5028047677293506,
+        "shadow_score_not_empirically_calibrated": 0.5125140238386467,
+        "shadow_score_transform": "min(0.60,0.50+0.005*selected_margin_advantage_points)"
+      },
+      "away": "Texas A&M",
+      "game_id": 401856744,
+      "home": "South Carolina",
+      "kickoff_utc": "2026-11-07T20:00:00+00:00",
+      "locked_home_spread": -7.5,
+      "locked_line_id": 23,
+      "non_model_context": {
+        "coaching": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "injury": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "market": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "qb": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "travel_rest": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "weather": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW"
+      },
+      "raw_point_in_time_package": {
+        "away_days_rest": 14,
+        "away_stats": {
+          "as_of_season": 2026,
+          "as_of_week": 9,
+          "defense_epa_play": 0.04648568808637945,
+          "defense_success_rate": 0.39425587467362927,
+          "havoc_rate": 0.15,
+          "is_prior_season_fallback": false,
+          "offense_epa_play": 0.08892715326539626,
+          "offense_success_rate": 0.4246861924686193
+        },
+        "home_days_rest": 6,
+        "home_stats": {
+          "as_of_season": 2026,
+          "as_of_week": 9,
+          "defense_epa_play": 0.121140212224929,
+          "defense_success_rate": 0.4110169491525424,
+          "havoc_rate": 0.137,
+          "is_prior_season_fallback": false,
+          "offense_epa_play": 0.19751231881401393,
+          "offense_success_rate": 0.4437984496124031
+        }
+      },
+      "totals": {
+        "calibration_slope": 1.0,
+        "feature_snapshot_sha256": "b11741739dbee1b40783bdca9d08c314bd011eaefa77d88c3dc0fa6497bf41c3",
+        "features": [
+          0.19751231881401393,
+          0.121140212224929,
+          0.08892715326539626,
+          0.04648568808637945
+        ],
+        "locked_total": 51.5,
+        "prediction_generated_at": "2026-11-05T01:07:02.603615+00:00",
+        "prediction_id": 23,
+        "projected_away_points": 22.232232481229328,
+        "projected_home_points": 27.783161206332814,
+        "projected_total": 50.01539368756214,
+        "raw_over_probability_normal_assumption": 0.46465207662761576,
+        "residual_uncertainty_points": 16.733547423270483,
+        "selected_direction": "under",
+        "shadow_selected_score_not_empirically_calibrated": 0.5353479233723843,
+        "z_score": -0.08872035766745406
+      }
+    },
+    {
+      "ats": {
+        "coefficients": [
+          35.089014249343435
+        ],
+        "epa_differential": -0.08899729691559763,
+        "governed_selected_side": "home",
+        "governed_uncertainty_points": null,
+        "intercept": 3.806602472343407,
+        "prediction_generated_at": "2026-11-05T01:07:02.603615+00:00",
+        "prediction_id": 24,
+        "projected_home_margin": 0.683775052718953,
+        "selected_margin_advantage_points": 3.183775052718953,
+        "shadow_score_not_empirically_calibrated": 0.5159188752635948,
+        "shadow_score_transform": "min(0.60,0.50+0.005*selected_margin_advantage_points)"
+      },
+      "away": "Delaware",
+      "game_id": 401871073,
+      "home": "Kennesaw State",
+      "kickoff_utc": "2026-11-07T20:00:00+00:00",
+      "locked_home_spread": 2.5,
+      "locked_line_id": 24,
+      "non_model_context": {
+        "coaching": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "injury": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "market": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "qb": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "travel_rest": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "weather": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW"
+      },
+      "raw_point_in_time_package": {
+        "away_days_rest": 10,
+        "away_stats": {
+          "as_of_season": 2026,
+          "as_of_week": 9,
+          "defense_epa_play": 0.14008059678597712,
+          "defense_success_rate": 0.45052631578947366,
+          "havoc_rate": 0.165,
+          "is_prior_season_fallback": false,
+          "offense_epa_play": 0.19350706220764285,
+          "offense_success_rate": 0.4351648351648352
+        },
+        "home_days_rest": 9,
+        "home_stats": {
+          "as_of_season": 2026,
+          "as_of_week": 9,
+          "defense_epa_play": 0.10263258583716979,
+          "defense_success_rate": 0.42658730158730157,
+          "havoc_rate": 0.131,
+          "is_prior_season_fallback": false,
+          "offense_epa_play": 0.0670617543432379,
+          "offense_success_rate": 0.4214123006833713
+        }
+      },
+      "totals": {
+        "calibration_slope": 1.0,
+        "feature_snapshot_sha256": "87aed940bac85957f8655c94fd79a77c91ea9b8fbab02a6772553d03aecbbe6b",
+        "features": [
+          0.0670617543432379,
+          0.10263258583716979,
+          0.19350706220764285,
+          0.14008059678597712
+        ],
+        "locked_total": 56.5,
+        "prediction_generated_at": "2026-11-05T01:07:02.603615+00:00",
+        "prediction_id": 24,
+        "projected_away_points": 24.87218829945765,
+        "projected_home_points": 25.564627515242766,
+        "projected_total": 50.43681581470042,
+        "raw_over_probability_normal_assumption": 0.3585500878319721,
+        "residual_uncertainty_points": 16.733547423270483,
+        "selected_direction": "under",
+        "shadow_selected_score_not_empirically_calibrated": 0.6414499121680279,
+        "z_score": -0.3623370485607747
+      }
+    },
+    {
+      "ats": {
+        "coefficients": [
+          35.089014249343435
+        ],
+        "epa_differential": 0.0817196585284373,
+        "governed_selected_side": "home",
+        "governed_uncertainty_points": null,
+        "intercept": 3.806602472343407,
+        "prediction_generated_at": "2026-11-05T01:07:02.603615+00:00",
+        "prediction_id": 25,
+        "projected_home_margin": 6.674064734899223,
+        "selected_margin_advantage_points": 8.174064734899222,
+        "shadow_score_not_empirically_calibrated": 0.5408703236744961,
+        "shadow_score_transform": "min(0.60,0.50+0.005*selected_margin_advantage_points)"
+      },
+      "away": "Western Kentucky",
+      "game_id": 401871076,
+      "home": "Middle Tennessee",
+      "kickoff_utc": "2026-11-07T20:30:00+00:00",
+      "locked_home_spread": 1.5,
+      "locked_line_id": 25,
+      "non_model_context": {
+        "coaching": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "injury": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "market": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "qb": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "travel_rest": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "weather": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW"
+      },
+      "raw_point_in_time_package": {
+        "away_days_rest": 10,
+        "away_stats": {
+          "as_of_season": 2026,
+          "as_of_week": 9,
+          "defense_epa_play": 0.14791074753785927,
+          "defense_success_rate": 0.41353383458646614,
+          "havoc_rate": 0.149,
+          "is_prior_season_fallback": false,
+          "offense_epa_play": 0.017390212628787694,
+          "offense_success_rate": 0.38336713995943206
+        },
+        "home_days_rest": 9,
+        "home_stats": {
+          "as_of_season": 2026,
+          "as_of_week": 9,
+          "defense_epa_play": 0.1425565869405221,
+          "defense_success_rate": 0.45278969957081544,
+          "havoc_rate": 0.106,
+          "is_prior_season_fallback": false,
+          "offense_epa_play": 0.09375571055988782,
+          "offense_success_rate": 0.4028056112224449
+        }
+      },
+      "totals": {
+        "calibration_slope": 1.0,
+        "feature_snapshot_sha256": "814fd5d1ca341911183dcc1323c6f4e5366f872b45da2c1386a72507267b820f",
+        "features": [
+          0.09375571055988782,
+          0.1425565869405221,
+          0.017390212628787694,
+          0.14791074753785927
+        ],
+        "locked_total": 53.5,
+        "prediction_generated_at": "2026-11-05T01:07:02.603615+00:00",
+        "prediction_id": 25,
+        "projected_away_points": 21.208378775756895,
+        "projected_home_points": 27.658115523887748,
+        "projected_total": 48.86649429964464,
+        "raw_over_probability_normal_assumption": 0.39092875790561143,
+        "residual_uncertainty_points": 16.733547423270483,
+        "selected_direction": "under",
+        "shadow_selected_score_not_empirically_calibrated": 0.6090712420943886,
+        "z_score": -0.27689918838797917
+      }
+    },
+    {
+      "ats": {
+        "coefficients": [
+          35.089014249343435
+        ],
+        "epa_differential": 0.0563770910330135,
+        "governed_selected_side": "away",
+        "governed_uncertainty_points": null,
+        "intercept": 3.806602472343407,
+        "prediction_generated_at": "2026-11-05T01:07:02.603615+00:00",
+        "prediction_id": 26,
+        "projected_home_margin": 5.7848190229373495,
+        "selected_margin_advantage_points": 4.7151809770626505,
+        "shadow_score_not_empirically_calibrated": 0.5235759048853132,
+        "shadow_score_transform": "min(0.60,0.50+0.005*selected_margin_advantage_points)"
+      },
+      "away": "Cincinnati",
+      "game_id": 401856851,
+      "home": "Houston",
+      "kickoff_utc": "2026-11-07T20:30:00+00:00",
+      "locked_home_spread": -10.5,
+      "locked_line_id": 26,
+      "non_model_context": {
+        "coaching": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "injury": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "market": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "qb": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "travel_rest": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "weather": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW"
+      },
+      "raw_point_in_time_package": {
+        "away_days_rest": 7,
+        "away_stats": {
+          "as_of_season": 2026,
+          "as_of_week": 9,
+          "defense_epa_play": 0.19792166961340102,
+          "defense_success_rate": 0.4635108481262327,
+          "havoc_rate": 0.164,
+          "is_prior_season_fallback": false,
+          "offense_epa_play": 0.2753900842136369,
+          "offense_success_rate": 0.4656652360515021
+        },
+        "home_days_rest": 13,
+        "home_stats": {
+          "as_of_season": 2026,
+          "as_of_week": 9,
+          "defense_epa_play": 0.15470502663338,
+          "defense_success_rate": 0.43612334801762115,
+          "havoc_rate": 0.19,
+          "is_prior_season_fallback": false,
+          "offense_epa_play": 0.2885505322666294,
+          "offense_success_rate": 0.5188679245283019
+        }
+      },
+      "totals": {
+        "calibration_slope": 1.0,
+        "feature_snapshot_sha256": "2851bb12c7222bdd5bdd553f9949077932a0a2eac60f614cdf1b50b598540735",
+        "features": [
+          0.2885505322666294,
+          0.15470502663338,
+          0.2753900842136369,
+          0.19792166961340102
+        ],
+        "locked_total": 62.5,
+        "prediction_generated_at": "2026-11-05T01:07:02.603615+00:00",
+        "prediction_id": 26,
+        "projected_away_points": 26.20058652964092,
+        "projected_home_points": 31.91453757099704,
+        "projected_total": 58.115124100637956,
+        "raw_over_probability_normal_assumption": 0.3966449072215512,
+        "residual_uncertainty_points": 16.733547423270483,
+        "selected_direction": "under",
+        "shadow_selected_score_not_empirically_calibrated": 0.6033550927784488,
+        "z_score": -0.2620410238455608
+      }
+    },
+    {
+      "ats": {
+        "coefficients": [
+          35.089014249343435
+        ],
+        "epa_differential": 0.1770118711171425,
+        "governed_selected_side": "away",
+        "governed_uncertainty_points": null,
+        "intercept": 3.806602472343407,
+        "prediction_generated_at": "2026-11-05T01:07:02.603615+00:00",
+        "prediction_id": 27,
+        "projected_home_margin": 10.017774540275763,
+        "selected_margin_advantage_points": 0.482225459724237,
+        "shadow_score_not_empirically_calibrated": 0.5024111272986211,
+        "shadow_score_transform": "min(0.60,0.50+0.005*selected_margin_advantage_points)"
+      },
+      "away": "Marshall",
+      "game_id": 401869951,
+      "home": "Georgia Southern",
+      "kickoff_utc": "2026-11-07T20:30:00+00:00",
+      "locked_home_spread": -10.5,
+      "locked_line_id": 27,
+      "non_model_context": {
+        "coaching": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "injury": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "market": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "qb": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "travel_rest": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "weather": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW"
+      },
+      "raw_point_in_time_package": {
+        "away_days_rest": 7,
+        "away_stats": {
+          "as_of_season": 2026,
+          "as_of_week": 9,
+          "defense_epa_play": 0.19191276519372638,
+          "defense_success_rate": 0.4280155642023346,
+          "havoc_rate": 0.157,
+          "is_prior_season_fallback": false,
+          "offense_epa_play": 0.11299753499273267,
+          "offense_success_rate": 0.43897996357012753
+        },
+        "home_days_rest": 6,
+        "home_stats": {
+          "as_of_season": 2026,
+          "as_of_week": 9,
+          "defense_epa_play": 0.054065044253261134,
+          "defense_success_rate": 0.3893617021276596,
+          "havoc_rate": 0.196,
+          "is_prior_season_fallback": false,
+          "offense_epa_play": 0.15216168516940992,
+          "offense_success_rate": 0.4411764705882353
+        }
+      },
+      "totals": {
+        "calibration_slope": 1.0,
+        "feature_snapshot_sha256": "14611774782be5b4e0537e00432dd9e4b3caaf955d8c67da7183c52eb032a084",
+        "features": [
+          0.15216168516940992,
+          0.054065044253261134,
+          0.11299753499273267,
+          0.19191276519372638
+        ],
+        "locked_total": 54.5,
+        "prediction_generated_at": "2026-11-05T01:07:02.603615+00:00",
+        "prediction_id": 27,
+        "projected_away_points": 20.328576674830618,
+        "projected_home_points": 30.377472672015287,
+        "projected_total": 50.7060493468459,
+        "raw_over_probability_normal_assumption": 0.41031793068023026,
+        "residual_uncertainty_points": 16.733547423270483,
+        "selected_direction": "under",
+        "shadow_selected_score_not_empirically_calibrated": 0.5896820693197697,
+        "z_score": -0.22672721791662936
+      }
+    },
+    {
+      "ats": {
+        "coefficients": [
+          35.089014249343435
+        ],
+        "epa_differential": 0.2072196700591304,
+        "governed_selected_side": "home",
+        "governed_uncertainty_points": null,
+        "intercept": 3.806602472343407,
+        "prediction_generated_at": "2026-11-05T01:07:02.603615+00:00",
+        "prediction_id": 28,
+        "projected_home_margin": 11.077736427792479,
+        "selected_margin_advantage_points": 3.5777364277924786,
+        "shadow_score_not_empirically_calibrated": 0.5178886821389624,
+        "shadow_score_transform": "min(0.60,0.50+0.005*selected_margin_advantage_points)"
+      },
+      "away": "Oregon",
+      "game_id": 401858514,
+      "home": "Ohio State",
+      "kickoff_utc": "2026-11-07T20:30:00+00:00",
+      "locked_home_spread": -7.5,
+      "locked_line_id": 28,
+      "non_model_context": {
+        "coaching": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "injury": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "market": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "qb": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "travel_rest": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "weather": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW"
+      },
+      "raw_point_in_time_package": {
+        "away_days_rest": 7,
+        "away_stats": {
+          "as_of_season": 2026,
+          "as_of_week": 9,
+          "defense_epa_play": 0.038176297956623216,
+          "defense_success_rate": 0.3798449612403101,
+          "havoc_rate": 0.159,
+          "is_prior_season_fallback": false,
+          "offense_epa_play": 0.10697886693158028,
+          "offense_success_rate": 0.4094488188976378
+        },
+        "home_days_rest": 6,
+        "home_stats": {
+          "as_of_season": 2026,
+          "as_of_week": 9,
+          "defense_epa_play": -0.02653364293194098,
+          "defense_success_rate": 0.3574766355140187,
+          "havoc_rate": 0.184,
+          "is_prior_season_fallback": false,
+          "offense_epa_play": 0.2494885961021465,
+          "offense_success_rate": 0.4940944881889764
+        }
+      },
+      "totals": {
+        "calibration_slope": 1.0,
+        "feature_snapshot_sha256": "a9aee570e7cad738b8e532d60018bbfb504b3debe83b336fe34df2d1eca06f54",
+        "features": [
+          0.2494885961021465,
+          -0.02653364293194098,
+          0.10697886693158028,
+          0.038176297956623216
+        ],
+        "locked_total": 46.5,
+        "prediction_generated_at": "2026-11-05T01:07:02.603615+00:00",
+        "prediction_id": 28,
+        "projected_away_points": 18.06095132753376,
+        "projected_home_points": 30.373731628720627,
+        "projected_total": 48.43468295625439,
+        "raw_over_probability_normal_assumption": 0.5460219649575906,
+        "residual_uncertainty_points": 16.733547423270483,
+        "selected_direction": "over",
+        "shadow_selected_score_not_empirically_calibrated": 0.5460219649575906,
+        "z_score": 0.11561702413224871
+      }
+    },
+    {
+      "ats": {
+        "coefficients": [
+          35.089014249343435
+        ],
+        "epa_differential": 0.25516676986667874,
+        "governed_selected_side": "home",
+        "governed_uncertainty_points": null,
+        "intercept": 3.806602472343407,
+        "prediction_generated_at": "2026-11-05T01:07:02.603615+00:00",
+        "prediction_id": 29,
+        "projected_home_margin": 12.760152896154235,
+        "selected_margin_advantage_points": 3.260152896154235,
+        "shadow_score_not_empirically_calibrated": 0.5163007644807712,
+        "shadow_score_transform": "min(0.60,0.50+0.005*selected_margin_advantage_points)"
+      },
+      "away": "Charlotte",
+      "game_id": 401862819,
+      "home": "UAB",
+      "kickoff_utc": "2026-11-07T20:30:00+00:00",
+      "locked_home_spread": -9.5,
+      "locked_line_id": 29,
+      "non_model_context": {
+        "coaching": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "injury": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "market": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "qb": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "travel_rest": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "weather": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW"
+      },
+      "raw_point_in_time_package": {
+        "away_days_rest": 7,
+        "away_stats": {
+          "as_of_season": 2026,
+          "as_of_week": 9,
+          "defense_epa_play": 0.25539102211996895,
+          "defense_success_rate": 0.49101796407185627,
+          "havoc_rate": 0.105,
+          "is_prior_season_fallback": false,
+          "offense_epa_play": 0.01925179146870141,
+          "offense_success_rate": 0.3826879271070615
+        },
+        "home_days_rest": 7,
+        "home_stats": {
+          "as_of_season": 2026,
+          "as_of_week": 9,
+          "defense_epa_play": 0.009342137566372545,
+          "defense_success_rate": 0.4246031746031746,
+          "havoc_rate": 0.15,
+          "is_prior_season_fallback": false,
+          "offense_epa_play": 0.02836967678178375,
+          "offense_success_rate": 0.39655172413793105
+        }
+      },
+      "totals": {
+        "calibration_slope": 1.0,
+        "feature_snapshot_sha256": "048d053d6aeb500aad41b930d05a27a647077ed93ccfd753f31336811e781ad6",
+        "features": [
+          0.02836967678178375,
+          0.009342137566372545,
+          0.01925179146870141,
+          0.25539102211996895
+        ],
+        "locked_total": 47.5,
+        "prediction_generated_at": "2026-11-05T01:07:02.603615+00:00",
+        "prediction_id": 29,
+        "projected_away_points": 17.256577694539477,
+        "projected_home_points": 29.657486183482018,
+        "projected_total": 46.914063878021494,
+        "raw_over_probability_normal_assumption": 0.48603362885795054,
+        "residual_uncertainty_points": 16.733547423270483,
+        "selected_direction": "under",
+        "shadow_selected_score_not_empirically_calibrated": 0.5139663711420495,
+        "z_score": -0.03501565490911237
+      }
+    },
+    {
+      "ats": {
+        "coefficients": [
+          35.089014249343435
+        ],
+        "epa_differential": 0.06272016581369971,
+        "governed_selected_side": "home",
+        "governed_uncertainty_points": null,
+        "intercept": 3.806602472343407,
+        "prediction_generated_at": "2026-11-05T01:07:02.603615+00:00",
+        "prediction_id": 30,
+        "projected_home_margin": 6.007391264301499,
+        "selected_margin_advantage_points": 0.5073912643014991,
+        "shadow_score_not_empirically_calibrated": 0.5025369563215075,
+        "shadow_score_transform": "min(0.60,0.50+0.005*selected_margin_advantage_points)"
+      },
+      "away": "Alabama",
+      "game_id": 401856740,
+      "home": "LSU",
+      "kickoff_utc": "2026-11-07T20:30:00+00:00",
+      "locked_home_spread": -5.5,
+      "locked_line_id": 30,
+      "non_model_context": {
+        "coaching": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "injury": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "market": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "qb": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "travel_rest": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "weather": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW"
+      },
+      "raw_point_in_time_package": {
+        "away_days_rest": 14,
+        "away_stats": {
+          "as_of_season": 2026,
+          "as_of_week": 9,
+          "defense_epa_play": -0.011380404182024037,
+          "defense_success_rate": 0.37656903765690375,
+          "havoc_rate": 0.179,
+          "is_prior_season_fallback": false,
+          "offense_epa_play": 0.2573404558823625,
+          "offense_success_rate": 0.47071583514099785
+        },
+        "home_days_rest": 14,
+        "home_stats": {
+          "as_of_season": 2026,
+          "as_of_week": 9,
+          "defense_epa_play": -0.050140649379275315,
+          "defense_success_rate": 0.32891246684350134,
+          "havoc_rate": 0.222,
+          "is_prior_season_fallback": false,
+          "offense_epa_play": 0.2813003764988109,
+          "offense_success_rate": 0.5199203187250996
+        }
+      },
+      "totals": {
+        "calibration_slope": 1.0,
+        "feature_snapshot_sha256": "2428bbc8c5328a4743e2dbb8ce12dbf6c8d8864a6a10d47e4a3f949951a24584",
+        "features": [
+          0.2813003764988109,
+          -0.050140649379275315,
+          0.2573404558823625,
+          -0.011380404182024037
+        ],
+        "locked_total": 52.5,
+        "prediction_generated_at": "2026-11-05T01:07:02.603615+00:00",
+        "prediction_id": 30,
+        "projected_away_points": 21.313965313974784,
+        "projected_home_points": 29.01359206959816,
+        "projected_total": 50.327557383572945,
+        "raw_over_probability_normal_assumption": 0.44835220937654024,
+        "residual_uncertainty_points": 16.733547423270483,
+        "selected_direction": "under",
+        "shadow_selected_score_not_empirically_calibrated": 0.5516477906234598,
+        "z_score": -0.1298255869766115
+      }
+    },
+    {
+      "ats": {
+        "coefficients": [
+          35.089014249343435
+        ],
+        "epa_differential": 0.0522173237892575,
+        "governed_selected_side": "home",
+        "governed_uncertainty_points": null,
+        "intercept": 3.806602472343407,
+        "prediction_generated_at": "2026-11-05T01:07:02.603615+00:00",
+        "prediction_id": 31,
+        "projected_home_margin": 5.638856890847244,
+        "selected_margin_advantage_points": 4.138856890847244,
+        "shadow_score_not_empirically_calibrated": 0.5206942844542363,
+        "shadow_score_transform": "min(0.60,0.50+0.005*selected_margin_advantage_points)"
+      },
+      "away": "Penn State",
+      "game_id": 401858516,
+      "home": "Washington",
+      "kickoff_utc": "2026-11-07T20:30:00+00:00",
+      "locked_home_spread": -1.5,
+      "locked_line_id": 31,
+      "non_model_context": {
+        "coaching": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "injury": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "market": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "qb": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "travel_rest": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "weather": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW"
+      },
+      "raw_point_in_time_package": {
+        "away_days_rest": 7,
+        "away_stats": {
+          "as_of_season": 2026,
+          "as_of_week": 9,
+          "defense_epa_play": 0.06819059350541985,
+          "defense_success_rate": 0.38461538461538464,
+          "havoc_rate": 0.18,
+          "is_prior_season_fallback": false,
+          "offense_epa_play": 0.13985760852736143,
+          "offense_success_rate": 0.4127310061601643
+        },
+        "home_days_rest": 6,
+        "home_stats": {
+          "as_of_season": 2026,
+          "as_of_week": 9,
+          "defense_epa_play": -0.013102802516105221,
+          "defense_success_rate": 0.39960629921259844,
+          "havoc_rate": 0.187,
+          "is_prior_season_fallback": false,
+          "offense_epa_play": 0.11078153629509385,
+          "offense_success_rate": 0.41935483870967744
+        }
+      },
+      "totals": {
+        "calibration_slope": 1.0,
+        "feature_snapshot_sha256": "e9d3a5489841a75e48ce848028d086922e894cce1bdb4bf88eafabd4a3418f3a",
+        "features": [
+          0.11078153629509385,
+          -0.013102802516105221,
+          0.13985760852736143,
+          0.06819059350541985
+        ],
+        "locked_total": 44.5,
+        "prediction_generated_at": "2026-11-05T01:07:02.603615+00:00",
+        "prediction_id": 31,
+        "projected_away_points": 20.273310445194586,
+        "projected_home_points": 26.744885363322048,
+        "projected_total": 47.01819580851664,
+        "raw_over_probability_normal_assumption": 0.559810137576939,
+        "residual_uncertainty_points": 16.733547423270483,
+        "selected_direction": "over",
+        "shadow_selected_score_not_empirically_calibrated": 0.559810137576939,
+        "z_score": 0.1504878639788424
+      }
+    },
+    {
+      "ats": {
+        "coefficients": [
+          35.089014249343435
+        ],
+        "epa_differential": 0.005499846697769595,
+        "governed_selected_side": "away",
+        "governed_uncertainty_points": null,
+        "intercept": 3.806602472343407,
+        "prediction_generated_at": "2026-11-05T01:07:02.603615+00:00",
+        "prediction_id": 32,
+        "projected_home_margin": 3.9995866714906487,
+        "selected_margin_advantage_points": 3.5004133285093513,
+        "shadow_score_not_empirically_calibrated": 0.5175020666425467,
+        "shadow_score_transform": "min(0.60,0.50+0.005*selected_margin_advantage_points)"
+      },
+      "away": "Temple",
+      "game_id": 401862820,
+      "home": "Navy",
+      "kickoff_utc": "2026-11-07T20:30:00+00:00",
+      "locked_home_spread": -7.5,
+      "locked_line_id": 32,
+      "non_model_context": {
+        "coaching": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "injury": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "market": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "qb": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "travel_rest": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "weather": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW"
+      },
+      "raw_point_in_time_package": {
+        "away_days_rest": 7,
+        "away_stats": {
+          "as_of_season": 2026,
+          "as_of_week": 9,
+          "defense_epa_play": 0.18846735634970194,
+          "defense_success_rate": 0.4608208955223881,
+          "havoc_rate": 0.094,
+          "is_prior_season_fallback": false,
+          "offense_epa_play": 0.1751982757913675,
+          "offense_success_rate": 0.4311111111111111
+        },
+        "home_days_rest": 7,
+        "home_stats": {
+          "as_of_season": 2026,
+          "as_of_week": 9,
+          "defense_epa_play": 0.20655084059918252,
+          "defense_success_rate": 0.42190669371196754,
+          "havoc_rate": 0.123,
+          "is_prior_season_fallback": false,
+          "offense_epa_play": 0.1987816067386177,
+          "offense_success_rate": 0.47410358565737054
+        }
+      },
+      "totals": {
+        "calibration_slope": 1.0,
+        "feature_snapshot_sha256": "3d2a84cc4c3aee53d2a6d1df06b460b56a8e5c0179f83c115471a97d0ebdb162",
+        "features": [
+          0.1987816067386177,
+          0.20655084059918252,
+          0.1751982757913675,
+          0.18846735634970194
+        ],
+        "locked_total": 54.5,
+        "prediction_generated_at": "2026-11-05T01:07:02.603615+00:00",
+        "prediction_id": 32,
+        "projected_away_points": 25.942565198496993,
+        "projected_home_points": 29.530335451316958,
+        "projected_total": 55.47290064981395,
+        "raw_over_probability_normal_assumption": 0.5231817339944447,
+        "residual_uncertainty_points": 16.733547423270483,
+        "selected_direction": "over",
+        "shadow_selected_score_not_empirically_calibrated": 0.5231817339944447,
+        "z_score": 0.05814072923120822
+      }
+    },
+    {
+      "ats": {
+        "coefficients": [
+          35.089014249343435
+        ],
+        "epa_differential": 0.02718097738849007,
+        "governed_selected_side": "home",
+        "governed_uncertainty_points": null,
+        "intercept": 3.806602472343407,
+        "prediction_generated_at": "2026-11-05T01:07:02.603615+00:00",
+        "prediction_id": 33,
+        "projected_home_margin": 4.760356175239217,
+        "selected_margin_advantage_points": 2.2603561752392167,
+        "shadow_score_not_empirically_calibrated": 0.511301780876196,
+        "shadow_score_transform": "min(0.60,0.50+0.005*selected_margin_advantage_points)"
+      },
+      "away": "UCF",
+      "game_id": 401856850,
+      "home": "Kansas",
+      "kickoff_utc": "2026-11-07T20:45:00+00:00",
+      "locked_home_spread": -2.5,
+      "locked_line_id": 33,
+      "non_model_context": {
+        "coaching": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "injury": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "market": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "qb": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "travel_rest": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "weather": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW"
+      },
+      "raw_point_in_time_package": {
+        "away_days_rest": 7,
+        "away_stats": {
+          "as_of_season": 2026,
+          "as_of_week": 9,
+          "defense_epa_play": 0.06294907479986485,
+          "defense_success_rate": 0.41132075471698115,
+          "havoc_rate": 0.143,
+          "is_prior_season_fallback": false,
+          "offense_epa_play": 0.06508117168070128,
+          "offense_success_rate": 0.4110169491525424
+        },
+        "home_days_rest": 7,
+        "home_stats": {
+          "as_of_season": 2026,
+          "as_of_week": 9,
+          "defense_epa_play": 0.05453266252447114,
+          "defense_success_rate": 0.3804573804573805,
+          "havoc_rate": 0.17,
+          "is_prior_season_fallback": false,
+          "offense_epa_play": 0.08384573679379764,
+          "offense_success_rate": 0.40111940298507465
+        }
+      },
+      "totals": {
+        "calibration_slope": 1.0,
+        "feature_snapshot_sha256": "c79efd2ef542257f45e2bc3a1030ea21ce2a58c56e184a1ad8e66612a7cb3ba7",
+        "features": [
+          0.08384573679379764,
+          0.05453266252447114,
+          0.06508117168070128,
+          0.06294907479986485
+        ],
+        "locked_total": 47.5,
+        "prediction_generated_at": "2026-11-05T01:07:02.603615+00:00",
+        "prediction_id": 33,
+        "projected_away_points": 20.559832070045204,
+        "projected_home_points": 25.84636249773573,
+        "projected_total": 46.40619456778093,
+        "raw_over_probability_normal_assumption": 0.47394128828211857,
+        "residual_uncertainty_points": 16.733547423270483,
+        "selected_direction": "under",
+        "shadow_selected_score_not_empirically_calibrated": 0.5260587117178814,
+        "z_score": -0.0653660221919216
+      }
+    },
+    {
+      "ats": {
+        "coefficients": [
+          35.089014249343435
+        ],
+        "epa_differential": -0.18049727446132133,
+        "governed_selected_side": "home",
+        "governed_uncertainty_points": null,
+        "intercept": 3.806602472343407,
+        "prediction_generated_at": "2026-11-05T01:07:02.603615+00:00",
+        "prediction_id": 34,
+        "projected_home_margin": -2.5268689631975505,
+        "selected_margin_advantage_points": 1.9731310368024495,
+        "shadow_score_not_empirically_calibrated": 0.5098656551840123,
+        "shadow_score_transform": "min(0.60,0.50+0.005*selected_margin_advantage_points)"
+      },
+      "away": "Louisiana Tech",
+      "game_id": 401871098,
+      "home": "Troy",
+      "kickoff_utc": "2026-11-07T21:00:00+00:00",
+      "locked_home_spread": 4.5,
+      "locked_line_id": 34,
+      "non_model_context": {
+        "coaching": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "injury": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "market": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "qb": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "travel_rest": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "weather": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW"
+      },
+      "raw_point_in_time_package": {
+        "away_days_rest": 7,
+        "away_stats": {
+          "as_of_season": 2026,
+          "as_of_week": 9,
+          "defense_epa_play": -0.0002616405887818114,
+          "defense_success_rate": 0.37861915367483295,
+          "havoc_rate": 0.22,
+          "is_prior_season_fallback": false,
+          "offense_epa_play": 0.1774187564784539,
+          "offense_success_rate": 0.4270386266094421
+        },
+        "home_days_rest": 8,
+        "home_stats": {
+          "as_of_season": 2026,
+          "as_of_week": 9,
+          "defense_epa_play": 0.027146930202497515,
+          "defense_success_rate": 0.3972602739726027,
+          "havoc_rate": 0.162,
+          "is_prior_season_fallback": false,
+          "offense_epa_play": 0.0243300528084119,
+          "offense_success_rate": 0.3870967741935484
+        }
+      },
+      "totals": {
+        "calibration_slope": 1.0,
+        "feature_snapshot_sha256": "1168a16bfd41f1a55101380e239b178fc5a8952459408764f556186beed9d900",
+        "features": [
+          0.0243300528084119,
+          0.027146930202497515,
+          0.1774187564784539,
+          -0.0002616405887818114
+        ],
+        "locked_total": 47.5,
+        "prediction_generated_at": "2026-11-05T01:07:02.603615+00:00",
+        "prediction_id": 34,
+        "projected_away_points": 23.595820348701345,
+        "projected_home_points": 21.967416449216238,
+        "projected_total": 45.56323679791758,
+        "raw_over_probability_normal_assumption": 0.45392877090158845,
+        "residual_uncertainty_points": 16.733547423270483,
+        "selected_direction": "under",
+        "shadow_selected_score_not_empirically_calibrated": 0.5460712290984115,
+        "z_score": -0.11574134002148645
+      }
+    },
+    {
+      "ats": {
+        "coefficients": [
+          35.089014249343435
+        ],
+        "epa_differential": 0.09111038598399113,
+        "governed_selected_side": "home",
+        "governed_uncertainty_points": null,
+        "intercept": 3.806602472343407,
+        "prediction_generated_at": "2026-11-05T01:07:02.603615+00:00",
+        "prediction_id": 35,
+        "projected_home_margin": 7.003576104398852,
+        "selected_margin_advantage_points": 2.503576104398852,
+        "shadow_score_not_empirically_calibrated": 0.5125178805219942,
+        "shadow_score_transform": "min(0.60,0.50+0.005*selected_margin_advantage_points)"
+      },
+      "away": "Missouri State",
+      "game_id": 401871074,
+      "home": "Florida International",
+      "kickoff_utc": "2026-11-07T21:00:00+00:00",
+      "locked_home_spread": -4.5,
+      "locked_line_id": 35,
+      "non_model_context": {
+        "coaching": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "injury": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "market": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "qb": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "travel_rest": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "weather": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW"
+      },
+      "raw_point_in_time_package": {
+        "away_days_rest": 10,
+        "away_stats": {
+          "as_of_season": 2026,
+          "as_of_week": 9,
+          "defense_epa_play": 0.22535609719977068,
+          "defense_success_rate": 0.46875,
+          "havoc_rate": 0.147,
+          "is_prior_season_fallback": false,
+          "offense_epa_play": 0.09182170064311822,
+          "offense_success_rate": 0.41216216216216217
+        },
+        "home_days_rest": 7,
+        "home_stats": {
+          "as_of_season": 2026,
+          "as_of_week": 9,
+          "defense_epa_play": 0.051643899087835586,
+          "defense_success_rate": 0.39957716701902746,
+          "havoc_rate": 0.157,
+          "is_prior_season_fallback": false,
+          "offense_epa_play": 0.00921988851517427,
+          "offense_success_rate": 0.38996138996138996
+        }
+      },
+      "totals": {
+        "calibration_slope": 1.0,
+        "feature_snapshot_sha256": "0b88cd9c9ebb390f0b6598cb6853d9666b9b6dd9646d356caaebecece2a6dd58",
+        "features": [
+          0.00921988851517427,
+          0.051643899087835586,
+          0.09182170064311822,
+          0.22535609719977068
+        ],
+        "locked_total": 49.5,
+        "prediction_generated_at": "2026-11-05T01:07:02.603615+00:00",
+        "prediction_id": 35,
+        "projected_away_points": 20.706756817697528,
+        "projected_home_points": 27.34701221516694,
+        "projected_total": 48.053769032864466,
+        "raw_over_probability_normal_assumption": 0.4655634763951603,
+        "residual_uncertainty_points": 16.733547423270483,
+        "selected_direction": "under",
+        "shadow_selected_score_not_empirically_calibrated": 0.5344365236048396,
+        "z_score": -0.0864270396798431
+      }
+    },
+    {
+      "ats": {
+        "coefficients": [
+          35.089014249343435
+        ],
+        "epa_differential": 0.357274462732563,
+        "governed_selected_side": "away",
+        "governed_uncertainty_points": null,
+        "intercept": 3.806602472343407,
+        "prediction_generated_at": "2026-11-05T01:07:02.603615+00:00",
+        "prediction_id": 36,
+        "projected_home_margin": 16.34301118609283,
+        "selected_margin_advantage_points": 0.15698881390716934,
+        "shadow_score_not_empirically_calibrated": 0.5007849440695359,
+        "shadow_score_transform": "min(0.60,0.50+0.005*selected_margin_advantage_points)"
+      },
+      "away": "Rice",
+      "game_id": 401862821,
+      "home": "North Texas",
+      "kickoff_utc": "2026-11-07T21:00:00+00:00",
+      "locked_home_spread": -16.5,
+      "locked_line_id": 36,
+      "non_model_context": {
+        "coaching": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "injury": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "market": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "qb": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "travel_rest": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "weather": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW"
+      },
+      "raw_point_in_time_package": {
+        "away_days_rest": 14,
+        "away_stats": {
+          "as_of_season": 2026,
+          "as_of_week": 9,
+          "defense_epa_play": 0.15267959354982227,
+          "defense_success_rate": 0.42685370741482964,
+          "havoc_rate": 0.166,
+          "is_prior_season_fallback": false,
+          "offense_epa_play": 0.02657994892469331,
+          "offense_success_rate": 0.40585774058577406
+        },
+        "home_days_rest": 8,
+        "home_stats": {
+          "as_of_season": 2026,
+          "as_of_week": 9,
+          "defense_epa_play": 0.13274414643489826,
+          "defense_success_rate": 0.4400785854616896,
+          "havoc_rate": 0.159,
+          "is_prior_season_fallback": false,
+          "offense_epa_play": 0.3639189645423323,
+          "offense_success_rate": 0.49504950495049505
+        }
+      },
+      "totals": {
+        "calibration_slope": 1.0,
+        "feature_snapshot_sha256": "d7a756515958a8a78e3e8c7e6355b8ffd7bc58fdeb243085188a96c9b63e4d73",
+        "features": [
+          0.3639189645423323,
+          0.13274414643489826,
+          0.02657994892469331,
+          0.15267959354982227
+        ],
+        "locked_total": 64.5,
+        "prediction_generated_at": "2026-11-05T01:07:02.603615+00:00",
+        "prediction_id": 36,
+        "projected_away_points": 18.828223280568935,
+        "projected_home_points": 35.39779568396127,
+        "projected_total": 54.226018964530205,
+        "raw_over_probability_normal_assumption": 0.2696158989819604,
+        "residual_uncertainty_points": 16.733547423270483,
+        "selected_direction": "under",
+        "shadow_selected_score_not_empirically_calibrated": 0.7303841010180396,
+        "z_score": -0.6139750750747746
+      }
+    },
+    {
+      "ats": {
+        "coefficients": [
+          35.089014249343435
+        ],
+        "epa_differential": 0.35751328982409836,
+        "governed_selected_side": "home",
+        "governed_uncertainty_points": null,
+        "intercept": 3.806602472343407,
+        "prediction_generated_at": "2026-11-05T01:07:02.603615+00:00",
+        "prediction_id": 37,
+        "projected_home_margin": 16.35139139331084,
+        "selected_margin_advantage_points": 6.851391393310841,
+        "shadow_score_not_empirically_calibrated": 0.5342569569665542,
+        "shadow_score_transform": "min(0.60,0.50+0.005*selected_margin_advantage_points)"
+      },
+      "away": "Northern Illinois",
+      "game_id": 401864534,
+      "home": "San Jos\u00e9 State",
+      "kickoff_utc": "2026-11-07T21:00:00+00:00",
+      "locked_home_spread": -9.5,
+      "locked_line_id": 37,
+      "non_model_context": {
+        "coaching": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "injury": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "market": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "qb": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "travel_rest": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "weather": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW"
+      },
+      "raw_point_in_time_package": {
+        "away_days_rest": 6,
+        "away_stats": {
+          "as_of_season": 2026,
+          "as_of_week": 9,
+          "defense_epa_play": 0.33263985654917494,
+          "defense_success_rate": 0.5241090146750524,
+          "havoc_rate": 0.097,
+          "is_prior_season_fallback": false,
+          "offense_epa_play": -0.006831455703643875,
+          "offense_success_rate": 0.3853211009174312
+        },
+        "home_days_rest": 7,
+        "home_stats": {
+          "as_of_season": 2026,
+          "as_of_week": 9,
+          "defense_epa_play": 0.04214837522193614,
+          "defense_success_rate": 0.4339622641509434,
+          "havoc_rate": 0.153,
+          "is_prior_season_fallback": false,
+          "offense_epa_play": 0.06019035279321572,
+          "offense_success_rate": 0.36795774647887325
+        }
+      },
+      "totals": {
+        "calibration_slope": 1.0,
+        "feature_snapshot_sha256": "13da776862c2204b1590945d518e7469a100e22d1a170f66d36c7ef2099e0736",
+        "features": [
+          0.06019035279321572,
+          0.04214837522193614,
+          -0.006831455703643875,
+          0.33263985654917494
+        ],
+        "locked_total": 51.5,
+        "prediction_generated_at": "2026-11-05T01:07:02.603615+00:00",
+        "prediction_id": 37,
+        "projected_away_points": 16.737702691020374,
+        "projected_home_points": 32.26812456271182,
+        "projected_total": 49.00582725373219,
+        "raw_over_probability_normal_assumption": 0.44075620541717225,
+        "residual_uncertainty_points": 16.733547423270483,
+        "selected_direction": "under",
+        "shadow_selected_score_not_empirically_calibrated": 0.5592437945828277,
+        "z_score": -0.14905224117626664
+      }
+    },
+    {
+      "ats": {
+        "coefficients": [
+          35.089014249343435
+        ],
+        "epa_differential": 0.3061624805236002,
+        "governed_selected_side": "away",
+        "governed_uncertainty_points": null,
+        "intercept": 3.806602472343407,
+        "prediction_generated_at": "2026-11-05T01:07:02.603615+00:00",
+        "prediction_id": 38,
+        "projected_home_margin": 14.549542114050345,
+        "selected_margin_advantage_points": 2.950457885949655,
+        "shadow_score_not_empirically_calibrated": 0.5147522894297483,
+        "shadow_score_transform": "min(0.60,0.50+0.005*selected_margin_advantage_points)"
+      },
+      "away": "Rutgers",
+      "game_id": 401858517,
+      "home": "Wisconsin",
+      "kickoff_utc": "2026-11-07T21:15:00+00:00",
+      "locked_home_spread": -17.5,
+      "locked_line_id": 38,
+      "non_model_context": {
+        "coaching": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "injury": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "market": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "qb": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "travel_rest": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "weather": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW"
+      },
+      "raw_point_in_time_package": {
+        "away_days_rest": 7,
+        "away_stats": {
+          "as_of_season": 2026,
+          "as_of_week": 9,
+          "defense_epa_play": 0.2917396991981528,
+          "defense_success_rate": 0.4894957983193277,
+          "havoc_rate": 0.123,
+          "is_prior_season_fallback": false,
+          "offense_epa_play": 0.10978170081698084,
+          "offense_success_rate": 0.4269406392694064
+        },
+        "home_days_rest": 7,
+        "home_stats": {
+          "as_of_season": 2026,
+          "as_of_week": 9,
+          "defense_epa_play": -0.03231410622111858,
+          "defense_success_rate": 0.3937007874015748,
+          "havoc_rate": 0.168,
+          "is_prior_season_fallback": false,
+          "offense_epa_play": 0.09189037592130964,
+          "offense_success_rate": 0.3783132530120482
+        }
+      },
+      "totals": {
+        "calibration_slope": 1.0,
+        "feature_snapshot_sha256": "3a2be9d119242793d4c3c0216db1c895ee1d9c5022a05ca70c470a0c2ed4dada",
+        "features": [
+          0.09189037592130964,
+          -0.03231410622111858,
+          0.10978170081698084,
+          0.2917396991981528
+        ],
+        "locked_total": 45.5,
+        "prediction_generated_at": "2026-11-05T01:07:02.603615+00:00",
+        "prediction_id": 38,
+        "projected_away_points": 17.60163327689094,
+        "projected_home_points": 31.916565961358856,
+        "projected_total": 49.51819923824979,
+        "raw_over_probability_normal_assumption": 0.59488462397587,
+        "residual_uncertainty_points": 16.733547423270483,
+        "selected_direction": "over",
+        "shadow_selected_score_not_empirically_calibrated": 0.59488462397587,
+        "z_score": 0.2401283563258015
+      }
+    },
+    {
+      "ats": {
+        "coefficients": [
+          35.089014249343435
+        ],
+        "epa_differential": 0.03952581248257846,
+        "governed_selected_side": "home",
+        "governed_uncertainty_points": null,
+        "intercept": 3.806602472343407,
+        "prediction_generated_at": "2026-11-05T01:07:02.603615+00:00",
+        "prediction_id": 39,
+        "projected_home_margin": 5.193524269761479,
+        "selected_margin_advantage_points": 2.693524269761479,
+        "shadow_score_not_empirically_calibrated": 0.5134676213488074,
+        "shadow_score_transform": "min(0.60,0.50+0.005*selected_margin_advantage_points)"
+      },
+      "away": "Vanderbilt",
+      "game_id": 401856742,
+      "home": "Mississippi State",
+      "kickoff_utc": "2026-11-07T21:15:00+00:00",
+      "locked_home_spread": -2.5,
+      "locked_line_id": 39,
+      "non_model_context": {
+        "coaching": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "injury": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "market": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "qb": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "travel_rest": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "weather": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW"
+      },
+      "raw_point_in_time_package": {
+        "away_days_rest": 13,
+        "away_stats": {
+          "as_of_season": 2026,
+          "as_of_week": 9,
+          "defense_epa_play": 0.16335244288955242,
+          "defense_success_rate": 0.44715447154471544,
+          "havoc_rate": 0.138,
+          "is_prior_season_fallback": false,
+          "offense_epa_play": 0.07707973949732808,
+          "offense_success_rate": 0.4021505376344086
+        },
+        "home_days_rest": 6,
+        "home_stats": {
+          "as_of_season": 2026,
+          "as_of_week": 9,
+          "defense_epa_play": 0.14560523872742828,
+          "defense_success_rate": 0.43685300207039335,
+          "havoc_rate": 0.156,
+          "is_prior_season_fallback": false,
+          "offense_epa_play": 0.0988583478177824,
+          "offense_success_rate": 0.43283582089552236
+        }
+      },
+      "totals": {
+        "calibration_slope": 1.0,
+        "feature_snapshot_sha256": "976a06142b245ae11238f08172c0d37acd399fed9976cc8beaaabef5ec80677f",
+        "features": [
+          0.0988583478177824,
+          0.14560523872742828,
+          0.07707973949732808,
+          0.16335244288955242
+        ],
+        "locked_total": 48.5,
+        "prediction_generated_at": "2026-11-05T01:07:02.603615+00:00",
+        "prediction_id": 39,
+        "projected_away_points": 22.68467460233024,
+        "projected_home_points": 27.60549045874451,
+        "projected_total": 50.290165061074745,
+        "raw_over_probability_normal_assumption": 0.5425978175997955,
+        "residual_uncertainty_points": 16.733547423270483,
+        "selected_direction": "over",
+        "shadow_selected_score_not_empirically_calibrated": 0.5425978175997955,
+        "z_score": 0.10698060702808627
+      }
+    },
+    {
+      "ats": {
+        "coefficients": [
+          35.089014249343435
+        ],
+        "epa_differential": 0.21009862367020907,
+        "governed_selected_side": "home",
+        "governed_uncertainty_points": null,
+        "intercept": 3.806602472343407,
+        "prediction_generated_at": "2026-11-05T01:07:02.603615+00:00",
+        "prediction_id": 40,
+        "projected_home_margin": 11.178756072074817,
+        "selected_margin_advantage_points": 2.678756072074817,
+        "shadow_score_not_empirically_calibrated": 0.5133937803603741,
+        "shadow_score_transform": "min(0.60,0.50+0.005*selected_margin_advantage_points)"
+      },
+      "away": "South Alabama",
+      "game_id": 401869968,
+      "home": "Louisiana",
+      "kickoff_utc": "2026-11-07T22:00:00+00:00",
+      "locked_home_spread": -8.5,
+      "locked_line_id": 40,
+      "non_model_context": {
+        "coaching": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "injury": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "market": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "qb": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "travel_rest": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "weather": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW"
+      },
+      "raw_point_in_time_package": {
+        "away_days_rest": 7,
+        "away_stats": {
+          "as_of_season": 2026,
+          "as_of_week": 9,
+          "defense_epa_play": 0.23724000150345928,
+          "defense_success_rate": 0.4924731182795699,
+          "havoc_rate": 0.155,
+          "is_prior_season_fallback": false,
+          "offense_epa_play": 0.15380082308771736,
+          "offense_success_rate": 0.42397137745974955
+        },
+        "home_days_rest": 14,
+        "home_stats": {
+          "as_of_season": 2026,
+          "as_of_week": 9,
+          "defense_epa_play": -0.031030263917629947,
+          "defense_success_rate": 0.4156378600823045,
+          "havoc_rate": 0.168,
+          "is_prior_season_fallback": false,
+          "offense_epa_play": 0.0956291813368372,
+          "offense_success_rate": 0.423828125
+        }
+      },
+      "totals": {
+        "calibration_slope": 1.0,
+        "feature_snapshot_sha256": "52ae7c0dac8ebca45cb1938a62c3fb945359e2ec9b40e519813da67beebf4793",
+        "features": [
+          0.0956291813368372,
+          -0.031030263917629947,
+          0.15380082308771736,
+          0.23724000150345928
+        ],
+        "locked_total": 57.5,
+        "prediction_generated_at": "2026-11-05T01:07:02.603615+00:00",
+        "prediction_id": 40,
+        "projected_away_points": 19.106656570326567,
+        "projected_home_points": 30.340841746125257,
+        "projected_total": 49.44749831645183,
+        "raw_over_probability_normal_assumption": 0.31518041382279116,
+        "residual_uncertainty_points": 16.733547423270483,
+        "selected_direction": "under",
+        "shadow_selected_score_not_empirically_calibrated": 0.6848195861772088,
+        "z_score": -0.48121904339004484
+      }
+    },
+    {
+      "ats": {
+        "coefficients": [
+          35.089014249343435
+        ],
+        "epa_differential": -0.3410510182747465,
+        "governed_selected_side": "home",
+        "governed_uncertainty_points": null,
+        "intercept": 3.806602472343407,
+        "prediction_generated_at": "2026-11-05T01:07:02.603615+00:00",
+        "prediction_id": 41,
+        "projected_home_margin": -8.160541567652261,
+        "selected_margin_advantage_points": 9.339458432347739,
+        "shadow_score_not_empirically_calibrated": 0.5466972921617387,
+        "shadow_score_transform": "min(0.60,0.50+0.005*selected_margin_advantage_points)"
+      },
+      "away": "Boise State",
+      "game_id": 401860911,
+      "home": "Colorado State",
+      "kickoff_utc": "2026-11-07T23:00:00+00:00",
+      "locked_home_spread": 17.5,
+      "locked_line_id": 41,
+      "non_model_context": {
+        "coaching": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "injury": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "market": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "qb": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "travel_rest": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "weather": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW"
+      },
+      "raw_point_in_time_package": {
+        "away_days_rest": 6,
+        "away_stats": {
+          "as_of_season": 2026,
+          "as_of_week": 9,
+          "defense_epa_play": 0.05555602618411206,
+          "defense_success_rate": 0.367032967032967,
+          "havoc_rate": 0.179,
+          "is_prior_season_fallback": false,
+          "offense_epa_play": 0.3078282388545667,
+          "offense_success_rate": 0.47451669595782076
+        },
+        "home_days_rest": 7,
+        "home_stats": {
+          "as_of_season": 2026,
+          "as_of_week": 9,
+          "defense_epa_play": 0.35841777110470124,
+          "defense_success_rate": 0.5377969762419006,
+          "havoc_rate": 0.126,
+          "is_prior_season_fallback": false,
+          "offense_epa_play": 0.26963896550040944,
+          "offense_success_rate": 0.4666666666666667
+        }
+      },
+      "totals": {
+        "calibration_slope": 1.0,
+        "feature_snapshot_sha256": "a5460f30fea6eb18b75ab55756217387abcff7db6970b4a7ffc26ad1de2b2664",
+        "features": [
+          0.26963896550040944,
+          0.35841777110470124,
+          0.3078282388545667,
+          0.05555602618411206
+        ],
+        "locked_total": 68.5,
+        "prediction_generated_at": "2026-11-05T01:07:02.603615+00:00",
+        "prediction_id": 41,
+        "projected_away_points": 34.016807910754444,
+        "projected_home_points": 25.71143667249255,
+        "projected_total": 59.72824458324699,
+        "raw_over_probability_normal_assumption": 0.3000691000037913,
+        "residual_uncertainty_points": 16.733547423270483,
+        "selected_direction": "under",
+        "shadow_selected_score_not_empirically_calibrated": 0.6999308999962087,
+        "z_score": -0.5242017842884038
+      }
+    },
+    {
+      "ats": {
+        "coefficients": [
+          35.089014249343435
+        ],
+        "epa_differential": 0.08053568185113344,
+        "governed_selected_side": "home",
+        "governed_uncertainty_points": null,
+        "intercept": 3.806602472343407,
+        "prediction_generated_at": "2026-11-05T01:07:02.603615+00:00",
+        "prediction_id": 42,
+        "projected_home_margin": 6.632520160398418,
+        "selected_margin_advantage_points": 0.13252016039841763,
+        "shadow_score_not_empirically_calibrated": 0.5006626008019921,
+        "shadow_score_transform": "min(0.60,0.50+0.005*selected_margin_advantage_points)"
+      },
+      "away": "Kentucky",
+      "game_id": 401856745,
+      "home": "Tennessee",
+      "kickoff_utc": "2026-11-07T23:15:00+00:00",
+      "locked_home_spread": -6.5,
+      "locked_line_id": 42,
+      "non_model_context": {
+        "coaching": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "injury": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "market": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "qb": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "travel_rest": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "weather": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW"
+      },
+      "raw_point_in_time_package": {
+        "away_days_rest": 13,
+        "away_stats": {
+          "as_of_season": 2026,
+          "as_of_week": 9,
+          "defense_epa_play": 0.05443465521787227,
+          "defense_success_rate": 0.44212523719165087,
+          "havoc_rate": 0.189,
+          "is_prior_season_fallback": false,
+          "offense_epa_play": 0.20810825384874124,
+          "offense_success_rate": 0.48588709677419356
+        },
+        "home_days_rest": 14,
+        "home_stats": {
+          "as_of_season": 2026,
+          "as_of_week": 9,
+          "defense_epa_play": -0.09631224778467803,
+          "defense_success_rate": 0.37639198218262804,
+          "havoc_rate": 0.227,
+          "is_prior_season_fallback": false,
+          "offense_epa_play": 0.13789703269732437,
+          "offense_success_rate": 0.4375
+        }
+      },
+      "totals": {
+        "calibration_slope": 1.0,
+        "feature_snapshot_sha256": "81e456db89fe94334aafe97591f30600cfa792fa249e8178781ba7c2c68156c3",
+        "features": [
+          0.13789703269732437,
+          -0.09631224778467803,
+          0.20810825384874124,
+          0.05443465521787227
+        ],
+        "locked_total": 50.5,
+        "prediction_generated_at": "2026-11-05T01:07:02.603615+00:00",
+        "prediction_id": 42,
+        "projected_away_points": 19.497197075240432,
+        "projected_home_points": 27.41666633491175,
+        "projected_total": 46.91386341015218,
+        "raw_over_probability_normal_assumption": 0.4151533581825759,
+        "residual_uncertainty_points": 16.733547423270483,
+        "selected_direction": "under",
+        "shadow_selected_score_not_empirically_calibrated": 0.5848466418174241,
+        "z_score": -0.2143082096782875
+      }
+    },
+    {
+      "ats": {
+        "coefficients": [
+          35.089014249343435
+        ],
+        "epa_differential": 0.23348334110072516,
+        "governed_selected_side": "away",
+        "governed_uncertainty_points": null,
+        "intercept": 3.806602472343407,
+        "prediction_generated_at": "2026-11-05T01:07:02.603615+00:00",
+        "prediction_id": 43,
+        "projected_home_margin": 11.999302755211065,
+        "selected_margin_advantage_points": 5.500697244788935,
+        "shadow_score_not_empirically_calibrated": 0.5275034862239447,
+        "shadow_score_transform": "min(0.60,0.50+0.005*selected_margin_advantage_points)"
+      },
+      "away": "Sam Houston",
+      "game_id": 401871075,
+      "home": "Jacksonville State",
+      "kickoff_utc": "2026-11-08T00:00:00+00:00",
+      "locked_home_spread": -17.5,
+      "locked_line_id": 43,
+      "non_model_context": {
+        "coaching": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "injury": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "market": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "qb": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "travel_rest": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "weather": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW"
+      },
+      "raw_point_in_time_package": {
+        "away_days_rest": 11,
+        "away_stats": {
+          "as_of_season": 2026,
+          "as_of_week": 9,
+          "defense_epa_play": 0.08436580261189838,
+          "defense_success_rate": 0.39300411522633744,
+          "havoc_rate": 0.189,
+          "is_prior_season_fallback": false,
+          "offense_epa_play": -0.04807251589728798,
+          "offense_success_rate": 0.36486486486486486
+        },
+        "home_days_rest": 10,
+        "home_stats": {
+          "as_of_season": 2026,
+          "as_of_week": 9,
+          "defense_epa_play": 0.08133092162205138,
+          "defense_success_rate": 0.41372141372141374,
+          "havoc_rate": 0.147,
+          "is_prior_season_fallback": false,
+          "offense_epa_play": 0.18237594421359019,
+          "offense_success_rate": 0.47334754797441364
+        }
+      },
+      "totals": {
+        "calibration_slope": 1.0,
+        "feature_snapshot_sha256": "9f749f0db8f0dea5e85172eb49807a862386ba2cf4a4b900c783b43d5e5beaef",
+        "features": [
+          0.18237594421359019,
+          0.08133092162205138,
+          -0.04807251589728798,
+          0.08436580261189838
+        ],
+        "locked_total": 48.5,
+        "prediction_generated_at": "2026-11-05T01:07:02.603615+00:00",
+        "prediction_id": 43,
+        "projected_away_points": 17.43501751377913,
+        "projected_home_points": 29.85688244821315,
+        "projected_total": 47.29189996199228,
+        "raw_over_probability_normal_assumption": 0.47122284891787075,
+        "residual_uncertainty_points": 16.733547423270483,
+        "selected_direction": "under",
+        "shadow_selected_score_not_empirically_calibrated": 0.5287771510821293,
+        "z_score": -0.07219628973158906
+      }
+    },
+    {
+      "ats": {
+        "coefficients": [
+          35.089014249343435
+        ],
+        "epa_differential": 0.05409402387825524,
+        "governed_selected_side": "home",
+        "governed_uncertainty_points": null,
+        "intercept": 3.806602472343407,
+        "prediction_generated_at": "2026-11-05T01:07:02.603615+00:00",
+        "prediction_id": 44,
+        "projected_home_margin": 5.7047084470118286,
+        "selected_margin_advantage_points": 0.20470844701182855,
+        "shadow_score_not_empirically_calibrated": 0.5010235422350592,
+        "shadow_score_transform": "min(0.60,0.50+0.005*selected_margin_advantage_points)"
+      },
+      "away": "Miami",
+      "game_id": 401858291,
+      "home": "Notre Dame",
+      "kickoff_utc": "2026-11-08T00:30:00+00:00",
+      "locked_home_spread": -5.5,
+      "locked_line_id": 44,
+      "non_model_context": {
+        "coaching": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "injury": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "market": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "qb": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "travel_rest": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "weather": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW"
+      },
+      "raw_point_in_time_package": {
+        "away_days_rest": 7,
+        "away_stats": {
+          "as_of_season": 2026,
+          "as_of_week": 9,
+          "defense_epa_play": 0.10076715249184816,
+          "defense_success_rate": 0.42091152815013405,
+          "havoc_rate": 0.141,
+          "is_prior_season_fallback": false,
+          "offense_epa_play": 0.44498728356220835,
+          "offense_success_rate": 0.5348314606741573
+        },
+        "home_days_rest": 7,
+        "home_stats": {
+          "as_of_season": 2026,
+          "as_of_week": 9,
+          "defense_epa_play": -0.031735382444686544,
+          "defense_success_rate": 0.36684782608695654,
+          "havoc_rate": 0.188,
+          "is_prior_season_fallback": false,
+          "offense_epa_play": 0.3665787725039289,
+          "offense_success_rate": 0.5146067415730337
+        }
+      },
+      "totals": {
+        "calibration_slope": 1.0,
+        "feature_snapshot_sha256": "017659254e711ee22553f1a6744549e00b35c8c21997242d990d04384d02fd24",
+        "features": [
+          0.3665787725039289,
+          -0.031735382444686544,
+          0.44498728356220835,
+          0.10076715249184816
+        ],
+        "locked_total": 57.5,
+        "prediction_generated_at": "2026-11-05T01:07:02.603615+00:00",
+        "prediction_id": 44,
+        "projected_away_points": 25.1903590072604,
+        "projected_home_points": 32.202455696408876,
+        "projected_total": 57.39281470366927,
+        "raw_over_probability_normal_assumption": 0.4974446270682223,
+        "residual_uncertainty_points": 16.733547423270483,
+        "selected_direction": "under",
+        "shadow_selected_score_not_empirically_calibrated": 0.5025553729317778,
+        "z_score": -0.006405413844387199
+      }
+    },
+    {
+      "ats": {
+        "coefficients": [
+          35.089014249343435
+        ],
+        "epa_differential": 0.005282716662855527,
+        "governed_selected_side": "home",
+        "governed_uncertainty_points": null,
+        "intercept": 3.806602472343407,
+        "prediction_generated_at": "2026-11-05T01:07:02.603615+00:00",
+        "prediction_id": 45,
+        "projected_home_margin": 3.9919677926015886,
+        "selected_margin_advantage_points": 0.4919677926015886,
+        "shadow_score_not_empirically_calibrated": 0.5024598389630079,
+        "shadow_score_transform": "min(0.60,0.50+0.005*selected_margin_advantage_points)"
+      },
+      "away": "Colorado",
+      "game_id": 401856852,
+      "home": "Arizona State",
+      "kickoff_utc": "2026-11-08T00:30:00+00:00",
+      "locked_home_spread": -3.5,
+      "locked_line_id": 45,
+      "non_model_context": {
+        "coaching": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "injury": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "market": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "qb": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "travel_rest": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "weather": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW"
+      },
+      "raw_point_in_time_package": {
+        "away_days_rest": 7,
+        "away_stats": {
+          "as_of_season": 2026,
+          "as_of_week": 9,
+          "defense_epa_play": 0.08009194887263137,
+          "defense_success_rate": 0.4046242774566474,
+          "havoc_rate": 0.202,
+          "is_prior_season_fallback": false,
+          "offense_epa_play": 0.06460792490678488,
+          "offense_success_rate": 0.39921722113502933
+        },
+        "home_days_rest": 7,
+        "home_stats": {
+          "as_of_season": 2026,
+          "as_of_week": 9,
+          "defense_epa_play": 0.05750873332668846,
+          "defense_success_rate": 0.3958762886597938,
+          "havoc_rate": 0.172,
+          "is_prior_season_fallback": false,
+          "offense_epa_play": 0.0473074260236975,
+          "offense_success_rate": 0.4194915254237288
+        }
+      },
+      "totals": {
+        "calibration_slope": 1.0,
+        "feature_snapshot_sha256": "d4424650a3f2a9b3de1ed2ee3631734baee9ae80c1812a028242f11fd110ac2f",
+        "features": [
+          0.0473074260236975,
+          0.05750873332668846,
+          0.06460792490678488,
+          0.08009194887263137
+        ],
+        "locked_total": 48.5,
+        "prediction_generated_at": "2026-11-05T01:07:02.603615+00:00",
+        "prediction_id": 45,
+        "projected_away_points": 20.829161464161917,
+        "projected_home_points": 25.19361277501595,
+        "projected_total": 46.02277423917786,
+        "raw_over_probability_normal_assumption": 0.4411558030820919,
+        "residual_uncertainty_points": 16.733547423270483,
+        "selected_direction": "under",
+        "shadow_selected_score_not_empirically_calibrated": 0.5588441969179081,
+        "z_score": -0.14803948607915535
+      }
+    },
+    {
+      "ats": {
+        "coefficients": [
+          35.089014249343435
+        ],
+        "epa_differential": 0.14640253695668043,
+        "governed_selected_side": "home",
+        "governed_uncertainty_points": null,
+        "intercept": 3.806602472343407,
+        "prediction_generated_at": "2026-11-05T01:07:02.603615+00:00",
+        "prediction_id": 46,
+        "projected_home_margin": 8.943723177756397,
+        "selected_margin_advantage_points": 6.443723177756397,
+        "shadow_score_not_empirically_calibrated": 0.5322186158887819,
+        "shadow_score_transform": "min(0.60,0.50+0.005*selected_margin_advantage_points)"
+      },
+      "away": "Iowa",
+      "game_id": 401858513,
+      "home": "Northwestern",
+      "kickoff_utc": "2026-11-08T00:30:00+00:00",
+      "locked_home_spread": -2.5,
+      "locked_line_id": 46,
+      "non_model_context": {
+        "coaching": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "injury": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "market": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "qb": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "travel_rest": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "weather": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW"
+      },
+      "raw_point_in_time_package": {
+        "away_days_rest": 7,
+        "away_stats": {
+          "as_of_season": 2026,
+          "as_of_week": 9,
+          "defense_epa_play": 0.013902913955955073,
+          "defense_success_rate": 0.3433583959899749,
+          "havoc_rate": 0.171,
+          "is_prior_season_fallback": false,
+          "offense_epa_play": 0.14323346713134247,
+          "offense_success_rate": 0.455188679245283
+        },
+        "home_days_rest": 7,
+        "home_stats": {
+          "as_of_season": 2026,
+          "as_of_week": 9,
+          "defense_epa_play": 0.061485474078556604,
+          "defense_success_rate": 0.4188376753507014,
+          "havoc_rate": 0.17,
+          "is_prior_season_fallback": false,
+          "offense_epa_play": 0.3372185642106244,
+          "offense_success_rate": 0.5020161290322581
+        }
+      },
+      "totals": {
+        "calibration_slope": 1.0,
+        "feature_snapshot_sha256": "f6b4eb23f619f5d29f6d55eead95f588e570f8db4b24eb488c55e0c108fd8697",
+        "features": [
+          0.3372185642106244,
+          0.061485474078556604,
+          0.14323346713134247,
+          0.013902913955955073
+        ],
+        "locked_total": 45.5,
+        "prediction_generated_at": "2026-11-05T01:07:02.603615+00:00",
+        "prediction_id": 46,
+        "projected_away_points": 20.942369125197906,
+        "projected_home_points": 31.072110082440958,
+        "projected_total": 52.014479207638864,
+        "raw_over_probability_normal_assumption": 0.6514752951826527,
+        "residual_uncertainty_points": 16.733547423270483,
+        "selected_direction": "over",
+        "shadow_selected_score_not_empirically_calibrated": 0.6514752951826527,
+        "z_score": 0.38930652555951845
+      }
+    },
+    {
+      "ats": {
+        "coefficients": [
+          35.089014249343435
+        ],
+        "epa_differential": -0.18373751994549986,
+        "governed_selected_side": "home",
+        "governed_uncertainty_points": null,
+        "intercept": 3.806602472343407,
+        "prediction_generated_at": "2026-11-05T01:07:02.603615+00:00",
+        "prediction_id": 47,
+        "projected_home_margin": -2.6405659831632615,
+        "selected_margin_advantage_points": 0.8594340168367385,
+        "shadow_score_not_empirically_calibrated": 0.5042971700841837,
+        "shadow_score_transform": "min(0.60,0.50+0.005*selected_margin_advantage_points)"
+      },
+      "away": "Georgia",
+      "game_id": 401856741,
+      "home": "Ole Miss",
+      "kickoff_utc": "2026-11-08T00:30:00+00:00",
+      "locked_home_spread": 3.5,
+      "locked_line_id": 47,
+      "non_model_context": {
+        "coaching": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "injury": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "market": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "qb": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "travel_rest": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "weather": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW"
+      },
+      "raw_point_in_time_package": {
+        "away_days_rest": 7,
+        "away_stats": {
+          "as_of_season": 2026,
+          "as_of_week": 9,
+          "defense_epa_play": -0.0038082914482294628,
+          "defense_success_rate": 0.34974093264248707,
+          "havoc_rate": 0.194,
+          "is_prior_season_fallback": false,
+          "offense_epa_play": 0.2791350268585424,
+          "offense_success_rate": 0.5213032581453634
+        },
+        "home_days_rest": 7,
+        "home_stats": {
+          "as_of_season": 2026,
+          "as_of_week": 9,
+          "defense_epa_play": 0.15810266533470702,
+          "defense_success_rate": 0.4216101694915254,
+          "havoc_rate": 0.174,
+          "is_prior_season_fallback": false,
+          "offense_epa_play": 0.25730846369597904,
+          "offense_success_rate": 0.49038461538461536
+        }
+      },
+      "totals": {
+        "calibration_slope": 1.0,
+        "feature_snapshot_sha256": "22d72627cc20144eb18f2bbfe5732f07cdf5256fd1e46977e2ddbe783736bc7e",
+        "features": [
+          0.25730846369597904,
+          0.15810266533470702,
+          0.2791350268585424,
+          -0.0038082914482294628
+        ],
+        "locked_total": 56.5,
+        "prediction_generated_at": "2026-11-05T01:07:02.603615+00:00",
+        "prediction_id": 47,
+        "projected_away_points": 28.019883324424764,
+        "projected_home_points": 26.234066559659965,
+        "projected_total": 54.25394988408473,
+        "raw_over_probability_normal_assumption": 0.4466125718738406,
+        "residual_uncertainty_points": 16.733547423270483,
+        "selected_direction": "under",
+        "shadow_selected_score_not_empirically_calibrated": 0.5533874281261593,
+        "z_score": -0.13422438524850988
+      }
+    },
+    {
+      "ats": {
+        "coefficients": [
+          35.089014249343435
+        ],
+        "epa_differential": 0.3602098779270605,
+        "governed_selected_side": "home",
+        "governed_uncertainty_points": null,
+        "intercept": 3.806602472343407,
+        "prediction_generated_at": "2026-11-05T01:07:02.603615+00:00",
+        "prediction_id": 48,
+        "projected_home_margin": 16.446012011680292,
+        "selected_margin_advantage_points": 2.946012011680292,
+        "shadow_score_not_empirically_calibrated": 0.5147300600584015,
+        "shadow_score_transform": "min(0.60,0.50+0.005*selected_margin_advantage_points)"
+      },
+      "away": "Michigan State",
+      "game_id": 401858511,
+      "home": "Michigan",
+      "kickoff_utc": "2026-11-08T00:30:00+00:00",
+      "locked_home_spread": -13.5,
+      "locked_line_id": 48,
+      "non_model_context": {
+        "coaching": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "injury": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "market": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "qb": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "travel_rest": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "weather": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW"
+      },
+      "raw_point_in_time_package": {
+        "away_days_rest": 14,
+        "away_stats": {
+          "as_of_season": 2026,
+          "as_of_week": 9,
+          "defense_epa_play": 0.17121711126530084,
+          "defense_success_rate": 0.44680851063829785,
+          "havoc_rate": 0.136,
+          "is_prior_season_fallback": false,
+          "offense_epa_play": -0.030761223317729142,
+          "offense_success_rate": 0.41836734693877553
+        },
+        "home_days_rest": 7,
+        "home_stats": {
+          "as_of_season": 2026,
+          "as_of_week": 9,
+          "defense_epa_play": -0.07681350511275638,
+          "defense_success_rate": 0.33836206896551724,
+          "havoc_rate": 0.163,
+          "is_prior_season_fallback": false,
+          "offense_epa_play": 0.08141803823127415,
+          "offense_success_rate": 0.4130879345603272
+        }
+      },
+      "totals": {
+        "calibration_slope": 1.0,
+        "feature_snapshot_sha256": "5462ec474e9a91301a99f09bde461c55fee4703df8201016a539d3cbe16f4516",
+        "features": [
+          0.08141803823127415,
+          -0.07681350511275638,
+          -0.030761223317729142,
+          0.17121711126530084
+        ],
+        "locked_total": 40.5,
+        "prediction_generated_at": "2026-11-05T01:07:02.603615+00:00",
+        "prediction_id": 48,
+        "projected_away_points": 13.605610384478235,
+        "projected_home_points": 30.483490061597212,
+        "projected_total": 44.08910044607545,
+        "raw_over_probability_normal_assumption": 0.5849156972411746,
+        "residual_uncertainty_points": 16.733547423270483,
+        "selected_direction": "over",
+        "shadow_selected_score_not_empirically_calibrated": 0.5849156972411746,
+        "z_score": 0.2144853302942968
+      }
+    },
+    {
+      "ats": {
+        "coefficients": [
+          35.089014249343435
+        ],
+        "epa_differential": -0.07665981510371005,
+        "governed_selected_side": "away",
+        "governed_uncertainty_points": null,
+        "intercept": 3.806602472343407,
+        "prediction_generated_at": "2026-11-05T01:07:02.603615+00:00",
+        "prediction_id": 49,
+        "projected_home_margin": 1.1166851278172918,
+        "selected_margin_advantage_points": 2.383314872182708,
+        "shadow_score_not_empirically_calibrated": 0.5119165743609135,
+        "shadow_score_transform": "min(0.60,0.50+0.005*selected_margin_advantage_points)"
+      },
+      "away": "Air Force",
+      "game_id": 401862823,
+      "home": "Army",
+      "kickoff_utc": "2026-11-08T00:30:00+00:00",
+      "locked_home_spread": -3.5,
+      "locked_line_id": 49,
+      "non_model_context": {
+        "coaching": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "injury": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "market": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "qb": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "travel_rest": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "weather": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW"
+      },
+      "raw_point_in_time_package": {
+        "away_days_rest": 7,
+        "away_stats": {
+          "as_of_season": 2026,
+          "as_of_week": 9,
+          "defense_epa_play": 0.10316149489023595,
+          "defense_success_rate": 0.4080188679245283,
+          "havoc_rate": 0.144,
+          "is_prior_season_fallback": false,
+          "offense_epa_play": 0.20765475995539814,
+          "offense_success_rate": 0.49393414211438474
+        },
+        "home_days_rest": 7,
+        "home_stats": {
+          "as_of_season": 2026,
+          "as_of_week": 9,
+          "defense_epa_play": 0.2690804642369242,
+          "defense_success_rate": 0.4759725400457666,
+          "havoc_rate": 0.113,
+          "is_prior_season_fallback": false,
+          "offense_epa_play": 0.29691391419837637,
+          "offense_success_rate": 0.4906832298136646
+        }
+      },
+      "totals": {
+        "calibration_slope": 1.0,
+        "feature_snapshot_sha256": "97d4aa4e493c810d72bc3009b59ff24511e8ac2d6dce41fdc7bd0385a4f7a884",
+        "features": [
+          0.29691391419837637,
+          0.2690804642369242,
+          0.20765475995539814,
+          0.10316149489023595
+        ],
+        "locked_total": 45.5,
+        "prediction_generated_at": "2026-11-05T01:07:02.603615+00:00",
+        "prediction_id": 49,
+        "projected_away_points": 28.31534890931292,
+        "projected_home_points": 29.379001889286076,
+        "projected_total": 57.694350798599,
+        "raw_over_probability_normal_assumption": 0.7669186428577053,
+        "residual_uncertainty_points": 16.733547423270483,
+        "selected_direction": "over",
+        "shadow_selected_score_not_empirically_calibrated": 0.7669186428577053,
+        "z_score": 0.7287367400435929
+      }
+    },
+    {
+      "ats": {
+        "coefficients": [
+          35.089014249343435
+        ],
+        "epa_differential": -0.3374297926141472,
+        "governed_selected_side": "home",
+        "governed_uncertainty_points": null,
+        "intercept": 3.806602472343407,
+        "prediction_generated_at": "2026-11-05T01:07:02.603615+00:00",
+        "prediction_id": 50,
+        "projected_home_margin": -8.033476328847405,
+        "selected_margin_advantage_points": 6.466523671152595,
+        "shadow_score_not_empirically_calibrated": 0.532332618355763,
+        "shadow_score_transform": "min(0.60,0.50+0.005*selected_margin_advantage_points)"
+      },
+      "away": "Louisville",
+      "game_id": 401858287,
+      "home": "Georgia Tech",
+      "kickoff_utc": "2026-11-08T00:30:00+00:00",
+      "locked_home_spread": 14.5,
+      "locked_line_id": 50,
+      "non_model_context": {
+        "coaching": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "injury": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "market": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "qb": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "travel_rest": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "weather": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW"
+      },
+      "raw_point_in_time_package": {
+        "away_days_rest": 7,
+        "away_stats": {
+          "as_of_season": 2026,
+          "as_of_week": 9,
+          "defense_epa_play": 0.08464513129041021,
+          "defense_success_rate": 0.4070175438596491,
+          "havoc_rate": 0.151,
+          "is_prior_season_fallback": false,
+          "offense_epa_play": 0.33434356112162744,
+          "offense_success_rate": 0.4979253112033195
+        },
+        "home_days_rest": 7,
+        "home_stats": {
+          "as_of_season": 2026,
+          "as_of_week": 9,
+          "defense_epa_play": 0.21220153883989362,
+          "defense_success_rate": 0.4409171075837742,
+          "havoc_rate": 0.136,
+          "is_prior_season_fallback": false,
+          "offense_epa_play": 0.1244701760569637,
+          "offense_success_rate": 0.42462845010615713
+        }
+      },
+      "totals": {
+        "calibration_slope": 1.0,
+        "feature_snapshot_sha256": "97964b0cd0219e5a030fb28aa0387dd0a9a963ccad5c71bef8baed90cfb390c9",
+        "features": [
+          0.1244701760569637,
+          0.21220153883989362,
+          0.33434356112162744,
+          0.08464513129041021
+        ],
+        "locked_total": 61.5,
+        "prediction_generated_at": "2026-11-05T01:07:02.603615+00:00",
+        "prediction_id": 50,
+        "projected_away_points": 31.533315426944245,
+        "projected_home_points": 23.536268233737317,
+        "projected_total": 55.06958366068156,
+        "raw_over_probability_normal_assumption": 0.3503843857183174,
+        "residual_uncertainty_points": 16.733547423270483,
+        "selected_direction": "under",
+        "shadow_selected_score_not_empirically_calibrated": 0.6496156142816825,
+        "z_score": -0.38428291244305984
+      }
+    },
+    {
+      "ats": {
+        "coefficients": [
+          35.089014249343435
+        ],
+        "epa_differential": 0.08745764317604826,
+        "governed_selected_side": "home",
+        "governed_uncertainty_points": null,
+        "intercept": 3.806602472343407,
+        "prediction_generated_at": "2026-11-05T01:07:02.603615+00:00",
+        "prediction_id": 51,
+        "projected_home_margin": 6.875404959961758,
+        "selected_margin_advantage_points": 0.3754049599617577,
+        "shadow_score_not_empirically_calibrated": 0.5018770247998088,
+        "shadow_score_transform": "min(0.60,0.50+0.005*selected_margin_advantage_points)"
+      },
+      "away": "Oklahoma",
+      "game_id": 401856739,
+      "home": "Florida",
+      "kickoff_utc": "2026-11-08T00:45:00+00:00",
+      "locked_home_spread": -6.5,
+      "locked_line_id": 51,
+      "non_model_context": {
+        "coaching": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "injury": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "market": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "qb": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "travel_rest": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "weather": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW"
+      },
+      "raw_point_in_time_package": {
+        "away_days_rest": 7,
+        "away_stats": {
+          "as_of_season": 2026,
+          "as_of_week": 9,
+          "defense_epa_play": -0.05816257190530603,
+          "defense_success_rate": 0.3490990990990991,
+          "havoc_rate": 0.178,
+          "is_prior_season_fallback": false,
+          "offense_epa_play": -0.019828555424112965,
+          "offense_success_rate": 0.3622881355932203
+        },
+        "home_days_rest": 7,
+        "home_stats": {
+          "as_of_season": 2026,
+          "as_of_week": 9,
+          "defense_epa_play": 0.09224175165510982,
+          "defense_success_rate": 0.4424778761061947,
+          "havoc_rate": 0.189,
+          "is_prior_season_fallback": false,
+          "offense_epa_play": 0.21803341131235116,
+          "offense_success_rate": 0.4475374732334047
+        }
+      },
+      "totals": {
+        "calibration_slope": 1.0,
+        "feature_snapshot_sha256": "2cc2afdc6f3478dabf1367bb35b054c1497c95b44540d638294db55010be8cc5",
+        "features": [
+          0.21803341131235116,
+          0.09224175165510982,
+          -0.019828555424112965,
+          -0.05816257190530603
+        ],
+        "locked_total": 44.5,
+        "prediction_generated_at": "2026-11-05T01:07:02.603615+00:00",
+        "prediction_id": 51,
+        "projected_away_points": 19.132064938916706,
+        "projected_home_points": 27.157948731757884,
+        "projected_total": 46.29001367067459,
+        "raw_over_probability_normal_assumption": 0.5425942289144902,
+        "residual_uncertainty_points": 16.733547423270483,
+        "selected_direction": "over",
+        "shadow_selected_score_not_empirically_calibrated": 0.5425942289144902,
+        "z_score": 0.10697155990876805
+      }
+    },
+    {
+      "ats": {
+        "coefficients": [
+          35.089014249343435
+        ],
+        "epa_differential": -0.3986700909995725,
+        "governed_selected_side": "home",
+        "governed_uncertainty_points": null,
+        "intercept": 3.806602472343407,
+        "prediction_generated_at": "2026-11-05T01:07:02.603615+00:00",
+        "prediction_id": 52,
+        "projected_home_margin": -10.182338031527637,
+        "selected_margin_advantage_points": 7.317661968472363,
+        "shadow_score_not_empirically_calibrated": 0.5365883098423618,
+        "shadow_score_transform": "min(0.60,0.50+0.005*selected_margin_advantage_points)"
+      },
+      "away": "Liberty",
+      "game_id": 401870795,
+      "home": "New Mexico State",
+      "kickoff_utc": "2026-11-08T01:00:00+00:00",
+      "locked_home_spread": 17.5,
+      "locked_line_id": 52,
+      "non_model_context": {
+        "coaching": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "injury": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "market": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "qb": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "travel_rest": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "weather": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW"
+      },
+      "raw_point_in_time_package": {
+        "away_days_rest": 7,
+        "away_stats": {
+          "as_of_season": 2026,
+          "as_of_week": 9,
+          "defense_epa_play": -0.07584192509109626,
+          "defense_success_rate": 0.33080808080808083,
+          "havoc_rate": 0.181,
+          "is_prior_season_fallback": false,
+          "offense_epa_play": 0.2260494473633677,
+          "offense_success_rate": 0.4966887417218543
+        },
+        "home_days_rest": 10,
+        "home_stats": {
+          "as_of_season": 2026,
+          "as_of_week": 9,
+          "defense_epa_play": 0.060399836897887305,
+          "defense_success_rate": 0.4,
+          "havoc_rate": 0.154,
+          "is_prior_season_fallback": false,
+          "offense_epa_play": -0.03637888164722124,
+          "offense_success_rate": 0.38589211618257263
+        }
+      },
+      "totals": {
+        "calibration_slope": 1.0,
+        "feature_snapshot_sha256": "841d59a28abf3b72f647632dc14cc76c09cc6c7ef8516da0ef0ff0330247e0d7",
+        "features": [
+          -0.03637888164722124,
+          0.060399836897887305,
+          0.2260494473633677,
+          -0.07584192509109626
+        ],
+        "locked_total": 46.5,
+        "prediction_generated_at": "2026-11-05T01:07:02.603615+00:00",
+        "prediction_id": 52,
+        "projected_away_points": 26.8305383512947,
+        "projected_home_points": 17.720123450347536,
+        "projected_total": 44.550661801642235,
+        "raw_over_probability_normal_assumption": 0.45363098641610017,
+        "residual_uncertainty_points": 16.733547423270483,
+        "selected_direction": "under",
+        "shadow_selected_score_not_empirically_calibrated": 0.5463690135838999,
+        "z_score": -0.11649282420814851
+      }
+    },
+    {
+      "ats": {
+        "coefficients": [
+          35.089014249343435
+        ],
+        "epa_differential": -0.09588963512052509,
+        "governed_selected_side": "home",
+        "governed_uncertainty_points": null,
+        "intercept": 3.806602472343407,
+        "prediction_generated_at": "2026-11-05T01:07:02.603615+00:00",
+        "prediction_id": 53,
+        "projected_home_margin": 0.4419296992349593,
+        "selected_margin_advantage_points": 2.9419296992349593,
+        "shadow_score_not_empirically_calibrated": 0.5147096484961748,
+        "shadow_score_transform": "min(0.60,0.50+0.005*selected_margin_advantage_points)"
+      },
+      "away": "Fresno State",
+      "game_id": 401860913,
+      "home": "Utah State",
+      "kickoff_utc": "2026-11-08T02:30:00+00:00",
+      "locked_home_spread": 2.5,
+      "locked_line_id": 53,
+      "non_model_context": {
+        "coaching": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "injury": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "market": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "qb": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "travel_rest": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "weather": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW"
+      },
+      "raw_point_in_time_package": {
+        "away_days_rest": 6,
+        "away_stats": {
+          "as_of_season": 2026,
+          "as_of_week": 9,
+          "defense_epa_play": 0.03774332905056445,
+          "defense_success_rate": 0.4230769230769231,
+          "havoc_rate": 0.163,
+          "is_prior_season_fallback": false,
+          "offense_epa_play": 0.11253250360366181,
+          "offense_success_rate": 0.4004424778761062
+        },
+        "home_days_rest": 7,
+        "home_stats": {
+          "as_of_season": 2026,
+          "as_of_week": 9,
+          "defense_epa_play": 0.037982201527420885,
+          "defense_success_rate": 0.3988657844990548,
+          "havoc_rate": 0.152,
+          "is_prior_season_fallback": false,
+          "offense_epa_play": 0.01688174095999316,
+          "offense_success_rate": 0.3790322580645161
+        }
+      },
+      "totals": {
+        "calibration_slope": 1.0,
+        "feature_snapshot_sha256": "a11c3a5277375b9f9bf6d172e6fcda04d8e374f2a0e496916103daa68b1c0517",
+        "features": [
+          0.01688174095999316,
+          0.037982201527420885,
+          0.11253250360366181,
+          0.03774332905056445
+        ],
+        "locked_total": 42.5,
+        "prediction_generated_at": "2026-11-05T01:07:02.603615+00:00",
+        "prediction_id": 53,
+        "projected_away_points": 22.045209427090256,
+        "projected_home_points": 23.11470573423036,
+        "projected_total": 45.15991516132061,
+        "raw_over_probability_normal_assumption": 0.563148639606593,
+        "residual_uncertainty_points": 16.733547423270483,
+        "selected_direction": "over",
+        "shadow_selected_score_not_empirically_calibrated": 0.563148639606593,
+        "z_score": 0.15895703965446112
+      }
+    },
+    {
+      "ats": {
+        "coefficients": [
+          35.089014249343435
+        ],
+        "epa_differential": 0.24601131133835735,
+        "governed_selected_side": "away",
+        "governed_uncertainty_points": null,
+        "intercept": 3.806602472343407,
+        "prediction_generated_at": "2026-11-05T01:07:02.603615+00:00",
+        "prediction_id": 54,
+        "projected_home_margin": 12.438896881394692,
+        "selected_margin_advantage_points": 4.061103118605308,
+        "shadow_score_not_empirically_calibrated": 0.5203055155930265,
+        "shadow_score_transform": "min(0.60,0.50+0.005*selected_margin_advantage_points)"
+      },
+      "away": "West Virginia",
+      "game_id": 401856856,
+      "home": "Texas Tech",
+      "kickoff_utc": "2026-11-08T02:30:00+00:00",
+      "locked_home_spread": -16.5,
+      "locked_line_id": 54,
+      "non_model_context": {
+        "coaching": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "injury": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "market": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "qb": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "travel_rest": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "weather": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW"
+      },
+      "raw_point_in_time_package": {
+        "away_days_rest": 14,
+        "away_stats": {
+          "as_of_season": 2026,
+          "as_of_week": 9,
+          "defense_epa_play": 0.2569918074724184,
+          "defense_success_rate": 0.4721189591078067,
+          "havoc_rate": 0.149,
+          "is_prior_season_fallback": false,
+          "offense_epa_play": 0.18106438579431433,
+          "offense_success_rate": 0.42757417102966844
+        },
+        "home_days_rest": 7,
+        "home_stats": {
+          "as_of_season": 2026,
+          "as_of_week": 9,
+          "defense_epa_play": -0.018213676056220877,
+          "defense_success_rate": 0.37258687258687256,
+          "havoc_rate": 0.166,
+          "is_prior_season_fallback": false,
+          "offense_epa_play": 0.1518702136040324,
+          "offense_success_rate": 0.46153846153846156
+        }
+      },
+      "totals": {
+        "calibration_slope": 1.0,
+        "feature_snapshot_sha256": "093b82a1f7485a87641d8709592b337de22e2a0a235f1ee9ee7b9e7dda5a7622",
+        "features": [
+          0.1518702136040324,
+          -0.018213676056220877,
+          0.18106438579431433,
+          0.2569918074724184
+        ],
+        "locked_total": 65.5,
+        "prediction_generated_at": "2026-11-05T01:07:02.603615+00:00",
+        "prediction_id": 54,
+        "projected_away_points": 19.564717990886322,
+        "projected_home_points": 32.01887142273092,
+        "projected_total": 51.58358941361724,
+        "raw_over_probability_normal_assumption": 0.20280400987274838,
+        "residual_uncertainty_points": 16.733547423270483,
+        "selected_direction": "under",
+        "shadow_selected_score_not_empirically_calibrated": 0.7971959901272516,
+        "z_score": -0.8316473628915004
+      }
+    },
+    {
+      "ats": {
+        "coefficients": [
+          35.089014249343435
+        ],
+        "epa_differential": -0.24685261771713357,
+        "governed_selected_side": "home",
+        "governed_uncertainty_points": null,
+        "intercept": 3.806602472343407,
+        "prediction_generated_at": "2026-11-05T01:07:02.603615+00:00",
+        "prediction_id": 55,
+        "projected_home_margin": -4.8552125482208215,
+        "selected_margin_advantage_points": 4.6447874517791785,
+        "shadow_score_not_empirically_calibrated": 0.5232239372588959,
+        "shadow_score_transform": "min(0.60,0.50+0.005*selected_margin_advantage_points)"
+      },
+      "away": "Hawai'i",
+      "game_id": 401864532,
+      "home": "UTEP",
+      "kickoff_utc": "2026-11-08T02:30:00+00:00",
+      "locked_home_spread": 9.5,
+      "locked_line_id": 55,
+      "non_model_context": {
+        "coaching": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "injury": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "market": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "qb": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "travel_rest": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "weather": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW"
+      },
+      "raw_point_in_time_package": {
+        "away_days_rest": 14,
+        "away_stats": {
+          "as_of_season": 2026,
+          "as_of_week": 9,
+          "defense_epa_play": 0.18359531372634266,
+          "defense_success_rate": 0.43558282208588955,
+          "havoc_rate": 0.136,
+          "is_prior_season_fallback": false,
+          "offense_epa_play": 0.06854166841615901,
+          "offense_success_rate": 0.41238938053097346
+        },
+        "home_days_rest": 7,
+        "home_stats": {
+          "as_of_season": 2026,
+          "as_of_week": 9,
+          "defense_epa_play": 0.26366342052708075,
+          "defense_success_rate": 0.4793577981651376,
+          "havoc_rate": 0.122,
+          "is_prior_season_fallback": false,
+          "offense_epa_play": -0.09824284250023645,
+          "offense_success_rate": 0.3305084745762712
+        }
+      },
+      "totals": {
+        "calibration_slope": 1.0,
+        "feature_snapshot_sha256": "3a3e671ad455c20ded399baabcad9358e58699a7efe1b43e3fee0f98648be76a",
+        "features": [
+          -0.09824284250023645,
+          0.26366342052708075,
+          0.06854166841615901,
+          0.18359531372634266
+        ],
+        "locked_total": 48.5,
+        "prediction_generated_at": "2026-11-05T01:07:02.603615+00:00",
+        "prediction_id": 55,
+        "projected_away_points": 27.404973696513657,
+        "projected_home_points": 21.419491132418205,
+        "projected_total": 48.824464828931866,
+        "raw_over_probability_normal_assumption": 0.5077350381683738,
+        "residual_uncertainty_points": 16.733547423270483,
+        "selected_direction": "over",
+        "shadow_selected_score_not_empirically_calibrated": 0.5077350381683738,
+        "z_score": 0.019390080341281944
+      }
+    },
+    {
+      "ats": {
+        "coefficients": [
+          35.089014249343435
+        ],
+        "epa_differential": 0.02608788008761849,
+        "governed_selected_side": "away",
+        "governed_uncertainty_points": null,
+        "intercept": 3.806602472343407,
+        "prediction_generated_at": "2026-11-05T01:07:02.603615+00:00",
+        "prediction_id": 56,
+        "projected_home_margin": 4.722000468473015,
+        "selected_margin_advantage_points": 1.7779995315269854,
+        "shadow_score_not_empirically_calibrated": 0.5088899976576349,
+        "shadow_score_transform": "min(0.60,0.50+0.005*selected_margin_advantage_points)"
+      },
+      "away": "Wyoming",
+      "game_id": 401864535,
+      "home": "UNLV",
+      "kickoff_utc": "2026-11-08T03:30:00+00:00",
+      "locked_home_spread": -6.5,
+      "locked_line_id": 56,
+      "non_model_context": {
+        "coaching": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "injury": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "market": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "qb": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "travel_rest": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "weather": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW"
+      },
+      "raw_point_in_time_package": {
+        "away_days_rest": 15,
+        "away_stats": {
+          "as_of_season": 2026,
+          "as_of_week": 9,
+          "defense_epa_play": 0.12932834861128292,
+          "defense_success_rate": 0.4489795918367347,
+          "havoc_rate": 0.145,
+          "is_prior_season_fallback": false,
+          "offense_epa_play": 0.13445804472935324,
+          "offense_success_rate": 0.461038961038961
+        },
+        "home_days_rest": 7,
+        "home_stats": {
+          "as_of_season": 2026,
+          "as_of_week": 9,
+          "defense_epa_play": 0.08317489803056147,
+          "defense_success_rate": 0.4098671726755218,
+          "havoc_rate": 0.147,
+          "is_prior_season_fallback": false,
+          "offense_epa_play": 0.11439247423625028,
+          "offense_success_rate": 0.3965183752417795
+        }
+      },
+      "totals": {
+        "calibration_slope": 1.0,
+        "feature_snapshot_sha256": "b061b7773cbc3426f54dc3ec6659051c3fcb5922172896e704c054e0528d31cd",
+        "features": [
+          0.11439247423625028,
+          0.08317489803056147,
+          0.13445804472935324,
+          0.12932834861128292
+        ],
+        "locked_total": 48.5,
+        "prediction_generated_at": "2026-11-05T01:07:02.603615+00:00",
+        "prediction_id": 56,
+        "projected_away_points": 22.461851086046426,
+        "projected_home_points": 27.363265084283874,
+        "projected_total": 49.825116170330304,
+        "raw_over_probability_normal_assumption": 0.5315589311125047,
+        "residual_uncertainty_points": 16.733547423270483,
+        "selected_direction": "over",
+        "shadow_selected_score_not_empirically_calibrated": 0.5315589311125047,
+        "z_score": 0.07918919621834239
+      }
+    },
+    {
+      "ats": {
+        "coefficients": [
+          35.089014249343435
+        ],
+        "epa_differential": 0.0609650496396415,
+        "governed_selected_side": "away",
+        "governed_uncertainty_points": null,
+        "intercept": 3.806602472343407,
+        "prediction_generated_at": "2026-11-05T01:07:02.603615+00:00",
+        "prediction_id": 57,
+        "projected_home_margin": 5.945805967860718,
+        "selected_margin_advantage_points": 0.5541940321392822,
+        "shadow_score_not_empirically_calibrated": 0.5027709701606964,
+        "shadow_score_transform": "min(0.60,0.50+0.005*selected_margin_advantage_points)"
+      },
+      "away": "Texas State",
+      "game_id": 401860912,
+      "home": "Oregon State",
+      "kickoff_utc": "2026-11-08T03:30:00+00:00",
+      "locked_home_spread": -6.5,
+      "locked_line_id": 57,
+      "non_model_context": {
+        "coaching": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "injury": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "market": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "qb": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "travel_rest": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW",
+        "weather": "NOT_USED_IN_RAW_MODEL;PENDING_SEPARATE_SOURCED_REVIEW"
+      },
+      "raw_point_in_time_package": {
+        "away_days_rest": 7,
+        "away_stats": {
+          "as_of_season": 2026,
+          "as_of_week": 9,
+          "defense_epa_play": 0.16937280747289818,
+          "defense_success_rate": 0.444015444015444,
+          "havoc_rate": 0.141,
+          "is_prior_season_fallback": false,
+          "offense_epa_play": 0.2679034074590707,
+          "offense_success_rate": 0.49335863377609107
+        },
+        "home_days_rest": 7,
+        "home_stats": {
+          "as_of_season": 2026,
+          "as_of_week": 9,
+          "defense_epa_play": 0.10799511105924803,
+          "defense_success_rate": 0.4018058690744921,
+          "havoc_rate": 0.164,
+          "is_prior_season_fallback": false,
+          "offense_epa_play": 0.26749076068506206,
+          "offense_success_rate": 0.4881889763779528
+        }
+      },
+      "totals": {
+        "calibration_slope": 1.0,
+        "feature_snapshot_sha256": "6e790f7057dd219aa47fdf678440b70495384746cc1de13f412abe2fa2fd535e",
+        "features": [
+          0.26749076068506206,
+          0.10799511105924803,
+          0.2679034074590707,
+          0.16937280747289818
+        ],
+        "locked_total": 72.5,
+        "prediction_generated_at": "2026-11-05T01:07:02.603615+00:00",
+        "prediction_id": 57,
+        "projected_away_points": 25.035753876478882,
+        "projected_home_points": 31.186129221482737,
+        "projected_total": 56.22188309796162,
+        "raw_over_probability_normal_assumption": 0.16533048610650664,
+        "residual_uncertainty_points": 16.733547423270483,
+        "selected_direction": "under",
+        "shadow_selected_score_not_empirically_calibrated": 0.8346695138934934,
+        "z_score": -0.9727833847950995
+      }
+    }
+  ],
+  "generated_at_utc": "2026-11-05T01:07:22.204835+00:00",
+  "status": "PREGAME_COMPONENT_REPLAY_VERIFIED",
+  "totals_model": {
+    "data_snapshot_sha256": "9be7bf7d0cae44e4e6916a80a275d454fabc79502a26a08ba6116a6767143b16",
+    "fitted": {
+      "away_coefficients": [
+        -8.521512134650823,
+        28.7721405447881,
+        25.73455374599414,
+        -6.736408192367168
+      ],
+      "away_intercept": 18.45451885585117,
+      "home_coefficients": [
+        28.170690506259426,
+        -10.029101739282568,
+        -8.8474518873502,
+        23.46281076875489
+      ],
+      "home_intercept": 23.130124121940206,
+      "training_count": 5115,
+      "uncertainty_points": 16.733547423270483
+    },
+    "name": "pit_epa_component_total_linear",
+    "training_dataset_sha256": "8dd94192f2c57df92a0c68d80accda7cd95ecfc4fb49c61287a79bde2b4178fe",
+    "training_rows": 5115,
+    "version": "pit-epa-component-total-linear-v1"
+  }
+}
