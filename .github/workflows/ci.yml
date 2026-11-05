@@ -72,3 +72,6 @@ jobs:
             replay-diagnostics/
             replay-verification/
           if-no-files-found: error
+
+      - name: Verify exact Week 10 prospective custody
+        run: python -m scripts.verify_week10_acceptance
