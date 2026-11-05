@@ -1,0 +1,21 @@
+{
+  "captured_at_utc": "2026-11-05T13:41:50.893571+00:00",
+  "cutoff_utc": "2026-11-06T00:30:00Z",
+  "records": [
+    {
+      "name": "sec-football-reports",
+      "url": "https://www.secsports.com/fbreports",
+      "requested_at_utc": "2026-11-05T13:41:50.589124+00:00",
+      "path": "sec-football-reports.gz",
+      "sha256": "eb0c48a170d9ea4feda35ca42a8325775cd54f90b59d80cc5baca683a826d579",
+      "http_status": 200,
+      "resolved_url": "https://www.secsports.com/fbreports",
+      "received_at_utc": "2026-11-05T13:41:50.885817+00:00",
+      "status": "CAPTURED",
+      "content_type": "text/html; charset=utf-8"
+    }
+  ],
+  "capture_code_sha256": "47f66040c70aabfd3c2834f6428454f2440910db7b2ab97e9dcd83b0cd2a2960",
+  "model_adjustments": [],
+  "note": "HTTP success is not evidence of usable article content or medical clearance."
+}

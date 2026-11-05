@@ -1,0 +1,6 @@
+{
+  "sunbelt-availability": "https://sunbeltsports.org/news/2025/8/11/football-availability-report-new.aspx",
+  "pac12-availability": "https://pac-12.com/news/2026/9/11/2026-football-reports.aspx",
+  "fau-week9-box": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401862812",
+  "texas-state-week9-box": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401860908"
+}

@@ -1,0 +1,129 @@
+{
+  "captured_at_utc": "2026-11-05T13:40:12.274537+00:00",
+  "cutoff_utc": "2026-11-06T00:30:00Z",
+  "records": [
+    {
+      "name": "fau-notes",
+      "url": "https://fausports.com/documents/2026/11/2/2026_Game_Notes__9_remediated.pdf",
+      "requested_at_utc": "2026-11-05T13:40:10.676350+00:00",
+      "path": "fau-notes.gz",
+      "sha256": "946af542dc0a5867ebc045bee61cbdeb0b25c47a06f981fe699c2d47a4216ff9",
+      "http_status": 200,
+      "resolved_url": "https://fausports.com/documents/2026/11/2/2026_Game_Notes__9_remediated.pdf",
+      "received_at_utc": "2026-11-05T13:40:11.195268+00:00",
+      "status": "CAPTURED",
+      "content_type": "text/html;charset=utf-8"
+    },
+    {
+      "name": "jmu-notes",
+      "url": "https://jmusports.com/documents/2026/11/3/2026_JMU_Football_Game_Notes_-_Southern_Miss.pdf",
+      "requested_at_utc": "2026-11-05T13:40:10.677350+00:00",
+      "path": "jmu-notes.gz",
+      "sha256": "e09255831f4c7dc13a1f507c639294ec785f714c799b8213bb62ca471e6f5aea",
+      "http_status": 200,
+      "resolved_url": "https://jmusports.com/documents/2026/11/3/2026_JMU_Football_Game_Notes_-_Southern_Miss.pdf",
+      "received_at_utc": "2026-11-05T13:40:11.551784+00:00",
+      "status": "CAPTURED",
+      "content_type": "text/html;charset=utf-8"
+    },
+    {
+      "name": "bc-notes",
+      "url": "https://bceagles.com/documents/2026/11/3/GAME_NINE_FSU_NOTES.pdf",
+      "requested_at_utc": "2026-11-05T13:40:10.678350+00:00",
+      "path": "bc-notes.gz",
+      "sha256": "10192216e0f463a046a5ec9cd37012a1fdc9a88580f762790624c8c9a956092b",
+      "http_status": 200,
+      "resolved_url": "https://bceagles.com/documents/2026/11/3/GAME_NINE_FSU_NOTES.pdf",
+      "received_at_utc": "2026-11-05T13:40:11.497711+00:00",
+      "status": "CAPTURED",
+      "content_type": "text/html;charset=utf-8"
+    },
+    {
+      "name": "utsa-notes-a",
+      "url": "https://storage.googleapis.com/goutsa-prod/2026/11/02/H4mV7V5sS2NFoie4Fas42cixDe14ej44A8znsK8s.pdf",
+      "requested_at_utc": "2026-11-05T13:40:10.679351+00:00",
+      "path": "utsa-notes-a.gz",
+      "sha256": "a5b8a19ffd9177aef09388714caed6cba484d2640f63130ad7f9b2301efffe23",
+      "http_status": 200,
+      "resolved_url": "https://storage.googleapis.com/goutsa-prod/2026/11/02/H4mV7V5sS2NFoie4Fas42cixDe14ej44A8znsK8s.pdf",
+      "received_at_utc": "2026-11-05T13:40:12.055171+00:00",
+      "status": "CAPTURED",
+      "content_type": "application/pdf"
+    },
+    {
+      "name": "utsa-notes-b",
+      "url": "https://storage.googleapis.com/goutsa-prod/2026/11/03/mDNggbP9yEZwvivQZ1Aq4o8mezIlPkWhqJJMTDpI.pdf",
+      "requested_at_utc": "2026-11-05T13:40:10.680863+00:00",
+      "path": "utsa-notes-b.gz",
+      "sha256": "feb709bd608308ddcaca6e35a921b38c21b891ee6e0d0e48ae6303d9df04bae7",
+      "http_status": 200,
+      "resolved_url": "https://storage.googleapis.com/goutsa-prod/2026/11/03/mDNggbP9yEZwvivQZ1Aq4o8mezIlPkWhqJJMTDpI.pdf",
+      "received_at_utc": "2026-11-05T13:40:10.992313+00:00",
+      "status": "CAPTURED",
+      "content_type": "application/pdf"
+    },
+    {
+      "name": "utsa-notes-c",
+      "url": "https://storage.googleapis.com/goutsa-prod/2026/11/04/ZUT0p66zfWxs5gHxWjZ7L8IrCnBRn533BxNxbqk5.pdf",
+      "requested_at_utc": "2026-11-05T13:40:10.681863+00:00",
+      "path": "utsa-notes-c.gz",
+      "sha256": "d51bd9e5287fdde7c01f39c9c4ce15c46e14f1dff15d51b2d89cac1126ddcaa2",
+      "http_status": 200,
+      "resolved_url": "https://storage.googleapis.com/goutsa-prod/2026/11/04/ZUT0p66zfWxs5gHxWjZ7L8IrCnBRn533BxNxbqk5.pdf",
+      "received_at_utc": "2026-11-05T13:40:11.209816+00:00",
+      "status": "CAPTURED",
+      "content_type": "application/pdf"
+    },
+    {
+      "name": "texas-state-recap",
+      "url": "https://txst.com/news/2026/11/1/football-game-recap-bobcats-take-no-20-boise-state-to-the-wire-but-fall-46-45.aspx",
+      "requested_at_utc": "2026-11-05T13:40:10.995323+00:00",
+      "path": "texas-state-recap.gz",
+      "sha256": "8a1ea7e8e5d65b85c58189bea61c2880ce4768a0592fd5b414cafccade67ad5d",
+      "http_status": 200,
+      "resolved_url": "https://txst.com/news/2026/11/1/football-game-recap-bobcats-take-no-20-boise-state-to-the-wire-but-fall-46-45.aspx",
+      "received_at_utc": "2026-11-05T13:40:12.256482+00:00",
+      "status": "CAPTURED",
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "name": "sec-reports",
+      "url": "https://www.secsports.com/reports",
+      "requested_at_utc": "2026-11-05T13:40:11.206156+00:00",
+      "path": "sec-reports.gz",
+      "sha256": "65f8c4af694430e8c6aae0e64c6983e1826f1f8bcb4fd225b21c0c59f7f3939b",
+      "http_status": 200,
+      "resolved_url": "https://www.secsports.com/reports",
+      "received_at_utc": "2026-11-05T13:40:11.607013+00:00",
+      "status": "CAPTURED",
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "name": "acc-reports",
+      "url": "https://theacc.com/sports/2025/8/28/availability-reporting-football.aspx",
+      "requested_at_utc": "2026-11-05T13:40:11.213686+00:00",
+      "path": "acc-reports.gz",
+      "sha256": "1ff04553405629da4412d37ea05b29e07325a7db43c0cdbb581487467d2fc4d1",
+      "http_status": 200,
+      "resolved_url": "https://theacc.com/sports/2025/8/28/availability-reporting-football.aspx",
+      "received_at_utc": "2026-11-05T13:40:11.424683+00:00",
+      "status": "CAPTURED",
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "name": "missouri-reported-availability",
+      "url": "https://sports.yahoo.com/articles/missouri-football-injury-updates-official-011511007.html",
+      "requested_at_utc": "2026-11-05T13:40:11.428679+00:00",
+      "path": "missouri-reported-availability.gz",
+      "sha256": "bc83c4ae6d03f446e2d677d03ee631d9836f3507ba21c72d62b824787d2d187a",
+      "http_status": 200,
+      "resolved_url": "https://sports.yahoo.com/articles/missouri-football-injury-updates-official-011511007.html",
+      "received_at_utc": "2026-11-05T13:40:12.083815+00:00",
+      "status": "CAPTURED",
+      "content_type": "text/html; charset=utf-8"
+    }
+  ],
+  "capture_code_sha256": "47f66040c70aabfd3c2834f6428454f2440910db7b2ab97e9dcd83b0cd2a2960",
+  "model_adjustments": [],
+  "note": "HTTP success is not evidence of usable article content or medical clearance."
+}

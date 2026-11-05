@@ -1,0 +1,1158 @@
+{
+  "10002956": {
+    "ReportType": "Initial",
+    "conferenceTimeZone": "CT",
+    "footer": {
+      "date": "2026-11-07",
+      "location": "Columbia, MO",
+      "time": "11:00:00"
+    },
+    "gameNeutral": false,
+    "games": [
+      {
+        "rows": [
+          {
+            "exemptStatus": "NonExempt",
+            "name": "RB #0 Raleek Brown",
+            "status": "Available"
+          },
+          {
+            "exemptStatus": "NonExempt",
+            "name": "DB #0 John Meredith III",
+            "status": "Available"
+          },
+          {
+            "exemptStatus": "NonExempt",
+            "name": "EDG #1 Colin Simmons",
+            "status": "Questionable"
+          },
+          {
+            "exemptStatus": "NonExempt",
+            "name": "WR #1 Ryan Wingo",
+            "status": "Questionable"
+          },
+          {
+            "exemptStatus": "NonExempt",
+            "name": "RB #2 Hollywood Smothers",
+            "status": "Out"
+          },
+          {
+            "exemptStatus": "NonExempt",
+            "name": "DB #2 Derek Williams Jr.",
+            "status": "Available"
+          },
+          {
+            "exemptStatus": "NonExempt",
+            "name": "LB #3 Rasheem Biles",
+            "status": "Available"
+          },
+          {
+            "exemptStatus": "NonExempt",
+            "name": "WR #3 Emmett Mosley V",
+            "status": "Available"
+          },
+          {
+            "exemptStatus": "NonExempt",
+            "name": "WR #4 Jermaine Bishop Jr.",
+            "status": "Available"
+          },
+          {
+            "exemptStatus": "NonExempt",
+            "name": "DB #4 Jelani McDonald",
+            "status": "Available"
+          },
+          {
+            "exemptStatus": "NonExempt",
+            "name": "RB #5 Derrek Cooper",
+            "status": "Available"
+          },
+          {
+            "exemptStatus": "NonExempt",
+            "name": "DB #5 Bo Mascoe",
+            "status": "Available"
+          },
+          {
+            "exemptStatus": "NonExempt",
+            "name": "QB #6 Dia Bell",
+            "status": "Available"
+          },
+          {
+            "exemptStatus": "NonExempt",
+            "name": "DB #6 Kobe Black",
+            "status": "Available"
+          },
+          {
+            "exemptStatus": "NonExempt",
+            "name": "WR #7 Kaliq Lockett",
+            "status": "Available"
+          },
+          {
+            "exemptStatus": "NonExempt",
+            "name": "WR #8 Cam Coleman",
+            "status": "Questionable"
+          },
+          {
+            "exemptStatus": "NonExempt",
+            "name": "DB #8 Kade Phillips",
+            "status": "Questionable"
+          },
+          {
+            "exemptStatus": "NonExempt",
+            "name": "QB #9 Karle \"KJ\" Lacey Jr.",
+            "status": "Available"
+          },
+          {
+            "exemptStatus": "NonExempt",
+            "name": "DB #9 Jonah Williams",
+            "status": "Available"
+          },
+          {
+            "exemptStatus": "NonExempt",
+            "name": "DB #11 Samari Matthews",
+            "status": "Available"
+          },
+          {
+            "exemptStatus": "NonExempt",
+            "name": "RB #11 Michael Terry III",
+            "status": "Available"
+          },
+          {
+            "exemptStatus": "NonExempt",
+            "name": "WR #13 Kohen Brown",
+            "status": "Available"
+          },
+          {
+            "exemptStatus": "NonExempt",
+            "name": "DB #13 Zelus Hicks",
+            "status": "Available"
+          },
+          {
+            "exemptStatus": "NonExempt",
+            "name": "EDG #14 Brad Spence",
+            "status": "Available"
+          },
+          {
+            "exemptStatus": "NonExempt",
+            "name": "WR #14 Chris Stewart",
+            "status": "Available"
+          },
+          {
+            "exemptStatus": "NonExempt",
+            "name": "TE #15 Michael Masunas",
+            "status": "Available"
+          },
+          {
+            "exemptStatus": "NonExempt",
+            "name": "DL #15 Justus Terry",
+            "status": "Available"
+          },
+          {
+            "exemptStatus": "NonExempt",
+            "name": "LB #16 Tyler Atkinson",
+            "status": "Available"
+          },
+          {
+            "exemptStatus": "NonExempt",
+            "name": "QB #16 Arch Manning",
+            "status": "Available"
+          },
+          {
+            "exemptStatus": "NonExempt",
+            "name": "DB #17 Xavier Filsaime",
+            "status": "Available"
+          },
+          {
+            "exemptStatus": "NonExempt",
+            "name": "WR #17 Daylan McCutcheon",
+            "status": "Available"
+          },
+          {
+            "exemptStatus": "NonExempt",
+            "name": "WR #18 Sterling Berkhalter",
+            "status": "Available"
+          },
+          {
+            "exemptStatus": "NonExempt",
+            "name": "LB #18 Kosi Okpala",
+            "status": "Available"
+          },
+          {
+            "exemptStatus": "NonExempt",
+            "name": "QB #19 MJ Morris",
+            "status": "Available"
+          },
+          {
+            "exemptStatus": "NonExempt",
+            "name": "EDG #19 Zina Umeozulu",
+            "status": "Available"
+          },
+          {
+            "exemptStatus": "Exempt",
+            "name": "DB #21 Hayward Howard Jr.",
+            "status": "Exempt"
+          },
+          {
+            "exemptStatus": "NonExempt",
+            "name": "RB #21 Ryan Niblett",
+            "status": "Available"
+          },
+          {
+            "exemptStatus": "NonExempt",
+            "name": "DB #23 Jordon Johnson-Rubell",
+            "status": "Available"
+          },
+          {
+            "exemptStatus": "NonExempt",
+            "name": "DB #24 Warren Roberson",
+            "status": "Available"
+          },
+          {
+            "exemptStatus": "NonExempt",
+            "name": "DB #25 Toray Davis",
+            "status": "Available"
+          },
+          {
+            "exemptStatus": "Exempt",
+            "name": "QB #25 Luke Dunham",
+            "status": "Exempt"
+          },
+          {
+            "exemptStatus": "NonExempt",
+            "name": "DB #27 Wardell Mack",
+            "status": "Available"
+          },
+          {
+            "exemptStatus": "NonExempt",
+            "name": "LB #28 Justin Cryer",
+            "status": "Available"
+          },
+          {
+            "exemptStatus": "Exempt",
+            "name": "RB #28 Jett Walker",
+            "status": "Exempt"
+          },
+          {
+            "exemptStatus": "NonExempt",
+            "name": "DB #29 Graceson Littleton",
+            "status": "Questionable"
+          },
+          {
+            "exemptStatus": "NonExempt",
+            "name": "LB #30 Rocky Cummings",
+            "status": "Available"
+          },
+          {
+            "exemptStatus": "Exempt",
+            "name": "DB #31 Yaheim Riley",
+            "status": "Exempt"
+          },
+          {
+            "exemptStatus": "NonExempt",
+            "name": "RB #31 James Simon",
+            "status": "Available"
+          },
+          {
+            "exemptStatus": "NonExempt",
+            "name": "LB #32 Brady Sarkisian",
+            "status": "Available"
+          },
+          {
+            "exemptStatus": "Exempt",
+            "name": "RB #33 Carson Berger",
+            "status": "Exempt"
+          },
+          {
+            "exemptStatus": "NonExempt",
+            "name": "DL #33 Myron Charles",
+            "status": "Available"
+          },
+          {
+            "exemptStatus": "NonExempt",
+            "name": "WR #35 Rett Andersen",
+            "status": "Available"
+          },
+          {
+            "exemptStatus": "Exempt",
+            "name": "DB #35 McCoy Bruce",
+            "status": "Exempt"
+          },
+          {
+            "exemptStatus": "Exempt",
+            "name": "DB #36 Nick Hudson",
+            "status": "Exempt"
+          },
+          {
+            "exemptStatus": "NonExempt",
+            "name": "LB #37 Jonathan Cunningham",
+            "status": "Available"
+          },
+          {
+            "exemptStatus": "Exempt",
+            "name": "WR #39 Evan Enderlin",
+            "status": "Exempt"
+          },
+          {
+            "exemptStatus": "NonExempt",
+            "name": "EDG #40 Lance Jackson",
+            "status": "Available"
+          },
+          {
+            "exemptStatus": "Exempt",
+            "name": "DB #41 Ziky Umeozulu",
+            "status": "Exempt"
+          },
+          {
+            "exemptStatus": "NonExempt",
+            "name": "DS #42 Trott O'Neal",
+            "status": "Available"
+          },
+          {
+            "exemptStatus": "NonExempt",
+            "name": "P #43 Mac Chiumento",
+            "status": "Available"
+          },
+          {
+            "exemptStatus": "Exempt",
+            "name": "LB #43 Eric Garza",
+            "status": "Exempt"
+          },
+          {
+            "exemptStatus": "NonExempt",
+            "name": "K #44 Gianni Spetic",
+            "status": "Available"
+          },
+          {
+            "exemptStatus": "Exempt",
+            "name": "LB #44 Markus Boswell",
+            "status": "Exempt"
+          },
+          {
+            "exemptStatus": "NonExempt",
+            "name": "P #45 Mikey Bukauskas",
+            "status": "Available"
+          },
+          {
+            "exemptStatus": "NonExempt",
+            "name": "LB #45 Darius Snow",
+            "status": "Available"
+          },
+          {
+            "exemptStatus": "NonExempt",
+            "name": "EDG #46 Smith Orogbo",
+            "status": "Available"
+          },
+          {
+            "exemptStatus": "Exempt",
+            "name": "K #46 Spencer Barnett",
+            "status": "Exempt"
+          },
+          {
+            "exemptStatus": "NonExempt",
+            "name": "DS #47 Trey Dubuc",
+            "status": "Available"
+          },
+          {
+            "exemptStatus": "Exempt",
+            "name": "TE #48 Bryce Chambers",
+            "status": "Exempt"
+          },
+          {
+            "exemptStatus": "Exempt",
+            "name": "DB #48 Jackson Duffey",
+            "status": "Exempt"
+          },
+          {
+            "exemptStatus": "NonExempt",
+            "name": "K #49 Jake Collett",
+            "status": "Available"
+          },
+          {
+            "exemptStatus": "NonExempt",
+            "name": "OL #50 Laurence Seymore III",
+            "status": "Available"
+          },
+          {
+            "exemptStatus": "NonExempt",
+            "name": "OL #51 John Turntine III",
+            "status": "Available"
+          },
+          {
+            "exemptStatus": "NonExempt",
+            "name": "DL #52 James Johnson",
+            "status": "Available"
+          },
+          {
+            "exemptStatus": "Exempt",
+            "name": "DL #53 Isaiah Coleman",
+            "status": "Exempt"
+          },
+          {
+            "exemptStatus": "NonExempt",
+            "name": "OL #54 Cole Hutson",
+            "status": "Available"
+          },
+          {
+            "exemptStatus": "Exempt",
+            "name": "DL #55 Elijah Ali",
+            "status": "Exempt"
+          },
+          {
+            "exemptStatus": "NonExempt",
+            "name": "OL #56 Dylan Sikorski",
+            "status": "Available"
+          },
+          {
+            "exemptStatus": "NonExempt",
+            "name": "OL #58 Devin Coleman",
+            "status": "Available"
+          },
+          {
+            "exemptStatus": "NonExempt",
+            "name": "OL #62 Connor Robertson",
+            "status": "Available"
+          },
+          {
+            "exemptStatus": "Exempt",
+            "name": "OL #64 Robert Sweeney",
+            "status": "Exempt"
+          },
+          {
+            "exemptStatus": "NonExempt",
+            "name": "OL #68 Paris Patterson",
+            "status": "Available"
+          },
+          {
+            "exemptStatus": "Exempt",
+            "name": "OL #69 Brooks Kieschnick Jr.",
+            "status": "Exempt"
+          },
+          {
+            "exemptStatus": "Exempt",
+            "name": "OL #70 Kaden Scherer",
+            "status": "Exempt"
+          },
+          {
+            "exemptStatus": "NonExempt",
+            "name": "OL #71 Melvin Siani",
+            "status": "Available"
+          },
+          {
+            "exemptStatus": "Exempt",
+            "name": "OL #72 Nicolas Robertson",
+            "status": "Exempt"
+          },
+          {
+            "exemptStatus": "NonExempt",
+            "name": "OL #73 Brandon Baker",
+            "status": "Available"
+          },
+          {
+            "exemptStatus": "NonExempt",
+            "name": "OL #74 Trevor Goosby",
+            "status": "Out"
+          },
+          {
+            "exemptStatus": "NonExempt",
+            "name": "OL #75 Jaydon Chatman",
+            "status": "Available"
+          },
+          {
+            "exemptStatus": "NonExempt",
+            "name": "OL #76 Jackson Christian",
+            "status": "Available"
+          },
+          {
+            "exemptStatus": "NonExempt",
+            "name": "OL #77 Andre Cojoe",
+            "status": "Available"
+          },
+          {
+            "exemptStatus": "NonExempt",
+            "name": "OL #78 Jordan Coleman",
+            "status": "Available"
+          },
+          {
+            "exemptStatus": "NonExempt",
+            "name": "OL #79 Jonte Newman",
+            "status": "Available"
+          },
+          {
+            "exemptStatus": "Exempt",
+            "name": "EDG #80 Brinley Tita",
+            "status": "Exempt"
+          },
+          {
+            "exemptStatus": "NonExempt",
+            "name": "TE #81 Nick Townsend",
+            "status": "Out"
+          },
+          {
+            "exemptStatus": "Exempt",
+            "name": "TE #82 Ridge Barker",
+            "status": "Exempt"
+          },
+          {
+            "exemptStatus": "NonExempt",
+            "name": "TE #83 Spencer Shannon",
+            "status": "Available"
+          },
+          {
+            "exemptStatus": "NonExempt",
+            "name": "TE #85 Emaree Winston",
+            "status": "Available"
+          },
+          {
+            "exemptStatus": "Exempt",
+            "name": "WR #86 Hudson Powell",
+            "status": "Exempt"
+          },
+          {
+            "exemptStatus": "Exempt",
+            "name": "TE #87 Will Randle",
+            "status": "Exempt"
+          },
+          {
+            "exemptStatus": "NonExempt",
+            "name": "TE #88 Charlie Jilek",
+            "status": "Available"
+          },
+          {
+            "exemptStatus": "NonExempt",
+            "name": "DL #88 Maraad Watson",
+            "status": "Available"
+          },
+          {
+            "exemptStatus": "Exempt",
+            "name": "WR #89 Ty Boatright",
+            "status": "Exempt"
+          },
+          {
+            "exemptStatus": "NonExempt",
+            "name": "DL #90 Josiah Sharma",
+            "status": "Available"
+          },
+          {
+            "exemptStatus": "NonExempt",
+            "name": "EDG #92 Colton Vasek",
+            "status": "Available"
+          },
+          {
+            "exemptStatus": "NonExempt",
+            "name": "DL #93 Hero Kanu",
+            "status": "Available"
+          },
+          {
+            "exemptStatus": "NonExempt",
+            "name": "EDG #94 Jamarion Carlton",
+            "status": "Available"
+          },
+          {
+            "exemptStatus": "NonExempt",
+            "name": "DL #95 Ian Geffrard",
+            "status": "Available"
+          },
+          {
+            "exemptStatus": "NonExempt",
+            "name": "DL #96 Zion Williams",
+            "status": "Available"
+          },
+          {
+            "exemptStatus": "NonExempt",
+            "name": "DL #97 Alex January",
+            "status": "Available"
+          },
+          {
+            "exemptStatus": "NonExempt",
+            "name": "EDG #99 Richard Wesley",
+            "status": "Out"
+          }
+        ],
+        "teamDisplayName": "Texas",
+        "teamName": "Texas"
+      },
+      {
+        "rows": [
+          {
+            "exemptStatus": "NonExempt",
+            "name": "LB #0 Robert Woodyard Jr.",
+            "status": "Available"
+          },
+          {
+            "exemptStatus": "NonExempt",
+            "name": "WR #0 Naeshaun Montgomery",
+            "status": "Available"
+          },
+          {
+            "exemptStatus": "NonExempt",
+            "name": "CB #1 Chris Graves Jr.",
+            "status": "Available"
+          },
+          {
+            "exemptStatus": "NonExempt",
+            "name": "WR #1 Donovan Olugbode",
+            "status": "Available"
+          },
+          {
+            "exemptStatus": "NonExempt",
+            "name": "CB #2 Sione Laulea",
+            "status": "Available"
+          },
+          {
+            "exemptStatus": "NonExempt",
+            "name": "WR #2 Caleb Goodie Sr.",
+            "status": "Available"
+          },
+          {
+            "exemptStatus": "NonExempt",
+            "name": "WR #3 DaMarion Fowlkes",
+            "status": "Available"
+          },
+          {
+            "exemptStatus": "NonExempt",
+            "name": "DT #3 Marquis Gracial",
+            "status": "Available"
+          },
+          {
+            "exemptStatus": "NonExempt",
+            "name": "WR #4 Shaun Terry II",
+            "status": "Available"
+          },
+          {
+            "exemptStatus": "NonExempt",
+            "name": "S #4 Trajen Greco",
+            "status": "Available"
+          },
+          {
+            "exemptStatus": "NonExempt",
+            "name": "QB #5 Matt Zollers",
+            "status": "Available"
+          },
+          {
+            "exemptStatus": "NonExempt",
+            "name": "LB #5 Nicholas Rodriguez",
+            "status": "Available"
+          },
+          {
+            "exemptStatus": "NonExempt",
+            "name": "LB #6 Jeremiah Beasley",
+            "status": "Available"
+          },
+          {
+            "exemptStatus": "NonExempt",
+            "name": "QB #7 Gavin Sidwar",
+            "status": "Available"
+          },
+          {
+            "exemptStatus": "NonExempt",
+            "name": "S #7 Kensley Louidor-Faustin",
+            "status": "Available"
+          },
+          {
+            "exemptStatus": "NonExempt",
+            "name": "DT #8 Donta Simpson",
+            "status": "Available"
+          },
+          {
+            "exemptStatus": "NonExempt",
+            "name": "LB #9 Dante McClellan",
+            "status": "Available"
+          },
+          {
+            "exemptStatus": "NonExempt",
+            "name": "QB #10 Nick Evers",
+            "status": "Available"
+          },
+          {
+            "exemptStatus": "NonExempt",
+            "name": "EDG #10 Daeden Hopkins",
+            "status": "Available"
+          },
+          {
+            "exemptStatus": "NonExempt",
+            "name": "WR #11 Jabari Brady",
+            "status": "Available"
+          },
+          {
+            "exemptStatus": "NonExempt",
+            "name": "EDG #11 Langden Kitchen",
+            "status": "Available"
+          },
+          {
+            "exemptStatus": "NonExempt",
+            "name": "EDG #12 Malik Bryant",
+            "status": "Available"
+          },
+          {
+            "exemptStatus": "NonExempt",
+            "name": "WR #12 Devyon Hill-Lomax",
+            "status": "Available"
+          },
+          {
+            "exemptStatus": "NonExempt",
+            "name": "EDG #13 Jaden Jones",
+            "status": "Available"
+          },
+          {
+            "exemptStatus": "NonExempt",
+            "name": "QB #13 Austin Simmons",
+            "status": "Available"
+          },
+          {
+            "exemptStatus": "NonExempt",
+            "name": "QB #14 Brett Brown",
+            "status": "Available"
+          },
+          {
+            "exemptStatus": "NonExempt",
+            "name": "S #14 CJ Bass III",
+            "status": "Available"
+          },
+          {
+            "exemptStatus": "NonExempt",
+            "name": "S #15 Santana Banner",
+            "status": "Available"
+          },
+          {
+            "exemptStatus": "NonExempt",
+            "name": "LB #16 Bobby Washington Jr.",
+            "status": "Available"
+          },
+          {
+            "exemptStatus": "NonExempt",
+            "name": "LB #17 Brian Huff",
+            "status": "Available"
+          },
+          {
+            "exemptStatus": "NonExempt",
+            "name": "WR #17 Kenric Lanier II",
+            "status": "Available"
+          },
+          {
+            "exemptStatus": "NonExempt",
+            "name": "S #18 JaDon Blair",
+            "status": "Available"
+          },
+          {
+            "exemptStatus": "NonExempt",
+            "name": "TE #18 Isaac Jensen",
+            "status": "Available"
+          },
+          {
+            "exemptStatus": "NonExempt",
+            "name": "WR #19 Cayden Lee",
+            "status": "Available"
+          },
+          {
+            "exemptStatus": "NonExempt",
+            "name": "EDG #19 Darris Smith",
+            "status": "Available"
+          },
+          {
+            "exemptStatus": "NonExempt",
+            "name": "K #19 Blake Craig",
+            "status": "Available"
+          },
+          {
+            "exemptStatus": "NonExempt",
+            "name": "RB #20 Jamal Roberts",
+            "status": "Available"
+          },
+          {
+            "exemptStatus": "NonExempt",
+            "name": "CB #20 Cameron Keys",
+            "status": "Available"
+          },
+          {
+            "exemptStatus": "NonExempt",
+            "name": "CB #21 Jahlil Florence",
+            "status": "Available"
+          },
+          {
+            "exemptStatus": "NonExempt",
+            "name": "RB #21 Malae Fonoti",
+            "status": "Out"
+          },
+          {
+            "exemptStatus": "NonExempt",
+            "name": "S #22 Elijah Dotson",
+            "status": "Available"
+          },
+          {
+            "exemptStatus": "NonExempt",
+            "name": "RB #22 Max Warner",
+            "status": "Available"
+          },
+          {
+            "exemptStatus": "NonExempt",
+            "name": "RB #24 Xai'Shaun Edwards",
+            "status": "Available"
+          },
+          {
+            "exemptStatus": "NonExempt",
+            "name": "CB #24 Nick DeLoach Jr.",
+            "status": "Available"
+          },
+          {
+            "exemptStatus": "NonExempt",
+            "name": "LB #25 Jason King",
+            "status": "Available"
+          },
+          {
+            "exemptStatus": "NonExempt",
+            "name": "RB #26 Brady Hultman",
+            "status": "Available"
+          },
+          {
+            "exemptStatus": "NonExempt",
+            "name": "CB #26 Jaxson Gates",
+            "status": "Available"
+          },
+          {
+            "exemptStatus": "NonExempt",
+            "name": "S #28 Jayden McGregory",
+            "status": "Available"
+          },
+          {
+            "exemptStatus": "NonExempt",
+            "name": "RB #28 Preston Hatfield",
+            "status": "Available"
+          },
+          {
+            "exemptStatus": "NonExempt",
+            "name": "EDG #29 Kamauryn Morgan",
+            "status": "Available"
+          },
+          {
+            "exemptStatus": "NonExempt",
+            "name": "RB #29 Ahmad Hardy",
+            "status": "Available"
+          },
+          {
+            "exemptStatus": "NonExempt",
+            "name": "S #30 Carter Stewart",
+            "status": "Available"
+          },
+          {
+            "exemptStatus": "NonExempt",
+            "name": "CB #31 Nasir Pogue",
+            "status": "Available"
+          },
+          {
+            "exemptStatus": "NonExempt",
+            "name": "RB #31 Anthony Favrow",
+            "status": "Available"
+          },
+          {
+            "exemptStatus": "NonExempt",
+            "name": "WR #32 Gavin Wyatt",
+            "status": "Available"
+          },
+          {
+            "exemptStatus": "NonExempt",
+            "name": "S #32 Maddux Hermestroff",
+            "status": "Available"
+          },
+          {
+            "exemptStatus": "NonExempt",
+            "name": "S #32 Brody Jones",
+            "status": "Available"
+          },
+          {
+            "exemptStatus": "NonExempt",
+            "name": "LB #33 JJ Bush",
+            "status": "Available"
+          },
+          {
+            "exemptStatus": "NonExempt",
+            "name": "WR #33 DJ McBride II",
+            "status": "Available"
+          },
+          {
+            "exemptStatus": "NonExempt",
+            "name": "P #34 Mark Shenouda",
+            "status": "Available"
+          },
+          {
+            "exemptStatus": "NonExempt",
+            "name": "S #34 Jackson Hancock",
+            "status": "Available"
+          },
+          {
+            "exemptStatus": "NonExempt",
+            "name": "DB #35 Ahmod Billins",
+            "status": "Available"
+          },
+          {
+            "exemptStatus": "NonExempt",
+            "name": "LS #36 Sean Gross",
+            "status": "Available"
+          },
+          {
+            "exemptStatus": "NonExempt",
+            "name": "CB #36 Trashundon Neal",
+            "status": "Available"
+          },
+          {
+            "exemptStatus": "NonExempt",
+            "name": "LS #38 Henry Crosby",
+            "status": "Available"
+          },
+          {
+            "exemptStatus": "NonExempt",
+            "name": "LB #38 Keenan Harris",
+            "status": "Available"
+          },
+          {
+            "exemptStatus": "NonExempt",
+            "name": "K #40 Brunno Reus",
+            "status": "Available"
+          },
+          {
+            "exemptStatus": "NonExempt",
+            "name": "S #41 Graham Faust",
+            "status": "Available"
+          },
+          {
+            "exemptStatus": "NonExempt",
+            "name": "P #43 John Butcher",
+            "status": "Available"
+          },
+          {
+            "exemptStatus": "NonExempt",
+            "name": "LB #46 Jackson Daily",
+            "status": "Available"
+          },
+          {
+            "exemptStatus": "NonExempt",
+            "name": "K #48 Oliver Robbins",
+            "status": "Available"
+          },
+          {
+            "exemptStatus": "NonExempt",
+            "name": "LS #49 Brett Le Blanc",
+            "status": "Available"
+          },
+          {
+            "exemptStatus": "NonExempt",
+            "name": "OL #51 Luke Work",
+            "status": "Available"
+          },
+          {
+            "exemptStatus": "NonExempt",
+            "name": "EDG #52 Demarcus Johnson",
+            "status": "Available"
+          },
+          {
+            "exemptStatus": "NonExempt",
+            "name": "OL #52 Zack Owens",
+            "status": "Available"
+          },
+          {
+            "exemptStatus": "NonExempt",
+            "name": "LB #53 Tommy Reese",
+            "status": "Available"
+          },
+          {
+            "exemptStatus": "NonExempt",
+            "name": "OL #54 Josh Atkins",
+            "status": "Out"
+          },
+          {
+            "exemptStatus": "NonExempt",
+            "name": "EDG #55 Cavan Tuley",
+            "status": "Available"
+          },
+          {
+            "exemptStatus": "NonExempt",
+            "name": "OL #55 Will Kemna",
+            "status": "Available"
+          },
+          {
+            "exemptStatus": "NonExempt",
+            "name": "OL #56 Dominick Giudice",
+            "status": "Available"
+          },
+          {
+            "exemptStatus": "NonExempt",
+            "name": "DT #57 Mark Hensley",
+            "status": "Available"
+          },
+          {
+            "exemptStatus": "NonExempt",
+            "name": "OL #58 Khalief Canty Jr.",
+            "status": "Available"
+          },
+          {
+            "exemptStatus": "NonExempt",
+            "name": "OL #63 Chace Missouri",
+            "status": "Available"
+          },
+          {
+            "exemptStatus": "NonExempt",
+            "name": "OL #64 Joe Schranz",
+            "status": "Available"
+          },
+          {
+            "exemptStatus": "NonExempt",
+            "name": "OL #65 Brysen Wessell",
+            "status": "Available"
+          },
+          {
+            "exemptStatus": "NonExempt",
+            "name": "OL #66 Logan Reichert",
+            "status": "Available"
+          },
+          {
+            "exemptStatus": "NonExempt",
+            "name": "OL #69 Braylon Ellison",
+            "status": "Available"
+          },
+          {
+            "exemptStatus": "NonExempt",
+            "name": "OL #70 Cayden Green",
+            "status": "Available"
+          },
+          {
+            "exemptStatus": "NonExempt",
+            "name": "OL #71 Ryan Jostes",
+            "status": "Available"
+          },
+          {
+            "exemptStatus": "NonExempt",
+            "name": "OL #72 Colin Sorensen",
+            "status": "Available"
+          },
+          {
+            "exemptStatus": "NonExempt",
+            "name": "OL #73 Tristan Wilson",
+            "status": "Available"
+          },
+          {
+            "exemptStatus": "NonExempt",
+            "name": "OL #74 Whit Hafer",
+            "status": "Available"
+          },
+          {
+            "exemptStatus": "NonExempt",
+            "name": "OL #75 Jack Lange",
+            "status": "Available"
+          },
+          {
+            "exemptStatus": "NonExempt",
+            "name": "OL #77 Curtis Peagler",
+            "status": "Available"
+          },
+          {
+            "exemptStatus": "Exempt",
+            "name": "OL #78 DJ Jones",
+            "status": "Exempt"
+          },
+          {
+            "exemptStatus": "NonExempt",
+            "name": "WR #80 Jayden Bolton",
+            "status": "Available"
+          },
+          {
+            "exemptStatus": "NonExempt",
+            "name": "WR #81 Noah Flaskamp",
+            "status": "Available"
+          },
+          {
+            "exemptStatus": "NonExempt",
+            "name": "WR #82 Karsten Fiene",
+            "status": "Available"
+          },
+          {
+            "exemptStatus": "NonExempt",
+            "name": "TE #84 Adam Molitor",
+            "status": "Available"
+          },
+          {
+            "exemptStatus": "NonExempt",
+            "name": "TE #86 Jordon Harris",
+            "status": "Available"
+          },
+          {
+            "exemptStatus": "NonExempt",
+            "name": "TE #87 Brett Norfleet",
+            "status": "Available"
+          },
+          {
+            "exemptStatus": "NonExempt",
+            "name": "TE #88 Gavin Hoffman",
+            "status": "Out"
+          },
+          {
+            "exemptStatus": "NonExempt",
+            "name": "TE #89 Jude James",
+            "status": "Available"
+          },
+          {
+            "exemptStatus": "NonExempt",
+            "name": "DT #90 Sterling Webb",
+            "status": "Available"
+          },
+          {
+            "exemptStatus": "Exempt",
+            "name": "DT #91 Elias Williams",
+            "status": "Exempt"
+          },
+          {
+            "exemptStatus": "NonExempt",
+            "name": "DT #92 Jason Dowell",
+            "status": "Available"
+          },
+          {
+            "exemptStatus": "NonExempt",
+            "name": "DT #93 Jocques Felix",
+            "status": "Available"
+          },
+          {
+            "exemptStatus": "NonExempt",
+            "name": "DT #94 Sam Williams",
+            "status": "Available"
+          },
+          {
+            "exemptStatus": "NonExempt",
+            "name": "DT #95 Jalen Marshall",
+            "status": "Available"
+          },
+          {
+            "exemptStatus": "NonExempt",
+            "name": "EDG #96 Aidan Dubbert",
+            "status": "Available"
+          },
+          {
+            "exemptStatus": "NonExempt",
+            "name": "EDG #97 CJ May",
+            "status": "Available"
+          },
+          {
+            "exemptStatus": "NonExempt",
+            "name": "DT #98 Tajh Overton",
+            "status": "Available"
+          },
+          {
+            "exemptStatus": "NonExempt",
+            "name": "DT #99 Jadon Frick",
+            "status": "Available"
+          }
+        ],
+        "teamDisplayName": "Missouri",
+        "teamName": "Missouri"
+      }
+    ],
+    "outCombined": 1,
+    "postedTime": "19:10:00",
+    "publishDate": "2026-11-04",
+    "publishDayOfWeek": "Wednesday",
+    "statusReportOrder": [
+      "Out",
+      "Out - (1st Half)",
+      "Doubtful",
+      "Questionable",
+      "Probable",
+      "Available"
+    ]
+  }
+}

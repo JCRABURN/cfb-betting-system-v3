@@ -1,0 +1,2719 @@
+{
+  "captured_at_utc": "2026-11-05T13:36:30.919065+00:00",
+  "records": [
+    {
+      "name": "espn-401856743",
+      "url": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401856743",
+      "requested_at_utc": "2026-11-05T13:36:14.777985+00:00",
+      "status": "CAPTURED",
+      "http_status": 200,
+      "received_at_utc": "2026-11-05T13:36:15.125966+00:00",
+      "resolved_url": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401856743",
+      "path": "espn-401856743.gz",
+      "sha256": "0e6044f5f481d4436c9ad76fd80942c11a02e0f6cf5402c73047fd6d18a15dd0"
+    },
+    {
+      "name": "espn-401856856",
+      "url": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401856856",
+      "requested_at_utc": "2026-11-05T13:36:14.779023+00:00",
+      "status": "CAPTURED",
+      "http_status": 200,
+      "received_at_utc": "2026-11-05T13:36:15.122957+00:00",
+      "resolved_url": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401856856",
+      "path": "espn-401856856.gz",
+      "sha256": "7d9705a492d7ba047a22cef5ad7210b0042063ed960fa2c17fba57b7f6f6ad6c"
+    },
+    {
+      "name": "espn-401858289",
+      "url": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401858289",
+      "requested_at_utc": "2026-11-05T13:36:14.779023+00:00",
+      "status": "CAPTURED",
+      "http_status": 200,
+      "received_at_utc": "2026-11-05T13:36:15.058150+00:00",
+      "resolved_url": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401858289",
+      "path": "espn-401858289.gz",
+      "sha256": "44304ee060c0b488afdcac7f912910244b277517d4dbcac85621ebff827178b3"
+    },
+    {
+      "name": "espn-401858292",
+      "url": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401858292",
+      "requested_at_utc": "2026-11-05T13:36:14.779984+00:00",
+      "status": "CAPTURED",
+      "http_status": 200,
+      "received_at_utc": "2026-11-05T13:36:15.059149+00:00",
+      "resolved_url": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401858292",
+      "path": "espn-401858292.gz",
+      "sha256": "916a08b7c7f2b8f975d56d7e010f834be7a886231774c9644c5135c0902dc86b"
+    },
+    {
+      "name": "espn-401860911",
+      "url": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401860911",
+      "requested_at_utc": "2026-11-05T13:36:14.779984+00:00",
+      "status": "CAPTURED",
+      "http_status": 200,
+      "received_at_utc": "2026-11-05T13:36:15.123954+00:00",
+      "resolved_url": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401860911",
+      "path": "espn-401860911.gz",
+      "sha256": "0a9aa12c2b8c84cec31a679546b3082bdc2cfe767e0aee8a58c42b894e1e4225"
+    },
+    {
+      "name": "espn-401860912",
+      "url": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401860912",
+      "requested_at_utc": "2026-11-05T13:36:14.779984+00:00",
+      "status": "CAPTURED",
+      "http_status": 200,
+      "received_at_utc": "2026-11-05T13:36:15.085751+00:00",
+      "resolved_url": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401860912",
+      "path": "espn-401860912.gz",
+      "sha256": "11fce197b078d82c9e1e26fb48936c42c5f6c695d4aabd1b9ff60167a694b7af"
+    },
+    {
+      "name": "espn-401862817",
+      "url": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401862817",
+      "requested_at_utc": "2026-11-05T13:36:15.073205+00:00",
+      "status": "CAPTURED",
+      "http_status": 200,
+      "received_at_utc": "2026-11-05T13:36:15.231252+00:00",
+      "resolved_url": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401862817",
+      "path": "espn-401862817.gz",
+      "sha256": "2fc89a24d4cdbd6edd789b2d74a8f70f9c213ab17eaa49d27f65faed0dfdbb9a"
+    },
+    {
+      "name": "espn-401862823",
+      "url": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401862823",
+      "requested_at_utc": "2026-11-05T13:36:15.077220+00:00",
+      "status": "CAPTURED",
+      "http_status": 200,
+      "received_at_utc": "2026-11-05T13:36:15.274415+00:00",
+      "resolved_url": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401862823",
+      "path": "espn-401862823.gz",
+      "sha256": "2ccea2181f995dde1a0e07cb461ed46813cf4bd82aed18eccbad38f604dfaf2e"
+    },
+    {
+      "name": "espn-401869964",
+      "url": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401869964",
+      "requested_at_utc": "2026-11-05T13:36:15.098308+00:00",
+      "status": "CAPTURED",
+      "http_status": 200,
+      "received_at_utc": "2026-11-05T13:36:15.243404+00:00",
+      "resolved_url": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401869964",
+      "path": "espn-401869964.gz",
+      "sha256": "450ee09ce99c4dda84632da1d797d80bfae81a5e7208c73d44bd02c6ccfbd8d1"
+    },
+    {
+      "name": "espn-401871076",
+      "url": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401871076",
+      "requested_at_utc": "2026-11-05T13:36:15.140078+00:00",
+      "status": "CAPTURED",
+      "http_status": 200,
+      "received_at_utc": "2026-11-05T13:36:15.298620+00:00",
+      "resolved_url": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401871076",
+      "path": "espn-401871076.gz",
+      "sha256": "ec717b4a6f0ddc3d0f1a6e6740922ea8c8ab0a10eda1b93c7af337ac99d458af"
+    },
+    {
+      "name": "cfbd-venues",
+      "url": "https://api.collegefootballdata.com/venues",
+      "requested_at_utc": "2026-11-05T13:36:15.341991+00:00",
+      "status": "CAPTURED",
+      "http_status": 200,
+      "received_at_utc": "2026-11-05T13:36:15.652618+00:00",
+      "resolved_url": "https://api.collegefootballdata.com/venues",
+      "path": "cfbd-venues.gz",
+      "sha256": "99fbd54258466db823d4efc0a643f5cc7c68e30db7d06213d51f59112c7035da"
+    },
+    {
+      "name": "cfbd-current-week10-lines",
+      "url": "https://api.collegefootballdata.com/lines?year=2026&week=10&seasonType=regular",
+      "requested_at_utc": "2026-11-05T13:36:15.679777+00:00",
+      "status": "CAPTURED",
+      "http_status": 200,
+      "received_at_utc": "2026-11-05T13:36:15.921949+00:00",
+      "resolved_url": "https://api.collegefootballdata.com/lines?year=2026&week=10&seasonType=regular",
+      "path": "cfbd-current-week10-lines.gz",
+      "sha256": "c335dd1e7942003ee9def7c4a0aa97bbc8596158234c5ed48fa5a40cf6de3424"
+    },
+    {
+      "name": "official-utsa",
+      "url": "https://goutsa.com/sports/football",
+      "requested_at_utc": "2026-11-05T13:36:15.926969+00:00",
+      "status": "CAPTURED",
+      "http_status": 200,
+      "received_at_utc": "2026-11-05T13:36:16.760148+00:00",
+      "resolved_url": "https://goutsa.com/sports/football",
+      "path": "official-utsa.gz",
+      "sha256": "75bf36628b43662c14d1f70dd5e046cc91b0a9682141980622b8f5e3d6df98d8"
+    },
+    {
+      "name": "article-utsa-0",
+      "url": "https://goutsa.com/news/2026/11/2/utsanorth-texas-game-selected-for-espnu-broadcast",
+      "requested_at_utc": "2026-11-05T13:36:16.782937+00:00",
+      "status": "CAPTURED",
+      "http_status": 200,
+      "received_at_utc": "2026-11-05T13:36:17.313817+00:00",
+      "resolved_url": "https://goutsa.com/news/2026/11/2/utsanorth-texas-game-selected-for-espnu-broadcast",
+      "path": "article-utsa-0.gz",
+      "sha256": "e43b8b1ba0db9346f0e40bc3b388f1a7af88858f00b91881667bbc32108d5033"
+    },
+    {
+      "name": "article-utsa-1",
+      "url": "https://goutsa.com/news/2026/11/3/petro-named-nominee-for-burlsworth-trophy",
+      "requested_at_utc": "2026-11-05T13:36:17.334875+00:00",
+      "status": "CAPTURED",
+      "http_status": 200,
+      "received_at_utc": "2026-11-05T13:36:17.872120+00:00",
+      "resolved_url": "https://goutsa.com/news/2026/11/3/petro-named-nominee-for-burlsworth-trophy",
+      "path": "article-utsa-1.gz",
+      "sha256": "e8cbccd396e94f1888462d5d4452acfbf3daed503ace34530fe31897c9f9830d"
+    },
+    {
+      "name": "article-utsa-2",
+      "url": "https://goutsa.com/news/2026/11/4/utsa-to-face-florida-atlantic-on-thursday-in-espn-primetime-matchup",
+      "requested_at_utc": "2026-11-05T13:36:17.909018+00:00",
+      "status": "CAPTURED",
+      "http_status": 200,
+      "received_at_utc": "2026-11-05T13:36:18.436322+00:00",
+      "resolved_url": "https://goutsa.com/news/2026/11/4/utsa-to-face-florida-atlantic-on-thursday-in-espn-primetime-matchup",
+      "path": "article-utsa-2.gz",
+      "sha256": "0e3d43f67999b6db2c057175a43efda31ce5bf753cc3b6ae96760f49a90bb693"
+    },
+    {
+      "name": "official-florida-atlantic",
+      "url": "https://fausports.com/sports/football",
+      "requested_at_utc": "2026-11-05T13:36:15.928974+00:00",
+      "status": "CAPTURED",
+      "http_status": 200,
+      "received_at_utc": "2026-11-05T13:36:17.117776+00:00",
+      "resolved_url": "https://fausports.com/sports/football",
+      "path": "official-florida-atlantic.gz",
+      "sha256": "6a09bf4f690a870e8580a4aa54a4dda92de2d1fea8b938e98e62ddcf50a16499"
+    },
+    {
+      "name": "article-florida-atlantic-0",
+      "url": "https://fausports.com/news/2026/11/2/football-game-notes-9",
+      "requested_at_utc": "2026-11-05T13:36:17.178084+00:00",
+      "status": "CAPTURED",
+      "http_status": 200,
+      "received_at_utc": "2026-11-05T13:36:17.418432+00:00",
+      "resolved_url": "https://fausports.com/news/2026/11/2/football-game-notes-9",
+      "path": "article-florida-atlantic-0.gz",
+      "sha256": "cd6eb834a7a5d2c80054c6485ebac24d2a850cd9881f554cfd6ebc4ebe1a59e0"
+    },
+    {
+      "name": "article-florida-atlantic-1",
+      "url": "https://fausports.com/news/2026/11/2/football-messer-an-american-honorable-mention",
+      "requested_at_utc": "2026-11-05T13:36:17.445769+00:00",
+      "status": "CAPTURED",
+      "http_status": 200,
+      "received_at_utc": "2026-11-05T13:36:18.049305+00:00",
+      "resolved_url": "https://fausports.com/news/2026/11/2/football-messer-an-american-honorable-mention",
+      "path": "article-florida-atlantic-1.gz",
+      "sha256": "dbda0de42388ea44379c82950af2f23cb0daa8ac5d57a5de1267a5daa88a197a"
+    },
+    {
+      "name": "article-florida-atlantic-2",
+      "url": "https://fausports.com/news/2026/11/2/football-veltkamp-named-east-west-bowl-monday-morning-quarterback",
+      "requested_at_utc": "2026-11-05T13:36:18.087139+00:00",
+      "status": "CAPTURED",
+      "http_status": 200,
+      "received_at_utc": "2026-11-05T13:36:18.644376+00:00",
+      "resolved_url": "https://fausports.com/news/2026/11/2/football-veltkamp-named-east-west-bowl-monday-morning-quarterback",
+      "path": "article-florida-atlantic-2.gz",
+      "sha256": "7be73a9650d50327f0f026420bc001395dbf4215fd1e1290b44f8f740219c447"
+    },
+    {
+      "name": "article-florida-atlantic-3",
+      "url": "https://fausports.com/news/2026/11/2/owls-football-at-tulsa-announced-for-3-30-pm-on-espn",
+      "requested_at_utc": "2026-11-05T13:36:18.679094+00:00",
+      "status": "CAPTURED",
+      "http_status": 200,
+      "received_at_utc": "2026-11-05T13:36:19.167172+00:00",
+      "resolved_url": "https://fausports.com/news/2026/11/2/owls-football-at-tulsa-announced-for-3-30-pm-on-espn",
+      "path": "article-florida-atlantic-3.gz",
+      "sha256": "d7e5b5204968731e4f8fcb762dbd3574d8e4e56871b8286cbb6f6b4ed55dad52"
+    },
+    {
+      "name": "official-james-madison",
+      "url": "https://jmusports.com/sports/football",
+      "requested_at_utc": "2026-11-05T13:36:15.930311+00:00",
+      "status": "CAPTURED",
+      "http_status": 200,
+      "received_at_utc": "2026-11-05T13:36:16.423182+00:00",
+      "resolved_url": "https://jmusports.com/sports/football",
+      "path": "official-james-madison.gz",
+      "sha256": "2b4334ae54ba0d3a5f5b07b1bb3dc3eede5bfab028975349f89a96aba97bf2f5"
+    },
+    {
+      "name": "article-james-madison-0",
+      "url": "https://jmusports.com/news/2026/10/30/football-dukes-drop-second-straight-in-ot",
+      "requested_at_utc": "2026-11-05T13:36:16.478718+00:00",
+      "status": "CAPTURED",
+      "http_status": 200,
+      "received_at_utc": "2026-11-05T13:36:16.759143+00:00",
+      "resolved_url": "https://jmusports.com/news/2026/10/30/football-dukes-drop-second-straight-in-ot",
+      "path": "article-james-madison-0.gz",
+      "sha256": "2ffbf4d0c04de7a5437cadedc7bb99a9a191ad366a015939174ba0610d8c77dc"
+    },
+    {
+      "name": "article-james-madison-1",
+      "url": "https://jmusports.com/news/2026/11/3/football-third-straight-thursday-game-takes-jmu-to-southern-miss",
+      "requested_at_utc": "2026-11-05T13:36:16.829132+00:00",
+      "status": "CAPTURED",
+      "http_status": 200,
+      "received_at_utc": "2026-11-05T13:36:17.707757+00:00",
+      "resolved_url": "https://jmusports.com/news/2026/11/3/football-third-straight-thursday-game-takes-jmu-to-southern-miss",
+      "path": "article-james-madison-1.gz",
+      "sha256": "ca909bc1709bff86f8151a06e0aa7b768ad9f93cb1913690dda45877396e1d40"
+    },
+    {
+      "name": "official-southern-miss",
+      "url": "https://southernmiss.com/sports/football",
+      "requested_at_utc": "2026-11-05T13:36:15.932848+00:00",
+      "status": "CAPTURED",
+      "http_status": 200,
+      "received_at_utc": "2026-11-05T13:36:16.553294+00:00",
+      "resolved_url": "https://southernmiss.com/sports/football",
+      "path": "official-southern-miss.gz",
+      "sha256": "1e39e50e23d34ebec5381e1a8dd2b56a411b441345cd7e634e865b4220d73d49"
+    },
+    {
+      "name": "article-southern-miss-0",
+      "url": "https://southernmiss.com/news/2026/10/30/football-travels-to-ulm-for-sun-belt-west-matchup",
+      "requested_at_utc": "2026-11-05T13:36:16.591399+00:00",
+      "status": "CAPTURED",
+      "http_status": 200,
+      "received_at_utc": "2026-11-05T13:36:17.381359+00:00",
+      "resolved_url": "https://southernmiss.com/news/2026/10/30/football-travels-to-ulm-for-sun-belt-west-matchup",
+      "path": "article-southern-miss-0.gz",
+      "sha256": "1bc7f660d22d6eb2909d608e07b4c7e3561b55c70e52f4ee57ec8d8f3bfcc3b8"
+    },
+    {
+      "name": "article-southern-miss-1",
+      "url": "https://southernmiss.com/news/2026/10/31/football-defeats-ulm-saturday-afternoon-35-21-in-sun-belt-action",
+      "requested_at_utc": "2026-11-05T13:36:17.416436+00:00",
+      "status": "CAPTURED",
+      "http_status": 200,
+      "received_at_utc": "2026-11-05T13:36:17.991109+00:00",
+      "resolved_url": "https://southernmiss.com/news/2026/10/31/football-defeats-ulm-saturday-afternoon-35-21-in-sun-belt-action",
+      "path": "article-southern-miss-1.gz",
+      "sha256": "59d755cab800ebbdaa57b33c681b4d68a7b9a6bc2518bcc3089be5d9672cf7e3"
+    },
+    {
+      "name": "article-southern-miss-2",
+      "url": "https://southernmiss.com/news/2026/11/2/football-blake-anderson-weekly-news-conference-the-jmu-game",
+      "requested_at_utc": "2026-11-05T13:36:18.042259+00:00",
+      "status": "CAPTURED",
+      "http_status": 200,
+      "received_at_utc": "2026-11-05T13:36:18.518132+00:00",
+      "resolved_url": "https://southernmiss.com/news/2026/11/2/football-blake-anderson-weekly-news-conference-the-jmu-game",
+      "path": "article-southern-miss-2.gz",
+      "sha256": "51d8fa86a2549d89070a01c9ae8f0518bbd7f8984f853ed78e1b1ceb98ddfc2b"
+    },
+    {
+      "name": "article-southern-miss-3",
+      "url": "https://southernmiss.com/news/2026/11/2/football-steven-robinson-named-sun-belt-conference-offensive-player-of-the-week",
+      "requested_at_utc": "2026-11-05T13:36:18.542101+00:00",
+      "status": "CAPTURED",
+      "http_status": 200,
+      "received_at_utc": "2026-11-05T13:36:19.138911+00:00",
+      "resolved_url": "https://southernmiss.com/news/2026/11/2/football-steven-robinson-named-sun-belt-conference-offensive-player-of-the-week",
+      "path": "article-southern-miss-3.gz",
+      "sha256": "987d614a0146216af3b5685ccc11821513c3fe9a8606d70b62eaebaf208bf26d"
+    },
+    {
+      "name": "article-southern-miss-4",
+      "url": "https://southernmiss.com/news/2026/11/2/second-annual-turkey-toss-in-conjunction-with-south-alabama-football-game",
+      "requested_at_utc": "2026-11-05T13:36:19.165150+00:00",
+      "status": "CAPTURED",
+      "http_status": 200,
+      "received_at_utc": "2026-11-05T13:36:19.741292+00:00",
+      "resolved_url": "https://southernmiss.com/news/2026/11/2/second-annual-turkey-toss-in-conjunction-with-south-alabama-football-game",
+      "path": "article-southern-miss-4.gz",
+      "sha256": "1acd3500c84b65d2b29a49ba68741fad453d9c7c0c6752170b65ef99e6873424"
+    },
+    {
+      "name": "official-texas-state",
+      "url": "https://txst.com/sports/football",
+      "requested_at_utc": "2026-11-05T13:36:15.935864+00:00",
+      "status": "CAPTURED",
+      "http_status": 200,
+      "received_at_utc": "2026-11-05T13:36:16.505645+00:00",
+      "resolved_url": "https://txst.com/sports/football",
+      "path": "official-texas-state.gz",
+      "sha256": "8511c3149224077ffaf109869837db0d3ce1897e9815e6f3f63f10da1b999719"
+    },
+    {
+      "name": "official-oregon-state",
+      "url": "https://osubeavers.com/sports/football",
+      "requested_at_utc": "2026-11-05T13:36:15.937485+00:00",
+      "status": "CAPTURED",
+      "http_status": 200,
+      "received_at_utc": "2026-11-05T13:36:16.821127+00:00",
+      "resolved_url": "https://osubeavers.com/sports/football",
+      "path": "official-oregon-state.gz",
+      "sha256": "240d3380bb46675c8b04dbcead2f89b2875a622fb6e33fb898d13d193c34b855"
+    },
+    {
+      "name": "article-oregon-state-0",
+      "url": "https://osubeavers.com/news/2026/11/1/football-temple-ojeda-lead-osu-in-loss-at-fresno-state",
+      "requested_at_utc": "2026-11-05T13:36:16.879470+00:00",
+      "status": "CAPTURED",
+      "http_status": 200,
+      "received_at_utc": "2026-11-05T13:36:17.693217+00:00",
+      "resolved_url": "https://osubeavers.com/news/2026/11/1/football-temple-ojeda-lead-osu-in-loss-at-fresno-state",
+      "path": "article-oregon-state-0.gz",
+      "sha256": "a13d61b18d6a6183477a92145f966d95c0087ebeb1b1f5356c3cf2e344041b63"
+    },
+    {
+      "name": "article-oregon-state-1",
+      "url": "https://osubeavers.com/news/2026/11/2/football-beavers-return-home-for-first-ever-meeting-with-texas-state",
+      "requested_at_utc": "2026-11-05T13:36:17.748431+00:00",
+      "status": "CAPTURED",
+      "http_status": 200,
+      "received_at_utc": "2026-11-05T13:36:18.646359+00:00",
+      "resolved_url": "https://osubeavers.com/news/2026/11/2/football-beavers-return-home-for-first-ever-meeting-with-texas-state",
+      "path": "article-oregon-state-1.gz",
+      "sha256": "0285a88548657648223dca5a7bc042ffc832a2847096580944921c43368d671c"
+    },
+    {
+      "name": "article-oregon-state-2",
+      "url": "https://osubeavers.com/news/2026/11/2/football-caleb-ojeda-named-pac-12-special-teams-player-of-the-week",
+      "requested_at_utc": "2026-11-05T13:36:18.694184+00:00",
+      "status": "CAPTURED",
+      "http_status": 200,
+      "received_at_utc": "2026-11-05T13:36:19.913357+00:00",
+      "resolved_url": "https://osubeavers.com/news/2026/11/2/football-caleb-ojeda-named-pac-12-special-teams-player-of-the-week",
+      "path": "article-oregon-state-2.gz",
+      "sha256": "4c6c8803a8699b64c30122cd85c6539827664b61c64e6f5d977a00a6a994b9ef"
+    },
+    {
+      "name": "article-oregon-state-3",
+      "url": "https://osubeavers.com/news/2026/11/2/football-texas-state-game-preview-hear-from-shephard-dahlen-and-macintyre",
+      "requested_at_utc": "2026-11-05T13:36:19.945993+00:00",
+      "status": "CAPTURED",
+      "http_status": 200,
+      "received_at_utc": "2026-11-05T13:36:20.824333+00:00",
+      "resolved_url": "https://osubeavers.com/news/2026/11/2/football-texas-state-game-preview-hear-from-shephard-dahlen-and-macintyre",
+      "path": "article-oregon-state-3.gz",
+      "sha256": "6333392a3fcdc2b94b0af726ba26b4f4ffaf882c18041211b413b5e936d863f9"
+    },
+    {
+      "name": "article-oregon-state-4",
+      "url": "https://osubeavers.com/news/2026/11/2/general-oregon-state-nike-extend-relationship-atkinson-legree-join-blue-ribbon-elite-roster",
+      "requested_at_utc": "2026-11-05T13:36:20.865245+00:00",
+      "status": "CAPTURED",
+      "http_status": 200,
+      "received_at_utc": "2026-11-05T13:36:21.512573+00:00",
+      "resolved_url": "https://osubeavers.com/news/2026/11/2/general-oregon-state-nike-extend-relationship-atkinson-legree-join-blue-ribbon-elite-roster",
+      "path": "article-oregon-state-4.gz",
+      "sha256": "2dbe3365b7976c6f1d802d5cf59ad1c9619f9e019bc3c72e47e4a8138db2e9d8"
+    },
+    {
+      "name": "article-oregon-state-5",
+      "url": "https://osubeavers.com/news/2026/11/3/oregon-state-football-offense-meets-the-media-nov-3-2026",
+      "requested_at_utc": "2026-11-05T13:36:21.537626+00:00",
+      "status": "CAPTURED",
+      "http_status": 200,
+      "received_at_utc": "2026-11-05T13:36:22.181956+00:00",
+      "resolved_url": "https://osubeavers.com/news/2026/11/3/oregon-state-football-offense-meets-the-media-nov-3-2026",
+      "path": "article-oregon-state-5.gz",
+      "sha256": "369b7bdaadb065f03e07a83c7f5614af0f2d8a56f07da62571c05f35f5b397e9"
+    },
+    {
+      "name": "article-oregon-state-6",
+      "url": "https://osubeavers.com/news/2026/11/4/football-jesse-legree-named-a-semifinalist-for-shaun-alexander-freshman-of-the-year-award",
+      "requested_at_utc": "2026-11-05T13:36:22.211752+00:00",
+      "status": "CAPTURED",
+      "http_status": 200,
+      "received_at_utc": "2026-11-05T13:36:23.115055+00:00",
+      "resolved_url": "https://osubeavers.com/news/2026/11/4/football-jesse-legree-named-a-semifinalist-for-shaun-alexander-freshman-of-the-year-award",
+      "path": "article-oregon-state-6.gz",
+      "sha256": "c5d67c5a8c8433ff2e40f50529d86ae0ac6da58cd8f93533410c37df3a0696e3"
+    },
+    {
+      "name": "article-oregon-state-7",
+      "url": "https://osubeavers.com/news/2026/11/4/oregon-state-football-defense-meets-the-media-nov-4-2026",
+      "requested_at_utc": "2026-11-05T13:36:23.165049+00:00",
+      "status": "CAPTURED",
+      "http_status": 200,
+      "received_at_utc": "2026-11-05T13:36:23.944031+00:00",
+      "resolved_url": "https://osubeavers.com/news/2026/11/4/oregon-state-football-defense-meets-the-media-nov-4-2026",
+      "path": "article-oregon-state-7.gz",
+      "sha256": "1e32e48b52a4732774ba454f4849de438d4238f0206deeda1763133451416ad8"
+    },
+    {
+      "name": "official-west-virginia",
+      "url": "https://wvusports.com/sports/football",
+      "requested_at_utc": "2026-11-05T13:36:16.552297+00:00",
+      "status": "CAPTURED",
+      "http_status": 200,
+      "received_at_utc": "2026-11-05T13:36:17.578242+00:00",
+      "resolved_url": "https://wvusports.com/sports/football",
+      "path": "official-west-virginia.gz",
+      "sha256": "91ecb9638f0c39e3fbe91957f6499dc707ac05cd37df95113abeb5f402e2a5fb"
+    },
+    {
+      "name": "article-west-virginia-0",
+      "url": "https://wvusports.com/news/2026/11/1/football-texas-tech-game-to-be-televised-on-espn-at-9-30-pm-et",
+      "requested_at_utc": "2026-11-05T13:36:17.628953+00:00",
+      "status": "CAPTURED",
+      "http_status": 200,
+      "received_at_utc": "2026-11-05T13:36:18.467398+00:00",
+      "resolved_url": "https://wvusports.com/news/2026/11/1/football-texas-tech-game-to-be-televised-on-espn-at-9-30-pm-et",
+      "path": "article-west-virginia-0.gz",
+      "sha256": "5a595f0e1b39a59c886194403ed87879d4dd3feb637c2f5f84a5aaa833a845b1"
+    },
+    {
+      "name": "article-west-virginia-1",
+      "url": "https://wvusports.com/news/2026/11/2/football-six-day-window-to-be-exercised-for-nov-14-kansas-game",
+      "requested_at_utc": "2026-11-05T13:36:18.511193+00:00",
+      "status": "CAPTURED",
+      "http_status": 200,
+      "received_at_utc": "2026-11-05T13:36:19.285765+00:00",
+      "resolved_url": "https://wvusports.com/news/2026/11/2/football-six-day-window-to-be-exercised-for-nov-14-kansas-game",
+      "path": "article-west-virginia-1.gz",
+      "sha256": "17f90b569a6cbeb23d896d62349b74de7d10013f13c6ae4c6db8624071026c13"
+    },
+    {
+      "name": "article-west-virginia-2",
+      "url": "https://wvusports.com/news/2026/11/3/purdue-added-to-2027-football-schedule",
+      "requested_at_utc": "2026-11-05T13:36:19.329239+00:00",
+      "status": "CAPTURED",
+      "http_status": 200,
+      "received_at_utc": "2026-11-05T13:36:20.193142+00:00",
+      "resolved_url": "https://wvusports.com/news/2026/11/3/purdue-added-to-2027-football-schedule",
+      "path": "article-west-virginia-2.gz",
+      "sha256": "cc583f9e0c0af62cdf338833dfc8d9ae24e04ca8aaa90aba7f5b7d854a29ca6b"
+    },
+    {
+      "name": "article-west-virginia-3",
+      "url": "https://wvusports.com/news/2026/11/4/football-mountaineers-in-the-nfl-week-8",
+      "requested_at_utc": "2026-11-05T13:36:20.227252+00:00",
+      "status": "CAPTURED",
+      "http_status": 200,
+      "received_at_utc": "2026-11-05T13:36:21.142102+00:00",
+      "resolved_url": "https://wvusports.com/news/2026/11/4/football-mountaineers-in-the-nfl-week-8",
+      "path": "article-west-virginia-3.gz",
+      "sha256": "84e8a356e325fdf9135870839ae0c65f71c6a5a2a18b23858f1f7626377a923a"
+    },
+    {
+      "name": "article-west-virginia-4",
+      "url": "https://wvusports.com/news/2026/11/4/football-wvu-to-face-no-13-texas-tech-in-rare-9-30-kickoff-time-on-saturday-night",
+      "requested_at_utc": "2026-11-05T13:36:21.192188+00:00",
+      "status": "CAPTURED",
+      "http_status": 200,
+      "received_at_utc": "2026-11-05T13:36:22.064569+00:00",
+      "resolved_url": "https://wvusports.com/news/2026/11/4/football-wvu-to-face-no-13-texas-tech-in-rare-9-30-kickoff-time-on-saturday-night",
+      "path": "article-west-virginia-4.gz",
+      "sha256": "47c2551a5e41669d009ec8c20d968e02f30608160019bc21e5819d995a89e877"
+    },
+    {
+      "name": "official-texas-tech",
+      "url": "https://texastech.com/sports/football",
+      "requested_at_utc": "2026-11-05T13:36:17.771084+00:00",
+      "status": "CAPTURED",
+      "http_status": 200,
+      "received_at_utc": "2026-11-05T13:36:18.523818+00:00",
+      "resolved_url": "https://texastech.com/sports/football",
+      "path": "official-texas-tech.gz",
+      "sha256": "6c4198e1b8a403893b85f0b79db18fc40f9a2f83b6c73aea33ca3b051934ba0a"
+    },
+    {
+      "name": "article-texas-tech-0",
+      "url": "https://texastech.com/news/2026/11/1/football-red-raiders-remain-at-no-13-in-latest-national-rankings",
+      "requested_at_utc": "2026-11-05T13:36:18.587546+00:00",
+      "status": "CAPTURED",
+      "http_status": 200,
+      "received_at_utc": "2026-11-05T13:36:19.283745+00:00",
+      "resolved_url": "https://texastech.com/news/2026/11/1/football-red-raiders-remain-at-no-13-in-latest-national-rankings",
+      "path": "article-texas-tech-0.gz",
+      "sha256": "4ef8924a368b45873146df469d3b52a92b0fb942048775605febcecc6ce0da11"
+    },
+    {
+      "name": "article-texas-tech-1",
+      "url": "https://texastech.com/news/2026/11/2/football-no-15-texas-tech-hosts-west-virginia-under-the-lights",
+      "requested_at_utc": "2026-11-05T13:36:19.366274+00:00",
+      "status": "CAPTURED",
+      "http_status": 200,
+      "received_at_utc": "2026-11-05T13:36:20.124220+00:00",
+      "resolved_url": "https://texastech.com/news/2026/11/2/football-no-15-texas-tech-hosts-west-virginia-under-the-lights",
+      "path": "article-texas-tech-1.gz",
+      "sha256": "39b4f2442c5ffff4e39c904334cb07ddbedeb195661922b114035913fb8e571b"
+    },
+    {
+      "name": "article-texas-tech-2",
+      "url": "https://texastech.com/news/2026/11/3/football-red-raiders-debut-no-15-in-first-cfp-rankings-release-of-2026",
+      "requested_at_utc": "2026-11-05T13:36:20.191381+00:00",
+      "status": "CAPTURED",
+      "http_status": 200,
+      "received_at_utc": "2026-11-05T13:36:20.639865+00:00",
+      "resolved_url": "https://texastech.com/news/2026/11/3/football-red-raiders-debut-no-15-in-first-cfp-rankings-release-of-2026",
+      "path": "article-texas-tech-2.gz",
+      "sha256": "8b998d41d29faaf581cf7783f3c2b1fbbfe733082a8a58d86712ddcbbbc83081"
+    },
+    {
+      "name": "article-texas-tech-3",
+      "url": "https://texastech.com/news/2026/11/3/football-red-raiders-in-the-nfl-week-8",
+      "requested_at_utc": "2026-11-05T13:36:20.700925+00:00",
+      "status": "CAPTURED",
+      "http_status": 200,
+      "received_at_utc": "2026-11-05T13:36:21.227007+00:00",
+      "resolved_url": "https://texastech.com/news/2026/11/3/football-red-raiders-in-the-nfl-week-8",
+      "path": "article-texas-tech-3.gz",
+      "sha256": "cddd31bcd2d762c245b7f1542f8da955254716df9bc640e5014c48c018d49d52"
+    },
+    {
+      "name": "article-texas-tech-4",
+      "url": "https://texastech.com/news/2026/11/3/football-texas-tech-announces-sellout-for-west-virginia-game",
+      "requested_at_utc": "2026-11-05T13:36:21.273258+00:00",
+      "status": "CAPTURED",
+      "http_status": 200,
+      "received_at_utc": "2026-11-05T13:36:21.598278+00:00",
+      "resolved_url": "https://texastech.com/news/2026/11/3/football-texas-tech-announces-sellout-for-west-virginia-game",
+      "path": "article-texas-tech-4.gz",
+      "sha256": "07a811e253ddb8638de5cc46ab3c29c766b6f60ce32c49a3155110048fcd9bd5"
+    },
+    {
+      "name": "article-texas-tech-5",
+      "url": "https://texastech.com/news/2026/11/3/football-williams-named-hornung-award-national-player-of-the-week",
+      "requested_at_utc": "2026-11-05T13:36:21.687970+00:00",
+      "status": "CAPTURED",
+      "http_status": 200,
+      "received_at_utc": "2026-11-05T13:36:22.301543+00:00",
+      "resolved_url": "https://texastech.com/news/2026/11/3/football-williams-named-hornung-award-national-player-of-the-week",
+      "path": "article-texas-tech-5.gz",
+      "sha256": "ae776fee67ee581556e40d8359699e8833b5603d962b17021ed69f9023d237f2"
+    },
+    {
+      "name": "official-air-force",
+      "url": "https://goairforcefalcons.com/sports/football",
+      "requested_at_utc": "2026-11-05T13:36:18.481001+00:00",
+      "status": "CAPTURED",
+      "http_status": 200,
+      "received_at_utc": "2026-11-05T13:36:19.305002+00:00",
+      "resolved_url": "https://goairforcefalcons.com/sports/football",
+      "path": "official-air-force.gz",
+      "sha256": "0d6d4da6bed20af515d5bfd0d9881ce56637638c93e9210ad90f0722724d165e"
+    },
+    {
+      "name": "article-air-force-0",
+      "url": "https://goairforcefalcons.com/news/2026/11/3/air-force-football-meets-with-media-ahead-of-army-game",
+      "requested_at_utc": "2026-11-05T13:36:19.337872+00:00",
+      "status": "CAPTURED",
+      "http_status": 200,
+      "received_at_utc": "2026-11-05T13:36:20.537247+00:00",
+      "resolved_url": "https://goairforcefalcons.com/news/2026/11/3/air-force-football-meets-with-media-ahead-of-army-game",
+      "path": "article-air-force-0.gz",
+      "sha256": "90fa01b6049c94b0002be708484929fc91479eecd8795e25cc7aad019d4a5f9c"
+    },
+    {
+      "name": "article-air-force-1",
+      "url": "https://goairforcefalcons.com/news/2026/11/3/football-kemper-hodges-earns-davey-o-brien-award-great-8-honors",
+      "requested_at_utc": "2026-11-05T13:36:20.559282+00:00",
+      "status": "CAPTURED",
+      "http_status": 200,
+      "received_at_utc": "2026-11-05T13:36:21.273258+00:00",
+      "resolved_url": "https://goairforcefalcons.com/news/2026/11/3/football-kemper-hodges-earns-davey-o-brien-award-great-8-honors",
+      "path": "article-air-force-1.gz",
+      "sha256": "cd885e7af72665c783e13ccbcbae76606d3ba41f6b872eba8c3f282cc9d02627"
+    },
+    {
+      "name": "article-air-force-2",
+      "url": "https://goairforcefalcons.com/news/2026/11/3/kemper-hodges-earns-national-football-foundation-colorado-chapter-player-of-the-week-honors-for-performance-vs-uconn",
+      "requested_at_utc": "2026-11-05T13:36:21.284935+00:00",
+      "status": "CAPTURED",
+      "http_status": 200,
+      "received_at_utc": "2026-11-05T13:36:21.999959+00:00",
+      "resolved_url": "https://goairforcefalcons.com/news/2026/11/3/kemper-hodges-earns-national-football-foundation-colorado-chapter-player-of-the-week-honors-for-performance-vs-uconn",
+      "path": "article-air-force-2.gz",
+      "sha256": "01df8ba9797388989258be26a96012ea953aad03a6dcde134a88b17058f95ec0"
+    },
+    {
+      "name": "official-army",
+      "url": "https://goarmywestpoint.com/sports/football",
+      "requested_at_utc": "2026-11-05T13:36:19.193966+00:00",
+      "status": "CAPTURED",
+      "http_status": 200,
+      "received_at_utc": "2026-11-05T13:36:20.119652+00:00",
+      "resolved_url": "https://goarmywestpoint.com/sports/football",
+      "path": "official-army.gz",
+      "sha256": "ab29aa363a772acb646c03148f2640b7de8a27d9def5539c4d4eea9687024fcb"
+    },
+    {
+      "name": "article-army-0",
+      "url": "https://goarmywestpoint.com/news/2026/10/29/footballs-jaxon-hammond-reflects-on-his-return-to-memphis",
+      "requested_at_utc": "2026-11-05T13:36:20.168518+00:00",
+      "status": "CAPTURED",
+      "http_status": 200,
+      "received_at_utc": "2026-11-05T13:36:21.052159+00:00",
+      "resolved_url": "https://goarmywestpoint.com/news/2026/10/29/footballs-jaxon-hammond-reflects-on-his-return-to-memphis",
+      "path": "article-army-0.gz",
+      "sha256": "af3a7819dfe2067f11d3873cb6f40a20248921cdf885ab75c41d7dd562850320"
+    },
+    {
+      "name": "article-army-1",
+      "url": "https://goarmywestpoint.com/news/2026/10/30/football-jack-bousum-and-kody-miller-harris-energizing-the-defense-in-win-over-tulsa",
+      "requested_at_utc": "2026-11-05T13:36:21.091917+00:00",
+      "status": "CAPTURED",
+      "http_status": 200,
+      "received_at_utc": "2026-11-05T13:36:22.056820+00:00",
+      "resolved_url": "https://goarmywestpoint.com/news/2026/10/30/football-jack-bousum-and-kody-miller-harris-energizing-the-defense-in-win-over-tulsa",
+      "path": "article-army-1.gz",
+      "sha256": "a4b14a785a2e1c8484f8e010894288cf46f93f6bb77dee7cbef836c63a621077"
+    },
+    {
+      "name": "article-army-2",
+      "url": "https://goarmywestpoint.com/news/2026/10/31/army-football-falls-at-memphis-49-22",
+      "requested_at_utc": "2026-11-05T13:36:22.097441+00:00",
+      "status": "CAPTURED",
+      "http_status": 200,
+      "received_at_utc": "2026-11-05T13:36:22.938842+00:00",
+      "resolved_url": "https://goarmywestpoint.com/news/2026/10/31/army-football-falls-at-memphis-49-22",
+      "path": "article-army-2.gz",
+      "sha256": "df0eb3548c9374a25aa58aae59a26859a3251b86fb582b56cd20bb86be9c5fb3"
+    },
+    {
+      "name": "article-army-3",
+      "url": "https://goarmywestpoint.com/news/2026/11/2/footballs-james-wagenseller-named-to-ray-guy-award-rays-8-list-for-week-9",
+      "requested_at_utc": "2026-11-05T13:36:22.979045+00:00",
+      "status": "CAPTURED",
+      "http_status": 200,
+      "received_at_utc": "2026-11-05T13:36:23.844367+00:00",
+      "resolved_url": "https://goarmywestpoint.com/news/2026/11/2/footballs-james-wagenseller-named-to-ray-guy-award-rays-8-list-for-week-9",
+      "path": "article-army-3.gz",
+      "sha256": "186fab91006771955e7637a90eda04608c1eab24ea09ef2f2f1bec39799af27c"
+    },
+    {
+      "name": "official-north-carolina",
+      "url": "https://goheels.com/sports/football",
+      "requested_at_utc": "2026-11-05T13:36:19.762464+00:00",
+      "status": "CAPTURED",
+      "http_status": 200,
+      "received_at_utc": "2026-11-05T13:36:20.334802+00:00",
+      "resolved_url": "https://goheels.com/sports/football",
+      "path": "official-north-carolina.gz",
+      "sha256": "732655209b29ac425d7a898c874293dc06aeb839f500ceb27730306bf42b441a"
+    },
+    {
+      "name": "article-north-carolina-0",
+      "url": "https://goheels.com/news/2026/10/29/football-mcdonald-named-butkus-award-semifinalist",
+      "requested_at_utc": "2026-11-05T13:36:20.379970+00:00",
+      "status": "CAPTURED",
+      "http_status": 200,
+      "received_at_utc": "2026-11-05T13:36:21.091917+00:00",
+      "resolved_url": "https://goheels.com/news/2026/10/29/football-mcdonald-named-butkus-award-semifinalist",
+      "path": "article-north-carolina-0.gz",
+      "sha256": "eed21dea78f25ddecc8dc39c3bbad1be38557039dd3c805fbfac6be8a950ec06"
+    },
+    {
+      "name": "article-north-carolina-1",
+      "url": "https://goheels.com/news/2026/10/29/know-before-you-go-football-vs-miami",
+      "requested_at_utc": "2026-11-05T13:36:21.124024+00:00",
+      "status": "CAPTURED",
+      "http_status": 200,
+      "received_at_utc": "2026-11-05T13:36:21.582923+00:00",
+      "resolved_url": "https://goheels.com/news/2026/10/29/know-before-you-go-football-vs-miami",
+      "path": "article-north-carolina-1.gz",
+      "sha256": "39e136fc056c33c5aaea1570073099221d3b38fae594f2b44006c76a11e96edb"
+    },
+    {
+      "name": "article-north-carolina-2",
+      "url": "https://goheels.com/news/2026/10/30/football-hosts-no-1-miami-saturday-night",
+      "requested_at_utc": "2026-11-05T13:36:21.655817+00:00",
+      "status": "CAPTURED",
+      "http_status": 200,
+      "received_at_utc": "2026-11-05T13:36:22.257851+00:00",
+      "resolved_url": "https://goheels.com/news/2026/10/30/football-hosts-no-1-miami-saturday-night",
+      "path": "article-north-carolina-2.gz",
+      "sha256": "445c416fe20530e8e1ce7a82a1bc60f6c089f8f29c7f2880b415342592374f85"
+    },
+    {
+      "name": "article-north-carolina-3",
+      "url": "https://goheels.com/news/2026/10/30/general-carolina-insider-miami-preview-trech-kekahuna-joschi-schelb",
+      "requested_at_utc": "2026-11-05T13:36:22.296032+00:00",
+      "status": "CAPTURED",
+      "http_status": 200,
+      "received_at_utc": "2026-11-05T13:36:22.875381+00:00",
+      "resolved_url": "https://goheels.com/news/2026/10/30/general-carolina-insider-miami-preview-trech-kekahuna-joschi-schelb",
+      "path": "article-north-carolina-3.gz",
+      "sha256": "440847b67734b9f6eef62c55405d73eaa15c39437a60471256b6b5e042ecb56d"
+    },
+    {
+      "name": "article-north-carolina-4",
+      "url": "https://goheels.com/news/2026/10/31/football-fb-recap-vs-miami",
+      "requested_at_utc": "2026-11-05T13:36:22.934841+00:00",
+      "status": "CAPTURED",
+      "http_status": 200,
+      "received_at_utc": "2026-11-05T13:36:23.536438+00:00",
+      "resolved_url": "https://goheels.com/news/2026/10/31/football-fb-recap-vs-miami",
+      "path": "article-north-carolina-4.gz",
+      "sha256": "b8369ffd03facb13d57b3a1c9e6c2a3be51369af7899463f9f9b621696960277"
+    },
+    {
+      "name": "article-north-carolina-5",
+      "url": "https://goheels.com/news/2026/11/1/football-wire-to-wire",
+      "requested_at_utc": "2026-11-05T13:36:23.591504+00:00",
+      "status": "CAPTURED",
+      "http_status": 200,
+      "received_at_utc": "2026-11-05T13:36:24.194527+00:00",
+      "resolved_url": "https://goheels.com/news/2026/11/1/football-wire-to-wire",
+      "path": "article-north-carolina-5.gz",
+      "sha256": "96105c3a6290e701786601961b80c27d21a3f3ac0d74a7c2e943aba17210c9db"
+    },
+    {
+      "name": "article-north-carolina-6",
+      "url": "https://goheels.com/news/2026/11/2/football-edwards-named-acc-quarterback-of-the-week",
+      "requested_at_utc": "2026-11-05T13:36:24.233680+00:00",
+      "status": "CAPTURED",
+      "http_status": 200,
+      "received_at_utc": "2026-11-05T13:36:24.880723+00:00",
+      "resolved_url": "https://goheels.com/news/2026/11/2/football-edwards-named-acc-quarterback-of-the-week",
+      "path": "article-north-carolina-6.gz",
+      "sha256": "45421df5c9abfc074f0761e4fd3252388b6e924bd72dc50912719e597bf99d95"
+    },
+    {
+      "name": "article-north-carolina-7",
+      "url": "https://goheels.com/news/2026/11/2/football-watch-fb-pre-uconn-press-conferences",
+      "requested_at_utc": "2026-11-05T13:36:24.954588+00:00",
+      "status": "CAPTURED",
+      "http_status": 200,
+      "received_at_utc": "2026-11-05T13:36:25.660027+00:00",
+      "resolved_url": "https://goheels.com/news/2026/11/2/football-watch-fb-pre-uconn-press-conferences",
+      "path": "article-north-carolina-7.gz",
+      "sha256": "2a4c5551ac07d29ff4f3d2eb2197d87ef68fdbe09ddf547ec364e587ab847998"
+    },
+    {
+      "name": "article-north-carolina-8",
+      "url": "https://goheels.com/news/2026/11/3/football-billy-edwards-jrs-value-goes-beyond-the-box-score",
+      "requested_at_utc": "2026-11-05T13:36:25.708032+00:00",
+      "status": "CAPTURED",
+      "http_status": 200,
+      "received_at_utc": "2026-11-05T13:36:26.196228+00:00",
+      "resolved_url": "https://goheels.com/news/2026/11/3/football-billy-edwards-jrs-value-goes-beyond-the-box-score",
+      "path": "article-north-carolina-8.gz",
+      "sha256": "1fcc27fa8263dffe0c8d01ecdf238a4c92bcd9a99032be4ae60f84784195e557"
+    },
+    {
+      "name": "official-uconn",
+      "url": "https://uconnhuskies.com/sports/football",
+      "requested_at_utc": "2026-11-05T13:36:22.022199+00:00",
+      "status": "CAPTURED",
+      "http_status": 200,
+      "received_at_utc": "2026-11-05T13:36:22.787703+00:00",
+      "resolved_url": "https://uconnhuskies.com/sports/football",
+      "path": "official-uconn.gz",
+      "sha256": "162baa5915f891552993a70b9cdf2e916ffd0259507f3274fab361845a68866b"
+    },
+    {
+      "name": "article-uconn-0",
+      "url": "https://uconnhuskies.com/news/2026/10/31/football-air-force-runs-past-huskies",
+      "requested_at_utc": "2026-11-05T13:36:22.933843+00:00",
+      "status": "CAPTURED",
+      "http_status": 200,
+      "received_at_utc": "2026-11-05T13:36:23.639346+00:00",
+      "resolved_url": "https://uconnhuskies.com/news/2026/10/31/football-air-force-runs-past-huskies",
+      "path": "article-uconn-0.gz",
+      "sha256": "ce7ce36cac852cba0ea1a3faae93ce3b1d5e6ef2c3e9d03c7abe1cf327c07dcf"
+    },
+    {
+      "name": "article-uconn-1",
+      "url": "https://uconnhuskies.com/news/2026/11/2/watch-game-9-football-press-conference",
+      "requested_at_utc": "2026-11-05T13:36:23.701077+00:00",
+      "status": "CAPTURED",
+      "http_status": 200,
+      "received_at_utc": "2026-11-05T13:36:24.295271+00:00",
+      "resolved_url": "https://uconnhuskies.com/news/2026/11/2/watch-game-9-football-press-conference",
+      "path": "article-uconn-1.gz",
+      "sha256": "a64b8a4938dc78e310956adc6d93a6ca0823268f0791d337be52d510ae2c3e22"
+    },
+    {
+      "name": "article-uconn-2",
+      "url": "https://uconnhuskies.com/news/2026/11/4/football-uconn-faces-unc-tar-heels-saturday-at-the-rent",
+      "requested_at_utc": "2026-11-05T13:36:24.333846+00:00",
+      "status": "CAPTURED",
+      "http_status": 200,
+      "received_at_utc": "2026-11-05T13:36:24.830903+00:00",
+      "resolved_url": "https://uconnhuskies.com/news/2026/11/4/football-uconn-faces-unc-tar-heels-saturday-at-the-rent",
+      "path": "article-uconn-2.gz",
+      "sha256": "df430c70feef97c1180638f0bd40e5a956ef9dd598efa304bb21b784f69d74ca"
+    },
+    {
+      "name": "official-florida-state",
+      "url": "https://seminoles.com/sports/football",
+      "requested_at_utc": "2026-11-05T13:36:22.118689+00:00",
+      "status": "CAPTURED",
+      "http_status": 200,
+      "received_at_utc": "2026-11-05T13:36:22.677086+00:00",
+      "resolved_url": "https://seminoles.com/sports/football",
+      "path": "official-florida-state.gz",
+      "sha256": "0229e046cf01dccd912d1b03e81124ca2871dbd7659cf50b1138c1fb0251ee67"
+    },
+    {
+      "name": "article-florida-state-0",
+      "url": "https://seminoles.com/news/2026/10/31/football-seminoles-fall-to-clemson",
+      "requested_at_utc": "2026-11-05T13:36:22.725346+00:00",
+      "status": "CAPTURED",
+      "http_status": 200,
+      "received_at_utc": "2026-11-05T13:36:23.336716+00:00",
+      "resolved_url": "https://seminoles.com/news/2026/10/31/football-seminoles-fall-to-clemson",
+      "path": "article-florida-state-0.gz",
+      "sha256": "dfdf0942759c76656e6a79bbebd03760260047c1f6b425e530360e0d1a04e2a5"
+    },
+    {
+      "name": "article-florida-state-1",
+      "url": "https://seminoles.com/news/2026/11/1/florida-state-makes-football-leadership-change",
+      "requested_at_utc": "2026-11-05T13:36:23.386173+00:00",
+      "status": "CAPTURED",
+      "http_status": 200,
+      "received_at_utc": "2026-11-05T13:36:24.018140+00:00",
+      "resolved_url": "https://seminoles.com/news/2026/11/1/florida-state-makes-football-leadership-change",
+      "path": "article-florida-state-1.gz",
+      "sha256": "30b8e7bf17cb026b1124f83005d6bbd4e1fd89c76f5f19e81daa96a40889c656"
+    },
+    {
+      "name": "official-boston-college",
+      "url": "https://bceagles.com/sports/football",
+      "requested_at_utc": "2026-11-05T13:36:22.372597+00:00",
+      "status": "CAPTURED",
+      "http_status": 200,
+      "received_at_utc": "2026-11-05T13:36:23.246650+00:00",
+      "resolved_url": "https://bceagles.com/sports/football",
+      "path": "official-boston-college.gz",
+      "sha256": "aeb7b51d2cc1f9b30505bdbfe14ac54fcd8a4e5a9d2557b61a1fe802b5f5510f"
+    },
+    {
+      "name": "article-boston-college-0",
+      "url": "https://bceagles.com/news/2026/10/29/-forboston-files-throwback-thursday-duke-1929",
+      "requested_at_utc": "2026-11-05T13:36:23.291295+00:00",
+      "status": "CAPTURED",
+      "http_status": 200,
+      "received_at_utc": "2026-11-05T13:36:24.247556+00:00",
+      "resolved_url": "https://bceagles.com/news/2026/10/29/-forboston-files-throwback-thursday-duke-1929",
+      "path": "article-boston-college-0.gz",
+      "sha256": "26fd5dfcd68baae4493aafbd6f3ba495d9a5fbabd83d12309808f2d0e7da948a"
+    },
+    {
+      "name": "article-boston-college-1",
+      "url": "https://bceagles.com/news/2026/10/30/-forboston-files-the-tailgate-duke",
+      "requested_at_utc": "2026-11-05T13:36:24.274875+00:00",
+      "status": "CAPTURED",
+      "http_status": 200,
+      "received_at_utc": "2026-11-05T13:36:25.222663+00:00",
+      "resolved_url": "https://bceagles.com/news/2026/10/30/-forboston-files-the-tailgate-duke",
+      "path": "article-boston-college-1.gz",
+      "sha256": "a43639d2c3cb8997ca056dda7ebff2ea0bf273a27c5c4d185356fc2e6f2d9206"
+    },
+    {
+      "name": "article-boston-college-2",
+      "url": "https://bceagles.com/news/2026/10/31/football-eagles-fall-at-duke",
+      "requested_at_utc": "2026-11-05T13:36:25.265572+00:00",
+      "status": "CAPTURED",
+      "http_status": 200,
+      "received_at_utc": "2026-11-05T13:36:26.908597+00:00",
+      "resolved_url": "https://bceagles.com/news/2026/10/31/football-eagles-fall-at-duke",
+      "path": "article-boston-college-2.gz",
+      "sha256": "6eb6680ca834e2c544a7b86a1ae0bd3119772682fc00e54c5fe410ce8004396f"
+    },
+    {
+      "name": "article-boston-college-3",
+      "url": "https://bceagles.com/news/2026/11/3/football-eagles-clough-nominated-for-burlsworth-trophy",
+      "requested_at_utc": "2026-11-05T13:36:26.941885+00:00",
+      "status": "CAPTURED",
+      "http_status": 200,
+      "received_at_utc": "2026-11-05T13:36:27.748703+00:00",
+      "resolved_url": "https://bceagles.com/news/2026/11/3/football-eagles-clough-nominated-for-burlsworth-trophy",
+      "path": "article-boston-college-3.gz",
+      "sha256": "ab5a5418af9b44c496497aa94822c129bece48b97398df1e449d16afc630ddcf"
+    },
+    {
+      "name": "article-boston-college-4",
+      "url": "https://bceagles.com/news/2026/11/3/football-week-10-media-bc-vs-florida-state",
+      "requested_at_utc": "2026-11-05T13:36:27.785217+00:00",
+      "status": "CAPTURED",
+      "http_status": 200,
+      "received_at_utc": "2026-11-05T13:36:28.520168+00:00",
+      "resolved_url": "https://bceagles.com/news/2026/11/3/football-week-10-media-bc-vs-florida-state",
+      "path": "article-boston-college-4.gz",
+      "sha256": "b88dd4837ceab42e31bb9a29109c126da435acc3211ad44685484d48bf0f604f"
+    },
+    {
+      "name": "article-boston-college-5",
+      "url": "https://bceagles.com/news/2026/11/4/-forboston-files-know-your-personnel-florida-state",
+      "requested_at_utc": "2026-11-05T13:36:28.556197+00:00",
+      "status": "CAPTURED",
+      "http_status": 200,
+      "received_at_utc": "2026-11-05T13:36:29.197003+00:00",
+      "resolved_url": "https://bceagles.com/news/2026/11/4/-forboston-files-know-your-personnel-florida-state",
+      "path": "article-boston-college-5.gz",
+      "sha256": "b03b94a97256ee0ef518bca11b5adab2bb27e705cfa03617eaf30c2c46deaf1e"
+    },
+    {
+      "name": "official-texas",
+      "url": "https://texaslonghorns.com/sports/football",
+      "requested_at_utc": "2026-11-05T13:36:23.877251+00:00",
+      "status": "CAPTURED",
+      "http_status": 200,
+      "received_at_utc": "2026-11-05T13:36:24.389368+00:00",
+      "resolved_url": "https://texaslonghorns.com/sports/football",
+      "path": "official-texas.gz",
+      "sha256": "74635e2c0fef30556a75b1252338588df6569605ccea29d24afd5ff35c0dcd72"
+    },
+    {
+      "name": "article-texas-0",
+      "url": "https://texaslonghorns.com/news/2026/10/29/football-video-steve-sarkisian-media-availability-oct-29",
+      "requested_at_utc": "2026-11-05T13:36:24.445079+00:00",
+      "status": "CAPTURED",
+      "http_status": 200,
+      "received_at_utc": "2026-11-05T13:36:25.201054+00:00",
+      "resolved_url": "https://watch.longhornnetwork.com/video/1042938",
+      "path": "article-texas-0.gz",
+      "sha256": "18d70737425e16d95b8c8e7e7a8945235680e77c6bb19cd3b5a3e08aeddf834e"
+    },
+    {
+      "name": "article-texas-1",
+      "url": "https://texaslonghorns.com/news/2026/10/31/football-video-steve-sarkisian-postgame-press-conference-mississippi-state",
+      "requested_at_utc": "2026-11-05T13:36:25.205347+00:00",
+      "status": "CAPTURED",
+      "http_status": 200,
+      "received_at_utc": "2026-11-05T13:36:25.789238+00:00",
+      "resolved_url": "https://watch.longhornnetwork.com/video/1044255",
+      "path": "article-texas-1.gz",
+      "sha256": "20cde4d51ff3e4bd95cad6f6ae561e5eecd22f7c40de20dd3783fa4124f791d3"
+    },
+    {
+      "name": "article-texas-2",
+      "url": "https://texaslonghorns.com/news/2026/10/31/no-11-11-football-downs-mississippi-state-31-3",
+      "requested_at_utc": "2026-11-05T13:36:25.795914+00:00",
+      "status": "CAPTURED",
+      "http_status": 200,
+      "received_at_utc": "2026-11-05T13:36:26.425673+00:00",
+      "resolved_url": "https://texaslonghorns.com/news/2026/10/31/no-11-11-football-downs-mississippi-state-31-3",
+      "path": "article-texas-2.gz",
+      "sha256": "aa8269565798d7c3df67b75933a4d6762a07b9c4c42f2e027cbd07ace2a57150"
+    },
+    {
+      "name": "article-texas-3",
+      "url": "https://texaslonghorns.com/news/2026/11/2/football-video-steve-sarkisian-press-conference-nov-2",
+      "requested_at_utc": "2026-11-05T13:36:26.457689+00:00",
+      "status": "CAPTURED",
+      "http_status": 200,
+      "received_at_utc": "2026-11-05T13:36:26.941885+00:00",
+      "resolved_url": "https://watch.longhornnetwork.com/video/1044838",
+      "path": "article-texas-3.gz",
+      "sha256": "023d2ac101ec3a7e17894714e8bb6b3da6dd1b4bf3fb9884e4a3861ee540be9d"
+    },
+    {
+      "name": "article-texas-4",
+      "url": "https://texaslonghorns.com/news/2026/11/2/no-10-11-footballs-biles-watson-earn-sec-weekly-honors",
+      "requested_at_utc": "2026-11-05T13:36:26.947887+00:00",
+      "status": "CAPTURED",
+      "http_status": 200,
+      "received_at_utc": "2026-11-05T13:36:27.583492+00:00",
+      "resolved_url": "https://texaslonghorns.com/news/2026/11/2/no-10-11-footballs-biles-watson-earn-sec-weekly-honors",
+      "path": "article-texas-4.gz",
+      "sha256": "d40bdc934d1dff82008dd49aaf93d2f58a1085b8c006591c44f6b19dd7cbd5a7"
+    },
+    {
+      "name": "article-texas-5",
+      "url": "https://texaslonghorns.com/news/2026/11/3/no-10-11-footballs-biles-named-bednarik-award-player-of-the-week",
+      "requested_at_utc": "2026-11-05T13:36:27.615150+00:00",
+      "status": "CAPTURED",
+      "http_status": 200,
+      "received_at_utc": "2026-11-05T13:36:28.373847+00:00",
+      "resolved_url": "https://texaslonghorns.com/news/2026/11/3/no-10-11-footballs-biles-named-bednarik-award-player-of-the-week",
+      "path": "article-texas-5.gz",
+      "sha256": "9009042411aae22225bff958395a0c42bce48529ff75ae3a8b618cb00b3e4b35"
+    },
+    {
+      "name": "article-texas-6",
+      "url": "https://texaslonghorns.com/news/2026/11/4/no-10-11-footballs-biles-tabbed-lott-impact-trophy-player-of-the-week",
+      "requested_at_utc": "2026-11-05T13:36:28.417179+00:00",
+      "status": "CAPTURED",
+      "http_status": 200,
+      "received_at_utc": "2026-11-05T13:36:28.694962+00:00",
+      "resolved_url": "https://texaslonghorns.com/news/2026/11/4/no-10-11-footballs-biles-tabbed-lott-impact-trophy-player-of-the-week",
+      "path": "article-texas-6.gz",
+      "sha256": "efa4635ac61c383a0a1c3372b92cb37ed7a9d6f35083f2d869d9d757bc3f8914"
+    },
+    {
+      "name": "article-texas-7",
+      "url": "https://texaslonghorns.com/news/2026/11/4/no-10-11-footballs-simmons-named-lombardi-award-semifinalist",
+      "requested_at_utc": "2026-11-05T13:36:28.725703+00:00",
+      "status": "CAPTURED",
+      "http_status": 200,
+      "received_at_utc": "2026-11-05T13:36:29.229125+00:00",
+      "resolved_url": "https://texaslonghorns.com/news/2026/11/4/no-10-11-footballs-simmons-named-lombardi-award-semifinalist",
+      "path": "article-texas-7.gz",
+      "sha256": "766f1299bfdae9268c4cc08cc8cf8021b2f5fcddd7d558281df8cd77cf12241d"
+    },
+    {
+      "name": "official-missouri",
+      "url": "https://mutigers.com/sports/football",
+      "requested_at_utc": "2026-11-05T13:36:23.981020+00:00",
+      "status": "CAPTURED",
+      "http_status": 200,
+      "received_at_utc": "2026-11-05T13:36:24.547740+00:00",
+      "resolved_url": "https://mutigers.com/sports/football",
+      "path": "official-missouri.gz",
+      "sha256": "c1fe33a5045014477c49b59919e0b85cfbfe9fe0b31eee60e7963de5d77648b3"
+    },
+    {
+      "name": "official-boise-state",
+      "url": "https://broncosports.com/sports/football",
+      "requested_at_utc": "2026-11-05T13:36:24.057569+00:00",
+      "status": "CAPTURED",
+      "http_status": 200,
+      "received_at_utc": "2026-11-05T13:36:24.880813+00:00",
+      "resolved_url": "https://broncosports.com/sports/football",
+      "path": "official-boise-state.gz",
+      "sha256": "2c6d4f3500cb525ea1b0c1a0f17b827c0120dc709f871327028c04572be8c66c"
+    },
+    {
+      "name": "article-boise-state-0",
+      "url": "https://broncosports.com/news/2026/11/3/football-broncos-ranked-no-xx-in-first-cfp-rankings",
+      "requested_at_utc": "2026-11-05T13:36:24.926064+00:00",
+      "status": "CAPTURED",
+      "http_status": 200,
+      "received_at_utc": "2026-11-05T13:36:25.848572+00:00",
+      "resolved_url": "https://broncosports.com/news/2026/11/3/football-broncos-ranked-no-xx-in-first-cfp-rankings",
+      "path": "article-boise-state-0.gz",
+      "sha256": "369e9d89c59ebdfbf933b9bf8a2be7d6a8754712becf583d46ce237a85d50578"
+    },
+    {
+      "name": "article-boise-state-1",
+      "url": "https://broncosports.com/news/2026/11/4/dr-roger-munger-recognized-by-national-football-foundation",
+      "requested_at_utc": "2026-11-05T13:36:25.899307+00:00",
+      "status": "CAPTURED",
+      "http_status": 200,
+      "received_at_utc": "2026-11-05T13:36:26.646158+00:00",
+      "resolved_url": "https://broncosports.com/news/2026/11/4/dr-roger-munger-recognized-by-national-football-foundation",
+      "path": "article-boise-state-1.gz",
+      "sha256": "7885964b9c85e6e7500ea62c2879855af6cbd25ac05be498bc4e8a607f369aa6"
+    },
+    {
+      "name": "article-boise-state-2",
+      "url": "https://broncosports.com/news/2026/11/4/football-nfl-broncos-week-nine",
+      "requested_at_utc": "2026-11-05T13:36:26.689049+00:00",
+      "status": "CAPTURED",
+      "http_status": 200,
+      "received_at_utc": "2026-11-05T13:36:27.517148+00:00",
+      "resolved_url": "https://broncosports.com/news/2026/11/4/football-nfl-broncos-week-nine",
+      "path": "article-boise-state-2.gz",
+      "sha256": "6c2ad6749c5d99402c03fa9296b06d3a64bfbd703b602e3449797b59230577ad"
+    },
+    {
+      "name": "article-boise-state-3",
+      "url": "https://broncosports.com/news/2026/11/4/football-phelps-nominated-for-burlsworth-trophy",
+      "requested_at_utc": "2026-11-05T13:36:27.546510+00:00",
+      "status": "CAPTURED",
+      "http_status": 200,
+      "received_at_utc": "2026-11-05T13:36:28.390807+00:00",
+      "resolved_url": "https://broncosports.com/news/2026/11/4/football-phelps-nominated-for-burlsworth-trophy",
+      "path": "article-boise-state-3.gz",
+      "sha256": "c82f9bc51f41947b99eb271f3870174269002a36208642c836d98f275fd79771"
+    },
+    {
+      "name": "article-boise-state-4",
+      "url": "https://broncosports.com/news/2026/11/4/football-week-10-availability-report",
+      "requested_at_utc": "2026-11-05T13:36:28.460910+00:00",
+      "status": "CAPTURED",
+      "http_status": 200,
+      "received_at_utc": "2026-11-05T13:36:29.195987+00:00",
+      "resolved_url": "https://broncosports.com/news/2026/11/4/football-week-10-availability-report",
+      "path": "article-boise-state-4.gz",
+      "sha256": "1c71cf960129ea2552fd32ddc0d7a6b269cb638d48ddeb37dc8f5f348c7f7d5c"
+    },
+    {
+      "name": "official-colorado-state",
+      "url": "https://csurams.com/sports/football",
+      "requested_at_utc": "2026-11-05T13:36:24.573361+00:00",
+      "status": "CAPTURED",
+      "http_status": 200,
+      "received_at_utc": "2026-11-05T13:36:25.101272+00:00",
+      "resolved_url": "https://csurams.com/sports/football",
+      "path": "official-colorado-state.gz",
+      "sha256": "50cd515fdcca0f7b5c58514d3866fd7c89d793bb75d475a016378e1df0fe55f9"
+    },
+    {
+      "name": "article-colorado-state-0",
+      "url": "https://csurams.com/news/2026/10/31/football-game-day-at-utah-state",
+      "requested_at_utc": "2026-11-05T13:36:25.137827+00:00",
+      "status": "CAPTURED",
+      "http_status": 200,
+      "received_at_utc": "2026-11-05T13:36:25.711080+00:00",
+      "resolved_url": "https://csurams.com/news/2026/10/31/football-game-day-at-utah-state",
+      "path": "article-colorado-state-0.gz",
+      "sha256": "d8c934b32964ec99c15a7f8b6fab9bb9316efe342de0cecb8ff0db737e730112"
+    },
+    {
+      "name": "article-colorado-state-1",
+      "url": "https://csurams.com/news/2026/10/31/football-rams-drop-road-game-to-aggies",
+      "requested_at_utc": "2026-11-05T13:36:25.747714+00:00",
+      "status": "CAPTURED",
+      "http_status": 200,
+      "received_at_utc": "2026-11-05T13:36:26.384227+00:00",
+      "resolved_url": "https://csurams.com/news/2026/10/31/football-rams-drop-road-game-to-aggies",
+      "path": "article-colorado-state-1.gz",
+      "sha256": "5aa718a79b825c7d0168f7499d00d133638f0423f020fe58dd82ba41485f9bf4"
+    },
+    {
+      "name": "article-colorado-state-2",
+      "url": "https://csurams.com/news/2026/11/2/football-monday-presser-fox-gets-first-extended-look",
+      "requested_at_utc": "2026-11-05T13:36:26.420129+00:00",
+      "status": "CAPTURED",
+      "http_status": 200,
+      "received_at_utc": "2026-11-05T13:36:27.075949+00:00",
+      "resolved_url": "https://csurams.com/news/2026/11/2/football-monday-presser-fox-gets-first-extended-look",
+      "path": "article-colorado-state-2.gz",
+      "sha256": "a451aa5afa3567e4710f21aee112424557e8da4396655f333ee9904f1f10c346"
+    },
+    {
+      "name": "article-colorado-state-3",
+      "url": "https://csurams.com/news/2026/11/2/football-watch-coach-moras-weekly-press-conference",
+      "requested_at_utc": "2026-11-05T13:36:27.127879+00:00",
+      "status": "CAPTURED",
+      "http_status": 200,
+      "received_at_utc": "2026-11-05T13:36:28.262535+00:00",
+      "resolved_url": "https://www.youtube.com/watch?v=vpkbvqQ7ZzU&feature=youtu.be",
+      "path": "article-colorado-state-3.gz",
+      "sha256": "a4406ea59f7a8b47e8f8213baa7c9458a567c052ea56d1952a556dd467b1b986"
+    },
+    {
+      "name": "article-colorado-state-4",
+      "url": "https://csurams.com/news/2026/11/3/football-game-week-vs-boise-state",
+      "requested_at_utc": "2026-11-05T13:36:28.348679+00:00",
+      "status": "CAPTURED",
+      "http_status": 200,
+      "received_at_utc": "2026-11-05T13:36:28.953241+00:00",
+      "resolved_url": "https://csurams.com/news/2026/11/3/football-game-week-vs-boise-state",
+      "path": "article-colorado-state-4.gz",
+      "sha256": "21e1176989ad7670eba36e2b3a6105869a857d84f62c5aa568a6d8b59ccdc8e5"
+    },
+    {
+      "name": "article-colorado-state-5",
+      "url": "https://csurams.com/news/2026/11/4/football-colorado-state-insider-podcast-with-brian-roth-season-10-episode-13",
+      "requested_at_utc": "2026-11-05T13:36:28.997860+00:00",
+      "status": "CAPTURED",
+      "http_status": 200,
+      "received_at_utc": "2026-11-05T13:36:29.583370+00:00",
+      "resolved_url": "https://csurams.com/podcasts/csu-insider-boise-state-preview-basketball-opening-night-november-4-2026/1245",
+      "path": "article-colorado-state-5.gz",
+      "sha256": "ab79c842f925584338fc96dbf72ae9ac051f19978af252c281304c28ec848fdf"
+    },
+    {
+      "name": "article-colorado-state-6",
+      "url": "https://csurams.com/news/2026/11/4/ramwire-mcconnell-living-the-only-answer-he-d-accept",
+      "requested_at_utc": "2026-11-05T13:36:29.613247+00:00",
+      "status": "CAPTURED",
+      "http_status": 200,
+      "received_at_utc": "2026-11-05T13:36:30.027535+00:00",
+      "resolved_url": "https://csurams.com/news/2026/11/4/ramwire-mcconnell-living-the-only-answer-he-d-accept",
+      "path": "article-colorado-state-6.gz",
+      "sha256": "69f629394820ec8b48b9cf6b601109d001dae1274738ad2f16d284eb40cc9860"
+    },
+    {
+      "name": "official-western-kentucky",
+      "url": "https://wkusports.com/sports/football",
+      "requested_at_utc": "2026-11-05T13:36:24.878196+00:00",
+      "status": "CAPTURED",
+      "http_status": 200,
+      "received_at_utc": "2026-11-05T13:36:25.771469+00:00",
+      "resolved_url": "https://wkusports.com/sports/football",
+      "path": "official-western-kentucky.gz",
+      "sha256": "5464bb7116fabedf6536ca2085d33e27f08a816ece9a79e793047d41eba3dfed"
+    },
+    {
+      "name": "article-western-kentucky-0",
+      "url": "https://wkusports.com/news/2026/11/2/football-wku-fb-head-coach-tyson-helton-weekly-media-availability-11-2-26",
+      "requested_at_utc": "2026-11-05T13:36:25.819165+00:00",
+      "status": "CAPTURED",
+      "http_status": 200,
+      "received_at_utc": "2026-11-05T13:36:27.243107+00:00",
+      "resolved_url": "https://www.youtube.com/watch?v=nR6UdXwgvAI&feature=youtu.be",
+      "path": "article-western-kentucky-0.gz",
+      "sha256": "238060b7025fe8ab78fc138b3d534da6dabe397eeeff9627469292d6ecd2ec74"
+    },
+    {
+      "name": "article-western-kentucky-1",
+      "url": "https://wkusports.com/news/2026/11/4/football-hilltoppers-travel-to-middle-tennessee-for-rivalry-game",
+      "requested_at_utc": "2026-11-05T13:36:27.336012+00:00",
+      "status": "CAPTURED",
+      "http_status": 200,
+      "received_at_utc": "2026-11-05T13:36:28.298254+00:00",
+      "resolved_url": "https://wkusports.com/news/2026/11/4/football-hilltoppers-travel-to-middle-tennessee-for-rivalry-game",
+      "path": "article-western-kentucky-1.gz",
+      "sha256": "f3fccc0766e9e4924ee7150490951c52e36b2a708308c7813de2cd405ebffb38"
+    },
+    {
+      "name": "official-middle-tennessee",
+      "url": "https://goblueraiders.com/sports/football",
+      "requested_at_utc": "2026-11-05T13:36:26.245869+00:00",
+      "status": "CAPTURED",
+      "http_status": 200,
+      "received_at_utc": "2026-11-05T13:36:27.454710+00:00",
+      "resolved_url": "https://goblueraiders.com/sports/football",
+      "path": "official-middle-tennessee.gz",
+      "sha256": "454cfd1e1ed1ec985cc0891aa68a0ade2d28b4d6bc10242cdc0eb2d971e8b3f7"
+    },
+    {
+      "name": "article-middle-tennessee-0",
+      "url": "https://goblueraiders.com/news/2026/11/4/football-countdown-to-kickoff-luncheon-set-for-friday-ahead-of-homecoming",
+      "requested_at_utc": "2026-11-05T13:36:27.515095+00:00",
+      "status": "CAPTURED",
+      "http_status": 200,
+      "received_at_utc": "2026-11-05T13:36:27.823841+00:00",
+      "resolved_url": "https://goblueraiders.com/news/2026/11/4/football-countdown-to-kickoff-luncheon-set-for-friday-ahead-of-homecoming",
+      "path": "article-middle-tennessee-0.gz",
+      "sha256": "6241f06176668491950379efbe0c13fb2a6d6c133c3362fa22b47e9fe1d37c3e"
+    }
+  ],
+  "weather": [
+    {
+      "game_id": 401862817,
+      "status": "CAPTURED",
+      "requests": [
+        {
+          "name": "weather-point-401862817",
+          "url": "https://api.weather.gov/points/26.3764,-80.1016",
+          "requested_at_utc": "2026-11-05T13:36:30.042387+00:00",
+          "status": "CAPTURED",
+          "http_status": 200,
+          "received_at_utc": "2026-11-05T13:36:30.293928+00:00",
+          "resolved_url": "https://api.weather.gov/points/26.3764,-80.1016",
+          "path": "weather-point-401862817.gz",
+          "sha256": "2d4baa1d11d8155cf21537ff89b29c248b4983c4b9872f94232367ea1c588827"
+        },
+        {
+          "name": "weather-hourly-401862817",
+          "url": "https://api.weather.gov/gridpoints/MFL/110,77/forecast/hourly",
+          "requested_at_utc": "2026-11-05T13:36:30.298948+00:00",
+          "status": "CAPTURED",
+          "http_status": 200,
+          "received_at_utc": "2026-11-05T13:36:30.375794+00:00",
+          "resolved_url": "https://api.weather.gov/gridpoints/MFL/110,77/forecast/hourly",
+          "path": "weather-hourly-401862817.gz",
+          "sha256": "caea3fff50d50de20ceb6b5b44f58dc7658c594af02deef567ca510996a2f0a6"
+        }
+      ],
+      "venue": {
+        "id": 3715,
+        "name": "FAU Stadium",
+        "capacity": 29419,
+        "grass": false,
+        "dome": false,
+        "city": "Boca Raton",
+        "state": "FL",
+        "zip": "33499",
+        "countryCode": "US",
+        "timezone": "America/New_York",
+        "latitude": 26.3763763,
+        "longitude": -80.1015759,
+        "elevation": "3.613628864",
+        "constructionYear": 2011
+      },
+      "kickoff_utc": "2026-11-06T00:30:00.000Z",
+      "game_hours": [
+        {
+          "number": 12,
+          "name": "",
+          "startTime": "2026-11-05T19:00:00-05:00",
+          "endTime": "2026-11-05T20:00:00-05:00",
+          "isDaytime": false,
+          "temperature": 79,
+          "temperatureUnit": "F",
+          "temperatureTrend": null,
+          "probabilityOfPrecipitation": {
+            "unitCode": "wmoUnit:percent",
+            "value": 1
+          },
+          "dewpoint": {
+            "unitCode": "wmoUnit:degC",
+            "value": 22.22222222222222
+          },
+          "relativeHumidity": {
+            "unitCode": "wmoUnit:percent",
+            "value": 79
+          },
+          "windSpeed": "7 mph",
+          "windDirection": "NE",
+          "icon": "https://api.weather.gov/icons/land/night/few?size=small",
+          "shortForecast": "Mostly Clear",
+          "detailedForecast": ""
+        },
+        {
+          "number": 13,
+          "name": "",
+          "startTime": "2026-11-05T20:00:00-05:00",
+          "endTime": "2026-11-05T21:00:00-05:00",
+          "isDaytime": false,
+          "temperature": 78,
+          "temperatureUnit": "F",
+          "temperatureTrend": null,
+          "probabilityOfPrecipitation": {
+            "unitCode": "wmoUnit:percent",
+            "value": 1
+          },
+          "dewpoint": {
+            "unitCode": "wmoUnit:degC",
+            "value": 22.22222222222222
+          },
+          "relativeHumidity": {
+            "unitCode": "wmoUnit:percent",
+            "value": 82
+          },
+          "windSpeed": "7 mph",
+          "windDirection": "NE",
+          "icon": "https://api.weather.gov/icons/land/night/skc?size=small",
+          "shortForecast": "Clear",
+          "detailedForecast": ""
+        },
+        {
+          "number": 14,
+          "name": "",
+          "startTime": "2026-11-05T21:00:00-05:00",
+          "endTime": "2026-11-05T22:00:00-05:00",
+          "isDaytime": false,
+          "temperature": 78,
+          "temperatureUnit": "F",
+          "temperatureTrend": null,
+          "probabilityOfPrecipitation": {
+            "unitCode": "wmoUnit:percent",
+            "value": 1
+          },
+          "dewpoint": {
+            "unitCode": "wmoUnit:degC",
+            "value": 22.22222222222222
+          },
+          "relativeHumidity": {
+            "unitCode": "wmoUnit:percent",
+            "value": 82
+          },
+          "windSpeed": "6 mph",
+          "windDirection": "NE",
+          "icon": "https://api.weather.gov/icons/land/night/skc?size=small",
+          "shortForecast": "Clear",
+          "detailedForecast": ""
+        },
+        {
+          "number": 15,
+          "name": "",
+          "startTime": "2026-11-05T22:00:00-05:00",
+          "endTime": "2026-11-05T23:00:00-05:00",
+          "isDaytime": false,
+          "temperature": 77,
+          "temperatureUnit": "F",
+          "temperatureTrend": null,
+          "probabilityOfPrecipitation": {
+            "unitCode": "wmoUnit:percent",
+            "value": 1
+          },
+          "dewpoint": {
+            "unitCode": "wmoUnit:degC",
+            "value": 21.666666666666668
+          },
+          "relativeHumidity": {
+            "unitCode": "wmoUnit:percent",
+            "value": 82
+          },
+          "windSpeed": "6 mph",
+          "windDirection": "NE",
+          "icon": "https://api.weather.gov/icons/land/night/few?size=small",
+          "shortForecast": "Mostly Clear",
+          "detailedForecast": ""
+        }
+      ],
+      "forecast_generated_at": "2026-11-05T13:02:46+00:00",
+      "gust_status": "UNAVAILABLE_IN_HOURLY_PRODUCT",
+      "field_condition": "UNCONFIRMED"
+    },
+    {
+      "game_id": 401869964,
+      "status": "CAPTURED",
+      "requests": [
+        {
+          "name": "weather-point-401869964",
+          "url": "https://api.weather.gov/points/31.3289,-89.3318",
+          "requested_at_utc": "2026-11-05T13:36:30.043395+00:00",
+          "status": "CAPTURED",
+          "http_status": 200,
+          "received_at_utc": "2026-11-05T13:36:30.196818+00:00",
+          "resolved_url": "https://api.weather.gov/points/31.3289,-89.3318",
+          "path": "weather-point-401869964.gz",
+          "sha256": "02d445dcac68bfefeb50a21169cf4c7050e275f51ebc8aa041b7ac15bdd4674c"
+        },
+        {
+          "name": "weather-hourly-401869964",
+          "url": "https://api.weather.gov/gridpoints/JAN/109,21/forecast/hourly",
+          "requested_at_utc": "2026-11-05T13:36:30.200900+00:00",
+          "status": "CAPTURED",
+          "http_status": 200,
+          "received_at_utc": "2026-11-05T13:36:30.309604+00:00",
+          "resolved_url": "https://api.weather.gov/gridpoints/JAN/109,21/forecast/hourly",
+          "path": "weather-hourly-401869964.gz",
+          "sha256": "b127789ebd60c7ab54939beaac17176b58233d37eaf1fd405fb939b924a32209"
+        }
+      ],
+      "venue": {
+        "id": 3815,
+        "name": "M. M. Roberts Stadium",
+        "capacity": 36000,
+        "grass": false,
+        "dome": false,
+        "city": "Hattiesburg",
+        "state": "MS",
+        "zip": "39402",
+        "countryCode": "US",
+        "timezone": "America/Chicago",
+        "latitude": 31.3289321,
+        "longitude": -89.3318118,
+        "elevation": "64.52726746",
+        "constructionYear": 1932
+      },
+      "kickoff_utc": "2026-11-06T01:00:00.000Z",
+      "game_hours": [
+        {
+          "number": 13,
+          "name": "",
+          "startTime": "2026-11-05T19:00:00-06:00",
+          "endTime": "2026-11-05T20:00:00-06:00",
+          "isDaytime": false,
+          "temperature": 66,
+          "temperatureUnit": "F",
+          "temperatureTrend": null,
+          "probabilityOfPrecipitation": {
+            "unitCode": "wmoUnit:percent",
+            "value": 0
+          },
+          "dewpoint": {
+            "unitCode": "wmoUnit:degC",
+            "value": 15
+          },
+          "relativeHumidity": {
+            "unitCode": "wmoUnit:percent",
+            "value": 78
+          },
+          "windSpeed": "0 mph",
+          "windDirection": "",
+          "icon": "https://api.weather.gov/icons/land/night/few?size=small",
+          "shortForecast": "Mostly Clear",
+          "detailedForecast": ""
+        },
+        {
+          "number": 14,
+          "name": "",
+          "startTime": "2026-11-05T20:00:00-06:00",
+          "endTime": "2026-11-05T21:00:00-06:00",
+          "isDaytime": false,
+          "temperature": 63,
+          "temperatureUnit": "F",
+          "temperatureTrend": null,
+          "probabilityOfPrecipitation": {
+            "unitCode": "wmoUnit:percent",
+            "value": 0
+          },
+          "dewpoint": {
+            "unitCode": "wmoUnit:degC",
+            "value": 15
+          },
+          "relativeHumidity": {
+            "unitCode": "wmoUnit:percent",
+            "value": 87
+          },
+          "windSpeed": "0 mph",
+          "windDirection": "",
+          "icon": "https://api.weather.gov/icons/land/night/sct?size=small",
+          "shortForecast": "Partly Cloudy",
+          "detailedForecast": ""
+        },
+        {
+          "number": 15,
+          "name": "",
+          "startTime": "2026-11-05T21:00:00-06:00",
+          "endTime": "2026-11-05T22:00:00-06:00",
+          "isDaytime": false,
+          "temperature": 61,
+          "temperatureUnit": "F",
+          "temperatureTrend": null,
+          "probabilityOfPrecipitation": {
+            "unitCode": "wmoUnit:percent",
+            "value": 0
+          },
+          "dewpoint": {
+            "unitCode": "wmoUnit:degC",
+            "value": 14.444444444444445
+          },
+          "relativeHumidity": {
+            "unitCode": "wmoUnit:percent",
+            "value": 90
+          },
+          "windSpeed": "0 mph",
+          "windDirection": "",
+          "icon": "https://api.weather.gov/icons/land/night/sct?size=small",
+          "shortForecast": "Partly Cloudy",
+          "detailedForecast": ""
+        }
+      ],
+      "forecast_generated_at": "2026-11-05T13:18:45+00:00",
+      "gust_status": "UNAVAILABLE_IN_HOURLY_PRODUCT",
+      "field_condition": "UNCONFIRMED"
+    },
+    {
+      "game_id": 401858289,
+      "status": "CAPTURED",
+      "requests": [
+        {
+          "name": "weather-point-401858289",
+          "url": "https://api.weather.gov/points/42.3351,-71.1664",
+          "requested_at_utc": "2026-11-05T13:36:30.043395+00:00",
+          "status": "CAPTURED",
+          "http_status": 200,
+          "received_at_utc": "2026-11-05T13:36:30.195827+00:00",
+          "resolved_url": "https://api.weather.gov/points/42.3351,-71.1664",
+          "path": "weather-point-401858289.gz",
+          "sha256": "1ed1e5c35b1b6cdc9957b54b410e72383bd0f8fb67f14afcae480417dd344d33"
+        },
+        {
+          "name": "weather-hourly-401858289",
+          "url": "https://api.weather.gov/gridpoints/BOX/68,99/forecast/hourly",
+          "requested_at_utc": "2026-11-05T13:36:30.197770+00:00",
+          "status": "CAPTURED",
+          "http_status": 200,
+          "received_at_utc": "2026-11-05T13:36:30.535558+00:00",
+          "resolved_url": "https://api.weather.gov/gridpoints/BOX/68,99/forecast/hourly",
+          "path": "weather-hourly-401858289.gz",
+          "sha256": "ec1ddd7eef25ce659e4c0e94df39be8acdb016ab4e6141106e7d8c5bb10497a9"
+        }
+      ],
+      "venue": {
+        "id": 3615,
+        "name": "Alumni Stadium (Chestnut Hill, MA)",
+        "capacity": 44500,
+        "grass": false,
+        "dome": false,
+        "city": "Chestnut Hill",
+        "state": "MA",
+        "zip": "2467 ",
+        "countryCode": "US",
+        "timezone": "America/New_York",
+        "latitude": 42.335104,
+        "longitude": -71.1664413,
+        "elevation": "39.82634354",
+        "constructionYear": 1957
+      },
+      "kickoff_utc": "2026-11-07T17:00:00.000Z",
+      "game_hours": [
+        {
+          "number": 53,
+          "name": "",
+          "startTime": "2026-11-07T12:00:00-05:00",
+          "endTime": "2026-11-07T13:00:00-05:00",
+          "isDaytime": true,
+          "temperature": 61,
+          "temperatureUnit": "F",
+          "temperatureTrend": null,
+          "probabilityOfPrecipitation": {
+            "unitCode": "wmoUnit:percent",
+            "value": 35
+          },
+          "dewpoint": {
+            "unitCode": "wmoUnit:degC",
+            "value": 13.333333333333334
+          },
+          "relativeHumidity": {
+            "unitCode": "wmoUnit:percent",
+            "value": 84
+          },
+          "windSpeed": "8 mph",
+          "windDirection": "N",
+          "icon": "https://api.weather.gov/icons/land/day/rain,40?size=small",
+          "shortForecast": "Chance Light Rain",
+          "detailedForecast": ""
+        },
+        {
+          "number": 54,
+          "name": "",
+          "startTime": "2026-11-07T13:00:00-05:00",
+          "endTime": "2026-11-07T14:00:00-05:00",
+          "isDaytime": true,
+          "temperature": 61,
+          "temperatureUnit": "F",
+          "temperatureTrend": null,
+          "probabilityOfPrecipitation": {
+            "unitCode": "wmoUnit:percent",
+            "value": 45
+          },
+          "dewpoint": {
+            "unitCode": "wmoUnit:degC",
+            "value": 12.777777777777779
+          },
+          "relativeHumidity": {
+            "unitCode": "wmoUnit:percent",
+            "value": 81
+          },
+          "windSpeed": "8 mph",
+          "windDirection": "N",
+          "icon": "https://api.weather.gov/icons/land/day/rain,50?size=small",
+          "shortForecast": "Chance Light Rain",
+          "detailedForecast": ""
+        },
+        {
+          "number": 55,
+          "name": "",
+          "startTime": "2026-11-07T14:00:00-05:00",
+          "endTime": "2026-11-07T15:00:00-05:00",
+          "isDaytime": true,
+          "temperature": 61,
+          "temperatureUnit": "F",
+          "temperatureTrend": null,
+          "probabilityOfPrecipitation": {
+            "unitCode": "wmoUnit:percent",
+            "value": 45
+          },
+          "dewpoint": {
+            "unitCode": "wmoUnit:degC",
+            "value": 12.222222222222221
+          },
+          "relativeHumidity": {
+            "unitCode": "wmoUnit:percent",
+            "value": 78
+          },
+          "windSpeed": "8 mph",
+          "windDirection": "N",
+          "icon": "https://api.weather.gov/icons/land/day/rain,50?size=small",
+          "shortForecast": "Chance Light Rain",
+          "detailedForecast": ""
+        }
+      ],
+      "forecast_generated_at": "2026-11-05T13:36:30+00:00",
+      "gust_status": "UNAVAILABLE_IN_HOURLY_PRODUCT",
+      "field_condition": "UNCONFIRMED"
+    },
+    {
+      "game_id": 401858292,
+      "status": "CAPTURED",
+      "requests": [
+        {
+          "name": "weather-point-401858292",
+          "url": "https://api.weather.gov/points/41.7596,-72.6188",
+          "requested_at_utc": "2026-11-05T13:36:30.044394+00:00",
+          "status": "CAPTURED",
+          "http_status": 200,
+          "received_at_utc": "2026-11-05T13:36:30.253376+00:00",
+          "resolved_url": "https://api.weather.gov/points/41.7596,-72.6188",
+          "path": "weather-point-401858292.gz",
+          "sha256": "ecbb7b6f2e126bd8fca3d1598a8028046bb34f0c73c7f1d70d27c7811befc65e"
+        },
+        {
+          "name": "weather-hourly-401858292",
+          "url": "https://api.weather.gov/gridpoints/BOX/24,65/forecast/hourly",
+          "requested_at_utc": "2026-11-05T13:36:30.256358+00:00",
+          "status": "CAPTURED",
+          "http_status": 200,
+          "received_at_utc": "2026-11-05T13:36:30.603799+00:00",
+          "resolved_url": "https://api.weather.gov/gridpoints/BOX/24,65/forecast/hourly",
+          "path": "weather-hourly-401858292.gz",
+          "sha256": "883c59ab486a28cb5a981c431be7bbc1b567841edfa124ca0756f16ac0a12483"
+        }
+      ],
+      "venue": {
+        "id": 3892,
+        "name": "Pratt & Whitney Stadium",
+        "capacity": 40000,
+        "grass": true,
+        "dome": false,
+        "city": "East Hartford",
+        "state": "CT",
+        "zip": "6118 ",
+        "countryCode": "US",
+        "timezone": "America/New_York",
+        "latitude": 41.7595675,
+        "longitude": -72.6187728,
+        "elevation": "6.515614986",
+        "constructionYear": 2003
+      },
+      "kickoff_utc": "2026-11-07T17:00:00.000Z",
+      "game_hours": [
+        {
+          "number": 53,
+          "name": "",
+          "startTime": "2026-11-07T12:00:00-05:00",
+          "endTime": "2026-11-07T13:00:00-05:00",
+          "isDaytime": true,
+          "temperature": 64,
+          "temperatureUnit": "F",
+          "temperatureTrend": null,
+          "probabilityOfPrecipitation": {
+            "unitCode": "wmoUnit:percent",
+            "value": 27
+          },
+          "dewpoint": {
+            "unitCode": "wmoUnit:degC",
+            "value": 13.333333333333334
+          },
+          "relativeHumidity": {
+            "unitCode": "wmoUnit:percent",
+            "value": 75
+          },
+          "windSpeed": "5 mph",
+          "windDirection": "NW",
+          "icon": "https://api.weather.gov/icons/land/day/rain,30?size=small",
+          "shortForecast": "Chance Light Rain",
+          "detailedForecast": ""
+        },
+        {
+          "number": 54,
+          "name": "",
+          "startTime": "2026-11-07T13:00:00-05:00",
+          "endTime": "2026-11-07T14:00:00-05:00",
+          "isDaytime": true,
+          "temperature": 65,
+          "temperatureUnit": "F",
+          "temperatureTrend": null,
+          "probabilityOfPrecipitation": {
+            "unitCode": "wmoUnit:percent",
+            "value": 35
+          },
+          "dewpoint": {
+            "unitCode": "wmoUnit:degC",
+            "value": 12.777777777777779
+          },
+          "relativeHumidity": {
+            "unitCode": "wmoUnit:percent",
+            "value": 70
+          },
+          "windSpeed": "5 mph",
+          "windDirection": "NW",
+          "icon": "https://api.weather.gov/icons/land/day/rain,40?size=small",
+          "shortForecast": "Chance Light Rain",
+          "detailedForecast": ""
+        },
+        {
+          "number": 55,
+          "name": "",
+          "startTime": "2026-11-07T14:00:00-05:00",
+          "endTime": "2026-11-07T15:00:00-05:00",
+          "isDaytime": true,
+          "temperature": 65,
+          "temperatureUnit": "F",
+          "temperatureTrend": null,
+          "probabilityOfPrecipitation": {
+            "unitCode": "wmoUnit:percent",
+            "value": 38
+          },
+          "dewpoint": {
+            "unitCode": "wmoUnit:degC",
+            "value": 12.222222222222221
+          },
+          "relativeHumidity": {
+            "unitCode": "wmoUnit:percent",
+            "value": 68
+          },
+          "windSpeed": "5 mph",
+          "windDirection": "NW",
+          "icon": "https://api.weather.gov/icons/land/day/rain,40?size=small",
+          "shortForecast": "Chance Light Rain",
+          "detailedForecast": ""
+        }
+      ],
+      "forecast_generated_at": "2026-11-05T13:36:30+00:00",
+      "gust_status": "UNAVAILABLE_IN_HOURLY_PRODUCT",
+      "field_condition": "UNCONFIRMED"
+    },
+    {
+      "game_id": 401856743,
+      "status": "CAPTURED",
+      "requests": [
+        {
+          "name": "weather-point-401856743",
+          "url": "https://api.weather.gov/points/38.9358,-92.3332",
+          "requested_at_utc": "2026-11-05T13:36:30.045337+00:00",
+          "status": "CAPTURED",
+          "http_status": 200,
+          "received_at_utc": "2026-11-05T13:36:30.191814+00:00",
+          "resolved_url": "https://api.weather.gov/points/38.9358,-92.3332",
+          "path": "weather-point-401856743.gz",
+          "sha256": "b25d482c308ab28c1122b2b84e92cb0459b1631b3a523503ebbf214052f47a01"
+        },
+        {
+          "name": "weather-hourly-401856743",
+          "url": "https://api.weather.gov/gridpoints/LSX/20,86/forecast/hourly",
+          "requested_at_utc": "2026-11-05T13:36:30.193854+00:00",
+          "status": "CAPTURED",
+          "http_status": 200,
+          "received_at_utc": "2026-11-05T13:36:30.536560+00:00",
+          "resolved_url": "https://api.weather.gov/gridpoints/LSX/20,86/forecast/hourly",
+          "path": "weather-hourly-401856743.gz",
+          "sha256": "ceeb7826fce815aa8c0548b19a9bc939261b8f266d2b90a74bb8721ff9f45c91"
+        }
+      ],
+      "venue": {
+        "id": 3838,
+        "name": "Memorial Stadium",
+        "capacity": 71168,
+        "grass": false,
+        "dome": false,
+        "city": "Columbia",
+        "state": "MO",
+        "zip": "65211",
+        "countryCode": "US",
+        "timezone": "America/Chicago",
+        "latitude": 38.9358491,
+        "longitude": -92.3332009,
+        "elevation": "212.6865692",
+        "constructionYear": 1927
+      },
+      "kickoff_utc": "2026-11-07T17:00:00.000Z",
+      "game_hours": [
+        {
+          "number": 53,
+          "name": "",
+          "startTime": "2026-11-07T11:00:00-06:00",
+          "endTime": "2026-11-07T12:00:00-06:00",
+          "isDaytime": true,
+          "temperature": 48,
+          "temperatureUnit": "F",
+          "temperatureTrend": null,
+          "probabilityOfPrecipitation": {
+            "unitCode": "wmoUnit:percent",
+            "value": 0
+          },
+          "dewpoint": {
+            "unitCode": "wmoUnit:degC",
+            "value": 3.888888888888889
+          },
+          "relativeHumidity": {
+            "unitCode": "wmoUnit:percent",
+            "value": 71
+          },
+          "windSpeed": "1 mph",
+          "windDirection": "NW",
+          "icon": "https://api.weather.gov/icons/land/day/sct?size=small",
+          "shortForecast": "Mostly Sunny",
+          "detailedForecast": ""
+        },
+        {
+          "number": 54,
+          "name": "",
+          "startTime": "2026-11-07T12:00:00-06:00",
+          "endTime": "2026-11-07T13:00:00-06:00",
+          "isDaytime": true,
+          "temperature": 51,
+          "temperatureUnit": "F",
+          "temperatureTrend": null,
+          "probabilityOfPrecipitation": {
+            "unitCode": "wmoUnit:percent",
+            "value": 0
+          },
+          "dewpoint": {
+            "unitCode": "wmoUnit:degC",
+            "value": 3.888888888888889
+          },
+          "relativeHumidity": {
+            "unitCode": "wmoUnit:percent",
+            "value": 63
+          },
+          "windSpeed": "1 mph",
+          "windDirection": "NW",
+          "icon": "https://api.weather.gov/icons/land/day/sct?size=small",
+          "shortForecast": "Mostly Sunny",
+          "detailedForecast": ""
+        },
+        {
+          "number": 55,
+          "name": "",
+          "startTime": "2026-11-07T13:00:00-06:00",
+          "endTime": "2026-11-07T14:00:00-06:00",
+          "isDaytime": true,
+          "temperature": 53,
+          "temperatureUnit": "F",
+          "temperatureTrend": null,
+          "probabilityOfPrecipitation": {
+            "unitCode": "wmoUnit:percent",
+            "value": 0
+          },
+          "dewpoint": {
+            "unitCode": "wmoUnit:degC",
+            "value": 3.888888888888889
+          },
+          "relativeHumidity": {
+            "unitCode": "wmoUnit:percent",
+            "value": 59
+          },
+          "windSpeed": "1 mph",
+          "windDirection": "NW",
+          "icon": "https://api.weather.gov/icons/land/day/sct?size=small",
+          "shortForecast": "Mostly Sunny",
+          "detailedForecast": ""
+        }
+      ],
+      "forecast_generated_at": "2026-11-05T13:36:30+00:00",
+      "gust_status": "UNAVAILABLE_IN_HOURLY_PRODUCT",
+      "field_condition": "UNCONFIRMED"
+    },
+    {
+      "game_id": 401871076,
+      "status": "CAPTURED",
+      "requests": [
+        {
+          "name": "weather-point-401871076",
+          "url": "https://api.weather.gov/points/35.8511,-86.3682",
+          "requested_at_utc": "2026-11-05T13:36:30.045337+00:00",
+          "status": "CAPTURED",
+          "http_status": 200,
+          "received_at_utc": "2026-11-05T13:36:30.263943+00:00",
+          "resolved_url": "https://api.weather.gov/points/35.8511,-86.3682",
+          "path": "weather-point-401871076.gz",
+          "sha256": "ae3aa33b0626ee88eb0c6366f607c85a8011cceedbd9ad86d3fea373fc101d07"
+        },
+        {
+          "name": "weather-hourly-401871076",
+          "url": "https://api.weather.gov/gridpoints/OHX/66,44/forecast/hourly",
+          "requested_at_utc": "2026-11-05T13:36:30.266014+00:00",
+          "status": "CAPTURED",
+          "http_status": 200,
+          "received_at_utc": "2026-11-05T13:36:30.565134+00:00",
+          "resolved_url": "https://api.weather.gov/gridpoints/OHX/66,44/forecast/hourly",
+          "path": "weather-hourly-401871076.gz",
+          "sha256": "0768a774c5620699d294a504d1c15ae81b84eb42056093853611d943cb5784bd"
+        }
+      ],
+      "venue": {
+        "id": 3725,
+        "name": "Johnny \"Red\" Floyd Stadium",
+        "capacity": 30788,
+        "grass": false,
+        "dome": false,
+        "city": "Murfreesboro",
+        "state": "TN",
+        "zip": "37132",
+        "countryCode": "US",
+        "timezone": "America/Chicago",
+        "latitude": 35.8511463,
+        "longitude": -86.3681649,
+        "elevation": "191.7279816",
+        "constructionYear": 1933
+      },
+      "kickoff_utc": "2026-11-07T20:30:00.000Z",
+      "game_hours": [
+        {
+          "number": 56,
+          "name": "",
+          "startTime": "2026-11-07T14:00:00-06:00",
+          "endTime": "2026-11-07T15:00:00-06:00",
+          "isDaytime": true,
+          "temperature": 58,
+          "temperatureUnit": "F",
+          "temperatureTrend": null,
+          "probabilityOfPrecipitation": {
+            "unitCode": "wmoUnit:percent",
+            "value": 0
+          },
+          "dewpoint": {
+            "unitCode": "wmoUnit:degC",
+            "value": 5
+          },
+          "relativeHumidity": {
+            "unitCode": "wmoUnit:percent",
+            "value": 52
+          },
+          "windSpeed": "10 mph",
+          "windDirection": "N",
+          "icon": "https://api.weather.gov/icons/land/day/few?size=small",
+          "shortForecast": "Sunny",
+          "detailedForecast": ""
+        },
+        {
+          "number": 57,
+          "name": "",
+          "startTime": "2026-11-07T15:00:00-06:00",
+          "endTime": "2026-11-07T16:00:00-06:00",
+          "isDaytime": true,
+          "temperature": 59,
+          "temperatureUnit": "F",
+          "temperatureTrend": null,
+          "probabilityOfPrecipitation": {
+            "unitCode": "wmoUnit:percent",
+            "value": 0
+          },
+          "dewpoint": {
+            "unitCode": "wmoUnit:degC",
+            "value": 5
+          },
+          "relativeHumidity": {
+            "unitCode": "wmoUnit:percent",
+            "value": 51
+          },
+          "windSpeed": "10 mph",
+          "windDirection": "N",
+          "icon": "https://api.weather.gov/icons/land/day/few?size=small",
+          "shortForecast": "Sunny",
+          "detailedForecast": ""
+        },
+        {
+          "number": 58,
+          "name": "",
+          "startTime": "2026-11-07T16:00:00-06:00",
+          "endTime": "2026-11-07T17:00:00-06:00",
+          "isDaytime": true,
+          "temperature": 56,
+          "temperatureUnit": "F",
+          "temperatureTrend": null,
+          "probabilityOfPrecipitation": {
+            "unitCode": "wmoUnit:percent",
+            "value": 0
+          },
+          "dewpoint": {
+            "unitCode": "wmoUnit:degC",
+            "value": 5
+          },
+          "relativeHumidity": {
+            "unitCode": "wmoUnit:percent",
+            "value": 56
+          },
+          "windSpeed": "10 mph",
+          "windDirection": "N",
+          "icon": "https://api.weather.gov/icons/land/day/few?size=small",
+          "shortForecast": "Sunny",
+          "detailedForecast": ""
+        },
+        {
+          "number": 59,
+          "name": "",
+          "startTime": "2026-11-07T17:00:00-06:00",
+          "endTime": "2026-11-07T18:00:00-06:00",
+          "isDaytime": true,
+          "temperature": 54,
+          "temperatureUnit": "F",
+          "temperatureTrend": null,
+          "probabilityOfPrecipitation": {
+            "unitCode": "wmoUnit:percent",
+            "value": 0
+          },
+          "dewpoint": {
+            "unitCode": "wmoUnit:degC",
+            "value": 5
+          },
+          "relativeHumidity": {
+            "unitCode": "wmoUnit:percent",
+            "value": 62
+          },
+          "windSpeed": "10 mph",
+          "windDirection": "N",
+          "icon": "https://api.weather.gov/icons/land/day/few?size=small",
+          "shortForecast": "Sunny",
+          "detailedForecast": ""
+        }
+      ],
+      "forecast_generated_at": "2026-11-05T13:36:30+00:00",
+      "gust_status": "UNAVAILABLE_IN_HOURLY_PRODUCT",
+      "field_condition": "UNCONFIRMED"
+    },
+    {
+      "game_id": 401860911,
+      "status": "CAPTURED",
+      "requests": [
+        {
+          "name": "weather-point-401860911",
+          "url": "https://api.weather.gov/points/40.5700,-105.0884",
+          "requested_at_utc": "2026-11-05T13:36:30.316245+00:00",
+          "status": "CAPTURED",
+          "http_status": 200,
+          "received_at_utc": "2026-11-05T13:36:30.393406+00:00",
+          "resolved_url": "https://api.weather.gov/points/40.5700,-105.0884",
+          "path": "weather-point-401860911.gz",
+          "sha256": "901da5fc2b1962b6f8bc9f942cc6f2ae486a1a8d8bc0c891692e9f8d9a3fc327"
+        },
+        {
+          "name": "weather-hourly-401860911",
+          "url": "https://api.weather.gov/gridpoints/BOU/62,99/forecast/hourly",
+          "requested_at_utc": "2026-11-05T13:36:30.396417+00:00",
+          "status": "CAPTURED",
+          "http_status": 200,
+          "received_at_utc": "2026-11-05T13:36:30.784999+00:00",
+          "resolved_url": "https://api.weather.gov/gridpoints/BOU/62,99/forecast/hourly",
+          "path": "weather-hourly-401860911.gz",
+          "sha256": "c8bfc697ec040920939677cb5dd592dcf66107db7f2316bb435b51d1870ac2ba"
+        }
+      ],
+      "venue": {
+        "id": 5388,
+        "name": "Canvas Stadium",
+        "capacity": 36500,
+        "grass": false,
+        "dome": false,
+        "city": "Fort Collins",
+        "state": "CO",
+        "zip": "80521",
+        "countryCode": "US",
+        "timezone": "America/Denver",
+        "latitude": 40.570015,
+        "longitude": -105.088435,
+        "elevation": "1528.4",
+        "constructionYear": 2017
+      },
+      "kickoff_utc": "2026-11-07T23:00:00.000Z",
+      "game_hours": [
+        {
+          "number": 59,
+          "name": "",
+          "startTime": "2026-11-07T16:00:00-07:00",
+          "endTime": "2026-11-07T17:00:00-07:00",
+          "isDaytime": true,
+          "temperature": 58,
+          "temperatureUnit": "F",
+          "temperatureTrend": null,
+          "probabilityOfPrecipitation": {
+            "unitCode": "wmoUnit:percent",
+            "value": 0
+          },
+          "dewpoint": {
+            "unitCode": "wmoUnit:degC",
+            "value": 0
+          },
+          "relativeHumidity": {
+            "unitCode": "wmoUnit:percent",
+            "value": 37
+          },
+          "windSpeed": "3 mph",
+          "windDirection": "S",
+          "icon": "https://api.weather.gov/icons/land/day/few?size=small",
+          "shortForecast": "Sunny",
+          "detailedForecast": ""
+        },
+        {
+          "number": 60,
+          "name": "",
+          "startTime": "2026-11-07T17:00:00-07:00",
+          "endTime": "2026-11-07T18:00:00-07:00",
+          "isDaytime": true,
+          "temperature": 55,
+          "temperatureUnit": "F",
+          "temperatureTrend": null,
+          "probabilityOfPrecipitation": {
+            "unitCode": "wmoUnit:percent",
+            "value": 0
+          },
+          "dewpoint": {
+            "unitCode": "wmoUnit:degC",
+            "value": 0
+          },
+          "relativeHumidity": {
+            "unitCode": "wmoUnit:percent",
+            "value": 41
+          },
+          "windSpeed": "2 mph",
+          "windDirection": "S",
+          "icon": "https://api.weather.gov/icons/land/day/few?size=small",
+          "shortForecast": "Sunny",
+          "detailedForecast": ""
+        },
+        {
+          "number": 61,
+          "name": "",
+          "startTime": "2026-11-07T18:00:00-07:00",
+          "endTime": "2026-11-07T19:00:00-07:00",
+          "isDaytime": false,
+          "temperature": 51,
+          "temperatureUnit": "F",
+          "temperatureTrend": null,
+          "probabilityOfPrecipitation": {
+            "unitCode": "wmoUnit:percent",
+            "value": 0
+          },
+          "dewpoint": {
+            "unitCode": "wmoUnit:degC",
+            "value": 0.5555555555555556
+          },
+          "relativeHumidity": {
+            "unitCode": "wmoUnit:percent",
+            "value": 50
+          },
+          "windSpeed": "2 mph",
+          "windDirection": "SW",
+          "icon": "https://api.weather.gov/icons/land/night/few?size=small",
+          "shortForecast": "Mostly Clear",
+          "detailedForecast": ""
+        }
+      ],
+      "forecast_generated_at": "2026-11-05T13:36:30+00:00",
+      "gust_status": "UNAVAILABLE_IN_HOURLY_PRODUCT",
+      "field_condition": "UNCONFIRMED"
+    },
+    {
+      "game_id": 401862823,
+      "status": "CAPTURED",
+      "requests": [
+        {
+          "name": "weather-point-401862823",
+          "url": "https://api.weather.gov/points/41.3875,-73.9641",
+          "requested_at_utc": "2026-11-05T13:36:30.390880+00:00",
+          "status": "CAPTURED",
+          "http_status": 200,
+          "received_at_utc": "2026-11-05T13:36:30.479343+00:00",
+          "resolved_url": "https://api.weather.gov/points/41.3875,-73.9641",
+          "path": "weather-point-401862823.gz",
+          "sha256": "92407379e7b8dd81576ed6956726f9d7539196cf7b1e900473a1184df608218f"
+        },
+        {
+          "name": "weather-hourly-401862823",
+          "url": "https://api.weather.gov/gridpoints/OKX/30,73/forecast/hourly",
+          "requested_at_utc": "2026-11-05T13:36:30.481873+00:00",
+          "status": "CAPTURED",
+          "http_status": 200,
+          "received_at_utc": "2026-11-05T13:36:30.778408+00:00",
+          "resolved_url": "https://api.weather.gov/gridpoints/OKX/30,73/forecast/hourly",
+          "path": "weather-hourly-401862823.gz",
+          "sha256": "6ea4f015b9bf51eded33bcd9153979c46e8fd1c8d864fb7c9086e4ec749ce763"
+        }
+      ],
+      "venue": {
+        "id": 3841,
+        "name": "Michie Stadium",
+        "capacity": 38000,
+        "grass": false,
+        "dome": false,
+        "city": "West Point",
+        "state": "NY",
+        "zip": "10996",
+        "countryCode": "US",
+        "timezone": "America/New_York",
+        "latitude": 41.3874924,
+        "longitude": -73.9640891,
+        "elevation": "99.21277618",
+        "constructionYear": 1924
+      },
+      "kickoff_utc": "2026-11-08T00:30:00.000Z",
+      "game_hours": [
+        {
+          "number": 60,
+          "name": "",
+          "startTime": "2026-11-07T19:00:00-05:00",
+          "endTime": "2026-11-07T20:00:00-05:00",
+          "isDaytime": false,
+          "temperature": 53,
+          "temperatureUnit": "F",
+          "temperatureTrend": null,
+          "probabilityOfPrecipitation": {
+            "unitCode": "wmoUnit:percent",
+            "value": 27
+          },
+          "dewpoint": {
+            "unitCode": "wmoUnit:degC",
+            "value": 8.333333333333334
+          },
+          "relativeHumidity": {
+            "unitCode": "wmoUnit:percent",
+            "value": 80
+          },
+          "windSpeed": "5 mph",
+          "windDirection": "W",
+          "icon": "https://api.weather.gov/icons/land/night/rain,30?size=small",
+          "shortForecast": "Chance Light Rain",
+          "detailedForecast": ""
+        },
+        {
+          "number": 61,
+          "name": "",
+          "startTime": "2026-11-07T20:00:00-05:00",
+          "endTime": "2026-11-07T21:00:00-05:00",
+          "isDaytime": false,
+          "temperature": 52,
+          "temperatureUnit": "F",
+          "temperatureTrend": null,
+          "probabilityOfPrecipitation": {
+            "unitCode": "wmoUnit:percent",
+            "value": 27
+          },
+          "dewpoint": {
+            "unitCode": "wmoUnit:degC",
+            "value": 7.777777777777778
+          },
+          "relativeHumidity": {
+            "unitCode": "wmoUnit:percent",
+            "value": 80
+          },
+          "windSpeed": "5 mph",
+          "windDirection": "W",
+          "icon": "https://api.weather.gov/icons/land/night/rain,30?size=small",
+          "shortForecast": "Chance Light Rain",
+          "detailedForecast": ""
+        },
+        {
+          "number": 62,
+          "name": "",
+          "startTime": "2026-11-07T21:00:00-05:00",
+          "endTime": "2026-11-07T22:00:00-05:00",
+          "isDaytime": false,
+          "temperature": 51,
+          "temperatureUnit": "F",
+          "temperatureTrend": null,
+          "probabilityOfPrecipitation": {
+            "unitCode": "wmoUnit:percent",
+            "value": 27
+          },
+          "dewpoint": {
+            "unitCode": "wmoUnit:degC",
+            "value": 7.777777777777778
+          },
+          "relativeHumidity": {
+            "unitCode": "wmoUnit:percent",
+            "value": 83
+          },
+          "windSpeed": "5 mph",
+          "windDirection": "W",
+          "icon": "https://api.weather.gov/icons/land/night/rain,30?size=small",
+          "shortForecast": "Chance Light Rain",
+          "detailedForecast": ""
+        },
+        {
+          "number": 63,
+          "name": "",
+          "startTime": "2026-11-07T22:00:00-05:00",
+          "endTime": "2026-11-07T23:00:00-05:00",
+          "isDaytime": false,
+          "temperature": 50,
+          "temperatureUnit": "F",
+          "temperatureTrend": null,
+          "probabilityOfPrecipitation": {
+            "unitCode": "wmoUnit:percent",
+            "value": 27
+          },
+          "dewpoint": {
+            "unitCode": "wmoUnit:degC",
+            "value": 7.222222222222222
+          },
+          "relativeHumidity": {
+            "unitCode": "wmoUnit:percent",
+            "value": 83
+          },
+          "windSpeed": "5 mph",
+          "windDirection": "W",
+          "icon": "https://api.weather.gov/icons/land/night/rain,30?size=small",
+          "shortForecast": "Chance Light Rain",
+          "detailedForecast": ""
+        }
+      ],
+      "forecast_generated_at": "2026-11-05T13:36:30+00:00",
+      "gust_status": "UNAVAILABLE_IN_HOURLY_PRODUCT",
+      "field_condition": "UNCONFIRMED"
+    },
+    {
+      "game_id": 401856856,
+      "status": "CAPTURED",
+      "requests": [
+        {
+          "name": "weather-point-401856856",
+          "url": "https://api.weather.gov/points/33.5911,-101.8729",
+          "requested_at_utc": "2026-11-05T13:36:30.544542+00:00",
+          "status": "CAPTURED",
+          "http_status": 200,
+          "received_at_utc": "2026-11-05T13:36:30.633508+00:00",
+          "resolved_url": "https://api.weather.gov/points/33.5911,-101.8729",
+          "path": "weather-point-401856856.gz",
+          "sha256": "0f0e6ef0a224151c8dde7d03af183012c73869d2b04569bdbe05f9ee819e4d91"
+        },
+        {
+          "name": "weather-hourly-401856856",
+          "url": "https://api.weather.gov/gridpoints/LUB/49,34/forecast/hourly",
+          "requested_at_utc": "2026-11-05T13:36:30.635576+00:00",
+          "status": "CAPTURED",
+          "http_status": 200,
+          "received_at_utc": "2026-11-05T13:36:30.902533+00:00",
+          "resolved_url": "https://api.weather.gov/gridpoints/LUB/49,34/forecast/hourly",
+          "path": "weather-hourly-401856856.gz",
+          "sha256": "67bc2e23b031e3040e5afee9cc3a095941196a6a864ac864a40c930091c19273"
+        }
+      ],
+      "venue": {
+        "id": 3784,
+        "name": "Jones AT&T Stadium",
+        "capacity": 60454,
+        "grass": false,
+        "dome": false,
+        "city": "Lubbock",
+        "state": "TX",
+        "zip": "79409",
+        "countryCode": "US",
+        "timezone": "America/Chicago",
+        "latitude": 33.5910518,
+        "longitude": -101.8728824,
+        "elevation": "980.7632446",
+        "constructionYear": 1947
+      },
+      "kickoff_utc": "2026-11-08T02:30:00.000Z",
+      "game_hours": [
+        {
+          "number": 62,
+          "name": "",
+          "startTime": "2026-11-07T20:00:00-06:00",
+          "endTime": "2026-11-07T21:00:00-06:00",
+          "isDaytime": false,
+          "temperature": 51,
+          "temperatureUnit": "F",
+          "temperatureTrend": null,
+          "probabilityOfPrecipitation": {
+            "unitCode": "wmoUnit:percent",
+            "value": 5
+          },
+          "dewpoint": {
+            "unitCode": "wmoUnit:degC",
+            "value": 7.777777777777778
+          },
+          "relativeHumidity": {
+            "unitCode": "wmoUnit:percent",
+            "value": 83
+          },
+          "windSpeed": "0 mph",
+          "windDirection": "",
+          "icon": "https://api.weather.gov/icons/land/night/bkn?size=small",
+          "shortForecast": "Mostly Cloudy",
+          "detailedForecast": ""
+        },
+        {
+          "number": 63,
+          "name": "",
+          "startTime": "2026-11-07T21:00:00-06:00",
+          "endTime": "2026-11-07T22:00:00-06:00",
+          "isDaytime": false,
+          "temperature": 49,
+          "temperatureUnit": "F",
+          "temperatureTrend": null,
+          "probabilityOfPrecipitation": {
+            "unitCode": "wmoUnit:percent",
+            "value": 5
+          },
+          "dewpoint": {
+            "unitCode": "wmoUnit:degC",
+            "value": 7.777777777777778
+          },
+          "relativeHumidity": {
+            "unitCode": "wmoUnit:percent",
+            "value": 89
+          },
+          "windSpeed": "0 mph",
+          "windDirection": "",
+          "icon": "https://api.weather.gov/icons/land/night/bkn?size=small",
+          "shortForecast": "Mostly Cloudy",
+          "detailedForecast": ""
+        },
+        {
+          "number": 64,
+          "name": "",
+          "startTime": "2026-11-07T22:00:00-06:00",
+          "endTime": "2026-11-07T23:00:00-06:00",
+          "isDaytime": false,
+          "temperature": 48,
+          "temperatureUnit": "F",
+          "temperatureTrend": null,
+          "probabilityOfPrecipitation": {
+            "unitCode": "wmoUnit:percent",
+            "value": 5
+          },
+          "dewpoint": {
+            "unitCode": "wmoUnit:degC",
+            "value": 7.777777777777778
+          },
+          "relativeHumidity": {
+            "unitCode": "wmoUnit:percent",
+            "value": 93
+          },
+          "windSpeed": "0 mph",
+          "windDirection": "",
+          "icon": "https://api.weather.gov/icons/land/night/bkn?size=small",
+          "shortForecast": "Mostly Cloudy",
+          "detailedForecast": ""
+        },
+        {
+          "number": 65,
+          "name": "",
+          "startTime": "2026-11-07T23:00:00-06:00",
+          "endTime": "2026-11-08T00:00:00-06:00",
+          "isDaytime": false,
+          "temperature": 47,
+          "temperatureUnit": "F",
+          "temperatureTrend": null,
+          "probabilityOfPrecipitation": {
+            "unitCode": "wmoUnit:percent",
+            "value": 5
+          },
+          "dewpoint": {
+            "unitCode": "wmoUnit:degC",
+            "value": 7.222222222222222
+          },
+          "relativeHumidity": {
+            "unitCode": "wmoUnit:percent",
+            "value": 93
+          },
+          "windSpeed": "0 mph",
+          "windDirection": "",
+          "icon": "https://api.weather.gov/icons/land/night/bkn?size=small",
+          "shortForecast": "Mostly Cloudy",
+          "detailedForecast": ""
+        }
+      ],
+      "forecast_generated_at": "2026-11-05T13:36:30+00:00",
+      "gust_status": "UNAVAILABLE_IN_HOURLY_PRODUCT",
+      "field_condition": "UNCONFIRMED"
+    },
+    {
+      "game_id": 401860912,
+      "status": "CAPTURED",
+      "requests": [
+        {
+          "name": "weather-point-401860912",
+          "url": "https://api.weather.gov/points/44.5595,-123.2814",
+          "requested_at_utc": "2026-11-05T13:36:30.546542+00:00",
+          "status": "CAPTURED",
+          "http_status": 200,
+          "received_at_utc": "2026-11-05T13:36:30.624915+00:00",
+          "resolved_url": "https://api.weather.gov/points/44.5595,-123.2814",
+          "path": "weather-point-401860912.gz",
+          "sha256": "69efdf7c3d4ce8abb70c9da3a43417eef7152926c00b2577114376ba7a3e3455"
+        },
+        {
+          "name": "weather-hourly-401860912",
+          "url": "https://api.weather.gov/gridpoints/PQR/84,64/forecast/hourly",
+          "requested_at_utc": "2026-11-05T13:36:30.628906+00:00",
+          "status": "CAPTURED",
+          "http_status": 200,
+          "received_at_utc": "2026-11-05T13:36:30.902533+00:00",
+          "resolved_url": "https://api.weather.gov/gridpoints/PQR/84,64/forecast/hourly",
+          "path": "weather-hourly-401860912.gz",
+          "sha256": "48a3a6a68e5175e80fbb7a7a55ae605fcb318b2dcedc83b7c09d78cde4c1a291"
+        }
+      ],
+      "venue": {
+        "id": 3893,
+        "name": "Reser Stadium",
+        "capacity": 43363,
+        "grass": false,
+        "dome": false,
+        "city": "Corvallis",
+        "state": "OR",
+        "zip": "97331",
+        "countryCode": "US",
+        "timezone": "America/Los_Angeles",
+        "latitude": 44.5594559,
+        "longitude": -123.2814341,
+        "elevation": "66.90744781",
+        "constructionYear": 1953
+      },
+      "kickoff_utc": "2026-11-08T03:30:00.000Z",
+      "game_hours": [
+        {
+          "number": 63,
+          "name": "",
+          "startTime": "2026-11-07T19:00:00-08:00",
+          "endTime": "2026-11-07T20:00:00-08:00",
+          "isDaytime": false,
+          "temperature": 57,
+          "temperatureUnit": "F",
+          "temperatureTrend": null,
+          "probabilityOfPrecipitation": {
+            "unitCode": "wmoUnit:percent",
+            "value": 48
+          },
+          "dewpoint": {
+            "unitCode": "wmoUnit:degC",
+            "value": 11.11111111111111
+          },
+          "relativeHumidity": {
+            "unitCode": "wmoUnit:percent",
+            "value": 84
+          },
+          "windSpeed": "14 mph",
+          "windDirection": "SSW",
+          "icon": "https://api.weather.gov/icons/land/night/rain,50?size=small",
+          "shortForecast": "Chance Light Rain",
+          "detailedForecast": ""
+        },
+        {
+          "number": 64,
+          "name": "",
+          "startTime": "2026-11-07T20:00:00-08:00",
+          "endTime": "2026-11-07T21:00:00-08:00",
+          "isDaytime": false,
+          "temperature": 57,
+          "temperatureUnit": "F",
+          "temperatureTrend": null,
+          "probabilityOfPrecipitation": {
+            "unitCode": "wmoUnit:percent",
+            "value": 48
+          },
+          "dewpoint": {
+            "unitCode": "wmoUnit:degC",
+            "value": 11.666666666666666
+          },
+          "relativeHumidity": {
+            "unitCode": "wmoUnit:percent",
+            "value": 85
+          },
+          "windSpeed": "14 mph",
+          "windDirection": "SSW",
+          "icon": "https://api.weather.gov/icons/land/night/rain,50?size=small",
+          "shortForecast": "Chance Light Rain",
+          "detailedForecast": ""
+        },
+        {
+          "number": 65,
+          "name": "",
+          "startTime": "2026-11-07T21:00:00-08:00",
+          "endTime": "2026-11-07T22:00:00-08:00",
+          "isDaytime": false,
+          "temperature": 56,
+          "temperatureUnit": "F",
+          "temperatureTrend": null,
+          "probabilityOfPrecipitation": {
+            "unitCode": "wmoUnit:percent",
+            "value": 48
+          },
+          "dewpoint": {
+            "unitCode": "wmoUnit:degC",
+            "value": 11.11111111111111
+          },
+          "relativeHumidity": {
+            "unitCode": "wmoUnit:percent",
+            "value": 85
+          },
+          "windSpeed": "14 mph",
+          "windDirection": "SSW",
+          "icon": "https://api.weather.gov/icons/land/night/rain,50?size=small",
+          "shortForecast": "Chance Light Rain",
+          "detailedForecast": ""
+        },
+        {
+          "number": 66,
+          "name": "",
+          "startTime": "2026-11-07T22:00:00-08:00",
+          "endTime": "2026-11-07T23:00:00-08:00",
+          "isDaytime": false,
+          "temperature": 56,
+          "temperatureUnit": "F",
+          "temperatureTrend": null,
+          "probabilityOfPrecipitation": {
+            "unitCode": "wmoUnit:percent",
+            "value": 91
+          },
+          "dewpoint": {
+            "unitCode": "wmoUnit:degC",
+            "value": 11.11111111111111
+          },
+          "relativeHumidity": {
+            "unitCode": "wmoUnit:percent",
+            "value": 86
+          },
+          "windSpeed": "21 mph",
+          "windDirection": "SSW",
+          "icon": "https://api.weather.gov/icons/land/night/rain,90?size=small",
+          "shortForecast": "Light Rain",
+          "detailedForecast": ""
+        }
+      ],
+      "forecast_generated_at": "2026-11-05T13:36:30+00:00",
+      "gust_status": "UNAVAILABLE_IN_HOURLY_PRODUCT",
+      "field_condition": "UNCONFIRMED"
+    }
+  ],
+  "model_adjustments": [],
+  "market_usage": "CURRENT_CONTEXT_ONLY;NOT_HISTORICAL_CLOSE;NEVER_REPLACES_CONTEST_LINE"
+}
