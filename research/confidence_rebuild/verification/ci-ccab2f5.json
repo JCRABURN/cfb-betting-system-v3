@@ -1,0 +1,21 @@
+{
+  "run_url": "https://github.com/JCRABURN/cfb-betting-system-v3/actions/runs/42137106385",
+  "source_commit": "ccab2f5ad2f3258b3c66c47a13e3f81ec6fd9a6f",
+  "tested_merge_commit": "832f90deb494fa7c15d501bf2a2d29841e29315c",
+  "base_commit": "abb4eb26bd1140e66972d2f1143cd587e80960b4",
+  "status": "FAIL_EXISTING_WEEK5_CUSTODY",
+  "test_result": "658 passed, 2 failed in 169.59s",
+  "research_tests_passed": 26,
+  "log_excerpts": [
+    "2026-11-06T00:28:50.5189367Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +832f90deb494fa7c15d501bf2a2d29841e29315c:refs/remotes/pull/50/merge",
+    "2026-11-06T00:28:51.6302743Z HEAD is now at 832f90d Merge ccab2f5ad2f3258b3c66c47a13e3f81ec6fd9a6f into abb4eb26bd1140e66972d2f1143cd587e80960b4",
+    "2026-11-06T00:28:56.9963728Z Source SHA-256 before: 09d0bcda684356001bacf8bc9e42939add56b053f405564d9be924e39c0cf842",
+    "2026-11-06T00:28:56.9964603Z Source SHA-256 after: 09d0bcda684356001bacf8bc9e42939add56b053f405564d9be924e39c0cf842",
+    "2026-11-06T00:28:57.0000773Z SQLite integrity check: ok",
+    "2026-11-06T00:28:57.0001381Z Migration verification passed on a disposable copy.",
+    "2026-11-06T00:28:57.8251084Z Managed PostgreSQL migration inventory verified: v0001:a908ff521731, v0002:e3663d635a24",
+    "2026-11-06T00:31:47.9382556Z FAILED tests/test_week5_postgame_audit.py::test_audit_is_complete_and_never_rewrites_frozen_week5_inputs - AssertionError: assert '0b7da8cd62a9...6eb3d02f03759' == 'b9248fd7db2b...68f82092dcf20'",
+    "2026-11-06T00:31:47.9385602Z FAILED tests/test_week5_review.py::test_v4_hash_custody_and_locked_snapshot_unchanged - AssertionError: assert '0b7da8cd62a9...6eb3d02f03759' == 'b9248fd7db2b...68f82092dcf20'",
+    "2026-11-06T00:31:47.9387723Z 2 failed, 658 passed in 169.59s (0:02:49)"
+  ]
+}

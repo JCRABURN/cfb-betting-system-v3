@@ -1,0 +1,131 @@
+{
+  "commands": [
+    {
+      "command": [
+        "C:\\Users\\jraburn\\Documents\\GitHub\\cfb-betting-system-v3\\.venv\\Scripts\\python.exe",
+        "-X",
+        "utf8",
+        "-m",
+        "research.confidence_rebuild.verify"
+      ],
+      "exit_code": 0,
+      "finished_at_utc": "2026-11-06T14:42:41.339566+00:00",
+      "log": "01.log",
+      "log_sha256": "b742d4e849ffb26c93ca4a8a70717ee345c5b332493fc78e30820ca8589a65b2",
+      "started_at_utc": "2026-11-06T14:42:39.718264+00:00"
+    },
+    {
+      "command": [
+        "C:\\Users\\jraburn\\Documents\\GitHub\\cfb-betting-system-v3\\.venv\\Scripts\\python.exe",
+        "-X",
+        "utf8",
+        "-m",
+        "research.confidence_rebuild.cohorts"
+      ],
+      "exit_code": 0,
+      "finished_at_utc": "2026-11-06T14:42:42.042549+00:00",
+      "log": "02.log",
+      "log_sha256": "7b78bd2403b4ce7e163822ee4a0930ec9a7f3d78644c44a47119a0d75c4ff87d",
+      "started_at_utc": "2026-11-06T14:42:41.339566+00:00"
+    },
+    {
+      "command": [
+        "C:\\Users\\jraburn\\Documents\\GitHub\\cfb-betting-system-v3\\.venv\\Scripts\\python.exe",
+        "-X",
+        "utf8",
+        "-m",
+        "research.confidence_rebuild.supplement",
+        "--verify"
+      ],
+      "exit_code": 0,
+      "finished_at_utc": "2026-11-06T14:42:42.820829+00:00",
+      "log": "03.log",
+      "log_sha256": "2281198177e395ba2bd484e44ecc0521b6238103bc11143d5f17cd321cb455cb",
+      "started_at_utc": "2026-11-06T14:42:42.042549+00:00"
+    },
+    {
+      "command": [
+        "C:\\Users\\jraburn\\Documents\\GitHub\\cfb-betting-system-v3\\.venv\\Scripts\\python.exe",
+        "-X",
+        "utf8",
+        "-m",
+        "research.confidence_rebuild.tables",
+        "--verify"
+      ],
+      "exit_code": 0,
+      "finished_at_utc": "2026-11-06T14:42:42.977716+00:00",
+      "log": "04.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "started_at_utc": "2026-11-06T14:42:42.820829+00:00"
+    },
+    {
+      "command": [
+        "C:\\Users\\jraburn\\Documents\\GitHub\\cfb-betting-system-v3\\.venv\\Scripts\\python.exe",
+        "-X",
+        "utf8",
+        "scripts/verify_repo_safety.py"
+      ],
+      "exit_code": 0,
+      "finished_at_utc": "2026-11-06T14:42:43.218926+00:00",
+      "log": "05.log",
+      "log_sha256": "d981d5495b37dc2087673e331f2c28790b3d2daa42d4b6080a8ec84f48a22215",
+      "started_at_utc": "2026-11-06T14:42:42.977716+00:00"
+    },
+    {
+      "command": [
+        "C:\\Users\\jraburn\\Documents\\GitHub\\cfb-betting-system-v3\\.venv\\Scripts\\python.exe",
+        "-X",
+        "utf8",
+        "-m",
+        "scripts.verify_migrations"
+      ],
+      "exit_code": 0,
+      "finished_at_utc": "2026-11-06T14:42:45.341748+00:00",
+      "log": "06.log",
+      "log_sha256": "6d10ca3708b3b9320a0df5ea8608bab329733fda4b6cb70fb655e40e8593cb85",
+      "started_at_utc": "2026-11-06T14:42:43.218926+00:00"
+    },
+    {
+      "command": [
+        "C:\\Users\\jraburn\\Documents\\GitHub\\cfb-betting-system-v3\\.venv\\Scripts\\python.exe",
+        "-X",
+        "utf8",
+        "-m",
+        "scripts.verify_cloud_migrations"
+      ],
+      "exit_code": 0,
+      "finished_at_utc": "2026-11-06T14:42:46.105322+00:00",
+      "log": "07.log",
+      "log_sha256": "2790b83b30e2bd8e1465ecb0e0bab322445766631024b6604c5fab27cd50c70d",
+      "started_at_utc": "2026-11-06T14:42:45.341748+00:00"
+    },
+    {
+      "command": [
+        "C:\\Users\\jraburn\\Documents\\GitHub\\cfb-betting-system-v3\\.venv\\Scripts\\python.exe",
+        "-X",
+        "utf8",
+        "-m",
+        "pytest",
+        "-q"
+      ],
+      "exit_code": 1,
+      "finished_at_utc": "2026-11-06T14:45:44.610430+00:00",
+      "log": "08.log",
+      "log_sha256": "a31c6cc014277d94b2266bd415fdf73f7f42dc94cdbdf7d6cf0bb69c061c2dcb",
+      "started_at_utc": "2026-11-06T14:42:46.106320+00:00"
+    }
+  ],
+  "database_after": "09d0bcda684356001bacf8bc9e42939add56b053f405564d9be924e39c0cf842",
+  "database_before": "09d0bcda684356001bacf8bc9e42939add56b053f405564d9be924e39c0cf842",
+  "database_integrity": [
+    [
+      "ok"
+    ]
+  ],
+  "finished_at_utc": "2026-11-06T14:45:44.617977+00:00",
+  "platform": "Windows-11-10.0.22621-SP0",
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "source_commit": "2c21fc401d9d18d244758cc5c38ad4448686f5ad",
+  "started_at_utc": "2026-11-06T14:42:39.432385+00:00",
+  "status": "FAIL"
+}
