@@ -83,3 +83,36 @@ tested head; the runs above must not be relabeled as tests of later commits.
 Independent approval remains absent; no reviewer has been designated. CI is
 not independent PR approval. **HOLD**: no merge, model promotion, owner selection
 approval or operational activation is authorized by this research result.
+
+## Final code verification: 2c21fc4
+
+On exact committed head `2c21fc401d9d18d244758cc5c38ad4448686f5ad`, the full
+Windows/Python 3.12.14 run on November 6 finished at `14:45:44 UTC`:
+**660 passed, 1 failed, 39 warnings in 177.37 seconds**. All 27 research tests
+pass. The only failure remains the original DraftKings review JSON checksum
+described above. All seven separate verification commands pass; the receipt
+runner correctly exits 1 for the failed complete-suite gate. See
+`verification/20261106-v3/receipt.json` and losslessly compressed logs.
+
+[GitHub run 42137966025](https://github.com/JCRABURN/cfb-betting-system-v3/actions/runs/42137966025)
+tested that same source head, merge commit
+`09e2471bf876a0a4bc8a16acc1d343fef10e02bb`, against base
+`abb4eb26bd1140e66972d2f1143cd587e80960b4`. Ubuntu/Python 3.11.18:
+**659 passed, 2 failed in 182.45 seconds**, including all 27 research tests
+passing. Only the original Week 5 LF/CRLF custody assertions fail. Repository
+safety and both migration gates pass. `verification/ci-2c21fc4.json` preserves
+the tested merge identity and selected log evidence.
+
+The intervening `verification/20261106-v2/` run is retained separately:
+660 passed, 1 failed, 39 warnings in 170.61 seconds. It began on an uncommitted
+working tree based on `ccab2f5`, so its receipt's starting HEAD is not a claim
+that the working-tree code was already committed. The separate working-tree
+provenance file records all three modified Python-file hashes, subsequently
+verified equal to the corresponding blobs in `2c21fc4`. The exact-head v3 run
+removes any need to infer commit-level test coverage from that earlier run.
+
+The final evidence-delivery commit adds only receipts and documentation. It
+does not alter Python, protocol, predictions, rankings, confidence, source
+evidence or numerical results. Its GitHub CI event is reported in the PR body
+with its own source and tested merge identity; earlier runs remain attributed
+to their actual tested heads.

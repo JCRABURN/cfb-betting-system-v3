@@ -117,6 +117,10 @@ is an upper bound on exact-pick stability, and cannot certify the promotion gate
 
 The frozen ATS **research** five is 13–7 (+4.82), totals research five 9–11
 (−2.82), and governed ATS five 8–12 (−4.73). They are distinct cohorts. The
+controlled combined candidate's 12–8 also does not beat that frozen ATS research
+five's 13–7; improvement over the weak mixed ordering is insufficient to claim
+the system has improved its strongest available five.
+The
 combined five's uncalibrated score comparison selects totals in all four folds.
 Original combined ordering is checked against separate archived CSVs for Weeks
 5–10. Week 5/6 per-market research ranks are explicitly derived orders of
