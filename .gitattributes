@@ -1,1 +1,7 @@
 outputs/2026-week6-execution-20261006T2133Z/** text eol=lf
+
+# Isolated research snapshots retain exact source and holdout bytes.
+research/confidence_rebuild/*.json -text
+research/confidence_rebuild/sources/** -text
+research/confidence_rebuild/results/** -text
+research/confidence_rebuild/holdout/** -text
