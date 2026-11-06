@@ -1,0 +1,109 @@
+{
+  "version": "confidence-accuracy-research-v1",
+  "status": "RESEARCH_ONLY_NO_POLICY_PROMOTION",
+  "declared_at_utc": "2026-11-06T00:07:46.525766+00:00",
+  "design_status": "Specified after historical outcomes were known; chronological research replay is not a previously preregistered prospective experiment.",
+  "audit_source_commit": "950df28202ee01c3cb1a11777170cdba628a0cfe",
+  "week10_source_commit": "5823b6dd2d0321fd91ad1a8ce474b192fd21c9c1",
+  "training_seed_week": 5,
+  "evaluation_weeks": [
+    6,
+    7,
+    8,
+    9
+  ],
+  "prospective_holdout_week": 10,
+  "markets": [
+    "ATS",
+    "TOTAL"
+  ],
+  "candidates": [
+    "FROZEN_V28",
+    "LOCKED_LINE",
+    "FIXED_25_PERCENT_MODEL",
+    "EDGE_LOGIT",
+    "CONTROLLED_LOGIT",
+    "CONDITIONAL_UNCERTAINTY_LOGIT",
+    "MARKET_RESIDUAL_RIDGE"
+  ],
+  "fixed_model_weight": 0.25,
+  "ridge_penalty": 20.0,
+  "logistic_penalty": 10.0,
+  "logistic_iterations": 30,
+  "sigma_floor": 5.0,
+  "sigma_ceiling": 60.0,
+  "probability_clip": [
+    0.01,
+    0.99
+  ],
+  "probability_bins": [
+    0.0,
+    0.45,
+    0.5,
+    0.55,
+    0.6,
+    0.65,
+    1.0
+  ],
+  "interval_coverage": [
+    0.8,
+    0.9
+  ],
+  "stability_training_week_bootstraps": 100,
+  "random_seed": 20261105,
+  "top5_rule": "Rank within each market and jointly by candidate score; combined five uses at most one market per game. Ties use market then locked-line identity. No market quota. Frozen within-market ranks remain separate; Week5/6 research orders are explicitly retrospective orders of original pregame fields.",
+  "primary_endpoint": "Paired weekly combined Top5 hypothetical -110 unit difference versus original research-score ordering on identical eligible games.",
+  "secondary_endpoints": [
+    "market-specific Top5 units",
+    "full-card MAE and RMSE versus frozen model and locked-line forecast",
+    "hit rate and -110 units",
+    "AUC",
+    "Brier",
+    "log loss",
+    "fixed-bin reliability/ECE",
+    "80/90 percent interval coverage",
+    "rank overlap and bootstrap selection stability"
+  ],
+  "uncertainty": "Wilson95 for hit rates with independence caveat; exact paired week-block resampling for four evaluation weeks. Only four clusters and repeated teams prevent strong significance claims. All candidates reported; no tuning after test results or selection of a deployed winner.",
+  "gates": {
+    "minimum_prospective_top5_selections": 100,
+    "minimum_prospective_evaluation_weeks": 20,
+    "minimum_seasons": 2,
+    "paired_top5_unit_gain_lower95_above": 0.0,
+    "positive_absolute_top5_return_required": true,
+    "auc_lower95_above": 0.5,
+    "ece_max": 0.03,
+    "brier_must_improve_prior_only_base_rate": true,
+    "median_top5_stability_jaccard_min": 0.6,
+    "forecast_mae_rmse_must_not_exceed_locked_line": true,
+    "confidence3": {
+      "predicted_probability_min": 0.55,
+      "bucket_min_decided": 500,
+      "bucket_min_weeks": 8,
+      "wilson95_lower_min": 0.5238095238095238
+    },
+    "confidence4": {
+      "predicted_probability_min": 0.6,
+      "bucket_min_decided": 500,
+      "bucket_min_weeks": 12,
+      "wilson95_lower_min": 0.55
+    },
+    "confidence5": {
+      "predicted_probability_min": 0.65,
+      "bucket_min_decided": 800,
+      "bucket_min_weeks": 16,
+      "wilson95_lower_min": 0.6
+    },
+    "minimums_are_necessary_not_sufficient": true,
+    "owner_approval_and_new_policy_version_required": true
+  },
+  "prohibitions": [
+    "No official historical predictions regenerated or replaced",
+    "No Week10 outcomes used",
+    "No same-week training",
+    "No postgame personnel/possessions in forecasting features",
+    "No new line substitution",
+    "No fitted thresholds chosen from evaluation weeks",
+    "No Confidence 3-5 promotion from these replay results"
+  ]
+}
