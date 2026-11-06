@@ -24,7 +24,7 @@ def render():
     table('AUC uncertainty: four-week blocks, no multiplicity correction', [('Market','market'),('Candidate','candidate'),('AUC','auc'),('Block95','auc_week_block95')], r['summaries'])
     table('Combined selection membership stability (100 training-week resamples)', [('Week','week'),('Candidate','candidate'),('Mean Jaccard','mean_jaccard'),('Minimum','minimum_jaccard'),('Training clusters','training_week_clusters')], [x for x in r['selection_stability'] if x['scope']=='COMBINED'])
     table('Paired MAE difference from locked line; negative is better', [('Market','market'),('Candidate','candidate'),('Difference','paired_mae_difference_vs_line'),('Block95','paired_mae_difference_week_block95')], s['market_comparison'])
-    return '\n'.join(lines)+'\n'
+    return '\n'.join(lines).rstrip()+'\n'
 
 
 if __name__ == '__main__':

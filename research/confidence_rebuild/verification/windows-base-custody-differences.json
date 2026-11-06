@@ -1,0 +1,9 @@
+[
+  {
+    "path": "outputs/2026-week5-review-20261001/provider-evidence/odds-draftkings-current.json",
+    "expected": "208588eeaf00646b62bbb67e579e7cbcbb4c2d25aabf13e035ff2c5133a4a9c1",
+    "checkout": "92d16a4ea9b4b1766c3f453541baff5a6455f0ad07976d277a2708e6656a9e43",
+    "base_git_blob": "208588eeaf00646b62bbb67e579e7cbcbb4c2d25aabf13e035ff2c5133a4a9c1",
+    "checkout_lf": "208588eeaf00646b62bbb67e579e7cbcbb4c2d25aabf13e035ff2c5133a4a9c1"
+  }
+]

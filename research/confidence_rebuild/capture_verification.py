@@ -41,8 +41,9 @@ def capture(destination):
     receipt['status'] = 'PASS' if before == receipt['database_after'] and integrity == [('ok',)] and all(c['exit_code'] == 0 for c in receipt['commands']) else 'FAIL'
     (destination/'receipt.json').write_bytes((json.dumps(receipt, indent=2, sort_keys=True)+'\n').encode())
     print(json.dumps({'status': receipt['status'], 'source_commit': receipt['source_commit']}))
+    return receipt['status']
 
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(); parser.add_argument('--output', type=Path, required=True)
-    capture(parser.parse_args().output)
+    raise SystemExit(0 if capture(parser.parse_args().output) == 'PASS' else 1)

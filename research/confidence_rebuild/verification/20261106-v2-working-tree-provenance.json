@@ -1,0 +1,9 @@
+{
+  "base_commit": "ccab2f5ad2f3258b3c66c47a13e3f81ec6fd9a6f",
+  "status": "UNCOMMITTED_WORKING_TREE_TEST_NOT_A_COMMIT_RUN",
+  "tested_python_sha256_lf": {
+    "research/confidence_rebuild/capture_verification.py": "446f684fb058bb05fdc2ffdbb25285c4bd545cbcd65ad36fc410d87b4749b0e3",
+    "research/confidence_rebuild/tables.py": "1ae5e244e669c11de08637dbe79100589d8f792cfca77898daf5d892daa2494d",
+    "tests/test_confidence_research.py": "560403aee9f5e1824138f5258e8aa1c1ffec9bef4ebf984d4fd410c84839c37a"
+  }
+}

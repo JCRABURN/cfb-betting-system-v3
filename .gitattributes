@@ -6,3 +6,4 @@ research/confidence_rebuild/sources/** -text
 research/confidence_rebuild/results/** -text
 research/confidence_rebuild/holdout/** -text
 research/confidence_rebuild/cohort_sources/** -text
+research/confidence_rebuild/verification/** -text

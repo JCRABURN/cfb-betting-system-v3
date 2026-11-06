@@ -39,7 +39,47 @@ then this branch must be integrated and retested against that accepted main tree
 No existing test is skipped, weakened or suppressed, and no duplicate CI or
 operational workflow is introduced.
 
-Exact full native receipts and latest CI details are appended below after execution.
+Full native Windows/Python 3.12.14 at
+`ccab2f5ad2f3258b3c66c47a13e3f81ec6fd9a6f`: **659 passed, 1 failed, 39 warnings
+in 179.87 seconds**. All 26 research tests pass. Holdout/source/cohort checks,
+supplement/table replay, repository safety and both migration checks pass.
+The full receipt and logs are in `verification/20261106-v1/`.
+
+The Windows failure reaches a different original Week 5 custody assertion:
+`outputs/2026-week5-review-20261001/provider-evidence/odds-draftkings-current.json`.
+Its original expected/main Git-blob SHA is
+`208588eeaf00646b62bbb67e579e7cbcbb4c2d25aabf13e035ff2c5133a4a9c1`,
+but Windows CRLF checkout SHA is
+`92d16a4ea9b4b1766c3f453541baff5a6455f0ad07976d277a2708e6656a9e43`.
+An in-memory LF rendering matches the original expected SHA; the source file
+was not changed. `verification/windows-base-custody-differences.json` records it.
+
+[GitHub run 42137106385](https://github.com/JCRABURN/cfb-betting-system-v3/actions/runs/42137106385)
+tests source `ccab2f5ad2f3258b3c66c47a13e3f81ec6fd9a6f`, merge tree
+`832f90deb494fa7c15d501bf2a2d29841e29315c`, into main
+`abb4eb26bd1140e66972d2f1143cd587e80960b4`. Ubuntu/Python 3.11.18:
+**658 passed, 2 failed in 169.59 seconds**, including all 26 research tests
+passing and only the two original Week 5 failures identified above. Original
+research input hashes, canonical numerical replay and sealed prospective rows
+therefore agree between these Windows and Linux executions. Safety and migration
+gates pass. This is not an all-green CI result.
+
+The source database is `09d0bcda684356001bacf8bc9e42939add56b053f405564d9be924e39c0cf842`
+before and after the full native run; read-only SQLite integrity is `ok`.
+The original Week 10 initial seal in the separate execution worktree is still
+`7868e32c4de6f2154d1f8edfdce01042abf3f7933bb11d3a5509c58f448f9dbd`.
+There are no changes under application, database, historical outputs, config,
+or workflow paths relative to the base. `verification/changed-files-at-ccab2f5.txt`
+enumerates that tested tree's complete diff.
+
+The next delivery removes one extra blank line from generated `TABLES.md`
+through its renderer, adds evidence, and makes the verification receipt command
+return nonzero when any recorded gate fails (its original JSON correctly recorded
+FAIL but its process exit was zero). A new adversarial test covers that receipt
+behavior. These changes do not modify any estimator, protocol, numerical result,
+original byte seal or prospective shadow. Subsequent CI identifies its own exact
+tested head; the runs above must not be relabeled as tests of later commits.
+
 Independent approval remains absent; no reviewer has been designated. CI is
 not independent PR approval. **HOLD**: no merge, model promotion, owner selection
 approval or operational activation is authorized by this research result.

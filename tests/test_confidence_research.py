@@ -167,3 +167,15 @@ def test_material_metric_change_rejected_without_overwrite(tmp_path, monkeypatch
 def test_rendered_tables_match_recorded_results():
     from research.confidence_rebuild.tables import render
     assert (data.HERE/'TABLES.md').read_bytes().replace(b'\r\n', b'\n') == render().encode()
+
+
+def test_failed_command_is_not_a_successful_verification(tmp_path, monkeypatch):
+    from types import SimpleNamespace
+    from research.confidence_rebuild import capture_verification as capture
+    monkeypatch.setattr(capture.subprocess, 'check_output', lambda *a, **k: 'TEST_SOURCE_ONLY\n')
+    monkeypatch.setattr(capture.subprocess, 'run', lambda *a, **k: SimpleNamespace(stdout=b'failure fixture', stderr=b'', returncode=1))
+    assert capture.capture(tmp_path/'receipt') == 'FAIL'
+    receipt = json.loads((tmp_path/'receipt/receipt.json').read_bytes())
+    assert receipt['database_before'] == receipt['database_after']
+    assert all(c['exit_code'] == 1 for c in receipt['commands'])
+    with pytest.raises(ValueError): capture.capture(tmp_path/'receipt')
