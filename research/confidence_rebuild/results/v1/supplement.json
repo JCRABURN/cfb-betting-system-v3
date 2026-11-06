@@ -1,0 +1,2994 @@
+{
+  "forecast_error_decomposition": [
+    {
+      "market": "ATS",
+      "mean_squared_model_gap": 34.1959609859,
+      "meaning": "Extra model displacement is not offset by sufficient directional alignment with actual-minus-line residuals. This does not identify a causal missing feature.",
+      "mse_model_minus_line": 24.0156261678,
+      "n": 223,
+      "twice_mean_gap_times_market_residual": 10.180334818
+    },
+    {
+      "market": "TOTAL",
+      "mean_squared_model_gap": 19.9410951324,
+      "meaning": "Extra model displacement is not offset by sufficient directional alignment with actual-minus-line residuals. This does not identify a causal missing feature.",
+      "mse_model_minus_line": 18.2094817988,
+      "n": 223,
+      "twice_mean_gap_times_market_residual": 1.7316133336
+    }
+  ],
+  "governed_ats_top5": [
+    {
+      "auc": 0.5833333333,
+      "bets": 20,
+      "bias_actual_minus_forecast": -0.996113072,
+      "brier": 0.2546004248,
+      "ece": 0.1233374245,
+      "hit_rate": 0.4,
+      "interval_coverage": {
+        "0.8": 0.8,
+        "0.9": 1.0
+      },
+      "log_loss": 0.7023881017,
+      "losses": 12,
+      "mae": 11.8208022352,
+      "mean_interval_width": {
+        "0.8": 44.1494982421,
+        "0.9": 62.6228327217
+      },
+      "n": 20,
+      "pushes": 0,
+      "reliability": [
+        {
+          "hit_rate": 0.4210526316,
+          "lower": 0.5,
+          "mean_probability": 0.5209498143,
+          "n": 19,
+          "upper": 0.55,
+          "wilson95": [
+            0.2314189128,
+            0.6372409647
+          ]
+        },
+        {
+          "hit_rate": 0.0,
+          "lower": 0.55,
+          "mean_probability": 0.5687020181,
+          "n": 1,
+          "upper": 0.6,
+          "wilson95": [
+            0.0,
+            0.7934506856
+          ]
+        }
+      ],
+      "rmse": 14.6274639204,
+      "roi": -0.2363636364,
+      "units_minus110": -4.7272727273,
+      "weeks": "6-9",
+      "wilson95": [
+        0.2188065324,
+        0.6134184992
+      ],
+      "wins": 8
+    }
+  ],
+  "market_comparison": [
+    {
+      "candidate": "FROZEN_V28",
+      "market": "ATS",
+      "paired_mae_difference_vs_line": 0.7141657594,
+      "paired_mae_difference_week_block95": [
+        0.1223469368,
+        1.250343496
+      ]
+    },
+    {
+      "candidate": "LOCKED_LINE",
+      "market": "ATS",
+      "paired_mae_difference_vs_line": 0.0,
+      "paired_mae_difference_week_block95": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "candidate": "FIXED_25_PERCENT_MODEL",
+      "market": "ATS",
+      "paired_mae_difference_vs_line": -0.0291268962,
+      "paired_mae_difference_week_block95": [
+        -0.1060198286,
+        0.066864505
+      ]
+    },
+    {
+      "candidate": "EDGE_LOGIT",
+      "market": "ATS",
+      "paired_mae_difference_vs_line": 0.7141657594,
+      "paired_mae_difference_week_block95": [
+        0.1223469368,
+        1.250343496
+      ]
+    },
+    {
+      "candidate": "CONTROLLED_LOGIT",
+      "market": "ATS",
+      "paired_mae_difference_vs_line": 0.7141657594,
+      "paired_mae_difference_week_block95": [
+        0.1223469368,
+        1.250343496
+      ]
+    },
+    {
+      "candidate": "CONDITIONAL_UNCERTAINTY_LOGIT",
+      "market": "ATS",
+      "paired_mae_difference_vs_line": 0.7141657594,
+      "paired_mae_difference_week_block95": [
+        0.1223469368,
+        1.250343496
+      ]
+    },
+    {
+      "candidate": "MARKET_RESIDUAL_RIDGE",
+      "market": "ATS",
+      "paired_mae_difference_vs_line": 0.2307427364,
+      "paired_mae_difference_week_block95": [
+        -0.0302563824,
+        0.4114824641
+      ]
+    },
+    {
+      "candidate": "FROZEN_V28",
+      "market": "TOTAL",
+      "paired_mae_difference_vs_line": 0.4362233907,
+      "paired_mae_difference_week_block95": [
+        0.0504217216,
+        0.8620610821
+      ]
+    },
+    {
+      "candidate": "LOCKED_LINE",
+      "market": "TOTAL",
+      "paired_mae_difference_vs_line": 0.0,
+      "paired_mae_difference_week_block95": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "candidate": "FIXED_25_PERCENT_MODEL",
+      "market": "TOTAL",
+      "paired_mae_difference_vs_line": 0.0437455568,
+      "paired_mae_difference_week_block95": [
+        -0.0585918332,
+        0.1567028646
+      ]
+    },
+    {
+      "candidate": "EDGE_LOGIT",
+      "market": "TOTAL",
+      "paired_mae_difference_vs_line": 0.4362233907,
+      "paired_mae_difference_week_block95": [
+        0.0504217216,
+        0.8620610821
+      ]
+    },
+    {
+      "candidate": "CONTROLLED_LOGIT",
+      "market": "TOTAL",
+      "paired_mae_difference_vs_line": 0.4362233907,
+      "paired_mae_difference_week_block95": [
+        0.0504217216,
+        0.8620610821
+      ]
+    },
+    {
+      "candidate": "CONDITIONAL_UNCERTAINTY_LOGIT",
+      "market": "TOTAL",
+      "paired_mae_difference_vs_line": 0.4362233907,
+      "paired_mae_difference_week_block95": [
+        0.0504217216,
+        0.8620610821
+      ]
+    },
+    {
+      "candidate": "MARKET_RESIDUAL_RIDGE",
+      "market": "TOTAL",
+      "paired_mae_difference_vs_line": 0.2123782527,
+      "paired_mae_difference_week_block95": [
+        -0.2466073825,
+        0.8218597348
+      ]
+    }
+  ],
+  "nonoverlapping_segments": [
+    {
+      "auc": 0.5604395604,
+      "bets": 20,
+      "bias_actual_minus_forecast": 0.7595888613,
+      "brier": 0.2342986232,
+      "candidate": "FROZEN_V28",
+      "ece": 0.0874224276,
+      "hit_rate": 0.65,
+      "interval_coverage": {
+        "0.8": 0.9,
+        "0.9": 1.0
+      },
+      "log_loss": 0.6615215837,
+      "losses": 7,
+      "mae": 12.0414507666,
+      "market": "ATS",
+      "mean_interval_width": {
+        "0.8": 44.1530294174,
+        "0.9": 62.6279486886
+      },
+      "n": 20,
+      "pushes": 0,
+      "reliability": [
+        {
+          "hit_rate": 0.6666666667,
+          "lower": 0.5,
+          "mean_probability": 0.5419429505,
+          "n": 6,
+          "upper": 0.55,
+          "wilson95": [
+            0.2999933151,
+            0.9032285889
+          ]
+        },
+        {
+          "hit_rate": 0.6428571429,
+          "lower": 0.55,
+          "mean_probability": 0.5714209818,
+          "n": 14,
+          "upper": 0.6,
+          "wilson95": [
+            0.387644231,
+            0.8365526825
+          ]
+        }
+      ],
+      "rmse": 14.6694143488,
+      "roi": 0.2409090909,
+      "segment": "1-5",
+      "units_minus110": 4.8181818182,
+      "wilson95": [
+        0.4328542767,
+        0.8188081759
+      ],
+      "wins": 13
+    },
+    {
+      "auc": 0.3541666667,
+      "bets": 20,
+      "bias_actual_minus_forecast": 7.1121205569,
+      "brier": 0.245355663,
+      "candidate": "FROZEN_V28",
+      "ece": 0.0564793824,
+      "hit_rate": 0.6,
+      "interval_coverage": {
+        "0.8": 0.75,
+        "0.9": 0.95
+      },
+      "log_loss": 0.6838578952,
+      "losses": 8,
+      "mae": 12.5439841706,
+      "market": "ATS",
+      "mean_interval_width": {
+        "0.8": 44.1522801633,
+        "0.9": 62.6271594126
+      },
+      "n": 20,
+      "pushes": 0,
+      "reliability": [
+        {
+          "hit_rate": 0.6,
+          "lower": 0.5,
+          "mean_probability": 0.5394266343,
+          "n": 15,
+          "upper": 0.55,
+          "wilson95": [
+            0.3574683012,
+            0.8017550386
+          ]
+        },
+        {
+          "hit_rate": 0.6,
+          "lower": 0.55,
+          "mean_probability": 0.5558025674,
+          "n": 5,
+          "upper": 0.6,
+          "wilson95": [
+            0.2307242813,
+            0.8823792258
+          ]
+        }
+      ],
+      "rmse": 16.2490900648,
+      "roi": 0.1454545455,
+      "segment": "6-10",
+      "units_minus110": 2.9090909091,
+      "wilson95": [
+        0.3865815008,
+        0.7811934676
+      ],
+      "wins": 12
+    },
+    {
+      "auc": 0.5306024096,
+      "bets": 183,
+      "bias_actual_minus_forecast": 0.5663291337,
+      "brier": 0.2513935661,
+      "candidate": "FROZEN_V28",
+      "ece": 0.0622706863,
+      "hit_rate": 0.4535519126,
+      "interval_coverage": {
+        "0.8": 0.825136612,
+        "0.9": 0.9672131148
+      },
+      "log_loss": 0.6959381769,
+      "losses": 100,
+      "mae": 12.2516407956,
+      "market": "ATS",
+      "mean_interval_width": {
+        "0.8": 44.2401428357,
+        "0.9": 63.0745083837
+      },
+      "n": 183,
+      "pushes": 0,
+      "reliability": [
+        {
+          "hit_rate": 0.4535519126,
+          "lower": 0.5,
+          "mean_probability": 0.5158225989,
+          "n": 183,
+          "upper": 0.55,
+          "wilson95": [
+            0.3831167369,
+            0.5258970329
+          ]
+        }
+      ],
+      "rmse": 15.0083295143,
+      "roi": -0.1341281669,
+      "segment": "11-rest",
+      "units_minus110": -24.5454545455,
+      "wilson95": [
+        0.3831167369,
+        0.5258970329
+      ],
+      "wins": 83
+    },
+    {
+      "auc": 0.5604395604,
+      "bets": 20,
+      "bias_actual_minus_forecast": 0.9773972153,
+      "brier": 0.2342986232,
+      "candidate": "FIXED_25_PERCENT_MODEL",
+      "ece": 0.0874224276,
+      "hit_rate": 0.65,
+      "interval_coverage": {
+        "0.8": 0.85,
+        "0.9": 1.0
+      },
+      "log_loss": 0.6615215837,
+      "losses": 7,
+      "mae": 7.4314699048,
+      "market": "ATS",
+      "mean_interval_width": {
+        "0.8": 42.8755617449,
+        "0.9": 58.3160686037
+      },
+      "n": 20,
+      "pushes": 0,
+      "reliability": [
+        {
+          "hit_rate": 0.6666666667,
+          "lower": 0.5,
+          "mean_probability": 0.5419429505,
+          "n": 6,
+          "upper": 0.55,
+          "wilson95": [
+            0.2999933151,
+            0.9032285889
+          ]
+        },
+        {
+          "hit_rate": 0.6428571429,
+          "lower": 0.55,
+          "mean_probability": 0.5714209818,
+          "n": 14,
+          "upper": 0.6,
+          "wilson95": [
+            0.387644231,
+            0.8365526825
+          ]
+        }
+      ],
+      "rmse": 10.4701647982,
+      "roi": 0.2409090909,
+      "segment": "1-5",
+      "units_minus110": 4.8181818182,
+      "wilson95": [
+        0.4328542767,
+        0.8188081759
+      ],
+      "wins": 13
+    },
+    {
+      "auc": 0.3541666667,
+      "bets": 20,
+      "bias_actual_minus_forecast": 7.3280301392,
+      "brier": 0.245355663,
+      "candidate": "FIXED_25_PERCENT_MODEL",
+      "ece": 0.0564793824,
+      "hit_rate": 0.6,
+      "interval_coverage": {
+        "0.8": 0.85,
+        "0.9": 1.0
+      },
+      "log_loss": 0.6838578952,
+      "losses": 8,
+      "mae": 12.8191314112,
+      "market": "ATS",
+      "mean_interval_width": {
+        "0.8": 42.8749704857,
+        "0.9": 58.3152355895
+      },
+      "n": 20,
+      "pushes": 0,
+      "reliability": [
+        {
+          "hit_rate": 0.6,
+          "lower": 0.5,
+          "mean_probability": 0.5394266343,
+          "n": 15,
+          "upper": 0.55,
+          "wilson95": [
+            0.3574683012,
+            0.8017550386
+          ]
+        },
+        {
+          "hit_rate": 0.6,
+          "lower": 0.55,
+          "mean_probability": 0.5558025674,
+          "n": 5,
+          "upper": 0.6,
+          "wilson95": [
+            0.2307242813,
+            0.8823792258
+          ]
+        }
+      ],
+      "rmse": 14.5541393015,
+      "roi": 0.1454545455,
+      "segment": "6-10",
+      "units_minus110": 2.9090909091,
+      "wilson95": [
+        0.3865815008,
+        0.7811934676
+      ],
+      "wins": 12
+    },
+    {
+      "auc": 0.5306024096,
+      "bets": 183,
+      "bias_actual_minus_forecast": 0.7378937588,
+      "brier": 0.2513935661,
+      "candidate": "FIXED_25_PERCENT_MODEL",
+      "ece": 0.0622706863,
+      "hit_rate": 0.4535519126,
+      "interval_coverage": {
+        "0.8": 0.8415300546,
+        "0.9": 0.9508196721
+      },
+      "log_loss": 0.6959381769,
+      "losses": 100,
+      "mae": 11.8196321084,
+      "market": "ATS",
+      "mean_interval_width": {
+        "0.8": 43.0238822303,
+        "0.9": 58.6048611429
+      },
+      "n": 183,
+      "pushes": 0,
+      "reliability": [
+        {
+          "hit_rate": 0.4535519126,
+          "lower": 0.5,
+          "mean_probability": 0.5158225989,
+          "n": 183,
+          "upper": 0.55,
+          "wilson95": [
+            0.3831167369,
+            0.5258970329
+          ]
+        }
+      ],
+      "rmse": 14.5853163878,
+      "roi": -0.1341281669,
+      "segment": "11-rest",
+      "units_minus110": -24.5454545455,
+      "wilson95": [
+        0.3831167369,
+        0.5258970329
+      ],
+      "wins": 83
+    },
+    {
+      "auc": 0.31,
+      "bets": 20,
+      "bias_actual_minus_forecast": 0.7492531035,
+      "brier": 0.2788239256,
+      "candidate": "EDGE_LOGIT",
+      "ece": 0.2517485788,
+      "hit_rate": 0.5,
+      "interval_coverage": {
+        "0.8": 0.9,
+        "0.9": 1.0
+      },
+      "log_loss": 0.7538902507,
+      "losses": 10,
+      "mae": 10.9014521402,
+      "market": "ATS",
+      "mean_interval_width": {
+        "0.8": 44.1531351596,
+        "0.9": 62.6281279877
+      },
+      "n": 20,
+      "pushes": 0,
+      "reliability": [
+        {
+          "hit_rate": 0.7142857143,
+          "lower": 0.5,
+          "mean_probability": 0.5300093416,
+          "n": 7,
+          "upper": 0.55,
+          "wilson95": [
+            0.3589344518,
+            0.917781076
+          ]
+        },
+        {
+          "hit_rate": 0.4285714286,
+          "lower": 0.55,
+          "mean_probability": 0.5719565525,
+          "n": 7,
+          "upper": 0.6,
+          "wilson95": [
+            0.1582198553,
+            0.7495416355
+          ]
+        },
+        {
+          "hit_rate": 1.0,
+          "lower": 0.6,
+          "mean_probability": 0.617067285,
+          "n": 1,
+          "upper": 0.65,
+          "wilson95": [
+            0.2065493144,
+            1.0
+          ]
+        },
+        {
+          "hit_rate": 0.2,
+          "lower": 0.65,
+          "mean_probability": 0.671681677,
+          "n": 5,
+          "upper": 1.0,
+          "wilson95": [
+            0.0362241086,
+            0.6244653702
+          ]
+        }
+      ],
+      "rmse": 13.2592723358,
+      "roi": -0.0454545455,
+      "segment": "1-5",
+      "units_minus110": -0.9090909091,
+      "wilson95": [
+        0.2992980082,
+        0.7007019918
+      ],
+      "wins": 10
+    },
+    {
+      "auc": 0.26,
+      "bets": 20,
+      "bias_actual_minus_forecast": 5.2834795812,
+      "brier": 0.2823934377,
+      "candidate": "EDGE_LOGIT",
+      "ece": 0.2466490607,
+      "hit_rate": 0.5,
+      "interval_coverage": {
+        "0.8": 0.8,
+        "0.9": 0.95
+      },
+      "log_loss": 0.7608326573,
+      "losses": 10,
+      "mae": 11.5945472773,
+      "market": "ATS",
+      "mean_interval_width": {
+        "0.8": 44.1507313963,
+        "0.9": 62.624533286
+      },
+      "n": 20,
+      "pushes": 0,
+      "reliability": [
+        {
+          "hit_rate": 0.7,
+          "lower": 0.5,
+          "mean_probability": 0.5207966507,
+          "n": 10,
+          "upper": 0.55,
+          "wilson95": [
+            0.3967781475,
+            0.8922087326
+          ]
+        },
+        {
+          "hit_rate": 0.4,
+          "lower": 0.55,
+          "mean_probability": 0.5602646035,
+          "n": 5,
+          "upper": 0.6,
+          "wilson95": [
+            0.1176207742,
+            0.7692757187
+          ]
+        },
+        {
+          "hit_rate": 0.2,
+          "lower": 0.65,
+          "mean_probability": 0.6679249406,
+          "n": 5,
+          "upper": 1.0,
+          "wilson95": [
+            0.0362241086,
+            0.6244653702
+          ]
+        }
+      ],
+      "rmse": 14.7951137965,
+      "roi": -0.0454545455,
+      "segment": "6-10",
+      "units_minus110": -0.9090909091,
+      "wilson95": [
+        0.2992980082,
+        0.7007019918
+      ],
+      "wins": 10
+    },
+    {
+      "auc": 0.5113636364,
+      "bets": 183,
+      "bias_actual_minus_forecast": 0.7673101975,
+      "brier": 0.2536803081,
+      "candidate": "EDGE_LOGIT",
+      "ece": 0.0526182528,
+      "hit_rate": 0.4808743169,
+      "interval_coverage": {
+        "0.8": 0.8196721311,
+        "0.9": 0.9672131148
+      },
+      "log_loss": 0.7007020137,
+      "losses": 95,
+      "mae": 12.4799944043,
+      "market": "ATS",
+      "mean_interval_width": {
+        "0.8": 44.2403005433,
+        "0.9": 63.0747757965
+      },
+      "n": 183,
+      "pushes": 0,
+      "reliability": [
+        {
+          "hit_rate": 0.46875,
+          "lower": 0.45,
+          "mean_probability": 0.4846134133,
+          "n": 64,
+          "upper": 0.5,
+          "wilson95": [
+            0.3517598743,
+            0.5892791295
+          ]
+        },
+        {
+          "hit_rate": 0.48,
+          "lower": 0.5,
+          "mean_probability": 0.5239670491,
+          "n": 75,
+          "upper": 0.55,
+          "wilson95": [
+            0.3706911114,
+            0.5912578423
+          ]
+        },
+        {
+          "hit_rate": 0.3333333333,
+          "lower": 0.55,
+          "mean_probability": 0.5761426145,
+          "n": 12,
+          "upper": 0.6,
+          "wilson95": [
+            0.1381200911,
+            0.6093779111
+          ]
+        },
+        {
+          "hit_rate": 0.5416666667,
+          "lower": 0.6,
+          "mean_probability": 0.6306432871,
+          "n": 24,
+          "upper": 0.65,
+          "wilson95": [
+            0.3507486536,
+            0.7210866627
+          ]
+        },
+        {
+          "hit_rate": 0.625,
+          "lower": 0.65,
+          "mean_probability": 0.6584003591,
+          "n": 8,
+          "upper": 1.0,
+          "wilson95": [
+            0.3057423946,
+            0.8631557142
+          ]
+        }
+      ],
+      "rmse": 15.3129754496,
+      "roi": -0.0819672131,
+      "segment": "11-rest",
+      "units_minus110": -15.0,
+      "wilson95": [
+        0.4096251522,
+        0.5529099294
+      ],
+      "wins": 88
+    },
+    {
+      "auc": 0.3131313131,
+      "bets": 20,
+      "bias_actual_minus_forecast": -2.262273349,
+      "brier": 0.2660012155,
+      "candidate": "CONTROLLED_LOGIT",
+      "ece": 0.184064045,
+      "hit_rate": 0.55,
+      "interval_coverage": {
+        "0.8": 0.9,
+        "0.9": 1.0
+      },
+      "log_loss": 0.7279674546,
+      "losses": 9,
+      "mae": 9.1337543643,
+      "market": "ATS",
+      "mean_interval_width": {
+        "0.8": 44.1537993963,
+        "0.9": 62.6286841951
+      },
+      "n": 20,
+      "pushes": 0,
+      "reliability": [
+        {
+          "hit_rate": 1.0,
+          "lower": 0.5,
+          "mean_probability": 0.5481260605,
+          "n": 3,
+          "upper": 0.55,
+          "wilson95": [
+            0.4385029682,
+            1.0
+          ]
+        },
+        {
+          "hit_rate": 0.5,
+          "lower": 0.55,
+          "mean_probability": 0.572489101,
+          "n": 12,
+          "upper": 0.6,
+          "wilson95": [
+            0.2537815976,
+            0.7462184024
+          ]
+        },
+        {
+          "hit_rate": 0.4,
+          "lower": 0.65,
+          "mean_probability": 0.6911579739,
+          "n": 5,
+          "upper": 1.0,
+          "wilson95": [
+            0.1176207742,
+            0.7692757187
+          ]
+        }
+      ],
+      "rmse": 11.6882012043,
+      "roi": 0.05,
+      "segment": "1-5",
+      "units_minus110": 1.0,
+      "wilson95": [
+        0.3420853425,
+        0.7418021417
+      ],
+      "wins": 11
+    },
+    {
+      "auc": 0.21875,
+      "bets": 20,
+      "bias_actual_minus_forecast": -0.614752792,
+      "brier": 0.273739146,
+      "candidate": "CONTROLLED_LOGIT",
+      "ece": 0.2601565779,
+      "hit_rate": 0.6,
+      "interval_coverage": {
+        "0.8": 1.0,
+        "0.9": 1.0
+      },
+      "log_loss": 0.7444216065,
+      "losses": 8,
+      "mae": 7.616597395,
+      "market": "ATS",
+      "mean_interval_width": {
+        "0.8": 44.1519167203,
+        "0.9": 62.6262831887
+      },
+      "n": 20,
+      "pushes": 0,
+      "reliability": [
+        {
+          "hit_rate": 0.8,
+          "lower": 0.5,
+          "mean_probability": 0.5374363274,
+          "n": 10,
+          "upper": 0.55,
+          "wilson95": [
+            0.4901624715,
+            0.9433178485
+          ]
+        },
+        {
+          "hit_rate": 0.6,
+          "lower": 0.55,
+          "mean_probability": 0.5679333899,
+          "n": 5,
+          "upper": 0.6,
+          "wilson95": [
+            0.2307242813,
+            0.8823792258
+          ]
+        },
+        {
+          "hit_rate": 0.2,
+          "lower": 0.65,
+          "mean_probability": 0.6834323562,
+          "n": 5,
+          "upper": 1.0,
+          "wilson95": [
+            0.0362241086,
+            0.6244653702
+          ]
+        }
+      ],
+      "rmse": 9.0247028284,
+      "roi": 0.1454545455,
+      "segment": "6-10",
+      "units_minus110": 2.9090909091,
+      "wilson95": [
+        0.3865815008,
+        0.7811934676
+      ],
+      "wins": 12
+    },
+    {
+      "auc": 0.5301320528,
+      "bets": 183,
+      "bias_actual_minus_forecast": 1.7410543314,
+      "brier": 0.2557193148,
+      "candidate": "CONTROLLED_LOGIT",
+      "ece": 0.0870058646,
+      "hit_rate": 0.4644808743,
+      "interval_coverage": {
+        "0.8": 0.7978142077,
+        "0.9": 0.9617486339
+      },
+      "log_loss": 0.7051822904,
+      "losses": 98,
+      "mae": 13.1079340391,
+      "market": "ATS",
+      "mean_interval_width": {
+        "0.8": 44.2400984055,
+        "0.9": 63.0745237626
+      },
+      "n": 183,
+      "pushes": 0,
+      "reliability": [
+        {
+          "hit_rate": 0.5,
+          "lower": 0.0,
+          "mean_probability": 0.4152270253,
+          "n": 28,
+          "upper": 0.45,
+          "wilson95": [
+            0.3263312746,
+            0.6736687254
+          ]
+        },
+        {
+          "hit_rate": 0.3103448276,
+          "lower": 0.45,
+          "mean_probability": 0.4749347712,
+          "n": 29,
+          "upper": 0.5,
+          "wilson95": [
+            0.1727561674,
+            0.4923013423
+          ]
+        },
+        {
+          "hit_rate": 0.4931506849,
+          "lower": 0.5,
+          "mean_probability": 0.5229592166,
+          "n": 73,
+          "upper": 0.55,
+          "wilson95": [
+            0.3817085981,
+            0.6052775938
+          ]
+        },
+        {
+          "hit_rate": 0.45,
+          "lower": 0.55,
+          "mean_probability": 0.5625494504,
+          "n": 20,
+          "upper": 0.6,
+          "wilson95": [
+            0.2581978583,
+            0.6579146575
+          ]
+        },
+        {
+          "hit_rate": 0.5882352941,
+          "lower": 0.6,
+          "mean_probability": 0.6281229248,
+          "n": 17,
+          "upper": 0.65,
+          "wilson95": [
+            0.3600544264,
+            0.7838894321
+          ]
+        },
+        {
+          "hit_rate": 0.4375,
+          "lower": 0.65,
+          "mean_probability": 0.666888751,
+          "n": 16,
+          "upper": 1.0,
+          "wilson95": [
+            0.2309865241,
+            0.668214436
+          ]
+        }
+      ],
+      "rmse": 15.930869862,
+      "roi": -0.1132637854,
+      "segment": "11-rest",
+      "units_minus110": -20.7272727273,
+      "wilson95": [
+        0.3936947677,
+        0.5367275268
+      ],
+      "wins": 85
+    },
+    {
+      "auc": 0.1414141414,
+      "bets": 20,
+      "bias_actual_minus_forecast": 1.3508765154,
+      "brier": 0.2950731082,
+      "candidate": "CONDITIONAL_UNCERTAINTY_LOGIT",
+      "ece": 0.394594159,
+      "hit_rate": 0.55,
+      "interval_coverage": {
+        "0.8": 0.8,
+        "0.9": 0.95
+      },
+      "log_loss": 0.7928612886,
+      "losses": 9,
+      "mae": 10.6398419127,
+      "market": "ATS",
+      "mean_interval_width": {
+        "0.8": 42.7900608898,
+        "0.9": 61.6942332522
+      },
+      "n": 20,
+      "pushes": 0,
+      "reliability": [
+        {
+          "hit_rate": 0.9,
+          "lower": 0.55,
+          "mean_probability": 0.5754009252,
+          "n": 10,
+          "upper": 0.6,
+          "wilson95": [
+            0.5958499732,
+            0.9821237869
+          ]
+        },
+        {
+          "hit_rate": 0.4,
+          "lower": 0.6,
+          "mean_probability": 0.6174780799,
+          "n": 5,
+          "upper": 0.65,
+          "wilson95": [
+            0.1176207742,
+            0.7692757187
+          ]
+        },
+        {
+          "hit_rate": 0.0,
+          "lower": 0.65,
+          "mean_probability": 0.7117004064,
+          "n": 5,
+          "upper": 1.0,
+          "wilson95": [
+            0.0,
+            0.4344824648
+          ]
+        }
+      ],
+      "rmse": 13.6508327905,
+      "roi": 0.05,
+      "segment": "1-5",
+      "units_minus110": 1.0,
+      "wilson95": [
+        0.3420853425,
+        0.7418021417
+      ],
+      "wins": 11
+    },
+    {
+      "auc": 0.2738095238,
+      "bets": 20,
+      "bias_actual_minus_forecast": 0.9736642127,
+      "brier": 0.2436783564,
+      "candidate": "CONDITIONAL_UNCERTAINTY_LOGIT",
+      "ece": 0.2461945949,
+      "hit_rate": 0.7,
+      "interval_coverage": {
+        "0.8": 1.0,
+        "0.9": 1.0
+      },
+      "log_loss": 0.6825497763,
+      "losses": 6,
+      "mae": 6.585419155,
+      "market": "ATS",
+      "mean_interval_width": {
+        "0.8": 43.2667797408,
+        "0.9": 62.7239477333
+      },
+      "n": 20,
+      "pushes": 0,
+      "reliability": [
+        {
+          "hit_rate": 1.0,
+          "lower": 0.5,
+          "mean_probability": 0.5428785189,
+          "n": 4,
+          "upper": 0.55,
+          "wilson95": [
+            0.5101091635,
+            1.0
+          ]
+        },
+        {
+          "hit_rate": 0.7,
+          "lower": 0.55,
+          "mean_probability": 0.5740305251,
+          "n": 10,
+          "upper": 0.6,
+          "wilson95": [
+            0.3967781475,
+            0.8922087326
+          ]
+        },
+        {
+          "hit_rate": 1.0,
+          "lower": 0.6,
+          "mean_probability": 0.6081900611,
+          "n": 1,
+          "upper": 0.65,
+          "wilson95": [
+            0.2065493144,
+            1.0
+          ]
+        },
+        {
+          "hit_rate": 0.4,
+          "lower": 0.65,
+          "mean_probability": 0.688780257,
+          "n": 5,
+          "upper": 1.0,
+          "wilson95": [
+            0.1176207742,
+            0.7692757187
+          ]
+        }
+      ],
+      "rmse": 7.9964740334,
+      "roi": 0.3363636364,
+      "segment": "6-10",
+      "units_minus110": 6.7272727273,
+      "wilson95": [
+        0.4810271816,
+        0.8545227551
+      ],
+      "wins": 14
+    },
+    {
+      "auc": 0.5209638554,
+      "bets": 183,
+      "bias_actual_minus_forecast": 1.172577078,
+      "brier": 0.2555854883,
+      "candidate": "CONDITIONAL_UNCERTAINTY_LOGIT",
+      "ece": 0.101647758,
+      "hit_rate": 0.4535519126,
+      "interval_coverage": {
+        "0.8": 0.8142076503,
+        "0.9": 0.9508196721
+      },
+      "log_loss": 0.704679852,
+      "losses": 100,
+      "mae": 13.0560313824,
+      "market": "ATS",
+      "mean_interval_width": {
+        "0.8": 43.2364031986,
+        "0.9": 62.899030768
+      },
+      "n": 183,
+      "pushes": 0,
+      "reliability": [
+        {
+          "hit_rate": 0.5,
+          "lower": 0.0,
+          "mean_probability": 0.4198844045,
+          "n": 34,
+          "upper": 0.45,
+          "wilson95": [
+            0.3406932565,
+            0.6593067435
+          ]
+        },
+        {
+          "hit_rate": 0.4615384615,
+          "lower": 0.45,
+          "mean_probability": 0.4803813871,
+          "n": 39,
+          "upper": 0.5,
+          "wilson95": [
+            0.3156688561,
+            0.6143055173
+          ]
+        },
+        {
+          "hit_rate": 0.3469387755,
+          "lower": 0.5,
+          "mean_probability": 0.5281303758,
+          "n": 49,
+          "upper": 0.55,
+          "wilson95": [
+            0.2292439283,
+            0.4868880571
+          ]
+        },
+        {
+          "hit_rate": 0.4827586207,
+          "lower": 0.55,
+          "mean_probability": 0.5718311825,
+          "n": 29,
+          "upper": 0.6,
+          "wilson95": [
+            0.3138609015,
+            0.6556897812
+          ]
+        },
+        {
+          "hit_rate": 0.5294117647,
+          "lower": 0.6,
+          "mean_probability": 0.6235227147,
+          "n": 17,
+          "upper": 0.65,
+          "wilson95": [
+            0.3096323506,
+            0.7383489356
+          ]
+        },
+        {
+          "hit_rate": 0.5333333333,
+          "lower": 0.65,
+          "mean_probability": 0.6720904339,
+          "n": 15,
+          "upper": 1.0,
+          "wilson95": [
+            0.3011698003,
+            0.7519046463
+          ]
+        }
+      ],
+      "rmse": 15.8199324328,
+      "roi": -0.1341281669,
+      "segment": "11-rest",
+      "units_minus110": -24.5454545455,
+      "wilson95": [
+        0.3831167369,
+        0.5258970329
+      ],
+      "wins": 83
+    },
+    {
+      "auc": 0.39,
+      "bets": 20,
+      "bias_actual_minus_forecast": -8.8895366732,
+      "brier": 0.2956804623,
+      "candidate": "MARKET_RESIDUAL_RIDGE",
+      "ece": 0.1863152194,
+      "hit_rate": 0.5,
+      "interval_coverage": {
+        "0.8": 0.75,
+        "0.9": 0.8
+      },
+      "log_loss": 0.799089261,
+      "losses": 10,
+      "mae": 13.0451376094,
+      "market": "ATS",
+      "mean_interval_width": {
+        "0.8": 33.829887593,
+        "0.9": 44.1267861192
+      },
+      "n": 20,
+      "pushes": 0,
+      "reliability": [
+        {
+          "hit_rate": 0.6666666667,
+          "lower": 0.55,
+          "mean_probability": 0.5896182437,
+          "n": 3,
+          "upper": 0.6,
+          "wilson95": [
+            0.2076596008,
+            0.9385080553
+          ]
+        },
+        {
+          "hit_rate": 0.4285714286,
+          "lower": 0.6,
+          "mean_probability": 0.6195676702,
+          "n": 7,
+          "upper": 0.65,
+          "wilson95": [
+            0.1582198553,
+            0.7495416355
+          ]
+        },
+        {
+          "hit_rate": 0.5,
+          "lower": 0.65,
+          "mean_probability": 0.7158185427,
+          "n": 10,
+          "upper": 1.0,
+          "wilson95": [
+            0.2365930905,
+            0.7634069095
+          ]
+        }
+      ],
+      "rmse": 17.7431067403,
+      "roi": -0.0454545455,
+      "segment": "1-5",
+      "units_minus110": -0.9090909091,
+      "wilson95": [
+        0.2992980082,
+        0.7007019918
+      ],
+      "wins": 10
+    },
+    {
+      "auc": 0.5054945055,
+      "bets": 20,
+      "bias_actual_minus_forecast": -6.5098344728,
+      "brier": 0.2968614984,
+      "candidate": "MARKET_RESIDUAL_RIDGE",
+      "ece": 0.2610589184,
+      "hit_rate": 0.35,
+      "interval_coverage": {
+        "0.8": 0.65,
+        "0.9": 0.9
+      },
+      "log_loss": 0.7903929845,
+      "losses": 13,
+      "mae": 13.4249151812,
+      "market": "ATS",
+      "mean_interval_width": {
+        "0.8": 40.0133999044,
+        "0.9": 52.6578596637
+      },
+      "n": 20,
+      "pushes": 0,
+      "reliability": [
+        {
+          "hit_rate": 0.3571428571,
+          "lower": 0.55,
+          "mean_probability": 0.5820918942,
+          "n": 14,
+          "upper": 0.6,
+          "wilson95": [
+            0.1634473175,
+            0.612355769
+          ]
+        },
+        {
+          "hit_rate": 0.0,
+          "lower": 0.6,
+          "mean_probability": 0.6058863647,
+          "n": 1,
+          "upper": 0.65,
+          "wilson95": [
+            0.0,
+            0.7934506856
+          ]
+        },
+        {
+          "hit_rate": 0.4,
+          "lower": 0.65,
+          "mean_probability": 0.6932010968,
+          "n": 5,
+          "upper": 1.0,
+          "wilson95": [
+            0.1176207742,
+            0.7692757187
+          ]
+        }
+      ],
+      "rmse": 16.2812649512,
+      "roi": -0.3318181818,
+      "segment": "6-10",
+      "units_minus110": -6.6363636364,
+      "wilson95": [
+        0.1811918241,
+        0.5671457233
+      ],
+      "wins": 7
+    },
+    {
+      "auc": 0.6044061303,
+      "bets": 183,
+      "bias_actual_minus_forecast": 1.3029008212,
+      "brier": 0.2489860059,
+      "candidate": "MARKET_RESIDUAL_RIDGE",
+      "ece": 0.0742147133,
+      "hit_rate": 0.4754098361,
+      "interval_coverage": {
+        "0.8": 0.8469945355,
+        "0.9": 0.9398907104
+      },
+      "log_loss": 0.6909867462,
+      "losses": 96,
+      "mae": 11.4565823738,
+      "market": "ATS",
+      "mean_interval_width": {
+        "0.8": 43.0475429539,
+        "0.9": 57.7379907295
+      },
+      "n": 183,
+      "pushes": 0,
+      "reliability": [
+        {
+          "hit_rate": 0.4416666667,
+          "lower": 0.5,
+          "mean_probability": 0.5235756477,
+          "n": 120,
+          "upper": 0.55,
+          "wilson95": [
+            0.355997467,
+            0.5309547691
+          ]
+        },
+        {
+          "hit_rate": 0.52,
+          "lower": 0.55,
+          "mean_probability": 0.5629216649,
+          "n": 50,
+          "upper": 0.6,
+          "wilson95": [
+            0.3851174489,
+            0.6520286471
+          ]
+        },
+        {
+          "hit_rate": 0.5454545455,
+          "lower": 0.6,
+          "mean_probability": 0.63158325,
+          "n": 11,
+          "upper": 0.65,
+          "wilson95": [
+            0.2800915374,
+            0.7872872838
+          ]
+        },
+        {
+          "hit_rate": 1.0,
+          "lower": 0.65,
+          "mean_probability": 0.6706420909,
+          "n": 2,
+          "upper": 1.0,
+          "wilson95": [
+            0.3423802275,
+            1.0
+          ]
+        }
+      ],
+      "rmse": 14.0578933531,
+      "roi": -0.0923994039,
+      "segment": "11-rest",
+      "units_minus110": -16.9090909091,
+      "wilson95": [
+        0.4043066018,
+        0.5475242175
+      ],
+      "wins": 87
+    },
+    {
+      "auc": 0.4343434343,
+      "bets": 20,
+      "bias_actual_minus_forecast": 6.7931558335,
+      "brier": 0.3216511336,
+      "candidate": "FROZEN_V28",
+      "ece": 0.2602034165,
+      "hit_rate": 0.45,
+      "interval_coverage": {
+        "0.8": 0.7,
+        "0.9": 0.8
+      },
+      "log_loss": 0.858389384,
+      "losses": 11,
+      "mae": 18.6697673557,
+      "market": "TOTAL",
+      "mean_interval_width": {
+        "0.8": 43.9792519615,
+        "0.9": 59.8101103657
+      },
+      "n": 20,
+      "pushes": 0,
+      "reliability": [
+        {
+          "hit_rate": 0.45,
+          "lower": 0.65,
+          "mean_probability": 0.7102034165,
+          "n": 20,
+          "upper": 1.0,
+          "wilson95": [
+            0.2581978583,
+            0.6579146575
+          ]
+        }
+      ],
+      "rmse": 22.0479356547,
+      "roi": -0.1409090909,
+      "segment": "1-5",
+      "units_minus110": -2.8181818182,
+      "wilson95": [
+        0.2581978583,
+        0.6579146575
+      ],
+      "wins": 9
+    },
+    {
+      "auc": 0.4404761905,
+      "bets": 20,
+      "bias_actual_minus_forecast": 8.8486461378,
+      "brier": 0.3387227615,
+      "candidate": "FROZEN_V28",
+      "ece": 0.3570998329,
+      "hit_rate": 0.3,
+      "interval_coverage": {
+        "0.8": 0.65,
+        "0.9": 0.85
+      },
+      "log_loss": 0.8780649718,
+      "losses": 14,
+      "mae": 18.8389734373,
+      "market": "TOTAL",
+      "mean_interval_width": {
+        "0.8": 43.9792519615,
+        "0.9": 59.8101103657
+      },
+      "n": 20,
+      "pushes": 0,
+      "reliability": [
+        {
+          "hit_rate": 0.375,
+          "lower": 0.6,
+          "mean_probability": 0.6411492535,
+          "n": 8,
+          "upper": 0.65,
+          "wilson95": [
+            0.1368442858,
+            0.6942576054
+          ]
+        },
+        {
+          "hit_rate": 0.25,
+          "lower": 0.65,
+          "mean_probability": 0.6677335525,
+          "n": 12,
+          "upper": 1.0,
+          "wilson95": [
+            0.0889416684,
+            0.5323053349
+          ]
+        }
+      ],
+      "rmse": 22.2318429324,
+      "roi": -0.4272727273,
+      "segment": "6-10",
+      "units_minus110": -8.5454545455,
+      "wilson95": [
+        0.1454772449,
+        0.5189728184
+      ],
+      "wins": 6
+    },
+    {
+      "auc": 0.5148058252,
+      "bets": 183,
+      "bias_actual_minus_forecast": 0.8026704809,
+      "brier": 0.2469823557,
+      "candidate": "FROZEN_V28",
+      "ece": 0.0413940344,
+      "hit_rate": 0.5628415301,
+      "interval_coverage": {
+        "0.8": 0.868852459,
+        "0.9": 0.956284153
+      },
+      "log_loss": 0.687180323,
+      "losses": 80,
+      "mae": 11.8502896189,
+      "market": "TOTAL",
+      "mean_interval_width": {
+        "0.8": 44.0755565039,
+        "0.9": 59.9228174783
+      },
+      "n": 183,
+      "pushes": 0,
+      "reliability": [
+        {
+          "hit_rate": 0.5393258427,
+          "lower": 0.5,
+          "mean_probability": 0.5262940723,
+          "n": 89,
+          "upper": 0.55,
+          "wilson95": [
+            0.4362945616,
+            0.6391027888
+          ]
+        },
+        {
+          "hit_rate": 0.625,
+          "lower": 0.55,
+          "mean_probability": 0.5730376091,
+          "n": 56,
+          "upper": 0.6,
+          "wilson95": [
+            0.4940536591,
+            0.7398978567
+          ]
+        },
+        {
+          "hit_rate": 0.5263157895,
+          "lower": 0.6,
+          "mean_probability": 0.6185628117,
+          "n": 38,
+          "upper": 0.65,
+          "wilson95": [
+            0.3725897138,
+            0.6752097668
+          ]
+        }
+      ],
+      "rmse": 15.0669069396,
+      "roi": 0.0745156483,
+      "segment": "11-rest",
+      "units_minus110": 13.6363636364,
+      "wilson95": [
+        0.4904124957,
+        0.6326865217
+      ],
+      "wins": 103
+    },
+    {
+      "auc": 0.4343434343,
+      "bets": 20,
+      "bias_actual_minus_forecast": 3.7232889584,
+      "brier": 0.3216511336,
+      "candidate": "FIXED_25_PERCENT_MODEL",
+      "ece": 0.2602034165,
+      "hit_rate": 0.45,
+      "interval_coverage": {
+        "0.8": 0.65,
+        "0.9": 0.85
+      },
+      "log_loss": 0.858389384,
+      "losses": 11,
+      "mae": 16.0926856628,
+      "market": "TOTAL",
+      "mean_interval_width": {
+        "0.8": 42.2496104722,
+        "0.9": 53.098283813
+      },
+      "n": 20,
+      "pushes": 0,
+      "reliability": [
+        {
+          "hit_rate": 0.45,
+          "lower": 0.65,
+          "mean_probability": 0.7102034165,
+          "n": 20,
+          "upper": 1.0,
+          "wilson95": [
+            0.2581978583,
+            0.6579146575
+          ]
+        }
+      ],
+      "rmse": 19.2367651029,
+      "roi": -0.1409090909,
+      "segment": "1-5",
+      "units_minus110": -2.8181818182,
+      "wilson95": [
+        0.2581978583,
+        0.6579146575
+      ],
+      "wins": 9
+    },
+    {
+      "auc": 0.4404761905,
+      "bets": 20,
+      "bias_actual_minus_forecast": 5.3246615344,
+      "brier": 0.3387227615,
+      "candidate": "FIXED_25_PERCENT_MODEL",
+      "ece": 0.3570998329,
+      "hit_rate": 0.3,
+      "interval_coverage": {
+        "0.8": 0.65,
+        "0.9": 0.85
+      },
+      "log_loss": 0.8780649718,
+      "losses": 14,
+      "mae": 16.2882089622,
+      "market": "TOTAL",
+      "mean_interval_width": {
+        "0.8": 42.2496104722,
+        "0.9": 53.098283813
+      },
+      "n": 20,
+      "pushes": 0,
+      "reliability": [
+        {
+          "hit_rate": 0.375,
+          "lower": 0.6,
+          "mean_probability": 0.6411492535,
+          "n": 8,
+          "upper": 0.65,
+          "wilson95": [
+            0.1368442858,
+            0.6942576054
+          ]
+        },
+        {
+          "hit_rate": 0.25,
+          "lower": 0.65,
+          "mean_probability": 0.6677335525,
+          "n": 12,
+          "upper": 1.0,
+          "wilson95": [
+            0.0889416684,
+            0.5323053349
+          ]
+        }
+      ],
+      "rmse": 19.7259831384,
+      "roi": -0.4272727273,
+      "segment": "6-10",
+      "units_minus110": -8.5454545455,
+      "wilson95": [
+        0.1454772449,
+        0.5189728184
+      ],
+      "wins": 6
+    },
+    {
+      "auc": 0.5148058252,
+      "bets": 183,
+      "bias_actual_minus_forecast": 0.2641922104,
+      "brier": 0.2469823557,
+      "candidate": "FIXED_25_PERCENT_MODEL",
+      "ece": 0.0413940344,
+      "hit_rate": 0.5628415301,
+      "interval_coverage": {
+        "0.8": 0.8196721311,
+        "0.9": 0.9289617486
+      },
+      "log_loss": 0.687180323,
+      "losses": 80,
+      "mae": 11.9324446266,
+      "market": "TOTAL",
+      "mean_interval_width": {
+        "0.8": 42.2072300766,
+        "0.9": 53.1583314185
+      },
+      "n": 183,
+      "pushes": 0,
+      "reliability": [
+        {
+          "hit_rate": 0.5393258427,
+          "lower": 0.5,
+          "mean_probability": 0.5262940723,
+          "n": 89,
+          "upper": 0.55,
+          "wilson95": [
+            0.4362945616,
+            0.6391027888
+          ]
+        },
+        {
+          "hit_rate": 0.625,
+          "lower": 0.55,
+          "mean_probability": 0.5730376091,
+          "n": 56,
+          "upper": 0.6,
+          "wilson95": [
+            0.4940536591,
+            0.7398978567
+          ]
+        },
+        {
+          "hit_rate": 0.5263157895,
+          "lower": 0.6,
+          "mean_probability": 0.6185628117,
+          "n": 38,
+          "upper": 0.65,
+          "wilson95": [
+            0.3725897138,
+            0.6752097668
+          ]
+        }
+      ],
+      "rmse": 15.1653528625,
+      "roi": 0.0745156483,
+      "segment": "11-rest",
+      "units_minus110": 13.6363636364,
+      "wilson95": [
+        0.4904124957,
+        0.6326865217
+      ],
+      "wins": 103
+    },
+    {
+      "auc": 0.39,
+      "bets": 20,
+      "bias_actual_minus_forecast": 2.1018016295,
+      "brier": 0.2602788138,
+      "candidate": "EDGE_LOGIT",
+      "ece": 0.1087890042,
+      "hit_rate": 0.5,
+      "interval_coverage": {
+        "0.8": 0.9,
+        "0.9": 1.0
+      },
+      "log_loss": 0.7138391971,
+      "losses": 10,
+      "mae": 10.4293073047,
+      "market": "TOTAL",
+      "mean_interval_width": {
+        "0.8": 43.9792519615,
+        "0.9": 59.8101103657
+      },
+      "n": 20,
+      "pushes": 0,
+      "reliability": [
+        {
+          "hit_rate": 0.6,
+          "lower": 0.0,
+          "mean_probability": 0.4406811234,
+          "n": 5,
+          "upper": 0.45,
+          "wilson95": [
+            0.2307242813,
+            0.8823792258
+          ]
+        },
+        {
+          "hit_rate": 0.5,
+          "lower": 0.5,
+          "mean_probability": 0.5477697731,
+          "n": 2,
+          "upper": 0.55,
+          "wilson95": [
+            0.0945312057,
+            0.9054687943
+          ]
+        },
+        {
+          "hit_rate": 0.4615384615,
+          "lower": 0.55,
+          "mean_probability": 0.5602804735,
+          "n": 13,
+          "upper": 0.6,
+          "wilson95": [
+            0.2320606781,
+            0.7085620429
+          ]
+        }
+      ],
+      "rmse": 12.655767999,
+      "roi": -0.0454545455,
+      "segment": "1-5",
+      "units_minus110": -0.9090909091,
+      "wilson95": [
+        0.2992980082,
+        0.7007019918
+      ],
+      "wins": 10
+    },
+    {
+      "auc": 0.56,
+      "bets": 20,
+      "bias_actual_minus_forecast": 5.5601321675,
+      "brier": 0.2476578722,
+      "candidate": "EDGE_LOGIT",
+      "ece": 0.0766699524,
+      "hit_rate": 0.5,
+      "interval_coverage": {
+        "0.8": 0.9,
+        "0.9": 0.9
+      },
+      "log_loss": 0.6884631423,
+      "losses": 10,
+      "mae": 10.9819519096,
+      "market": "TOTAL",
+      "mean_interval_width": {
+        "0.8": 43.9792519615,
+        "0.9": 59.8101103657
+      },
+      "n": 20,
+      "pushes": 0,
+      "reliability": [
+        {
+          "hit_rate": 0.4,
+          "lower": 0.0,
+          "mean_probability": 0.4351133635,
+          "n": 5,
+          "upper": 0.45,
+          "wilson95": [
+            0.1176207742,
+            0.7692757187
+          ]
+        },
+        {
+          "hit_rate": 0.6,
+          "lower": 0.5,
+          "mean_probability": 0.5447343381,
+          "n": 10,
+          "upper": 0.55,
+          "wilson95": [
+            0.3126737697,
+            0.8318196703
+          ]
+        },
+        {
+          "hit_rate": 0.4,
+          "lower": 0.55,
+          "mean_probability": 0.5610351224,
+          "n": 5,
+          "upper": 0.6,
+          "wilson95": [
+            0.1176207742,
+            0.7692757187
+          ]
+        }
+      ],
+      "rmse": 15.6788444504,
+      "roi": -0.0454545455,
+      "segment": "6-10",
+      "units_minus110": -0.9090909091,
+      "wilson95": [
+        0.2992980082,
+        0.7007019918
+      ],
+      "wins": 10
+    },
+    {
+      "auc": 0.5183673469,
+      "bets": 183,
+      "bias_actual_minus_forecast": 1.6747872213,
+      "brier": 0.2536800306,
+      "candidate": "EDGE_LOGIT",
+      "ece": 0.0682059342,
+      "hit_rate": 0.5355191257,
+      "interval_coverage": {
+        "0.8": 0.8196721311,
+        "0.9": 0.9289617486
+      },
+      "log_loss": 0.7005250187,
+      "losses": 85,
+      "mae": 13.6095772232,
+      "market": "TOTAL",
+      "mean_interval_width": {
+        "0.8": 44.0755565039,
+        "0.9": 59.9228174783
+      },
+      "n": 183,
+      "pushes": 0,
+      "reliability": [
+        {
+          "hit_rate": 0.5333333333,
+          "lower": 0.0,
+          "mean_probability": 0.4118509326,
+          "n": 75,
+          "upper": 0.45,
+          "wilson95": [
+            0.4215753739,
+            0.6418430366
+          ]
+        },
+        {
+          "hit_rate": 0.4761904762,
+          "lower": 0.45,
+          "mean_probability": 0.4826932181,
+          "n": 42,
+          "upper": 0.5,
+          "wilson95": [
+            0.3335960123,
+            0.6227753587
+          ]
+        },
+        {
+          "hit_rate": 0.564516129,
+          "lower": 0.5,
+          "mean_probability": 0.5272714336,
+          "n": 62,
+          "upper": 0.55,
+          "wilson95": [
+            0.4409298797,
+            0.680574111
+          ]
+        },
+        {
+          "hit_rate": 0.75,
+          "lower": 0.55,
+          "mean_probability": 0.5529450937,
+          "n": 4,
+          "upper": 0.6,
+          "wilson95": [
+            0.3006418426,
+            0.9544127392
+          ]
+        }
+      ],
+      "rmse": 17.0230592407,
+      "roi": 0.0223546945,
+      "segment": "11-rest",
+      "units_minus110": 4.0909090909,
+      "wilson95": [
+        0.4632724732,
+        0.6063052323
+      ],
+      "wins": 98
+    },
+    {
+      "auc": 0.6666666667,
+      "bets": 20,
+      "bias_actual_minus_forecast": 2.8531926691,
+      "brier": 0.2244866875,
+      "candidate": "CONTROLLED_LOGIT",
+      "ece": 0.0537383671,
+      "hit_rate": 0.55,
+      "interval_coverage": {
+        "0.8": 0.9,
+        "0.9": 1.0
+      },
+      "log_loss": 0.6391897591,
+      "losses": 9,
+      "mae": 11.366658745,
+      "market": "TOTAL",
+      "mean_interval_width": {
+        "0.8": 43.9792519615,
+        "0.9": 59.8101103657
+      },
+      "n": 20,
+      "pushes": 0,
+      "reliability": [
+        {
+          "hit_rate": 0.4444444444,
+          "lower": 0.45,
+          "mean_probability": 0.4721933645,
+          "n": 9,
+          "upper": 0.5,
+          "wilson95": [
+            0.1887785211,
+            0.7333487065
+          ]
+        },
+        {
+          "hit_rate": 0.0,
+          "lower": 0.5,
+          "mean_probability": 0.5005574627,
+          "n": 1,
+          "upper": 0.55,
+          "wilson95": [
+            0.0,
+            0.7934506856
+          ]
+        },
+        {
+          "hit_rate": 0.6,
+          "lower": 0.55,
+          "mean_probability": 0.5803030286,
+          "n": 5,
+          "upper": 0.6,
+          "wilson95": [
+            0.2307242813,
+            0.8823792258
+          ]
+        },
+        {
+          "hit_rate": 0.8,
+          "lower": 0.65,
+          "mean_probability": 0.7548030516,
+          "n": 5,
+          "upper": 1.0,
+          "wilson95": [
+            0.3755346298,
+            0.9637758914
+          ]
+        }
+      ],
+      "rmse": 13.6193166052,
+      "roi": 0.05,
+      "segment": "1-5",
+      "units_minus110": 1.0,
+      "wilson95": [
+        0.3420853425,
+        0.7418021417
+      ],
+      "wins": 11
+    },
+    {
+      "auc": 0.4444444444,
+      "bets": 20,
+      "bias_actual_minus_forecast": 3.7434460669,
+      "brier": 0.3034375375,
+      "candidate": "CONTROLLED_LOGIT",
+      "ece": 0.3533636922,
+      "hit_rate": 0.45,
+      "interval_coverage": {
+        "0.8": 0.8,
+        "0.9": 0.95
+      },
+      "log_loss": 0.8112753891,
+      "losses": 11,
+      "mae": 12.96085803,
+      "market": "TOTAL",
+      "mean_interval_width": {
+        "0.8": 43.9792519615,
+        "0.9": 59.8101103657
+      },
+      "n": 20,
+      "pushes": 0,
+      "reliability": [
+        {
+          "hit_rate": 0.4,
+          "lower": 0.0,
+          "mean_probability": 0.4446006102,
+          "n": 5,
+          "upper": 0.45,
+          "wilson95": [
+            0.1176207742,
+            0.7692757187
+          ]
+        },
+        {
+          "hit_rate": 0.8,
+          "lower": 0.45,
+          "mean_probability": 0.4794510829,
+          "n": 5,
+          "upper": 0.5,
+          "wilson95": [
+            0.3755346298,
+            0.9637758914
+          ]
+        },
+        {
+          "hit_rate": 0.0,
+          "lower": 0.5,
+          "mean_probability": 0.5401215375,
+          "n": 3,
+          "upper": 0.55,
+          "wilson95": [
+            0.0,
+            0.5614970318
+          ]
+        },
+        {
+          "hit_rate": 1.0,
+          "lower": 0.55,
+          "mean_probability": 0.5570007128,
+          "n": 2,
+          "upper": 0.6,
+          "wilson95": [
+            0.3423802275,
+            1.0
+          ]
+        },
+        {
+          "hit_rate": 0.2,
+          "lower": 0.65,
+          "mean_probability": 0.7470326042,
+          "n": 5,
+          "upper": 1.0,
+          "wilson95": [
+            0.0362241086,
+            0.6244653702
+          ]
+        }
+      ],
+      "rmse": 15.7415448317,
+      "roi": -0.1409090909,
+      "segment": "6-10",
+      "units_minus110": -2.8181818182,
+      "wilson95": [
+        0.2581978583,
+        0.6579146575
+      ],
+      "wins": 9
+    },
+    {
+      "auc": 0.5205282113,
+      "bets": 183,
+      "bias_actual_minus_forecast": 1.791212911,
+      "brier": 0.2599672734,
+      "candidate": "CONTROLLED_LOGIT",
+      "ece": 0.1034316624,
+      "hit_rate": 0.5355191257,
+      "interval_coverage": {
+        "0.8": 0.8306010929,
+        "0.9": 0.9234972678
+      },
+      "log_loss": 0.7141753842,
+      "losses": 85,
+      "mae": 13.2908605499,
+      "market": "TOTAL",
+      "mean_interval_width": {
+        "0.8": 44.0755565039,
+        "0.9": 59.9228174783
+      },
+      "n": 183,
+      "pushes": 0,
+      "reliability": [
+        {
+          "hit_rate": 0.5357142857,
+          "lower": 0.0,
+          "mean_probability": 0.4038940623,
+          "n": 84,
+          "upper": 0.45,
+          "wilson95": [
+            0.4298471594,
+            0.6384577172
+          ]
+        },
+        {
+          "hit_rate": 0.5185185185,
+          "lower": 0.45,
+          "mean_probability": 0.4725786404,
+          "n": 27,
+          "upper": 0.5,
+          "wilson95": [
+            0.3398561575,
+            0.6925677302
+          ]
+        },
+        {
+          "hit_rate": 0.5172413793,
+          "lower": 0.5,
+          "mean_probability": 0.5204853437,
+          "n": 29,
+          "upper": 0.55,
+          "wilson95": [
+            0.3443102188,
+            0.6861390985
+          ]
+        },
+        {
+          "hit_rate": 1.0,
+          "lower": 0.55,
+          "mean_probability": 0.5907847159,
+          "n": 1,
+          "upper": 0.6,
+          "wilson95": [
+            0.2065493144,
+            1.0
+          ]
+        },
+        {
+          "hit_rate": 0.4285714286,
+          "lower": 0.6,
+          "mean_probability": 0.6332817645,
+          "n": 7,
+          "upper": 0.65,
+          "wilson95": [
+            0.1582198553,
+            0.7495416355
+          ]
+        },
+        {
+          "hit_rate": 0.5714285714,
+          "lower": 0.65,
+          "mean_probability": 0.705098747,
+          "n": 35,
+          "upper": 1.0,
+          "wilson95": [
+            0.4085741114,
+            0.7201543182
+          ]
+        }
+      ],
+      "rmse": 16.9352389216,
+      "roi": 0.0223546945,
+      "segment": "11-rest",
+      "units_minus110": 4.0909090909,
+      "wilson95": [
+        0.4632724732,
+        0.6063052323
+      ],
+      "wins": 98
+    },
+    {
+      "auc": 0.8958333333,
+      "bets": 20,
+      "bias_actual_minus_forecast": 5.3620235666,
+      "brier": 0.2140571177,
+      "candidate": "CONDITIONAL_UNCERTAINTY_LOGIT",
+      "ece": 0.1775686594,
+      "hit_rate": 0.6,
+      "interval_coverage": {
+        "0.8": 0.8,
+        "0.9": 0.9
+      },
+      "log_loss": 0.6203269307,
+      "losses": 8,
+      "mae": 11.5862677449,
+      "market": "TOTAL",
+      "mean_interval_width": {
+        "0.8": 40.1260800761,
+        "0.9": 53.7427087095
+      },
+      "n": 20,
+      "pushes": 0,
+      "reliability": [
+        {
+          "hit_rate": 0.2,
+          "lower": 0.45,
+          "mean_probability": 0.4727442952,
+          "n": 5,
+          "upper": 0.5,
+          "wilson95": [
+            0.0362241086,
+            0.6244653702
+          ]
+        },
+        {
+          "hit_rate": 0.6363636364,
+          "lower": 0.55,
+          "mean_probability": 0.580649623,
+          "n": 11,
+          "upper": 0.6,
+          "wilson95": [
+            0.3538011745,
+            0.848335289
+          ]
+        },
+        {
+          "hit_rate": 1.0,
+          "lower": 0.6,
+          "mean_probability": 0.6063006085,
+          "n": 4,
+          "upper": 0.65,
+          "wilson95": [
+            0.5101091635,
+            1.0
+          ]
+        }
+      ],
+      "rmse": 13.951830491,
+      "roi": 0.1454545455,
+      "segment": "1-5",
+      "units_minus110": 2.9090909091,
+      "wilson95": [
+        0.3865815008,
+        0.7811934676
+      ],
+      "wins": 12
+    },
+    {
+      "auc": 0.3186813187,
+      "bets": 20,
+      "bias_actual_minus_forecast": 6.8565539625,
+      "brier": 0.2616079535,
+      "candidate": "CONDITIONAL_UNCERTAINTY_LOGIT",
+      "ece": 0.1749199407,
+      "hit_rate": 0.65,
+      "interval_coverage": {
+        "0.8": 0.75,
+        "0.9": 0.85
+      },
+      "log_loss": 0.7164946589,
+      "losses": 7,
+      "mae": 12.87786357,
+      "market": "TOTAL",
+      "mean_interval_width": {
+        "0.8": 40.9955678852,
+        "0.9": 54.9784300548
+      },
+      "n": 20,
+      "pushes": 0,
+      "reliability": [
+        {
+          "hit_rate": 1.0,
+          "lower": 0.45,
+          "mean_probability": 0.4569741283,
+          "n": 5,
+          "upper": 0.5,
+          "wilson95": [
+            0.5655175352,
+            1.0
+          ]
+        },
+        {
+          "hit_rate": 0.3333333333,
+          "lower": 0.5,
+          "mean_probability": 0.5439691237,
+          "n": 3,
+          "upper": 0.55,
+          "wilson95": [
+            0.0614919447,
+            0.7923403992
+          ]
+        },
+        {
+          "hit_rate": 0.5833333333,
+          "lower": 0.55,
+          "mean_probability": 0.5707198263,
+          "n": 12,
+          "upper": 0.6,
+          "wilson95": [
+            0.3195113125,
+            0.8067396863
+          ]
+        }
+      ],
+      "rmse": 17.1302132845,
+      "roi": 0.2409090909,
+      "segment": "6-10",
+      "units_minus110": 4.8181818182,
+      "wilson95": [
+        0.4328542767,
+        0.8188081759
+      ],
+      "wins": 13
+    },
+    {
+      "auc": 0.4545997611,
+      "bets": 183,
+      "bias_actual_minus_forecast": 1.1767933708,
+      "brier": 0.2586657934,
+      "candidate": "CONDITIONAL_UNCERTAINTY_LOGIT",
+      "ece": 0.0799836755,
+      "hit_rate": 0.5081967213,
+      "interval_coverage": {
+        "0.8": 0.8196721311,
+        "0.9": 0.9508196721
+      },
+      "log_loss": 0.7107800146,
+      "losses": 90,
+      "mae": 13.2759299991,
+      "market": "TOTAL",
+      "mean_interval_width": {
+        "0.8": 45.4131084054,
+        "0.9": 60.7286342481
+      },
+      "n": 183,
+      "pushes": 0,
+      "reliability": [
+        {
+          "hit_rate": 0.5555555556,
+          "lower": 0.0,
+          "mean_probability": 0.4062907886,
+          "n": 63,
+          "upper": 0.45,
+          "wilson95": [
+            0.4331963824,
+            0.6715290399
+          ]
+        },
+        {
+          "hit_rate": 0.5,
+          "lower": 0.45,
+          "mean_probability": 0.4736744084,
+          "n": 58,
+          "upper": 0.5,
+          "wilson95": [
+            0.3753827301,
+            0.6246172699
+          ]
+        },
+        {
+          "hit_rate": 0.5,
+          "lower": 0.5,
+          "mean_probability": 0.5212235663,
+          "n": 52,
+          "upper": 0.55,
+          "wilson95": [
+            0.3688586296,
+            0.6311413704
+          ]
+        },
+        {
+          "hit_rate": 0.3,
+          "lower": 0.55,
+          "mean_probability": 0.5602822537,
+          "n": 10,
+          "upper": 0.6,
+          "wilson95": [
+            0.1077912674,
+            0.6032218525
+          ]
+        }
+      ],
+      "rmse": 16.7574318912,
+      "roi": -0.0298062593,
+      "segment": "11-rest",
+      "units_minus110": -5.4545454545,
+      "wilson95": [
+        0.4363438544,
+        0.5797125392
+      ],
+      "wins": 93
+    },
+    {
+      "auc": 0.2619047619,
+      "bets": 20,
+      "bias_actual_minus_forecast": -2.5110822636,
+      "brier": 0.2420707995,
+      "candidate": "MARKET_RESIDUAL_RIDGE",
+      "ece": 0.2232591653,
+      "hit_rate": 0.7,
+      "interval_coverage": {
+        "0.8": 0.7,
+        "0.9": 0.8
+      },
+      "log_loss": 0.6848569179,
+      "losses": 6,
+      "mae": 15.6704710293,
+      "market": "TOTAL",
+      "mean_interval_width": {
+        "0.8": 42.7778532987,
+        "0.9": 54.1790022315
+      },
+      "n": 20,
+      "pushes": 0,
+      "reliability": [
+        {
+          "hit_rate": 0.8333333333,
+          "lower": 0.55,
+          "mean_probability": 0.5862506938,
+          "n": 6,
+          "upper": 0.6,
+          "wilson95": [
+            0.4364971778,
+            0.9699466303
+          ]
+        },
+        {
+          "hit_rate": 0.7777777778,
+          "lower": 0.6,
+          "mean_probability": 0.6202243043,
+          "n": 9,
+          "upper": 0.65,
+          "wilson95": [
+            0.4525889691,
+            0.9367748929
+          ]
+        },
+        {
+          "hit_rate": 0.4,
+          "lower": 0.65,
+          "mean_probability": 0.7129412414,
+          "n": 5,
+          "upper": 1.0,
+          "wilson95": [
+            0.1176207742,
+            0.7692757187
+          ]
+        }
+      ],
+      "rmse": 21.5759048196,
+      "roi": 0.3363636364,
+      "segment": "1-5",
+      "units_minus110": 6.7272727273,
+      "wilson95": [
+        0.4810271816,
+        0.8545227551
+      ],
+      "wins": 14
+    },
+    {
+      "auc": 0.4242424242,
+      "bets": 20,
+      "bias_actual_minus_forecast": -2.580418546,
+      "brier": 0.2742207225,
+      "candidate": "MARKET_RESIDUAL_RIDGE",
+      "ece": 0.1491178337,
+      "hit_rate": 0.45,
+      "interval_coverage": {
+        "0.8": 0.65,
+        "0.9": 0.8
+      },
+      "log_loss": 0.7431072695,
+      "losses": 11,
+      "mae": 15.2265634432,
+      "market": "TOTAL",
+      "mean_interval_width": {
+        "0.8": 48.3529030958,
+        "0.9": 61.1155855131
+      },
+      "n": 20,
+      "pushes": 0,
+      "reliability": [
+        {
+          "hit_rate": 0.4666666667,
+          "lower": 0.55,
+          "mean_probability": 0.5790221037,
+          "n": 15,
+          "upper": 0.6,
+          "wilson95": [
+            0.2480953537,
+            0.6988301997
+          ]
+        },
+        {
+          "hit_rate": 0.4,
+          "lower": 0.65,
+          "mean_probability": 0.6594050236,
+          "n": 5,
+          "upper": 1.0,
+          "wilson95": [
+            0.1176207742,
+            0.7692757187
+          ]
+        }
+      ],
+      "rmse": 19.274930404,
+      "roi": -0.1409090909,
+      "segment": "6-10",
+      "units_minus110": -2.8181818182,
+      "wilson95": [
+        0.2581978583,
+        0.6579146575
+      ],
+      "wins": 9
+    },
+    {
+      "auc": 0.463277512,
+      "bets": 183,
+      "bias_actual_minus_forecast": 0.6358602778,
+      "brier": 0.2550323771,
+      "candidate": "MARKET_RESIDUAL_RIDGE",
+      "ece": 0.0632789066,
+      "hit_rate": 0.4808743169,
+      "interval_coverage": {
+        "0.8": 0.8415300546,
+        "0.9": 0.912568306
+      },
+      "log_loss": 0.7032869356,
+      "losses": 95,
+      "mae": 12.3001074366,
+      "market": "TOTAL",
+      "mean_interval_width": {
+        "0.8": 43.6056168965,
+        "0.9": 55.2449560993
+      },
+      "n": 183,
+      "pushes": 0,
+      "reliability": [
+        {
+          "hit_rate": 0.5079365079,
+          "lower": 0.5,
+          "mean_probability": 0.5224005273,
+          "n": 126,
+          "upper": 0.55,
+          "wilson95": [
+            0.4217096501,
+            0.5936937505
+          ]
+        },
+        {
+          "hit_rate": 0.3488372093,
+          "lower": 0.55,
+          "mean_probability": 0.5686968754,
+          "n": 43,
+          "upper": 0.6,
+          "wilson95": [
+            0.2241859,
+            0.4982821801
+          ]
+        },
+        {
+          "hit_rate": 0.6428571429,
+          "lower": 0.6,
+          "mean_probability": 0.6211708692,
+          "n": 14,
+          "upper": 0.65,
+          "wilson95": [
+            0.387644231,
+            0.8365526825
+          ]
+        }
+      ],
+      "rmse": 15.3679054345,
+      "roi": -0.0819672131,
+      "segment": "11-rest",
+      "units_minus110": -15.0,
+      "wilson95": [
+        0.4096251522,
+        0.5529099294
+      ],
+      "wins": 88
+    }
+  ],
+  "prior_only_base_rate": [
+    {
+      "auc": 0.4797906602,
+      "bets": 223,
+      "bias_actual_minus_forecast": 1.1707283401,
+      "brier": 0.2555241673,
+      "ece": 0.0576037934,
+      "hit_rate": 0.4843049327,
+      "interval_coverage": {
+        "0.8": 0.8251121076,
+        "0.9": 0.9686098655
+      },
+      "log_loss": 0.7043557564,
+      "losses": 115,
+      "mae": 12.2590088087,
+      "market": "ATS",
+      "mean_interval_width": {
+        "0.8": 44.2244499128,
+        "0.9": 62.9943372029
+      },
+      "n": 223,
+      "pushes": 0,
+      "reliability": [
+        {
+          "hit_rate": 0.4848484848,
+          "lower": 0.5,
+          "mean_probability": 0.520276642,
+          "n": 165,
+          "upper": 0.55,
+          "wilson95": [
+            0.4098084433,
+            0.560577977
+          ]
+        },
+        {
+          "hit_rate": 0.4827586207,
+          "lower": 0.6,
+          "mean_probability": 0.6034482759,
+          "n": 58,
+          "upper": 0.65,
+          "wilson95": [
+            0.3592818542,
+            0.6083773822
+          ]
+        }
+      ],
+      "rmse": 15.0939114972,
+      "roi": -0.0754178557,
+      "smoothing": "(prior wins+1)/(prior decided+2)",
+      "units_minus110": -16.8181818182,
+      "wilson95": [
+        0.4195358276,
+        0.5496056157
+      ],
+      "wins": 108
+    },
+    {
+      "auc": 0.4511299435,
+      "bets": 223,
+      "bias_actual_minus_forecast": 2.0615459078,
+      "brier": 0.2557884226,
+      "ece": 0.08462072,
+      "hit_rate": 0.5291479821,
+      "interval_coverage": {
+        "0.8": 0.8340807175,
+        "0.9": 0.932735426
+      },
+      "log_loss": 0.7048453622,
+      "losses": 105,
+      "mae": 13.0886897584,
+      "market": "TOTAL",
+      "mean_interval_width": {
+        "0.8": 44.0582821465,
+        "0.9": 59.9026009559
+      },
+      "n": 223,
+      "pushes": 0,
+      "reliability": [
+        {
+          "hit_rate": 0.5689655172,
+          "lower": 0.0,
+          "mean_probability": 0.4137931034,
+          "n": 58,
+          "upper": 0.45,
+          "wilson95": [
+            0.4411810457,
+            0.6881820087
+          ]
+        },
+        {
+          "hit_rate": 0.5486725664,
+          "lower": 0.45,
+          "mean_probability": 0.4944463414,
+          "n": 113,
+          "upper": 0.5,
+          "wilson95": [
+            0.4568279072,
+            0.6373167578
+          ]
+        },
+        {
+          "hit_rate": 0.4423076923,
+          "lower": 0.5,
+          "mean_probability": 0.5142857143,
+          "n": 52,
+          "upper": 0.55,
+          "wilson95": [
+            0.3159505682,
+            0.5766023821
+          ]
+        }
+      ],
+      "rmse": 16.5595087286,
+      "roi": 0.0101916021,
+      "smoothing": "(prior wins+1)/(prior decided+2)",
+      "units_minus110": 2.2727272727,
+      "wilson95": [
+        0.463696739,
+        0.593612009
+      ],
+      "wins": 118
+    }
+  ],
+  "rank_overlap": [
+    {
+      "candidate": "FROZEN_V28",
+      "includes_direction": true,
+      "jaccard": 1.0,
+      "same_selections": 5,
+      "week": 6
+    },
+    {
+      "candidate": "FIXED_25_PERCENT_MODEL",
+      "includes_direction": true,
+      "jaccard": 1.0,
+      "same_selections": 5,
+      "week": 6
+    },
+    {
+      "candidate": "EDGE_LOGIT",
+      "includes_direction": true,
+      "jaccard": 0.0,
+      "same_selections": 0,
+      "week": 6
+    },
+    {
+      "candidate": "CONTROLLED_LOGIT",
+      "includes_direction": true,
+      "jaccard": 0.0,
+      "same_selections": 0,
+      "week": 6
+    },
+    {
+      "candidate": "CONDITIONAL_UNCERTAINTY_LOGIT",
+      "includes_direction": true,
+      "jaccard": 0.0,
+      "same_selections": 0,
+      "week": 6
+    },
+    {
+      "candidate": "MARKET_RESIDUAL_RIDGE",
+      "includes_direction": true,
+      "jaccard": 0.0,
+      "same_selections": 0,
+      "week": 6
+    },
+    {
+      "candidate": "FROZEN_V28",
+      "includes_direction": true,
+      "jaccard": 1.0,
+      "same_selections": 5,
+      "week": 7
+    },
+    {
+      "candidate": "FIXED_25_PERCENT_MODEL",
+      "includes_direction": true,
+      "jaccard": 1.0,
+      "same_selections": 5,
+      "week": 7
+    },
+    {
+      "candidate": "EDGE_LOGIT",
+      "includes_direction": true,
+      "jaccard": 0.0,
+      "same_selections": 0,
+      "week": 7
+    },
+    {
+      "candidate": "CONTROLLED_LOGIT",
+      "includes_direction": true,
+      "jaccard": 0.0,
+      "same_selections": 0,
+      "week": 7
+    },
+    {
+      "candidate": "CONDITIONAL_UNCERTAINTY_LOGIT",
+      "includes_direction": true,
+      "jaccard": 0.0,
+      "same_selections": 0,
+      "week": 7
+    },
+    {
+      "candidate": "MARKET_RESIDUAL_RIDGE",
+      "includes_direction": true,
+      "jaccard": 0.0,
+      "same_selections": 0,
+      "week": 7
+    },
+    {
+      "candidate": "FROZEN_V28",
+      "includes_direction": true,
+      "jaccard": 1.0,
+      "same_selections": 5,
+      "week": 8
+    },
+    {
+      "candidate": "FIXED_25_PERCENT_MODEL",
+      "includes_direction": true,
+      "jaccard": 1.0,
+      "same_selections": 5,
+      "week": 8
+    },
+    {
+      "candidate": "EDGE_LOGIT",
+      "includes_direction": true,
+      "jaccard": 0.0,
+      "same_selections": 0,
+      "week": 8
+    },
+    {
+      "candidate": "CONTROLLED_LOGIT",
+      "includes_direction": true,
+      "jaccard": 0.0,
+      "same_selections": 0,
+      "week": 8
+    },
+    {
+      "candidate": "CONDITIONAL_UNCERTAINTY_LOGIT",
+      "includes_direction": true,
+      "jaccard": 0.0,
+      "same_selections": 0,
+      "week": 8
+    },
+    {
+      "candidate": "MARKET_RESIDUAL_RIDGE",
+      "includes_direction": true,
+      "jaccard": 0.0,
+      "same_selections": 0,
+      "week": 8
+    },
+    {
+      "candidate": "FROZEN_V28",
+      "includes_direction": true,
+      "jaccard": 1.0,
+      "same_selections": 5,
+      "week": 9
+    },
+    {
+      "candidate": "FIXED_25_PERCENT_MODEL",
+      "includes_direction": true,
+      "jaccard": 1.0,
+      "same_selections": 5,
+      "week": 9
+    },
+    {
+      "candidate": "EDGE_LOGIT",
+      "includes_direction": true,
+      "jaccard": 0.0,
+      "same_selections": 0,
+      "week": 9
+    },
+    {
+      "candidate": "CONTROLLED_LOGIT",
+      "includes_direction": true,
+      "jaccard": 0.0,
+      "same_selections": 0,
+      "week": 9
+    },
+    {
+      "candidate": "CONDITIONAL_UNCERTAINTY_LOGIT",
+      "includes_direction": true,
+      "jaccard": 0.0,
+      "same_selections": 0,
+      "week": 9
+    },
+    {
+      "candidate": "MARKET_RESIDUAL_RIDGE",
+      "includes_direction": true,
+      "jaccard": 0.0,
+      "same_selections": 0,
+      "week": 9
+    }
+  ],
+  "status": "DESCRIPTIVE_RESEARCH_ONLY_NO_NEW_CANDIDATES",
+  "threshold_counts": {
+    "confidence3": {
+      "authorized": false,
+      "gate": {
+        "bucket_min_decided": 500,
+        "bucket_min_weeks": 8,
+        "predicted_probability_min": 0.55,
+        "wilson95_lower_min": 0.5238095238
+      },
+      "minimum_n": 500,
+      "minimum_wins_for_wilson_gate": 284,
+      "observed_rate": 0.568
+    },
+    "confidence4": {
+      "authorized": false,
+      "gate": {
+        "bucket_min_decided": 500,
+        "bucket_min_weeks": 12,
+        "predicted_probability_min": 0.6,
+        "wilson95_lower_min": 0.55
+      },
+      "minimum_n": 500,
+      "minimum_wins_for_wilson_gate": 297,
+      "observed_rate": 0.594
+    },
+    "confidence5": {
+      "authorized": false,
+      "gate": {
+        "bucket_min_decided": 800,
+        "bucket_min_weeks": 16,
+        "predicted_probability_min": 0.65,
+        "wilson95_lower_min": 0.6
+      },
+      "minimum_n": 800,
+      "minimum_wins_for_wilson_gate": 508,
+      "observed_rate": 0.635
+    }
+  }
+}
