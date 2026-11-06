@@ -1,0 +1,67 @@
+{
+  "created_at_utc": "2026-10-30T13:15:27.728782+00:00",
+  "parent_head": "8631d45f3bfed387f793aa86cccf2886fde8c7a4",
+  "files": [
+    {
+      "path": "docs/CI_ACTIVATION_RESULT_20261030.md",
+      "sha256": "194d6769482a5e00b8a687ec801e9f8595ed2acf546b0370f14abacd54e8cb20"
+    },
+    {
+      "path": "outputs/2026-ci-merge-gates/20261030-authorized-activation/activate_ci.py",
+      "sha256": "e100a7bd09e32a2c6e0c5ee4c879e1d0ac4bfe70820203a208222e784b5254ca"
+    },
+    {
+      "path": "outputs/2026-ci-merge-gates/20261030-authorized-activation/disable-20261030T130304109258Z.json",
+      "sha256": "dc6bd8048d2178d76e41309e0cb424cd218fc6cf76a6d0e327aad854dd82b442"
+    },
+    {
+      "path": "outputs/2026-ci-merge-gates/20261030-authorized-activation/enable-20261030T130324081940Z.json",
+      "sha256": "7089b564d8b221c074ebddba427cee99078c8a1802ebc23c38f7281cf4cb1f6a"
+    },
+    {
+      "path": "outputs/2026-ci-merge-gates/20261030-authorized-activation/failed-run-log-custody.json",
+      "sha256": "91e043dfbb66a3fc020df51939cfc90222f6688157d7324800e67152ee8808ca"
+    },
+    {
+      "path": "outputs/2026-ci-merge-gates/20261030-authorized-activation/final-state-and-pr-notices.json",
+      "sha256": "175964cdb47712a9c0f18b72bdeef3f86de5a232e38b93c21e6c13485b11e8f4"
+    },
+    {
+      "path": "outputs/2026-ci-merge-gates/20261030-authorized-activation/pr44-run-41060138183-job-124077512447.log.gz",
+      "sha256": "26982dc2bed7108f3a70d5ceaca04ff42a4a39735c215b42b8f019c9c4a5670f"
+    },
+    {
+      "path": "outputs/2026-ci-merge-gates/20261030-authorized-activation/pr45-run-41060143806-job-124077530879.log.gz",
+      "sha256": "0947c200ae5b526978bcaaf64210f490e167a4115fd281aefa9b1ef3e7fbf609"
+    },
+    {
+      "path": "outputs/2026-ci-merge-gates/20261030-authorized-activation/preflight-20261030T130250458116Z.json",
+      "sha256": "29a43991f8a6bff4864c307621e81cf8661226cbf5ff8bb1f60bd1bb6633c580"
+    },
+    {
+      "path": "outputs/2026-ci-merge-gates/20261030-authorized-activation/preservation-check.json",
+      "sha256": "0652148a87cc688d9fea4f9176dbe6738f974843b0fcc6076c001358c3af64b9"
+    },
+    {
+      "path": "outputs/2026-ci-merge-gates/20261030-authorized-activation/status-20261030T130419048791Z.json",
+      "sha256": "2d8e931a8ec7f6de685ab7422db238e1b50a5a16b5e0ba147f067b1b7bb25d9f"
+    },
+    {
+      "path": "outputs/2026-ci-merge-gates/20261030-authorized-activation/status-20261030T130530945001Z.json",
+      "sha256": "5d5f026a358669c50ee6fe4fd53c0a6e7c60a2138e0194cbcf1d86e57bea77cf"
+    },
+    {
+      "path": "outputs/2026-ci-merge-gates/20261030-authorized-activation/status-20261030T130659451250Z.json",
+      "sha256": "65497b0419349f4d70dc04426c8a2fe46aebbd358b1152053b7e65d45cebfc83"
+    },
+    {
+      "path": "outputs/2026-ci-merge-gates/20261030-authorized-activation/trigger-20261030T130347177286Z.json",
+      "sha256": "c8ef5653ce33903e245cdf2b975b59bcaed3d96479026f6b3b18cb2f4d27c2bc"
+    }
+  ],
+  "all_additive": true,
+  "diff_check_exit": 0,
+  "ci_log_hashes_verified": true,
+  "remote_push": false,
+  "review": "Activation helper, report, source identities, failure excerpts, all endpoint methods, workflow states, hashes and inventories inspected; raw receipts retained."
+}

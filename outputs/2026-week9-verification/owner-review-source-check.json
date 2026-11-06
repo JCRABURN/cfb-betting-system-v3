@@ -1,0 +1,11 @@
+{
+  "verified_at_utc": "2026-10-28T13:55:03.892355+00:00",
+  "verified_source_references": 17,
+  "unarchived_references": [
+    {
+      "url": "https://navysports.com/news/2026/10/26/football-navy-and-5-6-notre-dame-set-for-99th-meeting-saturday-at-gillette-stadium.aspx",
+      "source_status": "WEB_TOOL_RETRIEVAL;DIRECT_ARCHIVE_404;AVAILABILITY_UNCERTAINTY"
+    }
+  ],
+  "owner_approval": "PENDING"
+}

@@ -1,0 +1,37 @@
+{
+  "endpoint": "collaborators?per_page=100",
+  "requested_at_utc": "2026-10-29T21:38:50.932806+00:00",
+  "received_at_utc": "2026-10-29T21:38:51.298712+00:00",
+  "http_status": 200,
+  "body": [
+    {
+      "login": "JCRABURN",
+      "id": 215523089,
+      "node_id": "U_kgDODNifEQ",
+      "avatar_url": "https://avatars.githubusercontent.com/u/215523089?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/JCRABURN",
+      "html_url": "https://github.com/JCRABURN",
+      "followers_url": "https://api.github.com/users/JCRABURN/followers",
+      "following_url": "https://api.github.com/users/JCRABURN/following{/other_user}",
+      "gists_url": "https://api.github.com/users/JCRABURN/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/JCRABURN/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/JCRABURN/subscriptions",
+      "organizations_url": "https://api.github.com/users/JCRABURN/orgs",
+      "repos_url": "https://api.github.com/users/JCRABURN/repos",
+      "events_url": "https://api.github.com/users/JCRABURN/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/JCRABURN/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false,
+      "permissions": {
+        "admin": true,
+        "maintain": true,
+        "push": true,
+        "triage": true,
+        "pull": true
+      },
+      "role_name": "admin"
+    }
+  ]
+}

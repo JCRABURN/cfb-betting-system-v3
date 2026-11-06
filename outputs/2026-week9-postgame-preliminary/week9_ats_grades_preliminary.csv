@@ -1,0 +1,55 @@
+game_id,away,home,selection,locked_pick_spread,away_final,home_final,actual_home_margin,cover_margin,grade,home_margin_forecast_error,research_rank,frozen_confidence,result_source,verification_status
+401856733,Missouri,Arkansas,Arkansas,9.5,34,10,-24.000000,-14.500000,LOSS,-17.154949,34,1,https://www.on3.com/college/football/scoreboard/?phase=week-9&year=2026,PRELIMINARY_UNRECONCILED
+401856734,Florida,Georgia,Florida,11.5,8,27,19.000000,-7.500000,LOSS,9.022849,41,1,https://www.on3.com/college/football/scoreboard/?phase=week-9&year=2026,PRELIMINARY_UNRECONCILED
+401856735,Auburn,Ole Miss,Auburn,13.5,15,45,30.000000,-16.500000,LOSS,23.360602,10,1,https://www.on3.com/college/football/scoreboard/?phase=week-9&year=2026,PRELIMINARY_UNRECONCILED
+401856736,South Carolina,Oklahoma,South Carolina,5.5,42,25,-17.000000,22.500000,WIN,-22.456788,54,1,https://www.on3.com/college/football/scoreboard/?phase=week-9&year=2026,PRELIMINARY_UNRECONCILED
+401856737,Mississippi State,Texas,Mississippi State,20.5,3,31,28.000000,-7.500000,LOSS,22.542597,2,1,https://www.on3.com/college/football/scoreboard/?phase=week-9&year=2026,PRELIMINARY_UNRECONCILED
+401856842,Arizona,Texas Tech,Arizona,3.5,26,34,8.000000,-4.500000,LOSS,8.790679,19,1,https://www.on3.com/college/football/scoreboard/?phase=week-9&year=2026,PRELIMINARY_UNRECONCILED
+401856843,Arizona State,BYU,Arizona State,16.5,20,27,7.000000,9.500000,WIN,-6.174121,26,1,https://www.on3.com/college/football/scoreboard/?phase=week-9&year=2026,PRELIMINARY_UNRECONCILED
+401856844,Baylor,UCF,Baylor,1.5,41,9,-32.000000,33.500000,WIN,-33.026233,51,1,https://www.on3.com/college/football/scoreboard/?phase=week-9&year=2026,PRELIMINARY_UNRECONCILED
+401856845,Kansas,TCU,TCU,-5.5,16,22,6.000000,0.500000,WIN,-0.232960,47,1,https://www.on3.com/college/football/scoreboard/?phase=week-9&year=2026,PRELIMINARY_UNRECONCILED
+401856846,Kansas State,Colorado,Colorado,2.5,24,27,3.000000,5.500000,WIN,2.411367,30,1,https://www.on3.com/college/football/scoreboard/?phase=week-9&year=2026,PRELIMINARY_UNRECONCILED
+401856847,Oklahoma State,Iowa State,Iowa State,8.5,49,51,2.000000,10.500000,WIN,3.455486,7,1,https://www.on3.com/college/football/scoreboard/?phase=week-9&year=2026,PRELIMINARY_UNRECONCILED
+401856848,Utah,Cincinnati,Cincinnati,6.5,49,25,-24.000000,-17.500000,LOSS,-20.953005,25,1,https://www.on3.com/college/football/scoreboard/?phase=week-9&year=2026,PRELIMINARY_UNRECONCILED
+401858277,California,NC State,NC State,-6.5,10,31,21.000000,14.500000,WIN,10.520072,20,1,https://www.on3.com/college/football/scoreboard/?phase=week-9&year=2026,PRELIMINARY_UNRECONCILED
+401858278,SMU,Syracuse,Syracuse,10.5,27,30,3.000000,13.500000,WIN,6.319246,6,1,https://www.on3.com/college/football/scoreboard/?phase=week-9&year=2026,PRELIMINARY_UNRECONCILED
+401858279,Boston College,Duke,Duke,-7.5,2,47,45.000000,37.500000,WIN,36.776763,48,1,https://www.on3.com/college/football/scoreboard/?phase=week-9&year=2026,PRELIMINARY_UNRECONCILED
+401858280,Clemson,Florida State,Clemson,6.5,36,24,-12.000000,18.500000,WIN,-16.339744,35,1,https://www.on3.com/college/football/scoreboard/?phase=week-9&year=2026,PRELIMINARY_UNRECONCILED
+401858281,Georgia Tech,Pittsburgh,Pittsburgh,-7.5,11,34,23.000000,15.500000,WIN,12.234412,27,1,https://www.on3.com/college/football/scoreboard/?phase=week-9&year=2026,PRELIMINARY_UNRECONCILED
+401858282,Miami,North Carolina,North Carolina,14.5,38,35,-3.000000,11.500000,WIN,4.842774,12,1,https://www.on3.com/college/football/scoreboard/?phase=week-9&year=2026,PRELIMINARY_UNRECONCILED
+401858283,Stanford,Louisville,Stanford,22.5,24,52,28.000000,-5.500000,LOSS,11.977729,13,1,https://www.on3.com/college/football/scoreboard/?phase=week-9&year=2026,PRELIMINARY_UNRECONCILED
+401858284,Virginia,Wake Forest,Virginia,12.5,7,51,44.000000,-31.500000,LOSS,33.174289,39,1,https://www.on3.com/college/football/scoreboard/?phase=week-9&year=2026,PRELIMINARY_UNRECONCILED
+401858501,Minnesota,Indiana,Minnesota,20.5,16,23,7.000000,13.500000,WIN,-7.700257,15,1,https://www.on3.com/college/football/scoreboard/?phase=week-9&year=2026,PRELIMINARY_UNRECONCILED
+401858502,Wisconsin,Iowa,Wisconsin,3.5,0,30,30.000000,-26.500000,LOSS,29.258993,33,1,https://www.on3.com/college/football/scoreboard/?phase=week-9&year=2026,PRELIMINARY_UNRECONCILED
+401858503,Illinois,Maryland,Maryland,2.5,20,17,-3.000000,-0.500000,LOSS,-5.034554,18,1,https://www.on3.com/college/football/scoreboard/?phase=week-9&year=2026,PRELIMINARY_UNRECONCILED
+401858504,Washington,Nebraska,Nebraska,-7.5,17,10,-7.000000,-14.500000,LOSS,-16.384476,37,1,https://www.on3.com/college/football/scoreboard/?phase=week-9&year=2026,PRELIMINARY_UNRECONCILED
+401858505,Northwestern,Oregon,Northwestern,3.5,26,34,8.000000,-4.500000,LOSS,11.925704,4,1,https://www.on3.com/college/football/scoreboard/?phase=week-9&year=2026,PRELIMINARY_UNRECONCILED
+401858506,Purdue,Penn State,Purdue,7.5,17,31,14.000000,-6.500000,LOSS,7.853794,43,1,https://www.on3.com/college/football/scoreboard/?phase=week-9&year=2026,PRELIMINARY_UNRECONCILED
+401858507,Michigan,Rutgers,Rutgers,14.5,28,21,-7.000000,7.500000,WIN,0.543080,8,1,https://www.on3.com/college/football/scoreboard/?phase=week-9&year=2026,PRELIMINARY_UNRECONCILED
+401858508,Nevada,UCLA,Nevada,22.5,0,27,27.000000,-4.500000,LOSS,10.630283,14,1,https://www.on3.com/college/football/scoreboard/?phase=week-9&year=2026,PRELIMINARY_UNRECONCILED
+401858509,Ohio State,USC,USC,6.5,18,30,12.000000,18.500000,WIN,14.927886,22,1,https://www.on3.com/college/football/scoreboard/?phase=week-9&year=2026,PRELIMINARY_UNRECONCILED
+401859185,Notre Dame,Navy,Navy,30.5,35,13,-22.000000,8.500000,WIN,-11.018978,1,1,https://www.on3.com/college/football/scoreboard/?phase=week-9&year=2026,PRELIMINARY_UNRECONCILED
+401860908,Texas State,Boise State,Texas State,11.5,45,46,1.000000,10.500000,WIN,-8.879847,40,1,https://www.on3.com/college/football/scoreboard/?phase=week-9&year=2026,PRELIMINARY_UNRECONCILED
+401860909,Washington State,San Diego State,San Diego State,-2.5,20,26,6.000000,3.500000,WIN,0.610721,31,1,https://www.on3.com/college/football/scoreboard/?phase=week-9&year=2026,PRELIMINARY_UNRECONCILED
+401860910,Colorado State,Utah State,Colorado State,6.5,14,31,17.000000,-10.500000,LOSS,14.069735,23,1,https://www.on3.com/college/football/scoreboard/?phase=week-9&year=2026,PRELIMINARY_UNRECONCILED
+401860924,Oregon State,Fresno State,Fresno State,5.5,22,38,16.000000,21.500000,WIN,17.962012,24,1,https://www.on3.com/college/football/scoreboard/?phase=week-9&year=2026,PRELIMINARY_UNRECONCILED
+401861966,UConn,Air Force,Air Force,-2.5,26,35,9.000000,6.500000,WIN,5.997032,50,1,https://www.on3.com/college/football/scoreboard/?phase=week-9&year=2026,PRELIMINARY_UNRECONCILED
+401862812,Florida Atlantic,North Texas,Florida Atlantic,13.5,41,48,7.000000,6.500000,WIN,-6.066872,52,1,https://www.on3.com/college/football/scoreboard/?phase=week-9&year=2026,PRELIMINARY_UNRECONCILED
+401862813,Tulane,Charlotte,Charlotte,10.5,38,31,-7.000000,3.500000,WIN,-2.168009,16,1,https://www.on3.com/college/football/scoreboard/?phase=week-9&year=2026,PRELIMINARY_UNRECONCILED
+401862814,Army,Memphis,Army,6.5,22,49,27.000000,-20.500000,LOSS,21.624500,45,1,https://www.on3.com/college/football/scoreboard/?phase=week-9&year=2026,PRELIMINARY_UNRECONCILED
+401862815,Temple,East Carolina,Temple,5.5,9,17,8.000000,-2.500000,LOSS,3.654633,44,1,https://www.on3.com/college/football/scoreboard/?phase=week-9&year=2026,PRELIMINARY_UNRECONCILED
+401862816,UAB,South Florida,UAB,7.5,10,30,20.000000,-12.500000,LOSS,12.753869,53,1,https://www.on3.com/college/football/scoreboard/?phase=week-9&year=2026,PRELIMINARY_UNRECONCILED
+401864529,New Mexico,San José State,San José State,14.5,21,16,-5.000000,9.500000,WIN,2.271237,5,1,https://www.on3.com/college/football/scoreboard/?phase=week-9&year=2026,PRELIMINARY_UNRECONCILED
+401864530,Northern Illinois,UNLV,Northern Illinois,24.5,24,31,7.000000,17.500000,WIN,-10.625915,9,1,https://www.on3.com/college/football/scoreboard/?phase=week-9&year=2026,PRELIMINARY_UNRECONCILED
+401864531,UTEP,North Dakota State,UTEP,25.5,7,31,24.000000,1.500000,WIN,-0.651328,46,1,https://www.on3.com/college/football/scoreboard/?phase=week-9&year=2026,PRELIMINARY_UNRECONCILED
+401866451,Kent State,Sacramento State,Sacramento State,9.5,10,31,21.000000,30.500000,WIN,23.697818,11,1,https://www.on3.com/college/football/scoreboard/?phase=week-9&year=2026,PRELIMINARY_UNRECONCILED
+401866452,Bowling Green,Western Michigan,Bowling Green,13.5,10,23,13.000000,0.500000,WIN,2.737890,28,1,https://www.on3.com/college/football/scoreboard/?phase=week-9&year=2026,PRELIMINARY_UNRECONCILED
+401869846,App State,Georgia Southern,App State,5.5,3,19,16.000000,-10.500000,LOSS,11.026466,49,1,https://www.on3.com/college/football/scoreboard/?phase=week-9&year=2026,PRELIMINARY_UNRECONCILED
+401869944,Coastal Carolina,Georgia State,Georgia State,-6.5,31,20,-11.000000,-17.500000,LOSS,-20.708868,29,1,https://www.on3.com/college/football/scoreboard/?phase=week-9&year=2026,PRELIMINARY_UNRECONCILED
+401869963,Troy,James Madison,Troy,20.5,24,21,-3.000000,23.500000,WIN,-14.212408,3,1,https://www.on3.com/college/football/scoreboard/?phase=week-9&year=2026,PRELIMINARY_UNRECONCILED
+401871057,Jacksonville State,New Mexico State,New Mexico State,3.5,24,0,-24.000000,-20.500000,LOSS,-22.252306,38,1,https://www.on3.com/college/football/scoreboard/?phase=week-9&year=2026,PRELIMINARY_UNRECONCILED
+401871058,Kennesaw State,Middle Tennessee,Middle Tennessee,-2.5,44,28,-16.000000,-18.500000,LOSS,-23.424605,17,1,https://www.on3.com/college/football/scoreboard/?phase=week-9&year=2026,PRELIMINARY_UNRECONCILED
+401871059,Florida International,Liberty,Florida International,13.5,10,49,39.000000,-25.500000,LOSS,26.947034,42,1,https://www.on3.com/college/football/scoreboard/?phase=week-9&year=2026,PRELIMINARY_UNRECONCILED
+401871095,Southern Miss,UL Monroe,UL Monroe,3.5,35,21,-14.000000,-10.500000,LOSS,-13.350369,32,1,https://www.on3.com/college/football/scoreboard/?phase=week-9&year=2026,PRELIMINARY_UNRECONCILED
+401871096,Marshall,Old Dominion,Old Dominion,2.5,36,23,-13.000000,-10.500000,LOSS,-14.164622,21,1,https://www.on3.com/college/football/scoreboard/?phase=week-9&year=2026,PRELIMINARY_UNRECONCILED
+401871097,Louisiana Tech,South Alabama,South Alabama,5.5,35,20,-15.000000,-9.500000,LOSS,-11.578736,36,1,https://www.on3.com/college/football/scoreboard/?phase=week-9&year=2026,PRELIMINARY_UNRECONCILED

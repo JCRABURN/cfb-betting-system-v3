@@ -1,0 +1,49 @@
+[
+  {
+    "command": [
+      "C:\\Users\\jraburn\\Documents\\GitHub\\cfb-betting-system-v3\\.venv\\Scripts\\python.exe",
+      "-X",
+      "utf8",
+      "-m",
+      "scripts.seal_week8_board",
+      "--verify"
+    ],
+    "exit": 0,
+    "seconds": 0.1869999999180436
+  },
+  {
+    "command": [
+      "C:\\Users\\jraburn\\Documents\\GitHub\\cfb-betting-system-v3\\.venv\\Scripts\\python.exe",
+      "-X",
+      "utf8",
+      "-m",
+      "scripts.week8_scoring_sequence_review",
+      "--verify"
+    ],
+    "exit": 0,
+    "seconds": 0.6409999998286366
+  },
+  {
+    "command": [
+      "C:\\Users\\jraburn\\Documents\\GitHub\\cfb-betting-system-v3\\.venv\\Scripts\\python.exe",
+      "-X",
+      "utf8",
+      "-m",
+      "scripts.pdf_evidence_review"
+    ],
+    "exit": 0,
+    "seconds": 0.25
+  },
+  {
+    "command": [
+      "C:\\Users\\jraburn\\Documents\\GitHub\\cfb-betting-system-v3\\.venv\\Scripts\\python.exe",
+      "-X",
+      "utf8",
+      "-m",
+      "scripts.verify_week9_owner_review",
+      "outputs/2026-week9-owner-review/20261030-friday-morning/owner_review_shortlist.json"
+    ],
+    "exit": 0,
+    "seconds": 0.20300000067800283
+  }
+]

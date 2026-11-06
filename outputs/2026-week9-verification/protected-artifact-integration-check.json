@@ -1,0 +1,14 @@
+{
+  "verified_at_utc": "2026-10-28T13:50:59.466790+00:00",
+  "integration_commit": "bcd1b603dc70b24e0154d5a2f8b5cef5c0bc48ed",
+  "base_pr42": "7f42da36f9aef4666bb715d49babde7ee374defa",
+  "prior_tracked_files": 958,
+  "unchanged_prior_git_blobs": 956,
+  "modified_existing_paths": [
+    ".gitattributes",
+    ".gitignore"
+  ],
+  "deleted_prior_paths": [],
+  "source_database_sha256": "09d0bcda684356001bacf8bc9e42939add56b053f405564d9be924e39c0cf842",
+  "pr43_source_bytes_unchanged": true
+}

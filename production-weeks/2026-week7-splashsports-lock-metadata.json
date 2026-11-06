@@ -1,0 +1,18 @@
+{
+  "season": 2026,
+  "week": 7,
+  "contest_key": "splashsports-cfb-2026-w07",
+  "source": "SplashSports",
+  "authoritative_locked_lines": true,
+  "source_received_at_utc": "2026-10-13T18:07:55Z",
+  "source_timestamp_kind": "file_received",
+  "source_timestamp_provenance": "Owner committed line file in Git commit 68ba62d410ee1bf7aadf3b514559cfbb91abd982 at 2026-10-13T18:07:55Z. This is the latest verifiable file-availability time, not an assertion about an earlier SplashSports capture.",
+  "source_commit_sha": "68ba62d410ee1bf7aadf3b514559cfbb91abd982",
+  "spread_convention": "home_team_spread",
+  "total_convention": "contest_over_under",
+  "game_time_zone": "America/Chicago",
+  "game_count": 59,
+  "raw_file_sha256": "e7bf35fbc13a429474e35539ca8ecc7b91a13c19411d7a050f9dbd91260f0b7b",
+  "canonical_csv_sha256": "e7bf35fbc13a429474e35539ca8ecc7b91a13c19411d7a050f9dbd91260f0b7b",
+  "unlined_fbs_games": []
+}

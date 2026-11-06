@@ -1,0 +1,119 @@
+{
+  "title": "OWNER-APPROVED WEEK 7 CONTEST FIVE",
+  "status": "OWNER_APPROVED_FROZEN",
+  "approval_source": "Owner's explicit approval message in this Codex task; timestamp is earliest verifiable UTC receipt/observation, not a claimed earlier send time.",
+  "approval_timestamp_utc": "2026-10-13T18:57:33Z",
+  "locked_card_sha256": "3561c1cf93debbe0aafcf527b5e9f8abfc60c29589da3ad4f17f3502077ab8ad",
+  "source_line_sha256": "e7bf35fbc13a429474e35539ca8ecc7b91a13c19411d7a050f9dbd91260f0b7b",
+  "model_research_commit_sha": "97a8dfb7ba14842bbf8da1cddfec7a3599b7b8d9",
+  "approval_source_commit_sha": "f6c584f5933819e0076557695c54caf188b93242",
+  "prior_pending_candidate_sha256": "80cd81f62cd2d312269aa3bcce0ac4b64d697eadb01c1c816cd4612d822990bd",
+  "prior_human_review_five_sha256": "992b8ff9649eaa862f2b14f860198d4aee5e055759aaa9128886698faf9f1b40",
+  "selections": [
+    {
+      "rank": 1,
+      "game_id": 401864524,
+      "locked_line_id": 35,
+      "game": "UNLV at Air Force",
+      "selection": "Air Force",
+      "splashsports_locked_line": 1.5,
+      "market": "ATS",
+      "within_market_research_rank": 4,
+      "research_score_not_calibrated": 0.5551996986135361,
+      "model": {
+        "selected_edge_points": 11.039939722707235,
+        "projected_home_margin": 9.539939722707235
+      },
+      "human_confidence_1_to_5": 3,
+      "approval_timestamp_utc": "2026-10-13T18:57:33Z",
+      "locked_card_sha256": "3561c1cf93debbe0aafcf527b5e9f8abfc60c29589da3ad4f17f3502077ab8ad",
+      "source_line_sha256": "e7bf35fbc13a429474e35539ca8ecc7b91a13c19411d7a050f9dbd91260f0b7b",
+      "model_research_commit_sha": "97a8dfb7ba14842bbf8da1cddfec7a3599b7b8d9",
+      "approval_source_commit_sha": "f6c584f5933819e0076557695c54caf188b93242"
+    },
+    {
+      "rank": 2,
+      "game_id": 401858488,
+      "locked_line_id": 16,
+      "game": "Ohio State at Indiana",
+      "selection": "Indiana",
+      "splashsports_locked_line": 3.5,
+      "market": "ATS",
+      "within_market_research_rank": 5,
+      "research_score_not_calibrated": 0.5515779129315221,
+      "model": {
+        "selected_edge_points": 10.315582586304421,
+        "projected_home_margin": 6.815582586304421
+      },
+      "human_confidence_1_to_5": 3,
+      "approval_timestamp_utc": "2026-10-13T18:57:33Z",
+      "locked_card_sha256": "3561c1cf93debbe0aafcf527b5e9f8abfc60c29589da3ad4f17f3502077ab8ad",
+      "source_line_sha256": "e7bf35fbc13a429474e35539ca8ecc7b91a13c19411d7a050f9dbd91260f0b7b",
+      "model_research_commit_sha": "97a8dfb7ba14842bbf8da1cddfec7a3599b7b8d9",
+      "approval_source_commit_sha": "f6c584f5933819e0076557695c54caf188b93242"
+    },
+    {
+      "rank": 3,
+      "game_id": 401869957,
+      "locked_line_id": 17,
+      "game": "Georgia State at James Madison",
+      "selection": "Georgia State",
+      "splashsports_locked_line": 12.5,
+      "market": "ATS",
+      "within_market_research_rank": 8,
+      "research_score_not_calibrated": 0.5482186510095988,
+      "model": {
+        "selected_edge_points": 9.643730201919748,
+        "projected_home_margin": 2.8562697980802523
+      },
+      "human_confidence_1_to_5": 3,
+      "approval_timestamp_utc": "2026-10-13T18:57:33Z",
+      "locked_card_sha256": "3561c1cf93debbe0aafcf527b5e9f8abfc60c29589da3ad4f17f3502077ab8ad",
+      "source_line_sha256": "e7bf35fbc13a429474e35539ca8ecc7b91a13c19411d7a050f9dbd91260f0b7b",
+      "model_research_commit_sha": "97a8dfb7ba14842bbf8da1cddfec7a3599b7b8d9",
+      "approval_source_commit_sha": "f6c584f5933819e0076557695c54caf188b93242"
+    },
+    {
+      "rank": 4,
+      "game_id": 401858492,
+      "locked_line_id": 59,
+      "game": "Nebraska at Oregon",
+      "selection": "Nebraska",
+      "splashsports_locked_line": 7.5,
+      "market": "ATS",
+      "within_market_research_rank": 2,
+      "research_score_not_calibrated": 0.5645791524769297,
+      "model": {
+        "selected_edge_points": 12.915830495385926,
+        "projected_home_margin": -5.415830495385926
+      },
+      "human_confidence_1_to_5": 2,
+      "approval_timestamp_utc": "2026-10-13T18:57:33Z",
+      "locked_card_sha256": "3561c1cf93debbe0aafcf527b5e9f8abfc60c29589da3ad4f17f3502077ab8ad",
+      "source_line_sha256": "e7bf35fbc13a429474e35539ca8ecc7b91a13c19411d7a050f9dbd91260f0b7b",
+      "model_research_commit_sha": "97a8dfb7ba14842bbf8da1cddfec7a3599b7b8d9",
+      "approval_source_commit_sha": "f6c584f5933819e0076557695c54caf188b93242"
+    },
+    {
+      "rank": 5,
+      "game_id": 401860923,
+      "locked_line_id": 7,
+      "game": "Colorado State at Texas State",
+      "selection": "Colorado State at Texas State Under",
+      "splashsports_locked_line": 72.5,
+      "market": "TOTAL",
+      "within_market_research_rank": 1,
+      "research_score_not_calibrated": 0.7842244194545135,
+      "model": {
+        "projected_total": 59.3449924707221,
+        "under_edge_points": 13.155007529277903
+      },
+      "human_confidence_1_to_5": 2,
+      "approval_timestamp_utc": "2026-10-13T18:57:33Z",
+      "locked_card_sha256": "3561c1cf93debbe0aafcf527b5e9f8abfc60c29589da3ad4f17f3502077ab8ad",
+      "source_line_sha256": "e7bf35fbc13a429474e35539ca8ecc7b91a13c19411d7a050f9dbd91260f0b7b",
+      "model_research_commit_sha": "97a8dfb7ba14842bbf8da1cddfec7a3599b7b8d9",
+      "approval_source_commit_sha": "f6c584f5933819e0076557695c54caf188b93242"
+    }
+  ]
+}

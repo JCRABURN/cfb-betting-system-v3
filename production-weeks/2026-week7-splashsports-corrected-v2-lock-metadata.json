@@ -1,0 +1,568 @@
+{
+  "season": 2026,
+  "week": 7,
+  "contest_key": "splashsports-cfb-2026-w07",
+  "source": "SplashSports",
+  "authoritative_locked_lines": true,
+  "source_received_at_utc": "2026-10-13T19:20:11.967327+00:00",
+  "source_timestamp_kind": "file_received",
+  "source_timestamp_provenance": "Earliest verified local reconciliation/metadata creation observation; screenshot filesystem modification times are recorded separately and are not asserted as owner receipt times.",
+  "source_commit_sha": "f49e106b004ebc21b33bfa25e856e7996a75910a",
+  "spread_convention": "home_team_spread",
+  "total_convention": "contest_over_under",
+  "game_time_zone": "America/Chicago",
+  "game_count": 59,
+  "raw_file_sha256": "0a3b81fd54de0f6497e547ae5b6e17f9aea47ec67bb3068cead4896244ac62b7",
+  "canonical_csv_sha256": "2c7c87d1c55156140de1249306856a0809a0b1632483041186e5d78ddd9a328f",
+  "unlined_fbs_games": [],
+  "source_medium": "owner-supplied SplashSports screenshots",
+  "correction_commit_sha": "f49e106b004ebc21b33bfa25e856e7996a75910a",
+  "correction_reason": "transcription_error",
+  "correction_status": "SOURCE_CORRECTED_V2_PENDING_OWNER_CARD_APPROVAL",
+  "original_lock_reference": "production-weeks/2026-week7-splashsports.csv",
+  "original_lock_hash": "e7bf35fbc13a429474e35539ca8ecc7b91a13c19411d7a050f9dbd91260f0b7b",
+  "corrected_lock_hash": "0a3b81fd54de0f6497e547ae5b6e17f9aea47ec67bb3068cead4896244ac62b7",
+  "screenshot_transcription_sha256": "d010461566cd995697763c2bec4dc1597250f29130c49009df436531ae2dd10a",
+  "screenshot_sources": {
+    "Screenshot 2026-10-13 140758.png": "a457ae53d69805393b137a37dd80bae885b2b53aa5da6318c968234e859b3ef7",
+    "Screenshot 2026-10-13 140815.png": "ddf1dfbd2b812b98d365d360e4bb76f93fcfafe886f5b8f07c28c432ab32da67",
+    "Screenshot 2026-10-13 140831.png": "ad65bef63fea48be864474d14086d9fec050159e13c9ee98e4eedf6edbd0304e",
+    "Screenshot 2026-10-13 140848.png": "338b172b8c83b5c082d0f00a166909677337b457b10496311925b35ba3b102fd",
+    "Screenshot 2026-10-13 140904.png": "234290835001ab9c6ec48c245ea9e0a0c63606f6669e7c49aaae6636dec3801f",
+    "Screenshot 2026-10-13 140919.png": "4d8405730dc9fb9706606ed2b91f92eb934f19071349661aa700e50d0457934d",
+    "Screenshot 2026-10-13 140935.png": "7a72bb54267f2d39100663c51a5fe1bb78560b8b9bc6148b89a633cce23963c5",
+    "Screenshot 2026-10-13 141004.png": "b0b074e17624dfb0f2214f4432b6ee351d934778e8ee829f8b90cf7158e420ae"
+  },
+  "row_screenshot_provenance": [
+    {
+      "csv_row": 1,
+      "game": "Delaware @ Middle Tennessee",
+      "screenshot": "Screenshot 2026-10-13 140758.png",
+      "screenshot_sha256": "a457ae53d69805393b137a37dd80bae885b2b53aa5da6318c968234e859b3ef7",
+      "screenshot_row": 1,
+      "source_image_file_last_modified_utc": "2026-10-13T19:07:58.965142+00:00"
+    },
+    {
+      "csv_row": 2,
+      "game": "Florida International @ Jacksonville State",
+      "screenshot": "Screenshot 2026-10-13 140758.png",
+      "screenshot_sha256": "a457ae53d69805393b137a37dd80bae885b2b53aa5da6318c968234e859b3ef7",
+      "screenshot_row": 2,
+      "source_image_file_last_modified_utc": "2026-10-13T19:07:58.965142+00:00"
+    },
+    {
+      "csv_row": 3,
+      "game": "Kennesaw State @ Missouri State",
+      "screenshot": "Screenshot 2026-10-13 140758.png",
+      "screenshot_sha256": "a457ae53d69805393b137a37dd80bae885b2b53aa5da6318c968234e859b3ef7",
+      "screenshot_row": 3,
+      "source_image_file_last_modified_utc": "2026-10-13T19:07:58.965142+00:00"
+    },
+    {
+      "csv_row": 4,
+      "game": "Western Kentucky @ Sam Houston",
+      "screenshot": "Screenshot 2026-10-13 140758.png",
+      "screenshot_sha256": "a457ae53d69805393b137a37dd80bae885b2b53aa5da6318c968234e859b3ef7",
+      "screenshot_row": 4,
+      "source_image_file_last_modified_utc": "2026-10-13T19:07:58.965142+00:00"
+    },
+    {
+      "csv_row": 5,
+      "game": "Georgia Southern @ Old Dominion",
+      "screenshot": "Screenshot 2026-10-13 140758.png",
+      "screenshot_sha256": "a457ae53d69805393b137a37dd80bae885b2b53aa5da6318c968234e859b3ef7",
+      "screenshot_row": 5,
+      "source_image_file_last_modified_utc": "2026-10-13T19:07:58.965142+00:00"
+    },
+    {
+      "csv_row": 6,
+      "game": "East Carolina @ UAB",
+      "screenshot": "Screenshot 2026-10-13 140758.png",
+      "screenshot_sha256": "a457ae53d69805393b137a37dd80bae885b2b53aa5da6318c968234e859b3ef7",
+      "screenshot_row": 6,
+      "source_image_file_last_modified_utc": "2026-10-13T19:07:58.965142+00:00"
+    },
+    {
+      "csv_row": 7,
+      "game": "Colorado State @ Texas State",
+      "screenshot": "Screenshot 2026-10-13 140758.png",
+      "screenshot_sha256": "a457ae53d69805393b137a37dd80bae885b2b53aa5da6318c968234e859b3ef7",
+      "screenshot_row": 7,
+      "source_image_file_last_modified_utc": "2026-10-13T19:07:58.965142+00:00"
+    },
+    {
+      "csv_row": 8,
+      "game": "Memphis @ Tulane",
+      "screenshot": "Screenshot 2026-10-13 140815.png",
+      "screenshot_sha256": "ddf1dfbd2b812b98d365d360e4bb76f93fcfafe886f5b8f07c28c432ab32da67",
+      "screenshot_row": 1,
+      "source_image_file_last_modified_utc": "2026-10-13T19:08:15.591329+00:00"
+    },
+    {
+      "csv_row": 9,
+      "game": "Washington @ Purdue",
+      "screenshot": "Screenshot 2026-10-13 140815.png",
+      "screenshot_sha256": "ddf1dfbd2b812b98d365d360e4bb76f93fcfafe886f5b8f07c28c432ab32da67",
+      "screenshot_row": 2,
+      "source_image_file_last_modified_utc": "2026-10-13T19:08:15.591329+00:00"
+    },
+    {
+      "csv_row": 10,
+      "game": "Appalachian State @ Coastal Carolina",
+      "screenshot": "Screenshot 2026-10-13 140815.png",
+      "screenshot_sha256": "ddf1dfbd2b812b98d365d360e4bb76f93fcfafe886f5b8f07c28c432ab32da67",
+      "screenshot_row": 3,
+      "source_image_file_last_modified_utc": "2026-10-13T19:08:15.591329+00:00"
+    },
+    {
+      "csv_row": 11,
+      "game": "Pittsburgh @ Boston College",
+      "screenshot": "Screenshot 2026-10-13 140815.png",
+      "screenshot_sha256": "ddf1dfbd2b812b98d365d360e4bb76f93fcfafe886f5b8f07c28c432ab32da67",
+      "screenshot_row": 4,
+      "source_image_file_last_modified_utc": "2026-10-13T19:08:15.591329+00:00"
+    },
+    {
+      "csv_row": 12,
+      "game": "Florida @ Texas",
+      "screenshot": "Screenshot 2026-10-13 140815.png",
+      "screenshot_sha256": "ddf1dfbd2b812b98d365d360e4bb76f93fcfafe886f5b8f07c28c432ab32da67",
+      "screenshot_row": 5,
+      "source_image_file_last_modified_utc": "2026-10-13T19:08:15.591329+00:00"
+    },
+    {
+      "csv_row": 13,
+      "game": "Ball State @ Bowling Green",
+      "screenshot": "Screenshot 2026-10-13 140815.png",
+      "screenshot_sha256": "ddf1dfbd2b812b98d365d360e4bb76f93fcfafe886f5b8f07c28c432ab32da67",
+      "screenshot_row": 6,
+      "source_image_file_last_modified_utc": "2026-10-13T19:08:15.591329+00:00"
+    },
+    {
+      "csv_row": 14,
+      "game": "Virginia @ SMU",
+      "screenshot": "Screenshot 2026-10-13 140815.png",
+      "screenshot_sha256": "ddf1dfbd2b812b98d365d360e4bb76f93fcfafe886f5b8f07c28c432ab32da67",
+      "screenshot_row": 7,
+      "source_image_file_last_modified_utc": "2026-10-13T19:08:15.591329+00:00"
+    },
+    {
+      "csv_row": 15,
+      "game": "Kansas @ Kansas State",
+      "screenshot": "Screenshot 2026-10-13 140815.png",
+      "screenshot_sha256": "ddf1dfbd2b812b98d365d360e4bb76f93fcfafe886f5b8f07c28c432ab32da67",
+      "screenshot_row": 8,
+      "source_image_file_last_modified_utc": "2026-10-13T19:08:15.591329+00:00"
+    },
+    {
+      "csv_row": 16,
+      "game": "Ohio State @ Indiana",
+      "screenshot": "Screenshot 2026-10-13 140831.png",
+      "screenshot_sha256": "ad65bef63fea48be864474d14086d9fec050159e13c9ee98e4eedf6edbd0304e",
+      "screenshot_row": 1,
+      "source_image_file_last_modified_utc": "2026-10-13T19:08:32.318191+00:00"
+    },
+    {
+      "csv_row": 17,
+      "game": "Georgia State @ James Madison",
+      "screenshot": "Screenshot 2026-10-13 140831.png",
+      "screenshot_sha256": "ad65bef63fea48be864474d14086d9fec050159e13c9ee98e4eedf6edbd0304e",
+      "screenshot_row": 2,
+      "source_image_file_last_modified_utc": "2026-10-13T19:08:32.318191+00:00"
+    },
+    {
+      "csv_row": 18,
+      "game": "Northwestern @ Michigan State",
+      "screenshot": "Screenshot 2026-10-13 140831.png",
+      "screenshot_sha256": "ad65bef63fea48be864474d14086d9fec050159e13c9ee98e4eedf6edbd0304e",
+      "screenshot_row": 3,
+      "source_image_file_last_modified_utc": "2026-10-13T19:08:32.318191+00:00"
+    },
+    {
+      "csv_row": 19,
+      "game": "Florida Atlantic @ Army",
+      "screenshot": "Screenshot 2026-10-13 140831.png",
+      "screenshot_sha256": "ad65bef63fea48be864474d14086d9fec050159e13c9ee98e4eedf6edbd0304e",
+      "screenshot_row": 4,
+      "source_image_file_last_modified_utc": "2026-10-13T19:08:32.318191+00:00"
+    },
+    {
+      "csv_row": 20,
+      "game": "Cincinnati @ West Virginia",
+      "screenshot": "Screenshot 2026-10-13 140831.png",
+      "screenshot_sha256": "ad65bef63fea48be864474d14086d9fec050159e13c9ee98e4eedf6edbd0304e",
+      "screenshot_row": 5,
+      "source_image_file_last_modified_utc": "2026-10-13T19:08:32.318191+00:00"
+    },
+    {
+      "csv_row": 21,
+      "game": "Mississippi State @ LSU",
+      "screenshot": "Screenshot 2026-10-13 140831.png",
+      "screenshot_sha256": "ad65bef63fea48be864474d14086d9fec050159e13c9ee98e4eedf6edbd0304e",
+      "screenshot_row": 6,
+      "source_image_file_last_modified_utc": "2026-10-13T19:08:32.318191+00:00"
+    },
+    {
+      "csv_row": 22,
+      "game": "Rutgers @ Maryland",
+      "screenshot": "Screenshot 2026-10-13 140831.png",
+      "screenshot_sha256": "ad65bef63fea48be864474d14086d9fec050159e13c9ee98e4eedf6edbd0304e",
+      "screenshot_row": 7,
+      "source_image_file_last_modified_utc": "2026-10-13T19:08:32.318191+00:00"
+    },
+    {
+      "csv_row": 23,
+      "game": "Charlotte @ Temple",
+      "screenshot": "Screenshot 2026-10-13 140831.png",
+      "screenshot_sha256": "ad65bef63fea48be864474d14086d9fec050159e13c9ee98e4eedf6edbd0304e",
+      "screenshot_row": 8,
+      "source_image_file_last_modified_utc": "2026-10-13T19:08:32.318191+00:00"
+    },
+    {
+      "csv_row": 24,
+      "game": "UMass @ Buffalo",
+      "screenshot": "Screenshot 2026-10-13 140848.png",
+      "screenshot_sha256": "338b172b8c83b5c082d0f00a166909677337b457b10496311925b35ba3b102fd",
+      "screenshot_row": 1,
+      "source_image_file_last_modified_utc": "2026-10-13T19:08:49.360162+00:00"
+    },
+    {
+      "csv_row": 25,
+      "game": "Western Michigan @ Central Michigan",
+      "screenshot": "Screenshot 2026-10-13 140848.png",
+      "screenshot_sha256": "338b172b8c83b5c082d0f00a166909677337b457b10496311925b35ba3b102fd",
+      "screenshot_row": 2,
+      "source_image_file_last_modified_utc": "2026-10-13T19:08:49.360162+00:00"
+    },
+    {
+      "csv_row": 26,
+      "game": "Missouri @ Ole Miss",
+      "screenshot": "Screenshot 2026-10-13 140848.png",
+      "screenshot_sha256": "338b172b8c83b5c082d0f00a166909677337b457b10496311925b35ba3b102fd",
+      "screenshot_row": 3,
+      "source_image_file_last_modified_utc": "2026-10-13T19:08:49.360162+00:00"
+    },
+    {
+      "csv_row": 27,
+      "game": "Penn State @ Michigan",
+      "screenshot": "Screenshot 2026-10-13 140848.png",
+      "screenshot_sha256": "338b172b8c83b5c082d0f00a166909677337b457b10496311925b35ba3b102fd",
+      "screenshot_row": 4,
+      "source_image_file_last_modified_utc": "2026-10-13T19:08:49.360162+00:00"
+    },
+    {
+      "csv_row": 28,
+      "game": "North Carolina @ Duke",
+      "screenshot": "Screenshot 2026-10-13 140848.png",
+      "screenshot_sha256": "338b172b8c83b5c082d0f00a166909677337b457b10496311925b35ba3b102fd",
+      "screenshot_row": 5,
+      "source_image_file_last_modified_utc": "2026-10-13T19:08:49.360162+00:00"
+    },
+    {
+      "csv_row": 29,
+      "game": "Georgia Tech @ Virginia Tech",
+      "screenshot": "Screenshot 2026-10-13 140848.png",
+      "screenshot_sha256": "338b172b8c83b5c082d0f00a166909677337b457b10496311925b35ba3b102fd",
+      "screenshot_row": 6,
+      "source_image_file_last_modified_utc": "2026-10-13T19:08:49.360162+00:00"
+    },
+    {
+      "csv_row": 30,
+      "game": "Toledo @ Eastern Michigan",
+      "screenshot": "Screenshot 2026-10-13 140848.png",
+      "screenshot_sha256": "338b172b8c83b5c082d0f00a166909677337b457b10496311925b35ba3b102fd",
+      "screenshot_row": 7,
+      "source_image_file_last_modified_utc": "2026-10-13T19:08:49.360162+00:00"
+    },
+    {
+      "csv_row": 31,
+      "game": "Arizona State @ Texas Tech",
+      "screenshot": "Screenshot 2026-10-13 140848.png",
+      "screenshot_sha256": "338b172b8c83b5c082d0f00a166909677337b457b10496311925b35ba3b102fd",
+      "screenshot_row": 8,
+      "source_image_file_last_modified_utc": "2026-10-13T19:08:49.360162+00:00"
+    },
+    {
+      "csv_row": 32,
+      "game": "Akron @ Miami (OH)",
+      "screenshot": "Screenshot 2026-10-13 140904.png",
+      "screenshot_sha256": "234290835001ab9c6ec48c245ea9e0a0c63606f6669e7c49aaae6636dec3801f",
+      "screenshot_row": 1,
+      "source_image_file_last_modified_utc": "2026-10-13T19:09:05.092080+00:00"
+    },
+    {
+      "csv_row": 33,
+      "game": "Auburn @ Georgia",
+      "screenshot": "Screenshot 2026-10-13 140904.png",
+      "screenshot_sha256": "234290835001ab9c6ec48c245ea9e0a0c63606f6669e7c49aaae6636dec3801f",
+      "screenshot_row": 2,
+      "source_image_file_last_modified_utc": "2026-10-13T19:09:05.092080+00:00"
+    },
+    {
+      "csv_row": 34,
+      "game": "Northern Illinois @ Wyoming",
+      "screenshot": "Screenshot 2026-10-13 140904.png",
+      "screenshot_sha256": "234290835001ab9c6ec48c245ea9e0a0c63606f6669e7c49aaae6636dec3801f",
+      "screenshot_row": 3,
+      "source_image_file_last_modified_utc": "2026-10-13T19:09:05.092080+00:00"
+    },
+    {
+      "csv_row": 35,
+      "game": "UNLV @ Air Force",
+      "screenshot": "Screenshot 2026-10-13 140904.png",
+      "screenshot_sha256": "234290835001ab9c6ec48c245ea9e0a0c63606f6669e7c49aaae6636dec3801f",
+      "screenshot_row": 4,
+      "source_image_file_last_modified_utc": "2026-10-13T19:09:05.092080+00:00"
+    },
+    {
+      "csv_row": 36,
+      "game": "Alabama @ Tennessee",
+      "screenshot": "Screenshot 2026-10-13 140904.png",
+      "screenshot_sha256": "234290835001ab9c6ec48c245ea9e0a0c63606f6669e7c49aaae6636dec3801f",
+      "screenshot_row": 5,
+      "source_image_file_last_modified_utc": "2026-10-13T19:09:05.092080+00:00"
+    },
+    {
+      "csv_row": 37,
+      "game": "Tulsa @ Rice",
+      "screenshot": "Screenshot 2026-10-13 140904.png",
+      "screenshot_sha256": "234290835001ab9c6ec48c245ea9e0a0c63606f6669e7c49aaae6636dec3801f",
+      "screenshot_row": 6,
+      "source_image_file_last_modified_utc": "2026-10-13T19:09:05.092080+00:00"
+    },
+    {
+      "csv_row": 38,
+      "game": "Troy @ Louisiana",
+      "screenshot": "Screenshot 2026-10-13 140904.png",
+      "screenshot_sha256": "234290835001ab9c6ec48c245ea9e0a0c63606f6669e7c49aaae6636dec3801f",
+      "screenshot_row": 7,
+      "source_image_file_last_modified_utc": "2026-10-13T19:09:05.092080+00:00"
+    },
+    {
+      "csv_row": 39,
+      "game": "Washington State @ Oregon State",
+      "screenshot": "Screenshot 2026-10-13 140904.png",
+      "screenshot_sha256": "234290835001ab9c6ec48c245ea9e0a0c63606f6669e7c49aaae6636dec3801f",
+      "screenshot_row": 8,
+      "source_image_file_last_modified_utc": "2026-10-13T19:09:05.092080+00:00"
+    },
+    {
+      "csv_row": 40,
+      "game": "Arkansas @ Vanderbilt",
+      "screenshot": "Screenshot 2026-10-13 140919.png",
+      "screenshot_sha256": "4d8405730dc9fb9706606ed2b91f92eb934f19071349661aa700e50d0457934d",
+      "screenshot_row": 1,
+      "source_image_file_last_modified_utc": "2026-10-13T19:09:19.670014+00:00"
+    },
+    {
+      "csv_row": 41,
+      "game": "TCU @ Baylor",
+      "screenshot": "Screenshot 2026-10-13 140919.png",
+      "screenshot_sha256": "4d8405730dc9fb9706606ed2b91f92eb934f19071349661aa700e50d0457934d",
+      "screenshot_row": 2,
+      "source_image_file_last_modified_utc": "2026-10-13T19:09:19.670014+00:00"
+    },
+    {
+      "csv_row": 42,
+      "game": "Arkansas State @ Southern Miss",
+      "screenshot": "Screenshot 2026-10-13 140919.png",
+      "screenshot_sha256": "4d8405730dc9fb9706606ed2b91f92eb934f19071349661aa700e50d0457934d",
+      "screenshot_row": 3,
+      "source_image_file_last_modified_utc": "2026-10-13T19:09:19.670014+00:00"
+    },
+    {
+      "csv_row": 43,
+      "game": "Florida State @ Miami (FL)",
+      "screenshot": "Screenshot 2026-10-13 140919.png",
+      "screenshot_sha256": "4d8405730dc9fb9706606ed2b91f92eb934f19071349661aa700e50d0457934d",
+      "screenshot_row": 4,
+      "source_image_file_last_modified_utc": "2026-10-13T19:09:19.670014+00:00"
+    },
+    {
+      "csv_row": 44,
+      "game": "Nevada @ North Dakota State",
+      "screenshot": "Screenshot 2026-10-13 140919.png",
+      "screenshot_sha256": "4d8405730dc9fb9706606ed2b91f92eb934f19071349661aa700e50d0457934d",
+      "screenshot_row": 5,
+      "source_image_file_last_modified_utc": "2026-10-13T19:09:19.670014+00:00"
+    },
+    {
+      "csv_row": 45,
+      "game": "Kent State @ South Florida",
+      "screenshot": "Screenshot 2026-10-13 140919.png",
+      "screenshot_sha256": "4d8405730dc9fb9706606ed2b91f92eb934f19071349661aa700e50d0457934d",
+      "screenshot_row": 6,
+      "source_image_file_last_modified_utc": "2026-10-13T19:09:19.670014+00:00"
+    },
+    {
+      "csv_row": 46,
+      "game": "Wisconsin @ UCLA",
+      "screenshot": "Screenshot 2026-10-13 140919.png",
+      "screenshot_sha256": "4d8405730dc9fb9706606ed2b91f92eb934f19071349661aa700e50d0457934d",
+      "screenshot_row": 7,
+      "source_image_file_last_modified_utc": "2026-10-13T19:09:19.670014+00:00"
+    },
+    {
+      "csv_row": 47,
+      "game": "Notre Dame @ BYU",
+      "screenshot": "Screenshot 2026-10-13 140919.png",
+      "screenshot_sha256": "4d8405730dc9fb9706606ed2b91f92eb934f19071349661aa700e50d0457934d",
+      "screenshot_row": 8,
+      "source_image_file_last_modified_utc": "2026-10-13T19:09:19.670014+00:00"
+    },
+    {
+      "csv_row": 48,
+      "game": "Louisville @ Syracuse",
+      "screenshot": "Screenshot 2026-10-13 140935.png",
+      "screenshot_sha256": "7a72bb54267f2d39100663c51a5fe1bb78560b8b9bc6148b89a633cce23963c5",
+      "screenshot_row": 1,
+      "source_image_file_last_modified_utc": "2026-10-13T19:09:35.931805+00:00"
+    },
+    {
+      "csv_row": 49,
+      "game": "Oklahoma State @ Houston",
+      "screenshot": "Screenshot 2026-10-13 140935.png",
+      "screenshot_sha256": "7a72bb54267f2d39100663c51a5fe1bb78560b8b9bc6148b89a633cce23963c5",
+      "screenshot_row": 2,
+      "source_image_file_last_modified_utc": "2026-10-13T19:09:35.931805+00:00"
+    },
+    {
+      "csv_row": 50,
+      "game": "Kentucky @ Oklahoma",
+      "screenshot": "Screenshot 2026-10-13 140935.png",
+      "screenshot_sha256": "7a72bb54267f2d39100663c51a5fe1bb78560b8b9bc6148b89a633cce23963c5",
+      "screenshot_row": 3,
+      "source_image_file_last_modified_utc": "2026-10-13T19:09:35.931805+00:00"
+    },
+    {
+      "csv_row": 51,
+      "game": "Louisiana Tech @ Louisiana-Monroe",
+      "screenshot": "Screenshot 2026-10-13 140935.png",
+      "screenshot_sha256": "7a72bb54267f2d39100663c51a5fe1bb78560b8b9bc6148b89a633cce23963c5",
+      "screenshot_row": 4,
+      "source_image_file_last_modified_utc": "2026-10-13T19:09:35.931805+00:00"
+    },
+    {
+      "csv_row": 52,
+      "game": "Navy @ UTSA",
+      "screenshot": "Screenshot 2026-10-13 140935.png",
+      "screenshot_sha256": "7a72bb54267f2d39100663c51a5fe1bb78560b8b9bc6148b89a633cce23963c5",
+      "screenshot_row": 5,
+      "source_image_file_last_modified_utc": "2026-10-13T19:09:35.931805+00:00"
+    },
+    {
+      "csv_row": 53,
+      "game": "San Jose State @ UTEP",
+      "screenshot": "Screenshot 2026-10-13 140935.png",
+      "screenshot_sha256": "7a72bb54267f2d39100663c51a5fe1bb78560b8b9bc6148b89a633cce23963c5",
+      "screenshot_row": 6,
+      "source_image_file_last_modified_utc": "2026-10-13T19:09:35.931805+00:00"
+    },
+    {
+      "csv_row": 54,
+      "game": "Ohio @ Sacramento State",
+      "screenshot": "Screenshot 2026-10-13 140935.png",
+      "screenshot_sha256": "7a72bb54267f2d39100663c51a5fe1bb78560b8b9bc6148b89a633cce23963c5",
+      "screenshot_row": 7,
+      "source_image_file_last_modified_utc": "2026-10-13T19:09:35.931805+00:00"
+    },
+    {
+      "csv_row": 55,
+      "game": "Utah @ Colorado",
+      "screenshot": "Screenshot 2026-10-13 140935.png",
+      "screenshot_sha256": "7a72bb54267f2d39100663c51a5fe1bb78560b8b9bc6148b89a633cce23963c5",
+      "screenshot_row": 8,
+      "source_image_file_last_modified_utc": "2026-10-13T19:09:35.931805+00:00"
+    },
+    {
+      "csv_row": 56,
+      "game": "Fresno State @ San Diego State",
+      "screenshot": "Screenshot 2026-10-13 141004.png",
+      "screenshot_sha256": "b0b074e17624dfb0f2214f4432b6ee351d934778e8ee829f8b90cf7158e420ae",
+      "screenshot_row": 4,
+      "source_image_file_last_modified_utc": "2026-10-13T19:10:04.767306+00:00"
+    },
+    {
+      "csv_row": 57,
+      "game": "Wake Forest @ California",
+      "screenshot": "Screenshot 2026-10-13 141004.png",
+      "screenshot_sha256": "b0b074e17624dfb0f2214f4432b6ee351d934778e8ee829f8b90cf7158e420ae",
+      "screenshot_row": 5,
+      "source_image_file_last_modified_utc": "2026-10-13T19:10:04.767306+00:00"
+    },
+    {
+      "csv_row": 58,
+      "game": "New Mexico @ Hawai'i",
+      "screenshot": "Screenshot 2026-10-13 141004.png",
+      "screenshot_sha256": "b0b074e17624dfb0f2214f4432b6ee351d934778e8ee829f8b90cf7158e420ae",
+      "screenshot_row": 6,
+      "source_image_file_last_modified_utc": "2026-10-13T19:10:04.767306+00:00"
+    },
+    {
+      "csv_row": 59,
+      "game": "Nebraska @ Oregon",
+      "screenshot": "Screenshot 2026-10-13 141004.png",
+      "screenshot_sha256": "b0b074e17624dfb0f2214f4432b6ee351d934778e8ee829f8b90cf7158e420ae",
+      "screenshot_row": 7,
+      "source_image_file_last_modified_utc": "2026-10-13T19:10:04.767306+00:00"
+    }
+  ],
+  "corrections": [
+    {
+      "csv_row": 7,
+      "game": "Colorado State @ Texas State",
+      "field": "Total",
+      "old": "72.5",
+      "corrected": "69.5",
+      "screenshot": "Screenshot 2026-10-13 140758.png",
+      "screenshot_row": 7
+    },
+    {
+      "csv_row": 8,
+      "game": "Memphis @ Tulane",
+      "field": "Total",
+      "old": "53.5",
+      "corrected": "54.5",
+      "screenshot": "Screenshot 2026-10-13 140815.png",
+      "screenshot_row": 1
+    },
+    {
+      "csv_row": 35,
+      "game": "UNLV @ Air Force",
+      "field": "Total",
+      "old": "47.5",
+      "corrected": "48.5",
+      "screenshot": "Screenshot 2026-10-13 140904.png",
+      "screenshot_row": 4
+    },
+    {
+      "csv_row": 44,
+      "game": "Nevada @ North Dakota State",
+      "field": "Total",
+      "old": "44.5",
+      "corrected": "43.5",
+      "screenshot": "Screenshot 2026-10-13 140919.png",
+      "screenshot_row": 5
+    },
+    {
+      "csv_row": 47,
+      "game": "Notre Dame @ BYU",
+      "field": "Total",
+      "old": "47.5",
+      "corrected": "46.5",
+      "screenshot": "Screenshot 2026-10-13 140919.png",
+      "screenshot_row": 8
+    },
+    {
+      "csv_row": 58,
+      "game": "New Mexico @ Hawai'i",
+      "field": "Total",
+      "old": "45.5",
+      "corrected": "44.5",
+      "screenshot": "Screenshot 2026-10-13 141004.png",
+      "screenshot_row": 6
+    }
+  ],
+  "correction_timestamp_utc": "2026-10-13T19:20:11.967327+00:00",
+  "source_accuracy_status_of_original": "INVALIDATED FOR SOURCE ACCURACY — SPLASHSPORTS TRANSCRIPTION ERRORS DISCOVERED"
+}

@@ -1,0 +1,50 @@
+{
+  "status": "PRELIMINARY_SECONDARY_SCOREBOARD_ONLY_NOT_FORMAL_AUDIT",
+  "season": 2026,
+  "week": 9,
+  "source_snapshot_as_of_date": "2026-11-02",
+  "source_url": "https://www.on3.com/college/football/scoreboard/?phase=week-9&year=2026",
+  "source_caveat": "On3 public scoreboard transcribed manually; no raw HTTP response captured in custody; MUST reconcile ESPN + CFBD before formal audit.",
+  "game_count": 54,
+  "ats": {
+    "W": 28,
+    "L": 26,
+    "P": 0,
+    "rate_pct": 51.85
+  },
+  "totals": {
+    "W": 29,
+    "L": 25,
+    "P": 0,
+    "rate_pct": 53.7
+  },
+  "research_ats_top5": {
+    "W": 3,
+    "L": 2,
+    "P": 0
+  },
+  "research_totals_top5": {
+    "W": 3,
+    "L": 2,
+    "P": 0
+  },
+  "research_combined_top5": {
+    "W": 3,
+    "L": 2,
+    "P": 0
+  },
+  "last_saved_human_review_top5": {
+    "W": 4,
+    "L": 1,
+    "P": 0
+  },
+  "owner_approved_five": "NO_SIGNED_APPROVAL_ARTIFACT_CONFIRMED",
+  "locked_line_policy": "No historical lines, picks, or model output changed.",
+  "formal_clv": "INCOMPLETE",
+  "qualifiers": [
+    "All final scores are preliminary until independent cross-provider reconciliation.",
+    "Human review is not owner approval.",
+    "One-source scoreboard cannot establish independent grade custody.",
+    "This is a grading pass, not model-validation certification."
+  ]
+}

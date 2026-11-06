@@ -1,0 +1,10 @@
+{
+  "endpoint": "actions/permissions/workflow",
+  "requested_at_utc": "2026-10-29T21:38:50.565045+00:00",
+  "received_at_utc": "2026-10-29T21:38:50.916901+00:00",
+  "http_status": 200,
+  "body": {
+    "default_workflow_permissions": "read",
+    "can_approve_pull_request_reviews": false
+  }
+}

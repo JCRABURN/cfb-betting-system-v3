@@ -50,6 +50,7 @@ DEFAULT_TEAM_ALIASES: Mapping[str, Mapping[str, str]] = MappingProxyType({
     "SplashSports": MappingProxyType({
         "Appalachian State": "App State",
         "UMass": "Massachusetts",
+        "Connecticut": "UConn",
         "Louisiana-Monroe": "UL Monroe",
         "Miami (FL)": "Miami",
     }),

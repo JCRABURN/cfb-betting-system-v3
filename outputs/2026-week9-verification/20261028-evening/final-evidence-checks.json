@@ -1,0 +1,13 @@
+{
+  "verified_at_utc": "2026-10-28T22:50:39.435290+00:00",
+  "new_raw_response_hashes_verified": 173,
+  "evening_review_custody_files_verified": 3,
+  "prior_morning_review_files_byte_identical": 4,
+  "tracked_files_modified": 0,
+  "owner_review_gate": {
+    "verified_candidates": 10,
+    "recommended_five": 5,
+    "owner_approval": "PENDING",
+    "frozen_values_unchanged": true
+  }
+}

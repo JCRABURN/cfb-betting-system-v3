@@ -1,0 +1,61 @@
+{
+  "retrieved_at_utc": "2026-10-28 13:49:23 UTC",
+  "scope": "GitHub status/check runs and first page of PR-triggered workflow runs; no CI success inferred from absence",
+  "pull_requests": [
+    {
+      "pr": "45",
+      "sha": "bcd1b603dc70b24e0154d5a2f8b5cef5c0bc48ed",
+      "status": "pending",
+      "status_count": 0,
+      "workflow_runs": [],
+      "check_runs": {
+        "total_count": 0,
+        "check_runs": []
+      }
+    },
+    {
+      "pr": "44",
+      "sha": "922f1f8f8c66ef14674eb9aa20db144a45dada68",
+      "status": "pending",
+      "status_count": 0,
+      "workflow_runs": [],
+      "check_runs": {
+        "total_count": 0,
+        "check_runs": []
+      }
+    },
+    {
+      "pr": "41",
+      "sha": "78ed6eb5540f66ba3193f91366c802e27e3cb9c7",
+      "status": "pending",
+      "status_count": 0,
+      "workflow_runs": [],
+      "check_runs": {
+        "total_count": 0,
+        "check_runs": []
+      }
+    },
+    {
+      "pr": "43",
+      "sha": "43807ae374b9db143c1d9675d7a7cafe6e2f28ba",
+      "status": "pending",
+      "status_count": 0,
+      "workflow_runs": [],
+      "check_runs": {
+        "total_count": 0,
+        "check_runs": []
+      }
+    },
+    {
+      "pr": "42",
+      "sha": "7f42da36f9aef4666bb715d49babde7ee374defa",
+      "status": "pending",
+      "status_count": 0,
+      "workflow_runs": [],
+      "check_runs": {
+        "total_count": 0,
+        "check_runs": []
+      }
+    }
+  ]
+}

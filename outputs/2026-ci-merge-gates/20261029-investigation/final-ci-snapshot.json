@@ -1,0 +1,22 @@
+{
+  "retrieved_at_utc": "2026-10-29 21:53:51 UTC",
+  "prs": [
+    {
+      "pr": 44,
+      "sha": "922f1f8f8c66ef14674eb9aa20db144a45dada68",
+      "checks": 0,
+      "statuses": 0,
+      "combined_status": "pending"
+    },
+    {
+      "pr": 45,
+      "sha": "6e1948dd9b675a3f1226350ce5b40a6556e09f7a",
+      "checks": 0,
+      "statuses": 0,
+      "combined_status": "pending"
+    }
+  ],
+  "github_ci_success": false,
+  "reason": "Repository Actions disabled; approval to activate pending",
+  "independent_review": "PENDING_REVIEWER_IDENTIFICATION"
+}

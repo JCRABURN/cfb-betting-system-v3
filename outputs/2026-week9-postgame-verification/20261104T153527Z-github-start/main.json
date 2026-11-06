@@ -1,0 +1,104 @@
+{
+  "name": "main",
+  "commit": {
+    "sha": "abb4eb26bd1140e66972d2f1143cd587e80960b4",
+    "node_id": "C_kwDOTt4-AtoAKGFiYjRlYjI2YmQxMTQwZTY2OTcyZDJmMTE0M2NkNTg3ZTgwOTYwYjQ",
+    "commit": {
+      "author": {
+        "name": "JCRABURN",
+        "email": "jcraburn@outlook.com",
+        "date": "2026-10-07T14:28:52Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2026-10-07T14:28:52Z"
+      },
+      "message": "Merge pull request #34 from JCRABURN/codex/2026-week6-execution\n\nWeek 6: complete locked card with separate adversarial review",
+      "tree": {
+        "sha": "e8d2bf2b774900110362ade8f30a43f2cc009053",
+        "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3/git/trees/e8d2bf2b774900110362ade8f30a43f2cc009053"
+      },
+      "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3/git/commits/abb4eb26bd1140e66972d2f1143cd587e80960b4",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqxlckCRC1aQ7uu5UhlAAABj0QAKwWvNrnjegPi89T6iA4mAnH\n+nEFwFo2frLa3P3HPdhUag1EDVs01U27jX5j4cpjQ8BQzhwTDskf2UCzpntEAxrM\nFqFOOZSm5WqC/aM7uwQlJQZUMdF4Yrx8EUL+AAMnK5xVGzKCbSUCobiRnfBnHuf+\nqWx81s95DazgZd88IbOf1L2Y4su9RUPNN3TJh/A4Chz17/ycKsYr8tAr3+bRC594\n+h5Kv4vUchcnONvkgxvIIiBymanO1hxc1PsuSo7Rx9whNB1NPH3GHJJmyuwXAMUz\nlkuK10DGYoqgLqCmQLy0IhQSqbL/GES4EgYKnCJkFH2sceLdTgrO2Sx4E8u3y87n\nVn+qV2cqOpnfTZNDauJiAk3goVs4b+HnwIVjyiim3k+XKNMMR/z1B4E/nD+jQD2f\nSLmHy+SQVSk1RyUiQP1e4nJe07SSVI/ocJg5KyXvv8Fq1Zg9y5sr87YOvujr+A3w\nk/YsdelGuxebbybNNppDoPjG2XDvYZj6uaW70rHmJkaWuhAiekwjw5hmAOoabRuj\nrJ0COYhVqKMgKsBLYTV1KeOYZbHDmVo2aHJNaSYfshikR4/zAvOxkCiIbpOLFHrP\nkCIjnaOohbrsPWe7CwkovZCISa4dCgYwRY643OAAcIdoXQK2EocbKBTGOBXCVy40\nVZQkhgPa3/ziDfqTgISo\n=1CID\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree e8d2bf2b774900110362ade8f30a43f2cc009053\nparent 28c89a69b82fae319816e77bf8853cd0567dbc1c\nparent a419ebc2bc024bbf454bedc2ea2b697f7a918938\nauthor JCRABURN <jcraburn@outlook.com> 1791383332 -0500\ncommitter GitHub <noreply@github.com> 1791383332 -0500\n\nMerge pull request #34 from JCRABURN/codex/2026-week6-execution\n\nWeek 6: complete locked card with separate adversarial review",
+        "verified_at": "2026-10-07T14:28:53Z"
+      }
+    },
+    "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3/commits/abb4eb26bd1140e66972d2f1143cd587e80960b4",
+    "html_url": "https://github.com/JCRABURN/cfb-betting-system-v3/commit/abb4eb26bd1140e66972d2f1143cd587e80960b4",
+    "comments_url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3/commits/abb4eb26bd1140e66972d2f1143cd587e80960b4/comments",
+    "author": {
+      "login": "JCRABURN",
+      "id": 215523089,
+      "node_id": "U_kgDODNifEQ",
+      "avatar_url": "https://avatars.githubusercontent.com/u/215523089?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/JCRABURN",
+      "html_url": "https://github.com/JCRABURN",
+      "followers_url": "https://api.github.com/users/JCRABURN/followers",
+      "following_url": "https://api.github.com/users/JCRABURN/following{/other_user}",
+      "gists_url": "https://api.github.com/users/JCRABURN/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/JCRABURN/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/JCRABURN/subscriptions",
+      "organizations_url": "https://api.github.com/users/JCRABURN/orgs",
+      "repos_url": "https://api.github.com/users/JCRABURN/repos",
+      "events_url": "https://api.github.com/users/JCRABURN/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/JCRABURN/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "28c89a69b82fae319816e77bf8853cd0567dbc1c",
+        "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3/commits/28c89a69b82fae319816e77bf8853cd0567dbc1c",
+        "html_url": "https://github.com/JCRABURN/cfb-betting-system-v3/commit/28c89a69b82fae319816e77bf8853cd0567dbc1c"
+      },
+      {
+        "sha": "a419ebc2bc024bbf454bedc2ea2b697f7a918938",
+        "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3/commits/a419ebc2bc024bbf454bedc2ea2b697f7a918938",
+        "html_url": "https://github.com/JCRABURN/cfb-betting-system-v3/commit/a419ebc2bc024bbf454bedc2ea2b697f7a918938"
+      }
+    ]
+  },
+  "_links": {
+    "self": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3/branches/main",
+    "html": "https://github.com/JCRABURN/cfb-betting-system-v3/tree/main"
+  },
+  "protected": false,
+  "protection": {
+    "enabled": false,
+    "required_status_checks": {
+      "enforcement_level": "off",
+      "contexts": [],
+      "checks": []
+    }
+  },
+  "protection_url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3/branches/main/protection"
+}

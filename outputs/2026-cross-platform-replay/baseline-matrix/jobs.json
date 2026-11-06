@@ -1,0 +1,533 @@
+{
+  "total_count": 4,
+  "jobs": [
+    {
+      "id": 124117238137,
+      "run_id": 41071710411,
+      "workflow_name": "Pull Request Tests",
+      "head_branch": "codex/cross-platform-replay",
+      "run_url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3/actions/runs/41071710411",
+      "run_attempt": 1,
+      "node_id": "CR_kwDOTt4-As8AAAAc5fbBeQ",
+      "head_sha": "39055c8d60cd6973cc1dc12a9f71106c1bf08ef3",
+      "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3/actions/jobs/124117238137",
+      "html_url": "https://github.com/JCRABURN/cfb-betting-system-v3/actions/runs/41071710411/job/124117238137",
+      "status": "completed",
+      "conclusion": "failure",
+      "created_at": "2026-10-30T14:28:02Z",
+      "started_at": "2026-10-30T14:28:04Z",
+      "completed_at": "2026-10-30T14:31:01Z",
+      "name": "test (ubuntu-latest, 3.11.17)",
+      "steps": [
+        {
+          "name": "Set up job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 1,
+          "started_at": "2026-10-30T14:28:05Z",
+          "completed_at": "2026-10-30T14:28:06Z"
+        },
+        {
+          "name": "Checkout repository",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 2,
+          "started_at": "2026-10-30T14:28:06Z",
+          "completed_at": "2026-10-30T14:28:09Z"
+        },
+        {
+          "name": "Set up Python",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 3,
+          "started_at": "2026-10-30T14:28:09Z",
+          "completed_at": "2026-10-30T14:28:10Z"
+        },
+        {
+          "name": "Install locked dependencies",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 4,
+          "started_at": "2026-10-30T14:28:10Z",
+          "completed_at": "2026-10-30T14:28:12Z"
+        },
+        {
+          "name": "Verify repository safety controls",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 5,
+          "started_at": "2026-10-30T14:28:12Z",
+          "completed_at": "2026-10-30T14:28:13Z"
+        },
+        {
+          "name": "Verify migrations on a disposable database copy",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 6,
+          "started_at": "2026-10-30T14:28:13Z",
+          "completed_at": "2026-10-30T14:28:14Z"
+        },
+        {
+          "name": "Verify managed PostgreSQL migration inventory",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 7,
+          "started_at": "2026-10-30T14:28:14Z",
+          "completed_at": "2026-10-30T14:28:14Z"
+        },
+        {
+          "name": "Run complete test suite",
+          "status": "completed",
+          "conclusion": "failure",
+          "number": 8,
+          "started_at": "2026-10-30T14:28:14Z",
+          "completed_at": "2026-10-30T14:30:48Z"
+        },
+        {
+          "name": "Capture native replay comparisons",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 9,
+          "started_at": "2026-10-30T14:30:48Z",
+          "completed_at": "2026-10-30T14:30:57Z"
+        },
+        {
+          "name": "Archive replay comparisons",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 10,
+          "started_at": "2026-10-30T14:30:57Z",
+          "completed_at": "2026-10-30T14:30:59Z"
+        },
+        {
+          "name": "Post Set up Python",
+          "status": "completed",
+          "conclusion": "skipped",
+          "number": 19,
+          "started_at": "2026-10-30T14:30:59Z",
+          "completed_at": "2026-10-30T14:30:59Z"
+        },
+        {
+          "name": "Post Checkout repository",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 20,
+          "started_at": "2026-10-30T14:30:59Z",
+          "completed_at": "2026-10-30T14:30:59Z"
+        },
+        {
+          "name": "Complete job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 21,
+          "started_at": "2026-10-30T14:30:59Z",
+          "completed_at": "2026-10-30T14:30:59Z"
+        }
+      ],
+      "check_run_url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3/check-runs/124117238137",
+      "labels": [
+        "ubuntu-latest"
+      ],
+      "runner_id": 1000001686,
+      "runner_name": "GitHub Actions 1000001686",
+      "runner_group_id": 0,
+      "runner_group_name": "GitHub Actions"
+    },
+    {
+      "id": 124117238416,
+      "run_id": 41071710411,
+      "workflow_name": "Pull Request Tests",
+      "head_branch": "codex/cross-platform-replay",
+      "run_url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3/actions/runs/41071710411",
+      "run_attempt": 1,
+      "node_id": "CR_kwDOTt4-As8AAAAc5fbCkA",
+      "head_sha": "39055c8d60cd6973cc1dc12a9f71106c1bf08ef3",
+      "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3/actions/jobs/124117238416",
+      "html_url": "https://github.com/JCRABURN/cfb-betting-system-v3/actions/runs/41071710411/job/124117238416",
+      "status": "completed",
+      "conclusion": "failure",
+      "created_at": "2026-10-30T14:28:02Z",
+      "started_at": "2026-10-30T14:28:04Z",
+      "completed_at": "2026-10-30T14:28:36Z",
+      "name": "test (windows-latest, 3.11.17)",
+      "steps": [
+        {
+          "name": "Set up job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 1,
+          "started_at": "2026-10-30T14:28:05Z",
+          "completed_at": "2026-10-30T14:28:06Z"
+        },
+        {
+          "name": "Checkout repository",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 2,
+          "started_at": "2026-10-30T14:28:06Z",
+          "completed_at": "2026-10-30T14:28:13Z"
+        },
+        {
+          "name": "Set up Python",
+          "status": "completed",
+          "conclusion": "failure",
+          "number": 3,
+          "started_at": "2026-10-30T14:28:13Z",
+          "completed_at": "2026-10-30T14:28:17Z"
+        },
+        {
+          "name": "Install locked dependencies",
+          "status": "completed",
+          "conclusion": "skipped",
+          "number": 4,
+          "started_at": "2026-10-30T14:28:17Z",
+          "completed_at": "2026-10-30T14:28:17Z"
+        },
+        {
+          "name": "Verify repository safety controls",
+          "status": "completed",
+          "conclusion": "skipped",
+          "number": 5,
+          "started_at": "2026-10-30T14:28:17Z",
+          "completed_at": "2026-10-30T14:28:17Z"
+        },
+        {
+          "name": "Verify migrations on a disposable database copy",
+          "status": "completed",
+          "conclusion": "skipped",
+          "number": 6,
+          "started_at": "2026-10-30T14:28:17Z",
+          "completed_at": "2026-10-30T14:28:17Z"
+        },
+        {
+          "name": "Verify managed PostgreSQL migration inventory",
+          "status": "completed",
+          "conclusion": "skipped",
+          "number": 7,
+          "started_at": "2026-10-30T14:28:17Z",
+          "completed_at": "2026-10-30T14:28:17Z"
+        },
+        {
+          "name": "Run complete test suite",
+          "status": "completed",
+          "conclusion": "skipped",
+          "number": 8,
+          "started_at": "2026-10-30T14:28:17Z",
+          "completed_at": "2026-10-30T14:28:17Z"
+        },
+        {
+          "name": "Capture native replay comparisons",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 9,
+          "started_at": "2026-10-30T14:28:17Z",
+          "completed_at": "2026-10-30T14:28:31Z"
+        },
+        {
+          "name": "Archive replay comparisons",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 10,
+          "started_at": "2026-10-30T14:28:31Z",
+          "completed_at": "2026-10-30T14:28:33Z"
+        },
+        {
+          "name": "Post Set up Python",
+          "status": "completed",
+          "conclusion": "skipped",
+          "number": 19,
+          "started_at": "2026-10-30T14:28:33Z",
+          "completed_at": "2026-10-30T14:28:33Z"
+        },
+        {
+          "name": "Post Checkout repository",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 20,
+          "started_at": "2026-10-30T14:28:33Z",
+          "completed_at": "2026-10-30T14:28:35Z"
+        },
+        {
+          "name": "Complete job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 21,
+          "started_at": "2026-10-30T14:28:35Z",
+          "completed_at": "2026-10-30T14:28:35Z"
+        }
+      ],
+      "check_run_url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3/check-runs/124117238416",
+      "labels": [
+        "windows-latest"
+      ],
+      "runner_id": 1000001687,
+      "runner_name": "GitHub Actions 1000001687",
+      "runner_group_id": 0,
+      "runner_group_name": "GitHub Actions"
+    },
+    {
+      "id": 124117274083,
+      "run_id": 41071710411,
+      "workflow_name": "Pull Request Tests",
+      "head_branch": "codex/cross-platform-replay",
+      "run_url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3/actions/runs/41071710411",
+      "run_attempt": 1,
+      "node_id": "CR_kwDOTt4-As8AAAAc5fdN4w",
+      "head_sha": "39055c8d60cd6973cc1dc12a9f71106c1bf08ef3",
+      "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3/actions/jobs/124117274083",
+      "html_url": "https://github.com/JCRABURN/cfb-betting-system-v3/actions/runs/41071710411/job/124117274083",
+      "status": "completed",
+      "conclusion": "failure",
+      "created_at": "2026-10-30T14:28:07Z",
+      "started_at": "2026-10-30T14:28:09Z",
+      "completed_at": "2026-10-30T14:28:41Z",
+      "name": "test (windows-latest, 3.12.14)",
+      "steps": [
+        {
+          "name": "Set up job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 1,
+          "started_at": "2026-10-30T14:28:10Z",
+          "completed_at": "2026-10-30T14:28:11Z"
+        },
+        {
+          "name": "Checkout repository",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 2,
+          "started_at": "2026-10-30T14:28:11Z",
+          "completed_at": "2026-10-30T14:28:19Z"
+        },
+        {
+          "name": "Set up Python",
+          "status": "completed",
+          "conclusion": "failure",
+          "number": 3,
+          "started_at": "2026-10-30T14:28:19Z",
+          "completed_at": "2026-10-30T14:28:23Z"
+        },
+        {
+          "name": "Install locked dependencies",
+          "status": "completed",
+          "conclusion": "skipped",
+          "number": 4,
+          "started_at": "2026-10-30T14:28:23Z",
+          "completed_at": "2026-10-30T14:28:23Z"
+        },
+        {
+          "name": "Verify repository safety controls",
+          "status": "completed",
+          "conclusion": "skipped",
+          "number": 5,
+          "started_at": "2026-10-30T14:28:23Z",
+          "completed_at": "2026-10-30T14:28:23Z"
+        },
+        {
+          "name": "Verify migrations on a disposable database copy",
+          "status": "completed",
+          "conclusion": "skipped",
+          "number": 6,
+          "started_at": "2026-10-30T14:28:23Z",
+          "completed_at": "2026-10-30T14:28:23Z"
+        },
+        {
+          "name": "Verify managed PostgreSQL migration inventory",
+          "status": "completed",
+          "conclusion": "skipped",
+          "number": 7,
+          "started_at": "2026-10-30T14:28:23Z",
+          "completed_at": "2026-10-30T14:28:23Z"
+        },
+        {
+          "name": "Run complete test suite",
+          "status": "completed",
+          "conclusion": "skipped",
+          "number": 8,
+          "started_at": "2026-10-30T14:28:23Z",
+          "completed_at": "2026-10-30T14:28:23Z"
+        },
+        {
+          "name": "Capture native replay comparisons",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 9,
+          "started_at": "2026-10-30T14:28:23Z",
+          "completed_at": "2026-10-30T14:28:36Z"
+        },
+        {
+          "name": "Archive replay comparisons",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 10,
+          "started_at": "2026-10-30T14:28:36Z",
+          "completed_at": "2026-10-30T14:28:38Z"
+        },
+        {
+          "name": "Post Set up Python",
+          "status": "completed",
+          "conclusion": "skipped",
+          "number": 19,
+          "started_at": "2026-10-30T14:28:38Z",
+          "completed_at": "2026-10-30T14:28:38Z"
+        },
+        {
+          "name": "Post Checkout repository",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 20,
+          "started_at": "2026-10-30T14:28:38Z",
+          "completed_at": "2026-10-30T14:28:40Z"
+        },
+        {
+          "name": "Complete job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 21,
+          "started_at": "2026-10-30T14:28:40Z",
+          "completed_at": "2026-10-30T14:28:40Z"
+        }
+      ],
+      "check_run_url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3/check-runs/124117274083",
+      "labels": [
+        "windows-latest"
+      ],
+      "runner_id": 1000001688,
+      "runner_name": "GitHub Actions 1000001688",
+      "runner_group_id": 0,
+      "runner_group_name": "GitHub Actions"
+    },
+    {
+      "id": 124117297186,
+      "run_id": 41071710411,
+      "workflow_name": "Pull Request Tests",
+      "head_branch": "codex/cross-platform-replay",
+      "run_url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3/actions/runs/41071710411",
+      "run_attempt": 1,
+      "node_id": "CR_kwDOTt4-As8AAAAc5feoIg",
+      "head_sha": "39055c8d60cd6973cc1dc12a9f71106c1bf08ef3",
+      "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3/actions/jobs/124117297186",
+      "html_url": "https://github.com/JCRABURN/cfb-betting-system-v3/actions/runs/41071710411/job/124117297186",
+      "status": "completed",
+      "conclusion": "failure",
+      "created_at": "2026-10-30T14:28:10Z",
+      "started_at": "2026-10-30T14:28:12Z",
+      "completed_at": "2026-10-30T14:30:31Z",
+      "name": "test (ubuntu-latest, 3.12.14)",
+      "steps": [
+        {
+          "name": "Set up job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 1,
+          "started_at": "2026-10-30T14:28:13Z",
+          "completed_at": "2026-10-30T14:28:13Z"
+        },
+        {
+          "name": "Checkout repository",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 2,
+          "started_at": "2026-10-30T14:28:13Z",
+          "completed_at": "2026-10-30T14:28:16Z"
+        },
+        {
+          "name": "Set up Python",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 3,
+          "started_at": "2026-10-30T14:28:16Z",
+          "completed_at": "2026-10-30T14:28:21Z"
+        },
+        {
+          "name": "Install locked dependencies",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 4,
+          "started_at": "2026-10-30T14:28:21Z",
+          "completed_at": "2026-10-30T14:28:23Z"
+        },
+        {
+          "name": "Verify repository safety controls",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 5,
+          "started_at": "2026-10-30T14:28:23Z",
+          "completed_at": "2026-10-30T14:28:23Z"
+        },
+        {
+          "name": "Verify migrations on a disposable database copy",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 6,
+          "started_at": "2026-10-30T14:28:23Z",
+          "completed_at": "2026-10-30T14:28:24Z"
+        },
+        {
+          "name": "Verify managed PostgreSQL migration inventory",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 7,
+          "started_at": "2026-10-30T14:28:24Z",
+          "completed_at": "2026-10-30T14:28:24Z"
+        },
+        {
+          "name": "Run complete test suite",
+          "status": "completed",
+          "conclusion": "failure",
+          "number": 8,
+          "started_at": "2026-10-30T14:28:24Z",
+          "completed_at": "2026-10-30T14:30:21Z"
+        },
+        {
+          "name": "Capture native replay comparisons",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 9,
+          "started_at": "2026-10-30T14:30:21Z",
+          "completed_at": "2026-10-30T14:30:27Z"
+        },
+        {
+          "name": "Archive replay comparisons",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 10,
+          "started_at": "2026-10-30T14:30:27Z",
+          "completed_at": "2026-10-30T14:30:29Z"
+        },
+        {
+          "name": "Post Set up Python",
+          "status": "completed",
+          "conclusion": "skipped",
+          "number": 19,
+          "started_at": "2026-10-30T14:30:29Z",
+          "completed_at": "2026-10-30T14:30:29Z"
+        },
+        {
+          "name": "Post Checkout repository",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 20,
+          "started_at": "2026-10-30T14:30:29Z",
+          "completed_at": "2026-10-30T14:30:29Z"
+        },
+        {
+          "name": "Complete job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 21,
+          "started_at": "2026-10-30T14:30:29Z",
+          "completed_at": "2026-10-30T14:30:29Z"
+        }
+      ],
+      "check_run_url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3/check-runs/124117297186",
+      "labels": [
+        "ubuntu-latest"
+      ],
+      "runner_id": 1000001690,
+      "runner_name": "GitHub Actions 1000001690",
+      "runner_group_id": 0,
+      "runner_group_name": "GitHub Actions"
+    }
+  ]
+}

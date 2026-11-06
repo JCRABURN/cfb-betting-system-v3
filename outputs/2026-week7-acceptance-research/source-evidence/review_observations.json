@@ -1,0 +1,90 @@
+{
+  "reviewed_at_utc": "2026-10-21T13:48:50Z",
+  "repository": "JCRABURN/cfb-betting-system-v3",
+  "pull_requests": [
+    {
+      "number": 35,
+      "title": "Week 6 formal postgame audit: 58 ATS and 58 totals (CLV custody FAIL)",
+      "url": "https://github.com/JCRABURN/cfb-betting-system-v3/pull/35",
+      "head": "57c33b29aa399e4d94c749f6e2d25a6e80b48262",
+      "base": "main",
+      "base_sha": "abb4eb26bd1140e66972d2f1143cd587e80960b4",
+      "draft": true,
+      "state": "open"
+    },
+    {
+      "number": 36,
+      "title": "Research Week 6 ranking, calibration, and Top 5 decision gate",
+      "url": "https://github.com/JCRABURN/cfb-betting-system-v3/pull/36",
+      "head": "48d0250aff3fc286b7b8bd06e7e798a4134910a5",
+      "base": "codex/2026-week6-postgame-audit",
+      "base_sha": "57c33b29aa399e4d94c749f6e2d25a6e80b48262",
+      "draft": true,
+      "state": "open"
+    },
+    {
+      "number": 37,
+      "title": "Draft Week 7 corrected source, owner-approved five, and custody monitoring",
+      "url": "https://github.com/JCRABURN/cfb-betting-system-v3/pull/37",
+      "head": "55c0a417c72492943253ad50cf139415ca3902be",
+      "base": "codex/week6-ranking-calibration-research",
+      "base_sha": "48d0250aff3fc286b7b8bd06e7e798a4134910a5",
+      "draft": true,
+      "state": "open"
+    },
+    {
+      "number": 38,
+      "title": "Evaluate Week 7: approved five 2–3; full ATS 26–33, totals 33–26",
+      "url": "https://github.com/JCRABURN/cfb-betting-system-v3/pull/38",
+      "head": "da7381b801abee170a8b321cf77d833626230a11",
+      "base": "main",
+      "base_sha": "abb4eb26bd1140e66972d2f1143cd587e80960b4",
+      "draft": true,
+      "state": "open"
+    }
+  ],
+  "review_and_check_observation": "All four PRs were open drafts; reviews and commit check-runs returned empty lists when inspected. This is not proof that no manual/local verification occurred.",
+  "primary_final_score_reconciliation": [
+    {
+      "game_id": "401864524",
+      "away": "UNLV",
+      "away_score": 31,
+      "home": "Air Force",
+      "home_score": 41,
+      "url": "https://goairforcefalcons.com/news/2026/10/17/football-air-force-produces-430-rushing-yards-in-41-31-win-over-unlv"
+    },
+    {
+      "game_id": "401858488",
+      "away": "Ohio State",
+      "away_score": 19,
+      "home": "Indiana",
+      "home_score": 15,
+      "url": "https://iuhoosiers.com/news/2026/10/17/football-win-streak-cracked-by-buckeyes-PETE"
+    },
+    {
+      "game_id": "401869957",
+      "away": "Georgia State",
+      "away_score": 22,
+      "home": "James Madison",
+      "home_score": 49,
+      "url": "https://georgiastatesports.com/news/2026/10/17/football-panthers-come-up-short-in-a-49-22-loss-to-james-madison.aspx"
+    },
+    {
+      "game_id": "401858492",
+      "away": "Nebraska",
+      "away_score": 14,
+      "home": "Oregon",
+      "home_score": 17,
+      "url": "https://goducks.com/game-center/24382"
+    },
+    {
+      "game_id": "401860923",
+      "away": "Colorado State",
+      "away_score": 27,
+      "home": "Texas State",
+      "home_score": 66,
+      "url": "https://txst.com/news/2026/10/15/football-game-recap-bobcats-dominate-colorado-state-66-27-in-pac-12-home-opener.aspx"
+    }
+  ],
+  "source_limit": "These are reviewer-recorded factual observations from official athletics pages, not immutable full HTML archives or historical market quotes."
+}

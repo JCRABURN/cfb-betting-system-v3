@@ -1,0 +1,48 @@
+{
+  "source_thread_id": "6ad7c843-3a48-83ea-9bb3-00a537ae40d7",
+  "source_turn_id": "7f5c61cb-b416-4805-bc86-f904184c3381",
+  "chat_received_unix_seconds": 1793154851.151,
+  "chat_received_at_utc": "2026-10-28T02:34:11.151000+00:00",
+  "preserved_at_utc": "2026-10-28T03:05:20.479951+00:00",
+  "original_image_capture_time": null,
+  "market_posting_time": null,
+  "source_csv_sha256": "9be32a172ed684b9799a8979170b9c45d372050266557774220a227eb9ec2ace",
+  "images": [
+    {
+      "path": "splashsports-01.png",
+      "sha256": "d9a32908f1b955191ca814579f3a3bee027258b417b23a39732b193506d65c6c",
+      "original_preview_path": "C:\\Users\\jraburn\\AppData\\Local\\Temp\\codex-file-preview-prqDFr\\image.png",
+      "original_capture_timestamp": null
+    },
+    {
+      "path": "splashsports-02.png",
+      "sha256": "4f2bc3d7027867c3f299e54b432fb5869393ba3cb0feba8030a3b4b7e54e2411",
+      "original_preview_path": "C:\\Users\\jraburn\\AppData\\Local\\Temp\\codex-file-preview-FC1zXf\\image.png",
+      "original_capture_timestamp": null
+    },
+    {
+      "path": "splashsports-03.png",
+      "sha256": "4bcb1bac2acb7311e30dd6a7350da5fd17e325fec3067342bdb08f5fc90791f4",
+      "original_preview_path": "C:\\Users\\jraburn\\AppData\\Local\\Temp\\codex-file-preview-iPJUSZ\\image.png",
+      "original_capture_timestamp": null
+    },
+    {
+      "path": "splashsports-04.png",
+      "sha256": "5404c25c3bf4f6610bc22f14c6483981ccbf8b76357f657a4476e6783420dee7",
+      "original_preview_path": "C:\\Users\\jraburn\\AppData\\Local\\Temp\\codex-file-preview-G2lP5z\\image.png",
+      "original_capture_timestamp": null
+    },
+    {
+      "path": "splashsports-05.png",
+      "sha256": "7797abcbaeae11af0c7e9a3ee61ddfcea9ecf12b8067636b78ad98691e638763",
+      "original_preview_path": "C:\\Users\\jraburn\\AppData\\Local\\Temp\\codex-file-preview-Y42gXY\\image.png",
+      "original_capture_timestamp": null
+    },
+    {
+      "path": "splashsports-06.png",
+      "sha256": "2062db1db0349e3bed95dfbf89d78ee12dc6df6cc53a85fb35527a8197615834",
+      "original_preview_path": "C:\\Users\\jraburn\\AppData\\Local\\Temp\\codex-file-preview-t9NxMi\\image.png",
+      "original_capture_timestamp": null
+    }
+  ]
+}

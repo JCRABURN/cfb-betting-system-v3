@@ -1,0 +1,20 @@
+{
+  "status": "PENDING_OWNER_APPROVAL",
+  "title_if_approved": "OWNER-APPROVED WEEK 7 CONTEST FIVE",
+  "prepared_at_utc": "2026-10-13T18:53:01Z",
+  "approval_timestamp_utc": null,
+  "approval_source": null,
+  "locked_card_canonical_sha256": "3561c1cf93debbe0aafcf527b5e9f8abfc60c29589da3ad4f17f3502077ab8ad",
+  "locked_snapshot_file_sha256": "69783ffe44220a31d4be07731ecb4065fef9d3c0e047ef8b8459c6a5412dc75c",
+  "model_research_commit_sha": "97a8dfb7ba14842bbf8da1cddfec7a3599b7b8d9",
+  "frozen_initial_artifact_commit_sha": "6da1fa428a23fc1733aa0003af793b2206cb1453",
+  "prior_recommendation_file_sha256": "992b8ff9649eaa862f2b14f860198d4aee5e055759aaa9128886698faf9f1b40",
+  "prior_recommendation_preserved": true,
+  "selections": [
+    {"rank": 1, "selection": "Air Force", "locked_line": 1.5, "market": "ATS", "research_rank": 4, "human_confidence_1_to_5": 3},
+    {"rank": 2, "selection": "Indiana", "locked_line": 3.5, "market": "ATS", "research_rank": 5, "human_confidence_1_to_5": 3},
+    {"rank": 3, "selection": "Georgia State", "locked_line": 12.5, "market": "ATS", "research_rank": 8, "human_confidence_1_to_5": 3},
+    {"rank": 4, "selection": "Nebraska", "locked_line": 7.5, "market": "ATS", "research_rank": 2, "human_confidence_1_to_5": 2},
+    {"rank": 5, "selection": "Colorado State at Texas State Under", "locked_line": 72.5, "market": "TOTAL", "research_rank": 1, "human_confidence_1_to_5": 2}
+  ]
+}

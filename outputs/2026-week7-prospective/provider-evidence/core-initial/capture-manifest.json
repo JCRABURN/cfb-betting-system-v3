@@ -1,0 +1,52 @@
+{
+  "status": "COMPLETE",
+  "captured_at_utc": "2026-10-13T14:07:24.377064+00:00",
+  "code_commit_sha": "cc4ca4c1d3a55f8fd264c1ff8ef38f7caa8c93af",
+  "requests": [
+    {
+      "name": "cfbd-2026-games",
+      "provider": "collegefootballdata",
+      "endpoint": "https://api.collegefootballdata.com/games",
+      "parameters": {
+        "year": 2026,
+        "classification": "fbs"
+      },
+      "requested_at_utc": "2026-10-13T14:07:09.630835+00:00",
+      "received_at_utc": "2026-10-13T14:07:10.327670+00:00",
+      "path": "cfbd-2026-games.json",
+      "sha256": "7bc1c41279d92cb186f406168c38894a6d2d4d21803f07c82fe5812777653638",
+      "records": 888,
+      "status": "captured"
+    },
+    {
+      "name": "cfbd-2026-fbs-teams",
+      "provider": "collegefootballdata",
+      "endpoint": "https://api.collegefootballdata.com/teams/fbs",
+      "parameters": {
+        "year": 2026
+      },
+      "requested_at_utc": "2026-10-13T14:07:10.348817+00:00",
+      "received_at_utc": "2026-10-13T14:07:10.496313+00:00",
+      "path": "cfbd-2026-fbs-teams.json",
+      "sha256": "99441fa547a34880c34cb9a2350ab675d4d9fd90d7a437ef827333cb02a0c317",
+      "records": 138,
+      "status": "captured"
+    },
+    {
+      "name": "cfbd-week6-advanced",
+      "provider": "collegefootballdata",
+      "endpoint": "https://api.collegefootballdata.com/stats/season/advanced",
+      "parameters": {
+        "year": 2026,
+        "endWeek": 6,
+        "excludeGarbageTime": "true"
+      },
+      "requested_at_utc": "2026-10-13T14:07:10.500977+00:00",
+      "received_at_utc": "2026-10-13T14:07:24.360372+00:00",
+      "path": "cfbd-week6-advanced.json",
+      "sha256": "bf05a1e6713cd10cf39aabda53a8405a75401c00c61bf388d79f6d7a03c1cded",
+      "records": 138,
+      "status": "captured"
+    }
+  ]
+}

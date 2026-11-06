@@ -1,0 +1,10 @@
+{
+  "endpoint": "actions/permissions",
+  "requested_at_utc": "2026-10-29T21:38:50.565045+00:00",
+  "received_at_utc": "2026-10-29T21:38:50.902753+00:00",
+  "http_status": 200,
+  "body": {
+    "enabled": false,
+    "sha_pinning_required": false
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "cwd": "C:\\Users\\jraburn\\Documents\\GitHub\\cfb-betting-system-v3\\.worktrees\\cross-platform-replay",
+  "source_commit": "d2a2883f6acb33aea829e85ad4117baac1e85e87",
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.22621-SP0",
+  "requirements_sha256": {
+    "requirements.txt": "5a2cb3b8e154f349ba016c1f7de9e817134d4a9f7a78a28d18a611d1f4adf305",
+    "requirements-dev.txt": "089d9c094500662925d623fb46b0e2ebff64a7febf95809b63ea2da8c70ef93f"
+  },
+  "commands": [
+    {
+      "command": [
+        "C:\\Users\\jraburn\\Documents\\GitHub\\cfb-betting-system-v3\\.venv\\Scripts\\python.exe",
+        "-X",
+        "utf8",
+        "-m",
+        "pytest",
+        "-q"
+      ],
+      "started_utc": "2026-11-02T16:25:23.444571+00:00",
+      "elapsed_seconds": 459.532,
+      "returncode": 0,
+      "log": "1.log"
+    },
+    {
+      "command": [
+        "C:\\Users\\jraburn\\Documents\\GitHub\\cfb-betting-system-v3\\.venv\\Scripts\\python.exe",
+        "-X",
+        "utf8",
+        "scripts/verify_repo_safety.py"
+      ],
+      "started_utc": "2026-11-02T16:33:02.975046+00:00",
+      "elapsed_seconds": 0.14,
+      "returncode": 0,
+      "log": "2.log"
+    },
+    {
+      "command": [
+        "C:\\Users\\jraburn\\Documents\\GitHub\\cfb-betting-system-v3\\.venv\\Scripts\\python.exe",
+        "-X",
+        "utf8",
+        "-m",
+        "scripts.verify_migrations"
+      ],
+      "started_utc": "2026-11-02T16:33:03.109615+00:00",
+      "elapsed_seconds": 1.453,
+      "returncode": 0,
+      "log": "3.log"
+    },
+    {
+      "command": [
+        "C:\\Users\\jraburn\\Documents\\GitHub\\cfb-betting-system-v3\\.venv\\Scripts\\python.exe",
+        "-X",
+        "utf8",
+        "-m",
+        "scripts.verify_cloud_migrations"
+      ],
+      "started_utc": "2026-11-02T16:33:04.565402+00:00",
+      "elapsed_seconds": 0.704,
+      "returncode": 0,
+      "log": "4.log"
+    },
+    {
+      "command": [
+        "C:\\Users\\jraburn\\Documents\\GitHub\\cfb-betting-system-v3\\.venv\\Scripts\\python.exe",
+        "-X",
+        "utf8",
+        "-m",
+        "scripts.verify_replay_compat",
+        "--output",
+        "C:\\Users\\jraburn\\Documents\\GitHub\\cfb-betting-system-v3\\.worktrees\\cross-platform-replay\\outputs\\2026-cross-platform-replay\\local-windows312-final-integration\\compatibility.json"
+      ],
+      "started_utc": "2026-11-02T16:33:05.268252+00:00",
+      "elapsed_seconds": 123.921,
+      "returncode": 0,
+      "log": "5.log"
+    }
+  ],
+  "ending_commit": "d2a2883f6acb33aea829e85ad4117baac1e85e87",
+  "tracked_status": "",
+  "passed": true
+}

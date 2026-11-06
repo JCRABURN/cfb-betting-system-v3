@@ -1,0 +1,4514 @@
+{
+  "clv_status": "INCOMPLETE",
+  "comparable_week5_7": {
+    "ATS": {
+      "bias_actual_minus_prediction": 0.3831129478521991,
+      "hit_rate": 0.5086705202312138,
+      "losses": 85,
+      "mae": 12.98061527664356,
+      "n": 173,
+      "pushes": 0,
+      "rmse": 16.70529120654749,
+      "roi": -0.028901734104046242,
+      "units_minus110": -5.0,
+      "wilson95": [
+        0.4348000456743291,
+        0.5821643020527603
+      ],
+      "wins": 88
+    },
+    "TOTAL": {
+      "bias_actual_minus_prediction": 1.5701950148728827,
+      "hit_rate": 0.5144508670520231,
+      "losses": 84,
+      "mae": 13.185094085727103,
+      "n": 173,
+      "pushes": 0,
+      "rmse": 16.39063387006158,
+      "roi": -0.017866526537046783,
+      "units_minus110": -3.0909090909090935,
+      "wilson95": [
+        0.4404741037896836,
+        0.5877998090887986
+      ],
+      "wins": 89
+    }
+  },
+  "correlations": [
+    {
+      "absolute_error_r": -0.1066791292752977,
+      "both_loss": 14,
+      "both_win": 15,
+      "cohort": "ALL",
+      "n": 56,
+      "signed_error_r": -0.12084816705200692,
+      "week": 5,
+      "win_phi": 0.07697617141699879
+    },
+    {
+      "absolute_error_r": -0.39552174950298813,
+      "both_loss": 2,
+      "both_win": 0,
+      "cohort": "ATS_TOP5",
+      "n": 5,
+      "signed_error_r": 0.027590171612295825,
+      "week": 5,
+      "win_phi": null
+    },
+    {
+      "absolute_error_r": -0.23368669796415442,
+      "both_loss": 0,
+      "both_win": 3,
+      "cohort": "TOTAL_TOP5",
+      "n": 5,
+      "signed_error_r": 0.2947366215235089,
+      "week": 5,
+      "win_phi": null
+    },
+    {
+      "absolute_error_r": -0.3169374034243456,
+      "both_loss": 2,
+      "both_win": 3,
+      "cohort": "EITHER_TOP5",
+      "n": 10,
+      "signed_error_r": -0.02902093115871455,
+      "week": 5,
+      "win_phi": 0.3273268353539886
+    },
+    {
+      "absolute_error_r": null,
+      "both_loss": 0,
+      "both_win": 0,
+      "cohort": "BOTH_TOP5",
+      "n": 0,
+      "signed_error_r": null,
+      "week": 5,
+      "win_phi": null
+    },
+    {
+      "absolute_error_r": -0.054986955251055694,
+      "both_loss": 12,
+      "both_win": 15,
+      "cohort": "ALL",
+      "n": 58,
+      "signed_error_r": 0.12274322999235508,
+      "week": 6,
+      "win_phi": -0.06486749731408022
+    },
+    {
+      "absolute_error_r": 0.7185881170839369,
+      "both_loss": 1,
+      "both_win": 2,
+      "cohort": "ATS_TOP5",
+      "n": 5,
+      "signed_error_r": -0.3190262461100086,
+      "week": 6,
+      "win_phi": 0.408248290463863
+    },
+    {
+      "absolute_error_r": 0.20015411316564505,
+      "both_loss": 2,
+      "both_win": 1,
+      "cohort": "TOTAL_TOP5",
+      "n": 5,
+      "signed_error_r": -0.2088748991303806,
+      "week": 6,
+      "win_phi": 0.40824829046386296
+    },
+    {
+      "absolute_error_r": -0.07738602109573126,
+      "both_loss": 3,
+      "both_win": 3,
+      "cohort": "EITHER_TOP5",
+      "n": 10,
+      "signed_error_r": -0.2072874704463417,
+      "week": 6,
+      "win_phi": 0.42857142857142866
+    },
+    {
+      "absolute_error_r": null,
+      "both_loss": 0,
+      "both_win": 0,
+      "cohort": "BOTH_TOP5",
+      "n": 0,
+      "signed_error_r": null,
+      "week": 6,
+      "win_phi": null
+    },
+    {
+      "absolute_error_r": 0.11636344898007027,
+      "both_loss": 20,
+      "both_win": 20,
+      "cohort": "ALL",
+      "n": 59,
+      "signed_error_r": 0.06900147779238519,
+      "week": 7,
+      "win_phi": 0.37529137529137524
+    },
+    {
+      "absolute_error_r": -0.6590569517059146,
+      "both_loss": 1,
+      "both_win": 1,
+      "cohort": "ATS_TOP5",
+      "n": 5,
+      "signed_error_r": -0.013592695190240499,
+      "week": 7,
+      "win_phi": -0.16666666666666669
+    },
+    {
+      "absolute_error_r": 0.9799650560947815,
+      "both_loss": 3,
+      "both_win": 1,
+      "cohort": "TOTAL_TOP5",
+      "n": 5,
+      "signed_error_r": 0.7973907716232828,
+      "week": 7,
+      "win_phi": 0.6123724356957945
+    },
+    {
+      "absolute_error_r": 0.4102242399464981,
+      "both_loss": 4,
+      "both_win": 2,
+      "cohort": "EITHER_TOP5",
+      "n": 10,
+      "signed_error_r": 0.5061920786779767,
+      "week": 7,
+      "win_phi": 0.16666666666666669
+    },
+    {
+      "absolute_error_r": null,
+      "both_loss": 0,
+      "both_win": 0,
+      "cohort": "BOTH_TOP5",
+      "n": 0,
+      "signed_error_r": null,
+      "week": 7,
+      "win_phi": null
+    },
+    {
+      "absolute_error_r": -0.027428087189504898,
+      "both_loss": 46,
+      "both_win": 50,
+      "cohort": "ALL",
+      "n": 173,
+      "signed_error_r": 0.01037946090656106,
+      "week": "5-7",
+      "win_phi": 0.10938754068679177
+    },
+    {
+      "absolute_error_r": -0.2619819399553625,
+      "both_loss": 4,
+      "both_win": 3,
+      "cohort": "ATS_TOP5",
+      "n": 15,
+      "signed_error_r": -0.13716829057888844,
+      "week": "5-7",
+      "win_phi": 0.10660035817780521
+    },
+    {
+      "absolute_error_r": 0.3337919187374412,
+      "both_loss": 5,
+      "both_win": 5,
+      "cohort": "TOTAL_TOP5",
+      "n": 15,
+      "signed_error_r": 0.3404515374887053,
+      "week": "5-7",
+      "win_phi": 0.38888888888888884
+    },
+    {
+      "absolute_error_r": -0.10807429050745329,
+      "both_loss": 9,
+      "both_win": 8,
+      "cohort": "EITHER_TOP5",
+      "n": 30,
+      "signed_error_r": 0.0627353769430596,
+      "week": "5-7",
+      "win_phi": 0.2445579940222592
+    },
+    {
+      "absolute_error_r": null,
+      "both_loss": 0,
+      "both_win": 0,
+      "cohort": "BOTH_TOP5",
+      "n": 0,
+      "signed_error_r": null,
+      "week": "5-7",
+      "win_phi": null
+    }
+  ],
+  "earlier_predictiveness": {
+    "week2_ATS": {
+      "edge": {
+        "auc": 0.61,
+        "inference": "EXPLORATORY_WITHIN_WEEK_LABEL_PERMUTATION_NOT_TEAM_CLUSTER_ROBUST",
+        "n": 49,
+        "pearson_win": 0.1493088419054806,
+        "permutation_two_sided_p": 0.167,
+        "permutations": 999
+      }
+    },
+    "week2_TOTAL": {
+      "edge": {
+        "auc": 0.67,
+        "inference": "EXPLORATORY_WITHIN_WEEK_LABEL_PERMUTATION_NOT_TEAM_CLUSTER_ROBUST",
+        "n": 49,
+        "pearson_win": 0.2848676581265769,
+        "permutation_two_sided_p": 0.035,
+        "permutations": 999
+      },
+      "score": {
+        "actual_wins": 24,
+        "auc": 0.67,
+        "brier": 0.24967224433516072,
+        "expected_wins": 29.945336111388222,
+        "inference": "EXPLORATORY_WITHIN_WEEK_LABEL_PERMUTATION_NOT_TEAM_CLUSTER_ROBUST",
+        "log_loss": 0.6925612459326681,
+        "n": 49,
+        "pearson_win": 0.2871895610244794,
+        "permutation_two_sided_p": 0.035,
+        "permutations": 999
+      }
+    },
+    "week3_ATS": {
+      "edge": {
+        "auc": 0.545338441890166,
+        "inference": "EXPLORATORY_WITHIN_WEEK_LABEL_PERMUTATION_NOT_TEAM_CLUSTER_ROBUST",
+        "n": 56,
+        "pearson_win": 0.07955691527344093,
+        "permutation_two_sided_p": 0.584,
+        "permutations": 999
+      }
+    },
+    "week3_TOTAL": {
+      "edge": {
+        "auc": 0.5025641025641026,
+        "inference": "EXPLORATORY_WITHIN_WEEK_LABEL_PERMUTATION_NOT_TEAM_CLUSTER_ROBUST",
+        "n": 56,
+        "pearson_win": 0.04911444022323762,
+        "permutation_two_sided_p": 0.977,
+        "permutations": 999
+      },
+      "score": {
+        "actual_wins": 26,
+        "auc": 0.5025641025641026,
+        "brier": 0.2754774735925078,
+        "expected_wins": 34.469554247240424,
+        "inference": "EXPLORATORY_WITHIN_WEEK_LABEL_PERMUTATION_NOT_TEAM_CLUSTER_ROBUST",
+        "log_loss": 0.7470478096806016,
+        "n": 56,
+        "pearson_win": 0.03844438618466016,
+        "permutation_two_sided_p": 0.977,
+        "permutations": 999
+      }
+    }
+  },
+  "earlier_segments": [
+    {
+      "axis": "confidence",
+      "bias_actual_minus_prediction": 13.434155093023257,
+      "hit_rate": 0.4186046511627907,
+      "losses": 25,
+      "mae": 20.96773858139535,
+      "market": "ATS",
+      "n": 43,
+      "pushes": 0,
+      "rmse": 25.790175072400746,
+      "roi": -0.20084566596194503,
+      "segment": "1",
+      "units_minus110": -8.636363636363637,
+      "week": 1,
+      "wilson95": [
+        0.28384550927849195,
+        0.5667142261303578
+      ],
+      "wins": 18
+    },
+    {
+      "axis": "edge_points",
+      "bias_actual_minus_prediction": 20.67971368,
+      "hit_rate": 0.4,
+      "losses": 15,
+      "mae": 26.2409976,
+      "market": "ATS",
+      "n": 25,
+      "pushes": 0,
+      "rmse": 30.541523396713426,
+      "roi": -0.23636363636363633,
+      "segment": "10+",
+      "units_minus110": -5.909090909090908,
+      "week": 1,
+      "wilson95": [
+        0.23403302377747973,
+        0.5926054264103301
+      ],
+      "wins": 10
+    },
+    {
+      "axis": "edge_points",
+      "bias_actual_minus_prediction": -5.082362166666667,
+      "hit_rate": 0.5,
+      "losses": 3,
+      "mae": 9.5721295,
+      "market": "ATS",
+      "n": 6,
+      "pushes": 0,
+      "rmse": 10.60816418397889,
+      "roi": -0.04545454545454549,
+      "segment": "3-6.9",
+      "units_minus110": -0.27272727272727293,
+      "week": 1,
+      "wilson95": [
+        0.1876163064826506,
+        0.8123836935173494
+      ],
+      "wins": 3
+    },
+    {
+      "axis": "edge_points",
+      "bias_actual_minus_prediction": 9.443003666666668,
+      "hit_rate": 0.0,
+      "losses": 3,
+      "mae": 27.619483666666667,
+      "market": "ATS",
+      "n": 3,
+      "pushes": 0,
+      "rmse": 27.623508330640487,
+      "roi": -1.0,
+      "segment": "7-9.9",
+      "units_minus110": -3.0,
+      "week": 1,
+      "wilson95": [
+        5.551115123125783e-17,
+        0.5614970317550454
+      ],
+      "wins": 0
+    },
+    {
+      "axis": "edge_points",
+      "bias_actual_minus_prediction": 6.982332111111112,
+      "hit_rate": 0.5555555555555556,
+      "losses": 4,
+      "mae": 11.699621222222223,
+      "market": "ATS",
+      "n": 9,
+      "pushes": 0,
+      "rmse": 16.044157105363336,
+      "roi": 0.06060606060606065,
+      "segment": "<3",
+      "units_minus110": 0.5454545454545459,
+      "week": 1,
+      "wilson95": [
+        0.26665129349549305,
+        0.8112214789023355
+      ],
+      "wins": 5
+    },
+    {
+      "axis": "governed_top5",
+      "bias_actual_minus_prediction": 12.396361236842106,
+      "hit_rate": 0.4473684210526316,
+      "losses": 21,
+      "mae": 20.429492868421054,
+      "market": "ATS",
+      "n": 38,
+      "pushes": 0,
+      "rmse": 25.15224381574842,
+      "roi": -0.14593301435406697,
+      "segment": "False",
+      "units_minus110": -5.545454545454545,
+      "week": 1,
+      "wilson95": [
+        0.3014640099805125,
+        0.6029370287800753
+      ],
+      "wins": 17
+    },
+    {
+      "axis": "governed_top5",
+      "bias_actual_minus_prediction": 21.3213884,
+      "hit_rate": 0.2,
+      "losses": 4,
+      "mae": 25.058405999999998,
+      "market": "ATS",
+      "n": 5,
+      "pushes": 0,
+      "rmse": 30.201260174562247,
+      "roi": -0.6181818181818182,
+      "segment": "True",
+      "units_minus110": -3.090909090909091,
+      "week": 1,
+      "wilson95": [
+        0.03622410863243014,
+        0.6244653702374747
+      ],
+      "wins": 1
+    },
+    {
+      "axis": "favorite",
+      "bias_actual_minus_prediction": 5.754822000000001,
+      "hit_rate": 0.5,
+      "losses": 3,
+      "mae": 12.592831666666667,
+      "market": "ATS",
+      "n": 6,
+      "pushes": 0,
+      "rmse": 17.52682639895161,
+      "roi": -0.04545454545454549,
+      "segment": "FAVORITE",
+      "units_minus110": -0.27272727272727293,
+      "week": 1,
+      "wilson95": [
+        0.1876163064826506,
+        0.8123836935173494
+      ],
+      "wins": 3
+    },
+    {
+      "axis": "favorite",
+      "bias_actual_minus_prediction": 14.679452351351351,
+      "hit_rate": 0.40540540540540543,
+      "losses": 22,
+      "mae": 22.325831594594597,
+      "market": "ATS",
+      "n": 37,
+      "pushes": 0,
+      "rmse": 26.891969433112823,
+      "roi": -0.22604422604422603,
+      "segment": "UNDERDOG",
+      "units_minus110": -8.363636363636363,
+      "week": 1,
+      "wilson95": [
+        0.26346518192014284,
+        0.5651403526977063
+      ],
+      "wins": 15
+    },
+    {
+      "axis": "location",
+      "bias_actual_minus_prediction": 20.77076390625,
+      "hit_rate": 0.375,
+      "losses": 20,
+      "mae": 24.34752784375,
+      "market": "ATS",
+      "n": 32,
+      "pushes": 0,
+      "rmse": 28.640472169902285,
+      "roi": -0.2840909090909091,
+      "segment": "AWAY",
+      "units_minus110": -9.090909090909092,
+      "week": 1,
+      "wilson95": [
+        0.22933887309454212,
+        0.5474559264692255
+      ],
+      "wins": 12
+    },
+    {
+      "axis": "location",
+      "bias_actual_minus_prediction": -10.58065475,
+      "hit_rate": 0.5,
+      "losses": 4,
+      "mae": 13.26966475,
+      "market": "ATS",
+      "n": 8,
+      "pushes": 0,
+      "rmse": 16.79636068910019,
+      "roi": -0.04545454545454547,
+      "segment": "HOME",
+      "units_minus110": -0.36363636363636376,
+      "week": 1,
+      "wilson95": [
+        0.21521606221387757,
+        0.7847839377861224
+      ],
+      "wins": 4
+    },
+    {
+      "axis": "location",
+      "bias_actual_minus_prediction": -0.7835126666666664,
+      "hit_rate": 0.6666666666666666,
+      "losses": 1,
+      "mae": 5.44485,
+      "market": "ATS",
+      "n": 3,
+      "pushes": 0,
+      "rmse": 5.625242706863292,
+      "roi": 0.2727272727272727,
+      "segment": "NEUTRAL",
+      "units_minus110": 0.8181818181818181,
+      "week": 1,
+      "wilson95": [
+        0.2076596008020477,
+        0.9385080552796037
+      ],
+      "wins": 2
+    },
+    {
+      "axis": "spread",
+      "bias_actual_minus_prediction": 11.10803,
+      "hit_rate": 0.0,
+      "losses": 3,
+      "mae": 29.28451,
+      "market": "ATS",
+      "n": 3,
+      "pushes": 0,
+      "rmse": 30.227518121377692,
+      "roi": -1.0,
+      "segment": "0-2.5",
+      "units_minus110": -3.0,
+      "week": 1,
+      "wilson95": [
+        5.551115123125783e-17,
+        0.5614970317550454
+      ],
+      "wins": 0
+    },
+    {
+      "axis": "spread",
+      "bias_actual_minus_prediction": 9.1480332,
+      "hit_rate": 0.8,
+      "losses": 1,
+      "mae": 12.084172,
+      "market": "ATS",
+      "n": 5,
+      "pushes": 0,
+      "rmse": 18.202734659006907,
+      "roi": 0.5272727272727272,
+      "segment": "14-20.5",
+      "units_minus110": 2.6363636363636362,
+      "week": 1,
+      "wilson95": [
+        0.37553462976252533,
+        0.9637758913675698
+      ],
+      "wins": 4
+    },
+    {
+      "axis": "spread",
+      "bias_actual_minus_prediction": 21.7794412,
+      "hit_rate": 0.35,
+      "losses": 13,
+      "mae": 28.731046099999997,
+      "market": "ATS",
+      "n": 20,
+      "pushes": 0,
+      "rmse": 31.9600860398711,
+      "roi": -0.33181818181818185,
+      "segment": "21+",
+      "units_minus110": -6.636363636363637,
+      "week": 1,
+      "wilson95": [
+        0.18119182410108206,
+        0.5671457233147638
+      ],
+      "wins": 7
+    },
+    {
+      "axis": "spread",
+      "bias_actual_minus_prediction": -8.176063666666666,
+      "hit_rate": 0.5,
+      "losses": 3,
+      "mae": 8.176063666666666,
+      "market": "ATS",
+      "n": 6,
+      "pushes": 0,
+      "rmse": 9.408661799148007,
+      "roi": -0.04545454545454549,
+      "segment": "3-6.5",
+      "units_minus110": -0.27272727272727293,
+      "week": 1,
+      "wilson95": [
+        0.1876163064826506,
+        0.8123836935173494
+      ],
+      "wins": 3
+    },
+    {
+      "axis": "spread",
+      "bias_actual_minus_prediction": 12.452441222222223,
+      "hit_rate": 0.4444444444444444,
+      "losses": 5,
+      "mae": 14.406785000000001,
+      "market": "ATS",
+      "n": 9,
+      "pushes": 0,
+      "rmse": 18.98197626436725,
+      "roi": -0.15151515151515152,
+      "segment": "7-13.5",
+      "units_minus110": -1.3636363636363638,
+      "week": 1,
+      "wilson95": [
+        0.18877852109766452,
+        0.733348706504507
+      ],
+      "wins": 4
+    },
+    {
+      "axis": "road_favorite",
+      "bias_actual_minus_prediction": 12.818275095238096,
+      "hit_rate": 0.42857142857142855,
+      "losses": 24,
+      "mae": 20.53122961904762,
+      "market": "ATS",
+      "n": 42,
+      "pushes": 0,
+      "rmse": 25.380976641287884,
+      "roi": -0.18181818181818182,
+      "segment": "False",
+      "units_minus110": -7.636363636363637,
+      "week": 1,
+      "wilson95": [
+        0.2911765117618606,
+        0.5779376012189541
+      ],
+      "wins": 18
+    },
+    {
+      "axis": "road_favorite",
+      "bias_actual_minus_prediction": 39.301115,
+      "hit_rate": 0.0,
+      "losses": 1,
+      "mae": 39.301115,
+      "market": "ATS",
+      "n": 1,
+      "pushes": 0,
+      "rmse": 39.301115,
+      "roi": -1.0,
+      "segment": "True",
+      "units_minus110": -1.0,
+      "week": 1,
+      "wilson95": [
+        0.0,
+        0.7934506856227626
+      ],
+      "wins": 0
+    },
+    {
+      "axis": "confidence",
+      "bias_actual_minus_prediction": 9.733165916900468,
+      "hit_rate": 0.4897959183673469,
+      "losses": 25,
+      "mae": 23.465582193915846,
+      "market": "ATS",
+      "n": 49,
+      "pushes": 0,
+      "rmse": 29.128516681868255,
+      "roi": -0.06493506493506497,
+      "segment": "1",
+      "units_minus110": -3.1818181818181834,
+      "week": 2,
+      "wilson95": [
+        0.3557511031030578,
+        0.6253243625953194
+      ],
+      "wins": 24
+    },
+    {
+      "axis": "edge_points",
+      "bias_actual_minus_prediction": 12.302332809962316,
+      "hit_rate": 0.5757575757575758,
+      "losses": 14,
+      "mae": 27.507284483666464,
+      "market": "ATS",
+      "n": 33,
+      "pushes": 0,
+      "rmse": 32.59052400947115,
+      "roi": 0.09917355371900828,
+      "segment": "10+",
+      "units_minus110": 3.2727272727272734,
+      "week": 2,
+      "wilson95": [
+        0.4080726333731245,
+        0.7276440336658979
+      ],
+      "wins": 19
+    },
+    {
+      "axis": "edge_points",
+      "bias_actual_minus_prediction": -24.947205250074212,
+      "hit_rate": 0.5,
+      "losses": 1,
+      "mae": 24.947205250074212,
+      "market": "ATS",
+      "n": 2,
+      "pushes": 0,
+      "rmse": 26.302745245934865,
+      "roi": -0.04545454545454547,
+      "segment": "3-6.9",
+      "units_minus110": -0.09090909090909094,
+      "week": 2,
+      "wilson95": [
+        0.09453120573423074,
+        0.9054687942657693
+      ],
+      "wins": 1
+    },
+    {
+      "axis": "edge_points",
+      "bias_actual_minus_prediction": 15.476463615369568,
+      "hit_rate": 0.2222222222222222,
+      "losses": 7,
+      "mae": 18.23690570802206,
+      "market": "ATS",
+      "n": 9,
+      "pushes": 0,
+      "rmse": 23.39103217873335,
+      "roi": -0.5757575757575757,
+      "segment": "7-9.9",
+      "units_minus110": -5.181818181818182,
+      "week": 2,
+      "wilson95": [
+        0.06322510711784671,
+        0.5474110308930111
+      ],
+      "wins": 2
+    },
+    {
+      "axis": "edge_points",
+      "bias_actual_minus_prediction": -3.689122967762233,
+      "hit_rate": 0.4,
+      "losses": 3,
+      "mae": 5.60931553370723,
+      "market": "ATS",
+      "n": 5,
+      "pushes": 0,
+      "rmse": 6.5791641686586155,
+      "roi": -0.2363636363636364,
+      "segment": "<3",
+      "units_minus110": -1.1818181818181819,
+      "week": 2,
+      "wilson95": [
+        0.11762077423264783,
+        0.769275718723987
+      ],
+      "wins": 2
+    },
+    {
+      "axis": "governed_top5",
+      "bias_actual_minus_prediction": 11.426955122637246,
+      "hit_rate": 0.5,
+      "losses": 22,
+      "mae": 24.315749461575866,
+      "market": "ATS",
+      "n": 44,
+      "pushes": 0,
+      "rmse": 30.155482787458926,
+      "roi": -0.045454545454545456,
+      "segment": "False",
+      "units_minus110": -2.0,
+      "week": 2,
+      "wilson95": [
+        0.35831760539989393,
+        0.641682394600106
+      ],
+      "wins": 22
+    },
+    {
+      "axis": "governed_top5",
+      "bias_actual_minus_prediction": -5.172179093583161,
+      "hit_rate": 0.4,
+      "losses": 3,
+      "mae": 15.984110238507672,
+      "market": "ATS",
+      "n": 5,
+      "pushes": 0,
+      "rmse": 17.683412938908585,
+      "roi": -0.2363636363636364,
+      "segment": "True",
+      "units_minus110": -1.1818181818181819,
+      "week": 2,
+      "wilson95": [
+        0.11762077423264783,
+        0.769275718723987
+      ],
+      "wins": 2
+    },
+    {
+      "axis": "retrospective_rank_nonoverlap",
+      "bias_actual_minus_prediction": 54.14627020222025,
+      "hit_rate": 0.6,
+      "losses": 2,
+      "mae": 54.14627020222025,
+      "market": "ATS",
+      "n": 5,
+      "pushes": 0,
+      "rmse": 56.45103243683481,
+      "roi": 0.14545454545454542,
+      "segment": "1-5",
+      "units_minus110": 0.7272727272727271,
+      "week": 2,
+      "wilson95": [
+        0.2307242812760128,
+        0.882379225767352
+      ],
+      "wins": 3
+    },
+    {
+      "axis": "retrospective_rank_nonoverlap",
+      "bias_actual_minus_prediction": 4.6164876656125555,
+      "hit_rate": 0.48717948717948717,
+      "losses": 20,
+      "mae": 17.310441461862055,
+      "market": "ATS",
+      "n": 39,
+      "pushes": 0,
+      "rmse": 20.91102083440456,
+      "roi": -0.06993006993006991,
+      "segment": "11+",
+      "units_minus110": -2.7272727272727266,
+      "week": 2,
+      "wilson95": [
+        0.33865175329862,
+        0.6380063711554202
+      ],
+      "wins": 19
+    },
+    {
+      "axis": "retrospective_rank_nonoverlap",
+      "bias_actual_minus_prediction": 5.2301519916264105,
+      "hit_rate": 0.4,
+      "losses": 3,
+      "mae": 40.794991895631,
+      "market": "ATS",
+      "n": 5,
+      "pushes": 0,
+      "rmse": 41.44369072161876,
+      "roi": -0.2363636363636364,
+      "segment": "6-10",
+      "units_minus110": -1.1818181818181819,
+      "week": 2,
+      "wilson95": [
+        0.11762077423264783,
+        0.769275718723987
+      ],
+      "wins": 2
+    },
+    {
+      "axis": "favorite",
+      "bias_actual_minus_prediction": -7.900707998871968,
+      "hit_rate": 0.35714285714285715,
+      "losses": 9,
+      "mae": 23.397737001548307,
+      "market": "ATS",
+      "n": 14,
+      "pushes": 0,
+      "rmse": 27.95313095968673,
+      "roi": -0.3181818181818182,
+      "segment": "FAVORITE",
+      "units_minus110": -4.454545454545454,
+      "week": 2,
+      "wilson95": [
+        0.1634473175355414,
+        0.612355768960926
+      ],
+      "wins": 5
+    },
+    {
+      "axis": "favorite",
+      "bias_actual_minus_prediction": 16.78671548320944,
+      "hit_rate": 0.5428571428571428,
+      "losses": 16,
+      "mae": 23.492720270862858,
+      "market": "ATS",
+      "n": 35,
+      "pushes": 0,
+      "rmse": 29.585598955242894,
+      "roi": 0.03636363636363638,
+      "segment": "UNDERDOG",
+      "units_minus110": 1.2727272727272734,
+      "week": 2,
+      "wilson95": [
+        0.3818972506848375,
+        0.6953398071159278
+      ],
+      "wins": 19
+    },
+    {
+      "axis": "location",
+      "bias_actual_minus_prediction": 25.60893479506133,
+      "hit_rate": 0.5,
+      "losses": 15,
+      "mae": 27.151453207274418,
+      "market": "ATS",
+      "n": 30,
+      "pushes": 0,
+      "rmse": 32.83158432204355,
+      "roi": -0.04545454545454544,
+      "segment": "AWAY",
+      "units_minus110": -1.3636363636363633,
+      "week": 2,
+      "wilson95": [
+        0.33154125640533766,
+        0.6684587435946623
+      ],
+      "wins": 15
+    },
+    {
+      "axis": "location",
+      "bias_actual_minus_prediction": -15.333837574932476,
+      "hit_rate": 0.47368421052631576,
+      "losses": 10,
+      "mae": 17.645785857033886,
+      "market": "ATS",
+      "n": 19,
+      "pushes": 0,
+      "rmse": 22.04978320378483,
+      "roi": -0.09569377990430623,
+      "segment": "HOME",
+      "units_minus110": -1.8181818181818183,
+      "week": 2,
+      "wilson95": [
+        0.2732980516117956,
+        0.6829219075488682
+      ],
+      "wins": 9
+    },
+    {
+      "axis": "spread",
+      "bias_actual_minus_prediction": 1.2229458601230643,
+      "hit_rate": 0.6666666666666666,
+      "losses": 2,
+      "mae": 15.056103198292162,
+      "market": "ATS",
+      "n": 6,
+      "pushes": 0,
+      "rmse": 18.257742096053867,
+      "roi": 0.2727272727272727,
+      "segment": "0-2.5",
+      "units_minus110": 1.6363636363636362,
+      "week": 2,
+      "wilson95": [
+        0.299993315138392,
+        0.9032285888942195
+      ],
+      "wins": 4
+    },
+    {
+      "axis": "spread",
+      "bias_actual_minus_prediction": 25.5496397627069,
+      "hit_rate": 0.625,
+      "losses": 3,
+      "mae": 33.33775585847894,
+      "market": "ATS",
+      "n": 8,
+      "pushes": 0,
+      "rmse": 41.31186083393343,
+      "roi": 0.19318181818181823,
+      "segment": "14-20.5",
+      "units_minus110": 1.5454545454545459,
+      "week": 2,
+      "wilson95": [
+        0.30574239460262737,
+        0.8631557141764026
+      ],
+      "wins": 5
+    },
+    {
+      "axis": "spread",
+      "bias_actual_minus_prediction": 19.8426092420119,
+      "hit_rate": 0.7272727272727273,
+      "losses": 3,
+      "mae": 22.49960605262884,
+      "market": "ATS",
+      "n": 11,
+      "pushes": 0,
+      "rmse": 28.91341030469738,
+      "roi": 0.3884297520661157,
+      "segment": "21+",
+      "units_minus110": 4.2727272727272725,
+      "week": 2,
+      "wilson95": [
+        0.43435469882387084,
+        0.902539407099751
+      ],
+      "wins": 8
+    },
+    {
+      "axis": "spread",
+      "bias_actual_minus_prediction": -2.8864876678469855,
+      "hit_rate": 0.0,
+      "losses": 8,
+      "mae": 31.154073313389972,
+      "market": "ATS",
+      "n": 8,
+      "pushes": 0,
+      "rmse": 34.23326745520132,
+      "roi": -1.0,
+      "segment": "3-6.5",
+      "units_minus110": -8.0,
+      "week": 2,
+      "wilson95": [
+        0.0,
+        0.32440756488388023
+      ],
+      "wins": 0
+    },
+    {
+      "axis": "spread",
+      "bias_actual_minus_prediction": 4.375846021648397,
+      "hit_rate": 0.4375,
+      "losses": 9,
+      "mae": 18.50291302239093,
+      "market": "ATS",
+      "n": 16,
+      "pushes": 0,
+      "rmse": 21.433695758421567,
+      "roi": -0.1647727272727273,
+      "segment": "7-13.5",
+      "units_minus110": -2.6363636363636367,
+      "week": 2,
+      "wilson95": [
+        0.23098652405492354,
+        0.6682144360118811
+      ],
+      "wins": 7
+    },
+    {
+      "axis": "road_favorite",
+      "bias_actual_minus_prediction": 8.187687264653079,
+      "hit_rate": 0.5111111111111111,
+      "losses": 22,
+      "mae": 23.14076276629205,
+      "market": "ATS",
+      "n": 45,
+      "pushes": 0,
+      "rmse": 28.78761682673556,
+      "roi": -0.02424242424242422,
+      "segment": "False",
+      "units_minus110": -1.09090909090909,
+      "week": 2,
+      "wilson95": [
+        0.3700446464458318,
+        0.650429762471215
+      ],
+      "wins": 23
+    },
+    {
+      "axis": "road_favorite",
+      "bias_actual_minus_prediction": 27.119800754683595,
+      "hit_rate": 0.25,
+      "losses": 3,
+      "mae": 27.119800754683595,
+      "market": "ATS",
+      "n": 4,
+      "pushes": 0,
+      "rmse": 32.71981053152396,
+      "roi": -0.5227272727272727,
+      "segment": "True",
+      "units_minus110": -2.090909090909091,
+      "week": 2,
+      "wilson95": [
+        0.04558726080970055,
+        0.6993581574175981
+      ],
+      "wins": 1
+    },
+    {
+      "axis": "confidence",
+      "bias_actual_minus_prediction": -0.7497328172094168,
+      "hit_rate": 0.2727272727272727,
+      "losses": 8,
+      "mae": 6.011100141483116,
+      "market": "TOTAL",
+      "n": 11,
+      "pushes": 0,
+      "rmse": 6.264572597710418,
+      "roi": -0.4793388429752067,
+      "segment": "1",
+      "units_minus110": -5.272727272727273,
+      "week": 2,
+      "wilson95": [
+        0.09746059290024889,
+        0.5656453011761291
+      ],
+      "wins": 3
+    },
+    {
+      "axis": "confidence",
+      "bias_actual_minus_prediction": -3.1935636089433963,
+      "hit_rate": 0.5,
+      "losses": 6,
+      "mae": 9.809789755531874,
+      "market": "TOTAL",
+      "n": 12,
+      "pushes": 0,
+      "rmse": 13.75016281230196,
+      "roi": -0.04545454545454549,
+      "segment": "2",
+      "units_minus110": -0.5454545454545459,
+      "week": 2,
+      "wilson95": [
+        0.2537815976337061,
+        0.7462184023662939
+      ],
+      "wins": 6
+    },
+    {
+      "axis": "confidence",
+      "bias_actual_minus_prediction": 2.6650886971753325,
+      "hit_rate": 0.5,
+      "losses": 10,
+      "mae": 14.084484060049292,
+      "market": "TOTAL",
+      "n": 20,
+      "pushes": 0,
+      "rmse": 16.85802901992268,
+      "roi": -0.045454545454545414,
+      "segment": "3",
+      "units_minus110": -0.9090909090909083,
+      "week": 2,
+      "wilson95": [
+        0.2992980081982123,
+        0.7007019918017877
+      ],
+      "wins": 10
+    },
+    {
+      "axis": "confidence",
+      "bias_actual_minus_prediction": -7.768639694365819,
+      "hit_rate": 0.8333333333333334,
+      "losses": 1,
+      "mae": 8.502205901619734,
+      "market": "TOTAL",
+      "n": 6,
+      "pushes": 0,
+      "rmse": 10.714637930891637,
+      "roi": 0.5909090909090909,
+      "segment": "4",
+      "units_minus110": 3.545454545454546,
+      "week": 2,
+      "wilson95": [
+        0.43649717781352987,
+        0.9699466302516935
+      ],
+      "wins": 5
+    },
+    {
+      "axis": "edge_points",
+      "bias_actual_minus_prediction": -8.582424802063558,
+      "hit_rate": 0.6666666666666666,
+      "losses": 1,
+      "mae": 10.049557216571388,
+      "market": "TOTAL",
+      "n": 3,
+      "pushes": 0,
+      "rmse": 11.486835876056924,
+      "roi": 0.2727272727272727,
+      "segment": "10+",
+      "units_minus110": 0.8181818181818181,
+      "week": 2,
+      "wilson95": [
+        0.2076596008020477,
+        0.9385080552796037
+      ],
+      "wins": 2
+    },
+    {
+      "axis": "edge_points",
+      "bias_actual_minus_prediction": -4.2643424873058855,
+      "hit_rate": 0.45,
+      "losses": 11,
+      "mae": 13.229548653340654,
+      "market": "TOTAL",
+      "n": 20,
+      "pushes": 0,
+      "rmse": 16.342415083672144,
+      "roi": -0.14090909090909093,
+      "segment": "3-6.9",
+      "units_minus110": -2.8181818181818183,
+      "week": 2,
+      "wilson95": [
+        0.2581978582556243,
+        0.6579146575496577
+      ],
+      "wins": 9
+    },
+    {
+      "axis": "edge_points",
+      "bias_actual_minus_prediction": 8.000022274474523,
+      "hit_rate": 0.7777777777777778,
+      "losses": 2,
+      "mae": 12.636591998919906,
+      "market": "TOTAL",
+      "n": 9,
+      "pushes": 0,
+      "rmse": 16.32292554243078,
+      "roi": 0.4848484848484848,
+      "segment": "7-9.9",
+      "units_minus110": 4.363636363636363,
+      "week": 2,
+      "wilson95": [
+        0.45258896910698887,
+        0.9367748928821533
+      ],
+      "wins": 7
+    },
+    {
+      "axis": "edge_points",
+      "bias_actual_minus_prediction": -0.04976263748675958,
+      "hit_rate": 0.35294117647058826,
+      "losses": 11,
+      "mae": 6.357266030976151,
+      "market": "TOTAL",
+      "n": 17,
+      "pushes": 0,
+      "rmse": 7.427718540379004,
+      "roi": -0.32620320855614976,
+      "segment": "<3",
+      "units_minus110": -5.545454545454546,
+      "week": 2,
+      "wilson95": [
+        0.17309720397243744,
+        0.5869963651478132
+      ],
+      "wins": 6
+    },
+    {
+      "axis": "governed_top5",
+      "bias_actual_minus_prediction": -0.813875275904339,
+      "hit_rate": 0.4897959183673469,
+      "losses": 25,
+      "mae": 10.541683576191858,
+      "market": "TOTAL",
+      "n": 49,
+      "pushes": 0,
+      "rmse": 13.607606622169074,
+      "roi": -0.06493506493506497,
+      "segment": "False",
+      "units_minus110": -3.1818181818181834,
+      "week": 2,
+      "wilson95": [
+        0.3557511031030578,
+        0.6253243625953194
+      ],
+      "wins": 24
+    },
+    {
+      "axis": "retrospective_rank_nonoverlap",
+      "bias_actual_minus_prediction": -9.237148648105247,
+      "hit_rate": 0.8,
+      "losses": 1,
+      "mae": 10.117428096809945,
+      "market": "TOTAL",
+      "n": 5,
+      "pushes": 0,
+      "rmse": 11.735750841381478,
+      "roi": 0.5272727272727272,
+      "segment": "1-5",
+      "units_minus110": 2.6363636363636362,
+      "week": 2,
+      "wilson95": [
+        0.37553462976252533,
+        0.9637758913675698
+      ],
+      "wins": 4
+    },
+    {
+      "axis": "retrospective_rank_nonoverlap",
+      "bias_actual_minus_prediction": -1.004709205114632,
+      "hit_rate": 0.41025641025641024,
+      "losses": 23,
+      "mae": 10.759324389162298,
+      "market": "TOTAL",
+      "n": 39,
+      "pushes": 0,
+      "rmse": 13.782650342681661,
+      "roi": -0.2167832167832168,
+      "segment": "11+",
+      "units_minus110": -8.454545454545455,
+      "week": 2,
+      "wilson95": [
+        0.27079310000725176,
+        0.5658137711710304
+      ],
+      "wins": 16
+    },
+    {
+      "axis": "retrospective_rank_nonoverlap",
+      "bias_actual_minus_prediction": 9.097902744136857,
+      "hit_rate": 0.8,
+      "losses": 1,
+      "mae": 9.268340714404328,
+      "market": "TOTAL",
+      "n": 5,
+      "pushes": 0,
+      "rmse": 13.971722398258988,
+      "roi": 0.5272727272727272,
+      "segment": "6-10",
+      "units_minus110": 2.6363636363636362,
+      "week": 2,
+      "wilson95": [
+        0.37553462976252533,
+        0.9637758913675698
+      ],
+      "wins": 4
+    },
+    {
+      "axis": "direction",
+      "bias_actual_minus_prediction": -4.495778057083345,
+      "hit_rate": 0.44,
+      "losses": 14,
+      "mae": 10.702153687850542,
+      "market": "TOTAL",
+      "n": 25,
+      "pushes": 0,
+      "rmse": 13.212678792472502,
+      "roi": -0.16,
+      "segment": "OVER",
+      "units_minus110": -4.0,
+      "week": 2,
+      "wilson95": [
+        0.26665638881067344,
+        0.6293266813020123
+      ],
+      "wins": 11
+    },
+    {
+      "axis": "direction",
+      "bias_actual_minus_prediction": 3.021440121157126,
+      "hit_rate": 0.5416666666666666,
+      "losses": 11,
+      "mae": 10.374527209880728,
+      "market": "TOTAL",
+      "n": 24,
+      "pushes": 0,
+      "rmse": 14.007154302020938,
+      "roi": 0.034090909090909095,
+      "segment": "UNDER",
+      "units_minus110": 0.8181818181818183,
+      "week": 2,
+      "wilson95": [
+        0.3507486535891948,
+        0.72108666268789
+      ],
+      "wins": 13
+    },
+    {
+      "axis": "confidence",
+      "bias_actual_minus_prediction": 4.91469384135529,
+      "hit_rate": 0.48214285714285715,
+      "losses": 29,
+      "mae": 14.75998331378888,
+      "market": "ATS",
+      "n": 56,
+      "pushes": 0,
+      "rmse": 18.186038028412923,
+      "roi": -0.07954545454545452,
+      "segment": "1",
+      "units_minus110": -4.454545454545453,
+      "week": 3,
+      "wilson95": [
+        0.3566821941245828,
+        0.6098961607582303
+      ],
+      "wins": 27
+    },
+    {
+      "axis": "edge_points",
+      "bias_actual_minus_prediction": 11.007841389156955,
+      "hit_rate": 0.5333333333333333,
+      "losses": 14,
+      "mae": 17.757683558241713,
+      "market": "ATS",
+      "n": 30,
+      "pushes": 0,
+      "rmse": 20.616032798577955,
+      "roi": 0.018181818181818167,
+      "segment": "10+",
+      "units_minus110": 0.545454545454545,
+      "week": 3,
+      "wilson95": [
+        0.36142299619873297,
+        0.6976761109230025
+      ],
+      "wins": 16
+    },
+    {
+      "axis": "edge_points",
+      "bias_actual_minus_prediction": -2.1819486264413763,
+      "hit_rate": 0.3333333333333333,
+      "losses": 6,
+      "mae": 11.298107654331007,
+      "market": "ATS",
+      "n": 9,
+      "pushes": 0,
+      "rmse": 14.059110046243108,
+      "roi": -0.36363636363636365,
+      "segment": "3-6.9",
+      "units_minus110": -3.272727272727273,
+      "week": 3,
+      "wilson95": [
+        0.1205838183869109,
+        0.6457978644196036
+      ],
+      "wins": 3
+    },
+    {
+      "axis": "edge_points",
+      "bias_actual_minus_prediction": -8.50008237984416,
+      "hit_rate": 0.3333333333333333,
+      "losses": 4,
+      "mae": 15.423838728588,
+      "market": "ATS",
+      "n": 6,
+      "pushes": 0,
+      "rmse": 19.629253029385747,
+      "roi": -0.3636363636363636,
+      "segment": "7-9.9",
+      "units_minus110": -2.1818181818181817,
+      "week": 3,
+      "wilson95": [
+        0.09677141110578041,
+        0.700006684861608
+      ],
+      "wins": 2
+    },
+    {
+      "axis": "edge_points",
+      "bias_actual_minus_prediction": 1.4205132143840917,
+      "hit_rate": 0.5454545454545454,
+      "losses": 5,
+      "mae": 9.054777960401715,
+      "market": "ATS",
+      "n": 11,
+      "pushes": 0,
+      "rmse": 12.35679407682201,
+      "roi": 0.04132231404958674,
+      "segment": "<3",
+      "units_minus110": 0.45454545454545414,
+      "week": 3,
+      "wilson95": [
+        0.280091537409322,
+        0.7872872837754024
+      ],
+      "wins": 6
+    },
+    {
+      "axis": "governed_top5",
+      "bias_actual_minus_prediction": 3.3950168096504596,
+      "hit_rate": 0.5098039215686274,
+      "losses": 25,
+      "mae": 14.205530740165774,
+      "market": "ATS",
+      "n": 51,
+      "pushes": 0,
+      "rmse": 17.207270282371827,
+      "roi": -0.026737967914438495,
+      "segment": "False",
+      "units_minus110": -1.3636363636363633,
+      "week": 3,
+      "wilson95": [
+        0.37680923894569696,
+        0.6414251410562926
+      ],
+      "wins": 26
+    },
+    {
+      "axis": "governed_top5",
+      "bias_actual_minus_prediction": 20.415399564744565,
+      "hit_rate": 0.2,
+      "losses": 4,
+      "mae": 20.415399564744565,
+      "market": "ATS",
+      "n": 5,
+      "pushes": 0,
+      "rmse": 26.1548968817272,
+      "roi": -0.6181818181818182,
+      "segment": "True",
+      "units_minus110": -3.090909090909091,
+      "week": 3,
+      "wilson95": [
+        0.03622410863243014,
+        0.6244653702374747
+      ],
+      "wins": 1
+    },
+    {
+      "axis": "retrospective_rank_nonoverlap",
+      "bias_actual_minus_prediction": 27.923190342957014,
+      "hit_rate": 0.6,
+      "losses": 2,
+      "mae": 27.923190342957014,
+      "market": "ATS",
+      "n": 5,
+      "pushes": 0,
+      "rmse": 28.81092749612783,
+      "roi": 0.14545454545454542,
+      "segment": "1-5",
+      "units_minus110": 0.7272727272727271,
+      "week": 3,
+      "wilson95": [
+        0.2307242812760128,
+        0.882379225767352
+      ],
+      "wins": 3
+    },
+    {
+      "axis": "retrospective_rank_nonoverlap",
+      "bias_actual_minus_prediction": 0.47224616684446685,
+      "hit_rate": 0.4782608695652174,
+      "losses": 24,
+      "mae": 12.457815959372315,
+      "market": "ATS",
+      "n": 46,
+      "pushes": 0,
+      "rmse": 15.472686943474626,
+      "roi": -0.08695652173913043,
+      "segment": "11+",
+      "units_minus110": -4.0,
+      "week": 3,
+      "wilson95": [
+        0.34124689434045685,
+        0.6186258692719597
+      ],
+      "wins": 22
+    },
+    {
+      "axis": "retrospective_rank_nonoverlap",
+      "bias_actual_minus_prediction": 22.77671594525315,
+      "hit_rate": 0.4,
+      "losses": 3,
+      "mae": 22.77671594525315,
+      "market": "ATS",
+      "n": 5,
+      "pushes": 0,
+      "rmse": 25.915467273804808,
+      "roi": -0.2363636363636364,
+      "segment": "6-10",
+      "units_minus110": -1.1818181818181819,
+      "week": 3,
+      "wilson95": [
+        0.11762077423264783,
+        0.769275718723987
+      ],
+      "wins": 2
+    },
+    {
+      "axis": "favorite",
+      "bias_actual_minus_prediction": -3.209757883650983,
+      "hit_rate": 0.375,
+      "losses": 10,
+      "mae": 15.950576371925639,
+      "market": "ATS",
+      "n": 16,
+      "pushes": 0,
+      "rmse": 18.378200000705927,
+      "roi": -0.2840909090909091,
+      "segment": "FAVORITE",
+      "units_minus110": -4.545454545454546,
+      "week": 3,
+      "wilson95": [
+        0.18481232558863633,
+        0.6135895945449727
+      ],
+      "wins": 6
+    },
+    {
+      "axis": "favorite",
+      "bias_actual_minus_prediction": 8.1644745313578,
+      "hit_rate": 0.525,
+      "losses": 19,
+      "mae": 14.283746090534176,
+      "market": "ATS",
+      "n": 40,
+      "pushes": 0,
+      "rmse": 18.108602285456893,
+      "roi": 0.0022727272727272483,
+      "segment": "UNDERDOG",
+      "units_minus110": 0.09090909090908994,
+      "week": 3,
+      "wilson95": [
+        0.3749736210669248,
+        0.670645298873211
+      ],
+      "wins": 21
+    },
+    {
+      "axis": "location",
+      "bias_actual_minus_prediction": 14.786877581633448,
+      "hit_rate": 0.5625,
+      "losses": 14,
+      "mae": 15.804043674637015,
+      "market": "ATS",
+      "n": 32,
+      "pushes": 0,
+      "rmse": 19.316359655741326,
+      "roi": 0.07386363636363635,
+      "segment": "AWAY",
+      "units_minus110": 2.3636363636363633,
+      "week": 3,
+      "wilson95": [
+        0.3932559113685198,
+        0.7183466888495963
+      ],
+      "wins": 18
+    },
+    {
+      "axis": "location",
+      "bias_actual_minus_prediction": -7.470122516118507,
+      "hit_rate": 0.4090909090909091,
+      "losses": 13,
+      "mae": 13.055233447364815,
+      "market": "ATS",
+      "n": 22,
+      "pushes": 0,
+      "rmse": 16.176314263151568,
+      "roi": -0.21900826446280994,
+      "segment": "HOME",
+      "units_minus110": -4.818181818181818,
+      "week": 3,
+      "wilson95": [
+        0.2325581619647187,
+        0.6126518152368488
+      ],
+      "wins": 9
+    },
+    {
+      "axis": "location",
+      "bias_actual_minus_prediction": -16.807266070883454,
+      "hit_rate": 0.0,
+      "losses": 2,
+      "mae": 16.807266070883454,
+      "market": "ATS",
+      "n": 2,
+      "pushes": 0,
+      "rmse": 20.30130135343057,
+      "roi": -1.0,
+      "segment": "NEUTRAL",
+      "units_minus110": -2.0,
+      "week": 3,
+      "wilson95": [
+        0.0,
+        0.6576197724933469
+      ],
+      "wins": 0
+    },
+    {
+      "axis": "spread",
+      "bias_actual_minus_prediction": 12.327425454831111,
+      "hit_rate": 0.2857142857142857,
+      "losses": 5,
+      "mae": 15.75687826841072,
+      "market": "ATS",
+      "n": 7,
+      "pushes": 0,
+      "rmse": 17.23752199126262,
+      "roi": -0.45454545454545453,
+      "segment": "0-2.5",
+      "units_minus110": -3.1818181818181817,
+      "week": 3,
+      "wilson95": [
+        0.08221892400405678,
+        0.6410655481673808
+      ],
+      "wins": 2
+    },
+    {
+      "axis": "spread",
+      "bias_actual_minus_prediction": -0.9872048109020448,
+      "hit_rate": 0.4166666666666667,
+      "losses": 7,
+      "mae": 13.893417551849673,
+      "market": "ATS",
+      "n": 12,
+      "pushes": 0,
+      "rmse": 17.382500845132462,
+      "roi": -0.2045454545454545,
+      "segment": "14-20.5",
+      "units_minus110": -2.454545454545454,
+      "week": 3,
+      "wilson95": [
+        0.19326031365875665,
+        0.6804886874504503
+      ],
+      "wins": 5
+    },
+    {
+      "axis": "spread",
+      "bias_actual_minus_prediction": 13.33922248086757,
+      "hit_rate": 0.7058823529411765,
+      "losses": 5,
+      "mae": 18.109166652544516,
+      "market": "ATS",
+      "n": 17,
+      "pushes": 0,
+      "rmse": 21.24442050709353,
+      "roi": 0.3475935828877005,
+      "segment": "21+",
+      "units_minus110": 5.909090909090908,
+      "week": 3,
+      "wilson95": [
+        0.4686688993346016,
+        0.8672001038970478
+      ],
+      "wins": 12
+    },
+    {
+      "axis": "spread",
+      "bias_actual_minus_prediction": -1.9190213093204145,
+      "hit_rate": 0.3333333333333333,
+      "losses": 10,
+      "mae": 12.166674653269506,
+      "market": "ATS",
+      "n": 15,
+      "pushes": 0,
+      "rmse": 15.99919815104907,
+      "roi": -0.3636363636363636,
+      "segment": "3-6.5",
+      "units_minus110": -5.454545454545454,
+      "week": 3,
+      "wilson95": [
+        0.1517632443971473,
+        0.5828645226148023
+      ],
+      "wins": 5
+    },
+    {
+      "axis": "spread",
+      "bias_actual_minus_prediction": 0.5591744255921178,
+      "hit_rate": 0.6,
+      "losses": 2,
+      "mae": 11.836790835761363,
+      "market": "ATS",
+      "n": 5,
+      "pushes": 0,
+      "rmse": 16.143746079869327,
+      "roi": 0.14545454545454542,
+      "segment": "7-13.5",
+      "units_minus110": 0.7272727272727271,
+      "week": 3,
+      "wilson95": [
+        0.2307242812760128,
+        0.882379225767352
+      ],
+      "wins": 3
+    },
+    {
+      "axis": "road_favorite",
+      "bias_actual_minus_prediction": 4.2344221666317345,
+      "hit_rate": 0.4716981132075472,
+      "losses": 28,
+      "mae": 14.636992175240811,
+      "market": "ATS",
+      "n": 53,
+      "pushes": 0,
+      "rmse": 18.19118513419184,
+      "roi": -0.09948542024013723,
+      "segment": "False",
+      "units_minus110": -5.272727272727273,
+      "week": 3,
+      "wilson95": [
+        0.3438224347819615,
+        0.603399187212937
+      ],
+      "wins": 25
+    },
+    {
+      "axis": "road_favorite",
+      "bias_actual_minus_prediction": 16.932826761471446,
+      "hit_rate": 0.6666666666666666,
+      "losses": 1,
+      "mae": 16.932826761471446,
+      "market": "ATS",
+      "n": 3,
+      "pushes": 0,
+      "rmse": 18.094864414043943,
+      "roi": 0.2727272727272727,
+      "segment": "True",
+      "units_minus110": 0.8181818181818181,
+      "week": 3,
+      "wilson95": [
+        0.2076596008020477,
+        0.9385080552796037
+      ],
+      "wins": 2
+    },
+    {
+      "axis": "confidence",
+      "bias_actual_minus_prediction": 10.61271173916171,
+      "hit_rate": 0.5,
+      "losses": 8,
+      "mae": 15.530685821004825,
+      "market": "TOTAL",
+      "n": 16,
+      "pushes": 0,
+      "rmse": 20.528865343017547,
+      "roi": -0.04545454545454547,
+      "segment": "1",
+      "units_minus110": -0.7272727272727275,
+      "week": 3,
+      "wilson95": [
+        0.27999563610326017,
+        0.7200043638967398
+      ],
+      "wins": 8
+    },
+    {
+      "axis": "confidence",
+      "bias_actual_minus_prediction": 8.25448966640221,
+      "hit_rate": 0.45454545454545453,
+      "losses": 6,
+      "mae": 14.295965924324863,
+      "market": "TOTAL",
+      "n": 11,
+      "pushes": 0,
+      "rmse": 16.42051048701252,
+      "roi": -0.13223140495867766,
+      "segment": "2",
+      "units_minus110": -1.4545454545454541,
+      "week": 3,
+      "wilson95": [
+        0.21271271622459764,
+        0.719908462590678
+      ],
+      "wins": 5
+    },
+    {
+      "axis": "confidence",
+      "bias_actual_minus_prediction": 1.6467408464168125,
+      "hit_rate": 0.4444444444444444,
+      "losses": 10,
+      "mae": 15.40905242163199,
+      "market": "TOTAL",
+      "n": 18,
+      "pushes": 0,
+      "rmse": 17.50201764751771,
+      "roi": -0.15151515151515152,
+      "segment": "3",
+      "units_minus110": -2.7272727272727275,
+      "week": 3,
+      "wilson95": [
+        0.24559518127005633,
+        0.6628358435795723
+      ],
+      "wins": 8
+    },
+    {
+      "axis": "confidence",
+      "bias_actual_minus_prediction": 1.7546853051307096,
+      "hit_rate": 0.4,
+      "losses": 6,
+      "mae": 12.808566175735422,
+      "market": "TOTAL",
+      "n": 10,
+      "pushes": 0,
+      "rmse": 14.742949852376526,
+      "roi": -0.2363636363636364,
+      "segment": "4",
+      "units_minus110": -2.3636363636363638,
+      "week": 3,
+      "wilson95": [
+        0.16818032970623614,
+        0.6873262302663417
+      ],
+      "wins": 4
+    },
+    {
+      "axis": "confidence",
+      "bias_actual_minus_prediction": 13.487997661548093,
+      "hit_rate": 1.0,
+      "losses": 0,
+      "mae": 13.487997661548093,
+      "market": "TOTAL",
+      "n": 1,
+      "pushes": 0,
+      "rmse": 13.487997661548093,
+      "roi": 0.9090909090909091,
+      "segment": "5",
+      "units_minus110": 0.9090909090909091,
+      "week": 3,
+      "wilson95": [
+        0.20654931437723745,
+        1.0
+      ],
+      "wins": 1
+    },
+    {
+      "axis": "edge_points",
+      "bias_actual_minus_prediction": 3.037200600312154,
+      "hit_rate": 0.5,
+      "losses": 4,
+      "mae": 14.46373982003711,
+      "market": "TOTAL",
+      "n": 8,
+      "pushes": 0,
+      "rmse": 16.272266757460915,
+      "roi": -0.04545454545454547,
+      "segment": "10+",
+      "units_minus110": -0.36363636363636376,
+      "week": 3,
+      "wilson95": [
+        0.21521606221387757,
+        0.7847839377861224
+      ],
+      "wins": 4
+    },
+    {
+      "axis": "edge_points",
+      "bias_actual_minus_prediction": 3.558519960612799,
+      "hit_rate": 0.45454545454545453,
+      "losses": 12,
+      "mae": 15.970413366532114,
+      "market": "TOTAL",
+      "n": 22,
+      "pushes": 0,
+      "rmse": 18.153211290036467,
+      "roi": -0.13223140495867766,
+      "segment": "3-6.9",
+      "units_minus110": -2.9090909090909083,
+      "week": 3,
+      "wilson95": [
+        0.2692029418081331,
+        0.6534020467926505
+      ],
+      "wins": 10
+    },
+    {
+      "axis": "edge_points",
+      "bias_actual_minus_prediction": 0.06091172291222572,
+      "hit_rate": 0.5,
+      "losses": 3,
+      "mae": 10.101359591086398,
+      "market": "TOTAL",
+      "n": 6,
+      "pushes": 0,
+      "rmse": 11.602890365434762,
+      "roi": -0.04545454545454549,
+      "segment": "7-9.9",
+      "units_minus110": -0.27272727272727293,
+      "week": 3,
+      "wilson95": [
+        0.1876163064826506,
+        0.8123836935173494
+      ],
+      "wins": 3
+    },
+    {
+      "axis": "edge_points",
+      "bias_actual_minus_prediction": 10.916422291595865,
+      "hit_rate": 0.45,
+      "losses": 11,
+      "mae": 14.850801557070358,
+      "market": "TOTAL",
+      "n": 20,
+      "pushes": 0,
+      "rmse": 19.238296842071318,
+      "roi": -0.14090909090909093,
+      "segment": "<3",
+      "units_minus110": -2.8181818181818183,
+      "week": 3,
+      "wilson95": [
+        0.2581978582556243,
+        0.6579146575496577
+      ],
+      "wins": 9
+    },
+    {
+      "axis": "governed_top5",
+      "bias_actual_minus_prediction": 5.737124287595884,
+      "hit_rate": 0.4642857142857143,
+      "losses": 30,
+      "mae": 14.726485737713016,
+      "market": "TOTAL",
+      "n": 56,
+      "pushes": 0,
+      "rmse": 17.71710068951248,
+      "roi": -0.11363636363636363,
+      "segment": "False",
+      "units_minus110": -6.363636363636363,
+      "week": 3,
+      "wilson95": [
+        0.34019852912223775,
+        0.5929581806433883
+      ],
+      "wins": 26
+    },
+    {
+      "axis": "retrospective_rank_nonoverlap",
+      "bias_actual_minus_prediction": -3.5585496037479603,
+      "hit_rate": 0.6,
+      "losses": 2,
+      "mae": 14.72391314781197,
+      "market": "TOTAL",
+      "n": 5,
+      "pushes": 0,
+      "rmse": 15.381197200327113,
+      "roi": 0.14545454545454542,
+      "segment": "1-5",
+      "units_minus110": 0.7272727272727271,
+      "week": 3,
+      "wilson95": [
+        0.2307242812760128,
+        0.882379225767352
+      ],
+      "wins": 3
+    },
+    {
+      "axis": "retrospective_rank_nonoverlap",
+      "bias_actual_minus_prediction": 6.101757867791099,
+      "hit_rate": 0.45652173913043476,
+      "losses": 25,
+      "mae": 15.058104116677182,
+      "market": "TOTAL",
+      "n": 46,
+      "pushes": 0,
+      "rmse": 18.245988660409623,
+      "roi": -0.12845849802371542,
+      "segment": "11+",
+      "units_minus110": -5.90909090909091,
+      "week": 3,
+      "wilson95": [
+        0.32154733782284584,
+        0.5981981894019872
+      ],
+      "wins": 21
+    },
+    {
+      "axis": "retrospective_rank_nonoverlap",
+      "bias_actual_minus_prediction": 11.678169241143745,
+      "hit_rate": 0.4,
+      "losses": 3,
+      "mae": 11.678169241143745,
+      "market": "TOTAL",
+      "n": 5,
+      "pushes": 0,
+      "rmse": 14.704488740427054,
+      "roi": -0.2363636363636364,
+      "segment": "6-10",
+      "units_minus110": -1.1818181818181819,
+      "week": 3,
+      "wilson95": [
+        0.11762077423264783,
+        0.769275718723987
+      ],
+      "wins": 2
+    },
+    {
+      "axis": "direction",
+      "bias_actual_minus_prediction": 2.6307402472829144,
+      "hit_rate": 0.5555555555555556,
+      "losses": 8,
+      "mae": 13.25841882782395,
+      "market": "TOTAL",
+      "n": 18,
+      "pushes": 0,
+      "rmse": 15.716997612411172,
+      "roi": 0.06060606060606065,
+      "segment": "OVER",
+      "units_minus110": 1.0909090909090917,
+      "week": 3,
+      "wilson95": [
+        0.33716415642042774,
+        0.7544048187299437
+      ],
+      "wins": 10
+    },
+    {
+      "axis": "direction",
+      "bias_actual_minus_prediction": 7.2085693593230795,
+      "hit_rate": 0.42105263157894735,
+      "losses": 22,
+      "mae": 15.421885852923628,
+      "market": "TOTAL",
+      "n": 38,
+      "pushes": 0,
+      "rmse": 18.5895588493397,
+      "roi": -0.19617224880382778,
+      "segment": "UNDER",
+      "units_minus110": -7.454545454545455,
+      "week": 3,
+      "wilson95": [
+        0.27852501157758713,
+        0.5780765465632945
+      ],
+      "wins": 16
+    }
+  ],
+  "human_comparisons": [
+    {
+      "added": [
+        "ATS:401858245:WIN",
+        "ATS:401856707:LOSS",
+        "ATS:401856820:LOSS",
+        "ATS:401858476:WIN",
+        "ATS:401871050:LOSS"
+      ],
+      "approval_status": "PREGAME_REVIEW_SHORTLIST_NOT_EQUIVALENT_OWNER_APPROVAL",
+      "baseline": {
+        "bias_actual_minus_prediction": -11.855055109858723,
+        "hit_rate": 0.6,
+        "losses": 2,
+        "mae": 18.76448298851093,
+        "n": 5,
+        "pushes": 0,
+        "rmse": 24.737958492101292,
+        "roi": 0.14545454545454542,
+        "units_minus110": 0.7272727272727271,
+        "wilson95": [
+          0.2307242812760128,
+          0.882379225767352
+        ],
+        "wins": 3
+      },
+      "comparator": "ATS_RESEARCH_TOP5",
+      "human": {
+        "bias_actual_minus_prediction": -1.7053147191420102,
+        "hit_rate": 0.4,
+        "losses": 3,
+        "mae": 18.992085174286053,
+        "n": 5,
+        "pushes": 0,
+        "rmse": 21.939459194071368,
+        "roi": -0.2363636363636364,
+        "units_minus110": -1.1818181818181819,
+        "wilson95": [
+          0.11762077423264783,
+          0.769275718723987
+        ],
+        "wins": 2
+      },
+      "removed": [
+        "ATS:401858252:WIN",
+        "ATS:401858473:LOSS",
+        "ATS:401866432:WIN",
+        "ATS:401866433:LOSS",
+        "ATS:401869956:WIN"
+      ],
+      "shared": 0,
+      "unit_difference": -1.909090909090909,
+      "week": 5
+    },
+    {
+      "added": [
+        "ATS:401856707:LOSS",
+        "ATS:401856820:LOSS"
+      ],
+      "approval_status": "PREGAME_REVIEW_SHORTLIST_NOT_EQUIVALENT_OWNER_APPROVAL",
+      "baseline": {
+        "bias_actual_minus_prediction": 0.9986818308199362,
+        "hit_rate": 0.6,
+        "losses": 2,
+        "mae": 9.315378294096671,
+        "n": 5,
+        "pushes": 0,
+        "rmse": 11.848488739001311,
+        "roi": 0.14545454545454542,
+        "units_minus110": 0.7272727272727271,
+        "wilson95": [
+          0.2307242812760128,
+          0.882379225767352
+        ],
+        "wins": 3
+      },
+      "comparator": "GOVERNED_ATS_TOP5",
+      "human": {
+        "bias_actual_minus_prediction": -1.7053147191420102,
+        "hit_rate": 0.4,
+        "losses": 3,
+        "mae": 18.992085174286053,
+        "n": 5,
+        "pushes": 0,
+        "rmse": 21.939459194071368,
+        "roi": -0.2363636363636364,
+        "units_minus110": -1.1818181818181819,
+        "wilson95": [
+          0.11762077423264783,
+          0.769275718723987
+        ],
+        "wins": 2
+      },
+      "removed": [
+        "ATS:401862786:LOSS",
+        "ATS:401871049:WIN"
+      ],
+      "shared": 3,
+      "unit_difference": -1.909090909090909,
+      "week": 5
+    },
+    {
+      "added": [
+        "ATS:401858245:WIN",
+        "ATS:401856707:LOSS",
+        "ATS:401856820:LOSS",
+        "ATS:401858476:WIN",
+        "ATS:401871050:LOSS"
+      ],
+      "approval_status": "PREGAME_REVIEW_SHORTLIST_NOT_EQUIVALENT_OWNER_APPROVAL",
+      "baseline": {
+        "bias_actual_minus_prediction": -4.713721981165473,
+        "hit_rate": 0.6,
+        "losses": 2,
+        "mae": 14.78675602171803,
+        "n": 5,
+        "pushes": 0,
+        "rmse": 18.428951706613503,
+        "roi": 0.14545454545454542,
+        "units_minus110": 0.7272727272727271,
+        "wilson95": [
+          0.2307242812760128,
+          0.882379225767352
+        ],
+        "wins": 3
+      },
+      "comparator": "TOTAL_RESEARCH_TOP5",
+      "human": {
+        "bias_actual_minus_prediction": -1.7053147191420102,
+        "hit_rate": 0.4,
+        "losses": 3,
+        "mae": 18.992085174286053,
+        "n": 5,
+        "pushes": 0,
+        "rmse": 21.939459194071368,
+        "roi": -0.2363636363636364,
+        "units_minus110": -1.1818181818181819,
+        "wilson95": [
+          0.11762077423264783,
+          0.769275718723987
+        ],
+        "wins": 2
+      },
+      "removed": [
+        "TOTAL:401856710:WIN",
+        "TOTAL:401858246:WIN",
+        "TOTAL:401858247:LOSS",
+        "TOTAL:401858476:WIN",
+        "TOTAL:401862791:LOSS"
+      ],
+      "shared": 0,
+      "unit_difference": -1.909090909090909,
+      "week": 5
+    },
+    {
+      "added": [
+        "TOTAL:401856824:LOSS",
+        "TOTAL:401862795:LOSS",
+        "TOTAL:401860902:LOSS",
+        "ATS:401858257:LOSS"
+      ],
+      "approval_status": "PREGAME_REVIEW_SHORTLIST_NOT_EQUIVALENT_OWNER_APPROVAL",
+      "baseline": {
+        "bias_actual_minus_prediction": -3.690617654347934,
+        "hit_rate": 0.8,
+        "losses": 1,
+        "mae": 17.788784382162596,
+        "n": 5,
+        "pushes": 0,
+        "rmse": 20.870598470135725,
+        "roi": 0.5272727272727272,
+        "units_minus110": 2.6363636363636362,
+        "wilson95": [
+          0.37553462976252533,
+          0.9637758913675698
+        ],
+        "wins": 4
+      },
+      "comparator": "ATS_RESEARCH_TOP5",
+      "human": {
+        "bias_actual_minus_prediction": 4.569516702636239,
+        "hit_rate": 0.0,
+        "losses": 5,
+        "mae": 28.35017465142551,
+        "n": 5,
+        "pushes": 0,
+        "rmse": 29.072225802901247,
+        "roi": -1.0,
+        "units_minus110": -5.0,
+        "wilson95": [
+          0.0,
+          0.43448246478317476
+        ],
+        "wins": 0
+      },
+      "removed": [
+        "ATS:401856808:WIN",
+        "ATS:401858482:WIN",
+        "ATS:401858483:WIN",
+        "ATS:401866440:WIN"
+      ],
+      "shared": 1,
+      "unit_difference": -7.636363636363637,
+      "week": 6
+    },
+    {
+      "added": [
+        "ATS:401856718:LOSS",
+        "TOTAL:401856824:LOSS",
+        "TOTAL:401862795:LOSS",
+        "TOTAL:401860902:LOSS",
+        "ATS:401858257:LOSS"
+      ],
+      "approval_status": "PREGAME_REVIEW_SHORTLIST_NOT_EQUIVALENT_OWNER_APPROVAL",
+      "baseline": {
+        "bias_actual_minus_prediction": 16.029375539015824,
+        "hit_rate": 0.0,
+        "losses": 5,
+        "mae": 16.029375539015824,
+        "n": 5,
+        "pushes": 0,
+        "rmse": 17.911521281223852,
+        "roi": -1.0,
+        "units_minus110": -5.0,
+        "wilson95": [
+          0.0,
+          0.43448246478317476
+        ],
+        "wins": 0
+      },
+      "comparator": "GOVERNED_ATS_TOP5",
+      "human": {
+        "bias_actual_minus_prediction": 4.569516702636239,
+        "hit_rate": 0.0,
+        "losses": 5,
+        "mae": 28.35017465142551,
+        "n": 5,
+        "pushes": 0,
+        "rmse": 29.072225802901247,
+        "roi": -1.0,
+        "units_minus110": -5.0,
+        "wilson95": [
+          0.0,
+          0.43448246478317476
+        ],
+        "wins": 0
+      },
+      "removed": [
+        "ATS:401870766:LOSS",
+        "ATS:401871051:LOSS",
+        "ATS:401871052:LOSS",
+        "ATS:401871066:LOSS",
+        "ATS:401871090:LOSS"
+      ],
+      "shared": 0,
+      "unit_difference": 0.0,
+      "week": 6
+    },
+    {
+      "added": [
+        "ATS:401856718:LOSS",
+        "TOTAL:401860902:LOSS",
+        "ATS:401858257:LOSS"
+      ],
+      "approval_status": "PREGAME_REVIEW_SHORTLIST_NOT_EQUIVALENT_OWNER_APPROVAL",
+      "baseline": {
+        "bias_actual_minus_prediction": 1.3521262120165516,
+        "hit_rate": 0.2,
+        "losses": 4,
+        "mae": 20.73236775066038,
+        "n": 5,
+        "pushes": 0,
+        "rmse": 21.901729051681627,
+        "roi": -0.6181818181818182,
+        "units_minus110": -3.090909090909091,
+        "wilson95": [
+          0.03622410863243014,
+          0.6244653702374747
+        ],
+        "wins": 1
+      },
+      "comparator": "TOTAL_RESEARCH_TOP5",
+      "human": {
+        "bias_actual_minus_prediction": 4.569516702636239,
+        "hit_rate": 0.0,
+        "losses": 5,
+        "mae": 28.35017465142551,
+        "n": 5,
+        "pushes": 0,
+        "rmse": 29.072225802901247,
+        "roi": -1.0,
+        "units_minus110": -5.0,
+        "wilson95": [
+          0.0,
+          0.43448246478317476
+        ],
+        "wins": 0
+      },
+      "removed": [
+        "TOTAL:401856823:LOSS",
+        "TOTAL:401858484:WIN",
+        "TOTAL:401866438:LOSS"
+      ],
+      "shared": 2,
+      "unit_difference": -1.9090909090909092,
+      "week": 6
+    },
+    {
+      "added": [
+        "ATS:401869957:LOSS",
+        "TOTAL:401860923:LOSS"
+      ],
+      "approval_status": "EXPLICIT_OWNER_APPROVAL",
+      "baseline": {
+        "bias_actual_minus_prediction": 1.4940270826027235,
+        "hit_rate": 0.6,
+        "losses": 2,
+        "mae": 8.293725109959578,
+        "n": 5,
+        "pushes": 0,
+        "rmse": 9.68926507074234,
+        "roi": 0.14545454545454542,
+        "units_minus110": 0.7272727272727271,
+        "wilson95": [
+          0.2307242812760128,
+          0.882379225767352
+        ],
+        "wins": 3
+      },
+      "comparator": "ATS_RESEARCH_TOP5",
+      "human": {
+        "bias_actual_minus_prediction": 11.171809183514384,
+        "hit_rate": 0.4,
+        "losses": 3,
+        "mae": 15.498042218036153,
+        "n": 5,
+        "pushes": 0,
+        "rmse": 19.512016425402198,
+        "roi": -0.2363636363636364,
+        "units_minus110": -1.1818181818181819,
+        "wilson95": [
+          0.11762077423264783,
+          0.769275718723987
+        ],
+        "wins": 2
+      },
+      "removed": [
+        "ATS:401858265:WIN",
+        "ATS:401866442:LOSS"
+      ],
+      "shared": 3,
+      "unit_difference": -1.909090909090909,
+      "week": 7
+    },
+    {
+      "added": [
+        "ATS:401864524:WIN",
+        "ATS:401858488:LOSS",
+        "ATS:401869957:LOSS",
+        "ATS:401858492:WIN",
+        "TOTAL:401860923:LOSS"
+      ],
+      "approval_status": "EXPLICIT_OWNER_APPROVAL",
+      "baseline": {
+        "bias_actual_minus_prediction": -5.742690406247121,
+        "hit_rate": 0.6,
+        "losses": 2,
+        "mae": 6.879881327768683,
+        "n": 5,
+        "pushes": 0,
+        "rmse": 9.691140509053607,
+        "roi": 0.14545454545454542,
+        "units_minus110": 0.7272727272727271,
+        "wilson95": [
+          0.2307242812760128,
+          0.882379225767352
+        ],
+        "wins": 3
+      },
+      "comparator": "GOVERNED_ATS_TOP5",
+      "human": {
+        "bias_actual_minus_prediction": 11.171809183514384,
+        "hit_rate": 0.4,
+        "losses": 3,
+        "mae": 15.498042218036153,
+        "n": 5,
+        "pushes": 0,
+        "rmse": 19.512016425402198,
+        "roi": -0.2363636363636364,
+        "units_minus110": -1.1818181818181819,
+        "wilson95": [
+          0.11762077423264783,
+          0.769275718723987
+        ],
+        "wins": 2
+      },
+      "removed": [
+        "ATS:401869950:LOSS",
+        "ATS:401871053:WIN",
+        "ATS:401871054:WIN",
+        "ATS:401871067:WIN",
+        "ATS:401871068:LOSS"
+      ],
+      "shared": 0,
+      "unit_difference": -1.909090909090909,
+      "week": 7
+    },
+    {
+      "added": [
+        "ATS:401864524:WIN",
+        "ATS:401858488:LOSS",
+        "ATS:401869957:LOSS",
+        "ATS:401858492:WIN"
+      ],
+      "approval_status": "EXPLICIT_OWNER_APPROVAL",
+      "baseline": {
+        "bias_actual_minus_prediction": 5.97297911002012,
+        "hit_rate": 0.4,
+        "losses": 3,
+        "mae": 19.29439224672695,
+        "n": 5,
+        "pushes": 0,
+        "rmse": 20.621294344675018,
+        "roi": -0.2363636363636364,
+        "units_minus110": -1.1818181818181819,
+        "wilson95": [
+          0.11762077423264783,
+          0.769275718723987
+        ],
+        "wins": 2
+      },
+      "comparator": "TOTAL_RESEARCH_TOP5",
+      "human": {
+        "bias_actual_minus_prediction": 11.171809183514384,
+        "hit_rate": 0.4,
+        "losses": 3,
+        "mae": 15.498042218036153,
+        "n": 5,
+        "pushes": 0,
+        "rmse": 19.512016425402198,
+        "roi": -0.2363636363636364,
+        "units_minus110": -1.1818181818181819,
+        "wilson95": [
+          0.11762077423264783,
+          0.769275718723987
+        ],
+        "wins": 2
+      },
+      "removed": [
+        "TOTAL:401856831:LOSS",
+        "TOTAL:401864522:WIN",
+        "TOTAL:401866443:LOSS",
+        "TOTAL:401869934:WIN"
+      ],
+      "shared": 1,
+      "unit_difference": 0.0,
+      "week": 7
+    }
+  ],
+  "predictiveness": {
+    "ATS": {
+      "edge": {
+        "auc": 0.5302139037433156,
+        "inference": "EXPLORATORY_WITHIN_WEEK_LABEL_PERMUTATION_NOT_TEAM_CLUSTER_ROBUST",
+        "n": 173,
+        "pearson_win": 0.058811115897458646,
+        "permutation_two_sided_p": 0.5114,
+        "permutations": 4999
+      },
+      "score": {
+        "actual_wins": 88,
+        "auc": 0.5302139037433156,
+        "brier": 0.24948063981573185,
+        "expected_wins": 91.18950691714333,
+        "inference": "EXPLORATORY_WITHIN_WEEK_LABEL_PERMUTATION_NOT_TEAM_CLUSTER_ROBUST",
+        "log_loss": 0.692106483554083,
+        "n": 173,
+        "pearson_win": 0.05881111589745865,
+        "permutation_two_sided_p": 0.5114,
+        "permutations": 4999
+      }
+    },
+    "TOTAL": {
+      "edge": {
+        "auc": 0.4525147137506688,
+        "inference": "EXPLORATORY_WITHIN_WEEK_LABEL_PERMUTATION_NOT_TEAM_CLUSTER_ROBUST",
+        "n": 173,
+        "pearson_win": -0.08889117601971523,
+        "permutation_two_sided_p": 0.285,
+        "permutations": 4999
+      },
+      "score": {
+        "actual_wins": 89,
+        "auc": 0.4523809523809524,
+        "brier": 0.26273275008958774,
+        "expected_wins": 101.47698211432976,
+        "inference": "EXPLORATORY_WITHIN_WEEK_LABEL_PERMUTATION_NOT_TEAM_CLUSTER_ROBUST",
+        "log_loss": 0.7201146624794147,
+        "n": 173,
+        "pearson_win": -0.08850316357978068,
+        "permutation_two_sided_p": 0.2842,
+        "permutations": 4999
+      }
+    }
+  },
+  "rank_nonoverlap": [
+    {
+      "bias_actual_minus_prediction": -11.855055109858723,
+      "hit_rate": 0.6,
+      "losses": 2,
+      "mae": 18.76448298851093,
+      "market": "ATS",
+      "n": 5,
+      "pushes": 0,
+      "rmse": 24.737958492101292,
+      "roi": 0.14545454545454542,
+      "segment": "1-5",
+      "units_minus110": 0.7272727272727271,
+      "week": 5,
+      "wilson95": [
+        0.2307242812760128,
+        0.882379225767352
+      ],
+      "wins": 3
+    },
+    {
+      "bias_actual_minus_prediction": -1.472095372714032,
+      "hit_rate": 0.4,
+      "losses": 3,
+      "mae": 23.0443695015185,
+      "market": "ATS",
+      "n": 5,
+      "pushes": 0,
+      "rmse": 29.79709714407043,
+      "roi": -0.2363636363636364,
+      "segment": "6-10",
+      "units_minus110": -1.1818181818181819,
+      "week": 5,
+      "wilson95": [
+        0.11762077423264783,
+        0.769275718723987
+      ],
+      "wins": 2
+    },
+    {
+      "bias_actual_minus_prediction": 0.7313443245649331,
+      "hit_rate": 0.6304347826086957,
+      "losses": 17,
+      "mae": 12.539391116917065,
+      "market": "ATS",
+      "n": 46,
+      "pushes": 0,
+      "rmse": 16.794414973287825,
+      "roi": 0.20355731225296442,
+      "segment": "11+",
+      "units_minus110": 9.363636363636363,
+      "week": 5,
+      "wilson95": [
+        0.48600096423389705,
+        0.7547624540916037
+      ],
+      "wins": 29
+    },
+    {
+      "bias_actual_minus_prediction": -4.713721981165473,
+      "hit_rate": 0.6,
+      "losses": 2,
+      "mae": 14.78675602171803,
+      "market": "TOTAL",
+      "n": 5,
+      "pushes": 0,
+      "rmse": 18.428951706613503,
+      "roi": 0.14545454545454542,
+      "segment": "1-5",
+      "units_minus110": 0.7272727272727271,
+      "week": 5,
+      "wilson95": [
+        0.2307242812760128,
+        0.882379225767352
+      ],
+      "wins": 3
+    },
+    {
+      "bias_actual_minus_prediction": -1.0078924361424058,
+      "hit_rate": 0.4,
+      "losses": 3,
+      "mae": 6.771295526244994,
+      "market": "TOTAL",
+      "n": 5,
+      "pushes": 0,
+      "rmse": 6.803799047463599,
+      "roi": -0.2363636363636364,
+      "segment": "6-10",
+      "units_minus110": -1.1818181818181819,
+      "week": 5,
+      "wilson95": [
+        0.11762077423264783,
+        0.769275718723987
+      ],
+      "wins": 2
+    },
+    {
+      "bias_actual_minus_prediction": 3.6018809803798573,
+      "hit_rate": 0.391304347826087,
+      "losses": 28,
+      "mae": 14.974601688419437,
+      "market": "TOTAL",
+      "n": 46,
+      "pushes": 0,
+      "rmse": 17.937278361794185,
+      "roi": -0.25296442687747034,
+      "segment": "11+",
+      "units_minus110": -11.636363636363637,
+      "week": 5,
+      "wilson95": [
+        0.26393225037829016,
+        0.5354315676837925
+      ],
+      "wins": 18
+    },
+    {
+      "bias_actual_minus_prediction": -3.690617654347934,
+      "hit_rate": 0.8,
+      "losses": 1,
+      "mae": 17.788784382162596,
+      "market": "ATS",
+      "n": 5,
+      "pushes": 0,
+      "rmse": 20.870598470135725,
+      "roi": 0.5272727272727272,
+      "segment": "1-5",
+      "units_minus110": 2.6363636363636362,
+      "week": 6,
+      "wilson95": [
+        0.37553462976252533,
+        0.9637758913675698
+      ],
+      "wins": 4
+    },
+    {
+      "bias_actual_minus_prediction": 8.525006956571518,
+      "hit_rate": 0.6,
+      "losses": 2,
+      "mae": 10.781363701191006,
+      "market": "ATS",
+      "n": 5,
+      "pushes": 0,
+      "rmse": 15.334067560166236,
+      "roi": 0.14545454545454542,
+      "segment": "6-10",
+      "units_minus110": 0.7272727272727271,
+      "week": 6,
+      "wilson95": [
+        0.2307242812760128,
+        0.882379225767352
+      ],
+      "wins": 3
+    },
+    {
+      "bias_actual_minus_prediction": 1.4503696283703855,
+      "hit_rate": 0.4375,
+      "losses": 27,
+      "mae": 12.74596803260122,
+      "market": "ATS",
+      "n": 48,
+      "pushes": 0,
+      "rmse": 15.566118619306,
+      "roi": -0.1647727272727273,
+      "segment": "11+",
+      "units_minus110": -7.90909090909091,
+      "week": 6,
+      "wilson95": [
+        0.30701269040654244,
+        0.5772498258017222
+      ],
+      "wins": 21
+    },
+    {
+      "bias_actual_minus_prediction": 1.3521262120165516,
+      "hit_rate": 0.2,
+      "losses": 4,
+      "mae": 20.73236775066038,
+      "market": "TOTAL",
+      "n": 5,
+      "pushes": 0,
+      "rmse": 21.901729051681627,
+      "roi": -0.6181818181818182,
+      "segment": "1-5",
+      "units_minus110": -3.090909090909091,
+      "week": 6,
+      "wilson95": [
+        0.03622410863243014,
+        0.6244653702374747
+      ],
+      "wins": 1
+    },
+    {
+      "bias_actual_minus_prediction": 5.212388611610363,
+      "hit_rate": 0.6,
+      "losses": 2,
+      "mae": 11.038975507015653,
+      "market": "TOTAL",
+      "n": 5,
+      "pushes": 0,
+      "rmse": 14.932231744998838,
+      "roi": 0.14545454545454542,
+      "segment": "6-10",
+      "units_minus110": 0.7272727272727271,
+      "week": 6,
+      "wilson95": [
+        0.2307242812760128,
+        0.882379225767352
+      ],
+      "wins": 3
+    },
+    {
+      "bias_actual_minus_prediction": 0.565167113012213,
+      "hit_rate": 0.6041666666666666,
+      "losses": 19,
+      "mae": 11.710105202035919,
+      "market": "TOTAL",
+      "n": 48,
+      "pushes": 0,
+      "rmse": 15.715766040472747,
+      "roi": 0.1534090909090909,
+      "segment": "11+",
+      "units_minus110": 7.363636363636363,
+      "week": 6,
+      "wilson95": [
+        0.4631040849254725,
+        0.7297917213940862
+      ],
+      "wins": 29
+    },
+    {
+      "bias_actual_minus_prediction": 1.4940270826027235,
+      "hit_rate": 0.6,
+      "losses": 2,
+      "mae": 8.293725109959578,
+      "market": "ATS",
+      "n": 5,
+      "pushes": 0,
+      "rmse": 9.68926507074234,
+      "roi": 0.14545454545454542,
+      "segment": "1-5",
+      "units_minus110": 0.7272727272727271,
+      "week": 7,
+      "wilson95": [
+        0.2307242812760128,
+        0.882379225767352
+      ],
+      "wins": 3
+    },
+    {
+      "bias_actual_minus_prediction": 4.928483276064943,
+      "hit_rate": 0.4,
+      "losses": 3,
+      "mae": 19.176927918518196,
+      "market": "ATS",
+      "n": 5,
+      "pushes": 0,
+      "rmse": 21.807715652542694,
+      "roi": -0.2363636363636364,
+      "segment": "6-10",
+      "units_minus110": -1.1818181818181819,
+      "week": 7,
+      "wilson95": [
+        0.11762077423264783,
+        0.769275718723987
+      ],
+      "wins": 2
+    },
+    {
+      "bias_actual_minus_prediction": -0.5434650409168873,
+      "hit_rate": 0.42857142857142855,
+      "losses": 28,
+      "mae": 11.587341181775264,
+      "market": "ATS",
+      "n": 49,
+      "pushes": 0,
+      "rmse": 14.266778769734362,
+      "roi": -0.18181818181818185,
+      "segment": "11+",
+      "units_minus110": -8.90909090909091,
+      "week": 7,
+      "wilson95": [
+        0.30023319078881594,
+        0.5672950690998263
+      ],
+      "wins": 21
+    },
+    {
+      "bias_actual_minus_prediction": 5.97297911002012,
+      "hit_rate": 0.4,
+      "losses": 3,
+      "mae": 19.29439224672695,
+      "market": "TOTAL",
+      "n": 5,
+      "pushes": 0,
+      "rmse": 20.621294344675018,
+      "roi": -0.2363636363636364,
+      "segment": "1-5",
+      "units_minus110": -1.1818181818181819,
+      "week": 7,
+      "wilson95": [
+        0.11762077423264783,
+        0.769275718723987
+      ],
+      "wins": 2
+    },
+    {
+      "bias_actual_minus_prediction": 8.761914525102636,
+      "hit_rate": 0.4,
+      "losses": 3,
+      "mae": 18.680009823954656,
+      "market": "TOTAL",
+      "n": 5,
+      "pushes": 0,
+      "rmse": 20.484311472320776,
+      "roi": -0.2363636363636364,
+      "segment": "6-10",
+      "units_minus110": -1.1818181818181819,
+      "week": 7,
+      "wilson95": [
+        0.11762077423264783,
+        0.769275718723987
+      ],
+      "wins": 2
+    },
+    {
+      "bias_actual_minus_prediction": 0.019188180484491984,
+      "hit_rate": 0.5918367346938775,
+      "losses": 20,
+      "mae": 11.705827858860554,
+      "market": "TOTAL",
+      "n": 49,
+      "pushes": 0,
+      "rmse": 14.395463763243145,
+      "roi": 0.12987012987012986,
+      "segment": "11+",
+      "units_minus110": 6.363636363636363,
+      "week": 7,
+      "wilson95": [
+        0.4524731939184714,
+        0.7178476147961312
+      ],
+      "wins": 29
+    }
+  ],
+  "retrospective_time_split_replay": [
+    {
+      "brier": 0.25,
+      "log_loss": 0.6931471805599453,
+      "market": "ATS",
+      "method": "score_shrink_0.0",
+      "test_n": 58,
+      "test_week": 6,
+      "train_n": 56
+    },
+    {
+      "brier": 0.2491769238114257,
+      "log_loss": 0.691499921409997,
+      "market": "ATS",
+      "method": "score_shrink_0.25",
+      "test_n": 58,
+      "test_week": 6,
+      "train_n": 56
+    },
+    {
+      "brier": 0.24850068951820037,
+      "log_loss": 0.690140270339152,
+      "market": "ATS",
+      "method": "score_shrink_0.5",
+      "test_n": 58,
+      "test_week": 6,
+      "train_n": 56
+    },
+    {
+      "brier": 0.2475887466177964,
+      "log_loss": 0.6882670755104902,
+      "market": "ATS",
+      "method": "score_shrink_1.0",
+      "test_n": 58,
+      "test_week": 6,
+      "train_n": 56
+    },
+    {
+      "brier": 0.2651741731175229,
+      "fitted_rate": 0.6071428571428571,
+      "market": "ATS",
+      "method": "past_hit_rate_constant",
+      "test_n": 58,
+      "test_week": 6,
+      "train_n": 56
+    },
+    {
+      "mae": 13.011331137614253,
+      "market": "ATS",
+      "method": "past_bias_correction_0.0",
+      "rmse": 16.073201024441115,
+      "test_n": 58,
+      "test_week": 6,
+      "train_bias": -0.5891770264799437,
+      "train_n": 56
+    },
+    {
+      "mae": 13.051964035992182,
+      "market": "ATS",
+      "method": "past_bias_correction_0.5",
+      "rmse": 16.105505589282618,
+      "test_n": 58,
+      "test_week": 6,
+      "train_bias": -0.5891770264799437,
+      "train_n": 56
+    },
+    {
+      "mae": 13.092596934370109,
+      "market": "ATS",
+      "method": "past_bias_correction_1.0",
+      "rmse": 16.143122194451678,
+      "test_n": 58,
+      "test_week": 6,
+      "train_bias": -0.5891770264799437,
+      "train_n": 56
+    },
+    {
+      "mae": 11.551724137931034,
+      "market": "ATS",
+      "method": "model_weight_vs_locked_line_0.0",
+      "rmse": 14.519012505605573,
+      "test_n": 58,
+      "test_week": 6,
+      "train_n": 56
+    },
+    {
+      "mae": 11.873169943249437,
+      "market": "ATS",
+      "method": "model_weight_vs_locked_line_0.5",
+      "rmse": 14.927404530831854,
+      "test_n": 58,
+      "test_week": 6,
+      "train_n": 56
+    },
+    {
+      "mae": 12.430912146314139,
+      "market": "ATS",
+      "method": "model_weight_vs_locked_line_0.75",
+      "rmse": 15.415925554199422,
+      "test_n": 58,
+      "test_week": 6,
+      "train_n": 56
+    },
+    {
+      "mae": 13.011331137614253,
+      "market": "ATS",
+      "method": "model_weight_vs_locked_line_1.0",
+      "rmse": 16.073201024441115,
+      "test_n": 58,
+      "test_week": 6,
+      "train_n": 56
+    },
+    {
+      "brier": 0.25,
+      "log_loss": 0.6931471805599453,
+      "market": "TOTAL",
+      "method": "score_shrink_0.0",
+      "test_n": 58,
+      "test_week": 6,
+      "train_n": 56
+    },
+    {
+      "brier": 0.24956208503372038,
+      "log_loss": 0.6922872650767239,
+      "market": "TOTAL",
+      "method": "score_shrink_0.25",
+      "test_n": 58,
+      "test_week": 6,
+      "train_n": 56
+    },
+    {
+      "brier": 0.250340301339413,
+      "log_loss": 0.6939847714377644,
+      "market": "TOTAL",
+      "method": "score_shrink_0.5",
+      "test_n": 58,
+      "test_week": 6,
+      "train_n": 56
+    },
+    {
+      "brier": 0.25554512776671506,
+      "log_loss": 0.7060751529883099,
+      "market": "TOTAL",
+      "method": "score_shrink_1.0",
+      "test_n": 58,
+      "test_week": 6,
+      "train_n": 56
+    },
+    {
+      "brier": 0.2702872097114708,
+      "fitted_rate": 0.4107142857142857,
+      "market": "TOTAL",
+      "method": "past_hit_rate_constant",
+      "test_n": 58,
+      "test_week": 6,
+      "train_n": 56
+    },
+    {
+      "mae": 12.43003044803628,
+      "market": "TOTAL",
+      "method": "past_bias_correction_0.0",
+      "rmse": 16.278069078260607,
+      "test_n": 58,
+      "test_week": 6,
+      "train_bias": 2.4478295180523935,
+      "train_n": 56
+    },
+    {
+      "mae": 12.547186970600208,
+      "market": "TOTAL",
+      "method": "past_bias_correction_0.5",
+      "rmse": 16.24633336741307,
+      "test_n": 58,
+      "test_week": 6,
+      "train_bias": 2.4478295180523935,
+      "train_n": 56
+    },
+    {
+      "mae": 12.84261467105481,
+      "market": "TOTAL",
+      "method": "past_bias_correction_1.0",
+      "rmse": 16.306658073570397,
+      "test_n": 58,
+      "test_week": 6,
+      "train_bias": 2.4478295180523935,
+      "train_n": 56
+    },
+    {
+      "mae": 12.431034482758621,
+      "market": "TOTAL",
+      "method": "model_weight_vs_locked_line_0.0",
+      "rmse": 15.860653984864124,
+      "test_n": 58,
+      "test_week": 6,
+      "train_n": 56
+    },
+    {
+      "mae": 12.356475221357902,
+      "market": "TOTAL",
+      "method": "model_weight_vs_locked_line_0.5",
+      "rmse": 15.930487082307554,
+      "test_n": 58,
+      "test_week": 6,
+      "train_n": 56
+    },
+    {
+      "mae": 12.359769289213665,
+      "market": "TOTAL",
+      "method": "model_weight_vs_locked_line_0.75",
+      "rmse": 16.0703483394095,
+      "test_n": 58,
+      "test_week": 6,
+      "train_n": 56
+    },
+    {
+      "mae": 12.43003044803628,
+      "market": "TOTAL",
+      "method": "model_weight_vs_locked_line_1.0",
+      "rmse": 16.278069078260607,
+      "test_n": 58,
+      "test_week": 6,
+      "train_n": 56
+    },
+    {
+      "brier": 0.25,
+      "log_loss": 0.6931471805599453,
+      "market": "ATS",
+      "method": "score_shrink_0.0",
+      "test_n": 59,
+      "test_week": 7,
+      "train_n": 114
+    },
+    {
+      "brier": 0.25056621199961876,
+      "log_loss": 0.6942796804872748,
+      "market": "ATS",
+      "method": "score_shrink_0.25",
+      "test_n": 59,
+      "test_week": 7,
+      "train_n": 114
+    },
+    {
+      "brier": 0.2512444564625926,
+      "log_loss": 0.6956369766867136,
+      "market": "ATS",
+      "method": "score_shrink_0.5",
+      "test_n": 59,
+      "test_week": 7,
+      "train_n": 114
+    },
+    {
+      "brier": 0.25293704277860557,
+      "log_loss": 0.6990328176264393,
+      "market": "ATS",
+      "method": "score_shrink_1.0",
+      "test_n": 59,
+      "test_week": 7,
+      "train_n": 114
+    },
+    {
+      "brier": 0.2571273560052376,
+      "fitted_rate": 0.543859649122807,
+      "market": "ATS",
+      "method": "past_hit_rate_constant",
+      "test_n": 59,
+      "test_week": 7,
+      "train_n": 114
+    },
+    {
+      "mae": 11.951406492362318,
+      "market": "ATS",
+      "method": "past_bias_correction_0.0",
+      "rmse": 14.741156179346318,
+      "test_n": 59,
+      "test_week": 7,
+      "train_bias": 0.533296273596663,
+      "train_n": 114
+    },
+    {
+      "mae": 11.964964872199522,
+      "market": "ATS",
+      "method": "past_bias_correction_0.5",
+      "rmse": 14.74188686908945,
+      "test_n": 59,
+      "test_week": 7,
+      "train_bias": 0.533296273596663,
+      "train_n": 114
+    },
+    {
+      "mae": 11.988561094549771,
+      "market": "ATS",
+      "method": "past_bias_correction_1.0",
+      "rmse": 14.747439570172844,
+      "test_n": 59,
+      "test_week": 7,
+      "train_bias": 0.533296273596663,
+      "train_n": 114
+    },
+    {
+      "mae": 10.90677966101695,
+      "market": "ATS",
+      "method": "model_weight_vs_locked_line_0.0",
+      "rmse": 13.63491902979818,
+      "test_n": 59,
+      "test_week": 7,
+      "train_n": 114
+    },
+    {
+      "mae": 11.204710740437962,
+      "market": "ATS",
+      "method": "model_weight_vs_locked_line_0.5",
+      "rmse": 13.879616498956636,
+      "test_n": 59,
+      "test_week": 7,
+      "train_n": 114
+    },
+    {
+      "mae": 11.545218101336378,
+      "market": "ATS",
+      "method": "model_weight_vs_locked_line_0.75",
+      "rmse": 14.238401264323636,
+      "test_n": 59,
+      "test_week": 7,
+      "train_n": 114
+    },
+    {
+      "mae": 11.951406492362318,
+      "market": "ATS",
+      "method": "model_weight_vs_locked_line_1.0",
+      "rmse": 14.741156179346318,
+      "test_n": 59,
+      "test_week": 7,
+      "train_n": 114
+    },
+    {
+      "brier": 0.25,
+      "log_loss": 0.6931471805599453,
+      "market": "TOTAL",
+      "method": "score_shrink_0.0",
+      "test_n": 59,
+      "test_week": 7,
+      "train_n": 114
+    },
+    {
+      "brier": 0.24847770159428959,
+      "log_loss": 0.6901092134625644,
+      "market": "TOTAL",
+      "method": "score_shrink_0.25",
+      "test_n": 59,
+      "test_week": 7,
+      "train_n": 114
+    },
+    {
+      "brier": 0.24826461524847235,
+      "log_loss": 0.6897637947700406,
+      "market": "TOTAL",
+      "method": "score_shrink_0.5",
+      "test_n": 59,
+      "test_week": 7,
+      "train_n": 114
+    },
+    {
+      "brier": 0.2517660787365174,
+      "log_loss": 0.6980278731066926,
+      "market": "TOTAL",
+      "method": "score_shrink_1.0",
+      "test_n": 59,
+      "test_week": 7,
+      "train_n": 114
+    },
+    {
+      "brier": 0.2511176841896594,
+      "fitted_rate": 0.49122807017543857,
+      "market": "TOTAL",
+      "method": "past_hit_rate_constant",
+      "test_n": 59,
+      "test_week": 7,
+      "train_n": 114
+    },
+    {
+      "mae": 12.939958905721614,
+      "market": "TOTAL",
+      "method": "past_bias_correction_0.0",
+      "rmse": 15.610982366133085,
+      "test_n": 59,
+      "test_week": 7,
+      "train_bias": 1.7283249873127617,
+      "train_n": 114
+    },
+    {
+      "mae": 12.866724796089716,
+      "market": "TOTAL",
+      "method": "past_bias_correction_0.5",
+      "rmse": 15.564826087201979,
+      "test_n": 59,
+      "test_week": 7,
+      "train_bias": 1.7283249873127617,
+      "train_n": 114
+    },
+    {
+      "mae": 12.807727064200499,
+      "market": "TOTAL",
+      "method": "past_bias_correction_1.0",
+      "rmse": 15.566579760655621,
+      "test_n": 59,
+      "test_week": 7,
+      "train_bias": 1.7283249873127617,
+      "train_n": 114
+    },
+    {
+      "mae": 12.838983050847459,
+      "market": "TOTAL",
+      "method": "model_weight_vs_locked_line_0.0",
+      "rmse": 15.855678552899631,
+      "test_n": 59,
+      "test_week": 7,
+      "train_n": 114
+    },
+    {
+      "mae": 12.787776063030297,
+      "market": "TOTAL",
+      "method": "model_weight_vs_locked_line_0.5",
+      "rmse": 15.578611695838045,
+      "test_n": 59,
+      "test_week": 7,
+      "train_n": 114
+    },
+    {
+      "mae": 12.863867484375957,
+      "market": "TOTAL",
+      "method": "model_weight_vs_locked_line_0.75",
+      "rmse": 15.555805279510945,
+      "test_n": 59,
+      "test_week": 7,
+      "train_n": 114
+    },
+    {
+      "mae": 12.939958905721614,
+      "market": "TOTAL",
+      "method": "model_weight_vs_locked_line_1.0",
+      "rmse": 15.610982366133085,
+      "test_n": 59,
+      "test_week": 7,
+      "train_n": 114
+    }
+  ],
+  "segments": [
+    {
+      "axis": "confidence",
+      "bias_actual_minus_prediction": 0.3831129478521991,
+      "hit_rate": 0.5086705202312138,
+      "losses": 85,
+      "mae": 12.98061527664356,
+      "market": "ATS",
+      "n": 173,
+      "pushes": 0,
+      "rmse": 16.70529120654749,
+      "roi": -0.028901734104046242,
+      "segment": "1",
+      "units_minus110": -5.0,
+      "wilson95": [
+        0.4348000456743291,
+        0.5821643020527603
+      ],
+      "wins": 88
+    },
+    {
+      "axis": "edge_points",
+      "bias_actual_minus_prediction": -1.0399741439583257,
+      "hit_rate": 0.6,
+      "losses": 10,
+      "mae": 15.71480843363856,
+      "market": "ATS",
+      "n": 25,
+      "pushes": 0,
+      "rmse": 21.276951679296186,
+      "roi": 0.14545454545454548,
+      "segment": "10+",
+      "units_minus110": 3.6363636363636367,
+      "wilson95": [
+        0.40739457358967,
+        0.7659669762225203
+      ],
+      "wins": 15
+    },
+    {
+      "axis": "edge_points",
+      "bias_actual_minus_prediction": 1.771113740012296,
+      "hit_rate": 0.5507246376811594,
+      "losses": 31,
+      "mae": 12.242288372274427,
+      "market": "ATS",
+      "n": 69,
+      "pushes": 0,
+      "rmse": 15.718302422197329,
+      "roi": 0.05138339920948618,
+      "segment": "3-6.9",
+      "units_minus110": 3.5454545454545467,
+      "wilson95": [
+        0.43378767502688115,
+        0.6623114437075628
+      ],
+      "wins": 38
+    },
+    {
+      "axis": "edge_points",
+      "bias_actual_minus_prediction": -0.6216520679889643,
+      "hit_rate": 0.3333333333333333,
+      "losses": 18,
+      "mae": 16.961650359660602,
+      "market": "ATS",
+      "n": 27,
+      "pushes": 0,
+      "rmse": 19.4066098937342,
+      "roi": -0.36363636363636365,
+      "segment": "7-9.9",
+      "units_minus110": -9.818181818181818,
+      "wilson95": [
+        0.18643261498715644,
+        0.5217523949267991
+      ],
+      "wins": 9
+    },
+    {
+      "axis": "edge_points",
+      "bias_actual_minus_prediction": -0.25277593553380384,
+      "hit_rate": 0.5,
+      "losses": 26,
+      "mae": 10.57872643501154,
+      "market": "ATS",
+      "n": 52,
+      "pushes": 0,
+      "rmse": 13.689340904140431,
+      "roi": -0.04545454545454545,
+      "segment": "<3",
+      "units_minus110": -2.3636363636363633,
+      "wilson95": [
+        0.36885862959780547,
+        0.6311413704021945
+      ],
+      "wins": 26
+    },
+    {
+      "axis": "score",
+      "bias_actual_minus_prediction": 0.6234992809283012,
+      "hit_rate": 0.49324324324324326,
+      "losses": 75,
+      "mae": 12.518758324448457,
+      "market": "ATS",
+      "n": 148,
+      "pushes": 0,
+      "rmse": 15.803017090068813,
+      "roi": -0.05835380835380838,
+      "segment": "0.50-0.55",
+      "units_minus110": -8.63636363636364,
+      "wilson95": [
+        0.4138927395225882,
+        0.5729356272783277
+      ],
+      "wins": 73
+    },
+    {
+      "axis": "score",
+      "bias_actual_minus_prediction": -1.0399741439583257,
+      "hit_rate": 0.6,
+      "losses": 10,
+      "mae": 15.71480843363856,
+      "market": "ATS",
+      "n": 25,
+      "pushes": 0,
+      "rmse": 21.276951679296186,
+      "roi": 0.14545454545454548,
+      "segment": "0.55-0.60",
+      "units_minus110": 3.6363636363636367,
+      "wilson95": [
+        0.40739457358967,
+        0.7659669762225203
+      ],
+      "wins": 15
+    },
+    {
+      "axis": "rank_nonoverlap",
+      "bias_actual_minus_prediction": -4.683881893867977,
+      "hit_rate": 0.6666666666666666,
+      "losses": 5,
+      "mae": 14.948997493544368,
+      "market": "ATS",
+      "n": 15,
+      "pushes": 0,
+      "rmse": 19.50581390653964,
+      "roi": 0.27272727272727276,
+      "segment": "1-5",
+      "units_minus110": 4.090909090909092,
+      "wilson95": [
+        0.41713547738519774,
+        0.8482367556028526
+      ],
+      "wins": 10
+    },
+    {
+      "axis": "rank_nonoverlap",
+      "bias_actual_minus_prediction": 0.5358726859219438,
+      "hit_rate": 0.4965034965034965,
+      "losses": 72,
+      "mae": 12.28250471923099,
+      "market": "ATS",
+      "n": 143,
+      "pushes": 0,
+      "rmse": 15.550169519932902,
+      "roi": -0.05212968849332485,
+      "segment": "11+",
+      "units_minus110": -7.454545454545453,
+      "wilson95": [
+        0.41572571832759087,
+        0.5774642158501873
+      ],
+      "wins": 71
+    },
+    {
+      "axis": "rank_nonoverlap",
+      "bias_actual_minus_prediction": 3.9937982866408097,
+      "hit_rate": 0.4666666666666667,
+      "losses": 8,
+      "mae": 17.667553707075903,
+      "market": "ATS",
+      "n": 15,
+      "pushes": 0,
+      "rmse": 23.0837395016136,
+      "roi": -0.10909090909090911,
+      "segment": "6-10",
+      "units_minus110": -1.6363636363636367,
+      "wilson95": [
+        0.24809535365737387,
+        0.698830199745016
+      ],
+      "wins": 7
+    },
+    {
+      "axis": "favorite",
+      "bias_actual_minus_prediction": -0.8495682573693248,
+      "hit_rate": 0.453125,
+      "losses": 35,
+      "mae": 11.766854993939306,
+      "market": "ATS",
+      "n": 64,
+      "pushes": 0,
+      "rmse": 15.36910489368378,
+      "roi": -0.13494318181818182,
+      "segment": "FAVORITE",
+      "units_minus110": -8.636363636363637,
+      "wilson95": [
+        0.3372944778061167,
+        0.5742640277994588
+      ],
+      "wins": 29
+    },
+    {
+      "axis": "favorite",
+      "bias_actual_minus_prediction": 1.1068890683492407,
+      "hit_rate": 0.5412844036697247,
+      "losses": 50,
+      "mae": 13.693281864653395,
+      "market": "ATS",
+      "n": 109,
+      "pushes": 0,
+      "rmse": 17.4422107002543,
+      "roi": 0.03336113427856544,
+      "segment": "UNDERDOG",
+      "units_minus110": 3.636363636363633,
+      "wilson95": [
+        0.4479295400173967,
+        0.6318283795811176
+      ],
+      "wins": 59
+    },
+    {
+      "axis": "location",
+      "bias_actual_minus_prediction": 6.600547420596564,
+      "hit_rate": 0.4794520547945205,
+      "losses": 38,
+      "mae": 13.419187223276422,
+      "market": "ATS",
+      "n": 73,
+      "pushes": 0,
+      "rmse": 17.109841219822314,
+      "roi": -0.08468244084682443,
+      "segment": "AWAY",
+      "units_minus110": -6.181818181818183,
+      "wilson95": [
+        0.3687745445673386,
+        0.5921840311020748
+      ],
+      "wins": 35
+    },
+    {
+      "axis": "location",
+      "bias_actual_minus_prediction": -4.201710749321177,
+      "hit_rate": 0.5252525252525253,
+      "losses": 47,
+      "mae": 12.784220536388679,
+      "market": "ATS",
+      "n": 99,
+      "pushes": 0,
+      "rmse": 16.486258562218556,
+      "roi": 0.002754820936639125,
+      "segment": "HOME",
+      "units_minus110": 0.2727272727272734,
+      "wilson95": [
+        0.42779308237779784,
+        0.6208254422652413
+      ],
+      "wins": 52
+    },
+    {
+      "axis": "location",
+      "bias_actual_minus_prediction": 0.40794245767773996,
+      "hit_rate": 1.0,
+      "losses": 0,
+      "mae": 0.40794245767773996,
+      "market": "ATS",
+      "n": 1,
+      "pushes": 0,
+      "rmse": 0.40794245767773996,
+      "roi": 0.9090909090909091,
+      "segment": "NEUTRAL",
+      "units_minus110": 0.9090909090909091,
+      "wilson95": [
+        0.20654931437723745,
+        1.0
+      ],
+      "wins": 1
+    },
+    {
+      "axis": "spread",
+      "bias_actual_minus_prediction": 1.3577716196959702,
+      "hit_rate": 0.5882352941176471,
+      "losses": 14,
+      "mae": 10.742152152539937,
+      "market": "ATS",
+      "n": 34,
+      "pushes": 0,
+      "rmse": 14.559968574633592,
+      "roi": 0.12299465240641716,
+      "segment": "0-2.5",
+      "units_minus110": 4.181818181818183,
+      "wilson95": [
+        0.42221593878812513,
+        0.7363403163612884
+      ],
+      "wins": 20
+    },
+    {
+      "axis": "spread",
+      "bias_actual_minus_prediction": 3.828809348662378,
+      "hit_rate": 0.4074074074074074,
+      "losses": 16,
+      "mae": 16.26389708801048,
+      "market": "ATS",
+      "n": 27,
+      "pushes": 0,
+      "rmse": 20.74532735537698,
+      "roi": -0.2222222222222222,
+      "segment": "14-20.5",
+      "units_minus110": -6.0,
+      "wilson95": [
+        0.24514757074395552,
+        0.592732990319353
+      ],
+      "wins": 11
+    },
+    {
+      "axis": "spread",
+      "bias_actual_minus_prediction": 3.9866762417762702,
+      "hit_rate": 0.6,
+      "losses": 4,
+      "mae": 14.930607466871809,
+      "market": "ATS",
+      "n": 10,
+      "pushes": 0,
+      "rmse": 17.093308402096188,
+      "roi": 0.14545454545454542,
+      "segment": "21+",
+      "units_minus110": 1.4545454545454541,
+      "wilson95": [
+        0.31267376973365824,
+        0.8318196702937638
+      ],
+      "wins": 6
+    },
+    {
+      "axis": "spread",
+      "bias_actual_minus_prediction": -4.032783435959726,
+      "hit_rate": 0.4339622641509434,
+      "losses": 30,
+      "mae": 13.454701161738864,
+      "market": "ATS",
+      "n": 53,
+      "pushes": 0,
+      "rmse": 16.40011748876585,
+      "roi": -0.17152658662092624,
+      "segment": "3-6.5",
+      "units_minus110": -9.09090909090909,
+      "wilson95": [
+        0.30950396559750293,
+        0.5673464857239271
+      ],
+      "wins": 23
+    },
+    {
+      "axis": "spread",
+      "bias_actual_minus_prediction": 1.8491267792446127,
+      "hit_rate": 0.5714285714285714,
+      "losses": 21,
+      "mae": 11.813934939914631,
+      "market": "ATS",
+      "n": 49,
+      "pushes": 0,
+      "rmse": 15.826836322526828,
+      "roi": 0.09090909090909088,
+      "segment": "7-13.5",
+      "units_minus110": 4.454545454545453,
+      "wilson95": [
+        0.4327049309001736,
+        0.699766809211184
+      ],
+      "wins": 28
+    },
+    {
+      "axis": "road_favorite",
+      "bias_actual_minus_prediction": -0.17966935970235426,
+      "hit_rate": 0.5253164556962026,
+      "losses": 75,
+      "mae": 13.270562611776633,
+      "market": "ATS",
+      "n": 158,
+      "pushes": 0,
+      "rmse": 16.98719218158931,
+      "roi": 0.0028768699654775523,
+      "segment": "False",
+      "units_minus110": 0.45454545454545325,
+      "wilson95": [
+        0.4477796461425829,
+        0.6016514456079143
+      ],
+      "wins": 83
+    },
+    {
+      "axis": "road_favorite",
+      "bias_actual_minus_prediction": 6.311086587426828,
+      "hit_rate": 0.3333333333333333,
+      "losses": 10,
+      "mae": 9.92650334657519,
+      "market": "ATS",
+      "n": 15,
+      "pushes": 0,
+      "rmse": 13.379900785081361,
+      "roi": -0.3636363636363636,
+      "segment": "True",
+      "units_minus110": -5.454545454545454,
+      "wilson95": [
+        0.1517632443971473,
+        0.5828645226148023
+      ],
+      "wins": 5
+    },
+    {
+      "axis": "confidence",
+      "bias_actual_minus_prediction": 1.3332629234475606,
+      "hit_rate": 0.5185185185185185,
+      "losses": 26,
+      "mae": 11.282725819593454,
+      "market": "TOTAL",
+      "n": 54,
+      "pushes": 0,
+      "rmse": 14.10532460244783,
+      "roi": -0.010101010101010124,
+      "segment": "1",
+      "units_minus110": -0.5454545454545467,
+      "wilson95": [
+        0.3885170019812708,
+        0.6460602725338812
+      ],
+      "wins": 28
+    },
+    {
+      "axis": "confidence",
+      "bias_actual_minus_prediction": 1.894285578645418,
+      "hit_rate": 0.5769230769230769,
+      "losses": 22,
+      "mae": 11.45193881062199,
+      "market": "TOTAL",
+      "n": 52,
+      "pushes": 0,
+      "rmse": 15.042798400684207,
+      "roi": 0.1013986013986014,
+      "segment": "2",
+      "units_minus110": 5.272727272727273,
+      "wilson95": [
+        0.4419432537390302,
+        0.7013194791649908
+      ],
+      "wins": 30
+    },
+    {
+      "axis": "confidence",
+      "bias_actual_minus_prediction": 1.1825555577883413,
+      "hit_rate": 0.46774193548387094,
+      "losses": 33,
+      "mae": 15.8757289314386,
+      "market": "TOTAL",
+      "n": 62,
+      "pushes": 0,
+      "rmse": 18.695967681528582,
+      "roi": -0.10703812316715543,
+      "segment": "3",
+      "units_minus110": -6.636363636363637,
+      "wilson95": [
+        0.34908832973334164,
+        0.5901596749183597
+      ],
+      "wins": 29
+    },
+    {
+      "axis": "confidence",
+      "bias_actual_minus_prediction": 5.565249006880313,
+      "hit_rate": 0.4,
+      "losses": 3,
+      "mae": 18.3916141342411,
+      "market": "TOTAL",
+      "n": 5,
+      "pushes": 0,
+      "rmse": 21.42338232568519,
+      "roi": -0.2363636363636364,
+      "segment": "4",
+      "units_minus110": -1.1818181818181819,
+      "wilson95": [
+        0.11762077423264783,
+        0.769275718723987
+      ],
+      "wins": 2
+    },
+    {
+      "axis": "edge_points",
+      "bias_actual_minus_prediction": 33.6550075292779,
+      "hit_rate": 0.0,
+      "losses": 1,
+      "mae": 33.6550075292779,
+      "market": "TOTAL",
+      "n": 1,
+      "pushes": 0,
+      "rmse": 33.6550075292779,
+      "roi": -1.0,
+      "segment": "10+",
+      "units_minus110": -1.0,
+      "wilson95": [
+        0.0,
+        0.7934506856227626
+      ],
+      "wins": 0
+    },
+    {
+      "axis": "edge_points",
+      "bias_actual_minus_prediction": 1.465073912469547,
+      "hit_rate": 0.48717948717948717,
+      "losses": 40,
+      "mae": 13.80954961292955,
+      "market": "TOTAL",
+      "n": 78,
+      "pushes": 0,
+      "rmse": 17.177158806794854,
+      "roi": -0.06993006993006991,
+      "segment": "3-6.9",
+      "units_minus110": -5.454545454545453,
+      "wilson95": [
+        0.37948952024893845,
+        0.5960729876923999
+      ],
+      "wins": 38
+    },
+    {
+      "axis": "edge_points",
+      "bias_actual_minus_prediction": 0.8919904654167802,
+      "hit_rate": 0.47058823529411764,
+      "losses": 9,
+      "mae": 18.164009771441005,
+      "market": "TOTAL",
+      "n": 17,
+      "pushes": 0,
+      "rmse": 20.062593904217486,
+      "roi": -0.10160427807486633,
+      "segment": "7-9.9",
+      "units_minus110": -1.7272727272727275,
+      "wilson95": [
+        0.26165106442409436,
+        0.6903676493999558
+      ],
+      "wins": 8
+    },
+    {
+      "axis": "edge_points",
+      "bias_actual_minus_prediction": 1.4097289215457258,
+      "hit_rate": 0.5584415584415584,
+      "losses": 34,
+      "mae": 11.187444589331282,
+      "market": "TOTAL",
+      "n": 77,
+      "pushes": 0,
+      "rmse": 14.182202497527133,
+      "roi": 0.06611570247933887,
+      "segment": "<3",
+      "units_minus110": 5.0909090909090935,
+      "wilson95": [
+        0.44738236156130345,
+        0.6639466536654248
+      ],
+      "wins": 43
+    },
+    {
+      "axis": "score",
+      "bias_actual_minus_prediction": 1.3332629234475606,
+      "hit_rate": 0.5185185185185185,
+      "losses": 26,
+      "mae": 11.282725819593454,
+      "market": "TOTAL",
+      "n": 54,
+      "pushes": 0,
+      "rmse": 14.10532460244783,
+      "roi": -0.010101010101010124,
+      "segment": "0.50-0.55",
+      "units_minus110": -0.5454545454545467,
+      "wilson95": [
+        0.3885170019812708,
+        0.6460602725338812
+      ],
+      "wins": 28
+    },
+    {
+      "axis": "score",
+      "bias_actual_minus_prediction": 1.894285578645418,
+      "hit_rate": 0.5769230769230769,
+      "losses": 22,
+      "mae": 11.45193881062199,
+      "market": "TOTAL",
+      "n": 52,
+      "pushes": 0,
+      "rmse": 15.042798400684207,
+      "roi": 0.1013986013986014,
+      "segment": "0.55-0.60",
+      "units_minus110": 5.272727272727273,
+      "wilson95": [
+        0.4419432537390302,
+        0.7013194791649908
+      ],
+      "wins": 30
+    },
+    {
+      "axis": "score",
+      "bias_actual_minus_prediction": 1.5096222330937124,
+      "hit_rate": 0.4626865671641791,
+      "losses": 36,
+      "mae": 16.063481558513416,
+      "market": "TOTAL",
+      "n": 67,
+      "pushes": 0,
+      "rmse": 18.913091659224644,
+      "roi": -0.11668928086838533,
+      "segment": "0.60+",
+      "units_minus110": -7.818181818181817,
+      "wilson95": [
+        0.3485844371949035,
+        0.580835423953701
+      ],
+      "wins": 31
+    },
+    {
+      "axis": "rank_nonoverlap",
+      "bias_actual_minus_prediction": 0.8704611136237328,
+      "hit_rate": 0.4,
+      "losses": 9,
+      "mae": 18.271172006368452,
+      "market": "TOTAL",
+      "n": 15,
+      "pushes": 0,
+      "rmse": 20.367865024000377,
+      "roi": -0.2363636363636364,
+      "segment": "1-5",
+      "units_minus110": -3.545454545454546,
+      "wilson95": [
+        0.1982449614134158,
+        0.6425316987937539
+      ],
+      "wins": 6
+    },
+    {
+      "axis": "rank_nonoverlap",
+      "bias_actual_minus_prediction": 1.3549284431174808,
+      "hit_rate": 0.5314685314685315,
+      "losses": 67,
+      "mae": 12.758757289854442,
+      "market": "TOTAL",
+      "n": 143,
+      "pushes": 0,
+      "rmse": 16.044049483982405,
+      "roi": 0.014621741894469185,
+      "segment": "11+",
+      "units_minus110": 2.0909090909090935,
+      "wilson95": [
+        0.4499302507194689,
+        0.6113603416805273
+      ],
+      "wins": 76
+    },
+    {
+      "axis": "rank_nonoverlap",
+      "bias_actual_minus_prediction": 4.322136900190198,
+      "hit_rate": 0.4666666666666667,
+      "losses": 8,
+      "mae": 12.163426952405102,
+      "market": "TOTAL",
+      "n": 15,
+      "pushes": 0,
+      "rmse": 15.153330138506082,
+      "roi": -0.10909090909090911,
+      "segment": "6-10",
+      "units_minus110": -1.6363636363636367,
+      "wilson95": [
+        0.24809535365737387,
+        0.698830199745016
+      ],
+      "wins": 7
+    },
+    {
+      "axis": "direction",
+      "bias_actual_minus_prediction": -3.1927382505394193,
+      "hit_rate": 0.5423728813559322,
+      "losses": 27,
+      "mae": 11.9887600225305,
+      "market": "TOTAL",
+      "n": 59,
+      "pushes": 0,
+      "rmse": 14.083234085491027,
+      "roi": 0.03543913713405237,
+      "segment": "OVER",
+      "units_minus110": 2.09090909090909,
+      "wilson95": [
+        0.4165783661010347,
+        0.6629869414814409
+      ],
+      "wins": 32
+    },
+    {
+      "axis": "direction",
+      "bias_actual_minus_prediction": 4.035221880305565,
+      "hit_rate": 0.5,
+      "losses": 57,
+      "mae": 13.804249434223589,
+      "market": "TOTAL",
+      "n": 114,
+      "pushes": 0,
+      "rmse": 17.46551402865324,
+      "roi": -0.045454545454545435,
+      "segment": "UNDER",
+      "units_minus110": -5.18181818181818,
+      "wilson95": [
+        0.409724679232304,
+        0.590275320767696
+      ],
+      "wins": 57
+    },
+    {
+      "axis": "locked_total",
+      "bias_actual_minus_prediction": 3.062423721053762,
+      "hit_rate": 0.5444444444444444,
+      "losses": 41,
+      "mae": 13.444679426143665,
+      "market": "TOTAL",
+      "n": 90,
+      "pushes": 0,
+      "rmse": 17.203093470076997,
+      "roi": 0.03939393939393941,
+      "segment": "50-59.5",
+      "units_minus110": 3.5454545454545467,
+      "wilson95": [
+        0.44184633569208204,
+        0.6434038309244221
+      ],
+      "wins": 49
+    },
+    {
+      "axis": "locked_total",
+      "bias_actual_minus_prediction": 13.075609621520558,
+      "hit_rate": 0.2222222222222222,
+      "losses": 7,
+      "mae": 22.0007391155152,
+      "market": "TOTAL",
+      "n": 9,
+      "pushes": 0,
+      "rmse": 23.93360562282859,
+      "roi": -0.5757575757575757,
+      "segment": "60+",
+      "units_minus110": -5.181818181818182,
+      "wilson95": [
+        0.06322510711784671,
+        0.5474110308930111
+      ],
+      "wins": 2
+    },
+    {
+      "axis": "locked_total",
+      "bias_actual_minus_prediction": -1.643984917777228,
+      "hit_rate": 0.5135135135135135,
+      "losses": 36,
+      "mae": 11.797209141057055,
+      "market": "TOTAL",
+      "n": 74,
+      "pushes": 0,
+      "rmse": 14.087761825666634,
+      "roi": -0.019656019656019638,
+      "segment": "<50",
+      "units_minus110": -1.4545454545454533,
+      "wilson95": [
+        0.40181114568899073,
+        0.6238821035165123
+      ],
+      "wins": 38
+    }
+  ],
+  "status": "RESEARCH_ONLY_NO_POLICY_CHANGE",
+  "top5_effectiveness": {
+    "ATS": {
+      "hit_rate_difference": 0.17299578059071724,
+      "inference": "RETROSPECTIVE_RANDOM_FIVE_NULL_NOT_INDEPENDENT_PROSPECTIVE_VALIDATION",
+      "remaining": {
+        "bias_actual_minus_prediction": 0.8641567619395577,
+        "hit_rate": 0.4936708860759494,
+        "losses": 80,
+        "mae": 12.793743547190951,
+        "n": 158,
+        "pushes": 0,
+        "rmse": 16.414603881134987,
+        "roi": -0.05753739930955123,
+        "units_minus110": -9.090909090909093,
+        "wilson95": [
+          0.41679477879084703,
+          0.5708474482715289
+        ],
+        "wins": 78
+      },
+      "top5": {
+        "bias_actual_minus_prediction": -4.683881893867977,
+        "hit_rate": 0.6666666666666666,
+        "losses": 5,
+        "mae": 14.948997493544368,
+        "n": 15,
+        "pushes": 0,
+        "rmse": 19.50581390653964,
+        "roi": 0.27272727272727276,
+        "units_minus110": 4.090909090909092,
+        "wilson95": [
+          0.41713547738519774,
+          0.8482367556028526
+        ],
+        "wins": 10
+      },
+      "two_sided_conditional_p": 0.31622230025303427
+    },
+    "TOTAL": {
+      "hit_rate_difference": -0.12531645569620253,
+      "inference": "RETROSPECTIVE_RANDOM_FIVE_NULL_NOT_INDEPENDENT_PROSPECTIVE_VALIDATION",
+      "remaining": {
+        "bias_actual_minus_prediction": 1.636625448535777,
+        "hit_rate": 0.5253164556962026,
+        "losses": 75,
+        "mae": 12.702238586932037,
+        "n": 158,
+        "pushes": 0,
+        "rmse": 15.961623105987218,
+        "roi": 0.0028768699654775523,
+        "units_minus110": 0.45454545454545325,
+        "wilson95": [
+          0.4477796461425829,
+          0.6016514456079143
+        ],
+        "wins": 83
+      },
+      "top5": {
+        "bias_actual_minus_prediction": 0.8704611136237328,
+        "hit_rate": 0.4,
+        "losses": 9,
+        "mae": 18.271172006368452,
+        "n": 15,
+        "pushes": 0,
+        "rmse": 20.367865024000377,
+        "roi": -0.2363636363636364,
+        "units_minus110": -3.545454545454546,
+        "wilson95": [
+          0.1982449614134158,
+          0.6425316987937539
+        ],
+        "wins": 6
+      },
+      "two_sided_conditional_p": 0.5167029143738842
+    }
+  },
+  "uncertainty": [
+    {
+      "empirical_abs_error_90": 27.5321829105716,
+      "empirical_abs_error_95": 34.00859539229291,
+      "market": "ATS",
+      "mean_sigma": 18.284508459861083,
+      "n": 173,
+      "within_1_96_sigma": 0.9653179190751445,
+      "within_one_sigma": 0.7456647398843931
+    },
+    {
+      "empirical_abs_error_90": 27.017133162459288,
+      "empirical_abs_error_95": 31.48700406796987,
+      "market": "TOTAL",
+      "mean_sigma": 16.72323367014514,
+      "n": 173,
+      "within_1_96_sigma": 0.9595375722543352,
+      "within_one_sigma": 0.6705202312138728
+    }
+  ],
+  "weekly": [
+    {
+      "bias_actual_minus_prediction": 13.434155093023257,
+      "hit_rate": 0.4186046511627907,
+      "losses": 25,
+      "mae": 20.96773858139535,
+      "market": "ATS",
+      "n": 43,
+      "pushes": 0,
+      "rmse": 25.790175072400746,
+      "roi": -0.20084566596194503,
+      "units_minus110": -8.636363636363637,
+      "week": 1,
+      "wilson95": [
+        0.28384550927849195,
+        0.5667142261303578
+      ],
+      "wins": 18
+    },
+    {
+      "bias_actual_minus_prediction": 9.733165916900468,
+      "hit_rate": 0.4897959183673469,
+      "losses": 25,
+      "mae": 23.465582193915846,
+      "market": "ATS",
+      "n": 49,
+      "pushes": 0,
+      "rmse": 29.128516681868255,
+      "roi": -0.06493506493506497,
+      "units_minus110": -3.1818181818181834,
+      "week": 2,
+      "wilson95": [
+        0.3557511031030578,
+        0.6253243625953194
+      ],
+      "wins": 24
+    },
+    {
+      "bias_actual_minus_prediction": -0.813875275904339,
+      "hit_rate": 0.4897959183673469,
+      "losses": 25,
+      "mae": 10.541683576191858,
+      "market": "TOTAL",
+      "n": 49,
+      "pushes": 0,
+      "rmse": 13.607606622169074,
+      "roi": -0.06493506493506497,
+      "units_minus110": -3.1818181818181834,
+      "week": 2,
+      "wilson95": [
+        0.3557511031030578,
+        0.6253243625953194
+      ],
+      "wins": 24
+    },
+    {
+      "bias_actual_minus_prediction": 4.91469384135529,
+      "hit_rate": 0.48214285714285715,
+      "losses": 29,
+      "mae": 14.75998331378888,
+      "market": "ATS",
+      "n": 56,
+      "pushes": 0,
+      "rmse": 18.186038028412923,
+      "roi": -0.07954545454545452,
+      "units_minus110": -4.454545454545453,
+      "week": 3,
+      "wilson95": [
+        0.3566821941245828,
+        0.6098961607582303
+      ],
+      "wins": 27
+    },
+    {
+      "bias_actual_minus_prediction": 5.737124287595884,
+      "hit_rate": 0.4642857142857143,
+      "losses": 30,
+      "mae": 14.726485737713016,
+      "market": "TOTAL",
+      "n": 56,
+      "pushes": 0,
+      "rmse": 17.71710068951248,
+      "roi": -0.11363636363636363,
+      "units_minus110": -6.363636363636363,
+      "week": 3,
+      "wilson95": [
+        0.34019852912223775,
+        0.5929581806433883
+      ],
+      "wins": 26
+    },
+    {
+      "bias_actual_minus_prediction": -0.5891770264799437,
+      "hit_rate": 0.6071428571428571,
+      "losses": 22,
+      "mae": 14.033147389791647,
+      "market": "ATS",
+      "n": 56,
+      "pushes": 0,
+      "rmse": 19.120658779193807,
+      "roi": 0.15909090909090912,
+      "units_minus110": 8.90909090909091,
+      "week": 5,
+      "wilson95": [
+        0.4763340280042271,
+        0.7241958426988949
+      ],
+      "wins": 34
+    },
+    {
+      "bias_actual_minus_prediction": 2.4478295180523935,
+      "hit_rate": 0.4107142857142857,
+      "losses": 33,
+      "mae": 14.225391703698378,
+      "market": "TOTAL",
+      "n": 56,
+      "pushes": 0,
+      "rmse": 17.284336242744125,
+      "roi": -0.21590909090909088,
+      "units_minus110": -12.09090909090909,
+      "week": 5,
+      "wilson95": [
+        0.29166774287846203,
+        0.541224031535603
+      ],
+      "wins": 23
+    },
+    {
+      "bias_actual_minus_prediction": 1.6170635978085592,
+      "hit_rate": 0.4827586206896552,
+      "losses": 30,
+      "mae": 13.011331137614253,
+      "market": "ATS",
+      "n": 58,
+      "pushes": 0,
+      "rmse": 16.073201024441115,
+      "roi": -0.07836990595611287,
+      "units_minus110": -4.545454545454547,
+      "week": 6,
+      "wilson95": [
+        0.3592818542405501,
+        0.6083773821659054
+      ],
+      "wins": 28
+    },
+    {
+      "bias_actual_minus_prediction": 1.0336309576331173,
+      "hit_rate": 0.5689655172413793,
+      "losses": 25,
+      "mae": 12.43003044803628,
+      "market": "TOTAL",
+      "n": 58,
+      "pushes": 0,
+      "rmse": 16.278069078260607,
+      "roi": 0.08620689655172414,
+      "units_minus110": 5.0,
+      "week": 6,
+      "wilson95": [
+        0.44118104569962746,
+        0.6881820086745516
+      ],
+      "wins": 33
+    },
+    {
+      "bias_actual_minus_prediction": 0.09292821675272643,
+      "hit_rate": 0.4406779661016949,
+      "losses": 33,
+      "mae": 11.951406492362318,
+      "market": "ATS",
+      "n": 59,
+      "pushes": 0,
+      "rmse": 14.741156179346318,
+      "roi": -0.15870570107858242,
+      "units_minus110": -9.363636363636363,
+      "week": 7,
+      "wilson95": [
+        0.321502117676121,
+        0.5671064517084132
+      ],
+      "wins": 26
+    },
+    {
+      "bias_actual_minus_prediction": 1.264655746090744,
+      "hit_rate": 0.559322033898305,
+      "losses": 26,
+      "mae": 12.939958905721614,
+      "market": "TOTAL",
+      "n": 59,
+      "pushes": 0,
+      "rmse": 15.610982366133085,
+      "roi": 0.06779661016949153,
+      "units_minus110": 4.0,
+      "week": 7,
+      "wilson95": [
+        0.43289354829158677,
+        0.678497882323879
+      ],
+      "wins": 33
+    }
+  ],
+  "weekly_settlement_drawdown": {
+    "ATS": {
+      "ending_units": -5.0,
+      "limitation": "WEEKLY_SETTLEMENT_ONLY_NOT_INTRAWEEK_BET_PATH",
+      "n_weeks": 3,
+      "weekly_settlement_max_drawdown_units": 13.90909090909091
+    },
+    "TOTAL": {
+      "ending_units": -3.09090909090909,
+      "limitation": "WEEKLY_SETTLEMENT_ONLY_NOT_INTRAWEEK_BET_PATH",
+      "n_weeks": 3,
+      "weekly_settlement_max_drawdown_units": 12.09090909090909
+    }
+  }
+}

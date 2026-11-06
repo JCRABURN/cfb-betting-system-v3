@@ -1,0 +1,12 @@
+{
+  "owner_approval": "PENDING",
+  "created_at_utc": "2026-10-28T22:44:56.867571+00:00",
+  "previous_review_sha256": "1a6b8ab4fd5b01c12bba6b1c8a7aae0641e190a20c79807d9e3a62b3c7261bed",
+  "output_sha256": {
+    "OREGON_QB_INPUT_AUDIT.json": "1539637012aaf88c0c8e7034a8a287104015beeda0008d2ea3d9e4a93962a05f",
+    "OWNER_REVIEW.md": "6dec584def8cba4bb136b41f5666c520ef812b628b40811b5b8f52f3223995bb",
+    "owner_review_shortlist.json": "af955c388e8c18c88072a1bc4a3919cef747d44c47b51c7a9a4652b2b9851705"
+  },
+  "context_manifest_sha256": "830089567ee457b3e518d38691313d636886e886724d1ddc9c60515f10bcc363",
+  "seal_sha256": "77aea6d0eefecc6dce014524610294da617d7dab2b6e903a59f8664f664e5460"
+}

@@ -1,0 +1,20 @@
+{
+  "database_foreign_key_violations": 0,
+  "database_integrity": "ok",
+  "fixture_sha256": "df58c3e13192bb4c95568ceb01e72f3f741184ae9647301ec363eaade6387dbe",
+  "input_files_verified": 2729,
+  "original_protected_files_verified": 125,
+  "source_database_row_counts": {
+    "betting_lines": 26535,
+    "games": 5051,
+    "ingestion_runs": 37,
+    "injuries": 0,
+    "picks": 22,
+    "sqlite_sequence": 5,
+    "supplemental_game_dates": 204,
+    "team_game_stats": 14721,
+    "teams": 136,
+    "weather": 0
+  },
+  "source_database_sha256": "09d0bcda684356001bacf8bc9e42939add56b053f405564d9be924e39c0cf842"
+}

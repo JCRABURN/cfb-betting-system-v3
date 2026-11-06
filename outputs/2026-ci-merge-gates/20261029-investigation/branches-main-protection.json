@@ -1,0 +1,11 @@
+{
+  "endpoint": "branches/main/protection",
+  "requested_at_utc": "2026-10-29T21:38:50.902753+00:00",
+  "received_at_utc": "2026-10-29T21:38:51.291642+00:00",
+  "http_status": 404,
+  "body": {
+    "message": "Branch not protected",
+    "documentation_url": "https://docs.github.com/rest/branches/branch-protection#get-branch-protection",
+    "status": "404"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "status": "EXACT_NUMERICAL_REFIT_REPLAY_PASS",
+  "original_component_capture_utc": "2026-10-28T03:07:48.001022+00:00",
+  "replay_component_capture_utc": "2026-10-28T13:48:01.936115+00:00",
+  "games": 54,
+  "database_unchanged": true,
+  "execution_database_sha256": "cf8d121b62c4d80f63558bd0d32df688ae6141e7d16dc23224a3ec1b28592bba",
+  "calculation_payload_sha256": "27f3b02f14bb8e7fb13b58a78b6151a9ad3f6febb8d893b11e442dd0ced9b67d",
+  "comparison": "Every field other than the newly sampled component-capture timestamp matches exact canonical JSON bytes; no rounding or tolerance. Original artifacts untouched.",
+  "excluded_nondeterministic_metadata": [
+    "generated_at_utc"
+  ],
+  "initial_verification_attempts": "Native equality and then complete byte equality failed on tuple/list representation and the fresh capture timestamp. Field-level diff found only generated_at_utc after JSON serialization; comparison now explicitly separates runtime metadata."
+}

@@ -1,0 +1,9 @@
+{
+  "created_at_utc": "2026-10-29T21:49:35.295869+00:00",
+  "python_version": "Python 3.12.14",
+  "base_commit": "6e1948dd9b675a3f1226350ce5b40a6556e09f7a",
+  "focused_tests": "9 passed in 1.25s; python -m pytest tests/test_pdf_evidence_review.py -q",
+  "script_sha256": "e4f532f4d1dc4a0ea84418858d3487582ab33fb274d1d26a6cfedb59f93d099d",
+  "test_sha256": "351ea7e403d5ffc07a74578deecf90551f5e8045c8cf325ea18e24e2d670aaf1",
+  "original_ci_workflow_unchanged": true
+}

@@ -1,0 +1,17 @@
+{
+  "clv_status": "INCOMPLETE",
+  "code_sha256_lf": "1f69feef7dbbbc379b42f56b662098f3f6808bfebb3b9ee953a2c0b7d8849770",
+  "input_custody_sha256": "df58c3e13192bb4c95568ceb01e72f3f741184ae9647301ec363eaade6387dbe",
+  "output_sha256": {
+    "SCORING_PROCESS_SUPERSESSION.md": "da9fa6a18e8279e8786f2ce3d7f58981de59ec390117b3be86f42310ae66c14f",
+    "game_process.csv": "9fa82f017f611865d69fd2c80b66dc5799eb8ed535843cdc684c9280fd04687f",
+    "game_process_evidence.json": "07e1f3ea5f38d73c1f3554131327eb17ee4282cf719dcb227ab9c6d3ce0bdbd1",
+    "supersession.json": "35f9d63bf5aef61d24395b89ac9070b64f6a91cbe52353dcb79379b0d71eb9e0"
+  },
+  "owner_approval": "PENDING",
+  "policy_changes": false,
+  "score_or_grade_changes": 0,
+  "status": "VERIFIED_ADDITIVE_PROCESS_SUPERSESSION",
+  "v1_audit_manifest_sha256": "c7da0a3fca9dd1c97f43c476eb1e4bc3e903db404a51cf399ba3af94297b947d",
+  "version": "week9-scoring-process-v2"
+}

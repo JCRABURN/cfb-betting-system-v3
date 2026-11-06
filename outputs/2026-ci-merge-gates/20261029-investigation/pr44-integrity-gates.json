@@ -1,0 +1,92 @@
+{
+  "tested_commit": "922f1f8f8c66ef14674eb9aa20db144a45dada68",
+  "started_at_utc": "2026-10-29T21:43:48.417278+00:00",
+  "cwd": "C:\\Users\\jraburn\\Documents\\GitHub\\cfb-betting-system-v3\\.worktrees\\pr44-verification",
+  "gates": [
+    {
+      "command": [
+        "C:/Users/jraburn/Documents/GitHub/cfb-betting-system-v3/.venv/Scripts/python.exe",
+        "scripts/verify_repo_safety.py"
+      ],
+      "exit_code": 0,
+      "stdout": "Repository dependency and workflow safety checks passed.\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "C:/Users/jraburn/Documents/GitHub/cfb-betting-system-v3/.venv/Scripts/python.exe",
+        "-m",
+        "scripts.verify_migrations"
+      ],
+      "exit_code": 0,
+      "stdout": "Source SHA-256 before: 09d0bcda684356001bacf8bc9e42939add56b053f405564d9be924e39c0cf842\nSource SHA-256 after: 09d0bcda684356001bacf8bc9e42939add56b053f405564d9be924e39c0cf842\nSource database unchanged: YES\nApplied migration versions: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21]\nExisting table row counts preserved:\n  betting_lines: 26535\n  games: 5051\n  ingestion_runs: 37\n  injuries: 0\n  picks: 22\n  supplemental_game_dates: 204\n  team_game_stats: 14721\n  teams: 136\n  weather: 0\nNew table row counts:\n  ats_shadow_calibrated_evaluations: 0\n  ats_shadow_calibration_completions: 0\n  ats_shadow_calibration_policies: 0\n  ats_shadow_calibration_runs: 0\n  card_adjustment_policy_assignments: 0\n  card_context_source_snapshots: 0\n  card_context_status: 0\n  card_postgame_audit_completions: 0\n  card_postgame_audit_runs: 0\n  card_refresh_policies: 0\n  card_refresh_revisions: 0\n  card_revision_pick_changes: 0\n  card_revisions: 0\n  card_run_manifests: 0\n  card_source_freshness: 0\n  contest_card_policy_assignments: 0\n  contest_cards: 0\n  contest_line_corrections: 0\n  contest_line_lock_batches: 0\n  contest_locked_lines: 0\n  contest_pick_adjustment_items: 0\n  contest_pick_adjustment_snapshots: 0\n  contest_picks: 0\n  contest_ranking_policies: 0\n  contest_selection_policies: 0\n  contest_selection_policy_books: 0\n  contests: 0\n  football_event_revisions: 0\n  football_events: 0\n  football_franchises: 0\n  football_provider_event_ids: 0\n  football_sports: 2\n  football_team_aliases: 0\n  football_team_seasons: 0\n  football_teams: 0\n  football_venue_versions: 0\n  football_venues: 0\n  legacy_cfb_game_links: 0\n  manual_adjustment_policies: 0\n  manual_adjustments: 0\n  mixed_contest_lines: 0\n  mixed_contest_product_sports: 2\n  mixed_contest_products: 1\n  mixed_contest_rounds: 0\n  mixed_contest_seasons: 0\n  mixed_deadline_derivations: 0\n  mixed_deadline_events: 0\n  mixed_line_lock_batches: 0\n  mixed_line_lock_completions: 0\n  mixed_round_state_events: 0\n  mixed_slate_approvals: 0\n  mixed_slate_import_rows: 0\n  mixed_slate_import_states: 0\n  mixed_slate_imports: 0\n  mixed_slate_manifest_rows: 0\n  mixed_slate_manifests: 0\n  model_predictions: 0\n  model_runs: 0\n  official_card_publications: 0\n  pick_audit_details: 0\n  pick_audit_failures: 0\n  pick_audit_key_number_crossings: 0\n  pick_audits: 0\n  policy_change_recommendations: 0\n  postgame_audit_failure_taxonomy: 0\n  postgame_audit_key_numbers: 0\n  postgame_audit_policies: 0\n  postgame_audit_spread_buckets: 0\n  provider_context_evidence: 0\n  provider_data_snapshots: 0\n  provider_ingestion_acceptances: 0\n  provider_ingestion_rejections: 0\n  provider_ingestion_runs: 0\n  provider_market_snapshots: 0\n  provider_team_aliases: 0\n  sportsbook_closing_designations: 0\n  sportsbook_market_offers: 0\n  sportsbook_postgame_audit_completions: 0\n  sportsbook_postgame_audit_details: 0\n  sportsbook_postgame_audit_runs: 0\n  sportsbook_recommendation_evaluations: 0\n  sportsbook_recommendation_policies: 0\n  sportsbook_recommendations: 0\n  total_card_candidates: 0\n  total_card_skips: 0\n  total_model_predictions: 0\n  total_model_runs: 0\n  total_reliability_policies: 0\n  total_score_component_predictions: 0\n  total_shadow_card_completions: 0\n  total_shadow_cards: 0\n  unified_top_five_candidates: 0\n  unified_top_five_completions: 0\n  unified_top_five_policies: 0\n  unified_top_five_runs: 0\n  weekly_controller_policies: 0\n  weekly_controller_policy_sources: 0\n  weekly_controller_runs: 0\n  weekly_diagnostic_completions: 0\n  weekly_diagnostic_lessons: 0\n  weekly_diagnostic_policies: 0\n  weekly_diagnostic_runs: 0\n  weekly_diagnostic_segments: 0\nSQLite integrity check: ok\nForeign-key violations: 0\nMigration verification passed on a disposable copy.\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "C:/Users/jraburn/Documents/GitHub/cfb-betting-system-v3/.venv/Scripts/python.exe",
+        "-m",
+        "scripts.verify_cloud_migrations"
+      ],
+      "exit_code": 0,
+      "stdout": "Managed PostgreSQL migration inventory verified: v0001:a908ff521731, v0002:e3663d635a24\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "C:/Users/jraburn/Documents/GitHub/cfb-betting-system-v3/.venv/Scripts/python.exe",
+        "-m",
+        "scripts.verify_week7_audit_integrity"
+      ],
+      "exit_code": 0,
+      "stdout": "{\n  \"grading_status\": \"COMPLETE_59_ATS_59_TOTALS\",\n  \"formal_audit_status\": \"INCOMPLETE_CLV_CUSTODY\",\n  \"research\": {\n    \"exact_custody_checks\": 419,\n    \"replayed_research_outputs\": 10,\n    \"historical_checkout_diagnosis_preserved\": true\n  }\n}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "C:/Users/jraburn/Documents/GitHub/cfb-betting-system-v3/.venv/Scripts/python.exe",
+        "-m",
+        "scripts.seal_week8_board",
+        "--verify"
+      ],
+      "exit_code": 0,
+      "stdout": "{\n  \"status\": \"SEALED_PROSPECTIVE_RESEARCH_BOARD\",\n  \"eligible_games\": 52,\n  \"ats_selections\": 52,\n  \"total_selections\": 52,\n  \"excluded_elapsed_games\": 4,\n  \"first_eligible_kickoff_utc\": \"2026-10-22T23:00:00+00:00\",\n  \"model_code_commit\": \"ecc2d2100eba99e24a1d94106b43a62912487eea\",\n  \"clv_status\": \"INCOMPLETE\",\n  \"model_policy_change\": false,\n  \"combined_top5\": \"UNCALIBRATED_RESEARCH_ONLY\"\n}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "C:/Users/jraburn/Documents/GitHub/cfb-betting-system-v3/.venv/Scripts/python.exe",
+        "-m",
+        "scripts.build_week8_postgame_audit",
+        "--verify"
+      ],
+      "exit_code": 0,
+      "stdout": "{\n  \"grading_status\": \"COMPLETE_52_ATS_52_TOTALS\",\n  \"clv_status\": \"INCOMPLETE\",\n  \"output_files\": 8,\n  \"evidence_files\": 57,\n  \"protected_files\": 47\n}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "C:/Users/jraburn/Documents/GitHub/cfb-betting-system-v3/.venv/Scripts/python.exe",
+        "-m",
+        "scripts.week8_scoring_sequence_review",
+        "--verify"
+      ],
+      "exit_code": 0,
+      "stdout": "{\"games\": 52, \"validated\": 52, \"backdoor_covers\": []}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "C:/Users/jraburn/Documents/GitHub/cfb-betting-system-v3/.venv/Scripts/python.exe",
+        "-m",
+        "scripts.week8_numerical_research",
+        "--verify"
+      ],
+      "exit_code": 0,
+      "stdout": "{\n  \"status\": \"RESEARCH_ONLY_NOT_DEPLOYED\",\n  \"prior_week_bias_correction\": [\n    {\n      \"test_week\": 6,\n      \"prior_training_n\": 56,\n      \"test_n\": 58,\n      \"prior_bias\": 2.4478295180523935,\n      \"baseline_mae\": 12.43003044803628,\n      \"candidate_mae\": 12.84261467105481,\n      \"baseline_rmse\": 16.278069078260607,\n      \"candidate_rmse\": 16.306658073570397\n    },\n    {\n      \"test_week\": 7,\n      \"prior_training_n\": 114,\n      \"test_n\": 59,\n      \"prior_bias\": 1.7283249873127617,\n      \"baseline_mae\": 12.939958905721614,\n      \"candidate_mae\": 12.807727064200499,\n      \"baseline_rmse\": 15.610982366133085,\n      \"candidate_rmse\": 15.566579760655621\n    },\n    {\n      \"test_week\": 8,\n      \"prior_training_n\": 173,\n      \"test_n\": 52,\n      \"prior_bias\": 1.5701950148728827,\n      \"baseline_mae\": 15.010405353992184,\n      \"candidate_mae\": 14.80981786408742,\n      \"baseline_rmse\": 18.95490162840772,\n      \"candidate_rmse\": 18.62941226878878\n    }\n  ],\n  \"score_shrinkage_exploratory_grid\": [\n    {\n      \"strength\": 0,\n      \"test_weeks\": [\n        6,\n        7,\n        8\n      ],\n      \"n\": 169,\n      \"brier\": 0.25,\n      \"log_loss\": 0.6931471805599453\n    },\n    {\n      \"strength\": 0.25,\n      \"test_weeks\": [\n        6,\n        7,\n        8\n      ],\n      \"n\": 169,\n      \"brier\": 0.25078326043193316,\n      \"log_loss\": 0.6947263865828939\n    },\n    {\n      \"strength\": 0.5,\n      \"test_weeks\": [\n        6,\n        7,\n        8\n      ],\n      \"n\": 169,\n      \"brier\": 0.2528482260357947,\n      \"log_loss\": 0.6989799881038625\n    },\n    {\n      \"strength\": 1,\n      \"test_weeks\": [\n        6,\n        7,\n        8\n      ],\n      \"n\": 169,\n      \"brier\": 0.2608232727593028,\n      \"log_loss\": 0.7165438191132817\n    }\n  ],\n  \"limitation\": \"Bias uses only earlier weeks in each fold, but the candidate was proposed after viewing these results. Shrinkage grid is retrospective exploration, not independent validation.\"\n}\n",
+      "stderr": ""
+    }
+  ],
+  "completed_at_utc": "2026-10-29T21:44:12.763341+00:00",
+  "head_after": "922f1f8f8c66ef14674eb9aa20db144a45dada68"
+}

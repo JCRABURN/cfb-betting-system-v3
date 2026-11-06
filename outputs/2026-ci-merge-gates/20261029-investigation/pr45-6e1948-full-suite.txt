@@ -1,0 +1,90 @@
+........................................................................ [  8%]
+........................................................................ [ 17%]
+........................................................................ [ 26%]
+........................................................................ [ 35%]
+........................................................................ [ 44%]
+........................................................................ [ 53%]
+........................................................................ [ 62%]
+........................................................................ [ 71%]
+........................................................................ [ 80%]
+........................................................................ [ 88%]
+........................................................................ [ 97%]
+.................                                                        [100%]
+============================== warnings summary ===============================
+tests/test_backfill_historical_lines.py::test_backfill_week_creates_games_row_from_lines_response
+tests/test_backfill_historical_lines.py::test_fcs_vs_fcs_game_skipped_not_inserted
+tests/test_backfill_historical_lines.py::test_opening_and_closing_rows_inserted_with_correct_values
+tests/test_backfill_historical_lines.py::test_idempotent_rerun_does_not_duplicate
+tests/test_backfill_historical_lines.py::test_games_upsert_does_not_clobber_richer_existing_row
+tests/test_backfill_historical_lines.py::test_week_already_ingested_skips_without_refetch
+  C:\Users\jraburn\Documents\GitHub\cfb-betting-system-v3\.worktrees\ci-merge-gates\data\backfill_historical_lines.py:116: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+    now = datetime.utcnow().isoformat()
+
+tests/test_backfill_historical_stats.py::test_backfill_inserts_expected_rows
+tests/test_backfill_historical_stats.py::test_backfill_is_idempotent
+tests/test_backfill_historical_stats.py::test_backfill_skips_api_calls_for_already_ingested_season
+tests/test_backfill_historical_stats.py::test_backfill_force_refetches
+tests/test_backfill_historical_stats.py::test_backfill_force_refetches
+  C:\Users\jraburn\Documents\GitHub\cfb-betting-system-v3\.worktrees\ci-merge-gates\data\backfill_historical_stats.py:102: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+    now = datetime.utcnow().isoformat()
+
+tests/test_backfill_point_in_time_stats.py::test_backfill_week_inserts_point_in_time_row
+tests/test_backfill_point_in_time_stats.py::test_different_weeks_produce_different_values_not_overwritten
+tests/test_backfill_point_in_time_stats.py::test_different_weeks_produce_different_values_not_overwritten
+tests/test_backfill_point_in_time_stats.py::test_idempotent_rerun_does_not_duplicate
+tests/test_backfill_point_in_time_stats.py::test_already_ingested_skips_without_refetch
+tests/test_backfill_point_in_time_stats.py::test_force_replaces_snapshot_not_duplicates
+tests/test_backfill_point_in_time_stats.py::test_force_replaces_snapshot_not_duplicates
+tests/test_backfill_point_in_time_stats.py::test_sp_rating_always_null_not_fetched
+  C:\Users\jraburn\Documents\GitHub\cfb-betting-system-v3\.worktrees\ci-merge-gates\data\backfill_point_in_time_stats.py:124: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+    now = datetime.utcnow().isoformat()
+
+tests/test_build_dashboard.py::test_pending_when_no_run_exists
+tests/test_build_dashboard.py::test_stale_when_latest_run_errored
+tests/test_build_dashboard.py::test_ok_when_recent_success
+tests/test_build_dashboard.py::test_stale_when_last_success_too_old
+tests/test_build_dashboard.py::test_ok_when_within_that_sources_own_window
+  C:\Users\jraburn\Documents\GitHub\cfb-betting-system-v3\.worktrees\ci-merge-gates\models\build_dashboard.py:57: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+    now = now or datetime.utcnow()
+
+tests/test_build_dashboard.py::test_stale_when_latest_run_errored
+  C:\Users\jraburn\Documents\GitHub\cfb-betting-system-v3\.worktrees\ci-merge-gates\tests\test_build_dashboard.py:40: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+    insert_run(conn, "odds_api", "error", datetime.utcnow().isoformat(), error="Calendar API unavailable")
+
+tests/test_build_dashboard.py::test_ok_when_recent_success
+  C:\Users\jraburn\Documents\GitHub\cfb-betting-system-v3\.worktrees\ci-merge-gates\tests\test_build_dashboard.py:50: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+    insert_run(conn, "card_generator", "success", datetime.utcnow().isoformat())
+
+tests/test_build_dashboard.py::test_stale_when_last_success_too_old
+  C:\Users\jraburn\Documents\GitHub\cfb-betting-system-v3\.worktrees\ci-merge-gates\tests\test_build_dashboard.py:59: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+    old = (datetime.utcnow() - timedelta(days=30)).isoformat()
+
+tests/test_build_dashboard.py::test_ok_when_within_that_sources_own_window
+  C:\Users\jraburn\Documents\GitHub\cfb-betting-system-v3\.worktrees\ci-merge-gates\tests\test_build_dashboard.py:69: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+    recent = (datetime.utcnow() - timedelta(days=2)).isoformat()
+
+tests/test_card_generator.py::test_persist_picks_to_db_inserts_one_row_per_game
+tests/test_card_generator.py::test_persist_picks_to_db_stores_correct_fields
+tests/test_card_generator.py::test_persist_picks_to_db_is_idempotent
+tests/test_card_generator.py::test_persist_picks_to_db_is_idempotent
+tests/test_card_generator.py::test_no_pick_extrapolation_games_excluded_from_persisted_picks
+tests/test_card_generator.py::test_no_pick_extrapolation_retracts_a_stale_pending_pick_from_an_earlier_run
+tests/test_card_generator.py::test_no_pick_extrapolation_never_retracts_a_settled_pick
+  C:\Users\jraburn\Documents\GitHub\cfb-betting-system-v3\.worktrees\ci-merge-gates\models\card_generator.py:272: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+    now = datetime.utcnow().isoformat()
+
+tests/test_db_schema.py::test_log_run_records_success
+tests/test_db_schema.py::test_log_run_records_error_and_reraises
+  C:\Users\jraburn\Documents\GitHub\cfb-betting-system-v3\.worktrees\ci-merge-gates\db.py:60: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+    started_at = datetime.utcnow().isoformat()
+
+tests/test_db_schema.py::test_log_run_records_success
+  C:\Users\jraburn\Documents\GitHub\cfb-betting-system-v3\.worktrees\ci-merge-gates\db.py:67: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+    (source, started_at, datetime.utcnow().isoformat(), run["rows_added"]),
+
+tests/test_db_schema.py::test_log_run_records_error_and_reraises
+  C:\Users\jraburn\Documents\GitHub\cfb-betting-system-v3\.worktrees\ci-merge-gates\db.py:78: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+    datetime.utcnow().isoformat(),
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+809 passed, 39 warnings in 210.81s (0:03:30)

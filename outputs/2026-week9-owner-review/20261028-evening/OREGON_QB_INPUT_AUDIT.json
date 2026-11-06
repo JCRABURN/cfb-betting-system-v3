@@ -1,0 +1,87 @@
+{
+  "status": "DESCRIPTIVE_FROZEN_INPUT_AUDIT_NOT_A_NEW_FORECAST",
+  "game_id": 401858505,
+  "weeks": [
+    {
+      "week": 4,
+      "offense_epa_play": 0.29185276772967944,
+      "defense_epa_play": 0.061565401120949034,
+      "offensive_plays": 232,
+      "offensive_total_ppa": 67.70984211328563,
+      "source_path": "outputs/2026-week9-prospective/provider-evidence/cfbd-week4-advanced.derived.json",
+      "source_sha256": "6852b017d8802e4113d28749d0592c7638e78cb84936afe6da55068d6a67cecf"
+    },
+    {
+      "week": 5,
+      "offense_epa_play": 0.29185276772967944,
+      "defense_epa_play": 0.061565401120949034,
+      "offensive_plays": 232,
+      "offensive_total_ppa": 67.70984211328563,
+      "source_path": "outputs/2026-week9-prospective/provider-evidence/cfbd-week5-advanced.derived.json",
+      "source_sha256": "7e3566d6367b11b466afe04fabb43bc730c2a64f186485486a0e6e181f35c33f"
+    },
+    {
+      "week": 6,
+      "offense_epa_play": 0.11646857198691826,
+      "defense_epa_play": 0.02045326453638899,
+      "offensive_plays": 295,
+      "offensive_total_ppa": 34.35822873614089,
+      "source_path": "outputs/2026-week9-prospective/provider-evidence/cfbd-week6-advanced.derived.json",
+      "source_sha256": "bf05a1e6713cd10cf39aabda53a8405a75401c00c61bf388d79f6d7a03c1cded"
+    },
+    {
+      "week": 7,
+      "offense_epa_play": 0.07853675225882438,
+      "defense_epa_play": -0.006204102492897057,
+      "offensive_plays": 371,
+      "offensive_total_ppa": 29.137135088023843,
+      "source_path": "outputs/2026-week9-prospective/provider-evidence/cfbd-week7-advanced.derived.json",
+      "source_sha256": "13c67d579d2250786a2c625d9524b88cee875f463e4cc5c14b2acbac166f84c6"
+    },
+    {
+      "week": 8,
+      "offense_epa_play": 0.09311908946750025,
+      "defense_epa_play": 0.001946035151077774,
+      "offensive_plays": 447,
+      "offensive_total_ppa": 41.62423299197261,
+      "source_path": "outputs/2026-week9-prospective/provider-evidence/cfbd-week8-advanced.derived.json",
+      "source_sha256": "53a5ff026e55137082c346a19b9064b52965a44cb4d9192c71d51040471f1cc2"
+    }
+  ],
+  "frozen_ats_coefficient": 35.089014249343435,
+  "frozen_home_margin": -3.9257035349943417,
+  "model_has_explicit_qb_feature": false,
+  "model_has_explicit_coordinator_feature": false,
+  "full_games_since_moore_injury": [
+    {
+      "week": 6,
+      "opponent": "UCLA",
+      "oregon_points": 15
+    },
+    {
+      "week": 7,
+      "opponent": "Nebraska",
+      "oregon_points": 17
+    },
+    {
+      "week": 8,
+      "opponent": "Illinois",
+      "oregon_points": 10
+    }
+  ],
+  "snapshot_play_count_increment_after_week4": 215,
+  "snapshot_increment_fraction_of_week8": 0.4809843400447427,
+  "offense_input_change_contribution_to_home_margin": -6.973368868366039,
+  "defense_input_change_contribution_to_home_margin": 2.091984782053634,
+  "combined_oregon_input_change_contribution": -4.881384086312405,
+  "sensitivity_only_home_margin_if_week4_oregon_offense_held_other_inputs_fixed": 3.0476653333716976,
+  "extra_injury_margin_adjustment": 0,
+  "causal_player_effect_estimate": null,
+  "limitations": [
+    "Week 4 already contains part of the USC game after Moore was injured; it is not an all-healthy baseline.",
+    "215/447=48.1% is a difference in archived provider aggregate play counts, not identified quarterback snaps. It assumes comparable provider sampling; historical revisions and filtering cannot be fully separated.",
+    "The 6.973-point offensive-input sensitivity includes opponents, teammates, scheme and sample effects; it is not a causal 6.973-point Moore valuation or an additional adjustment.",
+    "New coordinator Jay Johnson was appointed after the Week 8 sample; no directional numerical effect is supported."
+  ],
+  "human_review_action": "Keep Northwestern +3.5, reduce human confidence from 3 to 2, preserve frozen governed confidence 1; do not double-count absence."
+}

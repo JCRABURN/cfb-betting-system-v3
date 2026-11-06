@@ -1,0 +1,66 @@
+{
+  "completed_at": "2026-10-13T18:33:33.818116+00:00",
+  "snapshot_key": "initial",
+  "code_commit_sha": "97a8dfb7ba14842bbf8da1cddfec7a3599b7b8d9",
+  "locked_line_snapshot_sha256": "3561c1cf93debbe0aafcf527b5e9f8abfc60c29589da3ad4f17f3502077ab8ad",
+  "requests": [
+    {
+      "name": "cfbd-venues",
+      "provider": "CFBD",
+      "endpoint": "https://api.collegefootballdata.com/venues",
+      "parameters": {},
+      "requested_at": "2026-10-13T18:33:25.937686+00:00",
+      "path": "cfbd-venues.json",
+      "sha256": "67a3cdfad57a2d8b528a731637bb37cf7bef3ea4111af227abef4ce2a487b12f",
+      "records": 852,
+      "status": "CAPTURED"
+    },
+    {
+      "name": "espn-injuries",
+      "provider": "ESPN",
+      "endpoint": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/injuries",
+      "parameters": {},
+      "requested_at": "2026-10-13T18:33:27.124838+00:00",
+      "path": "espn-injuries.json",
+      "sha256": "92209dbe62233ecfa95292c2f0b5b9ef98491f229f9b00b159d29c623eb89533",
+      "records": null,
+      "status": "CAPTURED"
+    },
+    {
+      "name": "espn-game-preview-qb-evidence",
+      "provider": "ESPN",
+      "endpoint": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary",
+      "parameters": {},
+      "requested_at": "2026-10-13T18:33:28.950785+00:00",
+      "path": "espn-game-preview-qb-evidence.json",
+      "sha256": "84343afd5475d7f74bcfb5df6daee094158bd13410adda77996521432325391c",
+      "records": 59,
+      "status": "CAPTURED"
+    },
+    {
+      "name": "weather-kickoff",
+      "provider": "Open-Meteo",
+      "endpoint": "https://api.open-meteo.com/v1/forecast",
+      "parameters": {},
+      "requested_at": "2026-10-13T18:33:33.818116+00:00",
+      "path": "weather-kickoff.json",
+      "sha256": "a2295f84fcd0aafee71a60fc8433713a0cd04a2a627acf58ba1fdf88d0b5e699",
+      "records": 59,
+      "status": "CAPTURED"
+    }
+  ],
+  "failures": [
+    {
+      "name": "odds-draftkings-current",
+      "provider": "The Odds API",
+      "endpoint": "https://api.the-odds-api.com/v4/sports/americanfootball_ncaaf/odds",
+      "requested_at": "2026-10-13T18:33:26.864797+00:00",
+      "status": "UNAVAILABLE",
+      "error_type": "ConnectionError"
+    }
+  ],
+  "market_events": 0,
+  "injury_groups": 3,
+  "espn_previews": 59,
+  "weather_forecasts": 49
+}

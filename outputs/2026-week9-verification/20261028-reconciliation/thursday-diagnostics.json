@@ -1,0 +1,401 @@
+{
+  "status": "DESCRIPTIVE_RESEARCH_NOT_CALIBRATION_OR_NUMERIC_ADJUSTMENT",
+  "source_hashes": [
+    {
+      "path": "outputs/2026-week5-postgame-audit/week5_totals_audit.csv",
+      "sha256": "6795de064007d171934db3b3ab933f54bdd5619f3dbb8ac61ab7fa18f6900282"
+    },
+    {
+      "path": "outputs/2026-week6-postgame-audit/week6_totals_audit.csv",
+      "sha256": "a71342cbfe704082c1a9937c386a3251984cddbd55b0ddef07a0fa596e526b3c"
+    },
+    {
+      "path": "outputs/2026-week7-postgame-audit/week7_totals_audit.csv",
+      "sha256": "d7dce91e9e5e26893f84e683a34f3817ed69200703cbe0f974cc194fbbff0dfb"
+    },
+    {
+      "path": "outputs/2026-week8-postgame-audit/week8_totals_audit.csv",
+      "sha256": "a7175b6aa042e424b5d78ec22c9f906fbbd9195cace1f622cb4503858735a1d5"
+    }
+  ],
+  "all_weeks5_to8_totals": {
+    "n": 225,
+    "bias_actual_minus_forecast": 2.2890365923173106,
+    "mae": 13.606943801059476,
+    "rmse": 17.017629993916156,
+    "results": {
+      "LOSS": 113,
+      "WIN": 112
+    }
+  },
+  "week8_totals": {
+    "n": 52,
+    "bias_actual_minus_forecast": 4.680567224968966,
+    "mae": 15.010405353992184,
+    "rmse": 18.95490162840772,
+    "results": {
+      "WIN": 23,
+      "LOSS": 29
+    }
+  },
+  "fau_or_unt_audited_games": [
+    {
+      "week": 5,
+      "game_id": 401862786,
+      "away": "North Texas",
+      "home": "Tulsa",
+      "forecast": 52.15244723585998,
+      "actual": 89.0,
+      "error_actual_minus_forecast": 36.84755276414002,
+      "selection": "under",
+      "result": "LOSS"
+    },
+    {
+      "week": 6,
+      "game_id": 401862796,
+      "away": "Charlotte",
+      "home": "North Texas",
+      "forecast": 52.766376592328854,
+      "actual": 60.0,
+      "error_actual_minus_forecast": 7.233623407671146,
+      "selection": "under",
+      "result": "LOSS"
+    },
+    {
+      "week": 7,
+      "game_id": 401862802,
+      "away": "Florida Atlantic",
+      "home": "Army",
+      "forecast": 57.567024810289965,
+      "actual": 80.0,
+      "error_actual_minus_forecast": 22.432975189710035,
+      "selection": "over",
+      "result": "WIN"
+    },
+    {
+      "week": 8,
+      "game_id": 401862810,
+      "away": "North Texas",
+      "home": "Navy",
+      "forecast": 57.13766131308836,
+      "actual": 88.0,
+      "error_actual_minus_forecast": 30.86233868691164,
+      "selection": "under",
+      "result": "LOSS"
+    },
+    {
+      "week": 8,
+      "game_id": 401862809,
+      "away": "Rice",
+      "home": "Florida Atlantic",
+      "forecast": 52.50534559865574,
+      "actual": 100.0,
+      "error_actual_minus_forecast": 47.49465440134426,
+      "selection": "under",
+      "result": "LOSS"
+    }
+  ],
+  "fau_or_unt_metrics": {
+    "n": 5,
+    "bias_actual_minus_forecast": 28.97422888995542,
+    "mae": 28.97422888995542,
+    "rmse": 32.00478706100389,
+    "results": {
+      "LOSS": 4,
+      "WIN": 1
+    }
+  },
+  "fau_or_unt_under_metrics": {
+    "n": 4,
+    "bias_actual_minus_forecast": 30.609542315016768,
+    "mae": 30.609542315016768,
+    "rmse": 33.9790141051755,
+    "results": {
+      "LOSS": 4
+    }
+  },
+  "week8_possession_and_explosive_review": [
+    {
+      "game_id": 401862809,
+      "source": "outputs/2026-week8-postgame-audit/provider-evidence/espn-game-401862809.json.gz",
+      "compressed_sha256": "38e7c7bbe11bcfc7c05f5d7f6a967a96e98e7173f808b5d4b4e15f4d5bf966c4",
+      "raw_sha256": "48961a9ab0150cee6f33a69e3550229499bdafc460e79b747dfe485ec4f6b2e4",
+      "teams": [
+        {
+          "team": "Rice Owls",
+          "provider_drive_records": 14,
+          "end_half_or_game_drive_records": 1,
+          "boxscore_scrimmage_plays": 58,
+          "boxscore_yards": 608,
+          "yards_per_scrimmage_play": 10.482758620689655,
+          "possession_time": "29:03",
+          "observed_20plus_rush_or_completion_plays": 9,
+          "observed_20plus_per_boxscore_play": 0.15517241379310345,
+          "explosive_evidence": [
+            {
+              "id": "40186280920",
+              "type": "Rushing Touchdown",
+              "yards": 55,
+              "text": "(13:35) Shotgun #4 G.Ochoa rush left for 55 yards gain to the FAU00 TOUCHDOWN, clock 13:33, 1ST DOWN #49 T.Bauchiero kick attempt good (H: #29 C.Durkin, LS: #51 P.Derichsweiler)"
+            },
+            {
+              "id": "40186280991",
+              "type": "Rushing Touchdown",
+              "yards": 52,
+              "text": "(06:58) Shotgun #4 G.Ochoa rush left for 52 yards gain to the FAU00 TOUCHDOWN, clock 06:54, 1ST DOWN #49 T.Bauchiero kick attempt good (H: #29 C.Durkin, LS: #51 P.Derichsweiler)"
+            },
+            {
+              "id": "401862809349",
+              "type": "Rushing Touchdown",
+              "yards": 74,
+              "text": "(04:28) No Huddle-Shotgun #4 G.Ochoa rush middle for 74 yards gain to the FAU00 TOUCHDOWN, clock 04:27, 1ST DOWN #49 T.Bauchiero kick attempt good (H: #29 C.Durkin, LS: #51 P.Derichsweiler)"
+            },
+            {
+              "id": "401862809486",
+              "type": "Rush",
+              "yards": 34,
+              "text": "(12:26) No Huddle-Shotgun #26 T.Byars rush middle for 34 yards gain to the FAU41 (#23 J.Johnson), 1ST DOWN"
+            },
+            {
+              "id": "401862809490",
+              "type": "Rushing Touchdown",
+              "yards": 41,
+              "text": "(11:52) No Huddle-Shotgun #13 M.Mosey rush right for 41 yards gain to the FAU00 TOUCHDOWN, clock 11:49, 1ST DOWN #49 T.Bauchiero kick attempt good (H: #29 C.Durkin, LS: #51 P.Derichsweiler)"
+            },
+            {
+              "id": "401862809532",
+              "type": "Rush",
+              "yards": 31,
+              "text": "(09:02) No Huddle-Shotgun #15 P.Crayton Jr. rush middle for 31 yards gain to the FAU27 (#0 D.Allen; #23 J.Johnson), 1ST DOWN"
+            },
+            {
+              "id": "401862809540",
+              "type": "Pass Reception",
+              "yards": 25,
+              "text": "(07:42) No Huddle-Shotgun #15 P.Crayton Jr. pass complete deep middle to #19 J.Clark caught at FAU05, for 25 yards to the FAU02 (#8 C.Tooley III), 1ST DOWN"
+            },
+            {
+              "id": "401862809640",
+              "type": "Rushing Touchdown",
+              "yards": 69,
+              "text": "No Huddle-Shotgun #4 G.Ochoa rush middle for 69 yards gain to the FAU00 TOUCHDOWN, clock 01:12, 1ST DOWN #49 T.Bauchiero kick attempt good (H: #29 C.Durkin, LS: #51 P.Derichsweiler)"
+            },
+            {
+              "id": "401862809803",
+              "type": "Pass Reception",
+              "yards": 71,
+              "text": "(02:55) No Huddle-Shotgun #4 G.Ochoa pass complete deep middle to #81 B.Walker caught at FAU42, for 71 yards to the FAU00 TOUCHDOWN, clock 02:51, 1ST DOWN #49 T.Bauchiero kick attempt good (H: #29 C.Durkin, LS: #51 P.Derichsweiler)"
+            }
+          ]
+        },
+        {
+          "team": "Florida Atlantic Owls",
+          "provider_drive_records": 13,
+          "end_half_or_game_drive_records": 1,
+          "boxscore_scrimmage_plays": 81,
+          "boxscore_yards": 461,
+          "yards_per_scrimmage_play": 5.691358024691358,
+          "possession_time": "30:57",
+          "observed_20plus_rush_or_completion_plays": 4,
+          "observed_20plus_per_boxscore_play": 0.04938271604938271,
+          "explosive_evidence": [
+            {
+              "id": "401862809168",
+              "type": "Passing Touchdown",
+              "yards": 30,
+              "text": "(00:41) No Huddle-Shotgun #10 C.Veltkamp pass complete deep left to #0 B.Hoch caught at RIC00, for 30 yards to the RIC00 TOUCHDOWN, clock 00:42, 1ST DOWN #41 C.Rogers kick attempt good (H: #91 R.Chandley, LS: #56 B.Thomas)"
+            },
+            {
+              "id": "401862809318",
+              "type": "Pass Reception",
+              "yards": 23,
+              "text": "(06:14) No Huddle-Shotgun #10 C.Veltkamp pass complete deep right to #8 E.Messer caught at RIC14, for 23 yards to the RIC12 (#2 J.Chavez; #0 D.Hook), 1ST DOWN, PENALTY RIC Offside declined"
+            },
+            {
+              "id": "401862809509",
+              "type": "Pass Reception",
+              "yards": 68,
+              "text": "(11:09) No Huddle-Shotgun #10 C.Veltkamp pass complete deep middle to #8 E.Messer caught at RIC41, for 68 yards to the RIC00 TOUCHDOWN, clock 11:05, 1ST DOWN #41 C.Rogers kick attempt good (H: #91 R.Chandley, LS: #56 B.Thomas)"
+            },
+            {
+              "id": "401862809590",
+              "type": "Pass Reception",
+              "yards": 20,
+              "text": "No Huddle-Shotgun #10 C.Veltkamp pass complete short right to #8 E.Messer caught at RIC45, for 20 yards to the RIC42, out of bounds at RIC42, 1ST DOWN"
+            }
+          ]
+        }
+      ],
+      "combined_provider_drive_records": 27,
+      "combined_boxscore_scrimmage_plays": 139,
+      "non_offensive_scoring_events": [
+        {
+          "type": "Safety",
+          "text": "Team Safety "
+        },
+        {
+          "type": "Punt Return Touchdown",
+          "text": "Easton Messer 82 Yd Punt Return (Collin Rogers Kick)"
+        }
+      ]
+    },
+    {
+      "game_id": 401862810,
+      "source": "outputs/2026-week8-postgame-audit/provider-evidence/espn-game-401862810.json.gz",
+      "compressed_sha256": "924328df2885c10d974396043daa78c60cf38bddaf5d587b63dd379bb478d737",
+      "raw_sha256": "24be512105779c507eb2130ce6cfcf3e40b7b7990ebb6ff92e531cb63e8624bd",
+      "teams": [
+        {
+          "team": "North Texas Mean Green",
+          "provider_drive_records": 11,
+          "end_half_or_game_drive_records": 2,
+          "boxscore_scrimmage_plays": 52,
+          "boxscore_yards": 477,
+          "yards_per_scrimmage_play": 9.173076923076923,
+          "possession_time": "22:29",
+          "observed_20plus_rush_or_completion_plays": 8,
+          "observed_20plus_per_boxscore_play": 0.15384615384615385,
+          "explosive_evidence": [
+            {
+              "id": "40186281064",
+              "type": "Passing Touchdown",
+              "yards": 45,
+              "text": "(10:05) Shotgun #2 T.Jackson pass complete deep middle to #13 J.Stevenson caught at Navy02, for 45 yards to the Navy00 TOUCHDOWN, clock 10:05, 1ST DOWN #90 D.De Freitas kick attempt good (H: #37 I.Ratliff, LS: #52 J.Poff)"
+            },
+            {
+              "id": "401862810133",
+              "type": "Pass Reception",
+              "yards": 22,
+              "text": "(03:20) No Huddle-Shotgun #2 T.Jackson pass complete short left to #1 J.White caught at UNT40, for 22 yards to the Navy36 (#56 M.Parker), 1ST DOWN"
+            },
+            {
+              "id": "401862810138",
+              "type": "Pass Reception",
+              "yards": 24,
+              "text": "(02:29) No Huddle-Shotgun #2 T.Jackson pass complete short left to #1 J.White caught at Navy33, for 24 yards to the Navy12 (#58 C.Cauley), 1ST DOWN"
+            },
+            {
+              "id": "401862810210",
+              "type": "Pass Reception",
+              "yards": 22,
+              "text": "(11:21) Shotgun #2 T.Jackson pass complete deep middle to #13 J.Stevenson caught at UNT44, for 22 yards to the UNT44, End Of Play, 1ST DOWN"
+            },
+            {
+              "id": "401862810218",
+              "type": "Pass Reception",
+              "yards": 46,
+              "text": "(10:48) No Huddle-Shotgun #2 T.Jackson pass complete deep middle to #13 J.Stevenson caught at Navy12, for 46 yards to the Navy10, End Of Play, 1ST DOWN"
+            },
+            {
+              "id": "401862810508",
+              "type": "Passing Touchdown",
+              "yards": 53,
+              "text": "(04:35) No Huddle-Shotgun #2 T.Jackson pass complete deep right to #13 J.Stevenson caught at Navy13, for 53 yards to the Navy00 TOUCHDOWN, clock 04:30, 1ST DOWN #90 D.De Freitas kick attempt good (H: #37 I.Ratliff, LS: #52 J.Poff)"
+            },
+            {
+              "id": "401862810663",
+              "type": "Rushing Touchdown",
+              "yards": 59,
+              "text": "(09:44) No Huddle-Shotgun #1 J.White rush right for 59 yards gain to the Navy00 TOUCHDOWN, clock 09:38, 1ST DOWN #90 D.De Freitas kick attempt good (H: #37 I.Ratliff, LS: #52 J.Poff)"
+            },
+            {
+              "id": "401862810725",
+              "type": "Rush",
+              "yards": 21,
+              "text": "(03:34) #1 J.White rush left for 21 yards gain to the Navy47 (#3 I.Oniha), 1ST DOWN"
+            }
+          ]
+        },
+        {
+          "team": "Navy Midshipmen",
+          "provider_drive_records": 12,
+          "end_half_or_game_drive_records": 0,
+          "boxscore_scrimmage_plays": 77,
+          "boxscore_yards": 506,
+          "yards_per_scrimmage_play": 6.571428571428571,
+          "possession_time": "37:31",
+          "observed_20plus_rush_or_completion_plays": 9,
+          "observed_20plus_per_boxscore_play": 0.11688311688311688,
+          "explosive_evidence": [
+            {
+              "id": "40186281016",
+              "type": "Rush",
+              "yards": 28,
+              "text": "(14:26) Shotgun #8 J.Gutierrez rush right for 28 yards gain to the UNT49 (#4 C.Coombes; #3 Z.Barker), 1ST DOWN"
+            },
+            {
+              "id": "40186281083",
+              "type": "Rush",
+              "yards": 26,
+              "text": "(08:49) Shotgun #8 J.Gutierrez rush middle for 26 yards gain to the UNT47 (#5 C.Canada), 1ST DOWN"
+            },
+            {
+              "id": "40186281087",
+              "type": "Rush",
+              "yards": 22,
+              "text": "(08:29) Shotgun #23 C.Robinson rush right for 22 yards gain to the UNT25 (#4 C.Coombes; #24 P.Taylor), 1ST DOWN"
+            },
+            {
+              "id": "401862810334",
+              "type": "Pass Reception",
+              "yards": 23,
+              "text": "(01:56) Shotgun #8 J.Gutierrez pass complete short right to #84 J.Collins caught at UNT28, for 23 yards to the UNT24 (#14 B.Garza), 1ST DOWN"
+            },
+            {
+              "id": "401862810470",
+              "type": "Rush",
+              "yards": 25,
+              "text": "(07:18) Shotgun #8 J.Gutierrez rush middle for 25 yards gain to the UNT46 (#16 B.Allen Jr.), 1ST DOWN"
+            },
+            {
+              "id": "401862810481",
+              "type": "Rushing Touchdown",
+              "yards": 43,
+              "text": "(06:02) Shotgun #8 J.Gutierrez rush right for 43 yards gain to the UNT00 TOUCHDOWN, clock 05:57, 1ST DOWN #85 J.Norris pass attempt Successful"
+            },
+            {
+              "id": "401862810520",
+              "type": "Pass Reception",
+              "yards": 41,
+              "text": "(04:28) Shotgun #8 J.Gutierrez pass complete short middle to #88 M.Barlow caught at Navy30, for 41 yards to the UNT34 (#0 B.Jones), 1ST DOWN"
+            },
+            {
+              "id": "401862810553",
+              "type": "Pass Reception",
+              "yards": 23,
+              "text": "(01:34) Shotgun #8 J.Gutierrez pass complete deep right to #88 M.Barlow caught at UNT28, for 23 yards to the UNT27 Shotgun #8 J.Gutierrez pass complete deep right to #88 M.Barlow caught at UNT28, for 23 yards to the UNT27 (#5 C.Canada), 1ST DOWN"
+            },
+            {
+              "id": "401862810610",
+              "type": "Rush",
+              "yards": 33,
+              "text": "(13:53) Shotgun #8 J.Gutierrez rush left for 33 yards gain to the Navy50 (#7 A.Alexander), out of bounds, 1ST DOWN"
+            }
+          ]
+        }
+      ],
+      "combined_provider_drive_records": 23,
+      "combined_boxscore_scrimmage_plays": 129,
+      "non_offensive_scoring_events": [
+        {
+          "type": "Punt Return Touchdown",
+          "text": "Dalton Carnes 76 Yd Punt Return (Dominic De Freitas Kick)"
+        },
+        {
+          "type": "Fumble Return Touchdown",
+          "text": "Zakye Barker 63 Yd Fumble Return (Dominic De Freitas Kick)"
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "Five team-associated games are an outcome-informed diagnostic sample, not validation.",
+    "Games and opponents are not independent; one Tulsa game included overtime.",
+    "Drive counts include end-of-half/game possessions; no guessed kneel-only exclusion.",
+    "Scrimmage plays use rush attempts plus pass attempts from the box score; NCAA sacks count as rushing.",
+    "20+ numerator uses recorded rushes/completions only, excluding special teams and explicit nullified plays.",
+    "Provider drive/clock labels may be imperfect; no tempo forecast is inferred from two games.",
+    "Team-published season explosive definitions differ and must not be pooled.",
+    "No hypothetical subtraction of non-offensive scores is treated as a counterfactual final total."
+  ]
+}

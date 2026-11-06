@@ -1,0 +1,51 @@
+method,week,ordinal,game,pick,spread,shadow_score,confidence,edge_points,result
+governed,5,1,Western Kentucky @ New Mexico State,New Mexico State,-2.5,0.5633395735826794,1,12.66791471653587,WIN
+governed,5,2,North Texas @ Tulsa,Tulsa,-1.5,0.5068495102395979,1,1.3699020479195756,LOSS
+governed,5,3,Liberty @ Delaware,Delaware,7.5,0.5371618164381308,1,7.432363287626156,LOSS
+governed,5,4,Pittsburgh @ Virginia Tech,Pittsburgh,3.5,0.5225526208867695,1,4.510524177353891,WIN
+governed,5,5,Penn State @ Northwestern,Northwestern,2.5,0.517734674855863,1,3.5469349711726084,WIN
+governed,6,1,Southern Miss @ Troy,Southern Miss,10.5,0.5215244259369585,1,4.304885187391694,LOSS
+governed,6,2,Jacksonville State @ Kennesaw State,Jacksonville State,-2.5,0.5098015706957989,1,1.960314139159772,LOSS
+governed,6,3,New Mexico State @ Florida International,New Mexico State,6.5,0.5018629756711741,1,0.37259513423481216,LOSS
+governed,6,4,Sam Houston @ Liberty,Sam Houston,13.5,0.5211445407197237,1,4.228908143944732,LOSS
+governed,6,5,Missouri State @ Western Kentucky,Missouri State,2.5,0.5389008754517405,1,7.7801750903481,LOSS
+shadow_score,5,1,Eastern Michigan @ Massachusetts,Massachusetts,-5.5,0.5984495357585906,1,19.68990715171812,LOSS
+shadow_score,5,2,Syracuse @ UConn,UConn,6.5,0.5684323046236338,1,13.686460924726763,WIN
+shadow_score,5,3,Western Michigan @ Buffalo,Buffalo,13.5,0.5667044058608807,1,13.340881172176127,WIN
+shadow_score,5,4,Old Dominion @ Georgia State,Georgia State,-1.5,0.5661321515168474,1,13.22643030336948,WIN
+shadow_score,5,5,Ohio State @ Iowa,Iowa,13.5,0.5641579799865156,1,12.831595997303129,LOSS
+shadow_score,6,1,Ball State @ Northwestern,Ball State,36.5,0.5895824550378874,1,17.916491007577488,WIN
+shadow_score,6,2,Miami (OH) @ Massachusetts,Massachusetts,2.5,0.5787708640788746,1,15.75417281577491,WIN
+shadow_score,6,3,Maryland @ Ohio State,Maryland,34.5,0.5773929731771008,1,15.478594635420158,WIN
+shadow_score,6,4,Hawai'i @ Arizona State,Hawai'i,20.5,0.5767516558826951,1,15.35033117653901,WIN
+shadow_score,6,5,Ole Miss @ Vanderbilt,Vanderbilt,10.5,0.5747216613775071,1,14.944332275501417,LOSS
+confidence,5,1,Western Kentucky @ New Mexico State,New Mexico State,-2.5,0.5633395735826794,1,12.66791471653587,WIN
+confidence,5,2,North Texas @ Tulsa,Tulsa,-1.5,0.5068495102395979,1,1.3699020479195756,LOSS
+confidence,5,3,Liberty @ Delaware,Delaware,7.5,0.5371618164381308,1,7.432363287626156,LOSS
+confidence,5,4,Pittsburgh @ Virginia Tech,Pittsburgh,3.5,0.5225526208867695,1,4.510524177353891,WIN
+confidence,5,5,Penn State @ Northwestern,Northwestern,2.5,0.517734674855863,1,3.5469349711726084,WIN
+confidence,6,1,Southern Miss @ Troy,Southern Miss,10.5,0.5215244259369585,1,4.304885187391694,LOSS
+confidence,6,2,Jacksonville State @ Kennesaw State,Jacksonville State,-2.5,0.5098015706957989,1,1.960314139159772,LOSS
+confidence,6,3,New Mexico State @ Florida International,New Mexico State,6.5,0.5018629756711741,1,0.37259513423481216,LOSS
+confidence,6,4,Sam Houston @ Liberty,Sam Houston,13.5,0.5211445407197237,1,4.228908143944732,LOSS
+confidence,6,5,Missouri State @ Western Kentucky,Missouri State,2.5,0.5389008754517405,1,7.7801750903481,LOSS
+edge,5,1,Eastern Michigan @ Massachusetts,Massachusetts,-5.5,0.5984495357585906,1,19.68990715171812,LOSS
+edge,5,2,Syracuse @ UConn,UConn,6.5,0.5684323046236338,1,13.686460924726763,WIN
+edge,5,3,Western Michigan @ Buffalo,Buffalo,13.5,0.5667044058608807,1,13.340881172176127,WIN
+edge,5,4,Old Dominion @ Georgia State,Georgia State,-1.5,0.5661321515168474,1,13.22643030336948,WIN
+edge,5,5,Ohio State @ Iowa,Iowa,13.5,0.5641579799865156,1,12.831595997303129,LOSS
+edge,6,1,Ball State @ Northwestern,Ball State,36.5,0.5895824550378874,1,17.916491007577488,WIN
+edge,6,2,Miami (OH) @ Massachusetts,Massachusetts,2.5,0.5787708640788746,1,15.75417281577491,WIN
+edge,6,3,Maryland @ Ohio State,Maryland,34.5,0.5773929731771008,1,15.478594635420158,WIN
+edge,6,4,Hawai'i @ Arizona State,Hawai'i,20.5,0.5767516558826951,1,15.35033117653901,WIN
+edge,6,5,Ole Miss @ Vanderbilt,Vanderbilt,10.5,0.5747216613775071,1,14.944332275501417,LOSS
+shadow_uncertainty,5,1,Cincinnati @ Arizona,Cincinnati,7.5,0.5188193055451635,1,3.763861109032711,LOSS
+shadow_uncertainty,5,2,Ohio @ Kent State,Kent State,3.5,0.5353420384376202,1,7.068407687524044,WIN
+shadow_uncertainty,5,3,North Texas @ Tulsa,Tulsa,-1.5,0.5068495102395979,1,1.3699020479195756,LOSS
+shadow_uncertainty,5,4,California @ UNLV,UNLV,-2.5,0.5149195971538083,1,2.98391943076167,WIN
+shadow_uncertainty,5,5,Georgia Southern @ Coastal Carolina,Coastal Carolina,2.5,0.5419344759984259,1,8.386895199685181,LOSS
+shadow_uncertainty,6,1,South Florida @ UTSA,South Florida,7.5,0.5179154646844739,1,3.58309293689478,WIN
+shadow_uncertainty,6,2,Ole Miss @ Vanderbilt,Vanderbilt,10.5,0.5747216613775071,1,14.944332275501417,LOSS
+shadow_uncertainty,6,3,Sacramento State @ Bowling Green,Sacramento State,7.5,0.5196000404870692,1,3.9200080974138496,LOSS
+shadow_uncertainty,6,4,USC @ Penn State,Penn State,-1.5,0.5160258806073097,1,3.2051761214619443,LOSS
+shadow_uncertainty,6,5,Hawai'i @ Arizona State,Hawai'i,20.5,0.5767516558826951,1,15.35033117653901,WIN

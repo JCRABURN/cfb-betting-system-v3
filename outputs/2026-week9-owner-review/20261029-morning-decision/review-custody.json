@@ -1,0 +1,13 @@
+{
+  "created_at_utc": "2026-10-29T12:02:05.655680+00:00",
+  "owner_approval": "PENDING",
+  "previous_review_path": "outputs/2026-week9-owner-review/20261028-evening/owner_review_shortlist.json",
+  "previous_review_sha256": "af955c388e8c18c88072a1bc4a3919cef747d44c47b51c7a9a4652b2b9851705",
+  "output_sha256": {
+    "OWNER_REVIEW.md": "db33a36d9e789887fd216c893e6869f6b324e52b01a3ab7e1228404971c51943",
+    "owner_review_shortlist.json": "d63b79da1142d38ecf63f968180f67fe4fc6e5b120e18b9ac25d87237fe12e12"
+  },
+  "context_manifest_sha256": "819ee6d11472b88980aec4724479310067ceb13b3290d9d35d81a23051fddd10",
+  "raw_context_response_hashes_checked": 548,
+  "diagnostic_replay_exact": true
+}

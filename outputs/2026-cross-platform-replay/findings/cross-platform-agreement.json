@@ -1,0 +1,454 @@
+[
+  {
+    "conclusion": "success",
+    "cross_platform_exact_output_hashes": {
+      "outputs/2026-week7-postgame-audit/week7_ats_audit.csv": "48a4171a57ea53dd18507a2e04721c1c77a7155f48c9f93704fd23bec3067dc8",
+      "outputs/2026-week7-postgame-audit/week7_cohort_membership.csv": "c64ccdbac799b08ab5f1634c5ddc3a193588111c8d4ea8612bcdd6edfc33156c",
+      "outputs/2026-week7-postgame-audit/week7_diagnostics.json": "ec46f6b0a9eed4af66e8dfefcf6036fdcb0c56348ccfdf1246619e7a49f59c8d",
+      "outputs/2026-week7-postgame-audit/week7_final_results.csv": "bb59bf47455cc155d62f93e401dd043de7efb00d164866321e7ba1757cd57884",
+      "outputs/2026-week7-postgame-audit/week7_owner_approved_five_audit.csv": "bef7e456e1a653c0fb9d7318f6400cb8240bb46972155ad573c0075dd461fd86",
+      "outputs/2026-week7-postgame-audit/week7_postgame_report.md": "31562fbc6b646def90b3bf212efbd40eb021d585ee7d1dcb26cd30cc48609fc0",
+      "outputs/2026-week7-postgame-audit/week7_source_correction_impact.csv": "56ddb9acfcaf36d2eaa71fd895f4c1fda7878f5182c8008a6781e724109dc4cb",
+      "outputs/2026-week7-postgame-audit/week7_totals_audit.csv": "d7dce91e9e5e26893f84e683a34f3817ed69200703cbe0f974cc194fbbff0dfb",
+      "outputs/2026-week8-audit-research/numerical_research_candidates.json": "36d867cf1f808d2a2022ebfcae8837d06e2b8128d2f1dbb67077953b5babeb46",
+      "outputs/2026-week8-postgame-audit/cross_week_diagnostics.json": "88d5974fedbd925514b6be06b06e70e3c1eb54734a3181a951d1bda90ebc07e6",
+      "outputs/2026-week8-postgame-audit/cross_week_tables.md": "8a295f194fa715b71c4259337b2d74b1fb3b46678c978d6ab3acdb401d462b13",
+      "outputs/2026-week8-postgame-audit/week8_ats_audit.csv": "74aa1c4b2766e8972f33fcba94cfa1241cdd09e90dabec61b6f89e5984b5791a",
+      "outputs/2026-week8-postgame-audit/week8_cohort_membership.csv": "5a8c7ac78e173e0dcefb48f1acdeb5bbb24d01db9ee5d1166b8ffb6ff59a56fc",
+      "outputs/2026-week8-postgame-audit/week8_diagnostics.json": "738fdaf68ab42c63e1630ac8ceee56a1821bcfc56e33fdeea0038bf7770f0d6a",
+      "outputs/2026-week8-postgame-audit/week8_final_results.csv": "5b885bf098485b7942b3f59d5bb6869520c0f703366e34a6be2b5872f955923e",
+      "outputs/2026-week8-postgame-audit/week8_postgame_report.md": "474b81b69aedca0b63d407a694313d815af297d27c710c06b853abc512509778",
+      "outputs/2026-week8-postgame-audit/week8_totals_audit.csv": "a7175b6aa042e424b5d78ec22c9f906fbbd9195cace1f622cb4503858735a1d5"
+    },
+    "matrix": [
+      {
+        "environment": "u3.11.17",
+        "exact_outputs": 17,
+        "full_environment": "ci/41102004369/u3.11.17/replay-diagnostics/comparison.json",
+        "math_log_probe": "-0x1.6d3c324e13f50p-2",
+        "platform": "Linux-7.0.0-1017-azure-x86_64-with-glibc2.43",
+        "python": "3.11.17 (main, Oct  1 2026, 14:33:19) [GCC 15.2.0]",
+        "research_custody": {
+          "exact_custody_checks": 419,
+          "historical_checkout_diagnosis_preserved": true,
+          "replayed_research_outputs": 10
+        },
+        "sum_probe": 0.0,
+        "tested_merge_sha": "8c755db43fb91ce52c4584eb0f31d4e3340dd2f7",
+        "tzdata_package": null,
+        "tzpath": [
+          "/usr/share/zoneinfo",
+          "/usr/lib/zoneinfo",
+          "/usr/share/lib/zoneinfo",
+          "/etc/zoneinfo"
+        ],
+        "week9_context_count": 0
+      },
+      {
+        "environment": "u3.12.14",
+        "exact_outputs": 17,
+        "full_environment": "ci/41102004369/u3.12.14/replay-diagnostics/comparison.json",
+        "math_log_probe": "-0x1.6d3c324e13f50p-2",
+        "platform": "Linux-7.0.0-1017-azure-x86_64-with-glibc2.43",
+        "python": "3.12.14 (main, Aug 13 2026, 02:45:55) [GCC 15.2.0]",
+        "research_custody": {
+          "exact_custody_checks": 419,
+          "historical_checkout_diagnosis_preserved": true,
+          "replayed_research_outputs": 10
+        },
+        "sum_probe": 1.0,
+        "tested_merge_sha": "8c755db43fb91ce52c4584eb0f31d4e3340dd2f7",
+        "tzdata_package": null,
+        "tzpath": [
+          "/usr/share/zoneinfo",
+          "/usr/lib/zoneinfo",
+          "/usr/share/lib/zoneinfo",
+          "/etc/zoneinfo"
+        ],
+        "week9_context_count": 0
+      },
+      {
+        "environment": "w3.11.9",
+        "exact_outputs": 17,
+        "full_environment": "ci/41102004369/w3.11.9/replay-diagnostics/comparison.json",
+        "math_log_probe": "-0x1.6d3c324e13f50p-2",
+        "platform": "Windows-10-10.0.26100-SP0",
+        "python": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+        "research_custody": {
+          "exact_custody_checks": 419,
+          "historical_checkout_diagnosis_preserved": true,
+          "replayed_research_outputs": 10
+        },
+        "sum_probe": 0.0,
+        "tested_merge_sha": "8c755db43fb91ce52c4584eb0f31d4e3340dd2f7",
+        "tzdata_package": "2026.6",
+        "tzpath": [],
+        "week9_context_count": 0
+      },
+      {
+        "environment": "w3.12.10",
+        "exact_outputs": 17,
+        "full_environment": "ci/41102004369/w3.12.10/replay-diagnostics/comparison.json",
+        "math_log_probe": "-0x1.6d3c324e13f50p-2",
+        "platform": "Windows-2025Server-10.0.26100-SP0",
+        "python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+        "research_custody": {
+          "exact_custody_checks": 419,
+          "historical_checkout_diagnosis_preserved": true,
+          "replayed_research_outputs": 10
+        },
+        "sum_probe": 1.0,
+        "tested_merge_sha": "8c755db43fb91ce52c4584eb0f31d4e3340dd2f7",
+        "tzdata_package": "2026.6",
+        "tzpath": [],
+        "week9_context_count": 0
+      }
+    ],
+    "run_id": 41102004369,
+    "source_sha": "c3513d47d43ba3753496e0bca50a109b7836358a",
+    "url": "https://github.com/JCRABURN/cfb-betting-system-v3/actions/runs/41102004369"
+  },
+  {
+    "conclusion": "success",
+    "cross_platform_exact_output_hashes": {
+      "outputs/2026-week7-postgame-audit/week7_ats_audit.csv": "48a4171a57ea53dd18507a2e04721c1c77a7155f48c9f93704fd23bec3067dc8",
+      "outputs/2026-week7-postgame-audit/week7_cohort_membership.csv": "c64ccdbac799b08ab5f1634c5ddc3a193588111c8d4ea8612bcdd6edfc33156c",
+      "outputs/2026-week7-postgame-audit/week7_diagnostics.json": "ec46f6b0a9eed4af66e8dfefcf6036fdcb0c56348ccfdf1246619e7a49f59c8d",
+      "outputs/2026-week7-postgame-audit/week7_final_results.csv": "bb59bf47455cc155d62f93e401dd043de7efb00d164866321e7ba1757cd57884",
+      "outputs/2026-week7-postgame-audit/week7_owner_approved_five_audit.csv": "bef7e456e1a653c0fb9d7318f6400cb8240bb46972155ad573c0075dd461fd86",
+      "outputs/2026-week7-postgame-audit/week7_postgame_report.md": "31562fbc6b646def90b3bf212efbd40eb021d585ee7d1dcb26cd30cc48609fc0",
+      "outputs/2026-week7-postgame-audit/week7_source_correction_impact.csv": "56ddb9acfcaf36d2eaa71fd895f4c1fda7878f5182c8008a6781e724109dc4cb",
+      "outputs/2026-week7-postgame-audit/week7_totals_audit.csv": "d7dce91e9e5e26893f84e683a34f3817ed69200703cbe0f974cc194fbbff0dfb",
+      "outputs/2026-week8-audit-research/numerical_research_candidates.json": "36d867cf1f808d2a2022ebfcae8837d06e2b8128d2f1dbb67077953b5babeb46",
+      "outputs/2026-week8-postgame-audit/cross_week_diagnostics.json": "88d5974fedbd925514b6be06b06e70e3c1eb54734a3181a951d1bda90ebc07e6",
+      "outputs/2026-week8-postgame-audit/cross_week_tables.md": "8a295f194fa715b71c4259337b2d74b1fb3b46678c978d6ab3acdb401d462b13",
+      "outputs/2026-week8-postgame-audit/week8_ats_audit.csv": "74aa1c4b2766e8972f33fcba94cfa1241cdd09e90dabec61b6f89e5984b5791a",
+      "outputs/2026-week8-postgame-audit/week8_cohort_membership.csv": "5a8c7ac78e173e0dcefb48f1acdeb5bbb24d01db9ee5d1166b8ffb6ff59a56fc",
+      "outputs/2026-week8-postgame-audit/week8_diagnostics.json": "738fdaf68ab42c63e1630ac8ceee56a1821bcfc56e33fdeea0038bf7770f0d6a",
+      "outputs/2026-week8-postgame-audit/week8_final_results.csv": "5b885bf098485b7942b3f59d5bb6869520c0f703366e34a6be2b5872f955923e",
+      "outputs/2026-week8-postgame-audit/week8_postgame_report.md": "474b81b69aedca0b63d407a694313d815af297d27c710c06b853abc512509778",
+      "outputs/2026-week8-postgame-audit/week8_totals_audit.csv": "a7175b6aa042e424b5d78ec22c9f906fbbd9195cace1f622cb4503858735a1d5",
+      "outputs/2026-week9-context/20261028T1320Z/derived_context_board.json": "1348ca065f46d99e011fb6b6f179978849b7fa7402e0042e128e5055bcb140f1",
+      "outputs/2026-week9-context/20261028T2237Z/derived_context_board.json": "b96e6eb4ca6823611f3ef9e338b7757574d44163a38f094308ec14ce6bd6f03f",
+      "outputs/2026-week9-context/20261028T2310Z-thursday-gate/derived_context_board.json": "e71cd8b8cf106f7161e8f3104340aee68520d563eb7c2f7f63f03719fc7c908c",
+      "outputs/2026-week9-context/20261029T1147Z-thursday-gate/derived_context_board.json": "501896daf6621c0e6279e09266488c32b5d111018fe0866024e3d24004a582f9",
+      "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/derived_context_board.json": "c6e3c694ebaa65c72404e09e4213db80d845ab9dff2c08373dc1df0d0033b787",
+      "outputs/2026-week9-context/20261030T1303Z-friday-morning/derived_context_board.json": "1b8f9ac705c75042e5515bda4032925cab59daf35b02f48ef707f0c0a621c9c7"
+    },
+    "matrix": [
+      {
+        "environment": "u3.11.17",
+        "exact_outputs": 23,
+        "full_environment": "ci/41102071702/u3.11.17/replay-diagnostics/comparison.json",
+        "math_log_probe": "-0x1.6d3c324e13f50p-2",
+        "platform": "Linux-7.0.0-1017-azure-x86_64-with-glibc2.43",
+        "python": "3.11.17 (main, Oct  1 2026, 14:33:19) [GCC 15.2.0]",
+        "research_custody": {
+          "exact_custody_checks": 419,
+          "historical_checkout_diagnosis_preserved": true,
+          "replayed_research_outputs": 10
+        },
+        "sum_probe": 0.0,
+        "tested_merge_sha": "f08d644659b83a024d8c3d4edcef738562550441",
+        "tzdata_package": null,
+        "tzpath": [
+          "/usr/share/zoneinfo",
+          "/usr/lib/zoneinfo",
+          "/usr/share/lib/zoneinfo",
+          "/etc/zoneinfo"
+        ],
+        "week9_context_count": 6
+      },
+      {
+        "environment": "u3.12.14",
+        "exact_outputs": 23,
+        "full_environment": "ci/41102071702/u3.12.14/replay-diagnostics/comparison.json",
+        "math_log_probe": "-0x1.6d3c324e13f50p-2",
+        "platform": "Linux-7.0.0-1017-azure-x86_64-with-glibc2.43",
+        "python": "3.12.14 (main, Aug 13 2026, 02:45:55) [GCC 15.2.0]",
+        "research_custody": {
+          "exact_custody_checks": 419,
+          "historical_checkout_diagnosis_preserved": true,
+          "replayed_research_outputs": 10
+        },
+        "sum_probe": 1.0,
+        "tested_merge_sha": "f08d644659b83a024d8c3d4edcef738562550441",
+        "tzdata_package": null,
+        "tzpath": [
+          "/usr/share/zoneinfo",
+          "/usr/lib/zoneinfo",
+          "/usr/share/lib/zoneinfo",
+          "/etc/zoneinfo"
+        ],
+        "week9_context_count": 6
+      },
+      {
+        "environment": "w3.11.9",
+        "exact_outputs": 23,
+        "full_environment": "ci/41102071702/w3.11.9/replay-diagnostics/comparison.json",
+        "math_log_probe": "-0x1.6d3c324e13f50p-2",
+        "platform": "Windows-10-10.0.26100-SP0",
+        "python": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+        "research_custody": {
+          "exact_custody_checks": 419,
+          "historical_checkout_diagnosis_preserved": true,
+          "replayed_research_outputs": 10
+        },
+        "sum_probe": 0.0,
+        "tested_merge_sha": "f08d644659b83a024d8c3d4edcef738562550441",
+        "tzdata_package": "2026.6",
+        "tzpath": [],
+        "week9_context_count": 6
+      },
+      {
+        "environment": "w3.12.10",
+        "exact_outputs": 23,
+        "full_environment": "ci/41102071702/w3.12.10/replay-diagnostics/comparison.json",
+        "math_log_probe": "-0x1.6d3c324e13f50p-2",
+        "platform": "Windows-2025Server-10.0.26100-SP0",
+        "python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+        "research_custody": {
+          "exact_custody_checks": 419,
+          "historical_checkout_diagnosis_preserved": true,
+          "replayed_research_outputs": 10
+        },
+        "sum_probe": 1.0,
+        "tested_merge_sha": "f08d644659b83a024d8c3d4edcef738562550441",
+        "tzdata_package": "2026.6",
+        "tzpath": [],
+        "week9_context_count": 6
+      }
+    ],
+    "run_id": 41102071702,
+    "source_sha": "a664aa6347307d4d5c7ef14634a37df7fc8c8a31",
+    "url": "https://github.com/JCRABURN/cfb-betting-system-v3/actions/runs/41102071702"
+  },
+  {
+    "conclusion": "success",
+    "cross_platform_exact_output_hashes": {
+      "outputs/2026-week7-postgame-audit/week7_ats_audit.csv": "48a4171a57ea53dd18507a2e04721c1c77a7155f48c9f93704fd23bec3067dc8",
+      "outputs/2026-week7-postgame-audit/week7_cohort_membership.csv": "c64ccdbac799b08ab5f1634c5ddc3a193588111c8d4ea8612bcdd6edfc33156c",
+      "outputs/2026-week7-postgame-audit/week7_diagnostics.json": "ec46f6b0a9eed4af66e8dfefcf6036fdcb0c56348ccfdf1246619e7a49f59c8d",
+      "outputs/2026-week7-postgame-audit/week7_final_results.csv": "bb59bf47455cc155d62f93e401dd043de7efb00d164866321e7ba1757cd57884",
+      "outputs/2026-week7-postgame-audit/week7_owner_approved_five_audit.csv": "bef7e456e1a653c0fb9d7318f6400cb8240bb46972155ad573c0075dd461fd86",
+      "outputs/2026-week7-postgame-audit/week7_postgame_report.md": "31562fbc6b646def90b3bf212efbd40eb021d585ee7d1dcb26cd30cc48609fc0",
+      "outputs/2026-week7-postgame-audit/week7_source_correction_impact.csv": "56ddb9acfcaf36d2eaa71fd895f4c1fda7878f5182c8008a6781e724109dc4cb",
+      "outputs/2026-week7-postgame-audit/week7_totals_audit.csv": "d7dce91e9e5e26893f84e683a34f3817ed69200703cbe0f974cc194fbbff0dfb",
+      "outputs/2026-week8-audit-research/numerical_research_candidates.json": "36d867cf1f808d2a2022ebfcae8837d06e2b8128d2f1dbb67077953b5babeb46",
+      "outputs/2026-week8-postgame-audit/cross_week_diagnostics.json": "88d5974fedbd925514b6be06b06e70e3c1eb54734a3181a951d1bda90ebc07e6",
+      "outputs/2026-week8-postgame-audit/cross_week_tables.md": "8a295f194fa715b71c4259337b2d74b1fb3b46678c978d6ab3acdb401d462b13",
+      "outputs/2026-week8-postgame-audit/week8_ats_audit.csv": "74aa1c4b2766e8972f33fcba94cfa1241cdd09e90dabec61b6f89e5984b5791a",
+      "outputs/2026-week8-postgame-audit/week8_cohort_membership.csv": "5a8c7ac78e173e0dcefb48f1acdeb5bbb24d01db9ee5d1166b8ffb6ff59a56fc",
+      "outputs/2026-week8-postgame-audit/week8_diagnostics.json": "738fdaf68ab42c63e1630ac8ceee56a1821bcfc56e33fdeea0038bf7770f0d6a",
+      "outputs/2026-week8-postgame-audit/week8_final_results.csv": "5b885bf098485b7942b3f59d5bb6869520c0f703366e34a6be2b5872f955923e",
+      "outputs/2026-week8-postgame-audit/week8_postgame_report.md": "474b81b69aedca0b63d407a694313d815af297d27c710c06b853abc512509778",
+      "outputs/2026-week8-postgame-audit/week8_totals_audit.csv": "a7175b6aa042e424b5d78ec22c9f906fbbd9195cace1f622cb4503858735a1d5",
+      "outputs/2026-week9-context/20261028T1320Z/derived_context_board.json": "1348ca065f46d99e011fb6b6f179978849b7fa7402e0042e128e5055bcb140f1",
+      "outputs/2026-week9-context/20261028T2237Z/derived_context_board.json": "b96e6eb4ca6823611f3ef9e338b7757574d44163a38f094308ec14ce6bd6f03f",
+      "outputs/2026-week9-context/20261028T2310Z-thursday-gate/derived_context_board.json": "e71cd8b8cf106f7161e8f3104340aee68520d563eb7c2f7f63f03719fc7c908c",
+      "outputs/2026-week9-context/20261029T1147Z-thursday-gate/derived_context_board.json": "501896daf6621c0e6279e09266488c32b5d111018fe0866024e3d24004a582f9",
+      "outputs/2026-week9-context/20261029T2133Z-thursday-pregame/derived_context_board.json": "c6e3c694ebaa65c72404e09e4213db80d845ab9dff2c08373dc1df0d0033b787",
+      "outputs/2026-week9-context/20261030T1303Z-friday-morning/derived_context_board.json": "1b8f9ac705c75042e5515bda4032925cab59daf35b02f48ef707f0c0a621c9c7"
+    },
+    "matrix": [
+      {
+        "environment": "u3.11.17",
+        "exact_outputs": 23,
+        "full_environment": "ci/41102087073/u3.11.17/replay-diagnostics/comparison.json",
+        "math_log_probe": "-0x1.6d3c324e13f50p-2",
+        "platform": "Linux-7.0.0-1017-azure-x86_64-with-glibc2.43",
+        "python": "3.11.17 (main, Oct  1 2026, 14:33:19) [GCC 15.2.0]",
+        "research_custody": {
+          "exact_custody_checks": 419,
+          "historical_checkout_diagnosis_preserved": true,
+          "replayed_research_outputs": 10
+        },
+        "sum_probe": 0.0,
+        "tested_merge_sha": "643cf009e851a554311d9833970f2df6adb04205",
+        "tzdata_package": null,
+        "tzpath": [
+          "/usr/share/zoneinfo",
+          "/usr/lib/zoneinfo",
+          "/usr/share/lib/zoneinfo",
+          "/etc/zoneinfo"
+        ],
+        "week9_context_count": 6
+      },
+      {
+        "environment": "u3.12.14",
+        "exact_outputs": 23,
+        "full_environment": "ci/41102087073/u3.12.14/replay-diagnostics/comparison.json",
+        "math_log_probe": "-0x1.6d3c324e13f50p-2",
+        "platform": "Linux-7.0.0-1017-azure-x86_64-with-glibc2.43",
+        "python": "3.12.14 (main, Aug 13 2026, 02:45:55) [GCC 15.2.0]",
+        "research_custody": {
+          "exact_custody_checks": 419,
+          "historical_checkout_diagnosis_preserved": true,
+          "replayed_research_outputs": 10
+        },
+        "sum_probe": 1.0,
+        "tested_merge_sha": "643cf009e851a554311d9833970f2df6adb04205",
+        "tzdata_package": null,
+        "tzpath": [
+          "/usr/share/zoneinfo",
+          "/usr/lib/zoneinfo",
+          "/usr/share/lib/zoneinfo",
+          "/etc/zoneinfo"
+        ],
+        "week9_context_count": 6
+      },
+      {
+        "environment": "w3.11.9",
+        "exact_outputs": 23,
+        "full_environment": "ci/41102087073/w3.11.9/replay-diagnostics/comparison.json",
+        "math_log_probe": "-0x1.6d3c324e13f50p-2",
+        "platform": "Windows-10-10.0.26100-SP0",
+        "python": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+        "research_custody": {
+          "exact_custody_checks": 419,
+          "historical_checkout_diagnosis_preserved": true,
+          "replayed_research_outputs": 10
+        },
+        "sum_probe": 0.0,
+        "tested_merge_sha": "643cf009e851a554311d9833970f2df6adb04205",
+        "tzdata_package": "2026.6",
+        "tzpath": [],
+        "week9_context_count": 6
+      },
+      {
+        "environment": "w3.12.10",
+        "exact_outputs": 23,
+        "full_environment": "ci/41102087073/w3.12.10/replay-diagnostics/comparison.json",
+        "math_log_probe": "-0x1.6d3c324e13f50p-2",
+        "platform": "Windows-2025Server-10.0.26100-SP0",
+        "python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+        "research_custody": {
+          "exact_custody_checks": 419,
+          "historical_checkout_diagnosis_preserved": true,
+          "replayed_research_outputs": 10
+        },
+        "sum_probe": 1.0,
+        "tested_merge_sha": "643cf009e851a554311d9833970f2df6adb04205",
+        "tzdata_package": "2026.6",
+        "tzpath": [],
+        "week9_context_count": 6
+      }
+    ],
+    "run_id": 41102087073,
+    "source_sha": "c63b2f7beadfd01ec2ece3a1af0052d8f5915cd3",
+    "url": "https://github.com/JCRABURN/cfb-betting-system-v3/actions/runs/41102087073"
+  },
+  {
+    "conclusion": "success",
+    "cross_platform_exact_output_hashes": {
+      "outputs/2026-week7-postgame-audit/week7_ats_audit.csv": "48a4171a57ea53dd18507a2e04721c1c77a7155f48c9f93704fd23bec3067dc8",
+      "outputs/2026-week7-postgame-audit/week7_cohort_membership.csv": "c64ccdbac799b08ab5f1634c5ddc3a193588111c8d4ea8612bcdd6edfc33156c",
+      "outputs/2026-week7-postgame-audit/week7_diagnostics.json": "ec46f6b0a9eed4af66e8dfefcf6036fdcb0c56348ccfdf1246619e7a49f59c8d",
+      "outputs/2026-week7-postgame-audit/week7_final_results.csv": "bb59bf47455cc155d62f93e401dd043de7efb00d164866321e7ba1757cd57884",
+      "outputs/2026-week7-postgame-audit/week7_owner_approved_five_audit.csv": "bef7e456e1a653c0fb9d7318f6400cb8240bb46972155ad573c0075dd461fd86",
+      "outputs/2026-week7-postgame-audit/week7_postgame_report.md": "31562fbc6b646def90b3bf212efbd40eb021d585ee7d1dcb26cd30cc48609fc0",
+      "outputs/2026-week7-postgame-audit/week7_source_correction_impact.csv": "56ddb9acfcaf36d2eaa71fd895f4c1fda7878f5182c8008a6781e724109dc4cb",
+      "outputs/2026-week7-postgame-audit/week7_totals_audit.csv": "d7dce91e9e5e26893f84e683a34f3817ed69200703cbe0f974cc194fbbff0dfb",
+      "outputs/2026-week8-audit-research/numerical_research_candidates.json": "36d867cf1f808d2a2022ebfcae8837d06e2b8128d2f1dbb67077953b5babeb46",
+      "outputs/2026-week8-postgame-audit/cross_week_diagnostics.json": "88d5974fedbd925514b6be06b06e70e3c1eb54734a3181a951d1bda90ebc07e6",
+      "outputs/2026-week8-postgame-audit/cross_week_tables.md": "8a295f194fa715b71c4259337b2d74b1fb3b46678c978d6ab3acdb401d462b13",
+      "outputs/2026-week8-postgame-audit/week8_ats_audit.csv": "74aa1c4b2766e8972f33fcba94cfa1241cdd09e90dabec61b6f89e5984b5791a",
+      "outputs/2026-week8-postgame-audit/week8_cohort_membership.csv": "5a8c7ac78e173e0dcefb48f1acdeb5bbb24d01db9ee5d1166b8ffb6ff59a56fc",
+      "outputs/2026-week8-postgame-audit/week8_diagnostics.json": "738fdaf68ab42c63e1630ac8ceee56a1821bcfc56e33fdeea0038bf7770f0d6a",
+      "outputs/2026-week8-postgame-audit/week8_final_results.csv": "5b885bf098485b7942b3f59d5bb6869520c0f703366e34a6be2b5872f955923e",
+      "outputs/2026-week8-postgame-audit/week8_postgame_report.md": "474b81b69aedca0b63d407a694313d815af297d27c710c06b853abc512509778",
+      "outputs/2026-week8-postgame-audit/week8_totals_audit.csv": "a7175b6aa042e424b5d78ec22c9f906fbbd9195cace1f622cb4503858735a1d5",
+      "outputs/2026-week9-context/20261028T1320Z/derived_context_board.json": "1348ca065f46d99e011fb6b6f179978849b7fa7402e0042e128e5055bcb140f1",
+      "outputs/2026-week9-context/20261028T2237Z/derived_context_board.json": "b96e6eb4ca6823611f3ef9e338b7757574d44163a38f094308ec14ce6bd6f03f",
+      "outputs/2026-week9-context/20261028T2310Z-thursday-gate/derived_context_board.json": "e71cd8b8cf106f7161e8f3104340aee68520d563eb7c2f7f63f03719fc7c908c",
+      "outputs/2026-week9-context/20261029T1147Z-thursday-gate/derived_context_board.json": "501896daf6621c0e6279e09266488c32b5d111018fe0866024e3d24004a582f9"
+    },
+    "matrix": [
+      {
+        "environment": "u3.11.17",
+        "exact_outputs": 21,
+        "full_environment": "ci/41101927943/u3.11.17/replay-diagnostics/comparison.json",
+        "math_log_probe": "-0x1.6d3c324e13f50p-2",
+        "platform": "Linux-7.0.0-1017-azure-x86_64-with-glibc2.43",
+        "python": "3.11.17 (main, Oct  1 2026, 14:33:19) [GCC 15.2.0]",
+        "research_custody": {
+          "exact_custody_checks": 419,
+          "historical_checkout_diagnosis_preserved": true,
+          "replayed_research_outputs": 10
+        },
+        "sum_probe": 0.0,
+        "tested_merge_sha": "3b944cea830a76bd000e278518e47734ab6ac331",
+        "tzdata_package": null,
+        "tzpath": [
+          "/usr/share/zoneinfo",
+          "/usr/lib/zoneinfo",
+          "/usr/share/lib/zoneinfo",
+          "/etc/zoneinfo"
+        ],
+        "week9_context_count": 4
+      },
+      {
+        "environment": "u3.12.14",
+        "exact_outputs": 21,
+        "full_environment": "ci/41101927943/u3.12.14/replay-diagnostics/comparison.json",
+        "math_log_probe": "-0x1.6d3c324e13f50p-2",
+        "platform": "Linux-7.0.0-1017-azure-x86_64-with-glibc2.43",
+        "python": "3.12.14 (main, Aug 13 2026, 02:45:55) [GCC 15.2.0]",
+        "research_custody": {
+          "exact_custody_checks": 419,
+          "historical_checkout_diagnosis_preserved": true,
+          "replayed_research_outputs": 10
+        },
+        "sum_probe": 1.0,
+        "tested_merge_sha": "3b944cea830a76bd000e278518e47734ab6ac331",
+        "tzdata_package": null,
+        "tzpath": [
+          "/usr/share/zoneinfo",
+          "/usr/lib/zoneinfo",
+          "/usr/share/lib/zoneinfo",
+          "/etc/zoneinfo"
+        ],
+        "week9_context_count": 4
+      },
+      {
+        "environment": "w3.11.9",
+        "exact_outputs": 21,
+        "full_environment": "ci/41101927943/w3.11.9/replay-diagnostics/comparison.json",
+        "math_log_probe": "-0x1.6d3c324e13f50p-2",
+        "platform": "Windows-10-10.0.26100-SP0",
+        "python": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+        "research_custody": {
+          "exact_custody_checks": 419,
+          "historical_checkout_diagnosis_preserved": true,
+          "replayed_research_outputs": 10
+        },
+        "sum_probe": 0.0,
+        "tested_merge_sha": "3b944cea830a76bd000e278518e47734ab6ac331",
+        "tzdata_package": "2026.6",
+        "tzpath": [],
+        "week9_context_count": 4
+      },
+      {
+        "environment": "w3.12.10",
+        "exact_outputs": 21,
+        "full_environment": "ci/41101927943/w3.12.10/replay-diagnostics/comparison.json",
+        "math_log_probe": "-0x1.6d3c324e13f50p-2",
+        "platform": "Windows-2025Server-10.0.26100-SP0",
+        "python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+        "research_custody": {
+          "exact_custody_checks": 419,
+          "historical_checkout_diagnosis_preserved": true,
+          "replayed_research_outputs": 10
+        },
+        "sum_probe": 1.0,
+        "tested_merge_sha": "3b944cea830a76bd000e278518e47734ab6ac331",
+        "tzdata_package": "2026.6",
+        "tzpath": [],
+        "week9_context_count": 4
+      }
+    ],
+    "run_id": 41101927943,
+    "source_sha": "9f310e1a3a1fd0412ca71f695ba5abd3ca71b6f3",
+    "url": "https://github.com/JCRABURN/cfb-betting-system-v3/actions/runs/41101927943"
+  }
+]

@@ -1,0 +1,147 @@
+{
+  "title": "OWNER-APPROVED-WEEK-7-CONTEST-FIVE-CORRECTED-V2",
+  "status": "OWNER APPROVED — CORRECTED SOURCE V2",
+  "approval_source": "Owner's explicit approval message in this Codex task; timestamp is earliest verifiable UTC receipt/observation, not a claimed earlier send time.",
+  "owner_approval_timestamp_utc": "2026-10-13T19:37:43Z",
+  "corrected_locked_card_sha256": "d9c3c8b517875743b1c78c1ff3a5f190f83bcdb570eff8449752a6cf9fdbd568",
+  "corrected_source_csv_sha256_raw": "0a3b81fd54de0f6497e547ae5b6e17f9aea47ec67bb3068cead4896244ac62b7",
+  "corrected_source_csv_sha256_canonical": "2c7c87d1c55156140de1249306856a0809a0b1632483041186e5d78ddd9a328f",
+  "corrected_v2_seal_sha256": "9c6c32c3d38d3fcac5a7fa8858221f5e8bf61095439147d65785048fdb41d783",
+  "corrected_model_research_commit_sha": "8afaf9ecd495abd9357fa2dcce6710e394abf9ae",
+  "approval_source_commit_sha": "d3ffcc24316af7deee7f9f0aebce9b46cb3fac80",
+  "original_approval_status": "SUPERSEDED — SOURCE LINE ERROR",
+  "original_owner_approved_artifact_sha256": "335d7753d6482025aeda6e72948f182c22c93cb65d6226fc401c88c5da63bfe7",
+  "prior_pending_candidate_sha256": "8231870ea5952a2f02f25e64d254b21367c14d54d3479acd6d48ef26eb0c23f0",
+  "selections": [
+    {
+      "rank": 1,
+      "game_id": 401864524,
+      "game": "UNLV @ Air Force",
+      "selection": "Air Force",
+      "correct_splashsports_locked_line": 1.5,
+      "market": "ATS",
+      "within_market_research_rank": 4,
+      "research_score_not_calibrated": 0.5551996986135361,
+      "model": {
+        "selected_edge_points": 11.039939722707235,
+        "projected_home_margin": 9.539939722707235
+      },
+      "human_confidence_1_to_5": 3,
+      "owner_approval_timestamp_utc": "2026-10-13T19:37:43Z",
+      "corrected_locked_card_sha256": "d9c3c8b517875743b1c78c1ff3a5f190f83bcdb570eff8449752a6cf9fdbd568",
+      "corrected_source_csv_sha256_raw": "0a3b81fd54de0f6497e547ae5b6e17f9aea47ec67bb3068cead4896244ac62b7",
+      "corrected_source_csv_sha256_canonical": "2c7c87d1c55156140de1249306856a0809a0b1632483041186e5d78ddd9a328f",
+      "screenshot_source": {
+        "path": "production-weeks/week7-screenshot-source-v2/Screenshot 2026-10-13 140904.png",
+        "sha256": "234290835001ab9c6ec48c245ea9e0a0c63606f6669e7c49aaae6636dec3801f",
+        "screenshot_row": 4
+      },
+      "corrected_model_research_commit_sha": "8afaf9ecd495abd9357fa2dcce6710e394abf9ae",
+      "approval_source_commit_sha": "d3ffcc24316af7deee7f9f0aebce9b46cb3fac80"
+    },
+    {
+      "rank": 2,
+      "game_id": 401858488,
+      "game": "Ohio State @ Indiana",
+      "selection": "Indiana",
+      "correct_splashsports_locked_line": 3.5,
+      "market": "ATS",
+      "within_market_research_rank": 5,
+      "research_score_not_calibrated": 0.5515779129315221,
+      "model": {
+        "selected_edge_points": 10.315582586304421,
+        "projected_home_margin": 6.815582586304421
+      },
+      "human_confidence_1_to_5": 3,
+      "owner_approval_timestamp_utc": "2026-10-13T19:37:43Z",
+      "corrected_locked_card_sha256": "d9c3c8b517875743b1c78c1ff3a5f190f83bcdb570eff8449752a6cf9fdbd568",
+      "corrected_source_csv_sha256_raw": "0a3b81fd54de0f6497e547ae5b6e17f9aea47ec67bb3068cead4896244ac62b7",
+      "corrected_source_csv_sha256_canonical": "2c7c87d1c55156140de1249306856a0809a0b1632483041186e5d78ddd9a328f",
+      "screenshot_source": {
+        "path": "production-weeks/week7-screenshot-source-v2/Screenshot 2026-10-13 140831.png",
+        "sha256": "ad65bef63fea48be864474d14086d9fec050159e13c9ee98e4eedf6edbd0304e",
+        "screenshot_row": 1
+      },
+      "corrected_model_research_commit_sha": "8afaf9ecd495abd9357fa2dcce6710e394abf9ae",
+      "approval_source_commit_sha": "d3ffcc24316af7deee7f9f0aebce9b46cb3fac80"
+    },
+    {
+      "rank": 3,
+      "game_id": 401869957,
+      "game": "Georgia State @ James Madison",
+      "selection": "Georgia State",
+      "correct_splashsports_locked_line": 12.5,
+      "market": "ATS",
+      "within_market_research_rank": 8,
+      "research_score_not_calibrated": 0.5482186510095988,
+      "model": {
+        "selected_edge_points": 9.643730201919748,
+        "projected_home_margin": 2.8562697980802523
+      },
+      "human_confidence_1_to_5": 3,
+      "owner_approval_timestamp_utc": "2026-10-13T19:37:43Z",
+      "corrected_locked_card_sha256": "d9c3c8b517875743b1c78c1ff3a5f190f83bcdb570eff8449752a6cf9fdbd568",
+      "corrected_source_csv_sha256_raw": "0a3b81fd54de0f6497e547ae5b6e17f9aea47ec67bb3068cead4896244ac62b7",
+      "corrected_source_csv_sha256_canonical": "2c7c87d1c55156140de1249306856a0809a0b1632483041186e5d78ddd9a328f",
+      "screenshot_source": {
+        "path": "production-weeks/week7-screenshot-source-v2/Screenshot 2026-10-13 140831.png",
+        "sha256": "ad65bef63fea48be864474d14086d9fec050159e13c9ee98e4eedf6edbd0304e",
+        "screenshot_row": 2
+      },
+      "corrected_model_research_commit_sha": "8afaf9ecd495abd9357fa2dcce6710e394abf9ae",
+      "approval_source_commit_sha": "d3ffcc24316af7deee7f9f0aebce9b46cb3fac80"
+    },
+    {
+      "rank": 4,
+      "game_id": 401858492,
+      "game": "Nebraska @ Oregon",
+      "selection": "Nebraska",
+      "correct_splashsports_locked_line": 7.5,
+      "market": "ATS",
+      "within_market_research_rank": 2,
+      "research_score_not_calibrated": 0.5645791524769297,
+      "model": {
+        "selected_edge_points": 12.915830495385926,
+        "projected_home_margin": -5.415830495385926
+      },
+      "human_confidence_1_to_5": 2,
+      "owner_approval_timestamp_utc": "2026-10-13T19:37:43Z",
+      "corrected_locked_card_sha256": "d9c3c8b517875743b1c78c1ff3a5f190f83bcdb570eff8449752a6cf9fdbd568",
+      "corrected_source_csv_sha256_raw": "0a3b81fd54de0f6497e547ae5b6e17f9aea47ec67bb3068cead4896244ac62b7",
+      "corrected_source_csv_sha256_canonical": "2c7c87d1c55156140de1249306856a0809a0b1632483041186e5d78ddd9a328f",
+      "screenshot_source": {
+        "path": "production-weeks/week7-screenshot-source-v2/Screenshot 2026-10-13 141004.png",
+        "sha256": "b0b074e17624dfb0f2214f4432b6ee351d934778e8ee829f8b90cf7158e420ae",
+        "screenshot_row": 7
+      },
+      "corrected_model_research_commit_sha": "8afaf9ecd495abd9357fa2dcce6710e394abf9ae",
+      "approval_source_commit_sha": "d3ffcc24316af7deee7f9f0aebce9b46cb3fac80"
+    },
+    {
+      "rank": 5,
+      "game_id": 401860923,
+      "game": "Colorado State @ Texas State",
+      "selection": "UNDER",
+      "correct_splashsports_locked_line": 69.5,
+      "market": "TOTAL",
+      "within_market_research_rank": 1,
+      "research_score_not_calibrated": 0.7281308061730213,
+      "model": {
+        "projected_total": 59.3449924707221,
+        "selected_total_gap_points": 10.155007529277903
+      },
+      "human_confidence_1_to_5": 2,
+      "owner_approval_timestamp_utc": "2026-10-13T19:37:43Z",
+      "corrected_locked_card_sha256": "d9c3c8b517875743b1c78c1ff3a5f190f83bcdb570eff8449752a6cf9fdbd568",
+      "corrected_source_csv_sha256_raw": "0a3b81fd54de0f6497e547ae5b6e17f9aea47ec67bb3068cead4896244ac62b7",
+      "corrected_source_csv_sha256_canonical": "2c7c87d1c55156140de1249306856a0809a0b1632483041186e5d78ddd9a328f",
+      "screenshot_source": {
+        "path": "production-weeks/week7-screenshot-source-v2/Screenshot 2026-10-13 140758.png",
+        "sha256": "a457ae53d69805393b137a37dd80bae885b2b53aa5da6318c968234e859b3ef7",
+        "screenshot_row": 7
+      },
+      "corrected_model_research_commit_sha": "8afaf9ecd495abd9357fa2dcce6710e394abf9ae",
+      "approval_source_commit_sha": "d3ffcc24316af7deee7f9f0aebce9b46cb3fac80"
+    }
+  ]
+}

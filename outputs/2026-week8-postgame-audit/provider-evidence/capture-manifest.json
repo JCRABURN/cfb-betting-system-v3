@@ -1,0 +1,490 @@
+{
+  "capture_status": "complete",
+  "season": 2026,
+  "week": 8,
+  "scoreboard": {
+    "provider": "ESPN",
+    "endpoint": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/scoreboard?year=2026&week=8&seasontype=2&groups=80&limit=300",
+    "retrieved_at_utc": "2026-10-28T03:08:53.627884+00:00",
+    "parser_version": "week8-postgame-v1",
+    "raw_sha256": "f0147ca6a31a0d103e7c5473c30fda04b2a99e0a2ef6f3c0aa9b57ff0770fc33",
+    "raw_bytes": 922967,
+    "stored_gzip_path": "outputs/2026-week8-postgame-audit/provider-evidence/espn-week8-scoreboard.json.gz"
+  },
+  "scoreboard_event_count": 56,
+  "locked_game_count": 52,
+  "summary_rows_accepted": 52,
+  "summary_rows_rejected": 0,
+  "rejection_reasons": [],
+  "summaries": [
+    {
+      "provider": "ESPN",
+      "endpoint": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401856727",
+      "retrieved_at_utc": "2026-10-28T03:08:53.709834+00:00",
+      "parser_version": "week8-postgame-v1",
+      "raw_sha256": "9f33feb719fcec2cb018a1c4e0246563ff2a439254f59d8a401dce2724fcd058",
+      "raw_bytes": 480647,
+      "stored_gzip_path": "outputs/2026-week8-postgame-audit/provider-evidence/espn-game-401856727.json.gz"
+    },
+    {
+      "provider": "ESPN",
+      "endpoint": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401856728",
+      "retrieved_at_utc": "2026-10-28T03:08:53.763794+00:00",
+      "parser_version": "week8-postgame-v1",
+      "raw_sha256": "bf85d8aae46da385de6ff0386e351dfe0b9b15c00a0d3ef66feb633a06ece723",
+      "raw_bytes": 505980,
+      "stored_gzip_path": "outputs/2026-week8-postgame-audit/provider-evidence/espn-game-401856728.json.gz"
+    },
+    {
+      "provider": "ESPN",
+      "endpoint": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401856729",
+      "retrieved_at_utc": "2026-10-28T03:08:53.779328+00:00",
+      "parser_version": "week8-postgame-v1",
+      "raw_sha256": "8cd531c790009ed932ea048a3b25075d918254e690a7dea70c44f39386d37beb",
+      "raw_bytes": 454107,
+      "stored_gzip_path": "outputs/2026-week8-postgame-audit/provider-evidence/espn-game-401856729.json.gz"
+    },
+    {
+      "provider": "ESPN",
+      "endpoint": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401856730",
+      "retrieved_at_utc": "2026-10-28T03:08:53.743213+00:00",
+      "parser_version": "week8-postgame-v1",
+      "raw_sha256": "2680162acd016c0e69c75e006abc6b3e5acff0afadc944774d2025f7de21895f",
+      "raw_bytes": 504135,
+      "stored_gzip_path": "outputs/2026-week8-postgame-audit/provider-evidence/espn-game-401856730.json.gz"
+    },
+    {
+      "provider": "ESPN",
+      "endpoint": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401856731",
+      "retrieved_at_utc": "2026-10-28T03:08:53.719467+00:00",
+      "parser_version": "week8-postgame-v1",
+      "raw_sha256": "e753bdedd1f82bdd8d695843e89299c6d7952e9c00f859f52378cfcad293be1a",
+      "raw_bytes": 506753,
+      "stored_gzip_path": "outputs/2026-week8-postgame-audit/provider-evidence/espn-game-401856731.json.gz"
+    },
+    {
+      "provider": "ESPN",
+      "endpoint": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401856732",
+      "retrieved_at_utc": "2026-10-28T03:08:53.715437+00:00",
+      "parser_version": "week8-postgame-v1",
+      "raw_sha256": "e3f3cae4f99ec536bc7a327036414c9557a4963c146b84fd37bf3fbd39dbe7f0",
+      "raw_bytes": 611511,
+      "stored_gzip_path": "outputs/2026-week8-postgame-audit/provider-evidence/espn-game-401856732.json.gz"
+    },
+    {
+      "provider": "ESPN",
+      "endpoint": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401856834",
+      "retrieved_at_utc": "2026-10-28T03:08:53.844590+00:00",
+      "parser_version": "week8-postgame-v1",
+      "raw_sha256": "86ebe2a76f4ac31d3da90541b1bca93709fc3024b2d68d8816e24d8f2f88d534",
+      "raw_bytes": 473037,
+      "stored_gzip_path": "outputs/2026-week8-postgame-audit/provider-evidence/espn-game-401856834.json.gz"
+    },
+    {
+      "provider": "ESPN",
+      "endpoint": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401856835",
+      "retrieved_at_utc": "2026-10-28T03:08:53.855967+00:00",
+      "parser_version": "week8-postgame-v1",
+      "raw_sha256": "89b8b77672fad1db1e79a92e0ba012e7d812fe1259549381048bc83fdc3ae054",
+      "raw_bytes": 496898,
+      "stored_gzip_path": "outputs/2026-week8-postgame-audit/provider-evidence/espn-game-401856835.json.gz"
+    },
+    {
+      "provider": "ESPN",
+      "endpoint": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401856836",
+      "retrieved_at_utc": "2026-10-28T03:08:53.865523+00:00",
+      "parser_version": "week8-postgame-v1",
+      "raw_sha256": "e6224a2087cb0a97feec08c023d9a9404ed6683a6d1a229118b927f98792f74f",
+      "raw_bytes": 518316,
+      "stored_gzip_path": "outputs/2026-week8-postgame-audit/provider-evidence/espn-game-401856836.json.gz"
+    },
+    {
+      "provider": "ESPN",
+      "endpoint": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401856837",
+      "retrieved_at_utc": "2026-10-28T03:08:53.859963+00:00",
+      "parser_version": "week8-postgame-v1",
+      "raw_sha256": "ca8b0f52f387b19e7aecc70e85a9eb2642d7752d092d21b1c4b994e71326f89e",
+      "raw_bytes": 466443,
+      "stored_gzip_path": "outputs/2026-week8-postgame-audit/provider-evidence/espn-game-401856837.json.gz"
+    },
+    {
+      "provider": "ESPN",
+      "endpoint": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401856838",
+      "retrieved_at_utc": "2026-10-28T03:08:53.913102+00:00",
+      "parser_version": "week8-postgame-v1",
+      "raw_sha256": "70075e6740a979824740b20ec48bdee964a10612c98d617c24bac3c8d7ca97b1",
+      "raw_bytes": 475567,
+      "stored_gzip_path": "outputs/2026-week8-postgame-audit/provider-evidence/espn-game-401856838.json.gz"
+    },
+    {
+      "provider": "ESPN",
+      "endpoint": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401856839",
+      "retrieved_at_utc": "2026-10-28T03:08:53.891839+00:00",
+      "parser_version": "week8-postgame-v1",
+      "raw_sha256": "a148fe75d1ec5992ed35327f12b8b38df1e3cfaa180b910c30c1ac36f693445b",
+      "raw_bytes": 498919,
+      "stored_gzip_path": "outputs/2026-week8-postgame-audit/provider-evidence/espn-game-401856839.json.gz"
+    },
+    {
+      "provider": "ESPN",
+      "endpoint": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401856840",
+      "retrieved_at_utc": "2026-10-28T03:08:53.999148+00:00",
+      "parser_version": "week8-postgame-v1",
+      "raw_sha256": "84eda13395eaac6c59d0e799628334ce3a5fc3e73f9a4cbe4b67e8948241d21c",
+      "raw_bytes": 525034,
+      "stored_gzip_path": "outputs/2026-week8-postgame-audit/provider-evidence/espn-game-401856840.json.gz"
+    },
+    {
+      "provider": "ESPN",
+      "endpoint": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401856841",
+      "retrieved_at_utc": "2026-10-28T03:08:54.046327+00:00",
+      "parser_version": "week8-postgame-v1",
+      "raw_sha256": "60927abdc01381d5bbb06ea9aa2158c7556fbbf88b56a06fc11cf86fe0c65497",
+      "raw_bytes": 481486,
+      "stored_gzip_path": "outputs/2026-week8-postgame-audit/provider-evidence/espn-game-401856841.json.gz"
+    },
+    {
+      "provider": "ESPN",
+      "endpoint": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401858270",
+      "retrieved_at_utc": "2026-10-28T03:08:54.030763+00:00",
+      "parser_version": "week8-postgame-v1",
+      "raw_sha256": "3b5c2c52bcb323bfb86d89a09068f3a257dda75eb2c2b00eab6df84b88ec2e1d",
+      "raw_bytes": 483768,
+      "stored_gzip_path": "outputs/2026-week8-postgame-audit/provider-evidence/espn-game-401858270.json.gz"
+    },
+    {
+      "provider": "ESPN",
+      "endpoint": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401858271",
+      "retrieved_at_utc": "2026-10-28T03:08:54.010448+00:00",
+      "parser_version": "week8-postgame-v1",
+      "raw_sha256": "5da9aa0f913dc6d41151abf8491d8f18648e785b23845b7a746eb970967fb30d",
+      "raw_bytes": 490073,
+      "stored_gzip_path": "outputs/2026-week8-postgame-audit/provider-evidence/espn-game-401858271.json.gz"
+    },
+    {
+      "provider": "ESPN",
+      "endpoint": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401858272",
+      "retrieved_at_utc": "2026-10-28T03:08:54.020026+00:00",
+      "parser_version": "week8-postgame-v1",
+      "raw_sha256": "f28f243230dd863019a8b8ddeb6462e35c4851c8d1c2db07f1e92a643309ea14",
+      "raw_bytes": 489225,
+      "stored_gzip_path": "outputs/2026-week8-postgame-audit/provider-evidence/espn-game-401858272.json.gz"
+    },
+    {
+      "provider": "ESPN",
+      "endpoint": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401858273",
+      "retrieved_at_utc": "2026-10-28T03:08:54.116177+00:00",
+      "parser_version": "week8-postgame-v1",
+      "raw_sha256": "f809c11e9e3b27735989061e3f9753e45c5cd0f7c9496dd4dca784d869e8d693",
+      "raw_bytes": 514540,
+      "stored_gzip_path": "outputs/2026-week8-postgame-audit/provider-evidence/espn-game-401858273.json.gz"
+    },
+    {
+      "provider": "ESPN",
+      "endpoint": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401858274",
+      "retrieved_at_utc": "2026-10-28T03:08:54.195382+00:00",
+      "parser_version": "week8-postgame-v1",
+      "raw_sha256": "99146ae8e7b055e60b845339ec68880dda95a51696f7a27acdf70ca401ba461d",
+      "raw_bytes": 540154,
+      "stored_gzip_path": "outputs/2026-week8-postgame-audit/provider-evidence/espn-game-401858274.json.gz"
+    },
+    {
+      "provider": "ESPN",
+      "endpoint": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401858275",
+      "retrieved_at_utc": "2026-10-28T03:08:54.366467+00:00",
+      "parser_version": "week8-postgame-v1",
+      "raw_sha256": "b32bc59f7c3744c5229f2949fc060c15eac67da4f7cd43d9e21c14a24110628b",
+      "raw_bytes": 534092,
+      "stored_gzip_path": "outputs/2026-week8-postgame-audit/provider-evidence/espn-game-401858275.json.gz"
+    },
+    {
+      "provider": "ESPN",
+      "endpoint": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401858276",
+      "retrieved_at_utc": "2026-10-28T03:08:54.212101+00:00",
+      "parser_version": "week8-postgame-v1",
+      "raw_sha256": "2450c472598c7c3a08e57d7160ad8f62815a0de810f158506a5768f806dcdd1c",
+      "raw_bytes": 471329,
+      "stored_gzip_path": "outputs/2026-week8-postgame-audit/provider-evidence/espn-game-401858276.json.gz"
+    },
+    {
+      "provider": "ESPN",
+      "endpoint": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401858495",
+      "retrieved_at_utc": "2026-10-28T03:08:54.218068+00:00",
+      "parser_version": "week8-postgame-v1",
+      "raw_sha256": "02cc7a6ad6898525906baa9fa05d956c068d4535b68723ca4185949b079e2078",
+      "raw_bytes": 474319,
+      "stored_gzip_path": "outputs/2026-week8-postgame-audit/provider-evidence/espn-game-401858495.json.gz"
+    },
+    {
+      "provider": "ESPN",
+      "endpoint": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401858496",
+      "retrieved_at_utc": "2026-10-28T03:08:54.306066+00:00",
+      "parser_version": "week8-postgame-v1",
+      "raw_sha256": "f3246d7a900039bc6cc02d9914898f86844a86524feaba4a46797833f345a0fa",
+      "raw_bytes": 441651,
+      "stored_gzip_path": "outputs/2026-week8-postgame-audit/provider-evidence/espn-game-401858496.json.gz"
+    },
+    {
+      "provider": "ESPN",
+      "endpoint": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401858497",
+      "retrieved_at_utc": "2026-10-28T03:08:54.284471+00:00",
+      "parser_version": "week8-postgame-v1",
+      "raw_sha256": "1b8ac9b27b73d491b837aad1573ab41bbf424738970dcc4c3f5fea89256f45e1",
+      "raw_bytes": 451900,
+      "stored_gzip_path": "outputs/2026-week8-postgame-audit/provider-evidence/espn-game-401858497.json.gz"
+    },
+    {
+      "provider": "ESPN",
+      "endpoint": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401858498",
+      "retrieved_at_utc": "2026-10-28T03:08:54.346115+00:00",
+      "parser_version": "week8-postgame-v1",
+      "raw_sha256": "0f9684f095b430067e30471a332c7d0c5e960c5a01ca2b97396348ca5a8da88e",
+      "raw_bytes": 427903,
+      "stored_gzip_path": "outputs/2026-week8-postgame-audit/provider-evidence/espn-game-401858498.json.gz"
+    },
+    {
+      "provider": "ESPN",
+      "endpoint": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401858499",
+      "retrieved_at_utc": "2026-10-28T03:08:54.356649+00:00",
+      "parser_version": "week8-postgame-v1",
+      "raw_sha256": "351d8a8d8ffc61caf310108be35aa158987b87511b9b624ad7041a4a6da20c24",
+      "raw_bytes": 478893,
+      "stored_gzip_path": "outputs/2026-week8-postgame-audit/provider-evidence/espn-game-401858499.json.gz"
+    },
+    {
+      "provider": "ESPN",
+      "endpoint": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401858500",
+      "retrieved_at_utc": "2026-10-28T03:08:54.371962+00:00",
+      "parser_version": "week8-postgame-v1",
+      "raw_sha256": "8087acb175b953fc6dd9e3b09e1e38313658830ec7f602e16f9f9042592cf8cc",
+      "raw_bytes": 400183,
+      "stored_gzip_path": "outputs/2026-week8-postgame-audit/provider-evidence/espn-game-401858500.json.gz"
+    },
+    {
+      "provider": "ESPN",
+      "endpoint": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401860905",
+      "retrieved_at_utc": "2026-10-28T03:08:54.418021+00:00",
+      "parser_version": "week8-postgame-v1",
+      "raw_sha256": "dc94ea335526d5740b5b817dd0c28482f320df9517079852e6dc265a63428ef8",
+      "raw_bytes": 492982,
+      "stored_gzip_path": "outputs/2026-week8-postgame-audit/provider-evidence/espn-game-401860905.json.gz"
+    },
+    {
+      "provider": "ESPN",
+      "endpoint": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401860906",
+      "retrieved_at_utc": "2026-10-28T03:08:54.461891+00:00",
+      "parser_version": "week8-postgame-v1",
+      "raw_sha256": "e0b6bbb87193c2db3e29617a5307b623cd26498753d820c1d023825931db1701",
+      "raw_bytes": 461612,
+      "stored_gzip_path": "outputs/2026-week8-postgame-audit/provider-evidence/espn-game-401860906.json.gz"
+    },
+    {
+      "provider": "ESPN",
+      "endpoint": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401860907",
+      "retrieved_at_utc": "2026-10-28T03:08:54.481913+00:00",
+      "parser_version": "week8-postgame-v1",
+      "raw_sha256": "f6ed4de0f8ac36e8efb0c4ca66633ee31f4d3b945ebbcc789ee44c7fefb96b7a",
+      "raw_bytes": 403939,
+      "stored_gzip_path": "outputs/2026-week8-postgame-audit/provider-evidence/espn-game-401860907.json.gz"
+    },
+    {
+      "provider": "ESPN",
+      "endpoint": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401861965",
+      "retrieved_at_utc": "2026-10-28T03:08:54.590507+00:00",
+      "parser_version": "week8-postgame-v1",
+      "raw_sha256": "da84a08eaae36476adf42152e848a0511dbff4a4b674d72702a3f0010cfae730",
+      "raw_bytes": 483498,
+      "stored_gzip_path": "outputs/2026-week8-postgame-audit/provider-evidence/espn-game-401861965.json.gz"
+    },
+    {
+      "provider": "ESPN",
+      "endpoint": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401862807",
+      "retrieved_at_utc": "2026-10-28T03:08:54.583490+00:00",
+      "parser_version": "week8-postgame-v1",
+      "raw_sha256": "421e8716e59bdd3b74ba56771eced1613d942518cf9f8309dfbc8564c01c15f0",
+      "raw_bytes": 593323,
+      "stored_gzip_path": "outputs/2026-week8-postgame-audit/provider-evidence/espn-game-401862807.json.gz"
+    },
+    {
+      "provider": "ESPN",
+      "endpoint": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401862808",
+      "retrieved_at_utc": "2026-10-28T03:08:54.488304+00:00",
+      "parser_version": "week8-postgame-v1",
+      "raw_sha256": "6598e541b0b64264c5bd14f8b885a621b1da8ce846a908e02252d071b40488b3",
+      "raw_bytes": 509856,
+      "stored_gzip_path": "outputs/2026-week8-postgame-audit/provider-evidence/espn-game-401862808.json.gz"
+    },
+    {
+      "provider": "ESPN",
+      "endpoint": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401862809",
+      "retrieved_at_utc": "2026-10-28T03:08:54.579979+00:00",
+      "parser_version": "week8-postgame-v1",
+      "raw_sha256": "48961a9ab0150cee6f33a69e3550229499bdafc460e79b747dfe485ec4f6b2e4",
+      "raw_bytes": 542865,
+      "stored_gzip_path": "outputs/2026-week8-postgame-audit/provider-evidence/espn-game-401862809.json.gz"
+    },
+    {
+      "provider": "ESPN",
+      "endpoint": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401862810",
+      "retrieved_at_utc": "2026-10-28T03:08:54.630078+00:00",
+      "parser_version": "week8-postgame-v1",
+      "raw_sha256": "24be512105779c507eb2130ce6cfcf3e40b7b7990ebb6ff92e531cb63e8624bd",
+      "raw_bytes": 454362,
+      "stored_gzip_path": "outputs/2026-week8-postgame-audit/provider-evidence/espn-game-401862810.json.gz"
+    },
+    {
+      "provider": "ESPN",
+      "endpoint": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401862811",
+      "retrieved_at_utc": "2026-10-28T03:08:54.918420+00:00",
+      "parser_version": "week8-postgame-v1",
+      "raw_sha256": "41d33f64403b342e7f059078bceda67c07763a7572b5550fdd6a32152d585185",
+      "raw_bytes": 516089,
+      "stored_gzip_path": "outputs/2026-week8-postgame-audit/provider-evidence/espn-game-401862811.json.gz"
+    },
+    {
+      "provider": "ESPN",
+      "endpoint": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401864525",
+      "retrieved_at_utc": "2026-10-28T03:08:54.890238+00:00",
+      "parser_version": "week8-postgame-v1",
+      "raw_sha256": "6e153ac2598094463955769ef4fb2d748108e81f953642bfc181dc295da60e18",
+      "raw_bytes": 385558,
+      "stored_gzip_path": "outputs/2026-week8-postgame-audit/provider-evidence/espn-game-401864525.json.gz"
+    },
+    {
+      "provider": "ESPN",
+      "endpoint": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401864526",
+      "retrieved_at_utc": "2026-10-28T03:08:54.795216+00:00",
+      "parser_version": "week8-postgame-v1",
+      "raw_sha256": "92add97e122587c20437d674f15fc2100731a5a5a2f8397941c6af9336f9e2a3",
+      "raw_bytes": 431907,
+      "stored_gzip_path": "outputs/2026-week8-postgame-audit/provider-evidence/espn-game-401864526.json.gz"
+    },
+    {
+      "provider": "ESPN",
+      "endpoint": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401864527",
+      "retrieved_at_utc": "2026-10-28T03:08:54.767163+00:00",
+      "parser_version": "week8-postgame-v1",
+      "raw_sha256": "b4ac5898080e31efdd66e5978977051ecb683dcce0f8c6d1405f1dbf1030dd77",
+      "raw_bytes": 437775,
+      "stored_gzip_path": "outputs/2026-week8-postgame-audit/provider-evidence/espn-game-401864527.json.gz"
+    },
+    {
+      "provider": "ESPN",
+      "endpoint": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401864528",
+      "retrieved_at_utc": "2026-10-28T03:08:54.774923+00:00",
+      "parser_version": "week8-postgame-v1",
+      "raw_sha256": "39b5c396474c292470e29fa947e7d993ca6cfee5c8d0b44ca5f727d84655db49",
+      "raw_bytes": 451334,
+      "stored_gzip_path": "outputs/2026-week8-postgame-audit/provider-evidence/espn-game-401864528.json.gz"
+    },
+    {
+      "provider": "ESPN",
+      "endpoint": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401866446",
+      "retrieved_at_utc": "2026-10-28T03:08:54.810641+00:00",
+      "parser_version": "week8-postgame-v1",
+      "raw_sha256": "256cdd11318106eac8895203a5305da16ec7828608210c26e2d2fec49a503f19",
+      "raw_bytes": 480575,
+      "stored_gzip_path": "outputs/2026-week8-postgame-audit/provider-evidence/espn-game-401866446.json.gz"
+    },
+    {
+      "provider": "ESPN",
+      "endpoint": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401866447",
+      "retrieved_at_utc": "2026-10-28T03:08:55.031833+00:00",
+      "parser_version": "week8-postgame-v1",
+      "raw_sha256": "6c70056e5268dfbb46674d46996d3116e02d07624ddab4e975dbe3e7d9c1557d",
+      "raw_bytes": 489068,
+      "stored_gzip_path": "outputs/2026-week8-postgame-audit/provider-evidence/espn-game-401866447.json.gz"
+    },
+    {
+      "provider": "ESPN",
+      "endpoint": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401866448",
+      "retrieved_at_utc": "2026-10-28T03:08:54.923953+00:00",
+      "parser_version": "week8-postgame-v1",
+      "raw_sha256": "4992fe6da571f3b081345069d99a709ad6491b054aab61e7724e883e7180c288",
+      "raw_bytes": 466636,
+      "stored_gzip_path": "outputs/2026-week8-postgame-audit/provider-evidence/espn-game-401866448.json.gz"
+    },
+    {
+      "provider": "ESPN",
+      "endpoint": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401866449",
+      "retrieved_at_utc": "2026-10-28T03:08:54.931964+00:00",
+      "parser_version": "week8-postgame-v1",
+      "raw_sha256": "921cf59b0ad9e1190d1bf1a326bd2a10bedb488d0a869d90d875a4ded225f07c",
+      "raw_bytes": 480949,
+      "stored_gzip_path": "outputs/2026-week8-postgame-audit/provider-evidence/espn-game-401866449.json.gz"
+    },
+    {
+      "provider": "ESPN",
+      "endpoint": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401866450",
+      "retrieved_at_utc": "2026-10-28T03:08:54.958886+00:00",
+      "parser_version": "week8-postgame-v1",
+      "raw_sha256": "ce5dd4bbe6709303463db3121ec36681589b1d46a182fb636435e8f5aacb2926",
+      "raw_bytes": 510425,
+      "stored_gzip_path": "outputs/2026-week8-postgame-audit/provider-evidence/espn-game-401866450.json.gz"
+    },
+    {
+      "provider": "ESPN",
+      "endpoint": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401866476",
+      "retrieved_at_utc": "2026-10-28T03:08:55.010471+00:00",
+      "parser_version": "week8-postgame-v1",
+      "raw_sha256": "57a096f6a1c8047b8f9ad9134766fb509f4799cb7af0e9d590e406d20b61bdbf",
+      "raw_bytes": 493651,
+      "stored_gzip_path": "outputs/2026-week8-postgame-audit/provider-evidence/espn-game-401866476.json.gz"
+    },
+    {
+      "provider": "ESPN",
+      "endpoint": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401869845",
+      "retrieved_at_utc": "2026-10-28T03:08:55.115016+00:00",
+      "parser_version": "week8-postgame-v1",
+      "raw_sha256": "a2bb36c336341d9a81fe26556f25c69e669bf08205d8bb225ff23a03c57c5b1f",
+      "raw_bytes": 597530,
+      "stored_gzip_path": "outputs/2026-week8-postgame-audit/provider-evidence/espn-game-401869845.json.gz"
+    },
+    {
+      "provider": "ESPN",
+      "endpoint": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401869935",
+      "retrieved_at_utc": "2026-10-28T03:08:55.020112+00:00",
+      "parser_version": "week8-postgame-v1",
+      "raw_sha256": "ce58548f5908ef54135c0aa7e7a123b16a39b8ccd3f52e4c74ed704310a3f05e",
+      "raw_bytes": 501295,
+      "stored_gzip_path": "outputs/2026-week8-postgame-audit/provider-evidence/espn-game-401869935.json.gz"
+    },
+    {
+      "provider": "ESPN",
+      "endpoint": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401869967",
+      "retrieved_at_utc": "2026-10-28T03:08:55.038110+00:00",
+      "parser_version": "week8-postgame-v1",
+      "raw_sha256": "edf24e8dd9a968b1b9d6d4949890f2f6b9344a0ec720774f4914e22c06d21567",
+      "raw_bytes": 564102,
+      "stored_gzip_path": "outputs/2026-week8-postgame-audit/provider-evidence/espn-game-401869967.json.gz"
+    },
+    {
+      "provider": "ESPN",
+      "endpoint": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401871056",
+      "retrieved_at_utc": "2026-10-28T03:08:55.103946+00:00",
+      "parser_version": "week8-postgame-v1",
+      "raw_sha256": "d392daf4fe819eea260bf7ffbd5106a85080c3468680a5beeb974a6060eae621",
+      "raw_bytes": 437752,
+      "stored_gzip_path": "outputs/2026-week8-postgame-audit/provider-evidence/espn-game-401871056.json.gz"
+    },
+    {
+      "provider": "ESPN",
+      "endpoint": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401871093",
+      "retrieved_at_utc": "2026-10-28T03:08:55.170305+00:00",
+      "parser_version": "week8-postgame-v1",
+      "raw_sha256": "60a9de7cfe67c4c116a9915b6c35b16faa022e1e9784106eccc0287d88a5df19",
+      "raw_bytes": 456413,
+      "stored_gzip_path": "outputs/2026-week8-postgame-audit/provider-evidence/espn-game-401871093.json.gz"
+    },
+    {
+      "provider": "ESPN",
+      "endpoint": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401871094",
+      "retrieved_at_utc": "2026-10-28T03:08:55.224122+00:00",
+      "parser_version": "week8-postgame-v1",
+      "raw_sha256": "0118513be48304bf3b7cb7cc696f3875c6673740d2cc8194993b0de5ca3cd233",
+      "raw_bytes": 496417,
+      "stored_gzip_path": "outputs/2026-week8-postgame-audit/provider-evidence/espn-game-401871094.json.gz"
+    }
+  ],
+  "limitation": "Scoreboard and summaries are two endpoints from one provider, not independent providers."
+}

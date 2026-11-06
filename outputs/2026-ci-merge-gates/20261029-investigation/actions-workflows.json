@@ -1,0 +1,95 @@
+{
+  "endpoint": "actions/workflows",
+  "requested_at_utc": "2026-10-29T21:38:50.565045+00:00",
+  "received_at_utc": "2026-10-29T21:38:50.902753+00:00",
+  "http_status": 200,
+  "body": {
+    "total_count": 7,
+    "workflows": [
+      {
+        "id": 328094886,
+        "node_id": "W_kwDOTt4-As4TjlSm",
+        "name": "Pull Request Tests",
+        "path": ".github/workflows/ci.yml",
+        "state": "active",
+        "created_at": "2026-08-05T14:25:08.000-05:00",
+        "updated_at": "2026-08-05T14:25:08.000-05:00",
+        "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3/actions/workflows/328094886",
+        "html_url": "https://github.com/JCRABURN/cfb-betting-system-v3/blob/main/.github/workflows/ci.yml",
+        "badge_url": "https://github.com/JCRABURN/cfb-betting-system-v3/workflows/Pull%20Request%20Tests/badge.svg"
+      },
+      {
+        "id": 327189312,
+        "node_id": "W_kwDOTt4-As4TgINA",
+        "name": "Midweek Line Pull",
+        "path": ".github/workflows/midweek_line_pull.yml",
+        "state": "active",
+        "created_at": "2026-08-04T12:03:44.000-05:00",
+        "updated_at": "2026-08-04T12:03:44.000-05:00",
+        "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3/actions/workflows/327189312",
+        "html_url": "https://github.com/JCRABURN/cfb-betting-system-v3/blob/main/.github/workflows/midweek_line_pull.yml",
+        "badge_url": "https://github.com/JCRABURN/cfb-betting-system-v3/workflows/Midweek%20Line%20Pull/badge.svg"
+      },
+      {
+        "id": 327189314,
+        "node_id": "W_kwDOTt4-As4TgINC",
+        "name": "Post-Game Audit",
+        "path": ".github/workflows/post_game_audit.yml",
+        "state": "active",
+        "created_at": "2026-08-04T12:03:44.000-05:00",
+        "updated_at": "2026-08-04T12:03:44.000-05:00",
+        "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3/actions/workflows/327189314",
+        "html_url": "https://github.com/JCRABURN/cfb-betting-system-v3/blob/main/.github/workflows/post_game_audit.yml",
+        "badge_url": "https://github.com/JCRABURN/cfb-betting-system-v3/workflows/Post-Game%20Audit/badge.svg"
+      },
+      {
+        "id": 339530568,
+        "node_id": "W_kwDOTt4-As4UPNNI",
+        "name": "V3 Managed Database Setup Gate",
+        "path": ".github/workflows/v3_cloud_database_setup.yml",
+        "state": "active",
+        "created_at": "2026-08-21T11:29:43.000-05:00",
+        "updated_at": "2026-08-21T11:29:43.000-05:00",
+        "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3/actions/workflows/339530568",
+        "html_url": "https://github.com/JCRABURN/cfb-betting-system-v3/blob/main/.github/workflows/v3_cloud_database_setup.yml",
+        "badge_url": "https://github.com/JCRABURN/cfb-betting-system-v3/workflows/V3%20Managed%20Database%20Setup%20Gate/badge.svg"
+      },
+      {
+        "id": 337926765,
+        "node_id": "W_kwDOTt4-As4UJFpt",
+        "name": "V3 Production Operations Gate",
+        "path": ".github/workflows/v3_production_operations.yml",
+        "state": "active",
+        "created_at": "2026-08-19T10:47:53.000-05:00",
+        "updated_at": "2026-08-19T10:47:53.000-05:00",
+        "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3/actions/workflows/337926765",
+        "html_url": "https://github.com/JCRABURN/cfb-betting-system-v3/blob/main/.github/workflows/v3_production_operations.yml",
+        "badge_url": "https://github.com/JCRABURN/cfb-betting-system-v3/workflows/V3%20Production%20Operations%20Gate/badge.svg"
+      },
+      {
+        "id": 341565576,
+        "node_id": "W_kwDOTt4-As4UW-CI",
+        "name": "V3 Controlled Live-Week Shadow Rehearsal",
+        "path": ".github/workflows/v3_shadow_rehearsal.yml",
+        "state": "active",
+        "created_at": "2026-08-24T15:45:39.000-05:00",
+        "updated_at": "2026-08-24T15:45:39.000-05:00",
+        "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3/actions/workflows/341565576",
+        "html_url": "https://github.com/JCRABURN/cfb-betting-system-v3/blob/main/.github/workflows/v3_shadow_rehearsal.yml",
+        "badge_url": "https://github.com/JCRABURN/cfb-betting-system-v3/workflows/V3%20Controlled%20Live-Week%20Shadow%20Rehearsal/badge.svg"
+      },
+      {
+        "id": 327189316,
+        "node_id": "W_kwDOTt4-As4TgINE",
+        "name": "Weekly CFB Betting Report",
+        "path": ".github/workflows/weekly_report.yml",
+        "state": "active",
+        "created_at": "2026-08-04T12:03:44.000-05:00",
+        "updated_at": "2026-08-04T12:03:44.000-05:00",
+        "url": "https://api.github.com/repos/JCRABURN/cfb-betting-system-v3/actions/workflows/327189316",
+        "html_url": "https://github.com/JCRABURN/cfb-betting-system-v3/blob/main/.github/workflows/weekly_report.yml",
+        "badge_url": "https://github.com/JCRABURN/cfb-betting-system-v3/workflows/Weekly%20CFB%20Betting%20Report/badge.svg"
+      }
+    ]
+  }
+}

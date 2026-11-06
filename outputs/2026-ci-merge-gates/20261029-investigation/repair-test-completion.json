@@ -1,0 +1,17 @@
+{
+  "tested_commit": "6cefac6402799daf964b5d1175145ba26a83b853",
+  "started_at_utc": "2026-10-29T21:50:28.041489+00:00",
+  "cwd": "C:\\Users\\jraburn\\Documents\\GitHub\\cfb-betting-system-v3\\.worktrees\\ci-merge-gates",
+  "command": [
+    "C:/Users/jraburn/Documents/GitHub/cfb-betting-system-v3/.venv/Scripts/python.exe",
+    "-m",
+    "pytest",
+    "-q"
+  ],
+  "tracked_diff_before": "",
+  "completed_at_utc": "2026-10-29T21:53:14.868181+00:00",
+  "head_after": "6cefac6402799daf964b5d1175145ba26a83b853",
+  "exit_code": 0,
+  "tracked_diff_after": "",
+  "log_sha256": "94bef87b94339b4e656ad04a08fbeb7d3af023faaf94b6b2d62cecf32914bb57"
+}

@@ -1,0 +1,14 @@
+{
+  "correction_version": "week7-approval-identification-v1",
+  "original_artifact": "outputs/2026-week7-owner-review/OWNER-APPROVED-WEEK-7-CONTEST-FIVE-CORRECTED-V2.json",
+  "original_artifact_sha256": "31dd412b3e6c16f3f871e4dc0276c3b2c84c2faae95715ac20eb39d648042568",
+  "original_field": "approval_source_commit_sha",
+  "original_field_value": "d3ffcc24316af7deee7f9f0aebce9b46cb3fac80",
+  "original_field_meaning": "Parent/pending-card code context; does not contain the approval artifact",
+  "approval_containing_commit": "cfbe724fc9687dea24bd50409bcc4a4c2214aec4",
+  "approval_containing_commit_time_utc": "2026-10-13T19:46:07Z",
+  "approval_recorded_at_utc": "2026-10-13T19:37:43Z",
+  "first_lined_kickoff_utc": "2026-10-13T23:00:00Z",
+  "historical_artifact_modified": false,
+  "reason": "Disambiguate approval custody from the parent code context while retaining the original field and hash. Verify with git log --diff-filter=A --follow -- <original_artifact>."
+}

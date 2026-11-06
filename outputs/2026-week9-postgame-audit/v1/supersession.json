@@ -1,0 +1,1309 @@
+{
+  "baseline_commit": "190c8949edcf8da806908b567d4daa59b605f1cd",
+  "baseline_status": "PRELIMINARY_SECONDARY_SCOREBOARD_ONLY_NOT_FORMAL_AUDIT",
+  "disposition": "ADDITIVE_INDEPENDENT_RECONCILIATION",
+  "games": 54,
+  "grade_discrepancy_count": 0,
+  "grade_reconciliations": [
+    {
+      "game_id": "401856733",
+      "independent_grade": "LOSS",
+      "market": "ATS",
+      "matches": {
+        "cover": true,
+        "forecast_error_to_preliminary_six_decimals": true,
+        "grade": true,
+        "line": true
+      },
+      "preliminary_grade": "LOSS"
+    },
+    {
+      "game_id": "401856734",
+      "independent_grade": "LOSS",
+      "market": "ATS",
+      "matches": {
+        "cover": true,
+        "forecast_error_to_preliminary_six_decimals": true,
+        "grade": true,
+        "line": true
+      },
+      "preliminary_grade": "LOSS"
+    },
+    {
+      "game_id": "401856735",
+      "independent_grade": "LOSS",
+      "market": "ATS",
+      "matches": {
+        "cover": true,
+        "forecast_error_to_preliminary_six_decimals": true,
+        "grade": true,
+        "line": true
+      },
+      "preliminary_grade": "LOSS"
+    },
+    {
+      "game_id": "401856736",
+      "independent_grade": "WIN",
+      "market": "ATS",
+      "matches": {
+        "cover": true,
+        "forecast_error_to_preliminary_six_decimals": true,
+        "grade": true,
+        "line": true
+      },
+      "preliminary_grade": "WIN"
+    },
+    {
+      "game_id": "401856737",
+      "independent_grade": "LOSS",
+      "market": "ATS",
+      "matches": {
+        "cover": true,
+        "forecast_error_to_preliminary_six_decimals": true,
+        "grade": true,
+        "line": true
+      },
+      "preliminary_grade": "LOSS"
+    },
+    {
+      "game_id": "401856842",
+      "independent_grade": "LOSS",
+      "market": "ATS",
+      "matches": {
+        "cover": true,
+        "forecast_error_to_preliminary_six_decimals": true,
+        "grade": true,
+        "line": true
+      },
+      "preliminary_grade": "LOSS"
+    },
+    {
+      "game_id": "401856843",
+      "independent_grade": "WIN",
+      "market": "ATS",
+      "matches": {
+        "cover": true,
+        "forecast_error_to_preliminary_six_decimals": true,
+        "grade": true,
+        "line": true
+      },
+      "preliminary_grade": "WIN"
+    },
+    {
+      "game_id": "401856844",
+      "independent_grade": "WIN",
+      "market": "ATS",
+      "matches": {
+        "cover": true,
+        "forecast_error_to_preliminary_six_decimals": true,
+        "grade": true,
+        "line": true
+      },
+      "preliminary_grade": "WIN"
+    },
+    {
+      "game_id": "401856845",
+      "independent_grade": "WIN",
+      "market": "ATS",
+      "matches": {
+        "cover": true,
+        "forecast_error_to_preliminary_six_decimals": true,
+        "grade": true,
+        "line": true
+      },
+      "preliminary_grade": "WIN"
+    },
+    {
+      "game_id": "401856846",
+      "independent_grade": "WIN",
+      "market": "ATS",
+      "matches": {
+        "cover": true,
+        "forecast_error_to_preliminary_six_decimals": true,
+        "grade": true,
+        "line": true
+      },
+      "preliminary_grade": "WIN"
+    },
+    {
+      "game_id": "401856847",
+      "independent_grade": "WIN",
+      "market": "ATS",
+      "matches": {
+        "cover": true,
+        "forecast_error_to_preliminary_six_decimals": true,
+        "grade": true,
+        "line": true
+      },
+      "preliminary_grade": "WIN"
+    },
+    {
+      "game_id": "401856848",
+      "independent_grade": "LOSS",
+      "market": "ATS",
+      "matches": {
+        "cover": true,
+        "forecast_error_to_preliminary_six_decimals": true,
+        "grade": true,
+        "line": true
+      },
+      "preliminary_grade": "LOSS"
+    },
+    {
+      "game_id": "401858277",
+      "independent_grade": "WIN",
+      "market": "ATS",
+      "matches": {
+        "cover": true,
+        "forecast_error_to_preliminary_six_decimals": true,
+        "grade": true,
+        "line": true
+      },
+      "preliminary_grade": "WIN"
+    },
+    {
+      "game_id": "401858278",
+      "independent_grade": "WIN",
+      "market": "ATS",
+      "matches": {
+        "cover": true,
+        "forecast_error_to_preliminary_six_decimals": true,
+        "grade": true,
+        "line": true
+      },
+      "preliminary_grade": "WIN"
+    },
+    {
+      "game_id": "401858279",
+      "independent_grade": "WIN",
+      "market": "ATS",
+      "matches": {
+        "cover": true,
+        "forecast_error_to_preliminary_six_decimals": true,
+        "grade": true,
+        "line": true
+      },
+      "preliminary_grade": "WIN"
+    },
+    {
+      "game_id": "401858280",
+      "independent_grade": "WIN",
+      "market": "ATS",
+      "matches": {
+        "cover": true,
+        "forecast_error_to_preliminary_six_decimals": true,
+        "grade": true,
+        "line": true
+      },
+      "preliminary_grade": "WIN"
+    },
+    {
+      "game_id": "401858281",
+      "independent_grade": "WIN",
+      "market": "ATS",
+      "matches": {
+        "cover": true,
+        "forecast_error_to_preliminary_six_decimals": true,
+        "grade": true,
+        "line": true
+      },
+      "preliminary_grade": "WIN"
+    },
+    {
+      "game_id": "401858282",
+      "independent_grade": "WIN",
+      "market": "ATS",
+      "matches": {
+        "cover": true,
+        "forecast_error_to_preliminary_six_decimals": true,
+        "grade": true,
+        "line": true
+      },
+      "preliminary_grade": "WIN"
+    },
+    {
+      "game_id": "401858283",
+      "independent_grade": "LOSS",
+      "market": "ATS",
+      "matches": {
+        "cover": true,
+        "forecast_error_to_preliminary_six_decimals": true,
+        "grade": true,
+        "line": true
+      },
+      "preliminary_grade": "LOSS"
+    },
+    {
+      "game_id": "401858284",
+      "independent_grade": "LOSS",
+      "market": "ATS",
+      "matches": {
+        "cover": true,
+        "forecast_error_to_preliminary_six_decimals": true,
+        "grade": true,
+        "line": true
+      },
+      "preliminary_grade": "LOSS"
+    },
+    {
+      "game_id": "401858501",
+      "independent_grade": "WIN",
+      "market": "ATS",
+      "matches": {
+        "cover": true,
+        "forecast_error_to_preliminary_six_decimals": true,
+        "grade": true,
+        "line": true
+      },
+      "preliminary_grade": "WIN"
+    },
+    {
+      "game_id": "401858502",
+      "independent_grade": "LOSS",
+      "market": "ATS",
+      "matches": {
+        "cover": true,
+        "forecast_error_to_preliminary_six_decimals": true,
+        "grade": true,
+        "line": true
+      },
+      "preliminary_grade": "LOSS"
+    },
+    {
+      "game_id": "401858503",
+      "independent_grade": "LOSS",
+      "market": "ATS",
+      "matches": {
+        "cover": true,
+        "forecast_error_to_preliminary_six_decimals": true,
+        "grade": true,
+        "line": true
+      },
+      "preliminary_grade": "LOSS"
+    },
+    {
+      "game_id": "401858504",
+      "independent_grade": "LOSS",
+      "market": "ATS",
+      "matches": {
+        "cover": true,
+        "forecast_error_to_preliminary_six_decimals": true,
+        "grade": true,
+        "line": true
+      },
+      "preliminary_grade": "LOSS"
+    },
+    {
+      "game_id": "401858505",
+      "independent_grade": "LOSS",
+      "market": "ATS",
+      "matches": {
+        "cover": true,
+        "forecast_error_to_preliminary_six_decimals": true,
+        "grade": true,
+        "line": true
+      },
+      "preliminary_grade": "LOSS"
+    },
+    {
+      "game_id": "401858506",
+      "independent_grade": "LOSS",
+      "market": "ATS",
+      "matches": {
+        "cover": true,
+        "forecast_error_to_preliminary_six_decimals": true,
+        "grade": true,
+        "line": true
+      },
+      "preliminary_grade": "LOSS"
+    },
+    {
+      "game_id": "401858507",
+      "independent_grade": "WIN",
+      "market": "ATS",
+      "matches": {
+        "cover": true,
+        "forecast_error_to_preliminary_six_decimals": true,
+        "grade": true,
+        "line": true
+      },
+      "preliminary_grade": "WIN"
+    },
+    {
+      "game_id": "401858508",
+      "independent_grade": "LOSS",
+      "market": "ATS",
+      "matches": {
+        "cover": true,
+        "forecast_error_to_preliminary_six_decimals": true,
+        "grade": true,
+        "line": true
+      },
+      "preliminary_grade": "LOSS"
+    },
+    {
+      "game_id": "401858509",
+      "independent_grade": "WIN",
+      "market": "ATS",
+      "matches": {
+        "cover": true,
+        "forecast_error_to_preliminary_six_decimals": true,
+        "grade": true,
+        "line": true
+      },
+      "preliminary_grade": "WIN"
+    },
+    {
+      "game_id": "401859185",
+      "independent_grade": "WIN",
+      "market": "ATS",
+      "matches": {
+        "cover": true,
+        "forecast_error_to_preliminary_six_decimals": true,
+        "grade": true,
+        "line": true
+      },
+      "preliminary_grade": "WIN"
+    },
+    {
+      "game_id": "401860908",
+      "independent_grade": "WIN",
+      "market": "ATS",
+      "matches": {
+        "cover": true,
+        "forecast_error_to_preliminary_six_decimals": true,
+        "grade": true,
+        "line": true
+      },
+      "preliminary_grade": "WIN"
+    },
+    {
+      "game_id": "401860909",
+      "independent_grade": "WIN",
+      "market": "ATS",
+      "matches": {
+        "cover": true,
+        "forecast_error_to_preliminary_six_decimals": true,
+        "grade": true,
+        "line": true
+      },
+      "preliminary_grade": "WIN"
+    },
+    {
+      "game_id": "401860910",
+      "independent_grade": "LOSS",
+      "market": "ATS",
+      "matches": {
+        "cover": true,
+        "forecast_error_to_preliminary_six_decimals": true,
+        "grade": true,
+        "line": true
+      },
+      "preliminary_grade": "LOSS"
+    },
+    {
+      "game_id": "401860924",
+      "independent_grade": "WIN",
+      "market": "ATS",
+      "matches": {
+        "cover": true,
+        "forecast_error_to_preliminary_six_decimals": true,
+        "grade": true,
+        "line": true
+      },
+      "preliminary_grade": "WIN"
+    },
+    {
+      "game_id": "401861966",
+      "independent_grade": "WIN",
+      "market": "ATS",
+      "matches": {
+        "cover": true,
+        "forecast_error_to_preliminary_six_decimals": true,
+        "grade": true,
+        "line": true
+      },
+      "preliminary_grade": "WIN"
+    },
+    {
+      "game_id": "401862812",
+      "independent_grade": "WIN",
+      "market": "ATS",
+      "matches": {
+        "cover": true,
+        "forecast_error_to_preliminary_six_decimals": true,
+        "grade": true,
+        "line": true
+      },
+      "preliminary_grade": "WIN"
+    },
+    {
+      "game_id": "401862813",
+      "independent_grade": "WIN",
+      "market": "ATS",
+      "matches": {
+        "cover": true,
+        "forecast_error_to_preliminary_six_decimals": true,
+        "grade": true,
+        "line": true
+      },
+      "preliminary_grade": "WIN"
+    },
+    {
+      "game_id": "401862814",
+      "independent_grade": "LOSS",
+      "market": "ATS",
+      "matches": {
+        "cover": true,
+        "forecast_error_to_preliminary_six_decimals": true,
+        "grade": true,
+        "line": true
+      },
+      "preliminary_grade": "LOSS"
+    },
+    {
+      "game_id": "401862815",
+      "independent_grade": "LOSS",
+      "market": "ATS",
+      "matches": {
+        "cover": true,
+        "forecast_error_to_preliminary_six_decimals": true,
+        "grade": true,
+        "line": true
+      },
+      "preliminary_grade": "LOSS"
+    },
+    {
+      "game_id": "401862816",
+      "independent_grade": "LOSS",
+      "market": "ATS",
+      "matches": {
+        "cover": true,
+        "forecast_error_to_preliminary_six_decimals": true,
+        "grade": true,
+        "line": true
+      },
+      "preliminary_grade": "LOSS"
+    },
+    {
+      "game_id": "401864529",
+      "independent_grade": "WIN",
+      "market": "ATS",
+      "matches": {
+        "cover": true,
+        "forecast_error_to_preliminary_six_decimals": true,
+        "grade": true,
+        "line": true
+      },
+      "preliminary_grade": "WIN"
+    },
+    {
+      "game_id": "401864530",
+      "independent_grade": "WIN",
+      "market": "ATS",
+      "matches": {
+        "cover": true,
+        "forecast_error_to_preliminary_six_decimals": true,
+        "grade": true,
+        "line": true
+      },
+      "preliminary_grade": "WIN"
+    },
+    {
+      "game_id": "401864531",
+      "independent_grade": "WIN",
+      "market": "ATS",
+      "matches": {
+        "cover": true,
+        "forecast_error_to_preliminary_six_decimals": true,
+        "grade": true,
+        "line": true
+      },
+      "preliminary_grade": "WIN"
+    },
+    {
+      "game_id": "401866451",
+      "independent_grade": "WIN",
+      "market": "ATS",
+      "matches": {
+        "cover": true,
+        "forecast_error_to_preliminary_six_decimals": true,
+        "grade": true,
+        "line": true
+      },
+      "preliminary_grade": "WIN"
+    },
+    {
+      "game_id": "401866452",
+      "independent_grade": "WIN",
+      "market": "ATS",
+      "matches": {
+        "cover": true,
+        "forecast_error_to_preliminary_six_decimals": true,
+        "grade": true,
+        "line": true
+      },
+      "preliminary_grade": "WIN"
+    },
+    {
+      "game_id": "401869846",
+      "independent_grade": "LOSS",
+      "market": "ATS",
+      "matches": {
+        "cover": true,
+        "forecast_error_to_preliminary_six_decimals": true,
+        "grade": true,
+        "line": true
+      },
+      "preliminary_grade": "LOSS"
+    },
+    {
+      "game_id": "401869944",
+      "independent_grade": "LOSS",
+      "market": "ATS",
+      "matches": {
+        "cover": true,
+        "forecast_error_to_preliminary_six_decimals": true,
+        "grade": true,
+        "line": true
+      },
+      "preliminary_grade": "LOSS"
+    },
+    {
+      "game_id": "401869963",
+      "independent_grade": "WIN",
+      "market": "ATS",
+      "matches": {
+        "cover": true,
+        "forecast_error_to_preliminary_six_decimals": true,
+        "grade": true,
+        "line": true
+      },
+      "preliminary_grade": "WIN"
+    },
+    {
+      "game_id": "401871057",
+      "independent_grade": "LOSS",
+      "market": "ATS",
+      "matches": {
+        "cover": true,
+        "forecast_error_to_preliminary_six_decimals": true,
+        "grade": true,
+        "line": true
+      },
+      "preliminary_grade": "LOSS"
+    },
+    {
+      "game_id": "401871058",
+      "independent_grade": "LOSS",
+      "market": "ATS",
+      "matches": {
+        "cover": true,
+        "forecast_error_to_preliminary_six_decimals": true,
+        "grade": true,
+        "line": true
+      },
+      "preliminary_grade": "LOSS"
+    },
+    {
+      "game_id": "401871059",
+      "independent_grade": "LOSS",
+      "market": "ATS",
+      "matches": {
+        "cover": true,
+        "forecast_error_to_preliminary_six_decimals": true,
+        "grade": true,
+        "line": true
+      },
+      "preliminary_grade": "LOSS"
+    },
+    {
+      "game_id": "401871095",
+      "independent_grade": "LOSS",
+      "market": "ATS",
+      "matches": {
+        "cover": true,
+        "forecast_error_to_preliminary_six_decimals": true,
+        "grade": true,
+        "line": true
+      },
+      "preliminary_grade": "LOSS"
+    },
+    {
+      "game_id": "401871096",
+      "independent_grade": "LOSS",
+      "market": "ATS",
+      "matches": {
+        "cover": true,
+        "forecast_error_to_preliminary_six_decimals": true,
+        "grade": true,
+        "line": true
+      },
+      "preliminary_grade": "LOSS"
+    },
+    {
+      "game_id": "401871097",
+      "independent_grade": "LOSS",
+      "market": "ATS",
+      "matches": {
+        "cover": true,
+        "forecast_error_to_preliminary_six_decimals": true,
+        "grade": true,
+        "line": true
+      },
+      "preliminary_grade": "LOSS"
+    },
+    {
+      "game_id": "401856733",
+      "independent_grade": "LOSS",
+      "market": "TOTAL",
+      "matches": {
+        "cover": true,
+        "forecast_error_to_preliminary_six_decimals": true,
+        "grade": true,
+        "line": true
+      },
+      "preliminary_grade": "LOSS"
+    },
+    {
+      "game_id": "401856734",
+      "independent_grade": "WIN",
+      "market": "TOTAL",
+      "matches": {
+        "cover": true,
+        "forecast_error_to_preliminary_six_decimals": true,
+        "grade": true,
+        "line": true
+      },
+      "preliminary_grade": "WIN"
+    },
+    {
+      "game_id": "401856735",
+      "independent_grade": "LOSS",
+      "market": "TOTAL",
+      "matches": {
+        "cover": true,
+        "forecast_error_to_preliminary_six_decimals": true,
+        "grade": true,
+        "line": true
+      },
+      "preliminary_grade": "LOSS"
+    },
+    {
+      "game_id": "401856736",
+      "independent_grade": "LOSS",
+      "market": "TOTAL",
+      "matches": {
+        "cover": true,
+        "forecast_error_to_preliminary_six_decimals": true,
+        "grade": true,
+        "line": true
+      },
+      "preliminary_grade": "LOSS"
+    },
+    {
+      "game_id": "401856737",
+      "independent_grade": "WIN",
+      "market": "TOTAL",
+      "matches": {
+        "cover": true,
+        "forecast_error_to_preliminary_six_decimals": true,
+        "grade": true,
+        "line": true
+      },
+      "preliminary_grade": "WIN"
+    },
+    {
+      "game_id": "401856842",
+      "independent_grade": "LOSS",
+      "market": "TOTAL",
+      "matches": {
+        "cover": true,
+        "forecast_error_to_preliminary_six_decimals": true,
+        "grade": true,
+        "line": true
+      },
+      "preliminary_grade": "LOSS"
+    },
+    {
+      "game_id": "401856843",
+      "independent_grade": "LOSS",
+      "market": "TOTAL",
+      "matches": {
+        "cover": true,
+        "forecast_error_to_preliminary_six_decimals": true,
+        "grade": true,
+        "line": true
+      },
+      "preliminary_grade": "LOSS"
+    },
+    {
+      "game_id": "401856844",
+      "independent_grade": "LOSS",
+      "market": "TOTAL",
+      "matches": {
+        "cover": true,
+        "forecast_error_to_preliminary_six_decimals": true,
+        "grade": true,
+        "line": true
+      },
+      "preliminary_grade": "LOSS"
+    },
+    {
+      "game_id": "401856845",
+      "independent_grade": "WIN",
+      "market": "TOTAL",
+      "matches": {
+        "cover": true,
+        "forecast_error_to_preliminary_six_decimals": true,
+        "grade": true,
+        "line": true
+      },
+      "preliminary_grade": "WIN"
+    },
+    {
+      "game_id": "401856846",
+      "independent_grade": "WIN",
+      "market": "TOTAL",
+      "matches": {
+        "cover": true,
+        "forecast_error_to_preliminary_six_decimals": true,
+        "grade": true,
+        "line": true
+      },
+      "preliminary_grade": "WIN"
+    },
+    {
+      "game_id": "401856847",
+      "independent_grade": "LOSS",
+      "market": "TOTAL",
+      "matches": {
+        "cover": true,
+        "forecast_error_to_preliminary_six_decimals": true,
+        "grade": true,
+        "line": true
+      },
+      "preliminary_grade": "LOSS"
+    },
+    {
+      "game_id": "401856848",
+      "independent_grade": "LOSS",
+      "market": "TOTAL",
+      "matches": {
+        "cover": true,
+        "forecast_error_to_preliminary_six_decimals": true,
+        "grade": true,
+        "line": true
+      },
+      "preliminary_grade": "LOSS"
+    },
+    {
+      "game_id": "401858277",
+      "independent_grade": "WIN",
+      "market": "TOTAL",
+      "matches": {
+        "cover": true,
+        "forecast_error_to_preliminary_six_decimals": true,
+        "grade": true,
+        "line": true
+      },
+      "preliminary_grade": "WIN"
+    },
+    {
+      "game_id": "401858278",
+      "independent_grade": "WIN",
+      "market": "TOTAL",
+      "matches": {
+        "cover": true,
+        "forecast_error_to_preliminary_six_decimals": true,
+        "grade": true,
+        "line": true
+      },
+      "preliminary_grade": "WIN"
+    },
+    {
+      "game_id": "401858279",
+      "independent_grade": "WIN",
+      "market": "TOTAL",
+      "matches": {
+        "cover": true,
+        "forecast_error_to_preliminary_six_decimals": true,
+        "grade": true,
+        "line": true
+      },
+      "preliminary_grade": "WIN"
+    },
+    {
+      "game_id": "401858280",
+      "independent_grade": "LOSS",
+      "market": "TOTAL",
+      "matches": {
+        "cover": true,
+        "forecast_error_to_preliminary_six_decimals": true,
+        "grade": true,
+        "line": true
+      },
+      "preliminary_grade": "LOSS"
+    },
+    {
+      "game_id": "401858281",
+      "independent_grade": "WIN",
+      "market": "TOTAL",
+      "matches": {
+        "cover": true,
+        "forecast_error_to_preliminary_six_decimals": true,
+        "grade": true,
+        "line": true
+      },
+      "preliminary_grade": "WIN"
+    },
+    {
+      "game_id": "401858282",
+      "independent_grade": "WIN",
+      "market": "TOTAL",
+      "matches": {
+        "cover": true,
+        "forecast_error_to_preliminary_six_decimals": true,
+        "grade": true,
+        "line": true
+      },
+      "preliminary_grade": "WIN"
+    },
+    {
+      "game_id": "401858283",
+      "independent_grade": "LOSS",
+      "market": "TOTAL",
+      "matches": {
+        "cover": true,
+        "forecast_error_to_preliminary_six_decimals": true,
+        "grade": true,
+        "line": true
+      },
+      "preliminary_grade": "LOSS"
+    },
+    {
+      "game_id": "401858284",
+      "independent_grade": "WIN",
+      "market": "TOTAL",
+      "matches": {
+        "cover": true,
+        "forecast_error_to_preliminary_six_decimals": true,
+        "grade": true,
+        "line": true
+      },
+      "preliminary_grade": "WIN"
+    },
+    {
+      "game_id": "401858501",
+      "independent_grade": "LOSS",
+      "market": "TOTAL",
+      "matches": {
+        "cover": true,
+        "forecast_error_to_preliminary_six_decimals": true,
+        "grade": true,
+        "line": true
+      },
+      "preliminary_grade": "LOSS"
+    },
+    {
+      "game_id": "401858502",
+      "independent_grade": "LOSS",
+      "market": "TOTAL",
+      "matches": {
+        "cover": true,
+        "forecast_error_to_preliminary_six_decimals": true,
+        "grade": true,
+        "line": true
+      },
+      "preliminary_grade": "LOSS"
+    },
+    {
+      "game_id": "401858503",
+      "independent_grade": "WIN",
+      "market": "TOTAL",
+      "matches": {
+        "cover": true,
+        "forecast_error_to_preliminary_six_decimals": true,
+        "grade": true,
+        "line": true
+      },
+      "preliminary_grade": "WIN"
+    },
+    {
+      "game_id": "401858504",
+      "independent_grade": "WIN",
+      "market": "TOTAL",
+      "matches": {
+        "cover": true,
+        "forecast_error_to_preliminary_six_decimals": true,
+        "grade": true,
+        "line": true
+      },
+      "preliminary_grade": "WIN"
+    },
+    {
+      "game_id": "401858505",
+      "independent_grade": "WIN",
+      "market": "TOTAL",
+      "matches": {
+        "cover": true,
+        "forecast_error_to_preliminary_six_decimals": true,
+        "grade": true,
+        "line": true
+      },
+      "preliminary_grade": "WIN"
+    },
+    {
+      "game_id": "401858506",
+      "independent_grade": "WIN",
+      "market": "TOTAL",
+      "matches": {
+        "cover": true,
+        "forecast_error_to_preliminary_six_decimals": true,
+        "grade": true,
+        "line": true
+      },
+      "preliminary_grade": "WIN"
+    },
+    {
+      "game_id": "401858507",
+      "independent_grade": "WIN",
+      "market": "TOTAL",
+      "matches": {
+        "cover": true,
+        "forecast_error_to_preliminary_six_decimals": true,
+        "grade": true,
+        "line": true
+      },
+      "preliminary_grade": "WIN"
+    },
+    {
+      "game_id": "401858508",
+      "independent_grade": "LOSS",
+      "market": "TOTAL",
+      "matches": {
+        "cover": true,
+        "forecast_error_to_preliminary_six_decimals": true,
+        "grade": true,
+        "line": true
+      },
+      "preliminary_grade": "LOSS"
+    },
+    {
+      "game_id": "401858509",
+      "independent_grade": "WIN",
+      "market": "TOTAL",
+      "matches": {
+        "cover": true,
+        "forecast_error_to_preliminary_six_decimals": true,
+        "grade": true,
+        "line": true
+      },
+      "preliminary_grade": "WIN"
+    },
+    {
+      "game_id": "401859185",
+      "independent_grade": "WIN",
+      "market": "TOTAL",
+      "matches": {
+        "cover": true,
+        "forecast_error_to_preliminary_six_decimals": true,
+        "grade": true,
+        "line": true
+      },
+      "preliminary_grade": "WIN"
+    },
+    {
+      "game_id": "401860908",
+      "independent_grade": "LOSS",
+      "market": "TOTAL",
+      "matches": {
+        "cover": true,
+        "forecast_error_to_preliminary_six_decimals": true,
+        "grade": true,
+        "line": true
+      },
+      "preliminary_grade": "LOSS"
+    },
+    {
+      "game_id": "401860909",
+      "independent_grade": "WIN",
+      "market": "TOTAL",
+      "matches": {
+        "cover": true,
+        "forecast_error_to_preliminary_six_decimals": true,
+        "grade": true,
+        "line": true
+      },
+      "preliminary_grade": "WIN"
+    },
+    {
+      "game_id": "401860910",
+      "independent_grade": "WIN",
+      "market": "TOTAL",
+      "matches": {
+        "cover": true,
+        "forecast_error_to_preliminary_six_decimals": true,
+        "grade": true,
+        "line": true
+      },
+      "preliminary_grade": "WIN"
+    },
+    {
+      "game_id": "401860924",
+      "independent_grade": "LOSS",
+      "market": "TOTAL",
+      "matches": {
+        "cover": true,
+        "forecast_error_to_preliminary_six_decimals": true,
+        "grade": true,
+        "line": true
+      },
+      "preliminary_grade": "LOSS"
+    },
+    {
+      "game_id": "401861966",
+      "independent_grade": "LOSS",
+      "market": "TOTAL",
+      "matches": {
+        "cover": true,
+        "forecast_error_to_preliminary_six_decimals": true,
+        "grade": true,
+        "line": true
+      },
+      "preliminary_grade": "LOSS"
+    },
+    {
+      "game_id": "401862812",
+      "independent_grade": "LOSS",
+      "market": "TOTAL",
+      "matches": {
+        "cover": true,
+        "forecast_error_to_preliminary_six_decimals": true,
+        "grade": true,
+        "line": true
+      },
+      "preliminary_grade": "LOSS"
+    },
+    {
+      "game_id": "401862813",
+      "independent_grade": "WIN",
+      "market": "TOTAL",
+      "matches": {
+        "cover": true,
+        "forecast_error_to_preliminary_six_decimals": true,
+        "grade": true,
+        "line": true
+      },
+      "preliminary_grade": "WIN"
+    },
+    {
+      "game_id": "401862814",
+      "independent_grade": "LOSS",
+      "market": "TOTAL",
+      "matches": {
+        "cover": true,
+        "forecast_error_to_preliminary_six_decimals": true,
+        "grade": true,
+        "line": true
+      },
+      "preliminary_grade": "LOSS"
+    },
+    {
+      "game_id": "401862815",
+      "independent_grade": "LOSS",
+      "market": "TOTAL",
+      "matches": {
+        "cover": true,
+        "forecast_error_to_preliminary_six_decimals": true,
+        "grade": true,
+        "line": true
+      },
+      "preliminary_grade": "LOSS"
+    },
+    {
+      "game_id": "401862816",
+      "independent_grade": "LOSS",
+      "market": "TOTAL",
+      "matches": {
+        "cover": true,
+        "forecast_error_to_preliminary_six_decimals": true,
+        "grade": true,
+        "line": true
+      },
+      "preliminary_grade": "LOSS"
+    },
+    {
+      "game_id": "401864529",
+      "independent_grade": "LOSS",
+      "market": "TOTAL",
+      "matches": {
+        "cover": true,
+        "forecast_error_to_preliminary_six_decimals": true,
+        "grade": true,
+        "line": true
+      },
+      "preliminary_grade": "LOSS"
+    },
+    {
+      "game_id": "401864530",
+      "independent_grade": "LOSS",
+      "market": "TOTAL",
+      "matches": {
+        "cover": true,
+        "forecast_error_to_preliminary_six_decimals": true,
+        "grade": true,
+        "line": true
+      },
+      "preliminary_grade": "LOSS"
+    },
+    {
+      "game_id": "401864531",
+      "independent_grade": "LOSS",
+      "market": "TOTAL",
+      "matches": {
+        "cover": true,
+        "forecast_error_to_preliminary_six_decimals": true,
+        "grade": true,
+        "line": true
+      },
+      "preliminary_grade": "LOSS"
+    },
+    {
+      "game_id": "401866451",
+      "independent_grade": "WIN",
+      "market": "TOTAL",
+      "matches": {
+        "cover": true,
+        "forecast_error_to_preliminary_six_decimals": true,
+        "grade": true,
+        "line": true
+      },
+      "preliminary_grade": "WIN"
+    },
+    {
+      "game_id": "401866452",
+      "independent_grade": "LOSS",
+      "market": "TOTAL",
+      "matches": {
+        "cover": true,
+        "forecast_error_to_preliminary_six_decimals": true,
+        "grade": true,
+        "line": true
+      },
+      "preliminary_grade": "LOSS"
+    },
+    {
+      "game_id": "401869846",
+      "independent_grade": "WIN",
+      "market": "TOTAL",
+      "matches": {
+        "cover": true,
+        "forecast_error_to_preliminary_six_decimals": true,
+        "grade": true,
+        "line": true
+      },
+      "preliminary_grade": "WIN"
+    },
+    {
+      "game_id": "401869944",
+      "independent_grade": "WIN",
+      "market": "TOTAL",
+      "matches": {
+        "cover": true,
+        "forecast_error_to_preliminary_six_decimals": true,
+        "grade": true,
+        "line": true
+      },
+      "preliminary_grade": "WIN"
+    },
+    {
+      "game_id": "401869963",
+      "independent_grade": "WIN",
+      "market": "TOTAL",
+      "matches": {
+        "cover": true,
+        "forecast_error_to_preliminary_six_decimals": true,
+        "grade": true,
+        "line": true
+      },
+      "preliminary_grade": "WIN"
+    },
+    {
+      "game_id": "401871057",
+      "independent_grade": "WIN",
+      "market": "TOTAL",
+      "matches": {
+        "cover": true,
+        "forecast_error_to_preliminary_six_decimals": true,
+        "grade": true,
+        "line": true
+      },
+      "preliminary_grade": "WIN"
+    },
+    {
+      "game_id": "401871058",
+      "independent_grade": "WIN",
+      "market": "TOTAL",
+      "matches": {
+        "cover": true,
+        "forecast_error_to_preliminary_six_decimals": true,
+        "grade": true,
+        "line": true
+      },
+      "preliminary_grade": "WIN"
+    },
+    {
+      "game_id": "401871059",
+      "independent_grade": "LOSS",
+      "market": "TOTAL",
+      "matches": {
+        "cover": true,
+        "forecast_error_to_preliminary_six_decimals": true,
+        "grade": true,
+        "line": true
+      },
+      "preliminary_grade": "LOSS"
+    },
+    {
+      "game_id": "401871095",
+      "independent_grade": "WIN",
+      "market": "TOTAL",
+      "matches": {
+        "cover": true,
+        "forecast_error_to_preliminary_six_decimals": true,
+        "grade": true,
+        "line": true
+      },
+      "preliminary_grade": "WIN"
+    },
+    {
+      "game_id": "401871096",
+      "independent_grade": "WIN",
+      "market": "TOTAL",
+      "matches": {
+        "cover": true,
+        "forecast_error_to_preliminary_six_decimals": true,
+        "grade": true,
+        "line": true
+      },
+      "preliminary_grade": "WIN"
+    },
+    {
+      "game_id": "401871097",
+      "independent_grade": "WIN",
+      "market": "TOTAL",
+      "matches": {
+        "cover": true,
+        "forecast_error_to_preliminary_six_decimals": true,
+        "grade": true,
+        "line": true
+      },
+      "preliminary_grade": "WIN"
+    }
+  ],
+  "original_evidence_preserved": true,
+  "prior_scores_not_used_as_authority": true,
+  "score_discrepancies": [],
+  "version": "week9-formal-supersession-v1"
+}

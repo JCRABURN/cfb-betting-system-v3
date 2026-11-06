@@ -1,0 +1,17 @@
+{
+  "tested_commit": "2631bfcf41c6c8c87f7d81246af58fdbc62389b2",
+  "completed_at_utc": "2026-10-28T13:58:29.688557+00:00",
+  "test_command": "C:/Users/jraburn/Documents/GitHub/cfb-betting-system-v3/.venv/Scripts/python.exe -m pytest -q",
+  "test_exit_code": 0,
+  "passed": 809,
+  "warnings": 39,
+  "seconds": 193.74,
+  "failures": 0,
+  "unexplained_failures": 0,
+  "log_sha256": "1bf70c8bd7d1a0b1de62f0ad7f554d2e27415b4bd780b9a330dd5c7babf691b1",
+  "policy_changed": false,
+  "owner_approval": "PENDING",
+  "pr44": "https://github.com/JCRABURN/cfb-betting-system-v3/pull/44",
+  "pr45": "https://github.com/JCRABURN/cfb-betting-system-v3/pull/45",
+  "subsequent_delivery_changes": "Documentation and verification artifacts only; no tested code changes"
+}

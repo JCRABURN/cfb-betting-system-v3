@@ -1,0 +1,70 @@
+{
+  "records": [
+    {
+      "name": "sunbelt-availability",
+      "url": "https://sunbeltsports.org/news/2025/8/11/football-availability-report-new.aspx",
+      "requested_at_utc": "2026-10-29T11:51:28.333513+00:00",
+      "received_at_utc": "2026-10-29T11:51:28.471091+00:00",
+      "http_status": 404,
+      "status": "UNAVAILABLE_HTTP_ERROR",
+      "path": "sunbelt-availability.html.gz",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "unchanged_from_prior_raw": true
+    },
+    {
+      "name": "fau-countdown",
+      "url": "https://fausports.com/news/2026/10/28/football-countdown-to-kickoff-game-8-at-north-texas",
+      "requested_at_utc": "2026-10-29T11:51:28.472176+00:00",
+      "received_at_utc": "2026-10-29T11:51:29.596938+00:00",
+      "http_status": 200,
+      "status": "CAPTURED",
+      "path": "fau-countdown.html.gz",
+      "sha256": "4cbb9eef5d5e1841c65dfcd28a506e0c1055bc8257306084fdb5c24c2ae2d055",
+      "unchanged_from_prior_raw": false
+    },
+    {
+      "name": "jmu-notes",
+      "url": "https://jmusports.com/documents/download/2026/10/26/2026_JMU_Football_Game_Notes_-_Troy.pdf",
+      "requested_at_utc": "2026-10-29T11:51:29.611629+00:00",
+      "received_at_utc": "2026-10-29T11:51:31.658117+00:00",
+      "http_status": 200,
+      "status": "CAPTURED",
+      "path": "jmu-notes.pdf",
+      "sha256": "c84fbd1f4944438ab64e5950c8b485b1379b0e25171c49fbafdc0b08ea83a2aa",
+      "unchanged_from_prior_raw": true
+    },
+    {
+      "name": "unt-notes",
+      "url": "https://meangreensports.com/documents/download/2026/10/27/UNT_FB_Game_Notes_2026_8_FAU.pdf",
+      "requested_at_utc": "2026-10-29T11:51:31.666174+00:00",
+      "received_at_utc": "2026-10-29T11:51:33.234173+00:00",
+      "http_status": 200,
+      "status": "CAPTURED",
+      "path": "unt-notes.pdf",
+      "sha256": "7ec2239a25dcda5aaccd23125934ed2689d2bb2d5f26145808f7bcca46bcb075",
+      "unchanged_from_prior_raw": true
+    },
+    {
+      "name": "fau-notes",
+      "url": "https://fausports.com/documents/download/2026/10/26/2026_Game_Notes__8_remediated.pdf",
+      "requested_at_utc": "2026-10-29T11:51:33.236164+00:00",
+      "received_at_utc": "2026-10-29T11:51:35.934999+00:00",
+      "http_status": 200,
+      "status": "CAPTURED",
+      "path": "fau-notes.pdf",
+      "sha256": "778770ce550e783411d0fc130e26b37f43f95c299d6706f094c986b6ea16ff09",
+      "unchanged_from_prior_raw": true
+    },
+    {
+      "name": "american-football",
+      "url": "https://theamerican.org/sports/football",
+      "requested_at_utc": "2026-10-29T11:51:35.951501+00:00",
+      "received_at_utc": "2026-10-29T11:51:36.161310+00:00",
+      "http_status": 200,
+      "status": "CAPTURED",
+      "path": "american-football.html.gz",
+      "sha256": "101789a5d52addaa4e589b6c6641ba32603e51d4dd5259e6c7e94893c6c0f4f1",
+      "unchanged_from_prior_raw": false
+    }
+  ]
+}

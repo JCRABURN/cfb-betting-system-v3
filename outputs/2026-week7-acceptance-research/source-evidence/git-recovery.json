@@ -1,0 +1,37 @@
+[
+  {
+    "commit": "c7b621a981cf72d9699a3899a1b5b92f548e6150",
+    "path": "outputs/2026-week2-ats-official-totals-limited-shadow.json",
+    "saved_as": "week2-pregame.json",
+    "sha256": "7f0b22da7e3f12b04b47fea64739de7299abdddb61e3fce909ea0e721a294e98",
+    "commit_time": "2026-09-10T10:46:46-05:00"
+  },
+  {
+    "commit": "9fd6743a3654c133a99a85c410576cf5c19bd4a4",
+    "path": "outputs/2026-week3-execution-20260918/execution-report.json",
+    "saved_as": "week3-execution.json",
+    "sha256": "2cb693b0a51eda7c88cc0c1de8acffe2fa39b998c2ec4e9cd37a4ad35e66d772",
+    "commit_time": "2026-09-18T10:00:24-05:00"
+  },
+  {
+    "commit": "c7b621a981cf72d9699a3899a1b5b92f548e6150",
+    "path": "production-weeks/2026-week2-splashsports-manifest.json",
+    "saved_as": "week2-lock-manifest.json",
+    "sha256": "8dc218330e6f1851ab70315ab32a31f080cf019d8b235c91a7c12354aa81ffc5",
+    "commit_time": "2026-09-10T10:46:46-05:00"
+  },
+  {
+    "commit": "9fd6743a3654c133a99a85c410576cf5c19bd4a4",
+    "path": "outputs/2026-week3-execution-20260918/ats-card.json",
+    "saved_as": "week3-pregame-ats.json",
+    "sha256": "fec413758cc81ad3bfc56129762762f433142ad063d2b9ca0c4ad2a03c997b6f",
+    "commit_time": "2026-09-18T10:00:24-05:00"
+  },
+  {
+    "commit": "9fd6743a3654c133a99a85c410576cf5c19bd4a4",
+    "path": "outputs/2026-week3-execution-20260918/totals-research-card.json",
+    "saved_as": "week3-pregame-totals.json",
+    "sha256": "2044bd2c08330cb0f8ecde4c3b6f85fdb80342e146f014198251811796b089a9",
+    "commit_time": "2026-09-18T10:00:24-05:00"
+  }
+]

@@ -1,0 +1,75 @@
+{
+  "tested_commit": "6cefac6402799daf964b5d1175145ba26a83b853",
+  "started_at_utc": "2026-10-29T21:51:46.015017+00:00",
+  "gates": [
+    {
+      "command": [
+        "C:/Users/jraburn/Documents/GitHub/cfb-betting-system-v3/.venv/Scripts/python.exe",
+        "-m",
+        "scripts.pdf_evidence_review"
+      ],
+      "exit_code": 0,
+      "stdout": "{\n  \"verified_reading_copies\": 3,\n  \"source_bytes_unchanged\": true,\n  \"original_whitespace_findings_remain_visible\": true\n}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "C:/Users/jraburn/Documents/GitHub/cfb-betting-system-v3/.venv/Scripts/python.exe",
+        "-m",
+        "scripts.build_week8_postgame_audit",
+        "--verify"
+      ],
+      "exit_code": 0,
+      "stdout": "{\n  \"grading_status\": \"COMPLETE_52_ATS_52_TOTALS\",\n  \"clv_status\": \"INCOMPLETE\",\n  \"output_files\": 8,\n  \"evidence_files\": 57,\n  \"protected_files\": 47\n}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "C:/Users/jraburn/Documents/GitHub/cfb-betting-system-v3/.venv/Scripts/python.exe",
+        "-m",
+        "scripts.seal_week9_board",
+        "--verify"
+      ],
+      "exit_code": 0,
+      "stdout": "{\n  \"status\": \"SEALED_PROSPECTIVE_RESEARCH_BOARD\",\n  \"eligible_games\": 54,\n  \"ats_selections\": 54,\n  \"total_selections\": 54,\n  \"excluded_elapsed_games\": 2,\n  \"first_eligible_kickoff_utc\": \"2026-10-28T23:00:00+00:00\",\n  \"model_code_commit\": \"93f818fea5dc49a49b6bb1c1a569d8f25817c898\",\n  \"clv_status\": \"INCOMPLETE\",\n  \"model_policy_change\": false,\n  \"combined_top5\": \"UNCALIBRATED_RESEARCH_ONLY\"\n}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "C:/Users/jraburn/Documents/GitHub/cfb-betting-system-v3/.venv/Scripts/python.exe",
+        "-m",
+        "scripts.verify_week9_owner_review",
+        "outputs/2026-week9-owner-review/20261029-morning-decision/owner_review_shortlist.json"
+      ],
+      "exit_code": 0,
+      "stdout": "{\n  \"verified_candidates\": 10,\n  \"recommended_five\": 5,\n  \"owner_approval\": \"PENDING\",\n  \"frozen_values_unchanged\": true\n}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--check",
+        "6e1948dd9b675a3f1226350ce5b40a6556e09f7a",
+        "HEAD"
+      ],
+      "exit_code": 0,
+      "output_lines": 0,
+      "findings": 0
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--check",
+        "origin/main",
+        "HEAD"
+      ],
+      "exit_code": 2,
+      "output_lines": 12842,
+      "findings": 6421
+    }
+  ],
+  "protected_files_rechecked": 125,
+  "completed_at_utc": "2026-10-29T21:51:52.142690+00:00"
+}

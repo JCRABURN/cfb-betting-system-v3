@@ -1,0 +1,41 @@
+{
+  "status": "DOCUMENTED_INHERITED_FINDINGS_NOT_A_PASS",
+  "total_findings": 6421,
+  "files": [
+    {
+      "path": "outputs/2026-week7-monitoring/20261014T131300Z-context-detail.md",
+      "trailing_whitespace_findings": 1,
+      "baseline_blob": "ef85cd440fe661dec388a8795fff48afcf95017a",
+      "audit_blob": "ef85cd440fe661dec388a8795fff48afcf95017a",
+      "unchanged": true
+    },
+    {
+      "path": "outputs/2026-week9-context/20261028T2310Z-thursday-gate/supplement/fau-notes-plain.txt",
+      "trailing_whitespace_findings": 4589,
+      "baseline_blob": "ba0330c34ba2c184e9a96d597f98070ba23d2b09",
+      "audit_blob": "ba0330c34ba2c184e9a96d597f98070ba23d2b09",
+      "unchanged": true
+    },
+    {
+      "path": "outputs/2026-week9-context/20261028T2310Z-thursday-gate/supplement/jmu-notes-plain.txt",
+      "trailing_whitespace_findings": 1397,
+      "baseline_blob": "ab095a2ecc0e09016c47cb216a4ab816073a55f1",
+      "audit_blob": "ab095a2ecc0e09016c47cb216a4ab816073a55f1",
+      "unchanged": true
+    },
+    {
+      "path": "outputs/2026-week9-context/20261028T2310Z-thursday-gate/supplement/unt-notes-plain.txt",
+      "trailing_whitespace_findings": 433,
+      "baseline_blob": "13040572014b00ec7a65a577cb8f0134318cc7eb",
+      "audit_blob": "13040572014b00ec7a65a577cb8f0134318cc7eb",
+      "unchanged": true
+    },
+    {
+      "path": "scripts/build_week8_postgame_audit.py",
+      "trailing_whitespace_findings": 1,
+      "baseline_blob": "5881fed0fab7ad4e85d54c243e970776fb81db86",
+      "audit_blob": "5881fed0fab7ad4e85d54c243e970776fb81db86",
+      "unchanged": true
+    }
+  ]
+}
