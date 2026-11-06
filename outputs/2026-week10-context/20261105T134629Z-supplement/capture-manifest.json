@@ -1,0 +1,57 @@
+{
+  "captured_at_utc": "2026-11-05T13:46:29.798340+00:00",
+  "cutoff_utc": "2026-11-06T00:30:00Z",
+  "records": [
+    {
+      "name": "sunbelt-availability",
+      "url": "https://sunbeltsports.org/news/2025/8/11/football-availability-report-new.aspx",
+      "requested_at_utc": "2026-11-05T13:46:29.540930+00:00",
+      "path": "sunbelt-availability.gz",
+      "sha256": "f363f0012277164212f80cf91886a09d7567e7c19d53479167a817ba84be5bc7",
+      "http_status": 200,
+      "resolved_url": "https://sunbeltsports.org/news/2025/8/11/football-availability-report-new.aspx",
+      "received_at_utc": "2026-11-05T13:46:29.726551+00:00",
+      "status": "CAPTURED",
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "name": "pac12-availability",
+      "url": "https://pac-12.com/news/2026/9/11/2026-football-reports.aspx",
+      "requested_at_utc": "2026-11-05T13:46:29.540930+00:00",
+      "path": "pac12-availability.gz",
+      "sha256": "7b3c9e73720ddad6d493d083bb17203473b320a02413596a62d917ee25e92d8d",
+      "http_status": 200,
+      "resolved_url": "https://pac-12.com/news/2026/9/11/2026-football-reports.aspx",
+      "received_at_utc": "2026-11-05T13:46:29.764708+00:00",
+      "status": "CAPTURED",
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "name": "fau-week9-box",
+      "url": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401862812",
+      "requested_at_utc": "2026-11-05T13:46:29.541929+00:00",
+      "path": "fau-week9-box.gz",
+      "sha256": "e85671cd5eac4ef6f6e80f94743d073e8c72a144338c36d1c1c114aa23ee78e4",
+      "http_status": 200,
+      "resolved_url": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401862812",
+      "received_at_utc": "2026-11-05T13:46:29.780289+00:00",
+      "status": "CAPTURED",
+      "content_type": "application/json;charset=UTF-8"
+    },
+    {
+      "name": "texas-state-week9-box",
+      "url": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401860908",
+      "requested_at_utc": "2026-11-05T13:46:29.542922+00:00",
+      "path": "texas-state-week9-box.gz",
+      "sha256": "f199a987b9decb8df8eb2743ce1bdf2a9056fb284364d930ed266e23cfd2e2d0",
+      "http_status": 200,
+      "resolved_url": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401860908",
+      "received_at_utc": "2026-11-05T13:46:29.788808+00:00",
+      "status": "CAPTURED",
+      "content_type": "application/json;charset=UTF-8"
+    }
+  ],
+  "capture_code_sha256": "47f66040c70aabfd3c2834f6428454f2440910db7b2ab97e9dcd83b0cd2a2960",
+  "model_adjustments": [],
+  "note": "HTTP success is not evidence of usable article content or medical clearance."
+}

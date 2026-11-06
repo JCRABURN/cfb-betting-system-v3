@@ -100,3 +100,20 @@ outputs/2026-week9-postgame-evidence/** -text whitespace=cr-at-eol
 outputs/2026-week9-postgame-audit/** -text whitespace=cr-at-eol
 outputs/2026-week9-postgame-verification/** -text whitespace=cr-at-eol
 tests/fixtures/week9_formal_audit/** -text
+
+# Week 10 source and prospective custody bytes.
+data/ingest/2026-week10* -text
+production-weeks/2026-week10* -text
+outputs/2026-week10-prospective/** -text whitespace=cr-at-eol
+outputs/2026-week10-readiness/** -text whitespace=cr-at-eol
+outputs/2026-week10-verification/** -text whitespace=cr-at-eol
+# Original PR49 Git blobs are LF; their original Windows receipt bytes are CRLF.
+# Explicit checkout CRLF preserves receipt hashes on every platform without changing Git blobs.
+data/ingest/2026-week10-splashsports-screen-capture.csv text eol=crlf
+data/ingest/2026-week10-splashsports-source-manifest.json text eol=crlf
+data/ingest/2026-week10-splashsports-README.md text eol=crlf
+
+# Separate Week10 context and owner-review evidence: preserve captured bytes.
+outputs/2026-week10-context/** -text whitespace=cr-at-eol
+outputs/2026-week10-owner-review/** -text whitespace=cr-at-eol
+docs/week10-human-context-20261105.json -text

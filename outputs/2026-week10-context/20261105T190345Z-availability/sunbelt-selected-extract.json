@@ -1,0 +1,115 @@
+[
+  {
+    "gameId": "2026-11-05-Southern Miss-James Madison",
+    "gameNumber": "031",
+    "dateISO": "2026-11-05",
+    "updatedAtUTC": "2026-11-05T15:33:29.6618971Z",
+    "kickoff": "19:00:00",
+    "kickoffUTC": "2026-11-06T01:00:00Z",
+    "timeZone": "Central Standard Time",
+    "timeZoneLabel": "CT",
+    "network": "ESPN2",
+    "venue": "Renasant Stadium",
+    "notes": "Game Day Report",
+    "away": {
+      "name": "James Madison",
+      "players": [
+        {
+          "name": "Kylan Billiot",
+          "position": "WR",
+          "status": "Game Time Decision"
+        },
+        {
+          "name": "Noah Grevious",
+          "position": "WR",
+          "status": "Available"
+        },
+        {
+          "name": "Jayon Harvey",
+          "position": "DB",
+          "status": "Out"
+        },
+        {
+          "name": "KD Mosley",
+          "position": "TE",
+          "status": "Out"
+        },
+        {
+          "name": "George Pettaway",
+          "position": "RB",
+          "status": "Out"
+        },
+        {
+          "name": "Tanner Vibabul",
+          "position": "QB",
+          "status": "Out"
+        }
+      ]
+    },
+    "home": {
+      "name": "Southern Miss",
+      "players": [
+        {
+          "name": "Jaylen Himes ",
+          "position": "WR",
+          "status": "Out"
+        },
+        {
+          "name": "Dante Devine ",
+          "position": "OL",
+          "status": "Available"
+        },
+        {
+          "name": "Will Smith ",
+          "position": "DL",
+          "status": "Available"
+        },
+        {
+          "name": "Luke Rogers ",
+          "position": "OL",
+          "status": "Available"
+        },
+        {
+          "name": "Greg Nunnery",
+          "position": "OL",
+          "status": "Available"
+        },
+        {
+          "name": "Caleb Triplett",
+          "position": "ILB",
+          "status": "Available"
+        },
+        {
+          "name": "Jahmir Davis ",
+          "position": "OL",
+          "status": "Out for Season"
+        },
+        {
+          "name": "Jordan Pride ",
+          "position": "DB",
+          "status": "Out for Season"
+        },
+        {
+          "name": "Ricky Harding ",
+          "position": "ILB",
+          "status": "Out for Season"
+        },
+        {
+          "name": "Jeffery Rush",
+          "position": "DL",
+          "status": "Out for Season"
+        },
+        {
+          "name": "Robert Briggs ",
+          "position": "RB",
+          "status": "Out for Season"
+        },
+        {
+          "name": "Jeremiah Dillon",
+          "position": "DB",
+          "status": "Out for Season"
+        }
+      ]
+    }
+  }
+]

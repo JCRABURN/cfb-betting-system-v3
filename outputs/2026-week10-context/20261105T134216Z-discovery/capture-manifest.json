@@ -1,0 +1,21 @@
+{
+  "captured_at_utc": "2026-11-05T13:42:17.254880+00:00",
+  "cutoff_utc": "2026-11-06T00:30:00Z",
+  "records": [
+    {
+      "name": "availability-app-code",
+      "url": "https://app.hdintelligence.com/assets/index-qr5EJ36K.js",
+      "requested_at_utc": "2026-11-05T13:42:16.893561+00:00",
+      "path": "availability-app-code.gz",
+      "sha256": "d17ca35dd1d88aa48ff5f4c537c3e35e3cd1330bc82aef7de9afdcdbc99f308a",
+      "http_status": 200,
+      "resolved_url": "https://app.hdintelligence.com/assets/index-qr5EJ36K.js",
+      "received_at_utc": "2026-11-05T13:42:17.220258+00:00",
+      "status": "CAPTURED",
+      "content_type": "text/javascript; charset=utf-8"
+    }
+  ],
+  "capture_code_sha256": "47f66040c70aabfd3c2834f6428454f2440910db7b2ab97e9dcd83b0cd2a2960",
+  "model_adjustments": [],
+  "note": "HTTP success is not evidence of usable article content or medical clearance."
+}

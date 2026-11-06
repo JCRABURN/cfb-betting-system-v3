@@ -1,0 +1,365 @@
+{
+  "method": "Frozen Week9 CFBD advanced statistics exclude garbage time; eligible plays/drives per completed game are volume proxies, not seconds per snap or possession forecasts. No model change.",
+  "rows": [
+    {
+      "team": "Air Force",
+      "games": 8,
+      "off_ppa": 0.208,
+      "def_ppa": 0.103,
+      "off_success": 0.494,
+      "def_success": 0.408,
+      "off_explosiveness": 1.013,
+      "def_explosiveness": 1.284,
+      "off_eligible_plays_per_game": 72.1,
+      "off_eligible_drives_per_game": 9.38,
+      "rush_rate": 0.846,
+      "recent_totals": [
+        72,
+        42,
+        61
+      ]
+    },
+    {
+      "team": "Army",
+      "games": 8,
+      "off_ppa": 0.297,
+      "def_ppa": 0.269,
+      "off_success": 0.491,
+      "def_success": 0.476,
+      "off_explosiveness": 1.147,
+      "def_explosiveness": 1.319,
+      "off_eligible_plays_per_game": 60.4,
+      "off_eligible_drives_per_game": 9.12,
+      "rush_rate": 0.799,
+      "recent_totals": [
+        80,
+        73,
+        71
+      ]
+    },
+    {
+      "team": "Boise State",
+      "games": 8,
+      "off_ppa": 0.308,
+      "def_ppa": 0.056,
+      "off_success": 0.475,
+      "def_success": 0.367,
+      "off_explosiveness": 1.279,
+      "def_explosiveness": 1.592,
+      "off_eligible_plays_per_game": 71.1,
+      "off_eligible_drives_per_game": 10.5,
+      "rush_rate": 0.559,
+      "recent_totals": [
+        69,
+        41,
+        91
+      ]
+    },
+    {
+      "team": "Boston College",
+      "games": 8,
+      "off_ppa": 0.038,
+      "def_ppa": 0.049,
+      "off_success": 0.411,
+      "def_success": 0.409,
+      "off_explosiveness": 1.216,
+      "def_explosiveness": 1.197,
+      "off_eligible_plays_per_game": 61.8,
+      "off_eligible_drives_per_game": 10.88,
+      "rush_rate": 0.54,
+      "recent_totals": [
+        48,
+        76,
+        49
+      ]
+    },
+    {
+      "team": "Colorado State",
+      "games": 8,
+      "off_ppa": 0.27,
+      "def_ppa": 0.358,
+      "off_success": 0.467,
+      "def_success": 0.538,
+      "off_explosiveness": 1.421,
+      "def_explosiveness": 1.283,
+      "off_eligible_plays_per_game": 58.1,
+      "off_eligible_drives_per_game": 10.5,
+      "rush_rate": 0.456,
+      "recent_totals": [
+        93,
+        105,
+        45
+      ]
+    },
+    {
+      "team": "Florida Atlantic",
+      "games": 8,
+      "off_ppa": 0.229,
+      "def_ppa": 0.274,
+      "off_success": 0.469,
+      "def_success": 0.444,
+      "off_explosiveness": 1.285,
+      "def_explosiveness": 1.524,
+      "off_eligible_plays_per_game": 63.8,
+      "off_eligible_drives_per_game": 9.75,
+      "rush_rate": 0.412,
+      "recent_totals": [
+        80,
+        100,
+        89
+      ]
+    },
+    {
+      "team": "Florida State",
+      "games": 8,
+      "off_ppa": 0.196,
+      "def_ppa": 0.221,
+      "off_success": 0.433,
+      "def_success": 0.429,
+      "off_explosiveness": 1.405,
+      "def_explosiveness": 1.363,
+      "off_eligible_plays_per_game": 62.4,
+      "off_eligible_drives_per_game": 11.12,
+      "rush_rate": 0.515,
+      "recent_totals": [
+        64,
+        78,
+        60
+      ]
+    },
+    {
+      "team": "James Madison",
+      "games": 9,
+      "off_ppa": 0.18,
+      "def_ppa": -0.014,
+      "off_success": 0.433,
+      "def_success": 0.376,
+      "off_explosiveness": 1.253,
+      "def_explosiveness": 1.22,
+      "off_eligible_plays_per_game": 65.9,
+      "off_eligible_drives_per_game": 12.22,
+      "rush_rate": 0.523,
+      "recent_totals": [
+        71,
+        65,
+        45
+      ]
+    },
+    {
+      "team": "Middle Tennessee",
+      "games": 8,
+      "off_ppa": 0.094,
+      "def_ppa": 0.143,
+      "off_success": 0.403,
+      "def_success": 0.453,
+      "off_explosiveness": 1.211,
+      "def_explosiveness": 1.186,
+      "off_eligible_plays_per_game": 62.4,
+      "off_eligible_drives_per_game": 10.62,
+      "rush_rate": 0.447,
+      "recent_totals": [
+        63,
+        49,
+        72
+      ]
+    },
+    {
+      "team": "Missouri",
+      "games": 8,
+      "off_ppa": 0.178,
+      "def_ppa": -0.013,
+      "off_success": 0.413,
+      "def_success": 0.357,
+      "off_explosiveness": 1.31,
+      "def_explosiveness": 1.346,
+      "off_eligible_plays_per_game": 61.8,
+      "off_eligible_drives_per_game": 10.88,
+      "rush_rate": 0.484,
+      "recent_totals": [
+        33,
+        34,
+        44
+      ]
+    },
+    {
+      "team": "North Carolina",
+      "games": 8,
+      "off_ppa": 0.145,
+      "def_ppa": 0.075,
+      "off_success": 0.477,
+      "def_success": 0.443,
+      "off_explosiveness": 1.114,
+      "def_explosiveness": 1.068,
+      "off_eligible_plays_per_game": 58.8,
+      "off_eligible_drives_per_game": 9.88,
+      "rush_rate": 0.447,
+      "recent_totals": [
+        44,
+        61,
+        73
+      ]
+    },
+    {
+      "team": "Oregon State",
+      "games": 8,
+      "off_ppa": 0.267,
+      "def_ppa": 0.108,
+      "off_success": 0.488,
+      "def_success": 0.402,
+      "off_explosiveness": 1.295,
+      "def_explosiveness": 1.232,
+      "off_eligible_plays_per_game": 63.5,
+      "off_eligible_drives_per_game": 10.12,
+      "rush_rate": 0.341,
+      "recent_totals": [
+        80,
+        78,
+        60
+      ]
+    },
+    {
+      "team": "Southern Miss",
+      "games": 8,
+      "off_ppa": 0.024,
+      "def_ppa": 0.135,
+      "off_success": 0.404,
+      "def_success": 0.425,
+      "off_explosiveness": 1.252,
+      "def_explosiveness": 1.202,
+      "off_eligible_plays_per_game": 62.8,
+      "off_eligible_drives_per_game": 11.75,
+      "rush_rate": 0.46,
+      "recent_totals": [
+        36,
+        66,
+        56
+      ]
+    },
+    {
+      "team": "Texas",
+      "games": 8,
+      "off_ppa": 0.059,
+      "def_ppa": -0.03,
+      "off_success": 0.418,
+      "def_success": 0.335,
+      "off_explosiveness": 1.21,
+      "def_explosiveness": 1.125,
+      "off_eligible_plays_per_game": 62.8,
+      "off_eligible_drives_per_game": 11.38,
+      "rush_rate": 0.512,
+      "recent_totals": [
+        51,
+        61,
+        34
+      ]
+    },
+    {
+      "team": "Texas State",
+      "games": 8,
+      "off_ppa": 0.268,
+      "def_ppa": 0.169,
+      "off_success": 0.493,
+      "def_success": 0.444,
+      "off_explosiveness": 1.31,
+      "def_explosiveness": 1.264,
+      "off_eligible_plays_per_game": 65.9,
+      "off_eligible_drives_per_game": 10.38,
+      "rush_rate": 0.531,
+      "recent_totals": [
+        93,
+        37,
+        91
+      ]
+    },
+    {
+      "team": "Texas Tech",
+      "games": 8,
+      "off_ppa": 0.152,
+      "def_ppa": -0.018,
+      "off_success": 0.462,
+      "def_success": 0.373,
+      "off_explosiveness": 1.141,
+      "def_explosiveness": 1.325,
+      "off_eligible_plays_per_game": 65.0,
+      "off_eligible_drives_per_game": 11.5,
+      "rush_rate": 0.517,
+      "recent_totals": [
+        78,
+        61,
+        60
+      ]
+    },
+    {
+      "team": "UConn",
+      "games": 8,
+      "off_ppa": 0.229,
+      "def_ppa": 0.088,
+      "off_success": 0.448,
+      "def_success": 0.431,
+      "off_explosiveness": 1.388,
+      "def_explosiveness": 1.138,
+      "off_eligible_plays_per_game": 59.8,
+      "off_eligible_drives_per_game": 10.38,
+      "rush_rate": 0.496,
+      "recent_totals": [
+        54,
+        51,
+        61
+      ]
+    },
+    {
+      "team": "UTSA",
+      "games": 8,
+      "off_ppa": 0.214,
+      "def_ppa": 0.106,
+      "off_success": 0.468,
+      "def_success": 0.406,
+      "off_explosiveness": 1.165,
+      "def_explosiveness": 1.261,
+      "off_eligible_plays_per_game": 65.1,
+      "off_eligible_drives_per_game": 11.0,
+      "rush_rate": 0.507,
+      "recent_totals": [
+        55,
+        72,
+        61
+      ]
+    },
+    {
+      "team": "West Virginia",
+      "games": 8,
+      "off_ppa": 0.181,
+      "def_ppa": 0.257,
+      "off_success": 0.428,
+      "def_success": 0.472,
+      "off_explosiveness": 1.33,
+      "def_explosiveness": 1.33,
+      "off_eligible_plays_per_game": 71.6,
+      "off_eligible_drives_per_game": 12.0,
+      "rush_rate": 0.682,
+      "recent_totals": [
+        83,
+        87,
+        44
+      ]
+    },
+    {
+      "team": "Western Kentucky",
+      "games": 8,
+      "off_ppa": 0.017,
+      "def_ppa": 0.148,
+      "off_success": 0.383,
+      "def_success": 0.414,
+      "off_explosiveness": 1.256,
+      "def_explosiveness": 1.399,
+      "off_eligible_plays_per_game": 61.6,
+      "off_eligible_drives_per_game": 10.0,
+      "rush_rate": 0.452,
+      "recent_totals": [
+        47,
+        19,
+        56
+      ]
+    }
+  ]
+}
