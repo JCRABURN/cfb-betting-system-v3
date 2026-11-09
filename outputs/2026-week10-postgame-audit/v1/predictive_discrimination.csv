@@ -1,0 +1,13 @@
+week,market,n,field,point_biserial_r,auc_tie_half,exploratory_permutation_p,permutations,seed,repeated_team_clustering_not_accounted_for
+10,ATS,57,selected_forecast_edge,-0.134468,0.465261,0.312,999,290905,True
+10,ATS,57,research_score_not_calibrated,-0.134468,0.465261,0.312,999,290905,True
+10,TOTAL,57,selected_forecast_edge,-0.276612,0.306452,0.033,999,290905,True
+10,TOTAL,57,research_score_not_calibrated,-0.290818,0.306452,0.024,999,290905,True
+5-10,ATS,336,selected_forecast_edge,0.054774,0.53823,0.331,999,290905,True
+5-10,ATS,336,research_score_not_calibrated,0.054774,0.53823,0.331,999,290905,True
+5-10,TOTAL,336,selected_forecast_edge,-0.142024,0.419658,0.013,999,290905,True
+5-10,TOTAL,336,research_score_not_calibrated,-0.143399,0.419551,0.013,999,290905,True
+7-10,ATS,222,selected_forecast_edge,0.037887,0.529522,0.583,999,290905,True
+7-10,ATS,222,research_score_not_calibrated,0.037887,0.529522,0.583,999,290905,True
+7-10,TOTAL,222,selected_forecast_edge,-0.152175,0.417012,0.027,999,290905,True
+7-10,TOTAL,222,research_score_not_calibrated,-0.153457,0.41693,0.027,999,290905,True

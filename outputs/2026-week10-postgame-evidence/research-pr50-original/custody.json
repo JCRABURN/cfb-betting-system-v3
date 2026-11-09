@@ -1,0 +1,66 @@
+{
+  "captured_at_utc": "2026-11-09T15:22:52.689623+00:00",
+  "records": [
+    {
+      "source_commit": "8b6ee3b5c7b32113587c8d8ce730ff7750e2c0a8",
+      "source_path": "research/confidence_rebuild/protocol.json",
+      "path": "research__confidence_rebuild__protocol.json.gz",
+      "raw_sha256": "36daa4a8b7362772ebe97f6bf2d1ec4849e11d22586910992fac326fba5e05ec",
+      "stored_sha256": "5f122f21b0b0ceb9eacf84d837725e0fe277bc29fcc3d6acb711fe0ff5a8e03e"
+    },
+    {
+      "source_commit": "8b6ee3b5c7b32113587c8d8ce730ff7750e2c0a8",
+      "source_path": "research/confidence_rebuild/holdout/20261106-v1/prospective.json",
+      "path": "research__confidence_rebuild__holdout__20261106-v1__prospective.json.gz",
+      "raw_sha256": "592b564798c434846ce169728aa3d0a4fd1b112d5397e587d40703ce2e58c23c",
+      "stored_sha256": "99631624138c046cfe1b4e38a4d4144a2660609c9e20c849c3ef6bf7495970d5"
+    },
+    {
+      "source_commit": "8b6ee3b5c7b32113587c8d8ce730ff7750e2c0a8",
+      "source_path": "research/confidence_rebuild/holdout/20261106-v1/seal.json",
+      "path": "research__confidence_rebuild__holdout__20261106-v1__seal.json.gz",
+      "raw_sha256": "6184d21df020ff23d83859e40283f4827ce379c57996b9ccb8655e3a6a87bc14",
+      "stored_sha256": "4cfe3d5b3a6929aac328cbfef193b7bad8c08d66e037430254be464da7d093b2"
+    },
+    {
+      "source_commit": "8b6ee3b5c7b32113587c8d8ce730ff7750e2c0a8",
+      "source_path": "research/confidence_rebuild/results/v1/results.json",
+      "path": "research__confidence_rebuild__results__v1__results.json.gz",
+      "raw_sha256": "b75ea996a75d3ac502418f69455f482bc11cf160d2d1605e688cd1797eb57624",
+      "stored_sha256": "bd41249f85e48e35916d4951db537cf63d588d378ce43ba9e91ffacff32cce4b"
+    },
+    {
+      "source_commit": "8b6ee3b5c7b32113587c8d8ce730ff7750e2c0a8",
+      "source_path": "research/confidence_rebuild/observations.json",
+      "path": "research__confidence_rebuild__observations.json.gz",
+      "raw_sha256": "421c92e8642db04190ac93dc386017131a8941cc769e1f9a85b1d9ef576b6c77",
+      "stored_sha256": "35669617e4c05dc8b285d88ef50493e893fa8e1891d1bdd82128eeb42d957868"
+    },
+    {
+      "source_commit": null,
+      "source_path": "UNCOMMITTED_NOV6_REPORTING_ADDENDUM/evaluation-plan.json",
+      "path": "nov6-late-addendum__evaluation-plan.json.gz",
+      "raw_sha256": "a3fc5a5b06fcdfba255e0d75759d8ded436b9dacc130a93f4c3cfaf60fef2acd",
+      "stored_sha256": "b17add70b9016cb2301ec5094c6a8509434c0a5d3e3fe5fc65a358949f144d4f",
+      "not_original_preregistration": true
+    },
+    {
+      "source_commit": null,
+      "source_path": "UNCOMMITTED_NOV6_REPORTING_ADDENDUM/prior-only-stability.json",
+      "path": "nov6-late-addendum__prior-only-stability.json.gz",
+      "raw_sha256": "86f568e59112b3163a6bbdba19244dec05a6b37963ebfc08a1ea9bae0aba41a4",
+      "stored_sha256": "d5a8299db26448733113e65d0d869743c6f1a9b819dc10e9f9086d1ccec04952",
+      "not_original_preregistration": true
+    },
+    {
+      "source_commit": null,
+      "source_path": "UNCOMMITTED_NOV6_REPORTING_ADDENDUM/seal.json",
+      "path": "nov6-late-addendum__seal.json.gz",
+      "raw_sha256": "2b176ca17aa62b26a40a8e4856bcfd9b0ee05afd27835a8e5b1ca9928ba83232",
+      "stored_sha256": "66d7148f556fac51f59da17a1a38890e0e613db3914a8e179fb43d058c053d56",
+      "not_original_preregistration": true
+    }
+  ],
+  "policy_changed": false,
+  "owner_approval": "PENDING"
+}

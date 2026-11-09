@@ -1,0 +1,1 @@
+Initial v1 derived audit and its generating source are retained. v2 strengthens capture status/file coverage verification; no scores, grades, picks or numerical diagnostics are superseded. v1 was not independently approved or CI-verified.
