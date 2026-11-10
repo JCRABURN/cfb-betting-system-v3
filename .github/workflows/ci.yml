@@ -4,6 +4,7 @@ on:
   pull_request:
     branches:
       - main
+      - codex/2026-week10-splashsports-ingest
 
 concurrency:
   group: pr-tests-${{ github.workflow }}-${{ github.event.pull_request.number }}
@@ -81,3 +82,6 @@ jobs:
 
       - name: Verify exact Week 10 prospective custody
         run: python -m scripts.verify_week10_acceptance
+
+      - name: Verify exact Week 10 forensic audit and prospective research grading
+        run: python -m scripts.build_week10_formal_audit --verify

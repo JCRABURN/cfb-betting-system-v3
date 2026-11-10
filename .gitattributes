@@ -117,3 +117,9 @@ data/ingest/2026-week10-splashsports-README.md text eol=crlf
 outputs/2026-week10-context/** -text whitespace=cr-at-eol
 outputs/2026-week10-owner-review/** -text whitespace=cr-at-eol
 docs/week10-human-context-20261105.json -text
+
+# Append-only Week 10 forensic evidence and audit.
+outputs/2026-week10-postgame-evidence/** -text
+outputs/2026-week10-postgame-audit/** -text
+outputs/2026-week10-postgame-verification/** -text
+tests/fixtures/week10_formal_audit/** -text
