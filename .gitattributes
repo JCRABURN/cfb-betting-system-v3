@@ -123,3 +123,6 @@ outputs/2026-week10-postgame-evidence/** -text
 outputs/2026-week10-postgame-audit/** -text
 outputs/2026-week10-postgame-verification/** -text
 tests/fixtures/week10_formal_audit/** -text
+
+# Preserve append-only Week 11 source captures and readiness records.
+outputs/2026-week11-readiness/** -text
