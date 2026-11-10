@@ -1,0 +1,90 @@
+[
+  {
+    "gameId": "2026-11-07-Oregon State-Texas State",
+    "gameNumber": "022",
+    "dateISO": "2026-11-07",
+    "updatedAtUTC": "2026-11-05T03:06:49.9472709Z",
+    "kickoff": "19:30:00",
+    "kickoffUTC": "2026-11-08T03:30:00Z",
+    "timeZone": "Pacific Standard Time",
+    "timeZoneLabel": "PT",
+    "network": "CW",
+    "venue": "Reser Stadium in Corvallis, OR",
+    "notes": "Advance Report",
+    "away": {
+      "name": "Texas State",
+      "players": [
+        {
+          "name": "Cole Snodgrass",
+          "position": "TE",
+          "status": "Out"
+        },
+        {
+          "name": "Joshua Selmes",
+          "position": "SP",
+          "status": "Out"
+        },
+        {
+          "name": "Ayden Jones",
+          "position": "ILB",
+          "status": "Out"
+        },
+        {
+          "name": "Tice Williams",
+          "position": "ILB",
+          "status": "Questionable"
+        },
+        {
+          "name": "Chris Jones",
+          "position": "DB",
+          "status": "Probable"
+        },
+        {
+          "name": "Tymere Jackson",
+          "position": "DL",
+          "status": "Probable"
+        },
+        {
+          "name": "Jayden Lawton",
+          "position": "DB",
+          "status": "Out"
+        },
+        {
+          "name": "Mekhi Buchanan",
+          "position": "DL",
+          "status": "Out for Season"
+        }
+      ]
+    },
+    "home": {
+      "name": "Oregon State",
+      "players": [
+        {
+          "name": "Eddie Freauff",
+          "position": "WR",
+          "status": "Questionable"
+        },
+        {
+          "name": "Ryan RJ Whitten",
+          "position": "DB",
+          "status": "Out"
+        },
+        {
+          "name": "Tevita Pome'e",
+          "position": "DL",
+          "status": "Questionable"
+        },
+        {
+          "name": "Kai Wheaton",
+          "position": "DB",
+          "status": "Out"
+        },
+        {
+          "name": "Kord Shaw",
+          "position": "ILB",
+          "status": "Out for Season"
+        }
+      ]
+    }
+  }
+]

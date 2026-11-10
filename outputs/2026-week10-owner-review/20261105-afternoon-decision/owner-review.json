@@ -1,0 +1,442 @@
+{
+  "created_at_utc": "2026-11-05T19:17:41.591559+00:00",
+  "source_delivery_commit": "bf3e359ba25c3013e6ecb5574c26306eaceddba9",
+  "sealed_board_sha256": "7868e32c4de6f2154d1f8edfdce01042abf3f7933bb11d3a5509c58f448f9dbd",
+  "owner_approval": "PENDING",
+  "model_policy_changed": false,
+  "evidence_inventory_path": "outputs/2026-week10-context/20261105-afternoon-decision-evidence-inventory.json",
+  "evidence_inventory_sha256": "6ff5cbb0a914a2c94870e59b46d60b7c7d25d1522101282e4620cf63c12cf40d",
+  "evidence_directories": [
+    "outputs/2026-week10-context/20261105T133614Z-morning",
+    "outputs/2026-week10-context/20261105T134010Z-supplement",
+    "outputs/2026-week10-context/20261105T134105Z-supplement",
+    "outputs/2026-week10-context/20261105T134150Z-supplement",
+    "outputs/2026-week10-context/20261105T134216Z-discovery",
+    "outputs/2026-week10-context/20261105T134341Z-discovery",
+    "outputs/2026-week10-context/20261105T134425Z-official-availability",
+    "outputs/2026-week10-context/20261105T134629Z-supplement",
+    "outputs/2026-week10-context/20261105T190345Z-availability"
+  ],
+  "previous_review_path": null,
+  "previous_review_sha256": null,
+  "human_brief_path": "docs/week10-human-context-20261105.json",
+  "human_brief_sha256": "2b7e0cca557ef2e3b2a7c734f7a7c9ccf304e7671c04b382005c6a811976ce5e",
+  "method": "Qualitative owner-review order only. No fitted scoring rule, diversification quota, numeric forecast adjustment, validated win probability, or policy promotion. Original combined research ranking is retained separately.",
+  "limitations": [
+    "Morning official articles and weather are snapshots, not final 90-minute availability or observed game conditions. Saturday candidates require later prospective review.",
+    "ACC and SEC reports are initial reports. A depth chart or absence from a partial injury list is not medical clearance.",
+    "Sun Belt timestamp correction: its raw response was retrieved at 19:03 UTC, after the 15:33 UTC publication. The earlier conversational warning mistakenly compared publication with the morning capture. Both actual timestamps are preserved; this afternoon recommendation may use the report.",
+    "Current separately retrieved Week9 ESPN box scores differ from some PR48 process figures. FAU-UNT now yields 1160 yards and 167 pass-attempt-plus-rush-attempt plays; prior audit records 1167 and 172. Neither historical evidence nor conclusions are superseded here. Definitions/provider revisions remain unresolved.",
+    "All uncertainty fields are frozen research-model scales, not validated intervals. Human confidence is a cautious ordinal judgment, not a win probability.",
+    "Current CFBD market observations are kept separately; no qualified historical closing price or CLV is claimed."
+  ],
+  "selections": [
+    {
+      "game_id": 401856743,
+      "market": "ATS",
+      "owner_review_rank": 1,
+      "recommended_five": true,
+      "created_at_utc": "2026-11-05T19:17:41.591559+00:00",
+      "owner_approval": "PENDING",
+      "away": "Texas",
+      "home": "Missouri",
+      "selection": "Missouri",
+      "locked_line": 2.5,
+      "frozen_projection_home_margin_or_total": 7.397223677501334,
+      "frozen_confidence": 1,
+      "frozen_uncertainty_points": 18.282403890297676,
+      "original_market_research_rank": 3,
+      "research_score_not_calibrated": 0.5494861183875067,
+      "selected_forecast_edge": 9.897223677501334,
+      "human_review_confidence_1_to_5": 2,
+      "numeric_projection_adjustment": 0,
+      "rationale": "Missouri's frozen home-win projection and defensive efficiency support taking the home underdog. The initial SEC report lists Texas LT Trevor Goosby and RB Hollywood Smothers out, with Colin Simmons, Ryan Wingo and Cam Coleman questionable. Missouri's QB room is listed available. These are contextual checks, not additional injury points.",
+      "risks": "Texas has the stronger frozen defensive efficiency. Missouri RT Josh Atkins, RB Malae Fonoti and TE Gavin Hoffman are out. A Texas win by three defeats +2.5. Initial availability can change; no independent causal injury valuation is available.",
+      "sources": [
+        {
+          "manifest": "outputs/2026-week10-context/20261105T134425Z-official-availability/capture-manifest.json",
+          "name": "SEC",
+          "published_at_utc": "2026-11-05T01:10:00Z"
+        },
+        {
+          "manifest": "outputs/2026-week10-context/20261105T133614Z-morning/capture-manifest.json",
+          "name": "weather-hourly-401856743"
+        }
+      ]
+    },
+    {
+      "game_id": 401858289,
+      "market": "ATS",
+      "owner_review_rank": 2,
+      "recommended_five": true,
+      "created_at_utc": "2026-11-05T19:17:41.591559+00:00",
+      "owner_approval": "PENDING",
+      "away": "Florida State",
+      "home": "Boston College",
+      "selection": "Boston College",
+      "locked_line": 6.5,
+      "frozen_projection_home_margin_or_total": 4.301903078264701,
+      "frozen_confidence": 1,
+      "frozen_uncertainty_points": 18.282093349304464,
+      "original_market_research_rank": 2,
+      "research_score_not_calibrated": 0.5540095153913235,
+      "selected_forecast_edge": 10.8019030782647,
+      "human_review_confidence_1_to_5": 2,
+      "numeric_projection_adjustment": 0,
+      "rationale": "The frozen projection favors Boston College at home. FSU's initial report lists Duce Robinson and multiple secondary players out. BC's passing defense and Mason McKenzie's rushing contribution provide a matchup basis beyond the raw spread gap.",
+      "risks": "BC starting center Michael Crounse is OUT despite appearing on the earlier depth chart; protection/communication risk is material. FSU fired Mike Norvell November 1 and appointed Rick Stockstill interim; direction of the coaching effect is unknown. +6.5 loses to a seven-point defeat.",
+      "sources": [
+        {
+          "manifest": "outputs/2026-week10-context/20261105T134425Z-official-availability/capture-manifest.json",
+          "name": "ACC",
+          "published_at_utc": "2026-11-05T01:00:00Z"
+        },
+        {
+          "manifest": "outputs/2026-week10-context/20261105T133614Z-morning/capture-manifest.json",
+          "name": "article-florida-state-1"
+        },
+        {
+          "manifest": "outputs/2026-week10-context/20261105T133614Z-morning/capture-manifest.json",
+          "name": "article-boston-college-5"
+        },
+        {
+          "manifest": "outputs/2026-week10-context/20261105T133614Z-morning/capture-manifest.json",
+          "name": "weather-hourly-401858289"
+        }
+      ]
+    },
+    {
+      "game_id": 401858292,
+      "market": "ATS",
+      "owner_review_rank": 3,
+      "recommended_five": true,
+      "created_at_utc": "2026-11-05T19:17:41.591559+00:00",
+      "owner_approval": "PENDING",
+      "away": "North Carolina",
+      "home": "UConn",
+      "selection": "UConn",
+      "locked_line": 6.5,
+      "frozen_projection_home_margin_or_total": 6.293334953288086,
+      "frozen_confidence": 1,
+      "frozen_uncertainty_points": 18.282230926744685,
+      "original_market_research_rank": 1,
+      "research_score_not_calibrated": 0.5639666747664405,
+      "selected_forecast_edge": 12.793334953288085,
+      "human_review_confidence_1_to_5": 2,
+      "numeric_projection_adjustment": 0,
+      "rationale": "UConn has the strongest frozen ATS research gap and home field. Its frozen offensive PPA is .229 versus UNC .145; Kalieb Osborne threw for 263 yards and two touchdowns last week.",
+      "risks": "UNC QB Billy Edwards Jr. just completed 28/34 for 341 yards and four TD against Miami. UConn allowed two second-half Air Force drives lasting over ten minutes. No complete current medical clearance for both OL/defensive units was obtained. The 12.79-point gap is smaller than the 18.28-point research uncertainty scale.",
+      "sources": [
+        {
+          "manifest": "outputs/2026-week10-context/20261105T133614Z-morning/capture-manifest.json",
+          "name": "article-uconn-2"
+        },
+        {
+          "manifest": "outputs/2026-week10-context/20261105T133614Z-morning/capture-manifest.json",
+          "name": "article-north-carolina-6"
+        },
+        {
+          "manifest": "outputs/2026-week10-context/20261105T133614Z-morning/capture-manifest.json",
+          "name": "espn-401858292"
+        },
+        {
+          "manifest": "outputs/2026-week10-context/20261105T133614Z-morning/capture-manifest.json",
+          "name": "weather-hourly-401858292"
+        }
+      ]
+    },
+    {
+      "game_id": 401869964,
+      "market": "TOTAL",
+      "owner_review_rank": 4,
+      "recommended_five": true,
+      "created_at_utc": "2026-11-05T19:17:41.591559+00:00",
+      "owner_approval": "PENDING",
+      "away": "James Madison",
+      "home": "Southern Miss",
+      "selection": "under",
+      "locked_line": 58.5,
+      "frozen_projection_home_margin_or_total": 47.41560149964227,
+      "frozen_confidence": 4,
+      "frozen_uncertainty_points": 16.733547423270483,
+      "original_market_research_rank": 5,
+      "research_score_not_calibrated": 0.7461443991654427,
+      "selected_forecast_edge": 11.084398500357729,
+      "human_review_confidence_1_to_5": 2,
+      "numeric_projection_adjustment": 0,
+      "rationale": "JMU's official 18.9 points allowed per game and Southern Miss's documented protection/passing inconsistency support a modest Under lean. The game-day report confirms Pettaway out. Southern Miss is on five days' rest versus JMU seven. No numeric discount is assigned for either fact.",
+      "risks": "Replacement Seth Cromwell ran for 135 yards against Troy; JMU's 21 points came with five turnovers and are not evidence of a collapsed offense. JMU has elite return production. Southern Miss OL Luke Rogers and Greg Nunnery are now available, potentially improving protection, but snap limits are unknown. JMU DB Jayon Harvey is out and WR Kylan Billiot is a game-time decision. Mild, calm weather offers little Under support.",
+      "sources": [
+        {
+          "manifest": "outputs/2026-week10-context/20261105T133614Z-morning/capture-manifest.json",
+          "name": "article-james-madison-1"
+        },
+        {
+          "manifest": "outputs/2026-week10-context/20261105T133614Z-morning/capture-manifest.json",
+          "name": "article-james-madison-0"
+        },
+        {
+          "manifest": "outputs/2026-week10-context/20261105T133614Z-morning/capture-manifest.json",
+          "name": "article-southern-miss-2"
+        },
+        {
+          "manifest": "outputs/2026-week10-context/20261105T190345Z-availability/capture-manifest.json",
+          "name": "sunbelt-availability-data",
+          "published_at_utc": "2026-11-05T15:33:29.6618971Z"
+        },
+        {
+          "manifest": "outputs/2026-week10-context/20261105T133614Z-morning/capture-manifest.json",
+          "name": "weather-hourly-401869964"
+        }
+      ]
+    },
+    {
+      "game_id": 401862823,
+      "market": "TOTAL",
+      "owner_review_rank": 5,
+      "recommended_five": true,
+      "created_at_utc": "2026-11-05T19:17:41.591559+00:00",
+      "owner_approval": "PENDING",
+      "away": "Air Force",
+      "home": "Army",
+      "selection": "over",
+      "locked_line": 45.5,
+      "frozen_projection_home_margin_or_total": 57.694350798599,
+      "frozen_confidence": 4,
+      "frozen_uncertainty_points": 16.733547423270483,
+      "original_market_research_rank": 4,
+      "research_score_not_calibrated": 0.7669186428577053,
+      "selected_forecast_edge": 12.194350798598997,
+      "human_review_confidence_1_to_5": 1,
+      "numeric_projection_adjustment": 0,
+      "rationale": "Army's defense allowed Memphis touchdowns on seven of eleven possessions and 554 yards; its frozen defensive PPA allowed is .269. Air Force QB Kemper Hodges ran for 200 yards and four TD last week. These support retaining the original Over candidate at very low confidence.",
+      "risks": "Both offenses are heavily run-based (84.6% and 79.9% in the frozen eligible-play statistics). Eligible drives average only 9.38 and 9.12; these are volume proxies, not a possession forecast. Air Force's long drives can erase possessions. Rivalry-specific game flow and rain remain risks; recent high totals are a small, opponent-dependent sample.",
+      "sources": [
+        {
+          "manifest": "outputs/2026-week10-context/20261105T133614Z-morning/capture-manifest.json",
+          "name": "article-air-force-1"
+        },
+        {
+          "manifest": "outputs/2026-week10-context/20261105T133614Z-morning/capture-manifest.json",
+          "name": "article-army-2"
+        },
+        {
+          "manifest": "outputs/2026-week10-context/20261105T133614Z-morning/capture-manifest.json",
+          "name": "article-uconn-2"
+        },
+        {
+          "manifest": "outputs/2026-week10-context/20261105T133614Z-morning/capture-manifest.json",
+          "name": "weather-hourly-401862823"
+        }
+      ]
+    },
+    {
+      "game_id": 401856856,
+      "market": "TOTAL",
+      "owner_review_rank": 6,
+      "recommended_five": false,
+      "created_at_utc": "2026-11-05T19:17:41.591559+00:00",
+      "owner_approval": "PENDING",
+      "away": "West Virginia",
+      "home": "Texas Tech",
+      "selection": "under",
+      "locked_line": 65.5,
+      "frozen_projection_home_margin_or_total": 51.58358941361724,
+      "frozen_confidence": 4,
+      "frozen_uncertainty_points": 16.733547423270483,
+      "original_market_research_rank": 3,
+      "research_score_not_calibrated": 0.7971959901272516,
+      "selected_forecast_edge": 13.91641058638276,
+      "human_review_confidence_1_to_5": 1,
+      "numeric_projection_adjustment": 0,
+      "rationale": "First totals alternative: Texas Tech's strong run defense can suppress WVU. The frozen total is 51.58 against 65.5.",
+      "risks": "Texas Tech changed to dual-threat Thomas Castellanos before Week9, so only one game of the new offense enters the frozen inputs. WVU allows 32.3 points per game and its last three game totals were 83, 87 and 44. Texas Tech scoring and explosive runs could defeat the Under by themselves; WVU has extra rest.",
+      "sources": [
+        {
+          "manifest": "outputs/2026-week10-context/20261105T133614Z-morning/capture-manifest.json",
+          "name": "article-west-virginia-4"
+        },
+        {
+          "manifest": "outputs/2026-week10-context/20261105T133614Z-morning/capture-manifest.json",
+          "name": "article-texas-tech-1"
+        },
+        {
+          "manifest": "outputs/2026-week10-context/20261105T133614Z-morning/capture-manifest.json",
+          "name": "weather-hourly-401856856"
+        }
+      ]
+    },
+    {
+      "game_id": 401871076,
+      "market": "ATS",
+      "owner_review_rank": 7,
+      "recommended_five": false,
+      "created_at_utc": "2026-11-05T19:17:41.591559+00:00",
+      "owner_approval": "PENDING",
+      "away": "Western Kentucky",
+      "home": "Middle Tennessee",
+      "selection": "Middle Tennessee",
+      "locked_line": 1.5,
+      "frozen_projection_home_margin_or_total": 6.674064734899223,
+      "frozen_confidence": 1,
+      "frozen_uncertainty_points": 18.282282789677268,
+      "original_market_research_rank": 5,
+      "research_score_not_calibrated": 0.5408703236744961,
+      "selected_forecast_edge": 8.174064734899222,
+      "human_review_confidence_1_to_5": 1,
+      "numeric_projection_adjustment": 0,
+      "rationale": "Middle Tennessee's frozen home margin is +6.67 and offensive PPA exceeds WKU's. WKU scored no second-half points in its last game.",
+      "risks": "Middle Tennessee allowed 44 points to Kennesaw State, and its last score included a 100-yard kickoff-return TD. The 8.17-point gap is the smallest of these five ATS candidates and both personnel certainty and defensive reliability are weak. +1.5 provides little cushion.",
+      "sources": [
+        {
+          "manifest": "outputs/2026-week10-context/20261105T133614Z-morning/capture-manifest.json",
+          "name": "article-western-kentucky-1"
+        },
+        {
+          "manifest": "outputs/2026-week10-context/20261105T133614Z-morning/capture-manifest.json",
+          "name": "espn-401871076"
+        },
+        {
+          "manifest": "outputs/2026-week10-context/20261105T133614Z-morning/capture-manifest.json",
+          "name": "weather-hourly-401871076"
+        }
+      ]
+    },
+    {
+      "game_id": 401860911,
+      "market": "ATS",
+      "owner_review_rank": 8,
+      "recommended_five": false,
+      "created_at_utc": "2026-11-05T19:17:41.591559+00:00",
+      "owner_approval": "PENDING",
+      "away": "Boise State",
+      "home": "Colorado State",
+      "selection": "Colorado State",
+      "locked_line": 17.5,
+      "frozen_projection_home_margin_or_total": -8.160541567652261,
+      "frozen_confidence": 1,
+      "frozen_uncertainty_points": 18.28632988390051,
+      "original_market_research_rank": 4,
+      "research_score_not_calibrated": 0.5466972921617387,
+      "selected_forecast_edge": 9.339458432347739,
+      "human_review_confidence_1_to_5": 1,
+      "numeric_projection_adjustment": 0,
+      "rationale": "Colorado State receives 17.5 with a frozen projected loss by 8.16. Boise QB Maddux Madsen is questionable, but no extra absence adjustment is invented.",
+      "risks": "CSU allows 261.1 rushing yards per game, worst nationally in its official report; Boise RB Dylan Riley averages 131.1. Boise backup Max Cutforth threw three late TD against Texas State. CSU has OL/RB uncertainty and multiple secondary absences; Boise OL Carson Rasmussen and RB Sire Gaines are out. QB uncertainty alone does not justify selection.",
+      "sources": [
+        {
+          "manifest": "outputs/2026-week10-context/20261105T133614Z-morning/capture-manifest.json",
+          "name": "article-boise-state-4"
+        },
+        {
+          "manifest": "outputs/2026-week10-context/20261105T133614Z-morning/capture-manifest.json",
+          "name": "article-colorado-state-2"
+        },
+        {
+          "manifest": "outputs/2026-week10-context/20261105T190345Z-availability/capture-manifest.json",
+          "name": "pac12-availability-data"
+        },
+        {
+          "manifest": "outputs/2026-week10-context/20261105T134010Z-supplement/capture-manifest.json",
+          "name": "texas-state-recap"
+        },
+        {
+          "manifest": "outputs/2026-week10-context/20261105T133614Z-morning/capture-manifest.json",
+          "name": "weather-hourly-401860911"
+        }
+      ]
+    },
+    {
+      "game_id": 401862817,
+      "market": "TOTAL",
+      "owner_review_rank": 9,
+      "recommended_five": false,
+      "created_at_utc": "2026-11-05T19:17:41.591559+00:00",
+      "owner_approval": "PENDING",
+      "away": "UTSA",
+      "home": "Florida Atlantic",
+      "selection": "under",
+      "locked_line": 73.5,
+      "frozen_projection_home_margin_or_total": 56.62204343751911,
+      "frozen_confidence": 5,
+      "frozen_uncertainty_points": 16.733547423270483,
+      "original_market_research_rank": 1,
+      "research_score_not_calibrated": 0.8434239232061038,
+      "selected_forecast_edge": 16.87795656248089,
+      "human_review_confidence_1_to_5": 1,
+      "numeric_projection_adjustment": 0,
+      "rationale": "Exclude the original combined number one from the recommended five. FAU's official notes show Caden Veltkamp at 28.43 completions per game, 71.8% completion, 23 passing TD; Easton Messer has 74 catches. FAU leads combined return TD. The raw 16.88-point Under gap is insufficient evidence of reliability.",
+      "risks": "FAU's last three game totals are 80, 100 and 89. The currently retrieved Week9 box score has 167 combined pass/rush attempts and 1160 yards; both differ from the preserved formal audit and are labeled separately. Last week's frozen FAU-UNT projection missed by +29.21 actual-minus-forecast points. UTSA has twelve days' rest; Boca forecast is mild with only 6-7 mph wind. Depth charts identify Veltkamp/Devillier and McCown/Tennison, but complete final OL/defensive medical clearance is missing.",
+      "sources": [
+        {
+          "manifest": "outputs/2026-week10-context/20261105T133614Z-morning/capture-manifest.json",
+          "name": "article-florida-atlantic-0"
+        },
+        {
+          "manifest": "outputs/2026-week10-context/20261105T133614Z-morning/capture-manifest.json",
+          "name": "article-utsa-2"
+        },
+        {
+          "manifest": "outputs/2026-week10-context/20261105T134105Z-supplement/capture-manifest.json",
+          "name": "fau-notes-download"
+        },
+        {
+          "manifest": "outputs/2026-week10-context/20261105T134010Z-supplement/capture-manifest.json",
+          "name": "utsa-notes-c"
+        },
+        {
+          "manifest": "outputs/2026-week10-context/20261105T134629Z-supplement/capture-manifest.json",
+          "name": "fau-week9-box"
+        },
+        {
+          "manifest": "outputs/2026-week10-context/20261105T133614Z-morning/capture-manifest.json",
+          "name": "weather-hourly-401862817"
+        }
+      ]
+    },
+    {
+      "game_id": 401860912,
+      "market": "TOTAL",
+      "owner_review_rank": 10,
+      "recommended_five": false,
+      "created_at_utc": "2026-11-05T19:17:41.591559+00:00",
+      "owner_approval": "PENDING",
+      "away": "Texas State",
+      "home": "Oregon State",
+      "selection": "under",
+      "locked_line": 72.5,
+      "frozen_projection_home_margin_or_total": 56.22188309796162,
+      "frozen_confidence": 5,
+      "frozen_uncertainty_points": 16.733547423270483,
+      "original_market_research_rank": 2,
+      "research_score_not_calibrated": 0.8346695138934934,
+      "selected_forecast_edge": 16.278116902038377,
+      "human_review_confidence_1_to_5": 1,
+      "numeric_projection_adjustment": 0,
+      "rationale": "Exclude the original combined number two. Oregon State reports 517.4 yards and 40.1 points per game, with Braden Atkinson above 300 passing yards in all eight games. Texas State scored 45 last week and its frozen offensive success rate is .493. The 56.22 forecast understates a credible high-scoring scenario without establishing its probability.",
+      "risks": "Texas State's last game included 67-, 44- and 72-yard touchdown passes, a 35-yard QB TD run and a pick-six. Its frozen Week9 total missed by +35.26 points. TXST LB Ayden Jones and DB Jayden Lawton are out; OSU DBs Ryan Whitten and Kai Wheaton are out. Corvallis rain/wind (roughly 14-21 mph in the morning forecast) could favor Under, and OSU defense improved, but neither warrants an invented point adjustment.",
+      "sources": [
+        {
+          "manifest": "outputs/2026-week10-context/20261105T133614Z-morning/capture-manifest.json",
+          "name": "article-oregon-state-1"
+        },
+        {
+          "manifest": "outputs/2026-week10-context/20261105T134010Z-supplement/capture-manifest.json",
+          "name": "texas-state-recap"
+        },
+        {
+          "manifest": "outputs/2026-week10-context/20261105T190345Z-availability/capture-manifest.json",
+          "name": "pac12-availability-data"
+        },
+        {
+          "manifest": "outputs/2026-week10-context/20261105T134629Z-supplement/capture-manifest.json",
+          "name": "texas-state-week9-box"
+        },
+        {
+          "manifest": "outputs/2026-week10-context/20261105T133614Z-morning/capture-manifest.json",
+          "name": "weather-hourly-401860912"
+        }
+      ]
+    }
+  ]
+}

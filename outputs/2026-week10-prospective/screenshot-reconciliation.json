@@ -1,0 +1,660 @@
+{
+  "unique_games": 62,
+  "upcoming": 57,
+  "excluded_elapsed_games": [
+    {
+      "game_id": 401866453,
+      "reason": "FINAL_AT_SCREENSHOT_RECEIPT_NOT_PROSPECTIVE",
+      "source_csv_row": 2,
+      "kickoff_utc": "2026-11-04T00:00:00+00:00"
+    },
+    {
+      "game_id": 401866454,
+      "reason": "FINAL_AT_SCREENSHOT_RECEIPT_NOT_PROSPECTIVE",
+      "source_csv_row": 3,
+      "kickoff_utc": "2026-11-04T01:00:00+00:00"
+    },
+    {
+      "game_id": 401866455,
+      "reason": "KICKOFF_ELAPSED_BEFORE_GENERATION",
+      "source_csv_row": 4,
+      "kickoff_utc": "2026-11-05T00:00:00+00:00"
+    },
+    {
+      "game_id": 401866457,
+      "reason": "KICKOFF_ELAPSED_BEFORE_GENERATION",
+      "source_csv_row": 5,
+      "kickoff_utc": "2026-11-05T00:00:00+00:00"
+    },
+    {
+      "game_id": 401866456,
+      "reason": "KICKOFF_ELAPSED_BEFORE_GENERATION",
+      "source_csv_row": 6,
+      "kickoff_utc": "2026-11-05T00:30:00+00:00"
+    }
+  ],
+  "line_discrepancies": [],
+  "rows": [
+    {
+      "game_id": 401866453,
+      "source_csv_row": 2,
+      "original_reference": "SplashSports screenshot supplied 2026-11-04 image 1 row 1",
+      "verified_reference": "splashsports-01.png:row-1",
+      "canonical_away": "Ohio",
+      "canonical_home": "Akron",
+      "line_values_match": true,
+      "status": "FINAL_AT_SCREENSHOT_RECEIPT_NOT_PROSPECTIVE"
+    },
+    {
+      "game_id": 401866454,
+      "source_csv_row": 3,
+      "original_reference": "SplashSports screenshot supplied 2026-11-04 image 1 row 2",
+      "verified_reference": "splashsports-01.png:row-2",
+      "canonical_away": "Buffalo",
+      "canonical_home": "Miami (OH)",
+      "line_values_match": true,
+      "status": "FINAL_AT_SCREENSHOT_RECEIPT_NOT_PROSPECTIVE"
+    },
+    {
+      "game_id": 401866455,
+      "source_csv_row": 4,
+      "original_reference": "SplashSports screenshot supplied 2026-11-04 image 1 row 3",
+      "verified_reference": "splashsports-01.png:row-3",
+      "canonical_away": "Ball State",
+      "canonical_home": "Massachusetts",
+      "line_values_match": true,
+      "status": "KICKOFF_ELAPSED_BEFORE_GENERATION"
+    },
+    {
+      "game_id": 401866457,
+      "source_csv_row": 5,
+      "original_reference": "SplashSports screenshot supplied 2026-11-04 image 1 row 4",
+      "verified_reference": "splashsports-01.png:row-4",
+      "canonical_away": "Toledo",
+      "canonical_home": "Sacramento State",
+      "line_values_match": true,
+      "status": "KICKOFF_ELAPSED_BEFORE_GENERATION"
+    },
+    {
+      "game_id": 401866456,
+      "source_csv_row": 6,
+      "original_reference": "SplashSports screenshot supplied 2026-11-04 image 1 row 5",
+      "verified_reference": "splashsports-01.png:row-5",
+      "canonical_away": "Central Michigan",
+      "canonical_home": "Eastern Michigan",
+      "line_values_match": true,
+      "status": "KICKOFF_ELAPSED_BEFORE_GENERATION"
+    },
+    {
+      "game_id": 401862817,
+      "source_csv_row": 7,
+      "original_reference": "SplashSports screenshot supplied 2026-11-04 image 1 row 6",
+      "verified_reference": "splashsports-01.png:row-6",
+      "canonical_away": "UTSA",
+      "canonical_home": "Florida Atlantic",
+      "line_values_match": true,
+      "status": "UPCOMING"
+    },
+    {
+      "game_id": 401869964,
+      "source_csv_row": 8,
+      "original_reference": "SplashSports screenshot supplied 2026-11-04 image 1 row 7",
+      "verified_reference": "splashsports-02.png:row-1",
+      "canonical_away": "James Madison",
+      "canonical_home": "Southern Miss",
+      "line_values_match": true,
+      "status": "UPCOMING"
+    },
+    {
+      "game_id": 401858288,
+      "source_csv_row": 9,
+      "original_reference": "SplashSports screenshot supplied 2026-11-04 image 2 row 1",
+      "verified_reference": "splashsports-02.png:row-2",
+      "canonical_away": "Virginia Tech",
+      "canonical_home": "SMU",
+      "line_values_match": true,
+      "status": "UPCOMING"
+    },
+    {
+      "game_id": 401862818,
+      "source_csv_row": 10,
+      "original_reference": "SplashSports screenshot supplied 2026-11-04 image 2 row 2",
+      "verified_reference": "splashsports-02.png:row-3",
+      "canonical_away": "South Florida",
+      "canonical_home": "East Carolina",
+      "line_values_match": true,
+      "status": "UPCOMING"
+    },
+    {
+      "game_id": 401858510,
+      "source_csv_row": 11,
+      "original_reference": "SplashSports screenshot supplied 2026-11-04 image 2 row 3",
+      "verified_reference": "splashsports-02.png:row-4",
+      "canonical_away": "Nebraska",
+      "canonical_home": "Illinois",
+      "line_values_match": true,
+      "status": "UPCOMING"
+    },
+    {
+      "game_id": 401864533,
+      "source_csv_row": 12,
+      "original_reference": "SplashSports screenshot supplied 2026-11-04 image 2 row 4",
+      "verified_reference": "splashsports-02.png:row-5",
+      "canonical_away": "New Mexico",
+      "canonical_home": "Nevada",
+      "line_values_match": true,
+      "status": "UPCOMING"
+    },
+    {
+      "game_id": 401856855,
+      "source_csv_row": 13,
+      "original_reference": "SplashSports screenshot supplied 2026-11-04 image 2 row 5",
+      "verified_reference": "splashsports-02.png:row-6",
+      "canonical_away": "TCU",
+      "canonical_home": "Arizona",
+      "line_values_match": true,
+      "status": "UPCOMING"
+    },
+    {
+      "game_id": 401858289,
+      "source_csv_row": 14,
+      "original_reference": "SplashSports screenshot supplied 2026-11-04 image 2 row 6",
+      "verified_reference": "splashsports-02.png:row-7",
+      "canonical_away": "Florida State",
+      "canonical_home": "Boston College",
+      "line_values_match": true,
+      "status": "UPCOMING"
+    },
+    {
+      "game_id": 401858512,
+      "source_csv_row": 15,
+      "original_reference": "SplashSports screenshot supplied 2026-11-04 image 3 row 1",
+      "verified_reference": "splashsports-03.png:row-1",
+      "canonical_away": "UCLA",
+      "canonical_home": "Minnesota",
+      "line_values_match": true,
+      "status": "UPCOMING"
+    },
+    {
+      "game_id": 401858285,
+      "source_csv_row": 16,
+      "original_reference": "SplashSports screenshot supplied 2026-11-04 image 3 row 2",
+      "verified_reference": "splashsports-03.png:row-2",
+      "canonical_away": "Clemson",
+      "canonical_home": "Syracuse",
+      "line_values_match": true,
+      "status": "UPCOMING"
+    },
+    {
+      "game_id": 401856849,
+      "source_csv_row": 17,
+      "original_reference": "SplashSports screenshot supplied 2026-11-04 image 3 row 3",
+      "verified_reference": "splashsports-03.png:row-3",
+      "canonical_away": "BYU",
+      "canonical_home": "Utah",
+      "line_values_match": true,
+      "status": "UPCOMING"
+    },
+    {
+      "game_id": 401856853,
+      "source_csv_row": 18,
+      "original_reference": "SplashSports screenshot supplied 2026-11-04 image 3 row 4",
+      "verified_reference": "splashsports-03.png:row-4",
+      "canonical_away": "Iowa State",
+      "canonical_home": "Baylor",
+      "line_values_match": true,
+      "status": "UPCOMING"
+    },
+    {
+      "game_id": 401858292,
+      "source_csv_row": 19,
+      "original_reference": "SplashSports screenshot supplied 2026-11-04 image 3 row 5",
+      "verified_reference": "splashsports-03.png:row-5",
+      "canonical_away": "North Carolina",
+      "canonical_home": "UConn",
+      "line_values_match": true,
+      "status": "UPCOMING"
+    },
+    {
+      "game_id": 401856743,
+      "source_csv_row": 20,
+      "original_reference": "SplashSports screenshot supplied 2026-11-04 image 3 row 6",
+      "verified_reference": "splashsports-03.png:row-6",
+      "canonical_away": "Texas",
+      "canonical_home": "Missouri",
+      "line_values_match": true,
+      "status": "UPCOMING"
+    },
+    {
+      "game_id": 401862822,
+      "source_csv_row": 21,
+      "original_reference": "SplashSports screenshot supplied 2026-11-04 image 3 row 7",
+      "verified_reference": "splashsports-03.png:row-7",
+      "canonical_away": "Tulsa",
+      "canonical_home": "Tulane",
+      "line_values_match": true,
+      "status": "UPCOMING"
+    },
+    {
+      "game_id": 401858286,
+      "source_csv_row": 22,
+      "original_reference": "SplashSports screenshot supplied 2026-11-04 image 3 row 8",
+      "verified_reference": "splashsports-03.png:row-8",
+      "canonical_away": "Duke",
+      "canonical_home": "NC State",
+      "line_values_match": true,
+      "status": "UPCOMING"
+    },
+    {
+      "game_id": 401858515,
+      "source_csv_row": 23,
+      "original_reference": "SplashSports screenshot supplied 2026-11-04 image 4 row 1",
+      "verified_reference": "splashsports-04.png:row-1",
+      "canonical_away": "Maryland",
+      "canonical_home": "Purdue",
+      "line_values_match": true,
+      "status": "UPCOMING"
+    },
+    {
+      "game_id": 401856738,
+      "source_csv_row": 24,
+      "original_reference": "SplashSports screenshot supplied 2026-11-04 image 4 row 2",
+      "verified_reference": "splashsports-04.png:row-2",
+      "canonical_away": "Arkansas",
+      "canonical_home": "Auburn",
+      "line_values_match": true,
+      "status": "UPCOMING"
+    },
+    {
+      "game_id": 401869945,
+      "source_csv_row": 25,
+      "original_reference": "SplashSports screenshot supplied 2026-11-04 image 4 row 3",
+      "verified_reference": "splashsports-04.png:row-3",
+      "canonical_away": "Old Dominion",
+      "canonical_home": "Coastal Carolina",
+      "line_values_match": true,
+      "status": "UPCOMING"
+    },
+    {
+      "game_id": 401856854,
+      "source_csv_row": 26,
+      "original_reference": "SplashSports screenshot supplied 2026-11-04 image 4 row 4",
+      "verified_reference": "splashsports-04.png:row-4",
+      "canonical_away": "Oklahoma State",
+      "canonical_home": "Kansas State",
+      "line_values_match": true,
+      "status": "UPCOMING"
+    },
+    {
+      "game_id": 401869927,
+      "source_csv_row": 27,
+      "original_reference": "SplashSports screenshot supplied 2026-11-04 image 4 row 5",
+      "verified_reference": "splashsports-04.png:row-5",
+      "canonical_away": "Georgia State",
+      "canonical_home": "App State",
+      "line_values_match": true,
+      "status": "UPCOMING"
+    },
+    {
+      "game_id": 401869936,
+      "source_csv_row": 28,
+      "original_reference": "SplashSports screenshot supplied 2026-11-04 image 4 row 6",
+      "verified_reference": "splashsports-04.png:row-6",
+      "canonical_away": "UL Monroe",
+      "canonical_home": "Arkansas State",
+      "line_values_match": true,
+      "status": "UPCOMING"
+    },
+    {
+      "game_id": 401856744,
+      "source_csv_row": 29,
+      "original_reference": "SplashSports screenshot supplied 2026-11-04 image 4 row 7",
+      "verified_reference": "splashsports-04.png:row-7",
+      "canonical_away": "Texas A&M",
+      "canonical_home": "South Carolina",
+      "line_values_match": true,
+      "status": "UPCOMING"
+    },
+    {
+      "game_id": 401871073,
+      "source_csv_row": 30,
+      "original_reference": "SplashSports screenshot supplied 2026-11-04 image 4 row 8",
+      "verified_reference": "splashsports-04.png:row-8",
+      "canonical_away": "Delaware",
+      "canonical_home": "Kennesaw State",
+      "line_values_match": true,
+      "status": "UPCOMING"
+    },
+    {
+      "game_id": 401871076,
+      "source_csv_row": 31,
+      "original_reference": "SplashSports screenshot supplied 2026-11-04 image 5 row 1",
+      "verified_reference": "splashsports-05.png:row-1",
+      "canonical_away": "Western Kentucky",
+      "canonical_home": "Middle Tennessee",
+      "line_values_match": true,
+      "status": "UPCOMING"
+    },
+    {
+      "game_id": 401856851,
+      "source_csv_row": 32,
+      "original_reference": "SplashSports screenshot supplied 2026-11-04 image 5 row 2",
+      "verified_reference": "splashsports-05.png:row-2",
+      "canonical_away": "Cincinnati",
+      "canonical_home": "Houston",
+      "line_values_match": true,
+      "status": "UPCOMING"
+    },
+    {
+      "game_id": 401869951,
+      "source_csv_row": 33,
+      "original_reference": "SplashSports screenshot supplied 2026-11-04 image 5 row 3",
+      "verified_reference": "splashsports-05.png:row-3",
+      "canonical_away": "Marshall",
+      "canonical_home": "Georgia Southern",
+      "line_values_match": true,
+      "status": "UPCOMING"
+    },
+    {
+      "game_id": 401858514,
+      "source_csv_row": 34,
+      "original_reference": "SplashSports screenshot supplied 2026-11-04 image 5 row 4",
+      "verified_reference": "splashsports-05.png:row-4",
+      "canonical_away": "Oregon",
+      "canonical_home": "Ohio State",
+      "line_values_match": true,
+      "status": "UPCOMING"
+    },
+    {
+      "game_id": 401862819,
+      "source_csv_row": 35,
+      "original_reference": "SplashSports screenshot supplied 2026-11-04 image 5 row 5",
+      "verified_reference": "splashsports-05.png:row-5",
+      "canonical_away": "Charlotte",
+      "canonical_home": "UAB",
+      "line_values_match": true,
+      "status": "UPCOMING"
+    },
+    {
+      "game_id": 401856740,
+      "source_csv_row": 36,
+      "original_reference": "SplashSports screenshot supplied 2026-11-04 image 5 row 6",
+      "verified_reference": "splashsports-05.png:row-6",
+      "canonical_away": "Alabama",
+      "canonical_home": "LSU",
+      "line_values_match": true,
+      "status": "UPCOMING"
+    },
+    {
+      "game_id": 401858516,
+      "source_csv_row": 37,
+      "original_reference": "SplashSports screenshot supplied 2026-11-04 image 5 row 7",
+      "verified_reference": "splashsports-05.png:row-7",
+      "canonical_away": "Penn State",
+      "canonical_home": "Washington",
+      "line_values_match": true,
+      "status": "UPCOMING"
+    },
+    {
+      "game_id": 401862820,
+      "source_csv_row": 38,
+      "original_reference": "SplashSports screenshot supplied 2026-11-04 image 5 row 8",
+      "verified_reference": "splashsports-05.png:row-8",
+      "canonical_away": "Temple",
+      "canonical_home": "Navy",
+      "line_values_match": true,
+      "status": "UPCOMING"
+    },
+    {
+      "game_id": 401856850,
+      "source_csv_row": 39,
+      "original_reference": "SplashSports screenshot supplied 2026-11-04 image 6 row 1",
+      "verified_reference": "splashsports-06.png:row-1",
+      "canonical_away": "UCF",
+      "canonical_home": "Kansas",
+      "line_values_match": true,
+      "status": "UPCOMING"
+    },
+    {
+      "game_id": 401871098,
+      "source_csv_row": 40,
+      "original_reference": "SplashSports screenshot supplied 2026-11-04 image 6 row 2",
+      "verified_reference": "splashsports-06.png:row-2",
+      "canonical_away": "Louisiana Tech",
+      "canonical_home": "Troy",
+      "line_values_match": true,
+      "status": "UPCOMING"
+    },
+    {
+      "game_id": 401871074,
+      "source_csv_row": 41,
+      "original_reference": "SplashSports screenshot supplied 2026-11-04 image 6 row 3",
+      "verified_reference": "splashsports-06.png:row-3",
+      "canonical_away": "Missouri State",
+      "canonical_home": "Florida International",
+      "line_values_match": true,
+      "status": "UPCOMING"
+    },
+    {
+      "game_id": 401862821,
+      "source_csv_row": 42,
+      "original_reference": "SplashSports screenshot supplied 2026-11-04 image 6 row 4",
+      "verified_reference": "splashsports-06.png:row-4",
+      "canonical_away": "Rice",
+      "canonical_home": "North Texas",
+      "line_values_match": true,
+      "status": "UPCOMING"
+    },
+    {
+      "game_id": 401864534,
+      "source_csv_row": 43,
+      "original_reference": "SplashSports screenshot supplied 2026-11-04 image 6 row 5",
+      "verified_reference": "splashsports-06.png:row-5",
+      "canonical_away": "Northern Illinois",
+      "canonical_home": "San Jos\u00e9 State",
+      "line_values_match": true,
+      "status": "UPCOMING"
+    },
+    {
+      "game_id": 401858517,
+      "source_csv_row": 44,
+      "original_reference": "SplashSports screenshot supplied 2026-11-04 image 6 row 6",
+      "verified_reference": "splashsports-06.png:row-6",
+      "canonical_away": "Rutgers",
+      "canonical_home": "Wisconsin",
+      "line_values_match": true,
+      "status": "UPCOMING"
+    },
+    {
+      "game_id": 401856742,
+      "source_csv_row": 45,
+      "original_reference": "SplashSports screenshot supplied 2026-11-04 image 6 row 7",
+      "verified_reference": "splashsports-06.png:row-7",
+      "canonical_away": "Vanderbilt",
+      "canonical_home": "Mississippi State",
+      "line_values_match": true,
+      "status": "UPCOMING"
+    },
+    {
+      "game_id": 401869968,
+      "source_csv_row": 46,
+      "original_reference": "SplashSports screenshot supplied 2026-11-04 image 6 row 8",
+      "verified_reference": "splashsports-06.png:row-8",
+      "canonical_away": "South Alabama",
+      "canonical_home": "Louisiana",
+      "line_values_match": true,
+      "status": "UPCOMING"
+    },
+    {
+      "game_id": 401860911,
+      "source_csv_row": 47,
+      "original_reference": "SplashSports screenshot supplied 2026-11-04 image 7 row 1",
+      "verified_reference": "splashsports-07.png:row-1",
+      "canonical_away": "Boise State",
+      "canonical_home": "Colorado State",
+      "line_values_match": true,
+      "status": "UPCOMING"
+    },
+    {
+      "game_id": 401856745,
+      "source_csv_row": 48,
+      "original_reference": "SplashSports screenshot supplied 2026-11-04 image 7 row 2",
+      "verified_reference": "splashsports-07.png:row-2",
+      "canonical_away": "Kentucky",
+      "canonical_home": "Tennessee",
+      "line_values_match": true,
+      "status": "UPCOMING"
+    },
+    {
+      "game_id": 401871075,
+      "source_csv_row": 49,
+      "original_reference": "SplashSports screenshot supplied 2026-11-04 image 7 row 3",
+      "verified_reference": "splashsports-07.png:row-3",
+      "canonical_away": "Sam Houston",
+      "canonical_home": "Jacksonville State",
+      "line_values_match": true,
+      "status": "UPCOMING"
+    },
+    {
+      "game_id": 401858291,
+      "source_csv_row": 50,
+      "original_reference": "SplashSports screenshot supplied 2026-11-04 image 7 row 4",
+      "verified_reference": "splashsports-07.png:row-4",
+      "canonical_away": "Miami",
+      "canonical_home": "Notre Dame",
+      "line_values_match": true,
+      "status": "UPCOMING"
+    },
+    {
+      "game_id": 401856852,
+      "source_csv_row": 51,
+      "original_reference": "SplashSports screenshot supplied 2026-11-04 image 7 row 5",
+      "verified_reference": "splashsports-07.png:row-5",
+      "canonical_away": "Colorado",
+      "canonical_home": "Arizona State",
+      "line_values_match": true,
+      "status": "UPCOMING"
+    },
+    {
+      "game_id": 401858513,
+      "source_csv_row": 52,
+      "original_reference": "SplashSports screenshot supplied 2026-11-04 image 7 row 6",
+      "verified_reference": "splashsports-07.png:row-6",
+      "canonical_away": "Iowa",
+      "canonical_home": "Northwestern",
+      "line_values_match": true,
+      "status": "UPCOMING"
+    },
+    {
+      "game_id": 401856741,
+      "source_csv_row": 53,
+      "original_reference": "SplashSports screenshot supplied 2026-11-04 image 7 row 7",
+      "verified_reference": "splashsports-07.png:row-7",
+      "canonical_away": "Georgia",
+      "canonical_home": "Ole Miss",
+      "line_values_match": true,
+      "status": "UPCOMING"
+    },
+    {
+      "game_id": 401858511,
+      "source_csv_row": 54,
+      "original_reference": "SplashSports screenshot supplied 2026-11-04 image 8 row 1",
+      "verified_reference": "splashsports-08.png:row-1",
+      "canonical_away": "Michigan State",
+      "canonical_home": "Michigan",
+      "line_values_match": true,
+      "status": "UPCOMING"
+    },
+    {
+      "game_id": 401862823,
+      "source_csv_row": 55,
+      "original_reference": "SplashSports screenshot supplied 2026-11-04 image 8 row 2",
+      "verified_reference": "splashsports-08.png:row-2",
+      "canonical_away": "Air Force",
+      "canonical_home": "Army",
+      "line_values_match": true,
+      "status": "UPCOMING"
+    },
+    {
+      "game_id": 401858287,
+      "source_csv_row": 56,
+      "original_reference": "SplashSports screenshot supplied 2026-11-04 image 8 row 3",
+      "verified_reference": "splashsports-08.png:row-3",
+      "canonical_away": "Louisville",
+      "canonical_home": "Georgia Tech",
+      "line_values_match": true,
+      "status": "UPCOMING"
+    },
+    {
+      "game_id": 401856739,
+      "source_csv_row": 57,
+      "original_reference": "SplashSports screenshot supplied 2026-11-04 image 8 row 4",
+      "verified_reference": "splashsports-08.png:row-4",
+      "canonical_away": "Oklahoma",
+      "canonical_home": "Florida",
+      "line_values_match": true,
+      "status": "UPCOMING"
+    },
+    {
+      "game_id": 401870795,
+      "source_csv_row": 58,
+      "original_reference": "SplashSports screenshot supplied 2026-11-04 image 8 row 5",
+      "verified_reference": "splashsports-08.png:row-5",
+      "canonical_away": "Liberty",
+      "canonical_home": "New Mexico State",
+      "line_values_match": true,
+      "status": "UPCOMING"
+    },
+    {
+      "game_id": 401860913,
+      "source_csv_row": 59,
+      "original_reference": "SplashSports screenshot supplied 2026-11-04 image 8 row 6",
+      "verified_reference": "splashsports-08.png:row-6",
+      "canonical_away": "Fresno State",
+      "canonical_home": "Utah State",
+      "line_values_match": true,
+      "status": "UPCOMING"
+    },
+    {
+      "game_id": 401856856,
+      "source_csv_row": 60,
+      "original_reference": "SplashSports screenshot supplied 2026-11-04 image 8 row 7",
+      "verified_reference": "splashsports-08.png:row-7",
+      "canonical_away": "West Virginia",
+      "canonical_home": "Texas Tech",
+      "line_values_match": true,
+      "status": "UPCOMING"
+    },
+    {
+      "game_id": 401864532,
+      "source_csv_row": 61,
+      "original_reference": "SplashSports screenshot supplied 2026-11-04 image 8 row 8",
+      "verified_reference": "splashsports-08.png:row-8",
+      "canonical_away": "Hawai'i",
+      "canonical_home": "UTEP",
+      "line_values_match": true,
+      "status": "UPCOMING"
+    },
+    {
+      "game_id": 401864535,
+      "source_csv_row": 62,
+      "original_reference": "SplashSports screenshot supplied 2026-11-04 image 8 row 9",
+      "verified_reference": "splashsports-08.png:row-9",
+      "canonical_away": "Wyoming",
+      "canonical_home": "UNLV",
+      "line_values_match": true,
+      "status": "UPCOMING"
+    },
+    {
+      "game_id": 401860912,
+      "source_csv_row": 63,
+      "original_reference": "SplashSports screenshot supplied 2026-11-04 image 9 row 1",
+      "verified_reference": "splashsports-09.png:row-1",
+      "canonical_away": "Texas State",
+      "canonical_home": "Oregon State",
+      "line_values_match": true,
+      "status": "UPCOMING"
+    }
+  ],
+  "provenance_correction": "JMU-Southern Miss is image 2 row 1, not image 1 row 7; the other six image-2 rows shift down one. Original source files preserved."
+}

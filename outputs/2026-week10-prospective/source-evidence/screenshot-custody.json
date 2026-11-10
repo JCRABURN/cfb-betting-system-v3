@@ -1,0 +1,90 @@
+{
+  "source_thread_id": "6ad7c843-3a48-83ea-9bb3-00a537ae40d7",
+  "source_thread_title": "Review PR 38 Audit",
+  "recovered_at_utc": "2026-11-05T01:00:32.696962+00:00",
+  "chat_received_unix_seconds": 1793804878.701,
+  "capture_or_quote_time": null,
+  "original_pr49_head": "9b2fc77447163360d4e94046cc490be9d6813346",
+  "source_csv_sha256": "7fc188a42c3af15b29835e25110db6402cc12e4b6ca4a6ff6f9355d39d16da3d",
+  "source_manifest_sha256": "7157f98ada62c27bb7eae4e06dbed12f640577e431d5f351de5c29fa640cd47e",
+  "independent_review_sha256": "96b90508dd435861138d85a3e19f839109a2d1d80a464077cd7145452523380e",
+  "images": [
+    {
+      "image": 1,
+      "path": "splashsports-01.png",
+      "sha256": "a613cd483b104adf65fe6da23ad14becf9b125c41d64c2bd5273307b9ba0a182",
+      "chat_received_unix_seconds": 1793804837.486
+    },
+    {
+      "image": 2,
+      "path": "splashsports-02.png",
+      "sha256": "ae8a18194c9d46f7f92f0566a0c446bf2cdc4f79c2e614a1343c495344072363",
+      "chat_received_unix_seconds": 1793804837.486
+    },
+    {
+      "image": 3,
+      "path": "splashsports-03.png",
+      "sha256": "d26eba8c5e0df62b8ad932acb2720f7815b2de4d6d6edcaa970d29b8242dc3a4",
+      "chat_received_unix_seconds": 1793804837.486
+    },
+    {
+      "image": 4,
+      "path": "splashsports-04.png",
+      "sha256": "7368be986edf1544bf34f964fadcecfd82adb662f504b8c1e9166482c7446384",
+      "chat_received_unix_seconds": 1793804837.486
+    },
+    {
+      "image": 5,
+      "path": "splashsports-05.png",
+      "sha256": "bd462f642c513cf81a31b098fae9f381e29828fe6f7f7dbda0f1033ab3193232",
+      "chat_received_unix_seconds": 1793804837.486
+    },
+    {
+      "image": 6,
+      "path": "splashsports-06.png",
+      "sha256": "02fb90dc40211065beab9c40202f59cf9559eb91403a2e6eff871b9807fefd08",
+      "chat_received_unix_seconds": 1793804837.486
+    },
+    {
+      "image": 7,
+      "path": "splashsports-07.png",
+      "sha256": "68e4069529deb8bcded21313a8f3d281693d905b86f0e956eab95f571a30c760",
+      "chat_received_unix_seconds": 1793804837.486
+    },
+    {
+      "image": 8,
+      "path": "splashsports-08.png",
+      "sha256": "2eea1b2680dac07a196153212cb2e066d3858930020aac9b0fcf2f885e924d13",
+      "chat_received_unix_seconds": 1793804878.701
+    },
+    {
+      "image": 9,
+      "path": "splashsports-09.png",
+      "sha256": "9332f01fb539824ab8fa04c782a5b528210e25ff65844f17c9237df7476c93dc",
+      "chat_received_unix_seconds": 1793804878.701
+    }
+  ],
+  "actual_image_row_counts": [
+    6,
+    7,
+    8,
+    8,
+    8,
+    8,
+    7,
+    9,
+    1
+  ],
+  "original_manifest_image_row_counts": [
+    7,
+    6,
+    8,
+    8,
+    8,
+    8,
+    7,
+    9,
+    1
+  ],
+  "provenance_supersession": "JMU-Southern Miss is image 2 row 1, not image 1 row 7; the other six image-2 rows shift down one. Original source files preserved."
+}

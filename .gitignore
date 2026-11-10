@@ -229,3 +229,6 @@ __marimo__/
 
 # Disposable Week 9 execution database.
 data/week9-execution.db*
+
+# Disposable Week 10 execution database.
+data/week10-execution.db*

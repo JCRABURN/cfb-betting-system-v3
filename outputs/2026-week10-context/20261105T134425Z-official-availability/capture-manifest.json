@@ -1,0 +1,35 @@
+{
+  "records": [
+    {
+      "name": "SEC",
+      "url": "https://app.hdintelligence.com/api/get-publish-public",
+      "method": "POST_READ_ONLY_PUBLIC_REPORT",
+      "request": {
+        "sport": "Football",
+        "organization": "SEC",
+        "conference": "SEC"
+      },
+      "requested_at_utc": "2026-11-05T13:44:25.932334+00:00",
+      "received_at_utc": "2026-11-05T13:44:26.859020+00:00",
+      "http_status": 200,
+      "path": "SEC.json.gz",
+      "sha256": "50f65ffc2a9beb27957be71d90f0adcc652206850202848373bea18c89b6c977"
+    },
+    {
+      "name": "ACC",
+      "url": "https://app.hdintelligence.com/api/get-publish-public",
+      "method": "POST_READ_ONLY_PUBLIC_REPORT",
+      "request": {
+        "sport": "Football",
+        "organization": "ACC",
+        "conference": "ACC"
+      },
+      "requested_at_utc": "2026-11-05T13:44:26.872564+00:00",
+      "received_at_utc": "2026-11-05T13:44:28.049551+00:00",
+      "http_status": 200,
+      "path": "ACC.json.gz",
+      "sha256": "3e865eaf675177aa2439621656f27a2398acb8a32d14bfb44b2fda3870689c82"
+    }
+  ],
+  "discovery": "Official conference page -> HD Intelligence public embed -> PublishScreen public endpoint"
+}

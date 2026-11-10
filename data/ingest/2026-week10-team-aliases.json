@@ -1,0 +1,10 @@
+{
+  "version": "week10-source-alias-v1",
+  "aliases": {
+    "SplashSports": {
+      "Miami OH": "Miami (OH)"
+    }
+  },
+  "evidence": "Original screenshot 1 row 2 prints Miami (OH); CFBD teams/games identify Miami (OH); original PR49 normalized Miami OH maps incorrectly by generic prefix. Apply only at CanonicalTeamResolver boundary; preserve original CSV.",
+  "scope": "Week10 source reconciliation; elapsed Buffalo-Miami game excluded from model"
+}
