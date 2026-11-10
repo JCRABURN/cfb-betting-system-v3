@@ -85,3 +85,9 @@ jobs:
 
       - name: Verify exact Week 10 forensic audit and prospective research grading
         run: python -m scripts.build_week10_formal_audit --verify
+
+      - name: Verify Week 11 source custody and schedule readiness without contest lines
+        run: python -m scripts.prepare_week11_readiness --verify
+
+      - name: Verify separate Week 11 preparation research diagnostics
+        run: python -m research.week11_validation.anchor_diagnostics --verify

@@ -126,3 +126,8 @@ tests/fixtures/week10_formal_audit/** -text
 
 # Preserve append-only Week 11 source captures and readiness records.
 outputs/2026-week11-readiness/** -text
+tests/fixtures/week11_readiness/** -text
+research/week11_validation/results-v1.json -text
+# These two newly captured custody records retain their original Windows CRLF.
+outputs/2026-week11-readiness/repository-baseline.json -text whitespace=cr-at-eol
+tests/fixtures/week11_readiness/input-custody.json -text whitespace=cr-at-eol

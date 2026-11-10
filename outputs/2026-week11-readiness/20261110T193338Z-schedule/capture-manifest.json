@@ -1,0 +1,21 @@
+{
+  "version": "week11-date-schedule-v1",
+  "requested_at_utc": "2026-11-10T19:33:38.243002+00:00",
+  "received_at_utc": "2026-11-10T19:33:38.460403+00:00",
+  "endpoint": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/scoreboard",
+  "parameters": {
+    "dates": "20261110-20261116",
+    "groups": 80,
+    "limit": 1000
+  },
+  "resolved_url": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/scoreboard?dates=20261110-20261116&groups=80&limit=1000",
+  "http_status": 400,
+  "path": "espn-date-schedule.json.gz",
+  "raw_sha256": "5ca0ff4c797098c7b38245f4603588b1eb556ce62656fa22ce7bca02f30f3cc7",
+  "stored_sha256": "38cc7d99e34c7582b8681f4a4ec8b06f90776fc52e2850f5038126bf18b8a132",
+  "source_commit": "a04cad77b30532aa3fd6e59aa70f79665de15035",
+  "code_sha256_lf": "89cf9c1b4cb40991727b29b060a15c8e2c78856ccf32669394eea878581e7d19",
+  "reason": "Original ESPN week query returned 25 games versus 67 CFBD games; preserve both responses and reconcile date-bounded supplement.",
+  "contest_lines_locked": false,
+  "predictions_generated": false
+}

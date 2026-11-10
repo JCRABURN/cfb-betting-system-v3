@@ -1,0 +1,15 @@
+{
+  "SplashSports": {
+    "Appalachian State": "App State",
+    "Connecticut": "UConn",
+    "Louisiana-Monroe": "UL Monroe",
+    "Miami (FL)": "Miami",
+    "Miami OH": "Miami (OH)",
+    "UMass": "Massachusetts"
+  },
+  "the_odds_api": {
+    "Appalachian State": "App State",
+    "Southern Mississippi": "Southern Miss",
+    "UMass": "Massachusetts"
+  }
+}

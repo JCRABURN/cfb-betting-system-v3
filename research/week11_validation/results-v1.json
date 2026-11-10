@@ -1,0 +1,7385 @@
+{
+  "cutoff": "All fits use weeks strictly earlier than their evaluation week. Methods specified after Week10, so these folds are not prospective validation.",
+  "drive_model_status": "FORWARD_RESEARCH_PENDING: Week11 prior drives8-10 captured. Do not fabricate historical pregame drive snapshots or claim comparable season/recent filters. Seal complete candidate implementation before Week11 outcomes.",
+  "folds": [
+    {
+      "auc": 0.5,
+      "bets": 0,
+      "brier": 0.25,
+      "ece": 0.01724138,
+      "hit_rate": null,
+      "losses": null,
+      "mae": 11.55172414,
+      "market": "ATS",
+      "method": "LOCKED_LINE",
+      "n": 58,
+      "probability_caveat": "Unvalidated research probabilities; line baseline .5 is scored on original sides and makes no bets.",
+      "pushes": null,
+      "reliability": [
+        {
+          "hit_rate": 0.48275862,
+          "lower": 0.5,
+          "n": 58,
+          "probability": 0.5
+        }
+      ],
+      "rmse": 14.51901251,
+      "training": {
+        "n": 56,
+        "residual_bias": 2.21428571,
+        "residual_sd": 17.2634288,
+        "weeks": [
+          5
+        ]
+      },
+      "units": 0,
+      "week": 6,
+      "wilson95": null,
+      "wins": null
+    },
+    {
+      "auc": 0.5,
+      "bets": 0,
+      "brier": 0.25,
+      "ece": 0.06896552,
+      "hit_rate": null,
+      "losses": null,
+      "mae": 12.43103448,
+      "market": "TOTAL",
+      "method": "LOCKED_LINE",
+      "n": 58,
+      "probability_caveat": "Unvalidated research probabilities; line baseline .5 is scored on original sides and makes no bets.",
+      "pushes": null,
+      "reliability": [
+        {
+          "hit_rate": 0.56896552,
+          "lower": 0.5,
+          "n": 58,
+          "probability": 0.5
+        }
+      ],
+      "rmse": 15.86065398,
+      "training": {
+        "n": 56,
+        "residual_bias": 1.07142857,
+        "residual_sd": 15.7258989,
+        "weeks": [
+          5
+        ]
+      },
+      "units": 0,
+      "week": 6,
+      "wilson95": null,
+      "wins": null
+    },
+    {
+      "auc": 0.62738095,
+      "bets": 58,
+      "brier": 0.24589805,
+      "ece": 0.0442221,
+      "hit_rate": 0.48275862,
+      "losses": 30,
+      "mae": 11.5162833,
+      "market": "ATS",
+      "method": "MODEL_25",
+      "n": 58,
+      "probability_caveat": "Unvalidated research probabilities; line baseline .5 is scored on original sides and makes no bets.",
+      "pushes": 0,
+      "reliability": [
+        {
+          "hit_rate": 0.45,
+          "lower": 0.4,
+          "n": 20,
+          "probability": 0.48129708
+        },
+        {
+          "hit_rate": 0.5,
+          "lower": 0.5,
+          "n": 36,
+          "probability": 0.5471982
+        },
+        {
+          "hit_rate": 0.5,
+          "lower": 0.6,
+          "n": 2,
+          "probability": 0.61990256
+        }
+      ],
+      "rmse": 14.62455904,
+      "training": {
+        "n": 56,
+        "residual_bias": 1.51342003,
+        "residual_sd": 17.53016979,
+        "weeks": [
+          5
+        ]
+      },
+      "units": -4.54545455,
+      "week": 6,
+      "wilson95": [
+        0.35928185,
+        0.60837738
+      ],
+      "wins": 28
+    },
+    {
+      "auc": 0.46545455,
+      "bets": 58,
+      "brier": 0.25389918,
+      "ece": 0.0967702,
+      "hit_rate": 0.56896552,
+      "losses": 25,
+      "mae": 12.39094132,
+      "market": "TOTAL",
+      "method": "MODEL_25",
+      "n": 58,
+      "probability_caveat": "Unvalidated research probabilities; line baseline .5 is scored on original sides and makes no bets.",
+      "pushes": 0,
+      "reliability": [
+        {
+          "hit_rate": 0.625,
+          "lower": 0.4,
+          "n": 32,
+          "probability": 0.48172167
+        },
+        {
+          "hit_rate": 0.5,
+          "lower": 0.5,
+          "n": 26,
+          "probability": 0.53952941
+        }
+      ],
+      "rmse": 15.86028063,
+      "training": {
+        "n": 56,
+        "residual_bias": 1.41552881,
+        "residual_sd": 16.01370196,
+        "weeks": [
+          5
+        ]
+      },
+      "units": 5.0,
+      "week": 6,
+      "wilson95": [
+        0.44118105,
+        0.68818201
+      ],
+      "wins": 33
+    },
+    {
+      "auc": 0.60714286,
+      "bets": 58,
+      "brier": 0.24661025,
+      "ece": 0.1270738,
+      "hit_rate": 0.48275862,
+      "losses": 30,
+      "mae": 11.87316994,
+      "market": "ATS",
+      "method": "MODEL_50",
+      "n": 58,
+      "probability_caveat": "Unvalidated research probabilities; line baseline .5 is scored on original sides and makes no bets.",
+      "pushes": 0,
+      "reliability": [
+        {
+          "hit_rate": 0.28571429,
+          "lower": 0.4,
+          "n": 7,
+          "probability": 0.49163371
+        },
+        {
+          "hit_rate": 0.43902439,
+          "lower": 0.5,
+          "n": 41,
+          "probability": 0.54528998
+        },
+        {
+          "hit_rate": 0.8,
+          "lower": 0.6,
+          "n": 10,
+          "probability": 0.6428045
+        }
+      ],
+      "rmse": 14.92740453,
+      "training": {
+        "n": 56,
+        "residual_bias": 0.81255434,
+        "residual_sd": 17.96417879,
+        "weeks": [
+          5
+        ]
+      },
+      "units": -4.54545455,
+      "week": 6,
+      "wilson95": [
+        0.35928185,
+        0.60837738
+      ],
+      "wins": 28
+    },
+    {
+      "auc": 0.45818182,
+      "bets": 58,
+      "brier": 0.25524786,
+      "ece": 0.12913199,
+      "hit_rate": 0.56896552,
+      "losses": 25,
+      "mae": 12.35647522,
+      "market": "TOTAL",
+      "method": "MODEL_50",
+      "n": 58,
+      "probability_caveat": "Unvalidated research probabilities; line baseline .5 is scored on original sides and makes no bets.",
+      "pushes": 0,
+      "reliability": [
+        {
+          "hit_rate": 0.57142857,
+          "lower": 0.4,
+          "n": 21,
+          "probability": 0.47693346
+        },
+        {
+          "hit_rate": 0.63636364,
+          "lower": 0.5,
+          "n": 33,
+          "probability": 0.54490743
+        },
+        {
+          "hit_rate": 0.0,
+          "lower": 0.6,
+          "n": 4,
+          "probability": 0.62180084
+        }
+      ],
+      "rmse": 15.93048708,
+      "training": {
+        "n": 56,
+        "residual_bias": 1.75962904,
+        "residual_sd": 16.36906009,
+        "weeks": [
+          5
+        ]
+      },
+      "units": 5.0,
+      "week": 6,
+      "wilson95": [
+        0.44118105,
+        0.68818201
+      ],
+      "wins": 33
+    },
+    {
+      "auc": 0.60119048,
+      "bets": 58,
+      "brier": 0.25595539,
+      "ece": 0.12625862,
+      "hit_rate": 0.48275862,
+      "losses": 30,
+      "mae": 13.01133114,
+      "market": "ATS",
+      "method": "ORIGINAL_POINT_GAUSSIAN",
+      "n": 58,
+      "probability_caveat": "Unvalidated research probabilities; line baseline .5 is scored on original sides and makes no bets.",
+      "pushes": 0,
+      "reliability": [
+        {
+          "hit_rate": 0.33333333,
+          "lower": 0.4,
+          "n": 3,
+          "probability": 0.49448996
+        },
+        {
+          "hit_rate": 0.46875,
+          "lower": 0.5,
+          "n": 32,
+          "probability": 0.55163682
+        },
+        {
+          "hit_rate": 0.46666667,
+          "lower": 0.6,
+          "n": 15,
+          "probability": 0.6433211
+        },
+        {
+          "hit_rate": 0.57142857,
+          "lower": 0.7,
+          "n": 7,
+          "probability": 0.76695854
+        },
+        {
+          "hit_rate": 1.0,
+          "lower": 0.8,
+          "n": 1,
+          "probability": 0.83137465
+        }
+      ],
+      "rmse": 16.07320102,
+      "training": {
+        "n": 56,
+        "residual_bias": -0.58917703,
+        "residual_sd": 19.28453827,
+        "weeks": [
+          5
+        ]
+      },
+      "units": -4.54545455,
+      "week": 6,
+      "wilson95": [
+        0.35928185,
+        0.60837738
+      ],
+      "wins": 28
+    },
+    {
+      "auc": 0.44969697,
+      "bets": 58,
+      "brier": 0.25990628,
+      "ece": 0.09286686,
+      "hit_rate": 0.56896552,
+      "losses": 25,
+      "mae": 12.43003045,
+      "market": "TOTAL",
+      "method": "ORIGINAL_POINT_GAUSSIAN",
+      "n": 58,
+      "probability_caveat": "Unvalidated research probabilities; line baseline .5 is scored on original sides and makes no bets.",
+      "pushes": 0,
+      "reliability": [
+        {
+          "hit_rate": 0.55,
+          "lower": 0.4,
+          "n": 20,
+          "probability": 0.47923058
+        },
+        {
+          "hit_rate": 0.63636364,
+          "lower": 0.5,
+          "n": 22,
+          "probability": 0.56371235
+        },
+        {
+          "hit_rate": 0.57142857,
+          "lower": 0.6,
+          "n": 14,
+          "probability": 0.63637363
+        },
+        {
+          "hit_rate": 0.0,
+          "lower": 0.7,
+          "n": 2,
+          "probability": 0.73166508
+        }
+      ],
+      "rmse": 16.27806908,
+      "training": {
+        "n": 56,
+        "residual_bias": 2.44782952,
+        "residual_sd": 17.26497187,
+        "weeks": [
+          5
+        ]
+      },
+      "units": 5.0,
+      "week": 6,
+      "wilson95": [
+        0.44118105,
+        0.68818201
+      ],
+      "wins": 33
+    },
+    {
+      "auc": 0.43452381,
+      "bets": 58,
+      "brier": 0.28352964,
+      "ece": 0.16602259,
+      "hit_rate": 0.48275862,
+      "losses": 30,
+      "mae": 13.01133114,
+      "market": "ATS",
+      "method": "PRIOR_FREQUENCY",
+      "n": 58,
+      "probability_caveat": "Unvalidated research probabilities; line baseline .5 is scored on original sides and makes no bets.",
+      "pushes": 0,
+      "reliability": [
+        {
+          "hit_rate": 0.48275862,
+          "lower": 0.6,
+          "n": 58,
+          "probability": 0.64878121
+        }
+      ],
+      "rmse": 16.07320102,
+      "training": {
+        "n": 56,
+        "residual_bias": -0.58917703,
+        "residual_sd": 19.28453827,
+        "weeks": [
+          5
+        ]
+      },
+      "units": -4.54545455,
+      "week": 6,
+      "wilson95": [
+        0.35928185,
+        0.60837738
+      ],
+      "wins": 28
+    },
+    {
+      "auc": 0.56,
+      "bets": 58,
+      "brier": 0.27245426,
+      "ece": 0.17013907,
+      "hit_rate": 0.56896552,
+      "losses": 25,
+      "mae": 12.43003045,
+      "market": "TOTAL",
+      "method": "PRIOR_FREQUENCY",
+      "n": 58,
+      "probability_caveat": "Unvalidated research probabilities; line baseline .5 is scored on original sides and makes no bets.",
+      "pushes": 0,
+      "reliability": [
+        {
+          "hit_rate": 0.52380952,
+          "lower": 0.3,
+          "n": 21,
+          "probability": 0.34782609
+        },
+        {
+          "hit_rate": 0.59459459,
+          "lower": 0.4,
+          "n": 37,
+          "probability": 0.4277726
+        }
+      ],
+      "rmse": 16.27806908,
+      "training": {
+        "n": 56,
+        "residual_bias": 2.44782952,
+        "residual_sd": 17.26497187,
+        "weeks": [
+          5
+        ]
+      },
+      "units": 5.0,
+      "week": 6,
+      "wilson95": [
+        0.44118105,
+        0.68818201
+      ],
+      "wins": 33
+    },
+    {
+      "auc": 0.5,
+      "bets": 0,
+      "brier": 0.25,
+      "ece": 0.05932203,
+      "hit_rate": null,
+      "losses": null,
+      "mae": 10.90677966,
+      "market": "ATS",
+      "method": "LOCKED_LINE",
+      "n": 59,
+      "probability_caveat": "Unvalidated research probabilities; line baseline .5 is scored on original sides and makes no bets.",
+      "pushes": null,
+      "reliability": [
+        {
+          "hit_rate": 0.44067797,
+          "lower": 0.5,
+          "n": 59,
+          "probability": 0.5
+        }
+      ],
+      "rmse": 13.63491903,
+      "training": {
+        "n": 114,
+        "residual_bias": 1.42982456,
+        "residual_sd": 15.92555652,
+        "weeks": [
+          5,
+          6
+        ]
+      },
+      "units": 0,
+      "week": 7,
+      "wilson95": null,
+      "wins": null
+    },
+    {
+      "auc": 0.5,
+      "bets": 0,
+      "brier": 0.25,
+      "ece": 0.05932203,
+      "hit_rate": null,
+      "losses": null,
+      "mae": 12.83898305,
+      "market": "TOTAL",
+      "method": "LOCKED_LINE",
+      "n": 59,
+      "probability_caveat": "Unvalidated research probabilities; line baseline .5 is scored on original sides and makes no bets.",
+      "pushes": null,
+      "reliability": [
+        {
+          "hit_rate": 0.55932203,
+          "lower": 0.5,
+          "n": 59,
+          "probability": 0.5
+        }
+      ],
+      "rmse": 15.85567855,
+      "training": {
+        "n": 114,
+        "residual_bias": 0.28947368,
+        "residual_sd": 15.81053401,
+        "weeks": [
+          5,
+          6
+        ]
+      },
+      "units": 0,
+      "week": 7,
+      "wilson95": null,
+      "wins": null
+    },
+    {
+      "auc": 0.55477855,
+      "bets": 59,
+      "brier": 0.25447384,
+      "ece": 0.10985797,
+      "hit_rate": 0.44067797,
+      "losses": 33,
+      "mae": 11.01408562,
+      "market": "ATS",
+      "method": "MODEL_25",
+      "n": 59,
+      "probability_caveat": "Unvalidated research probabilities; line baseline .5 is scored on original sides and makes no bets.",
+      "pushes": 0,
+      "reliability": [
+        {
+          "hit_rate": 0.44444444,
+          "lower": 0.4,
+          "n": 9,
+          "probability": 0.48607115
+        },
+        {
+          "hit_rate": 0.42857143,
+          "lower": 0.5,
+          "n": 49,
+          "probability": 0.54518663
+        },
+        {
+          "hit_rate": 1.0,
+          "lower": 0.6,
+          "n": 1,
+          "probability": 0.6071653
+        }
+      ],
+      "rmse": 13.67613748,
+      "training": {
+        "n": 114,
+        "residual_bias": 1.20569249,
+        "residual_sd": 16.09411715,
+        "weeks": [
+          5,
+          6
+        ]
+      },
+      "units": -9.36363636,
+      "week": 7,
+      "wilson95": [
+        0.32150212,
+        0.56710645
+      ],
+      "wins": 26
+    },
+    {
+      "auc": 0.53613054,
+      "bets": 59,
+      "brier": 0.24715089,
+      "ece": 0.05399843,
+      "hit_rate": 0.55932203,
+      "losses": 26,
+      "mae": 12.76220609,
+      "market": "TOTAL",
+      "method": "MODEL_25",
+      "n": 59,
+      "probability_caveat": "Unvalidated research probabilities; line baseline .5 is scored on original sides and makes no bets.",
+      "pushes": 0,
+      "reliability": [
+        {
+          "hit_rate": 0.46153846,
+          "lower": 0.4,
+          "n": 13,
+          "probability": 0.49206456
+        },
+        {
+          "hit_rate": 0.58695652,
+          "lower": 0.5,
+          "n": 46,
+          "probability": 0.52632461
+        }
+      ],
+      "rmse": 15.67906132,
+      "training": {
+        "n": 114,
+        "residual_bias": 0.64918651,
+        "residual_sd": 15.95294596,
+        "weeks": [
+          5,
+          6
+        ]
+      },
+      "units": 4.0,
+      "week": 7,
+      "wilson95": [
+        0.43289355,
+        0.67849788
+      ],
+      "wins": 33
+    },
+    {
+      "auc": 0.54428904,
+      "bets": 59,
+      "brier": 0.26055708,
+      "ece": 0.1415488,
+      "hit_rate": 0.44067797,
+      "losses": 33,
+      "mae": 11.20471074,
+      "market": "ATS",
+      "method": "MODEL_50",
+      "n": 59,
+      "probability_caveat": "Unvalidated research probabilities; line baseline .5 is scored on original sides and makes no bets.",
+      "pushes": 0,
+      "reliability": [
+        {
+          "hit_rate": 0.66666667,
+          "lower": 0.4,
+          "n": 3,
+          "probability": 0.48360919
+        },
+        {
+          "hit_rate": 0.39130435,
+          "lower": 0.5,
+          "n": 46,
+          "probability": 0.55259762
+        },
+        {
+          "hit_rate": 0.6,
+          "lower": 0.6,
+          "n": 10,
+          "probability": 0.63827162
+        }
+      ],
+      "rmse": 13.8796165,
+      "training": {
+        "n": 114,
+        "residual_bias": 0.98156042,
+        "residual_sd": 16.45596787,
+        "weeks": [
+          5,
+          6
+        ]
+      },
+      "units": -9.36363636,
+      "week": 7,
+      "wilson95": [
+        0.32150212,
+        0.56710645
+      ],
+      "wins": 26
+    },
+    {
+      "auc": 0.53146853,
+      "bets": 59,
+      "brier": 0.24627192,
+      "ece": 0.03362729,
+      "hit_rate": 0.55932203,
+      "losses": 26,
+      "mae": 12.78777606,
+      "market": "TOTAL",
+      "method": "MODEL_50",
+      "n": 59,
+      "probability_caveat": "Unvalidated research probabilities; line baseline .5 is scored on original sides and makes no bets.",
+      "pushes": 0,
+      "reliability": [
+        {
+          "hit_rate": 0.45454545,
+          "lower": 0.4,
+          "n": 11,
+          "probability": 0.48945872
+        },
+        {
+          "hit_rate": 0.57777778,
+          "lower": 0.5,
+          "n": 45,
+          "probability": 0.54534074
+        },
+        {
+          "hit_rate": 0.66666667,
+          "lower": 0.6,
+          "n": 3,
+          "probability": 0.61990083
+        }
+      ],
+      "rmse": 15.5786117,
+      "training": {
+        "n": 114,
+        "residual_bias": 1.00889934,
+        "residual_sd": 16.16115077,
+        "weeks": [
+          5,
+          6
+        ]
+      },
+      "units": 4.0,
+      "week": 7,
+      "wilson95": [
+        0.43289355,
+        0.67849788
+      ],
+      "wins": 33
+    },
+    {
+      "auc": 0.52097902,
+      "bets": 59,
+      "brier": 0.27595606,
+      "ece": 0.20119452,
+      "hit_rate": 0.44067797,
+      "losses": 33,
+      "mae": 11.95140649,
+      "market": "ATS",
+      "method": "ORIGINAL_POINT_GAUSSIAN",
+      "n": 59,
+      "probability_caveat": "Unvalidated research probabilities; line baseline .5 is scored on original sides and makes no bets.",
+      "pushes": 0,
+      "reliability": [
+        {
+          "hit_rate": 1.0,
+          "lower": 0.4,
+          "n": 2,
+          "probability": 0.49407712
+        },
+        {
+          "hit_rate": 0.4,
+          "lower": 0.5,
+          "n": 30,
+          "probability": 0.5576461
+        },
+        {
+          "hit_rate": 0.36842105,
+          "lower": 0.6,
+          "n": 19,
+          "probability": 0.64171985
+        },
+        {
+          "hit_rate": 0.625,
+          "lower": 0.7,
+          "n": 8,
+          "probability": 0.74207139
+        }
+      ],
+      "rmse": 14.74115618,
+      "training": {
+        "n": 114,
+        "residual_bias": 0.53329627,
+        "residual_sd": 17.70588795,
+        "weeks": [
+          5,
+          6
+        ]
+      },
+      "units": -9.36363636,
+      "week": 7,
+      "wilson95": [
+        0.32150212,
+        0.56710645
+      ],
+      "wins": 26
+    },
+    {
+      "auc": 0.52447552,
+      "bets": 59,
+      "brier": 0.24792626,
+      "ece": 0.07916822,
+      "hit_rate": 0.55932203,
+      "losses": 26,
+      "mae": 12.93995891,
+      "market": "TOTAL",
+      "method": "ORIGINAL_POINT_GAUSSIAN",
+      "n": 59,
+      "probability_caveat": "Unvalidated research probabilities; line baseline .5 is scored on original sides and makes no bets.",
+      "pushes": 0,
+      "reliability": [
+        {
+          "hit_rate": 0.375,
+          "lower": 0.4,
+          "n": 8,
+          "probability": 0.48041109
+        },
+        {
+          "hit_rate": 0.61290323,
+          "lower": 0.5,
+          "n": 31,
+          "probability": 0.55270814
+        },
+        {
+          "hit_rate": 0.52941176,
+          "lower": 0.6,
+          "n": 17,
+          "probability": 0.63608683
+        },
+        {
+          "hit_rate": 0.66666667,
+          "lower": 0.7,
+          "n": 3,
+          "probability": 0.71603753
+        }
+      ],
+      "rmse": 15.61098237,
+      "training": {
+        "n": 114,
+        "residual_bias": 1.72832499,
+        "residual_sd": 16.76436231,
+        "weeks": [
+          5,
+          6
+        ]
+      },
+      "units": 4.0,
+      "week": 7,
+      "wilson95": [
+        0.43289355,
+        0.67849788
+      ],
+      "wins": 33
+    },
+    {
+      "auc": 0.53962704,
+      "bets": 59,
+      "brier": 0.25430114,
+      "ece": 0.09937556,
+      "hit_rate": 0.44067797,
+      "losses": 33,
+      "mae": 11.95140649,
+      "market": "ATS",
+      "method": "PRIOR_FREQUENCY",
+      "n": 59,
+      "probability_caveat": "Unvalidated research probabilities; line baseline .5 is scored on original sides and makes no bets.",
+      "pushes": 0,
+      "reliability": [
+        {
+          "hit_rate": 0.41666667,
+          "lower": 0.5,
+          "n": 48,
+          "probability": 0.52631579
+        },
+        {
+          "hit_rate": 0.54545455,
+          "lower": 0.6,
+          "n": 11,
+          "probability": 0.6
+        }
+      ],
+      "rmse": 14.74115618,
+      "training": {
+        "n": 114,
+        "residual_bias": 0.53329627,
+        "residual_sd": 17.70588795,
+        "weeks": [
+          5,
+          6
+        ]
+      },
+      "units": -9.36363636,
+      "week": 7,
+      "wilson95": [
+        0.32150212,
+        0.56710645
+      ],
+      "wins": 26
+    },
+    {
+      "auc": 0.4988345,
+      "bets": 59,
+      "brier": 0.2540057,
+      "ece": 0.05565313,
+      "hit_rate": 0.55932203,
+      "losses": 26,
+      "mae": 12.93995891,
+      "market": "TOTAL",
+      "method": "PRIOR_FREQUENCY",
+      "n": 59,
+      "probability_caveat": "Unvalidated research probabilities; line baseline .5 is scored on original sides and makes no bets.",
+      "pushes": 0,
+      "reliability": [
+        {
+          "hit_rate": 0.55,
+          "lower": 0.4,
+          "n": 20,
+          "probability": 0.42479385
+        },
+        {
+          "hit_rate": 0.56410256,
+          "lower": 0.5,
+          "n": 39,
+          "probability": 0.54411765
+        }
+      ],
+      "rmse": 15.61098237,
+      "training": {
+        "n": 114,
+        "residual_bias": 1.72832499,
+        "residual_sd": 16.76436231,
+        "weeks": [
+          5,
+          6
+        ]
+      },
+      "units": 4.0,
+      "week": 7,
+      "wilson95": [
+        0.43289355,
+        0.67849788
+      ],
+      "wins": 33
+    },
+    {
+      "auc": 0.5,
+      "bets": 0,
+      "brier": 0.25,
+      "ece": 0.0,
+      "hit_rate": null,
+      "losses": null,
+      "mae": 10.65384615,
+      "market": "ATS",
+      "method": "LOCKED_LINE",
+      "n": 52,
+      "probability_caveat": "Unvalidated research probabilities; line baseline .5 is scored on original sides and makes no bets.",
+      "pushes": null,
+      "reliability": [
+        {
+          "hit_rate": 0.5,
+          "lower": 0.5,
+          "n": 52,
+          "probability": 0.5
+        }
+      ],
+      "rmse": 13.07743212,
+      "training": {
+        "n": 173,
+        "residual_bias": 1.1416185,
+        "residual_sd": 15.18026954,
+        "weeks": [
+          5,
+          6,
+          7
+        ]
+      },
+      "units": 0,
+      "week": 8,
+      "wilson95": null,
+      "wins": null
+    },
+    {
+      "auc": 0.5,
+      "bets": 0,
+      "brier": 0.25,
+      "ece": 0.05769231,
+      "hit_rate": null,
+      "losses": null,
+      "mae": 14.13461538,
+      "market": "TOTAL",
+      "method": "LOCKED_LINE",
+      "n": 52,
+      "probability_caveat": "Unvalidated research probabilities; line baseline .5 is scored on original sides and makes no bets.",
+      "pushes": null,
+      "reliability": [
+        {
+          "hit_rate": 0.44230769,
+          "lower": 0.5,
+          "n": 52,
+          "probability": 0.5
+        }
+      ],
+      "rmse": 17.67168531,
+      "training": {
+        "n": 173,
+        "residual_bias": 0.21676301,
+        "residual_sd": 15.82629571,
+        "weeks": [
+          5,
+          6,
+          7
+        ]
+      },
+      "units": 0,
+      "week": 8,
+      "wilson95": null,
+      "wins": null
+    },
+    {
+      "auc": 0.68639053,
+      "bets": 52,
+      "brier": 0.24280848,
+      "ece": 0.03195718,
+      "hit_rate": 0.5,
+      "losses": 26,
+      "mae": 10.58305417,
+      "market": "ATS",
+      "method": "MODEL_25",
+      "n": 52,
+      "probability_caveat": "Unvalidated research probabilities; line baseline .5 is scored on original sides and makes no bets.",
+      "pushes": 0,
+      "reliability": [
+        {
+          "hit_rate": 0.33333333,
+          "lower": 0.4,
+          "n": 9,
+          "probability": 0.48355988
+        },
+        {
+          "hit_rate": 0.53488372,
+          "lower": 0.5,
+          "n": 43,
+          "probability": 0.54208685
+        }
+      ],
+      "rmse": 12.98038803,
+      "training": {
+        "n": 173,
+        "residual_bias": 0.95199211,
+        "residual_sd": 15.30948733,
+        "weeks": [
+          5,
+          6,
+          7
+        ]
+      },
+      "units": -2.36363636,
+      "week": 8,
+      "wilson95": [
+        0.36885863,
+        0.63114137
+      ],
+      "wins": 26
+    },
+    {
+      "auc": 0.46326837,
+      "bets": 52,
+      "brier": 0.25410899,
+      "ece": 0.07985868,
+      "hit_rate": 0.44230769,
+      "losses": 29,
+      "mae": 14.30917668,
+      "market": "TOTAL",
+      "method": "MODEL_25",
+      "n": 52,
+      "probability_caveat": "Unvalidated research probabilities; line baseline .5 is scored on original sides and makes no bets.",
+      "pushes": 0,
+      "reliability": [
+        {
+          "hit_rate": 0.5,
+          "lower": 0.4,
+          "n": 14,
+          "probability": 0.49396704
+        },
+        {
+          "hit_rate": 0.42105263,
+          "lower": 0.5,
+          "n": 38,
+          "probability": 0.52811025
+        }
+      ],
+      "rmse": 17.8971674,
+      "training": {
+        "n": 173,
+        "residual_bias": 0.55512101,
+        "residual_sd": 15.85856466,
+        "weeks": [
+          5,
+          6,
+          7
+        ]
+      },
+      "units": -8.09090909,
+      "week": 8,
+      "wilson95": [
+        0.31595057,
+        0.57660238
+      ],
+      "wins": 23
+    },
+    {
+      "auc": 0.64201183,
+      "bets": 52,
+      "brier": 0.24464157,
+      "ece": 0.09256448,
+      "hit_rate": 0.5,
+      "losses": 26,
+      "mae": 10.54795416,
+      "market": "ATS",
+      "method": "MODEL_50",
+      "n": 52,
+      "probability_caveat": "Unvalidated research probabilities; line baseline .5 is scored on original sides and makes no bets.",
+      "pushes": 0,
+      "reliability": [
+        {
+          "hit_rate": 0.33333333,
+          "lower": 0.4,
+          "n": 6,
+          "probability": 0.48720552
+        },
+        {
+          "hit_rate": 0.47368421,
+          "lower": 0.5,
+          "n": 38,
+          "probability": 0.55002412
+        },
+        {
+          "hit_rate": 0.75,
+          "lower": 0.6,
+          "n": 8,
+          "probability": 0.62634959
+        }
+      ],
+      "rmse": 12.99835433,
+      "training": {
+        "n": 173,
+        "residual_bias": 0.76236572,
+        "residual_sd": 15.62190275,
+        "weeks": [
+          5,
+          6,
+          7
+        ]
+      },
+      "units": -2.36363636,
+      "week": 8,
+      "wilson95": [
+        0.36885863,
+        0.63114137
+      ],
+      "wins": 26
+    },
+    {
+      "auc": 0.44827586,
+      "bets": 52,
+      "brier": 0.25995412,
+      "ece": 0.09612478,
+      "hit_rate": 0.44230769,
+      "losses": 29,
+      "mae": 14.49577485,
+      "market": "TOTAL",
+      "method": "MODEL_50",
+      "n": 52,
+      "probability_caveat": "Unvalidated research probabilities; line baseline .5 is scored on original sides and makes no bets.",
+      "pushes": 0,
+      "reliability": [
+        {
+          "hit_rate": 0.44444444,
+          "lower": 0.4,
+          "n": 9,
+          "probability": 0.48858046
+        },
+        {
+          "hit_rate": 0.45,
+          "lower": 0.5,
+          "n": 40,
+          "probability": 0.54341781
+        },
+        {
+          "hit_rate": 0.33333333,
+          "lower": 0.6,
+          "n": 3,
+          "probability": 0.62151728
+        }
+      ],
+      "rmse": 18.1883283,
+      "training": {
+        "n": 173,
+        "residual_bias": 0.89347901,
+        "residual_sd": 15.95970261,
+        "weeks": [
+          5,
+          6,
+          7
+        ]
+      },
+      "units": -8.09090909,
+      "week": 8,
+      "wilson95": [
+        0.31595057,
+        0.57660238
+      ],
+      "wins": 23
+    },
+    {
+      "auc": 0.6183432,
+      "bets": 52,
+      "brier": 0.25151503,
+      "ece": 0.09270704,
+      "hit_rate": 0.5,
+      "losses": 26,
+      "mae": 10.87475526,
+      "market": "ATS",
+      "method": "ORIGINAL_POINT_GAUSSIAN",
+      "n": 52,
+      "probability_caveat": "Unvalidated research probabilities; line baseline .5 is scored on original sides and makes no bets.",
+      "pushes": 0,
+      "reliability": [
+        {
+          "hit_rate": 0.33333333,
+          "lower": 0.4,
+          "n": 3,
+          "probability": 0.49614156
+        },
+        {
+          "hit_rate": 0.42857143,
+          "lower": 0.5,
+          "n": 28,
+          "probability": 0.55310438
+        },
+        {
+          "hit_rate": 0.625,
+          "lower": 0.6,
+          "n": 16,
+          "probability": 0.63734693
+        },
+        {
+          "hit_rate": 0.6,
+          "lower": 0.7,
+          "n": 5,
+          "probability": 0.72957362
+        }
+      ],
+      "rmse": 13.37449801,
+      "training": {
+        "n": 173,
+        "residual_bias": 0.38311295,
+        "residual_sd": 16.7493763,
+        "weeks": [
+          5,
+          6,
+          7
+        ]
+      },
+      "units": -2.36363636,
+      "week": 8,
+      "wilson95": [
+        0.36885863,
+        0.63114137
+      ],
+      "wins": 26
+    },
+    {
+      "auc": 0.44377811,
+      "bets": 52,
+      "brier": 0.27447489,
+      "ece": 0.13224395,
+      "hit_rate": 0.44230769,
+      "losses": 29,
+      "mae": 15.01040535,
+      "market": "TOTAL",
+      "method": "ORIGINAL_POINT_GAUSSIAN",
+      "n": 52,
+      "probability_caveat": "Unvalidated research probabilities; line baseline .5 is scored on original sides and makes no bets.",
+      "pushes": 0,
+      "reliability": [
+        {
+          "hit_rate": 0.33333333,
+          "lower": 0.4,
+          "n": 6,
+          "probability": 0.47390053
+        },
+        {
+          "hit_rate": 0.51724138,
+          "lower": 0.5,
+          "n": 29,
+          "probability": 0.54677064
+        },
+        {
+          "hit_rate": 0.33333333,
+          "lower": 0.6,
+          "n": 15,
+          "probability": 0.64656875
+        },
+        {
+          "hit_rate": 0.5,
+          "lower": 0.7,
+          "n": 2,
+          "probability": 0.73920121
+        }
+      ],
+      "rmse": 18.95490163,
+      "training": {
+        "n": 173,
+        "residual_bias": 1.57019501,
+        "residual_sd": 16.36260882,
+        "weeks": [
+          5,
+          6,
+          7
+        ]
+      },
+      "units": -8.09090909,
+      "week": 8,
+      "wilson95": [
+        0.31595057,
+        0.57660238
+      ],
+      "wins": 23
+    },
+    {
+      "auc": 0.46079882,
+      "bets": 52,
+      "brier": 0.25209295,
+      "ece": 0.07828422,
+      "hit_rate": 0.5,
+      "losses": 26,
+      "mae": 10.87475526,
+      "market": "ATS",
+      "method": "PRIOR_FREQUENCY",
+      "n": 52,
+      "probability_caveat": "Unvalidated research probabilities; line baseline .5 is scored on original sides and makes no bets.",
+      "pushes": 0,
+      "reliability": [
+        {
+          "hit_rate": 0.58823529,
+          "lower": 0.4,
+          "n": 17,
+          "probability": 0.47272727
+        },
+        {
+          "hit_rate": 0.45714286,
+          "lower": 0.5,
+          "n": 35,
+          "probability": 0.51734694
+        }
+      ],
+      "rmse": 13.37449801,
+      "training": {
+        "n": 173,
+        "residual_bias": 0.38311295,
+        "residual_sd": 16.7493763,
+        "weeks": [
+          5,
+          6,
+          7
+        ]
+      },
+      "units": -2.36363636,
+      "week": 8,
+      "wilson95": [
+        0.36885863,
+        0.63114137
+      ],
+      "wins": 26
+    },
+    {
+      "auc": 0.58545727,
+      "bets": 52,
+      "brier": 0.24679049,
+      "ece": 0.07937283,
+      "hit_rate": 0.44230769,
+      "losses": 29,
+      "mae": 15.01040535,
+      "market": "TOTAL",
+      "method": "PRIOR_FREQUENCY",
+      "n": 52,
+      "probability_caveat": "Unvalidated research probabilities; line baseline .5 is scored on original sides and makes no bets.",
+      "pushes": 0,
+      "reliability": [
+        {
+          "hit_rate": 0.28571429,
+          "lower": 0.4,
+          "n": 14,
+          "probability": 0.4516129
+        },
+        {
+          "hit_rate": 0.5,
+          "lower": 0.5,
+          "n": 38,
+          "probability": 0.54749491
+        }
+      ],
+      "rmse": 18.95490163,
+      "training": {
+        "n": 173,
+        "residual_bias": 1.57019501,
+        "residual_sd": 16.36260882,
+        "weeks": [
+          5,
+          6,
+          7
+        ]
+      },
+      "units": -8.09090909,
+      "week": 8,
+      "wilson95": [
+        0.31595057,
+        0.57660238
+      ],
+      "wins": 23
+    },
+    {
+      "auc": 0.5,
+      "bets": 0,
+      "brier": 0.25,
+      "ece": 0.01851852,
+      "hit_rate": null,
+      "losses": null,
+      "mae": 13.09259259,
+      "market": "ATS",
+      "method": "LOCKED_LINE",
+      "n": 54,
+      "probability_caveat": "Unvalidated research probabilities; line baseline .5 is scored on original sides and makes no bets.",
+      "pushes": null,
+      "reliability": [
+        {
+          "hit_rate": 0.51851852,
+          "lower": 0.5,
+          "n": 54,
+          "probability": 0.5
+        }
+      ],
+      "rmse": 15.73007264,
+      "training": {
+        "n": 225,
+        "residual_bias": 1.39777778,
+        "residual_sd": 14.68640177,
+        "weeks": [
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "units": 0,
+      "week": 9,
+      "wilson95": null,
+      "wins": null
+    },
+    {
+      "auc": 0.5,
+      "bets": 0,
+      "brier": 0.25,
+      "ece": 0.03703704,
+      "hit_rate": null,
+      "losses": null,
+      "mae": 11.25925926,
+      "market": "TOTAL",
+      "method": "LOCKED_LINE",
+      "n": 54,
+      "probability_caveat": "Unvalidated research probabilities; line baseline .5 is scored on original sides and makes no bets.",
+      "pushes": null,
+      "reliability": [
+        {
+          "hit_rate": 0.53703704,
+          "lower": 0.5,
+          "n": 54,
+          "probability": 0.5
+        }
+      ],
+      "rmse": 14.5471774,
+      "training": {
+        "n": 225,
+        "residual_bias": 1.00666667,
+        "residual_sd": 16.2431634,
+        "weeks": [
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "units": 0,
+      "week": 9,
+      "wilson95": null,
+      "wins": null
+    },
+    {
+      "auc": 0.62912088,
+      "bets": 54,
+      "brier": 0.24161928,
+      "ece": 0.03260013,
+      "hit_rate": 0.51851852,
+      "losses": 26,
+      "mae": 12.96130374,
+      "market": "ATS",
+      "method": "MODEL_25",
+      "n": 54,
+      "probability_caveat": "Unvalidated research probabilities; line baseline .5 is scored on original sides and makes no bets.",
+      "pushes": 0,
+      "reliability": [
+        {
+          "hit_rate": 0.42105263,
+          "lower": 0.4,
+          "n": 19,
+          "probability": 0.47915322
+        },
+        {
+          "hit_rate": 0.55882353,
+          "lower": 0.5,
+          "n": 34,
+          "probability": 0.54953223
+        },
+        {
+          "hit_rate": 1.0,
+          "lower": 0.6,
+          "n": 1,
+          "probability": 0.65940821
+        }
+      ],
+      "rmse": 15.60936466,
+      "training": {
+        "n": 225,
+        "residual_bias": 1.19135211,
+        "residual_sd": 14.77696911,
+        "weeks": [
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "units": -0.54545455,
+      "week": 9,
+      "wilson95": [
+        0.388517,
+        0.64606027
+      ],
+      "wins": 28
+    },
+    {
+      "auc": 0.40551724,
+      "bets": 54,
+      "brier": 0.2560581,
+      "ece": 0.08481863,
+      "hit_rate": 0.53703704,
+      "losses": 25,
+      "mae": 11.39876512,
+      "market": "TOTAL",
+      "method": "MODEL_25",
+      "n": 54,
+      "probability_caveat": "Unvalidated research probabilities; line baseline .5 is scored on original sides and makes no bets.",
+      "pushes": 0,
+      "reliability": [
+        {
+          "hit_rate": 0.6,
+          "lower": 0.4,
+          "n": 25,
+          "probability": 0.48025144
+        },
+        {
+          "hit_rate": 0.48275862,
+          "lower": 0.5,
+          "n": 29,
+          "probability": 0.53746524
+        }
+      ],
+      "rmse": 14.60665523,
+      "training": {
+        "n": 225,
+        "residual_bias": 1.32725915,
+        "residual_sd": 16.30758692,
+        "weeks": [
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "units": 1.36363636,
+      "week": 9,
+      "wilson95": [
+        0.40605356,
+        0.66310099
+      ],
+      "wins": 29
+    },
+    {
+      "auc": 0.61950549,
+      "bets": 54,
+      "brier": 0.24281243,
+      "ece": 0.1176517,
+      "hit_rate": 0.51851852,
+      "losses": 26,
+      "mae": 12.89518115,
+      "market": "ATS",
+      "method": "MODEL_50",
+      "n": 54,
+      "probability_caveat": "Unvalidated research probabilities; line baseline .5 is scored on original sides and makes no bets.",
+      "pushes": 0,
+      "reliability": [
+        {
+          "hit_rate": 0.38461538,
+          "lower": 0.4,
+          "n": 13,
+          "probability": 0.48660428
+        },
+        {
+          "hit_rate": 0.46875,
+          "lower": 0.5,
+          "n": 32,
+          "probability": 0.55500367
+        },
+        {
+          "hit_rate": 0.875,
+          "lower": 0.6,
+          "n": 8,
+          "probability": 0.62127733
+        },
+        {
+          "hit_rate": 1.0,
+          "lower": 0.7,
+          "n": 1,
+          "probability": 0.76256248
+        }
+      ],
+      "rmse": 15.60230352,
+      "training": {
+        "n": 225,
+        "residual_bias": 0.98492644,
+        "residual_sd": 15.03620578,
+        "weeks": [
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "units": -0.54545455,
+      "week": 9,
+      "wilson95": [
+        0.388517,
+        0.64606027
+      ],
+      "wins": 28
+    },
+    {
+      "auc": 0.41793103,
+      "bets": 54,
+      "brier": 0.25996911,
+      "ece": 0.11888965,
+      "hit_rate": 0.53703704,
+      "losses": 25,
+      "mae": 11.61234505,
+      "market": "TOTAL",
+      "method": "MODEL_50",
+      "n": 54,
+      "probability_caveat": "Unvalidated research probabilities; line baseline .5 is scored on original sides and makes no bets.",
+      "pushes": 0,
+      "reliability": [
+        {
+          "hit_rate": 0.66666667,
+          "lower": 0.4,
+          "n": 18,
+          "probability": 0.47599277
+        },
+        {
+          "hit_rate": 0.51515152,
+          "lower": 0.5,
+          "n": 33,
+          "probability": 0.54755162
+        },
+        {
+          "hit_rate": 0.0,
+          "lower": 0.6,
+          "n": 3,
+          "probability": 0.63956915
+        }
+      ],
+      "rmse": 14.76221189,
+      "training": {
+        "n": 225,
+        "residual_bias": 1.64785163,
+        "residual_sd": 16.43982747,
+        "weeks": [
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "units": 1.36363636,
+      "week": 9,
+      "wilson95": [
+        0.40605356,
+        0.66310099
+      ],
+      "wins": 29
+    },
+    {
+      "auc": 0.5989011,
+      "bets": 54,
+      "brier": 0.24986444,
+      "ece": 0.10703732,
+      "hit_rate": 0.51851852,
+      "losses": 26,
+      "mae": 13.12002781,
+      "market": "ATS",
+      "method": "ORIGINAL_POINT_GAUSSIAN",
+      "n": 54,
+      "probability_caveat": "Unvalidated research probabilities; line baseline .5 is scored on original sides and makes no bets.",
+      "pushes": 0,
+      "reliability": [
+        {
+          "hit_rate": 0.6,
+          "lower": 0.4,
+          "n": 5,
+          "probability": 0.49437383
+        },
+        {
+          "hit_rate": 0.40740741,
+          "lower": 0.5,
+          "n": 27,
+          "probability": 0.55372707
+        },
+        {
+          "hit_rate": 0.63157895,
+          "lower": 0.6,
+          "n": 19,
+          "probability": 0.6471674
+        },
+        {
+          "hit_rate": 1.0,
+          "lower": 0.7,
+          "n": 1,
+          "probability": 0.70676189
+        },
+        {
+          "hit_rate": 0.5,
+          "lower": 0.8,
+          "n": 2,
+          "probability": 0.85591739
+        }
+      ],
+      "rmse": 15.92729375,
+      "training": {
+        "n": 225,
+        "residual_bias": 0.57207511,
+        "residual_sd": 16.02265793,
+        "weeks": [
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "units": -0.54545455,
+      "week": 9,
+      "wilson95": [
+        0.388517,
+        0.64606027
+      ],
+      "wins": 28
+    },
+    {
+      "auc": 0.40827586,
+      "bets": 54,
+      "brier": 0.2699196,
+      "ece": 0.12621954,
+      "hit_rate": 0.53703704,
+      "losses": 25,
+      "mae": 12.10809993,
+      "market": "TOTAL",
+      "method": "ORIGINAL_POINT_GAUSSIAN",
+      "n": 54,
+      "probability_caveat": "Unvalidated research probabilities; line baseline .5 is scored on original sides and makes no bets.",
+      "pushes": 0,
+      "reliability": [
+        {
+          "hit_rate": 0.64285714,
+          "lower": 0.4,
+          "n": 14,
+          "probability": 0.46764048
+        },
+        {
+          "hit_rate": 0.56521739,
+          "lower": 0.5,
+          "n": 23,
+          "probability": 0.55251183
+        },
+        {
+          "hit_rate": 0.46666667,
+          "lower": 0.6,
+          "n": 15,
+          "probability": 0.6335613
+        },
+        {
+          "hit_rate": 0.0,
+          "lower": 0.7,
+          "n": 1,
+          "probability": 0.74786573
+        },
+        {
+          "hit_rate": 0.0,
+          "lower": 0.8,
+          "n": 1,
+          "probability": 0.8193084
+        }
+      ],
+      "rmse": 15.34807787,
+      "training": {
+        "n": 225,
+        "residual_bias": 2.28903659,
+        "residual_sd": 16.90057711,
+        "weeks": [
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "units": 1.36363636,
+      "week": 9,
+      "wilson95": [
+        0.40605356,
+        0.66310099
+      ],
+      "wins": 29
+    },
+    {
+      "auc": 0.54601648,
+      "bets": 54,
+      "brier": 0.24848425,
+      "ece": 0.02493508,
+      "hit_rate": 0.51851852,
+      "losses": 26,
+      "mae": 13.12002781,
+      "market": "ATS",
+      "method": "PRIOR_FREQUENCY",
+      "n": 54,
+      "probability_caveat": "Unvalidated research probabilities; line baseline .5 is scored on original sides and makes no bets.",
+      "pushes": 0,
+      "reliability": [
+        {
+          "hit_rate": 0.48571429,
+          "lower": 0.4,
+          "n": 35,
+          "probability": 0.47663551
+        },
+        {
+          "hit_rate": 0.57894737,
+          "lower": 0.5,
+          "n": 19,
+          "probability": 0.5248033
+        }
+      ],
+      "rmse": 15.92729375,
+      "training": {
+        "n": 225,
+        "residual_bias": 0.57207511,
+        "residual_sd": 16.02265793,
+        "weeks": [
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "units": -0.54545455,
+      "week": 9,
+      "wilson95": [
+        0.388517,
+        0.64606027
+      ],
+      "wins": 28
+    },
+    {
+      "auc": 0.59034483,
+      "bets": 54,
+      "brier": 0.24241487,
+      "ece": 0.05364252,
+      "hit_rate": 0.53703704,
+      "losses": 25,
+      "mae": 12.10809993,
+      "market": "TOTAL",
+      "method": "PRIOR_FREQUENCY",
+      "n": 54,
+      "probability_caveat": "Unvalidated research probabilities; line baseline .5 is scored on original sides and makes no bets.",
+      "pushes": 0,
+      "reliability": [
+        {
+          "hit_rate": 0.41176471,
+          "lower": 0.4,
+          "n": 17,
+          "probability": 0.45291254
+        },
+        {
+          "hit_rate": 0.59459459,
+          "lower": 0.5,
+          "n": 37,
+          "probability": 0.53521127
+        }
+      ],
+      "rmse": 15.34807787,
+      "training": {
+        "n": 225,
+        "residual_bias": 2.28903659,
+        "residual_sd": 16.90057711,
+        "weeks": [
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "units": 1.36363636,
+      "week": 9,
+      "wilson95": [
+        0.40605356,
+        0.66310099
+      ],
+      "wins": 29
+    },
+    {
+      "auc": 0.5,
+      "bets": 0,
+      "brier": 0.25,
+      "ece": 0.04385965,
+      "hit_rate": null,
+      "losses": null,
+      "mae": 12.79824561,
+      "market": "ATS",
+      "method": "LOCKED_LINE",
+      "n": 57,
+      "probability_caveat": "Unvalidated research probabilities; line baseline .5 is scored on original sides and makes no bets.",
+      "pushes": null,
+      "reliability": [
+        {
+          "hit_rate": 0.45614035,
+          "lower": 0.5,
+          "n": 57,
+          "probability": 0.5
+        }
+      ],
+      "rmse": 16.67135899,
+      "training": {
+        "n": 279,
+        "residual_bias": 1.57168459,
+        "residual_sd": 14.86468539,
+        "weeks": [
+          5,
+          6,
+          7,
+          8,
+          9
+        ]
+      },
+      "units": 0,
+      "week": 10,
+      "wilson95": null,
+      "wins": null
+    },
+    {
+      "auc": 0.5,
+      "bets": 0,
+      "brier": 0.25,
+      "ece": 0.04385965,
+      "hit_rate": null,
+      "losses": null,
+      "mae": 13.13157895,
+      "market": "TOTAL",
+      "method": "LOCKED_LINE",
+      "n": 57,
+      "probability_caveat": "Unvalidated research probabilities; line baseline .5 is scored on original sides and makes no bets.",
+      "pushes": null,
+      "reliability": [
+        {
+          "hit_rate": 0.45614035,
+          "lower": 0.5,
+          "n": 57,
+          "probability": 0.5
+        }
+      ],
+      "rmse": 16.12356345,
+      "training": {
+        "n": 279,
+        "residual_bias": 0.76164875,
+        "residual_sd": 15.93533466,
+        "weeks": [
+          5,
+          6,
+          7,
+          8,
+          9
+        ]
+      },
+      "units": 0,
+      "week": 10,
+      "wilson95": null,
+      "wins": null
+    },
+    {
+      "auc": 0.37344913,
+      "bets": 57,
+      "brier": 0.2674759,
+      "ece": 0.18114722,
+      "hit_rate": 0.45614035,
+      "losses": 31,
+      "mae": 13.00448062,
+      "market": "ATS",
+      "method": "MODEL_25",
+      "n": 57,
+      "probability_caveat": "Unvalidated research probabilities; line baseline .5 is scored on original sides and makes no bets.",
+      "pushes": 0,
+      "reliability": [
+        {
+          "hit_rate": 0.63157895,
+          "lower": 0.4,
+          "n": 19,
+          "probability": 0.47853039
+        },
+        {
+          "hit_rate": 0.4,
+          "lower": 0.5,
+          "n": 35,
+          "probability": 0.55962685
+        },
+        {
+          "hit_rate": 0.0,
+          "lower": 0.6,
+          "n": 3,
+          "probability": 0.61017636
+        }
+      ],
+      "rmse": 16.89843259,
+      "training": {
+        "n": 279,
+        "residual_bias": 1.38313486,
+        "residual_sd": 14.91645798,
+        "weeks": [
+          5,
+          6,
+          7,
+          8,
+          9
+        ]
+      },
+      "units": -7.36363636,
+      "week": 10,
+      "wilson95": [
+        0.33372606,
+        0.58409314
+      ],
+      "wins": 26
+    },
+    {
+      "auc": 0.31513648,
+      "bets": 57,
+      "brier": 0.26252984,
+      "ece": 0.17830025,
+      "hit_rate": 0.45614035,
+      "losses": 31,
+      "mae": 13.5248937,
+      "market": "TOTAL",
+      "method": "MODEL_25",
+      "n": 57,
+      "probability_caveat": "Unvalidated research probabilities; line baseline .5 is scored on original sides and makes no bets.",
+      "pushes": 0,
+      "reliability": [
+        {
+          "hit_rate": 0.625,
+          "lower": 0.4,
+          "n": 24,
+          "probability": 0.48743128
+        },
+        {
+          "hit_rate": 0.34375,
+          "lower": 0.5,
+          "n": 32,
+          "probability": 0.53934412
+        },
+        {
+          "hit_rate": 0.0,
+          "lower": 0.6,
+          "n": 1,
+          "probability": 0.60245315
+        }
+      ],
+      "rmse": 16.67874488,
+      "training": {
+        "n": 279,
+        "residual_bias": 1.10600644,
+        "residual_sd": 15.99754803,
+        "weeks": [
+          5,
+          6,
+          7,
+          8,
+          9
+        ]
+      },
+      "units": -7.36363636,
+      "week": 10,
+      "wilson95": [
+        0.33372606,
+        0.58409314
+      ],
+      "wins": 26
+    },
+    {
+      "auc": 0.36848635,
+      "bets": 57,
+      "brier": 0.27302575,
+      "ece": 0.15824878,
+      "hit_rate": 0.45614035,
+      "losses": 31,
+      "mae": 13.33808673,
+      "market": "ATS",
+      "method": "MODEL_50",
+      "n": 57,
+      "probability_caveat": "Unvalidated research probabilities; line baseline .5 is scored on original sides and makes no bets.",
+      "pushes": 0,
+      "reliability": [
+        {
+          "hit_rate": 0.63636364,
+          "lower": 0.4,
+          "n": 11,
+          "probability": 0.48356543
+        },
+        {
+          "hit_rate": 0.45454545,
+          "lower": 0.5,
+          "n": 33,
+          "probability": 0.54861656
+        },
+        {
+          "hit_rate": 0.30769231,
+          "lower": 0.6,
+          "n": 13,
+          "probability": 0.63346566
+        }
+      ],
+      "rmse": 17.19745733,
+      "training": {
+        "n": 279,
+        "residual_bias": 1.19458514,
+        "residual_sd": 15.12645063,
+        "weeks": [
+          5,
+          6,
+          7,
+          8,
+          9
+        ]
+      },
+      "units": -7.36363636,
+      "week": 10,
+      "wilson95": [
+        0.33372606,
+        0.58409314
+      ],
+      "wins": 26
+    },
+    {
+      "auc": 0.29280397,
+      "bets": 57,
+      "brier": 0.27466772,
+      "ece": 0.19918797,
+      "hit_rate": 0.45614035,
+      "losses": 31,
+      "mae": 13.95421725,
+      "market": "TOTAL",
+      "method": "MODEL_50",
+      "n": 57,
+      "probability_caveat": "Unvalidated research probabilities; line baseline .5 is scored on original sides and makes no bets.",
+      "pushes": 0,
+      "reliability": [
+        {
+          "hit_rate": 0.71428571,
+          "lower": 0.4,
+          "n": 14,
+          "probability": 0.48248665
+        },
+        {
+          "hit_rate": 0.41666667,
+          "lower": 0.5,
+          "n": 36,
+          "probability": 0.54583192
+        },
+        {
+          "hit_rate": 0.14285714,
+          "lower": 0.6,
+          "n": 7,
+          "probability": 0.63693976
+        }
+      ],
+      "rmse": 17.33144918,
+      "training": {
+        "n": 279,
+        "residual_bias": 1.45036414,
+        "residual_sd": 16.13030667,
+        "weeks": [
+          5,
+          6,
+          7,
+          8,
+          9
+        ]
+      },
+      "units": -7.36363636,
+      "week": 10,
+      "wilson95": [
+        0.33372606,
+        0.58409314
+      ],
+      "wins": 26
+    },
+    {
+      "auc": 0.41315136,
+      "bets": 57,
+      "brier": 0.2848222,
+      "ece": 0.13398018,
+      "hit_rate": 0.45614035,
+      "losses": 31,
+      "mae": 14.12225729,
+      "market": "ATS",
+      "method": "ORIGINAL_POINT_GAUSSIAN",
+      "n": 57,
+      "probability_caveat": "Unvalidated research probabilities; line baseline .5 is scored on original sides and makes no bets.",
+      "pushes": 0,
+      "reliability": [
+        {
+          "hit_rate": 0.25,
+          "lower": 0.4,
+          "n": 4,
+          "probability": 0.49059319
+        },
+        {
+          "hit_rate": 0.52941176,
+          "lower": 0.5,
+          "n": 34,
+          "probability": 0.55310412
+        },
+        {
+          "hit_rate": 0.46153846,
+          "lower": 0.6,
+          "n": 13,
+          "probability": 0.64614445
+        },
+        {
+          "hit_rate": 0.2,
+          "lower": 0.7,
+          "n": 5,
+          "probability": 0.73328571
+        },
+        {
+          "hit_rate": 0.0,
+          "lower": 0.8,
+          "n": 1,
+          "probability": 0.80265107
+        }
+      ],
+      "rmse": 17.99615715,
+      "training": {
+        "n": 279,
+        "residual_bias": 0.81748569,
+        "residual_sd": 15.99149514,
+        "weeks": [
+          5,
+          6,
+          7,
+          8,
+          9
+        ]
+      },
+      "units": -7.36363636,
+      "week": 10,
+      "wilson95": [
+        0.33372606,
+        0.58409314
+      ],
+      "wins": 26
+    },
+    {
+      "auc": 0.29404467,
+      "bets": 57,
+      "brier": 0.30088727,
+      "ece": 0.17137191,
+      "hit_rate": 0.45614035,
+      "losses": 31,
+      "mae": 15.15503509,
+      "market": "TOTAL",
+      "method": "ORIGINAL_POINT_GAUSSIAN",
+      "n": 57,
+      "probability_caveat": "Unvalidated research probabilities; line baseline .5 is scored on original sides and makes no bets.",
+      "pushes": 0,
+      "reliability": [
+        {
+          "hit_rate": 0.6,
+          "lower": 0.4,
+          "n": 10,
+          "probability": 0.47597482
+        },
+        {
+          "hit_rate": 0.55555556,
+          "lower": 0.5,
+          "n": 27,
+          "probability": 0.55422863
+        },
+        {
+          "hit_rate": 0.26666667,
+          "lower": 0.6,
+          "n": 15,
+          "probability": 0.64030181
+        },
+        {
+          "hit_rate": 0.0,
+          "lower": 0.7,
+          "n": 2,
+          "probability": 0.7330022
+        },
+        {
+          "hit_rate": 0.33333333,
+          "lower": 0.8,
+          "n": 3,
+          "probability": 0.80719612
+        }
+      ],
+      "rmse": 18.88752058,
+      "training": {
+        "n": 279,
+        "residual_bias": 2.13907954,
+        "residual_sd": 16.59979182,
+        "weeks": [
+          5,
+          6,
+          7,
+          8,
+          9
+        ]
+      },
+      "units": -7.36363636,
+      "week": 10,
+      "wilson95": [
+        0.33372606,
+        0.58409314
+      ],
+      "wins": 26
+    },
+    {
+      "auc": 0.48014888,
+      "bets": 57,
+      "brier": 0.25237003,
+      "ece": 0.04248308,
+      "hit_rate": 0.45614035,
+      "losses": 31,
+      "mae": 14.12225729,
+      "market": "ATS",
+      "method": "PRIOR_FREQUENCY",
+      "n": 57,
+      "probability_caveat": "Unvalidated research probabilities; line baseline .5 is scored on original sides and makes no bets.",
+      "pushes": 0,
+      "reliability": [
+        {
+          "hit_rate": 0.45945946,
+          "lower": 0.4,
+          "n": 37,
+          "probability": 0.47887324
+        },
+        {
+          "hit_rate": 0.45,
+          "lower": 0.5,
+          "n": 20,
+          "probability": 0.53516129
+        }
+      ],
+      "rmse": 17.99615715,
+      "training": {
+        "n": 279,
+        "residual_bias": 0.81748569,
+        "residual_sd": 15.99149514,
+        "weeks": [
+          5,
+          6,
+          7,
+          8,
+          9
+        ]
+      },
+      "units": -7.36363636,
+      "week": 10,
+      "wilson95": [
+        0.33372606,
+        0.58409314
+      ],
+      "wins": 26
+    },
+    {
+      "auc": 0.60669975,
+      "bets": 57,
+      "brier": 0.24781721,
+      "ece": 0.06823524,
+      "hit_rate": 0.45614035,
+      "losses": 31,
+      "mae": 15.15503509,
+      "market": "TOTAL",
+      "method": "PRIOR_FREQUENCY",
+      "n": 57,
+      "probability_caveat": "Unvalidated research probabilities; line baseline .5 is scored on original sides and makes no bets.",
+      "pushes": 0,
+      "reliability": [
+        {
+          "hit_rate": 0.375,
+          "lower": 0.4,
+          "n": 8,
+          "probability": 0.42222222
+        },
+        {
+          "hit_rate": 0.46938776,
+          "lower": 0.5,
+          "n": 49,
+          "probability": 0.5410537
+        }
+      ],
+      "rmse": 18.88752058,
+      "training": {
+        "n": 279,
+        "residual_bias": 2.13907954,
+        "residual_sd": 16.59979182,
+        "weeks": [
+          5,
+          6,
+          7,
+          8,
+          9
+        ]
+      },
+      "units": -7.36363636,
+      "week": 10,
+      "wilson95": [
+        0.33372606,
+        0.58409314
+      ],
+      "wins": 26
+    }
+  ],
+  "frequency_rule": "Prior-only standardized-edge bins <.25, .25-.5, >=.5; Beta(1,1) smoothing; fewer than20 decided picks falls back to pooled same-market prior outcomes.",
+  "limitations": [
+    "Methods and thresholds chosen after Weeks5-10: retrospective research only",
+    "Repeated teams, six weeks and overlapping selections limit inference",
+    "Week11 shadow awaits genuine contest lines and unchanged official forecasts",
+    "No model promotion or Confidence3-5 authorization"
+  ],
+  "methods": {
+    "LOCKED_LINE": 0.0,
+    "MODEL_25": 0.25,
+    "MODEL_50": 0.5,
+    "ORIGINAL_POINT_GAUSSIAN": 1.0,
+    "PRIOR_FREQUENCY": 1.0
+  },
+  "official_card_changed": false,
+  "probability_rule": "Gaussian candidates use prior-week residual bias and sample SD; point forecast remains the stated fixed blend. Probability floor1e-6 is numerical only.",
+  "selection_rule": "Original sides remain fixed for all positive blends. Top5 probability ranking is experimental; no official cross-market probability comparison.",
+  "status": "RESEARCH_ONLY_RETROSPECTIVE_CHRONOLOGICAL_EXPLORATION",
+  "top5": [
+    {
+      "ats_research_benchmark_units": 2.63636364,
+      "auc": 0.25,
+      "bets": 5,
+      "brier": 0.20776464,
+      "ece": 0.29641232,
+      "hit_rate": 0.8,
+      "losses": 1,
+      "mae": 11.25990089,
+      "method": "MODEL_25",
+      "n": 5,
+      "picks": [
+        {
+          "game": "Miami (OH) @ Massachusetts",
+          "game_id": "401866440",
+          "locked_line": 2.5,
+          "market": "ATS",
+          "probability": 0.62210143,
+          "result": "WIN",
+          "selection": "Massachusetts"
+        },
+        {
+          "game": "Ole Miss @ Vanderbilt",
+          "game_id": "401856718",
+          "locked_line": 10.5,
+          "market": "ATS",
+          "probability": 0.61770368,
+          "result": "LOSS",
+          "selection": "Vanderbilt"
+        },
+        {
+          "game": "Texas @ Oklahoma",
+          "game_id": "401856717",
+          "locked_line": 7.5,
+          "market": "ATS",
+          "probability": 0.59105374,
+          "result": "WIN",
+          "selection": "Oklahoma"
+        },
+        {
+          "game": "Indiana @ Nebraska",
+          "game_id": "401858481",
+          "locked_line": 7.5,
+          "market": "ATS",
+          "probability": 0.58634789,
+          "result": "WIN",
+          "selection": "Nebraska"
+        },
+        {
+          "game": "Texas A&M @ Missouri",
+          "game_id": "401856716",
+          "locked_line": -3.5,
+          "market": "ATS",
+          "probability": 0.58034189,
+          "result": "WIN",
+          "selection": "Missouri"
+        }
+      ],
+      "probability_caveat": "Unvalidated research probabilities; line baseline .5 is scored on original sides and makes no bets.",
+      "pushes": 0,
+      "reliability": [
+        {
+          "hit_rate": 1.0,
+          "lower": 0.5,
+          "n": 3,
+          "probability": 0.58591451
+        },
+        {
+          "hit_rate": 0.5,
+          "lower": 0.6,
+          "n": 2,
+          "probability": 0.61990256
+        }
+      ],
+      "rmse": 14.90384768,
+      "scope": "ATS",
+      "unit_difference_vs_ats_research": 0.0,
+      "units": 2.63636364,
+      "week": 6,
+      "wilson95": [
+        0.37553463,
+        0.96377589
+      ],
+      "wins": 4
+    },
+    {
+      "ats_research_benchmark_units": 2.63636364,
+      "auc": null,
+      "bets": 5,
+      "brier": 0.32912551,
+      "ece": 0.57358412,
+      "hit_rate": 0.0,
+      "losses": 5,
+      "mae": 10.85640261,
+      "method": "MODEL_25",
+      "n": 5,
+      "picks": [
+        {
+          "game": "Tulane @ Army",
+          "game_id": "401862795",
+          "locked_line": 47.5,
+          "market": "TOTAL",
+          "probability": 0.59360159,
+          "result": "LOSS",
+          "selection": "over"
+        },
+        {
+          "game": "Central Michigan @ Ohio",
+          "game_id": "401866438",
+          "locked_line": 46.5,
+          "market": "TOTAL",
+          "probability": 0.57828001,
+          "result": "LOSS",
+          "selection": "over"
+        },
+        {
+          "game": "Miami (OH) @ Massachusetts",
+          "game_id": "401866440",
+          "locked_line": 46.5,
+          "market": "TOTAL",
+          "probability": 0.56666447,
+          "result": "LOSS",
+          "selection": "over"
+        },
+        {
+          "game": "Iowa State @ BYU",
+          "game_id": "401856826",
+          "locked_line": 46.5,
+          "market": "TOTAL",
+          "probability": 0.566247,
+          "result": "LOSS",
+          "selection": "over"
+        },
+        {
+          "game": "Wyoming @ San Jos\u00e9 State",
+          "game_id": "401864519",
+          "locked_line": 43.5,
+          "market": "TOTAL",
+          "probability": 0.56312755,
+          "result": "LOSS",
+          "selection": "over"
+        }
+      ],
+      "probability_caveat": "Unvalidated research probabilities; line baseline .5 is scored on original sides and makes no bets.",
+      "pushes": 0,
+      "reliability": [
+        {
+          "hit_rate": 0.0,
+          "lower": 0.5,
+          "n": 5,
+          "probability": 0.57358412
+        }
+      ],
+      "rmse": 11.720221,
+      "scope": "TOTAL",
+      "unit_difference_vs_ats_research": -7.63636364,
+      "units": -5.0,
+      "week": 6,
+      "wilson95": [
+        0.0,
+        0.43448246
+      ],
+      "wins": 0
+    },
+    {
+      "ats_research_benchmark_units": 2.63636364,
+      "auc": 0.33333333,
+      "bets": 5,
+      "brier": 0.24301462,
+      "ece": 0.09376038,
+      "hit_rate": 0.6,
+      "losses": 2,
+      "mae": null,
+      "method": "MODEL_25",
+      "n": 5,
+      "picks": [
+        {
+          "game": "Miami (OH) @ Massachusetts",
+          "game_id": "401866440",
+          "locked_line": 2.5,
+          "market": "ATS",
+          "probability": 0.62210143,
+          "result": "WIN",
+          "selection": "Massachusetts"
+        },
+        {
+          "game": "Ole Miss @ Vanderbilt",
+          "game_id": "401856718",
+          "locked_line": 10.5,
+          "market": "ATS",
+          "probability": 0.61770368,
+          "result": "LOSS",
+          "selection": "Vanderbilt"
+        },
+        {
+          "game": "Tulane @ Army",
+          "game_id": "401862795",
+          "locked_line": 47.5,
+          "market": "TOTAL",
+          "probability": 0.59360159,
+          "result": "LOSS",
+          "selection": "over"
+        },
+        {
+          "game": "Texas @ Oklahoma",
+          "game_id": "401856717",
+          "locked_line": 7.5,
+          "market": "ATS",
+          "probability": 0.59105374,
+          "result": "WIN",
+          "selection": "Oklahoma"
+        },
+        {
+          "game": "Indiana @ Nebraska",
+          "game_id": "401858481",
+          "locked_line": 7.5,
+          "market": "ATS",
+          "probability": 0.58634789,
+          "result": "WIN",
+          "selection": "Nebraska"
+        }
+      ],
+      "probability_caveat": "Unvalidated research probabilities; line baseline .5 is scored on original sides and makes no bets.",
+      "pushes": 0,
+      "reliability": [
+        {
+          "hit_rate": 0.66666667,
+          "lower": 0.5,
+          "n": 3,
+          "probability": 0.59033441
+        },
+        {
+          "hit_rate": 0.5,
+          "lower": 0.6,
+          "n": 2,
+          "probability": 0.61990256
+        }
+      ],
+      "rmse": null,
+      "scope": "COMBINED",
+      "unit_difference_vs_ats_research": -1.90909091,
+      "units": 0.72727273,
+      "week": 6,
+      "wilson95": [
+        0.23072428,
+        0.88237923
+      ],
+      "wins": 3
+    },
+    {
+      "ats_research_benchmark_units": 2.63636364,
+      "auc": 0.25,
+      "bets": 5,
+      "brier": 0.18189995,
+      "ece": 0.13257373,
+      "hit_rate": 0.8,
+      "losses": 1,
+      "mae": 9.84439219,
+      "method": "MODEL_50",
+      "n": 5,
+      "picks": [
+        {
+          "game": "Miami (OH) @ Massachusetts",
+          "game_id": "401866440",
+          "locked_line": 2.5,
+          "market": "ATS",
+          "probability": 0.68570786,
+          "result": "WIN",
+          "selection": "Massachusetts"
+        },
+        {
+          "game": "Ole Miss @ Vanderbilt",
+          "game_id": "401856718",
+          "locked_line": 10.5,
+          "market": "ATS",
+          "probability": 0.67766528,
+          "result": "LOSS",
+          "selection": "Vanderbilt"
+        },
+        {
+          "game": "Ball State @ Northwestern",
+          "game_id": "401858482",
+          "locked_line": 36.5,
+          "market": "ATS",
+          "probability": 0.67488431,
+          "result": "WIN",
+          "selection": "Ball State"
+        },
+        {
+          "game": "Maryland @ Ohio State",
+          "game_id": "401858483",
+          "locked_line": 34.5,
+          "market": "ATS",
+          "probability": 0.6500985,
+          "result": "WIN",
+          "selection": "Maryland"
+        },
+        {
+          "game": "Hawai'i @ Arizona State",
+          "game_id": "401856808",
+          "locked_line": 20.5,
+          "market": "ATS",
+          "probability": 0.64877541,
+          "result": "WIN",
+          "selection": "Hawai'i"
+        }
+      ],
+      "probability_caveat": "Unvalidated research probabilities; line baseline .5 is scored on original sides and makes no bets.",
+      "pushes": 0,
+      "reliability": [
+        {
+          "hit_rate": 0.8,
+          "lower": 0.6,
+          "n": 5,
+          "probability": 0.66742627
+        }
+      ],
+      "rmse": 14.87711593,
+      "scope": "ATS",
+      "unit_difference_vs_ats_research": 0.0,
+      "units": 2.63636364,
+      "week": 6,
+      "wilson95": [
+        0.37553463,
+        0.96377589
+      ],
+      "wins": 4
+    },
+    {
+      "ats_research_benchmark_units": 2.63636364,
+      "auc": null,
+      "bets": 5,
+      "brier": 0.38093378,
+      "ece": 0.61683012,
+      "hit_rate": 0.0,
+      "losses": 5,
+      "mae": 12.41280522,
+      "method": "MODEL_50",
+      "n": 5,
+      "picks": [
+        {
+          "game": "Tulane @ Army",
+          "game_id": "401862795",
+          "locked_line": 47.5,
+          "market": "TOTAL",
+          "probability": 0.65464887,
+          "result": "LOSS",
+          "selection": "over"
+        },
+        {
+          "game": "Central Michigan @ Ohio",
+          "game_id": "401866438",
+          "locked_line": 46.5,
+          "market": "TOTAL",
+          "probability": 0.62588007,
+          "result": "LOSS",
+          "selection": "over"
+        },
+        {
+          "game": "Miami (OH) @ Massachusetts",
+          "game_id": "401866440",
+          "locked_line": 46.5,
+          "market": "TOTAL",
+          "probability": 0.6037374,
+          "result": "LOSS",
+          "selection": "over"
+        },
+        {
+          "game": "Iowa State @ BYU",
+          "game_id": "401856826",
+          "locked_line": 46.5,
+          "market": "TOTAL",
+          "probability": 0.60293701,
+          "result": "LOSS",
+          "selection": "over"
+        },
+        {
+          "game": "Wyoming @ San Jos\u00e9 State",
+          "game_id": "401864519",
+          "locked_line": 43.5,
+          "market": "TOTAL",
+          "probability": 0.59694723,
+          "result": "LOSS",
+          "selection": "over"
+        }
+      ],
+      "probability_caveat": "Unvalidated research probabilities; line baseline .5 is scored on original sides and makes no bets.",
+      "pushes": 0,
+      "reliability": [
+        {
+          "hit_rate": 0.0,
+          "lower": 0.5,
+          "n": 1,
+          "probability": 0.59694723
+        },
+        {
+          "hit_rate": 0.0,
+          "lower": 0.6,
+          "n": 4,
+          "probability": 0.62180084
+        }
+      ],
+      "rmse": 13.150931,
+      "scope": "TOTAL",
+      "unit_difference_vs_ats_research": -7.63636364,
+      "units": -5.0,
+      "week": 6,
+      "wilson95": [
+        0.0,
+        0.43448246
+      ],
+      "wins": 0
+    },
+    {
+      "ats_research_benchmark_units": 2.63636364,
+      "auc": 0.5,
+      "bets": 5,
+      "brier": 0.24294124,
+      "ece": 0.06860096,
+      "hit_rate": 0.6,
+      "losses": 2,
+      "mae": null,
+      "method": "MODEL_50",
+      "n": 5,
+      "picks": [
+        {
+          "game": "Miami (OH) @ Massachusetts",
+          "game_id": "401866440",
+          "locked_line": 2.5,
+          "market": "ATS",
+          "probability": 0.68570786,
+          "result": "WIN",
+          "selection": "Massachusetts"
+        },
+        {
+          "game": "Ole Miss @ Vanderbilt",
+          "game_id": "401856718",
+          "locked_line": 10.5,
+          "market": "ATS",
+          "probability": 0.67766528,
+          "result": "LOSS",
+          "selection": "Vanderbilt"
+        },
+        {
+          "game": "Ball State @ Northwestern",
+          "game_id": "401858482",
+          "locked_line": 36.5,
+          "market": "ATS",
+          "probability": 0.67488431,
+          "result": "WIN",
+          "selection": "Ball State"
+        },
+        {
+          "game": "Tulane @ Army",
+          "game_id": "401862795",
+          "locked_line": 47.5,
+          "market": "TOTAL",
+          "probability": 0.65464887,
+          "result": "LOSS",
+          "selection": "over"
+        },
+        {
+          "game": "Maryland @ Ohio State",
+          "game_id": "401858483",
+          "locked_line": 34.5,
+          "market": "ATS",
+          "probability": 0.6500985,
+          "result": "WIN",
+          "selection": "Maryland"
+        }
+      ],
+      "probability_caveat": "Unvalidated research probabilities; line baseline .5 is scored on original sides and makes no bets.",
+      "pushes": 0,
+      "reliability": [
+        {
+          "hit_rate": 0.6,
+          "lower": 0.6,
+          "n": 5,
+          "probability": 0.66860096
+        }
+      ],
+      "rmse": null,
+      "scope": "COMBINED",
+      "unit_difference_vs_ats_research": -1.90909091,
+      "units": 0.72727273,
+      "week": 6,
+      "wilson95": [
+        0.23072428,
+        0.88237923
+      ],
+      "wins": 3
+    },
+    {
+      "ats_research_benchmark_units": 2.63636364,
+      "auc": 1.0,
+      "bets": 5,
+      "brier": 0.15063432,
+      "ece": 0.0635733,
+      "hit_rate": 0.8,
+      "losses": 1,
+      "mae": 17.78878438,
+      "method": "ORIGINAL_POINT_GAUSSIAN",
+      "n": 5,
+      "picks": [
+        {
+          "game": "Ball State @ Northwestern",
+          "game_id": "401858482",
+          "locked_line": 36.5,
+          "market": "ATS",
+          "probability": 0.83137465,
+          "result": "WIN",
+          "selection": "Ball State"
+        },
+        {
+          "game": "Maryland @ Ohio State",
+          "game_id": "401858483",
+          "locked_line": 34.5,
+          "market": "ATS",
+          "probability": 0.79763248,
+          "result": "WIN",
+          "selection": "Maryland"
+        },
+        {
+          "game": "Hawai'i @ Arizona State",
+          "game_id": "401856808",
+          "locked_line": 20.5,
+          "market": "ATS",
+          "probability": 0.79575205,
+          "result": "WIN",
+          "selection": "Hawai'i"
+        },
+        {
+          "game": "Miami (OH) @ Massachusetts",
+          "game_id": "401866440",
+          "locked_line": 2.5,
+          "market": "ATS",
+          "probability": 0.78417786,
+          "result": "WIN",
+          "selection": "Massachusetts"
+        },
+        {
+          "game": "Ole Miss @ Vanderbilt",
+          "game_id": "401856718",
+          "locked_line": 10.5,
+          "market": "ATS",
+          "probability": 0.77167874,
+          "result": "LOSS",
+          "selection": "Vanderbilt"
+        }
+      ],
+      "probability_caveat": "Unvalidated research probabilities; line baseline .5 is scored on original sides and makes no bets.",
+      "pushes": 0,
+      "reliability": [
+        {
+          "hit_rate": 0.75,
+          "lower": 0.7,
+          "n": 4,
+          "probability": 0.78731029
+        },
+        {
+          "hit_rate": 1.0,
+          "lower": 0.8,
+          "n": 1,
+          "probability": 0.83137465
+        }
+      ],
+      "rmse": 20.87059847,
+      "scope": "ATS",
+      "unit_difference_vs_ats_research": 0.0,
+      "units": 2.63636364,
+      "week": 6,
+      "wilson95": [
+        0.37553463,
+        0.96377589
+      ],
+      "wins": 4
+    },
+    {
+      "ats_research_benchmark_units": 2.63636364,
+      "auc": null,
+      "bets": 5,
+      "brier": 0.48098314,
+      "ece": 0.6926281,
+      "hit_rate": 0.0,
+      "losses": 5,
+      "mae": 16.9697569,
+      "method": "ORIGINAL_POINT_GAUSSIAN",
+      "n": 5,
+      "picks": [
+        {
+          "game": "Tulane @ Army",
+          "game_id": "401862795",
+          "locked_line": 47.5,
+          "market": "TOTAL",
+          "probability": 0.75567284,
+          "result": "LOSS",
+          "selection": "over"
+        },
+        {
+          "game": "Central Michigan @ Ohio",
+          "game_id": "401866438",
+          "locked_line": 46.5,
+          "market": "TOTAL",
+          "probability": 0.70765733,
+          "result": "LOSS",
+          "selection": "over"
+        },
+        {
+          "game": "Miami (OH) @ Massachusetts",
+          "game_id": "401866440",
+          "locked_line": 46.5,
+          "market": "TOTAL",
+          "probability": 0.66883893,
+          "result": "LOSS",
+          "selection": "over"
+        },
+        {
+          "game": "Iowa State @ BYU",
+          "game_id": "401856826",
+          "locked_line": 46.5,
+          "market": "TOTAL",
+          "probability": 0.66740987,
+          "result": "LOSS",
+          "selection": "over"
+        },
+        {
+          "game": "UCF @ Oklahoma State",
+          "game_id": "401856824",
+          "locked_line": 53.5,
+          "market": "TOTAL",
+          "probability": 0.66356153,
+          "result": "LOSS",
+          "selection": "under"
+        }
+      ],
+      "probability_caveat": "Unvalidated research probabilities; line baseline .5 is scored on original sides and makes no bets.",
+      "pushes": 0,
+      "reliability": [
+        {
+          "hit_rate": 0.0,
+          "lower": 0.6,
+          "n": 3,
+          "probability": 0.66660344
+        },
+        {
+          "hit_rate": 0.0,
+          "lower": 0.7,
+          "n": 2,
+          "probability": 0.73166508
+        }
+      ],
+      "rmse": 18.03541115,
+      "scope": "TOTAL",
+      "unit_difference_vs_ats_research": -7.63636364,
+      "units": -5.0,
+      "week": 6,
+      "wilson95": [
+        0.0,
+        0.43448246
+      ],
+      "wins": 0
+    },
+    {
+      "ats_research_benchmark_units": 2.63636364,
+      "auc": 1.0,
+      "bets": 5,
+      "brier": 0.15063432,
+      "ece": 0.0635733,
+      "hit_rate": 0.8,
+      "losses": 1,
+      "mae": null,
+      "method": "ORIGINAL_POINT_GAUSSIAN",
+      "n": 5,
+      "picks": [
+        {
+          "game": "Ball State @ Northwestern",
+          "game_id": "401858482",
+          "locked_line": 36.5,
+          "market": "ATS",
+          "probability": 0.83137465,
+          "result": "WIN",
+          "selection": "Ball State"
+        },
+        {
+          "game": "Maryland @ Ohio State",
+          "game_id": "401858483",
+          "locked_line": 34.5,
+          "market": "ATS",
+          "probability": 0.79763248,
+          "result": "WIN",
+          "selection": "Maryland"
+        },
+        {
+          "game": "Hawai'i @ Arizona State",
+          "game_id": "401856808",
+          "locked_line": 20.5,
+          "market": "ATS",
+          "probability": 0.79575205,
+          "result": "WIN",
+          "selection": "Hawai'i"
+        },
+        {
+          "game": "Miami (OH) @ Massachusetts",
+          "game_id": "401866440",
+          "locked_line": 2.5,
+          "market": "ATS",
+          "probability": 0.78417786,
+          "result": "WIN",
+          "selection": "Massachusetts"
+        },
+        {
+          "game": "Ole Miss @ Vanderbilt",
+          "game_id": "401856718",
+          "locked_line": 10.5,
+          "market": "ATS",
+          "probability": 0.77167874,
+          "result": "LOSS",
+          "selection": "Vanderbilt"
+        }
+      ],
+      "probability_caveat": "Unvalidated research probabilities; line baseline .5 is scored on original sides and makes no bets.",
+      "pushes": 0,
+      "reliability": [
+        {
+          "hit_rate": 0.75,
+          "lower": 0.7,
+          "n": 4,
+          "probability": 0.78731029
+        },
+        {
+          "hit_rate": 1.0,
+          "lower": 0.8,
+          "n": 1,
+          "probability": 0.83137465
+        }
+      ],
+      "rmse": null,
+      "scope": "COMBINED",
+      "unit_difference_vs_ats_research": 0.0,
+      "units": 2.63636364,
+      "week": 6,
+      "wilson95": [
+        0.37553463,
+        0.96377589
+      ],
+      "wins": 4
+    },
+    {
+      "ats_research_benchmark_units": 2.63636364,
+      "auc": 0.5,
+      "bets": 5,
+      "brier": 0.31760204,
+      "ece": 0.27857143,
+      "hit_rate": 0.4,
+      "losses": 3,
+      "mae": 13.45425979,
+      "method": "PRIOR_FREQUENCY",
+      "n": 5,
+      "picks": [
+        {
+          "game": "Georgia @ Alabama",
+          "game_id": "401856712",
+          "locked_line": 1.5,
+          "market": "ATS",
+          "probability": 0.67857143,
+          "result": "WIN",
+          "selection": "Georgia"
+        },
+        {
+          "game": "Tennessee @ Arkansas",
+          "game_id": "401856713",
+          "locked_line": -13.5,
+          "market": "ATS",
+          "probability": 0.67857143,
+          "result": "LOSS",
+          "selection": "Tennessee"
+        },
+        {
+          "game": "South Carolina @ Florida",
+          "game_id": "401856714",
+          "locked_line": -13.5,
+          "market": "ATS",
+          "probability": 0.67857143,
+          "result": "LOSS",
+          "selection": "Florida"
+        },
+        {
+          "game": "Arizona @ West Virginia",
+          "game_id": "401856823",
+          "locked_line": -3.5,
+          "market": "ATS",
+          "probability": 0.67857143,
+          "result": "WIN",
+          "selection": "Arizona"
+        },
+        {
+          "game": "UCF @ Oklahoma State",
+          "game_id": "401856824",
+          "locked_line": 9.5,
+          "market": "ATS",
+          "probability": 0.67857143,
+          "result": "LOSS",
+          "selection": "UCF"
+        }
+      ],
+      "probability_caveat": "Unvalidated research probabilities; line baseline .5 is scored on original sides and makes no bets.",
+      "pushes": 0,
+      "reliability": [
+        {
+          "hit_rate": 0.4,
+          "lower": 0.6,
+          "n": 5,
+          "probability": 0.67857143
+        }
+      ],
+      "rmse": 17.01018743,
+      "scope": "ATS",
+      "unit_difference_vs_ats_research": -3.81818182,
+      "units": -1.18181818,
+      "week": 6,
+      "wilson95": [
+        0.11762077,
+        0.76927572
+      ],
+      "wins": 2
+    },
+    {
+      "ats_research_benchmark_units": 2.63636364,
+      "auc": 0.5,
+      "bets": 5,
+      "brier": 0.29795918,
+      "ece": 0.37142857,
+      "hit_rate": 0.8,
+      "losses": 1,
+      "mae": 11.45303724,
+      "method": "PRIOR_FREQUENCY",
+      "n": 5,
+      "picks": [
+        {
+          "game": "Georgia @ Alabama",
+          "game_id": "401856712",
+          "locked_line": 54.5,
+          "market": "TOTAL",
+          "probability": 0.42857143,
+          "result": "WIN",
+          "selection": "under"
+        },
+        {
+          "game": "Tennessee @ Arkansas",
+          "game_id": "401856713",
+          "locked_line": 50.5,
+          "market": "TOTAL",
+          "probability": 0.42857143,
+          "result": "WIN",
+          "selection": "under"
+        },
+        {
+          "game": "Texas A&M @ Missouri",
+          "game_id": "401856716",
+          "locked_line": 48.5,
+          "market": "TOTAL",
+          "probability": 0.42857143,
+          "result": "WIN",
+          "selection": "under"
+        },
+        {
+          "game": "Texas @ Oklahoma",
+          "game_id": "401856717",
+          "locked_line": 39.5,
+          "market": "TOTAL",
+          "probability": 0.42857143,
+          "result": "LOSS",
+          "selection": "under"
+        },
+        {
+          "game": "Hawai'i @ Arizona State",
+          "game_id": "401856808",
+          "locked_line": 51.5,
+          "market": "TOTAL",
+          "probability": 0.42857143,
+          "result": "WIN",
+          "selection": "under"
+        }
+      ],
+      "probability_caveat": "Unvalidated research probabilities; line baseline .5 is scored on original sides and makes no bets.",
+      "pushes": 0,
+      "reliability": [
+        {
+          "hit_rate": 0.8,
+          "lower": 0.4,
+          "n": 5,
+          "probability": 0.42857143
+        }
+      ],
+      "rmse": 12.17635743,
+      "scope": "TOTAL",
+      "unit_difference_vs_ats_research": 0.0,
+      "units": 2.63636364,
+      "week": 6,
+      "wilson95": [
+        0.37553463,
+        0.96377589
+      ],
+      "wins": 4
+    },
+    {
+      "ats_research_benchmark_units": 2.63636364,
+      "auc": 0.5,
+      "bets": 5,
+      "brier": 0.31760204,
+      "ece": 0.27857143,
+      "hit_rate": 0.4,
+      "losses": 3,
+      "mae": null,
+      "method": "PRIOR_FREQUENCY",
+      "n": 5,
+      "picks": [
+        {
+          "game": "Georgia @ Alabama",
+          "game_id": "401856712",
+          "locked_line": 1.5,
+          "market": "ATS",
+          "probability": 0.67857143,
+          "result": "WIN",
+          "selection": "Georgia"
+        },
+        {
+          "game": "Tennessee @ Arkansas",
+          "game_id": "401856713",
+          "locked_line": -13.5,
+          "market": "ATS",
+          "probability": 0.67857143,
+          "result": "LOSS",
+          "selection": "Tennessee"
+        },
+        {
+          "game": "South Carolina @ Florida",
+          "game_id": "401856714",
+          "locked_line": -13.5,
+          "market": "ATS",
+          "probability": 0.67857143,
+          "result": "LOSS",
+          "selection": "Florida"
+        },
+        {
+          "game": "Arizona @ West Virginia",
+          "game_id": "401856823",
+          "locked_line": -3.5,
+          "market": "ATS",
+          "probability": 0.67857143,
+          "result": "WIN",
+          "selection": "Arizona"
+        },
+        {
+          "game": "UCF @ Oklahoma State",
+          "game_id": "401856824",
+          "locked_line": 9.5,
+          "market": "ATS",
+          "probability": 0.67857143,
+          "result": "LOSS",
+          "selection": "UCF"
+        }
+      ],
+      "probability_caveat": "Unvalidated research probabilities; line baseline .5 is scored on original sides and makes no bets.",
+      "pushes": 0,
+      "reliability": [
+        {
+          "hit_rate": 0.4,
+          "lower": 0.6,
+          "n": 5,
+          "probability": 0.67857143
+        }
+      ],
+      "rmse": null,
+      "scope": "COMBINED",
+      "unit_difference_vs_ats_research": -3.81818182,
+      "units": -1.18181818,
+      "week": 6,
+      "wilson95": [
+        0.11762077,
+        0.76927572
+      ],
+      "wins": 2
+    },
+    {
+      "ats_research_benchmark_units": 0.72727273,
+      "auc": 0.83333333,
+      "bets": 5,
+      "brier": 0.23543402,
+      "ece": 0.15228048,
+      "hit_rate": 0.6,
+      "losses": 2,
+      "mae": 11.17317708,
+      "method": "MODEL_25",
+      "n": 5,
+      "picks": [
+        {
+          "game": "Louisville @ Syracuse",
+          "game_id": "401858265",
+          "locked_line": 14.5,
+          "market": "ATS",
+          "probability": 0.6071653,
+          "result": "WIN",
+          "selection": "Syracuse"
+        },
+        {
+          "game": "UNLV @ Air Force",
+          "game_id": "401864524",
+          "locked_line": 1.5,
+          "market": "ATS",
+          "probability": 0.59731579,
+          "result": "WIN",
+          "selection": "Air Force"
+        },
+        {
+          "game": "Ohio State @ Indiana",
+          "game_id": "401858488",
+          "locked_line": 3.5,
+          "market": "ATS",
+          "probability": 0.59295521,
+          "result": "LOSS",
+          "selection": "Indiana"
+        },
+        {
+          "game": "Notre Dame @ BYU",
+          "game_id": "401856809",
+          "locked_line": 10.5,
+          "market": "ATS",
+          "probability": 0.59255711,
+          "result": "WIN",
+          "selection": "BYU"
+        },
+        {
+          "game": "Ohio @ Sacramento State",
+          "game_id": "401866445",
+          "locked_line": 14.5,
+          "market": "ATS",
+          "probability": 0.58573958,
+          "result": "LOSS",
+          "selection": "Sacramento State"
+        }
+      ],
+      "probability_caveat": "Unvalidated research probabilities; line baseline .5 is scored on original sides and makes no bets.",
+      "pushes": 0,
+      "reliability": [
+        {
+          "hit_rate": 0.5,
+          "lower": 0.5,
+          "n": 4,
+          "probability": 0.59214192
+        },
+        {
+          "hit_rate": 1.0,
+          "lower": 0.6,
+          "n": 1,
+          "probability": 0.6071653
+        }
+      ],
+      "rmse": 14.61342705,
+      "scope": "ATS",
+      "unit_difference_vs_ats_research": -0.0,
+      "units": 0.72727273,
+      "week": 7,
+      "wilson95": [
+        0.23072428,
+        0.88237923
+      ],
+      "wins": 3
+    },
+    {
+      "ats_research_benchmark_units": 0.72727273,
+      "auc": 0.66666667,
+      "bets": 5,
+      "brier": 0.2402581,
+      "ece": 0.04170935,
+      "hit_rate": 0.6,
+      "losses": 2,
+      "mae": 11.55887602,
+      "method": "MODEL_25",
+      "n": 5,
+      "picks": [
+        {
+          "game": "Northern Illinois @ Wyoming",
+          "game_id": "401864522",
+          "locked_line": 40.5,
+          "market": "TOTAL",
+          "probability": 0.56746628,
+          "result": "WIN",
+          "selection": "over"
+        },
+        {
+          "game": "Western Michigan @ Central Michigan",
+          "game_id": "401866443",
+          "locked_line": 42.5,
+          "market": "TOTAL",
+          "probability": 0.56555634,
+          "result": "LOSS",
+          "selection": "over"
+        },
+        {
+          "game": "Akron @ Miami (OH)",
+          "game_id": "401866478",
+          "locked_line": 45.5,
+          "market": "TOTAL",
+          "probability": 0.56200501,
+          "result": "WIN",
+          "selection": "over"
+        },
+        {
+          "game": "Massachusetts @ Buffalo",
+          "game_id": "401866442",
+          "locked_line": 41.5,
+          "market": "TOTAL",
+          "probability": 0.54928268,
+          "result": "WIN",
+          "selection": "over"
+        },
+        {
+          "game": "Colorado State @ Texas State",
+          "game_id": "401860923",
+          "locked_line": 69.5,
+          "market": "TOTAL",
+          "probability": 0.54714293,
+          "result": "LOSS",
+          "selection": "under"
+        }
+      ],
+      "probability_caveat": "Unvalidated research probabilities; line baseline .5 is scored on original sides and makes no bets.",
+      "pushes": 0,
+      "reliability": [
+        {
+          "hit_rate": 0.6,
+          "lower": 0.5,
+          "n": 5,
+          "probability": 0.55829065
+        }
+      ],
+      "rmse": 15.67185122,
+      "scope": "TOTAL",
+      "unit_difference_vs_ats_research": -0.0,
+      "units": 0.72727273,
+      "week": 7,
+      "wilson95": [
+        0.23072428,
+        0.88237923
+      ],
+      "wins": 3
+    },
+    {
+      "ats_research_benchmark_units": 0.72727273,
+      "auc": 0.83333333,
+      "bets": 5,
+      "brier": 0.23543402,
+      "ece": 0.15228048,
+      "hit_rate": 0.6,
+      "losses": 2,
+      "mae": null,
+      "method": "MODEL_25",
+      "n": 5,
+      "picks": [
+        {
+          "game": "Louisville @ Syracuse",
+          "game_id": "401858265",
+          "locked_line": 14.5,
+          "market": "ATS",
+          "probability": 0.6071653,
+          "result": "WIN",
+          "selection": "Syracuse"
+        },
+        {
+          "game": "UNLV @ Air Force",
+          "game_id": "401864524",
+          "locked_line": 1.5,
+          "market": "ATS",
+          "probability": 0.59731579,
+          "result": "WIN",
+          "selection": "Air Force"
+        },
+        {
+          "game": "Ohio State @ Indiana",
+          "game_id": "401858488",
+          "locked_line": 3.5,
+          "market": "ATS",
+          "probability": 0.59295521,
+          "result": "LOSS",
+          "selection": "Indiana"
+        },
+        {
+          "game": "Notre Dame @ BYU",
+          "game_id": "401856809",
+          "locked_line": 10.5,
+          "market": "ATS",
+          "probability": 0.59255711,
+          "result": "WIN",
+          "selection": "BYU"
+        },
+        {
+          "game": "Ohio @ Sacramento State",
+          "game_id": "401866445",
+          "locked_line": 14.5,
+          "market": "ATS",
+          "probability": 0.58573958,
+          "result": "LOSS",
+          "selection": "Sacramento State"
+        }
+      ],
+      "probability_caveat": "Unvalidated research probabilities; line baseline .5 is scored on original sides and makes no bets.",
+      "pushes": 0,
+      "reliability": [
+        {
+          "hit_rate": 0.5,
+          "lower": 0.5,
+          "n": 4,
+          "probability": 0.59214192
+        },
+        {
+          "hit_rate": 1.0,
+          "lower": 0.6,
+          "n": 1,
+          "probability": 0.6071653
+        }
+      ],
+      "rmse": null,
+      "scope": "COMBINED",
+      "unit_difference_vs_ats_research": -0.0,
+      "units": 0.72727273,
+      "week": 7,
+      "wilson95": [
+        0.23072428,
+        0.88237923
+      ],
+      "wins": 3
+    },
+    {
+      "ats_research_benchmark_units": 0.72727273,
+      "auc": 0.5,
+      "bets": 5,
+      "brier": 0.23991698,
+      "ece": 0.05413206,
+      "hit_rate": 0.6,
+      "losses": 2,
+      "mae": 5.84359197,
+      "method": "MODEL_50",
+      "n": 5,
+      "picks": [
+        {
+          "game": "Louisville @ Syracuse",
+          "game_id": "401858265",
+          "locked_line": 14.5,
+          "market": "ATS",
+          "probability": 0.67185079,
+          "result": "WIN",
+          "selection": "Syracuse"
+        },
+        {
+          "game": "Massachusetts @ Buffalo",
+          "game_id": "401866442",
+          "locked_line": 6.5,
+          "market": "ATS",
+          "probability": 0.65503668,
+          "result": "LOSS",
+          "selection": "Massachusetts"
+        },
+        {
+          "game": "UNLV @ Air Force",
+          "game_id": "401864524",
+          "locked_line": 1.5,
+          "market": "ATS",
+          "probability": 0.65361046,
+          "result": "WIN",
+          "selection": "Air Force"
+        },
+        {
+          "game": "Ohio State @ Indiana",
+          "game_id": "401858488",
+          "locked_line": 3.5,
+          "market": "ATS",
+          "probability": 0.64545463,
+          "result": "LOSS",
+          "selection": "Indiana"
+        },
+        {
+          "game": "Notre Dame @ BYU",
+          "game_id": "401856809",
+          "locked_line": 10.5,
+          "market": "ATS",
+          "probability": 0.64470775,
+          "result": "WIN",
+          "selection": "BYU"
+        }
+      ],
+      "probability_caveat": "Unvalidated research probabilities; line baseline .5 is scored on original sides and makes no bets.",
+      "pushes": 0,
+      "reliability": [
+        {
+          "hit_rate": 0.6,
+          "lower": 0.6,
+          "n": 5,
+          "probability": 0.65413206
+        }
+      ],
+      "rmse": 6.63989945,
+      "scope": "ATS",
+      "unit_difference_vs_ats_research": -0.0,
+      "units": 0.72727273,
+      "week": 7,
+      "wilson95": [
+        0.23072428,
+        0.88237923
+      ],
+      "wins": 3
+    },
+    {
+      "ats_research_benchmark_units": 0.72727273,
+      "auc": 0.5,
+      "bets": 5,
+      "brier": 0.24060949,
+      "ece": 0.06586242,
+      "hit_rate": 0.6,
+      "losses": 2,
+      "mae": 12.35128629,
+      "method": "MODEL_50",
+      "n": 5,
+      "picks": [
+        {
+          "game": "Northern Illinois @ Wyoming",
+          "game_id": "401864522",
+          "locked_line": 40.5,
+          "market": "TOTAL",
+          "probability": 0.62459223,
+          "result": "WIN",
+          "selection": "over"
+        },
+        {
+          "game": "Western Michigan @ Central Michigan",
+          "game_id": "401866443",
+          "locked_line": 42.5,
+          "market": "TOTAL",
+          "probability": 0.62095084,
+          "result": "LOSS",
+          "selection": "over"
+        },
+        {
+          "game": "Akron @ Miami (OH)",
+          "game_id": "401866478",
+          "locked_line": 45.5,
+          "market": "TOTAL",
+          "probability": 0.61415942,
+          "result": "WIN",
+          "selection": "over"
+        },
+        {
+          "game": "Colorado State @ Texas State",
+          "game_id": "401860923",
+          "locked_line": 69.5,
+          "market": "TOTAL",
+          "probability": 0.59938368,
+          "result": "LOSS",
+          "selection": "under"
+        },
+        {
+          "game": "Massachusetts @ Buffalo",
+          "game_id": "401866442",
+          "locked_line": 41.5,
+          "market": "TOTAL",
+          "probability": 0.58963093,
+          "result": "WIN",
+          "selection": "over"
+        }
+      ],
+      "probability_caveat": "Unvalidated research probabilities; line baseline .5 is scored on original sides and makes no bets.",
+      "pushes": 0,
+      "reliability": [
+        {
+          "hit_rate": 0.5,
+          "lower": 0.5,
+          "n": 2,
+          "probability": 0.5945073
+        },
+        {
+          "hit_rate": 0.66666667,
+          "lower": 0.6,
+          "n": 3,
+          "probability": 0.61990083
+        }
+      ],
+      "rmse": 16.28728312,
+      "scope": "TOTAL",
+      "unit_difference_vs_ats_research": -0.0,
+      "units": 0.72727273,
+      "week": 7,
+      "wilson95": [
+        0.23072428,
+        0.88237923
+      ],
+      "wins": 3
+    },
+    {
+      "ats_research_benchmark_units": 0.72727273,
+      "auc": 0.5,
+      "bets": 5,
+      "brier": 0.23991698,
+      "ece": 0.05413206,
+      "hit_rate": 0.6,
+      "losses": 2,
+      "mae": null,
+      "method": "MODEL_50",
+      "n": 5,
+      "picks": [
+        {
+          "game": "Louisville @ Syracuse",
+          "game_id": "401858265",
+          "locked_line": 14.5,
+          "market": "ATS",
+          "probability": 0.67185079,
+          "result": "WIN",
+          "selection": "Syracuse"
+        },
+        {
+          "game": "Massachusetts @ Buffalo",
+          "game_id": "401866442",
+          "locked_line": 6.5,
+          "market": "ATS",
+          "probability": 0.65503668,
+          "result": "LOSS",
+          "selection": "Massachusetts"
+        },
+        {
+          "game": "UNLV @ Air Force",
+          "game_id": "401864524",
+          "locked_line": 1.5,
+          "market": "ATS",
+          "probability": 0.65361046,
+          "result": "WIN",
+          "selection": "Air Force"
+        },
+        {
+          "game": "Ohio State @ Indiana",
+          "game_id": "401858488",
+          "locked_line": 3.5,
+          "market": "ATS",
+          "probability": 0.64545463,
+          "result": "LOSS",
+          "selection": "Indiana"
+        },
+        {
+          "game": "Notre Dame @ BYU",
+          "game_id": "401856809",
+          "locked_line": 10.5,
+          "market": "ATS",
+          "probability": 0.64470775,
+          "result": "WIN",
+          "selection": "BYU"
+        }
+      ],
+      "probability_caveat": "Unvalidated research probabilities; line baseline .5 is scored on original sides and makes no bets.",
+      "pushes": 0,
+      "reliability": [
+        {
+          "hit_rate": 0.6,
+          "lower": 0.6,
+          "n": 5,
+          "probability": 0.65413206
+        }
+      ],
+      "rmse": null,
+      "scope": "COMBINED",
+      "unit_difference_vs_ats_research": -0.0,
+      "units": 0.72727273,
+      "week": 7,
+      "wilson95": [
+        0.23072428,
+        0.88237923
+      ],
+      "wins": 3
+    },
+    {
+      "ats_research_benchmark_units": 0.72727273,
+      "auc": 0.5,
+      "bets": 5,
+      "brier": 0.26810983,
+      "ece": 0.15959943,
+      "hit_rate": 0.6,
+      "losses": 2,
+      "mae": 8.29372511,
+      "method": "ORIGINAL_POINT_GAUSSIAN",
+      "n": 5,
+      "picks": [
+        {
+          "game": "Massachusetts @ Buffalo",
+          "game_id": "401866442",
+          "locked_line": 6.5,
+          "market": "ATS",
+          "probability": 0.79455722,
+          "result": "LOSS",
+          "selection": "Massachusetts"
+        },
+        {
+          "game": "Louisville @ Syracuse",
+          "game_id": "401858265",
+          "locked_line": 14.5,
+          "market": "ATS",
+          "probability": 0.77230899,
+          "result": "WIN",
+          "selection": "Syracuse"
+        },
+        {
+          "game": "Nebraska @ Oregon",
+          "game_id": "401858492",
+          "locked_line": 7.5,
+          "market": "ATS",
+          "probability": 0.75783195,
+          "result": "WIN",
+          "selection": "Nebraska"
+        },
+        {
+          "game": "UNLV @ Air Force",
+          "game_id": "401864524",
+          "locked_line": 1.5,
+          "market": "ATS",
+          "probability": 0.74332738,
+          "result": "WIN",
+          "selection": "Air Force"
+        },
+        {
+          "game": "Ohio State @ Indiana",
+          "game_id": "401858488",
+          "locked_line": 3.5,
+          "market": "ATS",
+          "probability": 0.72997163,
+          "result": "LOSS",
+          "selection": "Indiana"
+        }
+      ],
+      "probability_caveat": "Unvalidated research probabilities; line baseline .5 is scored on original sides and makes no bets.",
+      "pushes": 0,
+      "reliability": [
+        {
+          "hit_rate": 0.6,
+          "lower": 0.7,
+          "n": 5,
+          "probability": 0.75959943
+        }
+      ],
+      "rmse": 9.68926507,
+      "scope": "ATS",
+      "unit_difference_vs_ats_research": -0.0,
+      "units": 0.72727273,
+      "week": 7,
+      "wilson95": [
+        0.23072428,
+        0.88237923
+      ],
+      "wins": 3
+    },
+    {
+      "ats_research_benchmark_units": 0.72727273,
+      "auc": 0.5,
+      "bets": 5,
+      "brier": 0.25421014,
+      "ece": 0.10062531,
+      "hit_rate": 0.6,
+      "losses": 2,
+      "mae": 14.60257259,
+      "method": "ORIGINAL_POINT_GAUSSIAN",
+      "n": 5,
+      "picks": [
+        {
+          "game": "Northern Illinois @ Wyoming",
+          "game_id": "401864522",
+          "locked_line": 40.5,
+          "market": "TOTAL",
+          "probability": 0.72408099,
+          "result": "WIN",
+          "selection": "over"
+        },
+        {
+          "game": "Western Michigan @ Central Michigan",
+          "game_id": "401866443",
+          "locked_line": 42.5,
+          "market": "TOTAL",
+          "probability": 0.71787067,
+          "result": "LOSS",
+          "selection": "over"
+        },
+        {
+          "game": "Akron @ Miami (OH)",
+          "game_id": "401866478",
+          "locked_line": 45.5,
+          "market": "TOTAL",
+          "probability": 0.70616094,
+          "result": "WIN",
+          "selection": "over"
+        },
+        {
+          "game": "Colorado State @ Texas State",
+          "game_id": "401860923",
+          "locked_line": 69.5,
+          "market": "TOTAL",
+          "probability": 0.69239641,
+          "result": "LOSS",
+          "selection": "under"
+        },
+        {
+          "game": "Massachusetts @ Buffalo",
+          "game_id": "401866442",
+          "locked_line": 41.5,
+          "market": "TOTAL",
+          "probability": 0.66261756,
+          "result": "WIN",
+          "selection": "over"
+        }
+      ],
+      "probability_caveat": "Unvalidated research probabilities; line baseline .5 is scored on original sides and makes no bets.",
+      "pushes": 0,
+      "reliability": [
+        {
+          "hit_rate": 0.5,
+          "lower": 0.6,
+          "n": 2,
+          "probability": 0.67750698
+        },
+        {
+          "hit_rate": 0.66666667,
+          "lower": 0.7,
+          "n": 3,
+          "probability": 0.71603753
+        }
+      ],
+      "rmse": 18.12038029,
+      "scope": "TOTAL",
+      "unit_difference_vs_ats_research": -0.0,
+      "units": 0.72727273,
+      "week": 7,
+      "wilson95": [
+        0.23072428,
+        0.88237923
+      ],
+      "wins": 3
+    },
+    {
+      "ats_research_benchmark_units": 0.72727273,
+      "auc": 0.5,
+      "bets": 5,
+      "brier": 0.26810983,
+      "ece": 0.15959943,
+      "hit_rate": 0.6,
+      "losses": 2,
+      "mae": null,
+      "method": "ORIGINAL_POINT_GAUSSIAN",
+      "n": 5,
+      "picks": [
+        {
+          "game": "Massachusetts @ Buffalo",
+          "game_id": "401866442",
+          "locked_line": 6.5,
+          "market": "ATS",
+          "probability": 0.79455722,
+          "result": "LOSS",
+          "selection": "Massachusetts"
+        },
+        {
+          "game": "Louisville @ Syracuse",
+          "game_id": "401858265",
+          "locked_line": 14.5,
+          "market": "ATS",
+          "probability": 0.77230899,
+          "result": "WIN",
+          "selection": "Syracuse"
+        },
+        {
+          "game": "Nebraska @ Oregon",
+          "game_id": "401858492",
+          "locked_line": 7.5,
+          "market": "ATS",
+          "probability": 0.75783195,
+          "result": "WIN",
+          "selection": "Nebraska"
+        },
+        {
+          "game": "UNLV @ Air Force",
+          "game_id": "401864524",
+          "locked_line": 1.5,
+          "market": "ATS",
+          "probability": 0.74332738,
+          "result": "WIN",
+          "selection": "Air Force"
+        },
+        {
+          "game": "Ohio State @ Indiana",
+          "game_id": "401858488",
+          "locked_line": 3.5,
+          "market": "ATS",
+          "probability": 0.72997163,
+          "result": "LOSS",
+          "selection": "Indiana"
+        }
+      ],
+      "probability_caveat": "Unvalidated research probabilities; line baseline .5 is scored on original sides and makes no bets.",
+      "pushes": 0,
+      "reliability": [
+        {
+          "hit_rate": 0.6,
+          "lower": 0.7,
+          "n": 5,
+          "probability": 0.75959943
+        }
+      ],
+      "rmse": null,
+      "scope": "COMBINED",
+      "unit_difference_vs_ats_research": -0.0,
+      "units": 0.72727273,
+      "week": 7,
+      "wilson95": [
+        0.23072428,
+        0.88237923
+      ],
+      "wins": 3
+    },
+    {
+      "ats_research_benchmark_units": 0.72727273,
+      "auc": 0.5,
+      "bets": 5,
+      "brier": 0.2,
+      "ece": 0.2,
+      "hit_rate": 0.8,
+      "losses": 1,
+      "mae": 8.29749875,
+      "method": "PRIOR_FREQUENCY",
+      "n": 5,
+      "picks": [
+        {
+          "game": "Alabama @ Tennessee",
+          "game_id": "401856723",
+          "locked_line": 8.5,
+          "market": "ATS",
+          "probability": 0.6,
+          "result": "WIN",
+          "selection": "Tennessee"
+        },
+        {
+          "game": "Florida @ Texas",
+          "game_id": "401856724",
+          "locked_line": 10.5,
+          "market": "ATS",
+          "probability": 0.6,
+          "result": "WIN",
+          "selection": "Florida"
+        },
+        {
+          "game": "Notre Dame @ BYU",
+          "game_id": "401856809",
+          "locked_line": 10.5,
+          "market": "ATS",
+          "probability": 0.6,
+          "result": "WIN",
+          "selection": "BYU"
+        },
+        {
+          "game": "Louisville @ Syracuse",
+          "game_id": "401858265",
+          "locked_line": 14.5,
+          "market": "ATS",
+          "probability": 0.6,
+          "result": "WIN",
+          "selection": "Syracuse"
+        },
+        {
+          "game": "Ohio State @ Indiana",
+          "game_id": "401858488",
+          "locked_line": 3.5,
+          "market": "ATS",
+          "probability": 0.6,
+          "result": "LOSS",
+          "selection": "Indiana"
+        }
+      ],
+      "probability_caveat": "Unvalidated research probabilities; line baseline .5 is scored on original sides and makes no bets.",
+      "pushes": 0,
+      "reliability": [
+        {
+          "hit_rate": 0.8,
+          "lower": 0.6,
+          "n": 5,
+          "probability": 0.6
+        }
+      ],
+      "rmse": 9.36449158,
+      "scope": "ATS",
+      "unit_difference_vs_ats_research": 1.90909091,
+      "units": 2.63636364,
+      "week": 7,
+      "wilson95": [
+        0.37553463,
+        0.96377589
+      ],
+      "wins": 4
+    },
+    {
+      "ats_research_benchmark_units": 0.72727273,
+      "auc": 0.5,
+      "bets": 5,
+      "brier": 0.24312284,
+      "ece": 0.05588235,
+      "hit_rate": 0.6,
+      "losses": 2,
+      "mae": 5.45135191,
+      "method": "PRIOR_FREQUENCY",
+      "n": 5,
+      "picks": [
+        {
+          "game": "Auburn @ Georgia",
+          "game_id": "401856719",
+          "locked_line": 49.5,
+          "market": "TOTAL",
+          "probability": 0.54411765,
+          "result": "LOSS",
+          "selection": "under"
+        },
+        {
+          "game": "Kentucky @ Oklahoma",
+          "game_id": "401856722",
+          "locked_line": 43.5,
+          "market": "TOTAL",
+          "probability": 0.54411765,
+          "result": "WIN",
+          "selection": "under"
+        },
+        {
+          "game": "Alabama @ Tennessee",
+          "game_id": "401856723",
+          "locked_line": 51.5,
+          "market": "TOTAL",
+          "probability": 0.54411765,
+          "result": "WIN",
+          "selection": "under"
+        },
+        {
+          "game": "Florida @ Texas",
+          "game_id": "401856724",
+          "locked_line": 52.5,
+          "market": "TOTAL",
+          "probability": 0.54411765,
+          "result": "WIN",
+          "selection": "under"
+        },
+        {
+          "game": "Arkansas @ Vanderbilt",
+          "game_id": "401856726",
+          "locked_line": 50.5,
+          "market": "TOTAL",
+          "probability": 0.54411765,
+          "result": "LOSS",
+          "selection": "under"
+        }
+      ],
+      "probability_caveat": "Unvalidated research probabilities; line baseline .5 is scored on original sides and makes no bets.",
+      "pushes": 0,
+      "reliability": [
+        {
+          "hit_rate": 0.6,
+          "lower": 0.5,
+          "n": 5,
+          "probability": 0.54411765
+        }
+      ],
+      "rmse": 6.90545867,
+      "scope": "TOTAL",
+      "unit_difference_vs_ats_research": -0.0,
+      "units": 0.72727273,
+      "week": 7,
+      "wilson95": [
+        0.23072428,
+        0.88237923
+      ],
+      "wins": 3
+    },
+    {
+      "ats_research_benchmark_units": 0.72727273,
+      "auc": 0.5,
+      "bets": 5,
+      "brier": 0.2,
+      "ece": 0.2,
+      "hit_rate": 0.8,
+      "losses": 1,
+      "mae": null,
+      "method": "PRIOR_FREQUENCY",
+      "n": 5,
+      "picks": [
+        {
+          "game": "Alabama @ Tennessee",
+          "game_id": "401856723",
+          "locked_line": 8.5,
+          "market": "ATS",
+          "probability": 0.6,
+          "result": "WIN",
+          "selection": "Tennessee"
+        },
+        {
+          "game": "Florida @ Texas",
+          "game_id": "401856724",
+          "locked_line": 10.5,
+          "market": "ATS",
+          "probability": 0.6,
+          "result": "WIN",
+          "selection": "Florida"
+        },
+        {
+          "game": "Notre Dame @ BYU",
+          "game_id": "401856809",
+          "locked_line": 10.5,
+          "market": "ATS",
+          "probability": 0.6,
+          "result": "WIN",
+          "selection": "BYU"
+        },
+        {
+          "game": "Louisville @ Syracuse",
+          "game_id": "401858265",
+          "locked_line": 14.5,
+          "market": "ATS",
+          "probability": 0.6,
+          "result": "WIN",
+          "selection": "Syracuse"
+        },
+        {
+          "game": "Ohio State @ Indiana",
+          "game_id": "401858488",
+          "locked_line": 3.5,
+          "market": "ATS",
+          "probability": 0.6,
+          "result": "LOSS",
+          "selection": "Indiana"
+        }
+      ],
+      "probability_caveat": "Unvalidated research probabilities; line baseline .5 is scored on original sides and makes no bets.",
+      "pushes": 0,
+      "reliability": [
+        {
+          "hit_rate": 0.8,
+          "lower": 0.6,
+          "n": 5,
+          "probability": 0.6
+        }
+      ],
+      "rmse": null,
+      "scope": "COMBINED",
+      "unit_difference_vs_ats_research": 1.90909091,
+      "units": 2.63636364,
+      "week": 7,
+      "wilson95": [
+        0.37553463,
+        0.96377589
+      ],
+      "wins": 4
+    },
+    {
+      "ats_research_benchmark_units": 0.72727273,
+      "auc": 0.5,
+      "bets": 5,
+      "brier": 0.20794968,
+      "ece": 0.21883349,
+      "hit_rate": 0.8,
+      "losses": 1,
+      "mae": 10.58974349,
+      "method": "MODEL_25",
+      "n": 5,
+      "picks": [
+        {
+          "game": "Texas Tech @ Cincinnati",
+          "game_id": "401856840",
+          "locked_line": 10.5,
+          "market": "ATS",
+          "probability": 0.59036767,
+          "result": "WIN",
+          "selection": "Cincinnati"
+        },
+        {
+          "game": "San Diego State @ Colorado State",
+          "game_id": "401860905",
+          "locked_line": 1.5,
+          "market": "ATS",
+          "probability": 0.58271975,
+          "result": "WIN",
+          "selection": "Colorado State"
+        },
+        {
+          "game": "Oklahoma @ Mississippi State",
+          "game_id": "401856730",
+          "locked_line": 4.5,
+          "market": "ATS",
+          "probability": 0.58122361,
+          "result": "LOSS",
+          "selection": "Mississippi State"
+        },
+        {
+          "game": "Michigan State @ UCLA",
+          "game_id": "401858499",
+          "locked_line": -13.5,
+          "market": "ATS",
+          "probability": 0.58066771,
+          "result": "WIN",
+          "selection": "UCLA"
+        },
+        {
+          "game": "Oregon @ Illinois",
+          "game_id": "401858495",
+          "locked_line": 8.5,
+          "market": "ATS",
+          "probability": 0.57085379,
+          "result": "WIN",
+          "selection": "Illinois"
+        }
+      ],
+      "probability_caveat": "Unvalidated research probabilities; line baseline .5 is scored on original sides and makes no bets.",
+      "pushes": 0,
+      "reliability": [
+        {
+          "hit_rate": 0.8,
+          "lower": 0.5,
+          "n": 5,
+          "probability": 0.58116651
+        }
+      ],
+      "rmse": 12.88350162,
+      "scope": "ATS",
+      "unit_difference_vs_ats_research": 1.90909091,
+      "units": 2.63636364,
+      "week": 8,
+      "wilson95": [
+        0.37553463,
+        0.96377589
+      ],
+      "wins": 4
+    },
+    {
+      "ats_research_benchmark_units": 0.72727273,
+      "auc": 1.0,
+      "bets": 5,
+      "brier": 0.27939389,
+      "ece": 0.35869503,
+      "hit_rate": 0.2,
+      "losses": 4,
+      "mae": 14.59281861,
+      "method": "MODEL_25",
+      "n": 5,
+      "picks": [
+        {
+          "game": "Miami (OH) @ Central Michigan",
+          "game_id": "401866476",
+          "locked_line": 40.5,
+          "market": "TOTAL",
+          "probability": 0.58223771,
+          "result": "WIN",
+          "selection": "over"
+        },
+        {
+          "game": "Iowa @ Minnesota",
+          "game_id": "401858497",
+          "locked_line": 40.5,
+          "market": "TOTAL",
+          "probability": 0.55799286,
+          "result": "LOSS",
+          "selection": "over"
+        },
+        {
+          "game": "Air Force @ Wyoming",
+          "game_id": "401864525",
+          "locked_line": 44.5,
+          "market": "TOTAL",
+          "probability": 0.55374973,
+          "result": "LOSS",
+          "selection": "over"
+        },
+        {
+          "game": "Indiana @ Michigan",
+          "game_id": "401858496",
+          "locked_line": 41.5,
+          "market": "TOTAL",
+          "probability": 0.55130679,
+          "result": "LOSS",
+          "selection": "over"
+        },
+        {
+          "game": "Duke @ Virginia",
+          "game_id": "401858271",
+          "locked_line": 47.5,
+          "market": "TOTAL",
+          "probability": 0.54818808,
+          "result": "LOSS",
+          "selection": "over"
+        }
+      ],
+      "probability_caveat": "Unvalidated research probabilities; line baseline .5 is scored on original sides and makes no bets.",
+      "pushes": 0,
+      "reliability": [
+        {
+          "hit_rate": 0.2,
+          "lower": 0.5,
+          "n": 5,
+          "probability": 0.55869503
+        }
+      ],
+      "rmse": 16.08550912,
+      "scope": "TOTAL",
+      "unit_difference_vs_ats_research": -3.81818182,
+      "units": -3.09090909,
+      "week": 8,
+      "wilson95": [
+        0.03622411,
+        0.62446537
+      ],
+      "wins": 1
+    },
+    {
+      "ats_research_benchmark_units": 0.72727273,
+      "auc": 0.75,
+      "bets": 5,
+      "brier": 0.20602145,
+      "ece": 0.21655671,
+      "hit_rate": 0.8,
+      "losses": 1,
+      "mae": null,
+      "method": "MODEL_25",
+      "n": 5,
+      "picks": [
+        {
+          "game": "Texas Tech @ Cincinnati",
+          "game_id": "401856840",
+          "locked_line": 10.5,
+          "market": "ATS",
+          "probability": 0.59036767,
+          "result": "WIN",
+          "selection": "Cincinnati"
+        },
+        {
+          "game": "San Diego State @ Colorado State",
+          "game_id": "401860905",
+          "locked_line": 1.5,
+          "market": "ATS",
+          "probability": 0.58271975,
+          "result": "WIN",
+          "selection": "Colorado State"
+        },
+        {
+          "game": "Miami (OH) @ Central Michigan",
+          "game_id": "401866476",
+          "locked_line": 40.5,
+          "market": "TOTAL",
+          "probability": 0.58223771,
+          "result": "WIN",
+          "selection": "over"
+        },
+        {
+          "game": "Oklahoma @ Mississippi State",
+          "game_id": "401856730",
+          "locked_line": 4.5,
+          "market": "ATS",
+          "probability": 0.58122361,
+          "result": "LOSS",
+          "selection": "Mississippi State"
+        },
+        {
+          "game": "Michigan State @ UCLA",
+          "game_id": "401858499",
+          "locked_line": -13.5,
+          "market": "ATS",
+          "probability": 0.58066771,
+          "result": "WIN",
+          "selection": "UCLA"
+        }
+      ],
+      "probability_caveat": "Unvalidated research probabilities; line baseline .5 is scored on original sides and makes no bets.",
+      "pushes": 0,
+      "reliability": [
+        {
+          "hit_rate": 0.8,
+          "lower": 0.5,
+          "n": 5,
+          "probability": 0.58344329
+        }
+      ],
+      "rmse": null,
+      "scope": "COMBINED",
+      "unit_difference_vs_ats_research": 1.90909091,
+      "units": 2.63636364,
+      "week": 8,
+      "wilson95": [
+        0.37553463,
+        0.96377589
+      ],
+      "wins": 4
+    },
+    {
+      "ats_research_benchmark_units": 0.72727273,
+      "auc": 0.33333333,
+      "bets": 5,
+      "brier": 0.24402634,
+      "ece": 0.03729261,
+      "hit_rate": 0.6,
+      "losses": 2,
+      "mae": 8.36612342,
+      "method": "MODEL_50",
+      "n": 5,
+      "picks": [
+        {
+          "game": "Massachusetts @ UConn",
+          "game_id": "401861965",
+          "locked_line": 14.5,
+          "market": "ATS",
+          "probability": 0.65209362,
+          "result": "LOSS",
+          "selection": "Massachusetts"
+        },
+        {
+          "game": "Texas Tech @ Cincinnati",
+          "game_id": "401856840",
+          "locked_line": 10.5,
+          "market": "ATS",
+          "probability": 0.64608225,
+          "result": "WIN",
+          "selection": "Cincinnati"
+        },
+        {
+          "game": "San Diego State @ Colorado State",
+          "game_id": "401860905",
+          "locked_line": 1.5,
+          "market": "ATS",
+          "probability": 0.6316704,
+          "result": "WIN",
+          "selection": "Colorado State"
+        },
+        {
+          "game": "Oklahoma @ Mississippi State",
+          "game_id": "401856730",
+          "locked_line": 4.5,
+          "market": "ATS",
+          "probability": 0.62883564,
+          "result": "LOSS",
+          "selection": "Mississippi State"
+        },
+        {
+          "game": "Michigan State @ UCLA",
+          "game_id": "401858499",
+          "locked_line": -13.5,
+          "market": "ATS",
+          "probability": 0.62778114,
+          "result": "WIN",
+          "selection": "UCLA"
+        }
+      ],
+      "probability_caveat": "Unvalidated research probabilities; line baseline .5 is scored on original sides and makes no bets.",
+      "pushes": 0,
+      "reliability": [
+        {
+          "hit_rate": 0.6,
+          "lower": 0.6,
+          "n": 5,
+          "probability": 0.63729261
+        }
+      ],
+      "rmse": 10.45203659,
+      "scope": "ATS",
+      "unit_difference_vs_ats_research": -0.0,
+      "units": 0.72727273,
+      "week": 8,
+      "wilson95": [
+        0.23072428,
+        0.88237923
+      ],
+      "wins": 3
+    },
+    {
+      "ats_research_benchmark_units": 0.72727273,
+      "auc": 1.0,
+      "bets": 5,
+      "brier": 0.31287674,
+      "ece": 0.41189725,
+      "hit_rate": 0.2,
+      "losses": 4,
+      "mae": 21.31910407,
+      "method": "MODEL_50",
+      "n": 5,
+      "picks": [
+        {
+          "game": "Miami (OH) @ Central Michigan",
+          "game_id": "401866476",
+          "locked_line": 40.5,
+          "market": "TOTAL",
+          "probability": 0.65506426,
+          "result": "WIN",
+          "selection": "over"
+        },
+        {
+          "game": "Iowa @ Minnesota",
+          "game_id": "401858497",
+          "locked_line": 40.5,
+          "market": "TOTAL",
+          "probability": 0.60885416,
+          "result": "LOSS",
+          "selection": "over"
+        },
+        {
+          "game": "Air Force @ Wyoming",
+          "game_id": "401864525",
+          "locked_line": 44.5,
+          "market": "TOTAL",
+          "probability": 0.60063341,
+          "result": "LOSS",
+          "selection": "over"
+        },
+        {
+          "game": "San Diego State @ Colorado State",
+          "game_id": "401860905",
+          "locked_line": 64.5,
+          "market": "TOTAL",
+          "probability": 0.59904913,
+          "result": "LOSS",
+          "selection": "under"
+        },
+        {
+          "game": "Indiana @ Michigan",
+          "game_id": "401858496",
+          "locked_line": 41.5,
+          "market": "TOTAL",
+          "probability": 0.59588531,
+          "result": "LOSS",
+          "selection": "over"
+        }
+      ],
+      "probability_caveat": "Unvalidated research probabilities; line baseline .5 is scored on original sides and makes no bets.",
+      "pushes": 0,
+      "reliability": [
+        {
+          "hit_rate": 0.0,
+          "lower": 0.5,
+          "n": 2,
+          "probability": 0.59746722
+        },
+        {
+          "hit_rate": 0.33333333,
+          "lower": 0.6,
+          "n": 3,
+          "probability": 0.62151728
+        }
+      ],
+      "rmse": 25.55600384,
+      "scope": "TOTAL",
+      "unit_difference_vs_ats_research": -3.81818182,
+      "units": -3.09090909,
+      "week": 8,
+      "wilson95": [
+        0.03622411,
+        0.62446537
+      ],
+      "wins": 1
+    },
+    {
+      "ats_research_benchmark_units": 0.72727273,
+      "auc": 0.66666667,
+      "bets": 5,
+      "brier": 0.2401131,
+      "ece": 0.04274924,
+      "hit_rate": 0.6,
+      "losses": 2,
+      "mae": null,
+      "method": "MODEL_50",
+      "n": 5,
+      "picks": [
+        {
+          "game": "Miami (OH) @ Central Michigan",
+          "game_id": "401866476",
+          "locked_line": 40.5,
+          "market": "TOTAL",
+          "probability": 0.65506426,
+          "result": "WIN",
+          "selection": "over"
+        },
+        {
+          "game": "Massachusetts @ UConn",
+          "game_id": "401861965",
+          "locked_line": 14.5,
+          "market": "ATS",
+          "probability": 0.65209362,
+          "result": "LOSS",
+          "selection": "Massachusetts"
+        },
+        {
+          "game": "Texas Tech @ Cincinnati",
+          "game_id": "401856840",
+          "locked_line": 10.5,
+          "market": "ATS",
+          "probability": 0.64608225,
+          "result": "WIN",
+          "selection": "Cincinnati"
+        },
+        {
+          "game": "San Diego State @ Colorado State",
+          "game_id": "401860905",
+          "locked_line": 1.5,
+          "market": "ATS",
+          "probability": 0.6316704,
+          "result": "WIN",
+          "selection": "Colorado State"
+        },
+        {
+          "game": "Oklahoma @ Mississippi State",
+          "game_id": "401856730",
+          "locked_line": 4.5,
+          "market": "ATS",
+          "probability": 0.62883564,
+          "result": "LOSS",
+          "selection": "Mississippi State"
+        }
+      ],
+      "probability_caveat": "Unvalidated research probabilities; line baseline .5 is scored on original sides and makes no bets.",
+      "pushes": 0,
+      "reliability": [
+        {
+          "hit_rate": 0.6,
+          "lower": 0.6,
+          "n": 5,
+          "probability": 0.64274924
+        }
+      ],
+      "rmse": null,
+      "scope": "COMBINED",
+      "unit_difference_vs_ats_research": -0.0,
+      "units": 0.72727273,
+      "week": 8,
+      "wilson95": [
+        0.23072428,
+        0.88237923
+      ],
+      "wins": 3
+    },
+    {
+      "ats_research_benchmark_units": 0.72727273,
+      "auc": 0.33333333,
+      "bets": 5,
+      "brier": 0.27191874,
+      "ece": 0.12957362,
+      "hit_rate": 0.6,
+      "losses": 2,
+      "mae": 9.68910866,
+      "method": "ORIGINAL_POINT_GAUSSIAN",
+      "n": 5,
+      "picks": [
+        {
+          "game": "Massachusetts @ UConn",
+          "game_id": "401861965",
+          "locked_line": 14.5,
+          "market": "ATS",
+          "probability": 0.78741381,
+          "result": "LOSS",
+          "selection": "Massachusetts"
+        },
+        {
+          "game": "Texas Tech @ Cincinnati",
+          "game_id": "401856840",
+          "locked_line": 10.5,
+          "market": "ATS",
+          "probability": 0.7359524,
+          "result": "WIN",
+          "selection": "Cincinnati"
+        },
+        {
+          "game": "San Diego State @ Colorado State",
+          "game_id": "401860905",
+          "locked_line": 1.5,
+          "market": "ATS",
+          "probability": 0.71196333,
+          "result": "WIN",
+          "selection": "Colorado State"
+        },
+        {
+          "game": "Oklahoma @ Mississippi State",
+          "game_id": "401856730",
+          "locked_line": 4.5,
+          "market": "ATS",
+          "probability": 0.70716494,
+          "result": "LOSS",
+          "selection": "Mississippi State"
+        },
+        {
+          "game": "Michigan State @ UCLA",
+          "game_id": "401858499",
+          "locked_line": -13.5,
+          "market": "ATS",
+          "probability": 0.70537363,
+          "result": "WIN",
+          "selection": "UCLA"
+        }
+      ],
+      "probability_caveat": "Unvalidated research probabilities; line baseline .5 is scored on original sides and makes no bets.",
+      "pushes": 0,
+      "reliability": [
+        {
+          "hit_rate": 0.6,
+          "lower": 0.7,
+          "n": 5,
+          "probability": 0.72957362
+        }
+      ],
+      "rmse": 11.6409245,
+      "scope": "ATS",
+      "unit_difference_vs_ats_research": -0.0,
+      "units": 0.72727273,
+      "week": 8,
+      "wilson95": [
+        0.23072428,
+        0.88237923
+      ],
+      "wins": 3
+    },
+    {
+      "ats_research_benchmark_units": 0.72727273,
+      "auc": 0.5,
+      "bets": 5,
+      "brier": 0.31789231,
+      "ece": 0.30820866,
+      "hit_rate": 0.4,
+      "losses": 3,
+      "mae": 20.26142942,
+      "method": "ORIGINAL_POINT_GAUSSIAN",
+      "n": 5,
+      "picks": [
+        {
+          "game": "Miami (OH) @ Central Michigan",
+          "game_id": "401866476",
+          "locked_line": 40.5,
+          "market": "TOTAL",
+          "probability": 0.77791199,
+          "result": "WIN",
+          "selection": "over"
+        },
+        {
+          "game": "Iowa @ Minnesota",
+          "game_id": "401858497",
+          "locked_line": 40.5,
+          "market": "TOTAL",
+          "probability": 0.70049042,
+          "result": "LOSS",
+          "selection": "over"
+        },
+        {
+          "game": "San Diego State @ Colorado State",
+          "game_id": "401860905",
+          "locked_line": 64.5,
+          "market": "TOTAL",
+          "probability": 0.6924002,
+          "result": "LOSS",
+          "selection": "under"
+        },
+        {
+          "game": "Air Force @ Wyoming",
+          "game_id": "401864525",
+          "locked_line": 44.5,
+          "market": "TOTAL",
+          "probability": 0.68586705,
+          "result": "LOSS",
+          "selection": "over"
+        },
+        {
+          "game": "Utah State @ Texas State",
+          "game_id": "401860906",
+          "locked_line": 60.5,
+          "market": "TOTAL",
+          "probability": 0.68437365,
+          "result": "WIN",
+          "selection": "under"
+        }
+      ],
+      "probability_caveat": "Unvalidated research probabilities; line baseline .5 is scored on original sides and makes no bets.",
+      "pushes": 0,
+      "reliability": [
+        {
+          "hit_rate": 0.33333333,
+          "lower": 0.6,
+          "n": 3,
+          "probability": 0.68754697
+        },
+        {
+          "hit_rate": 0.5,
+          "lower": 0.7,
+          "n": 2,
+          "probability": 0.73920121
+        }
+      ],
+      "rmse": 26.15566737,
+      "scope": "TOTAL",
+      "unit_difference_vs_ats_research": -1.90909091,
+      "units": -1.18181818,
+      "week": 8,
+      "wilson95": [
+        0.11762077,
+        0.76927572
+      ],
+      "wins": 2
+    },
+    {
+      "ats_research_benchmark_units": 0.72727273,
+      "auc": 0.5,
+      "bets": 5,
+      "brier": 0.26442242,
+      "ece": 0.14408129,
+      "hit_rate": 0.6,
+      "losses": 2,
+      "mae": null,
+      "method": "ORIGINAL_POINT_GAUSSIAN",
+      "n": 5,
+      "picks": [
+        {
+          "game": "Massachusetts @ UConn",
+          "game_id": "401861965",
+          "locked_line": 14.5,
+          "market": "ATS",
+          "probability": 0.78741381,
+          "result": "LOSS",
+          "selection": "Massachusetts"
+        },
+        {
+          "game": "Miami (OH) @ Central Michigan",
+          "game_id": "401866476",
+          "locked_line": 40.5,
+          "market": "TOTAL",
+          "probability": 0.77791199,
+          "result": "WIN",
+          "selection": "over"
+        },
+        {
+          "game": "Texas Tech @ Cincinnati",
+          "game_id": "401856840",
+          "locked_line": 10.5,
+          "market": "ATS",
+          "probability": 0.7359524,
+          "result": "WIN",
+          "selection": "Cincinnati"
+        },
+        {
+          "game": "San Diego State @ Colorado State",
+          "game_id": "401860905",
+          "locked_line": 1.5,
+          "market": "ATS",
+          "probability": 0.71196333,
+          "result": "WIN",
+          "selection": "Colorado State"
+        },
+        {
+          "game": "Oklahoma @ Mississippi State",
+          "game_id": "401856730",
+          "locked_line": 4.5,
+          "market": "ATS",
+          "probability": 0.70716494,
+          "result": "LOSS",
+          "selection": "Mississippi State"
+        }
+      ],
+      "probability_caveat": "Unvalidated research probabilities; line baseline .5 is scored on original sides and makes no bets.",
+      "pushes": 0,
+      "reliability": [
+        {
+          "hit_rate": 0.6,
+          "lower": 0.7,
+          "n": 5,
+          "probability": 0.74408129
+        }
+      ],
+      "rmse": null,
+      "scope": "COMBINED",
+      "unit_difference_vs_ats_research": -0.0,
+      "units": 0.72727273,
+      "week": 8,
+      "wilson95": [
+        0.23072428,
+        0.88237923
+      ],
+      "wins": 3
+    },
+    {
+      "ats_research_benchmark_units": 0.72727273,
+      "auc": 0.5,
+      "bets": 5,
+      "brier": 0.2425,
+      "ece": 0.05,
+      "hit_rate": 0.6,
+      "losses": 2,
+      "mae": 9.68910866,
+      "method": "PRIOR_FREQUENCY",
+      "n": 5,
+      "picks": [
+        {
+          "game": "Oklahoma @ Mississippi State",
+          "game_id": "401856730",
+          "locked_line": 4.5,
+          "market": "ATS",
+          "probability": 0.55,
+          "result": "LOSS",
+          "selection": "Mississippi State"
+        },
+        {
+          "game": "Texas Tech @ Cincinnati",
+          "game_id": "401856840",
+          "locked_line": 10.5,
+          "market": "ATS",
+          "probability": 0.55,
+          "result": "WIN",
+          "selection": "Cincinnati"
+        },
+        {
+          "game": "Michigan State @ UCLA",
+          "game_id": "401858499",
+          "locked_line": -13.5,
+          "market": "ATS",
+          "probability": 0.55,
+          "result": "WIN",
+          "selection": "UCLA"
+        },
+        {
+          "game": "San Diego State @ Colorado State",
+          "game_id": "401860905",
+          "locked_line": 1.5,
+          "market": "ATS",
+          "probability": 0.55,
+          "result": "WIN",
+          "selection": "Colorado State"
+        },
+        {
+          "game": "Massachusetts @ UConn",
+          "game_id": "401861965",
+          "locked_line": 14.5,
+          "market": "ATS",
+          "probability": 0.55,
+          "result": "LOSS",
+          "selection": "Massachusetts"
+        }
+      ],
+      "probability_caveat": "Unvalidated research probabilities; line baseline .5 is scored on original sides and makes no bets.",
+      "pushes": 0,
+      "reliability": [
+        {
+          "hit_rate": 0.6,
+          "lower": 0.5,
+          "n": 5,
+          "probability": 0.55
+        }
+      ],
+      "rmse": 11.6409245,
+      "scope": "ATS",
+      "unit_difference_vs_ats_research": -0.0,
+      "units": 0.72727273,
+      "week": 8,
+      "wilson95": [
+        0.23072428,
+        0.88237923
+      ],
+      "wins": 3
+    },
+    {
+      "ats_research_benchmark_units": 0.72727273,
+      "auc": 0.5,
+      "bets": 5,
+      "brier": 0.28348327,
+      "ece": 0.35140187,
+      "hit_rate": 0.2,
+      "losses": 4,
+      "mae": 4.23515573,
+      "method": "PRIOR_FREQUENCY",
+      "n": 5,
+      "picks": [
+        {
+          "game": "Texas A&M @ Alabama",
+          "game_id": "401856727",
+          "locked_line": 50.5,
+          "market": "TOTAL",
+          "probability": 0.55140187,
+          "result": "LOSS",
+          "selection": "under"
+        },
+        {
+          "game": "LSU @ Auburn",
+          "game_id": "401856728",
+          "locked_line": 50.5,
+          "market": "TOTAL",
+          "probability": 0.55140187,
+          "result": "LOSS",
+          "selection": "under"
+        },
+        {
+          "game": "Vanderbilt @ Kentucky",
+          "game_id": "401856729",
+          "locked_line": 51.5,
+          "market": "TOTAL",
+          "probability": 0.55140187,
+          "result": "WIN",
+          "selection": "under"
+        },
+        {
+          "game": "Oklahoma @ Mississippi State",
+          "game_id": "401856730",
+          "locked_line": 44.5,
+          "market": "TOTAL",
+          "probability": 0.55140187,
+          "result": "LOSS",
+          "selection": "over"
+        },
+        {
+          "game": "Tennessee @ South Carolina",
+          "game_id": "401856731",
+          "locked_line": 50.5,
+          "market": "TOTAL",
+          "probability": 0.55140187,
+          "result": "LOSS",
+          "selection": "under"
+        }
+      ],
+      "probability_caveat": "Unvalidated research probabilities; line baseline .5 is scored on original sides and makes no bets.",
+      "pushes": 0,
+      "reliability": [
+        {
+          "hit_rate": 0.2,
+          "lower": 0.5,
+          "n": 5,
+          "probability": 0.55140187
+        }
+      ],
+      "rmse": 5.10739823,
+      "scope": "TOTAL",
+      "unit_difference_vs_ats_research": -3.81818182,
+      "units": -3.09090909,
+      "week": 8,
+      "wilson95": [
+        0.03622411,
+        0.62446537
+      ],
+      "wins": 1
+    },
+    {
+      "ats_research_benchmark_units": 0.72727273,
+      "auc": 0.5,
+      "bets": 5,
+      "brier": 0.28348327,
+      "ece": 0.35140187,
+      "hit_rate": 0.2,
+      "losses": 4,
+      "mae": null,
+      "method": "PRIOR_FREQUENCY",
+      "n": 5,
+      "picks": [
+        {
+          "game": "Texas A&M @ Alabama",
+          "game_id": "401856727",
+          "locked_line": 50.5,
+          "market": "TOTAL",
+          "probability": 0.55140187,
+          "result": "LOSS",
+          "selection": "under"
+        },
+        {
+          "game": "LSU @ Auburn",
+          "game_id": "401856728",
+          "locked_line": 50.5,
+          "market": "TOTAL",
+          "probability": 0.55140187,
+          "result": "LOSS",
+          "selection": "under"
+        },
+        {
+          "game": "Vanderbilt @ Kentucky",
+          "game_id": "401856729",
+          "locked_line": 51.5,
+          "market": "TOTAL",
+          "probability": 0.55140187,
+          "result": "WIN",
+          "selection": "under"
+        },
+        {
+          "game": "Oklahoma @ Mississippi State",
+          "game_id": "401856730",
+          "locked_line": 44.5,
+          "market": "TOTAL",
+          "probability": 0.55140187,
+          "result": "LOSS",
+          "selection": "over"
+        },
+        {
+          "game": "Tennessee @ South Carolina",
+          "game_id": "401856731",
+          "locked_line": 50.5,
+          "market": "TOTAL",
+          "probability": 0.55140187,
+          "result": "LOSS",
+          "selection": "under"
+        }
+      ],
+      "probability_caveat": "Unvalidated research probabilities; line baseline .5 is scored on original sides and makes no bets.",
+      "pushes": 0,
+      "reliability": [
+        {
+          "hit_rate": 0.2,
+          "lower": 0.5,
+          "n": 5,
+          "probability": 0.55140187
+        }
+      ],
+      "rmse": null,
+      "scope": "COMBINED",
+      "unit_difference_vs_ats_research": -3.81818182,
+      "units": -3.09090909,
+      "week": 8,
+      "wilson95": [
+        0.03622411,
+        0.62446537
+      ],
+      "wins": 1
+    },
+    {
+      "ats_research_benchmark_units": 0.72727273,
+      "auc": null,
+      "bets": 5,
+      "brier": 0.16461165,
+      "ece": 0.40446423,
+      "hit_rate": 1.0,
+      "losses": 0,
+      "mae": 7.50350355,
+      "method": "MODEL_25",
+      "n": 5,
+      "picks": [
+        {
+          "game": "Notre Dame @ Navy",
+          "game_id": "401859185",
+          "locked_line": "30.5",
+          "market": "ATS",
+          "probability": 0.65940821,
+          "result": "WIN",
+          "selection": "Navy"
+        },
+        {
+          "game": "New Mexico @ San Jos\u00e9 State",
+          "game_id": "401864529",
+          "locked_line": "14.5",
+          "market": "ATS",
+          "probability": 0.58040122,
+          "result": "WIN",
+          "selection": "San Jos\u00e9 State"
+        },
+        {
+          "game": "SMU @ Syracuse",
+          "game_id": "401858278",
+          "locked_line": "10.5",
+          "market": "ATS",
+          "probability": 0.58008377,
+          "result": "WIN",
+          "selection": "Syracuse"
+        },
+        {
+          "game": "Oklahoma State @ Iowa State",
+          "game_id": "401856847",
+          "locked_line": "8.5",
+          "market": "ATS",
+          "probability": 0.57918261,
+          "result": "WIN",
+          "selection": "Iowa State"
+        },
+        {
+          "game": "Michigan @ Rutgers",
+          "game_id": "401858507",
+          "locked_line": "14.5",
+          "market": "ATS",
+          "probability": 0.57860301,
+          "result": "WIN",
+          "selection": "Rutgers"
+        }
+      ],
+      "probability_caveat": "Unvalidated research probabilities; line baseline .5 is scored on original sides and makes no bets.",
+      "pushes": 0,
+      "reliability": [
+        {
+          "hit_rate": 1.0,
+          "lower": 0.5,
+          "n": 4,
+          "probability": 0.57956765
+        },
+        {
+          "hit_rate": 1.0,
+          "lower": 0.6,
+          "n": 1,
+          "probability": 0.65940821
+        }
+      ],
+      "rmse": 7.98551844,
+      "scope": "ATS",
+      "unit_difference_vs_ats_research": 3.81818182,
+      "units": 4.54545455,
+      "week": 9,
+      "wilson95": [
+        0.56551754,
+        1.0
+      ],
+      "wins": 5
+    },
+    {
+      "ats_research_benchmark_units": 0.72727273,
+      "auc": 0.25,
+      "bets": 5,
+      "brier": 0.29987433,
+      "ece": 0.36993843,
+      "hit_rate": 0.2,
+      "losses": 4,
+      "mae": 9.68080817,
+      "method": "MODEL_25",
+      "n": 5,
+      "picks": [
+        {
+          "game": "Wisconsin @ Iowa",
+          "game_id": "401858502",
+          "locked_line": "36.5",
+          "market": "TOTAL",
+          "probability": 0.58679778,
+          "result": "LOSS",
+          "selection": "over"
+        },
+        {
+          "game": "Florida Atlantic @ North Texas",
+          "game_id": "401862812",
+          "locked_line": "77.5",
+          "market": "TOTAL",
+          "probability": 0.57541716,
+          "result": "LOSS",
+          "selection": "under"
+        },
+        {
+          "game": "Minnesota @ Indiana",
+          "game_id": "401858501",
+          "locked_line": "41.5",
+          "market": "TOTAL",
+          "probability": 0.56477216,
+          "result": "LOSS",
+          "selection": "over"
+        },
+        {
+          "game": "Virginia @ Wake Forest",
+          "game_id": "401858284",
+          "locked_line": "49.5",
+          "market": "TOTAL",
+          "probability": 0.56263454,
+          "result": "WIN",
+          "selection": "over"
+        },
+        {
+          "game": "Bowling Green @ Western Michigan",
+          "game_id": "401866452",
+          "locked_line": "44.5",
+          "market": "TOTAL",
+          "probability": 0.56007052,
+          "result": "LOSS",
+          "selection": "over"
+        }
+      ],
+      "probability_caveat": "Unvalidated research probabilities; line baseline .5 is scored on original sides and makes no bets.",
+      "pushes": 0,
+      "reliability": [
+        {
+          "hit_rate": 0.2,
+          "lower": 0.5,
+          "n": 5,
+          "probability": 0.56993843
+        }
+      ],
+      "rmse": 10.55766263,
+      "scope": "TOTAL",
+      "unit_difference_vs_ats_research": -3.81818182,
+      "units": -3.09090909,
+      "week": 9,
+      "wilson95": [
+        0.03622411,
+        0.62446537
+      ],
+      "wins": 1
+    },
+    {
+      "ats_research_benchmark_units": 0.72727273,
+      "auc": 0.25,
+      "bets": 5,
+      "brier": 0.19796289,
+      "ece": 0.20282528,
+      "hit_rate": 0.8,
+      "losses": 1,
+      "mae": null,
+      "method": "MODEL_25",
+      "n": 5,
+      "picks": [
+        {
+          "game": "Notre Dame @ Navy",
+          "game_id": "401859185",
+          "locked_line": "30.5",
+          "market": "ATS",
+          "probability": 0.65940821,
+          "result": "WIN",
+          "selection": "Navy"
+        },
+        {
+          "game": "Wisconsin @ Iowa",
+          "game_id": "401858502",
+          "locked_line": "36.5",
+          "market": "TOTAL",
+          "probability": 0.58679778,
+          "result": "LOSS",
+          "selection": "over"
+        },
+        {
+          "game": "New Mexico @ San Jos\u00e9 State",
+          "game_id": "401864529",
+          "locked_line": "14.5",
+          "market": "ATS",
+          "probability": 0.58040122,
+          "result": "WIN",
+          "selection": "San Jos\u00e9 State"
+        },
+        {
+          "game": "SMU @ Syracuse",
+          "game_id": "401858278",
+          "locked_line": "10.5",
+          "market": "ATS",
+          "probability": 0.58008377,
+          "result": "WIN",
+          "selection": "Syracuse"
+        },
+        {
+          "game": "Oklahoma State @ Iowa State",
+          "game_id": "401856847",
+          "locked_line": "8.5",
+          "market": "ATS",
+          "probability": 0.57918261,
+          "result": "WIN",
+          "selection": "Iowa State"
+        }
+      ],
+      "probability_caveat": "Unvalidated research probabilities; line baseline .5 is scored on original sides and makes no bets.",
+      "pushes": 0,
+      "reliability": [
+        {
+          "hit_rate": 0.75,
+          "lower": 0.5,
+          "n": 4,
+          "probability": 0.58161635
+        },
+        {
+          "hit_rate": 1.0,
+          "lower": 0.6,
+          "n": 1,
+          "probability": 0.65940821
+        }
+      ],
+      "rmse": null,
+      "scope": "COMBINED",
+      "unit_difference_vs_ats_research": 1.90909091,
+      "units": 2.63636364,
+      "week": 9,
+      "wilson95": [
+        0.37553463,
+        0.96377589
+      ],
+      "wins": 4
+    },
+    {
+      "ats_research_benchmark_units": 0.72727273,
+      "auc": 0.25,
+      "bets": 5,
+      "brier": 0.18756893,
+      "ece": 0.14236171,
+      "hit_rate": 0.8,
+      "losses": 1,
+      "mae": 7.81075453,
+      "method": "MODEL_50",
+      "n": 5,
+      "picks": [
+        {
+          "game": "Notre Dame @ Navy",
+          "game_id": "401859185",
+          "locked_line": "30.5",
+          "market": "ATS",
+          "probability": 0.76256248,
+          "result": "WIN",
+          "selection": "Navy"
+        },
+        {
+          "game": "Mississippi State @ Texas",
+          "game_id": "401856737",
+          "locked_line": "20.5",
+          "market": "ATS",
+          "probability": 0.66811312,
+          "result": "LOSS",
+          "selection": "Mississippi State"
+        },
+        {
+          "game": "New Mexico @ San Jos\u00e9 State",
+          "game_id": "401864529",
+          "locked_line": "14.5",
+          "market": "ATS",
+          "probability": 0.62015283,
+          "result": "WIN",
+          "selection": "San Jos\u00e9 State"
+        },
+        {
+          "game": "SMU @ Syracuse",
+          "game_id": "401858278",
+          "locked_line": "10.5",
+          "market": "ATS",
+          "probability": 0.61954491,
+          "result": "WIN",
+          "selection": "Syracuse"
+        },
+        {
+          "game": "Oklahoma State @ Iowa State",
+          "game_id": "401856847",
+          "locked_line": "8.5",
+          "market": "ATS",
+          "probability": 0.61781812,
+          "result": "WIN",
+          "selection": "Iowa State"
+        }
+      ],
+      "probability_caveat": "Unvalidated research probabilities; line baseline .5 is scored on original sides and makes no bets.",
+      "pushes": 0,
+      "reliability": [
+        {
+          "hit_rate": 0.75,
+          "lower": 0.6,
+          "n": 4,
+          "probability": 0.63140724
+        },
+        {
+          "hit_rate": 1.0,
+          "lower": 0.7,
+          "n": 1,
+          "probability": 0.76256248
+        }
+      ],
+      "rmse": 9.04163438,
+      "scope": "ATS",
+      "unit_difference_vs_ats_research": 1.90909091,
+      "units": 2.63636364,
+      "week": 9,
+      "wilson95": [
+        0.37553463,
+        0.96377589
+      ],
+      "wins": 4
+    },
+    {
+      "ats_research_benchmark_units": 0.72727273,
+      "auc": 0.25,
+      "bets": 5,
+      "brier": 0.34862853,
+      "ece": 0.42246223,
+      "hit_rate": 0.2,
+      "losses": 4,
+      "mae": 11.26161635,
+      "method": "MODEL_50",
+      "n": 5,
+      "picks": [
+        {
+          "game": "Florida Atlantic @ North Texas",
+          "game_id": "401862812",
+          "locked_line": "77.5",
+          "market": "TOTAL",
+          "probability": 0.66950252,
+          "result": "LOSS",
+          "selection": "under"
+        },
+        {
+          "game": "Wisconsin @ Iowa",
+          "game_id": "401858502",
+          "locked_line": "36.5",
+          "market": "TOTAL",
+          "probability": 0.64574906,
+          "result": "LOSS",
+          "selection": "over"
+        },
+        {
+          "game": "Minnesota @ Indiana",
+          "game_id": "401858501",
+          "locked_line": "41.5",
+          "market": "TOTAL",
+          "probability": 0.60345585,
+          "result": "LOSS",
+          "selection": "over"
+        },
+        {
+          "game": "Virginia @ Wake Forest",
+          "game_id": "401858284",
+          "locked_line": "49.5",
+          "market": "TOTAL",
+          "probability": 0.59929958,
+          "result": "WIN",
+          "selection": "over"
+        },
+        {
+          "game": "Bowling Green @ Western Michigan",
+          "game_id": "401866452",
+          "locked_line": "44.5",
+          "market": "TOTAL",
+          "probability": 0.59430412,
+          "result": "LOSS",
+          "selection": "over"
+        }
+      ],
+      "probability_caveat": "Unvalidated research probabilities; line baseline .5 is scored on original sides and makes no bets.",
+      "pushes": 0,
+      "reliability": [
+        {
+          "hit_rate": 0.5,
+          "lower": 0.5,
+          "n": 2,
+          "probability": 0.59680185
+        },
+        {
+          "hit_rate": 0.0,
+          "lower": 0.6,
+          "n": 3,
+          "probability": 0.63956915
+        }
+      ],
+      "rmse": 12.55363049,
+      "scope": "TOTAL",
+      "unit_difference_vs_ats_research": -3.81818182,
+      "units": -3.09090909,
+      "week": 9,
+      "wilson95": [
+        0.03622411,
+        0.62446537
+      ],
+      "wins": 1
+    },
+    {
+      "ats_research_benchmark_units": 0.72727273,
+      "auc": 0.5,
+      "bets": 5,
+      "brier": 0.30245221,
+      "ece": 0.36819101,
+      "hit_rate": 0.4,
+      "losses": 3,
+      "mae": null,
+      "method": "MODEL_50",
+      "n": 5,
+      "picks": [
+        {
+          "game": "Notre Dame @ Navy",
+          "game_id": "401859185",
+          "locked_line": "30.5",
+          "market": "ATS",
+          "probability": 0.76256248,
+          "result": "WIN",
+          "selection": "Navy"
+        },
+        {
+          "game": "Florida Atlantic @ North Texas",
+          "game_id": "401862812",
+          "locked_line": "77.5",
+          "market": "TOTAL",
+          "probability": 0.66950252,
+          "result": "LOSS",
+          "selection": "under"
+        },
+        {
+          "game": "Mississippi State @ Texas",
+          "game_id": "401856737",
+          "locked_line": "20.5",
+          "market": "ATS",
+          "probability": 0.66811312,
+          "result": "LOSS",
+          "selection": "Mississippi State"
+        },
+        {
+          "game": "Wisconsin @ Iowa",
+          "game_id": "401858502",
+          "locked_line": "36.5",
+          "market": "TOTAL",
+          "probability": 0.64574906,
+          "result": "LOSS",
+          "selection": "over"
+        },
+        {
+          "game": "New Mexico @ San Jos\u00e9 State",
+          "game_id": "401864529",
+          "locked_line": "14.5",
+          "market": "ATS",
+          "probability": 0.62015283,
+          "result": "WIN",
+          "selection": "San Jos\u00e9 State"
+        }
+      ],
+      "probability_caveat": "Unvalidated research probabilities; line baseline .5 is scored on original sides and makes no bets.",
+      "pushes": 0,
+      "reliability": [
+        {
+          "hit_rate": 0.25,
+          "lower": 0.6,
+          "n": 4,
+          "probability": 0.65087939
+        },
+        {
+          "hit_rate": 1.0,
+          "lower": 0.7,
+          "n": 1,
+          "probability": 0.76256248
+        }
+      ],
+      "rmse": null,
+      "scope": "COMBINED",
+      "unit_difference_vs_ats_research": -1.90909091,
+      "units": -1.18181818,
+      "week": 9,
+      "wilson95": [
+        0.11762077,
+        0.76927572
+      ],
+      "wins": 2
+    },
+    {
+      "ats_research_benchmark_units": 0.72727273,
+      "auc": 0.25,
+      "bets": 5,
+      "brier": 0.19218854,
+      "ece": 0.32649818,
+      "hit_rate": 0.8,
+      "losses": 1,
+      "mae": 11.27289343,
+      "method": "ORIGINAL_POINT_GAUSSIAN",
+      "n": 5,
+      "picks": [
+        {
+          "game": "Notre Dame @ Navy",
+          "game_id": "401859185",
+          "locked_line": "30.5",
+          "market": "ATS",
+          "probability": 0.89506358,
+          "result": "WIN",
+          "selection": "Navy"
+        },
+        {
+          "game": "Mississippi State @ Texas",
+          "game_id": "401856737",
+          "locked_line": "20.5",
+          "market": "ATS",
+          "probability": 0.8167712,
+          "result": "LOSS",
+          "selection": "Mississippi State"
+        },
+        {
+          "game": "Troy @ James Madison",
+          "game_id": "401869963",
+          "locked_line": "20.5",
+          "market": "ATS",
+          "probability": 0.70676189,
+          "result": "WIN",
+          "selection": "Troy"
+        },
+        {
+          "game": "New Mexico @ San Jos\u00e9 State",
+          "game_id": "401864529",
+          "locked_line": "14.5",
+          "market": "ATS",
+          "probability": 0.68682225,
+          "result": "WIN",
+          "selection": "San Jos\u00e9 State"
+        },
+        {
+          "game": "SMU @ Syracuse",
+          "game_id": "401858278",
+          "locked_line": "10.5",
+          "market": "ATS",
+          "probability": 0.68575973,
+          "result": "WIN",
+          "selection": "Syracuse"
+        }
+      ],
+      "probability_caveat": "Unvalidated research probabilities; line baseline .5 is scored on original sides and makes no bets.",
+      "pushes": 0,
+      "reliability": [
+        {
+          "hit_rate": 1.0,
+          "lower": 0.6,
+          "n": 2,
+          "probability": 0.68629099
+        },
+        {
+          "hit_rate": 1.0,
+          "lower": 0.7,
+          "n": 1,
+          "probability": 0.70676189
+        },
+        {
+          "hit_rate": 0.5,
+          "lower": 0.8,
+          "n": 2,
+          "probability": 0.85591739
+        }
+      ],
+      "rmse": 13.24137838,
+      "scope": "ATS",
+      "unit_difference_vs_ats_research": 1.90909091,
+      "units": 2.63636364,
+      "week": 9,
+      "wilson95": [
+        0.37553463,
+        0.96377589
+      ],
+      "wins": 4
+    },
+    {
+      "ats_research_benchmark_units": 0.72727273,
+      "auc": 0.16666667,
+      "bets": 5,
+      "brier": 0.37743692,
+      "ece": 0.32110985,
+      "hit_rate": 0.4,
+      "losses": 3,
+      "mae": 12.70088611,
+      "method": "ORIGINAL_POINT_GAUSSIAN",
+      "n": 5,
+      "picks": [
+        {
+          "game": "Florida Atlantic @ North Texas",
+          "game_id": "401862812",
+          "locked_line": "77.5",
+          "market": "TOTAL",
+          "probability": 0.8193084,
+          "result": "LOSS",
+          "selection": "under"
+        },
+        {
+          "game": "Wisconsin @ Iowa",
+          "game_id": "401858502",
+          "locked_line": "36.5",
+          "market": "TOTAL",
+          "probability": 0.74786573,
+          "result": "LOSS",
+          "selection": "over"
+        },
+        {
+          "game": "Colorado State @ Utah State",
+          "game_id": "401860910",
+          "locked_line": "63.5",
+          "market": "TOTAL",
+          "probability": 0.69813813,
+          "result": "WIN",
+          "selection": "under"
+        },
+        {
+          "game": "Minnesota @ Indiana",
+          "game_id": "401858501",
+          "locked_line": "41.5",
+          "market": "TOTAL",
+          "probability": 0.6739111,
+          "result": "LOSS",
+          "selection": "over"
+        },
+        {
+          "game": "Virginia @ Wake Forest",
+          "game_id": "401858284",
+          "locked_line": "49.5",
+          "market": "TOTAL",
+          "probability": 0.66632589,
+          "result": "WIN",
+          "selection": "over"
+        }
+      ],
+      "probability_caveat": "Unvalidated research probabilities; line baseline .5 is scored on original sides and makes no bets.",
+      "pushes": 0,
+      "reliability": [
+        {
+          "hit_rate": 0.66666667,
+          "lower": 0.6,
+          "n": 3,
+          "probability": 0.67945837
+        },
+        {
+          "hit_rate": 0.0,
+          "lower": 0.7,
+          "n": 1,
+          "probability": 0.74786573
+        },
+        {
+          "hit_rate": 0.0,
+          "lower": 0.8,
+          "n": 1,
+          "probability": 0.8193084
+        }
+      ],
+      "rmse": 15.63782578,
+      "scope": "TOTAL",
+      "unit_difference_vs_ats_research": -1.90909091,
+      "units": -1.18181818,
+      "week": 9,
+      "wilson95": [
+        0.11762077,
+        0.76927572
+      ],
+      "wins": 2
+    },
+    {
+      "ats_research_benchmark_units": 0.72727273,
+      "auc": 0.5,
+      "bets": 5,
+      "brier": 0.39893697,
+      "ece": 0.39715416,
+      "hit_rate": 0.4,
+      "losses": 3,
+      "mae": null,
+      "method": "ORIGINAL_POINT_GAUSSIAN",
+      "n": 5,
+      "picks": [
+        {
+          "game": "Notre Dame @ Navy",
+          "game_id": "401859185",
+          "locked_line": "30.5",
+          "market": "ATS",
+          "probability": 0.89506358,
+          "result": "WIN",
+          "selection": "Navy"
+        },
+        {
+          "game": "Florida Atlantic @ North Texas",
+          "game_id": "401862812",
+          "locked_line": "77.5",
+          "market": "TOTAL",
+          "probability": 0.8193084,
+          "result": "LOSS",
+          "selection": "under"
+        },
+        {
+          "game": "Mississippi State @ Texas",
+          "game_id": "401856737",
+          "locked_line": "20.5",
+          "market": "ATS",
+          "probability": 0.8167712,
+          "result": "LOSS",
+          "selection": "Mississippi State"
+        },
+        {
+          "game": "Wisconsin @ Iowa",
+          "game_id": "401858502",
+          "locked_line": "36.5",
+          "market": "TOTAL",
+          "probability": 0.74786573,
+          "result": "LOSS",
+          "selection": "over"
+        },
+        {
+          "game": "Troy @ James Madison",
+          "game_id": "401869963",
+          "locked_line": "20.5",
+          "market": "ATS",
+          "probability": 0.70676189,
+          "result": "WIN",
+          "selection": "Troy"
+        }
+      ],
+      "probability_caveat": "Unvalidated research probabilities; line baseline .5 is scored on original sides and makes no bets.",
+      "pushes": 0,
+      "reliability": [
+        {
+          "hit_rate": 0.5,
+          "lower": 0.7,
+          "n": 2,
+          "probability": 0.72731381
+        },
+        {
+          "hit_rate": 0.33333333,
+          "lower": 0.8,
+          "n": 3,
+          "probability": 0.84371439
+        }
+      ],
+      "rmse": null,
+      "scope": "COMBINED",
+      "unit_difference_vs_ats_research": -1.90909091,
+      "units": -1.18181818,
+      "week": 9,
+      "wilson95": [
+        0.11762077,
+        0.76927572
+      ],
+      "wins": 2
+    },
+    {
+      "ats_research_benchmark_units": 0.72727273,
+      "auc": 0.83333333,
+      "bets": 5,
+      "brier": 0.24900331,
+      "ece": 0.1397071,
+      "hit_rate": 0.4,
+      "losses": 3,
+      "mae": 15.98505295,
+      "method": "PRIOR_FREQUENCY",
+      "n": 5,
+      "picks": [
+        {
+          "game": "Mississippi State @ Texas",
+          "game_id": "401856737",
+          "locked_line": "20.5",
+          "market": "ATS",
+          "probability": 0.55319149,
+          "result": "LOSS",
+          "selection": "Mississippi State"
+        },
+        {
+          "game": "Notre Dame @ Navy",
+          "game_id": "401859185",
+          "locked_line": "30.5",
+          "market": "ATS",
+          "probability": 0.55319149,
+          "result": "WIN",
+          "selection": "Navy"
+        },
+        {
+          "game": "Troy @ James Madison",
+          "game_id": "401869963",
+          "locked_line": "20.5",
+          "market": "ATS",
+          "probability": 0.55319149,
+          "result": "WIN",
+          "selection": "Troy"
+        },
+        {
+          "game": "Auburn @ Ole Miss",
+          "game_id": "401856735",
+          "locked_line": "13.5",
+          "market": "ATS",
+          "probability": 0.51948052,
+          "result": "LOSS",
+          "selection": "Auburn"
+        },
+        {
+          "game": "Arizona @ Texas Tech",
+          "game_id": "401856842",
+          "locked_line": "3.5",
+          "market": "ATS",
+          "probability": 0.51948052,
+          "result": "LOSS",
+          "selection": "Arizona"
+        }
+      ],
+      "probability_caveat": "Unvalidated research probabilities; line baseline .5 is scored on original sides and makes no bets.",
+      "pushes": 0,
+      "reliability": [
+        {
+          "hit_rate": 0.4,
+          "lower": 0.5,
+          "n": 5,
+          "probability": 0.5397071
+        }
+      ],
+      "rmse": 17.05621817,
+      "scope": "ATS",
+      "unit_difference_vs_ats_research": -1.90909091,
+      "units": -1.18181818,
+      "week": 9,
+      "wilson95": [
+        0.11762077,
+        0.76927572
+      ],
+      "wins": 2
+    },
+    {
+      "ats_research_benchmark_units": 0.72727273,
+      "auc": 0.5,
+      "bets": 5,
+      "brier": 0.25828209,
+      "ece": 0.13521127,
+      "hit_rate": 0.4,
+      "losses": 3,
+      "mae": 12.68821211,
+      "method": "PRIOR_FREQUENCY",
+      "n": 5,
+      "picks": [
+        {
+          "game": "Missouri @ Arkansas",
+          "game_id": "401856733",
+          "locked_line": "48.5",
+          "market": "TOTAL",
+          "probability": 0.53521127,
+          "result": "LOSS",
+          "selection": "over"
+        },
+        {
+          "game": "Florida @ Georgia",
+          "game_id": "401856734",
+          "locked_line": "55.5",
+          "market": "TOTAL",
+          "probability": 0.53521127,
+          "result": "WIN",
+          "selection": "under"
+        },
+        {
+          "game": "South Carolina @ Oklahoma",
+          "game_id": "401856736",
+          "locked_line": "44.5",
+          "market": "TOTAL",
+          "probability": 0.53521127,
+          "result": "LOSS",
+          "selection": "under"
+        },
+        {
+          "game": "Mississippi State @ Texas",
+          "game_id": "401856737",
+          "locked_line": "49.5",
+          "market": "TOTAL",
+          "probability": 0.53521127,
+          "result": "WIN",
+          "selection": "under"
+        },
+        {
+          "game": "Arizona State @ BYU",
+          "game_id": "401856843",
+          "locked_line": "48.5",
+          "market": "TOTAL",
+          "probability": 0.53521127,
+          "result": "LOSS",
+          "selection": "over"
+        }
+      ],
+      "probability_caveat": "Unvalidated research probabilities; line baseline .5 is scored on original sides and makes no bets.",
+      "pushes": 0,
+      "reliability": [
+        {
+          "hit_rate": 0.4,
+          "lower": 0.5,
+          "n": 5,
+          "probability": 0.53521127
+        }
+      ],
+      "rmse": 14.72095403,
+      "scope": "TOTAL",
+      "unit_difference_vs_ats_research": -1.90909091,
+      "units": -1.18181818,
+      "week": 9,
+      "wilson95": [
+        0.11762077,
+        0.76927572
+      ],
+      "wins": 2
+    },
+    {
+      "ats_research_benchmark_units": 0.72727273,
+      "auc": 0.58333333,
+      "bets": 5,
+      "brier": 0.24155524,
+      "ece": 0.0540006,
+      "hit_rate": 0.6,
+      "losses": 2,
+      "mae": null,
+      "method": "PRIOR_FREQUENCY",
+      "n": 5,
+      "picks": [
+        {
+          "game": "Mississippi State @ Texas",
+          "game_id": "401856737",
+          "locked_line": "20.5",
+          "market": "ATS",
+          "probability": 0.55319149,
+          "result": "LOSS",
+          "selection": "Mississippi State"
+        },
+        {
+          "game": "Notre Dame @ Navy",
+          "game_id": "401859185",
+          "locked_line": "30.5",
+          "market": "ATS",
+          "probability": 0.55319149,
+          "result": "WIN",
+          "selection": "Navy"
+        },
+        {
+          "game": "Troy @ James Madison",
+          "game_id": "401869963",
+          "locked_line": "20.5",
+          "market": "ATS",
+          "probability": 0.55319149,
+          "result": "WIN",
+          "selection": "Troy"
+        },
+        {
+          "game": "Missouri @ Arkansas",
+          "game_id": "401856733",
+          "locked_line": "48.5",
+          "market": "TOTAL",
+          "probability": 0.53521127,
+          "result": "LOSS",
+          "selection": "over"
+        },
+        {
+          "game": "Florida @ Georgia",
+          "game_id": "401856734",
+          "locked_line": "55.5",
+          "market": "TOTAL",
+          "probability": 0.53521127,
+          "result": "WIN",
+          "selection": "under"
+        }
+      ],
+      "probability_caveat": "Unvalidated research probabilities; line baseline .5 is scored on original sides and makes no bets.",
+      "pushes": 0,
+      "reliability": [
+        {
+          "hit_rate": 0.6,
+          "lower": 0.5,
+          "n": 5,
+          "probability": 0.5459994
+        }
+      ],
+      "rmse": null,
+      "scope": "COMBINED",
+      "unit_difference_vs_ats_research": -0.0,
+      "units": 0.72727273,
+      "week": 9,
+      "wilson95": [
+        0.23072428,
+        0.88237923
+      ],
+      "wins": 3
+    },
+    {
+      "ats_research_benchmark_units": -3.09090909,
+      "auc": 0.0,
+      "bets": 5,
+      "brier": 0.32852751,
+      "ece": 0.40395873,
+      "hit_rate": 0.2,
+      "losses": 4,
+      "mae": 10.03289277,
+      "method": "MODEL_25",
+      "n": 5,
+      "picks": [
+        {
+          "game": "North Carolina @ UConn",
+          "game_id": "401858292",
+          "locked_line": "6.5",
+          "market": "ATS",
+          "probability": 0.6206323,
+          "result": "LOSS",
+          "selection": "UConn"
+        },
+        {
+          "game": "Florida State @ Boston College",
+          "game_id": "401858289",
+          "locked_line": "6.5",
+          "market": "ATS",
+          "probability": 0.60786756,
+          "result": "LOSS",
+          "selection": "Boston College"
+        },
+        {
+          "game": "Texas @ Missouri",
+          "game_id": "401856743",
+          "locked_line": "2.5",
+          "market": "ATS",
+          "probability": 0.60202922,
+          "result": "LOSS",
+          "selection": "Missouri"
+        },
+        {
+          "game": "Boise State @ Colorado State",
+          "game_id": "401860911",
+          "locked_line": "17.5",
+          "market": "ATS",
+          "probability": 0.59841817,
+          "result": "LOSS",
+          "selection": "Colorado State"
+        },
+        {
+          "game": "Western Kentucky @ Middle Tennessee",
+          "game_id": "401871076",
+          "locked_line": "1.5",
+          "market": "ATS",
+          "probability": 0.59084643,
+          "result": "WIN",
+          "selection": "Middle Tennessee"
+        }
+      ],
+      "probability_caveat": "Unvalidated research probabilities; line baseline .5 is scored on original sides and makes no bets.",
+      "pushes": 0,
+      "reliability": [
+        {
+          "hit_rate": 0.5,
+          "lower": 0.5,
+          "n": 2,
+          "probability": 0.5946323
+        },
+        {
+          "hit_rate": 0.0,
+          "lower": 0.6,
+          "n": 3,
+          "probability": 0.61017636
+        }
+      ],
+      "rmse": 10.78957856,
+      "scope": "ATS",
+      "unit_difference_vs_ats_research": 0.0,
+      "units": -3.09090909,
+      "week": 10,
+      "wilson95": [
+        0.03622411,
+        0.62446537
+      ],
+      "wins": 1
+    },
+    {
+      "ats_research_benchmark_units": -3.09090909,
+      "auc": 0.5,
+      "bets": 5,
+      "brier": 0.3030391,
+      "ece": 0.37639646,
+      "hit_rate": 0.2,
+      "losses": 4,
+      "mae": 9.13558211,
+      "method": "MODEL_25",
+      "n": 5,
+      "picks": [
+        {
+          "game": "Air Force @ Army",
+          "game_id": "401862823",
+          "locked_line": "45.5",
+          "market": "TOTAL",
+          "probability": 0.60245315,
+          "result": "LOSS",
+          "selection": "over"
+        },
+        {
+          "game": "UTSA @ Florida Atlantic",
+          "game_id": "401862817",
+          "locked_line": "73.5",
+          "market": "TOTAL",
+          "probability": 0.57715575,
+          "result": "LOSS",
+          "selection": "under"
+        },
+        {
+          "game": "Texas State @ Oregon State",
+          "game_id": "401860912",
+          "locked_line": "72.5",
+          "market": "TOTAL",
+          "probability": 0.57348296,
+          "result": "WIN",
+          "selection": "under"
+        },
+        {
+          "game": "Iowa @ Northwestern",
+          "game_id": "401858513",
+          "locked_line": "45.5",
+          "market": "TOTAL",
+          "probability": 0.56786466,
+          "result": "LOSS",
+          "selection": "over"
+        },
+        {
+          "game": "South Florida @ East Carolina",
+          "game_id": "401862818",
+          "locked_line": "39.5",
+          "market": "TOTAL",
+          "probability": 0.56102575,
+          "result": "LOSS",
+          "selection": "over"
+        }
+      ],
+      "probability_caveat": "Unvalidated research probabilities; line baseline .5 is scored on original sides and makes no bets.",
+      "pushes": 0,
+      "reliability": [
+        {
+          "hit_rate": 0.25,
+          "lower": 0.5,
+          "n": 4,
+          "probability": 0.56988228
+        },
+        {
+          "hit_rate": 0.0,
+          "lower": 0.6,
+          "n": 1,
+          "probability": 0.60245315
+        }
+      ],
+      "rmse": 11.11871953,
+      "scope": "TOTAL",
+      "unit_difference_vs_ats_research": 0.0,
+      "units": -3.09090909,
+      "week": 10,
+      "wilson95": [
+        0.03622411,
+        0.62446537
+      ],
+      "wins": 1
+    },
+    {
+      "ats_research_benchmark_units": -3.09090909,
+      "auc": null,
+      "bets": 5,
+      "brier": 0.36763614,
+      "ece": 0.60628008,
+      "hit_rate": 0.0,
+      "losses": 5,
+      "mae": null,
+      "method": "MODEL_25",
+      "n": 5,
+      "picks": [
+        {
+          "game": "North Carolina @ UConn",
+          "game_id": "401858292",
+          "locked_line": "6.5",
+          "market": "ATS",
+          "probability": 0.6206323,
+          "result": "LOSS",
+          "selection": "UConn"
+        },
+        {
+          "game": "Florida State @ Boston College",
+          "game_id": "401858289",
+          "locked_line": "6.5",
+          "market": "ATS",
+          "probability": 0.60786756,
+          "result": "LOSS",
+          "selection": "Boston College"
+        },
+        {
+          "game": "Air Force @ Army",
+          "game_id": "401862823",
+          "locked_line": "45.5",
+          "market": "TOTAL",
+          "probability": 0.60245315,
+          "result": "LOSS",
+          "selection": "over"
+        },
+        {
+          "game": "Texas @ Missouri",
+          "game_id": "401856743",
+          "locked_line": "2.5",
+          "market": "ATS",
+          "probability": 0.60202922,
+          "result": "LOSS",
+          "selection": "Missouri"
+        },
+        {
+          "game": "Boise State @ Colorado State",
+          "game_id": "401860911",
+          "locked_line": "17.5",
+          "market": "ATS",
+          "probability": 0.59841817,
+          "result": "LOSS",
+          "selection": "Colorado State"
+        }
+      ],
+      "probability_caveat": "Unvalidated research probabilities; line baseline .5 is scored on original sides and makes no bets.",
+      "pushes": 0,
+      "reliability": [
+        {
+          "hit_rate": 0.0,
+          "lower": 0.5,
+          "n": 1,
+          "probability": 0.59841817
+        },
+        {
+          "hit_rate": 0.0,
+          "lower": 0.6,
+          "n": 4,
+          "probability": 0.60824556
+        }
+      ],
+      "rmse": null,
+      "scope": "COMBINED",
+      "unit_difference_vs_ats_research": -1.90909091,
+      "units": -5.0,
+      "week": 10,
+      "wilson95": [
+        0.0,
+        0.43448246
+      ],
+      "wins": 0
+    },
+    {
+      "ats_research_benchmark_units": -3.09090909,
+      "auc": 0.0,
+      "bets": 5,
+      "brier": 0.38286618,
+      "ece": 0.4611545,
+      "hit_rate": 0.2,
+      "losses": 4,
+      "mae": 11.76578554,
+      "method": "MODEL_50",
+      "n": 5,
+      "picks": [
+        {
+          "game": "North Carolina @ UConn",
+          "game_id": "401858292",
+          "locked_line": "6.5",
+          "market": "ATS",
+          "probability": 0.69211449,
+          "result": "LOSS",
+          "selection": "UConn"
+        },
+        {
+          "game": "Florida State @ Boston College",
+          "game_id": "401858289",
+          "locked_line": "6.5",
+          "market": "ATS",
+          "probability": 0.66859133,
+          "result": "LOSS",
+          "selection": "Boston College"
+        },
+        {
+          "game": "Texas @ Missouri",
+          "game_id": "401856743",
+          "locked_line": "2.5",
+          "market": "ATS",
+          "probability": 0.65767383,
+          "result": "LOSS",
+          "selection": "Missouri"
+        },
+        {
+          "game": "Boise State @ Colorado State",
+          "game_id": "401860911",
+          "locked_line": "17.5",
+          "market": "ATS",
+          "probability": 0.65087582,
+          "result": "LOSS",
+          "selection": "Colorado State"
+        },
+        {
+          "game": "Western Kentucky @ Middle Tennessee",
+          "game_id": "401871076",
+          "locked_line": "1.5",
+          "market": "ATS",
+          "probability": 0.63651704,
+          "result": "WIN",
+          "selection": "Middle Tennessee"
+        }
+      ],
+      "probability_caveat": "Unvalidated research probabilities; line baseline .5 is scored on original sides and makes no bets.",
+      "pushes": 0,
+      "reliability": [
+        {
+          "hit_rate": 0.2,
+          "lower": 0.6,
+          "n": 5,
+          "probability": 0.6611545
+        }
+      ],
+      "rmse": 12.69207118,
+      "scope": "ATS",
+      "unit_difference_vs_ats_research": 0.0,
+      "units": -3.09090909,
+      "week": 10,
+      "wilson95": [
+        0.03622411,
+        0.62446537
+      ],
+      "wins": 1
+    },
+    {
+      "ats_research_benchmark_units": -3.09090909,
+      "auc": 0.5,
+      "bets": 5,
+      "brier": 0.36053608,
+      "ece": 0.45137787,
+      "hit_rate": 0.2,
+      "losses": 4,
+      "mae": 17.82250803,
+      "method": "MODEL_50",
+      "n": 5,
+      "picks": [
+        {
+          "game": "Air Force @ Army",
+          "game_id": "401862823",
+          "locked_line": "45.5",
+          "market": "TOTAL",
+          "probability": 0.6800757,
+          "result": "LOSS",
+          "selection": "over"
+        },
+        {
+          "game": "UTSA @ Florida Atlantic",
+          "game_id": "401862817",
+          "locked_line": "73.5",
+          "market": "TOTAL",
+          "probability": 0.667587,
+          "result": "LOSS",
+          "selection": "under"
+        },
+        {
+          "game": "Texas State @ Oregon State",
+          "game_id": "401860912",
+          "locked_line": "72.5",
+          "market": "TOTAL",
+          "probability": 0.66080689,
+          "result": "WIN",
+          "selection": "under"
+        },
+        {
+          "game": "West Virginia @ Texas Tech",
+          "game_id": "401856856",
+          "locked_line": "65.5",
+          "market": "TOTAL",
+          "probability": 0.63362103,
+          "result": "LOSS",
+          "selection": "under"
+        },
+        {
+          "game": "Iowa @ Northwestern",
+          "game_id": "401858513",
+          "locked_line": "45.5",
+          "market": "TOTAL",
+          "probability": 0.61479872,
+          "result": "LOSS",
+          "selection": "over"
+        }
+      ],
+      "probability_caveat": "Unvalidated research probabilities; line baseline .5 is scored on original sides and makes no bets.",
+      "pushes": 0,
+      "reliability": [
+        {
+          "hit_rate": 0.2,
+          "lower": 0.6,
+          "n": 5,
+          "probability": 0.65137787
+        }
+      ],
+      "rmse": 22.97357127,
+      "scope": "TOTAL",
+      "unit_difference_vs_ats_research": 0.0,
+      "units": -3.09090909,
+      "week": 10,
+      "wilson95": [
+        0.03622411,
+        0.62446537
+      ],
+      "wins": 1
+    },
+    {
+      "ats_research_benchmark_units": -3.09090909,
+      "auc": 0.0,
+      "bets": 5,
+      "brier": 0.38985283,
+      "ece": 0.47383508,
+      "hit_rate": 0.2,
+      "losses": 4,
+      "mae": null,
+      "method": "MODEL_50",
+      "n": 5,
+      "picks": [
+        {
+          "game": "North Carolina @ UConn",
+          "game_id": "401858292",
+          "locked_line": "6.5",
+          "market": "ATS",
+          "probability": 0.69211449,
+          "result": "LOSS",
+          "selection": "UConn"
+        },
+        {
+          "game": "Air Force @ Army",
+          "game_id": "401862823",
+          "locked_line": "45.5",
+          "market": "TOTAL",
+          "probability": 0.6800757,
+          "result": "LOSS",
+          "selection": "over"
+        },
+        {
+          "game": "Florida State @ Boston College",
+          "game_id": "401858289",
+          "locked_line": "6.5",
+          "market": "ATS",
+          "probability": 0.66859133,
+          "result": "LOSS",
+          "selection": "Boston College"
+        },
+        {
+          "game": "UTSA @ Florida Atlantic",
+          "game_id": "401862817",
+          "locked_line": "73.5",
+          "market": "TOTAL",
+          "probability": 0.667587,
+          "result": "LOSS",
+          "selection": "under"
+        },
+        {
+          "game": "Texas State @ Oregon State",
+          "game_id": "401860912",
+          "locked_line": "72.5",
+          "market": "TOTAL",
+          "probability": 0.66080689,
+          "result": "WIN",
+          "selection": "under"
+        }
+      ],
+      "probability_caveat": "Unvalidated research probabilities; line baseline .5 is scored on original sides and makes no bets.",
+      "pushes": 0,
+      "reliability": [
+        {
+          "hit_rate": 0.2,
+          "lower": 0.6,
+          "n": 5,
+          "probability": 0.67383508
+        }
+      ],
+      "rmse": null,
+      "scope": "COMBINED",
+      "unit_difference_vs_ats_research": 0.0,
+      "units": -3.09090909,
+      "week": 10,
+      "wilson95": [
+        0.03622411,
+        0.62446537
+      ],
+      "wins": 1
+    },
+    {
+      "ats_research_benchmark_units": -3.09090909,
+      "auc": 0.0,
+      "bets": 5,
+      "brier": 0.48355803,
+      "ece": 0.5535724,
+      "hit_rate": 0.2,
+      "losses": 4,
+      "mae": 15.23157108,
+      "method": "ORIGINAL_POINT_GAUSSIAN",
+      "n": 5,
+      "picks": [
+        {
+          "game": "North Carolina @ UConn",
+          "game_id": "401858292",
+          "locked_line": "6.5",
+          "market": "ATS",
+          "probability": 0.80265107,
+          "result": "LOSS",
+          "selection": "UConn"
+        },
+        {
+          "game": "Florida State @ Boston College",
+          "game_id": "401858289",
+          "locked_line": "6.5",
+          "market": "ATS",
+          "probability": 0.76626388,
+          "result": "LOSS",
+          "selection": "Boston College"
+        },
+        {
+          "game": "Texas @ Missouri",
+          "game_id": "401856743",
+          "locked_line": "2.5",
+          "market": "ATS",
+          "probability": 0.74857923,
+          "result": "LOSS",
+          "selection": "Missouri"
+        },
+        {
+          "game": "Boise State @ Colorado State",
+          "game_id": "401860911",
+          "locked_line": "17.5",
+          "market": "ATS",
+          "probability": 0.7373336,
+          "result": "LOSS",
+          "selection": "Colorado State"
+        },
+        {
+          "game": "Western Kentucky @ Middle Tennessee",
+          "game_id": "401871076",
+          "locked_line": "1.5",
+          "market": "ATS",
+          "probability": 0.71303423,
+          "result": "WIN",
+          "selection": "Middle Tennessee"
+        }
+      ],
+      "probability_caveat": "Unvalidated research probabilities; line baseline .5 is scored on original sides and makes no bets.",
+      "pushes": 0,
+      "reliability": [
+        {
+          "hit_rate": 0.25,
+          "lower": 0.7,
+          "n": 4,
+          "probability": 0.74130274
+        },
+        {
+          "hit_rate": 0.0,
+          "lower": 0.8,
+          "n": 1,
+          "probability": 0.80265107
+        }
+      ],
+      "rmse": 17.04001115,
+      "scope": "ATS",
+      "unit_difference_vs_ats_research": 0.0,
+      "units": -3.09090909,
+      "week": 10,
+      "wilson95": [
+        0.03622411,
+        0.62446537
+      ],
+      "wins": 1
+    },
+    {
+      "ats_research_benchmark_units": -3.09090909,
+      "auc": 0.5,
+      "bets": 5,
+      "brier": 0.48504914,
+      "ece": 0.57751855,
+      "hit_rate": 0.2,
+      "losses": 4,
+      "mae": 26.17024667,
+      "method": "ORIGINAL_POINT_GAUSSIAN",
+      "n": 5,
+      "picks": [
+        {
+          "game": "UTSA @ Florida Atlantic",
+          "game_id": "401862817",
+          "locked_line": "73.5",
+          "market": "TOTAL",
+          "probability": 0.81270146,
+          "result": "LOSS",
+          "selection": "under"
+        },
+        {
+          "game": "Air Force @ Army",
+          "game_id": "401862823",
+          "locked_line": "45.5",
+          "market": "TOTAL",
+          "probability": 0.80606058,
+          "result": "LOSS",
+          "selection": "over"
+        },
+        {
+          "game": "Texas State @ Oregon State",
+          "game_id": "401860912",
+          "locked_line": "72.5",
+          "market": "TOTAL",
+          "probability": 0.80282632,
+          "result": "WIN",
+          "selection": "under"
+        },
+        {
+          "game": "West Virginia @ Texas Tech",
+          "game_id": "401856856",
+          "locked_line": "65.5",
+          "market": "TOTAL",
+          "probability": 0.76098874,
+          "result": "LOSS",
+          "selection": "under"
+        },
+        {
+          "game": "James Madison @ Southern Miss",
+          "game_id": "401869964",
+          "locked_line": "58.5",
+          "market": "TOTAL",
+          "probability": 0.70501565,
+          "result": "LOSS",
+          "selection": "under"
+        }
+      ],
+      "probability_caveat": "Unvalidated research probabilities; line baseline .5 is scored on original sides and makes no bets.",
+      "pushes": 0,
+      "reliability": [
+        {
+          "hit_rate": 0.0,
+          "lower": 0.7,
+          "n": 2,
+          "probability": 0.7330022
+        },
+        {
+          "hit_rate": 0.33333333,
+          "lower": 0.8,
+          "n": 3,
+          "probability": 0.80719612
+        }
+      ],
+      "rmse": 30.24116318,
+      "scope": "TOTAL",
+      "unit_difference_vs_ats_research": 0.0,
+      "units": -3.09090909,
+      "week": 10,
+      "wilson95": [
+        0.03622411,
+        0.62446537
+      ],
+      "wins": 1
+    },
+    {
+      "ats_research_benchmark_units": -3.09090909,
+      "auc": 0.5,
+      "bets": 5,
+      "brier": 0.51610077,
+      "ece": 0.59810066,
+      "hit_rate": 0.2,
+      "losses": 4,
+      "mae": null,
+      "method": "ORIGINAL_POINT_GAUSSIAN",
+      "n": 5,
+      "picks": [
+        {
+          "game": "UTSA @ Florida Atlantic",
+          "game_id": "401862817",
+          "locked_line": "73.5",
+          "market": "TOTAL",
+          "probability": 0.81270146,
+          "result": "LOSS",
+          "selection": "under"
+        },
+        {
+          "game": "Air Force @ Army",
+          "game_id": "401862823",
+          "locked_line": "45.5",
+          "market": "TOTAL",
+          "probability": 0.80606058,
+          "result": "LOSS",
+          "selection": "over"
+        },
+        {
+          "game": "Texas State @ Oregon State",
+          "game_id": "401860912",
+          "locked_line": "72.5",
+          "market": "TOTAL",
+          "probability": 0.80282632,
+          "result": "WIN",
+          "selection": "under"
+        },
+        {
+          "game": "North Carolina @ UConn",
+          "game_id": "401858292",
+          "locked_line": "6.5",
+          "market": "ATS",
+          "probability": 0.80265107,
+          "result": "LOSS",
+          "selection": "UConn"
+        },
+        {
+          "game": "Florida State @ Boston College",
+          "game_id": "401858289",
+          "locked_line": "6.5",
+          "market": "ATS",
+          "probability": 0.76626388,
+          "result": "LOSS",
+          "selection": "Boston College"
+        }
+      ],
+      "probability_caveat": "Unvalidated research probabilities; line baseline .5 is scored on original sides and makes no bets.",
+      "pushes": 0,
+      "reliability": [
+        {
+          "hit_rate": 0.0,
+          "lower": 0.7,
+          "n": 1,
+          "probability": 0.76626388
+        },
+        {
+          "hit_rate": 0.25,
+          "lower": 0.8,
+          "n": 4,
+          "probability": 0.80605986
+        }
+      ],
+      "rmse": null,
+      "scope": "COMBINED",
+      "unit_difference_vs_ats_research": 0.0,
+      "units": -3.09090909,
+      "week": 10,
+      "wilson95": [
+        0.03622411,
+        0.62446537
+      ],
+      "wins": 1
+    },
+    {
+      "ats_research_benchmark_units": -3.09090909,
+      "auc": 0.5,
+      "bets": 5,
+      "brier": 0.2896,
+      "ece": 0.36,
+      "hit_rate": 0.2,
+      "losses": 4,
+      "mae": 15.23157108,
+      "method": "PRIOR_FREQUENCY",
+      "n": 5,
+      "picks": [
+        {
+          "game": "Texas @ Missouri",
+          "game_id": "401856743",
+          "locked_line": "2.5",
+          "market": "ATS",
+          "probability": 0.56,
+          "result": "LOSS",
+          "selection": "Missouri"
+        },
+        {
+          "game": "Florida State @ Boston College",
+          "game_id": "401858289",
+          "locked_line": "6.5",
+          "market": "ATS",
+          "probability": 0.56,
+          "result": "LOSS",
+          "selection": "Boston College"
+        },
+        {
+          "game": "North Carolina @ UConn",
+          "game_id": "401858292",
+          "locked_line": "6.5",
+          "market": "ATS",
+          "probability": 0.56,
+          "result": "LOSS",
+          "selection": "UConn"
+        },
+        {
+          "game": "Boise State @ Colorado State",
+          "game_id": "401860911",
+          "locked_line": "17.5",
+          "market": "ATS",
+          "probability": 0.56,
+          "result": "LOSS",
+          "selection": "Colorado State"
+        },
+        {
+          "game": "Western Kentucky @ Middle Tennessee",
+          "game_id": "401871076",
+          "locked_line": "1.5",
+          "market": "ATS",
+          "probability": 0.56,
+          "result": "WIN",
+          "selection": "Middle Tennessee"
+        }
+      ],
+      "probability_caveat": "Unvalidated research probabilities; line baseline .5 is scored on original sides and makes no bets.",
+      "pushes": 0,
+      "reliability": [
+        {
+          "hit_rate": 0.2,
+          "lower": 0.5,
+          "n": 5,
+          "probability": 0.56
+        }
+      ],
+      "rmse": 17.04001115,
+      "scope": "ATS",
+      "unit_difference_vs_ats_research": 0.0,
+      "units": -3.09090909,
+      "week": 10,
+      "wilson95": [
+        0.03622411,
+        0.62446537
+      ],
+      "wins": 1
+    },
+    {
+      "ats_research_benchmark_units": -3.09090909,
+      "auc": 0.5,
+      "bets": 5,
+      "brier": 0.24270165,
+      "ece": 0.0519774,
+      "hit_rate": 0.6,
+      "losses": 2,
+      "mae": 6.14126238,
+      "method": "PRIOR_FREQUENCY",
+      "n": 5,
+      "picks": [
+        {
+          "game": "Arkansas @ Auburn",
+          "game_id": "401856738",
+          "locked_line": "52.5",
+          "market": "TOTAL",
+          "probability": 0.5480226,
+          "result": "WIN",
+          "selection": "under"
+        },
+        {
+          "game": "Oklahoma @ Florida",
+          "game_id": "401856739",
+          "locked_line": "44.5",
+          "market": "TOTAL",
+          "probability": 0.5480226,
+          "result": "LOSS",
+          "selection": "over"
+        },
+        {
+          "game": "Alabama @ LSU",
+          "game_id": "401856740",
+          "locked_line": "52.5",
+          "market": "TOTAL",
+          "probability": 0.5480226,
+          "result": "WIN",
+          "selection": "under"
+        },
+        {
+          "game": "Georgia @ Ole Miss",
+          "game_id": "401856741",
+          "locked_line": "56.5",
+          "market": "TOTAL",
+          "probability": 0.5480226,
+          "result": "WIN",
+          "selection": "under"
+        },
+        {
+          "game": "Vanderbilt @ Mississippi State",
+          "game_id": "401856742",
+          "locked_line": "48.5",
+          "market": "TOTAL",
+          "probability": 0.5480226,
+          "result": "LOSS",
+          "selection": "over"
+        }
+      ],
+      "probability_caveat": "Unvalidated research probabilities; line baseline .5 is scored on original sides and makes no bets.",
+      "pushes": 0,
+      "reliability": [
+        {
+          "hit_rate": 0.6,
+          "lower": 0.5,
+          "n": 5,
+          "probability": 0.5480226
+        }
+      ],
+      "rmse": 8.22858421,
+      "scope": "TOTAL",
+      "unit_difference_vs_ats_research": 3.81818182,
+      "units": 0.72727273,
+      "week": 10,
+      "wilson95": [
+        0.23072428,
+        0.88237923
+      ],
+      "wins": 3
+    },
+    {
+      "ats_research_benchmark_units": -3.09090909,
+      "auc": 0.5,
+      "bets": 5,
+      "brier": 0.2896,
+      "ece": 0.36,
+      "hit_rate": 0.2,
+      "losses": 4,
+      "mae": null,
+      "method": "PRIOR_FREQUENCY",
+      "n": 5,
+      "picks": [
+        {
+          "game": "Texas @ Missouri",
+          "game_id": "401856743",
+          "locked_line": "2.5",
+          "market": "ATS",
+          "probability": 0.56,
+          "result": "LOSS",
+          "selection": "Missouri"
+        },
+        {
+          "game": "Florida State @ Boston College",
+          "game_id": "401858289",
+          "locked_line": "6.5",
+          "market": "ATS",
+          "probability": 0.56,
+          "result": "LOSS",
+          "selection": "Boston College"
+        },
+        {
+          "game": "North Carolina @ UConn",
+          "game_id": "401858292",
+          "locked_line": "6.5",
+          "market": "ATS",
+          "probability": 0.56,
+          "result": "LOSS",
+          "selection": "UConn"
+        },
+        {
+          "game": "Boise State @ Colorado State",
+          "game_id": "401860911",
+          "locked_line": "17.5",
+          "market": "ATS",
+          "probability": 0.56,
+          "result": "LOSS",
+          "selection": "Colorado State"
+        },
+        {
+          "game": "Western Kentucky @ Middle Tennessee",
+          "game_id": "401871076",
+          "locked_line": "1.5",
+          "market": "ATS",
+          "probability": 0.56,
+          "result": "WIN",
+          "selection": "Middle Tennessee"
+        }
+      ],
+      "probability_caveat": "Unvalidated research probabilities; line baseline .5 is scored on original sides and makes no bets.",
+      "pushes": 0,
+      "reliability": [
+        {
+          "hit_rate": 0.2,
+          "lower": 0.5,
+          "n": 5,
+          "probability": 0.56
+        }
+      ],
+      "rmse": null,
+      "scope": "COMBINED",
+      "unit_difference_vs_ats_research": 0.0,
+      "units": -3.09090909,
+      "week": 10,
+      "wilson95": [
+        0.03622411,
+        0.62446537
+      ],
+      "wins": 1
+    }
+  ],
+  "week11_predictions": 0
+}
