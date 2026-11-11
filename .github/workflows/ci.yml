@@ -91,3 +91,6 @@ jobs:
 
       - name: Verify separate Week 11 preparation research diagnostics
         run: python -m research.week11_validation.anchor_diagnostics_v2 --verify
+
+      - name: Verify concurrent owner transcription custody and elapsed-game gate
+        run: python -m scripts.verify_week11_transcription

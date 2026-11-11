@@ -2,6 +2,37 @@
 
 ## Current state
 
+**TRANSCRIPTION RECONCILED; ORIGINAL IMAGE CUSTODY INCOMPLETE; MODEL EXECUTION
+PENDING.** Concurrent PR #52 commits `64ffcb0`, `64c8f70`, `2664e16` and
+`8cccef1c5f14b4230091fb443af92f8a5665c358` delivered the owner's 67-game line
+transcription and metadata. Their complete commit ancestry is preserved by a
+normal branch merge, not a force push. This supersedes the earlier no-receipt
+statements below and in the archived readiness/elapsed-game snapshots.
+
+The production CSV, row-by-row transcript and schedule reconciliation agree on
+all 67 spreads, totals, teams and kickoffs. Source CSV SHA256 is
+`a27f367a38918e188cc2e8aa417b9a1970049ca02d0501789d00ccfdb0b12c22`.
+The four original source blobs and recorded hashes are unchanged. Exact-path
+`-text` attributes restore their original LF bytes on Windows; no expected
+source hash or historical artifact was changed.
+
+The metadata references eight owner screenshots observed no later than
+November 10 at 16:27:38 America/Chicago. It explicitly says the original image
+bytes are not all available in the delivering runtime. One last-asset hash is
+reported, but no image bytes are independently verified in this task. Full
+visual transcription/custody is therefore **not certified complete**. A quote
+timestamp is unknown. Receipt of the missing images and an independent visual
+check remain required before certifying the official source lock and model seal.
+
+There are **three elapsed scheduled games and 64 remaining** at the separate
+01:40:28 UTC gate. Actual provider status must be refreshed before execution.
+There are still **zero Week 11 ATS/totals picks**, no Top 10, no combined five and
+no owner-approved selections. `python -m scripts.verify_week11_transcription`
+checks all four exact source hashes, all 67 row correspondences and this gate.
+It reports incomplete image custody rather than inventing image hashes.
+
+## Original pre-screenshot readiness snapshot (preserved)
+
 READINESS PREPARED; CONTEST SOURCE PENDING. Owner approval remains PENDING.
 No Week 11 owner SplashSports screenshots have been received. There are zero
 locked contest games, zero ATS selections, zero totals selections and no Top 10
@@ -162,11 +193,21 @@ fixture also initially assigned WIN to an already-WIN result; correcting it to
 flip the grade produced 44 passing focused tests in 9.10 seconds. Final-head
 full-suite results must be checked separately from these prior-head results.
 
+The source-transcription verifier initially encountered three test failures
+because native Windows has no `tzdata` package. It now validates the observed
+UTC-06:00 offset against both provider kickoffs for the bounded November 10–14
+card, rejecting other dates. It does not depend on an implicit host timezone
+database or introduce a new dependency. Its ten focused tests pass. A full-suite
+attempt on local repair head `8b1aadb` was intentionally interrupted after the
+concurrent source commits were discovered, so it is not claimed as exact-tree
+verification. Final integrated-head results are recorded separately in the PR.
+
 ```text
 python -m pytest -q tests/test_week11_readiness.py tests/test_week11_anchor_research.py
 python -m pytest -q
 python -m scripts.prepare_week11_readiness --verify
 python -m research.week11_validation.anchor_diagnostics_v2 --verify
+python -m scripts.verify_week11_transcription
 python -m scripts.verify_week10_acceptance
 python -m scripts.build_week10_formal_audit --verify
 python scripts/verify_repo_safety.py
