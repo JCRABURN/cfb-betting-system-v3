@@ -1,5 +1,26 @@
 # Week 11 execution continuation — November 11, 2026
 
+## Screenshot recovery supersession — 15:29 UTC
+
+The eight original attachments were recovered through the Codex task-history
+reader from **Review PR 51**, thread `6af280dc-1860-83ea-9bd9-d990eb4ca6dd`,
+user turn `0a429164-aaab-4f71-b794-2dee9941128b`. The recorded original chat
+receipt is **2026-11-10T22:25:54.183000+00:00**; local recovery is separately
+recorded as **2026-11-11T15:29:26.328595+00:00**. Neither is invented as the
+unknown screenshot quote timestamp. All original images are now preserved with
+byte hashes under `outputs/2026-week11-prospective/source-evidence/`.
+
+Independent visual transcription of all67 rows reconciles all spreads, totals,
+teams, weekdays and clocks with **zero discrepancies**. The previously reported
+last available asset hash matches chronological screenshot01. The task-history
+attachment list is reversed relative to chronological card order; original
+metadata is preserved and the resolution is recorded separately.
+
+This supersedes the missing-image blocker below, which describes the earlier
+09:15 CST eligibility snapshot. The original 67-row source remains unchanged.
+Execution uses a separately derived upcoming subset after a fresh live status
+capture. No owner betting approval is inferred from source recovery.
+
 ## Integrated baseline and scope
 
 GitHub reports PR #52 merged on November 11 at 03:22:53 UTC into main

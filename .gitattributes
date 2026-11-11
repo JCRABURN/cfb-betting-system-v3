@@ -139,3 +139,5 @@ production-weeks/2026-week11-splashsports.csv -text
 production-weeks/2026-week11-splashsports-lock-metadata.json -text
 data/ingest/2026-week11-splashsports-transcription.csv -text
 data/ingest/2026-week11-splashsports-schedule-reconciliation.csv -text
+# Original Week11 image recovery and separately sealed prospective execution.
+outputs/2026-week11-prospective/** -text
