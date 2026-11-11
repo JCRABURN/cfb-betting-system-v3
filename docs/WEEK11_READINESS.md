@@ -20,6 +20,13 @@ on November 10 at **18:00 America/Chicago**, then Ohio at Miami (OH) at 19:00.
 Eligibility must be refreshed at actual generation. Any game already started
 then must be recorded as elapsed, never assigned a backdated prospective pick.
 
+**Later execution gate, November 10 at 19:40:28 America/Chicago:** the archived
+scheduled kickoffs of those three games have elapsed. The separate
+`kickoff-gate-20261111T014028Z.json` preserves this decision without rewriting the
+earlier 67-upcoming readiness snapshot. Sixty-four games remain upcoming by the
+archived schedule; refresh live schedule/status before actual execution. No
+postgame information was retrieved for this gate and no selections were backfilled.
+
 ## Verified baseline and historical preservation
 
 Base main: `95a21305c6676383bcfbd0405954975fbfe38ddf`.
@@ -144,11 +151,22 @@ Python 3.12.14. Full-suite and exact-head cross-platform results belong in the
 draft PR verification record after execution; this document does not predeclare
 their success.
 
+The first source head `7a8164d828cdb60437b5609de1f848523424eec1` passed the native
+Windows suite: 1,046 passed, 39 pre-existing deprecation warnings, 556.45 seconds.
+Initial CI passed both Python 3.12 jobs but failed the new research replay test
+on both Python 3.11 jobs. The sole mismatch was ten signed-zero JSON values.
+The separate research v2 implementation and original-byte custody gate repair
+the integer-count calculation without altering original research evidence; see
+the research README and machine-readable repair evidence. A pre-commit test
+fixture also initially assigned WIN to an already-WIN result; correcting it to
+flip the grade produced 44 passing focused tests in 9.10 seconds. Final-head
+full-suite results must be checked separately from these prior-head results.
+
 ```text
 python -m pytest -q tests/test_week11_readiness.py tests/test_week11_anchor_research.py
 python -m pytest -q
 python -m scripts.prepare_week11_readiness --verify
-python -m research.week11_validation.anchor_diagnostics --verify
+python -m research.week11_validation.anchor_diagnostics_v2 --verify
 python -m scripts.verify_week10_acceptance
 python -m scripts.build_week10_formal_audit --verify
 python scripts/verify_repo_safety.py

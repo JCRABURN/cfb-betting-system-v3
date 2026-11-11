@@ -33,7 +33,7 @@ Cross-market probability comparability is an experimental hypothesis, not an
 assumption allowed for the official card. Every cohort is compared with that
 week's original ATS research Top 5; all memberships and failures are retained.
 
-`results-v1.json` contains 50 market/fold evaluations and 60 Top 5 cohorts,
+`results-v1.json` and the separate deterministic `results-v2.json` contain 50 market/fold evaluations and 60 Top 5 cohorts,
 including training periods, sample sizes, residual parameters, W/L/P, -110 units,
 MAE, RMSE, AUC, Brier score, ten fixed probability-bin reliability tables, ECE
 and Wilson hit-rate intervals. Derived results use eight decimal places; original
@@ -90,5 +90,36 @@ No new confidence assignments, model promotion or policy version is authorized.
 The existing formal statistical, calibration, stability and independent-approval
 gates remain in force; one favorable fold or unadjusted 95% interval is insufficient.
 
-Replay: `python -m research.week11_validation.anchor_diagnostics --verify`.
+## Cross-version replay repair
+
+Initial CI run [42889482709](https://github.com/JCRABURN/cfb-betting-system-v3/actions/runs/42889482709)
+on source `7a8164d828cdb60437b5609de1f848523424eec1`, tested merge
+`40523440143c269bcf6c630aae736102d7a502e6`, exposed one research-only test
+failure on Ubuntu Python 3.11.17: 1 failed, 1,045 passed in 305.43 seconds.
+Native Windows Python 3.12.14 passed 1,046 tests in 556.45 seconds on that head.
+Windows Python 3.11.9 independently failed the same test at the same byte offset:
+1 failed, 1,045 passed in 1,053.55 seconds (job 130086486451). Both Python 3.12
+CI jobs passed, supporting the demonstrated summation-version cause rather than
+an operating-system explanation.
+
+The original JSON has 16 negative-zero unit differences. Ten Week 7 fields
+replayed as positive zero under Python 3.11. The exact first byte offset was
+84,673. Candidate return was calculated from win/loss counts; benchmark return
+summed individual floating returns. Sequential sum of `[-1,10/11,10/11,10/11,-1]`
+is `0.7272727272727271`; compensated sum is `0.7272727272727272`. Subtraction
+therefore produced zero or a tiny negative residual, rounded to `0.0` or `-0.0`.
+The full JSON reconstructed from the failed job's diff differs only at the ten
+paths recorded in `replay-repair-evidence.json`; float types are unchanged.
+
+The separately versioned v2 implementation computes differences directly from
+integer win/loss counts divided by 11. This changes no numerical magnitude,
+result, forecast, probability, rank or selection membership. Original v1 code
+and result bytes remain pinned and untouched. V2 requires exact byte replay,
+plus equality with v1 after changing only the 16 explicitly enumerated zero-sign
+representations. A change as small as `1e-12`, an altered line, probability,
+result or game identity is rejected. No tolerance is broadened and no test is
+skipped. The test import and CI entry point target v2, with an additional v1
+custody/representation gate preserving the original experiment.
+
+Replay: `python -m research.week11_validation.anchor_diagnostics_v2 --verify`.
 Tests: `python -m pytest -q tests/test_week11_anchor_research.py`.

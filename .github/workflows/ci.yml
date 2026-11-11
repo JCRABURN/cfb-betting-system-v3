@@ -90,4 +90,4 @@ jobs:
         run: python -m scripts.prepare_week11_readiness --verify
 
       - name: Verify separate Week 11 preparation research diagnostics
-        run: python -m research.week11_validation.anchor_diagnostics --verify
+        run: python -m research.week11_validation.anchor_diagnostics_v2 --verify

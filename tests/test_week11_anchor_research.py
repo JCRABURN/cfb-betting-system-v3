@@ -1,7 +1,7 @@
 import copy
 import json
 import pytest
-from research.week11_validation import anchor_diagnostics as research
+from research.week11_validation import anchor_diagnostics_v2 as research
 
 
 @pytest.fixture(scope='module')
@@ -69,3 +69,33 @@ def test_locked_line_benchmark_does_not_invent_wagers(observations):
     stats=research.metrics(result,True)
     assert stats['bets']==stats['units']==0
     assert stats['wins'] is None and stats['brier']==.25
+
+
+def test_original_research_bytes_and_only_enumerated_zero_signs_preserved():
+    result=research.verify_original(research.build())
+    assert result=={'original_bytes_preserved':True,'permitted_signed_zero_paths':16,'substantive_changes':0}
+
+
+@pytest.mark.parametrize('field,value',[
+    ('units',1.0),('unit_difference_vs_ats_research',1e-12),('probability',.99),
+    ('locked_line','99.5'),('result','WIN'),('game_id','unauthorized_replacement')])
+def test_representation_bridge_rejects_substantive_change(field,value):
+    changed=json.loads(research.OUT.read_bytes())
+    if field=='result':value='LOSS' if changed['top5'][12]['picks'][0]['result']=='WIN' else 'WIN'
+    if field in ('units','unit_difference_vs_ats_research'):changed['top5'][12][field]=value
+    else:changed['top5'][12]['picks'][0][field]=value
+    with pytest.raises(ValueError,match='substantive'):
+        research.verify_original(changed)
+
+
+def test_float_summation_cause_and_integer_count_repair():
+    values=[-1,10/11,10/11,10/11,-1]
+    sequential=0
+    for value in values:sequential+=value
+    compensated=research.math.fsum(values)
+    candidate=3*10/11-2
+    assert repr(round(candidate-sequential,8))=='0.0'
+    assert repr(round(candidate-compensated,8))=='-0.0'
+    report=json.loads(research.OUT.read_bytes())
+    for index in research.ORIGINAL_ZERO_COHORTS:
+        assert repr(report['top5'][index]['unit_difference_vs_ats_research'])=='0.0'

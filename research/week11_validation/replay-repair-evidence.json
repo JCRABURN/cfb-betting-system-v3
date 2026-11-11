@@ -1,0 +1,91 @@
+{
+  "actual_json_sha256": "e23e77f923790973d05b1ef9766559c1ef679697e6795adefe348f839814bb12",
+  "causal_mechanism": "Benchmark uses sum of per-pick floating returns; candidate uses wins*10/11-losses. For Week7, sequential summation is0.7272727272727271 while compensated summation is0.7272727272727272. Subtraction yields0.0 or-1.1102230246251565e-16, serialized after8decimal rounding as0.0 or-0.0.",
+  "classification": "JSON signed-zero representation only; no changes to grades, memberships, probabilities, point forecasts or numerical magnitude",
+  "differences": [
+    {
+      "actual": 0.0,
+      "actual_type": "float",
+      "expected": -0.0,
+      "expected_type": "float",
+      "path": "$.top5[12].unit_difference_vs_ats_research"
+    },
+    {
+      "actual": 0.0,
+      "actual_type": "float",
+      "expected": -0.0,
+      "expected_type": "float",
+      "path": "$.top5[13].unit_difference_vs_ats_research"
+    },
+    {
+      "actual": 0.0,
+      "actual_type": "float",
+      "expected": -0.0,
+      "expected_type": "float",
+      "path": "$.top5[14].unit_difference_vs_ats_research"
+    },
+    {
+      "actual": 0.0,
+      "actual_type": "float",
+      "expected": -0.0,
+      "expected_type": "float",
+      "path": "$.top5[15].unit_difference_vs_ats_research"
+    },
+    {
+      "actual": 0.0,
+      "actual_type": "float",
+      "expected": -0.0,
+      "expected_type": "float",
+      "path": "$.top5[16].unit_difference_vs_ats_research"
+    },
+    {
+      "actual": 0.0,
+      "actual_type": "float",
+      "expected": -0.0,
+      "expected_type": "float",
+      "path": "$.top5[17].unit_difference_vs_ats_research"
+    },
+    {
+      "actual": 0.0,
+      "actual_type": "float",
+      "expected": -0.0,
+      "expected_type": "float",
+      "path": "$.top5[18].unit_difference_vs_ats_research"
+    },
+    {
+      "actual": 0.0,
+      "actual_type": "float",
+      "expected": -0.0,
+      "expected_type": "float",
+      "path": "$.top5[19].unit_difference_vs_ats_research"
+    },
+    {
+      "actual": 0.0,
+      "actual_type": "float",
+      "expected": -0.0,
+      "expected_type": "float",
+      "path": "$.top5[20].unit_difference_vs_ats_research"
+    },
+    {
+      "actual": 0.0,
+      "actual_type": "float",
+      "expected": -0.0,
+      "expected_type": "float",
+      "path": "$.top5[22].unit_difference_vs_ats_research"
+    }
+  ],
+  "failed_run": "https://github.com/JCRABURN/cfb-betting-system-v3/actions/runs/42889482709",
+  "first_byte_offset": 84673,
+  "job_id": 130086486444,
+  "original_code_sha256_lf": "6f4a1c49f79b7cbd3a250910cfc9da4e11e21f718dc871febd08dc11dccbad6d",
+  "original_json_sha256": "a2c1b7c1f6ba5aaa5953daab039160e41b4fc01fc8680403850aa8c196c82fb1",
+  "repair": "Separate v2 uses integer win/loss count differences divided by11; original v1 bytes and code retained; exact v2 replay required; only16 enumerated original signed-zero fields may be represented aspositivezero in the v1/v2 semantic bridge.",
+  "runtime": "Ubuntu Python3.11.17",
+  "source_head": "7a8164d828cdb60437b5609de1f848523424eec1",
+  "tested_merge": "40523440143c269bcf6c630aae736102d7a502e6",
+  "tests": {
+    "failed": 1,
+    "passed": 1045,
+    "seconds": 305.43
+  }
+}

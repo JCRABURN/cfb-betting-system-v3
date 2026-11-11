@@ -91,3 +91,16 @@ def test_raw_payload_tampering_rejected(tmp_path):
     manifest=json.loads((audit.CAPTURE/'capture-manifest.json').read_bytes());record=manifest['records'][0]
     (tmp_path/record['path']).write_bytes((audit.CAPTURE/record['path']).read_bytes()+b'changed')
     with pytest.raises((ValueError,OSError,EOFError)):audit.read_payload(tmp_path,record)
+
+
+def test_later_kickoff_gate_preserves_earlier_readiness_and_blocks_backfill():
+    gate=json.loads((audit.PARENT/'kickoff-gate-20261111T014028Z.json').read_bytes())
+    schedule_raw=(audit.OUT/'schedule.json').read_bytes()
+    assert audit.digest(schedule_raw)==gate['archived_schedule_sha256']
+    assert gate['observed_at_utc']=='2026-11-11T01:40:28.406171+00:00'
+    rows=json.loads(schedule_raw)
+    elapsed=[{k:r[k] for k in ('game_id','away','home','kickoff_utc')} for r in rows
+             if audit.timestamp(r['kickoff_utc'])<=audit.timestamp(gate['observed_at_utc'])]
+    assert elapsed==gate['elapsed_by_archived_schedule'] and len(elapsed)==3
+    assert gate['not_yet_started_by_archived_schedule']==64
+    assert not any(gate[k] for k in ('screenshots_received','contest_lines_locked','predictions_generated'))
