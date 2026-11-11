@@ -1,0 +1,53 @@
+{
+  "date_counts": {
+    "2026-11-10": 3,
+    "2026-11-11": 3,
+    "2026-11-12": 2,
+    "2026-11-13": 3,
+    "2026-11-14": 56
+  },
+  "game_count": 67,
+  "home_spread_convention": "negative means home favorite; Away Team and Home Team are screenshot columns",
+  "lock_status": "ORIGINAL_CONTEST_NUMBERS_FIXED_IN_SOURCE_AND_SHA256; MODEL_LOCK_AND_SEAL_PENDING",
+  "model_policy": "Master Prompt v2.8 UNCHANGED",
+  "model_predictions_generated": false,
+  "no_market_replacements": true,
+  "normalized_aliases": {
+    "Appalachian State": "App State",
+    "Hawaii": "Hawai'i",
+    "Louisiana-Monroe": "UL Monroe",
+    "Miami (FL)": "Miami",
+    "San Jose State": "San José State",
+    "UMass": "Massachusetts"
+  },
+  "notes_on_source_images": "All eight screenshots are shown in the owner chat. The active file runtime exposes only the eighth image as image.png; do not fabricate SHA256 for screenshots 1-7.",
+  "owner_approval_status": "SOURCE_AUTHORIZED_BY_SCREENSHOT_UPLOAD; BETTING_SELECTIONS_NOT_YET_GENERATED",
+  "owner_screenshot_quote_timestamp": null,
+  "owner_source_lines_are_authoritative": true,
+  "production_csv_path": "production-weeks/2026-week11-splashsports.csv",
+  "production_csv_sha256": "a27f367a38918e188cc2e8aa417b9a1970049ca02d0501789d00ccfdb0b12c22",
+  "provider_classification": "67 FBS_VS_FBS games; zero FBS_VS_FCS games in captured Week11 schedule",
+  "provider_reconciliation_status": "MATCHED_67_OF_67_AGAINST_PR52_CFBD_ESPN_SCHEDULE",
+  "reconciliation_csv_path": "data/ingest/2026-week11-splashsports-schedule-reconciliation.csv",
+  "screen_clock_timezone": "Not explicitly labeled on screenshot; America/Chicago clock time matches all 67 separately captured provider schedule kickoffs",
+  "screenshot_count": 8,
+  "screenshot_file_sha256_status": "UNAVAILABLE_FOR_ALL_EIGHT_ORIGINALS_IN_ACTIVE_TOOL_RUNTIME",
+  "screenshot_last_asset_available_sha256": "d2cc90e9265be7a31db75896fbc2a5fcd1ad4fedac9cf42b122d70d20c8477c2",
+  "screenshot_row_counts": {
+    "1": 7,
+    "2": 8,
+    "3": 9,
+    "4": 9,
+    "5": 9,
+    "6": 9,
+    "7": 9,
+    "8": 7
+  },
+  "season": 2026,
+  "source": "SplashSports",
+  "source_observed_no_later_than": "2026-11-10T16:27:38-06:00",
+  "source_type": "owner_supplied_chat_screenshots",
+  "transcription_csv_path": "data/ingest/2026-week11-splashsports-transcription.csv",
+  "transcription_csv_sha256": "ee7ab2b94b7ce42d57deefac6aa478a8da09c011086f921cd2cf061147058faa",
+  "week": 11
+}
