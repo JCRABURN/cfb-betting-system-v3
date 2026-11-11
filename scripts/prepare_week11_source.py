@@ -90,6 +90,9 @@ def prepare(eligibility_folder: Path, now: datetime | None = None) -> dict:
     verified = verify_images()
     if readiness.timestamp(verified['custody']['recovered_at_utc']) > now:
         raise ValueError('image recovery after preparation time')
+    eligibility_folder = eligibility_folder.resolve()
+    if not eligibility_folder.is_relative_to(readiness.PARENT):
+        raise ValueError('eligibility capture outside isolated readiness tree')
     ledger = week11_eligibility.verify(eligibility_folder)
     age = now - readiness.timestamp(ledger['as_of_utc'])
     if not timedelta(0) <= age <= timedelta(minutes=5):
@@ -131,6 +134,8 @@ def prepare(eligibility_folder: Path, now: datetime | None = None) -> dict:
                     game_count=len(eligible), original_game_count=67, original_source_sha256=verified['original_source_sha256'],
                     excluded_completed_games=excluded, unlined_fbs_games=[],
                     screenshot_custody_sha256=readiness.digest((EVIDENCE / 'screenshot-custody.json').read_bytes()),
+                    image_custody_status='COMPLETE_8_ORIGINAL_IMAGES_67_VISUALLY_RECONCILED_ROWS',
+                    superseded_image_status='Eligibility-v1 reports original PR52 metadata only; recovered-image verification here supersedes that legacy image status. Its live schedule/status observations remain unchanged.',
                     eligibility_capture=eligibility_folder.relative_to(ROOT).as_posix(),
                     eligibility_manifest_sha256=readiness.digest((eligibility_folder / 'capture-manifest.json').read_bytes()),
                     prepared_at_utc=now.isoformat(), owner_approval='PENDING', model_policy='Master Prompt v2.8 UNCHANGED')

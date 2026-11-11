@@ -95,3 +95,15 @@ def test_source_preparation_cannot_precede_image_recovery(tmp_path, monkeypatch)
     monkeypatch.setattr(source, 'OUT', tmp_path)
     with pytest.raises(ValueError, match='image recovery'):
         source.prepare(tmp_path, now=datetime(2026, 11, 11, 14, tzinfo=timezone.utc))
+
+
+def test_relative_capture_path_prepares_exact_64_row_subset_in_disposable_output(tmp_path, monkeypatch):
+    monkeypatch.setattr(source, 'SOURCE', tmp_path / 'eligible.csv')
+    monkeypatch.setattr(source, 'METADATA', tmp_path / 'metadata.json')
+    monkeypatch.setattr(source, 'OUT', tmp_path)
+    capture = source.Path('outputs/2026-week11-readiness/20261111T153553Z-eligibility')
+    result = source.prepare(capture, now=datetime(2026, 11, 11, 15, 36, tzinfo=timezone.utc))
+    assert result['game_count'] == 64 and len(result['excluded_completed_games']) == 3
+    assert result['image_custody_status'].startswith('COMPLETE_8')
+    rows = source.read_csv(source.SOURCE)
+    assert rows == source.original.load()[0][3:]
