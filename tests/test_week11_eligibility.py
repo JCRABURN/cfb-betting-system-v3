@@ -1,5 +1,6 @@
 import copy
 import json
+import shutil
 
 import pytest
 
@@ -132,3 +133,57 @@ def test_missing_image_custody_cannot_be_silently_upgraded(inputs):
     assert result['original_images_verified'] == 0
     assert result['status'] == 'OBSERVATION_ONLY_IMAGE_CUSTODY_AND_EXECUTION_PENDING'
     assert result['model_input_use'].startswith('PROHIBITED')
+
+
+CAPTURE = gate.PARENT / '20261111T151538Z-eligibility'
+PINNED = {
+    'capture-manifest.json': 'f3fe8d342262e1e16129a7c7c78ea371b44dd36a9ac393f646cd050168ea40dd',
+    'cfbd.json.gz': '6ada3fef576ef5eeed895323ed6e6277ed7c76ab99929d930f10e78884277fdf',
+    'espn.json.gz': '2cbf7de4239b745a838c980e0443ba66e735090f9fdd9c5898b7b75b777833a3',
+    'eligibility.json': 'ffb50db8bc69947f1a504af035d98f442336b14fb5218a34fbaba1172aa51f00',
+}
+
+
+def test_frozen_live_snapshot_exact_custody_and_replay():
+    assert {p.name for p in CAPTURE.iterdir()} == set(PINNED)
+    assert {p.name: gate.digest(p.read_bytes()) for p in CAPTURE.iterdir()} == PINNED
+    result = gate.verify(CAPTURE)
+    assert result['upcoming_schedule_only'] == 64
+    assert result['excluded_started_or_elapsed'] == 3
+    assert result['blocked_provider_conflict'] == 0
+    assert all(r['espn_state'] == 'post' and r['cfbd_completed'] for r in result['games']
+               if r['eligibility'].startswith('EXCLUDED'))
+
+
+@pytest.mark.parametrize('mutation', ['checksum_entry', 'raw_byte', 'status', 'future_receipt',
+                                   'parameters', 'extra_file', 'output_line', 'output_eligibility'])
+def test_capture_replay_rejects_adversarial_mutations(tmp_path, mutation):
+    folder = tmp_path / 'copy'
+    shutil.copytree(CAPTURE, folder)
+    manifest_path = folder / 'capture-manifest.json'
+    manifest = json.loads(manifest_path.read_bytes())
+    if mutation == 'checksum_entry':
+        del manifest['records'][0]['stored_sha256']
+    elif mutation == 'raw_byte':
+        path = folder / 'cfbd.json.gz'
+        raw = path.read_bytes()
+        path.write_bytes(bytes([raw[0] ^ 1]) + raw[1:])
+    elif mutation == 'status':
+        manifest['predictions_generated'] = True
+    elif mutation == 'future_receipt':
+        manifest['records'][0]['received_at_utc'] = '2026-11-20T00:00:00Z'
+    elif mutation == 'parameters':
+        manifest['records'][0]['parameters']['week'] = 10
+    elif mutation == 'extra_file':
+        (folder / 'extra.json').write_bytes(b'{}')
+    else:
+        path = folder / 'eligibility.json'
+        ledger = json.loads(path.read_bytes())
+        if mutation == 'output_line':
+            ledger['games'][0]['original_total'] = '99.5'
+        else:
+            ledger['games'][0]['model_eligible'] = True
+        path.write_bytes(gate.serialized(ledger))
+    manifest_path.write_bytes(gate.serialized(manifest))
+    with pytest.raises((ValueError, KeyError, OSError)):
+        gate.verify(folder)
