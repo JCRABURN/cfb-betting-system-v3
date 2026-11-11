@@ -1,0 +1,263 @@
+{
+  "capture_code_sha256_lf": "5568e2a2bde226678f117869bdf34b2f95c9c0eb3ba88bb231cbe5658e2e330b",
+  "captured_at_utc": "2026-11-10T19:32:18.087491+00:00",
+  "contest_lines_locked": false,
+  "feature_cutoff": {
+    "end_week": 10,
+    "season": 2026
+  },
+  "governing_policy": "Master Prompt v2.8",
+  "market_prices_are_contest_lines": false,
+  "note": "Schedule coverage includes every game involving an FBS team, including FCS opponents. Retrieval time is not a market quote timestamp. No target-game results may enter prediction features.",
+  "owner_screenshots_received": false,
+  "policy_changed": false,
+  "predictions_generated": false,
+  "records": [
+    {
+      "endpoint": "https://api.collegefootballdata.com/games",
+      "http_status": 200,
+      "name": "cfbd-games-all",
+      "parameters": {
+        "seasonType": "regular",
+        "year": 2026
+      },
+      "path": "cfbd-games-all.json.gz",
+      "raw_bytes": 2804832,
+      "raw_sha256": "a498a53a9228f156b5141648dcd566da284f52c0fa6218e470b6c2a127d11638",
+      "received_at_utc": "2026-11-10T19:32:10.768042+00:00",
+      "records": 3683,
+      "requested_at_utc": "2026-11-10T19:32:09.592900+00:00",
+      "resolved_url": "https://api.collegefootballdata.com/games?year=2026&seasonType=regular",
+      "status": "CAPTURED",
+      "stored_sha256": "85443f865c04f6be3ae98970368a0caa8bc93305ae9a48c7dbdce4d75e55ea5a"
+    },
+    {
+      "endpoint": "https://api.collegefootballdata.com/teams/fbs",
+      "http_status": 200,
+      "name": "cfbd-fbs-teams",
+      "parameters": {
+        "year": 2026
+      },
+      "path": "cfbd-fbs-teams.json.gz",
+      "raw_bytes": 202966,
+      "raw_sha256": "15611e4d36965423f96b01f58fbe1ea9de04f88c2909a490ddbfcab4511ea2c2",
+      "received_at_utc": "2026-11-10T19:32:10.040953+00:00",
+      "records": 138,
+      "requested_at_utc": "2026-11-10T19:32:09.593903+00:00",
+      "resolved_url": "https://api.collegefootballdata.com/teams/fbs?year=2026",
+      "status": "CAPTURED",
+      "stored_sha256": "0852e9210f0eeb3c5d8d8e9b6281b4e7b62b98d381cf5f2c36af9658b071dbcd"
+    },
+    {
+      "endpoint": "https://api.collegefootballdata.com/teams",
+      "http_status": 200,
+      "name": "cfbd-all-teams",
+      "parameters": {},
+      "path": "cfbd-all-teams.json.gz",
+      "raw_bytes": 1518842,
+      "raw_sha256": "f022a53b3ea78eab176829ebad6c8238e97e3e108b9e5da560eecfc8b2cf8967",
+      "received_at_utc": "2026-11-10T19:32:10.423143+00:00",
+      "records": 1933,
+      "requested_at_utc": "2026-11-10T19:32:09.594958+00:00",
+      "resolved_url": "https://api.collegefootballdata.com/teams",
+      "status": "CAPTURED",
+      "stored_sha256": "282170329e27daa7597ec8b32f902a5f84534207de3c12a7fd21695b6ed213c6"
+    },
+    {
+      "endpoint": "https://api.collegefootballdata.com/venues",
+      "http_status": 200,
+      "name": "cfbd-venues",
+      "parameters": {},
+      "path": "cfbd-venues.json.gz",
+      "raw_bytes": 221256,
+      "raw_sha256": "99fbd54258466db823d4efc0a643f5cc7c68e30db7d06213d51f59112c7035da",
+      "received_at_utc": "2026-11-10T19:32:10.011116+00:00",
+      "records": 852,
+      "requested_at_utc": "2026-11-10T19:32:09.594958+00:00",
+      "resolved_url": "https://api.collegefootballdata.com/venues",
+      "status": "CAPTURED",
+      "stored_sha256": "52285a2966d4543ff9de261a266c267455ef9bd8aaa20f7f7912691c2cee9939"
+    },
+    {
+      "endpoint": "https://api.collegefootballdata.com/stats/season/advanced",
+      "http_status": 200,
+      "name": "cfbd-prior-season-advanced",
+      "parameters": {
+        "endWeek": 10,
+        "excludeGarbageTime": "true",
+        "year": 2026
+      },
+      "path": "cfbd-prior-season-advanced.json.gz",
+      "raw_bytes": 340269,
+      "raw_sha256": "3cd7b9e8d2e31a24efd3767cca1a7efd6aae45c065373cb7016817ad21cbf5ec",
+      "received_at_utc": "2026-11-10T19:32:18.079438+00:00",
+      "records": 138,
+      "requested_at_utc": "2026-11-10T19:32:10.017310+00:00",
+      "resolved_url": "https://api.collegefootballdata.com/stats/season/advanced?year=2026&endWeek=10&excludeGarbageTime=true",
+      "status": "CAPTURED",
+      "stored_sha256": "cd38d4bdd9cf87f5113ef73d9ff3d69c0f7c86efb40d6cf00e96443a2f574505"
+    },
+    {
+      "endpoint": "https://api.collegefootballdata.com/lines",
+      "http_status": 200,
+      "name": "cfbd-market-observations",
+      "parameters": {
+        "seasonType": "regular",
+        "week": 11,
+        "year": 2026
+      },
+      "path": "cfbd-market-observations.json.gz",
+      "raw_bytes": 45223,
+      "raw_sha256": "8b50c8bedff5db0a4327f2a4ef024fec0e208bd286ac436e13af01790fa2797a",
+      "received_at_utc": "2026-11-10T19:32:10.352890+00:00",
+      "records": 67,
+      "requested_at_utc": "2026-11-10T19:32:10.042994+00:00",
+      "resolved_url": "https://api.collegefootballdata.com/lines?year=2026&week=11&seasonType=regular",
+      "status": "CAPTURED",
+      "stored_sha256": "e19de4656181a52a026150594460e2f34b06d2db3b4b765b299d61dddb1233ad"
+    },
+    {
+      "endpoint": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/scoreboard",
+      "http_status": 200,
+      "name": "espn-schedule",
+      "parameters": {
+        "groups": 80,
+        "limit": 1000,
+        "seasontype": 2,
+        "week": 11,
+        "year": 2026
+      },
+      "path": "espn-schedule.json.gz",
+      "raw_bytes": 475863,
+      "raw_sha256": "a8d80e311715ca18475ccd08c63d141eae206e28b5f797db41d0df5f07403da8",
+      "received_at_utc": "2026-11-10T19:32:10.801870+00:00",
+      "records": null,
+      "requested_at_utc": "2026-11-10T19:32:10.354941+00:00",
+      "resolved_url": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/scoreboard?year=2026&week=11&seasontype=2&groups=80&limit=1000",
+      "status": "CAPTURED",
+      "stored_sha256": "0154e16564e868a51a8ff2a6e8ee388d04bef518126809c370b7c50c52b4a80c"
+    },
+    {
+      "endpoint": "https://api.collegefootballdata.com/stats/game/advanced",
+      "http_status": 200,
+      "name": "cfbd-prior-week8-advanced",
+      "parameters": {
+        "excludeGarbageTime": "false",
+        "seasonType": "regular",
+        "week": 8,
+        "year": 2026
+      },
+      "path": "cfbd-prior-week8-advanced.json.gz",
+      "raw_bytes": 411237,
+      "raw_sha256": "417ec7f0d44efcf12b0fdf93aa8b8db9d8c396dd41d838c2c7f08df1f4fd3079",
+      "received_at_utc": "2026-11-10T19:32:12.126152+00:00",
+      "records": 222,
+      "requested_at_utc": "2026-11-10T19:32:10.440219+00:00",
+      "resolved_url": "https://api.collegefootballdata.com/stats/game/advanced?year=2026&week=8&seasonType=regular&excludeGarbageTime=false",
+      "status": "CAPTURED",
+      "stored_sha256": "37cbc4128bd82712be773d170e901475be59f3e5787ecb0e8bf3b92a1587722f"
+    },
+    {
+      "endpoint": "https://api.collegefootballdata.com/drives",
+      "http_status": 200,
+      "name": "cfbd-prior-week8-drives",
+      "parameters": {
+        "seasonType": "regular",
+        "week": 8,
+        "year": 2026
+      },
+      "path": "cfbd-prior-week8-drives.json.gz",
+      "raw_bytes": 1452596,
+      "raw_sha256": "19e7703f8e8d4c604bbd83ee16c80636fe969d930bf05eedd19757f57aac34a6",
+      "received_at_utc": "2026-11-10T19:32:11.523378+00:00",
+      "records": 2639,
+      "requested_at_utc": "2026-11-10T19:32:10.799803+00:00",
+      "resolved_url": "https://api.collegefootballdata.com/drives?year=2026&week=8&seasonType=regular",
+      "status": "CAPTURED",
+      "stored_sha256": "44b265b4ede9e9e824b13b24c16e7a5af89c949f6f668f4bb366377aa5f640c7"
+    },
+    {
+      "endpoint": "https://api.collegefootballdata.com/stats/game/advanced",
+      "http_status": 200,
+      "name": "cfbd-prior-week9-advanced",
+      "parameters": {
+        "excludeGarbageTime": "false",
+        "seasonType": "regular",
+        "week": 9,
+        "year": 2026
+      },
+      "path": "cfbd-prior-week9-advanced.json.gz",
+      "raw_bytes": 425063,
+      "raw_sha256": "22ac87087a4c864d3f6b1588653f8d9afacd69b83d855bb64af6051b067cb69f",
+      "received_at_utc": "2026-11-10T19:32:12.919510+00:00",
+      "records": 230,
+      "requested_at_utc": "2026-11-10T19:32:10.809345+00:00",
+      "resolved_url": "https://api.collegefootballdata.com/stats/game/advanced?year=2026&week=9&seasonType=regular&excludeGarbageTime=false",
+      "status": "CAPTURED",
+      "stored_sha256": "dd76991e347c67a4b8512cafaadaa4fd4348ed098f5de0d3d37d7052f9e0ef86"
+    },
+    {
+      "endpoint": "https://api.collegefootballdata.com/drives",
+      "http_status": 200,
+      "name": "cfbd-prior-week9-drives",
+      "parameters": {
+        "seasonType": "regular",
+        "week": 9,
+        "year": 2026
+      },
+      "path": "cfbd-prior-week9-drives.json.gz",
+      "raw_bytes": 1501135,
+      "raw_sha256": "f1c6f8b5a5b6ffc921bb91105e6b66f8fa6172efee24248a8776cade923200ab",
+      "received_at_utc": "2026-11-10T19:32:12.365248+00:00",
+      "records": 2727,
+      "requested_at_utc": "2026-11-10T19:32:11.536417+00:00",
+      "resolved_url": "https://api.collegefootballdata.com/drives?year=2026&week=9&seasonType=regular",
+      "status": "CAPTURED",
+      "stored_sha256": "87dbc48dc1a65535ec14fe9cc4649219fd998902a60331a0a36af9ebc031422c"
+    },
+    {
+      "endpoint": "https://api.collegefootballdata.com/stats/game/advanced",
+      "http_status": 200,
+      "name": "cfbd-prior-week10-advanced",
+      "parameters": {
+        "excludeGarbageTime": "false",
+        "seasonType": "regular",
+        "week": 10,
+        "year": 2026
+      },
+      "path": "cfbd-prior-week10-advanced.json.gz",
+      "raw_bytes": 460133,
+      "raw_sha256": "c49cb291906b3a103f3ff10979e8f8e50b617a8cdde9be383cb23bc86982dd75",
+      "received_at_utc": "2026-11-10T19:32:14.160843+00:00",
+      "records": 248,
+      "requested_at_utc": "2026-11-10T19:32:12.133780+00:00",
+      "resolved_url": "https://api.collegefootballdata.com/stats/game/advanced?year=2026&week=10&seasonType=regular&excludeGarbageTime=false",
+      "status": "CAPTURED",
+      "stored_sha256": "f189372b72313609651d9c977581c94aa4c7376e3936872d55e57e0f9c212f45"
+    },
+    {
+      "endpoint": "https://api.collegefootballdata.com/drives",
+      "http_status": 200,
+      "name": "cfbd-prior-week10-drives",
+      "parameters": {
+        "seasonType": "regular",
+        "week": 10,
+        "year": 2026
+      },
+      "path": "cfbd-prior-week10-drives.json.gz",
+      "raw_bytes": 1620827,
+      "raw_sha256": "b14057a07f098f630e90abecb2b6e70c0619a731f110fe498679d5ab1d53a51d",
+      "received_at_utc": "2026-11-10T19:32:13.131785+00:00",
+      "records": 2943,
+      "requested_at_utc": "2026-11-10T19:32:12.380167+00:00",
+      "resolved_url": "https://api.collegefootballdata.com/drives?year=2026&week=10&seasonType=regular",
+      "status": "CAPTURED",
+      "stored_sha256": "d57c9f990b5fbc1d5ce7c73d1297242a6e6f19c00a4ddb33e1ec04f73790735f"
+    }
+  ],
+  "season": 2026,
+  "source_commit": "f28214370e9d008625d2d21200d2dc94484ce635",
+  "status": "CAPTURED_REQUIRES_RECONCILIATION",
+  "version": "week11-readiness-capture-v1",
+  "week": 11
+}

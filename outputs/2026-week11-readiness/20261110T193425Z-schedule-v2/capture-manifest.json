@@ -1,0 +1,23 @@
+{
+  "version": "week11-week-schedule-v2",
+  "requested_at_utc": "2026-11-10T19:34:25.284397+00:00",
+  "received_at_utc": "2026-11-10T19:34:25.545415+00:00",
+  "endpoint": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/scoreboard",
+  "parameters": {
+    "year": 2026,
+    "week": 11,
+    "seasontype": 2,
+    "groups": 80,
+    "limit": 300
+  },
+  "resolved_url": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/scoreboard?year=2026&week=11&seasontype=2&groups=80&limit=300",
+  "http_status": 200,
+  "path": "espn-week-schedule.json.gz",
+  "raw_sha256": "7a2fa38d7e119628ebe4d5ade5f6e2525c0576b6513b0b76936e1df20d42b900",
+  "stored_sha256": "c3dc3feea00e42ea5a89018e08fb940b3c7e34544c77b67e69881c06f6e6b986",
+  "source_commit": "3ecd9082eaa6daa879be023910f5d17392257de7",
+  "code_sha256_lf": "7fbb7dbe2c0e604e7d03566590a8cbe55b6c2d34e0753d1cbc17ecc3841f232b",
+  "reason": "Original limit=1000 week query returned 25 events; date-range query returned HTTP400. Retry the prior verified 300-event week-query form and preserve every response.",
+  "contest_lines_locked": false,
+  "predictions_generated": false
+}

@@ -1,0 +1,13 @@
+{
+  "base_main_commit": "95a21305c6676383bcfbd0405954975fbfe38ddf",
+  "pr49_head": "a2a98cf460be6564d7df3dafe81ba7f467b807c9",
+  "pr51_head": "24c3eb44b6f0951bb32203dcb16c561e6568a9e6",
+  "pr49_merge": "3bb2814924ddf5057f2cce3b46245560fcd2927f",
+  "pr51_merge": "95a21305c6676383bcfbd0405954975fbfe38ddf",
+  "pr49_ancestor": true,
+  "pr51_ancestor": true,
+  "tree_equals_pr51": true,
+  "tree": "483a40165439c628e4805832ed93a6ff20b3db65",
+  "source_database_sha256": "09d0bcda684356001bacf8bc9e42939add56b053f405564d9be924e39c0cf842",
+  "verification": "git merge-base --is-ancestor for both original heads; git diff --exit-code PR51 main; independently fetched GitHub PR merge metadata"
+}

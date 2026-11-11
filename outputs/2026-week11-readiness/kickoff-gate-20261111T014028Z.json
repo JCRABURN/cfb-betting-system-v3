@@ -1,0 +1,32 @@
+{
+  "archived_schedule_sha256": "0bfebc72af748804f073f775a0f3727fcc2bd0d4fdfa5a985709493c3020d627",
+  "contest_lines_locked": false,
+  "decision": "Never backfill prospective selections for elapsed games. Refresh provider status and contest coverage before executing remaining games.",
+  "elapsed_by_archived_schedule": [
+    {
+      "away": "Western Michigan",
+      "game_id": "401866458",
+      "home": "Akron",
+      "kickoff_utc": "2026-11-11T00:00:00.000Z"
+    },
+    {
+      "away": "Kent State",
+      "game_id": "401866459",
+      "home": "Bowling Green",
+      "kickoff_utc": "2026-11-11T00:00:00.000Z"
+    },
+    {
+      "away": "Ohio",
+      "game_id": "401866460",
+      "home": "Miami (OH)",
+      "kickoff_utc": "2026-11-11T01:00:00.000Z"
+    }
+  ],
+  "not_yet_started_by_archived_schedule": 64,
+  "observed_at_utc": "2026-11-11T01:40:28.406171+00:00",
+  "predictions_generated": false,
+  "scheduled_games": 67,
+  "screenshots_received": false,
+  "status_basis": "Archived scheduled kickoff compared with actual current UTC; no results or postgame information retrieved",
+  "version": "week11-elapsed-game-gate-v1"
+}

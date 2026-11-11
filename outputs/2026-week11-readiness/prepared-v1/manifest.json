@@ -1,0 +1,16 @@
+{
+  "capture_manifest_sha256": "70a2deefa08ad39d81f84c9b2e1c6ee00fa2d367cab41f9c9cf45edaebed691e",
+  "code_sha256_lf": "a9dc3a2bbdb83fceea02d6e7cfe992e977ec603ddd81b6e945a69c043340025b",
+  "contest_lines_locked": false,
+  "output_sha256": {
+    "coverage.csv": "aa7a68ae035d6f0a7fa763a5738cef4c65ad52b88344c6c3e910d7c94a5f5970",
+    "market-observations-NOT-CONTEST-LINES.json": "c02e42711ea165b949d15976a9891621112c49679de5b85391c69dc71f8d5b1d",
+    "provider-mappings.json": "8b0060b8a7c274c0777ee6fdfde83ca78519cbfdd6eb18f77877513a97f681ef",
+    "readiness.json": "255033e06f60cd60aca55f0422e80b7f4df0d7235c11308ad9f0ce7f9bdcc9a8",
+    "resolver-aliases.json": "83390ad115fa8c3a878343f5b6a5bdccb9a0f6fc6545b2b8a429f60620e38ca4",
+    "schedule.json": "0bfebc72af748804f073f775a0f3727fcc2bd0d4fdfa5a985709493c3020d627"
+  },
+  "predictions_generated": false,
+  "supplement_manifest_sha256": "6df4d2de2688a56e767939a50e63c2606733166dc28aadf93e4fbb2cdeead3e1",
+  "version": "week11-readiness-output-v1"
+}

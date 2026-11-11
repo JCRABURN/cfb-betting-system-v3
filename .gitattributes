@@ -123,3 +123,19 @@ outputs/2026-week10-postgame-evidence/** -text
 outputs/2026-week10-postgame-audit/** -text
 outputs/2026-week10-postgame-verification/** -text
 tests/fixtures/week10_formal_audit/** -text
+
+# Preserve append-only Week 11 source captures and readiness records.
+outputs/2026-week11-readiness/** -text
+tests/fixtures/week11_readiness/** -text
+research/week11_validation/results-v1.json -text
+research/week11_validation/results-v2.json -text
+research/week11_validation/replay-repair-evidence.json -text
+# These two newly captured custody records retain their original Windows CRLF.
+outputs/2026-week11-readiness/repository-baseline.json -text whitespace=cr-at-eol
+tests/fixtures/week11_readiness/input-custody.json -text whitespace=cr-at-eol
+
+# Preserve the exact owner-transcription blobs delivered concurrently on PR #52.
+production-weeks/2026-week11-splashsports.csv -text
+production-weeks/2026-week11-splashsports-lock-metadata.json -text
+data/ingest/2026-week11-splashsports-transcription.csv -text
+data/ingest/2026-week11-splashsports-schedule-reconciliation.csv -text

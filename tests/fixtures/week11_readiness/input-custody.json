@@ -1,0 +1,23 @@
+{
+  "sha256_by_path": {
+    "outputs/2026-week11-readiness/20261110T193209Z/capture-manifest.json": "70a2deefa08ad39d81f84c9b2e1c6ee00fa2d367cab41f9c9cf45edaebed691e",
+    "outputs/2026-week11-readiness/20261110T193209Z/cfbd-all-teams.json.gz": "282170329e27daa7597ec8b32f902a5f84534207de3c12a7fd21695b6ed213c6",
+    "outputs/2026-week11-readiness/20261110T193209Z/cfbd-fbs-teams.json.gz": "0852e9210f0eeb3c5d8d8e9b6281b4e7b62b98d381cf5f2c36af9658b071dbcd",
+    "outputs/2026-week11-readiness/20261110T193209Z/cfbd-games-all.json.gz": "85443f865c04f6be3ae98970368a0caa8bc93305ae9a48c7dbdce4d75e55ea5a",
+    "outputs/2026-week11-readiness/20261110T193209Z/cfbd-market-observations.json.gz": "e19de4656181a52a026150594460e2f34b06d2db3b4b765b299d61dddb1233ad",
+    "outputs/2026-week11-readiness/20261110T193209Z/cfbd-prior-season-advanced.json.gz": "cd38d4bdd9cf87f5113ef73d9ff3d69c0f7c86efb40d6cf00e96443a2f574505",
+    "outputs/2026-week11-readiness/20261110T193209Z/cfbd-prior-week10-advanced.json.gz": "f189372b72313609651d9c977581c94aa4c7376e3936872d55e57e0f9c212f45",
+    "outputs/2026-week11-readiness/20261110T193209Z/cfbd-prior-week10-drives.json.gz": "d57c9f990b5fbc1d5ce7c73d1297242a6e6f19c00a4ddb33e1ec04f73790735f",
+    "outputs/2026-week11-readiness/20261110T193209Z/cfbd-prior-week8-advanced.json.gz": "37cbc4128bd82712be773d170e901475be59f3e5787ecb0e8bf3b92a1587722f",
+    "outputs/2026-week11-readiness/20261110T193209Z/cfbd-prior-week8-drives.json.gz": "44b265b4ede9e9e824b13b24c16e7a5af89c949f6f668f4bb366377aa5f640c7",
+    "outputs/2026-week11-readiness/20261110T193209Z/cfbd-prior-week9-advanced.json.gz": "dd76991e347c67a4b8512cafaadaa4fd4348ed098f5de0d3d37d7052f9e0ef86",
+    "outputs/2026-week11-readiness/20261110T193209Z/cfbd-prior-week9-drives.json.gz": "87dbc48dc1a65535ec14fe9cc4649219fd998902a60331a0a36af9ebc031422c",
+    "outputs/2026-week11-readiness/20261110T193209Z/cfbd-venues.json.gz": "52285a2966d4543ff9de261a266c267455ef9bd8aaa20f7f7912691c2cee9939",
+    "outputs/2026-week11-readiness/20261110T193209Z/espn-schedule.json.gz": "0154e16564e868a51a8ff2a6e8ee388d04bef518126809c370b7c50c52b4a80c",
+    "outputs/2026-week11-readiness/20261110T193338Z-schedule/capture-manifest.json": "d9663cbeddd7ac2078d9a8669d8274486c3f0c09d84588c44d17989a1248c663",
+    "outputs/2026-week11-readiness/20261110T193338Z-schedule/espn-date-schedule.json.gz": "38cc7d99e34c7582b8681f4a4ec8b06f90776fc52e2850f5038126bf18b8a132",
+    "outputs/2026-week11-readiness/20261110T193425Z-schedule-v2/capture-manifest.json": "6df4d2de2688a56e767939a50e63c2606733166dc28aadf93e4fbb2cdeead3e1",
+    "outputs/2026-week11-readiness/20261110T193425Z-schedule-v2/espn-week-schedule.json.gz": "c3dc3feea00e42ea5a89018e08fb940b3c7e34544c77b67e69881c06f6e6b986",
+    "outputs/2026-week11-readiness/repository-baseline.json": "4a68e91f498d4fa999b81e8d130ccfa7a21e51e4174779149550d374cca2d67c"
+  }
+}

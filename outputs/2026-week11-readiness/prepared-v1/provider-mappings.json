@@ -1,0 +1,1367 @@
+[
+  {
+    "abbreviation": "BC",
+    "canonical_school": "Boston College",
+    "classification": "fbs",
+    "provider_alternate_names": [
+      "BC",
+      "Boston College"
+    ],
+    "provider_id": "103"
+  },
+  {
+    "abbreviation": "MASS",
+    "canonical_school": "Massachusetts",
+    "classification": "fbs",
+    "provider_alternate_names": [
+      "UMass",
+      "MASS",
+      "UMass"
+    ],
+    "provider_id": "113"
+  },
+  {
+    "abbreviation": "ARIZ",
+    "canonical_school": "Arizona",
+    "classification": "fbs",
+    "provider_alternate_names": [
+      "ARIZ",
+      "Arizona"
+    ],
+    "provider_id": "12"
+  },
+  {
+    "abbreviation": "MD",
+    "canonical_school": "Maryland",
+    "classification": "fbs",
+    "provider_alternate_names": [
+      "MD",
+      "Maryland"
+    ],
+    "provider_id": "120"
+  },
+  {
+    "abbreviation": "MSU",
+    "canonical_school": "Michigan State",
+    "classification": "fbs",
+    "provider_alternate_names": [
+      "MSU",
+      "Michigan St"
+    ],
+    "provider_id": "127"
+  },
+  {
+    "abbreviation": "MICH",
+    "canonical_school": "Michigan",
+    "classification": "fbs",
+    "provider_alternate_names": [
+      "MICH",
+      "Michigan"
+    ],
+    "provider_id": "130"
+  },
+  {
+    "abbreviation": "MINN",
+    "canonical_school": "Minnesota",
+    "classification": "fbs",
+    "provider_alternate_names": [
+      "MINN",
+      "Minnesota"
+    ],
+    "provider_id": "135"
+  },
+  {
+    "abbreviation": "MIZ",
+    "canonical_school": "Missouri",
+    "classification": "fbs",
+    "provider_alternate_names": [
+      "MIZ",
+      "Missouri"
+    ],
+    "provider_id": "142"
+  },
+  {
+    "abbreviation": "MISS",
+    "canonical_school": "Ole Miss",
+    "classification": "fbs",
+    "provider_alternate_names": [
+      "MISS",
+      "Ole Miss"
+    ],
+    "provider_id": "145"
+  },
+  {
+    "abbreviation": "DUKE",
+    "canonical_school": "Duke",
+    "classification": "fbs",
+    "provider_alternate_names": [
+      "DUKE",
+      "Duke"
+    ],
+    "provider_id": "150"
+  },
+  {
+    "abbreviation": "ECU",
+    "canonical_school": "East Carolina",
+    "classification": "fbs",
+    "provider_alternate_names": [
+      "ECU",
+      "East Carolina"
+    ],
+    "provider_id": "151"
+  },
+  {
+    "abbreviation": "NCSU",
+    "canonical_school": "NC State",
+    "classification": "fbs",
+    "provider_alternate_names": [
+      "North Carolina St.",
+      "NCSU",
+      "NC State"
+    ],
+    "provider_id": "152"
+  },
+  {
+    "abbreviation": "UNC",
+    "canonical_school": "North Carolina",
+    "classification": "fbs",
+    "provider_alternate_names": [
+      "UNC",
+      "North Carolina"
+    ],
+    "provider_id": "153"
+  },
+  {
+    "abbreviation": "WAKE",
+    "canonical_school": "Wake Forest",
+    "classification": "fbs",
+    "provider_alternate_names": [
+      "WAKE",
+      "Wake Forest"
+    ],
+    "provider_id": "154"
+  },
+  {
+    "abbreviation": "NEB",
+    "canonical_school": "Nebraska",
+    "classification": "fbs",
+    "provider_alternate_names": [
+      "NEB",
+      "Nebraska"
+    ],
+    "provider_id": "158"
+  },
+  {
+    "abbreviation": "SAC",
+    "canonical_school": "Sacramento State",
+    "classification": "fbs",
+    "provider_alternate_names": [
+      "Cal State Sacramento",
+      "SAC",
+      "Sacramento St"
+    ],
+    "provider_id": "16"
+  },
+  {
+    "abbreviation": "RUTG",
+    "canonical_school": "Rutgers",
+    "classification": "fbs",
+    "provider_alternate_names": [
+      "RUTG",
+      "Rutgers"
+    ],
+    "provider_id": "164"
+  },
+  {
+    "abbreviation": "NMSU",
+    "canonical_school": "New Mexico State",
+    "classification": "fbs",
+    "provider_alternate_names": [
+      "NMSU",
+      "New Mexico St"
+    ],
+    "provider_id": "166"
+  },
+  {
+    "abbreviation": "UNM",
+    "canonical_school": "New Mexico",
+    "classification": "fbs",
+    "provider_alternate_names": [
+      "UNM",
+      "New Mexico"
+    ],
+    "provider_id": "167"
+  },
+  {
+    "abbreviation": "SYR",
+    "canonical_school": "Syracuse",
+    "classification": "fbs",
+    "provider_alternate_names": [
+      "SYR",
+      "Syracuse"
+    ],
+    "provider_id": "183"
+  },
+  {
+    "abbreviation": "BGSU",
+    "canonical_school": "Bowling Green",
+    "classification": "fbs",
+    "provider_alternate_names": [
+      "Bowling Green State",
+      "BGSU",
+      "Bowling Green"
+    ],
+    "provider_id": "189"
+  },
+  {
+    "abbreviation": "M-OH",
+    "canonical_school": "Miami (OH)",
+    "classification": "fbs",
+    "provider_alternate_names": [
+      "M-OH",
+      "Miami OH"
+    ],
+    "provider_id": "193"
+  },
+  {
+    "abbreviation": "OSU",
+    "canonical_school": "Ohio State",
+    "classification": "fbs",
+    "provider_alternate_names": [
+      "OSU",
+      "Ohio State"
+    ],
+    "provider_id": "194"
+  },
+  {
+    "abbreviation": "OHIO",
+    "canonical_school": "Ohio",
+    "classification": "fbs",
+    "provider_alternate_names": [
+      "OHIO",
+      "Ohio"
+    ],
+    "provider_id": "195"
+  },
+  {
+    "abbreviation": "OKST",
+    "canonical_school": "Oklahoma State",
+    "classification": "fbs",
+    "provider_alternate_names": [
+      "OKST",
+      "Oklahoma St"
+    ],
+    "provider_id": "197"
+  },
+  {
+    "abbreviation": "AUB",
+    "canonical_school": "Auburn",
+    "classification": "fbs",
+    "provider_alternate_names": [
+      "AUB",
+      "Auburn"
+    ],
+    "provider_id": "2"
+  },
+  {
+    "abbreviation": "AF",
+    "canonical_school": "Air Force",
+    "classification": "fbs",
+    "provider_alternate_names": [
+      "AF",
+      "Air Force"
+    ],
+    "provider_id": "2005"
+  },
+  {
+    "abbreviation": "AKR",
+    "canonical_school": "Akron",
+    "classification": "fbs",
+    "provider_alternate_names": [
+      "AKR",
+      "Akron"
+    ],
+    "provider_id": "2006"
+  },
+  {
+    "abbreviation": "OU",
+    "canonical_school": "Oklahoma",
+    "classification": "fbs",
+    "provider_alternate_names": [
+      "OU",
+      "Oklahoma"
+    ],
+    "provider_id": "201"
+  },
+  {
+    "abbreviation": "TLSA",
+    "canonical_school": "Tulsa",
+    "classification": "fbs",
+    "provider_alternate_names": [
+      "TLSA",
+      "Tulsa"
+    ],
+    "provider_id": "202"
+  },
+  {
+    "abbreviation": "APP",
+    "canonical_school": "App State",
+    "classification": "fbs",
+    "provider_alternate_names": [
+      "Appalachian State",
+      "APP",
+      "App State"
+    ],
+    "provider_id": "2026"
+  },
+  {
+    "abbreviation": "ARST",
+    "canonical_school": "Arkansas State",
+    "classification": "fbs",
+    "provider_alternate_names": [
+      "ARST",
+      "Arkansas St"
+    ],
+    "provider_id": "2032"
+  },
+  {
+    "abbreviation": "ORST",
+    "canonical_school": "Oregon State",
+    "classification": "fbs",
+    "provider_alternate_names": [
+      "ORST",
+      "Oregon St"
+    ],
+    "provider_id": "204"
+  },
+  {
+    "abbreviation": "BALL",
+    "canonical_school": "Ball State",
+    "classification": "fbs",
+    "provider_alternate_names": [
+      "BALL",
+      "Ball State"
+    ],
+    "provider_id": "2050"
+  },
+  {
+    "abbreviation": "BUF",
+    "canonical_school": "Buffalo",
+    "classification": "fbs",
+    "provider_alternate_names": [
+      "BUF",
+      "Buffalo"
+    ],
+    "provider_id": "2084"
+  },
+  {
+    "abbreviation": "SDSU",
+    "canonical_school": "San Diego State",
+    "classification": "fbs",
+    "provider_alternate_names": [
+      "SDSU",
+      "San Diego St"
+    ],
+    "provider_id": "21"
+  },
+  {
+    "abbreviation": "UCF",
+    "canonical_school": "UCF",
+    "classification": "fbs",
+    "provider_alternate_names": [
+      "Central Florida",
+      "UCF",
+      "UCF"
+    ],
+    "provider_id": "2116"
+  },
+  {
+    "abbreviation": "CMU",
+    "canonical_school": "Central Michigan",
+    "classification": "fbs",
+    "provider_alternate_names": [
+      "CMU",
+      "C Michigan"
+    ],
+    "provider_id": "2117"
+  },
+  {
+    "abbreviation": "PSU",
+    "canonical_school": "Penn State",
+    "classification": "fbs",
+    "provider_alternate_names": [
+      "PSU",
+      "Penn State"
+    ],
+    "provider_id": "213"
+  },
+  {
+    "abbreviation": "CIN",
+    "canonical_school": "Cincinnati",
+    "classification": "fbs",
+    "provider_alternate_names": [
+      "CIN",
+      "Cincinnati"
+    ],
+    "provider_id": "2132"
+  },
+  {
+    "abbreviation": "TEM",
+    "canonical_school": "Temple",
+    "classification": "fbs",
+    "provider_alternate_names": [
+      "TEM",
+      "Temple"
+    ],
+    "provider_id": "218"
+  },
+  {
+    "abbreviation": "PITT",
+    "canonical_school": "Pittsburgh",
+    "classification": "fbs",
+    "provider_alternate_names": [
+      "Pitt",
+      "PITT",
+      "Pitt"
+    ],
+    "provider_id": "221"
+  },
+  {
+    "abbreviation": "FAU",
+    "canonical_school": "Florida Atlantic",
+    "classification": "fbs",
+    "provider_alternate_names": [
+      "FAU",
+      "FAU"
+    ],
+    "provider_id": "2226"
+  },
+  {
+    "abbreviation": "FIU",
+    "canonical_school": "Florida International",
+    "classification": "fbs",
+    "provider_alternate_names": [
+      "Florida Intl",
+      "FIU",
+      "FIU"
+    ],
+    "provider_id": "2229"
+  },
+  {
+    "abbreviation": "GAST",
+    "canonical_school": "Georgia State",
+    "classification": "fbs",
+    "provider_alternate_names": [
+      "GAST",
+      "Georgia St"
+    ],
+    "provider_id": "2247"
+  },
+  {
+    "abbreviation": "CLEM",
+    "canonical_school": "Clemson",
+    "classification": "fbs",
+    "provider_alternate_names": [
+      "CLEM",
+      "Clemson"
+    ],
+    "provider_id": "228"
+  },
+  {
+    "abbreviation": "IOWA",
+    "canonical_school": "Iowa",
+    "classification": "fbs",
+    "provider_alternate_names": [
+      "IOWA",
+      "Iowa"
+    ],
+    "provider_id": "2294"
+  },
+  {
+    "abbreviation": "SJSU",
+    "canonical_school": "San Jos\u00e9 State",
+    "classification": "fbs",
+    "provider_alternate_names": [
+      "San Jose St.",
+      "SJSU",
+      "San Jos\u00e9 St"
+    ],
+    "provider_id": "23"
+  },
+  {
+    "abbreviation": "KU",
+    "canonical_school": "Kansas",
+    "classification": "fbs",
+    "provider_alternate_names": [
+      "KU",
+      "Kansas"
+    ],
+    "provider_id": "2305"
+  },
+  {
+    "abbreviation": "KSU",
+    "canonical_school": "Kansas State",
+    "classification": "fbs",
+    "provider_alternate_names": [
+      "KSU",
+      "Kansas St"
+    ],
+    "provider_id": "2306"
+  },
+  {
+    "abbreviation": "KENT",
+    "canonical_school": "Kent State",
+    "classification": "fbs",
+    "provider_alternate_names": [
+      "KENT",
+      "Kent State"
+    ],
+    "provider_id": "2309"
+  },
+  {
+    "abbreviation": "LIB",
+    "canonical_school": "Liberty",
+    "classification": "fbs",
+    "provider_alternate_names": [
+      "LIB",
+      "Liberty"
+    ],
+    "provider_id": "2335"
+  },
+  {
+    "abbreviation": "LT",
+    "canonical_school": "Louisiana Tech",
+    "classification": "fbs",
+    "provider_alternate_names": [
+      "LT",
+      "Louisiana Tech"
+    ],
+    "provider_id": "2348"
+  },
+  {
+    "abbreviation": "MEM",
+    "canonical_school": "Memphis",
+    "classification": "fbs",
+    "provider_alternate_names": [
+      "MEM",
+      "Memphis"
+    ],
+    "provider_id": "235"
+  },
+  {
+    "abbreviation": "VAN",
+    "canonical_school": "Vanderbilt",
+    "classification": "fbs",
+    "provider_alternate_names": [
+      "VAN",
+      "Vanderbilt"
+    ],
+    "provider_id": "238"
+  },
+  {
+    "abbreviation": "BAY",
+    "canonical_school": "Baylor",
+    "classification": "fbs",
+    "provider_alternate_names": [
+      "BAY",
+      "Baylor"
+    ],
+    "provider_id": "239"
+  },
+  {
+    "abbreviation": "MIA",
+    "canonical_school": "Miami",
+    "classification": "fbs",
+    "provider_alternate_names": [
+      "Miami (FL)",
+      "MIA",
+      "Miami"
+    ],
+    "provider_id": "2390"
+  },
+  {
+    "abbreviation": "MTSU",
+    "canonical_school": "Middle Tennessee",
+    "classification": "fbs",
+    "provider_alternate_names": [
+      "Middle Tennessee State",
+      "MTSU",
+      "MTSU"
+    ],
+    "provider_id": "2393"
+  },
+  {
+    "abbreviation": "STAN",
+    "canonical_school": "Stanford",
+    "classification": "fbs",
+    "provider_alternate_names": [
+      "STAN",
+      "Stanford"
+    ],
+    "provider_id": "24"
+  },
+  {
+    "abbreviation": "RICE",
+    "canonical_school": "Rice",
+    "classification": "fbs",
+    "provider_alternate_names": [
+      "RICE",
+      "Rice"
+    ],
+    "provider_id": "242"
+  },
+  {
+    "abbreviation": "CLT",
+    "canonical_school": "Charlotte",
+    "classification": "fbs",
+    "provider_alternate_names": [
+      "CLT",
+      "Charlotte"
+    ],
+    "provider_id": "2429"
+  },
+  {
+    "abbreviation": "ULM",
+    "canonical_school": "UL Monroe",
+    "classification": "fbs",
+    "provider_alternate_names": [
+      "La.-Monroe",
+      "ULM",
+      "UL Monroe"
+    ],
+    "provider_id": "2433"
+  },
+  {
+    "abbreviation": "UNLV",
+    "canonical_school": "UNLV",
+    "classification": "fbs",
+    "provider_alternate_names": [
+      "Nevada-Las Vegas",
+      "UNLV",
+      "UNLV"
+    ],
+    "provider_id": "2439"
+  },
+  {
+    "abbreviation": "NEV",
+    "canonical_school": "Nevada",
+    "classification": "fbs",
+    "provider_alternate_names": [
+      "NEV",
+      "Nevada"
+    ],
+    "provider_id": "2440"
+  },
+  {
+    "abbreviation": "NDSU",
+    "canonical_school": "North Dakota State",
+    "classification": "fbs",
+    "provider_alternate_names": [
+      "NDSU",
+      "N Dakota St"
+    ],
+    "provider_id": "2449"
+  },
+  {
+    "abbreviation": "TA&M",
+    "canonical_school": "Texas A&M",
+    "classification": "fbs",
+    "provider_alternate_names": [
+      "TA&M",
+      "Texas A&M"
+    ],
+    "provider_id": "245"
+  },
+  {
+    "abbreviation": "NIU",
+    "canonical_school": "Northern Illinois",
+    "classification": "fbs",
+    "provider_alternate_names": [
+      "NIU",
+      "N Illinois"
+    ],
+    "provider_id": "2459"
+  },
+  {
+    "abbreviation": "HOU",
+    "canonical_school": "Houston",
+    "classification": "fbs",
+    "provider_alternate_names": [
+      "HOU",
+      "Houston"
+    ],
+    "provider_id": "248"
+  },
+  {
+    "abbreviation": "ORE",
+    "canonical_school": "Oregon",
+    "classification": "fbs",
+    "provider_alternate_names": [
+      "ORE",
+      "Oregon"
+    ],
+    "provider_id": "2483"
+  },
+  {
+    "abbreviation": "UNT",
+    "canonical_school": "North Texas",
+    "classification": "fbs",
+    "provider_alternate_names": [
+      "UNT",
+      "North Texas"
+    ],
+    "provider_id": "249"
+  },
+  {
+    "abbreviation": "CAL",
+    "canonical_school": "California",
+    "classification": "fbs",
+    "provider_alternate_names": [
+      "CAL",
+      "California"
+    ],
+    "provider_id": "25"
+  },
+  {
+    "abbreviation": "PUR",
+    "canonical_school": "Purdue",
+    "classification": "fbs",
+    "provider_alternate_names": [
+      "PUR",
+      "Purdue"
+    ],
+    "provider_id": "2509"
+  },
+  {
+    "abbreviation": "TEX",
+    "canonical_school": "Texas",
+    "classification": "fbs",
+    "provider_alternate_names": [
+      "TEX",
+      "Texas"
+    ],
+    "provider_id": "251"
+  },
+  {
+    "abbreviation": "BYU",
+    "canonical_school": "BYU",
+    "classification": "fbs",
+    "provider_alternate_names": [
+      "Brigham Young",
+      "BYU",
+      "BYU"
+    ],
+    "provider_id": "252"
+  },
+  {
+    "abbreviation": "SHSU",
+    "canonical_school": "Sam Houston",
+    "classification": "fbs",
+    "provider_alternate_names": [
+      "Sam Houston State",
+      "SHSU",
+      "Sam Houston"
+    ],
+    "provider_id": "2534"
+  },
+  {
+    "abbreviation": "UTAH",
+    "canonical_school": "Utah",
+    "classification": "fbs",
+    "provider_alternate_names": [
+      "UTAH",
+      "Utah"
+    ],
+    "provider_id": "254"
+  },
+  {
+    "abbreviation": "JMU",
+    "canonical_school": "James Madison",
+    "classification": "fbs",
+    "provider_alternate_names": [
+      "JMU",
+      "James Madison"
+    ],
+    "provider_id": "256"
+  },
+  {
+    "abbreviation": "SMU",
+    "canonical_school": "SMU",
+    "classification": "fbs",
+    "provider_alternate_names": [
+      "Southern Methodist",
+      "SMU",
+      "SMU"
+    ],
+    "provider_id": "2567"
+  },
+  {
+    "abbreviation": "USM",
+    "canonical_school": "Southern Miss",
+    "classification": "fbs",
+    "provider_alternate_names": [
+      "Southern Mississippi",
+      "USM",
+      "Southern Miss"
+    ],
+    "provider_id": "2572"
+  },
+  {
+    "abbreviation": "SC",
+    "canonical_school": "South Carolina",
+    "classification": "fbs",
+    "provider_alternate_names": [
+      "SC",
+      "South Carolina"
+    ],
+    "provider_id": "2579"
+  },
+  {
+    "abbreviation": "UVA",
+    "canonical_school": "Virginia",
+    "classification": "fbs",
+    "provider_alternate_names": [
+      "UVA",
+      "Virginia"
+    ],
+    "provider_id": "258"
+  },
+  {
+    "abbreviation": "VT",
+    "canonical_school": "Virginia Tech",
+    "classification": "fbs",
+    "provider_alternate_names": [
+      "VT",
+      "Virginia Tech"
+    ],
+    "provider_id": "259"
+  },
+  {
+    "abbreviation": "UCLA",
+    "canonical_school": "UCLA",
+    "classification": "fbs",
+    "provider_alternate_names": [
+      "UCLA",
+      "UCLA"
+    ],
+    "provider_id": "26"
+  },
+  {
+    "abbreviation": "MOST",
+    "canonical_school": "Missouri State",
+    "classification": "fbs",
+    "provider_alternate_names": [
+      "MOST",
+      "Missouri St"
+    ],
+    "provider_id": "2623"
+  },
+  {
+    "abbreviation": "TCU",
+    "canonical_school": "TCU",
+    "classification": "fbs",
+    "provider_alternate_names": [
+      "Texas Christian",
+      "TCU",
+      "TCU"
+    ],
+    "provider_id": "2628"
+  },
+  {
+    "abbreviation": "TENN",
+    "canonical_school": "Tennessee",
+    "classification": "fbs",
+    "provider_alternate_names": [
+      "TENN",
+      "Tennessee"
+    ],
+    "provider_id": "2633"
+  },
+  {
+    "abbreviation": "UTSA",
+    "canonical_school": "UTSA",
+    "classification": "fbs",
+    "provider_alternate_names": [
+      "Texas-San Antonio",
+      "UTSA",
+      "UTSA"
+    ],
+    "provider_id": "2636"
+  },
+  {
+    "abbreviation": "UTEP",
+    "canonical_school": "UTEP",
+    "classification": "fbs",
+    "provider_alternate_names": [
+      "Texas-El Paso",
+      "UTEP",
+      "UTEP"
+    ],
+    "provider_id": "2638"
+  },
+  {
+    "abbreviation": "WASH",
+    "canonical_school": "Washington",
+    "classification": "fbs",
+    "provider_alternate_names": [
+      "WASH",
+      "Washington"
+    ],
+    "provider_id": "264"
+  },
+  {
+    "abbreviation": "TTU",
+    "canonical_school": "Texas Tech",
+    "classification": "fbs",
+    "provider_alternate_names": [
+      "TTU",
+      "Texas Tech"
+    ],
+    "provider_id": "2641"
+  },
+  {
+    "abbreviation": "TOL",
+    "canonical_school": "Toledo",
+    "classification": "fbs",
+    "provider_alternate_names": [
+      "TOL",
+      "Toledo"
+    ],
+    "provider_id": "2649"
+  },
+  {
+    "abbreviation": "WSU",
+    "canonical_school": "Washington State",
+    "classification": "fbs",
+    "provider_alternate_names": [
+      "WSU",
+      "Washington St"
+    ],
+    "provider_id": "265"
+  },
+  {
+    "abbreviation": "TROY",
+    "canonical_school": "Troy",
+    "classification": "fbs",
+    "provider_alternate_names": [
+      "TROY",
+      "Troy"
+    ],
+    "provider_id": "2653"
+  },
+  {
+    "abbreviation": "TULN",
+    "canonical_school": "Tulane",
+    "classification": "fbs",
+    "provider_alternate_names": [
+      "TULN",
+      "Tulane"
+    ],
+    "provider_id": "2655"
+  },
+  {
+    "abbreviation": "WMU",
+    "canonical_school": "Western Michigan",
+    "classification": "fbs",
+    "provider_alternate_names": [
+      "WMU",
+      "W Michigan"
+    ],
+    "provider_id": "2711"
+  },
+  {
+    "abbreviation": "WIS",
+    "canonical_school": "Wisconsin",
+    "classification": "fbs",
+    "provider_alternate_names": [
+      "WIS",
+      "Wisconsin"
+    ],
+    "provider_id": "275"
+  },
+  {
+    "abbreviation": "WYO",
+    "canonical_school": "Wyoming",
+    "classification": "fbs",
+    "provider_alternate_names": [
+      "WYO",
+      "Wyoming"
+    ],
+    "provider_id": "2751"
+  },
+  {
+    "abbreviation": "MRSH",
+    "canonical_school": "Marshall",
+    "classification": "fbs",
+    "provider_alternate_names": [
+      "MRSH",
+      "Marshall"
+    ],
+    "provider_id": "276"
+  },
+  {
+    "abbreviation": "WVU",
+    "canonical_school": "West Virginia",
+    "classification": "fbs",
+    "provider_alternate_names": [
+      "WVU",
+      "West Virginia"
+    ],
+    "provider_id": "277"
+  },
+  {
+    "abbreviation": "FRES",
+    "canonical_school": "Fresno State",
+    "classification": "fbs",
+    "provider_alternate_names": [
+      "FRES",
+      "Fresno St"
+    ],
+    "provider_id": "278"
+  },
+  {
+    "abbreviation": "GASO",
+    "canonical_school": "Georgia Southern",
+    "classification": "fbs",
+    "provider_alternate_names": [
+      "GASO",
+      "GA Southern"
+    ],
+    "provider_id": "290"
+  },
+  {
+    "abbreviation": "USC",
+    "canonical_school": "USC",
+    "classification": "fbs",
+    "provider_alternate_names": [
+      "USC",
+      "USC"
+    ],
+    "provider_id": "30"
+  },
+  {
+    "abbreviation": "UL",
+    "canonical_school": "Louisiana",
+    "classification": "fbs",
+    "provider_alternate_names": [
+      "UL Lafayette",
+      "UL",
+      "Louisiana"
+    ],
+    "provider_id": "309"
+  },
+  {
+    "abbreviation": "CCU",
+    "canonical_school": "Coastal Carolina",
+    "classification": "fbs",
+    "provider_alternate_names": [
+      "CCU",
+      "Coastal"
+    ],
+    "provider_id": "324"
+  },
+  {
+    "abbreviation": "TXST",
+    "canonical_school": "Texas State",
+    "classification": "fbs",
+    "provider_alternate_names": [
+      "TXST",
+      "Texas St"
+    ],
+    "provider_id": "326"
+  },
+  {
+    "abbreviation": "USU",
+    "canonical_school": "Utah State",
+    "classification": "fbs",
+    "provider_alternate_names": [
+      "USU",
+      "Utah State"
+    ],
+    "provider_id": "328"
+  },
+  {
+    "abbreviation": "ALA",
+    "canonical_school": "Alabama",
+    "classification": "fbs",
+    "provider_alternate_names": [
+      "ALA",
+      "Alabama"
+    ],
+    "provider_id": "333"
+  },
+  {
+    "abbreviation": "KENN",
+    "canonical_school": "Kennesaw State",
+    "classification": "fbs",
+    "provider_alternate_names": [
+      "Kennesaw",
+      "KENN",
+      "Kennesaw St"
+    ],
+    "provider_id": "338"
+  },
+  {
+    "abbreviation": "MSST",
+    "canonical_school": "Mississippi State",
+    "classification": "fbs",
+    "provider_alternate_names": [
+      "MSST",
+      "Mississippi St"
+    ],
+    "provider_id": "344"
+  },
+  {
+    "abbreviation": "ILL",
+    "canonical_school": "Illinois",
+    "classification": "fbs",
+    "provider_alternate_names": [
+      "ILL",
+      "Illinois"
+    ],
+    "provider_id": "356"
+  },
+  {
+    "abbreviation": "CSU",
+    "canonical_school": "Colorado State",
+    "classification": "fbs",
+    "provider_alternate_names": [
+      "CSU",
+      "Colorado St"
+    ],
+    "provider_id": "36"
+  },
+  {
+    "abbreviation": "COLO",
+    "canonical_school": "Colorado",
+    "classification": "fbs",
+    "provider_alternate_names": [
+      "COLO",
+      "Colorado"
+    ],
+    "provider_id": "38"
+  },
+  {
+    "abbreviation": "CONN",
+    "canonical_school": "UConn",
+    "classification": "fbs",
+    "provider_alternate_names": [
+      "Connecticut",
+      "CONN",
+      "UConn"
+    ],
+    "provider_id": "41"
+  },
+  {
+    "abbreviation": "DEL",
+    "canonical_school": "Delaware",
+    "classification": "fbs",
+    "provider_alternate_names": [
+      "DEL",
+      "Delaware"
+    ],
+    "provider_id": "48"
+  },
+  {
+    "abbreviation": "UAB",
+    "canonical_school": "UAB",
+    "classification": "fbs",
+    "provider_alternate_names": [
+      "Alabama-Birmingham",
+      "UAB",
+      "UAB"
+    ],
+    "provider_id": "5"
+  },
+  {
+    "abbreviation": "FSU",
+    "canonical_school": "Florida State",
+    "classification": "fbs",
+    "provider_alternate_names": [
+      "FSU",
+      "Florida St"
+    ],
+    "provider_id": "52"
+  },
+  {
+    "abbreviation": "JXST",
+    "canonical_school": "Jacksonville State",
+    "classification": "fbs",
+    "provider_alternate_names": [
+      "JXST",
+      "Jax State"
+    ],
+    "provider_id": "55"
+  },
+  {
+    "abbreviation": "FLA",
+    "canonical_school": "Florida",
+    "classification": "fbs",
+    "provider_alternate_names": [
+      "FLA",
+      "Florida"
+    ],
+    "provider_id": "57"
+  },
+  {
+    "abbreviation": "USF",
+    "canonical_school": "South Florida",
+    "classification": "fbs",
+    "provider_alternate_names": [
+      "USF",
+      "South Florida"
+    ],
+    "provider_id": "58"
+  },
+  {
+    "abbreviation": "GT",
+    "canonical_school": "Georgia Tech",
+    "classification": "fbs",
+    "provider_alternate_names": [
+      "GT",
+      "Georgia Tech"
+    ],
+    "provider_id": "59"
+  },
+  {
+    "abbreviation": "USA",
+    "canonical_school": "South Alabama",
+    "classification": "fbs",
+    "provider_alternate_names": [
+      "USA",
+      "South Alabama"
+    ],
+    "provider_id": "6"
+  },
+  {
+    "abbreviation": "UGA",
+    "canonical_school": "Georgia",
+    "classification": "fbs",
+    "provider_alternate_names": [
+      "UGA",
+      "Georgia"
+    ],
+    "provider_id": "61"
+  },
+  {
+    "abbreviation": "HAW",
+    "canonical_school": "Hawai'i",
+    "classification": "fbs",
+    "provider_alternate_names": [
+      "HAW",
+      "Hawai'i"
+    ],
+    "provider_id": "62"
+  },
+  {
+    "abbreviation": "ISU",
+    "canonical_school": "Iowa State",
+    "classification": "fbs",
+    "provider_alternate_names": [
+      "ISU",
+      "Iowa State"
+    ],
+    "provider_id": "66"
+  },
+  {
+    "abbreviation": "BOIS",
+    "canonical_school": "Boise State",
+    "classification": "fbs",
+    "provider_alternate_names": [
+      "BOIS",
+      "Boise St"
+    ],
+    "provider_id": "68"
+  },
+  {
+    "abbreviation": "NU",
+    "canonical_school": "Northwestern",
+    "classification": "fbs",
+    "provider_alternate_names": [
+      "NU",
+      "Northwestern"
+    ],
+    "provider_id": "77"
+  },
+  {
+    "abbreviation": "ARK",
+    "canonical_school": "Arkansas",
+    "classification": "fbs",
+    "provider_alternate_names": [
+      "ARK",
+      "Arkansas"
+    ],
+    "provider_id": "8"
+  },
+  {
+    "abbreviation": "IU",
+    "canonical_school": "Indiana",
+    "classification": "fbs",
+    "provider_alternate_names": [
+      "IU",
+      "Indiana"
+    ],
+    "provider_id": "84"
+  },
+  {
+    "abbreviation": "ND",
+    "canonical_school": "Notre Dame",
+    "classification": "fbs",
+    "provider_alternate_names": [
+      "ND",
+      "Notre Dame"
+    ],
+    "provider_id": "87"
+  },
+  {
+    "abbreviation": "ASU",
+    "canonical_school": "Arizona State",
+    "classification": "fbs",
+    "provider_alternate_names": [
+      "ASU",
+      "Arizona St"
+    ],
+    "provider_id": "9"
+  },
+  {
+    "abbreviation": "UK",
+    "canonical_school": "Kentucky",
+    "classification": "fbs",
+    "provider_alternate_names": [
+      "UK",
+      "Kentucky"
+    ],
+    "provider_id": "96"
+  },
+  {
+    "abbreviation": "LOU",
+    "canonical_school": "Louisville",
+    "classification": "fbs",
+    "provider_alternate_names": [
+      "LOU",
+      "Louisville"
+    ],
+    "provider_id": "97"
+  },
+  {
+    "abbreviation": "WKU",
+    "canonical_school": "Western Kentucky",
+    "classification": "fbs",
+    "provider_alternate_names": [
+      "WKU",
+      "Western KY"
+    ],
+    "provider_id": "98"
+  },
+  {
+    "abbreviation": "LSU",
+    "canonical_school": "LSU",
+    "classification": "fbs",
+    "provider_alternate_names": [
+      "Louisiana State",
+      "LSU",
+      "LSU"
+    ],
+    "provider_id": "99"
+  }
+]
