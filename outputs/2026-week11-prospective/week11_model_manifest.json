@@ -1,0 +1,50 @@
+{
+  "adjustment_policy": "production-adjustment-v1",
+  "ats": {
+    "code_commit_sha": "b3f27eb120487cb4cb71d7b626fe65c14e0bb701",
+    "configuration": "walk-forward-prior-seasons-v1",
+    "data_snapshot_sha256": "51a4b88b167d287782d519d0c1028efd24bcc515ae478d8352538f5b4762ff41",
+    "feature_schema": "epa-differential-v1",
+    "name": "epa_only",
+    "version": "epa-only-linear-v1"
+  },
+  "ats_confidence_policy": "production-confidence-v1",
+  "ats_ranking_policy": "production-ranking-v1",
+  "ats_selection_policy": "production-selection-v1",
+  "ats_shadow_probability_policy": "ats-shadow-conservative-v1",
+  "ats_shadow_uncertainty_artifact_sha256": "2c372640d867a6a365523856a0643237e4c922f7c4f17b42787cb8d9578b9d0c",
+  "ats_shadow_uncertainty_policy": "epa-oos-predictive-uncertainty-v1",
+  "ats_training_seasons": [
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+  ],
+  "ats_uncertainty_policy": "main-policy-null-uncertainty",
+  "code_commit_sha": "b3f27eb120487cb4cb71d7b626fe65c14e0bb701",
+  "contest_key": "splashsports-cfb-2026-w11",
+  "execution_database_sha256": "a6b57785e0847f3bc5693e53d47dd2415d6d92c5e010e4adc86845288db01957",
+  "generated_at_utc": "2026-11-11T15:37:48.563277+00:00",
+  "locked_line_snapshot_sha256": "2f6212770d6d34b86c1f7785d39774818ab2fdd1a5176d720ed62c618d44e496",
+  "locked_source_csv_sha256": "6e48f590e06ec1b69f6e351f1ef0cc679c88b7966c52c224ce48347a46706476",
+  "manual_adjustment_count": 0,
+  "official_publication_status": "NOT_PUBLISHED;LOCAL_GOVERNED_DRAFT",
+  "policy_configuration_sha256": "7e1eaa873e6a2f122bdca3366f3f65422096c8d8b1c5a60d5ba529dca157273b",
+  "season": 2026,
+  "source_database_sha256": "09d0bcda684356001bacf8bc9e42939add56b053f405564d9be924e39c0cf842",
+  "totals": {
+    "code_commit_sha": "b3f27eb120487cb4cb71d7b626fe65c14e0bb701",
+    "configuration": "weekly-rolling-origin-component-ridge-v1",
+    "data_snapshot_sha256": "6f190030b5cb7e0add8b5da388bb3bff98207890f066cae39c3bf98c14ba295d",
+    "feature_schema": "pit-epa-levels-v1",
+    "name": "pit_epa_component_total_linear",
+    "version": "pit-epa-component-total-linear-v1"
+  },
+  "totals_and_unified_status": "SHADOW_NOT_PRODUCTION_ELIGIBLE",
+  "totals_reliability_policy": "total-reliability-v1",
+  "unified_shadow_policy": "unified-shadow-top-five-v1",
+  "week": 11
+}

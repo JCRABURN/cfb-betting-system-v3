@@ -141,3 +141,7 @@ data/ingest/2026-week11-splashsports-transcription.csv -text
 data/ingest/2026-week11-splashsports-schedule-reconciliation.csv -text
 # Original Week11 image recovery and separately sealed prospective execution.
 outputs/2026-week11-prospective/** -text
+# Python CSV output retains CRLF byte custody; all other whitespace checks remain.
+outputs/2026-week11-prospective/*.csv whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+outputs/2026-week11-prospective/week11_card_manifest.json whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+outputs/2026-week11-prospective/week11_model_manifest.json whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
