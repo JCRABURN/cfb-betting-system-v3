@@ -1,0 +1,68 @@
+image,row,away,home,away_spread,total,day,clock
+1,1,Kent State,Bowling Green,+5.5,44.5,Tue,6:00pm
+1,2,Western Michigan,Akron,-14.5,47.5,Tue,6:00pm
+1,3,Ohio,Miami (OH),-1.5,46.5,Tue,7:00pm
+1,4,UMass,Toledo,+14.5,51.5,Wed,6:30pm
+1,5,Buffalo,Ball State,-2.5,51.5,Wed,6:30pm
+1,6,Sacramento State,Central Michigan,+17.5,43.5,Wed,6:30pm
+1,7,Memphis,South Florida,-3.5,50.5,Thu,7:00pm
+2,1,Louisiana,Louisiana-Monroe,-10.5,49.5,Thu,8:00pm
+2,2,Florida State,Pittsburgh,+3.5,54.5,Fri,6:00pm
+2,3,Illinois,UCLA,+10.5,47.5,Fri,8:00pm
+2,4,Houston,Colorado,-10.5,51.5,Fri,9:15pm
+2,5,Auburn,Mississippi State,-2.5,49.5,Sat,11:00am
+2,6,Duke,Miami (FL),+13.5,53.5,Sat,11:00am
+2,7,Wisconsin,Maryland,-7.5,43.5,Sat,11:00am
+2,8,Syracuse,NC State,-2.5,54.5,Sat,11:00am
+3,1,James Madison,UConn,-3.5,57.5,Sat,11:00am
+3,2,Cincinnati,Iowa State,+3.5,60.5,Sat,11:00am
+3,3,Northwestern,Ohio State,+12.5,45.5,Sat,11:00am
+3,4,Wake Forest,SMU,+1.5,61.5,Sat,11:00am
+3,5,Georgia Tech,Clemson,+13.5,47.5,Sat,11:30am
+3,6,Nebraska,Rutgers,-13.5,51.5,Sat,11:30am
+3,7,Alabama,Vanderbilt,-15.5,50.5,Sat,11:45am
+3,8,East Carolina,Charlotte,-11.5,45.5,Sat,12:00pm
+3,9,Arkansas State,Coastal Carolina,+1.5,50.5,Sat,12:00pm
+4,1,UAB,Temple,+2.5,48.5,Sat,12:00pm
+4,2,Tulane,Rice,+1.5,48.5,Sat,1:00pm
+4,3,Kansas State,TCU,+10.5,45.5,Sat,1:00pm
+4,4,Kennesaw State,Sam Houston,-7.5,46.5,Sat,1:00pm
+4,5,Tennessee,Texas A&M,-2.5,43.5,Sat,2:00pm
+4,6,Florida International,Delaware,+5.5,54.5,Sat,2:00pm
+4,7,New Mexico State,Missouri State,+1.5,48.5,Sat,2:00pm
+4,8,Florida Atlantic,Tulsa,+5.5,74.5,Sat,2:30pm
+4,9,Missouri,Georgia,+15.5,47.5,Sat,2:30pm
+5,1,California,Virginia,+10.5,47.5,Sat,2:30pm
+5,2,Baylor,BYU,+7.5,49.5,Sat,2:30pm
+5,3,Michigan,Oregon,+11.5,38.5,Sat,2:30pm
+5,4,Boston College,Notre Dame,+28.5,51.5,Sat,2:30pm
+5,5,USC,Indiana,+7.5,49.5,Sat,2:30pm
+5,6,Middle Tennessee,Liberty,+20.5,53.5,Sat,2:30pm
+5,7,Nevada,Northern Illinois,-7.5,47.5,Sat,2:30pm
+5,8,Arizona State,UCF,+3.5,49.5,Sat,2:30pm
+5,9,Jacksonville State,Western Kentucky,-7.5,54.5,Sat,2:30pm
+6,1,Georgia Southern,Georgia State,-5.5,56.5,Sat,2:30pm
+6,2,Fresno State,Texas State,+9.5,60.5,Sat,3:00pm
+6,3,Washington,Michigan State,-3.5,43.5,Sat,3:15pm
+6,4,Ole Miss,Oklahoma,-1.5,49.5,Sat,3:15pm
+6,5,Southern Miss,Louisiana Tech,+17.5,55.5,Sat,4:00pm
+6,6,Kansas,West Virginia,+2.5,67.5,Sat,4:30pm
+6,7,Appalachian State,Marshall,-1.5,53.5,Sat,5:00pm
+6,8,Oregon State,Boise State,+12.5,65.5,Sat,5:00pm
+6,9,Florida,Kentucky,+3.5,52.5,Sat,5:15pm
+7,1,Troy,South Alabama,+3.5,55.5,Sat,6:00pm
+7,2,Louisville,North Carolina,-3.5,59.5,Sat,6:00pm
+7,3,Minnesota,Penn State,+8.5,41.5,Sat,6:00pm
+7,4,San Jose State,Air Force,+11.5,47.5,Sat,6:00pm
+7,5,Purdue,Iowa,+17.5,47.5,Sat,6:30pm
+7,6,UNLV,New Mexico,+14.5,46.5,Sat,6:30pm
+7,7,Stanford,Virginia Tech,+15.5,58.5,Sat,6:30pm
+7,8,Texas,LSU,+3.5,46.5,Sat,6:30pm
+7,9,Utah,Arizona,-2.5,54.5,Sat,6:30pm
+8,1,South Carolina,Arkansas,-7.5,51.5,Sat,6:45pm
+8,2,North Texas,UTSA,-2.5,76.5,Sat,8:00pm
+8,3,Utah State,San Diego State,-2.5,42.5,Sat,8:30pm
+8,4,Texas Tech,Oklahoma State,+3.5,73.5,Sat,8:30pm
+8,5,Wyoming,UTEP,-7.5,39.5,Sat,9:00pm
+8,6,Colorado State,Washington State,+8.5,67.5,Sat,9:30pm
+8,7,North Dakota State,Hawai'i,-6.5,38.5,Sat,10:00pm
