@@ -3,6 +3,7 @@ import json
 from scripts.seal_week11_board import ROOT, sha, main as verify_board
 from scripts import review_week11_context as review
 from research.week11_validation import forward_shadow
+from scripts import review_week11_refresh
 
 PINS={
  'outputs/2026-week11-prospective/week11_initial_seal_manifest.json':'d6d163f2500fa638ad73da8b4b0da244e9cad4fe456e42d80ea65e36e073868c',
@@ -17,6 +18,7 @@ def verify():
         if sha(ROOT/name)!=digest:raise ValueError('frozen evidence identity changed: '+name)
     board=verify_board(True);shadow=forward_shadow.main(True);owner=review.main(True)
     if board['capture_before_recorded_kickoff_count']!=61 or board['status']!='LATE_CUSTODY_CAPTURE_NOT_FULL_PREGAME_SEAL':raise ValueError('late custody limitation removed')
-    return dict(status='READ_ONLY_BYTES_AND_REPLAY_VERIFIED_NOT_APPROVAL',board=board,shadow=shadow,owner_review=owner)
+    friday=review_week11_refresh.main(True)
+    return dict(status='READ_ONLY_BYTES_AND_REPLAY_VERIFIED_NOT_APPROVAL',board=board,shadow=shadow,owner_review=owner,friday_review=friday)
 
 if __name__=='__main__':print(json.dumps(verify(),indent=2))

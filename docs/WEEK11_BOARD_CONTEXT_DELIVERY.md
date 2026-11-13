@@ -210,3 +210,51 @@ include three unproven pregame seals, final personnel/market timestamps, unknown
 wind gusts and unvalidated ranking reliability. Rollback reverts new helpers and
 workflow additions while retaining historical source/evidence commits; it requires
 no source-database restoration or migration. No unrelated work is included.
+
+## November 13 continuation and exact test provenance
+
+The preceding pending-CI statement is superseded for source
+`cf9b89c9fca8f43dced5f43a8123259a0b6cb412`: native Windows Python3.12.14
+completed **1,136 passed,39 warnings in562.04s** and all12 subsequent verification
+commands exited0. Source database hash remained
+`09d0bcda684356001bacf8bc9e42939add56b053f405564d9be924e39c0cf842`;
+integrity_check=ok and foreign_key_check returned no rows.
+
+[GitHub run43218147672](https://github.com/JCRABURN/cfb-betting-system-v3/actions/runs/43218147672)
+passed all four jobs, each1,136 tests plus every safety/custody/replay gate:
+Ubuntu3.11.17=535.52s, Ubuntu3.12.14=587.98s,
+Windows3.11.9=731.57s, Windows3.12.10=935.06s.
+All checkout logs identify tested merge
+`76c79e20627c3de2afa605f69783a3cbd825f26b`, whose parents are main
+`d3ba84db74b67a6e4dd8d61e49f28c0759d3a34e` and source `cf9b89c...`.
+Both source and tested merge trees equal
+`03798c7d6cb4294bf8db370a8038d18f277ef7a6`.
+PR49/51 merge commits are ancestors. Machine-readable CI/native receipts and
+the native test log are preserved under `outputs/2026-week11-verification/`.
+These results are not claimed for a later delivery commit.
+
+Friday context was captured at actual manifest times13:01:44–13:02:30UTC on
+November13; the directory label1305 is not a quote or request timestamp.
+All152 requests were captured;18 future Top10 candidate games have17 outdoor
+NWS forecasts and one indoor venue. The already-started Sacramento State row
+is frozen. Separate conference reports retain their publication times and raw
+bytes. No current market price replaces a contest line or establishes CLV.
+
+New `scripts/review_week11_refresh.py` produces an append-only Friday review,
+exactly preserving Thursday's five, rank, confidence and forecast objects.
+It derives personnel status differences, refreshed weather and separate markets
+and qualifies newly read official articles. Changes include Colorado kicker
+Arnold to doubtful, Houston DL Buhake to probable, Michigan WR Goodwin to doubtful,
+Duke QB WalkerIII to out and Miami DB Poyser to questionable. No quarterback
+starter or medical clearance is inferred. A newly published Duke interview
+describes an earlier4-0 team; it is explicitly excluded as current injury evidence.
+
+Seven new adversarial replay tests passed in5.05s: changed contest lines,
+forecasts, confidence/rank, rehashed source identity, backdating and started-row
+immutability. The existing acceptance gate now also requires the Friday replay.
+New outputs are limited to this Friday context/review and prior-head verification
+receipts. No schema, dependency, v2.8, original forecast or historical-byte change.
+The full native suite and four-platform CI must run again on the Friday delivery;
+exact results belong in PR53. No independent reviews were present on November13.
+HOLD for genuine independent technical review even after CI succeeds. Remaining
+personnel, late-seal, unvalidated-confidence and closing-price limits persist.

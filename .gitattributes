@@ -148,3 +148,4 @@ outputs/2026-week11-prospective/week11_model_manifest.json whitespace=blank-at-e
 outputs/2026-week11-context/** -text
 outputs/2026-week11-owner-review/** -text
 research/week11_validation/forward-v1.json -text
+outputs/2026-week11-verification/** -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
