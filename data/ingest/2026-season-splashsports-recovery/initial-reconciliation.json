@@ -1,0 +1,80 @@
+{
+  "status": "INITIAL_REPOSITORY_SOURCE_RECONCILIATION",
+  "source_commit": "677e5680dc25bf18e988d6f604eeea7b954cd8bd",
+  "source_files": [
+    "data/ingest/2026-season-splashsports-recovery/2026-splashsports-all-contest-lines.csv",
+    "data/ingest/2026-season-splashsports-recovery/2026-splashsports-submitted-picks.csv"
+  ],
+  "week4": {
+    "comparison": "Previously recovered owner postgame screenshot board",
+    "comparison_path": "data/ingest/2026-week4-owner-contest-results.csv",
+    "matchups": 58,
+    "line_pair_mismatches": 0,
+    "date_mismatches": 0,
+    "selected_card": "Matches all five highlighted selections, weights, and original displayed contest lines; screenshot-reported outcome 3–2 and 8/15 points; independent finals reconciliation pending"
+  },
+  "week11": {
+    "comparison": "Original owner screenshot transcription",
+    "comparison_path": "production-weeks/2026-week11-splashsports.csv",
+    "matchups": 67,
+    "line_pair_mismatches": 0,
+    "displayed_kickoff_differences": [
+      {
+        "away": "Auburn",
+        "home": "Mississippi State",
+        "original": "2026-11-14 11:00 AM",
+        "exported": "2026-11-14 Sat 3:15pm"
+      },
+      {
+        "away": "Tulane",
+        "home": "Rice",
+        "original": "2026-11-14 1:00 PM",
+        "exported": "2026-11-14 Sat 3:30pm"
+      },
+      {
+        "away": "Florida Atlantic",
+        "home": "Tulsa",
+        "original": "2026-11-14 2:30 PM",
+        "exported": "2026-11-14 Sat 6:15pm"
+      },
+      {
+        "away": "Baylor",
+        "home": "BYU",
+        "original": "2026-11-14 2:30 PM",
+        "exported": "2026-11-14 Sat 6:00pm"
+      },
+      {
+        "away": "Arizona State",
+        "home": "UCF",
+        "original": "2026-11-14 2:30 PM",
+        "exported": "2026-11-14 Sat 4:30pm"
+      },
+      {
+        "away": "Washington",
+        "home": "Michigan State",
+        "original": "2026-11-14 3:15 PM",
+        "exported": "2026-11-14 Sat 4:30pm"
+      },
+      {
+        "away": "Ole Miss",
+        "home": "Oklahoma",
+        "original": "2026-11-14 3:15 PM",
+        "exported": "2026-11-15 Sun 12:00pm"
+      },
+      {
+        "away": "Kansas",
+        "home": "West Virginia",
+        "original": "2026-11-14 4:30 PM",
+        "exported": "2026-11-14 Sat 2:30pm"
+      },
+      {
+        "away": "Utah",
+        "home": "Arizona",
+        "original": "2026-11-14 6:30 PM",
+        "exported": "2026-11-14 Sat 9:30pm"
+      }
+    ],
+    "interpretation": "Preserve both timestamps. These are displayed kickoff differences, not independently confirmed official rescheduling. Do not rewrite original pregame eligibility or seal. Reconcile actual provider game IDs and final scores."
+  },
+  "remaining": "Independent provider results reconciliation and original-lock comparison for all other weeks, complete actual-submission grade ledger, and historical ranking-method provenance belong in Week 11 forensic audit."
+}
