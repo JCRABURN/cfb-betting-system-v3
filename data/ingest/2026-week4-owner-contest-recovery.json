@@ -1,0 +1,61 @@
+{
+  "season": 2026,
+  "week": 4,
+  "source": "Owner-supplied SplashSports completed contest screenshots in ChatGPT",
+  "recovery_date": "2026-11-16",
+  "evidence_status": "POSTGAME_OWNER_CONTEST_RECORD_RECOVERED",
+  "source_csv": "data/ingest/2026-week4-owner-contest-results.csv",
+  "source_csv_git_blob_sha": "593fac835e7336fa40e787149de12fa9eb06934c",
+  "screenshots_visible": 7,
+  "screenshot_rows": [
+    8,
+    10,
+    9,
+    10,
+    9,
+    9,
+    10
+  ],
+  "visible_rows": 65,
+  "overlapping_rows": 7,
+  "duplicate_references": "Screenshot 7 rows 1–7 repeat screenshot 6 rows 3–9. Deduplicated after visual match of teams, spreads, totals and scores.",
+  "unique_visible_games": 58,
+  "dates": {
+    "2026-09-24": 1,
+    "2026-09-25": 4,
+    "2026-09-26": 53
+  },
+  "screenshot_byte_custody": {
+    "first_image_sha256": "f8bd6b7410839df1ef5457088f3da84715a81de5c59e42361fb14372e317320d",
+    "status": "First screenshot verified against accessible image.png; remaining six visible in chat but original binary bytes not independently hashed in this runtime."
+  },
+  "owner_record": {
+    "wins": 3,
+    "losses": 2,
+    "pushes": 0,
+    "points_earned": 8,
+    "points_possible": 15,
+    "ats": {
+      "wins": 2,
+      "losses": 1
+    },
+    "totals": {
+      "wins": 1,
+      "losses": 1
+    },
+    "confidence_definition": "Displayed contest point allocation, not model-calibrated confidence."
+  },
+  "limitations": [
+    "Postgame screenshots, not original pregame line-lock evidence; exact quote, submission and prediction timestamps unknown.",
+    "All 58 visible games transcribed; completeness against the independent official schedule is not yet established.",
+    "Finals are screenshot-reported and require independent ESPN/CFBD reconciliation before formal audit acceptance.",
+    "No model forecast values, underlying model confidence, full-card predictions or evidence of model origin for the five picks recovered.",
+    "Do not infer selections from unhighlighted rows or generate retrospective predictions and label them prospective."
+  ],
+  "next_steps": [
+    "Reconcile 58 rows to official provider game IDs and final scores.",
+    "Include the five screenshot-evidenced selections in separate owner contest ledger, not full-card model performance.",
+    "Retain historical missing Week 4 full-model-card qualification unless genuine pregame artifacts are recovered.",
+    "Do not alter prior evidence or v2.8."
+  ]
+}

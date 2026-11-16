@@ -1,0 +1,26 @@
+{
+  "season": 2026,
+  "record_type": "OWNER_ATTESTATION_OF_SEASON_WIDE_MODEL_SELECTION_ORIGIN",
+  "attestation_date_local": "2026-11-16",
+  "source": "Owner statement in the College Football Spread Bets ChatGPT project conversation",
+  "owner_statement": "this whole year i have never picked a single game on my own. everything has been chosen by the model",
+  "scope": "2026 season contest selections submitted by owner through the date of this statement",
+  "classification": "OWNER_ATTESTED_MODEL_SELECTED_CONTEST_CARDS",
+  "selection_origin": "MODEL",
+  "owner_independent_selection": false,
+  "interpretation": [
+    "All actual owner contest selections this season were chosen by the model according to the owner's direct statement.",
+    "Owner approval or submission is not independent human selection. A model-produced contextual review is distinct from a user independently choosing picks.",
+    "Attribute recovered actual contest-card outcomes to the model-assisted selection workflow, with owner-attested provenance.",
+    "Do not equate an actual submitted card to a specific governed ATS, totals, mixed research, or contextual ranking unless matching selection evidence establishes that identity.",
+    "This attestation does not establish which recommendations were submitted in weeks with missing submission evidence, exact model versions, pregame forecast custody, or underlying calibrated confidence.",
+    "Contest scoring weights are not automatically model confidence."
+  ],
+  "related_evidence": "data/ingest/2026-week4-owner-model-origin-attestation.json",
+  "reporting_requirements": [
+    "Preserve separate cohorts for frozen automated engine outputs, model-generated contextual recommendations, and verified submitted cards; match identities and deduplicate overlapping selections.",
+    "Use OWNER_ATTESTED_MODEL_ORIGIN for recovered submissions, distinguish from independently verified pregame artifacts.",
+    "Do not assign losses or wins to independent owner judgment absent contrary documented evidence.",
+    "Where submission evidence is absent, report actual contest record unknown rather than substitute recommendations."
+  ]
+}

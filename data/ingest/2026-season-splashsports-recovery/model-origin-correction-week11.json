@@ -1,0 +1,53 @@
+{
+  "season": 2026,
+  "record_type": "OWNER_ATTESTATION_CORRECTION_MODEL_IDENTITY",
+  "attestation_date_local": "2026-11-16",
+  "source": "Owner clarification in College Football Spread Bets project conversation",
+  "owner_statement": "a clarification. i used a different models picks on week 11 because i was tired of gettign low confidence recommendations last week",
+  "supersedes": "data/ingest/2026-season-owner-model-origin-attestation.json",
+  "supersession_scope": "Week 11 model identity only; all selections remain model-generated, not independently owner-selected.",
+  "weeks_1_through_10": {
+    "submitted_selections": 50,
+    "selection_origin": "PROJECT_MODEL_OWNER_ATTESTED",
+    "note": "Subject to reconciliation of individual archived submissions and model recommendation identities."
+  },
+  "week_11": {
+    "submitted_selections": 5,
+    "selection_origin": "ALTERNATIVE_MODEL_OWNER_ATTESTED",
+    "model_identity": null,
+    "model_version": null,
+    "model_probabilities": null,
+    "reason_for_switch": "Dissatisfaction with low confidence recommendations from project model",
+    "selections": [
+      {
+        "pick": "Wake Forest +1.5",
+        "weight": 5
+      },
+      {
+        "pick": "Penn State -8.5",
+        "weight": 4
+      },
+      {
+        "pick": "Boise State -12.5",
+        "weight": 3
+      },
+      {
+        "pick": "Texas Tech at Oklahoma State UNDER 73.5",
+        "weight": 2
+      },
+      {
+        "pick": "Duke at Miami (FL) OVER 53.5",
+        "weight": 1
+      }
+    ]
+  },
+  "reporting_rules": [
+    "Primary actual contest ledger includes all 55 submissions, irrespective of model origin.",
+    "Project-model actual submitted cohort comprises Weeks 1–10, 50 picks; exclude alternative-model Week 11 submissions from this cohort.",
+    "Grade all 128 original Week 11 project-model predictions, with 61-game forward-sealed subset reported separately, and every archived project-model recommendation cohort.",
+    "Grade alternative model Week 11 submitted five independently, compare with same-week frozen project model cohorts at exact locked lines; no inference of superiority from one week.",
+    "Do not attribute Week 11 alternative-model results to project model, or to independent owner judgment.",
+    "Alternative-model full-card forecasts, confidence probabilities, training, selection method and identity unknown; contest weights are scoring allocations, not calibrated confidence.",
+    "Preserve earlier evidence, CSVs, model runs and historical attestation unchanged. This record overrides any inconsistent model-identity interpretation."
+  ]
+}
