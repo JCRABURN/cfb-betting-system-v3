@@ -1,0 +1,77 @@
+{
+  "chat_received_at_utc": "2026-11-10T22:25:54.183000+00:00",
+  "chat_received_unix_seconds": 1794349554.183,
+  "earlier_asset_identity_resolution": "The previously reported last available image hash matches chronological screenshot01, not screenshot08. The attachment API returns reverse display order. Original metadata is retained unchanged; images are numbered by chronological card order.",
+  "images": [
+    {
+      "bytes": 89976,
+      "path": "splashsports-01.png",
+      "recovery_tool_path": "C:\\Users\\jraburn\\AppData\\Local\\Temp\\codex-file-preview-LcPly3\\image.png",
+      "screenshot_number": 1,
+      "sha256": "d2cc90e9265be7a31db75896fbc2a5fcd1ad4fedac9cf42b122d70d20c8477c2"
+    },
+    {
+      "bytes": 96669,
+      "path": "splashsports-02.png",
+      "recovery_tool_path": "C:\\Users\\jraburn\\AppData\\Local\\Temp\\codex-file-preview-y2O5Cx\\image.png",
+      "screenshot_number": 2,
+      "sha256": "bb9710f574d231ed652859465ec25dfd49ced7db13fa8e1171478d71eba8f0d1"
+    },
+    {
+      "bytes": 108234,
+      "path": "splashsports-03.png",
+      "recovery_tool_path": "C:\\Users\\jraburn\\AppData\\Local\\Temp\\codex-file-preview-zy2nUm\\image.png",
+      "screenshot_number": 3,
+      "sha256": "421b92d8a77583f429e7387ba6f4a9de0dc8ee818bdd15b92825becb3d278d86"
+    },
+    {
+      "bytes": 106689,
+      "path": "splashsports-04.png",
+      "recovery_tool_path": "C:\\Users\\jraburn\\AppData\\Local\\Temp\\codex-file-preview-Mo5epe\\image.png",
+      "screenshot_number": 4,
+      "sha256": "ff95d877b83d19c6de9ef9e25c682558e5d19bd792aaf470af75be49e2deda62"
+    },
+    {
+      "bytes": 107534,
+      "path": "splashsports-05.png",
+      "recovery_tool_path": "C:\\Users\\jraburn\\AppData\\Local\\Temp\\codex-file-preview-LTHhpZ\\image.png",
+      "screenshot_number": 5,
+      "sha256": "8b785ee1d6da2da9fe1f4fcd1b4ffcbc98eeef4786a6c8b8d9a2f79152caea94"
+    },
+    {
+      "bytes": 111129,
+      "path": "splashsports-06.png",
+      "recovery_tool_path": "C:\\Users\\jraburn\\AppData\\Local\\Temp\\codex-file-preview-yapBxm\\image.png",
+      "screenshot_number": 6,
+      "sha256": "4c257441b074273c13edc5a9e081d59b6384c1ca31480b6ab1f9793e259370e2"
+    },
+    {
+      "bytes": 104540,
+      "path": "splashsports-07.png",
+      "recovery_tool_path": "C:\\Users\\jraburn\\AppData\\Local\\Temp\\codex-file-preview-zvzcpD\\image.png",
+      "screenshot_number": 7,
+      "sha256": "5895ca2087c4c56a716e07c26eb5063ac9e5615bffb988eddb8dc5d1b95bf9fd"
+    },
+    {
+      "bytes": 88299,
+      "path": "splashsports-08.png",
+      "recovery_tool_path": "C:\\Users\\jraburn\\AppData\\Local\\Temp\\codex-file-preview-yM25uU\\image.png",
+      "screenshot_number": 8,
+      "sha256": "22e9879e164c74c2deefc1ec4c98e2b04f2c0dfecdb254ddd30de411468f5da8"
+    }
+  ],
+  "independent_review_path": "independent-visual-transcription.csv",
+  "independent_review_sha256": "ecb4f9442a8975c16043044846d0cfc7ecfd4020ffe60dfb408d1999b61bd00e",
+  "owner_selection_approval": "PENDING",
+  "recovered_at_utc": "2026-11-11T15:29:26.328595+00:00",
+  "review_author": "Codex",
+  "review_method": "All eight recovered images visually inspected; 67 rows independently transcribed then reconciled programmatically",
+  "source_csv_sha256": "a27f367a38918e188cc2e8aa417b9a1970049ca02d0501789d00ccfdb0b12c22",
+  "source_metadata_sha256": "3b12cd8a0fb339ee30690b910bcefe1abeaeb879f0a5b4d45f895cf21a492b0a",
+  "source_quote_timestamp": null,
+  "source_thread_id": "6af280dc-1860-83ea-9bd9-d990eb4ca6dd",
+  "source_thread_title": "Review PR 51",
+  "source_user_turn_id": "0a429164-aaab-4f71-b794-2dee9941128b",
+  "supersedes": "Earlier incomplete-custody reports remain correct at their timestamps. Original metadata/source files are unchanged.",
+  "version": "week11-recovered-original-images-v1"
+}

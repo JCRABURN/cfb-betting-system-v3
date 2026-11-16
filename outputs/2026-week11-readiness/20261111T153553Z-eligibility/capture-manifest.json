@@ -1,0 +1,47 @@
+{
+  "as_of_utc": "2026-11-11T15:35:54.918797+00:00",
+  "capture_code_sha256_lf": "f73544b2849d8409269ea7f0b2b18cec3169252fab4b4568b1c9f6e4f066cd68",
+  "model_input_use": "PROHIBITED_SCHEDULE_STATUS_ONLY",
+  "predictions_generated": false,
+  "records": [
+    {
+      "endpoint": "https://api.collegefootballdata.com/games",
+      "http_status": 200,
+      "name": "cfbd",
+      "parameters": {
+        "seasonType": "regular",
+        "week": 11,
+        "year": 2026
+      },
+      "path": "cfbd.json.gz",
+      "raw_bytes": 234183,
+      "raw_sha256": "db209a43573f24dc2f6f63e60e0ea4bb7124694515c95eb0a377c7a29ef15c03",
+      "received_at_utc": "2026-11-11T15:35:54.698573+00:00",
+      "requested_at_utc": "2026-11-11T15:35:53.917064+00:00",
+      "status": "CAPTURED",
+      "stored_sha256": "6ada3fef576ef5eeed895323ed6e6277ed7c76ab99929d930f10e78884277fdf"
+    },
+    {
+      "endpoint": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/scoreboard",
+      "http_status": 200,
+      "name": "espn",
+      "parameters": {
+        "groups": 80,
+        "limit": 300,
+        "seasontype": 2,
+        "week": 11,
+        "year": 2026
+      },
+      "path": "espn.json.gz",
+      "raw_bytes": 1249560,
+      "raw_sha256": "2bcfb2039d52e34f4ef2c2bd925a1b11242f0817f7a163aa47818a6c21d50ee4",
+      "received_at_utc": "2026-11-11T15:35:54.918797+00:00",
+      "requested_at_utc": "2026-11-11T15:35:54.698573+00:00",
+      "status": "CAPTURED",
+      "stored_sha256": "8599ff2d1d1fdbff0b6945cce87ec763fb805847340ccb9b7795d131f5485a42"
+    }
+  ],
+  "source_commit": "cf1fc5e5c1440ace86f3c8f682f40461c3e3e107",
+  "status": "CAPTURED",
+  "version": "week11-eligibility-capture-v1"
+}

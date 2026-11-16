@@ -1,0 +1,676 @@
+{
+  "code_sha256_lf": {
+    "business_entities/__init__.py": "4a719e5f68c595d6d810d8be4206cfb50e3dc9618041f6729b3a2d1d2d2725a1",
+    "business_entities/adjustments.py": "6d07aac2321376a9f8cb60c0412dd5003c3bee5d54d8f44387a029daa5f648f1",
+    "business_entities/ats_shadow_calibration.py": "129fa389c15fd94185297a935d142444fd9148b5710f5f8d7d35ac09a195733e",
+    "business_entities/audits.py": "c16edab6eb5278fe6f3948678b6e7c18c5428702faa33984dff3261a72e89875",
+    "business_entities/cards.py": "b5a21bb47bcd7a891e6bc1474e0b35df180d727c94843c8d791ad5ef90c144b1",
+    "business_entities/common.py": "7c59a3b1baec650f23f6797f06e1577fd6b66fa72c1aac6f7fc0fb9cd07a858f",
+    "business_entities/complete_audits.py": "19d3a514809cca5a9244deace62fcb91ce89d8aea181b48665c03bd1ec8c92c1",
+    "business_entities/contextual_adjustments.py": "28a5cdace769d123ee30a87cc2ac67ceb63cbd6908baf21d04eb5305430515c3",
+    "business_entities/full_card.py": "d805f0d1fea12ce040ea674bc4dea4db5ac62606c58c1b1fe9d712695655d701",
+    "business_entities/historical_rehearsal.py": "c2e6ed4ead585fc88ad110cf89d91c99f737f101f6cc4c68eb9d989650c4232a",
+    "business_entities/live_sportsbook.py": "69e0c02599a8766d8e98634739fa1ce273938f522118cfbf7c7fb7cb72e81049",
+    "business_entities/modeling.py": "629f51b14a1f781482b2a15aa4bfe50418f18f13664e6cd1e92e0465817e7845",
+    "business_entities/ranking.py": "98668ad904b84e296df5aa9df34cb1a8ac427c6ad92bcd6a0de69a5ac36088fa",
+    "business_entities/refreshes.py": "a789f9d87e58b9bbb821abfd7ee32fb1c5e3e0b898dceadf8d1a8bd0ff8e63b8",
+    "business_entities/reproducibility.py": "36f928242bfd5042aaedd3ec6b920690bc153f0c90ffcc247fca82f333777bdd",
+    "business_entities/shadow_rehearsal.py": "f03950737247b3be6154955bcaf72a85e8d7a8819431d925e77d7c0dc8310e3e",
+    "business_entities/sportsbook_audits.py": "e7cdcf7dc3054b293a99f8cb9b9cba7abe4aa421b5cf978213318bf8a075be00",
+    "business_entities/totals.py": "683bad6bcd8a812c9ec6792309b13be59d85767466b320aa8e6582e0a08be47f",
+    "business_entities/totals_components.py": "9ad4c0b8e024e03a9671c1dba8dae59faa9c4262e6e8f5a2b4bb3a06a9f03ea8",
+    "business_entities/totals_weekly_model.py": "5484fdbf002649bc0fb85650fd17e40cb9e9356e4dc91296565714ad8f05bc93",
+    "business_entities/unified_top_five.py": "cd9e0a2e48814a7d64531329786498a1a1496640f92d8753982329b1b54a1981",
+    "business_entities/wagering.py": "4b0700544e91a0a9a92f4cd0283f5b25061f00e9f44a258bed01f544bddb95ca",
+    "business_entities/weekly_controller.py": "b4ecf06f417768eb24aabc280782ed7765412533ed3783c6f8ad1671fead410a",
+    "business_entities/weekly_diagnostics.py": "caebcf500d71b140f67f76a9a849c5b3af891c547da7fc7bd3c160b5d06d3e5f",
+    "config/epa-only-oos-uncertainty-v1.json": "291e7b9b42690708a79a9accbba5bcd0bbd96a853c7a9912bfe51b0aeb3ae323",
+    "config/production_policies.example.json": "be0cd43f896724c26c43f67f673b6f62415bcada03677445d4edba071456eb21",
+    "config/weekly_operation.example.json": "4252bb439708d591cdc36510e5537a3c78f1cbba353a4ca266ec7e81be0e86b3",
+    "ingestion/__init__.py": "69d16f21947430482f52d0293f413db11e6fa6e2867a4b79acd2198ad12c2850",
+    "ingestion/custody.py": "44b2b5e309e88e56ee86092b4cdd7e553508dd375338e12af74063823f17b242",
+    "ingestion/replay.py": "27f73791f8a052547dbdf5f746e310b1db063f5b122405c5bb43af135707c7be",
+    "migrations/__init__.py": "af622899ec07938b8f15041ce6308d676c6c9ceeb158d20a18d20a25b03c5744",
+    "migrations/runner.py": "d06b352191b5bb91b07b95580144644869512f67598adc92d4fa5ea6a3bea6ca",
+    "migrations/versions/__init__.py": "a2a9c4c5d6e84cc0743adf9235bf5ad95da6977461a290db8a341179bd106818",
+    "migrations/versions/v0001_initial_schema.py": "85eebb1f0eb775ecab0c25bbfe576d005b5fb8ef0e99933dcd1e20bb897db9ed",
+    "migrations/versions/v0002_team_game_stats_features.py": "f6d7b6393c0c7f03765d1e013b6657b91e4f0d0ced42745ed203436386045bd5",
+    "migrations/versions/v0003_lookup_indexes.py": "dd875cfa59e9bb93cfa8b8d7ee4e0e51f8b96974ef2e15572130ed97b87485cd",
+    "migrations/versions/v0004_supplemental_game_dates.py": "ac545567033956203f031dbd548957e593616f82a42a3f906caf4d8c717a8a0f",
+    "migrations/versions/v0005_immutable_contest_lines.py": "0ae32d713ce5097f6c1bdc9780121eae0ed44cdb9985073f1ab77484cfa7de9b",
+    "migrations/versions/v0006_separate_business_entities.py": "46cd049f39e1d11c42c5083dcf2dfe08598f33d925b614fa48104bcd9bde094d",
+    "migrations/versions/v0007_confidence_ranking_policies.py": "5b6a236c13a72cbd79c6ee8e7cf2975c3216f104894a0c470716ed3a590aada8",
+    "migrations/versions/v0008_reproducible_card_runs.py": "7fcc3364993738aac1719c072d244f8ef186d2fdeb499392b13b4c97ef7b6acf",
+    "migrations/versions/v0009_daily_refresh_revisions.py": "c1e04513009a0246ef199d4f4947560864ea6dbbb73c5eceeb8fdd1819aec692",
+    "migrations/versions/v0010_manual_contextual_adjustments.py": "6426bb90e9ff0307cce62c01bbfeed69377dfe569fde0550a98ab8587416a61d",
+    "migrations/versions/v0011_complete_postgame_audits.py": "81ed21f4c0b9d5d9e6a0337906cf68b90f8e9a8f3820c6cabbb3cde57b967388",
+    "migrations/versions/v0012_weekly_diagnostics.py": "52f434a2fa4f9016c8ff553d41243f7c3eb4121fb336ad71195261c6e58f3b67",
+    "migrations/versions/v0013_provider_ingestion_custody.py": "d502b38604166c300697522be26d427bbfa945aa00bb3f1f5eaa94828c23a442",
+    "migrations/versions/v0014_official_weekly_controller.py": "63dbc15706fe2a80cc678f0bf3492cd3b850ddd187e67ee8106890282a125322",
+    "migrations/versions/v0015_live_sportsbook_recommendations.py": "8d254ff6a646efc95aa9940ccae5f22cd5fab179b916a828561f3c6a136a1e57",
+    "migrations/versions/v0016_sportsbook_postgame_audits.py": "ac07a9cbb32e1120d6de637e86b44a43f507d637495d6f8fc4ad7846148d861e",
+    "migrations/versions/v0017_production_context_evidence.py": "1adeb38d8607bda689e20df58f9f0e8dc4a8d76a57c4f53f3b192b26063d869a",
+    "migrations/versions/v0018_card_context_snapshot_identity.py": "794617f01f1f2f1d62f3221405c82027b19241cea405fd7d1d498e4f7917124c",
+    "migrations/versions/v0019_football_identity_foundation.py": "22486e80909f5b45e0fb7cbcf84c39e62d367653cfee331e7b482d64b900e47e",
+    "migrations/versions/v0020_mixed_pickem_custody.py": "6a55b6d2bfa1e6a0c3393556e4ab206190b792c60a012337431595c2b230bfda",
+    "migrations/versions/v0021_totals_shadow_top_five.py": "8d775369ad210bd444f61dc7139151284f48806d4dae07ab857e520e3dcdddcf",
+    "models/backtest_harness.py": "55e23bebdfd30a82fea4bc7b8c14bd72a38460ac73980da67b69e2aafb8136e4",
+    "models/backtest_report.py": "aeb93e77068e43660903d96b4fb6f90e469303c14832c3d212a0a2cec52c3ffd",
+    "models/baseline_epa.py": "b99d301af7ead098af4decf5a54a1a875be74310a426412f830be97f78674135",
+    "models/build_dashboard.py": "7dc2bc54196079d7d30598d4112f796bde19b2ec6246997e67168487d4cf98bd",
+    "models/card_generator.py": "2dd8633c46b269ddc1e2cdcc0a1374eb4be7457d8ddf37086c5108b6ef2893c3",
+    "models/epa_uncertainty.py": "3d05ed5baf17ae80ea66058a559861a9a860a6b8999e0581c6bea0c027579315",
+    "models/feature_havoc.py": "864b821e3d177083308f9d8b4bf5b92081245f943632debe23a9f9a8a84f10cb",
+    "models/feature_rest.py": "cf7013b6788f9f59e37d4a7c85e9782e3dd7e31dfe0b24725eb4854c068bd36b",
+    "models/feature_success_rate.py": "8fa83639d5e5994a61451261bafac76a5b64250c0ae917c713c5cf21eaffb4b2",
+    "models/gambling_view.py": "94a66f68c9c5f5d219c616d59b08c3a687080f32bd9f429a9d4920d6530c3f8a",
+    "models/line_utils.py": "2137f4ec3f33672321ab670bb979beb217e6fddef402e9d98d36144dca247313",
+    "models/pool_view.py": "9068362fa6e083a3099ff1da13cce87e3d3908b96d277bb85622835ebe8c1402",
+    "models/post_game_audit.py": "3dd9e1b83899cb7c24c4071ae92a1f0b8f8d3ee3bdf551f7c200262e6144cc25",
+    "models/research_framework.py": "8f5486fda5ea389262f83adc941087c90c651bfeeefb59b55ad34dcebe30acfc",
+    "models/run_backtest.py": "5733c939cbb6dd07a4e81e99711e0a594da3ac43f76c384b9457db472d53db30",
+    "models/run_feature_test.py": "c90df869b60bacd7919fb7e49048d01bf3a65095550617e9c8ec9c75d1ffed7e",
+    "models/run_feature_test_havoc.py": "44174ca396e8638649f40817d78f9bf0353627d2d4b692dfe0ab6b44788979e2",
+    "models/run_feature_test_rest.py": "7bb63ed477b8a815998d9317ce0e634b74b898f1c48f92376123cfb848b890eb",
+    "models/run_feature_test_success_rate.py": "058852fac40c239013dcbec3d6c2c99f68fb4a3d2b10dae5dc74a5e8d7b9d182",
+    "models/run_mismatch_test_clipped.py": "f98a595bfbdc7c41f4ea8c84815b3dd046dd922367ef580a640087f802de796c",
+    "models/run_mismatch_test_damped.py": "45394ec5d16c96dff84d1bc9123ea1b0a9c1703f1f5b78b61c8e880926a9268e",
+    "models/run_mismatch_test_interaction.py": "69cfe8e75ca23d0fa104ccdff9aad0e1fc50ea03add9906065471cc76caa688e",
+    "models/run_mismatch_variant_test.py": "e750edc27fc152d3c9a7746664a5b248def0dc2ef07decd7c83c798913f8befb",
+    "models/run_research.py": "b0e08975c58dc86fbdf9ad9fa0a874fff4793e4ec12da74a7eeaf6f9bfbf3aa8",
+    "models/totals_component_research.py": "b6552f015d3bb5148971fba4154063756293f38d47a373f2e9cb58a3fea7c227",
+    "models/totals_evaluation.py": "72649dfa24ae991492b4dad14185feab77c438feed1059c11a83b89cae8c5af2",
+    "models/totals_opening_lines.py": "5d2b0827d8a11e22151c18364cd478c0663685a264cc6a2821fb0ef171aeb830",
+    "models/totals_research.py": "885c5499490d866c3b36d7247506a706d17d67732853f475a12d71cafc7957a5",
+    "models/variant_clipped_input.py": "ea05e6aea91d628b108fe89bb9a08ebc7cb6a141c2de4aa13fd3d66f4d5f291e",
+    "models/variant_damped_output.py": "6fa0e3bd1975903a937292aaae5db86ece97790f9985cd6e64bd6be06e95c4de",
+    "models/variant_mismatch_interaction.py": "711c3cb49a7ae53f23d6d2e240fe2fb02ab780287f94e89dbc71c5379a46b3e8",
+    "operations/__init__.py": "92a146a38e35a314b358b411620b2af843807c08c9ad1ddc4e37f30421625b6d",
+    "operations/cloud_execution.py": "45eda3fbb729e8413985d2504a47d913432403b443272654678d5e1518362e38",
+    "operations/cloud_persistence.py": "63a75ee8426417bf8bc7c73eb4d960d4241838bb5f81a003b6c76ea939cf35ee",
+    "operations/config.py": "b384a1520e3824d5a0c93005601f13304b49f5c352e2ee4fae6a3293b954ba4f",
+    "operations/context.py": "32f55282c41cf35481cc35d56a58ffaf327faa7362fb58e41313135adab7d949",
+    "operations/database_cutover.py": "62fdbe86b600908c5a983dc596f9602c30ce31c1768827ae09e635c86e37b494",
+    "operations/execution.py": "c2f4e9a5dd871ed5d239864a0bc61482719547360cf7d36dae6dba2a28e97bbb",
+    "operations/policies.py": "817da67be5ab96be21a07133cb493f825d7c583d34fa34ad7c7d31d88d977774",
+    "operations/preflight.py": "d946ef6dd4f620e786ebdcec90cbb2654dbf26894afef7627cc9fcaea6a4088d",
+    "operations/providers.py": "2f01294d539f32406407b20a1fd0bfe0e62bd6f6af6197399e503f562e292064",
+    "operations/public_dashboard.py": "a080310ffad886012c3db4f2d2549ee50ceb12d0e547da9fc5c6bcf258d84687",
+    "operations/splashsports.py": "ed42fe02152003c3d63dbf526ecae2852f951ed4f63db32cb3c2ae4050aaf45e",
+    "operations/weekly_config.py": "70d6e47981c1bbb57ae8595e66b1814fae485641afdddfd5046073fa161ff6bc",
+    "operations/writer_lock.py": "6cd5aa7fcc132d78c2cae296dce51757589dd15ae959ada6484f6929f7d53d14",
+    "scripts/finalize_week11_card.py": "3f9e48c1eacf9fb930f9582dab11af414dc00ced29c14504550c0a23da1179b3",
+    "scripts/prepare_week11_readiness.py": "a9dc3a2bbdb83fceea02d6e7cfe992e977ec603ddd81b6e945a69c043340025b",
+    "scripts/prepare_week11_source.py": "1a5c8a1d25d65d3020ca481bd4a8feb649f2caa02cf3452d051db0a8315a8278",
+    "scripts/run_week11_execution.py": "3e45cef99e916fb8072d56ded6d40049a2779a4a5f91980115808653e5fea479",
+    "scripts/run_week6_execution.py": "9d95e3af1b529b270d042090f5efd650f6fa43e7d7634d9e831b178283ea6672",
+    "scripts/seal_week11_board.py": "4b26801ca906afd9afda38e029f665829dd90a9fe36a893f911e6f41a90197b9",
+    "scripts/seal_week11_components.py": "cb8dba3554691a2af1e93ddf25571863e69cc1b22aa7dd2805ed5abf9648382a",
+    "scripts/verify_week11_transcription.py": "0dc3aa0572ee720342c5fa1449c2f9a935fa8422fd5674b2009c8168efff0e8a",
+    "scripts/week11_eligibility.py": "f73544b2849d8409269ea7f0b2b18cec3169252fab4b4568b1c9f6e4f066cd68"
+  },
+  "custody_mode": "late_capture",
+  "output_sha256": {
+    "WEEK11_BOARD.md": "917b0bd7c539aa9d8b23f0d0170d9d83542209c1d1841e641ee517faeee2da41",
+    "eligible-line-metadata.json": "8f61c98cd871bdd9e03256a77eafbaa0f8703318ce66f01a58e3d2ab21ed906c",
+    "eligible-lines.csv": "6e48f590e06ec1b69f6e351f1ef0cc679c88b7966c52c224ce48347a46706476",
+    "provider-evidence/cfbd-week10-advanced.derived.json": "68b1913ed0e04e205615dd5a9edba3548abd487e84312cf887b1aa1e94272357",
+    "provider-evidence/cfbd-week10-games.derived.json": "5d4bf8b3dd3691fcea1924340ab56563f5a0aa38b8a671cd874defdd197b5ba3",
+    "provider-evidence/cfbd-week11-games.derived.json": "994ca8b79f06e716cf71f8b228cde16cc328e879018537c34b7defbd309d0d3f",
+    "provider-evidence/cfbd-week2-games.derived.json": "94ae971a6f69ef866344ec7e323196238d9f3d5e58b619e12f332d8ee774a7dc",
+    "provider-evidence/cfbd-week3-games.derived.json": "7db7a20ec5f7e2448fa3a280d1735af7c57dfde5e2c5cae005d86ec402c8ce3e",
+    "provider-evidence/cfbd-week4-advanced.derived.json": "6852b017d8802e4113d28749d0592c7638e78cb84936afe6da55068d6a67cecf",
+    "provider-evidence/cfbd-week4-games.derived.json": "7935e867cfd274ecad34dd7f2be291ff074effefbeafb2e5954e76e15debae62",
+    "provider-evidence/cfbd-week5-advanced.derived.json": "7e3566d6367b11b466afe04fabb43bc730c2a64f186485486a0e6e181f35c33f",
+    "provider-evidence/cfbd-week5-games.derived.json": "182806b5b6cd1f50657a36ed78ee26c57ef9c0b8d27c1ec14fb461a5223fe129",
+    "provider-evidence/cfbd-week6-advanced.derived.json": "bf05a1e6713cd10cf39aabda53a8405a75401c00c61bf388d79f6d7a03c1cded",
+    "provider-evidence/cfbd-week6-games.derived.json": "5fdcdf170fc82f9eb9a11e61246ea974257d76bc61e2d49faa144aa5fd1cd4f7",
+    "provider-evidence/cfbd-week7-advanced.derived.json": "13c67d579d2250786a2c625d9524b88cee875f463e4cc5c14b2acbac166f84c6",
+    "provider-evidence/cfbd-week7-games.derived.json": "b4cf87b7c7d15ef40375f751909f9c29dbf6187512e4b1c8ddf680e6840ffe39",
+    "provider-evidence/cfbd-week8-advanced.derived.json": "53a5ff026e55137082c346a19b9064b52965a44cb4d9192c71d51040471f1cc2",
+    "provider-evidence/cfbd-week8-games.derived.json": "63dafb5a5000b7f75fdabfd6bc11e7c861af3d190124ca981b2787b7184f9cd9",
+    "provider-evidence/cfbd-week9-advanced.derived.json": "57d9c94f909ab5dc95a618a74fe1042db9e8a71a0e5991f308e91ad1cb1e11bc",
+    "provider-evidence/cfbd-week9-games.derived.json": "93c451d471eab614127a5f4f8b6ca9e5d6d702033df1824a4b783574d7dae680",
+    "source-evidence/independent-visual-transcription.csv": "ecb4f9442a8975c16043044846d0cfc7ecfd4020ffe60dfb408d1999b61bd00e",
+    "source-evidence/screenshot-custody.json": "353b8b74ba54b8956a02ff5f9b27d0245f77c1584e15d5c216b36a25e6d0aa76",
+    "source-evidence/splashsports-01.png": "d2cc90e9265be7a31db75896fbc2a5fcd1ad4fedac9cf42b122d70d20c8477c2",
+    "source-evidence/splashsports-02.png": "bb9710f574d231ed652859465ec25dfd49ced7db13fa8e1171478d71eba8f0d1",
+    "source-evidence/splashsports-03.png": "421b92d8a77583f429e7387ba6f4a9de0dc8ee818bdd15b92825becb3d278d86",
+    "source-evidence/splashsports-04.png": "ff95d877b83d19c6de9ef9e25c682558e5d19bd792aaf470af75be49e2deda62",
+    "source-evidence/splashsports-05.png": "8b785ee1d6da2da9fe1f4fcd1b4ffcbc98eeef4786a6c8b8d9a2f79152caea94",
+    "source-evidence/splashsports-06.png": "4c257441b074273c13edc5a9e081d59b6384c1ca31480b6ab1f9793e259370e2",
+    "source-evidence/splashsports-07.png": "5895ca2087c4c56a716e07c26eb5063ac9e5615bffb988eddb8dc5d1b95bf9fd",
+    "source-evidence/splashsports-08.png": "22e9879e164c74c2deefc1ec4c98e2b04f2c0dfecdb254ddd30de411468f5da8",
+    "source-reconciliation.json": "6ff08fabf0e259976fe0467a6620aa97aabf045380c144955806c07ccad996c3",
+    "week11_ats_full_card.csv": "f31aa5dfdbfd2a0207e0516e7bc909f7b876fa796fe1e9f3c68deea74fdf1091",
+    "week11_ats_research_full_board.csv": "4670d0dedf785ae37244e6e28ce69c5af1cacfa7a45d2af2c9cbeb7e4686fcbf",
+    "week11_ats_research_top10.csv": "30c8c88f99d53265e2b8b96546811027ffcac57fc3dd09e9ec5ba4d4dabf78c9",
+    "week11_ats_research_top5.csv": "81fc555949b945360a3912fec0f35aeedcc03ff75fc63a75f6bfc04c94208770",
+    "week11_card_manifest.json": "b78d394e4ebb04077457374a401bcc704d7d88cfbeb412462593fba519c1e3d3",
+    "week11_human_review_shortlist.csv": "4801bc17b0e84b6bd22bf8e4849f34f79fdaa19929a08975b72fb306ad74e33a",
+    "week11_ingestion_manifest.json": "3d899f626d8df9f72b0c804e38bdf78765eaa3148fe6ee9c901a20a32eef03b5",
+    "week11_legacy_mixed_research_top5.csv": "547cfed171be8715af457c19b5757ff8025b881789f0e3b1cae0c845052e2aa4",
+    "week11_locked_line_snapshot.json": "f832a968bfe27efe9422ecdcd6945f1c802791d0a4ed30393ca7ce847498826b",
+    "week11_model_manifest.json": "b61bebaa2e7056ce6260e90eb0bf1876e378a4361d7ec1cf4cdf49817960a2ff",
+    "week11_raw_model_components.json": "6bd9ac8ad95dd69e1e7a21fdd7b136e8dbce24e61be10f557a12dc725da48625",
+    "week11_totals_full_card.csv": "60545a043840baf9b85e4f82df2d940ec1a2a0a763aad0ad24bfc8d514ceba8f",
+    "week11_totals_research_full_board.csv": "559f73f5ef2e197cd82a432281424cafee616e4d84a3d7e1f3a01436d8f045cb",
+    "week11_totals_research_top10.csv": "51a4c913b702ec8ff505d62ba1f74c56d8d7747f277ae26a8a3c54ce7ad38f0b",
+    "week11_totals_research_top5.csv": "3f7592aa9b44d36156f79affe3094cf89644f905883f56c07fd48551f1701750",
+    "week11_v28_governed_top5.csv": "c943a2f0c4db562c260391e2480ab4cf0febbdcc36b0291f290cfd34f199fa1b"
+  },
+  "seal_version": "week11-board-custody-v1",
+  "sealed_at_utc": "2026-11-12T12:10:25.542915+00:00",
+  "sealing_code_commit": "7ada8920bece4ba6cd09b1440af0446fa00be14f",
+  "source_sha256": {
+    "data/ingest/2026-week11-splashsports-schedule-reconciliation.csv": "16881fd0f9aa868a9f6953e5d210e1202bd53be600843bb3b6a348d5312d5437",
+    "data/ingest/2026-week11-splashsports-transcription.csv": "ee7ab2b94b7ce42d57deefac6aa478a8da09c011086f921cd2cf061147058faa",
+    "outputs/2026-week11-prospective/eligible-line-metadata.json": "8f61c98cd871bdd9e03256a77eafbaa0f8703318ce66f01a58e3d2ab21ed906c",
+    "outputs/2026-week11-prospective/eligible-lines.csv": "6e48f590e06ec1b69f6e351f1ef0cc679c88b7966c52c224ce48347a46706476",
+    "outputs/2026-week11-prospective/source-evidence/independent-visual-transcription.csv": "ecb4f9442a8975c16043044846d0cfc7ecfd4020ffe60dfb408d1999b61bd00e",
+    "outputs/2026-week11-prospective/source-evidence/screenshot-custody.json": "353b8b74ba54b8956a02ff5f9b27d0245f77c1584e15d5c216b36a25e6d0aa76",
+    "outputs/2026-week11-prospective/source-evidence/splashsports-01.png": "d2cc90e9265be7a31db75896fbc2a5fcd1ad4fedac9cf42b122d70d20c8477c2",
+    "outputs/2026-week11-prospective/source-evidence/splashsports-02.png": "bb9710f574d231ed652859465ec25dfd49ced7db13fa8e1171478d71eba8f0d1",
+    "outputs/2026-week11-prospective/source-evidence/splashsports-03.png": "421b92d8a77583f429e7387ba6f4a9de0dc8ee818bdd15b92825becb3d278d86",
+    "outputs/2026-week11-prospective/source-evidence/splashsports-04.png": "ff95d877b83d19c6de9ef9e25c682558e5d19bd792aaf470af75be49e2deda62",
+    "outputs/2026-week11-prospective/source-evidence/splashsports-05.png": "8b785ee1d6da2da9fe1f4fcd1b4ffcbc98eeef4786a6c8b8d9a2f79152caea94",
+    "outputs/2026-week11-prospective/source-evidence/splashsports-06.png": "4c257441b074273c13edc5a9e081d59b6384c1ca31480b6ab1f9793e259370e2",
+    "outputs/2026-week11-prospective/source-evidence/splashsports-07.png": "5895ca2087c4c56a716e07c26eb5063ac9e5615bffb988eddb8dc5d1b95bf9fd",
+    "outputs/2026-week11-prospective/source-evidence/splashsports-08.png": "22e9879e164c74c2deefc1ec4c98e2b04f2c0dfecdb254ddd30de411468f5da8",
+    "outputs/2026-week11-readiness/20261110T193209Z/capture-manifest.json": "70a2deefa08ad39d81f84c9b2e1c6ee00fa2d367cab41f9c9cf45edaebed691e",
+    "outputs/2026-week11-readiness/20261110T193209Z/cfbd-all-teams.json.gz": "282170329e27daa7597ec8b32f902a5f84534207de3c12a7fd21695b6ed213c6",
+    "outputs/2026-week11-readiness/20261110T193209Z/cfbd-fbs-teams.json.gz": "0852e9210f0eeb3c5d8d8e9b6281b4e7b62b98d381cf5f2c36af9658b071dbcd",
+    "outputs/2026-week11-readiness/20261110T193209Z/cfbd-games-all.json.gz": "85443f865c04f6be3ae98970368a0caa8bc93305ae9a48c7dbdce4d75e55ea5a",
+    "outputs/2026-week11-readiness/20261110T193209Z/cfbd-market-observations.json.gz": "e19de4656181a52a026150594460e2f34b06d2db3b4b765b299d61dddb1233ad",
+    "outputs/2026-week11-readiness/20261110T193209Z/cfbd-prior-season-advanced.json.gz": "cd38d4bdd9cf87f5113ef73d9ff3d69c0f7c86efb40d6cf00e96443a2f574505",
+    "outputs/2026-week11-readiness/20261110T193209Z/cfbd-prior-week10-advanced.json.gz": "f189372b72313609651d9c977581c94aa4c7376e3936872d55e57e0f9c212f45",
+    "outputs/2026-week11-readiness/20261110T193209Z/cfbd-prior-week10-drives.json.gz": "d57c9f990b5fbc1d5ce7c73d1297242a6e6f19c00a4ddb33e1ec04f73790735f",
+    "outputs/2026-week11-readiness/20261110T193209Z/cfbd-prior-week8-advanced.json.gz": "37cbc4128bd82712be773d170e901475be59f3e5787ecb0e8bf3b92a1587722f",
+    "outputs/2026-week11-readiness/20261110T193209Z/cfbd-prior-week8-drives.json.gz": "44b265b4ede9e9e824b13b24c16e7a5af89c949f6f668f4bb366377aa5f640c7",
+    "outputs/2026-week11-readiness/20261110T193209Z/cfbd-prior-week9-advanced.json.gz": "dd76991e347c67a4b8512cafaadaa4fd4348ed098f5de0d3d37d7052f9e0ef86",
+    "outputs/2026-week11-readiness/20261110T193209Z/cfbd-prior-week9-drives.json.gz": "87dbc48dc1a65535ec14fe9cc4649219fd998902a60331a0a36af9ebc031422c",
+    "outputs/2026-week11-readiness/20261110T193209Z/cfbd-venues.json.gz": "52285a2966d4543ff9de261a266c267455ef9bd8aaa20f7f7912691c2cee9939",
+    "outputs/2026-week11-readiness/20261110T193209Z/espn-schedule.json.gz": "0154e16564e868a51a8ff2a6e8ee388d04bef518126809c370b7c50c52b4a80c",
+    "outputs/2026-week11-readiness/20261110T193425Z-schedule-v2/capture-manifest.json": "6df4d2de2688a56e767939a50e63c2606733166dc28aadf93e4fbb2cdeead3e1",
+    "outputs/2026-week11-readiness/20261110T193425Z-schedule-v2/espn-week-schedule.json.gz": "c3dc3feea00e42ea5a89018e08fb940b3c7e34544c77b67e69881c06f6e6b986",
+    "outputs/2026-week11-readiness/20261111T153553Z-eligibility/capture-manifest.json": "cab6f3a42580947db9747135b12b5405903548e6010a781d6bfd2ffb4e423e35",
+    "outputs/2026-week11-readiness/20261111T153553Z-eligibility/cfbd.json.gz": "6ada3fef576ef5eeed895323ed6e6277ed7c76ab99929d930f10e78884277fdf",
+    "outputs/2026-week11-readiness/20261111T153553Z-eligibility/eligibility.json": "2d764ea28ed300472028e2f5d9542a3bead93a84988feb7d302c4592444ad452",
+    "outputs/2026-week11-readiness/20261111T153553Z-eligibility/espn.json.gz": "8599ff2d1d1fdbff0b6945cce87ec763fb805847340ccb9b7795d131f5485a42",
+    "outputs/2026-week11-readiness/prepared-v1/manifest.json": "29b4158af44514c71c370c3273ab0a418795a677c2f2befabcf5ece682b91c27",
+    "outputs/2026-week11-readiness/prepared-v1/resolver-aliases.json": "83390ad115fa8c3a878343f5b6a5bdccb9a0f6fc6545b2b8a429f60620e38ca4",
+    "outputs/2026-week11-readiness/prepared-v1/schedule.json": "0bfebc72af748804f073f775a0f3727fcc2bd0d4fdfa5a985709493c3020d627",
+    "production-weeks/2026-week11-splashsports-lock-metadata.json": "3b12cd8a0fb339ee30690b910bcefe1abeaeb879f0a5b4d45f895cf21a492b0a",
+    "production-weeks/2026-week11-splashsports.csv": "a27f367a38918e188cc2e8aa417b9a1970049ca02d0501789d00ccfdb0b12c22"
+  },
+  "validation": {
+    "ats_selections": 64,
+    "capture_after_recorded_kickoff_game_ids": [
+      "401866461",
+      "401866462",
+      "401866463"
+    ],
+    "capture_before_recorded_kickoff_count": 61,
+    "clv_status": "INCOMPLETE",
+    "combined_top5": "UNCALIBRATED_RESEARCH_ONLY",
+    "custody_mode": "late_capture",
+    "eligible_games": 64,
+    "excluded_elapsed_games": 3,
+    "first_eligible_kickoff_utc": "2026-11-12T00:30:00+00:00",
+    "game_custody_timing": [
+      {
+        "forecast_timestamp_before_kickoff": true,
+        "game_id": "401856857",
+        "kickoff_utc": "2026-11-14T20:30:00+00:00",
+        "pregame_external_seal_proven": false,
+        "seal_before_recorded_kickoff": true
+      },
+      {
+        "forecast_timestamp_before_kickoff": true,
+        "game_id": "401856858",
+        "kickoff_utc": "2026-11-14T20:30:00+00:00",
+        "pregame_external_seal_proven": false,
+        "seal_before_recorded_kickoff": true
+      },
+      {
+        "forecast_timestamp_before_kickoff": true,
+        "game_id": "401856859",
+        "kickoff_utc": "2026-11-14T17:00:00+00:00",
+        "pregame_external_seal_proven": false,
+        "seal_before_recorded_kickoff": true
+      },
+      {
+        "forecast_timestamp_before_kickoff": true,
+        "game_id": "401856860",
+        "kickoff_utc": "2026-11-14T03:15:00+00:00",
+        "pregame_external_seal_proven": false,
+        "seal_before_recorded_kickoff": true
+      },
+      {
+        "forecast_timestamp_before_kickoff": true,
+        "game_id": "401856861",
+        "kickoff_utc": "2026-11-14T22:30:00+00:00",
+        "pregame_external_seal_proven": false,
+        "seal_before_recorded_kickoff": true
+      },
+      {
+        "forecast_timestamp_before_kickoff": true,
+        "game_id": "401856862",
+        "kickoff_utc": "2026-11-14T19:00:00+00:00",
+        "pregame_external_seal_proven": false,
+        "seal_before_recorded_kickoff": true
+      },
+      {
+        "forecast_timestamp_before_kickoff": true,
+        "game_id": "401856863",
+        "kickoff_utc": "2026-11-15T02:30:00+00:00",
+        "pregame_external_seal_proven": false,
+        "seal_before_recorded_kickoff": true
+      },
+      {
+        "forecast_timestamp_before_kickoff": true,
+        "game_id": "401856864",
+        "kickoff_utc": "2026-11-15T00:30:00+00:00",
+        "pregame_external_seal_proven": false,
+        "seal_before_recorded_kickoff": true
+      },
+      {
+        "forecast_timestamp_before_kickoff": true,
+        "game_id": "401856882",
+        "kickoff_utc": "2026-11-15T00:45:00+00:00",
+        "pregame_external_seal_proven": false,
+        "seal_before_recorded_kickoff": true
+      },
+      {
+        "forecast_timestamp_before_kickoff": true,
+        "game_id": "401856883",
+        "kickoff_utc": "2026-11-14T20:30:00+00:00",
+        "pregame_external_seal_proven": false,
+        "seal_before_recorded_kickoff": true
+      },
+      {
+        "forecast_timestamp_before_kickoff": true,
+        "game_id": "401856884",
+        "kickoff_utc": "2026-11-14T23:15:00+00:00",
+        "pregame_external_seal_proven": false,
+        "seal_before_recorded_kickoff": true
+      },
+      {
+        "forecast_timestamp_before_kickoff": true,
+        "game_id": "401856885",
+        "kickoff_utc": "2026-11-15T00:30:00+00:00",
+        "pregame_external_seal_proven": false,
+        "seal_before_recorded_kickoff": true
+      },
+      {
+        "forecast_timestamp_before_kickoff": true,
+        "game_id": "401856886",
+        "kickoff_utc": "2026-11-14T17:00:00+00:00",
+        "pregame_external_seal_proven": false,
+        "seal_before_recorded_kickoff": true
+      },
+      {
+        "forecast_timestamp_before_kickoff": true,
+        "game_id": "401856887",
+        "kickoff_utc": "2026-11-14T21:15:00+00:00",
+        "pregame_external_seal_proven": false,
+        "seal_before_recorded_kickoff": true
+      },
+      {
+        "forecast_timestamp_before_kickoff": true,
+        "game_id": "401856888",
+        "kickoff_utc": "2026-11-14T20:00:00+00:00",
+        "pregame_external_seal_proven": false,
+        "seal_before_recorded_kickoff": true
+      },
+      {
+        "forecast_timestamp_before_kickoff": true,
+        "game_id": "401856889",
+        "kickoff_utc": "2026-11-14T17:45:00+00:00",
+        "pregame_external_seal_proven": false,
+        "seal_before_recorded_kickoff": true
+      },
+      {
+        "forecast_timestamp_before_kickoff": true,
+        "game_id": "401858293",
+        "kickoff_utc": "2026-11-14T00:00:00+00:00",
+        "pregame_external_seal_proven": false,
+        "seal_before_recorded_kickoff": true
+      },
+      {
+        "forecast_timestamp_before_kickoff": true,
+        "game_id": "401858294",
+        "kickoff_utc": "2026-11-14T20:30:00+00:00",
+        "pregame_external_seal_proven": false,
+        "seal_before_recorded_kickoff": true
+      },
+      {
+        "forecast_timestamp_before_kickoff": true,
+        "game_id": "401858295",
+        "kickoff_utc": "2026-11-14T20:30:00+00:00",
+        "pregame_external_seal_proven": false,
+        "seal_before_recorded_kickoff": true
+      },
+      {
+        "forecast_timestamp_before_kickoff": true,
+        "game_id": "401858296",
+        "kickoff_utc": "2026-11-14T17:00:00+00:00",
+        "pregame_external_seal_proven": false,
+        "seal_before_recorded_kickoff": true
+      },
+      {
+        "forecast_timestamp_before_kickoff": true,
+        "game_id": "401858297",
+        "kickoff_utc": "2026-11-14T17:30:00+00:00",
+        "pregame_external_seal_proven": false,
+        "seal_before_recorded_kickoff": true
+      },
+      {
+        "forecast_timestamp_before_kickoff": true,
+        "game_id": "401858298",
+        "kickoff_utc": "2026-11-15T00:00:00+00:00",
+        "pregame_external_seal_proven": false,
+        "seal_before_recorded_kickoff": true
+      },
+      {
+        "forecast_timestamp_before_kickoff": true,
+        "game_id": "401858299",
+        "kickoff_utc": "2026-11-15T00:30:00+00:00",
+        "pregame_external_seal_proven": false,
+        "seal_before_recorded_kickoff": true
+      },
+      {
+        "forecast_timestamp_before_kickoff": true,
+        "game_id": "401858300",
+        "kickoff_utc": "2026-11-14T17:00:00+00:00",
+        "pregame_external_seal_proven": false,
+        "seal_before_recorded_kickoff": true
+      },
+      {
+        "forecast_timestamp_before_kickoff": true,
+        "game_id": "401858301",
+        "kickoff_utc": "2026-11-14T17:00:00+00:00",
+        "pregame_external_seal_proven": false,
+        "seal_before_recorded_kickoff": true
+      },
+      {
+        "forecast_timestamp_before_kickoff": true,
+        "game_id": "401858518",
+        "kickoff_utc": "2026-11-14T20:30:00+00:00",
+        "pregame_external_seal_proven": false,
+        "seal_before_recorded_kickoff": true
+      },
+      {
+        "forecast_timestamp_before_kickoff": true,
+        "game_id": "401858519",
+        "kickoff_utc": "2026-11-15T00:30:00+00:00",
+        "pregame_external_seal_proven": false,
+        "seal_before_recorded_kickoff": true
+      },
+      {
+        "forecast_timestamp_before_kickoff": true,
+        "game_id": "401858520",
+        "kickoff_utc": "2026-11-14T17:00:00+00:00",
+        "pregame_external_seal_proven": false,
+        "seal_before_recorded_kickoff": true
+      },
+      {
+        "forecast_timestamp_before_kickoff": true,
+        "game_id": "401858521",
+        "kickoff_utc": "2026-11-14T21:15:00+00:00",
+        "pregame_external_seal_proven": false,
+        "seal_before_recorded_kickoff": true
+      },
+      {
+        "forecast_timestamp_before_kickoff": true,
+        "game_id": "401858522",
+        "kickoff_utc": "2026-11-14T17:00:00+00:00",
+        "pregame_external_seal_proven": false,
+        "seal_before_recorded_kickoff": true
+      },
+      {
+        "forecast_timestamp_before_kickoff": true,
+        "game_id": "401858523",
+        "kickoff_utc": "2026-11-14T20:30:00+00:00",
+        "pregame_external_seal_proven": false,
+        "seal_before_recorded_kickoff": true
+      },
+      {
+        "forecast_timestamp_before_kickoff": true,
+        "game_id": "401858524",
+        "kickoff_utc": "2026-11-15T00:00:00+00:00",
+        "pregame_external_seal_proven": false,
+        "seal_before_recorded_kickoff": true
+      },
+      {
+        "forecast_timestamp_before_kickoff": true,
+        "game_id": "401858525",
+        "kickoff_utc": "2026-11-14T17:30:00+00:00",
+        "pregame_external_seal_proven": false,
+        "seal_before_recorded_kickoff": true
+      },
+      {
+        "forecast_timestamp_before_kickoff": true,
+        "game_id": "401858526",
+        "kickoff_utc": "2026-11-14T02:00:00+00:00",
+        "pregame_external_seal_proven": false,
+        "seal_before_recorded_kickoff": true
+      },
+      {
+        "forecast_timestamp_before_kickoff": true,
+        "game_id": "401860914",
+        "kickoff_utc": "2026-11-14T23:00:00+00:00",
+        "pregame_external_seal_proven": false,
+        "seal_before_recorded_kickoff": true
+      },
+      {
+        "forecast_timestamp_before_kickoff": true,
+        "game_id": "401860915",
+        "kickoff_utc": "2026-11-15T02:30:00+00:00",
+        "pregame_external_seal_proven": false,
+        "seal_before_recorded_kickoff": true
+      },
+      {
+        "forecast_timestamp_before_kickoff": true,
+        "game_id": "401860916",
+        "kickoff_utc": "2026-11-14T21:00:00+00:00",
+        "pregame_external_seal_proven": false,
+        "seal_before_recorded_kickoff": true
+      },
+      {
+        "forecast_timestamp_before_kickoff": true,
+        "game_id": "401860917",
+        "kickoff_utc": "2026-11-15T03:30:00+00:00",
+        "pregame_external_seal_proven": false,
+        "seal_before_recorded_kickoff": true
+      },
+      {
+        "forecast_timestamp_before_kickoff": true,
+        "game_id": "401861967",
+        "kickoff_utc": "2026-11-14T17:00:00+00:00",
+        "pregame_external_seal_proven": false,
+        "seal_before_recorded_kickoff": true
+      },
+      {
+        "forecast_timestamp_before_kickoff": true,
+        "game_id": "401862824",
+        "kickoff_utc": "2026-11-13T01:00:00+00:00",
+        "pregame_external_seal_proven": false,
+        "seal_before_recorded_kickoff": true
+      },
+      {
+        "forecast_timestamp_before_kickoff": true,
+        "game_id": "401862825",
+        "kickoff_utc": "2026-11-14T18:00:00+00:00",
+        "pregame_external_seal_proven": false,
+        "seal_before_recorded_kickoff": true
+      },
+      {
+        "forecast_timestamp_before_kickoff": true,
+        "game_id": "401862826",
+        "kickoff_utc": "2026-11-14T20:30:00+00:00",
+        "pregame_external_seal_proven": false,
+        "seal_before_recorded_kickoff": true
+      },
+      {
+        "forecast_timestamp_before_kickoff": true,
+        "game_id": "401862827",
+        "kickoff_utc": "2026-11-15T02:00:00+00:00",
+        "pregame_external_seal_proven": false,
+        "seal_before_recorded_kickoff": true
+      },
+      {
+        "forecast_timestamp_before_kickoff": true,
+        "game_id": "401862828",
+        "kickoff_utc": "2026-11-14T19:00:00+00:00",
+        "pregame_external_seal_proven": false,
+        "seal_before_recorded_kickoff": true
+      },
+      {
+        "forecast_timestamp_before_kickoff": true,
+        "game_id": "401862829",
+        "kickoff_utc": "2026-11-14T18:00:00+00:00",
+        "pregame_external_seal_proven": false,
+        "seal_before_recorded_kickoff": true
+      },
+      {
+        "forecast_timestamp_before_kickoff": true,
+        "game_id": "401864536",
+        "kickoff_utc": "2026-11-14T20:30:00+00:00",
+        "pregame_external_seal_proven": false,
+        "seal_before_recorded_kickoff": true
+      },
+      {
+        "forecast_timestamp_before_kickoff": true,
+        "game_id": "401864537",
+        "kickoff_utc": "2026-11-15T04:00:00+00:00",
+        "pregame_external_seal_proven": false,
+        "seal_before_recorded_kickoff": true
+      },
+      {
+        "forecast_timestamp_before_kickoff": true,
+        "game_id": "401864538",
+        "kickoff_utc": "2026-11-15T00:00:00+00:00",
+        "pregame_external_seal_proven": false,
+        "seal_before_recorded_kickoff": true
+      },
+      {
+        "forecast_timestamp_before_kickoff": true,
+        "game_id": "401864539",
+        "kickoff_utc": "2026-11-15T00:30:00+00:00",
+        "pregame_external_seal_proven": false,
+        "seal_before_recorded_kickoff": true
+      },
+      {
+        "forecast_timestamp_before_kickoff": true,
+        "game_id": "401864540",
+        "kickoff_utc": "2026-11-15T03:00:00+00:00",
+        "pregame_external_seal_proven": false,
+        "seal_before_recorded_kickoff": true
+      },
+      {
+        "forecast_timestamp_before_kickoff": true,
+        "game_id": "401866461",
+        "kickoff_utc": "2026-11-12T00:30:00+00:00",
+        "pregame_external_seal_proven": false,
+        "seal_before_recorded_kickoff": false
+      },
+      {
+        "forecast_timestamp_before_kickoff": true,
+        "game_id": "401866462",
+        "kickoff_utc": "2026-11-12T00:30:00+00:00",
+        "pregame_external_seal_proven": false,
+        "seal_before_recorded_kickoff": false
+      },
+      {
+        "forecast_timestamp_before_kickoff": true,
+        "game_id": "401866463",
+        "kickoff_utc": "2026-11-12T00:30:00+00:00",
+        "pregame_external_seal_proven": false,
+        "seal_before_recorded_kickoff": false
+      },
+      {
+        "forecast_timestamp_before_kickoff": true,
+        "game_id": "401869928",
+        "kickoff_utc": "2026-11-14T23:00:00+00:00",
+        "pregame_external_seal_proven": false,
+        "seal_before_recorded_kickoff": true
+      },
+      {
+        "forecast_timestamp_before_kickoff": true,
+        "game_id": "401869937",
+        "kickoff_utc": "2026-11-14T18:00:00+00:00",
+        "pregame_external_seal_proven": false,
+        "seal_before_recorded_kickoff": true
+      },
+      {
+        "forecast_timestamp_before_kickoff": true,
+        "game_id": "401869952",
+        "kickoff_utc": "2026-11-14T20:30:00+00:00",
+        "pregame_external_seal_proven": false,
+        "seal_before_recorded_kickoff": true
+      },
+      {
+        "forecast_timestamp_before_kickoff": true,
+        "game_id": "401869969",
+        "kickoff_utc": "2026-11-13T02:00:00+00:00",
+        "pregame_external_seal_proven": false,
+        "seal_before_recorded_kickoff": true
+      },
+      {
+        "forecast_timestamp_before_kickoff": true,
+        "game_id": "401870752",
+        "kickoff_utc": "2026-11-14T20:30:00+00:00",
+        "pregame_external_seal_proven": false,
+        "seal_before_recorded_kickoff": true
+      },
+      {
+        "forecast_timestamp_before_kickoff": true,
+        "game_id": "401870769",
+        "kickoff_utc": "2026-11-14T19:00:00+00:00",
+        "pregame_external_seal_proven": false,
+        "seal_before_recorded_kickoff": true
+      },
+      {
+        "forecast_timestamp_before_kickoff": true,
+        "game_id": "401870796",
+        "kickoff_utc": "2026-11-14T20:00:00+00:00",
+        "pregame_external_seal_proven": false,
+        "seal_before_recorded_kickoff": true
+      },
+      {
+        "forecast_timestamp_before_kickoff": true,
+        "game_id": "401871060",
+        "kickoff_utc": "2026-11-14T20:00:00+00:00",
+        "pregame_external_seal_proven": false,
+        "seal_before_recorded_kickoff": true
+      },
+      {
+        "forecast_timestamp_before_kickoff": true,
+        "game_id": "401871061",
+        "kickoff_utc": "2026-11-14T20:30:00+00:00",
+        "pregame_external_seal_proven": false,
+        "seal_before_recorded_kickoff": true
+      },
+      {
+        "forecast_timestamp_before_kickoff": true,
+        "game_id": "401871099",
+        "kickoff_utc": "2026-11-14T22:00:00+00:00",
+        "pregame_external_seal_proven": false,
+        "seal_before_recorded_kickoff": true
+      },
+      {
+        "forecast_timestamp_before_kickoff": true,
+        "game_id": "401871100",
+        "kickoff_utc": "2026-11-15T00:00:00+00:00",
+        "pregame_external_seal_proven": false,
+        "seal_before_recorded_kickoff": true
+      }
+    ],
+    "model_code_commit": "b3f27eb120487cb4cb71d7b626fe65c14e0bb701",
+    "model_policy_change": false,
+    "status": "LATE_CUSTODY_CAPTURE_NOT_FULL_PREGAME_SEAL",
+    "timestamp_evidence_limit": "Local recorded generation timestamps are not independent proof of pregame external sealing. Recorded kickoff comparison does not refresh live eligibility.",
+    "total_selections": 64
+  }
+}
