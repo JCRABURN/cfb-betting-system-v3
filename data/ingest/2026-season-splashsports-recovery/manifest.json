@@ -1,0 +1,212 @@
+{
+  "season": 2026,
+  "source": "Owner-supplied Splash.zip, SplashSports printed contest entries",
+  "zip_sha256": "3651f25a03ad64fe2ede4b79fcda8b175c4dd5a174d2ffd154e10b4fdfe9386c",
+  "weeks": [
+    {
+      "week": 1,
+      "filename": "Week 1.pdf",
+      "sha256": "ed1a2c26d8c9d692aa3021eb181b789365c56e194f7690ed677fec1e8b6c7a55",
+      "size_bytes": 224378,
+      "pages": 5,
+      "games": 43,
+      "selected_picks": 5,
+      "game_rows_by_page": [
+        9,
+        12,
+        12,
+        10,
+        0
+      ]
+    },
+    {
+      "week": 2,
+      "filename": "Week 2.pdf",
+      "sha256": "82a6a9860ddf7c6847bfd39d630cec74e4702907ba3769dd3dbc07aff342256c",
+      "size_bytes": 243801,
+      "pages": 5,
+      "games": 49,
+      "selected_picks": 5,
+      "game_rows_by_page": [
+        10,
+        12,
+        12,
+        12,
+        3
+      ]
+    },
+    {
+      "week": 3,
+      "filename": "Week 3.pdf",
+      "sha256": "a22cecf161670c25329a5941a27fc85e56db288e77b758ec2053ad99fd3488fa",
+      "size_bytes": 270239,
+      "pages": 6,
+      "games": 57,
+      "selected_picks": 5,
+      "game_rows_by_page": [
+        9,
+        12,
+        12,
+        12,
+        12,
+        0
+      ]
+    },
+    {
+      "week": 4,
+      "filename": "Week 4.pdf",
+      "sha256": "e3d4087191012751ed9a34873bc921bf8e9f560219a72029b7a25027894be024",
+      "size_bytes": 255513,
+      "pages": 6,
+      "games": 58,
+      "selected_picks": 5,
+      "game_rows_by_page": [
+        9,
+        12,
+        12,
+        12,
+        12,
+        1
+      ]
+    },
+    {
+      "week": 5,
+      "filename": "Week 5.pdf",
+      "sha256": "6b276c1c138a055226802e9472c025a3bad4fc0dba26f6e791774bb6d8788529",
+      "size_bytes": 267564,
+      "pages": 6,
+      "games": 56,
+      "selected_picks": 5,
+      "game_rows_by_page": [
+        9,
+        12,
+        12,
+        12,
+        11,
+        0
+      ]
+    },
+    {
+      "week": 6,
+      "filename": "Week 6.pdf",
+      "sha256": "1f0c57521c320f5d9182a0d3a2820651f890517352066e290dfb28406782802f",
+      "size_bytes": 275776,
+      "pages": 6,
+      "games": 58,
+      "selected_picks": 5,
+      "game_rows_by_page": [
+        9,
+        12,
+        12,
+        12,
+        12,
+        1
+      ]
+    },
+    {
+      "week": 7,
+      "filename": "Week 7.pdf",
+      "sha256": "4db110c0d8b353af2cc4b258510d6498ccac437a0d0a7eb23604769669b9f0c1",
+      "size_bytes": 279094,
+      "pages": 6,
+      "games": 59,
+      "selected_picks": 5,
+      "game_rows_by_page": [
+        9,
+        12,
+        12,
+        12,
+        12,
+        2
+      ]
+    },
+    {
+      "week": 8,
+      "filename": "Week 8.pdf",
+      "sha256": "1e9731a2ff0fe7a63397f26c562b53c9220b2e3ba2f492b844dc1a879a559bf7",
+      "size_bytes": 268130,
+      "pages": 6,
+      "games": 56,
+      "selected_picks": 5,
+      "game_rows_by_page": [
+        9,
+        12,
+        12,
+        12,
+        11,
+        0
+      ]
+    },
+    {
+      "week": 9,
+      "filename": "Week 9.pdf",
+      "sha256": "69506f787be37fa3ad24cbfa0fcefac3807da8ba98f5f4a55b411519e554fc93",
+      "size_bytes": 268405,
+      "pages": 6,
+      "games": 56,
+      "selected_picks": 5,
+      "game_rows_by_page": [
+        9,
+        12,
+        12,
+        12,
+        11,
+        0
+      ]
+    },
+    {
+      "week": 10,
+      "filename": "Week 10.pdf",
+      "sha256": "831daf2cabcc32e810154063fded4c6f32a6b75e94ecb9411e5465365b8be5c8",
+      "size_bytes": 288863,
+      "pages": 6,
+      "games": 62,
+      "selected_picks": 5,
+      "game_rows_by_page": [
+        9,
+        12,
+        12,
+        12,
+        12,
+        5
+      ]
+    },
+    {
+      "week": 11,
+      "filename": "Week 11.pdf",
+      "sha256": "c3ef564cfd52cf8a5404ee34f6e0c376e1de5d914e8181a58a6634418ef011e7",
+      "size_bytes": 305373,
+      "pages": 7,
+      "games": 67,
+      "selected_picks": 5,
+      "game_rows_by_page": [
+        9,
+        12,
+        12,
+        12,
+        12,
+        10,
+        0
+      ]
+    }
+  ],
+  "total_games": 621,
+  "total_selections": 55,
+  "print_date": "2026-11-16",
+  "method": "Native PDF text coordinates and vector button outlines; selected button dark outline matched to displayed points; all weeks have exactly five weights 1–5",
+  "limitations": [
+    "Postgame PDF exports show contest entry selections, not original model forecast or pregame source timestamp.",
+    "No final scores in exports. Reconcile independently against audited results.",
+    "Displayed kickoff times can be revised after original Tuesday lock; preserve both.",
+    "Owner attests model selected all submitted picks. Do not infer specific ranking method."
+  ],
+  "outputs": {
+    "2026-splashsports-all-contest-lines.csv": "56349e335565e9244c55cf54e4e7f5d048a25e84951cdefb62c09152776fec41",
+    "2026-splashsports-submitted-picks.csv": "7f4a2d038afe889ddf1cf805aaf1d02dca2ebb90b422d191169b013b26e6889d"
+  },
+  "repository_original_pdf_custody": "Original ZIP and each PDF inspected and SHA-256 computed in ChatGPT runtime; original binaries are not included in this commit. Preserve the owner-uploaded archive separately and verify these hashes when copying it into durable repository or approved source storage.",
+  "classification": "OWNER_POSTGAME_CONTEST_EXPORT_TRANSCRIPTION_NOT_ORIGINAL_PREGAME_MODEL_CUSTODY",
+  "owner_attestation_path": "data/ingest/2026-season-owner-model-origin-attestation.json",
+  "line_convention": "away_spread and home_spread are original displayed signs, mutually opposite. selected_line is chosen team's spread or chosen total. Do not replace existing Tuesday locks.",
+  "timezone": "Displayed local kickoff as printed, contest deadline uses CDT/CST. Actual provider date/time reconciliation pending."
+}

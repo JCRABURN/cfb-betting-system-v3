@@ -1,0 +1,56 @@
+week,source_order,pdf,page,game_date,kickoff_display,away_code,home_code,away_team,home_team,away_record,home_record,away_spread,home_spread,total,selected_market,selected_side,selected_pick,selected_line,contest_weight
+1,22,Week 1.pdf,3,2026-09-05,Sat 2:30pm,BSU,ORE,Boise State,Oregon,0-0,0-0,24.5,-24.5,51.5,ATS,AWAY,Boise State,24.5,5
+1,38,Week 1.pdf,4,2026-09-05,Sat 9:30pm,UCLA,CAL,UCLA,California,0-0,0-0,-1.5,1.5,53.5,ATS,HOME,California,1.5,4
+1,8,Week 1.pdf,1,2026-09-04,Fri 8:00pm,FRES,USC,Fresno State,USC,0-0,1-0,21.5,-21.5,51.5,ATS,AWAY,Fresno State,21.5,3
+1,37,Week 1.pdf,4,2026-09-05,Sat 9:00pm,UNLV,HAW,UNLV,Hawai'i,0-1,0-1,-3.5,3.5,56.5,ATS,HOME,Hawai'i,3.5,2
+1,24,Week 1.pdf,3,2026-09-05,Sat 2:30pm,BAY,AUB,Baylor,Auburn,0-0,0-0,7.5,-7.5,59.5,ATS,AWAY,Baylor,7.5,1
+2,23,Week 2.pdf,3,2026-09-12,Sat 2:30pm,USU,WASH,Utah State,Washington,0-1,1-0,27.5,-27.5,55.5,TOTAL,UNDER,UNDER,55.5,5
+2,3,Week 2.pdf,1,2026-09-12,Sat 11:00am,OKLA,MICH,Oklahoma,Michigan,1-0,1-0,-5.5,5.5,43.5,ATS,AWAY,Oklahoma,-5.5,4
+2,48,Week 2.pdf,5,2026-09-12,Sat 10:00pm,ULL,USC,Louisiana,USC,1-0,2-0,30.5,-30.5,60.5,TOTAL,UNDER,UNDER,60.5,3
+2,2,Week 2.pdf,1,2026-09-11,Fri 7:00pm,MIZZ,KU,Missouri,Kansas,1-0,1-0,-5.5,5.5,50.5,ATS,HOME,Kansas,5.5,2
+2,24,Week 2.pdf,3,2026-09-12,Sat 2:30pm,UTSA,TXST,UTSA,Texas State,1-0,0-1,1.5,-1.5,66.5,TOTAL,UNDER,UNDER,66.5,1
+3,2,Week 3.pdf,1,2026-09-18,Fri 6:30pm,MIA,WAKE,Miami (FL),Wake Forest,2-0,2-0,-20.5,20.5,55.5,ATS,AWAY,Miami (FL),-20.5,5
+3,23,Week 3.pdf,3,2026-09-19,Sat 2:30pm,SMU,LOU,SMU,Louisville,2-0,1-1,2.5,-2.5,59.5,ATS,AWAY,SMU,2.5,4
+3,46,Week 3.pdf,5,2026-09-19,Sat 6:30pm,COLO,NW,Colorado,Northwestern,2-0,1-0,3.5,-3.5,48.5,ATS,AWAY,Colorado,3.5,3
+3,16,Week 3.pdf,2,2026-09-19,Sat 12:00pm,WYO,CMU,Wyoming,Central Michigan,1-1,1-1,1.5,-1.5,39.5,TOTAL,OVER,OVER,39.5,2
+3,24,Week 3.pdf,3,2026-09-19,Sat 3:00pm,WKU,IND,Western Kentucky,Indiana,0-2,2-0,44.5,-44.5,60.5,TOTAL,UNDER,UNDER,60.5,1
+4,4,Week 4.pdf,1,2026-09-25,Fri 7:00pm,NW,IND,Northwestern,Indiana,2-0,3-0,20.5,-20.5,49.5,TOTAL,OVER,OVER,49.5,5
+4,25,Week 4.pdf,3,2026-09-26,Sat 2:30pm,TCU,UCF,TCU,UCF,2-1,2-1,-3.5,3.5,48.5,TOTAL,OVER,OVER,48.5,4
+4,29,Week 4.pdf,3,2026-09-26,Sat 3:00pm,HOU,GASO,Houston,Georgia Southern,2-1,1-2,-18.5,18.5,56.5,ATS,AWAY,Houston,-18.5,3
+4,31,Week 4.pdf,3,2026-09-26,Sat 4:00pm,NEB,MSU,Nebraska,Michigan State,3-0,2-1,-5.5,5.5,48.5,ATS,AWAY,Nebraska,-5.5,2
+4,45,Week 4.pdf,4,2026-09-26,Sat 6:30pm,ORE,USC,Oregon,USC,2-1,4-0,-2.5,2.5,61.5,ATS,AWAY,Oregon,-2.5,1
+5,4,Week 5.pdf,1,2026-10-02,Fri 6:00pm,PITT,VT,Pittsburgh,Virginia Tech,4-0,4-0,3.5,-3.5,54.5,ATS,AWAY,Pittsburgh,3.5,5
+5,13,Week 5.pdf,2,2026-10-03,Sat 11:00am,ALA,MSST,Alabama,Mississippi State,4-0,4-0,-5.5,5.5,60.5,ATS,HOME,Mississippi State,5.5,4
+5,55,Week 5.pdf,5,2026-10-03,Sat 10:00pm,CIN,ARIZ,Cincinnati,Arizona,4-0,3-1,7.5,-7.5,55.5,ATS,AWAY,Cincinnati,7.5,3
+5,5,Week 5.pdf,1,2026-10-02,Fri 7:00pm,PSU,NW,Penn State,Northwestern,3-1,2-1,-2.5,2.5,45.5,ATS,HOME,Northwestern,2.5,2
+5,47,Week 5.pdf,5,2026-10-03,Sat 6:30pm,TTU,COLO,Texas Tech,Colorado,4-0,2-2,-13.5,13.5,50.5,ATS,AWAY,Texas Tech,-13.5,1
+6,34,Week 6.pdf,4,2026-10-10,Sat 2:30pm,MISS,VAN,Ole Miss,Vanderbilt,3-1,3-2,-10.5,10.5,58.5,ATS,HOME,Vanderbilt,10.5,5
+6,19,Week 6.pdf,2,2026-10-10,Sat 11:00am,UCF,OKST,UCF,Oklahoma State,3-2,3-1,9.5,-9.5,53.5,TOTAL,UNDER,UNDER,53.5,4
+6,13,Week 6.pdf,2,2026-10-10,Sat 11:00am,TULN,ARMY,Tulane,Army,2-2,2-2,3.5,-3.5,47.5,TOTAL,OVER,OVER,47.5,3
+6,43,Week 6.pdf,4,2026-10-10,Sat 5:00pm,SDSU,ORST,San Diego State,Oregon State,2-3,3-2,14.5,-14.5,55.5,TOTAL,UNDER,UNDER,55.5,2
+6,27,Week 6.pdf,3,2026-10-10,Sat 2:30pm,STAN,ND,Stanford,Notre Dame,2-3,5-0,37.5,-37.5,53.5,ATS,AWAY,Stanford,37.5,1
+7,35,Week 7.pdf,4,2026-10-17,Sat 2:30pm,UNLV,AFA,UNLV,Air Force,4-2,4-1,-1.5,1.5,48.5,ATS,HOME,Air Force,1.5,5
+7,16,Week 7.pdf,2,2026-10-17,Sat 11:00am,OSU,IND,Ohio State,Indiana,5-1,6-0,-3.5,3.5,50.5,ATS,HOME,Indiana,3.5,4
+7,17,Week 7.pdf,2,2026-10-17,Sat 11:00am,GAST,JMU,Georgia State,James Madison,4-1,6-0,12.5,-12.5,57.5,ATS,AWAY,Georgia State,12.5,3
+7,59,Week 7.pdf,6,2026-10-17,Sat 10:00pm,NEB,ORE,Nebraska,Oregon,5-1,3-2,7.5,-7.5,52.5,ATS,AWAY,Nebraska,7.5,2
+7,7,Week 7.pdf,1,2026-10-15,Thu 7:00pm,CSU,TXST,Colorado State,Texas State,2-3,2-3,14.5,-14.5,69.5,TOTAL,UNDER,UNDER,69.5,1
+8,24,Week 8.pdf,3,2026-10-24,Sat 12:00pm,M-OH,CMU,Miami (OH),Central Michigan,4-3,3-4,-2.5,2.5,40.5,TOTAL,OVER,OVER,40.5,5
+8,44,Week 8.pdf,4,2026-10-24,Sat 5:30pm,SDSU,CSU,San Diego State,Colorado State,3-4,2-4,-1.5,1.5,64.5,TOTAL,UNDER,UNDER,64.5,4
+8,49,Week 8.pdf,5,2026-10-24,Sat 6:30pm,USU,TXST,Utah State,Texas State,2-4,3-3,12.5,-12.5,60.5,TOTAL,UNDER,UNDER,60.5,3
+8,47,Week 8.pdf,5,2026-10-24,Sat 6:00pm,COLO,OKST,Colorado,Oklahoma State,2-4,4-2,13.5,-13.5,55.5,TOTAL,UNDER,UNDER,55.5,2
+8,22,Week 8.pdf,3,2026-10-24,Sat 12:00pm,BAY,KU,Baylor,Kansas,4-2,2-4,-2.5,2.5,53.5,TOTAL,UNDER,UNDER,53.5,1
+9,30,Week 9.pdf,3,2026-10-31,Sat 2:30pm,NW,ORE,Northwestern,Oregon,6-1,4-3,3.5,-3.5,47.5,ATS,AWAY,Northwestern,3.5,5
+9,12,Week 9.pdf,2,2026-10-31,Sat 11:00am,ND,NAVY,Notre Dame,Navy,6-1,2-5,-30.5,30.5,57.5,ATS,HOME,Navy,30.5,4
+9,34,Week 9.pdf,4,2026-10-31,Sat 2:30pm,USM,ULM,Southern Miss,Louisiana-Monroe,2-5,1-6,-3.5,3.5,56.5,TOTAL,UNDER,UNDER,56.5,3
+9,17,Week 9.pdf,2,2026-10-31,Sat 11:00am,SMU,SYR,SMU,Syracuse,6-1,3-4,-10.5,10.5,58.5,TOTAL,UNDER,UNDER,58.5,2
+9,5,Week 9.pdf,1,2026-10-29,Thu 6:30pm,TROY,JMU,Troy,James Madison,3-4,7-1,20.5,-20.5,49.5,ATS,AWAY,Troy,20.5,1
+10,19,Week 10.pdf,2,2026-11-07,Sat 11:00am,TEX,MIZZ,Texas,Missouri,6-2,6-2,-2.5,2.5,43.5,ATS,HOME,Missouri,2.5,5
+10,13,Week 10.pdf,2,2026-11-07,Sat 11:00am,FSU,BC,Florida State,Boston College,3-5,4-4,-6.5,6.5,51.5,ATS,HOME,Boston College,6.5,4
+10,18,Week 10.pdf,2,2026-11-07,Sat 11:00am,UNC,CONN,North Carolina,UConn,4-4,4-4,-6.5,6.5,54.5,ATS,HOME,UConn,6.5,3
+10,7,Week 10.pdf,1,2026-11-05,Thu 7:00pm,JMU,USM,James Madison,Southern Miss,7-2,3-5,-14.5,14.5,58.5,TOTAL,UNDER,UNDER,58.5,2
+10,54,Week 10.pdf,5,2026-11-07,Sat 6:30pm,AFA,ARMY,Air Force,Army,6-2,5-3,3.5,-3.5,45.5,TOTAL,OVER,OVER,45.5,1
+11,18,Week 11.pdf,2,2026-11-14,Sat 11:00am,WAKE,SMU,Wake Forest,SMU,8-1,7-2,1.5,-1.5,61.5,ATS,AWAY,Wake Forest,1.5,5
+11,52,Week 11.pdf,5,2026-11-14,Sat 6:00pm,MINN,PSU,Minnesota,Penn State,5-4,5-4,8.5,-8.5,41.5,ATS,HOME,Penn State,-8.5,4
+11,47,Week 11.pdf,5,2026-11-14,Sat 5:00pm,ORST,BSU,Oregon State,Boise State,5-4,8-1,12.5,-12.5,65.5,ATS,HOME,Boise State,-12.5,3
+11,62,Week 11.pdf,6,2026-11-14,Sat 8:30pm,TTU,OKST,Texas Tech,Oklahoma State,8-1,6-3,3.5,-3.5,73.5,TOTAL,UNDER,UNDER,73.5,2
+11,12,Week 11.pdf,2,2026-11-14,Sat 11:00am,DUKE,MIA,Duke,Miami (FL),7-2,8-1,13.5,-13.5,53.5,TOTAL,OVER,OVER,53.5,1
