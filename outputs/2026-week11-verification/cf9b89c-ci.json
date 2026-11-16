@@ -1,0 +1,412 @@
+{
+  "observed_at_utc": "2026-11-13 13:06:05 UTC",
+  "source_sha": "cf9b89c9fca8f43dced5f43a8123259a0b6cb412",
+  "tested_merge_sha": "76c79e20627c3de2afa605f69783a3cbd825f26b",
+  "base_sha": "d3ba84db74b67a6e4dd8d61e49f28c0759d3a34e",
+  "source_and_merge_tree": "03798c7d6cb4294bf8db370a8038d18f277ef7a6",
+  "workflow_url": "https://github.com/JCRABURN/cfb-betting-system-v3/actions/runs/43218147672",
+  "jobs": [
+    {
+      "id": 131182722594,
+      "name": "test (ubuntu-latest, 3.12.14)",
+      "conclusion": "success",
+      "steps": [
+        {
+          "name": "Set up job",
+          "conclusion": "success"
+        },
+        {
+          "name": "Checkout repository",
+          "conclusion": "success"
+        },
+        {
+          "name": "Set up Python",
+          "conclusion": "success"
+        },
+        {
+          "name": "Install locked dependencies",
+          "conclusion": "success"
+        },
+        {
+          "name": "Verify repository safety controls",
+          "conclusion": "success"
+        },
+        {
+          "name": "Verify migrations on a disposable database copy",
+          "conclusion": "success"
+        },
+        {
+          "name": "Verify managed PostgreSQL migration inventory",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run complete test suite",
+          "conclusion": "success"
+        },
+        {
+          "name": "Verify exact historical audit and prospective custody",
+          "conclusion": "success"
+        },
+        {
+          "name": "Verify exact Week 9 formal postgame audit",
+          "conclusion": "success"
+        },
+        {
+          "name": "Verify Week 9 scoring-process supersession",
+          "conclusion": "success"
+        },
+        {
+          "name": "Capture native replay comparisons",
+          "conclusion": "success"
+        },
+        {
+          "name": "Archive replay comparisons",
+          "conclusion": "success"
+        },
+        {
+          "name": "Verify exact Week 10 prospective custody",
+          "conclusion": "success"
+        },
+        {
+          "name": "Verify exact Week 10 forensic audit and prospective research grading",
+          "conclusion": "success"
+        },
+        {
+          "name": "Verify Week 11 source custody and schedule readiness without contest lines",
+          "conclusion": "success"
+        },
+        {
+          "name": "Verify separate Week 11 preparation research diagnostics",
+          "conclusion": "success"
+        },
+        {
+          "name": "Verify concurrent owner transcription custody and elapsed-game gate",
+          "conclusion": "success"
+        },
+        {
+          "name": "Verify Week 11 complete board, explicit late custody and separate research",
+          "conclusion": "success"
+        },
+        {
+          "name": "Post Set up Python",
+          "conclusion": "success"
+        },
+        {
+          "name": "Post Checkout repository",
+          "conclusion": "success"
+        },
+        {
+          "name": "Complete job",
+          "conclusion": "success"
+        }
+      ],
+      "evidence": [
+        "2026-11-12T12:28:35.1341912Z HEAD is now at 76c79e2 Merge cf9b89c9fca8f43dced5f43a8123259a0b6cb412 into d3ba84db74b67a6e4dd8d61e49f28c0759d3a34e",
+        "2026-11-12T12:28:35.1426159Z 76c79e20627c3de2afa605f69783a3cbd825f26b",
+        "2026-11-12T12:38:34.3956114Z 1136 passed, 39 warnings in 587.98s (0:09:47)"
+      ]
+    },
+    {
+      "id": 131182723002,
+      "name": "test (ubuntu-latest, 3.11.17)",
+      "conclusion": "success",
+      "steps": [
+        {
+          "name": "Set up job",
+          "conclusion": "success"
+        },
+        {
+          "name": "Checkout repository",
+          "conclusion": "success"
+        },
+        {
+          "name": "Set up Python",
+          "conclusion": "success"
+        },
+        {
+          "name": "Install locked dependencies",
+          "conclusion": "success"
+        },
+        {
+          "name": "Verify repository safety controls",
+          "conclusion": "success"
+        },
+        {
+          "name": "Verify migrations on a disposable database copy",
+          "conclusion": "success"
+        },
+        {
+          "name": "Verify managed PostgreSQL migration inventory",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run complete test suite",
+          "conclusion": "success"
+        },
+        {
+          "name": "Verify exact historical audit and prospective custody",
+          "conclusion": "success"
+        },
+        {
+          "name": "Verify exact Week 9 formal postgame audit",
+          "conclusion": "success"
+        },
+        {
+          "name": "Verify Week 9 scoring-process supersession",
+          "conclusion": "success"
+        },
+        {
+          "name": "Capture native replay comparisons",
+          "conclusion": "success"
+        },
+        {
+          "name": "Archive replay comparisons",
+          "conclusion": "success"
+        },
+        {
+          "name": "Verify exact Week 10 prospective custody",
+          "conclusion": "success"
+        },
+        {
+          "name": "Verify exact Week 10 forensic audit and prospective research grading",
+          "conclusion": "success"
+        },
+        {
+          "name": "Verify Week 11 source custody and schedule readiness without contest lines",
+          "conclusion": "success"
+        },
+        {
+          "name": "Verify separate Week 11 preparation research diagnostics",
+          "conclusion": "success"
+        },
+        {
+          "name": "Verify concurrent owner transcription custody and elapsed-game gate",
+          "conclusion": "success"
+        },
+        {
+          "name": "Verify Week 11 complete board, explicit late custody and separate research",
+          "conclusion": "success"
+        },
+        {
+          "name": "Post Set up Python",
+          "conclusion": "success"
+        },
+        {
+          "name": "Post Checkout repository",
+          "conclusion": "success"
+        },
+        {
+          "name": "Complete job",
+          "conclusion": "success"
+        }
+      ],
+      "evidence": [
+        "2026-11-12T12:28:36.1500847Z HEAD is now at 76c79e2 Merge cf9b89c9fca8f43dced5f43a8123259a0b6cb412 into d3ba84db74b67a6e4dd8d61e49f28c0759d3a34e",
+        "2026-11-12T12:28:36.1648408Z 76c79e20627c3de2afa605f69783a3cbd825f26b",
+        "2026-11-12T12:37:44.8581125Z 1136 passed in 535.52s (0:08:55)"
+      ]
+    },
+    {
+      "id": 131182723111,
+      "name": "test (windows-latest, 3.12.10)",
+      "conclusion": "success",
+      "steps": [
+        {
+          "name": "Set up job",
+          "conclusion": "success"
+        },
+        {
+          "name": "Checkout repository",
+          "conclusion": "success"
+        },
+        {
+          "name": "Set up Python",
+          "conclusion": "success"
+        },
+        {
+          "name": "Install locked dependencies",
+          "conclusion": "success"
+        },
+        {
+          "name": "Verify repository safety controls",
+          "conclusion": "success"
+        },
+        {
+          "name": "Verify migrations on a disposable database copy",
+          "conclusion": "success"
+        },
+        {
+          "name": "Verify managed PostgreSQL migration inventory",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run complete test suite",
+          "conclusion": "success"
+        },
+        {
+          "name": "Verify exact historical audit and prospective custody",
+          "conclusion": "success"
+        },
+        {
+          "name": "Verify exact Week 9 formal postgame audit",
+          "conclusion": "success"
+        },
+        {
+          "name": "Verify Week 9 scoring-process supersession",
+          "conclusion": "success"
+        },
+        {
+          "name": "Capture native replay comparisons",
+          "conclusion": "success"
+        },
+        {
+          "name": "Archive replay comparisons",
+          "conclusion": "success"
+        },
+        {
+          "name": "Verify exact Week 10 prospective custody",
+          "conclusion": "success"
+        },
+        {
+          "name": "Verify exact Week 10 forensic audit and prospective research grading",
+          "conclusion": "success"
+        },
+        {
+          "name": "Verify Week 11 source custody and schedule readiness without contest lines",
+          "conclusion": "success"
+        },
+        {
+          "name": "Verify separate Week 11 preparation research diagnostics",
+          "conclusion": "success"
+        },
+        {
+          "name": "Verify concurrent owner transcription custody and elapsed-game gate",
+          "conclusion": "success"
+        },
+        {
+          "name": "Verify Week 11 complete board, explicit late custody and separate research",
+          "conclusion": "success"
+        },
+        {
+          "name": "Post Set up Python",
+          "conclusion": "success"
+        },
+        {
+          "name": "Post Checkout repository",
+          "conclusion": "success"
+        },
+        {
+          "name": "Complete job",
+          "conclusion": "success"
+        }
+      ],
+      "evidence": [
+        "2026-11-12T12:28:45.0488415Z HEAD is now at 76c79e2 Merge cf9b89c9fca8f43dced5f43a8123259a0b6cb412 into d3ba84db74b67a6e4dd8d61e49f28c0759d3a34e\r",
+        "2026-11-12T12:28:45.1816730Z 76c79e20627c3de2afa605f69783a3cbd825f26b\r",
+        "2026-11-12T12:44:42.8857017Z 1136 passed, 39 warnings in 935.06s (0:15:35)\r"
+      ]
+    },
+    {
+      "id": 131182723171,
+      "name": "test (windows-latest, 3.11.9)",
+      "conclusion": "success",
+      "steps": [
+        {
+          "name": "Set up job",
+          "conclusion": "success"
+        },
+        {
+          "name": "Checkout repository",
+          "conclusion": "success"
+        },
+        {
+          "name": "Set up Python",
+          "conclusion": "success"
+        },
+        {
+          "name": "Install locked dependencies",
+          "conclusion": "success"
+        },
+        {
+          "name": "Verify repository safety controls",
+          "conclusion": "success"
+        },
+        {
+          "name": "Verify migrations on a disposable database copy",
+          "conclusion": "success"
+        },
+        {
+          "name": "Verify managed PostgreSQL migration inventory",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run complete test suite",
+          "conclusion": "success"
+        },
+        {
+          "name": "Verify exact historical audit and prospective custody",
+          "conclusion": "success"
+        },
+        {
+          "name": "Verify exact Week 9 formal postgame audit",
+          "conclusion": "success"
+        },
+        {
+          "name": "Verify Week 9 scoring-process supersession",
+          "conclusion": "success"
+        },
+        {
+          "name": "Capture native replay comparisons",
+          "conclusion": "success"
+        },
+        {
+          "name": "Archive replay comparisons",
+          "conclusion": "success"
+        },
+        {
+          "name": "Verify exact Week 10 prospective custody",
+          "conclusion": "success"
+        },
+        {
+          "name": "Verify exact Week 10 forensic audit and prospective research grading",
+          "conclusion": "success"
+        },
+        {
+          "name": "Verify Week 11 source custody and schedule readiness without contest lines",
+          "conclusion": "success"
+        },
+        {
+          "name": "Verify separate Week 11 preparation research diagnostics",
+          "conclusion": "success"
+        },
+        {
+          "name": "Verify concurrent owner transcription custody and elapsed-game gate",
+          "conclusion": "success"
+        },
+        {
+          "name": "Verify Week 11 complete board, explicit late custody and separate research",
+          "conclusion": "success"
+        },
+        {
+          "name": "Post Set up Python",
+          "conclusion": "success"
+        },
+        {
+          "name": "Post Checkout repository",
+          "conclusion": "success"
+        },
+        {
+          "name": "Complete job",
+          "conclusion": "success"
+        }
+      ],
+      "evidence": [
+        "2026-11-12T12:28:43.5587718Z HEAD is now at 76c79e2 Merge cf9b89c9fca8f43dced5f43a8123259a0b6cb412 into d3ba84db74b67a6e4dd8d61e49f28c0759d3a34e\r",
+        "2026-11-12T12:28:43.6665160Z 76c79e20627c3de2afa605f69783a3cbd825f26b\r",
+        "2026-11-12T12:41:13.4342799Z 1136 passed in 731.57s (0:12:11)\r"
+      ]
+    }
+  ],
+  "independent_reviews": [],
+  "interpretation": "Successful exact-tree verification, not independent approval. Subsequent Friday evidence delivery needs its own CI."
+}
