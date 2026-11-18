@@ -1,0 +1,34 @@
+[
+  {
+    "away": "Wofford",
+    "classification": "fcs_vs_fbs",
+    "game_id": 401856749,
+    "home": "Ole Miss",
+    "kickoff_utc": "2026-11-21T17:00:00.000Z",
+    "status": "NOT_DISPLAYED_ON_ORIGINAL_66_GAME_PDF_NO_CONTEST_LINE"
+  },
+  {
+    "away": "Tennessee Tech",
+    "classification": "fcs_vs_fbs",
+    "game_id": 401856750,
+    "home": "Mississippi State",
+    "kickoff_utc": "2026-11-21T18:00:00.000Z",
+    "status": "NOT_DISPLAYED_ON_ORIGINAL_66_GAME_PDF_NO_CONTEST_LINE"
+  },
+  {
+    "away": "Chattanooga",
+    "classification": "fcs_vs_fbs",
+    "game_id": 401856746,
+    "home": "Alabama",
+    "kickoff_utc": "2026-11-21T19:00:00.000Z",
+    "status": "NOT_DISPLAYED_ON_ORIGINAL_66_GAME_PDF_NO_CONTEST_LINE"
+  },
+  {
+    "away": "Samford",
+    "classification": "fcs_vs_fbs",
+    "game_id": 401856747,
+    "home": "Auburn",
+    "kickoff_utc": "2026-11-21T20:30:00.000Z",
+    "status": "NOT_DISPLAYED_ON_ORIGINAL_66_GAME_PDF_NO_CONTEST_LINE"
+  }
+]

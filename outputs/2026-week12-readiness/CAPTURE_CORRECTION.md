@@ -1,0 +1,1 @@
+The initial 20261118T190656Z capture used correct Week12 endpoint parameters and endWeek11 features, but its top-level labels incorrectly said Week11/endWeek10. The source validator rejected it. All original responses and metadata remain unchanged. Corrected capture 20261118T190925Z supplies the frozen intake reconciliation. No model used the rejected capture.
