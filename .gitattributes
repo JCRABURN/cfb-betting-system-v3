@@ -149,3 +149,7 @@ outputs/2026-week11-context/** -text
 outputs/2026-week11-owner-review/** -text
 research/week11_validation/forward-v1.json -text
 outputs/2026-week11-verification/** -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+# Append-only integrated audit and replayable postgame captures.
+outputs/2026-week11-postgame-evidence/** -text whitespace=cr-at-eol
+outputs/2026-season-contest-evidence/** -text whitespace=cr-at-eol
+outputs/2026-week11-postgame-audit/** -text whitespace=cr-at-eol

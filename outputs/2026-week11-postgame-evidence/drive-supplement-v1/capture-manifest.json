@@ -1,0 +1,20 @@
+{
+  "endpoint": "https://api.collegefootballdata.com/plays",
+  "http_status": 200,
+  "name": "cfbd-week8-plays",
+  "parameters": {
+    "seasonType": "regular",
+    "week": 8,
+    "year": 2026
+  },
+  "path": "cfbd-week8-plays.json.gz",
+  "provider": "CFBD",
+  "purpose": "POSTGAME_ADJUDICATION_ONLY_NOT_HISTORICAL_PREGAME_FEATURES",
+  "raw_bytes": 13120646,
+  "raw_sha256": "f18ef425d44b97c64ca67c9c5756fc314862afaef1bd816b4bde155d2e54994f",
+  "received_at_utc": "2026-11-16T15:45:40.324488+00:00",
+  "requested_at_utc": "2026-11-16T15:45:36.176305+00:00",
+  "resolved_url": "https://api.collegefootballdata.com/plays?year=2026&week=8&seasonType=regular",
+  "status": "CAPTURED",
+  "stored_sha256": "b988c7bb0004f23c7addcb008d2d09f14099a91e3e0a8d0d8a48de0cdcf73880"
+}

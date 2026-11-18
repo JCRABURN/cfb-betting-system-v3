@@ -1,0 +1,102 @@
+"""Evidence-led Week11 reports, generated from the auditable grading ledger."""
+from scripts.week11_audit_metrics import summary
+
+
+def table(rows, columns):
+    def value(x):
+        if x is None:return 'Unavailable'
+        if isinstance(x,float):return f'{x:.4f}'
+        return str(x).replace('|','/').replace('\n',' ')
+    return '\n'.join(['| '+' | '.join(label for key,label in columns)+' |','|'+'|'.join('---' for _ in columns)+'|']+
+                     ['| '+' | '.join(value(r.get(key)) for key,label in columns)+' |' for r in rows])
+
+
+def reports(f,groups,process,clv):
+    weekly=f['weekly']; lookup={(r['scope'],r['market']):r for r in weekly}
+    record=lambda r:f"{r['wins']}-{r['losses']}-{r['pushes']}"
+    human=summary(groups['HUMAN_20261113-v2']); original=summary(groups['ORIGINAL_COMBINED_RESEARCH_TOP5'])
+    common={(r['market'],r['game_id']) for r in groups['HUMAN_20261113-v2']}&{(r['market'],r['game_id']) for r in groups['ORIGINAL_COMBINED_RESEARCH_TOP5']}
+    removed=[r for r in groups['ORIGINAL_COMBINED_RESEARCH_TOP5'] if (r['market'],r['game_id']) not in common]
+    added=[r for r in groups['HUMAN_20261113-v2'] if (r['market'],r['game_id']) not in common]
+    season=f['season_contest']; actual=season['total']
+    executive=['# Week 11 and season results', '',
+        '**Actual Week 11 submission:** five recovered external-origin records, excluded from v3 grading and weighted points by the owner-confirmed later correction. They are preserved separately, not attributed to independent owner selection.', '',
+        f"**Actual cumulative v3 submissions, Weeks 1–10:** {actual['wins']}–{actual['losses']}–{actual['pushes']}, **{actual['weighted_points']}/{actual['possible_points']} weighted points**, {actual['units_minus110']:.2f} hypothetical -110 units ({actual['roi']:.2%} ROI), 50 picks. ATS 11–19; totals 9–11. The previous 55-pick/165-point v3 denominator is superseded.", '',
+        '**Week 11 recorded full card:** ATS **36–28**; totals **35–29**. Friday contextual five **2–3**, original combined research five **3–2**, governed ATS five **0–5**. The 61-game forward-sealed subset is reported separately below; three late-sealed Wednesday games retain their qualification.', '',
+        '**Root cause and v2.9 priority:** governed ATS uncertainty is null, all 64 confidence ratings collapse to 1, and Top 5 ordering falls through to locked-line IDs. Repair the disclosure of this fallback and prospectively test market-residual forecasting with out-of-sample calibrated ranking across both markets. Do not increase confidence or promote a replacement without validation.', '',
+        table(f['cohorts'],[('cohort','Frozen cohort'),('n','Picks'),('wins','Wins'),('losses','Losses'),('pushes','Pushes'),('hit_rate','Hit rate'),('units_minus110','Net units'),('roi','ROI')]),'',
+        table([r for r in weekly if r['scope'] in ('WEEK11_RECORDED64','WEEK11_FORWARD61','WEEKS5_11_COMPARABLE400','WEEKS5_11_EXCLUDE_LATE_WEDNESDAY397')],
+              [('scope','Coverage'),('market','Market'),('n','N'),('wins','W'),('losses','L'),('pushes','P'),('units_minus110','Net units'),('mae','Model MAE'),('locked_line_baseline_mae','Line MAE')]),'',
+        'Units risk 1 to win 10/11 at hypothetical -110. Pushes return stake and are excluded from hit rate; ROI divides by all stakes. These are hypothetical returns, not actual wagers.', '',
+        '**The model still fails to beat the locked-line baseline on point accuracy in both markets**, for the recorded Week 11 board and the comparable Weeks 5–11 sample. A profitable single full-card week does not establish selection skill.', '',
+        '**No candidate demonstrates credible Top 5 improvement.** The best observed within-market frozen research five was ORIGINAL_POINT_GAUSSIAN totals, 4–1. All four frozen ATS research fives went 2–3, and all four frozen combined fives went 3–2. These are overlapping selections from one week. The 4–1 market-specific list is the predeclared probability ordering applied within totals; the exact separately archived combined lists remain unchanged.', '',
+        f"Human review changed the original five from {record(original)} to {record(human)}, a {human['units_minus110']-original['units_minus110']:.4f}-unit difference. The four removed extreme Unders went {record(summary(removed))}; the four added ATS picks went {record(summary(added))}. The shared CSU–WSU Under lost. Excluding those four Unders worsened this week's selection quality.", '',
+        '**Single most important deficiency:** the system has no demonstrated ranking of reliable betting opportunities. Governed ATS ranking collapses to database ID order; research scores turn raw disagreement into an unvalidated confidence signal.', '',
+        '**Highest-priority corrective action:** evaluate a market-anchored residual forecast and common out-of-sample calibration/ranking pipeline prospectively, while keeping v2.8 unchanged. Label fallback Top 5 ordering as unvalidated. Do not raise confidence merely to fill high-confidence buckets.', '',
+        '## Eight decision questions','',
+        '1. Week 11 taught us that full-board success can coexist with a failed strongest-five process. Governed five lost all five; human changes reduced wins.',
+        '2. This week improved cumulative hit rate, but does not establish sustained improvement. The seven-week comparable record remains below hypothetical -110 break-even in both markets.',
+        '3. The current model does not beat the locked-line forecast baseline on aggregate MAE/RMSE.',
+        '4. The governed Top 5 has no quality signal when uncertainty is absent. Research ranking lacks stable evidence of added value; see cumulative rank and AUC tables.',
+        '5. Human review hurt this week. Its small, overlapping historical sample cannot establish a durable benefit or a permanent exclusion policy.',
+        '6. Governed confidence is constant, so cannot discriminate. Research ATS uses the same ordinal label with a different uncertainty field. Totals probabilities are uncalibrated; human labels are tentative judgments.',
+        '7. Test simple regularized market-residual forecasting first. Add opponent adjustment and pace only after comparable point-in-time feature coverage and drive validation.',
+        '8. Confidence 4/5 requires independently validated probabilities, adequate bucket samples, calibration and stability across untouched weeks, and owner-approved policy versioning. A normal CDF or large raw edge is insufficient.','',
+        '## Scope and limitations','',*['- '+x for x in f['limitations']], '',
+        '67 original games reconcile across ESPN summary, ESPN scoreboard and CFBD. Three Tuesday games have results only. Three Wednesday predictions are graded with late-custody qualification; they are excluded from forward research. Provider agreement is corroboration, not proof of independent upstream data.', '',
+        'The comparable season table starts at Week 5. Earlier Week 1–3 records are included separately with their original qualifications, and missing weeks are not fabricated. All original screenshots, forecasts, contextual versions and raw provider bytes remain preserved.', '']
+    confidence=['# Confidence execution-path forensic audit','',
+        '| Layer | Responsible execution path | Finding |','|---|---|---|',
+        '| Governed ATS | `scripts/run_week11_execution.py` calls `business_entities.weekly_controller.run_epa_only_model`; `business_entities.modeling.record_model_prediction` defaults uncertainty to None | EPA point forecast is recorded without governed uncertainty. The separate research estimate never fills this production field. |',
+        '| Confidence | `business_entities.ranking.confidence_for_uncertainty`, `UNSCORED_CONFIDENCE=1`; `scripts/finalize_week11_card.py` loads policy configuration | Missing uncertainty becomes 1. Existing thresholds 2,4,6,8 points are not calibrated cover-probability boundaries. Even ~18.3-point shadow uncertainty would remain Confidence1. |',
+        '| Governed Top5 | `business_entities.full_card._rank_selections` | Sorts confidence descending, uncertainty ascending, then locked_line_id ascending. All64 have confidence1/null, so first five IDs become the five. Stored rank5 denotes highest, not rank1. |',
+        '| Research ATS | `models.epa_uncertainty.EpaUncertaintyArtifact.uncertainty_points`; `config/epa-only-oos-uncertainty-v1.json`; frozen raw components | Residual RMSE18.2796311759 times sqrt(1+1/n+(x-xbar)^2/Sxx) gives nearly constant predictive SD. This is broad margin-error scale, not selection reliability. Research score min(.60,.50+.005*edge) is not calibrated. |',
+        '| Totals | `business_entities.totals_weekly_model.run_component_totals_shadow_model`; `business_entities.totals`; `scripts/finalize_week11_card.py` | Normal-CDF probability from projected-minus-line divided by residual SD; slope1; thresholds .55,.60,.70,.80. Large gaps create high confidence without empirical bucket validation. |',
+        '| Human context | archived `scripts/review_week11_context.py`, `scripts/review_week11_refresh.py` and Thursday/Friday review.json | 2,2,1,1,1 are cautious ordinal judgments reflecting contradictory matchup evidence and incomplete personnel context. No numeric injury/weather projection adjustments were recorded. |','',
+        'The null value is a pipeline/policy limitation, not evidence that uncertainty is zero. Replacing it with the shadow scale alone would not create a meaningful ordering. A large homoskedastic residual scale can be statistically plausible while being almost useless for ranking which side covers.', '',
+        table([r for r in f['calibration'] if r['scope'] in ('WEEK11_RECORDED64','WEEKS5_11_COMPARABLE400','WEEK11_LATEST_REVIEW','WEEKS9_11_LATEST_REVIEW_PER_WEEK')],
+              [('scope','Scope'),('layer','Layer'),('confidence','Confidence'),('n','N'),('wins','W'),('losses','L'),('hit_rate','Hit rate'),('units_minus110','Units'),('mean_predicted_edge','Mean edge'),('mean_absolute_error_points','MAE points'),('mean_uncertainty','Estimated uncertainty'),('hit_rate_wilson95','Wilson95'),('evaluation_weeks','Weeks')]),'',
+        table([r for r in f['discrimination'] if r['scope'] in ('WEEK11_RECORDED64','WEEKS5_11_COMPARABLE400')],[('scope','Scope'),('market','Market'),('n','N'),('auc','Edge ranking AUC')]),'',
+        'AUC below .5 means higher scores tended to identify losers within this sample. It is descriptive, not an invitation to reverse picks retrospectively. Exact edge buckets and all confidence levels, including zero-case buckets, appear in the CSVs. No claim of monotonic improvement is warranted from these samples. Human revisions are not counted as independent observations; cumulative human calibration uses the latest archived review per covered week.', '']
+    lessons=['# Lessons learned and v2.9 recommendations','',
+        table([r for r in weekly if r['scope']=='WEEKS5_11_COMPARABLE400'],[('market','Market'),('n','N'),('wins','W'),('losses','L'),('mae','Model MAE'),('locked_line_baseline_mae','Line MAE'),('roi','ROI')]),'',
+        '| Problem and evidence | Root cause / affected implementation | Proposed solution and expected benefit | Overfitting risk / required validation |','|---|---|---|---|',
+        '| Governed five0–5; all64 confidence1/null | Governed forecast record omits uncertainty; confidence and Top5 fall through to IDs | Explicit unvalidated fallback status; develop calibrated ranking to identify the five with relative reliability | Do not simply rescale sigma; require OOS ranking/calibration and untouched-week Top5 comparison |',
+        '| Both markets trail line-baseline MAE over400 comparable games each | EPA-only margin and component totals do not establish added predictive information over market | Market-residual regularized baseline, then opponent interactions and consistent pace/PPD | Fixed penalty10 is research specification, not optimized or promoted. Compare every unsuccessful fold and candidate |',
+        '| Human2–3 versus original3–2; removed picks3–1 | Context cautions did not reliably identify which extreme gaps were bad | Version contextual changes with quantified completeness and eventual independent effect audit | One week cannot justify rejecting human review or banning a segment |',
+        '| Totals high confidence from Gaussian transform | Uncalibrated distribution and scale conflated with cover probability | OOF calibration shared across markets; empirical candidate buckets .525/.55/.58/.62 | Research thresholds only. Require bucket sample, calibration, Wilson lower bounds and stability |',
+        f"| Prior drive anomalies147; {f['drive_adjudication']['counts']} | Provider endpoint score deltas can contradict scoring-play sequence | Reproducible correction ledger for corroborated rows; exclude unresolved team-games | Late corrections cannot be inserted into old prospective runs; validate possession, TD conversion, nonoffensive and overtime rules |",
+        '| Qualified CLV coverage0/128 | Archived market quotes have no actual quote timestamps | Capture book-specific timed prices before future kickoff | Do not turn retrieval or postgame odds into closing evidence |','',
+        'Confirmed defects are the absence of a quality-bearing fallback ranking and misleading comparability of confidence scales. Model replacements, probability boundaries, contextual completeness penalties and feature additions are experiments. No production code, thresholds, v2.8 prompt or locked lines change in this PR.','',
+        '## Validation and rejection','',
+        'All five original frozen candidates, all14 drive forecasts and the new residual candidate remain reported. Positive linear shrinkage toward the locked line preserves pick direction. Better MAE is not proof of better ATS results. The new candidate was specified after Week11 outcomes and is retrospective development, including its Week11 fold.', '',
+        'All four frozen combined-five methods returned3–2; none establishes superiority. The new residual ranking also has failed weeks, retained in v29_chronological_folds.csv and v29_candidate_top5.csv. No candidate passes the untouched-holdout promotion requirement.', '']
+    proposal=['# Proposed Master Prompt v2.9 — inactive research proposal','',
+        'v2.8 remains the active policy. This document does not activate, overwrite or silently amend it. Owner approval and a new version are required after independent validation.','',
+        '1. Preserve mandatory contest coverage and all existing data/line custody safeguards. Clearly distinguish model forecast, contest selection and sportsbook recommendation.',
+        '2. Require a model forecast baseline comparison against the original locked line. Begin with a regularized residual forecast. Keep every unsuccessful experiment.',
+        '3. Rank ATS and totals on a common OOS calibrated probability/reliability scale, with at most one selection per game. Do not force a market mix. Report overlap and week dependence.',
+        '4. Treat .525/.55/.58/.62 as candidate research bucket boundaries only. Do not translate raw edge, a Gaussian CDF or narrative conviction directly to high confidence.',
+        '5. If calibrated probability is absent, use Confidence1 and label the Top5 UNVALIDATED_FALLBACK. Deterministic canonical matchup ordering is bookkeeping only; never present a database ID as quality.',
+        '6. Add contextual completeness and model-fold reliability only after historical availability and incremental OOS value are demonstrated. Keep manual adjustments separate and timestamped.',
+        '7. For every validation fold, train only prior weeks, freeze rules, retain all eligible games/predictions and grade exact locked lines. Calibrate on prior OOF predictions, not in-sample fits or current outcomes.',
+        '8. Week11 is development input for newly designed methods. Reserve future weeks or a separately defined untouched holdout. No retrospective winner is called validated.',
+        '9. Proposed promotion gates are specified in v29_research_protocol.json:20 prospective weeks, paired week-block forecast and Top5 improvement, calibrated probabilities, ranking discrimination and cross-week stability. High confidence requires500 bucket cases (800 for5),20 weeks/two seasons,ECE<=.03 and lower95 cover bound above52.381%. These gates are proposals, not an approved policy.',
+        '10. Drive features require explicit regulation possession definitions, documented zero-play/end-half exclusions, nonoffensive TD separation, observed conversion points, overtime handling, consistent garbage-time rules, missingness, opponent adjustment and PIT receipt checks. Unresolved records remain quarantined.', '',
+        table(f['proposal']['catalog'],[('architecture','Architecture'),('status','Evaluation status'),('required_validation','Next evidence required')]),'',
+        'The executable research program evaluates a simple market-residual ridge with prior-OOF frequency ranking using frozen forecasts. Feature families without comparable PIT evidence are explicitly blocked; no fabricated personnel history, retrospectively refreshed feature, or synthetic drive result is used.', '']
+    games=['# Game-level process and logic-failure investigation','',process['definitions'],'',
+           'Every Top5 game, every >=20-point forecast miss, every >=10-point edge loss and every high-confidence totals loss is included below. Classifications F/G describe the forecast/result relation; H preserves uncertainty about causal attribution. A-E are not assigned solely from a bad final score.','',
+           'Observed mechanisms in the highlighted losses: CSU–WSU was a rushing/efficiency collapse (WSU535 rushing yards and nine rushing TDs), not merely an unexplained total-score fluctuation. Michigan used two quarterbacks and produced71 passing yards while Raiola threw341; its offensive coordinator change was reported before the game but no causal point adjustment was validated. Notre Dame limited BC to136 yards and scored a defensive TD. Texas Tech–Oklahoma State included an opening kickoff-return TD, explosive scoring and a final Oklahoma State TD with54 seconds remaining; the Under had been below73.5 immediately before that last score. These are postgame mechanisms, not proof that a specific pregame adjustment would have improved picks.','',
+           'Official source context: [WSU recap](https://wsucougars.com/news/2026/11/14/washington-state-rolls-to-73-7-win-over-colorado-state), [Oregon recap](https://goducks.com/news/2026/11/14/football-dominant-ducks-maintain-momentum-beat-michigan), [Oklahoma State postgame notes](https://okstate.com/news/2026/11/15/cowboy-football-oklahoma-state-postgame-notes-texas-tech). Raw ESPN recap, scoring and box-score evidence is preserved for each game in the postgame capture.','']
+    for r in process['failures']:
+        p=r['process']
+        games += [f"## {p['away']} at {p['home']} — {r['market']} {r['selection']} {float(r['line']):+g}",'',
+                  f"Result {r['result']}; absolute forecast error {r['absolute_error']:.2f}; theoretical edge {float(r['theoretical_edge']):.2f}. Classification {r['taxonomy']}. Top5 priority: {r['priority_top5']}.",
+                  f"Observed process: {p['provider_plays']} provider plays, {p['provider_drives']} provider drives, {p['explosive_pass20']} passes of20+ yards, {p['explosive_rush10']} rushes of10+ yards, {p['nonoffensive_points_with_bundled_conversions']} nonoffensive points including bundled conversions; overtime {p['overtime']}.",
+                  table(r['observed_teams'],[('team','Team'),('total_yards','Yards'),('turnovers','Turnovers'),('third_down','Third downs'),('offensive_ppa','PPA'),('success_rate','Success'),('provider_drives','Drives')]),
+                  'Observed passers: '+', '.join(x['name'] for x in r['observed_passers'])+'. Starter identity, pregame injury expectations and causal effects are not inferred from participation alone.',
+                  r['attribution'], f"Evidence: https://www.espn.com/college-football/game/_/gameId/{r['game_id']}", '']
+    return {'EXECUTIVE_REPORT.md':'\n'.join(executive),'CONFIDENCE_FORENSICS.md':'\n'.join(confidence),
+            'LESSONS_LEARNED.md':'\n'.join(lessons),'PROPOSED_MASTER_PROMPT_V2_9.md':'\n'.join(proposal),
+            'GAME_LEVEL_LOGIC_FAILURES.md':'\n'.join(games)}

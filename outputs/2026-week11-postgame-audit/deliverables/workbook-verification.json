@@ -1,0 +1,281 @@
+{
+  "builder_code_sha256_lf": {
+    "scripts/build_week11_workbook.mjs": "307e4831f0273ee7e48b26f627dcda1caf9fff769bb42e0f71d66a58fccd3ee8",
+    "scripts/prepare_week11_workbook.py": "231d6a68860f764bce06d143f971324f71653d39422f3e8a44a1f9dd92a9704f",
+    "scripts/verify_week11_workbook.py": "b86990cb27d08e65342e2b2ff8926572b0454acb107ef1f6729dd955c19cdcc4"
+  },
+  "corruption_tests": "PASS: changed grade cache, dropped ledger row, #REF! cell each rejected",
+  "formula_error_scan": {
+    "kind": "notice",
+    "message": "Cell search matched 0 entries."
+  },
+  "grade_checks": 50,
+  "headline": [
+    50,
+    20,
+    30,
+    0,
+    55,
+    -11.818181818181824
+  ],
+  "native_excel_open_test": false,
+  "ooxml_validation": "PASS: 44 sheets, all 621 exact game IDs, required table counts, 50 formula caches and headline totals, zero error cells",
+  "output": "outputs/2026-week11-postgame-audit/deliverables/season-performance.xlsx",
+  "recalculation_probe": "PASS_RESTORED",
+  "rows": 50,
+  "sheets": 44,
+  "source_sha256": {
+    "outputs/2026-week11-postgame-audit/context-v2/manifest.json": "1d24fbb0b9eef7b1bc4809d7a3a4d3ceb0cf75de3b67cee95f81c9cb9ebc75ad",
+    "outputs/2026-week11-postgame-audit/deliverables/season-performance.xlsx": "98efb6ebe864030c678f2e0ec7f78d70f8028f6b7a55a68426933e4db53481d5",
+    "outputs/2026-week11-postgame-audit/v1/audit_manifest.json": "88b77d4daf202384d61cbd7277ad10b94866bf6e460cea6f7bf4b00463773ab1"
+  },
+  "tables": [
+    {
+      "columns": 28,
+      "file": "season_game_reconciliation.csv",
+      "name": "All 621 games",
+      "rows": 621
+    },
+    {
+      "columns": 20,
+      "file": "source_exports.csv",
+      "name": "PDF export source",
+      "rows": 621
+    },
+    {
+      "columns": 23,
+      "file": "external_week11_records_not_graded.csv",
+      "name": "External records",
+      "rows": 5
+    },
+    {
+      "columns": 9,
+      "file": "submission_recommendation_differences.csv",
+      "name": "Recommendation matches",
+      "rows": 1475
+    },
+    {
+      "columns": 12,
+      "file": "historical_line_reconciliation.csv",
+      "name": "Historical lines",
+      "rows": 1106
+    },
+    {
+      "columns": 5,
+      "file": "week11_export_kickoff_differences.csv",
+      "name": "Kickoff changes",
+      "rows": 9
+    },
+    {
+      "columns": 47,
+      "file": "week11_ats_audit.csv",
+      "name": "W11 ATS",
+      "rows": 64
+    },
+    {
+      "columns": 47,
+      "file": "week11_totals_audit.csv",
+      "name": "W11 totals",
+      "rows": 64
+    },
+    {
+      "columns": 26,
+      "file": "cohort_results.csv",
+      "name": "W11 cohort results",
+      "rows": 8
+    },
+    {
+      "columns": 51,
+      "file": "cohort_membership.csv",
+      "name": "W11 cohort members",
+      "rows": 50
+    },
+    {
+      "columns": 5,
+      "file": "cohort_overlap.csv",
+      "name": "Cohort overlap",
+      "rows": 190
+    },
+    {
+      "columns": 13,
+      "file": "season_recommendation_ledger.csv",
+      "name": "Season recommendations",
+      "rows": 1317
+    },
+    {
+      "columns": 12,
+      "file": "season_recommendation_performance.csv",
+      "name": "Season cohort results",
+      "rows": 81
+    },
+    {
+      "columns": 28,
+      "file": "confidence_calibration.csv",
+      "name": "Confidence calibration",
+      "rows": 160
+    },
+    {
+      "columns": 13,
+      "file": "forecast_vs_market.csv",
+      "name": "Market baseline",
+      "rows": 20
+    },
+    {
+      "columns": 28,
+      "file": "segment_diagnostics.csv",
+      "name": "Segment diagnostics",
+      "rows": 406
+    },
+    {
+      "columns": 26,
+      "file": "cumulative_performance.csv",
+      "name": "Comparable progression",
+      "rows": 20
+    },
+    {
+      "columns": 27,
+      "file": "cumulative_rank_performance.csv",
+      "name": "Cumulative rankings",
+      "rows": 10
+    },
+    {
+      "columns": 10,
+      "file": "earlier_week_qualified_records.csv",
+      "name": "Early coverage",
+      "rows": 6
+    },
+    {
+      "columns": 52,
+      "file": "cumulative_grade_ledger.csv",
+      "name": "Frozen forecast ledger",
+      "rows": 800
+    },
+    {
+      "columns": 55,
+      "file": "human_confidence_ledger.csv",
+      "name": "Context confidence",
+      "rows": 15
+    },
+    {
+      "columns": 6,
+      "file": "ranking_discrimination.csv",
+      "name": "Edge discrimination",
+      "rows": 20
+    },
+    {
+      "columns": 12,
+      "file": "clv_observations.csv",
+      "name": "Market observations",
+      "rows": 402
+    },
+    {
+      "columns": 9,
+      "file": "hook_backdoor_audit.csv",
+      "name": "Hooks and backdoors",
+      "rows": 128
+    },
+    {
+      "columns": 19,
+      "file": "game_process.csv",
+      "name": "Game process",
+      "rows": 67
+    },
+    {
+      "columns": 16,
+      "file": "team_process.csv",
+      "name": "Team process",
+      "rows": 134
+    },
+    {
+      "columns": 11,
+      "file": "observed_passers.csv",
+      "name": "Observed passers",
+      "rows": 218
+    },
+    {
+      "columns": 7,
+      "file": "nonoffensive_scoring.csv",
+      "name": "Nonoffensive scoring",
+      "rows": 26
+    },
+    {
+      "columns": 20,
+      "file": "pregame_context_comparison.csv",
+      "name": "Pregame vs observed",
+      "rows": 49
+    },
+    {
+      "columns": 12,
+      "file": "logic_failure_priority.csv",
+      "name": "Logic failures",
+      "rows": 49
+    },
+    {
+      "columns": 32,
+      "file": "frozen_research_metrics.csv",
+      "name": "Frozen methods",
+      "rows": 10
+    },
+    {
+      "columns": 32,
+      "file": "frozen_research_top5.csv",
+      "name": "Frozen research Top5",
+      "rows": 12
+    },
+    {
+      "columns": 59,
+      "file": "frozen_research_membership.csv",
+      "name": "Research membership",
+      "rows": 60
+    },
+    {
+      "columns": 56,
+      "file": "frozen_research_all_grades.csv",
+      "name": "Research predictions",
+      "rows": 610
+    },
+    {
+      "columns": 8,
+      "file": "frozen_research_reliability.csv",
+      "name": "Research reliability",
+      "rows": 41
+    },
+    {
+      "columns": 8,
+      "file": "frozen_drive_forecasts.csv",
+      "name": "Drive forecasts",
+      "rows": 28
+    },
+    {
+      "columns": 14,
+      "file": "drive_quarantine_adjudication.csv",
+      "name": "Drive corrections",
+      "rows": 147
+    },
+    {
+      "columns": 32,
+      "file": "v29_chronological_folds.csv",
+      "name": "V29 chronological folds",
+      "rows": 12
+    },
+    {
+      "columns": 61,
+      "file": "v29_all_candidate_predictions.csv",
+      "name": "V29 predictions",
+      "rows": 688
+    },
+    {
+      "columns": 62,
+      "file": "v29_candidate_top5.csv",
+      "name": "V29 selected five",
+      "rows": 30
+    },
+    {
+      "columns": 3,
+      "file": "v29_feature_research_catalog.csv",
+      "name": "V29 feature evidence",
+      "rows": 10
+    }
+  ],
+  "visual_review": "All 44 worksheet previews inspected; dashboard, full grading columns, kickoff displays and context panel separately inspected."
+}

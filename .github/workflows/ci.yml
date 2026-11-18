@@ -100,3 +100,12 @@ jobs:
 
       - name: Verify Week 11 complete board, explicit late custody and separate research
         run: python -m scripts.verify_week11_acceptance
+
+      - name: Verify integrated Week 11 forensic and recovered season audit
+        run: python -m scripts.build_week11_formal_audit --verify
+
+      - name: Verify season workbook formulas and cached grades
+        run: python -m scripts.verify_week11_workbook
+
+      - name: Verify frozen pregame to postgame context comparison
+        run: python -m scripts.week11_context_postgame --verify
