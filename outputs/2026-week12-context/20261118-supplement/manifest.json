@@ -1,0 +1,98 @@
+{
+  "files_sha256": {
+    "arizona-state-preview.gz": "7e8f8df930a6b87f1a8f6194476aa945e8e1b2004f019dbc98b61540d03ffa7c",
+    "arizona-state-preview.txt": "4a4d5f7c61af8d3731e1c72889791df759e72913b1a71a163b22ea92175ecc8b",
+    "arkansas-official-retry.gz": "27b5b678437ff4234587bff3fef244806d04a39b8f1449782acfff4a3b240b25",
+    "arkansas-official-retry.txt": "93a1ec454b58a0f009ee21a1d86c01b6a5d61975fc2fb9701decd647c774faaf",
+    "georgia-tech-official-retry.gz": "9a8d34ab13127ad4510f78a6d6c2330e3b151cca5a7a55df20c35285fba12a2e",
+    "georgia-tech-official-retry.txt": "a07e4264b2a11736f4c2cb9af6c5095b03f6a6fbc09709daef365ea3c65f81c0",
+    "massachusetts-preview.gz": "0ee4d6dfefc02cac18309202e37e3c6777ce2efef476d337d112025c84c8512d",
+    "massachusetts-preview.txt": "9ac675b8e445841318cf6404b2e58acd1bdd2dff7fdf9d5fbc414f54c3be398e",
+    "memphis-navy-preview.gz": "a5877674854aa22ad82e187ee7cb05aa17843f9611fdb6e43b3c6f3d8fcdb56c",
+    "memphis-navy-preview.txt": "2c77405bf74802299ef95d96683090659424ba7f8ec2be285193d8eee4da39c1",
+    "san-jose-state-official.gz": "e698e75ca186edc16ca0eb7b262b9ff46111751bdeb47b65d1d7850b7a0d9762",
+    "san-jose-state-official.txt": "dd7e7c5b5d9b5e9869922ca119e9d8597cc66a934085399d888ef4a45bf3e488",
+    "south-alabama-schedule.gz": "e5e1ffb584cd56bb0885bac554259d9866d82d26d17f8635cae45910e2c76292",
+    "south-alabama-schedule.txt": "024d53900547822604a1b335a47144cf6188b77daaa42fa75bde78b328076103"
+  },
+  "purpose": "Separate supplemental research; no historical forecast or initial capture rewritten.",
+  "records": [
+    {
+      "http_status": 200,
+      "name": "massachusetts-preview",
+      "path": "massachusetts-preview.gz",
+      "raw_sha256": "2a90ac0fadc21a5ed0902b5e183ef1a2d404dd29e83bf064694126158cc2bd26",
+      "received_at_utc": "2026-11-19T01:08:25.554237+00:00",
+      "requested_at_utc": "2026-11-19T01:08:24.442315+00:00",
+      "status": "CAPTURED",
+      "stored_sha256": "0ee4d6dfefc02cac18309202e37e3c6777ce2efef476d337d112025c84c8512d",
+      "url": "https://umassathletics.com/news/2026/11/15/massachusetts-football-hosts-akron-on-wednesday-for-senior-night"
+    },
+    {
+      "http_status": 200,
+      "name": "arizona-state-preview",
+      "path": "arizona-state-preview.gz",
+      "raw_sha256": "def429add65f80607ea828e087b3425be2ef8ca2a54ad15e71d25e7f8535b103",
+      "received_at_utc": "2026-11-19T01:08:25.528246+00:00",
+      "requested_at_utc": "2026-11-19T01:08:24.442315+00:00",
+      "status": "CAPTURED",
+      "stored_sha256": "7e8f8df930a6b87f1a8f6194476aa945e8e1b2004f019dbc98b61540d03ffa7c",
+      "url": "https://thesundevils.com/news/2026/11/17/football-ready-for-final-home-game-against-oklahoma-state"
+    },
+    {
+      "http_status": 200,
+      "name": "memphis-navy-preview",
+      "path": "memphis-navy-preview.gz",
+      "raw_sha256": "f35c473b7375fd20e460bb062783b7aadc685d389b0f2c679eb75359eeafb0c2",
+      "received_at_utc": "2026-11-19T01:08:25.709543+00:00",
+      "requested_at_utc": "2026-11-19T01:08:24.443298+00:00",
+      "status": "CAPTURED",
+      "stored_sha256": "a5877674854aa22ad82e187ee7cb05aa17843f9611fdb6e43b3c6f3d8fcdb56c",
+      "url": "https://gotigersgo.com/news/2026/11/15/football-memphis-navy-to-air-on-espn2"
+    },
+    {
+      "http_status": 200,
+      "name": "south-alabama-schedule",
+      "path": "south-alabama-schedule.gz",
+      "raw_sha256": "e51aff588c09af574ee32286f0512cf2658be56a8149278e1ec20f0dab446397",
+      "received_at_utc": "2026-11-19T01:08:25.734628+00:00",
+      "requested_at_utc": "2026-11-19T01:08:24.443298+00:00",
+      "status": "CAPTURED",
+      "stored_sha256": "e5e1ffb584cd56bb0885bac554259d9866d82d26d17f8635cae45910e2c76292",
+      "url": "https://usajaguars.com/news/2026/11/9/football-final-road-trip-slated-for-3-pm-kick-at-southern-miss.aspx"
+    },
+    {
+      "http_status": 200,
+      "name": "san-jose-state-official",
+      "path": "san-jose-state-official.gz",
+      "raw_sha256": "4d9582756d5cc260171e8a68242f98e8324791f325f921e83d824f874968f342",
+      "received_at_utc": "2026-11-19T01:08:25.290346+00:00",
+      "requested_at_utc": "2026-11-19T01:08:24.443298+00:00",
+      "status": "CAPTURED",
+      "stored_sha256": "e698e75ca186edc16ca0eb7b262b9ff46111751bdeb47b65d1d7850b7a0d9762",
+      "url": "https://sjsuspartans.com/sports/football"
+    },
+    {
+      "http_status": 200,
+      "name": "arkansas-official-retry",
+      "path": "arkansas-official-retry.gz",
+      "raw_sha256": "5cc8b320a39f29b70a70ff006c1ac03b32390b82c26b6bc01c5da5f84a479fa4",
+      "received_at_utc": "2026-11-19T01:08:24.810225+00:00",
+      "requested_at_utc": "2026-11-19T01:08:24.443298+00:00",
+      "status": "CAPTURED",
+      "stored_sha256": "27b5b678437ff4234587bff3fef244806d04a39b8f1449782acfff4a3b240b25",
+      "url": "https://arkansasrazorbacks.com/sport/m-footbl/"
+    },
+    {
+      "http_status": 200,
+      "name": "georgia-tech-official-retry",
+      "path": "georgia-tech-official-retry.gz",
+      "raw_sha256": "33f736457828e128270dde7660b7dbe0f4b5325f42db89f515de9467aa7dc823",
+      "received_at_utc": "2026-11-19T01:08:25.655048+00:00",
+      "requested_at_utc": "2026-11-19T01:08:24.444325+00:00",
+      "status": "CAPTURED",
+      "stored_sha256": "9a8d34ab13127ad4510f78a6d6c2330e3b151cca5a7a55df20c35285fba12a2e",
+      "url": "https://ramblinwreck.com/sports/m-footbl/"
+    }
+  ]
+}

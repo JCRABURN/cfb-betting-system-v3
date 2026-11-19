@@ -1,3 +1,14 @@
+# Exact original Week12 PDF, frozen contest lines and append-only receipt bytes.
+data/ingest/2026-week12-splashsports/** -text whitespace=cr-at-eol
+outputs/2026-week12-readiness/** -text whitespace=cr-at-eol
+outputs/2026-week12-prospective/** -text whitespace=cr-at-eol
+outputs/2026-week12-context/** -text whitespace=cr-at-eol
+outputs/2026-week12-delivery/** -text whitespace=cr-at-eol
+outputs/2026-week12-refresh/** -text whitespace=cr-at-eol
+# Preserve whitespace in these two verbatim captured source-text receipts.
+outputs/2026-week12-context/20261118-initial/article-utah-1.txt whitespace=cr-at-eol,-blank-at-eol
+outputs/2026-week12-context/20261118-initial/official-baylor.txt whitespace=cr-at-eol,-blank-at-eol
+
 outputs/2026-week6-execution-20261006T2133Z/** text eol=lf
 outputs/2026-week6-postgame-audit/** text eol=lf
 outputs/2026-week6-postgame-audit/**/*.gz -text
@@ -149,7 +160,3 @@ outputs/2026-week11-context/** -text
 outputs/2026-week11-owner-review/** -text
 research/week11_validation/forward-v1.json -text
 outputs/2026-week11-verification/** -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
-
-# Week12 original PDF and append-only source/model evidence.
-data/ingest/2026-week12-splashsports/** -text whitespace=cr-at-eol
-outputs/2026-week12-*/** -text whitespace=cr-at-eol

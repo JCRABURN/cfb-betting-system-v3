@@ -1,0 +1,428 @@
+game_id,team,category,exemptStatus,name,status,publication_utc,source_url,final_clearance
+401856869,Iowa State,qb,NonExempt,QB #1 Jaylen Raynor,Available,2026-11-17T21:00:00-06:00,https://big12sports.com/FBReporting,False
+401856869,Iowa State,qb,NonExempt,QB #5 Connor Moberly,Out,2026-11-17T21:00:00-06:00,https://big12sports.com/FBReporting,False
+401856869,Iowa State,qb,NonExempt,QB #6 Zane Flores,Available,2026-11-17T21:00:00-06:00,https://big12sports.com/FBReporting,False
+401856869,Iowa State,qb,NonExempt,QB #16 Wyatt Bohm,Available,2026-11-17T21:00:00-06:00,https://big12sports.com/FBReporting,False
+401856869,Iowa State,qb,NonExempt,QB #18 Hudson Kurland,Available,2026-11-17T21:00:00-06:00,https://big12sports.com/FBReporting,False
+401856869,Iowa State,ol,NonExempt,OL #51 Maasai King,Probable,2026-11-17T21:00:00-06:00,https://big12sports.com/FBReporting,False
+401856869,Iowa State,ol,NonExempt,OL #52 Kingston Fotualii,Available,2026-11-17T21:00:00-06:00,https://big12sports.com/FBReporting,False
+401856869,Iowa State,ol,NonExempt,OL #54 Cade Myer,Available,2026-11-17T21:00:00-06:00,https://big12sports.com/FBReporting,False
+401856869,Iowa State,ol,NonExempt,OL #55 Trevor Bindel,Available,2026-11-17T21:00:00-06:00,https://big12sports.com/FBReporting,False
+401856869,Iowa State,ol,NonExempt,OL #56 Colin Amick,Available,2026-11-17T21:00:00-06:00,https://big12sports.com/FBReporting,False
+401856869,Iowa State,ol,NonExempt,OL #61 Benji Makelela,Available,2026-11-17T21:00:00-06:00,https://big12sports.com/FBReporting,False
+401856869,Iowa State,ol,NonExempt,OL #62 Braden Simonsen,Available,2026-11-17T21:00:00-06:00,https://big12sports.com/FBReporting,False
+401856869,Iowa State,ol,NonExempt,OL #63 Braden Smith,Available,2026-11-17T21:00:00-06:00,https://big12sports.com/FBReporting,False
+401856869,Iowa State,ol,NonExempt,OL #64 Brady Harr,Available,2026-11-17T21:00:00-06:00,https://big12sports.com/FBReporting,False
+401856869,Iowa State,ol,NonExempt,OL #65 Garret Rutledge,Available,2026-11-17T21:00:00-06:00,https://big12sports.com/FBReporting,False
+401856869,Iowa State,ol,NonExempt,OL #66 Derek Worden,Available,2026-11-17T21:00:00-06:00,https://big12sports.com/FBReporting,False
+401856869,Iowa State,ol,NonExempt,OL #68 Makai Sat,Available,2026-11-17T21:00:00-06:00,https://big12sports.com/FBReporting,False
+401856869,Iowa State,ol,NonExempt,OL #69 Dontrell Holt,Available,2026-11-17T21:00:00-06:00,https://big12sports.com/FBReporting,False
+401856869,Iowa State,ol,NonExempt,OL #70 Gavin Proudfoot,Available,2026-11-17T21:00:00-06:00,https://big12sports.com/FBReporting,False
+401856869,Iowa State,ol,NonExempt,OL #71 Gabriel Greenlee,Available,2026-11-17T21:00:00-06:00,https://big12sports.com/FBReporting,False
+401856869,Iowa State,ol,NonExempt,OL #72 Austin Barrett,Available,2026-11-17T21:00:00-06:00,https://big12sports.com/FBReporting,False
+401856869,Iowa State,ol,NonExempt,OL #74 Gavin Broscious,Available,2026-11-17T21:00:00-06:00,https://big12sports.com/FBReporting,False
+401856869,Iowa State,ol,Exempt,OL #77 Caden Maas,Exempt,2026-11-17T21:00:00-06:00,https://big12sports.com/FBReporting,False
+401856869,Iowa State,ol,NonExempt,OL #78 DeAndre Carter,Available,2026-11-17T21:00:00-06:00,https://big12sports.com/FBReporting,False
+401856869,Iowa State,ol,NonExempt,OL #79 Jake Taylor,Available,2026-11-17T21:00:00-06:00,https://big12sports.com/FBReporting,False
+401856869,Iowa State,defense,NonExempt,DT #0 Zaimir Hawk,Available,2026-11-17T21:00:00-06:00,https://big12sports.com/FBReporting,False
+401856869,Iowa State,defense,NonExempt,CB #1 Keyon Washington,Available,2026-11-17T21:00:00-06:00,https://big12sports.com/FBReporting,False
+401856869,Iowa State,defense,Exempt,S #2 Braden Awls,Exempt,2026-11-17T21:00:00-06:00,https://big12sports.com/FBReporting,False
+401856869,Iowa State,defense,NonExempt,CB #3 Seth Johnson,Available,2026-11-17T21:00:00-06:00,https://big12sports.com/FBReporting,False
+401856869,Iowa State,defense,NonExempt,S #4 Micah Harper,Available,2026-11-17T21:00:00-06:00,https://big12sports.com/FBReporting,False
+401856869,Iowa State,defense,NonExempt,CB #5 Beni Ngoyi,Available,2026-11-17T21:00:00-06:00,https://big12sports.com/FBReporting,False
+401856869,Iowa State,defense,NonExempt,S #6 Drew Surges,Available,2026-11-17T21:00:00-06:00,https://big12sports.com/FBReporting,False
+401856869,Iowa State,defense,NonExempt,LB #7 Sullivan Schlimgen,Available,2026-11-17T21:00:00-06:00,https://big12sports.com/FBReporting,False
+401856869,Iowa State,defense,NonExempt,LB #8 Tristan Exline,Available,2026-11-17T21:00:00-06:00,https://big12sports.com/FBReporting,False
+401856869,Iowa State,defense,NonExempt,CB #9 Jaheim Singletary,Available,2026-11-17T21:00:00-06:00,https://big12sports.com/FBReporting,False
+401856869,Iowa State,defense,NonExempt,LB #10 Carson Willich,Out,2026-11-17T21:00:00-06:00,https://big12sports.com/FBReporting,False
+401856869,Iowa State,defense,NonExempt,LB #11 Willie Breland III,Available,2026-11-17T21:00:00-06:00,https://big12sports.com/FBReporting,False
+401856869,Iowa State,defense,NonExempt,LB #12 Ethan Stecker,Available,2026-11-17T21:00:00-06:00,https://big12sports.com/FBReporting,False
+401856869,Iowa State,defense,NonExempt,DT #13 Kaleb Bilal-Jones,Available,2026-11-17T21:00:00-06:00,https://big12sports.com/FBReporting,False
+401856869,Iowa State,defense,NonExempt,S #14 Damarius Russell,Available,2026-11-17T21:00:00-06:00,https://big12sports.com/FBReporting,False
+401856869,Iowa State,defense,NonExempt,S #16 Malcolm Jones,Available,2026-11-17T21:00:00-06:00,https://big12sports.com/FBReporting,False
+401856869,Iowa State,defense,NonExempt,LB #17 Connor Welsch,Available,2026-11-17T21:00:00-06:00,https://big12sports.com/FBReporting,False
+401856869,Iowa State,defense,NonExempt,CB #18 David Coffey,Available,2026-11-17T21:00:00-06:00,https://big12sports.com/FBReporting,False
+401856869,Iowa State,defense,NonExempt,S #19 Eddie Lemos,Available,2026-11-17T21:00:00-06:00,https://big12sports.com/FBReporting,False
+401856869,Iowa State,defense,NonExempt,CB #20 Trillion Sorrell,Available,2026-11-17T21:00:00-06:00,https://big12sports.com/FBReporting,False
+401856869,Iowa State,defense,NonExempt,S #21 Duhron Goodman,Available,2026-11-17T21:00:00-06:00,https://big12sports.com/FBReporting,False
+401856869,Iowa State,defense,NonExempt,S #22 Xavier Martinez,Available,2026-11-17T21:00:00-06:00,https://big12sports.com/FBReporting,False
+401856869,Iowa State,defense,NonExempt,S #24 Brody Miller,Available,2026-11-17T21:00:00-06:00,https://big12sports.com/FBReporting,False
+401856869,Iowa State,defense,NonExempt,CB #26 Tyrone Cotton III,Available,2026-11-17T21:00:00-06:00,https://big12sports.com/FBReporting,False
+401856869,Iowa State,defense,NonExempt,CB #29 Toe Sanders,Available,2026-11-17T21:00:00-06:00,https://big12sports.com/FBReporting,False
+401856869,Iowa State,defense,NonExempt,LB #31 Montreze Smith Jr.,Available,2026-11-17T21:00:00-06:00,https://big12sports.com/FBReporting,False
+401856869,Iowa State,defense,NonExempt,CB #32 Angelo Jackson,Available,2026-11-17T21:00:00-06:00,https://big12sports.com/FBReporting,False
+401856869,Iowa State,defense,NonExempt,S #33 Brady Hummel,Available,2026-11-17T21:00:00-06:00,https://big12sports.com/FBReporting,False
+401856869,Iowa State,defense,NonExempt,LB #34 Beau Goodwin,Available,2026-11-17T21:00:00-06:00,https://big12sports.com/FBReporting,False
+401856869,Iowa State,defense,NonExempt,S #35 Tayten Duncan,Available,2026-11-17T21:00:00-06:00,https://big12sports.com/FBReporting,False
+401856869,Iowa State,defense,NonExempt,LB #36 Bradley Esser,Available,2026-11-17T21:00:00-06:00,https://big12sports.com/FBReporting,False
+401856869,Iowa State,defense,NonExempt,CB #38 Amiri Barnes,Available,2026-11-17T21:00:00-06:00,https://big12sports.com/FBReporting,False
+401856869,Iowa State,defense,NonExempt,LB #40 Landon Kalsbeck,Available,2026-11-17T21:00:00-06:00,https://big12sports.com/FBReporting,False
+401856869,Iowa State,defense,NonExempt,LB #41 Rylan Barnes,Available,2026-11-17T21:00:00-06:00,https://big12sports.com/FBReporting,False
+401856869,Iowa State,defense,NonExempt,S #42 Matthew McClain,Available,2026-11-17T21:00:00-06:00,https://big12sports.com/FBReporting,False
+401856869,Iowa State,defense,NonExempt,S #43 Caden Matson,Available,2026-11-17T21:00:00-06:00,https://big12sports.com/FBReporting,False
+401856869,Iowa State,defense,NonExempt,DE #44 Trey Verdon,Available,2026-11-17T21:00:00-06:00,https://big12sports.com/FBReporting,False
+401856869,Iowa State,defense,NonExempt,DE #47 Tyler Burnstein,Available,2026-11-17T21:00:00-06:00,https://big12sports.com/FBReporting,False
+401856869,Iowa State,defense,NonExempt,DE #50 Jack Limbaugh,Available,2026-11-17T21:00:00-06:00,https://big12sports.com/FBReporting,False
+401856869,Iowa State,defense,NonExempt,DT #53 Jaden Weaver,Available,2026-11-17T21:00:00-06:00,https://big12sports.com/FBReporting,False
+401856869,Iowa State,defense,NonExempt,DE #55 Jace Gilbert,Available,2026-11-17T21:00:00-06:00,https://big12sports.com/FBReporting,False
+401856869,Iowa State,defense,NonExempt,DE #57 Ajibola Afuye,Available,2026-11-17T21:00:00-06:00,https://big12sports.com/FBReporting,False
+401856869,Iowa State,defense,NonExempt,DT #59 Daniel Howard,Available,2026-11-17T21:00:00-06:00,https://big12sports.com/FBReporting,False
+401856869,Iowa State,defense,NonExempt,DE #88 Isaac Terrell,Available,2026-11-17T21:00:00-06:00,https://big12sports.com/FBReporting,False
+401856869,Iowa State,defense,NonExempt,DT #89 Donovan Fitzmaurice,Available,2026-11-17T21:00:00-06:00,https://big12sports.com/FBReporting,False
+401856869,Iowa State,defense,NonExempt,DT #90 Jareb Ramos,Available,2026-11-17T21:00:00-06:00,https://big12sports.com/FBReporting,False
+401856869,Iowa State,defense,NonExempt,DE #91 Blake Hawkins,Available,2026-11-17T21:00:00-06:00,https://big12sports.com/FBReporting,False
+401856869,Iowa State,defense,NonExempt,DE #92 Caden Crawford,Available,2026-11-17T21:00:00-06:00,https://big12sports.com/FBReporting,False
+401856869,Iowa State,defense,NonExempt,DE #93 Jack Janikowski,Available,2026-11-17T21:00:00-06:00,https://big12sports.com/FBReporting,False
+401856869,Iowa State,defense,NonExempt,DT #94 Jake Jones,Available,2026-11-17T21:00:00-06:00,https://big12sports.com/FBReporting,False
+401856869,Iowa State,defense,NonExempt,DT #95 Ka'Mori Moore,Out,2026-11-17T21:00:00-06:00,https://big12sports.com/FBReporting,False
+401856869,Iowa State,defense,NonExempt,DE #96 Chet Andrews,Available,2026-11-17T21:00:00-06:00,https://big12sports.com/FBReporting,False
+401856869,Iowa State,defense,NonExempt,DT #97 Max Baloun,Available,2026-11-17T21:00:00-06:00,https://big12sports.com/FBReporting,False
+401856869,Iowa State,defense,NonExempt,DE #98 Malaki Ta'ase,Available,2026-11-17T21:00:00-06:00,https://big12sports.com/FBReporting,False
+401856869,Iowa State,defense,NonExempt,DT #99 Bryson Lamb,Available,2026-11-17T21:00:00-06:00,https://big12sports.com/FBReporting,False
+401856869,UCF,qb,NonExempt,QB #8 Rocco Marriott,Available,2026-11-17T21:00:00-06:00,https://big12sports.com/FBReporting,False
+401856869,UCF,qb,NonExempt,QB #10 Kaleb Annett,Available,2026-11-17T21:00:00-06:00,https://big12sports.com/FBReporting,False
+401856869,UCF,qb,NonExempt,QB #12 Keyone Jenkins,Available,2026-11-17T21:00:00-06:00,https://big12sports.com/FBReporting,False
+401856869,UCF,qb,NonExempt,QB #14 Alonza Barnett III,Available,2026-11-17T21:00:00-06:00,https://big12sports.com/FBReporting,False
+401856869,UCF,qb,NonExempt,QB #16 Dante Carr,Available,2026-11-17T21:00:00-06:00,https://big12sports.com/FBReporting,False
+401856869,UCF,ol,NonExempt,OL #53 LaParka Langston,Available,2026-11-17T21:00:00-06:00,https://big12sports.com/FBReporting,False
+401856869,UCF,ol,NonExempt,OL #54 Cooper Terpstra,Available,2026-11-17T21:00:00-06:00,https://big12sports.com/FBReporting,False
+401856869,UCF,ol,NonExempt,OL #55 Jacob Maiava,Available,2026-11-17T21:00:00-06:00,https://big12sports.com/FBReporting,False
+401856869,UCF,ol,NonExempt,OL #57 Camp Lott,Available,2026-11-17T21:00:00-06:00,https://big12sports.com/FBReporting,False
+401856869,UCF,ol,NonExempt,OL #58 Connor Meadows,Available,2026-11-17T21:00:00-06:00,https://big12sports.com/FBReporting,False
+401856869,UCF,ol,Exempt,OL #61 Owen Spell,Exempt,2026-11-17T21:00:00-06:00,https://big12sports.com/FBReporting,False
+401856869,UCF,ol,NonExempt,OL #66 Brady Wayburn,Available,2026-11-17T21:00:00-06:00,https://big12sports.com/FBReporting,False
+401856869,UCF,ol,NonExempt,OL #67 Noah Senka,Available,2026-11-17T21:00:00-06:00,https://big12sports.com/FBReporting,False
+401856869,UCF,ol,NonExempt,OL #68 Ethan Higgins,Available,2026-11-17T21:00:00-06:00,https://big12sports.com/FBReporting,False
+401856869,UCF,ol,NonExempt,OL #70 RaiShaun McHaney,Available,2026-11-17T21:00:00-06:00,https://big12sports.com/FBReporting,False
+401856869,UCF,ol,Exempt,OL #71 Amahn Williams,Exempt,2026-11-17T21:00:00-06:00,https://big12sports.com/FBReporting,False
+401856869,UCF,ol,NonExempt,OL #72 Dominick Campbell,Available,2026-11-17T21:00:00-06:00,https://big12sports.com/FBReporting,False
+401856869,UCF,ol,NonExempt,OL #73 Henry Tabansi,Available,2026-11-17T21:00:00-06:00,https://big12sports.com/FBReporting,False
+401856869,UCF,ol,NonExempt,OL #74 Matthew Prigmore,Available,2026-11-17T21:00:00-06:00,https://big12sports.com/FBReporting,False
+401856869,UCF,ol,Exempt,OL #75 Tyler Gibson,Exempt,2026-11-17T21:00:00-06:00,https://big12sports.com/FBReporting,False
+401856869,UCF,ol,NonExempt,OL #76 Justin Royes,Available,2026-11-17T21:00:00-06:00,https://big12sports.com/FBReporting,False
+401856869,UCF,ol,NonExempt,OL #77 Kasiyah Charlton,Available,2026-11-17T21:00:00-06:00,https://big12sports.com/FBReporting,False
+401856869,UCF,ol,NonExempt,OL #78 Preston Cushman,Available,2026-11-17T21:00:00-06:00,https://big12sports.com/FBReporting,False
+401856869,UCF,ol,NonExempt,OL #79 Daniel Marcellinus,Available,2026-11-17T21:00:00-06:00,https://big12sports.com/FBReporting,False
+401856869,UCF,defense,NonExempt,DT #0 Horace Lockett,Questionable,2026-11-17T21:00:00-06:00,https://big12sports.com/FBReporting,False
+401856869,UCF,defense,NonExempt,DB #1 Jayden Bellamy,Available,2026-11-17T21:00:00-06:00,https://big12sports.com/FBReporting,False
+401856869,UCF,defense,NonExempt,DB #2 Jayden Williams,Available,2026-11-17T21:00:00-06:00,https://big12sports.com/FBReporting,False
+401856869,UCF,defense,NonExempt,DB #4 Braeden Marshall,Available,2026-11-17T21:00:00-06:00,https://big12sports.com/FBReporting,False
+401856869,UCF,defense,NonExempt,DB #5 DJ Bell,Probable,2026-11-17T21:00:00-06:00,https://big12sports.com/FBReporting,False
+401856869,UCF,defense,NonExempt,DB #7 Antione Jackson,Available,2026-11-17T21:00:00-06:00,https://big12sports.com/FBReporting,False
+401856869,UCF,defense,NonExempt,DB #8 Demari Henderson,Out,2026-11-17T21:00:00-06:00,https://big12sports.com/FBReporting,False
+401856869,UCF,defense,NonExempt,DB #14 Kahmel Johnson,Probable,2026-11-17T21:00:00-06:00,https://big12sports.com/FBReporting,False
+401856869,UCF,defense,NonExempt,LB #15 Preston Hall,Available,2026-11-17T21:00:00-06:00,https://big12sports.com/FBReporting,False
+401856869,UCF,defense,NonExempt,DB #16 Antonio Branch Jr.,Available,2026-11-17T21:00:00-06:00,https://big12sports.com/FBReporting,False
+401856869,UCF,defense,NonExempt,DB #17 Jailen Duffie,Available,2026-11-17T21:00:00-06:00,https://big12sports.com/FBReporting,False
+401856869,UCF,defense,NonExempt,DB #18 Caleb Flagg,Available,2026-11-17T21:00:00-06:00,https://big12sports.com/FBReporting,False
+401856869,UCF,defense,NonExempt,LB #19 Rashad Henry,Available,2026-11-17T21:00:00-06:00,https://big12sports.com/FBReporting,False
+401856869,UCF,defense,NonExempt,LB #20 Lewis Carter,Available,2026-11-17T21:00:00-06:00,https://big12sports.com/FBReporting,False
+401856869,UCF,defense,NonExempt,DB #21 Ty Bartrum,Available,2026-11-17T21:00:00-06:00,https://big12sports.com/FBReporting,False
+401856869,UCF,defense,NonExempt,DB #22 Amarion Queen,Available,2026-11-17T21:00:00-06:00,https://big12sports.com/FBReporting,False
+401856869,UCF,defense,NonExempt,LB #23 Jayden Burnett,Available,2026-11-17T21:00:00-06:00,https://big12sports.com/FBReporting,False
+401856869,UCF,defense,NonExempt,LB #24 Tackett Curtis,Available,2026-11-17T21:00:00-06:00,https://big12sports.com/FBReporting,False
+401856869,UCF,defense,NonExempt,DB #25 Rukeem Stroud,Available,2026-11-17T21:00:00-06:00,https://big12sports.com/FBReporting,False
+401856869,UCF,defense,NonExempt,DB #26 Elijah Keys,Available,2026-11-17T21:00:00-06:00,https://big12sports.com/FBReporting,False
+401856869,UCF,defense,NonExempt,DB #27 Nicholas Antoine,Available,2026-11-17T21:00:00-06:00,https://big12sports.com/FBReporting,False
+401856869,UCF,defense,NonExempt,DB #28 Matt Irwin,Available,2026-11-17T21:00:00-06:00,https://big12sports.com/FBReporting,False
+401856869,UCF,defense,NonExempt,DB #29 Tyce Porcher,Available,2026-11-17T21:00:00-06:00,https://big12sports.com/FBReporting,False
+401856869,UCF,defense,NonExempt,DB #30 Otis Hardy,Available,2026-11-17T21:00:00-06:00,https://big12sports.com/FBReporting,False
+401856869,UCF,defense,NonExempt,LB #32 Matthew Occhipinti,Available,2026-11-17T21:00:00-06:00,https://big12sports.com/FBReporting,False
+401856869,UCF,defense,NonExempt,LB #33 Phil Picciotti,Available,2026-11-17T21:00:00-06:00,https://big12sports.com/FBReporting,False
+401856869,UCF,defense,NonExempt,LB #34 Jahleel Culbreath,Available,2026-11-17T21:00:00-06:00,https://big12sports.com/FBReporting,False
+401856869,UCF,defense,NonExempt,LB #36 Dylan Bennett,Available,2026-11-17T21:00:00-06:00,https://big12sports.com/FBReporting,False
+401856869,UCF,defense,NonExempt,LB #38 Jayden Jennings,Questionable,2026-11-17T21:00:00-06:00,https://big12sports.com/FBReporting,False
+401856869,UCF,defense,NonExempt,DT #42 Artavius Jones,Available,2026-11-17T21:00:00-06:00,https://big12sports.com/FBReporting,False
+401856869,UCF,defense,NonExempt,LB #43 Cole Kozlowski,Available,2026-11-17T21:00:00-06:00,https://big12sports.com/FBReporting,False
+401856869,UCF,defense,NonExempt,LB #47 Arthur Kingdom,Available,2026-11-17T21:00:00-06:00,https://big12sports.com/FBReporting,False
+401856869,UCF,defense,NonExempt,DB #49 Donnell Johnson III,Available,2026-11-17T21:00:00-06:00,https://big12sports.com/FBReporting,False
+401856869,UCF,defense,NonExempt,DT #54 Trenton Turner,Available,2026-11-17T21:00:00-06:00,https://big12sports.com/FBReporting,False
+401856869,UCF,defense,NonExempt,DT #55 Noah Mercer,Available,2026-11-17T21:00:00-06:00,https://big12sports.com/FBReporting,False
+401856869,UCF,defense,NonExempt,DT #90 Mujahid Jefferson,Available,2026-11-17T21:00:00-06:00,https://big12sports.com/FBReporting,False
+401856869,UCF,defense,NonExempt,DT #91 Donteye Drew,Available,2026-11-17T21:00:00-06:00,https://big12sports.com/FBReporting,False
+401856869,UCF,defense,NonExempt,DT #92 Jeffson Lafontant,Available,2026-11-17T21:00:00-06:00,https://big12sports.com/FBReporting,False
+401856869,UCF,defense,NonExempt,DT #93 Brad Gurley Jr.,Available,2026-11-17T21:00:00-06:00,https://big12sports.com/FBReporting,False
+401856869,UCF,defense,Exempt,DT #95 RJ Jackson Jr.,Exempt,2026-11-17T21:00:00-06:00,https://big12sports.com/FBReporting,False
+401856869,UCF,defense,NonExempt,DT #97 Josh Schell,Available,2026-11-17T21:00:00-06:00,https://big12sports.com/FBReporting,False
+401856869,UCF,defense,NonExempt,DT #99 Thomas Collins,Available,2026-11-17T21:00:00-06:00,https://big12sports.com/FBReporting,False
+401858303,Clemson,qb,NonExempt,QB #2 Tait Reynolds,Out,2026-11-17T20:00:00-05:00,https://app.hdintelligence.com/?conf=ACC&source=ACC&sport=Football&type=report,False
+401858303,Clemson,qb,NonExempt,QB #5 Brock Bradley,Available,2026-11-17T20:00:00-05:00,https://app.hdintelligence.com/?conf=ACC&source=ACC&sport=Football&type=report,False
+401858303,Clemson,qb,NonExempt,QB #9 Colson Brown,Available,2026-11-17T20:00:00-05:00,https://app.hdintelligence.com/?conf=ACC&source=ACC&sport=Football&type=report,False
+401858303,Clemson,qb,NonExempt,QB #14 Trent Pearman,Available,2026-11-17T20:00:00-05:00,https://app.hdintelligence.com/?conf=ACC&source=ACC&sport=Football&type=report,False
+401858303,Clemson,qb,NonExempt,QB #17 Christopher Vizzina,Out,2026-11-17T20:00:00-05:00,https://app.hdintelligence.com/?conf=ACC&source=ACC&sport=Football&type=report,False
+401858303,Clemson,ol,NonExempt,OL #50 Collin Sadler,Available,2026-11-17T20:00:00-05:00,https://app.hdintelligence.com/?conf=ACC&source=ACC&sport=Football&type=report,False
+401858303,Clemson,ol,NonExempt,OL #51 Gavin Blanchard,Available,2026-11-17T20:00:00-05:00,https://app.hdintelligence.com/?conf=ACC&source=ACC&sport=Football&type=report,False
+401858303,Clemson,ol,NonExempt,OL #52 Elyjah Thurmon,Available,2026-11-17T20:00:00-05:00,https://app.hdintelligence.com/?conf=ACC&source=ACC&sport=Football&type=report,False
+401858303,Clemson,ol,NonExempt,OL #54 Ian Reed,Available,2026-11-17T20:00:00-05:00,https://app.hdintelligence.com/?conf=ACC&source=ACC&sport=Football&type=report,False
+401858303,Clemson,ol,NonExempt,OL #55 Harris Sewell,Probable,2026-11-17T20:00:00-05:00,https://app.hdintelligence.com/?conf=ACC&source=ACC&sport=Football&type=report,False
+401858303,Clemson,ol,NonExempt,OL #62 Bryce Smith,Available,2026-11-17T20:00:00-05:00,https://app.hdintelligence.com/?conf=ACC&source=ACC&sport=Football&type=report,False
+401858303,Clemson,ol,NonExempt,OL #63 Easton Ware,Questionable,2026-11-17T20:00:00-05:00,https://app.hdintelligence.com/?conf=ACC&source=ACC&sport=Football&type=report,False
+401858303,Clemson,ol,NonExempt,OL #64 Grant Wise,Available,2026-11-17T20:00:00-05:00,https://app.hdintelligence.com/?conf=ACC&source=ACC&sport=Football&type=report,False
+401858303,Clemson,ol,NonExempt,OL #65 Chapman Pendergrass,Available,2026-11-17T20:00:00-05:00,https://app.hdintelligence.com/?conf=ACC&source=ACC&sport=Football&type=report,False
+401858303,Clemson,ol,NonExempt,OL #67 Carlito Jones,Available,2026-11-17T20:00:00-05:00,https://app.hdintelligence.com/?conf=ACC&source=ACC&sport=Football&type=report,False
+401858303,Clemson,ol,NonExempt,OL #70 Chance Barclay,Available,2026-11-17T20:00:00-05:00,https://app.hdintelligence.com/?conf=ACC&source=ACC&sport=Football&type=report,False
+401858303,Clemson,ol,NonExempt,OL #71 Leo Delaney,Available,2026-11-17T20:00:00-05:00,https://app.hdintelligence.com/?conf=ACC&source=ACC&sport=Football&type=report,False
+401858303,Clemson,ol,Exempt,OL #72 Adam Guthrie,Exempt,2026-11-17T20:00:00-05:00,https://app.hdintelligence.com/?conf=ACC&source=ACC&sport=Football&type=report,False
+401858303,Clemson,ol,NonExempt,OL #73 Hayes Galloway,Available,2026-11-17T20:00:00-05:00,https://app.hdintelligence.com/?conf=ACC&source=ACC&sport=Football&type=report,False
+401858303,Clemson,ol,NonExempt,OL #74 Brayden Jacobs,Available,2026-11-17T20:00:00-05:00,https://app.hdintelligence.com/?conf=ACC&source=ACC&sport=Football&type=report,False
+401858303,Clemson,ol,NonExempt,OL #75 Tucker Kattus,Available,2026-11-17T20:00:00-05:00,https://app.hdintelligence.com/?conf=ACC&source=ACC&sport=Football&type=report,False
+401858303,Clemson,ol,NonExempt,OL #76 Mason Wade,Out,2026-11-17T20:00:00-05:00,https://app.hdintelligence.com/?conf=ACC&source=ACC&sport=Football&type=report,False
+401858303,Clemson,ol,NonExempt,OL #77 Ronan O'Connell,Available,2026-11-17T20:00:00-05:00,https://app.hdintelligence.com/?conf=ACC&source=ACC&sport=Football&type=report,False
+401858303,Clemson,ol,NonExempt,OL #78 Carter Scruggs,Available,2026-11-17T20:00:00-05:00,https://app.hdintelligence.com/?conf=ACC&source=ACC&sport=Football&type=report,False
+401858303,Clemson,ol,NonExempt,OL #79 Braden Wilmes,Out,2026-11-17T20:00:00-05:00,https://app.hdintelligence.com/?conf=ACC&source=ACC&sport=Football&type=report,False
+401858303,Clemson,defense,NonExempt,CB #0 Donovan Starr,Out,2026-11-17T20:00:00-05:00,https://app.hdintelligence.com/?conf=ACC&source=ACC&sport=Football&type=report,False
+401858303,Clemson,defense,NonExempt,CB #1 Branden Strozier,Available,2026-11-17T20:00:00-05:00,https://app.hdintelligence.com/?conf=ACC&source=ACC&sport=Football&type=report,False
+401858303,Clemson,defense,NonExempt,CB #2 Ashton Hampton,Available,2026-11-17T20:00:00-05:00,https://app.hdintelligence.com/?conf=ACC&source=ACC&sport=Football&type=report,False
+401858303,Clemson,defense,NonExempt,CB #3 Elliot Washington II,Available,2026-11-17T20:00:00-05:00,https://app.hdintelligence.com/?conf=ACC&source=ACC&sport=Football&type=report,False
+401858303,Clemson,defense,NonExempt,S #5 Ronan Hanafin,Available,2026-11-17T20:00:00-05:00,https://app.hdintelligence.com/?conf=ACC&source=ACC&sport=Football&type=report,False
+401858303,Clemson,defense,NonExempt,S #6 Jerome Carter III,Available,2026-11-17T20:00:00-05:00,https://app.hdintelligence.com/?conf=ACC&source=ACC&sport=Football&type=report,False
+401858303,Clemson,defense,NonExempt,LB #7 Jeremiah Alexander,Questionable,2026-11-17T20:00:00-05:00,https://app.hdintelligence.com/?conf=ACC&source=ACC&sport=Football&type=report,False
+401858303,Clemson,defense,Out,CB #8 Corian Gipson,Out,2026-11-17T20:00:00-05:00,https://app.hdintelligence.com/?conf=ACC&source=ACC&sport=Football&type=report,False
+401858303,Clemson,defense,NonExempt,LB #9 Drew Woodaz,Available,2026-11-17T20:00:00-05:00,https://app.hdintelligence.com/?conf=ACC&source=ACC&sport=Football&type=report,False
+401858303,Clemson,defense,NonExempt,DB #10 Misun Kelley,Available,2026-11-17T20:00:00-05:00,https://app.hdintelligence.com/?conf=ACC&source=ACC&sport=Football&type=report,False
+401858303,Clemson,defense,Out,S #11 Polo Anderson,Out,2026-11-17T20:00:00-05:00,https://app.hdintelligence.com/?conf=ACC&source=ACC&sport=Football&type=report,False
+401858303,Clemson,defense,Out,CB #12 Shavar Young Jr.,Out,2026-11-17T20:00:00-05:00,https://app.hdintelligence.com/?conf=ACC&source=ACC&sport=Football&type=report,False
+401858303,Clemson,defense,NonExempt,DE #13 Will Heldt,Available,2026-11-17T20:00:00-05:00,https://app.hdintelligence.com/?conf=ACC&source=ACC&sport=Football&type=report,False
+401858303,Clemson,defense,NonExempt,DE #14 London Merritt,Available,2026-11-17T20:00:00-05:00,https://app.hdintelligence.com/?conf=ACC&source=ACC&sport=Football&type=report,False
+401858303,Clemson,defense,NonExempt,DE #15 Jahiem Lawson,Available,2026-11-17T20:00:00-05:00,https://app.hdintelligence.com/?conf=ACC&source=ACC&sport=Football&type=report,False
+401858303,Clemson,defense,NonExempt,CB #16 Myles Oliver,Available,2026-11-17T20:00:00-05:00,https://app.hdintelligence.com/?conf=ACC&source=ACC&sport=Football&type=report,False
+401858303,Clemson,defense,NonExempt,DE #17 Ari Watford,Available,2026-11-17T20:00:00-05:00,https://app.hdintelligence.com/?conf=ACC&source=ACC&sport=Football&type=report,False
+401858303,Clemson,defense,NonExempt,S #18 Kylon Griffin,Available,2026-11-17T20:00:00-05:00,https://app.hdintelligence.com/?conf=ACC&source=ACC&sport=Football&type=report,False
+401858303,Clemson,defense,NonExempt,LB #19 Brayden Reilly,Available,2026-11-17T20:00:00-05:00,https://app.hdintelligence.com/?conf=ACC&source=ACC&sport=Football&type=report,False
+401858303,Clemson,defense,NonExempt,S #20 Jakarrion Kenan,Available,2026-11-17T20:00:00-05:00,https://app.hdintelligence.com/?conf=ACC&source=ACC&sport=Football&type=report,False
+401858303,Clemson,defense,NonExempt,LB #21 Kobe McCloud,Available,2026-11-17T20:00:00-05:00,https://app.hdintelligence.com/?conf=ACC&source=ACC&sport=Football&type=report,False
+401858303,Clemson,defense,NonExempt,S #22 Corey Myrick,Available,2026-11-17T20:00:00-05:00,https://app.hdintelligence.com/?conf=ACC&source=ACC&sport=Football&type=report,False
+401858303,Clemson,defense,NonExempt,DE #23 C.J. Wesley,Available,2026-11-17T20:00:00-05:00,https://app.hdintelligence.com/?conf=ACC&source=ACC&sport=Football&type=report,False
+401858303,Clemson,defense,NonExempt,LB #24 Logan Anderson,Available,2026-11-17T20:00:00-05:00,https://app.hdintelligence.com/?conf=ACC&source=ACC&sport=Football&type=report,False
+401858303,Clemson,defense,NonExempt,CB #25 Marcell Gipson Jr.,Available,2026-11-17T20:00:00-05:00,https://app.hdintelligence.com/?conf=ACC&source=ACC&sport=Football&type=report,False
+401858303,Clemson,defense,NonExempt,LB #26 C.J. Kubah-Taylor,Available,2026-11-17T20:00:00-05:00,https://app.hdintelligence.com/?conf=ACC&source=ACC&sport=Football&type=report,False
+401858303,Clemson,defense,NonExempt,S #27 Noah Dixon,Available,2026-11-17T20:00:00-05:00,https://app.hdintelligence.com/?conf=ACC&source=ACC&sport=Football&type=report,False
+401858303,Clemson,defense,NonExempt,DT #29 Champ Thompson,Questionable,2026-11-17T20:00:00-05:00,https://app.hdintelligence.com/?conf=ACC&source=ACC&sport=Football&type=report,False
+401858303,Clemson,defense,NonExempt,S #30 Kylen Webb,Available,2026-11-17T20:00:00-05:00,https://app.hdintelligence.com/?conf=ACC&source=ACC&sport=Football&type=report,False
+401858303,Clemson,defense,NonExempt,S #31 Joe Wilkinson,Available,2026-11-17T20:00:00-05:00,https://app.hdintelligence.com/?conf=ACC&source=ACC&sport=Football&type=report,False
+401858303,Clemson,defense,NonExempt,DE #32 Michael Foster,Available,2026-11-17T20:00:00-05:00,https://app.hdintelligence.com/?conf=ACC&source=ACC&sport=Football&type=report,False
+401858303,Clemson,defense,NonExempt,DL #33 Caden Story,Available,2026-11-17T20:00:00-05:00,https://app.hdintelligence.com/?conf=ACC&source=ACC&sport=Football&type=report,False
+401858303,Clemson,defense,Exempt,DE #34 Armon Mason,Exempt,2026-11-17T20:00:00-05:00,https://app.hdintelligence.com/?conf=ACC&source=ACC&sport=Football&type=report,False
+401858303,Clemson,defense,NonExempt,DB #35 Tyler Conner,Available,2026-11-17T20:00:00-05:00,https://app.hdintelligence.com/?conf=ACC&source=ACC&sport=Football&type=report,False
+401858303,Clemson,defense,NonExempt,CB #37 Davion Joyner,Available,2026-11-17T20:00:00-05:00,https://app.hdintelligence.com/?conf=ACC&source=ACC&sport=Football&type=report,False
+401858303,Clemson,defense,NonExempt,LB #38 Dominic Staten,Available,2026-11-17T20:00:00-05:00,https://app.hdintelligence.com/?conf=ACC&source=ACC&sport=Football&type=report,False
+401858303,Clemson,defense,NonExempt,LB #39 J.D. Bonamy,Available,2026-11-17T20:00:00-05:00,https://app.hdintelligence.com/?conf=ACC&source=ACC&sport=Football&type=report,False
+401858303,Clemson,defense,NonExempt,DE #41 Connor McFadden,Available,2026-11-17T20:00:00-05:00,https://app.hdintelligence.com/?conf=ACC&source=ACC&sport=Football&type=report,False
+401858303,Clemson,defense,Exempt,DT #42 Hevin Brown-Shuler,Exempt,2026-11-17T20:00:00-05:00,https://app.hdintelligence.com/?conf=ACC&source=ACC&sport=Football&type=report,False
+401858303,Clemson,defense,NonExempt,LB #43 Billy Wilkes,Available,2026-11-17T20:00:00-05:00,https://app.hdintelligence.com/?conf=ACC&source=ACC&sport=Football&type=report,False
+401858303,Clemson,defense,NonExempt,DT #44 Kourtney Kelly,Available,2026-11-17T20:00:00-05:00,https://app.hdintelligence.com/?conf=ACC&source=ACC&sport=Football&type=report,False
+401858303,Clemson,defense,NonExempt,DT #45 Vic Burley,Out,2026-11-17T20:00:00-05:00,https://app.hdintelligence.com/?conf=ACC&source=ACC&sport=Football&type=report,False
+401858303,Clemson,defense,NonExempt,LB #47 Sammy Brown,Available,2026-11-17T20:00:00-05:00,https://app.hdintelligence.com/?conf=ACC&source=ACC&sport=Football&type=report,False
+401858303,Clemson,defense,NonExempt,DE #49 Darien Mayo,Available,2026-11-17T20:00:00-05:00,https://app.hdintelligence.com/?conf=ACC&source=ACC&sport=Football&type=report,False
+401858303,Clemson,defense,NonExempt,LB #50 Fletcher Cothran,Available,2026-11-17T20:00:00-05:00,https://app.hdintelligence.com/?conf=ACC&source=ACC&sport=Football&type=report,False
+401858303,Clemson,defense,Exempt,LB #53 Joseph Roberto II,Exempt,2026-11-17T20:00:00-05:00,https://app.hdintelligence.com/?conf=ACC&source=ACC&sport=Football&type=report,False
+401858303,Clemson,defense,NonExempt,DT #54 Kam Cody,Available,2026-11-17T20:00:00-05:00,https://app.hdintelligence.com/?conf=ACC&source=ACC&sport=Football&type=report,False
+401858303,Clemson,defense,NonExempt,DT #55 Makhi Williams Lee,Available,2026-11-17T20:00:00-05:00,https://app.hdintelligence.com/?conf=ACC&source=ACC&sport=Football&type=report,False
+401858303,Clemson,defense,NonExempt,DT #56 Andy Burburija,Available,2026-11-17T20:00:00-05:00,https://app.hdintelligence.com/?conf=ACC&source=ACC&sport=Football&type=report,False
+401858303,Clemson,defense,NonExempt,DE #90 J.R. Hardrick,Available,2026-11-17T20:00:00-05:00,https://app.hdintelligence.com/?conf=ACC&source=ACC&sport=Football&type=report,False
+401858303,Clemson,defense,NonExempt,DT #91 Dietrick Pennington,Available,2026-11-17T20:00:00-05:00,https://app.hdintelligence.com/?conf=ACC&source=ACC&sport=Football&type=report,False
+401858303,Clemson,defense,NonExempt,DT #92 Devarrick Woods,Available,2026-11-17T20:00:00-05:00,https://app.hdintelligence.com/?conf=ACC&source=ACC&sport=Football&type=report,False
+401858303,Clemson,defense,NonExempt,DT #95 Amare Adams,Available,2026-11-17T20:00:00-05:00,https://app.hdintelligence.com/?conf=ACC&source=ACC&sport=Football&type=report,False
+401858303,Clemson,defense,NonExempt,DT #97 Patrick Swygert,Available,2026-11-17T20:00:00-05:00,https://app.hdintelligence.com/?conf=ACC&source=ACC&sport=Football&type=report,False
+401858303,Clemson,defense,NonExempt,DT #99 Markus Strong,Out,2026-11-17T20:00:00-05:00,https://app.hdintelligence.com/?conf=ACC&source=ACC&sport=Football&type=report,False
+401858303,Duke,qb,NonExempt,QB #2 Walker Eget,Available,2026-11-17T20:00:00-05:00,https://app.hdintelligence.com/?conf=ACC&source=ACC&sport=Football&type=report,False
+401858303,Duke,qb,NonExempt,QB #10 Dan Mahan,Available,2026-11-17T20:00:00-05:00,https://app.hdintelligence.com/?conf=ACC&source=ACC&sport=Football&type=report,False
+401858303,Duke,qb,NonExempt,QB #11 Ari Patu,Available,2026-11-17T20:00:00-05:00,https://app.hdintelligence.com/?conf=ACC&source=ACC&sport=Football&type=report,False
+401858303,Duke,qb,NonExempt,QB #12 Blaine Hipa,Available,2026-11-17T20:00:00-05:00,https://app.hdintelligence.com/?conf=ACC&source=ACC&sport=Football&type=report,False
+401858303,Duke,qb,NonExempt,QB #13 Terry Walker III,Out,2026-11-17T20:00:00-05:00,https://app.hdintelligence.com/?conf=ACC&source=ACC&sport=Football&type=report,False
+401858303,Duke,qb,NonExempt,QB #16 Lawrence Gardner,Available,2026-11-17T20:00:00-05:00,https://app.hdintelligence.com/?conf=ACC&source=ACC&sport=Football&type=report,False
+401858303,Duke,ol,NonExempt,OL #54 Daniel Boyd,Available,2026-11-17T20:00:00-05:00,https://app.hdintelligence.com/?conf=ACC&source=ACC&sport=Football&type=report,False
+401858303,Duke,ol,NonExempt,OL #55 Ryan Daly,Available,2026-11-17T20:00:00-05:00,https://app.hdintelligence.com/?conf=ACC&source=ACC&sport=Football&type=report,False
+401858303,Duke,ol,NonExempt,OL #56 Nick Del Grande,Available,2026-11-17T20:00:00-05:00,https://app.hdintelligence.com/?conf=ACC&source=ACC&sport=Football&type=report,False
+401858303,Duke,ol,NonExempt,OL #60 Sean Stover,Available,2026-11-17T20:00:00-05:00,https://app.hdintelligence.com/?conf=ACC&source=ACC&sport=Football&type=report,False
+401858303,Duke,ol,NonExempt,OL #62 Cole Allen,Out,2026-11-17T20:00:00-05:00,https://app.hdintelligence.com/?conf=ACC&source=ACC&sport=Football&type=report,False
+401858303,Duke,ol,NonExempt,OL #63 Bradley Smith,Available,2026-11-17T20:00:00-05:00,https://app.hdintelligence.com/?conf=ACC&source=ACC&sport=Football&type=report,False
+401858303,Duke,ol,NonExempt,OL #64 Jordan Larsen,Available,2026-11-17T20:00:00-05:00,https://app.hdintelligence.com/?conf=ACC&source=ACC&sport=Football&type=report,False
+401858303,Duke,ol,NonExempt,OL #65 Kai Jacobowitz,Out,2026-11-17T20:00:00-05:00,https://app.hdintelligence.com/?conf=ACC&source=ACC&sport=Football&type=report,False
+401858303,Duke,ol,NonExempt,OL #66 Caleb Dorris,Available,2026-11-17T20:00:00-05:00,https://app.hdintelligence.com/?conf=ACC&source=ACC&sport=Football&type=report,False
+401858303,Duke,ol,NonExempt,OL #72 Matt Craycraft,Available,2026-11-17T20:00:00-05:00,https://app.hdintelligence.com/?conf=ACC&source=ACC&sport=Football&type=report,False
+401858303,Duke,ol,NonExempt,OL #74 Reagan McCranie,Out,2026-11-17T20:00:00-05:00,https://app.hdintelligence.com/?conf=ACC&source=ACC&sport=Football&type=report,False
+401858303,Duke,ol,NonExempt,OL #75 Micah Sahakian,Available,2026-11-17T20:00:00-05:00,https://app.hdintelligence.com/?conf=ACC&source=ACC&sport=Football&type=report,False
+401858303,Duke,ol,NonExempt,OL #76 Gemyel Allen,Available,2026-11-17T20:00:00-05:00,https://app.hdintelligence.com/?conf=ACC&source=ACC&sport=Football&type=report,False
+401858303,Duke,ol,NonExempt,OL #77 Braden Miller,Available,2026-11-17T20:00:00-05:00,https://app.hdintelligence.com/?conf=ACC&source=ACC&sport=Football&type=report,False
+401858303,Duke,ol,NonExempt,OL #78 Nathan Kutufaris,Available,2026-11-17T20:00:00-05:00,https://app.hdintelligence.com/?conf=ACC&source=ACC&sport=Football&type=report,False
+401858303,Duke,ol,NonExempt,OL #79 Roman Fina,Out,2026-11-17T20:00:00-05:00,https://app.hdintelligence.com/?conf=ACC&source=ACC&sport=Football&type=report,False
+401858303,Duke,defense,NonExempt,CB #0 Dylan Flowers,Probable,2026-11-17T20:00:00-05:00,https://app.hdintelligence.com/?conf=ACC&source=ACC&sport=Football&type=report,False
+401858303,Duke,defense,NonExempt,CB #1 Kyon Loud,Probable,2026-11-17T20:00:00-05:00,https://app.hdintelligence.com/?conf=ACC&source=ACC&sport=Football&type=report,False
+401858303,Duke,defense,NonExempt,S #2 Patrick Smith-Young,Out,2026-11-17T20:00:00-05:00,https://app.hdintelligence.com/?conf=ACC&source=ACC&sport=Football&type=report,False
+401858303,Duke,defense,NonExempt,CB #3 Landan Callahan,Available,2026-11-17T20:00:00-05:00,https://app.hdintelligence.com/?conf=ACC&source=ACC&sport=Football&type=report,False
+401858303,Duke,defense,NonExempt,CB #4 Evan Smith,Questionable,2026-11-17T20:00:00-05:00,https://app.hdintelligence.com/?conf=ACC&source=ACC&sport=Football&type=report,False
+401858303,Duke,defense,NonExempt,CB #5 Kimari Robinson,Questionable,2026-11-17T20:00:00-05:00,https://app.hdintelligence.com/?conf=ACC&source=ACC&sport=Football&type=report,False
+401858303,Duke,defense,NonExempt,S #6 Leon Griffin III,Available,2026-11-17T20:00:00-05:00,https://app.hdintelligence.com/?conf=ACC&source=ACC&sport=Football&type=report,False
+401858303,Duke,defense,NonExempt,LB #7 Nick Morris Jr.,Available,2026-11-17T20:00:00-05:00,https://app.hdintelligence.com/?conf=ACC&source=ACC&sport=Football&type=report,False
+401858303,Duke,defense,NonExempt,S #8 DaShawn Stone,Available,2026-11-17T20:00:00-05:00,https://app.hdintelligence.com/?conf=ACC&source=ACC&sport=Football&type=report,False
+401858303,Duke,defense,NonExempt,S #9 Ché Ojarikre,Available,2026-11-17T20:00:00-05:00,https://app.hdintelligence.com/?conf=ACC&source=ACC&sport=Football&type=report,False
+401858303,Duke,defense,NonExempt,DE #10 Tyshon Reed,Available,2026-11-17T20:00:00-05:00,https://app.hdintelligence.com/?conf=ACC&source=ACC&sport=Football&type=report,False
+401858303,Duke,defense,NonExempt,LB #11 Derrick Brown Jr.,Available,2026-11-17T20:00:00-05:00,https://app.hdintelligence.com/?conf=ACC&source=ACC&sport=Football&type=report,False
+401858303,Duke,defense,NonExempt,DE #12 Bryce Davis,Questionable,2026-11-17T20:00:00-05:00,https://app.hdintelligence.com/?conf=ACC&source=ACC&sport=Football&type=report,False
+401858303,Duke,defense,NonExempt,DE #13 Obinna Umeh,Available,2026-11-17T20:00:00-05:00,https://app.hdintelligence.com/?conf=ACC&source=ACC&sport=Football&type=report,False
+401858303,Duke,defense,NonExempt,DE #15 Kevin O'Connor,Questionable,2026-11-17T20:00:00-05:00,https://app.hdintelligence.com/?conf=ACC&source=ACC&sport=Football&type=report,False
+401858303,Duke,defense,NonExempt,DE #18 Kobe Smith,Available,2026-11-17T20:00:00-05:00,https://app.hdintelligence.com/?conf=ACC&source=ACC&sport=Football&type=report,False
+401858303,Duke,defense,NonExempt,LB #19 Jon Morris,Available,2026-11-17T20:00:00-05:00,https://app.hdintelligence.com/?conf=ACC&source=ACC&sport=Football&type=report,False
+401858303,Duke,defense,NonExempt,S #21 KD Cotton,Available,2026-11-17T20:00:00-05:00,https://app.hdintelligence.com/?conf=ACC&source=ACC&sport=Football&type=report,False
+401858303,Duke,defense,NonExempt,CB #23 Kolbe Harmon,Available,2026-11-17T20:00:00-05:00,https://app.hdintelligence.com/?conf=ACC&source=ACC&sport=Football&type=report,False
+401858303,Duke,defense,NonExempt,LB #24 Bradley Gompers,Available,2026-11-17T20:00:00-05:00,https://app.hdintelligence.com/?conf=ACC&source=ACC&sport=Football&type=report,False
+401858303,Duke,defense,NonExempt,CB #26 Tyson Sanford,Available,2026-11-17T20:00:00-05:00,https://app.hdintelligence.com/?conf=ACC&source=ACC&sport=Football&type=report,False
+401858303,Duke,defense,NonExempt,CB #28 Kaleb Lanier,Available,2026-11-17T20:00:00-05:00,https://app.hdintelligence.com/?conf=ACC&source=ACC&sport=Football&type=report,False
+401858303,Duke,defense,NonExempt,S #29 Brady Winter,Available,2026-11-17T20:00:00-05:00,https://app.hdintelligence.com/?conf=ACC&source=ACC&sport=Football&type=report,False
+401858303,Duke,defense,NonExempt,LB #30 Will Felder Jr.,Available,2026-11-17T20:00:00-05:00,https://app.hdintelligence.com/?conf=ACC&source=ACC&sport=Football&type=report,False
+401858303,Duke,defense,NonExempt,LB #31 Elliott Schaper,Out,2026-11-17T20:00:00-05:00,https://app.hdintelligence.com/?conf=ACC&source=ACC&sport=Football&type=report,False
+401858303,Duke,defense,NonExempt,LB #32 Tony Grimmer,Available,2026-11-17T20:00:00-05:00,https://app.hdintelligence.com/?conf=ACC&source=ACC&sport=Football&type=report,False
+401858303,Duke,defense,NonExempt,LB #33 Colsen Gatten,Available,2026-11-17T20:00:00-05:00,https://app.hdintelligence.com/?conf=ACC&source=ACC&sport=Football&type=report,False
+401858303,Duke,defense,NonExempt,LB #34 Luke Mergott,Available,2026-11-17T20:00:00-05:00,https://app.hdintelligence.com/?conf=ACC&source=ACC&sport=Football&type=report,False
+401858303,Duke,defense,NonExempt,S #35 Andrew Pellicciotta,Available,2026-11-17T20:00:00-05:00,https://app.hdintelligence.com/?conf=ACC&source=ACC&sport=Football&type=report,False
+401858303,Duke,defense,NonExempt,S #37 Lyrik Pettis,Available,2026-11-17T20:00:00-05:00,https://app.hdintelligence.com/?conf=ACC&source=ACC&sport=Football&type=report,False
+401858303,Duke,defense,NonExempt,LB #40 Asher Wasserman,Available,2026-11-17T20:00:00-05:00,https://app.hdintelligence.com/?conf=ACC&source=ACC&sport=Football&type=report,False
+401858303,Duke,defense,NonExempt,LB #42 Kendall Johnson,Available,2026-11-17T20:00:00-05:00,https://app.hdintelligence.com/?conf=ACC&source=ACC&sport=Football&type=report,False
+401858303,Duke,defense,NonExempt,DE #43 Semaj Turner,Available,2026-11-17T20:00:00-05:00,https://app.hdintelligence.com/?conf=ACC&source=ACC&sport=Football&type=report,False
+401858303,Duke,defense,NonExempt,DT #44 David Anderson,Probable,2026-11-17T20:00:00-05:00,https://app.hdintelligence.com/?conf=ACC&source=ACC&sport=Football&type=report,False
+401858303,Duke,defense,NonExempt,DT #50 Chadwicke Cannon Jr.,Available,2026-11-17T20:00:00-05:00,https://app.hdintelligence.com/?conf=ACC&source=ACC&sport=Football&type=report,False
+401858303,Duke,defense,NonExempt,DT #55 Julius Columbus,Available,2026-11-17T20:00:00-05:00,https://app.hdintelligence.com/?conf=ACC&source=ACC&sport=Football&type=report,False
+401858303,Duke,defense,NonExempt,DT #88 Bariate Kara,Available,2026-11-17T20:00:00-05:00,https://app.hdintelligence.com/?conf=ACC&source=ACC&sport=Football&type=report,False
+401858303,Duke,defense,NonExempt,DE #90 Tommy Rupley,Available,2026-11-17T20:00:00-05:00,https://app.hdintelligence.com/?conf=ACC&source=ACC&sport=Football&type=report,False
+401858303,Duke,defense,NonExempt,DT #91 Owen Wafle,Available,2026-11-17T20:00:00-05:00,https://app.hdintelligence.com/?conf=ACC&source=ACC&sport=Football&type=report,False
+401858303,Duke,defense,NonExempt,DE #93 Sampson Onuoha,Available,2026-11-17T20:00:00-05:00,https://app.hdintelligence.com/?conf=ACC&source=ACC&sport=Football&type=report,False
+401858303,Duke,defense,NonExempt,DT #95 Preston Watson,Available,2026-11-17T20:00:00-05:00,https://app.hdintelligence.com/?conf=ACC&source=ACC&sport=Football&type=report,False
+401858303,Duke,defense,NonExempt,DT #97 Ayden Cain,Available,2026-11-17T20:00:00-05:00,https://app.hdintelligence.com/?conf=ACC&source=ACC&sport=Football&type=report,False
+401858303,Duke,defense,NonExempt,DE #98 Jaylen Carl,Available,2026-11-17T20:00:00-05:00,https://app.hdintelligence.com/?conf=ACC&source=ACC&sport=Football&type=report,False
+401858303,Duke,defense,NonExempt,DT #99 Dakota Quiñonez,Available,2026-11-17T20:00:00-05:00,https://app.hdintelligence.com/?conf=ACC&source=ACC&sport=Football&type=report,False
+401858529,Oregon,qb,NonExempt,QB #5 Dante Moore,Out,2026-11-17T19:00:00-06:00,https://bigten.org/sports/2026/9/10/FB_Availability_Reports.aspx,False
+401858529,Oregon,qb,NonExempt,QB #8 Dylan Raiola,Available,2026-11-17T19:00:00-06:00,https://bigten.org/sports/2026/9/10/FB_Availability_Reports.aspx,False
+401858529,Oregon,qb,NonExempt,QB #11 Akili Smith Jr.,Available,2026-11-17T19:00:00-06:00,https://bigten.org/sports/2026/9/10/FB_Availability_Reports.aspx,False
+401858529,Oregon,qb,NonExempt,QB #12 Brock Thomas,Available,2026-11-17T19:00:00-06:00,https://bigten.org/sports/2026/9/10/FB_Availability_Reports.aspx,False
+401858529,Oregon,qb,Exempt,QB #14 Ryder Hayes,Exempt,2026-11-17T19:00:00-06:00,https://bigten.org/sports/2026/9/10/FB_Availability_Reports.aspx,False
+401858529,Oregon,qb,Exempt,QB #16 TC Manumaleuna,Exempt,2026-11-17T19:00:00-06:00,https://bigten.org/sports/2026/9/10/FB_Availability_Reports.aspx,False
+401858529,Oregon,ol,NonExempt,OL #50 Demetri Manning,Available,2026-11-17T19:00:00-06:00,https://bigten.org/sports/2026/9/10/FB_Availability_Reports.aspx,False
+401858529,Oregon,ol,NonExempt,OL #53 Devin Brooks,Available,2026-11-17T19:00:00-06:00,https://bigten.org/sports/2026/9/10/FB_Availability_Reports.aspx,False
+401858529,Oregon,ol,Exempt,OL #54 Aiden Lewey,Exempt,2026-11-17T19:00:00-06:00,https://bigten.org/sports/2026/9/10/FB_Availability_Reports.aspx,False
+401858529,Oregon,ol,NonExempt,OL #55 Douglas Utu,Available,2026-11-17T19:00:00-06:00,https://bigten.org/sports/2026/9/10/FB_Availability_Reports.aspx,False
+401858529,Oregon,ol,NonExempt,OL #56 Trent Ferguson,Out,2026-11-17T19:00:00-06:00,https://bigten.org/sports/2026/9/10/FB_Availability_Reports.aspx,False
+401858529,Oregon,ol,NonExempt,OL #57 Zac Stascausky,Available,2026-11-17T19:00:00-06:00,https://bigten.org/sports/2026/9/10/FB_Availability_Reports.aspx,False
+401858529,Oregon,ol,NonExempt,OL #58 Ziyare Addison,Available,2026-11-17T19:00:00-06:00,https://bigten.org/sports/2026/9/10/FB_Availability_Reports.aspx,False
+401858529,Oregon,ol,NonExempt,OL #59 Fox Crader,Available,2026-11-17T19:00:00-06:00,https://bigten.org/sports/2026/9/10/FB_Availability_Reports.aspx,False
+401858529,Oregon,ol,Exempt,OL #65 Solomon Kroeker,Exempt,2026-11-17T19:00:00-06:00,https://bigten.org/sports/2026/9/10/FB_Availability_Reports.aspx,False
+401858529,Oregon,ol,NonExempt,OL #66 Bryce Boulton,Available,2026-11-17T19:00:00-06:00,https://bigten.org/sports/2026/9/10/FB_Availability_Reports.aspx,False
+401858529,Oregon,ol,Exempt,OL #67 Beau CressAllen,Exempt,2026-11-17T19:00:00-06:00,https://bigten.org/sports/2026/9/10/FB_Availability_Reports.aspx,False
+401858529,Oregon,ol,Exempt,OL #68 Auston Mims,Exempt,2026-11-17T19:00:00-06:00,https://bigten.org/sports/2026/9/10/FB_Availability_Reports.aspx,False
+401858529,Oregon,ol,NonExempt,OL #70 Koloi Keli,Available,2026-11-17T19:00:00-06:00,https://bigten.org/sports/2026/9/10/FB_Availability_Reports.aspx,False
+401858529,Oregon,ol,NonExempt,OL #72 Iapani Laloulu,Available,2026-11-17T19:00:00-06:00,https://bigten.org/sports/2026/9/10/FB_Availability_Reports.aspx,False
+401858529,Oregon,ol,NonExempt,OL #73 Kawika Rogers,Available,2026-11-17T19:00:00-06:00,https://bigten.org/sports/2026/9/10/FB_Availability_Reports.aspx,False
+401858529,Oregon,ol,NonExempt,OL #74 Dave Iuli,Out,2026-11-17T19:00:00-06:00,https://bigten.org/sports/2026/9/10/FB_Availability_Reports.aspx,False
+401858529,Oregon,ol,NonExempt,OL #75 Michael Bennett III,Available,2026-11-17T19:00:00-06:00,https://bigten.org/sports/2026/9/10/FB_Availability_Reports.aspx,False
+401858529,Oregon,ol,NonExempt,OL #77 Tommy Tofi,Available,2026-11-17T19:00:00-06:00,https://bigten.org/sports/2026/9/10/FB_Availability_Reports.aspx,False
+401858529,Oregon,ol,NonExempt,OL #78 Gernorris Wilson,Available,2026-11-17T19:00:00-06:00,https://bigten.org/sports/2026/9/10/FB_Availability_Reports.aspx,False
+401858529,Oregon,ol,NonExempt,OL #79 Immanuel Iheanacho,Available,2026-11-17T19:00:00-06:00,https://bigten.org/sports/2026/9/10/FB_Availability_Reports.aspx,False
+401858529,Oregon,defense,NonExempt,DL #0 D'Antre Robinson,Available,2026-11-17T19:00:00-06:00,https://bigten.org/sports/2026/9/10/FB_Availability_Reports.aspx,False
+401858529,Oregon,defense,NonExempt,DL #1 Bear Alexander,Probable,2026-11-17T19:00:00-06:00,https://bigten.org/sports/2026/9/10/FB_Availability_Reports.aspx,False
+401858529,Oregon,defense,NonExempt,DB #2 Na'eem Offord,Available,2026-11-17T19:00:00-06:00,https://bigten.org/sports/2026/9/10/FB_Availability_Reports.aspx,False
+401858529,Oregon,defense,NonExempt,DB #3 Koi Perich,Available,2026-11-17T19:00:00-06:00,https://bigten.org/sports/2026/9/10/FB_Availability_Reports.aspx,False
+401858529,Oregon,defense,NonExempt,DB #4 Brandon Finney Jr.,Available,2026-11-17T19:00:00-06:00,https://bigten.org/sports/2026/9/10/FB_Availability_Reports.aspx,False
+401858529,Oregon,defense,NonExempt,DB #5 Davon Benjamin,Available,2026-11-17T19:00:00-06:00,https://bigten.org/sports/2026/9/10/FB_Availability_Reports.aspx,False
+401858529,Oregon,defense,NonExempt,ILB #6 Jerry Mixon,Doubtful,2026-11-17T19:00:00-06:00,https://bigten.org/sports/2026/9/10/FB_Availability_Reports.aspx,False
+401858529,Oregon,defense,NonExempt,DB #7 Ify Obidegwu,Available,2026-11-17T19:00:00-06:00,https://bigten.org/sports/2026/9/10/FB_Availability_Reports.aspx,False
+401858529,Oregon,defense,NonExempt,DB #8 Trey McNutt,Available,2026-11-17T19:00:00-06:00,https://bigten.org/sports/2026/9/10/FB_Availability_Reports.aspx,False
+401858529,Oregon,defense,NonExempt,ILB #9 Devon Jackson,Available,2026-11-17T19:00:00-06:00,https://bigten.org/sports/2026/9/10/FB_Availability_Reports.aspx,False
+401858529,Oregon,defense,NonExempt,OLB #10 Matayo Uiagalelei,Available,2026-11-17T19:00:00-06:00,https://bigten.org/sports/2026/9/10/FB_Availability_Reports.aspx,False
+401858529,Oregon,defense,NonExempt,ILB #11 Dylan Williams,Available,2026-11-17T19:00:00-06:00,https://bigten.org/sports/2026/9/10/FB_Availability_Reports.aspx,False
+401858529,Oregon,defense,NonExempt,DB #12 Peyton Woodyard,Available,2026-11-17T19:00:00-06:00,https://bigten.org/sports/2026/9/10/FB_Availability_Reports.aspx,False
+401858529,Oregon,defense,NonExempt,ILB #13 Gavin Nix,Available,2026-11-17T19:00:00-06:00,https://bigten.org/sports/2026/9/10/FB_Availability_Reports.aspx,False
+401858529,Oregon,defense,NonExempt,DB #14 Aaron Scott Jr.,Available,2026-11-17T19:00:00-06:00,https://bigten.org/sports/2026/9/10/FB_Availability_Reports.aspx,False
+401858529,Oregon,defense,NonExempt,DB #15 Carl Williams IV,Available,2026-11-17T19:00:00-06:00,https://bigten.org/sports/2026/9/10/FB_Availability_Reports.aspx,False
+401858529,Oregon,defense,NonExempt,DB #16 Azel Banag,Available,2026-11-17T19:00:00-06:00,https://bigten.org/sports/2026/9/10/FB_Availability_Reports.aspx,False
+401858529,Oregon,defense,NonExempt,DB #17 Tre Watson,Available,2026-11-17T19:00:00-06:00,https://bigten.org/sports/2026/9/10/FB_Availability_Reports.aspx,False
+401858529,Oregon,defense,NonExempt,DB #18 Dorian Brew,Available,2026-11-17T19:00:00-06:00,https://bigten.org/sports/2026/9/10/FB_Availability_Reports.aspx,False
+401858529,Oregon,defense,NonExempt,ILB #19 Braylon Hodge,Available,2026-11-17T19:00:00-06:00,https://bigten.org/sports/2026/9/10/FB_Availability_Reports.aspx,False
+401858529,Oregon,defense,NonExempt,DB #20 Xavier Lherisse,Available,2026-11-17T19:00:00-06:00,https://bigten.org/sports/2026/9/10/FB_Availability_Reports.aspx,False
+401858529,Oregon,defense,NonExempt,DB #21 Aaron Flowers,Out,2026-11-17T19:00:00-06:00,https://bigten.org/sports/2026/9/10/FB_Availability_Reports.aspx,False
+401858529,Oregon,defense,NonExempt,DB #22 Devin Jackson,Available,2026-11-17T19:00:00-06:00,https://bigten.org/sports/2026/9/10/FB_Availability_Reports.aspx,False
+401858529,Oregon,defense,NonExempt,ILB #23 Brayden Platt,Out,2026-11-17T19:00:00-06:00,https://bigten.org/sports/2026/9/10/FB_Availability_Reports.aspx,False
+401858529,Oregon,defense,NonExempt,DB #24 Jett Washington,Available,2026-11-17T19:00:00-06:00,https://bigten.org/sports/2026/9/10/FB_Availability_Reports.aspx,False
+401858529,Oregon,defense,NonExempt,ILB #25 Tristan Phillips,Available,2026-11-17T19:00:00-06:00,https://bigten.org/sports/2026/9/10/FB_Availability_Reports.aspx,False
+401858529,Oregon,defense,NonExempt,OLB #27 Bleu Dantzler,Available,2026-11-17T19:00:00-06:00,https://bigten.org/sports/2026/9/10/FB_Availability_Reports.aspx,False
+401858529,Oregon,defense,NonExempt,DL #28 Anthony Jones Jr.,Available,2026-11-17T19:00:00-06:00,https://bigten.org/sports/2026/9/10/FB_Availability_Reports.aspx,False
+401858529,Oregon,defense,Exempt,DB #29 Arlo Henderson,Exempt,2026-11-17T19:00:00-06:00,https://bigten.org/sports/2026/9/10/FB_Availability_Reports.aspx,False
+401858529,Oregon,defense,NonExempt,DB #30 Xavier Barksdale,Available,2026-11-17T19:00:00-06:00,https://bigten.org/sports/2026/9/10/FB_Availability_Reports.aspx,False
+401858529,Oregon,defense,NonExempt,OLB #31 Nasir Wyatt,Available,2026-11-17T19:00:00-06:00,https://bigten.org/sports/2026/9/10/FB_Availability_Reports.aspx,False
+401858529,Oregon,defense,Exempt,DL #32 Tony Cumberland,Exempt,2026-11-17T19:00:00-06:00,https://bigten.org/sports/2026/9/10/FB_Availability_Reports.aspx,False
+401858529,Oregon,defense,NonExempt,DB #33 Zach Grisham,Available,2026-11-17T19:00:00-06:00,https://bigten.org/sports/2026/9/10/FB_Availability_Reports.aspx,False
+401858529,Oregon,defense,NonExempt,ILB #34 Cruz Rushing,Available,2026-11-17T19:00:00-06:00,https://bigten.org/sports/2026/9/10/FB_Availability_Reports.aspx,False
+401858529,Oregon,defense,NonExempt,OLB #35 Brody Thomas,Available,2026-11-17T19:00:00-06:00,https://bigten.org/sports/2026/9/10/FB_Availability_Reports.aspx,False
+401858529,Oregon,defense,NonExempt,DB #37 Braxton Singleton,Available,2026-11-17T19:00:00-06:00,https://bigten.org/sports/2026/9/10/FB_Availability_Reports.aspx,False
+401858529,Oregon,defense,NonExempt,ILB #38 Will Straton,Available,2026-11-17T19:00:00-06:00,https://bigten.org/sports/2026/9/10/FB_Availability_Reports.aspx,False
+401858529,Oregon,defense,NonExempt,ILB #39 Cole Thomas,Available,2026-11-17T19:00:00-06:00,https://bigten.org/sports/2026/9/10/FB_Availability_Reports.aspx,False
+401858529,Oregon,defense,NonExempt,OLB #41 Dutch Horisk,Available,2026-11-17T19:00:00-06:00,https://bigten.org/sports/2026/9/10/FB_Availability_Reports.aspx,False
+401858529,Oregon,defense,NonExempt,DL #42 Aydin Breland,Available,2026-11-17T19:00:00-06:00,https://bigten.org/sports/2026/9/10/FB_Availability_Reports.aspx,False
+401858529,Oregon,defense,NonExempt,OLB #44 Teitum Tuioti,Out,2026-11-17T19:00:00-06:00,https://bigten.org/sports/2026/9/10/FB_Availability_Reports.aspx,False
+401858529,Oregon,defense,Exempt,OLB #45 Hudson Coe,Exempt,2026-11-17T19:00:00-06:00,https://bigten.org/sports/2026/9/10/FB_Availability_Reports.aspx,False
+401858529,Oregon,defense,NonExempt,DL #47 Elijah Rushing,Available,2026-11-17T19:00:00-06:00,https://bigten.org/sports/2026/9/10/FB_Availability_Reports.aspx,False
+401858529,Oregon,defense,NonExempt,OLB #51 Prince Tavizon,Available,2026-11-17T19:00:00-06:00,https://bigten.org/sports/2026/9/10/FB_Availability_Reports.aspx,False
+401858529,Oregon,defense,NonExempt,DL #52 A'Mauri Washington,Available,2026-11-17T19:00:00-06:00,https://bigten.org/sports/2026/9/10/FB_Availability_Reports.aspx,False
+401858529,Oregon,defense,NonExempt,DL #55 Matthew Johnson,Out,2026-11-17T19:00:00-06:00,https://bigten.org/sports/2026/9/10/FB_Availability_Reports.aspx,False
+401858529,Oregon,defense,NonExempt,DL #90 Anthony Jones,Available,2026-11-17T19:00:00-06:00,https://bigten.org/sports/2026/9/10/FB_Availability_Reports.aspx,False
+401858529,Oregon,defense,NonExempt,DL #91 Derrick Brown Jr.,Available,2026-11-17T19:00:00-06:00,https://bigten.org/sports/2026/9/10/FB_Availability_Reports.aspx,False
+401858529,Oregon,defense,NonExempt,DL #99 Jerome Simmons,Available,2026-11-17T19:00:00-06:00,https://bigten.org/sports/2026/9/10/FB_Availability_Reports.aspx,False
+401858529,Michigan State,qb,NonExempt,QB #2 Cam Fancher,Questionable,2026-11-17T19:00:00-06:00,https://bigten.org/sports/2026/9/10/FB_Availability_Reports.aspx,False
+401858529,Michigan State,qb,NonExempt,QB #10 Kayd Coffman,Available,2026-11-17T19:00:00-06:00,https://bigten.org/sports/2026/9/10/FB_Availability_Reports.aspx,False
+401858529,Michigan State,qb,NonExempt,QB #11 Alessio Milivojevic,Out,2026-11-17T19:00:00-06:00,https://bigten.org/sports/2026/9/10/FB_Availability_Reports.aspx,False
+401858529,Michigan State,qb,NonExempt,QB #15 Leo Hannan,Available,2026-11-17T19:00:00-06:00,https://bigten.org/sports/2026/9/10/FB_Availability_Reports.aspx,False
+401858529,Michigan State,qb,NonExempt,QB #23 Peyton Babbitt,Available,2026-11-17T19:00:00-06:00,https://bigten.org/sports/2026/9/10/FB_Availability_Reports.aspx,False
+401858529,Michigan State,ol,NonExempt,OL #52 Nick Sharpe,Available,2026-11-17T19:00:00-06:00,https://bigten.org/sports/2026/9/10/FB_Availability_Reports.aspx,False
+401858529,Michigan State,ol,NonExempt,OL #54 Antonio Johnson,Available,2026-11-17T19:00:00-06:00,https://bigten.org/sports/2026/9/10/FB_Availability_Reports.aspx,False
+401858529,Michigan State,ol,NonExempt,OL #55 Rakeem Johnson,Available,2026-11-17T19:00:00-06:00,https://bigten.org/sports/2026/9/10/FB_Availability_Reports.aspx,False
+401858529,Michigan State,ol,NonExempt,OL #56 Jack Ziarko,Available,2026-11-17T19:00:00-06:00,https://bigten.org/sports/2026/9/10/FB_Availability_Reports.aspx,False
+401858529,Michigan State,ol,NonExempt,OL #58 Conner Moore,Questionable,2026-11-17T19:00:00-06:00,https://bigten.org/sports/2026/9/10/FB_Availability_Reports.aspx,False
+401858529,Michigan State,ol,NonExempt,OL #61 Collin Campbell,Available,2026-11-17T19:00:00-06:00,https://bigten.org/sports/2026/9/10/FB_Availability_Reports.aspx,False
+401858529,Michigan State,ol,NonExempt,OL #63 Trent Fraley,Available,2026-11-17T19:00:00-06:00,https://bigten.org/sports/2026/9/10/FB_Availability_Reports.aspx,False
+401858529,Michigan State,ol,NonExempt,OL #65 Cole Bertke,Available,2026-11-17T19:00:00-06:00,https://bigten.org/sports/2026/9/10/FB_Availability_Reports.aspx,False
+401858529,Michigan State,ol,NonExempt,OL #68 Eli Bickel,Available,2026-11-17T19:00:00-06:00,https://bigten.org/sports/2026/9/10/FB_Availability_Reports.aspx,False
+401858529,Michigan State,ol,NonExempt,OL #70 Luka Vincic,Available,2026-11-17T19:00:00-06:00,https://bigten.org/sports/2026/9/10/FB_Availability_Reports.aspx,False
+401858529,Michigan State,ol,NonExempt,OL #71 Robert Wright Jr.,Available,2026-11-17T19:00:00-06:00,https://bigten.org/sports/2026/9/10/FB_Availability_Reports.aspx,False
+401858529,Michigan State,ol,NonExempt,OL #73 Rustin Young,Available,2026-11-17T19:00:00-06:00,https://bigten.org/sports/2026/9/10/FB_Availability_Reports.aspx,False
+401858529,Michigan State,ol,NonExempt,OL #75 Ben Murawski,Available,2026-11-17T19:00:00-06:00,https://bigten.org/sports/2026/9/10/FB_Availability_Reports.aspx,False
+401858529,Michigan State,ol,NonExempt,OL #76 Drew Nichols,Available,2026-11-17T19:00:00-06:00,https://bigten.org/sports/2026/9/10/FB_Availability_Reports.aspx,False
+401858529,Michigan State,ol,NonExempt,OL #77 Andrew Dennis,Available,2026-11-17T19:00:00-06:00,https://bigten.org/sports/2026/9/10/FB_Availability_Reports.aspx,False
+401858529,Michigan State,ol,NonExempt,OL #79 Tristan Comer,Out,2026-11-17T19:00:00-06:00,https://bigten.org/sports/2026/9/10/FB_Availability_Reports.aspx,False
+401858529,Michigan State,defense,NonExempt,CB #0 NiJhay Burt,Available,2026-11-17T19:00:00-06:00,https://bigten.org/sports/2026/9/10/FB_Availability_Reports.aspx,False
+401858529,Michigan State,defense,NonExempt,S #2 Devin Vaught,Out,2026-11-17T19:00:00-06:00,https://bigten.org/sports/2026/9/10/FB_Availability_Reports.aspx,False
+401858529,Michigan State,defense,NonExempt,CB #3 Tre Bell,Questionable,2026-11-17T19:00:00-06:00,https://bigten.org/sports/2026/9/10/FB_Availability_Reports.aspx,False
+401858529,Michigan State,defense,NonExempt,CB #4 Charles Brantley,Available,2026-11-17T19:00:00-06:00,https://bigten.org/sports/2026/9/10/FB_Availability_Reports.aspx,False
+401858529,Michigan State,defense,NonExempt,LB #5 Jordan Hall,Out,2026-11-17T19:00:00-06:00,https://bigten.org/sports/2026/9/10/FB_Availability_Reports.aspx,False
+401858529,Michigan State,defense,NonExempt,S #7 Michael Richard,Questionable,2026-11-17T19:00:00-06:00,https://bigten.org/sports/2026/9/10/FB_Availability_Reports.aspx,False
+401858529,Michigan State,defense,NonExempt,LB #10 DiMari Malone,Available,2026-11-17T19:00:00-06:00,https://bigten.org/sports/2026/9/10/FB_Availability_Reports.aspx,False
+401858529,Michigan State,defense,NonExempt,LB #12 Cam Stodghill,Available,2026-11-17T19:00:00-06:00,https://bigten.org/sports/2026/9/10/FB_Availability_Reports.aspx,False
+401858529,Michigan State,defense,NonExempt,CB #14 Andrew Brinson IV,Available,2026-11-17T19:00:00-06:00,https://bigten.org/sports/2026/9/10/FB_Availability_Reports.aspx,False
+401858529,Michigan State,defense,NonExempt,S #15 Caleb Gash,Available,2026-11-17T19:00:00-06:00,https://bigten.org/sports/2026/9/10/FB_Availability_Reports.aspx,False
+401858529,Michigan State,defense,NonExempt,LB #16 Adam Shaw,Available,2026-11-17T19:00:00-06:00,https://bigten.org/sports/2026/9/10/FB_Availability_Reports.aspx,False
+401858529,Michigan State,defense,NonExempt,S #17 Jonathan Granby,Available,2026-11-17T19:00:00-06:00,https://bigten.org/sports/2026/9/10/FB_Availability_Reports.aspx,False
+401858529,Michigan State,defense,NonExempt,LB #18 Dion Crawford,Available,2026-11-17T19:00:00-06:00,https://bigten.org/sports/2026/9/10/FB_Availability_Reports.aspx,False
+401858529,Michigan State,defense,NonExempt,CB #20 Keshawn Williams,Available,2026-11-17T19:00:00-06:00,https://bigten.org/sports/2026/9/10/FB_Availability_Reports.aspx,False
+401858529,Michigan State,defense,NonExempt,DB #21 Nikai Martinez,Available,2026-11-17T19:00:00-06:00,https://bigten.org/sports/2026/9/10/FB_Availability_Reports.aspx,False
+401858529,Michigan State,defense,NonExempt,CB #22 Tyran Chappell,Available,2026-11-17T19:00:00-06:00,https://bigten.org/sports/2026/9/10/FB_Availability_Reports.aspx,False
+401858529,Michigan State,defense,NonExempt,LB #23 DeJae White,Available,2026-11-17T19:00:00-06:00,https://bigten.org/sports/2026/9/10/FB_Availability_Reports.aspx,False
+401858529,Michigan State,defense,NonExempt,CB #24 Jeremiah Favorite,Available,2026-11-17T19:00:00-06:00,https://bigten.org/sports/2026/9/10/FB_Availability_Reports.aspx,False
+401858529,Michigan State,defense,NonExempt,DL #25 Carlos Hazelwood,Available,2026-11-17T19:00:00-06:00,https://bigten.org/sports/2026/9/10/FB_Availability_Reports.aspx,False
+401858529,Michigan State,defense,NonExempt,S #26 Trevaughn Martinez,Available,2026-11-17T19:00:00-06:00,https://bigten.org/sports/2026/9/10/FB_Availability_Reports.aspx,False
+401858529,Michigan State,defense,NonExempt,CB #27 Truth Umenyiora,Available,2026-11-17T19:00:00-06:00,https://bigten.org/sports/2026/9/10/FB_Availability_Reports.aspx,False
+401858529,Michigan State,defense,NonExempt,S #28 Brayden Thomas,Available,2026-11-17T19:00:00-06:00,https://bigten.org/sports/2026/9/10/FB_Availability_Reports.aspx,False
+401858529,Michigan State,defense,NonExempt,CB #29 KJ Deriso,Available,2026-11-17T19:00:00-06:00,https://bigten.org/sports/2026/9/10/FB_Availability_Reports.aspx,False
+401858529,Michigan State,defense,NonExempt,S #30 Aveon Grose,Available,2026-11-17T19:00:00-06:00,https://bigten.org/sports/2026/9/10/FB_Availability_Reports.aspx,False
+401858529,Michigan State,defense,NonExempt,S #31 Deuce Edwards,Available,2026-11-17T19:00:00-06:00,https://bigten.org/sports/2026/9/10/FB_Availability_Reports.aspx,False
+401858529,Michigan State,defense,NonExempt,S #32 Evan Young,Available,2026-11-17T19:00:00-06:00,https://bigten.org/sports/2026/9/10/FB_Availability_Reports.aspx,False
+401858529,Michigan State,defense,NonExempt,S #34 Khalil Majeed,Available,2026-11-17T19:00:00-06:00,https://bigten.org/sports/2026/9/10/FB_Availability_Reports.aspx,False
+401858529,Michigan State,defense,NonExempt,S #35 Eliyjah Caldwell,Available,2026-11-17T19:00:00-06:00,https://bigten.org/sports/2026/9/10/FB_Availability_Reports.aspx,False
+401858529,Michigan State,defense,NonExempt,LB #39 Jack Lansing III,Available,2026-11-17T19:00:00-06:00,https://bigten.org/sports/2026/9/10/FB_Availability_Reports.aspx,False
+401858529,Michigan State,defense,NonExempt,CB #42 Luca Genrich,Available,2026-11-17T19:00:00-06:00,https://bigten.org/sports/2026/9/10/FB_Availability_Reports.aspx,False
+401858529,Michigan State,defense,NonExempt,LB #44 Caleb Wheatland,Available,2026-11-17T19:00:00-06:00,https://bigten.org/sports/2026/9/10/FB_Availability_Reports.aspx,False
+401858529,Michigan State,defense,NonExempt,LB #45 Brady Pretzlaff,Available,2026-11-17T19:00:00-06:00,https://bigten.org/sports/2026/9/10/FB_Availability_Reports.aspx,False
+401858529,Michigan State,defense,NonExempt,DL #52 Mikeshun Beeler,Available,2026-11-17T19:00:00-06:00,https://bigten.org/sports/2026/9/10/FB_Availability_Reports.aspx,False
+401858529,Michigan State,defense,NonExempt,DL #55 Ben Roberts,Out,2026-11-17T19:00:00-06:00,https://bigten.org/sports/2026/9/10/FB_Availability_Reports.aspx,False
+401858529,Michigan State,defense,NonExempt,DL #57 Hudson Aultman,Available,2026-11-17T19:00:00-06:00,https://bigten.org/sports/2026/9/10/FB_Availability_Reports.aspx,False
+401858529,Michigan State,defense,NonExempt,DL #91 Jackson Pahl,Available,2026-11-17T19:00:00-06:00,https://bigten.org/sports/2026/9/10/FB_Availability_Reports.aspx,False
+401858529,Michigan State,defense,NonExempt,DL #96 Eli Coenen,Available,2026-11-17T19:00:00-06:00,https://bigten.org/sports/2026/9/10/FB_Availability_Reports.aspx,False
+401858529,Michigan State,defense,NonExempt,DL #97 Cal Thrush,Available,2026-11-17T19:00:00-06:00,https://bigten.org/sports/2026/9/10/FB_Availability_Reports.aspx,False
+401858529,Michigan State,defense,NonExempt,DL #98 Derrick Simmons,Available,2026-11-17T19:00:00-06:00,https://bigten.org/sports/2026/9/10/FB_Availability_Reports.aspx,False

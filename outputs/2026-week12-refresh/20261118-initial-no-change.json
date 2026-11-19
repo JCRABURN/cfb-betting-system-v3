@@ -1,0 +1,9 @@
+{
+  "as_of_utc": "2026-11-19T01:14:34.827946+00:00",
+  "changes": [],
+  "current_sha256": "432a210e009bc4ca53e7075243315cb8128f3c1cd438f744c18746cfc011e948",
+  "evidence": "outputs/2026-week12-context/review-v2/manifest.json",
+  "model_version": "v2.8",
+  "previous_sha256": "432a210e009bc4ca53e7075243315cb8128f3c1cd438f744c18746cfc011e948",
+  "reason": "Initial contextual review preserves raw forecasts; no approved numerical adjustment or common calibration"
+}

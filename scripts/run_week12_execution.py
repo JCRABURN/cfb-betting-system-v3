@@ -35,7 +35,12 @@ def eligibility(rows: list[dict], data: dict, as_of: datetime, now: datetime) ->
     return [r for r in reconciled if r['status']=='UPCOMING'], [r for r in reconciled if r['status']!='UPCOMING']
 
 
-def run(database: Path, capture: Path) -> dict:
+def run(database: Path, capture: Path, output: Path = OUT) -> dict:
+    global OUT
+    output=output.resolve()
+    if output != OUT.resolve() and not output.is_relative_to(ROOT/'outputs/2026-week12-refresh'):
+        raise ValueError('refresh output outside append-only Week12 boundary')
+    OUT=output
     source.main(True)
     database = database.resolve(); capture = capture.resolve()
     if not database.is_relative_to(ROOT) or database == SOURCE_DB or database.exists() or OUT.exists():
@@ -136,5 +141,6 @@ def run(database: Path, capture: Path) -> dict:
 
 if __name__=='__main__':
     p=argparse.ArgumentParser(); p.add_argument('--database',type=Path,required=True); p.add_argument('--capture',type=Path,required=True)
-    args=p.parse_args(); result=run(args.database,args.capture)
+    p.add_argument('--output',type=Path,default=OUT)
+    args=p.parse_args(); result=run(args.database,args.capture,args.output)
     print(json.dumps({k:result[k] for k in ('locked_games','ats_predictions','totals_predictions')}))

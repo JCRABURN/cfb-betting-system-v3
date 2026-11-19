@@ -1,0 +1,16 @@
+{
+  "files": {
+    "all-132-markets.csv": "fa755f4e605485731179599f70236a43687a804c7ef3cf277c988f0db17cd3f3",
+    "full-card-66.csv": "aa14edd24bb7341005340e0d7f68a0ced9267cc67bb53d84f4354a7a0c8b958d"
+  },
+  "forward_games": 61,
+  "inputs": {
+    "initial-seal.json": "10b3a27c9703561805197039c1c70fd8ad0ec031246ec3592addf3cda23363eb",
+    "v1/all-132-markets.csv": "ec95005271e4d56c7d3f705eb413fa72bf78cc76b6fd46241cabb041e8e6fc1a",
+    "v1/full-card-66.csv": "432a210e009bc4ca53e7075243315cb8128f3c1cd438f744c18746cfc011e948"
+  },
+  "late_games": 2,
+  "no_forecast_games": 3,
+  "original_forecasts_changed": false,
+  "version": "week12-custody-qualified-delivery-v2"
+}
