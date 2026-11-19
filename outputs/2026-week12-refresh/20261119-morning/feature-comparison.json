@@ -1,0 +1,44 @@
+[
+  {
+    "current_sha256": "fdb458242649849e53e70c260a8112f6a4949db38c0b929092fc9cbc12943e17",
+    "name": "cfbd-prior-season-advanced",
+    "previous_sha256": "fdb458242649849e53e70c260a8112f6a4949db38c0b929092fc9cbc12943e17",
+    "unchanged": true
+  },
+  {
+    "current_sha256": "22ac87087a4c864d3f6b1588653f8d9afacd69b83d855bb64af6051b067cb69f",
+    "name": "cfbd-prior-week9-advanced",
+    "previous_sha256": "22ac87087a4c864d3f6b1588653f8d9afacd69b83d855bb64af6051b067cb69f",
+    "unchanged": true
+  },
+  {
+    "current_sha256": "f1c6f8b5a5b6ffc921bb91105e6b66f8fa6172efee24248a8776cade923200ab",
+    "name": "cfbd-prior-week9-drives",
+    "previous_sha256": "f1c6f8b5a5b6ffc921bb91105e6b66f8fa6172efee24248a8776cade923200ab",
+    "unchanged": true
+  },
+  {
+    "current_sha256": "c49cb291906b3a103f3ff10979e8f8e50b617a8cdde9be383cb23bc86982dd75",
+    "name": "cfbd-prior-week10-advanced",
+    "previous_sha256": "c49cb291906b3a103f3ff10979e8f8e50b617a8cdde9be383cb23bc86982dd75",
+    "unchanged": true
+  },
+  {
+    "current_sha256": "b14057a07f098f630e90abecb2b6e70c0619a731f110fe498679d5ab1d53a51d",
+    "name": "cfbd-prior-week10-drives",
+    "previous_sha256": "b14057a07f098f630e90abecb2b6e70c0619a731f110fe498679d5ab1d53a51d",
+    "unchanged": true
+  },
+  {
+    "current_sha256": "d7cdc34c291b60b7baed4a938c5fb3663a97968130ae59bc77b58452ea3f1ad9",
+    "name": "cfbd-prior-week11-advanced",
+    "previous_sha256": "d7cdc34c291b60b7baed4a938c5fb3663a97968130ae59bc77b58452ea3f1ad9",
+    "unchanged": true
+  },
+  {
+    "current_sha256": "a39e0d340140c7b1a3949271d0125d23d3527bc12e4b57f5a491045bd5e3f8ce",
+    "name": "cfbd-prior-week11-drives",
+    "previous_sha256": "a39e0d340140c7b1a3949271d0125d23d3527bc12e4b57f5a491045bd5e3f8ce",
+    "unchanged": true
+  }
+]

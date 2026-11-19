@@ -11,7 +11,7 @@ import requests
 from scripts.capture_week6_core import _key
 from scripts.capture_week9_context import Page, official_article_links, SITES as OLD_SITES
 from scripts.week11_context import SITES as RECENT_SITES
-from scripts.prepare_week12_source import ROOT, load_capture, digest, timestamp, serialized, unique
+from scripts.prepare_week12_source import ROOT, CAPTURE, SOURCE, load_capture, digest, timestamp, serialized, unique, parse_pages, reconcile
 
 SITES = {**OLD_SITES, **RECENT_SITES, 'San José State':'sjsuspartans.com',
     'Akron':'gozips.com','Massachusetts':'umassathletics.com','Central Michigan':'cmuchippewas.com',
@@ -43,15 +43,32 @@ SITES = {**OLD_SITES, **RECENT_SITES, 'San José State':'sjsuspartans.com',
 def now(): return datetime.now(timezone.utc)
 
 
-def capture(output: Path) -> dict:
+def eligible_games(data, records, as_of):
+    receipts=[timestamp(records[name]['received_at_utc']) for name in ('cfbd-games-all','espn-schedule')]
+    if any(not timedelta(0)<=as_of-received<=timedelta(minutes=5) for received in receipts):
+        raise ValueError('context eligibility must be fresh within five minutes')
+    rows=parse_pages(json.loads((SOURCE/'extracted-pages.json').read_bytes()))
+    checked,_=reconcile(rows,data,as_of)
+    if any(r['status']=='BLOCKED_PROVIDER_CONFLICT' for r in checked):
+        raise ValueError('context provider kickoff conflict')
+    ids={r['game_id'] for r in checked if r['status']=='UPCOMING'}
+    games=unique(data['cfbd-games-all'],'id')
+    return [games[str(r['game_id'])] for r in checked if r['game_id'] in ids],checked
+
+
+def capture(output: Path, eligibility_capture: Path = CAPTURE) -> dict:
     output=output.resolve()
     if not output.is_relative_to(ROOT/'outputs/2026-week12-context') or output.exists():
         raise ValueError('new append-only Week12 context directory required')
-    _,_,data=load_capture()
-    frozen=json.loads((ROOT/'outputs/2026-week12-prospective/week12_locked_line_snapshot.json').read_bytes())
+    eligibility_capture=eligibility_capture.resolve()
+    if not eligibility_capture.is_relative_to(ROOT/'outputs/2026-week12-readiness'):
+        raise ValueError('eligibility capture outside Week12 boundary')
+    _,records,data=load_capture(eligibility_capture)
     source_hash=digest((ROOT/'data/ingest/2026-week12-splashsports/original.pdf').read_bytes())
-    all_games=unique(data['cfbd-games-all'],'id'); venues=unique(data['cfbd-venues'],'id')
-    games=[all_games[str(r['game_id'])] for r in frozen['lines'] if timestamp(r['source_kickoff_utc'])>now()]
+    venues=unique(data['cfbd-venues'],'id')
+    games,eligibility=eligible_games(data,records,now())
+    earliest={r['game_id']:min(timestamp(r[k]) for k in
+        ('source_kickoff_utc','provider_kickoff_utc','espn_kickoff_utc')) for r in eligibility}
     output.mkdir(parents=True); start=now()
     def get(name,url,headers=None):
         record=dict(name=name,url=url,requested_at_utc=now().isoformat(),status='UNAVAILABLE')
@@ -69,13 +86,13 @@ def capture(output: Path) -> dict:
             record.update(received_at_utc=now().isoformat(),error_type=type(error).__name__)
             return record,None
     def espn(g):
-        if timestamp(g['startDate'])<=now():return dict(name=f"espn-{g['id']}",status='SKIPPED_STARTED')
+        if earliest[g['id']]<=now():return dict(name=f"espn-{g['id']}",status='SKIPPED_STARTED')
         return get(f"espn-{g['id']}",f"https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event={g['id']}")[0]
     with ThreadPoolExecutor(max_workers=6) as pool: records=list(pool.map(espn,games))
     def weather(g):
         v=venues.get(str(g['venueId'])); gid=g['id']
         row=dict(game_id=gid,status='UNAVAILABLE',requests=[],kickoff_utc=g['startDate'])
-        if timestamp(g['startDate'])<=now():return dict(row,status='SKIPPED_STARTED')
+        if earliest[gid]<=now():return dict(row,status='SKIPPED_STARTED')
         if not v:return row
         row['venue']=v
         if v.get('dome'):return dict(row,status='INDOOR_NO_OUTDOOR_WIND_ADJUSTMENT')
@@ -92,9 +109,12 @@ def capture(output: Path) -> dict:
         return row
     with ThreadPoolExecutor(max_workers=6) as pool: weather_rows=list(pool.map(weather,games))
     def site(team):
+        if any(earliest[g['id']]<=now() for g in games if team in (g['homeTeam'],g['awayTeam'])):
+            return [dict(team=team,status='SKIPPED_STARTED')]
         host=SITES.get(team)
         if not host:return [dict(team=team,status='OFFICIAL_HOST_UNRESOLVED')]
-        name=re.sub('[^a-z0-9]+','-',team.lower()); url=f'https://{host}/sports/football'
+        name=re.sub('[^a-z0-9]+','-',team.lower())
+        url=f'https://{host}/sport/m-footbl/' if team=='Arkansas' else (f'https://{host}/sports/m-footbl/' if team=='Georgia Tech' else f'https://{host}/sports/football')
         entry,raw=get('official-'+name,url);entry['team']=team; result=[entry]
         if raw:
             page=Page();page.feed(raw.decode('utf-8',errors='replace'))
@@ -111,6 +131,9 @@ def capture(output: Path) -> dict:
     if digest((ROOT/'data/ingest/2026-week12-splashsports/original.pdf').read_bytes())!=source_hash:
         raise ValueError('source changed')
     manifest=dict(started_at_utc=start.isoformat(),completed_at_utc=now().isoformat(),pdf_sha256=source_hash,
+                  eligibility_capture=eligibility_capture.relative_to(ROOT).as_posix(),
+                  eligibility_manifest_sha256=digest((eligibility_capture/'capture-manifest.json').read_bytes()),
+                  eligibility=eligibility,code_sha256_lf=digest(Path(__file__).read_bytes().replace(b'\r\n',b'\n')),
                   game_ids=[g['id'] for g in games],teams=teams,records=records,weather=weather_rows,numeric_adjustments=[],
                   policy_changes=[],clearance='Capture is not confirmed availability or a starting assignment; explicit review and missing-data labels required.',
                   external_week11_submissions_used=False,market_usage='Separate current observation; never replaces original contest lines.',
@@ -121,4 +144,5 @@ def capture(output: Path) -> dict:
 
 if __name__=='__main__':
     p=argparse.ArgumentParser();p.add_argument('--output',type=Path,required=True)
-    print(json.dumps(capture(p.parse_args().output)))
+    p.add_argument('--eligibility-capture',type=Path,default=CAPTURE);a=p.parse_args()
+    print(json.dumps(capture(a.output,a.eligibility_capture)))

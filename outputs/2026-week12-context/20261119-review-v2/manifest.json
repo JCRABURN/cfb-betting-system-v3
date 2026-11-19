@@ -1,0 +1,22 @@
+{
+  "as_of_utc": "2026-11-19T14:06:06.440126+00:00",
+  "files": {
+    "all-game-context.csv": "fdc7cefecda5589007bc04f1eac5fe987d3f662dc8d611b93f6bc5d67bc86733",
+    "conference-personnel.csv": "c5eb6fd47e2106ce56e494612129ab22e7cc4e807dfa8e4fc58820a9343a7fd8",
+    "conference-report-status.json": "ec67d17ebcf2c359e65bc4aeaa12f2391f0552f049721f96f90635e357cb5cf4"
+  },
+  "games": 61,
+  "indoor": 1,
+  "initial_personnel_report_teams": 50,
+  "input_manifests": {
+    "outputs/2026-week12-context/20261119-conference/manifest.json": "e99ca4261667fea8cd101f0ee6d0203e4fcff8d4e63a9a853469b45c4d6692ad",
+    "outputs/2026-week12-context/20261119-morning/manifest.json": "99cc286aa9106f2aa073cbb52b9dd3525f8838562284f2a87adab17cce5a9c34",
+    "outputs/2026-week12-readiness/20261119-morning/capture-manifest.json": "da8c3e5fbecc9a1433164d6b882c3e9cdbba3ed131ef544586ae0b3e0c03187d"
+  },
+  "numerical_adjustments": 0,
+  "original_lines_changed": false,
+  "pending_report_teams": 0,
+  "personnel_records": 3774,
+  "version": "week12-context-review-v3",
+  "weather_available": 60
+}

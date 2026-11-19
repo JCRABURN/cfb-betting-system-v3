@@ -159,3 +159,16 @@ retains its previous value, new value, timestamp, reason and provenance. A
 zero-change refresh records an empty changes list. No new calibration or policy
 is authorized midweek. ChatGPT reviews the draft PR; no self-merge or routine
 owner review is required. Pause scheduled refreshes after Saturday morning.
+# November 19 refresh
+
+The [Thursday evidence review](../2026-week12-refresh/20261119-morning/REVIEW.md)
+records new QB/OL concerns, weather and separate market changes. All 66 card
+rows and all 132 market rows are carried forward unchanged, including five
+started games. See the [verification record](../2026-week12-refresh/20261119-morning/VERIFICATION.md).
+The common calibrated ATS/totals ranking remains blocked.
+
+Daily capture now requires a fresh dated readiness path passed through
+`--eligibility-capture` to `scripts.capture_week12_context`. Both schedule
+receipts must be at most five minutes old. Pass the dated `--capture`,
+`--conference`, `--eligibility-capture` and new `--output` paths to
+`scripts.review_week12_context`; original default replay remains unchanged.

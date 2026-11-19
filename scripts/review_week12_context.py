@@ -6,7 +6,7 @@ import json
 import math
 from datetime import timedelta, timezone
 from pathlib import Path
-from scripts.prepare_week12_source import ROOT, load_capture, digest, serialized, csv_bytes, timestamp, unique
+from scripts.prepare_week12_source import ROOT, CAPTURE as DATA_CAPTURE, load_capture, digest, serialized, csv_bytes, timestamp, unique
 
 CAP=ROOT/'outputs/2026-week12-context/20261118-initial'
 CONF=ROOT/'outputs/2026-week12-context/20261118-conference'
@@ -49,9 +49,17 @@ def build():
     m=json.loads((CAP/'manifest.json').read_bytes())
     actual={p.name:digest(p.read_bytes()) for p in CAP.iterdir() if p.is_file() and p.name!='manifest.json'}
     if actual!=m['files_sha256']:raise ValueError('context file custody')
-    conf=conference_rows(json.loads((CONF/'manifest.json').read_bytes()))
+    conference_manifest=json.loads((CONF/'manifest.json').read_bytes())
+    conf=conference_rows(conference_manifest)
+    refresh=bool(m.get('eligibility_capture'))
+    if refresh and (m['eligibility_capture']!=DATA_CAPTURE.relative_to(ROOT).as_posix() or
+                    m['eligibility_manifest_sha256']!=digest((DATA_CAPTURE/'capture-manifest.json').read_bytes())):
+        raise ValueError('context eligibility provenance mismatch')
+    earliest={r['game_id']:min(timestamp(r[k]) for k in
+        ('source_kickoff_utc','provider_kickoff_utc','espn_kickoff_utc')) for r in m.get('eligibility',[])}
+    as_of=max([timestamp(m['completed_at_utc'])]+[timestamp(r['received_at_utc']) for r in conference_manifest['records']])
     conf_by={r['team']:r for r in conf}
-    _,_,data=load_capture()
+    _,_,data=load_capture(DATA_CAPTURE)
     all_games=unique(data['cfbd-games-all'],'id');teams=unique(data['cfbd-fbs-teams'],'id'); venues=unique(data['cfbd-venues'],'id')
     features=unique(data['cfbd-prior-season-advanced'],'team')
     weather=unique(m['weather'],'game_id')
@@ -61,7 +69,8 @@ def build():
     market_by=unique(markets,'id')
     rows=[]; people=[]
     for gid in m['game_ids']:
-        g=all_games[str(gid)];kickoff=timestamp(g['startDate'])
+        g=all_games[str(gid)];kickoff=earliest.get(gid,timestamp(g['startDate']))
+        if refresh and as_of>=kickoff:raise ValueError('postkickoff refresh evidence')
         espn=records[f'espn-{gid}']
         if timestamp(espn['received_at_utc'])>=kickoff:raise ValueError('postkickoff ESPN context')
         summary=read_raw(CAP,espn)
@@ -87,6 +96,9 @@ def build():
             row[side+'_official_recent_articles']=len(articles)
             row[side+'_article_sources']=';'.join(r['url'] for r in articles)
             availability=conf_by.get(team)
+            if availability and (timestamp(availability['retrieved_at_utc'])>=kickoff or
+                                 timestamp(availability['publication_utc'])>=kickoff):
+                raise ValueError('postkickoff conference evidence')
             row[side+'_availability']=availability['status'] if availability else 'NO_CONFERENCE_REPORT_CAPTURED'
             row[side+'_starting_qb']='UNCONFIRMED_FROM_CAPTURED_STRUCTURED_SOURCES'
             for category,prefixes in [('qb',('QB ',)),('ol',('OL ','OT ','OG ','C ')),('defense',('DL ','DT ','DE ','LB ','ILB ','OLB ','CB ','DB ','S '))]:
@@ -108,11 +120,13 @@ def build():
             row[side+'_prior_week_defense_ppa']=feature['defense']['ppa'] if feature else ''
         rows.append(row)
     outputs={'all-game-context.csv':csv_bytes(rows),'conference-personnel.csv':csv_bytes(people),'conference-report-status.json':serialized(conf)}
-    outputs['manifest.json']=serialized(dict(version='week12-context-review-v2',as_of_utc=m['completed_at_utc'],games=len(rows),
+    input_paths=[CAP/'manifest.json',CONF/'manifest.json']
+    if refresh:input_paths.append(DATA_CAPTURE/'capture-manifest.json')
+    outputs['manifest.json']=serialized(dict(version='week12-context-review-v3' if refresh else 'week12-context-review-v2',as_of_utc=as_of.isoformat() if refresh else m['completed_at_utc'],games=len(rows),
         weather_available=sum(r['weather_status']=='CAPTURED' for r in rows),indoor=sum(r['weather_status'].startswith('INDOOR') for r in rows),
         initial_personnel_report_teams=sum(bool(r['rows']) for r in conf),pending_report_teams=sum(not bool(r['rows']) for r in conf),
         personnel_records=len(people),numerical_adjustments=0,original_lines_changed=False,
-        input_manifests={str(p.relative_to(ROOT)).replace('\\','/'):digest(p.read_bytes()) for p in [CAP/'manifest.json',CONF/'manifest.json']},
+        input_manifests={str(p.relative_to(ROOT)).replace('\\','/'):digest(p.read_bytes()) for p in input_paths},
         files={name:digest(raw) for name,raw in outputs.items()}))
     return outputs
 
@@ -129,4 +143,11 @@ def main(verify=False):
 
 
 if __name__=='__main__':
-    p=argparse.ArgumentParser();p.add_argument('--verify',action='store_true');main(p.parse_args().verify)
+    p=argparse.ArgumentParser();p.add_argument('--verify',action='store_true')
+    p.add_argument('--capture',type=Path,default=CAP);p.add_argument('--conference',type=Path,default=CONF)
+    p.add_argument('--output',type=Path,default=OUT);p.add_argument('--eligibility-capture',type=Path,default=DATA_CAPTURE)
+    a=p.parse_args();CAP=a.capture.resolve();CONF=a.conference.resolve();OUT=a.output.resolve();DATA_CAPTURE=a.eligibility_capture.resolve()
+    if any(not f.is_relative_to(ROOT/'outputs/2026-week12-context') for f in (CAP,CONF,OUT)):
+        raise ValueError('context path boundary')
+    if not DATA_CAPTURE.is_relative_to(ROOT/'outputs/2026-week12-readiness'):raise ValueError('eligibility path boundary')
+    main(a.verify)

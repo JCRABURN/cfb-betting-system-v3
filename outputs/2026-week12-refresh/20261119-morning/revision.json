@@ -1,0 +1,10 @@
+{
+  "as_of_utc": "2026-11-19T14:09:46.031746+00:00",
+  "changes": [],
+  "current_sha256": "aa14edd24bb7341005340e0d7f68a0ced9267cc67bb53d84f4354a7a0c8b958d",
+  "evidence": "outputs/2026-week12-refresh/20261119-morning/manifest.json",
+  "evidence_sha256": "6a5c430bad1dd4773444f4ce9f6751ca9522dd1a8d34eac7448dda526fde13e5",
+  "model_version": "approved-v2.8; initial-execution-69d14465; data=feature-comparison.json; context=20261119-review-v2",
+  "previous_sha256": "aa14edd24bb7341005340e0d7f68a0ced9267cc67bb53d84f4354a7a0c8b958d",
+  "reason": "November 19 evidence refresh: unchanged prior-week model inputs; new personnel and weather risks retained separately without unsupported numeric adjustments. All 66 rows carried forward unchanged."
+}

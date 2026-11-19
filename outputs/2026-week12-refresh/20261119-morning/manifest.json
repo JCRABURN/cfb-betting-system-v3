@@ -1,0 +1,35 @@
+{
+  "context_changes": 454,
+  "eligible_games": 61,
+  "evidence_as_of_utc": "2026-11-19T14:06:06.440126+00:00",
+  "external_week11_submissions_used": false,
+  "files": {
+    "all-132-markets.csv": "fa755f4e605485731179599f70236a43687a804c7ef3cf277c988f0db17cd3f3",
+    "context-changes.json": "6c459d213910adfc6d0ff313c4e33c70212ff5dcb84dae144687468fc327f515",
+    "eligibility.json": "02880889206d51384aafc79bba64d7054a1393b745081003ebcfb35e94fc6b03",
+    "feature-comparison.json": "777052f3d63164f4c6d80aeb00e3835025c8d14540992a4b97ac5819c9317407",
+    "full-card-66.csv": "aa14edd24bb7341005340e0d7f68a0ced9267cc67bb53d84f4354a7a0c8b958d",
+    "market-observations-separate.json": "a4fefda8ebe642af6b0e04df9742dda202fa5435c97027c14b700fce34b09989",
+    "personnel-changes.json": "6ebc1c16ad6bde06843b3c51842c4558fc6e4b099e5439396ff7ab39d88abd9a"
+  },
+  "forecast_changes": 0,
+  "full_card_rows": 66,
+  "inputs": {
+    "outputs/2026-week12-context/20261119-review-v2/manifest.json": "5b9acb661d063a18552d4d9f13c9c15a5a86232e27c14e8695de86ce33e57121",
+    "outputs/2026-week12-context/review-v2/manifest.json": "e269a62cf2c98bff0ae811389da6638c213cdcb2f3a1af949f1cab46af05d2cf",
+    "outputs/2026-week12-delivery/initial-seal.json": "10b3a27c9703561805197039c1c70fd8ad0ec031246ec3592addf3cda23363eb",
+    "outputs/2026-week12-delivery/v2/all-132-markets.csv": "fa755f4e605485731179599f70236a43687a804c7ef3cf277c988f0db17cd3f3",
+    "outputs/2026-week12-delivery/v2/full-card-66.csv": "aa14edd24bb7341005340e0d7f68a0ced9267cc67bb53d84f4354a7a0c8b958d",
+    "outputs/2026-week12-readiness/20261119-morning/capture-manifest.json": "da8c3e5fbecc9a1433164d6b882c3e9cdbba3ed131ef544586ae0b3e0c03187d",
+    "outputs/2026-week12-readiness/execution-gate-20261118/capture-manifest.json": "3e3a86ccf99a7fb507e82ab97770e4e18e484fdb0c21d2732bb9aed84324c598"
+  },
+  "market_games_changed": 24,
+  "market_rows": 132,
+  "model_rerun": false,
+  "numeric_adjustments": 0,
+  "official_common_calibrated_top_five": false,
+  "personnel_changes": 3354,
+  "reason": "All seven prior-week statistical payloads unchanged; no approved numeric contextual adjustment or common calibration.",
+  "started_games_unchanged": 5,
+  "version": "week12-thursday-evidence-review-v1"
+}

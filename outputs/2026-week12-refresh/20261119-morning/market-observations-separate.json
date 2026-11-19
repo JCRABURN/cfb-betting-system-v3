@@ -1,0 +1,5004 @@
+[
+  {
+    "changed": true,
+    "current": {
+      "awayClassification": "fbs",
+      "awayConference": "American Athletic",
+      "awayScore": null,
+      "awayTeam": "Rice",
+      "awayTeamId": 242,
+      "homeClassification": "fbs",
+      "homeConference": "American Athletic",
+      "homeScore": null,
+      "homeTeam": "Temple",
+      "homeTeamId": 218,
+      "id": 401862830,
+      "lines": [
+        {
+          "awayMoneyline": 120,
+          "formattedSpread": "Temple -2.5",
+          "homeMoneyline": -142,
+          "overUnder": 51.5,
+          "overUnderOpen": 47.5,
+          "provider": "DraftKings",
+          "spread": -2.5,
+          "spreadOpen": -4
+        },
+        {
+          "awayMoneyline": 153,
+          "formattedSpread": "Temple -2.5",
+          "homeMoneyline": -178,
+          "overUnder": 51.5,
+          "overUnderOpen": 48.5,
+          "provider": "Bovada",
+          "spread": -2.5,
+          "spreadOpen": -3.5
+        }
+      ],
+      "season": 2026,
+      "seasonType": "regular",
+      "startDate": "2026-11-20T00:30:00.000Z",
+      "week": 12
+    },
+    "game_id": 401862830,
+    "previous": {
+      "awayClassification": "fbs",
+      "awayConference": "American Athletic",
+      "awayScore": null,
+      "awayTeam": "Rice",
+      "awayTeamId": 242,
+      "homeClassification": "fbs",
+      "homeConference": "American Athletic",
+      "homeScore": null,
+      "homeTeam": "Temple",
+      "homeTeamId": 218,
+      "id": 401862830,
+      "lines": [
+        {
+          "awayMoneyline": 124,
+          "formattedSpread": "Temple -3",
+          "homeMoneyline": -148,
+          "overUnder": 51.5,
+          "overUnderOpen": 47.5,
+          "provider": "DraftKings",
+          "spread": -3,
+          "spreadOpen": -4
+        },
+        {
+          "awayMoneyline": 153,
+          "formattedSpread": "Temple -3.0",
+          "homeMoneyline": -178,
+          "overUnder": 51.5,
+          "overUnderOpen": 48.5,
+          "provider": "Bovada",
+          "spread": -3,
+          "spreadOpen": -3.5
+        }
+      ],
+      "season": 2026,
+      "seasonType": "regular",
+      "startDate": "2026-11-20T00:30:00.000Z",
+      "week": 12
+    }
+  },
+  {
+    "changed": false,
+    "current": {
+      "awayClassification": "fbs",
+      "awayConference": "Big 12",
+      "awayScore": null,
+      "awayTeam": "Iowa State",
+      "awayTeamId": 66,
+      "homeClassification": "fbs",
+      "homeConference": "Big 12",
+      "homeScore": null,
+      "homeTeam": "UCF",
+      "homeTeamId": 2116,
+      "id": 401856869,
+      "lines": [
+        {
+          "awayMoneyline": 105,
+          "formattedSpread": "UCF -2.5",
+          "homeMoneyline": -125,
+          "overUnder": 48.5,
+          "overUnderOpen": 54.5,
+          "provider": "DraftKings",
+          "spread": -2.5,
+          "spreadOpen": -1.5
+        },
+        {
+          "awayMoneyline": 112,
+          "formattedSpread": "UCF -2.0",
+          "homeMoneyline": -132,
+          "overUnder": 48.5,
+          "overUnderOpen": 54,
+          "provider": "Bovada",
+          "spread": -2,
+          "spreadOpen": -2.5
+        }
+      ],
+      "season": 2026,
+      "seasonType": "regular",
+      "startDate": "2026-11-20T23:00:00.000Z",
+      "week": 12
+    },
+    "game_id": 401856869,
+    "previous": {
+      "awayClassification": "fbs",
+      "awayConference": "Big 12",
+      "awayScore": null,
+      "awayTeam": "Iowa State",
+      "awayTeamId": 66,
+      "homeClassification": "fbs",
+      "homeConference": "Big 12",
+      "homeScore": null,
+      "homeTeam": "UCF",
+      "homeTeamId": 2116,
+      "id": 401856869,
+      "lines": [
+        {
+          "awayMoneyline": 105,
+          "formattedSpread": "UCF -2.5",
+          "homeMoneyline": -125,
+          "overUnder": 48.5,
+          "overUnderOpen": 54.5,
+          "provider": "DraftKings",
+          "spread": -2.5,
+          "spreadOpen": -1.5
+        },
+        {
+          "awayMoneyline": 112,
+          "formattedSpread": "UCF -2.0",
+          "homeMoneyline": -132,
+          "overUnder": 48.5,
+          "overUnderOpen": 54,
+          "provider": "Bovada",
+          "spread": -2,
+          "spreadOpen": -2.5
+        }
+      ],
+      "season": 2026,
+      "seasonType": "regular",
+      "startDate": "2026-11-20T23:00:00.000Z",
+      "week": 12
+    }
+  },
+  {
+    "changed": true,
+    "current": {
+      "awayClassification": "fbs",
+      "awayConference": "Mid-American",
+      "awayScore": null,
+      "awayTeam": "Bowling Green",
+      "awayTeamId": 189,
+      "homeClassification": "fbs",
+      "homeConference": "Mid-American",
+      "homeScore": null,
+      "homeTeam": "Toledo",
+      "homeTeamId": 2649,
+      "id": 401866468,
+      "lines": [
+        {
+          "awayMoneyline": 525,
+          "formattedSpread": "Toledo -16.5",
+          "homeMoneyline": -750,
+          "overUnder": 48.5,
+          "overUnderOpen": 47.5,
+          "provider": "DraftKings",
+          "spread": -16.5,
+          "spreadOpen": -15.5
+        },
+        {
+          "awayMoneyline": 500,
+          "formattedSpread": "Toledo -16.5",
+          "homeMoneyline": -725,
+          "overUnder": 48.5,
+          "overUnderOpen": 48.5,
+          "provider": "Bovada",
+          "spread": -16.5,
+          "spreadOpen": -15.5
+        }
+      ],
+      "season": 2026,
+      "seasonType": "regular",
+      "startDate": "2026-11-21T00:30:00.000Z",
+      "week": 12
+    },
+    "game_id": 401866468,
+    "previous": {
+      "awayClassification": "fbs",
+      "awayConference": "Mid-American",
+      "awayScore": null,
+      "awayTeam": "Bowling Green",
+      "awayTeamId": 189,
+      "homeClassification": "fbs",
+      "homeConference": "Mid-American",
+      "homeScore": null,
+      "homeTeam": "Toledo",
+      "homeTeamId": 2649,
+      "id": 401866468,
+      "lines": [
+        {
+          "awayMoneyline": 525,
+          "formattedSpread": "Toledo -16.5",
+          "homeMoneyline": -750,
+          "overUnder": 48.5,
+          "overUnderOpen": 47.5,
+          "provider": "DraftKings",
+          "spread": -16.5,
+          "spreadOpen": -15.5
+        },
+        {
+          "awayMoneyline": 500,
+          "formattedSpread": "Toledo -16.0",
+          "homeMoneyline": -725,
+          "overUnder": 48.5,
+          "overUnderOpen": 48.5,
+          "provider": "Bovada",
+          "spread": -16,
+          "spreadOpen": -15.5
+        }
+      ],
+      "season": 2026,
+      "seasonType": "regular",
+      "startDate": "2026-11-21T00:30:00.000Z",
+      "week": 12
+    }
+  },
+  {
+    "changed": false,
+    "current": {
+      "awayClassification": "fbs",
+      "awayConference": "ACC",
+      "awayScore": null,
+      "awayTeam": "Clemson",
+      "awayTeamId": 228,
+      "homeClassification": "fbs",
+      "homeConference": "ACC",
+      "homeScore": null,
+      "homeTeam": "Duke",
+      "homeTeamId": 150,
+      "id": 401858303,
+      "lines": [
+        {
+          "awayMoneyline": 400,
+          "formattedSpread": "Duke -13.5",
+          "homeMoneyline": -535,
+          "overUnder": 40.5,
+          "overUnderOpen": 44.5,
+          "provider": "DraftKings",
+          "spread": -13.5,
+          "spreadOpen": -8.5
+        },
+        {
+          "awayMoneyline": 370,
+          "formattedSpread": "Duke -13.5",
+          "homeMoneyline": -490,
+          "overUnder": 40.5,
+          "overUnderOpen": 43.5,
+          "provider": "Bovada",
+          "spread": -13.5,
+          "spreadOpen": -12
+        }
+      ],
+      "season": 2026,
+      "seasonType": "regular",
+      "startDate": "2026-11-21T00:30:00.000Z",
+      "week": 12
+    },
+    "game_id": 401858303,
+    "previous": {
+      "awayClassification": "fbs",
+      "awayConference": "ACC",
+      "awayScore": null,
+      "awayTeam": "Clemson",
+      "awayTeamId": 228,
+      "homeClassification": "fbs",
+      "homeConference": "ACC",
+      "homeScore": null,
+      "homeTeam": "Duke",
+      "homeTeamId": 150,
+      "id": 401858303,
+      "lines": [
+        {
+          "awayMoneyline": 400,
+          "formattedSpread": "Duke -13.5",
+          "homeMoneyline": -535,
+          "overUnder": 40.5,
+          "overUnderOpen": 44.5,
+          "provider": "DraftKings",
+          "spread": -13.5,
+          "spreadOpen": -8.5
+        },
+        {
+          "awayMoneyline": 370,
+          "formattedSpread": "Duke -13.5",
+          "homeMoneyline": -490,
+          "overUnder": 40.5,
+          "overUnderOpen": 43.5,
+          "provider": "Bovada",
+          "spread": -13.5,
+          "spreadOpen": -12
+        }
+      ],
+      "season": 2026,
+      "seasonType": "regular",
+      "startDate": "2026-11-21T00:30:00.000Z",
+      "week": 12
+    }
+  },
+  {
+    "changed": true,
+    "current": {
+      "awayClassification": "fbs",
+      "awayConference": "Mountain West",
+      "awayScore": null,
+      "awayTeam": "UTEP",
+      "awayTeamId": 2638,
+      "homeClassification": "fbs",
+      "homeConference": "Mountain West",
+      "homeScore": null,
+      "homeTeam": "Air Force",
+      "homeTeamId": 2005,
+      "id": 401864545,
+      "lines": [
+        {
+          "awayMoneyline": 975,
+          "formattedSpread": "Air Force -22.0",
+          "homeMoneyline": -1900,
+          "overUnder": 48,
+          "overUnderOpen": 45.5,
+          "provider": "Bovada",
+          "spread": -22,
+          "spreadOpen": -22.5
+        },
+        {
+          "awayMoneyline": 1100,
+          "formattedSpread": "Air Force -22.5",
+          "homeMoneyline": -2100,
+          "overUnder": 47.5,
+          "overUnderOpen": 46.5,
+          "provider": "DraftKings",
+          "spread": -22.5,
+          "spreadOpen": -21.5
+        }
+      ],
+      "season": 2026,
+      "seasonType": "regular",
+      "startDate": "2026-11-21T01:00:00.000Z",
+      "week": 12
+    },
+    "game_id": 401864545,
+    "previous": {
+      "awayClassification": "fbs",
+      "awayConference": "Mountain West",
+      "awayScore": null,
+      "awayTeam": "UTEP",
+      "awayTeamId": 2638,
+      "homeClassification": "fbs",
+      "homeConference": "Mountain West",
+      "homeScore": null,
+      "homeTeam": "Air Force",
+      "homeTeamId": 2005,
+      "id": 401864545,
+      "lines": [
+        {
+          "awayMoneyline": 975,
+          "formattedSpread": "Air Force -23.0",
+          "homeMoneyline": -1900,
+          "overUnder": 47.5,
+          "overUnderOpen": 45.5,
+          "provider": "Bovada",
+          "spread": -23,
+          "spreadOpen": -22.5
+        },
+        {
+          "awayMoneyline": 1100,
+          "formattedSpread": "Air Force -23.5",
+          "homeMoneyline": -2100,
+          "overUnder": 47.5,
+          "overUnderOpen": 46.5,
+          "provider": "DraftKings",
+          "spread": -23.5,
+          "spreadOpen": -21.5
+        }
+      ],
+      "season": 2026,
+      "seasonType": "regular",
+      "startDate": "2026-11-21T01:00:00.000Z",
+      "week": 12
+    }
+  },
+  {
+    "changed": true,
+    "current": {
+      "awayClassification": "fbs",
+      "awayConference": "Big Ten",
+      "awayScore": null,
+      "awayTeam": "Oregon",
+      "awayTeamId": 2483,
+      "homeClassification": "fbs",
+      "homeConference": "Big Ten",
+      "homeScore": null,
+      "homeTeam": "Michigan State",
+      "homeTeamId": 127,
+      "id": 401858529,
+      "lines": [
+        {
+          "awayMoneyline": -900,
+          "formattedSpread": "Oregon -16.5",
+          "homeMoneyline": 600,
+          "overUnder": 44.5,
+          "overUnderOpen": 45.5,
+          "provider": "DraftKings",
+          "spread": 16.5,
+          "spreadOpen": 12.5
+        },
+        {
+          "awayMoneyline": -625,
+          "formattedSpread": "Oregon -17.0",
+          "homeMoneyline": 460,
+          "overUnder": 44.5,
+          "overUnderOpen": 44,
+          "provider": "Bovada",
+          "spread": 17,
+          "spreadOpen": 14
+        }
+      ],
+      "season": 2026,
+      "seasonType": "regular",
+      "startDate": "2026-11-21T01:00:00.000Z",
+      "week": 12
+    },
+    "game_id": 401858529,
+    "previous": {
+      "awayClassification": "fbs",
+      "awayConference": "Big Ten",
+      "awayScore": null,
+      "awayTeam": "Oregon",
+      "awayTeamId": 2483,
+      "homeClassification": "fbs",
+      "homeConference": "Big Ten",
+      "homeScore": null,
+      "homeTeam": "Michigan State",
+      "homeTeamId": 127,
+      "id": 401858529,
+      "lines": [
+        {
+          "awayMoneyline": -850,
+          "formattedSpread": "Oregon -16.5",
+          "homeMoneyline": 575,
+          "overUnder": 44.5,
+          "overUnderOpen": 45.5,
+          "provider": "DraftKings",
+          "spread": 16.5,
+          "spreadOpen": 12.5
+        },
+        {
+          "awayMoneyline": -625,
+          "formattedSpread": "Oregon -17.0",
+          "homeMoneyline": 460,
+          "overUnder": 44.5,
+          "overUnderOpen": 44,
+          "provider": "Bovada",
+          "spread": 17,
+          "spreadOpen": 14
+        }
+      ],
+      "season": 2026,
+      "seasonType": "regular",
+      "startDate": "2026-11-21T01:00:00.000Z",
+      "week": 12
+    }
+  },
+  {
+    "changed": false,
+    "current": {
+      "awayClassification": "fbs",
+      "awayConference": "Mountain West",
+      "awayScore": null,
+      "awayTeam": "New Mexico",
+      "awayTeamId": 167,
+      "homeClassification": "fbs",
+      "homeConference": "Mountain West",
+      "homeScore": null,
+      "homeTeam": "Wyoming",
+      "homeTeamId": 2751,
+      "id": 401864542,
+      "lines": [
+        {
+          "awayMoneyline": -305,
+          "formattedSpread": "New Mexico -7.5",
+          "homeMoneyline": 245,
+          "overUnder": 37.5,
+          "overUnderOpen": 38.5,
+          "provider": "DraftKings",
+          "spread": 7.5,
+          "spreadOpen": 10.5
+        },
+        {
+          "awayMoneyline": -300,
+          "formattedSpread": "New Mexico -7.5",
+          "homeMoneyline": 250,
+          "overUnder": 37.5,
+          "overUnderOpen": 37,
+          "provider": "Bovada",
+          "spread": 7.5,
+          "spreadOpen": 7.5
+        }
+      ],
+      "season": 2026,
+      "seasonType": "regular",
+      "startDate": "2026-11-21T02:00:00.000Z",
+      "week": 12
+    },
+    "game_id": 401864542,
+    "previous": {
+      "awayClassification": "fbs",
+      "awayConference": "Mountain West",
+      "awayScore": null,
+      "awayTeam": "New Mexico",
+      "awayTeamId": 167,
+      "homeClassification": "fbs",
+      "homeConference": "Mountain West",
+      "homeScore": null,
+      "homeTeam": "Wyoming",
+      "homeTeamId": 2751,
+      "id": 401864542,
+      "lines": [
+        {
+          "awayMoneyline": -305,
+          "formattedSpread": "New Mexico -7.5",
+          "homeMoneyline": 245,
+          "overUnder": 37.5,
+          "overUnderOpen": 38.5,
+          "provider": "DraftKings",
+          "spread": 7.5,
+          "spreadOpen": 10.5
+        },
+        {
+          "awayMoneyline": -300,
+          "formattedSpread": "New Mexico -7.5",
+          "homeMoneyline": 250,
+          "overUnder": 37.5,
+          "overUnderOpen": 37,
+          "provider": "Bovada",
+          "spread": 7.5,
+          "spreadOpen": 7.5
+        }
+      ],
+      "season": 2026,
+      "seasonType": "regular",
+      "startDate": "2026-11-21T02:00:00.000Z",
+      "week": 12
+    }
+  },
+  {
+    "changed": false,
+    "current": {
+      "awayClassification": "fbs",
+      "awayConference": "Big 12",
+      "awayScore": null,
+      "awayTeam": "BYU",
+      "awayTeamId": 252,
+      "homeClassification": "fbs",
+      "homeConference": "Big 12",
+      "homeScore": null,
+      "homeTeam": "Kansas",
+      "homeTeamId": 2305,
+      "id": 401856866,
+      "lines": [
+        {
+          "awayMoneyline": -225,
+          "formattedSpread": "BYU -5.5",
+          "homeMoneyline": 185,
+          "overUnder": 47.5,
+          "overUnderOpen": 50.5,
+          "provider": "DraftKings",
+          "spread": 5.5,
+          "spreadOpen": 7.5
+        },
+        {
+          "awayMoneyline": -225,
+          "formattedSpread": "BYU -6.0",
+          "homeMoneyline": 185,
+          "overUnder": 47.5,
+          "overUnderOpen": 49,
+          "provider": "Bovada",
+          "spread": 6,
+          "spreadOpen": 5.5
+        }
+      ],
+      "season": 2026,
+      "seasonType": "regular",
+      "startDate": "2026-11-21T17:00:00.000Z",
+      "week": 12
+    },
+    "game_id": 401856866,
+    "previous": {
+      "awayClassification": "fbs",
+      "awayConference": "Big 12",
+      "awayScore": null,
+      "awayTeam": "BYU",
+      "awayTeamId": 252,
+      "homeClassification": "fbs",
+      "homeConference": "Big 12",
+      "homeScore": null,
+      "homeTeam": "Kansas",
+      "homeTeamId": 2305,
+      "id": 401856866,
+      "lines": [
+        {
+          "awayMoneyline": -225,
+          "formattedSpread": "BYU -5.5",
+          "homeMoneyline": 185,
+          "overUnder": 47.5,
+          "overUnderOpen": 50.5,
+          "provider": "DraftKings",
+          "spread": 5.5,
+          "spreadOpen": 7.5
+        },
+        {
+          "awayMoneyline": -225,
+          "formattedSpread": "BYU -6.0",
+          "homeMoneyline": 185,
+          "overUnder": 47.5,
+          "overUnderOpen": 49,
+          "provider": "Bovada",
+          "spread": 6,
+          "spreadOpen": 5.5
+        }
+      ],
+      "season": 2026,
+      "seasonType": "regular",
+      "startDate": "2026-11-21T17:00:00.000Z",
+      "week": 12
+    }
+  },
+  {
+    "changed": true,
+    "current": {
+      "awayClassification": "fbs",
+      "awayConference": "American Athletic",
+      "awayScore": null,
+      "awayTeam": "Memphis",
+      "awayTeamId": 235,
+      "homeClassification": "fbs",
+      "homeConference": "American Athletic",
+      "homeScore": null,
+      "homeTeam": "Navy",
+      "homeTeamId": 2426,
+      "id": 401862834,
+      "lines": [
+        {
+          "awayMoneyline": -170,
+          "formattedSpread": "Memphis -3",
+          "homeMoneyline": 142,
+          "overUnder": 67.5,
+          "overUnderOpen": 64.5,
+          "provider": "DraftKings",
+          "spread": 3,
+          "spreadOpen": 3
+        },
+        {
+          "awayMoneyline": -165,
+          "formattedSpread": "Memphis -3.0",
+          "homeMoneyline": 140,
+          "overUnder": 67,
+          "overUnderOpen": 66.5,
+          "provider": "Bovada",
+          "spread": 3,
+          "spreadOpen": 3
+        }
+      ],
+      "season": 2026,
+      "seasonType": "regular",
+      "startDate": "2026-11-21T17:00:00.000Z",
+      "week": 12
+    },
+    "game_id": 401862834,
+    "previous": {
+      "awayClassification": "fbs",
+      "awayConference": "American Athletic",
+      "awayScore": null,
+      "awayTeam": "Memphis",
+      "awayTeamId": 235,
+      "homeClassification": "fbs",
+      "homeConference": "American Athletic",
+      "homeScore": null,
+      "homeTeam": "Navy",
+      "homeTeamId": 2426,
+      "id": 401862834,
+      "lines": [
+        {
+          "awayMoneyline": -170,
+          "formattedSpread": "Memphis -3.5",
+          "homeMoneyline": 142,
+          "overUnder": 67.5,
+          "overUnderOpen": 64.5,
+          "provider": "DraftKings",
+          "spread": 3.5,
+          "spreadOpen": 3
+        },
+        {
+          "awayMoneyline": -165,
+          "formattedSpread": "Memphis -3.5",
+          "homeMoneyline": 140,
+          "overUnder": 67,
+          "overUnderOpen": 66.5,
+          "provider": "Bovada",
+          "spread": 3.5,
+          "spreadOpen": 3
+        }
+      ],
+      "season": 2026,
+      "seasonType": "regular",
+      "startDate": "2026-11-21T17:00:00.000Z",
+      "week": 12
+    }
+  },
+  {
+    "changed": false,
+    "current": {
+      "awayClassification": "fbs",
+      "awayConference": "SEC",
+      "awayScore": null,
+      "awayTeam": "Vanderbilt",
+      "awayTeamId": 238,
+      "homeClassification": "fbs",
+      "homeConference": "SEC",
+      "homeScore": null,
+      "homeTeam": "Florida",
+      "homeTeamId": 57,
+      "id": 401856748,
+      "lines": [
+        {
+          "awayMoneyline": 410,
+          "formattedSpread": "Florida -13.5",
+          "homeMoneyline": -550,
+          "overUnder": 46,
+          "overUnderOpen": 47,
+          "provider": "Bovada",
+          "spread": -13.5,
+          "spreadOpen": -13.5
+        },
+        {
+          "awayMoneyline": 400,
+          "formattedSpread": "Florida -13.5",
+          "homeMoneyline": -535,
+          "overUnder": 46.5,
+          "overUnderOpen": 48.5,
+          "provider": "DraftKings",
+          "spread": -13.5,
+          "spreadOpen": -13.5
+        }
+      ],
+      "season": 2026,
+      "seasonType": "regular",
+      "startDate": "2026-11-21T17:00:00.000Z",
+      "week": 12
+    },
+    "game_id": 401856748,
+    "previous": {
+      "awayClassification": "fbs",
+      "awayConference": "SEC",
+      "awayScore": null,
+      "awayTeam": "Vanderbilt",
+      "awayTeamId": 238,
+      "homeClassification": "fbs",
+      "homeConference": "SEC",
+      "homeScore": null,
+      "homeTeam": "Florida",
+      "homeTeamId": 57,
+      "id": 401856748,
+      "lines": [
+        {
+          "awayMoneyline": 410,
+          "formattedSpread": "Florida -13.5",
+          "homeMoneyline": -550,
+          "overUnder": 46,
+          "overUnderOpen": 47,
+          "provider": "Bovada",
+          "spread": -13.5,
+          "spreadOpen": -13.5
+        },
+        {
+          "awayMoneyline": 400,
+          "formattedSpread": "Florida -13.5",
+          "homeMoneyline": -535,
+          "overUnder": 46.5,
+          "overUnderOpen": 48.5,
+          "provider": "DraftKings",
+          "spread": -13.5,
+          "spreadOpen": -13.5
+        }
+      ],
+      "season": 2026,
+      "seasonType": "regular",
+      "startDate": "2026-11-21T17:00:00.000Z",
+      "week": 12
+    }
+  },
+  {
+    "changed": false,
+    "current": {
+      "awayClassification": "fbs",
+      "awayConference": "ACC",
+      "awayScore": null,
+      "awayTeam": "Syracuse",
+      "awayTeamId": 183,
+      "homeClassification": "fbs",
+      "homeConference": "ACC",
+      "homeScore": null,
+      "homeTeam": "Boston College",
+      "homeTeamId": 103,
+      "id": 401858309,
+      "lines": [
+        {
+          "awayMoneyline": -135,
+          "formattedSpread": "Syracuse -2.5",
+          "homeMoneyline": 114,
+          "overUnder": 50.5,
+          "overUnderOpen": 50.5,
+          "provider": "DraftKings",
+          "spread": 2.5,
+          "spreadOpen": 3.5
+        },
+        {
+          "awayMoneyline": -155,
+          "formattedSpread": "Syracuse -2.5",
+          "homeMoneyline": 132,
+          "overUnder": 51,
+          "overUnderOpen": 51,
+          "provider": "Bovada",
+          "spread": 2.5,
+          "spreadOpen": 3
+        }
+      ],
+      "season": 2026,
+      "seasonType": "regular",
+      "startDate": "2026-11-21T17:00:00.000Z",
+      "week": 12
+    },
+    "game_id": 401858309,
+    "previous": {
+      "awayClassification": "fbs",
+      "awayConference": "ACC",
+      "awayScore": null,
+      "awayTeam": "Syracuse",
+      "awayTeamId": 183,
+      "homeClassification": "fbs",
+      "homeConference": "ACC",
+      "homeScore": null,
+      "homeTeam": "Boston College",
+      "homeTeamId": 103,
+      "id": 401858309,
+      "lines": [
+        {
+          "awayMoneyline": -135,
+          "formattedSpread": "Syracuse -2.5",
+          "homeMoneyline": 114,
+          "overUnder": 50.5,
+          "overUnderOpen": 50.5,
+          "provider": "DraftKings",
+          "spread": 2.5,
+          "spreadOpen": 3.5
+        },
+        {
+          "awayMoneyline": -155,
+          "formattedSpread": "Syracuse -2.5",
+          "homeMoneyline": 132,
+          "overUnder": 51,
+          "overUnderOpen": 51,
+          "provider": "Bovada",
+          "spread": 2.5,
+          "spreadOpen": 3
+        }
+      ],
+      "season": 2026,
+      "seasonType": "regular",
+      "startDate": "2026-11-21T17:00:00.000Z",
+      "week": 12
+    }
+  },
+  {
+    "changed": true,
+    "current": {
+      "awayClassification": "fbs",
+      "awayConference": "Big 12",
+      "awayScore": null,
+      "awayTeam": "Colorado",
+      "awayTeamId": 38,
+      "homeClassification": "fbs",
+      "homeConference": "Big 12",
+      "homeScore": null,
+      "homeTeam": "Cincinnati",
+      "homeTeamId": 2132,
+      "id": 401856867,
+      "lines": [
+        {
+          "awayMoneyline": 136,
+          "formattedSpread": "Cincinnati -3",
+          "homeMoneyline": -162,
+          "overUnder": 58.5,
+          "overUnderOpen": 60.5,
+          "provider": "DraftKings",
+          "spread": -3,
+          "spreadOpen": -2.5
+        },
+        {
+          "awayMoneyline": 153,
+          "formattedSpread": "Cincinnati -3.0",
+          "homeMoneyline": -178,
+          "overUnder": 58.5,
+          "overUnderOpen": 61,
+          "provider": "Bovada",
+          "spread": -3,
+          "spreadOpen": -3.5
+        }
+      ],
+      "season": 2026,
+      "seasonType": "regular",
+      "startDate": "2026-11-21T17:00:00.000Z",
+      "week": 12
+    },
+    "game_id": 401856867,
+    "previous": {
+      "awayClassification": "fbs",
+      "awayConference": "Big 12",
+      "awayScore": null,
+      "awayTeam": "Colorado",
+      "awayTeamId": 38,
+      "homeClassification": "fbs",
+      "homeConference": "Big 12",
+      "homeScore": null,
+      "homeTeam": "Cincinnati",
+      "homeTeamId": 2132,
+      "id": 401856867,
+      "lines": [
+        {
+          "awayMoneyline": 136,
+          "formattedSpread": "Cincinnati -3",
+          "homeMoneyline": -162,
+          "overUnder": 58.5,
+          "overUnderOpen": 60.5,
+          "provider": "DraftKings",
+          "spread": -3,
+          "spreadOpen": -2.5
+        },
+        {
+          "awayMoneyline": 153,
+          "formattedSpread": "Cincinnati -3.5",
+          "homeMoneyline": -178,
+          "overUnder": 58.5,
+          "overUnderOpen": 61,
+          "provider": "Bovada",
+          "spread": -3.5,
+          "spreadOpen": -3.5
+        }
+      ],
+      "season": 2026,
+      "seasonType": "regular",
+      "startDate": "2026-11-21T17:00:00.000Z",
+      "week": 12
+    }
+  },
+  {
+    "changed": false,
+    "current": {
+      "awayClassification": "fbs",
+      "awayConference": "Big Ten",
+      "awayScore": null,
+      "awayTeam": "Wisconsin",
+      "awayTeamId": 275,
+      "homeClassification": "fbs",
+      "homeConference": "Big Ten",
+      "homeScore": null,
+      "homeTeam": "Purdue",
+      "homeTeamId": 2509,
+      "id": 401858533,
+      "lines": [
+        {
+          "awayMoneyline": -220,
+          "formattedSpread": "Wisconsin -6.0",
+          "homeMoneyline": 180,
+          "overUnder": 46.5,
+          "overUnderOpen": 44.5,
+          "provider": "Bovada",
+          "spread": 6,
+          "spreadOpen": 5.5
+        },
+        {
+          "awayMoneyline": -230,
+          "formattedSpread": "Wisconsin -6",
+          "homeMoneyline": 190,
+          "overUnder": 46.5,
+          "overUnderOpen": 44.5,
+          "provider": "DraftKings",
+          "spread": 6,
+          "spreadOpen": 6
+        }
+      ],
+      "season": 2026,
+      "seasonType": "regular",
+      "startDate": "2026-11-21T17:00:00.000Z",
+      "week": 12
+    },
+    "game_id": 401858533,
+    "previous": {
+      "awayClassification": "fbs",
+      "awayConference": "Big Ten",
+      "awayScore": null,
+      "awayTeam": "Wisconsin",
+      "awayTeamId": 275,
+      "homeClassification": "fbs",
+      "homeConference": "Big Ten",
+      "homeScore": null,
+      "homeTeam": "Purdue",
+      "homeTeamId": 2509,
+      "id": 401858533,
+      "lines": [
+        {
+          "awayMoneyline": -220,
+          "formattedSpread": "Wisconsin -6.0",
+          "homeMoneyline": 180,
+          "overUnder": 46.5,
+          "overUnderOpen": 44.5,
+          "provider": "Bovada",
+          "spread": 6,
+          "spreadOpen": 5.5
+        },
+        {
+          "awayMoneyline": -230,
+          "formattedSpread": "Wisconsin -6",
+          "homeMoneyline": 190,
+          "overUnder": 46.5,
+          "overUnderOpen": 44.5,
+          "provider": "DraftKings",
+          "spread": 6,
+          "spreadOpen": 6
+        }
+      ],
+      "season": 2026,
+      "seasonType": "regular",
+      "startDate": "2026-11-21T17:00:00.000Z",
+      "week": 12
+    }
+  },
+  {
+    "changed": false,
+    "current": {
+      "awayClassification": "fbs",
+      "awayConference": "American Athletic",
+      "awayScore": null,
+      "awayTeam": "North Texas",
+      "awayTeamId": 249,
+      "homeClassification": "fbs",
+      "homeConference": "American Athletic",
+      "homeScore": null,
+      "homeTeam": "Tulane",
+      "homeTeamId": 2655,
+      "id": 401862835,
+      "lines": [
+        {
+          "awayMoneyline": -238,
+          "formattedSpread": "North Texas -6.5",
+          "homeMoneyline": 195,
+          "overUnder": 55.5,
+          "overUnderOpen": 60.5,
+          "provider": "DraftKings",
+          "spread": 6.5,
+          "spreadOpen": 13.5
+        },
+        {
+          "awayMoneyline": -270,
+          "formattedSpread": "North Texas -6.5",
+          "homeMoneyline": 220,
+          "overUnder": 56,
+          "overUnderOpen": 57,
+          "provider": "Bovada",
+          "spread": 6.5,
+          "spreadOpen": 7
+        }
+      ],
+      "season": 2026,
+      "seasonType": "regular",
+      "startDate": "2026-11-21T17:00:00.000Z",
+      "week": 12
+    },
+    "game_id": 401862835,
+    "previous": {
+      "awayClassification": "fbs",
+      "awayConference": "American Athletic",
+      "awayScore": null,
+      "awayTeam": "North Texas",
+      "awayTeamId": 249,
+      "homeClassification": "fbs",
+      "homeConference": "American Athletic",
+      "homeScore": null,
+      "homeTeam": "Tulane",
+      "homeTeamId": 2655,
+      "id": 401862835,
+      "lines": [
+        {
+          "awayMoneyline": -238,
+          "formattedSpread": "North Texas -6.5",
+          "homeMoneyline": 195,
+          "overUnder": 55.5,
+          "overUnderOpen": 60.5,
+          "provider": "DraftKings",
+          "spread": 6.5,
+          "spreadOpen": 13.5
+        },
+        {
+          "awayMoneyline": -270,
+          "formattedSpread": "North Texas -6.5",
+          "homeMoneyline": 220,
+          "overUnder": 56,
+          "overUnderOpen": 57,
+          "provider": "Bovada",
+          "spread": 6.5,
+          "spreadOpen": 7
+        }
+      ],
+      "season": 2026,
+      "seasonType": "regular",
+      "startDate": "2026-11-21T17:00:00.000Z",
+      "week": 12
+    }
+  },
+  {
+    "changed": false,
+    "current": {
+      "awayClassification": "fbs",
+      "awayConference": "Big Ten",
+      "awayScore": null,
+      "awayTeam": "Ohio State",
+      "awayTeamId": 194,
+      "homeClassification": "fbs",
+      "homeConference": "Big Ten",
+      "homeScore": null,
+      "homeTeam": "Nebraska",
+      "homeTeamId": 158,
+      "id": 401858531,
+      "lines": [
+        {
+          "awayMoneyline": -162,
+          "formattedSpread": "Ohio State -3",
+          "homeMoneyline": 136,
+          "overUnder": 41.5,
+          "overUnderOpen": 47.5,
+          "provider": "DraftKings",
+          "spread": 3,
+          "spreadOpen": 5.5
+        },
+        {
+          "awayMoneyline": -145,
+          "formattedSpread": "Ohio State -3.5",
+          "homeMoneyline": 125,
+          "overUnder": 42,
+          "overUnderOpen": 43.5,
+          "provider": "Bovada",
+          "spread": 3.5,
+          "spreadOpen": 3
+        }
+      ],
+      "season": 2026,
+      "seasonType": "regular",
+      "startDate": "2026-11-21T17:00:00.000Z",
+      "week": 12
+    },
+    "game_id": 401858531,
+    "previous": {
+      "awayClassification": "fbs",
+      "awayConference": "Big Ten",
+      "awayScore": null,
+      "awayTeam": "Ohio State",
+      "awayTeamId": 194,
+      "homeClassification": "fbs",
+      "homeConference": "Big Ten",
+      "homeScore": null,
+      "homeTeam": "Nebraska",
+      "homeTeamId": 158,
+      "id": 401858531,
+      "lines": [
+        {
+          "awayMoneyline": -162,
+          "formattedSpread": "Ohio State -3",
+          "homeMoneyline": 136,
+          "overUnder": 41.5,
+          "overUnderOpen": 47.5,
+          "provider": "DraftKings",
+          "spread": 3,
+          "spreadOpen": 5.5
+        },
+        {
+          "awayMoneyline": -145,
+          "formattedSpread": "Ohio State -3.5",
+          "homeMoneyline": 125,
+          "overUnder": 42,
+          "overUnderOpen": 43.5,
+          "provider": "Bovada",
+          "spread": 3.5,
+          "spreadOpen": 3
+        }
+      ],
+      "season": 2026,
+      "seasonType": "regular",
+      "startDate": "2026-11-21T17:00:00.000Z",
+      "week": 12
+    }
+  },
+  {
+    "changed": true,
+    "current": {
+      "awayClassification": "fbs",
+      "awayConference": "Big Ten",
+      "awayScore": null,
+      "awayTeam": "Northwestern",
+      "awayTeamId": 77,
+      "homeClassification": "fbs",
+      "homeConference": "Big Ten",
+      "homeScore": null,
+      "homeTeam": "Minnesota",
+      "homeTeamId": 135,
+      "id": 401858530,
+      "lines": [
+        {
+          "awayMoneyline": -135,
+          "formattedSpread": "Northwestern -2.5",
+          "homeMoneyline": 114,
+          "overUnder": 41.5,
+          "overUnderOpen": 43.5,
+          "provider": "DraftKings",
+          "spread": 2.5,
+          "spreadOpen": 3
+        },
+        {
+          "awayMoneyline": -163,
+          "formattedSpread": "Northwestern -2.5",
+          "homeMoneyline": 138,
+          "overUnder": 41.5,
+          "overUnderOpen": 43,
+          "provider": "Bovada",
+          "spread": 2.5,
+          "spreadOpen": 3
+        }
+      ],
+      "season": 2026,
+      "seasonType": "regular",
+      "startDate": "2026-11-21T17:00:00.000Z",
+      "week": 12
+    },
+    "game_id": 401858530,
+    "previous": {
+      "awayClassification": "fbs",
+      "awayConference": "Big Ten",
+      "awayScore": null,
+      "awayTeam": "Northwestern",
+      "awayTeamId": 77,
+      "homeClassification": "fbs",
+      "homeConference": "Big Ten",
+      "homeScore": null,
+      "homeTeam": "Minnesota",
+      "homeTeamId": 135,
+      "id": 401858530,
+      "lines": [
+        {
+          "awayMoneyline": -155,
+          "formattedSpread": "Northwestern -3",
+          "homeMoneyline": 130,
+          "overUnder": 42.5,
+          "overUnderOpen": 43.5,
+          "provider": "DraftKings",
+          "spread": 3,
+          "spreadOpen": 3
+        },
+        {
+          "awayMoneyline": -163,
+          "formattedSpread": "Northwestern -3.0",
+          "homeMoneyline": 138,
+          "overUnder": 42.5,
+          "overUnderOpen": 43,
+          "provider": "Bovada",
+          "spread": 3,
+          "spreadOpen": 3
+        }
+      ],
+      "season": 2026,
+      "seasonType": "regular",
+      "startDate": "2026-11-21T17:00:00.000Z",
+      "week": 12
+    }
+  },
+  {
+    "changed": true,
+    "current": {
+      "awayClassification": "fbs",
+      "awayConference": "ACC",
+      "awayScore": null,
+      "awayTeam": "Wake Forest",
+      "awayTeamId": 154,
+      "homeClassification": "fbs",
+      "homeConference": "ACC",
+      "homeScore": null,
+      "homeTeam": "Georgia Tech",
+      "homeTeamId": 59,
+      "id": 401858310,
+      "lines": [
+        {
+          "awayMoneyline": -1500,
+          "formattedSpread": "Wake Forest -20.5",
+          "homeMoneyline": 850,
+          "overUnder": 56,
+          "overUnderOpen": 57.5,
+          "provider": "Bovada",
+          "spread": 20.5,
+          "spreadOpen": 21
+        },
+        {
+          "awayMoneyline": -1600,
+          "formattedSpread": "Wake Forest -20.5",
+          "homeMoneyline": 900,
+          "overUnder": 56.5,
+          "overUnderOpen": 56.5,
+          "provider": "DraftKings",
+          "spread": 20.5,
+          "spreadOpen": 20.5
+        }
+      ],
+      "season": 2026,
+      "seasonType": "regular",
+      "startDate": "2026-11-21T17:00:00.000Z",
+      "week": 12
+    },
+    "game_id": 401858310,
+    "previous": {
+      "awayClassification": "fbs",
+      "awayConference": "ACC",
+      "awayScore": null,
+      "awayTeam": "Wake Forest",
+      "awayTeamId": 154,
+      "homeClassification": "fbs",
+      "homeConference": "ACC",
+      "homeScore": null,
+      "homeTeam": "Georgia Tech",
+      "homeTeamId": 59,
+      "id": 401858310,
+      "lines": [
+        {
+          "awayMoneyline": -1500,
+          "formattedSpread": "Wake Forest -21.0",
+          "homeMoneyline": 850,
+          "overUnder": 56.5,
+          "overUnderOpen": 57.5,
+          "provider": "Bovada",
+          "spread": 21,
+          "spreadOpen": 21
+        },
+        {
+          "awayMoneyline": -1600,
+          "formattedSpread": "Wake Forest -21",
+          "homeMoneyline": 900,
+          "overUnder": 56.5,
+          "overUnderOpen": 56.5,
+          "provider": "DraftKings",
+          "spread": 21,
+          "spreadOpen": 20.5
+        }
+      ],
+      "season": 2026,
+      "seasonType": "regular",
+      "startDate": "2026-11-21T17:00:00.000Z",
+      "week": 12
+    }
+  },
+  {
+    "changed": true,
+    "current": {
+      "awayClassification": "fbs",
+      "awayConference": "American Athletic",
+      "awayScore": null,
+      "awayTeam": "East Carolina",
+      "awayTeamId": 151,
+      "homeClassification": "fbs",
+      "homeConference": "American Athletic",
+      "homeScore": null,
+      "homeTeam": "Army",
+      "homeTeamId": 349,
+      "id": 401862831,
+      "lines": [
+        {
+          "awayMoneyline": 170,
+          "formattedSpread": "Army -6.0",
+          "homeMoneyline": -200,
+          "overUnder": 45.5,
+          "overUnderOpen": 44,
+          "provider": "Bovada",
+          "spread": -6,
+          "spreadOpen": -4.5
+        },
+        {
+          "awayMoneyline": 190,
+          "formattedSpread": "Army -6",
+          "homeMoneyline": -230,
+          "overUnder": 45.5,
+          "overUnderOpen": 42.5,
+          "provider": "DraftKings",
+          "spread": -6,
+          "spreadOpen": -4.5
+        }
+      ],
+      "season": 2026,
+      "seasonType": "regular",
+      "startDate": "2026-11-21T17:00:00.000Z",
+      "week": 12
+    },
+    "game_id": 401862831,
+    "previous": {
+      "awayClassification": "fbs",
+      "awayConference": "American Athletic",
+      "awayScore": null,
+      "awayTeam": "East Carolina",
+      "awayTeamId": 151,
+      "homeClassification": "fbs",
+      "homeConference": "American Athletic",
+      "homeScore": null,
+      "homeTeam": "Army",
+      "homeTeamId": 349,
+      "id": 401862831,
+      "lines": [
+        {
+          "awayMoneyline": 170,
+          "formattedSpread": "Army -6.0",
+          "homeMoneyline": -200,
+          "overUnder": 45.5,
+          "overUnderOpen": 44,
+          "provider": "Bovada",
+          "spread": -6,
+          "spreadOpen": -4.5
+        },
+        {
+          "awayMoneyline": 180,
+          "formattedSpread": "Army -6",
+          "homeMoneyline": -218,
+          "overUnder": 45.5,
+          "overUnderOpen": 42.5,
+          "provider": "DraftKings",
+          "spread": -6,
+          "spreadOpen": -4.5
+        }
+      ],
+      "season": 2026,
+      "seasonType": "regular",
+      "startDate": "2026-11-21T17:00:00.000Z",
+      "week": 12
+    }
+  },
+  {
+    "changed": false,
+    "current": {
+      "awayClassification": "fbs",
+      "awayConference": "ACC",
+      "awayScore": null,
+      "awayTeam": "North Carolina",
+      "awayTeamId": 153,
+      "homeClassification": "fbs",
+      "homeConference": "ACC",
+      "homeScore": null,
+      "homeTeam": "Virginia",
+      "homeTeamId": 258,
+      "id": 401858305,
+      "lines": [
+        {
+          "awayMoneyline": -115,
+          "formattedSpread": "Virginia -1.5",
+          "homeMoneyline": -105,
+          "overUnder": 43.5,
+          "overUnderOpen": 43.5,
+          "provider": "Bovada",
+          "spread": -1.5,
+          "spreadOpen": 1
+        },
+        {
+          "awayMoneyline": -102,
+          "formattedSpread": "Virginia -1.5",
+          "homeMoneyline": -118,
+          "overUnder": 43.5,
+          "overUnderOpen": 43.5,
+          "provider": "DraftKings",
+          "spread": -1.5,
+          "spreadOpen": -1.5
+        }
+      ],
+      "season": 2026,
+      "seasonType": "regular",
+      "startDate": "2026-11-21T17:30:00.000Z",
+      "week": 12
+    },
+    "game_id": 401858305,
+    "previous": {
+      "awayClassification": "fbs",
+      "awayConference": "ACC",
+      "awayScore": null,
+      "awayTeam": "North Carolina",
+      "awayTeamId": 153,
+      "homeClassification": "fbs",
+      "homeConference": "ACC",
+      "homeScore": null,
+      "homeTeam": "Virginia",
+      "homeTeamId": 258,
+      "id": 401858305,
+      "lines": [
+        {
+          "awayMoneyline": -115,
+          "formattedSpread": "Virginia -1.5",
+          "homeMoneyline": -105,
+          "overUnder": 43.5,
+          "overUnderOpen": 43.5,
+          "provider": "Bovada",
+          "spread": -1.5,
+          "spreadOpen": 1
+        },
+        {
+          "awayMoneyline": -102,
+          "formattedSpread": "Virginia -1.5",
+          "homeMoneyline": -118,
+          "overUnder": 43.5,
+          "overUnderOpen": 43.5,
+          "provider": "DraftKings",
+          "spread": -1.5,
+          "spreadOpen": -1.5
+        }
+      ],
+      "season": 2026,
+      "seasonType": "regular",
+      "startDate": "2026-11-21T17:30:00.000Z",
+      "week": 12
+    }
+  },
+  {
+    "changed": false,
+    "current": {
+      "awayClassification": "fbs",
+      "awayConference": "Big 12",
+      "awayScore": null,
+      "awayTeam": "Houston",
+      "awayTeamId": 248,
+      "homeClassification": "fbs",
+      "homeConference": "Big 12",
+      "homeScore": null,
+      "homeTeam": "West Virginia",
+      "homeTeamId": 277,
+      "id": 401856868,
+      "lines": [
+        {
+          "awayMoneyline": -325,
+          "formattedSpread": "Houston -8.5",
+          "homeMoneyline": 260,
+          "overUnder": 70.5,
+          "overUnderOpen": 71.5,
+          "provider": "DraftKings",
+          "spread": 8.5,
+          "spreadOpen": 7
+        },
+        {
+          "awayMoneyline": -275,
+          "formattedSpread": "Houston -8.0",
+          "homeMoneyline": 225,
+          "overUnder": 70.5,
+          "overUnderOpen": 70.5,
+          "provider": "Bovada",
+          "spread": 8,
+          "spreadOpen": 7
+        }
+      ],
+      "season": 2026,
+      "seasonType": "regular",
+      "startDate": "2026-11-21T18:00:00.000Z",
+      "week": 12
+    },
+    "game_id": 401856868,
+    "previous": {
+      "awayClassification": "fbs",
+      "awayConference": "Big 12",
+      "awayScore": null,
+      "awayTeam": "Houston",
+      "awayTeamId": 248,
+      "homeClassification": "fbs",
+      "homeConference": "Big 12",
+      "homeScore": null,
+      "homeTeam": "West Virginia",
+      "homeTeamId": 277,
+      "id": 401856868,
+      "lines": [
+        {
+          "awayMoneyline": -325,
+          "formattedSpread": "Houston -8.5",
+          "homeMoneyline": 260,
+          "overUnder": 70.5,
+          "overUnderOpen": 71.5,
+          "provider": "DraftKings",
+          "spread": 8.5,
+          "spreadOpen": 7
+        },
+        {
+          "awayMoneyline": -275,
+          "formattedSpread": "Houston -8.0",
+          "homeMoneyline": 225,
+          "overUnder": 70.5,
+          "overUnderOpen": 70.5,
+          "provider": "Bovada",
+          "spread": 8,
+          "spreadOpen": 7
+        }
+      ],
+      "season": 2026,
+      "seasonType": "regular",
+      "startDate": "2026-11-21T18:00:00.000Z",
+      "week": 12
+    }
+  },
+  {
+    "changed": false,
+    "current": {
+      "awayClassification": "fbs",
+      "awayConference": "Conference USA",
+      "awayScore": null,
+      "awayTeam": "Western Kentucky",
+      "awayTeamId": 98,
+      "homeClassification": "fbs",
+      "homeConference": "Conference USA",
+      "homeScore": null,
+      "homeTeam": "Liberty",
+      "homeTeamId": 2335,
+      "id": 401871080,
+      "lines": [
+        {
+          "awayMoneyline": 575,
+          "formattedSpread": "Liberty -17.5",
+          "homeMoneyline": -850,
+          "overUnder": 53.5,
+          "overUnderOpen": 52.5,
+          "provider": "DraftKings",
+          "spread": -17.5,
+          "spreadOpen": -14.5
+        },
+        {
+          "awayMoneyline": 575,
+          "formattedSpread": "Liberty -17.0",
+          "homeMoneyline": -850,
+          "overUnder": 52.5,
+          "overUnderOpen": 53.5,
+          "provider": "Bovada",
+          "spread": -17,
+          "spreadOpen": -16.5
+        }
+      ],
+      "season": 2026,
+      "seasonType": "regular",
+      "startDate": "2026-11-21T18:00:00.000Z",
+      "week": 12
+    },
+    "game_id": 401871080,
+    "previous": {
+      "awayClassification": "fbs",
+      "awayConference": "Conference USA",
+      "awayScore": null,
+      "awayTeam": "Western Kentucky",
+      "awayTeamId": 98,
+      "homeClassification": "fbs",
+      "homeConference": "Conference USA",
+      "homeScore": null,
+      "homeTeam": "Liberty",
+      "homeTeamId": 2335,
+      "id": 401871080,
+      "lines": [
+        {
+          "awayMoneyline": 575,
+          "formattedSpread": "Liberty -17.5",
+          "homeMoneyline": -850,
+          "overUnder": 53.5,
+          "overUnderOpen": 52.5,
+          "provider": "DraftKings",
+          "spread": -17.5,
+          "spreadOpen": -14.5
+        },
+        {
+          "awayMoneyline": 575,
+          "formattedSpread": "Liberty -17.0",
+          "homeMoneyline": -850,
+          "overUnder": 52.5,
+          "overUnderOpen": 53.5,
+          "provider": "Bovada",
+          "spread": -17,
+          "spreadOpen": -16.5
+        }
+      ],
+      "season": 2026,
+      "seasonType": "regular",
+      "startDate": "2026-11-21T18:00:00.000Z",
+      "week": 12
+    }
+  },
+  {
+    "changed": false,
+    "current": {
+      "awayClassification": "fbs",
+      "awayConference": "Conference USA",
+      "awayScore": null,
+      "awayTeam": "Missouri State",
+      "awayTeamId": 2623,
+      "homeClassification": "fbs",
+      "homeConference": "Conference USA",
+      "homeScore": null,
+      "homeTeam": "Jacksonville State",
+      "homeTeamId": 55,
+      "id": 401871079,
+      "lines": [
+        {
+          "awayMoneyline": 320,
+          "formattedSpread": "Jacksonville State -10.5",
+          "homeMoneyline": -410,
+          "overUnder": 53.5,
+          "overUnderOpen": 53.5,
+          "provider": "DraftKings",
+          "spread": -10.5,
+          "spreadOpen": -10.5
+        },
+        {
+          "awayMoneyline": 325,
+          "formattedSpread": "Jacksonville State -11.0",
+          "homeMoneyline": -425,
+          "overUnder": 53,
+          "overUnderOpen": 52.5,
+          "provider": "Bovada",
+          "spread": -11,
+          "spreadOpen": -10.5
+        }
+      ],
+      "season": 2026,
+      "seasonType": "regular",
+      "startDate": "2026-11-21T19:00:00.000Z",
+      "week": 12
+    },
+    "game_id": 401871079,
+    "previous": {
+      "awayClassification": "fbs",
+      "awayConference": "Conference USA",
+      "awayScore": null,
+      "awayTeam": "Missouri State",
+      "awayTeamId": 2623,
+      "homeClassification": "fbs",
+      "homeConference": "Conference USA",
+      "homeScore": null,
+      "homeTeam": "Jacksonville State",
+      "homeTeamId": 55,
+      "id": 401871079,
+      "lines": [
+        {
+          "awayMoneyline": 320,
+          "formattedSpread": "Jacksonville State -10.5",
+          "homeMoneyline": -410,
+          "overUnder": 53.5,
+          "overUnderOpen": 53.5,
+          "provider": "DraftKings",
+          "spread": -10.5,
+          "spreadOpen": -10.5
+        },
+        {
+          "awayMoneyline": 325,
+          "formattedSpread": "Jacksonville State -11.0",
+          "homeMoneyline": -425,
+          "overUnder": 53,
+          "overUnderOpen": 52.5,
+          "provider": "Bovada",
+          "spread": -11,
+          "spreadOpen": -10.5
+        }
+      ],
+      "season": 2026,
+      "seasonType": "regular",
+      "startDate": "2026-11-21T19:00:00.000Z",
+      "week": 12
+    }
+  },
+  {
+    "changed": false,
+    "current": {
+      "awayClassification": "fbs",
+      "awayConference": "American Athletic",
+      "awayScore": null,
+      "awayTeam": "Charlotte",
+      "awayTeamId": 2429,
+      "homeClassification": "fbs",
+      "homeConference": "American Athletic",
+      "homeScore": null,
+      "homeTeam": "Tulsa",
+      "homeTeamId": 202,
+      "id": 401862832,
+      "lines": [
+        {
+          "awayMoneyline": 1100,
+          "formattedSpread": "Tulsa -22.5",
+          "homeMoneyline": -2100,
+          "overUnder": 52.5,
+          "overUnderOpen": 52.5,
+          "provider": "DraftKings",
+          "spread": -22.5,
+          "spreadOpen": -19.5
+        },
+        {
+          "awayMoneyline": 975,
+          "formattedSpread": "Tulsa -23.0",
+          "homeMoneyline": -1900,
+          "overUnder": 52.5,
+          "overUnderOpen": 52.5,
+          "provider": "Bovada",
+          "spread": -23,
+          "spreadOpen": -22.5
+        }
+      ],
+      "season": 2026,
+      "seasonType": "regular",
+      "startDate": "2026-11-21T19:00:00.000Z",
+      "week": 12
+    },
+    "game_id": 401862832,
+    "previous": {
+      "awayClassification": "fbs",
+      "awayConference": "American Athletic",
+      "awayScore": null,
+      "awayTeam": "Charlotte",
+      "awayTeamId": 2429,
+      "homeClassification": "fbs",
+      "homeConference": "American Athletic",
+      "homeScore": null,
+      "homeTeam": "Tulsa",
+      "homeTeamId": 202,
+      "id": 401862832,
+      "lines": [
+        {
+          "awayMoneyline": 1100,
+          "formattedSpread": "Tulsa -22.5",
+          "homeMoneyline": -2100,
+          "overUnder": 52.5,
+          "overUnderOpen": 52.5,
+          "provider": "DraftKings",
+          "spread": -22.5,
+          "spreadOpen": -19.5
+        },
+        {
+          "awayMoneyline": 975,
+          "formattedSpread": "Tulsa -23.0",
+          "homeMoneyline": -1900,
+          "overUnder": 52.5,
+          "overUnderOpen": 52.5,
+          "provider": "Bovada",
+          "spread": -23,
+          "spreadOpen": -22.5
+        }
+      ],
+      "season": 2026,
+      "seasonType": "regular",
+      "startDate": "2026-11-21T19:00:00.000Z",
+      "week": 12
+    }
+  },
+  {
+    "changed": false,
+    "current": {
+      "awayClassification": "fbs",
+      "awayConference": "Conference USA",
+      "awayScore": null,
+      "awayTeam": "Middle Tennessee",
+      "awayTeamId": 2393,
+      "homeClassification": "fbs",
+      "homeConference": "Conference USA",
+      "homeScore": null,
+      "homeTeam": "Sam Houston",
+      "homeTeamId": 2534,
+      "id": 401871081,
+      "lines": [
+        {
+          "awayMoneyline": -240,
+          "formattedSpread": "Middle Tennessee -6.0",
+          "homeMoneyline": 200,
+          "overUnder": 48,
+          "overUnderOpen": 49,
+          "provider": "Bovada",
+          "spread": 6,
+          "spreadOpen": 6.5
+        },
+        {
+          "awayMoneyline": -218,
+          "formattedSpread": "Middle Tennessee -5.5",
+          "homeMoneyline": 180,
+          "overUnder": 48.5,
+          "overUnderOpen": 49.5,
+          "provider": "DraftKings",
+          "spread": 5.5,
+          "spreadOpen": 5.5
+        }
+      ],
+      "season": 2026,
+      "seasonType": "regular",
+      "startDate": "2026-11-21T19:00:00.000Z",
+      "week": 12
+    },
+    "game_id": 401871081,
+    "previous": {
+      "awayClassification": "fbs",
+      "awayConference": "Conference USA",
+      "awayScore": null,
+      "awayTeam": "Middle Tennessee",
+      "awayTeamId": 2393,
+      "homeClassification": "fbs",
+      "homeConference": "Conference USA",
+      "homeScore": null,
+      "homeTeam": "Sam Houston",
+      "homeTeamId": 2534,
+      "id": 401871081,
+      "lines": [
+        {
+          "awayMoneyline": -240,
+          "formattedSpread": "Middle Tennessee -6.0",
+          "homeMoneyline": 200,
+          "overUnder": 48,
+          "overUnderOpen": 49,
+          "provider": "Bovada",
+          "spread": 6,
+          "spreadOpen": 6.5
+        },
+        {
+          "awayMoneyline": -218,
+          "formattedSpread": "Middle Tennessee -5.5",
+          "homeMoneyline": 180,
+          "overUnder": 48.5,
+          "overUnderOpen": 49.5,
+          "provider": "DraftKings",
+          "spread": 5.5,
+          "spreadOpen": 5.5
+        }
+      ],
+      "season": 2026,
+      "seasonType": "regular",
+      "startDate": "2026-11-21T19:00:00.000Z",
+      "week": 12
+    }
+  },
+  {
+    "changed": true,
+    "current": {
+      "awayClassification": "fbs",
+      "awayConference": "Big Ten",
+      "awayScore": null,
+      "awayTeam": "Iowa",
+      "awayTeamId": 2294,
+      "homeClassification": "fbs",
+      "homeConference": "Big Ten",
+      "homeScore": null,
+      "homeTeam": "Illinois",
+      "homeTeamId": 356,
+      "id": 401858527,
+      "lines": [
+        {
+          "awayMoneyline": -325,
+          "formattedSpread": "Iowa -8.5",
+          "homeMoneyline": 260,
+          "overUnder": 40.5,
+          "overUnderOpen": 43.5,
+          "provider": "DraftKings",
+          "spread": 8.5,
+          "spreadOpen": 5.5
+        },
+        {
+          "awayMoneyline": -250,
+          "formattedSpread": "Iowa -9.0",
+          "homeMoneyline": 210,
+          "overUnder": 40.5,
+          "overUnderOpen": 42.5,
+          "provider": "Bovada",
+          "spread": 9,
+          "spreadOpen": 6.5
+        }
+      ],
+      "season": 2026,
+      "seasonType": "regular",
+      "startDate": "2026-11-21T19:30:00.000Z",
+      "week": 12
+    },
+    "game_id": 401858527,
+    "previous": {
+      "awayClassification": "fbs",
+      "awayConference": "Big Ten",
+      "awayScore": null,
+      "awayTeam": "Iowa",
+      "awayTeamId": 2294,
+      "homeClassification": "fbs",
+      "homeConference": "Big Ten",
+      "homeScore": null,
+      "homeTeam": "Illinois",
+      "homeTeamId": 356,
+      "id": 401858527,
+      "lines": [
+        {
+          "awayMoneyline": -325,
+          "formattedSpread": "Iowa -8.5",
+          "homeMoneyline": 260,
+          "overUnder": 40.5,
+          "overUnderOpen": 43.5,
+          "provider": "DraftKings",
+          "spread": 8.5,
+          "spreadOpen": 5.5
+        },
+        {
+          "awayMoneyline": -250,
+          "formattedSpread": "Iowa -8.5",
+          "homeMoneyline": 210,
+          "overUnder": 40.5,
+          "overUnderOpen": 42.5,
+          "provider": "Bovada",
+          "spread": 8.5,
+          "spreadOpen": 6.5
+        }
+      ],
+      "season": 2026,
+      "seasonType": "regular",
+      "startDate": "2026-11-21T19:30:00.000Z",
+      "week": 12
+    }
+  },
+  {
+    "changed": false,
+    "current": {
+      "awayClassification": "fbs",
+      "awayConference": "Sun Belt",
+      "awayScore": null,
+      "awayTeam": "UL Monroe",
+      "awayTeamId": 2433,
+      "homeClassification": "fbs",
+      "homeConference": "Sun Belt",
+      "homeScore": null,
+      "homeTeam": "App State",
+      "homeTeamId": 2026,
+      "id": 401869929,
+      "lines": [
+        {
+          "awayMoneyline": 455,
+          "formattedSpread": "App State -14",
+          "homeMoneyline": -625,
+          "overUnder": 50.5,
+          "overUnderOpen": 50.5,
+          "provider": "DraftKings",
+          "spread": -14,
+          "spreadOpen": -13.5
+        },
+        {
+          "awayMoneyline": 475,
+          "formattedSpread": "App State -14.0",
+          "homeMoneyline": -675,
+          "overUnder": 50,
+          "overUnderOpen": 50.5,
+          "provider": "Bovada",
+          "spread": -14,
+          "spreadOpen": -14.5
+        }
+      ],
+      "season": 2026,
+      "seasonType": "regular",
+      "startDate": "2026-11-21T19:30:00.000Z",
+      "week": 12
+    },
+    "game_id": 401869929,
+    "previous": {
+      "awayClassification": "fbs",
+      "awayConference": "Sun Belt",
+      "awayScore": null,
+      "awayTeam": "UL Monroe",
+      "awayTeamId": 2433,
+      "homeClassification": "fbs",
+      "homeConference": "Sun Belt",
+      "homeScore": null,
+      "homeTeam": "App State",
+      "homeTeamId": 2026,
+      "id": 401869929,
+      "lines": [
+        {
+          "awayMoneyline": 455,
+          "formattedSpread": "App State -14",
+          "homeMoneyline": -625,
+          "overUnder": 50.5,
+          "overUnderOpen": 50.5,
+          "provider": "DraftKings",
+          "spread": -14,
+          "spreadOpen": -13.5
+        },
+        {
+          "awayMoneyline": 475,
+          "formattedSpread": "App State -14.0",
+          "homeMoneyline": -675,
+          "overUnder": 50,
+          "overUnderOpen": 50.5,
+          "provider": "Bovada",
+          "spread": -14,
+          "spreadOpen": -14.5
+        }
+      ],
+      "season": 2026,
+      "seasonType": "regular",
+      "startDate": "2026-11-21T19:30:00.000Z",
+      "week": 12
+    }
+  },
+  {
+    "changed": false,
+    "current": {
+      "awayClassification": "fbs",
+      "awayConference": "American Athletic",
+      "awayScore": null,
+      "awayTeam": "South Florida",
+      "awayTeamId": 58,
+      "homeClassification": "fbs",
+      "homeConference": "American Athletic",
+      "homeScore": null,
+      "homeTeam": "Florida Atlantic",
+      "homeTeamId": 2226,
+      "id": 401862833,
+      "lines": [
+        {
+          "awayMoneyline": -115,
+          "formattedSpread": "South Florida -1.5",
+          "homeMoneyline": -105,
+          "overUnder": 64.5,
+          "overUnderOpen": 69.5,
+          "provider": "DraftKings",
+          "spread": 1.5,
+          "spreadOpen": -1.5
+        },
+        {
+          "awayMoneyline": -108,
+          "formattedSpread": "South Florida -1.0",
+          "homeMoneyline": -112,
+          "overUnder": 64,
+          "overUnderOpen": 66,
+          "provider": "Bovada",
+          "spread": 1,
+          "spreadOpen": -1
+        }
+      ],
+      "season": 2026,
+      "seasonType": "regular",
+      "startDate": "2026-11-21T19:30:00.000Z",
+      "week": 12
+    },
+    "game_id": 401862833,
+    "previous": {
+      "awayClassification": "fbs",
+      "awayConference": "American Athletic",
+      "awayScore": null,
+      "awayTeam": "South Florida",
+      "awayTeamId": 58,
+      "homeClassification": "fbs",
+      "homeConference": "American Athletic",
+      "homeScore": null,
+      "homeTeam": "Florida Atlantic",
+      "homeTeamId": 2226,
+      "id": 401862833,
+      "lines": [
+        {
+          "awayMoneyline": -115,
+          "formattedSpread": "South Florida -1.5",
+          "homeMoneyline": -105,
+          "overUnder": 64.5,
+          "overUnderOpen": 69.5,
+          "provider": "DraftKings",
+          "spread": 1.5,
+          "spreadOpen": -1.5
+        },
+        {
+          "awayMoneyline": -108,
+          "formattedSpread": "South Florida -1.0",
+          "homeMoneyline": -112,
+          "overUnder": 64,
+          "overUnderOpen": 66,
+          "provider": "Bovada",
+          "spread": 1,
+          "spreadOpen": -1
+        }
+      ],
+      "season": 2026,
+      "seasonType": "regular",
+      "startDate": "2026-11-21T19:30:00.000Z",
+      "week": 12
+    }
+  },
+  {
+    "changed": true,
+    "current": {
+      "awayClassification": "fbs",
+      "awayConference": "Conference USA",
+      "awayScore": null,
+      "awayTeam": "Delaware",
+      "awayTeamId": 48,
+      "homeClassification": "fbs",
+      "homeConference": "Conference USA",
+      "homeScore": null,
+      "homeTeam": "New Mexico State",
+      "homeTeamId": 166,
+      "id": 401871077,
+      "lines": [
+        {
+          "awayMoneyline": -166,
+          "formattedSpread": "Delaware -3",
+          "homeMoneyline": 140,
+          "overUnder": 54.5,
+          "overUnderOpen": 53.5,
+          "provider": "DraftKings",
+          "spread": 3,
+          "spreadOpen": 4.5
+        },
+        {
+          "awayMoneyline": -170,
+          "formattedSpread": "Delaware -3.0",
+          "homeMoneyline": 145,
+          "overUnder": 54,
+          "overUnderOpen": 53.5,
+          "provider": "Bovada",
+          "spread": 3,
+          "spreadOpen": 3.5
+        }
+      ],
+      "season": 2026,
+      "seasonType": "regular",
+      "startDate": "2026-11-21T20:00:00.000Z",
+      "week": 12
+    },
+    "game_id": 401871077,
+    "previous": {
+      "awayClassification": "fbs",
+      "awayConference": "Conference USA",
+      "awayScore": null,
+      "awayTeam": "Delaware",
+      "awayTeamId": 48,
+      "homeClassification": "fbs",
+      "homeConference": "Conference USA",
+      "homeScore": null,
+      "homeTeam": "New Mexico State",
+      "homeTeamId": 166,
+      "id": 401871077,
+      "lines": [
+        {
+          "awayMoneyline": -166,
+          "formattedSpread": "Delaware -3.5",
+          "homeMoneyline": 140,
+          "overUnder": 54.5,
+          "overUnderOpen": 53.5,
+          "provider": "DraftKings",
+          "spread": 3.5,
+          "spreadOpen": 4.5
+        },
+        {
+          "awayMoneyline": -170,
+          "formattedSpread": "Delaware -3.5",
+          "homeMoneyline": 145,
+          "overUnder": 54,
+          "overUnderOpen": 53.5,
+          "provider": "Bovada",
+          "spread": 3.5,
+          "spreadOpen": 3.5
+        }
+      ],
+      "season": 2026,
+      "seasonType": "regular",
+      "startDate": "2026-11-21T20:00:00.000Z",
+      "week": 12
+    }
+  },
+  {
+    "changed": true,
+    "current": {
+      "awayClassification": "fbs",
+      "awayConference": "Sun Belt",
+      "awayScore": null,
+      "awayTeam": "Coastal Carolina",
+      "awayTeamId": 324,
+      "homeClassification": "fbs",
+      "homeConference": "Sun Belt",
+      "homeScore": null,
+      "homeTeam": "Louisiana",
+      "homeTeamId": 309,
+      "id": 401869946,
+      "lines": [
+        {
+          "awayMoneyline": 310,
+          "formattedSpread": "Louisiana -10.5",
+          "homeMoneyline": -395,
+          "overUnder": 50.5,
+          "overUnderOpen": 50.5,
+          "provider": "DraftKings",
+          "spread": -10.5,
+          "spreadOpen": -7.5
+        },
+        {
+          "awayMoneyline": 310,
+          "formattedSpread": "Louisiana -10.5",
+          "homeMoneyline": -400,
+          "overUnder": 50.5,
+          "overUnderOpen": 51,
+          "provider": "Bovada",
+          "spread": -10.5,
+          "spreadOpen": -10
+        }
+      ],
+      "season": 2026,
+      "seasonType": "regular",
+      "startDate": "2026-11-21T20:00:00.000Z",
+      "week": 12
+    },
+    "game_id": 401869946,
+    "previous": {
+      "awayClassification": "fbs",
+      "awayConference": "Sun Belt",
+      "awayScore": null,
+      "awayTeam": "Coastal Carolina",
+      "awayTeamId": 324,
+      "homeClassification": "fbs",
+      "homeConference": "Sun Belt",
+      "homeScore": null,
+      "homeTeam": "Louisiana",
+      "homeTeamId": 309,
+      "id": 401869946,
+      "lines": [
+        {
+          "awayMoneyline": 320,
+          "formattedSpread": "Louisiana -10.5",
+          "homeMoneyline": -410,
+          "overUnder": 50.5,
+          "overUnderOpen": 50.5,
+          "provider": "DraftKings",
+          "spread": -10.5,
+          "spreadOpen": -7.5
+        },
+        {
+          "awayMoneyline": 310,
+          "formattedSpread": "Louisiana -10.5",
+          "homeMoneyline": -400,
+          "overUnder": 51,
+          "overUnderOpen": 51,
+          "provider": "Bovada",
+          "spread": -10.5,
+          "spreadOpen": -10
+        }
+      ],
+      "season": 2026,
+      "seasonType": "regular",
+      "startDate": "2026-11-21T20:00:00.000Z",
+      "week": 12
+    }
+  },
+  {
+    "changed": false,
+    "current": {
+      "awayClassification": "fbs",
+      "awayConference": "Conference USA",
+      "awayScore": null,
+      "awayTeam": "Florida International",
+      "awayTeamId": 2229,
+      "homeClassification": "fbs",
+      "homeConference": "Conference USA",
+      "homeScore": null,
+      "homeTeam": "Kennesaw State",
+      "homeTeamId": 338,
+      "id": 401871078,
+      "lines": [
+        {
+          "awayMoneyline": 136,
+          "formattedSpread": "Kennesaw State -3.5",
+          "homeMoneyline": -162,
+          "overUnder": 44.5,
+          "overUnderOpen": 42.5,
+          "provider": "DraftKings",
+          "spread": -3.5,
+          "spreadOpen": -4
+        },
+        {
+          "awayMoneyline": 158,
+          "formattedSpread": "Kennesaw State -3.5",
+          "homeMoneyline": -183,
+          "overUnder": 44.5,
+          "overUnderOpen": 45,
+          "provider": "Bovada",
+          "spread": -3.5,
+          "spreadOpen": -4
+        }
+      ],
+      "season": 2026,
+      "seasonType": "regular",
+      "startDate": "2026-11-21T20:00:00.000Z",
+      "week": 12
+    },
+    "game_id": 401871078,
+    "previous": {
+      "awayClassification": "fbs",
+      "awayConference": "Conference USA",
+      "awayScore": null,
+      "awayTeam": "Florida International",
+      "awayTeamId": 2229,
+      "homeClassification": "fbs",
+      "homeConference": "Conference USA",
+      "homeScore": null,
+      "homeTeam": "Kennesaw State",
+      "homeTeamId": 338,
+      "id": 401871078,
+      "lines": [
+        {
+          "awayMoneyline": 136,
+          "formattedSpread": "Kennesaw State -3.5",
+          "homeMoneyline": -162,
+          "overUnder": 44.5,
+          "overUnderOpen": 42.5,
+          "provider": "DraftKings",
+          "spread": -3.5,
+          "spreadOpen": -4
+        },
+        {
+          "awayMoneyline": 158,
+          "formattedSpread": "Kennesaw State -3.5",
+          "homeMoneyline": -183,
+          "overUnder": 44.5,
+          "overUnderOpen": 45,
+          "provider": "Bovada",
+          "spread": -3.5,
+          "spreadOpen": -4
+        }
+      ],
+      "season": 2026,
+      "seasonType": "regular",
+      "startDate": "2026-11-21T20:00:00.000Z",
+      "week": 12
+    }
+  },
+  {
+    "changed": true,
+    "current": {
+      "awayClassification": "fbs",
+      "awayConference": "Big Ten",
+      "awayScore": null,
+      "awayTeam": "UCLA",
+      "awayTeamId": 26,
+      "homeClassification": "fbs",
+      "homeConference": "Big Ten",
+      "homeScore": null,
+      "homeTeam": "Michigan",
+      "homeTeamId": 130,
+      "id": 401858528,
+      "lines": [
+        {
+          "awayMoneyline": -175,
+          "formattedSpread": "UCLA -3.5",
+          "homeMoneyline": 145,
+          "overUnder": 37.5,
+          "overUnderOpen": 42.5,
+          "provider": "DraftKings",
+          "spread": 3.5,
+          "spreadOpen": 5.5
+        },
+        {
+          "awayMoneyline": -215,
+          "formattedSpread": "UCLA -3.5",
+          "homeMoneyline": 176,
+          "overUnder": 37.5,
+          "overUnderOpen": 39,
+          "provider": "Bovada",
+          "spread": 3.5,
+          "spreadOpen": 5.5
+        }
+      ],
+      "season": 2026,
+      "seasonType": "regular",
+      "startDate": "2026-11-21T20:30:00.000Z",
+      "week": 12
+    },
+    "game_id": 401858528,
+    "previous": {
+      "awayClassification": "fbs",
+      "awayConference": "Big Ten",
+      "awayScore": null,
+      "awayTeam": "UCLA",
+      "awayTeamId": 26,
+      "homeClassification": "fbs",
+      "homeConference": "Big Ten",
+      "homeScore": null,
+      "homeTeam": "Michigan",
+      "homeTeamId": 130,
+      "id": 401858528,
+      "lines": [
+        {
+          "awayMoneyline": -180,
+          "formattedSpread": "UCLA -3.5",
+          "homeMoneyline": 150,
+          "overUnder": 37.5,
+          "overUnderOpen": 42.5,
+          "provider": "DraftKings",
+          "spread": 3.5,
+          "spreadOpen": 5.5
+        },
+        {
+          "awayMoneyline": -215,
+          "formattedSpread": "UCLA -3.5",
+          "homeMoneyline": 176,
+          "overUnder": 37.5,
+          "overUnderOpen": 39,
+          "provider": "Bovada",
+          "spread": 3.5,
+          "spreadOpen": 5.5
+        }
+      ],
+      "season": 2026,
+      "seasonType": "regular",
+      "startDate": "2026-11-21T20:30:00.000Z",
+      "week": 12
+    }
+  },
+  {
+    "changed": false,
+    "current": {
+      "awayClassification": "fbs",
+      "awayConference": "ACC",
+      "awayScore": null,
+      "awayTeam": "NC State",
+      "awayTeamId": 152,
+      "homeClassification": "fbs",
+      "homeConference": "ACC",
+      "homeScore": null,
+      "homeTeam": "Florida State",
+      "homeTeamId": 52,
+      "id": 401858304,
+      "lines": [
+        {
+          "awayMoneyline": 280,
+          "formattedSpread": "Florida State -10.5",
+          "homeMoneyline": -355,
+          "overUnder": 56.5,
+          "overUnderOpen": 55,
+          "provider": "Bovada",
+          "spread": -10.5,
+          "spreadOpen": -9
+        },
+        {
+          "awayMoneyline": 310,
+          "formattedSpread": "Florida State -10.5",
+          "homeMoneyline": -395,
+          "overUnder": 56.5,
+          "overUnderOpen": 54.5,
+          "provider": "DraftKings",
+          "spread": -10.5,
+          "spreadOpen": -10
+        }
+      ],
+      "season": 2026,
+      "seasonType": "regular",
+      "startDate": "2026-11-21T20:30:00.000Z",
+      "week": 12
+    },
+    "game_id": 401858304,
+    "previous": {
+      "awayClassification": "fbs",
+      "awayConference": "ACC",
+      "awayScore": null,
+      "awayTeam": "NC State",
+      "awayTeamId": 152,
+      "homeClassification": "fbs",
+      "homeConference": "ACC",
+      "homeScore": null,
+      "homeTeam": "Florida State",
+      "homeTeamId": 52,
+      "id": 401858304,
+      "lines": [
+        {
+          "awayMoneyline": 280,
+          "formattedSpread": "Florida State -10.5",
+          "homeMoneyline": -355,
+          "overUnder": 56.5,
+          "overUnderOpen": 55,
+          "provider": "Bovada",
+          "spread": -10.5,
+          "spreadOpen": -9
+        },
+        {
+          "awayMoneyline": 310,
+          "formattedSpread": "Florida State -10.5",
+          "homeMoneyline": -395,
+          "overUnder": 56.5,
+          "overUnderOpen": 54.5,
+          "provider": "DraftKings",
+          "spread": -10.5,
+          "spreadOpen": -10
+        }
+      ],
+      "season": 2026,
+      "seasonType": "regular",
+      "startDate": "2026-11-21T20:30:00.000Z",
+      "week": 12
+    }
+  },
+  {
+    "changed": false,
+    "current": {
+      "awayClassification": "fbs",
+      "awayConference": "Sun Belt",
+      "awayScore": null,
+      "awayTeam": "Old Dominion",
+      "awayTeamId": 295,
+      "homeClassification": "fbs",
+      "homeConference": "FBS Independents",
+      "homeScore": null,
+      "homeTeam": "UConn",
+      "homeTeamId": 41,
+      "id": 401861968,
+      "lines": [
+        {
+          "awayMoneyline": 410,
+          "formattedSpread": "UConn -14.0",
+          "homeMoneyline": -550,
+          "overUnder": 47.5,
+          "overUnderOpen": 47.5,
+          "provider": "Bovada",
+          "spread": -14,
+          "spreadOpen": -13.5
+        },
+        {
+          "awayMoneyline": 400,
+          "formattedSpread": "UConn -13.5",
+          "homeMoneyline": -535,
+          "overUnder": 47.5,
+          "overUnderOpen": 48.5,
+          "provider": "DraftKings",
+          "spread": -13.5,
+          "spreadOpen": -14.5
+        }
+      ],
+      "season": 2026,
+      "seasonType": "regular",
+      "startDate": "2026-11-21T20:30:00.000Z",
+      "week": 12
+    },
+    "game_id": 401861968,
+    "previous": {
+      "awayClassification": "fbs",
+      "awayConference": "Sun Belt",
+      "awayScore": null,
+      "awayTeam": "Old Dominion",
+      "awayTeamId": 295,
+      "homeClassification": "fbs",
+      "homeConference": "FBS Independents",
+      "homeScore": null,
+      "homeTeam": "UConn",
+      "homeTeamId": 41,
+      "id": 401861968,
+      "lines": [
+        {
+          "awayMoneyline": 410,
+          "formattedSpread": "UConn -14.0",
+          "homeMoneyline": -550,
+          "overUnder": 47.5,
+          "overUnderOpen": 47.5,
+          "provider": "Bovada",
+          "spread": -14,
+          "spreadOpen": -13.5
+        },
+        {
+          "awayMoneyline": 400,
+          "formattedSpread": "UConn -13.5",
+          "homeMoneyline": -535,
+          "overUnder": 47.5,
+          "overUnderOpen": 48.5,
+          "provider": "DraftKings",
+          "spread": -13.5,
+          "spreadOpen": -14.5
+        }
+      ],
+      "season": 2026,
+      "seasonType": "regular",
+      "startDate": "2026-11-21T20:30:00.000Z",
+      "week": 12
+    }
+  },
+  {
+    "changed": false,
+    "current": {
+      "awayClassification": "fbs",
+      "awayConference": "Big Ten",
+      "awayScore": null,
+      "awayTeam": "Indiana",
+      "awayTeamId": 84,
+      "homeClassification": "fbs",
+      "homeConference": "Big Ten",
+      "homeScore": null,
+      "homeTeam": "Washington",
+      "homeTeamId": 264,
+      "id": 401858535,
+      "lines": [
+        {
+          "awayMoneyline": -310,
+          "formattedSpread": "Indiana -7.5",
+          "homeMoneyline": 250,
+          "overUnder": 43.5,
+          "overUnderOpen": 43.5,
+          "provider": "DraftKings",
+          "spread": 7.5,
+          "spreadOpen": 7.5
+        },
+        {
+          "awayMoneyline": -310,
+          "formattedSpread": "Indiana -7.5",
+          "homeMoneyline": 255,
+          "overUnder": 44,
+          "overUnderOpen": 44,
+          "provider": "Bovada",
+          "spread": 7.5,
+          "spreadOpen": 7.5
+        }
+      ],
+      "season": 2026,
+      "seasonType": "regular",
+      "startDate": "2026-11-21T20:30:00.000Z",
+      "week": 12
+    },
+    "game_id": 401858535,
+    "previous": {
+      "awayClassification": "fbs",
+      "awayConference": "Big Ten",
+      "awayScore": null,
+      "awayTeam": "Indiana",
+      "awayTeamId": 84,
+      "homeClassification": "fbs",
+      "homeConference": "Big Ten",
+      "homeScore": null,
+      "homeTeam": "Washington",
+      "homeTeamId": 264,
+      "id": 401858535,
+      "lines": [
+        {
+          "awayMoneyline": -310,
+          "formattedSpread": "Indiana -7.5",
+          "homeMoneyline": 250,
+          "overUnder": 43.5,
+          "overUnderOpen": 43.5,
+          "provider": "DraftKings",
+          "spread": 7.5,
+          "spreadOpen": 7.5
+        },
+        {
+          "awayMoneyline": -310,
+          "formattedSpread": "Indiana -7.5",
+          "homeMoneyline": 255,
+          "overUnder": 44,
+          "overUnderOpen": 44,
+          "provider": "Bovada",
+          "spread": 7.5,
+          "spreadOpen": 7.5
+        }
+      ],
+      "season": 2026,
+      "seasonType": "regular",
+      "startDate": "2026-11-21T20:30:00.000Z",
+      "week": 12
+    }
+  },
+  {
+    "changed": false,
+    "current": {
+      "awayClassification": "fbs",
+      "awayConference": "SEC",
+      "awayScore": null,
+      "awayTeam": "LSU",
+      "awayTeamId": 99,
+      "homeClassification": "fbs",
+      "homeConference": "SEC",
+      "homeScore": null,
+      "homeTeam": "Tennessee",
+      "homeTeamId": 2633,
+      "id": 401856754,
+      "lines": [
+        {
+          "awayMoneyline": -115,
+          "formattedSpread": "LSU -1.5",
+          "homeMoneyline": -105,
+          "overUnder": 45.5,
+          "overUnderOpen": 57.5,
+          "provider": "DraftKings",
+          "spread": 1.5,
+          "spreadOpen": 1.5
+        },
+        {
+          "awayMoneyline": -112,
+          "formattedSpread": "LSU -1.0",
+          "homeMoneyline": -108,
+          "overUnder": 46,
+          "overUnderOpen": 46,
+          "provider": "Bovada",
+          "spread": 1,
+          "spreadOpen": 1
+        }
+      ],
+      "season": 2026,
+      "seasonType": "regular",
+      "startDate": "2026-11-21T20:30:00.000Z",
+      "week": 12
+    },
+    "game_id": 401856754,
+    "previous": {
+      "awayClassification": "fbs",
+      "awayConference": "SEC",
+      "awayScore": null,
+      "awayTeam": "LSU",
+      "awayTeamId": 99,
+      "homeClassification": "fbs",
+      "homeConference": "SEC",
+      "homeScore": null,
+      "homeTeam": "Tennessee",
+      "homeTeamId": 2633,
+      "id": 401856754,
+      "lines": [
+        {
+          "awayMoneyline": -115,
+          "formattedSpread": "LSU -1.5",
+          "homeMoneyline": -105,
+          "overUnder": 45.5,
+          "overUnderOpen": 57.5,
+          "provider": "DraftKings",
+          "spread": 1.5,
+          "spreadOpen": 1.5
+        },
+        {
+          "awayMoneyline": -112,
+          "formattedSpread": "LSU -1.0",
+          "homeMoneyline": -108,
+          "overUnder": 46,
+          "overUnderOpen": 46,
+          "provider": "Bovada",
+          "spread": 1,
+          "spreadOpen": 1
+        }
+      ],
+      "season": 2026,
+      "seasonType": "regular",
+      "startDate": "2026-11-21T20:30:00.000Z",
+      "week": 12
+    }
+  },
+  {
+    "changed": false,
+    "current": {
+      "awayClassification": "fbs",
+      "awayConference": "Big 12",
+      "awayScore": null,
+      "awayTeam": "Texas Tech",
+      "awayTeamId": 2641,
+      "homeClassification": "fbs",
+      "homeConference": "Big 12",
+      "homeScore": null,
+      "homeTeam": "Baylor",
+      "homeTeamId": 239,
+      "id": 401856871,
+      "lines": [
+        {
+          "awayMoneyline": -170,
+          "formattedSpread": "Texas Tech -3.5",
+          "homeMoneyline": 145,
+          "overUnder": 55.5,
+          "overUnderOpen": 57,
+          "provider": "Bovada",
+          "spread": 3.5,
+          "spreadOpen": 3.5
+        },
+        {
+          "awayMoneyline": -170,
+          "formattedSpread": "Texas Tech -3.5",
+          "homeMoneyline": 142,
+          "overUnder": 55.5,
+          "overUnderOpen": 55.5,
+          "provider": "DraftKings",
+          "spread": 3.5,
+          "spreadOpen": 1.5
+        }
+      ],
+      "season": 2026,
+      "seasonType": "regular",
+      "startDate": "2026-11-21T20:30:00.000Z",
+      "week": 12
+    },
+    "game_id": 401856871,
+    "previous": {
+      "awayClassification": "fbs",
+      "awayConference": "Big 12",
+      "awayScore": null,
+      "awayTeam": "Texas Tech",
+      "awayTeamId": 2641,
+      "homeClassification": "fbs",
+      "homeConference": "Big 12",
+      "homeScore": null,
+      "homeTeam": "Baylor",
+      "homeTeamId": 239,
+      "id": 401856871,
+      "lines": [
+        {
+          "awayMoneyline": -170,
+          "formattedSpread": "Texas Tech -3.5",
+          "homeMoneyline": 145,
+          "overUnder": 55.5,
+          "overUnderOpen": 57,
+          "provider": "Bovada",
+          "spread": 3.5,
+          "spreadOpen": 3.5
+        },
+        {
+          "awayMoneyline": -170,
+          "formattedSpread": "Texas Tech -3.5",
+          "homeMoneyline": 142,
+          "overUnder": 55.5,
+          "overUnderOpen": 55.5,
+          "provider": "DraftKings",
+          "spread": 3.5,
+          "spreadOpen": 1.5
+        }
+      ],
+      "season": 2026,
+      "seasonType": "regular",
+      "startDate": "2026-11-21T20:30:00.000Z",
+      "week": 12
+    }
+  },
+  {
+    "changed": false,
+    "current": {
+      "awayClassification": "fbs",
+      "awayConference": "SEC",
+      "awayScore": null,
+      "awayTeam": "Arkansas",
+      "awayTeamId": 8,
+      "homeClassification": "fbs",
+      "homeConference": "SEC",
+      "homeScore": null,
+      "homeTeam": "Texas",
+      "homeTeamId": 251,
+      "id": 401856755,
+      "lines": [
+        {
+          "awayMoneyline": 900,
+          "formattedSpread": "Texas -20.5",
+          "homeMoneyline": -1600,
+          "overUnder": 46.5,
+          "overUnderOpen": 48.5,
+          "provider": "DraftKings",
+          "spread": -20.5,
+          "spreadOpen": -21
+        },
+        {
+          "awayMoneyline": 850,
+          "formattedSpread": "Texas -20.5",
+          "homeMoneyline": -1500,
+          "overUnder": 46.5,
+          "overUnderOpen": 47,
+          "provider": "Bovada",
+          "spread": -20.5,
+          "spreadOpen": -21
+        }
+      ],
+      "season": 2026,
+      "seasonType": "regular",
+      "startDate": "2026-11-21T20:30:00.000Z",
+      "week": 12
+    },
+    "game_id": 401856755,
+    "previous": {
+      "awayClassification": "fbs",
+      "awayConference": "SEC",
+      "awayScore": null,
+      "awayTeam": "Arkansas",
+      "awayTeamId": 8,
+      "homeClassification": "fbs",
+      "homeConference": "SEC",
+      "homeScore": null,
+      "homeTeam": "Texas",
+      "homeTeamId": 251,
+      "id": 401856755,
+      "lines": [
+        {
+          "awayMoneyline": 900,
+          "formattedSpread": "Texas -20.5",
+          "homeMoneyline": -1600,
+          "overUnder": 46.5,
+          "overUnderOpen": 48.5,
+          "provider": "DraftKings",
+          "spread": -20.5,
+          "spreadOpen": -21
+        },
+        {
+          "awayMoneyline": 850,
+          "formattedSpread": "Texas -20.5",
+          "homeMoneyline": -1500,
+          "overUnder": 46.5,
+          "overUnderOpen": 47,
+          "provider": "Bovada",
+          "spread": -20.5,
+          "spreadOpen": -21
+        }
+      ],
+      "season": 2026,
+      "seasonType": "regular",
+      "startDate": "2026-11-21T20:30:00.000Z",
+      "week": 12
+    }
+  },
+  {
+    "changed": true,
+    "current": {
+      "awayClassification": "fbs",
+      "awayConference": "Big Ten",
+      "awayScore": null,
+      "awayTeam": "Rutgers",
+      "awayTeamId": 164,
+      "homeClassification": "fbs",
+      "homeConference": "Big Ten",
+      "homeScore": null,
+      "homeTeam": "Penn State",
+      "homeTeamId": 213,
+      "id": 401858532,
+      "lines": [
+        {
+          "awayMoneyline": 1300,
+          "formattedSpread": "Penn State -24.5",
+          "homeMoneyline": -2800,
+          "overUnder": 50.5,
+          "overUnderOpen": 49.5,
+          "provider": "DraftKings",
+          "spread": -24.5,
+          "spreadOpen": -20.5
+        },
+        {
+          "awayMoneyline": 1100,
+          "formattedSpread": "Penn State -24.5",
+          "homeMoneyline": -2200,
+          "overUnder": 51,
+          "overUnderOpen": 51,
+          "provider": "Bovada",
+          "spread": -24.5,
+          "spreadOpen": -24
+        }
+      ],
+      "season": 2026,
+      "seasonType": "regular",
+      "startDate": "2026-11-21T20:30:00.000Z",
+      "week": 12
+    },
+    "game_id": 401858532,
+    "previous": {
+      "awayClassification": "fbs",
+      "awayConference": "Big Ten",
+      "awayScore": null,
+      "awayTeam": "Rutgers",
+      "awayTeamId": 164,
+      "homeClassification": "fbs",
+      "homeConference": "Big Ten",
+      "homeScore": null,
+      "homeTeam": "Penn State",
+      "homeTeamId": 213,
+      "id": 401858532,
+      "lines": [
+        {
+          "awayMoneyline": 1200,
+          "formattedSpread": "Penn State -24.5",
+          "homeMoneyline": -2400,
+          "overUnder": 50.5,
+          "overUnderOpen": 49.5,
+          "provider": "DraftKings",
+          "spread": -24.5,
+          "spreadOpen": -20.5
+        },
+        {
+          "awayMoneyline": 1100,
+          "formattedSpread": "Penn State -24.0",
+          "homeMoneyline": -2200,
+          "overUnder": 51,
+          "overUnderOpen": 51,
+          "provider": "Bovada",
+          "spread": -24,
+          "spreadOpen": -24
+        }
+      ],
+      "season": 2026,
+      "seasonType": "regular",
+      "startDate": "2026-11-21T20:30:00.000Z",
+      "week": 12
+    }
+  },
+  {
+    "changed": false,
+    "current": {
+      "awayClassification": "fbs",
+      "awayConference": "SEC",
+      "awayScore": null,
+      "awayTeam": "Texas A&M",
+      "awayTeamId": 245,
+      "homeClassification": "fbs",
+      "homeConference": "SEC",
+      "homeScore": null,
+      "homeTeam": "Oklahoma",
+      "homeTeamId": 201,
+      "id": 401856752,
+      "lines": [
+        {
+          "awayMoneyline": 245,
+          "formattedSpread": "Oklahoma -7.5",
+          "homeMoneyline": -305,
+          "overUnder": 38.5,
+          "overUnderOpen": 51.5,
+          "provider": "DraftKings",
+          "spread": -7.5,
+          "spreadOpen": -2.5
+        },
+        {
+          "awayMoneyline": 240,
+          "formattedSpread": "Oklahoma -7.5",
+          "homeMoneyline": -290,
+          "overUnder": 38.5,
+          "overUnderOpen": 38.5,
+          "provider": "Bovada",
+          "spread": -7.5,
+          "spreadOpen": -7
+        }
+      ],
+      "season": 2026,
+      "seasonType": "regular",
+      "startDate": "2026-11-21T20:45:00.000Z",
+      "week": 12
+    },
+    "game_id": 401856752,
+    "previous": {
+      "awayClassification": "fbs",
+      "awayConference": "SEC",
+      "awayScore": null,
+      "awayTeam": "Texas A&M",
+      "awayTeamId": 245,
+      "homeClassification": "fbs",
+      "homeConference": "SEC",
+      "homeScore": null,
+      "homeTeam": "Oklahoma",
+      "homeTeamId": 201,
+      "id": 401856752,
+      "lines": [
+        {
+          "awayMoneyline": 245,
+          "formattedSpread": "Oklahoma -7.5",
+          "homeMoneyline": -305,
+          "overUnder": 38.5,
+          "overUnderOpen": 51.5,
+          "provider": "DraftKings",
+          "spread": -7.5,
+          "spreadOpen": -2.5
+        },
+        {
+          "awayMoneyline": 240,
+          "formattedSpread": "Oklahoma -7.5",
+          "homeMoneyline": -290,
+          "overUnder": 38.5,
+          "overUnderOpen": 38.5,
+          "provider": "Bovada",
+          "spread": -7.5,
+          "spreadOpen": -7
+        }
+      ],
+      "season": 2026,
+      "seasonType": "regular",
+      "startDate": "2026-11-21T20:45:00.000Z",
+      "week": 12
+    }
+  },
+  {
+    "changed": true,
+    "current": {
+      "awayClassification": "fbs",
+      "awayConference": "Sun Belt",
+      "awayScore": null,
+      "awayTeam": "Georgia State",
+      "awayTeamId": 2247,
+      "homeClassification": "fbs",
+      "homeConference": "Sun Belt",
+      "homeScore": null,
+      "homeTeam": "Marshall",
+      "homeTeamId": 276,
+      "id": 401869958,
+      "lines": [
+        {
+          "awayMoneyline": -115,
+          "formattedSpread": "Marshall -2.5",
+          "homeMoneyline": -105,
+          "overUnder": 55,
+          "overUnderOpen": 58,
+          "provider": "Bovada",
+          "spread": -2.5,
+          "spreadOpen": 1
+        },
+        {
+          "awayMoneyline": 110,
+          "formattedSpread": "Marshall -2.5",
+          "homeMoneyline": -130,
+          "overUnder": 55.5,
+          "overUnderOpen": 57.5,
+          "provider": "DraftKings",
+          "spread": -2.5,
+          "spreadOpen": 1.5
+        }
+      ],
+      "season": 2026,
+      "seasonType": "regular",
+      "startDate": "2026-11-21T21:00:00.000Z",
+      "week": 12
+    },
+    "game_id": 401869958,
+    "previous": {
+      "awayClassification": "fbs",
+      "awayConference": "Sun Belt",
+      "awayScore": null,
+      "awayTeam": "Georgia State",
+      "awayTeamId": 2247,
+      "homeClassification": "fbs",
+      "homeConference": "Sun Belt",
+      "homeScore": null,
+      "homeTeam": "Marshall",
+      "homeTeamId": 276,
+      "id": 401869958,
+      "lines": [
+        {
+          "awayMoneyline": -115,
+          "formattedSpread": "Marshall -1.5",
+          "homeMoneyline": -105,
+          "overUnder": 56.5,
+          "overUnderOpen": 58,
+          "provider": "Bovada",
+          "spread": -1.5,
+          "spreadOpen": 1
+        },
+        {
+          "awayMoneyline": -105,
+          "formattedSpread": "Marshall -1.5",
+          "homeMoneyline": -115,
+          "overUnder": 56.5,
+          "overUnderOpen": 57.5,
+          "provider": "DraftKings",
+          "spread": -1.5,
+          "spreadOpen": 1.5
+        }
+      ],
+      "season": 2026,
+      "seasonType": "regular",
+      "startDate": "2026-11-21T21:00:00.000Z",
+      "week": 12
+    }
+  },
+  {
+    "changed": true,
+    "current": {
+      "awayClassification": "fbs",
+      "awayConference": "Sun Belt",
+      "awayScore": null,
+      "awayTeam": "South Alabama",
+      "awayTeamId": 6,
+      "homeClassification": "fbs",
+      "homeConference": "Sun Belt",
+      "homeScore": null,
+      "homeTeam": "Southern Miss",
+      "homeTeamId": 2572,
+      "id": 401871101,
+      "lines": [
+        {
+          "awayMoneyline": -220,
+          "formattedSpread": "South Alabama -4.0",
+          "homeMoneyline": 180,
+          "overUnder": 67,
+          "overUnderOpen": 63.5,
+          "provider": "Bovada",
+          "spread": 4,
+          "spreadOpen": 5.5
+        },
+        {
+          "awayMoneyline": -185,
+          "formattedSpread": "South Alabama -3.5",
+          "homeMoneyline": 154,
+          "overUnder": 66.5,
+          "overUnderOpen": 62.5,
+          "provider": "DraftKings",
+          "spread": 3.5,
+          "spreadOpen": 5.5
+        }
+      ],
+      "season": 2026,
+      "seasonType": "regular",
+      "startDate": "2026-11-21T21:00:00.000Z",
+      "week": 12
+    },
+    "game_id": 401871101,
+    "previous": {
+      "awayClassification": "fbs",
+      "awayConference": "Sun Belt",
+      "awayScore": null,
+      "awayTeam": "South Alabama",
+      "awayTeamId": 6,
+      "homeClassification": "fbs",
+      "homeConference": "Sun Belt",
+      "homeScore": null,
+      "homeTeam": "Southern Miss",
+      "homeTeamId": 2572,
+      "id": 401871101,
+      "lines": [
+        {
+          "awayMoneyline": -220,
+          "formattedSpread": "South Alabama -4.0",
+          "homeMoneyline": 180,
+          "overUnder": 65.5,
+          "overUnderOpen": 63.5,
+          "provider": "Bovada",
+          "spread": 4,
+          "spreadOpen": 5.5
+        },
+        {
+          "awayMoneyline": -185,
+          "formattedSpread": "South Alabama -3.5",
+          "homeMoneyline": 154,
+          "overUnder": 65.5,
+          "overUnderOpen": 62.5,
+          "provider": "DraftKings",
+          "spread": 3.5,
+          "spreadOpen": 5.5
+        }
+      ],
+      "season": 2026,
+      "seasonType": "regular",
+      "startDate": "2026-11-21T21:00:00.000Z",
+      "week": 12
+    }
+  },
+  {
+    "changed": false,
+    "current": {
+      "awayClassification": "fbs",
+      "awayConference": "Sun Belt",
+      "awayScore": null,
+      "awayTeam": "Georgia Southern",
+      "awayTeamId": 290,
+      "homeClassification": "fbs",
+      "homeConference": "Sun Belt",
+      "homeScore": null,
+      "homeTeam": "Troy",
+      "homeTeamId": 2653,
+      "id": 401869953,
+      "lines": [
+        {
+          "awayMoneyline": -340,
+          "formattedSpread": "Georgia Southern -8.5",
+          "homeMoneyline": 270,
+          "overUnder": 48.5,
+          "overUnderOpen": 47.5,
+          "provider": "DraftKings",
+          "spread": 8.5,
+          "spreadOpen": 8.5
+        },
+        {
+          "awayMoneyline": -320,
+          "formattedSpread": "Georgia Southern -9.0",
+          "homeMoneyline": 260,
+          "overUnder": 48.5,
+          "overUnderOpen": 49,
+          "provider": "Bovada",
+          "spread": 9,
+          "spreadOpen": 8
+        }
+      ],
+      "season": 2026,
+      "seasonType": "regular",
+      "startDate": "2026-11-21T21:00:00.000Z",
+      "week": 12
+    },
+    "game_id": 401869953,
+    "previous": {
+      "awayClassification": "fbs",
+      "awayConference": "Sun Belt",
+      "awayScore": null,
+      "awayTeam": "Georgia Southern",
+      "awayTeamId": 290,
+      "homeClassification": "fbs",
+      "homeConference": "Sun Belt",
+      "homeScore": null,
+      "homeTeam": "Troy",
+      "homeTeamId": 2653,
+      "id": 401869953,
+      "lines": [
+        {
+          "awayMoneyline": -340,
+          "formattedSpread": "Georgia Southern -8.5",
+          "homeMoneyline": 270,
+          "overUnder": 48.5,
+          "overUnderOpen": 47.5,
+          "provider": "DraftKings",
+          "spread": 8.5,
+          "spreadOpen": 8.5
+        },
+        {
+          "awayMoneyline": -320,
+          "formattedSpread": "Georgia Southern -9.0",
+          "homeMoneyline": 260,
+          "overUnder": 48.5,
+          "overUnderOpen": 49,
+          "provider": "Bovada",
+          "spread": 9,
+          "spreadOpen": 8
+        }
+      ],
+      "season": 2026,
+      "seasonType": "regular",
+      "startDate": "2026-11-21T21:00:00.000Z",
+      "week": 12
+    }
+  },
+  {
+    "changed": false,
+    "current": {
+      "awayClassification": "fbs",
+      "awayConference": "Mountain West",
+      "awayScore": null,
+      "awayTeam": "Northern Illinois",
+      "awayTeamId": 2459,
+      "homeClassification": "fbs",
+      "homeConference": "Mountain West",
+      "homeScore": null,
+      "homeTeam": "North Dakota State",
+      "homeTeamId": 2449,
+      "id": 401864543,
+      "lines": [
+        {
+          "awayMoneyline": 1400,
+          "formattedSpread": "North Dakota State -25.5",
+          "homeMoneyline": -3200,
+          "overUnder": 43.5,
+          "overUnderOpen": 48.5,
+          "provider": "DraftKings",
+          "spread": -25.5,
+          "spreadOpen": -25.5
+        },
+        {
+          "awayMoneyline": 1300,
+          "formattedSpread": "North Dakota State -24.5",
+          "homeMoneyline": -3000,
+          "overUnder": 43.5,
+          "overUnderOpen": 45.5,
+          "provider": "Bovada",
+          "spread": -24.5,
+          "spreadOpen": -26
+        }
+      ],
+      "season": 2026,
+      "seasonType": "regular",
+      "startDate": "2026-11-21T21:00:00.000Z",
+      "week": 12
+    },
+    "game_id": 401864543,
+    "previous": {
+      "awayClassification": "fbs",
+      "awayConference": "Mountain West",
+      "awayScore": null,
+      "awayTeam": "Northern Illinois",
+      "awayTeamId": 2459,
+      "homeClassification": "fbs",
+      "homeConference": "Mountain West",
+      "homeScore": null,
+      "homeTeam": "North Dakota State",
+      "homeTeamId": 2449,
+      "id": 401864543,
+      "lines": [
+        {
+          "awayMoneyline": 1400,
+          "formattedSpread": "North Dakota State -25.5",
+          "homeMoneyline": -3200,
+          "overUnder": 43.5,
+          "overUnderOpen": 48.5,
+          "provider": "DraftKings",
+          "spread": -25.5,
+          "spreadOpen": -25.5
+        },
+        {
+          "awayMoneyline": 1300,
+          "formattedSpread": "North Dakota State -24.5",
+          "homeMoneyline": -3000,
+          "overUnder": 43.5,
+          "overUnderOpen": 45.5,
+          "provider": "Bovada",
+          "spread": -24.5,
+          "spreadOpen": -26
+        }
+      ],
+      "season": 2026,
+      "seasonType": "regular",
+      "startDate": "2026-11-21T21:00:00.000Z",
+      "week": 12
+    }
+  },
+  {
+    "changed": true,
+    "current": {
+      "awayClassification": "fbs",
+      "awayConference": "Pac-12",
+      "awayScore": null,
+      "awayTeam": "Washington State",
+      "awayTeamId": 265,
+      "homeClassification": "fbs",
+      "homeConference": "Pac-12",
+      "homeScore": null,
+      "homeTeam": "Texas State",
+      "homeTeamId": 326,
+      "id": 401860920,
+      "lines": [
+        {
+          "awayMoneyline": 350,
+          "formattedSpread": "Texas State -11.5",
+          "homeMoneyline": -455,
+          "overUnder": 61.5,
+          "overUnderOpen": 57.5,
+          "provider": "DraftKings",
+          "spread": -11.5,
+          "spreadOpen": -14.5
+        },
+        {
+          "awayMoneyline": 330,
+          "formattedSpread": "Texas State -12.0",
+          "homeMoneyline": -430,
+          "overUnder": 61.5,
+          "overUnderOpen": 60.5,
+          "provider": "Bovada",
+          "spread": -12,
+          "spreadOpen": -10.5
+        }
+      ],
+      "season": 2026,
+      "seasonType": "regular",
+      "startDate": "2026-11-21T23:00:00.000Z",
+      "week": 12
+    },
+    "game_id": 401860920,
+    "previous": {
+      "awayClassification": "fbs",
+      "awayConference": "Pac-12",
+      "awayScore": null,
+      "awayTeam": "Washington State",
+      "awayTeamId": 265,
+      "homeClassification": "fbs",
+      "homeConference": "Pac-12",
+      "homeScore": null,
+      "homeTeam": "Texas State",
+      "homeTeamId": 326,
+      "id": 401860920,
+      "lines": [
+        {
+          "awayMoneyline": 340,
+          "formattedSpread": "Texas State -11.5",
+          "homeMoneyline": -440,
+          "overUnder": 61.5,
+          "overUnderOpen": 57.5,
+          "provider": "DraftKings",
+          "spread": -11.5,
+          "spreadOpen": -14.5
+        },
+        {
+          "awayMoneyline": 330,
+          "formattedSpread": "Texas State -11.5",
+          "homeMoneyline": -430,
+          "overUnder": 61.5,
+          "overUnderOpen": 60.5,
+          "provider": "Bovada",
+          "spread": -11.5,
+          "spreadOpen": -10.5
+        }
+      ],
+      "season": 2026,
+      "seasonType": "regular",
+      "startDate": "2026-11-21T23:00:00.000Z",
+      "week": 12
+    }
+  },
+  {
+    "changed": true,
+    "current": {
+      "awayClassification": "fbs",
+      "awayConference": "Big Ten",
+      "awayScore": null,
+      "awayTeam": "Maryland",
+      "awayTeamId": 120,
+      "homeClassification": "fbs",
+      "homeConference": "Big Ten",
+      "homeScore": null,
+      "homeTeam": "USC",
+      "homeTeamId": 30,
+      "id": 401858534,
+      "lines": [
+        {
+          "awayMoneyline": 600,
+          "formattedSpread": "USC -17.5",
+          "homeMoneyline": -900,
+          "overUnder": 58.5,
+          "overUnderOpen": 56.5,
+          "provider": "DraftKings",
+          "spread": -17.5,
+          "spreadOpen": -16.5
+        },
+        {
+          "awayMoneyline": 600,
+          "formattedSpread": "USC -17.0",
+          "homeMoneyline": -900,
+          "overUnder": 58,
+          "overUnderOpen": 57.5,
+          "provider": "Bovada",
+          "spread": -17,
+          "spreadOpen": -17
+        }
+      ],
+      "season": 2026,
+      "seasonType": "regular",
+      "startDate": "2026-11-21T23:15:00.000Z",
+      "week": 12
+    },
+    "game_id": 401858534,
+    "previous": {
+      "awayClassification": "fbs",
+      "awayConference": "Big Ten",
+      "awayScore": null,
+      "awayTeam": "Maryland",
+      "awayTeamId": 120,
+      "homeClassification": "fbs",
+      "homeConference": "Big Ten",
+      "homeScore": null,
+      "homeTeam": "USC",
+      "homeTeamId": 30,
+      "id": 401858534,
+      "lines": [
+        {
+          "awayMoneyline": 600,
+          "formattedSpread": "USC -17.5",
+          "homeMoneyline": -900,
+          "overUnder": 57.5,
+          "overUnderOpen": 56.5,
+          "provider": "DraftKings",
+          "spread": -17.5,
+          "spreadOpen": -16.5
+        },
+        {
+          "awayMoneyline": 600,
+          "formattedSpread": "USC -17.5",
+          "homeMoneyline": -900,
+          "overUnder": 57,
+          "overUnderOpen": 57.5,
+          "provider": "Bovada",
+          "spread": -17.5,
+          "spreadOpen": -17
+        }
+      ],
+      "season": 2026,
+      "seasonType": "regular",
+      "startDate": "2026-11-21T23:15:00.000Z",
+      "week": 12
+    }
+  },
+  {
+    "changed": true,
+    "current": {
+      "awayClassification": "fbs",
+      "awayConference": "ACC",
+      "awayScore": null,
+      "awayTeam": "Virginia Tech",
+      "awayTeamId": 259,
+      "homeClassification": "fbs",
+      "homeConference": "ACC",
+      "homeScore": null,
+      "homeTeam": "Miami",
+      "homeTeamId": 2390,
+      "id": 401858302,
+      "lines": [
+        {
+          "awayMoneyline": 900,
+          "formattedSpread": "Miami -20.5",
+          "homeMoneyline": -1600,
+          "overUnder": 60.5,
+          "overUnderOpen": 56.5,
+          "provider": "DraftKings",
+          "spread": -20.5,
+          "spreadOpen": -16.5
+        },
+        {
+          "awayMoneyline": 800,
+          "formattedSpread": "Miami -20.5",
+          "homeMoneyline": -1400,
+          "overUnder": 61,
+          "overUnderOpen": 61,
+          "provider": "Bovada",
+          "spread": -20.5,
+          "spreadOpen": -20.5
+        }
+      ],
+      "season": 2026,
+      "seasonType": "regular",
+      "startDate": "2026-11-22T00:00:00.000Z",
+      "week": 12
+    },
+    "game_id": 401858302,
+    "previous": {
+      "awayClassification": "fbs",
+      "awayConference": "ACC",
+      "awayScore": null,
+      "awayTeam": "Virginia Tech",
+      "awayTeamId": 259,
+      "homeClassification": "fbs",
+      "homeConference": "ACC",
+      "homeScore": null,
+      "homeTeam": "Miami",
+      "homeTeamId": 2390,
+      "id": 401858302,
+      "lines": [
+        {
+          "awayMoneyline": 900,
+          "formattedSpread": "Miami -20.5",
+          "homeMoneyline": -1600,
+          "overUnder": 60.5,
+          "overUnderOpen": 56.5,
+          "provider": "DraftKings",
+          "spread": -20.5,
+          "spreadOpen": -16.5
+        },
+        {
+          "awayMoneyline": 800,
+          "formattedSpread": "Miami -20.5",
+          "homeMoneyline": -1400,
+          "overUnder": 60.5,
+          "overUnderOpen": 61,
+          "provider": "Bovada",
+          "spread": -20.5,
+          "spreadOpen": -20.5
+        }
+      ],
+      "season": 2026,
+      "seasonType": "regular",
+      "startDate": "2026-11-22T00:00:00.000Z",
+      "week": 12
+    }
+  },
+  {
+    "changed": false,
+    "current": {
+      "awayClassification": "fbs",
+      "awayConference": "Mountain West",
+      "awayScore": null,
+      "awayTeam": "UNLV",
+      "awayTeamId": 2439,
+      "homeClassification": "fbs",
+      "homeConference": "Mountain West",
+      "homeScore": null,
+      "homeTeam": "San Jos\u00e9 State",
+      "homeTeamId": 23,
+      "id": 401864544,
+      "lines": [
+        {
+          "awayMoneyline": -258,
+          "formattedSpread": "UNLV -7",
+          "homeMoneyline": 210,
+          "overUnder": 46.5,
+          "overUnderOpen": 49.5,
+          "provider": "DraftKings",
+          "spread": 7,
+          "spreadOpen": 3
+        },
+        {
+          "awayMoneyline": -225,
+          "formattedSpread": "UNLV -7.0",
+          "homeMoneyline": 185,
+          "overUnder": 47,
+          "overUnderOpen": 46.5,
+          "provider": "Bovada",
+          "spread": 7,
+          "spreadOpen": 6
+        }
+      ],
+      "season": 2026,
+      "seasonType": "regular",
+      "startDate": "2026-11-22T00:00:00.000Z",
+      "week": 12
+    },
+    "game_id": 401864544,
+    "previous": {
+      "awayClassification": "fbs",
+      "awayConference": "Mountain West",
+      "awayScore": null,
+      "awayTeam": "UNLV",
+      "awayTeamId": 2439,
+      "homeClassification": "fbs",
+      "homeConference": "Mountain West",
+      "homeScore": null,
+      "homeTeam": "San Jos\u00e9 State",
+      "homeTeamId": 23,
+      "id": 401864544,
+      "lines": [
+        {
+          "awayMoneyline": -258,
+          "formattedSpread": "UNLV -7",
+          "homeMoneyline": 210,
+          "overUnder": 46.5,
+          "overUnderOpen": 49.5,
+          "provider": "DraftKings",
+          "spread": 7,
+          "spreadOpen": 3
+        },
+        {
+          "awayMoneyline": -225,
+          "formattedSpread": "UNLV -7.0",
+          "homeMoneyline": 185,
+          "overUnder": 47,
+          "overUnderOpen": 46.5,
+          "provider": "Bovada",
+          "spread": 7,
+          "spreadOpen": 6
+        }
+      ],
+      "season": 2026,
+      "seasonType": "regular",
+      "startDate": "2026-11-22T00:00:00.000Z",
+      "week": 12
+    }
+  },
+  {
+    "changed": false,
+    "current": {
+      "awayClassification": "fbs",
+      "awayConference": "Big 12",
+      "awayScore": null,
+      "awayTeam": "Arizona",
+      "awayTeamId": 12,
+      "homeClassification": "fbs",
+      "homeConference": "Big 12",
+      "homeScore": null,
+      "homeTeam": "Kansas State",
+      "homeTeamId": 2306,
+      "id": 401856865,
+      "lines": [
+        {
+          "awayMoneyline": -290,
+          "formattedSpread": "Arizona -7",
+          "homeMoneyline": 235,
+          "overUnder": 52.5,
+          "overUnderOpen": 50.5,
+          "provider": "DraftKings",
+          "spread": 7,
+          "spreadOpen": 10.5
+        },
+        {
+          "awayMoneyline": -355,
+          "formattedSpread": "Arizona -7.0",
+          "homeMoneyline": 280,
+          "overUnder": 52.5,
+          "overUnderOpen": 52.5,
+          "provider": "Bovada",
+          "spread": 7,
+          "spreadOpen": 9
+        }
+      ],
+      "season": 2026,
+      "seasonType": "regular",
+      "startDate": "2026-11-22T00:00:00.000Z",
+      "week": 12
+    },
+    "game_id": 401856865,
+    "previous": {
+      "awayClassification": "fbs",
+      "awayConference": "Big 12",
+      "awayScore": null,
+      "awayTeam": "Arizona",
+      "awayTeamId": 12,
+      "homeClassification": "fbs",
+      "homeConference": "Big 12",
+      "homeScore": null,
+      "homeTeam": "Kansas State",
+      "homeTeamId": 2306,
+      "id": 401856865,
+      "lines": [
+        {
+          "awayMoneyline": -290,
+          "formattedSpread": "Arizona -7",
+          "homeMoneyline": 235,
+          "overUnder": 52.5,
+          "overUnderOpen": 50.5,
+          "provider": "DraftKings",
+          "spread": 7,
+          "spreadOpen": 10.5
+        },
+        {
+          "awayMoneyline": -355,
+          "formattedSpread": "Arizona -7.0",
+          "homeMoneyline": 280,
+          "overUnder": 52.5,
+          "overUnderOpen": 52.5,
+          "provider": "Bovada",
+          "spread": 7,
+          "spreadOpen": 9
+        }
+      ],
+      "season": 2026,
+      "seasonType": "regular",
+      "startDate": "2026-11-22T00:00:00.000Z",
+      "week": 12
+    }
+  },
+  {
+    "changed": true,
+    "current": {
+      "awayClassification": "fbs",
+      "awayConference": "Sun Belt",
+      "awayScore": null,
+      "awayTeam": "Arkansas State",
+      "awayTeamId": 2032,
+      "homeClassification": "fbs",
+      "homeConference": "Sun Belt",
+      "homeScore": null,
+      "homeTeam": "Louisiana Tech",
+      "homeTeamId": 2348,
+      "id": 401869938,
+      "lines": [
+        {
+          "awayMoneyline": 410,
+          "formattedSpread": "Louisiana Tech -13.5",
+          "homeMoneyline": -550,
+          "overUnder": 53.5,
+          "overUnderOpen": 50.5,
+          "provider": "DraftKings",
+          "spread": -13.5,
+          "spreadOpen": -16.5
+        },
+        {
+          "awayMoneyline": 475,
+          "formattedSpread": "Louisiana Tech -14.0",
+          "homeMoneyline": -675,
+          "overUnder": 54,
+          "overUnderOpen": 53,
+          "provider": "Bovada",
+          "spread": -14,
+          "spreadOpen": -14.5
+        }
+      ],
+      "season": 2026,
+      "seasonType": "regular",
+      "startDate": "2026-11-22T00:00:00.000Z",
+      "week": 12
+    },
+    "game_id": 401869938,
+    "previous": {
+      "awayClassification": "fbs",
+      "awayConference": "Sun Belt",
+      "awayScore": null,
+      "awayTeam": "Arkansas State",
+      "awayTeamId": 2032,
+      "homeClassification": "fbs",
+      "homeConference": "Sun Belt",
+      "homeScore": null,
+      "homeTeam": "Louisiana Tech",
+      "homeTeamId": 2348,
+      "id": 401869938,
+      "lines": [
+        {
+          "awayMoneyline": 425,
+          "formattedSpread": "Louisiana Tech -13.5",
+          "homeMoneyline": -575,
+          "overUnder": 53.5,
+          "overUnderOpen": 50.5,
+          "provider": "DraftKings",
+          "spread": -13.5,
+          "spreadOpen": -16.5
+        },
+        {
+          "awayMoneyline": 475,
+          "formattedSpread": "Louisiana Tech -14.0",
+          "homeMoneyline": -675,
+          "overUnder": 54,
+          "overUnderOpen": 53,
+          "provider": "Bovada",
+          "spread": -14,
+          "spreadOpen": -14.5
+        }
+      ],
+      "season": 2026,
+      "seasonType": "regular",
+      "startDate": "2026-11-22T00:00:00.000Z",
+      "week": 12
+    }
+  },
+  {
+    "changed": false,
+    "current": {
+      "awayClassification": "fbs",
+      "awayConference": "ACC",
+      "awayScore": null,
+      "awayTeam": "Pittsburgh",
+      "awayTeamId": 221,
+      "homeClassification": "fbs",
+      "homeConference": "ACC",
+      "homeScore": null,
+      "homeTeam": "Louisville",
+      "homeTeamId": 97,
+      "id": 401858306,
+      "lines": [
+        {
+          "awayMoneyline": 410,
+          "formattedSpread": "Louisville -14.0",
+          "homeMoneyline": -550,
+          "overUnder": 50.5,
+          "overUnderOpen": 50.5,
+          "provider": "Bovada",
+          "spread": -14,
+          "spreadOpen": -13.5
+        },
+        {
+          "awayMoneyline": 425,
+          "formattedSpread": "Louisville -14",
+          "homeMoneyline": -575,
+          "overUnder": 50.5,
+          "overUnderOpen": 51.5,
+          "provider": "DraftKings",
+          "spread": -14,
+          "spreadOpen": -12.5
+        }
+      ],
+      "season": 2026,
+      "seasonType": "regular",
+      "startDate": "2026-11-22T00:30:00.000Z",
+      "week": 12
+    },
+    "game_id": 401858306,
+    "previous": {
+      "awayClassification": "fbs",
+      "awayConference": "ACC",
+      "awayScore": null,
+      "awayTeam": "Pittsburgh",
+      "awayTeamId": 221,
+      "homeClassification": "fbs",
+      "homeConference": "ACC",
+      "homeScore": null,
+      "homeTeam": "Louisville",
+      "homeTeamId": 97,
+      "id": 401858306,
+      "lines": [
+        {
+          "awayMoneyline": 410,
+          "formattedSpread": "Louisville -14.0",
+          "homeMoneyline": -550,
+          "overUnder": 50.5,
+          "overUnderOpen": 50.5,
+          "provider": "Bovada",
+          "spread": -14,
+          "spreadOpen": -13.5
+        },
+        {
+          "awayMoneyline": 425,
+          "formattedSpread": "Louisville -14",
+          "homeMoneyline": -575,
+          "overUnder": 50.5,
+          "overUnderOpen": 51.5,
+          "provider": "DraftKings",
+          "spread": -14,
+          "spreadOpen": -12.5
+        }
+      ],
+      "season": 2026,
+      "seasonType": "regular",
+      "startDate": "2026-11-22T00:30:00.000Z",
+      "week": 12
+    }
+  },
+  {
+    "changed": false,
+    "current": {
+      "awayClassification": "fbs",
+      "awayConference": "ACC",
+      "awayScore": null,
+      "awayTeam": "SMU",
+      "awayTeamId": 2567,
+      "homeClassification": "fbs",
+      "homeConference": "FBS Independents",
+      "homeScore": null,
+      "homeTeam": "Notre Dame",
+      "homeTeamId": 87,
+      "id": 401858307,
+      "lines": [
+        {
+          "awayMoneyline": 950,
+          "formattedSpread": "Notre Dame -20.5",
+          "homeMoneyline": -1650,
+          "overUnder": 56.5,
+          "overUnderOpen": 56.5,
+          "provider": "DraftKings",
+          "spread": -20.5,
+          "spreadOpen": -17.5
+        },
+        {
+          "awayMoneyline": 850,
+          "formattedSpread": "Notre Dame -20.5",
+          "homeMoneyline": -1500,
+          "overUnder": 56,
+          "overUnderOpen": 57,
+          "provider": "Bovada",
+          "spread": -20.5,
+          "spreadOpen": -20.5
+        }
+      ],
+      "season": 2026,
+      "seasonType": "regular",
+      "startDate": "2026-11-22T00:30:00.000Z",
+      "week": 12
+    },
+    "game_id": 401858307,
+    "previous": {
+      "awayClassification": "fbs",
+      "awayConference": "ACC",
+      "awayScore": null,
+      "awayTeam": "SMU",
+      "awayTeamId": 2567,
+      "homeClassification": "fbs",
+      "homeConference": "FBS Independents",
+      "homeScore": null,
+      "homeTeam": "Notre Dame",
+      "homeTeamId": 87,
+      "id": 401858307,
+      "lines": [
+        {
+          "awayMoneyline": 950,
+          "formattedSpread": "Notre Dame -20.5",
+          "homeMoneyline": -1650,
+          "overUnder": 56.5,
+          "overUnderOpen": 56.5,
+          "provider": "DraftKings",
+          "spread": -20.5,
+          "spreadOpen": -17.5
+        },
+        {
+          "awayMoneyline": 850,
+          "formattedSpread": "Notre Dame -20.5",
+          "homeMoneyline": -1500,
+          "overUnder": 56,
+          "overUnderOpen": 57,
+          "provider": "Bovada",
+          "spread": -20.5,
+          "spreadOpen": -20.5
+        }
+      ],
+      "season": 2026,
+      "seasonType": "regular",
+      "startDate": "2026-11-22T00:30:00.000Z",
+      "week": 12
+    }
+  },
+  {
+    "changed": true,
+    "current": {
+      "awayClassification": "fbs",
+      "awayConference": "SEC",
+      "awayScore": null,
+      "awayTeam": "Georgia",
+      "awayTeamId": 61,
+      "homeClassification": "fbs",
+      "homeConference": "SEC",
+      "homeScore": null,
+      "homeTeam": "South Carolina",
+      "homeTeamId": 2579,
+      "id": 401856753,
+      "lines": [
+        {
+          "awayMoneyline": -750,
+          "formattedSpread": "Georgia -14.5",
+          "homeMoneyline": 525,
+          "overUnder": 51.5,
+          "overUnderOpen": 50.5,
+          "provider": "DraftKings",
+          "spread": 14.5,
+          "spreadOpen": 10.5
+        },
+        {
+          "awayMoneyline": -800,
+          "formattedSpread": "Georgia -14.5",
+          "homeMoneyline": 550,
+          "overUnder": 51.5,
+          "overUnderOpen": 51,
+          "provider": "Bovada",
+          "spread": 14.5,
+          "spreadOpen": 16.5
+        }
+      ],
+      "season": 2026,
+      "seasonType": "regular",
+      "startDate": "2026-11-22T00:30:00.000Z",
+      "week": 12
+    },
+    "game_id": 401856753,
+    "previous": {
+      "awayClassification": "fbs",
+      "awayConference": "SEC",
+      "awayScore": null,
+      "awayTeam": "Georgia",
+      "awayTeamId": 61,
+      "homeClassification": "fbs",
+      "homeConference": "SEC",
+      "homeScore": null,
+      "homeTeam": "South Carolina",
+      "homeTeamId": 2579,
+      "id": 401856753,
+      "lines": [
+        {
+          "awayMoneyline": -850,
+          "formattedSpread": "Georgia -16.5",
+          "homeMoneyline": 575,
+          "overUnder": 51.5,
+          "overUnderOpen": 50.5,
+          "provider": "DraftKings",
+          "spread": 16.5,
+          "spreadOpen": 10.5
+        },
+        {
+          "awayMoneyline": -800,
+          "formattedSpread": "Georgia -16.5",
+          "homeMoneyline": 550,
+          "overUnder": 51,
+          "overUnderOpen": 51,
+          "provider": "Bovada",
+          "spread": 16.5,
+          "spreadOpen": 16.5
+        }
+      ],
+      "season": 2026,
+      "seasonType": "regular",
+      "startDate": "2026-11-22T00:30:00.000Z",
+      "week": 12
+    }
+  },
+  {
+    "changed": false,
+    "current": {
+      "awayClassification": "fbs",
+      "awayConference": "Pac-12",
+      "awayScore": null,
+      "awayTeam": "Colorado State",
+      "awayTeamId": 36,
+      "homeClassification": "fbs",
+      "homeConference": "Pac-12",
+      "homeScore": null,
+      "homeTeam": "Fresno State",
+      "homeTeamId": 278,
+      "id": 401860918,
+      "lines": [
+        {
+          "awayMoneyline": 850,
+          "formattedSpread": "Fresno State -20.5",
+          "homeMoneyline": -1450,
+          "overUnder": 66.5,
+          "overUnderOpen": 61.5,
+          "provider": "DraftKings",
+          "spread": -20.5,
+          "spreadOpen": -19.5
+        },
+        {
+          "awayMoneyline": 900,
+          "formattedSpread": "Fresno State -20.5",
+          "homeMoneyline": -1600,
+          "overUnder": 66.5,
+          "overUnderOpen": 64,
+          "provider": "Bovada",
+          "spread": -20.5,
+          "spreadOpen": -21.5
+        }
+      ],
+      "season": 2026,
+      "seasonType": "regular",
+      "startDate": "2026-11-22T00:30:00.000Z",
+      "week": 12
+    },
+    "game_id": 401860918,
+    "previous": {
+      "awayClassification": "fbs",
+      "awayConference": "Pac-12",
+      "awayScore": null,
+      "awayTeam": "Colorado State",
+      "awayTeamId": 36,
+      "homeClassification": "fbs",
+      "homeConference": "Pac-12",
+      "homeScore": null,
+      "homeTeam": "Fresno State",
+      "homeTeamId": 278,
+      "id": 401860918,
+      "lines": [
+        {
+          "awayMoneyline": 850,
+          "formattedSpread": "Fresno State -20.5",
+          "homeMoneyline": -1450,
+          "overUnder": 66.5,
+          "overUnderOpen": 61.5,
+          "provider": "DraftKings",
+          "spread": -20.5,
+          "spreadOpen": -19.5
+        },
+        {
+          "awayMoneyline": 900,
+          "formattedSpread": "Fresno State -20.5",
+          "homeMoneyline": -1600,
+          "overUnder": 66.5,
+          "overUnderOpen": 64,
+          "provider": "Bovada",
+          "spread": -20.5,
+          "spreadOpen": -21.5
+        }
+      ],
+      "season": 2026,
+      "seasonType": "regular",
+      "startDate": "2026-11-22T00:30:00.000Z",
+      "week": 12
+    }
+  },
+  {
+    "changed": false,
+    "current": {
+      "awayClassification": "fbs",
+      "awayConference": "SEC",
+      "awayScore": null,
+      "awayTeam": "Kentucky",
+      "awayTeamId": 96,
+      "homeClassification": "fbs",
+      "homeConference": "SEC",
+      "homeScore": null,
+      "homeTeam": "Missouri",
+      "homeTeamId": 142,
+      "id": 401856751,
+      "lines": [
+        {
+          "awayMoneyline": 180,
+          "formattedSpread": "Missouri -5.5",
+          "homeMoneyline": -220,
+          "overUnder": 48.5,
+          "overUnderOpen": 48.5,
+          "provider": "Bovada",
+          "spread": -5.5,
+          "spreadOpen": -5.5
+        },
+        {
+          "awayMoneyline": 180,
+          "formattedSpread": "Missouri -5.5",
+          "homeMoneyline": -218,
+          "overUnder": 48.5,
+          "overUnderOpen": 49.5,
+          "provider": "DraftKings",
+          "spread": -5.5,
+          "spreadOpen": -6.5
+        }
+      ],
+      "season": 2026,
+      "seasonType": "regular",
+      "startDate": "2026-11-22T00:30:00.000Z",
+      "week": 12
+    },
+    "game_id": 401856751,
+    "previous": {
+      "awayClassification": "fbs",
+      "awayConference": "SEC",
+      "awayScore": null,
+      "awayTeam": "Kentucky",
+      "awayTeamId": 96,
+      "homeClassification": "fbs",
+      "homeConference": "SEC",
+      "homeScore": null,
+      "homeTeam": "Missouri",
+      "homeTeamId": 142,
+      "id": 401856751,
+      "lines": [
+        {
+          "awayMoneyline": 180,
+          "formattedSpread": "Missouri -5.5",
+          "homeMoneyline": -220,
+          "overUnder": 48.5,
+          "overUnderOpen": 48.5,
+          "provider": "Bovada",
+          "spread": -5.5,
+          "spreadOpen": -5.5
+        },
+        {
+          "awayMoneyline": 180,
+          "formattedSpread": "Missouri -5.5",
+          "homeMoneyline": -218,
+          "overUnder": 48.5,
+          "overUnderOpen": 49.5,
+          "provider": "DraftKings",
+          "spread": -5.5,
+          "spreadOpen": -6.5
+        }
+      ],
+      "season": 2026,
+      "seasonType": "regular",
+      "startDate": "2026-11-22T00:30:00.000Z",
+      "week": 12
+    }
+  },
+  {
+    "changed": false,
+    "current": {
+      "awayClassification": "fbs",
+      "awayConference": "ACC",
+      "awayScore": null,
+      "awayTeam": "Stanford",
+      "awayTeamId": 24,
+      "homeClassification": "fbs",
+      "homeConference": "ACC",
+      "homeScore": null,
+      "homeTeam": "California",
+      "homeTeamId": 25,
+      "id": 401858308,
+      "lines": [
+        {
+          "awayMoneyline": -130,
+          "formattedSpread": "Stanford -2.5",
+          "homeMoneyline": 110,
+          "overUnder": 56.5,
+          "overUnderOpen": 55.5,
+          "provider": "DraftKings",
+          "spread": 2.5,
+          "spreadOpen": 1.5
+        },
+        {
+          "awayMoneyline": -132,
+          "formattedSpread": "Stanford -2.5",
+          "homeMoneyline": 112,
+          "overUnder": 56.5,
+          "overUnderOpen": 55.5,
+          "provider": "Bovada",
+          "spread": 2.5,
+          "spreadOpen": 2.5
+        }
+      ],
+      "season": 2026,
+      "seasonType": "regular",
+      "startDate": "2026-11-22T00:30:00.000Z",
+      "week": 12
+    },
+    "game_id": 401858308,
+    "previous": {
+      "awayClassification": "fbs",
+      "awayConference": "ACC",
+      "awayScore": null,
+      "awayTeam": "Stanford",
+      "awayTeamId": 24,
+      "homeClassification": "fbs",
+      "homeConference": "ACC",
+      "homeScore": null,
+      "homeTeam": "California",
+      "homeTeamId": 25,
+      "id": 401858308,
+      "lines": [
+        {
+          "awayMoneyline": -130,
+          "formattedSpread": "Stanford -2.5",
+          "homeMoneyline": 110,
+          "overUnder": 56.5,
+          "overUnderOpen": 55.5,
+          "provider": "DraftKings",
+          "spread": 2.5,
+          "spreadOpen": 1.5
+        },
+        {
+          "awayMoneyline": -132,
+          "formattedSpread": "Stanford -2.5",
+          "homeMoneyline": 112,
+          "overUnder": 56.5,
+          "overUnderOpen": 55.5,
+          "provider": "Bovada",
+          "spread": 2.5,
+          "spreadOpen": 2.5
+        }
+      ],
+      "season": 2026,
+      "seasonType": "regular",
+      "startDate": "2026-11-22T00:30:00.000Z",
+      "week": 12
+    }
+  },
+  {
+    "changed": false,
+    "current": {
+      "awayClassification": "fbs",
+      "awayConference": "American Athletic",
+      "awayScore": null,
+      "awayTeam": "UTSA",
+      "awayTeamId": 2636,
+      "homeClassification": "fbs",
+      "homeConference": "American Athletic",
+      "homeScore": null,
+      "homeTeam": "UAB",
+      "homeTeamId": 5,
+      "id": 401862836,
+      "lines": [
+        {
+          "awayMoneyline": -245,
+          "formattedSpread": "UTSA -6.5",
+          "homeMoneyline": 200,
+          "overUnder": 51.5,
+          "overUnderOpen": 53.5,
+          "provider": "DraftKings",
+          "spread": 6.5,
+          "spreadOpen": 7.5
+        },
+        {
+          "awayMoneyline": -230,
+          "formattedSpread": "UTSA -6.5",
+          "homeMoneyline": 190,
+          "overUnder": 51.5,
+          "overUnderOpen": 52,
+          "provider": "Bovada",
+          "spread": 6.5,
+          "spreadOpen": 6
+        }
+      ],
+      "season": 2026,
+      "seasonType": "regular",
+      "startDate": "2026-11-22T01:00:00.000Z",
+      "week": 12
+    },
+    "game_id": 401862836,
+    "previous": {
+      "awayClassification": "fbs",
+      "awayConference": "American Athletic",
+      "awayScore": null,
+      "awayTeam": "UTSA",
+      "awayTeamId": 2636,
+      "homeClassification": "fbs",
+      "homeConference": "American Athletic",
+      "homeScore": null,
+      "homeTeam": "UAB",
+      "homeTeamId": 5,
+      "id": 401862836,
+      "lines": [
+        {
+          "awayMoneyline": -245,
+          "formattedSpread": "UTSA -6.5",
+          "homeMoneyline": 200,
+          "overUnder": 51.5,
+          "overUnderOpen": 53.5,
+          "provider": "DraftKings",
+          "spread": 6.5,
+          "spreadOpen": 7.5
+        },
+        {
+          "awayMoneyline": -230,
+          "formattedSpread": "UTSA -6.5",
+          "homeMoneyline": 190,
+          "overUnder": 51.5,
+          "overUnderOpen": 52,
+          "provider": "Bovada",
+          "spread": 6.5,
+          "spreadOpen": 6
+        }
+      ],
+      "season": 2026,
+      "seasonType": "regular",
+      "startDate": "2026-11-22T01:00:00.000Z",
+      "week": 12
+    }
+  },
+  {
+    "changed": false,
+    "current": {
+      "awayClassification": "fbs",
+      "awayConference": "Big 12",
+      "awayScore": null,
+      "awayTeam": "Utah",
+      "awayTeamId": 254,
+      "homeClassification": "fbs",
+      "homeConference": "Big 12",
+      "homeScore": null,
+      "homeTeam": "TCU",
+      "homeTeamId": 2628,
+      "id": 401856872,
+      "lines": [
+        {
+          "awayMoneyline": -270,
+          "formattedSpread": "Utah -7",
+          "homeMoneyline": 220,
+          "overUnder": 46.5,
+          "overUnderOpen": 44.5,
+          "provider": "DraftKings",
+          "spread": 7,
+          "spreadOpen": 5.5
+        },
+        {
+          "awayMoneyline": -240,
+          "formattedSpread": "Utah -7.0",
+          "homeMoneyline": 200,
+          "overUnder": 46.5,
+          "overUnderOpen": 46.5,
+          "provider": "Bovada",
+          "spread": 7,
+          "spreadOpen": 6.5
+        }
+      ],
+      "season": 2026,
+      "seasonType": "regular",
+      "startDate": "2026-11-22T02:00:00.000Z",
+      "week": 12
+    },
+    "game_id": 401856872,
+    "previous": {
+      "awayClassification": "fbs",
+      "awayConference": "Big 12",
+      "awayScore": null,
+      "awayTeam": "Utah",
+      "awayTeamId": 254,
+      "homeClassification": "fbs",
+      "homeConference": "Big 12",
+      "homeScore": null,
+      "homeTeam": "TCU",
+      "homeTeamId": 2628,
+      "id": 401856872,
+      "lines": [
+        {
+          "awayMoneyline": -270,
+          "formattedSpread": "Utah -7",
+          "homeMoneyline": 220,
+          "overUnder": 46.5,
+          "overUnderOpen": 44.5,
+          "provider": "DraftKings",
+          "spread": 7,
+          "spreadOpen": 5.5
+        },
+        {
+          "awayMoneyline": -240,
+          "formattedSpread": "Utah -7.0",
+          "homeMoneyline": 200,
+          "overUnder": 46.5,
+          "overUnderOpen": 46.5,
+          "provider": "Bovada",
+          "spread": 7,
+          "spreadOpen": 6.5
+        }
+      ],
+      "season": 2026,
+      "seasonType": "regular",
+      "startDate": "2026-11-22T02:00:00.000Z",
+      "week": 12
+    }
+  },
+  {
+    "changed": true,
+    "current": {
+      "awayClassification": "fbs",
+      "awayConference": "Pac-12",
+      "awayScore": null,
+      "awayTeam": "San Diego State",
+      "awayTeamId": 21,
+      "homeClassification": "fbs",
+      "homeConference": "Pac-12",
+      "homeScore": null,
+      "homeTeam": "Boise State",
+      "homeTeamId": 68,
+      "id": 401860925,
+      "lines": [
+        {
+          "awayMoneyline": 600,
+          "formattedSpread": "Boise State -17.5",
+          "homeMoneyline": -900,
+          "overUnder": 60.5,
+          "overUnderOpen": 62.5,
+          "provider": "DraftKings",
+          "spread": -17.5,
+          "spreadOpen": -18.5
+        },
+        {
+          "awayMoneyline": 600,
+          "formattedSpread": "Boise State -17.0",
+          "homeMoneyline": -900,
+          "overUnder": 60,
+          "overUnderOpen": 62.5,
+          "provider": "Bovada",
+          "spread": -17,
+          "spreadOpen": -17
+        }
+      ],
+      "season": 2026,
+      "seasonType": "regular",
+      "startDate": "2026-11-22T02:30:00.000Z",
+      "week": 12
+    },
+    "game_id": 401860925,
+    "previous": {
+      "awayClassification": "fbs",
+      "awayConference": "Pac-12",
+      "awayScore": null,
+      "awayTeam": "San Diego State",
+      "awayTeamId": 21,
+      "homeClassification": "fbs",
+      "homeConference": "Pac-12",
+      "homeScore": null,
+      "homeTeam": "Boise State",
+      "homeTeamId": 68,
+      "id": 401860925,
+      "lines": [
+        {
+          "awayMoneyline": 600,
+          "formattedSpread": "Boise State -16.5",
+          "homeMoneyline": -900,
+          "overUnder": 62.5,
+          "overUnderOpen": 62.5,
+          "provider": "DraftKings",
+          "spread": -16.5,
+          "spreadOpen": -18.5
+        },
+        {
+          "awayMoneyline": 600,
+          "formattedSpread": "Boise State -17.0",
+          "homeMoneyline": -900,
+          "overUnder": 62,
+          "overUnderOpen": 62.5,
+          "provider": "Bovada",
+          "spread": -17,
+          "spreadOpen": -17
+        }
+      ],
+      "season": 2026,
+      "seasonType": "regular",
+      "startDate": "2026-11-22T02:30:00.000Z",
+      "week": 12
+    }
+  },
+  {
+    "changed": true,
+    "current": {
+      "awayClassification": "fbs",
+      "awayConference": "Big 12",
+      "awayScore": null,
+      "awayTeam": "Oklahoma State",
+      "awayTeamId": 197,
+      "homeClassification": "fbs",
+      "homeConference": "Big 12",
+      "homeScore": null,
+      "homeTeam": "Arizona State",
+      "homeTeamId": 9,
+      "id": 401856870,
+      "lines": [
+        {
+          "awayMoneyline": -142,
+          "formattedSpread": "Oklahoma State -2.5",
+          "homeMoneyline": 120,
+          "overUnder": 59.5,
+          "overUnderOpen": 62.5,
+          "provider": "DraftKings",
+          "spread": 2.5,
+          "spreadOpen": 4
+        },
+        {
+          "awayMoneyline": -155,
+          "formattedSpread": "Oklahoma State -3.0",
+          "homeMoneyline": 132,
+          "overUnder": 59.5,
+          "overUnderOpen": 62,
+          "provider": "Bovada",
+          "spread": 3,
+          "spreadOpen": 3
+        }
+      ],
+      "season": 2026,
+      "seasonType": "regular",
+      "startDate": "2026-11-22T03:15:00.000Z",
+      "week": 12
+    },
+    "game_id": 401856870,
+    "previous": {
+      "awayClassification": "fbs",
+      "awayConference": "Big 12",
+      "awayScore": null,
+      "awayTeam": "Oklahoma State",
+      "awayTeamId": 197,
+      "homeClassification": "fbs",
+      "homeConference": "Big 12",
+      "homeScore": null,
+      "homeTeam": "Arizona State",
+      "homeTeamId": 9,
+      "id": 401856870,
+      "lines": [
+        {
+          "awayMoneyline": -155,
+          "formattedSpread": "Oklahoma State -3",
+          "homeMoneyline": 130,
+          "overUnder": 61.5,
+          "overUnderOpen": 62.5,
+          "provider": "DraftKings",
+          "spread": 3,
+          "spreadOpen": 4
+        },
+        {
+          "awayMoneyline": -155,
+          "formattedSpread": "Oklahoma State -3.0",
+          "homeMoneyline": 132,
+          "overUnder": 61.5,
+          "overUnderOpen": 62,
+          "provider": "Bovada",
+          "spread": 3,
+          "spreadOpen": 3
+        }
+      ],
+      "season": 2026,
+      "seasonType": "regular",
+      "startDate": "2026-11-22T03:15:00.000Z",
+      "week": 12
+    }
+  },
+  {
+    "changed": true,
+    "current": {
+      "awayClassification": "fbs",
+      "awayConference": "Pac-12",
+      "awayScore": null,
+      "awayTeam": "Utah State",
+      "awayTeamId": 328,
+      "homeClassification": "fbs",
+      "homeConference": "Pac-12",
+      "homeScore": null,
+      "homeTeam": "Oregon State",
+      "homeTeamId": 204,
+      "id": 401860919,
+      "lines": [
+        {
+          "awayMoneyline": 265,
+          "formattedSpread": "Oregon State -9.5",
+          "homeMoneyline": -330,
+          "overUnder": 50,
+          "overUnderOpen": 51.5,
+          "provider": "Bovada",
+          "spread": -9.5,
+          "spreadOpen": -8.5
+        },
+        {
+          "awayMoneyline": 280,
+          "formattedSpread": "Oregon State -9.5",
+          "homeMoneyline": -355,
+          "overUnder": 50.5,
+          "overUnderOpen": 49.5,
+          "provider": "DraftKings",
+          "spread": -9.5,
+          "spreadOpen": -10
+        }
+      ],
+      "season": 2026,
+      "seasonType": "regular",
+      "startDate": "2026-11-22T03:30:00.000Z",
+      "week": 12
+    },
+    "game_id": 401860919,
+    "previous": {
+      "awayClassification": "fbs",
+      "awayConference": "Pac-12",
+      "awayScore": null,
+      "awayTeam": "Utah State",
+      "awayTeamId": 328,
+      "homeClassification": "fbs",
+      "homeConference": "Pac-12",
+      "homeScore": null,
+      "homeTeam": "Oregon State",
+      "homeTeamId": 204,
+      "id": 401860919,
+      "lines": [
+        {
+          "awayMoneyline": 265,
+          "formattedSpread": "Oregon State -9.5",
+          "homeMoneyline": -330,
+          "overUnder": 51,
+          "overUnderOpen": 51.5,
+          "provider": "Bovada",
+          "spread": -9.5,
+          "spreadOpen": -8.5
+        },
+        {
+          "awayMoneyline": 280,
+          "formattedSpread": "Oregon State -9.5",
+          "homeMoneyline": -355,
+          "overUnder": 50.5,
+          "overUnderOpen": 49.5,
+          "provider": "DraftKings",
+          "spread": -9.5,
+          "spreadOpen": -10
+        }
+      ],
+      "season": 2026,
+      "seasonType": "regular",
+      "startDate": "2026-11-22T03:30:00.000Z",
+      "week": 12
+    }
+  },
+  {
+    "changed": false,
+    "current": {
+      "awayClassification": "fbs",
+      "awayConference": "Mountain West",
+      "awayScore": null,
+      "awayTeam": "Hawai'i",
+      "awayTeamId": 62,
+      "homeClassification": "fbs",
+      "homeConference": "Mountain West",
+      "homeScore": null,
+      "homeTeam": "Nevada",
+      "homeTeamId": 2440,
+      "id": 401864541,
+      "lines": [
+        {
+          "awayMoneyline": 170,
+          "formattedSpread": "Nevada -4.5",
+          "homeMoneyline": -205,
+          "overUnder": 40.5,
+          "overUnderOpen": 42.5,
+          "provider": "DraftKings",
+          "spread": -4.5,
+          "spreadOpen": -2.5
+        },
+        {
+          "awayMoneyline": 160,
+          "formattedSpread": "Nevada -5.0",
+          "homeMoneyline": -185,
+          "overUnder": 40.5,
+          "overUnderOpen": 40,
+          "provider": "Bovada",
+          "spread": -5,
+          "spreadOpen": -4
+        }
+      ],
+      "season": 2026,
+      "seasonType": "regular",
+      "startDate": "2026-11-22T03:30:00.000Z",
+      "week": 12
+    },
+    "game_id": 401864541,
+    "previous": {
+      "awayClassification": "fbs",
+      "awayConference": "Mountain West",
+      "awayScore": null,
+      "awayTeam": "Hawai'i",
+      "awayTeamId": 62,
+      "homeClassification": "fbs",
+      "homeConference": "Mountain West",
+      "homeScore": null,
+      "homeTeam": "Nevada",
+      "homeTeamId": 2440,
+      "id": 401864541,
+      "lines": [
+        {
+          "awayMoneyline": 170,
+          "formattedSpread": "Nevada -4.5",
+          "homeMoneyline": -205,
+          "overUnder": 40.5,
+          "overUnderOpen": 42.5,
+          "provider": "DraftKings",
+          "spread": -4.5,
+          "spreadOpen": -2.5
+        },
+        {
+          "awayMoneyline": 160,
+          "formattedSpread": "Nevada -5.0",
+          "homeMoneyline": -185,
+          "overUnder": 40.5,
+          "overUnderOpen": 40,
+          "provider": "Bovada",
+          "spread": -5,
+          "spreadOpen": -4
+        }
+      ],
+      "season": 2026,
+      "seasonType": "regular",
+      "startDate": "2026-11-22T03:30:00.000Z",
+      "week": 12
+    }
+  }
+]
