@@ -1,0 +1,11 @@
+architecture,status,required_validation
+Market-anchored residual,IMPLEMENTED_RETROSPECTIVE_RESEARCH,Simple fixed-penalty ridge on frozen forecast-minus-line; future holdout required.
+Opponent-adjusted efficiency,BLOCKED_COMPARABLE_PIT_FEATURE_LEDGER,Build weekly opponent schedule-adjusted offensive/defensive ledger through sanctioned PIT accessor.
+Offense-defense matchup interactions,BLOCKED_COMPARABLE_PIT_FEATURE_LEDGER,Regularized interactions only after point-in-time base features and fold sample audit.
+Recency weighting,BLOCKED_COMPARABLE_PIT_FEATURE_LEDGER,Require game-level EPA timestamps and consistent garbage-time definition.
+Home-field and travel,PARTIAL_HOME_MARGIN_BASELINE_ONLY,"Need neutral-site, stadium coordinates and known schedule/rest history; no fabricated travel."
+Pace and possessions,FROZEN14_GAME_PROTOTYPE_GRADED_SEPARATELY,Resolve drive score quarantine before feature inclusion; exclude overtime consistently.
+Expected points per drive,BLOCKED_DRIVE_ADJUDICATION,Separate offensive points from return/defensive points; validate conversion attribution.
+Explosive offense versus defense,BLOCKED_COMPARABLE_PIT_FEATURE_LEDGER,Stable rush10/pass20 definitions; no game-total or season-final contamination.
+Red-zone efficiency,BLOCKED_COMPARABLE_PIT_FEATURE_LEDGER,Standardize trip and touchdown definitions; shrink small denominators.
+QB and personnel,BLOCKED_HISTORICAL_PIT_EVIDENCE,Only timestamped availability and snap expectations; observed postgame usage is not pregame knowledge.

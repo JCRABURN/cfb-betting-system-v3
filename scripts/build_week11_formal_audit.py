@@ -14,7 +14,24 @@ from scripts.week11_drive_adjudication import adjudicate
 from scripts.week11_v29_research import run as research_run
 from scripts.build_week9_formal_audit import csv_bytes, verify_files, custody as historical_custody
 
-OUT=ROOT/'outputs/2026-week11-postgame-audit/v1'
+OUT=ROOT/'outputs/2026-week11-postgame-audit/v2'
+V1=ROOT/'outputs/2026-week11-postgame-audit/v1'
+V1_MANIFEST_SHA='88b77d4daf202384d61cbd7277ad10b94866bf6e460cea6f7bf4b00463773ab1'
+
+
+def pinned_inputs():
+    """Verify the original closed evidence inventory; later weekly outputs are unrelated."""
+    raw=(V1/'audit_manifest.json').read_bytes()
+    if sha(raw)!=V1_MANIFEST_SHA:raise ValueError('original audit inventory changed')
+    manifest=json.loads(raw)
+    for name,digest in manifest['output_sha256'].items():
+        if sha((V1/name).read_bytes())!=digest:raise ValueError('original audit output changed: '+name)
+    for name,digest in manifest['input_sha256'].items():
+        raw=(ROOT/name).read_bytes()
+        if name.startswith('data/ingest/2026-season-splashsports-recovery/'):
+            raw=raw.replace(b'\r\n',b'\n')
+        if sha(raw)!=digest:raise ValueError('pinned audit input changed: '+name)
+    return manifest['input_sha256'],list(manifest['code_sha256_lf'])
 
 
 def canonical(value):
@@ -139,21 +156,10 @@ def build():
     files.update({name:text.encode('utf8') for name,text in reports(findings,groups,mechanisms,closing).items()})
     from scripts.season_contest_report import report
     files['SEASON_CONTEST_REPORT.md']=report(season).encode('utf8')
-    inputs={}
-    # Pin every current evidence file and every historical artifact used by existing audit helpers.
-    for p in sorted(EVIDENCE.rglob('*')):
-        if p.is_file() and not p.name.startswith('pr53-source.tar.gz'):inputs[p.relative_to(ROOT).as_posix()]=sha(p.read_bytes())
-    for p in sorted((ROOT/'outputs').rglob('*')):
-        if p.is_file() and not p.is_relative_to(EVIDENCE) and not p.is_relative_to(ROOT/'outputs/2026-week11-postgame-audit'):
-            inputs[p.relative_to(ROOT).as_posix()]=sha(p.read_bytes())
-    code={p.relative_to(ROOT).as_posix():sha(p.read_bytes().replace(b'\r\n',b'\n')) for p in sorted((ROOT/'scripts').glob('*week11*audit*.py')) if p.name!='archive_week11_audit_inputs.py'}
-    for p in sorted((ROOT/'data/ingest/2026-season-splashsports-recovery').glob('*')):
-        if p.is_file():inputs[p.relative_to(ROOT).as_posix()]=sha(p.read_bytes().replace(b'\r\n',b'\n'))
-    for name in ('capture_week11_postgame','capture_week11_drive_supplement','capture_week11_drive_summaries','week11_drive_adjudication','week11_v29_research'):
-        p=ROOT/'scripts'/f'{name}.py';code[p.relative_to(ROOT).as_posix()]=sha(p.read_bytes().replace(b'\r\n',b'\n'))
-    for name in ('season_contest_audit','season_contest_report','capture_season_contest_results'):
-        p=ROOT/'scripts'/f'{name}.py';code[p.relative_to(ROOT).as_posix()]=sha(p.read_bytes().replace(b'\r\n',b'\n'))
-    files['audit_manifest.json']=encoded(dict(version='week11-forensic-audit-v1',status='GRADING_COMPLETE_RESEARCH_NOT_PROMOTED',
+    inputs,code_paths=pinned_inputs()
+    code={name:sha((ROOT/name).read_bytes().replace(b'\r\n',b'\n')) for name in code_paths}
+    files['audit_manifest.json']=encoded(dict(version='week11-forensic-audit-v2-closed-inventory',status='GRADING_COMPLETE_RESEARCH_NOT_PROMOTED',
+        original_audit_manifest_sha256=V1_MANIFEST_SHA,original_replay_commit='936352866a21a7b535c9728df7e6a8e979b3f1af',
         season=2026,week=11,prediction_source_commit=SOURCE_COMMIT,base_main_commit='79fa442a3c15d8f3f7435721b3d90db368ae55df',
         game_count=67,recorded_forecasts_per_market=64,forward_sealed_games=61,late_wednesday_games=3,no_tuesday_forecasts=3,
         score_discrepancies=0,owner_approval='WEEKS1_10_SUBMISSION_EXPORTS_CONFIRMED; WEEK11_EXTERNAL_EXCLUDED',source_database_sha256=DB_SHA,

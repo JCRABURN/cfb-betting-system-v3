@@ -88,3 +88,10 @@ This is an additive audit. Roll back by reverting its feature commit(s), after
 preserving any desired audit deliverables. No database rollback or historical
 forecast restoration is necessary. Independent review and an explicit merge
 decision remain required; Codex must not self-merge.
+# Replay integration addendum
+
+The default read-only verifier now targets `v2`, whose closed input inventory is
+pinned to the original v1 manifest. All 56 non-manifest audit artifacts are
+byte-identical to v1; the workbook and context-v2 are unchanged. This prevents
+later weekly output directories from becoming historical audit inputs. See
+`verification-v3/CLOSED_INVENTORY.md` and its exact artifact comparison.

@@ -1,0 +1,1476 @@
+week,cohort,game_id,market,selection,recommendation_line,submitted_line,status,source_path
+1,FROZEN_FULL_ATS,401858423,ATS,Massachusetts,29.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+1,FROZEN_FULL_ATS,401858204,ATS,Akron,24.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+1,FROZEN_FULL_ATS,401856776,ATS,Georgia Tech,-6.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+1,FROZEN_FULL_ATS,401858424,ATS,UAB,27.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+1,FROZEN_FULL_ATS,401864495,ATS,San José State,3.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+1,FROZEN_FULL_ATS,401856664,ATS,UTEP,41.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+1,FROZEN_FULL_ATS,401858429,ATS,Toledo,9.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+1,FROZEN_FULL_ATS,401858436,ATS,Fresno State,21.5,21.5,EXACT_MATCH,outputs/2026-week7-acceptance-research/source-evidence
+1,FROZEN_FULL_ATS,401858206,ATS,Stanford,24.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+1,FROZEN_FULL_ATS,401858425,ATS,North Texas,40.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+1,FROZEN_FULL_ATS,401856780,ATS,Coastal Carolina,20.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+1,FROZEN_FULL_ATS,401858430,ATS,Ohio,23.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+1,FROZEN_FULL_ATS,401856778,ATS,Oregon State,20.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+1,FROZEN_FULL_ATS,401856634,ATS,East Carolina,27.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+1,FROZEN_FULL_ATS,401869960,ATS,James Madison,-6.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+1,FROZEN_FULL_ATS,401858207,ATS,Miami (OH),16.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+1,FROZEN_FULL_ATS,401858432,ATS,Ball State,50.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+1,FROZEN_FULL_ATS,401856665,ATS,Kent State,36.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+1,FROZEN_FULL_ATS,401858434,ATS,Marshall,23.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+1,FROZEN_FULL_ATS,401856777,ATS,Cincinnati,-7.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+1,FROZEN_FULL_ATS,401856667,ATS,Texas State,29.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+1,FROZEN_FULL_ATS,401858433,ATS,Boise State,24.5,24.5,EXACT_MATCH,outputs/2026-week7-acceptance-research/source-evidence
+1,FROZEN_FULL_ATS,401858209,ATS,Tulane,7.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+1,FROZEN_FULL_ATS,401856636,ATS,Baylor,7.5,7.5,EXACT_MATCH,outputs/2026-week7-acceptance-research/source-evidence
+1,FROZEN_FULL_ATS,401856772,ATS,Tulsa,13.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+1,FROZEN_FULL_ATS,401858426,ATS,Northern Illinois,31.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+1,FROZEN_FULL_ATS,401860878,ATS,Wyoming,2.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+1,FROZEN_FULL_ATS,401862699,ATS,Florida International,13.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+1,FROZEN_FULL_ATS,401870763,ATS,Sam Houston,16.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+1,FROZEN_FULL_ATS,401856668,ATS,Missouri State,40.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+1,FROZEN_FULL_ATS,401862695,ATS,Arkansas State,11.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+1,FROZEN_FULL_ATS,401856660,ATS,Clemson,10.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+1,FROZEN_FULL_ATS,401856662,ATS,UL Monroe,28.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+1,FROZEN_FULL_ATS,401858428,ATS,Western Michigan,27.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+1,FROZEN_FULL_ATS,401856637,ATS,Florida Atlantic,26.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+1,FROZEN_FULL_ATS,401864498,ATS,Central Michigan,10.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+1,FROZEN_FULL_ATS,401864497,ATS,Hawai'i,3.5,3.5,EXACT_MATCH,outputs/2026-week7-acceptance-research/source-evidence
+1,FROZEN_FULL_ATS,401858210,ATS,California,1.5,1.5,EXACT_MATCH,outputs/2026-week7-acceptance-research/source-evidence
+1,FROZEN_FULL_ATS,401864432,ATS,Western Kentucky,-2.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+1,FROZEN_FULL_ATS,401858437,ATS,Washington State,23.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+1,FROZEN_FULL_ATS,401858438,ATS,Notre Dame,-20.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+1,FROZEN_FULL_ATS,401856661,ATS,Ole Miss,-6.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+1,FROZEN_FULL_ATS,401858212,ATS,Florida State,3.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+1,GOVERNED_ATS_TOP5,401856634,ATS,East Carolina,27.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+1,GOVERNED_ATS_TOP5,401856636,ATS,Baylor,7.5,7.5,EXACT_MATCH,outputs/2026-week7-acceptance-research/source-evidence
+1,GOVERNED_ATS_TOP5,401856660,ATS,Clemson,10.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+1,GOVERNED_ATS_TOP5,401856637,ATS,Florida Atlantic,26.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+1,GOVERNED_ATS_TOP5,401856661,ATS,Ole Miss,-6.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+1,GOVERNED_ATS_TOP5,401858433,ATS,Boise State,,24.5,SUBMITTED_NOT_IN_COHORT,outputs/2026-week7-acceptance-research/source-evidence
+1,GOVERNED_ATS_TOP5,401858210,ATS,California,,1.5,SUBMITTED_NOT_IN_COHORT,outputs/2026-week7-acceptance-research/source-evidence
+1,GOVERNED_ATS_TOP5,401858436,ATS,Fresno State,,21.5,SUBMITTED_NOT_IN_COHORT,outputs/2026-week7-acceptance-research/source-evidence
+1,GOVERNED_ATS_TOP5,401864497,ATS,Hawai'i,,3.5,SUBMITTED_NOT_IN_COHORT,outputs/2026-week7-acceptance-research/source-evidence
+2,FROZEN_FULL_ATS,401858214,ATS,Rutgers,3.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+2,FROZEN_FULL_ATS,401856678,ATS,Kansas,5.5,5.5,EXACT_MATCH,outputs/2026-week7-acceptance-research/source-evidence
+2,FROZEN_FULL_ATS,401856679,ATS,Oklahoma,-5.5,-5.5,EXACT_MATCH,outputs/2026-week7-acceptance-research/source-evidence
+2,FROZEN_FULL_ATS,401858221,ATS,Virginia Tech,-19.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+2,FROZEN_FULL_ATS,401856781,ATS,Kansas State,-18.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+2,FROZEN_FULL_ATS,401856782,ATS,Oklahoma State,22.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+2,FROZEN_FULL_ATS,401864571,ATS,App State,7.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+2,FROZEN_FULL_ATS,401856683,ATS,Arizona State,14.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+2,FROZEN_FULL_ATS,401858224,ATS,Purdue,2.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+2,FROZEN_FULL_ATS,401862702,ATS,Army,-3.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+2,FROZEN_FULL_ATS,401858442,ATS,Temple,23.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+2,FROZEN_FULL_ATS,401856673,ATS,Georgia,-40.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+2,FROZEN_FULL_ATS,401856677,ATS,Minnesota,-1.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+2,FROZEN_FULL_ATS,401858444,ATS,UConn,12.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+2,FROZEN_FULL_ATS,401858440,ATS,Eastern Michigan,17.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+2,FROZEN_FULL_ATS,401856790,ATS,UCF,7.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+2,FROZEN_FULL_ATS,401856810,ATS,BYU,-7.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+2,FROZEN_FULL_ATS,401858216,ATS,Syracuse,-3.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+2,FROZEN_FULL_ATS,401862708,ATS,UAB,-9.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+2,FROZEN_FULL_ATS,401859184,ATS,Rice,43.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+2,FROZEN_FULL_ATS,401858217,ATS,Illinois,-5.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+2,FROZEN_FULL_ATS,401856674,ATS,Kentucky,10.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+2,FROZEN_FULL_ATS,401858446,ATS,Utah State,27.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+2,FROZEN_FULL_ATS,401860884,ATS,UTSA,1.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+2,FROZEN_FULL_ATS,401862705,ATS,UNLV,-3.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+2,FROZEN_FULL_ATS,401856684,ATS,Delaware,20.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+2,FROZEN_FULL_ATS,401866414,ATS,Buffalo,10.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+2,FROZEN_FULL_ATS,401860881,ATS,Memphis,8.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+2,FROZEN_FULL_ATS,401866418,ATS,Jacksonville State,2.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+2,FROZEN_FULL_ATS,401864575,ATS,South Alabama,9.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+2,FROZEN_FULL_ATS,401862707,ATS,Sam Houston,14.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+2,FROZEN_FULL_ATS,401871045,ATS,Middle Tennessee,13.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+2,FROZEN_FULL_ATS,401869955,ATS,Georgia State,8.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+2,FROZEN_FULL_ATS,401856681,ATS,Tennessee,-12.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+2,FROZEN_FULL_ATS,401858441,ATS,Bowling Green,28.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+2,FROZEN_FULL_ATS,401858443,ATS,San Diego State,12.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+2,FROZEN_FULL_ATS,401862703,ATS,Navy,-4.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+2,FROZEN_FULL_ATS,401858219,ATS,Georgia Southern,20.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+2,FROZEN_FULL_ATS,401856788,ATS,Iowa,-13.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+2,FROZEN_FULL_ATS,401856783,ATS,Oregon State,26.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+2,FROZEN_FULL_ATS,401867796,ATS,Louisiana Tech,35.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+2,FROZEN_FULL_ATS,401856682,ATS,Ohio State,1.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+2,FROZEN_FULL_ATS,401856676,ATS,Charlotte,47.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+2,FROZEN_FULL_ATS,401856671,ATS,Southern Miss,32.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+2,FROZEN_FULL_ATS,401864502,ATS,Air Force,2.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+2,FROZEN_FULL_ATS,401856670,ATS,Arkansas,12.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+2,FROZEN_FULL_ATS,401860883,ATS,Sacramento State,18.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+2,FROZEN_FULL_ATS,401858445,ATS,Louisiana,30.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+2,FROZEN_FULL_ATS,401864578,ATS,New Mexico State,8.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+2,FROZEN_FULL_ATS,401858446,TOTAL,UNDER,,55.5,SUBMITTED_NOT_IN_COHORT,outputs/2026-week7-acceptance-research/source-evidence
+2,FROZEN_FULL_ATS,401858445,TOTAL,UNDER,,60.5,SUBMITTED_NOT_IN_COHORT,outputs/2026-week7-acceptance-research/source-evidence
+2,FROZEN_FULL_ATS,401860884,TOTAL,UNDER,,66.5,SUBMITTED_NOT_IN_COHORT,outputs/2026-week7-acceptance-research/source-evidence
+2,FROZEN_FULL_TOTAL,401858214,TOTAL,OVER,54.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+2,FROZEN_FULL_TOTAL,401856678,TOTAL,OVER,50.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+2,FROZEN_FULL_TOTAL,401856679,TOTAL,OVER,43.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+2,FROZEN_FULL_TOTAL,401858221,TOTAL,UNDER,49.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+2,FROZEN_FULL_TOTAL,401856781,TOTAL,UNDER,48.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+2,FROZEN_FULL_TOTAL,401856782,TOTAL,UNDER,57.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+2,FROZEN_FULL_TOTAL,401864571,TOTAL,UNDER,56.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+2,FROZEN_FULL_TOTAL,401856683,TOTAL,OVER,49.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+2,FROZEN_FULL_TOTAL,401858224,TOTAL,OVER,49.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+2,FROZEN_FULL_TOTAL,401862702,TOTAL,OVER,46.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+2,FROZEN_FULL_TOTAL,401858442,TOTAL,OVER,49.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+2,FROZEN_FULL_TOTAL,401856673,TOTAL,OVER,55.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+2,FROZEN_FULL_TOTAL,401856677,TOTAL,UNDER,55.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+2,FROZEN_FULL_TOTAL,401858444,TOTAL,UNDER,52.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+2,FROZEN_FULL_TOTAL,401858440,TOTAL,UNDER,48.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+2,FROZEN_FULL_TOTAL,401856790,TOTAL,UNDER,57.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+2,FROZEN_FULL_TOTAL,401856810,TOTAL,UNDER,48.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+2,FROZEN_FULL_TOTAL,401858216,TOTAL,OVER,56.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+2,FROZEN_FULL_TOTAL,401862708,TOTAL,OVER,55.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+2,FROZEN_FULL_TOTAL,401859184,TOTAL,UNDER,55.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+2,FROZEN_FULL_TOTAL,401858217,TOTAL,OVER,51.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+2,FROZEN_FULL_TOTAL,401856674,TOTAL,OVER,49.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+2,FROZEN_FULL_TOTAL,401858446,TOTAL,UNDER,55.5,55.5,EXACT_MATCH,outputs/2026-week7-acceptance-research/source-evidence
+2,FROZEN_FULL_TOTAL,401860884,TOTAL,UNDER,66.5,66.5,EXACT_MATCH,outputs/2026-week7-acceptance-research/source-evidence
+2,FROZEN_FULL_TOTAL,401862705,TOTAL,OVER,57.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+2,FROZEN_FULL_TOTAL,401856684,TOTAL,UNDER,54.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+2,FROZEN_FULL_TOTAL,401866414,TOTAL,UNDER,47.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+2,FROZEN_FULL_TOTAL,401860881,TOTAL,OVER,54.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+2,FROZEN_FULL_TOTAL,401866418,TOTAL,OVER,50.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+2,FROZEN_FULL_TOTAL,401864575,TOTAL,UNDER,49.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+2,FROZEN_FULL_TOTAL,401862707,TOTAL,UNDER,51.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+2,FROZEN_FULL_TOTAL,401871045,TOTAL,OVER,57.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+2,FROZEN_FULL_TOTAL,401869955,TOTAL,OVER,54.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+2,FROZEN_FULL_TOTAL,401856681,TOTAL,UNDER,55.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+2,FROZEN_FULL_TOTAL,401858441,TOTAL,OVER,51.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+2,FROZEN_FULL_TOTAL,401858443,TOTAL,OVER,55.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+2,FROZEN_FULL_TOTAL,401862703,TOTAL,OVER,59.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+2,FROZEN_FULL_TOTAL,401858219,TOTAL,UNDER,55.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+2,FROZEN_FULL_TOTAL,401856788,TOTAL,OVER,39.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+2,FROZEN_FULL_TOTAL,401856783,TOTAL,UNDER,53.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+2,FROZEN_FULL_TOTAL,401867796,TOTAL,UNDER,56.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+2,FROZEN_FULL_TOTAL,401856682,TOTAL,OVER,48.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+2,FROZEN_FULL_TOTAL,401856676,TOTAL,OVER,61.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+2,FROZEN_FULL_TOTAL,401856671,TOTAL,UNDER,56.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+2,FROZEN_FULL_TOTAL,401864502,TOTAL,UNDER,47.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+2,FROZEN_FULL_TOTAL,401856670,TOTAL,OVER,55.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+2,FROZEN_FULL_TOTAL,401860883,TOTAL,UNDER,45.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+2,FROZEN_FULL_TOTAL,401858445,TOTAL,UNDER,60.5,60.5,EXACT_MATCH,outputs/2026-week7-acceptance-research/source-evidence
+2,FROZEN_FULL_TOTAL,401864578,TOTAL,OVER,50.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+2,FROZEN_FULL_TOTAL,401856679,ATS,Oklahoma,,-5.5,SUBMITTED_NOT_IN_COHORT,outputs/2026-week7-acceptance-research/source-evidence
+2,FROZEN_FULL_TOTAL,401856678,ATS,Kansas,,5.5,SUBMITTED_NOT_IN_COHORT,outputs/2026-week7-acceptance-research/source-evidence
+2,GOVERNED_ATS_TOP5,401858214,ATS,Rutgers,3.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+2,GOVERNED_ATS_TOP5,401856678,ATS,Kansas,5.5,5.5,EXACT_MATCH,outputs/2026-week7-acceptance-research/source-evidence
+2,GOVERNED_ATS_TOP5,401856679,ATS,Oklahoma,-5.5,-5.5,EXACT_MATCH,outputs/2026-week7-acceptance-research/source-evidence
+2,GOVERNED_ATS_TOP5,401858221,ATS,Virginia Tech,-19.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+2,GOVERNED_ATS_TOP5,401856781,ATS,Kansas State,-18.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+2,GOVERNED_ATS_TOP5,401858446,TOTAL,UNDER,,55.5,SUBMITTED_NOT_IN_COHORT,outputs/2026-week7-acceptance-research/source-evidence
+2,GOVERNED_ATS_TOP5,401858445,TOTAL,UNDER,,60.5,SUBMITTED_NOT_IN_COHORT,outputs/2026-week7-acceptance-research/source-evidence
+2,GOVERNED_ATS_TOP5,401860884,TOTAL,UNDER,,66.5,SUBMITTED_NOT_IN_COHORT,outputs/2026-week7-acceptance-research/source-evidence
+2,ORIGINAL_COMBINED_RESEARCH_TOP5,401856682,TOTAL,OVER,48.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence/week2-pregame.json
+2,ORIGINAL_COMBINED_RESEARCH_TOP5,401858446,TOTAL,UNDER,55.5,55.5,EXACT_MATCH,outputs/2026-week7-acceptance-research/source-evidence/week2-pregame.json
+2,ORIGINAL_COMBINED_RESEARCH_TOP5,401856674,TOTAL,OVER,49.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence/week2-pregame.json
+2,ORIGINAL_COMBINED_RESEARCH_TOP5,401862702,TOTAL,OVER,46.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence/week2-pregame.json
+2,ORIGINAL_COMBINED_RESEARCH_TOP5,401860884,TOTAL,UNDER,66.5,66.5,EXACT_MATCH,outputs/2026-week7-acceptance-research/source-evidence/week2-pregame.json
+2,ORIGINAL_COMBINED_RESEARCH_TOP5,401856679,ATS,Oklahoma,,-5.5,SUBMITTED_NOT_IN_COHORT,outputs/2026-week7-acceptance-research/source-evidence/week2-pregame.json
+2,ORIGINAL_COMBINED_RESEARCH_TOP5,401858445,TOTAL,UNDER,,60.5,SUBMITTED_NOT_IN_COHORT,outputs/2026-week7-acceptance-research/source-evidence/week2-pregame.json
+2,ORIGINAL_COMBINED_RESEARCH_TOP5,401856678,ATS,Kansas,,5.5,SUBMITTED_NOT_IN_COHORT,outputs/2026-week7-acceptance-research/source-evidence/week2-pregame.json
+3,FROZEN_FULL_ATS,401858226,ATS,Wake Forest,20.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+3,FROZEN_FULL_ATS,401856811,ATS,Houston,7.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+3,FROZEN_FULL_ATS,401869940,ATS,Delaware,-4.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+3,FROZEN_FULL_ATS,401860889,ATS,North Texas,2.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+3,FROZEN_FULL_ATS,401856686,ATS,Georgia,-25.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+3,FROZEN_FULL_ATS,401856792,ATS,Kansas State,-20.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+3,FROZEN_FULL_ATS,401858451,ATS,Akron,23.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+3,FROZEN_FULL_ATS,401858229,ATS,North Carolina,3.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+3,FROZEN_FULL_ATS,401858454,ATS,Kent State,52.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+3,FROZEN_FULL_ATS,401856798,ATS,Iowa State,-23.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+3,FROZEN_FULL_ATS,401856812,ATS,Kansas,5.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+3,FROZEN_FULL_ATS,401858456,ATS,Buffalo,40.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+3,FROZEN_FULL_ATS,401858460,ATS,Eastern Michigan,24.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+3,FROZEN_FULL_ATS,401856695,ATS,NC State,3.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+3,FROZEN_FULL_ATS,401864508,ATS,Wyoming,1.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+3,FROZEN_FULL_ATS,401862774,ATS,Toledo,-5.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+3,FROZEN_FULL_ATS,401856685,ATS,Alabama,-19.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+3,FROZEN_FULL_ATS,401856797,ATS,Miami (OH),14.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+3,FROZEN_FULL_ATS,401858450,ATS,UTEP,35.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+3,FROZEN_FULL_ATS,401856694,ATS,Texas A&M,-16.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+3,FROZEN_FULL_ATS,401856801,ATS,Utah,-27.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+3,FROZEN_FULL_ATS,401858457,ATS,Rutgers,23.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+3,FROZEN_FULL_ATS,401858230,ATS,SMU,2.5,2.5,EXACT_MATCH,outputs/2026-week7-acceptance-research/source-evidence
+3,FROZEN_FULL_ATS,401858449,ATS,Indiana,-44.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+3,FROZEN_FULL_ATS,401858231,ATS,Stanford,9.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+3,FROZEN_FULL_ATS,401867804,ATS,Louisiana Tech,18.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+3,FROZEN_FULL_ATS,401866422,ATS,Ball State,14.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+3,FROZEN_FULL_ATS,401856691,ATS,Mississippi State,3.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+3,FROZEN_FULL_ATS,401864574,ATS,App State,-17.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+3,FROZEN_FULL_ATS,401862710,ATS,Old Dominion,-2.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+3,FROZEN_FULL_ATS,401862771,ATS,Florida International,6.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+3,FROZEN_FULL_ATS,401871047,ATS,Missouri State,3.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+3,FROZEN_FULL_ATS,401866423,ATS,South Alabama,-5.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+3,FROZEN_FULL_ATS,401862773,ATS,Rice,9.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+3,FROZEN_FULL_ATS,401856689,ATS,Troy,26.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+3,FROZEN_FULL_ATS,401861963,ATS,Southern Miss,3.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+3,FROZEN_FULL_ATS,401864443,ATS,Middle Tennessee,3.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+3,FROZEN_FULL_ATS,401869948,ATS,Georgia Southern,3.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+3,FROZEN_FULL_ATS,401856687,ATS,Florida,-2.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+3,FROZEN_FULL_ATS,401856800,ATS,Georgia State,18.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+3,FROZEN_FULL_ATS,401858232,ATS,Maryland,3.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+3,FROZEN_FULL_ATS,401856795,ATS,Colorado State,17.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+3,FROZEN_FULL_ATS,401856688,ATS,LSU,-2.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+3,FROZEN_FULL_ATS,401856802,ATS,Virginia,-9.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+3,FROZEN_FULL_ATS,401856690,ATS,New Mexico,22.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+3,FROZEN_FULL_ATS,401856796,ATS,Northwestern,-3.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+3,FROZEN_FULL_ATS,401858453,ATS,Michigan State,29.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+3,FROZEN_FULL_ATS,401856692,ATS,Kennesaw State,35.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+3,FROZEN_FULL_ATS,401856799,ATS,Arkansas State,20.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+3,FROZEN_FULL_ATS,401856693,ATS,UTSA,30.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+3,FROZEN_FULL_ATS,401862776,ATS,UAB,7.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+3,FROZEN_FULL_ATS,401860887,ATS,James Madison,2.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+3,FROZEN_FULL_ATS,401856793,ATS,Northern Illinois,34.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+3,FROZEN_FULL_ATS,401864507,ATS,Sacramento State,27.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+3,FROZEN_FULL_ATS,401858458,ATS,Purdue,14.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+3,FROZEN_FULL_ATS,401860888,ATS,San José State,6.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+3,FROZEN_FULL_ATS,401858226,ATS,Miami,,-20.5,SUBMITTED_NOT_IN_COHORT,outputs/2026-week7-acceptance-research/source-evidence
+3,FROZEN_FULL_ATS,401856796,ATS,Colorado,,3.5,SUBMITTED_NOT_IN_COHORT,outputs/2026-week7-acceptance-research/source-evidence
+3,FROZEN_FULL_ATS,401864508,TOTAL,OVER,,39.5,SUBMITTED_NOT_IN_COHORT,outputs/2026-week7-acceptance-research/source-evidence
+3,FROZEN_FULL_ATS,401858449,TOTAL,UNDER,,60.5,SUBMITTED_NOT_IN_COHORT,outputs/2026-week7-acceptance-research/source-evidence
+3,FROZEN_FULL_TOTAL,401858226,TOTAL,OVER,55.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+3,FROZEN_FULL_TOTAL,401856811,TOTAL,UNDER,52.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+3,FROZEN_FULL_TOTAL,401869940,TOTAL,UNDER,57.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+3,FROZEN_FULL_TOTAL,401860889,TOTAL,UNDER,63.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+3,FROZEN_FULL_TOTAL,401856686,TOTAL,OVER,54.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+3,FROZEN_FULL_TOTAL,401856792,TOTAL,UNDER,49.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+3,FROZEN_FULL_TOTAL,401858451,TOTAL,OVER,49.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+3,FROZEN_FULL_TOTAL,401858229,TOTAL,UNDER,43.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+3,FROZEN_FULL_TOTAL,401858454,TOTAL,UNDER,59.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+3,FROZEN_FULL_TOTAL,401856798,TOTAL,OVER,44.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+3,FROZEN_FULL_TOTAL,401856812,TOTAL,UNDER,50.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+3,FROZEN_FULL_TOTAL,401858456,TOTAL,OVER,49.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+3,FROZEN_FULL_TOTAL,401858460,TOTAL,OVER,45.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+3,FROZEN_FULL_TOTAL,401856695,TOTAL,UNDER,50.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+3,FROZEN_FULL_TOTAL,401864508,TOTAL,OVER,39.5,39.5,EXACT_MATCH,outputs/2026-week7-acceptance-research/source-evidence
+3,FROZEN_FULL_TOTAL,401862774,TOTAL,UNDER,50.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+3,FROZEN_FULL_TOTAL,401856685,TOTAL,UNDER,48.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+3,FROZEN_FULL_TOTAL,401856797,TOTAL,OVER,50.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+3,FROZEN_FULL_TOTAL,401858450,TOTAL,UNDER,49.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+3,FROZEN_FULL_TOTAL,401856694,TOTAL,UNDER,50.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+3,FROZEN_FULL_TOTAL,401856801,TOTAL,UNDER,56.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+3,FROZEN_FULL_TOTAL,401858457,TOTAL,UNDER,59.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+3,FROZEN_FULL_TOTAL,401858230,TOTAL,OVER,59.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+3,FROZEN_FULL_TOTAL,401858449,TOTAL,OVER,60.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+3,FROZEN_FULL_TOTAL,401858231,TOTAL,OVER,51.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+3,FROZEN_FULL_TOTAL,401867804,TOTAL,UNDER,52.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+3,FROZEN_FULL_TOTAL,401866422,TOTAL,UNDER,49.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+3,FROZEN_FULL_TOTAL,401856691,TOTAL,UNDER,58.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+3,FROZEN_FULL_TOTAL,401864574,TOTAL,OVER,51.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+3,FROZEN_FULL_TOTAL,401862710,TOTAL,OVER,49.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+3,FROZEN_FULL_TOTAL,401862771,TOTAL,UNDER,62.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+3,FROZEN_FULL_TOTAL,401871047,TOTAL,UNDER,52.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+3,FROZEN_FULL_TOTAL,401866423,TOTAL,OVER,51.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+3,FROZEN_FULL_TOTAL,401862773,TOTAL,OVER,43.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+3,FROZEN_FULL_TOTAL,401856689,TOTAL,UNDER,50.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+3,FROZEN_FULL_TOTAL,401861963,TOTAL,UNDER,54.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+3,FROZEN_FULL_TOTAL,401864443,TOTAL,UNDER,51.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+3,FROZEN_FULL_TOTAL,401869948,TOTAL,UNDER,52.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+3,FROZEN_FULL_TOTAL,401856687,TOTAL,UNDER,53.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+3,FROZEN_FULL_TOTAL,401856800,TOTAL,UNDER,51.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+3,FROZEN_FULL_TOTAL,401858232,TOTAL,UNDER,53.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+3,FROZEN_FULL_TOTAL,401856795,TOTAL,OVER,52.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+3,FROZEN_FULL_TOTAL,401856688,TOTAL,UNDER,59.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+3,FROZEN_FULL_TOTAL,401856802,TOTAL,UNDER,53.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+3,FROZEN_FULL_TOTAL,401856690,TOTAL,UNDER,46.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+3,FROZEN_FULL_TOTAL,401856796,TOTAL,OVER,48.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+3,FROZEN_FULL_TOTAL,401858453,TOTAL,UNDER,52.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+3,FROZEN_FULL_TOTAL,401856692,TOTAL,UNDER,60.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+3,FROZEN_FULL_TOTAL,401856799,TOTAL,UNDER,56.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+3,FROZEN_FULL_TOTAL,401856693,TOTAL,UNDER,58.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+3,FROZEN_FULL_TOTAL,401862776,TOTAL,UNDER,56.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+3,FROZEN_FULL_TOTAL,401860887,TOTAL,UNDER,46.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+3,FROZEN_FULL_TOTAL,401856793,TOTAL,UNDER,49.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+3,FROZEN_FULL_TOTAL,401864507,TOTAL,UNDER,50.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+3,FROZEN_FULL_TOTAL,401858458,TOTAL,OVER,52.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+3,FROZEN_FULL_TOTAL,401860888,TOTAL,UNDER,50.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+3,FROZEN_FULL_TOTAL,401858226,ATS,Miami,,-20.5,SUBMITTED_NOT_IN_COHORT,outputs/2026-week7-acceptance-research/source-evidence
+3,FROZEN_FULL_TOTAL,401858230,ATS,SMU,,2.5,SUBMITTED_NOT_IN_COHORT,outputs/2026-week7-acceptance-research/source-evidence
+3,FROZEN_FULL_TOTAL,401856796,ATS,Colorado,,3.5,SUBMITTED_NOT_IN_COHORT,outputs/2026-week7-acceptance-research/source-evidence
+3,FROZEN_FULL_TOTAL,401858449,TOTAL,UNDER,,60.5,SUBMITTED_NOT_IN_COHORT,outputs/2026-week7-acceptance-research/source-evidence
+3,GOVERNED_ATS_TOP5,401858451,ATS,Akron,23.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+3,GOVERNED_ATS_TOP5,401858460,ATS,Eastern Michigan,24.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+3,GOVERNED_ATS_TOP5,401856695,ATS,NC State,3.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+3,GOVERNED_ATS_TOP5,401866422,ATS,Ball State,14.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+3,GOVERNED_ATS_TOP5,401862776,ATS,UAB,7.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-acceptance-research/source-evidence
+3,GOVERNED_ATS_TOP5,401858226,ATS,Miami,,-20.5,SUBMITTED_NOT_IN_COHORT,outputs/2026-week7-acceptance-research/source-evidence
+3,GOVERNED_ATS_TOP5,401858230,ATS,SMU,,2.5,SUBMITTED_NOT_IN_COHORT,outputs/2026-week7-acceptance-research/source-evidence
+3,GOVERNED_ATS_TOP5,401856796,ATS,Colorado,,3.5,SUBMITTED_NOT_IN_COHORT,outputs/2026-week7-acceptance-research/source-evidence
+3,GOVERNED_ATS_TOP5,401864508,TOTAL,OVER,,39.5,SUBMITTED_NOT_IN_COHORT,outputs/2026-week7-acceptance-research/source-evidence
+3,GOVERNED_ATS_TOP5,401858449,TOTAL,UNDER,,60.5,SUBMITTED_NOT_IN_COHORT,outputs/2026-week7-acceptance-research/source-evidence
+5,AI_CONTEXTUAL_DECISION,401858245,ATS,Pittsburgh,3.5,3.5,EXACT_MATCH,outputs/2026-week5-review-20261001/week5_decision_shortlist.csv
+5,AI_CONTEXTUAL_DECISION,401856707,ATS,Mississippi State,5.5,5.5,EXACT_MATCH,outputs/2026-week5-review-20261001/week5_decision_shortlist.csv
+5,AI_CONTEXTUAL_DECISION,401856820,ATS,Cincinnati,7.5,7.5,EXACT_MATCH,outputs/2026-week5-review-20261001/week5_decision_shortlist.csv
+5,AI_CONTEXTUAL_DECISION,401858476,ATS,Northwestern,2.5,2.5,EXACT_MATCH,outputs/2026-week5-review-20261001/week5_decision_shortlist.csv
+5,AI_CONTEXTUAL_DECISION,401871050,ATS,Delaware,7.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week5-review-20261001/week5_decision_shortlist.csv
+5,AI_CONTEXTUAL_DECISION,401856821,ATS,Texas Tech,,-13.5,SUBMITTED_NOT_IN_COHORT,outputs/2026-week5-review-20261001/week5_decision_shortlist.csv
+5,ATS_RESEARCH_TOP10,401856807,ATS,Middle Tennessee,19.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week5-postgame-audit
+5,ATS_RESEARCH_TOP10,401856821,ATS,Colorado,13.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week5-postgame-audit
+5,ATS_RESEARCH_TOP10,401858250,ATS,North Carolina,21.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week5-postgame-audit
+5,ATS_RESEARCH_TOP10,401858252,ATS,UConn,6.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week5-postgame-audit
+5,ATS_RESEARCH_TOP10,401858473,ATS,Iowa,13.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week5-postgame-audit
+5,ATS_RESEARCH_TOP10,401862787,ATS,Charlotte,20.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week5-postgame-audit
+5,ATS_RESEARCH_TOP10,401866432,ATS,Buffalo,13.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week5-postgame-audit
+5,ATS_RESEARCH_TOP10,401866433,ATS,Massachusetts,-5.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week5-postgame-audit
+5,ATS_RESEARCH_TOP10,401869956,ATS,Georgia State,-1.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week5-postgame-audit
+5,ATS_RESEARCH_TOP10,401871049,ATS,New Mexico State,-2.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week5-postgame-audit
+5,ATS_RESEARCH_TOP10,401858245,ATS,Pittsburgh,,3.5,SUBMITTED_NOT_IN_COHORT,outputs/2026-week5-postgame-audit
+5,ATS_RESEARCH_TOP10,401856707,ATS,Mississippi State,,5.5,SUBMITTED_NOT_IN_COHORT,outputs/2026-week5-postgame-audit
+5,ATS_RESEARCH_TOP10,401856820,ATS,Cincinnati,,7.5,SUBMITTED_NOT_IN_COHORT,outputs/2026-week5-postgame-audit
+5,ATS_RESEARCH_TOP10,401858476,ATS,Northwestern,,2.5,SUBMITTED_NOT_IN_COHORT,outputs/2026-week5-postgame-audit
+5,ATS_RESEARCH_TOP10,401856821,ATS,Texas Tech,,-13.5,SUBMITTED_NOT_IN_COHORT,outputs/2026-week5-postgame-audit
+5,ATS_RESEARCH_TOP5,401858252,ATS,UConn,6.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week5-postgame-audit
+5,ATS_RESEARCH_TOP5,401858473,ATS,Iowa,13.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week5-postgame-audit
+5,ATS_RESEARCH_TOP5,401866432,ATS,Buffalo,13.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week5-postgame-audit
+5,ATS_RESEARCH_TOP5,401866433,ATS,Massachusetts,-5.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week5-postgame-audit
+5,ATS_RESEARCH_TOP5,401869956,ATS,Georgia State,-1.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week5-postgame-audit
+5,ATS_RESEARCH_TOP5,401858245,ATS,Pittsburgh,,3.5,SUBMITTED_NOT_IN_COHORT,outputs/2026-week5-postgame-audit
+5,ATS_RESEARCH_TOP5,401856707,ATS,Mississippi State,,5.5,SUBMITTED_NOT_IN_COHORT,outputs/2026-week5-postgame-audit
+5,ATS_RESEARCH_TOP5,401856820,ATS,Cincinnati,,7.5,SUBMITTED_NOT_IN_COHORT,outputs/2026-week5-postgame-audit
+5,ATS_RESEARCH_TOP5,401858476,ATS,Northwestern,,2.5,SUBMITTED_NOT_IN_COHORT,outputs/2026-week5-postgame-audit
+5,ATS_RESEARCH_TOP5,401856821,ATS,Texas Tech,,-13.5,SUBMITTED_NOT_IN_COHORT,outputs/2026-week5-postgame-audit
+5,FROZEN_FULL_ATS,401856705,ATS,Vanderbilt,24.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week5-postgame-audit
+5,FROZEN_FULL_ATS,401856707,ATS,Mississippi State,5.5,5.5,EXACT_MATCH,outputs/2026-week5-postgame-audit
+5,FROZEN_FULL_ATS,401856708,ATS,Missouri,5.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week5-postgame-audit
+5,FROZEN_FULL_ATS,401856709,ATS,Kentucky,2.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week5-postgame-audit
+5,FROZEN_FULL_ATS,401856710,ATS,Tennessee,-7.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week5-postgame-audit
+5,FROZEN_FULL_ATS,401856711,ATS,Arkansas,14.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week5-postgame-audit
+5,FROZEN_FULL_ATS,401856807,ATS,Middle Tennessee,19.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week5-postgame-audit
+5,FROZEN_FULL_ATS,401856817,ATS,Baylor,3.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week5-postgame-audit
+5,FROZEN_FULL_ATS,401856818,ATS,BYU,-6.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week5-postgame-audit
+5,FROZEN_FULL_ATS,401856819,ATS,UCF,12.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week5-postgame-audit
+5,FROZEN_FULL_ATS,401856820,ATS,Cincinnati,7.5,7.5,EXACT_MATCH,outputs/2026-week5-postgame-audit
+5,FROZEN_FULL_ATS,401856821,ATS,Colorado,13.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week5-postgame-audit
+5,FROZEN_FULL_ATS,401856822,ATS,Iowa State,-2.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week5-postgame-audit
+5,FROZEN_FULL_ATS,401858245,ATS,Pittsburgh,3.5,3.5,EXACT_MATCH,outputs/2026-week5-postgame-audit
+5,FROZEN_FULL_ATS,401858246,ATS,Boston College,20.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week5-postgame-audit
+5,FROZEN_FULL_ATS,401858247,ATS,UNLV,-2.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week5-postgame-audit
+5,FROZEN_FULL_ATS,401858248,ATS,NC State,4.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week5-postgame-audit
+5,FROZEN_FULL_ATS,401858249,ATS,Clemson,16.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week5-postgame-audit
+5,FROZEN_FULL_ATS,401858250,ATS,North Carolina,21.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week5-postgame-audit
+5,FROZEN_FULL_ATS,401858251,ATS,Stanford,12.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week5-postgame-audit
+5,FROZEN_FULL_ATS,401858252,ATS,UConn,6.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week5-postgame-audit
+5,FROZEN_FULL_ATS,401858253,ATS,Virginia,-2.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week5-postgame-audit
+5,FROZEN_FULL_ATS,401858472,ATS,Purdue,10.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week5-postgame-audit
+5,FROZEN_FULL_ATS,401858473,ATS,Iowa,13.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week5-postgame-audit
+5,FROZEN_FULL_ATS,401858474,ATS,Minnesota,5.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week5-postgame-audit
+5,FROZEN_FULL_ATS,401858475,ATS,Nebraska,-14.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week5-postgame-audit
+5,FROZEN_FULL_ATS,401858476,ATS,Northwestern,2.5,2.5,EXACT_MATCH,outputs/2026-week5-postgame-audit
+5,FROZEN_FULL_ATS,401858477,ATS,Rutgers,24.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week5-postgame-audit
+5,FROZEN_FULL_ATS,401858478,ATS,Washington,9.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week5-postgame-audit
+5,FROZEN_FULL_ATS,401858479,ATS,Wisconsin,-10.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week5-postgame-audit
+5,FROZEN_FULL_ATS,401860898,ATS,Utah State,20.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week5-postgame-audit
+5,FROZEN_FULL_ATS,401860899,ATS,Colorado State,6.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week5-postgame-audit
+5,FROZEN_FULL_ATS,401860900,ATS,Texas State,-4.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week5-postgame-audit
+5,FROZEN_FULL_ATS,401860921,ATS,Fresno State,2.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week5-postgame-audit
+5,FROZEN_FULL_ATS,401862786,ATS,Tulsa,-1.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week5-postgame-audit
+5,FROZEN_FULL_ATS,401862787,ATS,Charlotte,20.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week5-postgame-audit
+5,FROZEN_FULL_ATS,401862788,ATS,Rice,11.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week5-postgame-audit
+5,FROZEN_FULL_ATS,401862791,ATS,Air Force,-3.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week5-postgame-audit
+5,FROZEN_FULL_ATS,401862792,ATS,South Florida,-5.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week5-postgame-audit
+5,FROZEN_FULL_ATS,401864513,ATS,San José State,2.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week5-postgame-audit
+5,FROZEN_FULL_ATS,401864514,ATS,New Mexico,-22.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week5-postgame-audit
+5,FROZEN_FULL_ATS,401864515,ATS,Wyoming,18.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week5-postgame-audit
+5,FROZEN_FULL_ATS,401866430,ATS,Central Michigan,-6.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week5-postgame-audit
+5,FROZEN_FULL_ATS,401866431,ATS,Ball State,19.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week5-postgame-audit
+5,FROZEN_FULL_ATS,401866432,ATS,Buffalo,13.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week5-postgame-audit
+5,FROZEN_FULL_ATS,401866433,ATS,Massachusetts,-5.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week5-postgame-audit
+5,FROZEN_FULL_ATS,401866434,ATS,Kent State,3.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week5-postgame-audit
+5,FROZEN_FULL_ATS,401866477,ATS,Miami (OH),-13.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week5-postgame-audit
+5,FROZEN_FULL_ATS,401869842,ATS,Louisiana Tech,2.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week5-postgame-audit
+5,FROZEN_FULL_ATS,401869932,ATS,Louisiana,-6.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week5-postgame-audit
+5,FROZEN_FULL_ATS,401869942,ATS,Coastal Carolina,2.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week5-postgame-audit
+5,FROZEN_FULL_ATS,401869956,ATS,Georgia State,-1.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week5-postgame-audit
+5,FROZEN_FULL_ATS,401869962,ATS,James Madison,-18.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week5-postgame-audit
+5,FROZEN_FULL_ATS,401871049,ATS,New Mexico State,-2.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week5-postgame-audit
+5,FROZEN_FULL_ATS,401871050,ATS,Delaware,7.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week5-postgame-audit
+5,FROZEN_FULL_ATS,401871089,ATS,UL Monroe,13.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week5-postgame-audit
+5,FROZEN_FULL_ATS,401856821,ATS,Texas Tech,,-13.5,SUBMITTED_NOT_IN_COHORT,outputs/2026-week5-postgame-audit
+5,FROZEN_FULL_TOTAL,401856705,TOTAL,UNDER,51.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week5-postgame-audit
+5,FROZEN_FULL_TOTAL,401856707,TOTAL,UNDER,60.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week5-postgame-audit
+5,FROZEN_FULL_TOTAL,401856708,TOTAL,UNDER,57.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week5-postgame-audit
+5,FROZEN_FULL_TOTAL,401856709,TOTAL,OVER,53.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week5-postgame-audit
+5,FROZEN_FULL_TOTAL,401856710,TOTAL,UNDER,54.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week5-postgame-audit
+5,FROZEN_FULL_TOTAL,401856711,TOTAL,UNDER,50.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week5-postgame-audit
+5,FROZEN_FULL_TOTAL,401856807,TOTAL,UNDER,49.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week5-postgame-audit
+5,FROZEN_FULL_TOTAL,401856817,TOTAL,UNDER,48.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week5-postgame-audit
+5,FROZEN_FULL_TOTAL,401856818,TOTAL,OVER,47.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week5-postgame-audit
+5,FROZEN_FULL_TOTAL,401856819,TOTAL,UNDER,51.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week5-postgame-audit
+5,FROZEN_FULL_TOTAL,401856820,TOTAL,UNDER,55.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week5-postgame-audit
+5,FROZEN_FULL_TOTAL,401856821,TOTAL,UNDER,50.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week5-postgame-audit
+5,FROZEN_FULL_TOTAL,401856822,TOTAL,UNDER,52.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week5-postgame-audit
+5,FROZEN_FULL_TOTAL,401858245,TOTAL,UNDER,54.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week5-postgame-audit
+5,FROZEN_FULL_TOTAL,401858246,TOTAL,UNDER,55.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week5-postgame-audit
+5,FROZEN_FULL_TOTAL,401858247,TOTAL,UNDER,52.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week5-postgame-audit
+5,FROZEN_FULL_TOTAL,401858248,TOTAL,UNDER,59.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week5-postgame-audit
+5,FROZEN_FULL_TOTAL,401858249,TOTAL,OVER,47.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week5-postgame-audit
+5,FROZEN_FULL_TOTAL,401858250,TOTAL,OVER,46.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week5-postgame-audit
+5,FROZEN_FULL_TOTAL,401858251,TOTAL,OVER,53.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week5-postgame-audit
+5,FROZEN_FULL_TOTAL,401858252,TOTAL,UNDER,50.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week5-postgame-audit
+5,FROZEN_FULL_TOTAL,401858253,TOTAL,OVER,51.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week5-postgame-audit
+5,FROZEN_FULL_TOTAL,401858472,TOTAL,OVER,61.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week5-postgame-audit
+5,FROZEN_FULL_TOTAL,401858473,TOTAL,OVER,45.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week5-postgame-audit
+5,FROZEN_FULL_TOTAL,401858474,TOTAL,OVER,43.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week5-postgame-audit
+5,FROZEN_FULL_TOTAL,401858475,TOTAL,UNDER,52.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week5-postgame-audit
+5,FROZEN_FULL_TOTAL,401858476,TOTAL,OVER,45.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week5-postgame-audit
+5,FROZEN_FULL_TOTAL,401858477,TOTAL,UNDER,55.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week5-postgame-audit
+5,FROZEN_FULL_TOTAL,401858478,TOTAL,UNDER,58.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week5-postgame-audit
+5,FROZEN_FULL_TOTAL,401858479,TOTAL,OVER,43.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week5-postgame-audit
+5,FROZEN_FULL_TOTAL,401860898,TOTAL,UNDER,51.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week5-postgame-audit
+5,FROZEN_FULL_TOTAL,401860899,TOTAL,UNDER,62.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week5-postgame-audit
+5,FROZEN_FULL_TOTAL,401860900,TOTAL,UNDER,59.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week5-postgame-audit
+5,FROZEN_FULL_TOTAL,401860921,TOTAL,UNDER,46.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week5-postgame-audit
+5,FROZEN_FULL_TOTAL,401862786,TOTAL,UNDER,57.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week5-postgame-audit
+5,FROZEN_FULL_TOTAL,401862787,TOTAL,UNDER,52.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week5-postgame-audit
+5,FROZEN_FULL_TOTAL,401862788,TOTAL,UNDER,55.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week5-postgame-audit
+5,FROZEN_FULL_TOTAL,401862791,TOTAL,OVER,46.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week5-postgame-audit
+5,FROZEN_FULL_TOTAL,401862792,TOTAL,OVER,48.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week5-postgame-audit
+5,FROZEN_FULL_TOTAL,401864513,TOTAL,UNDER,51.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week5-postgame-audit
+5,FROZEN_FULL_TOTAL,401864514,TOTAL,UNDER,48.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week5-postgame-audit
+5,FROZEN_FULL_TOTAL,401864515,TOTAL,OVER,45.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week5-postgame-audit
+5,FROZEN_FULL_TOTAL,401866430,TOTAL,OVER,47.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week5-postgame-audit
+5,FROZEN_FULL_TOTAL,401866431,TOTAL,OVER,51.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week5-postgame-audit
+5,FROZEN_FULL_TOTAL,401866432,TOTAL,OVER,46.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week5-postgame-audit
+5,FROZEN_FULL_TOTAL,401866433,TOTAL,UNDER,48.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week5-postgame-audit
+5,FROZEN_FULL_TOTAL,401866434,TOTAL,OVER,50.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week5-postgame-audit
+5,FROZEN_FULL_TOTAL,401866477,TOTAL,OVER,43.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week5-postgame-audit
+5,FROZEN_FULL_TOTAL,401869842,TOTAL,OVER,46.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week5-postgame-audit
+5,FROZEN_FULL_TOTAL,401869932,TOTAL,UNDER,47.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week5-postgame-audit
+5,FROZEN_FULL_TOTAL,401869942,TOTAL,UNDER,54.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week5-postgame-audit
+5,FROZEN_FULL_TOTAL,401869956,TOTAL,UNDER,51.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week5-postgame-audit
+5,FROZEN_FULL_TOTAL,401869962,TOTAL,UNDER,55.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week5-postgame-audit
+5,FROZEN_FULL_TOTAL,401871049,TOTAL,UNDER,57.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week5-postgame-audit
+5,FROZEN_FULL_TOTAL,401871050,TOTAL,UNDER,49.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week5-postgame-audit
+5,FROZEN_FULL_TOTAL,401871089,TOTAL,UNDER,57.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week5-postgame-audit
+5,FROZEN_FULL_TOTAL,401858245,ATS,Pittsburgh,,3.5,SUBMITTED_NOT_IN_COHORT,outputs/2026-week5-postgame-audit
+5,FROZEN_FULL_TOTAL,401856707,ATS,Mississippi State,,5.5,SUBMITTED_NOT_IN_COHORT,outputs/2026-week5-postgame-audit
+5,FROZEN_FULL_TOTAL,401856820,ATS,Cincinnati,,7.5,SUBMITTED_NOT_IN_COHORT,outputs/2026-week5-postgame-audit
+5,FROZEN_FULL_TOTAL,401858476,ATS,Northwestern,,2.5,SUBMITTED_NOT_IN_COHORT,outputs/2026-week5-postgame-audit
+5,FROZEN_FULL_TOTAL,401856821,ATS,Texas Tech,,-13.5,SUBMITTED_NOT_IN_COHORT,outputs/2026-week5-postgame-audit
+5,GOVERNED_ATS_TOP5,401858245,ATS,Pittsburgh,3.5,3.5,EXACT_MATCH,outputs/2026-week5-postgame-audit
+5,GOVERNED_ATS_TOP5,401858476,ATS,Northwestern,2.5,2.5,EXACT_MATCH,outputs/2026-week5-postgame-audit
+5,GOVERNED_ATS_TOP5,401862786,ATS,Tulsa,-1.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week5-postgame-audit
+5,GOVERNED_ATS_TOP5,401871049,ATS,New Mexico State,-2.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week5-postgame-audit
+5,GOVERNED_ATS_TOP5,401871050,ATS,Delaware,7.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week5-postgame-audit
+5,GOVERNED_ATS_TOP5,401856707,ATS,Mississippi State,,5.5,SUBMITTED_NOT_IN_COHORT,outputs/2026-week5-postgame-audit
+5,GOVERNED_ATS_TOP5,401856820,ATS,Cincinnati,,7.5,SUBMITTED_NOT_IN_COHORT,outputs/2026-week5-postgame-audit
+5,GOVERNED_ATS_TOP5,401856821,ATS,Texas Tech,,-13.5,SUBMITTED_NOT_IN_COHORT,outputs/2026-week5-postgame-audit
+5,TOTAL_RESEARCH_TOP10,401856710,TOTAL,UNDER,54.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week5-postgame-audit
+5,TOTAL_RESEARCH_TOP10,401858246,TOTAL,UNDER,55.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week5-postgame-audit
+5,TOTAL_RESEARCH_TOP10,401858247,TOTAL,UNDER,52.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week5-postgame-audit
+5,TOTAL_RESEARCH_TOP10,401858473,TOTAL,OVER,45.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week5-postgame-audit
+5,TOTAL_RESEARCH_TOP10,401858476,TOTAL,OVER,45.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week5-postgame-audit
+5,TOTAL_RESEARCH_TOP10,401858478,TOTAL,UNDER,58.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week5-postgame-audit
+5,TOTAL_RESEARCH_TOP10,401860900,TOTAL,UNDER,59.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week5-postgame-audit
+5,TOTAL_RESEARCH_TOP10,401862791,TOTAL,OVER,46.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week5-postgame-audit
+5,TOTAL_RESEARCH_TOP10,401866477,TOTAL,OVER,43.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week5-postgame-audit
+5,TOTAL_RESEARCH_TOP10,401869956,TOTAL,UNDER,51.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week5-postgame-audit
+5,TOTAL_RESEARCH_TOP10,401858245,ATS,Pittsburgh,,3.5,SUBMITTED_NOT_IN_COHORT,outputs/2026-week5-postgame-audit
+5,TOTAL_RESEARCH_TOP10,401856707,ATS,Mississippi State,,5.5,SUBMITTED_NOT_IN_COHORT,outputs/2026-week5-postgame-audit
+5,TOTAL_RESEARCH_TOP10,401856820,ATS,Cincinnati,,7.5,SUBMITTED_NOT_IN_COHORT,outputs/2026-week5-postgame-audit
+5,TOTAL_RESEARCH_TOP10,401858476,ATS,Northwestern,,2.5,SUBMITTED_NOT_IN_COHORT,outputs/2026-week5-postgame-audit
+5,TOTAL_RESEARCH_TOP10,401856821,ATS,Texas Tech,,-13.5,SUBMITTED_NOT_IN_COHORT,outputs/2026-week5-postgame-audit
+5,TOTAL_RESEARCH_TOP5,401856710,TOTAL,UNDER,54.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week5-postgame-audit
+5,TOTAL_RESEARCH_TOP5,401858246,TOTAL,UNDER,55.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week5-postgame-audit
+5,TOTAL_RESEARCH_TOP5,401858247,TOTAL,UNDER,52.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week5-postgame-audit
+5,TOTAL_RESEARCH_TOP5,401858476,TOTAL,OVER,45.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week5-postgame-audit
+5,TOTAL_RESEARCH_TOP5,401862791,TOTAL,OVER,46.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week5-postgame-audit
+5,TOTAL_RESEARCH_TOP5,401858245,ATS,Pittsburgh,,3.5,SUBMITTED_NOT_IN_COHORT,outputs/2026-week5-postgame-audit
+5,TOTAL_RESEARCH_TOP5,401856707,ATS,Mississippi State,,5.5,SUBMITTED_NOT_IN_COHORT,outputs/2026-week5-postgame-audit
+5,TOTAL_RESEARCH_TOP5,401856820,ATS,Cincinnati,,7.5,SUBMITTED_NOT_IN_COHORT,outputs/2026-week5-postgame-audit
+5,TOTAL_RESEARCH_TOP5,401858476,ATS,Northwestern,,2.5,SUBMITTED_NOT_IN_COHORT,outputs/2026-week5-postgame-audit
+5,TOTAL_RESEARCH_TOP5,401856821,ATS,Texas Tech,,-13.5,SUBMITTED_NOT_IN_COHORT,outputs/2026-week5-postgame-audit
+6,AI_CONTEXTUAL_DECISION,401856718,ATS,Vanderbilt,10.5,10.5,EXACT_MATCH,outputs/2026-week6-execution-20261006T2133Z/week6_decision_shortlist.csv
+6,AI_CONTEXTUAL_DECISION,401856824,TOTAL,UNDER,53.5,53.5,EXACT_MATCH,outputs/2026-week6-execution-20261006T2133Z/week6_decision_shortlist.csv
+6,AI_CONTEXTUAL_DECISION,401862795,TOTAL,OVER,47.5,47.5,EXACT_MATCH,outputs/2026-week6-execution-20261006T2133Z/week6_decision_shortlist.csv
+6,AI_CONTEXTUAL_DECISION,401860902,TOTAL,UNDER,55.5,55.5,EXACT_MATCH,outputs/2026-week6-execution-20261006T2133Z/week6_decision_shortlist.csv
+6,AI_CONTEXTUAL_DECISION,401858257,ATS,Stanford,37.5,37.5,EXACT_MATCH,outputs/2026-week6-execution-20261006T2133Z/week6_decision_shortlist.csv
+6,ATS_RESEARCH_TOP10,401856717,ATS,Oklahoma,7.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week6-postgame-audit
+6,ATS_RESEARCH_TOP10,401856718,ATS,Vanderbilt,10.5,10.5,EXACT_MATCH,outputs/2026-week6-postgame-audit
+6,ATS_RESEARCH_TOP10,401856808,ATS,Hawai'i,20.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week6-postgame-audit
+6,ATS_RESEARCH_TOP10,401858257,ATS,Stanford,37.5,37.5,EXACT_MATCH,outputs/2026-week6-postgame-audit
+6,ATS_RESEARCH_TOP10,401858481,ATS,Nebraska,7.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week6-postgame-audit
+6,ATS_RESEARCH_TOP10,401858482,ATS,Ball State,36.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week6-postgame-audit
+6,ATS_RESEARCH_TOP10,401858483,ATS,Maryland,34.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week6-postgame-audit
+6,ATS_RESEARCH_TOP10,401858484,ATS,UCLA,11.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week6-postgame-audit
+6,ATS_RESEARCH_TOP10,401862796,ATS,Charlotte,28.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week6-postgame-audit
+6,ATS_RESEARCH_TOP10,401866440,ATS,Massachusetts,2.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week6-postgame-audit
+6,ATS_RESEARCH_TOP10,401856824,TOTAL,UNDER,,53.5,SUBMITTED_NOT_IN_COHORT,outputs/2026-week6-postgame-audit
+6,ATS_RESEARCH_TOP10,401862795,TOTAL,OVER,,47.5,SUBMITTED_NOT_IN_COHORT,outputs/2026-week6-postgame-audit
+6,ATS_RESEARCH_TOP10,401860902,TOTAL,UNDER,,55.5,SUBMITTED_NOT_IN_COHORT,outputs/2026-week6-postgame-audit
+6,ATS_RESEARCH_TOP5,401856718,ATS,Vanderbilt,10.5,10.5,EXACT_MATCH,outputs/2026-week6-postgame-audit
+6,ATS_RESEARCH_TOP5,401856808,ATS,Hawai'i,20.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week6-postgame-audit
+6,ATS_RESEARCH_TOP5,401858482,ATS,Ball State,36.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week6-postgame-audit
+6,ATS_RESEARCH_TOP5,401858483,ATS,Maryland,34.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week6-postgame-audit
+6,ATS_RESEARCH_TOP5,401866440,ATS,Massachusetts,2.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week6-postgame-audit
+6,ATS_RESEARCH_TOP5,401856824,TOTAL,UNDER,,53.5,SUBMITTED_NOT_IN_COHORT,outputs/2026-week6-postgame-audit
+6,ATS_RESEARCH_TOP5,401862795,TOTAL,OVER,,47.5,SUBMITTED_NOT_IN_COHORT,outputs/2026-week6-postgame-audit
+6,ATS_RESEARCH_TOP5,401860902,TOTAL,UNDER,,55.5,SUBMITTED_NOT_IN_COHORT,outputs/2026-week6-postgame-audit
+6,ATS_RESEARCH_TOP5,401858257,ATS,Stanford,,37.5,SUBMITTED_NOT_IN_COHORT,outputs/2026-week6-postgame-audit
+6,FROZEN_FULL_ATS,401856712,ATS,Georgia,1.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week6-postgame-audit
+6,FROZEN_FULL_ATS,401856713,ATS,Tennessee,-13.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week6-postgame-audit
+6,FROZEN_FULL_ATS,401856714,ATS,Florida,-13.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week6-postgame-audit
+6,FROZEN_FULL_ATS,401856715,ATS,Kentucky,9.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week6-postgame-audit
+6,FROZEN_FULL_ATS,401856716,ATS,Missouri,-3.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week6-postgame-audit
+6,FROZEN_FULL_ATS,401856717,ATS,Oklahoma,7.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week6-postgame-audit
+6,FROZEN_FULL_ATS,401856718,ATS,Vanderbilt,10.5,10.5,EXACT_MATCH,outputs/2026-week6-postgame-audit
+6,FROZEN_FULL_ATS,401856808,ATS,Hawai'i,20.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week6-postgame-audit
+6,FROZEN_FULL_ATS,401856823,ATS,Arizona,-3.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week6-postgame-audit
+6,FROZEN_FULL_ATS,401856824,ATS,UCF,9.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week6-postgame-audit
+6,FROZEN_FULL_ATS,401856825,ATS,Kansas State,-2.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week6-postgame-audit
+6,FROZEN_FULL_ATS,401856826,ATS,BYU,-10.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week6-postgame-audit
+6,FROZEN_FULL_ATS,401856827,ATS,Kansas,15.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week6-postgame-audit
+6,FROZEN_FULL_ATS,401858254,ATS,Louisville,-3.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week6-postgame-audit
+6,FROZEN_FULL_ATS,401858255,ATS,Duke,-6.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week6-postgame-audit
+6,FROZEN_FULL_ATS,401858256,ATS,Pittsburgh,-3.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week6-postgame-audit
+6,FROZEN_FULL_ATS,401858257,ATS,Stanford,37.5,37.5,EXACT_MATCH,outputs/2026-week6-postgame-audit
+6,FROZEN_FULL_ATS,401858258,ATS,Syracuse,8.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week6-postgame-audit
+6,FROZEN_FULL_ATS,401858259,ATS,California,9.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week6-postgame-audit
+6,FROZEN_FULL_ATS,401858260,ATS,NC State,3.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week6-postgame-audit
+6,FROZEN_FULL_ATS,401858480,ATS,Illinois,-2.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week6-postgame-audit
+6,FROZEN_FULL_ATS,401858481,ATS,Nebraska,7.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week6-postgame-audit
+6,FROZEN_FULL_ATS,401858482,ATS,Ball State,36.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week6-postgame-audit
+6,FROZEN_FULL_ATS,401858483,ATS,Maryland,34.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week6-postgame-audit
+6,FROZEN_FULL_ATS,401858484,ATS,UCLA,11.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week6-postgame-audit
+6,FROZEN_FULL_ATS,401858485,ATS,Penn State,-1.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week6-postgame-audit
+6,FROZEN_FULL_ATS,401858486,ATS,Purdue,2.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week6-postgame-audit
+6,FROZEN_FULL_ATS,401858487,ATS,Washington,-2.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week6-postgame-audit
+6,FROZEN_FULL_ATS,401860901,ATS,Fresno State,6.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week6-postgame-audit
+6,FROZEN_FULL_ATS,401860902,ATS,Oregon State,-14.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week6-postgame-audit
+6,FROZEN_FULL_ATS,401860922,ATS,Utah State,-5.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week6-postgame-audit
+6,FROZEN_FULL_ATS,401861964,ATS,UConn,3.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week6-postgame-audit
+6,FROZEN_FULL_ATS,401862794,ATS,South Florida,7.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week6-postgame-audit
+6,FROZEN_FULL_ATS,401862795,ATS,Army,-3.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week6-postgame-audit
+6,FROZEN_FULL_ATS,401862796,ATS,Charlotte,28.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week6-postgame-audit
+6,FROZEN_FULL_ATS,401862797,ATS,East Carolina,-9.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week6-postgame-audit
+6,FROZEN_FULL_ATS,401862798,ATS,UAB,14.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week6-postgame-audit
+6,FROZEN_FULL_ATS,401862799,ATS,Tulsa,2.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week6-postgame-audit
+6,FROZEN_FULL_ATS,401864516,ATS,Air Force,-7.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week6-postgame-audit
+6,FROZEN_FULL_ATS,401864517,ATS,Nevada,-8.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week6-postgame-audit
+6,FROZEN_FULL_ATS,401864518,ATS,North Dakota State,-3.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week6-postgame-audit
+6,FROZEN_FULL_ATS,401864519,ATS,San José State,-6.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week6-postgame-audit
+6,FROZEN_FULL_ATS,401866435,ATS,Akron,6.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week6-postgame-audit
+6,FROZEN_FULL_ATS,401866436,ATS,Sacramento State,7.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week6-postgame-audit
+6,FROZEN_FULL_ATS,401866437,ATS,Buffalo,20.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week6-postgame-audit
+6,FROZEN_FULL_ATS,401866438,ATS,Ohio,-2.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week6-postgame-audit
+6,FROZEN_FULL_ATS,401866439,ATS,Kent State,13.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week6-postgame-audit
+6,FROZEN_FULL_ATS,401866440,ATS,Massachusetts,2.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week6-postgame-audit
+6,FROZEN_FULL_ATS,401869843,ATS,App State,-9.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week6-postgame-audit
+6,FROZEN_FULL_ATS,401869933,ATS,Arkansas State,-1.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week6-postgame-audit
+6,FROZEN_FULL_ATS,401869943,ATS,Coastal Carolina,2.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week6-postgame-audit
+6,FROZEN_FULL_ATS,401869949,ATS,Georgia Southern,7.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week6-postgame-audit
+6,FROZEN_FULL_ATS,401869965,ATS,Louisiana,2.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week6-postgame-audit
+6,FROZEN_FULL_ATS,401870766,ATS,Sam Houston,13.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week6-postgame-audit
+6,FROZEN_FULL_ATS,401871051,ATS,Jacksonville State,-2.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week6-postgame-audit
+6,FROZEN_FULL_ATS,401871052,ATS,Missouri State,2.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week6-postgame-audit
+6,FROZEN_FULL_ATS,401871066,ATS,New Mexico State,6.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week6-postgame-audit
+6,FROZEN_FULL_ATS,401871090,ATS,Southern Miss,10.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week6-postgame-audit
+6,FROZEN_FULL_ATS,401856824,TOTAL,UNDER,,53.5,SUBMITTED_NOT_IN_COHORT,outputs/2026-week6-postgame-audit
+6,FROZEN_FULL_ATS,401862795,TOTAL,OVER,,47.5,SUBMITTED_NOT_IN_COHORT,outputs/2026-week6-postgame-audit
+6,FROZEN_FULL_ATS,401860902,TOTAL,UNDER,,55.5,SUBMITTED_NOT_IN_COHORT,outputs/2026-week6-postgame-audit
+6,FROZEN_FULL_TOTAL,401856712,TOTAL,UNDER,54.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week6-postgame-audit
+6,FROZEN_FULL_TOTAL,401856713,TOTAL,UNDER,50.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week6-postgame-audit
+6,FROZEN_FULL_TOTAL,401856714,TOTAL,UNDER,61.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week6-postgame-audit
+6,FROZEN_FULL_TOTAL,401856715,TOTAL,UNDER,54.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week6-postgame-audit
+6,FROZEN_FULL_TOTAL,401856716,TOTAL,UNDER,48.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week6-postgame-audit
+6,FROZEN_FULL_TOTAL,401856717,TOTAL,UNDER,39.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week6-postgame-audit
+6,FROZEN_FULL_TOTAL,401856718,TOTAL,UNDER,58.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week6-postgame-audit
+6,FROZEN_FULL_TOTAL,401856808,TOTAL,UNDER,51.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week6-postgame-audit
+6,FROZEN_FULL_TOTAL,401856823,TOTAL,UNDER,61.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week6-postgame-audit
+6,FROZEN_FULL_TOTAL,401856824,TOTAL,UNDER,53.5,53.5,EXACT_MATCH,outputs/2026-week6-postgame-audit
+6,FROZEN_FULL_TOTAL,401856825,TOTAL,UNDER,55.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week6-postgame-audit
+6,FROZEN_FULL_TOTAL,401856826,TOTAL,OVER,46.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week6-postgame-audit
+6,FROZEN_FULL_TOTAL,401856827,TOTAL,UNDER,51.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week6-postgame-audit
+6,FROZEN_FULL_TOTAL,401858254,TOTAL,OVER,58.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week6-postgame-audit
+6,FROZEN_FULL_TOTAL,401858255,TOTAL,OVER,48.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week6-postgame-audit
+6,FROZEN_FULL_TOTAL,401858256,TOTAL,OVER,47.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week6-postgame-audit
+6,FROZEN_FULL_TOTAL,401858257,TOTAL,OVER,53.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week6-postgame-audit
+6,FROZEN_FULL_TOTAL,401858258,TOTAL,UNDER,50.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week6-postgame-audit
+6,FROZEN_FULL_TOTAL,401858259,TOTAL,UNDER,53.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week6-postgame-audit
+6,FROZEN_FULL_TOTAL,401858260,TOTAL,UNDER,59.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week6-postgame-audit
+6,FROZEN_FULL_TOTAL,401858480,TOTAL,OVER,49.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week6-postgame-audit
+6,FROZEN_FULL_TOTAL,401858481,TOTAL,OVER,51.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week6-postgame-audit
+6,FROZEN_FULL_TOTAL,401858482,TOTAL,OVER,52.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week6-postgame-audit
+6,FROZEN_FULL_TOTAL,401858483,TOTAL,UNDER,56.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week6-postgame-audit
+6,FROZEN_FULL_TOTAL,401858484,TOTAL,UNDER,59.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week6-postgame-audit
+6,FROZEN_FULL_TOTAL,401858485,TOTAL,UNDER,54.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week6-postgame-audit
+6,FROZEN_FULL_TOTAL,401858486,TOTAL,OVER,50.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week6-postgame-audit
+6,FROZEN_FULL_TOTAL,401858487,TOTAL,OVER,41.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week6-postgame-audit
+6,FROZEN_FULL_TOTAL,401860901,TOTAL,UNDER,48.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week6-postgame-audit
+6,FROZEN_FULL_TOTAL,401860902,TOTAL,UNDER,55.5,55.5,EXACT_MATCH,outputs/2026-week6-postgame-audit
+6,FROZEN_FULL_TOTAL,401860922,TOTAL,UNDER,43.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week6-postgame-audit
+6,FROZEN_FULL_TOTAL,401861964,TOTAL,UNDER,54.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week6-postgame-audit
+6,FROZEN_FULL_TOTAL,401862794,TOTAL,UNDER,50.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week6-postgame-audit
+6,FROZEN_FULL_TOTAL,401862795,TOTAL,OVER,47.5,47.5,EXACT_MATCH,outputs/2026-week6-postgame-audit
+6,FROZEN_FULL_TOTAL,401862796,TOTAL,UNDER,58.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week6-postgame-audit
+6,FROZEN_FULL_TOTAL,401862797,TOTAL,UNDER,48.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week6-postgame-audit
+6,FROZEN_FULL_TOTAL,401862798,TOTAL,UNDER,56.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week6-postgame-audit
+6,FROZEN_FULL_TOTAL,401862799,TOTAL,UNDER,48.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week6-postgame-audit
+6,FROZEN_FULL_TOTAL,401864516,TOTAL,OVER,46.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week6-postgame-audit
+6,FROZEN_FULL_TOTAL,401864517,TOTAL,UNDER,49.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week6-postgame-audit
+6,FROZEN_FULL_TOTAL,401864518,TOTAL,UNDER,48.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week6-postgame-audit
+6,FROZEN_FULL_TOTAL,401864519,TOTAL,OVER,43.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week6-postgame-audit
+6,FROZEN_FULL_TOTAL,401866435,TOTAL,UNDER,52.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week6-postgame-audit
+6,FROZEN_FULL_TOTAL,401866436,TOTAL,UNDER,44.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week6-postgame-audit
+6,FROZEN_FULL_TOTAL,401866437,TOTAL,UNDER,54.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week6-postgame-audit
+6,FROZEN_FULL_TOTAL,401866438,TOTAL,OVER,46.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week6-postgame-audit
+6,FROZEN_FULL_TOTAL,401866439,TOTAL,OVER,43.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week6-postgame-audit
+6,FROZEN_FULL_TOTAL,401866440,TOTAL,OVER,46.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week6-postgame-audit
+6,FROZEN_FULL_TOTAL,401869843,TOTAL,UNDER,50.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week6-postgame-audit
+6,FROZEN_FULL_TOTAL,401869933,TOTAL,UNDER,57.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week6-postgame-audit
+6,FROZEN_FULL_TOTAL,401869943,TOTAL,UNDER,58.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week6-postgame-audit
+6,FROZEN_FULL_TOTAL,401869949,TOTAL,UNDER,55.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week6-postgame-audit
+6,FROZEN_FULL_TOTAL,401869965,TOTAL,UNDER,48.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week6-postgame-audit
+6,FROZEN_FULL_TOTAL,401870766,TOTAL,UNDER,52.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week6-postgame-audit
+6,FROZEN_FULL_TOTAL,401871051,TOTAL,OVER,49.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week6-postgame-audit
+6,FROZEN_FULL_TOTAL,401871052,TOTAL,UNDER,56.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week6-postgame-audit
+6,FROZEN_FULL_TOTAL,401871066,TOTAL,UNDER,47.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week6-postgame-audit
+6,FROZEN_FULL_TOTAL,401871090,TOTAL,UNDER,50.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week6-postgame-audit
+6,FROZEN_FULL_TOTAL,401856718,ATS,Vanderbilt,,10.5,SUBMITTED_NOT_IN_COHORT,outputs/2026-week6-postgame-audit
+6,FROZEN_FULL_TOTAL,401858257,ATS,Stanford,,37.5,SUBMITTED_NOT_IN_COHORT,outputs/2026-week6-postgame-audit
+6,GOVERNED_ATS_TOP5,401870766,ATS,Sam Houston,13.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week6-postgame-audit
+6,GOVERNED_ATS_TOP5,401871051,ATS,Jacksonville State,-2.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week6-postgame-audit
+6,GOVERNED_ATS_TOP5,401871052,ATS,Missouri State,2.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week6-postgame-audit
+6,GOVERNED_ATS_TOP5,401871066,ATS,New Mexico State,6.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week6-postgame-audit
+6,GOVERNED_ATS_TOP5,401871090,ATS,Southern Miss,10.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week6-postgame-audit
+6,GOVERNED_ATS_TOP5,401856718,ATS,Vanderbilt,,10.5,SUBMITTED_NOT_IN_COHORT,outputs/2026-week6-postgame-audit
+6,GOVERNED_ATS_TOP5,401856824,TOTAL,UNDER,,53.5,SUBMITTED_NOT_IN_COHORT,outputs/2026-week6-postgame-audit
+6,GOVERNED_ATS_TOP5,401862795,TOTAL,OVER,,47.5,SUBMITTED_NOT_IN_COHORT,outputs/2026-week6-postgame-audit
+6,GOVERNED_ATS_TOP5,401860902,TOTAL,UNDER,,55.5,SUBMITTED_NOT_IN_COHORT,outputs/2026-week6-postgame-audit
+6,GOVERNED_ATS_TOP5,401858257,ATS,Stanford,,37.5,SUBMITTED_NOT_IN_COHORT,outputs/2026-week6-postgame-audit
+6,ORIGINAL_COMBINED_RESEARCH_TOP5,401856824,TOTAL,UNDER,53.5,53.5,EXACT_MATCH,outputs/2026-week6-execution-20261006T2133Z/week6_combined_top5.csv
+6,ORIGINAL_COMBINED_RESEARCH_TOP5,401862795,TOTAL,OVER,47.5,47.5,EXACT_MATCH,outputs/2026-week6-execution-20261006T2133Z/week6_combined_top5.csv
+6,ORIGINAL_COMBINED_RESEARCH_TOP5,401858484,TOTAL,UNDER,59.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week6-execution-20261006T2133Z/week6_combined_top5.csv
+6,ORIGINAL_COMBINED_RESEARCH_TOP5,401856823,TOTAL,UNDER,61.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week6-execution-20261006T2133Z/week6_combined_top5.csv
+6,ORIGINAL_COMBINED_RESEARCH_TOP5,401866438,TOTAL,OVER,46.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week6-execution-20261006T2133Z/week6_combined_top5.csv
+6,ORIGINAL_COMBINED_RESEARCH_TOP5,401856718,ATS,Vanderbilt,,10.5,SUBMITTED_NOT_IN_COHORT,outputs/2026-week6-execution-20261006T2133Z/week6_combined_top5.csv
+6,ORIGINAL_COMBINED_RESEARCH_TOP5,401860902,TOTAL,UNDER,,55.5,SUBMITTED_NOT_IN_COHORT,outputs/2026-week6-execution-20261006T2133Z/week6_combined_top5.csv
+6,ORIGINAL_COMBINED_RESEARCH_TOP5,401858257,ATS,Stanford,,37.5,SUBMITTED_NOT_IN_COHORT,outputs/2026-week6-execution-20261006T2133Z/week6_combined_top5.csv
+6,TOTAL_RESEARCH_TOP10,401856823,TOTAL,UNDER,61.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week6-postgame-audit
+6,TOTAL_RESEARCH_TOP10,401856824,TOTAL,UNDER,53.5,53.5,EXACT_MATCH,outputs/2026-week6-postgame-audit
+6,TOTAL_RESEARCH_TOP10,401858259,TOTAL,UNDER,53.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week6-postgame-audit
+6,TOTAL_RESEARCH_TOP10,401858483,TOTAL,UNDER,56.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week6-postgame-audit
+6,TOTAL_RESEARCH_TOP10,401858484,TOTAL,UNDER,59.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week6-postgame-audit
+6,TOTAL_RESEARCH_TOP10,401860902,TOTAL,UNDER,55.5,55.5,EXACT_MATCH,outputs/2026-week6-postgame-audit
+6,TOTAL_RESEARCH_TOP10,401862795,TOTAL,OVER,47.5,47.5,EXACT_MATCH,outputs/2026-week6-postgame-audit
+6,TOTAL_RESEARCH_TOP10,401866438,TOTAL,OVER,46.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week6-postgame-audit
+6,TOTAL_RESEARCH_TOP10,401870766,TOTAL,UNDER,52.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week6-postgame-audit
+6,TOTAL_RESEARCH_TOP10,401871052,TOTAL,UNDER,56.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week6-postgame-audit
+6,TOTAL_RESEARCH_TOP10,401856718,ATS,Vanderbilt,,10.5,SUBMITTED_NOT_IN_COHORT,outputs/2026-week6-postgame-audit
+6,TOTAL_RESEARCH_TOP10,401858257,ATS,Stanford,,37.5,SUBMITTED_NOT_IN_COHORT,outputs/2026-week6-postgame-audit
+6,TOTAL_RESEARCH_TOP5,401856823,TOTAL,UNDER,61.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week6-postgame-audit
+6,TOTAL_RESEARCH_TOP5,401856824,TOTAL,UNDER,53.5,53.5,EXACT_MATCH,outputs/2026-week6-postgame-audit
+6,TOTAL_RESEARCH_TOP5,401858484,TOTAL,UNDER,59.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week6-postgame-audit
+6,TOTAL_RESEARCH_TOP5,401862795,TOTAL,OVER,47.5,47.5,EXACT_MATCH,outputs/2026-week6-postgame-audit
+6,TOTAL_RESEARCH_TOP5,401866438,TOTAL,OVER,46.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week6-postgame-audit
+6,TOTAL_RESEARCH_TOP5,401856718,ATS,Vanderbilt,,10.5,SUBMITTED_NOT_IN_COHORT,outputs/2026-week6-postgame-audit
+6,TOTAL_RESEARCH_TOP5,401860902,TOTAL,UNDER,,55.5,SUBMITTED_NOT_IN_COHORT,outputs/2026-week6-postgame-audit
+6,TOTAL_RESEARCH_TOP5,401858257,ATS,Stanford,,37.5,SUBMITTED_NOT_IN_COHORT,outputs/2026-week6-postgame-audit
+7,FROZEN_FULL_ATS,401856719,ATS,Auburn,20.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-postgame-audit
+7,FROZEN_FULL_ATS,401856720,ATS,Mississippi State,14.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-postgame-audit
+7,FROZEN_FULL_ATS,401856721,ATS,Missouri,6.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-postgame-audit
+7,FROZEN_FULL_ATS,401856722,ATS,Kentucky,6.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-postgame-audit
+7,FROZEN_FULL_ATS,401856723,ATS,Tennessee,8.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-postgame-audit
+7,FROZEN_FULL_ATS,401856724,ATS,Florida,10.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-postgame-audit
+7,FROZEN_FULL_ATS,401856726,ATS,Vanderbilt,-6.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-postgame-audit
+7,FROZEN_FULL_ATS,401856809,ATS,BYU,10.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-postgame-audit
+7,FROZEN_FULL_ATS,401856828,ATS,Arizona State,14.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-postgame-audit
+7,FROZEN_FULL_ATS,401856829,ATS,Cincinnati,1.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-postgame-audit
+7,FROZEN_FULL_ATS,401856830,ATS,Kansas,4.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-postgame-audit
+7,FROZEN_FULL_ATS,401856831,ATS,Houston,-4.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-postgame-audit
+7,FROZEN_FULL_ATS,401856832,ATS,TCU,6.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-postgame-audit
+7,FROZEN_FULL_ATS,401856833,ATS,Colorado,15.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-postgame-audit
+7,FROZEN_FULL_ATS,401858263,ATS,Miami,-21.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-postgame-audit
+7,FROZEN_FULL_ATS,401858264,ATS,Virginia Tech,-9.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-postgame-audit
+7,FROZEN_FULL_ATS,401858265,ATS,Syracuse,14.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-postgame-audit
+7,FROZEN_FULL_ATS,401858266,ATS,Duke,-3.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-postgame-audit
+7,FROZEN_FULL_ATS,401858267,ATS,Boston College,6.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-postgame-audit
+7,FROZEN_FULL_ATS,401858268,ATS,Virginia,8.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-postgame-audit
+7,FROZEN_FULL_ATS,401858269,ATS,California,9.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-postgame-audit
+7,FROZEN_FULL_ATS,401858488,ATS,Indiana,3.5,3.5,EXACT_MATCH,outputs/2026-week7-postgame-audit
+7,FROZEN_FULL_ATS,401858489,ATS,Maryland,-5.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-postgame-audit
+7,FROZEN_FULL_ATS,401858490,ATS,Michigan,-6.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-postgame-audit
+7,FROZEN_FULL_ATS,401858491,ATS,Northwestern,-7.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-postgame-audit
+7,FROZEN_FULL_ATS,401858492,ATS,Nebraska,7.5,7.5,EXACT_MATCH,outputs/2026-week7-postgame-audit
+7,FROZEN_FULL_ATS,401858493,ATS,Washington,3.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-postgame-audit
+7,FROZEN_FULL_ATS,401858494,ATS,UCLA,-2.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-postgame-audit
+7,FROZEN_FULL_ATS,401860903,ATS,Oregon State,-18.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-postgame-audit
+7,FROZEN_FULL_ATS,401860904,ATS,Fresno State,-7.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-postgame-audit
+7,FROZEN_FULL_ATS,401860923,ATS,Colorado State,14.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-postgame-audit
+7,FROZEN_FULL_ATS,401862800,ATS,UAB,4.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-postgame-audit
+7,FROZEN_FULL_ATS,401862801,ATS,Tulane,7.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-postgame-audit
+7,FROZEN_FULL_ATS,401862802,ATS,Army,-2.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-postgame-audit
+7,FROZEN_FULL_ATS,401862803,ATS,Charlotte,21.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-postgame-audit
+7,FROZEN_FULL_ATS,401862804,ATS,Navy,6.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-postgame-audit
+7,FROZEN_FULL_ATS,401862805,ATS,Rice,4.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-postgame-audit
+7,FROZEN_FULL_ATS,401862806,ATS,Kent State,20.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-postgame-audit
+7,FROZEN_FULL_ATS,401864520,ATS,North Dakota State,-14.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-postgame-audit
+7,FROZEN_FULL_ATS,401864521,ATS,New Mexico,-14.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-postgame-audit
+7,FROZEN_FULL_ATS,401864522,ATS,Wyoming,-8.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-postgame-audit
+7,FROZEN_FULL_ATS,401864523,ATS,San José State,-7.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-postgame-audit
+7,FROZEN_FULL_ATS,401864524,ATS,Air Force,1.5,1.5,EXACT_MATCH,outputs/2026-week7-postgame-audit
+7,FROZEN_FULL_ATS,401866441,ATS,Bowling Green,-6.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-postgame-audit
+7,FROZEN_FULL_ATS,401866442,ATS,Massachusetts,6.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-postgame-audit
+7,FROZEN_FULL_ATS,401866443,ATS,Central Michigan,6.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-postgame-audit
+7,FROZEN_FULL_ATS,401866444,ATS,Eastern Michigan,5.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-postgame-audit
+7,FROZEN_FULL_ATS,401866445,ATS,Sacramento State,14.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-postgame-audit
+7,FROZEN_FULL_ATS,401866478,ATS,Miami (OH),-9.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-postgame-audit
+7,FROZEN_FULL_ATS,401869844,ATS,Coastal Carolina,1.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-postgame-audit
+7,FROZEN_FULL_ATS,401869934,ATS,Southern Miss,6.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-postgame-audit
+7,FROZEN_FULL_ATS,401869950,ATS,Old Dominion,3.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-postgame-audit
+7,FROZEN_FULL_ATS,401869957,ATS,Georgia State,12.5,12.5,EXACT_MATCH,outputs/2026-week7-postgame-audit
+7,FROZEN_FULL_ATS,401869966,ATS,Louisiana,-3.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-postgame-audit
+7,FROZEN_FULL_ATS,401871053,ATS,Jacksonville State,-2.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-postgame-audit
+7,FROZEN_FULL_ATS,401871054,ATS,Missouri State,3.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-postgame-audit
+7,FROZEN_FULL_ATS,401871067,ATS,Middle Tennessee,1.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-postgame-audit
+7,FROZEN_FULL_ATS,401871068,ATS,Sam Houston,-1.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-postgame-audit
+7,FROZEN_FULL_ATS,401871091,ATS,UL Monroe,15.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-postgame-audit
+7,FROZEN_FULL_ATS,401860923,TOTAL,UNDER,,69.5,SUBMITTED_NOT_IN_COHORT,outputs/2026-week7-postgame-audit
+7,FROZEN_FULL_TOTAL,401856719,TOTAL,UNDER,49.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-postgame-audit
+7,FROZEN_FULL_TOTAL,401856720,TOTAL,UNDER,58.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-postgame-audit
+7,FROZEN_FULL_TOTAL,401856721,TOTAL,UNDER,59.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-postgame-audit
+7,FROZEN_FULL_TOTAL,401856722,TOTAL,UNDER,43.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-postgame-audit
+7,FROZEN_FULL_TOTAL,401856723,TOTAL,UNDER,51.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-postgame-audit
+7,FROZEN_FULL_TOTAL,401856724,TOTAL,UNDER,52.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-postgame-audit
+7,FROZEN_FULL_TOTAL,401856726,TOTAL,UNDER,50.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-postgame-audit
+7,FROZEN_FULL_TOTAL,401856809,TOTAL,OVER,46.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-postgame-audit
+7,FROZEN_FULL_TOTAL,401856828,TOTAL,UNDER,48.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-postgame-audit
+7,FROZEN_FULL_TOTAL,401856829,TOTAL,UNDER,63.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-postgame-audit
+7,FROZEN_FULL_TOTAL,401856830,TOTAL,UNDER,55.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-postgame-audit
+7,FROZEN_FULL_TOTAL,401856831,TOTAL,UNDER,61.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-postgame-audit
+7,FROZEN_FULL_TOTAL,401856832,TOTAL,UNDER,48.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-postgame-audit
+7,FROZEN_FULL_TOTAL,401856833,TOTAL,UNDER,49.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-postgame-audit
+7,FROZEN_FULL_TOTAL,401858263,TOTAL,OVER,55.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-postgame-audit
+7,FROZEN_FULL_TOTAL,401858264,TOTAL,UNDER,57.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-postgame-audit
+7,FROZEN_FULL_TOTAL,401858265,TOTAL,UNDER,56.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-postgame-audit
+7,FROZEN_FULL_TOTAL,401858266,TOTAL,OVER,47.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-postgame-audit
+7,FROZEN_FULL_TOTAL,401858267,TOTAL,OVER,42.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-postgame-audit
+7,FROZEN_FULL_TOTAL,401858268,TOTAL,OVER,52.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-postgame-audit
+7,FROZEN_FULL_TOTAL,401858269,TOTAL,UNDER,53.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-postgame-audit
+7,FROZEN_FULL_TOTAL,401858488,TOTAL,OVER,50.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-postgame-audit
+7,FROZEN_FULL_TOTAL,401858489,TOTAL,UNDER,56.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-postgame-audit
+7,FROZEN_FULL_TOTAL,401858490,TOTAL,OVER,42.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-postgame-audit
+7,FROZEN_FULL_TOTAL,401858491,TOTAL,OVER,48.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-postgame-audit
+7,FROZEN_FULL_TOTAL,401858492,TOTAL,UNDER,52.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-postgame-audit
+7,FROZEN_FULL_TOTAL,401858493,TOTAL,OVER,51.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-postgame-audit
+7,FROZEN_FULL_TOTAL,401858494,TOTAL,UNDER,44.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-postgame-audit
+7,FROZEN_FULL_TOTAL,401860903,TOTAL,UNDER,52.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-postgame-audit
+7,FROZEN_FULL_TOTAL,401860904,TOTAL,UNDER,46.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-postgame-audit
+7,FROZEN_FULL_TOTAL,401860923,TOTAL,UNDER,69.5,69.5,EXACT_MATCH,outputs/2026-week7-postgame-audit
+7,FROZEN_FULL_TOTAL,401862800,TOTAL,UNDER,47.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-postgame-audit
+7,FROZEN_FULL_TOTAL,401862801,TOTAL,UNDER,54.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-postgame-audit
+7,FROZEN_FULL_TOTAL,401862802,TOTAL,OVER,55.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-postgame-audit
+7,FROZEN_FULL_TOTAL,401862803,TOTAL,OVER,47.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-postgame-audit
+7,FROZEN_FULL_TOTAL,401862804,TOTAL,UNDER,56.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-postgame-audit
+7,FROZEN_FULL_TOTAL,401862805,TOTAL,UNDER,46.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-postgame-audit
+7,FROZEN_FULL_TOTAL,401862806,TOTAL,OVER,45.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-postgame-audit
+7,FROZEN_FULL_TOTAL,401864520,TOTAL,OVER,43.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-postgame-audit
+7,FROZEN_FULL_TOTAL,401864521,TOTAL,OVER,44.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-postgame-audit
+7,FROZEN_FULL_TOTAL,401864522,TOTAL,OVER,40.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-postgame-audit
+7,FROZEN_FULL_TOTAL,401864523,TOTAL,UNDER,47.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-postgame-audit
+7,FROZEN_FULL_TOTAL,401864524,TOTAL,UNDER,48.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-postgame-audit
+7,FROZEN_FULL_TOTAL,401866441,TOTAL,OVER,45.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-postgame-audit
+7,FROZEN_FULL_TOTAL,401866442,TOTAL,OVER,41.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-postgame-audit
+7,FROZEN_FULL_TOTAL,401866443,TOTAL,OVER,42.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-postgame-audit
+7,FROZEN_FULL_TOTAL,401866444,TOTAL,UNDER,53.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-postgame-audit
+7,FROZEN_FULL_TOTAL,401866445,TOTAL,OVER,48.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-postgame-audit
+7,FROZEN_FULL_TOTAL,401866478,TOTAL,OVER,45.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-postgame-audit
+7,FROZEN_FULL_TOTAL,401869844,TOTAL,UNDER,50.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-postgame-audit
+7,FROZEN_FULL_TOTAL,401869934,TOTAL,UNDER,62.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-postgame-audit
+7,FROZEN_FULL_TOTAL,401869950,TOTAL,UNDER,47.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-postgame-audit
+7,FROZEN_FULL_TOTAL,401869957,TOTAL,UNDER,57.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-postgame-audit
+7,FROZEN_FULL_TOTAL,401869966,TOTAL,UNDER,49.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-postgame-audit
+7,FROZEN_FULL_TOTAL,401871053,TOTAL,OVER,43.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-postgame-audit
+7,FROZEN_FULL_TOTAL,401871054,TOTAL,UNDER,52.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-postgame-audit
+7,FROZEN_FULL_TOTAL,401871067,TOTAL,OVER,47.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-postgame-audit
+7,FROZEN_FULL_TOTAL,401871068,TOTAL,UNDER,52.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-postgame-audit
+7,FROZEN_FULL_TOTAL,401871091,TOTAL,UNDER,56.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-postgame-audit
+7,FROZEN_FULL_TOTAL,401864524,ATS,Air Force,,1.5,SUBMITTED_NOT_IN_COHORT,outputs/2026-week7-postgame-audit
+7,FROZEN_FULL_TOTAL,401858488,ATS,Indiana,,3.5,SUBMITTED_NOT_IN_COHORT,outputs/2026-week7-postgame-audit
+7,FROZEN_FULL_TOTAL,401869957,ATS,Georgia State,,12.5,SUBMITTED_NOT_IN_COHORT,outputs/2026-week7-postgame-audit
+7,FROZEN_FULL_TOTAL,401858492,ATS,Nebraska,,7.5,SUBMITTED_NOT_IN_COHORT,outputs/2026-week7-postgame-audit
+7,ats_research_top10,401866442,ATS,Massachusetts,6.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-postgame-audit/week7_cohort_membership.csv
+7,ats_research_top10,401858492,ATS,Nebraska,7.5,7.5,EXACT_MATCH,outputs/2026-week7-postgame-audit/week7_cohort_membership.csv
+7,ats_research_top10,401858265,ATS,Syracuse,14.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-postgame-audit/week7_cohort_membership.csv
+7,ats_research_top10,401864524,ATS,Air Force,1.5,1.5,EXACT_MATCH,outputs/2026-week7-postgame-audit/week7_cohort_membership.csv
+7,ats_research_top10,401858488,ATS,Indiana,3.5,3.5,EXACT_MATCH,outputs/2026-week7-postgame-audit/week7_cohort_membership.csv
+7,ats_research_top10,401856809,ATS,BYU,10.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-postgame-audit/week7_cohort_membership.csv
+7,ats_research_top10,401862806,ATS,Kent State,20.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-postgame-audit/week7_cohort_membership.csv
+7,ats_research_top10,401869957,ATS,Georgia State,12.5,12.5,EXACT_MATCH,outputs/2026-week7-postgame-audit/week7_cohort_membership.csv
+7,ats_research_top10,401866445,ATS,Sacramento State,14.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-postgame-audit/week7_cohort_membership.csv
+7,ats_research_top10,401856723,ATS,Tennessee,8.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-postgame-audit/week7_cohort_membership.csv
+7,ats_research_top10,401860923,TOTAL,UNDER,,69.5,SUBMITTED_NOT_IN_COHORT,outputs/2026-week7-postgame-audit/week7_cohort_membership.csv
+7,ats_research_top5,401866442,ATS,Massachusetts,6.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-postgame-audit/week7_cohort_membership.csv
+7,ats_research_top5,401858492,ATS,Nebraska,7.5,7.5,EXACT_MATCH,outputs/2026-week7-postgame-audit/week7_cohort_membership.csv
+7,ats_research_top5,401858265,ATS,Syracuse,14.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-postgame-audit/week7_cohort_membership.csv
+7,ats_research_top5,401864524,ATS,Air Force,1.5,1.5,EXACT_MATCH,outputs/2026-week7-postgame-audit/week7_cohort_membership.csv
+7,ats_research_top5,401858488,ATS,Indiana,3.5,3.5,EXACT_MATCH,outputs/2026-week7-postgame-audit/week7_cohort_membership.csv
+7,ats_research_top5,401869957,ATS,Georgia State,,12.5,SUBMITTED_NOT_IN_COHORT,outputs/2026-week7-postgame-audit/week7_cohort_membership.csv
+7,ats_research_top5,401860923,TOTAL,UNDER,,69.5,SUBMITTED_NOT_IN_COHORT,outputs/2026-week7-postgame-audit/week7_cohort_membership.csv
+7,governed_v28_top5,401871067,ATS,Middle Tennessee,1.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-postgame-audit/week7_cohort_membership.csv
+7,governed_v28_top5,401871068,ATS,Sam Houston,-1.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-postgame-audit/week7_cohort_membership.csv
+7,governed_v28_top5,401871054,ATS,Missouri State,3.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-postgame-audit/week7_cohort_membership.csv
+7,governed_v28_top5,401869950,ATS,Old Dominion,3.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-postgame-audit/week7_cohort_membership.csv
+7,governed_v28_top5,401871053,ATS,Jacksonville State,-2.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-postgame-audit/week7_cohort_membership.csv
+7,governed_v28_top5,401864524,ATS,Air Force,,1.5,SUBMITTED_NOT_IN_COHORT,outputs/2026-week7-postgame-audit/week7_cohort_membership.csv
+7,governed_v28_top5,401858488,ATS,Indiana,,3.5,SUBMITTED_NOT_IN_COHORT,outputs/2026-week7-postgame-audit/week7_cohort_membership.csv
+7,governed_v28_top5,401869957,ATS,Georgia State,,12.5,SUBMITTED_NOT_IN_COHORT,outputs/2026-week7-postgame-audit/week7_cohort_membership.csv
+7,governed_v28_top5,401858492,ATS,Nebraska,,7.5,SUBMITTED_NOT_IN_COHORT,outputs/2026-week7-postgame-audit/week7_cohort_membership.csv
+7,governed_v28_top5,401860923,TOTAL,UNDER,,69.5,SUBMITTED_NOT_IN_COHORT,outputs/2026-week7-postgame-audit/week7_cohort_membership.csv
+7,human_review_candidate_board,401864524,ATS,Air Force,1.5,1.5,EXACT_MATCH,outputs/2026-week7-postgame-audit/week7_cohort_membership.csv
+7,human_review_candidate_board,401858488,ATS,Indiana,3.5,3.5,EXACT_MATCH,outputs/2026-week7-postgame-audit/week7_cohort_membership.csv
+7,human_review_candidate_board,401869957,ATS,Georgia State,12.5,12.5,EXACT_MATCH,outputs/2026-week7-postgame-audit/week7_cohort_membership.csv
+7,human_review_candidate_board,401858492,ATS,Nebraska,7.5,7.5,EXACT_MATCH,outputs/2026-week7-postgame-audit/week7_cohort_membership.csv
+7,human_review_candidate_board,401860923,TOTAL,UNDER,69.5,69.5,EXACT_MATCH,outputs/2026-week7-postgame-audit/week7_cohort_membership.csv
+7,human_review_candidate_board,401866442,ATS,Massachusetts,6.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-postgame-audit/week7_cohort_membership.csv
+7,human_review_candidate_board,401858265,ATS,Syracuse,14.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-postgame-audit/week7_cohort_membership.csv
+7,human_review_candidate_board,401856809,ATS,BYU,10.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-postgame-audit/week7_cohort_membership.csv
+7,human_review_candidate_board,401856723,ATS,Tennessee,8.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-postgame-audit/week7_cohort_membership.csv
+7,human_review_candidate_board,401856831,TOTAL,UNDER,61.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-postgame-audit/week7_cohort_membership.csv
+7,human_review_candidate_board,401869934,TOTAL,UNDER,62.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-postgame-audit/week7_cohort_membership.csv
+7,human_review_candidate_board,401864522,TOTAL,OVER,40.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-postgame-audit/week7_cohort_membership.csv
+7,legacy_mixed_research_top5,401860923,TOTAL,UNDER,69.5,69.5,EXACT_MATCH,outputs/2026-week7-postgame-audit/week7_cohort_membership.csv
+7,legacy_mixed_research_top5,401856831,TOTAL,UNDER,61.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-postgame-audit/week7_cohort_membership.csv
+7,legacy_mixed_research_top5,401869934,TOTAL,UNDER,62.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-postgame-audit/week7_cohort_membership.csv
+7,legacy_mixed_research_top5,401864522,TOTAL,OVER,40.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-postgame-audit/week7_cohort_membership.csv
+7,legacy_mixed_research_top5,401866443,TOTAL,OVER,42.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-postgame-audit/week7_cohort_membership.csv
+7,legacy_mixed_research_top5,401864524,ATS,Air Force,,1.5,SUBMITTED_NOT_IN_COHORT,outputs/2026-week7-postgame-audit/week7_cohort_membership.csv
+7,legacy_mixed_research_top5,401858488,ATS,Indiana,,3.5,SUBMITTED_NOT_IN_COHORT,outputs/2026-week7-postgame-audit/week7_cohort_membership.csv
+7,legacy_mixed_research_top5,401869957,ATS,Georgia State,,12.5,SUBMITTED_NOT_IN_COHORT,outputs/2026-week7-postgame-audit/week7_cohort_membership.csv
+7,legacy_mixed_research_top5,401858492,ATS,Nebraska,,7.5,SUBMITTED_NOT_IN_COHORT,outputs/2026-week7-postgame-audit/week7_cohort_membership.csv
+7,owner_approved_five,401864524,ATS,Air Force,1.5,1.5,EXACT_MATCH,outputs/2026-week7-postgame-audit/week7_cohort_membership.csv
+7,owner_approved_five,401858488,ATS,Indiana,3.5,3.5,EXACT_MATCH,outputs/2026-week7-postgame-audit/week7_cohort_membership.csv
+7,owner_approved_five,401869957,ATS,Georgia State,12.5,12.5,EXACT_MATCH,outputs/2026-week7-postgame-audit/week7_cohort_membership.csv
+7,owner_approved_five,401858492,ATS,Nebraska,7.5,7.5,EXACT_MATCH,outputs/2026-week7-postgame-audit/week7_cohort_membership.csv
+7,owner_approved_five,401860923,TOTAL,UNDER,69.5,69.5,EXACT_MATCH,outputs/2026-week7-postgame-audit/week7_cohort_membership.csv
+7,total_research_top10,401860923,TOTAL,UNDER,69.5,69.5,EXACT_MATCH,outputs/2026-week7-postgame-audit/week7_cohort_membership.csv
+7,total_research_top10,401856831,TOTAL,UNDER,61.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-postgame-audit/week7_cohort_membership.csv
+7,total_research_top10,401869934,TOTAL,UNDER,62.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-postgame-audit/week7_cohort_membership.csv
+7,total_research_top10,401864522,TOTAL,OVER,40.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-postgame-audit/week7_cohort_membership.csv
+7,total_research_top10,401866443,TOTAL,OVER,42.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-postgame-audit/week7_cohort_membership.csv
+7,total_research_top10,401869957,TOTAL,UNDER,57.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-postgame-audit/week7_cohort_membership.csv
+7,total_research_top10,401856720,TOTAL,UNDER,58.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-postgame-audit/week7_cohort_membership.csv
+7,total_research_top10,401856829,TOTAL,UNDER,63.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-postgame-audit/week7_cohort_membership.csv
+7,total_research_top10,401866478,TOTAL,OVER,45.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-postgame-audit/week7_cohort_membership.csv
+7,total_research_top10,401858489,TOTAL,UNDER,56.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-postgame-audit/week7_cohort_membership.csv
+7,total_research_top10,401864524,ATS,Air Force,,1.5,SUBMITTED_NOT_IN_COHORT,outputs/2026-week7-postgame-audit/week7_cohort_membership.csv
+7,total_research_top10,401858488,ATS,Indiana,,3.5,SUBMITTED_NOT_IN_COHORT,outputs/2026-week7-postgame-audit/week7_cohort_membership.csv
+7,total_research_top10,401869957,ATS,Georgia State,,12.5,SUBMITTED_NOT_IN_COHORT,outputs/2026-week7-postgame-audit/week7_cohort_membership.csv
+7,total_research_top10,401858492,ATS,Nebraska,,7.5,SUBMITTED_NOT_IN_COHORT,outputs/2026-week7-postgame-audit/week7_cohort_membership.csv
+7,total_research_top5,401860923,TOTAL,UNDER,69.5,69.5,EXACT_MATCH,outputs/2026-week7-postgame-audit/week7_cohort_membership.csv
+7,total_research_top5,401856831,TOTAL,UNDER,61.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-postgame-audit/week7_cohort_membership.csv
+7,total_research_top5,401869934,TOTAL,UNDER,62.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-postgame-audit/week7_cohort_membership.csv
+7,total_research_top5,401864522,TOTAL,OVER,40.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-postgame-audit/week7_cohort_membership.csv
+7,total_research_top5,401866443,TOTAL,OVER,42.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week7-postgame-audit/week7_cohort_membership.csv
+7,total_research_top5,401864524,ATS,Air Force,,1.5,SUBMITTED_NOT_IN_COHORT,outputs/2026-week7-postgame-audit/week7_cohort_membership.csv
+7,total_research_top5,401858488,ATS,Indiana,,3.5,SUBMITTED_NOT_IN_COHORT,outputs/2026-week7-postgame-audit/week7_cohort_membership.csv
+7,total_research_top5,401869957,ATS,Georgia State,,12.5,SUBMITTED_NOT_IN_COHORT,outputs/2026-week7-postgame-audit/week7_cohort_membership.csv
+7,total_research_top5,401858492,ATS,Nebraska,,7.5,SUBMITTED_NOT_IN_COHORT,outputs/2026-week7-postgame-audit/week7_cohort_membership.csv
+8,FROZEN_FULL_ATS,401861965,ATS,Massachusetts,14.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week8-postgame-audit
+8,FROZEN_FULL_ATS,401856840,ATS,Cincinnati,10.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week8-postgame-audit
+8,FROZEN_FULL_ATS,401860905,ATS,Colorado State,1.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week8-postgame-audit
+8,FROZEN_FULL_ATS,401856730,ATS,Mississippi State,4.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week8-postgame-audit
+8,FROZEN_FULL_ATS,401858499,ATS,UCLA,-13.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week8-postgame-audit
+8,FROZEN_FULL_ATS,401856836,ATS,Colorado,13.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week8-postgame-audit
+8,FROZEN_FULL_ATS,401856731,ATS,Tennessee,2.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week8-postgame-audit
+8,FROZEN_FULL_ATS,401858495,ATS,Illinois,8.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week8-postgame-audit
+8,FROZEN_FULL_ATS,401869845,ATS,App State,10.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week8-postgame-audit
+8,FROZEN_FULL_ATS,401866450,ATS,Toledo,-2.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week8-postgame-audit
+8,FROZEN_FULL_ATS,401858272,ATS,Stanford,7.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week8-postgame-audit
+8,FROZEN_FULL_ATS,401858274,ATS,Pittsburgh,20.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week8-postgame-audit
+8,FROZEN_FULL_ATS,401866447,ATS,Sacramento State,13.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week8-postgame-audit
+8,FROZEN_FULL_ATS,401858500,ATS,Wisconsin,2.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week8-postgame-audit
+8,FROZEN_FULL_ATS,401871056,ATS,Kennesaw State,10.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week8-postgame-audit
+8,FROZEN_FULL_ATS,401858496,ATS,Michigan,7.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week8-postgame-audit
+8,FROZEN_FULL_ATS,401858276,ATS,Virginia Tech,2.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week8-postgame-audit
+8,FROZEN_FULL_ATS,401856841,ATS,TCU,-8.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week8-postgame-audit
+8,FROZEN_FULL_ATS,401856834,ATS,Kansas,2.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week8-postgame-audit
+8,FROZEN_FULL_ATS,401856838,ATS,Arizona,-9.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week8-postgame-audit
+8,FROZEN_FULL_ATS,401856727,ATS,Texas A&M,14.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week8-postgame-audit
+8,FROZEN_FULL_ATS,401858270,ATS,California,19.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week8-postgame-audit
+8,FROZEN_FULL_ATS,401862807,ATS,East Carolina,10.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week8-postgame-audit
+8,FROZEN_FULL_ATS,401864528,ATS,San José State,4.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week8-postgame-audit
+8,FROZEN_FULL_ATS,401866448,ATS,Buffalo,-3.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week8-postgame-audit
+8,FROZEN_FULL_ATS,401856732,ATS,Ole Miss,3.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week8-postgame-audit
+8,FROZEN_FULL_ATS,401858497,ATS,Minnesota,6.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week8-postgame-audit
+8,FROZEN_FULL_ATS,401866446,ATS,Kent State,-2.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week8-postgame-audit
+8,FROZEN_FULL_ATS,401860907,ATS,Washington State,13.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week8-postgame-audit
+8,FROZEN_FULL_ATS,401869967,ATS,Southern Miss,10.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week8-postgame-audit
+8,FROZEN_FULL_ATS,401866476,ATS,Miami (OH),-2.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week8-postgame-audit
+8,FROZEN_FULL_ATS,401866449,ATS,Eastern Michigan,12.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week8-postgame-audit
+8,FROZEN_FULL_ATS,401862810,ATS,Navy,2.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week8-postgame-audit
+8,FROZEN_FULL_ATS,401856835,ATS,UCF,6.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week8-postgame-audit
+8,FROZEN_FULL_ATS,401862808,ATS,Tulsa,-1.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week8-postgame-audit
+8,FROZEN_FULL_ATS,401864527,ATS,New Mexico,-4.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week8-postgame-audit
+8,FROZEN_FULL_ATS,401856728,ATS,Auburn,7.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week8-postgame-audit
+8,FROZEN_FULL_ATS,401860906,ATS,Texas State,-12.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week8-postgame-audit
+8,FROZEN_FULL_ATS,401858271,ATS,Virginia,-1.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week8-postgame-audit
+8,FROZEN_FULL_ATS,401864526,ATS,Northern Illinois,3.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week8-postgame-audit
+8,FROZEN_FULL_ATS,401864525,ATS,Wyoming,5.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week8-postgame-audit
+8,FROZEN_FULL_ATS,401871094,ATS,Troy,-15.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week8-postgame-audit
+8,FROZEN_FULL_ATS,401858275,ATS,Syracuse,8.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week8-postgame-audit
+8,FROZEN_FULL_ATS,401862809,ATS,Florida Atlantic,-7.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week8-postgame-audit
+8,FROZEN_FULL_ATS,401869935,ATS,Georgia State,-2.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week8-postgame-audit
+8,FROZEN_FULL_ATS,401862811,ATS,Tulane,2.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week8-postgame-audit
+8,FROZEN_FULL_ATS,401856837,ATS,Utah,-6.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week8-postgame-audit
+8,FROZEN_FULL_ATS,401856839,ATS,Arizona State,3.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week8-postgame-audit
+8,FROZEN_FULL_ATS,401856729,ATS,Vanderbilt,11.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week8-postgame-audit
+8,FROZEN_FULL_ATS,401858498,ATS,Rutgers,16.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week8-postgame-audit
+8,FROZEN_FULL_ATS,401858273,ATS,Boston College,4.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week8-postgame-audit
+8,FROZEN_FULL_ATS,401871093,ATS,Old Dominion,12.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week8-postgame-audit
+8,FROZEN_FULL_ATS,401866476,TOTAL,OVER,,40.5,SUBMITTED_NOT_IN_COHORT,outputs/2026-week8-postgame-audit
+8,FROZEN_FULL_ATS,401860905,TOTAL,UNDER,,64.5,SUBMITTED_NOT_IN_COHORT,outputs/2026-week8-postgame-audit
+8,FROZEN_FULL_ATS,401860906,TOTAL,UNDER,,60.5,SUBMITTED_NOT_IN_COHORT,outputs/2026-week8-postgame-audit
+8,FROZEN_FULL_ATS,401856836,TOTAL,UNDER,,55.5,SUBMITTED_NOT_IN_COHORT,outputs/2026-week8-postgame-audit
+8,FROZEN_FULL_ATS,401856834,TOTAL,UNDER,,53.5,SUBMITTED_NOT_IN_COHORT,outputs/2026-week8-postgame-audit
+8,FROZEN_FULL_TOTAL,401866476,TOTAL,OVER,40.5,40.5,EXACT_MATCH,outputs/2026-week8-postgame-audit
+8,FROZEN_FULL_TOTAL,401860905,TOTAL,UNDER,64.5,64.5,EXACT_MATCH,outputs/2026-week8-postgame-audit
+8,FROZEN_FULL_TOTAL,401860906,TOTAL,UNDER,60.5,60.5,EXACT_MATCH,outputs/2026-week8-postgame-audit
+8,FROZEN_FULL_TOTAL,401856836,TOTAL,UNDER,55.5,55.5,EXACT_MATCH,outputs/2026-week8-postgame-audit
+8,FROZEN_FULL_TOTAL,401856834,TOTAL,UNDER,53.5,53.5,EXACT_MATCH,outputs/2026-week8-postgame-audit
+8,FROZEN_FULL_TOTAL,401862807,TOTAL,UNDER,54.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week8-postgame-audit
+8,FROZEN_FULL_TOTAL,401858497,TOTAL,OVER,40.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week8-postgame-audit
+8,FROZEN_FULL_TOTAL,401869935,TOTAL,UNDER,58.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week8-postgame-audit
+8,FROZEN_FULL_TOTAL,401869845,TOTAL,UNDER,55.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week8-postgame-audit
+8,FROZEN_FULL_TOTAL,401864525,TOTAL,OVER,44.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week8-postgame-audit
+8,FROZEN_FULL_TOTAL,401856841,TOTAL,UNDER,55.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week8-postgame-audit
+8,FROZEN_FULL_TOTAL,401858496,TOTAL,OVER,41.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week8-postgame-audit
+8,FROZEN_FULL_TOTAL,401858271,TOTAL,OVER,47.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week8-postgame-audit
+8,FROZEN_FULL_TOTAL,401862810,TOTAL,UNDER,62.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week8-postgame-audit
+8,FROZEN_FULL_TOTAL,401856839,TOTAL,UNDER,56.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week8-postgame-audit
+8,FROZEN_FULL_TOTAL,401869967,TOTAL,UNDER,52.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week8-postgame-audit
+8,FROZEN_FULL_TOTAL,401858270,TOTAL,UNDER,53.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week8-postgame-audit
+8,FROZEN_FULL_TOTAL,401856835,TOTAL,OVER,43.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week8-postgame-audit
+8,FROZEN_FULL_TOTAL,401856728,TOTAL,UNDER,50.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week8-postgame-audit
+8,FROZEN_FULL_TOTAL,401856732,TOTAL,UNDER,53.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week8-postgame-audit
+8,FROZEN_FULL_TOTAL,401871093,TOTAL,UNDER,45.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week8-postgame-audit
+8,FROZEN_FULL_TOTAL,401866450,TOTAL,OVER,46.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week8-postgame-audit
+8,FROZEN_FULL_TOTAL,401866449,TOTAL,OVER,48.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week8-postgame-audit
+8,FROZEN_FULL_TOTAL,401858276,TOTAL,UNDER,49.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week8-postgame-audit
+8,FROZEN_FULL_TOTAL,401864528,TOTAL,OVER,45.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week8-postgame-audit
+8,FROZEN_FULL_TOTAL,401858495,TOTAL,OVER,50.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week8-postgame-audit
+8,FROZEN_FULL_TOTAL,401856840,TOTAL,UNDER,56.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week8-postgame-audit
+8,FROZEN_FULL_TOTAL,401871094,TOTAL,UNDER,50.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week8-postgame-audit
+8,FROZEN_FULL_TOTAL,401858498,TOTAL,UNDER,58.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week8-postgame-audit
+8,FROZEN_FULL_TOTAL,401860907,TOTAL,UNDER,51.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week8-postgame-audit
+8,FROZEN_FULL_TOTAL,401856731,TOTAL,UNDER,50.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week8-postgame-audit
+8,FROZEN_FULL_TOTAL,401856727,TOTAL,UNDER,50.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week8-postgame-audit
+8,FROZEN_FULL_TOTAL,401862811,TOTAL,UNDER,51.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week8-postgame-audit
+8,FROZEN_FULL_TOTAL,401864526,TOTAL,OVER,47.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week8-postgame-audit
+8,FROZEN_FULL_TOTAL,401856729,TOTAL,UNDER,51.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week8-postgame-audit
+8,FROZEN_FULL_TOTAL,401856837,TOTAL,UNDER,56.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week8-postgame-audit
+8,FROZEN_FULL_TOTAL,401858272,TOTAL,OVER,55.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week8-postgame-audit
+8,FROZEN_FULL_TOTAL,401858500,TOTAL,OVER,49.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week8-postgame-audit
+8,FROZEN_FULL_TOTAL,401866448,TOTAL,OVER,44.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week8-postgame-audit
+8,FROZEN_FULL_TOTAL,401858499,TOTAL,OVER,44.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week8-postgame-audit
+8,FROZEN_FULL_TOTAL,401858274,TOTAL,OVER,50.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week8-postgame-audit
+8,FROZEN_FULL_TOTAL,401862808,TOTAL,OVER,53.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week8-postgame-audit
+8,FROZEN_FULL_TOTAL,401862809,TOTAL,UNDER,53.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week8-postgame-audit
+8,FROZEN_FULL_TOTAL,401866446,TOTAL,OVER,46.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week8-postgame-audit
+8,FROZEN_FULL_TOTAL,401871056,TOTAL,UNDER,49.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week8-postgame-audit
+8,FROZEN_FULL_TOTAL,401856730,TOTAL,OVER,44.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week8-postgame-audit
+8,FROZEN_FULL_TOTAL,401866447,TOTAL,UNDER,50.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week8-postgame-audit
+8,FROZEN_FULL_TOTAL,401856838,TOTAL,UNDER,50.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week8-postgame-audit
+8,FROZEN_FULL_TOTAL,401858275,TOTAL,UNDER,46.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week8-postgame-audit
+8,FROZEN_FULL_TOTAL,401858273,TOTAL,OVER,49.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week8-postgame-audit
+8,FROZEN_FULL_TOTAL,401861965,TOTAL,UNDER,49.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week8-postgame-audit
+8,FROZEN_FULL_TOTAL,401864527,TOTAL,OVER,41.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week8-postgame-audit
+8,ats_research_top10,401861965,ATS,Massachusetts,14.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week8-postgame-audit/week8_cohort_membership.csv
+8,ats_research_top10,401856840,ATS,Cincinnati,10.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week8-postgame-audit/week8_cohort_membership.csv
+8,ats_research_top10,401860905,ATS,Colorado State,1.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week8-postgame-audit/week8_cohort_membership.csv
+8,ats_research_top10,401856730,ATS,Mississippi State,4.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week8-postgame-audit/week8_cohort_membership.csv
+8,ats_research_top10,401858499,ATS,UCLA,-13.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week8-postgame-audit/week8_cohort_membership.csv
+8,ats_research_top10,401856836,ATS,Colorado,13.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week8-postgame-audit/week8_cohort_membership.csv
+8,ats_research_top10,401856731,ATS,Tennessee,2.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week8-postgame-audit/week8_cohort_membership.csv
+8,ats_research_top10,401858495,ATS,Illinois,8.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week8-postgame-audit/week8_cohort_membership.csv
+8,ats_research_top10,401869845,ATS,App State,10.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week8-postgame-audit/week8_cohort_membership.csv
+8,ats_research_top10,401866450,ATS,Toledo,-2.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week8-postgame-audit/week8_cohort_membership.csv
+8,ats_research_top10,401866476,TOTAL,OVER,,40.5,SUBMITTED_NOT_IN_COHORT,outputs/2026-week8-postgame-audit/week8_cohort_membership.csv
+8,ats_research_top10,401860905,TOTAL,UNDER,,64.5,SUBMITTED_NOT_IN_COHORT,outputs/2026-week8-postgame-audit/week8_cohort_membership.csv
+8,ats_research_top10,401860906,TOTAL,UNDER,,60.5,SUBMITTED_NOT_IN_COHORT,outputs/2026-week8-postgame-audit/week8_cohort_membership.csv
+8,ats_research_top10,401856836,TOTAL,UNDER,,55.5,SUBMITTED_NOT_IN_COHORT,outputs/2026-week8-postgame-audit/week8_cohort_membership.csv
+8,ats_research_top10,401856834,TOTAL,UNDER,,53.5,SUBMITTED_NOT_IN_COHORT,outputs/2026-week8-postgame-audit/week8_cohort_membership.csv
+8,ats_research_top5,401861965,ATS,Massachusetts,14.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week8-postgame-audit/week8_cohort_membership.csv
+8,ats_research_top5,401856840,ATS,Cincinnati,10.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week8-postgame-audit/week8_cohort_membership.csv
+8,ats_research_top5,401860905,ATS,Colorado State,1.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week8-postgame-audit/week8_cohort_membership.csv
+8,ats_research_top5,401856730,ATS,Mississippi State,4.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week8-postgame-audit/week8_cohort_membership.csv
+8,ats_research_top5,401858499,ATS,UCLA,-13.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week8-postgame-audit/week8_cohort_membership.csv
+8,ats_research_top5,401866476,TOTAL,OVER,,40.5,SUBMITTED_NOT_IN_COHORT,outputs/2026-week8-postgame-audit/week8_cohort_membership.csv
+8,ats_research_top5,401860905,TOTAL,UNDER,,64.5,SUBMITTED_NOT_IN_COHORT,outputs/2026-week8-postgame-audit/week8_cohort_membership.csv
+8,ats_research_top5,401860906,TOTAL,UNDER,,60.5,SUBMITTED_NOT_IN_COHORT,outputs/2026-week8-postgame-audit/week8_cohort_membership.csv
+8,ats_research_top5,401856836,TOTAL,UNDER,,55.5,SUBMITTED_NOT_IN_COHORT,outputs/2026-week8-postgame-audit/week8_cohort_membership.csv
+8,ats_research_top5,401856834,TOTAL,UNDER,,53.5,SUBMITTED_NOT_IN_COHORT,outputs/2026-week8-postgame-audit/week8_cohort_membership.csv
+8,governed_v28_top5,401861965,ATS,Massachusetts,14.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week8-postgame-audit/week8_cohort_membership.csv
+8,governed_v28_top5,401869845,ATS,App State,10.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week8-postgame-audit/week8_cohort_membership.csv
+8,governed_v28_top5,401871056,ATS,Kennesaw State,10.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week8-postgame-audit/week8_cohort_membership.csv
+8,governed_v28_top5,401862807,ATS,East Carolina,10.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week8-postgame-audit/week8_cohort_membership.csv
+8,governed_v28_top5,401858271,ATS,Virginia,-1.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week8-postgame-audit/week8_cohort_membership.csv
+8,governed_v28_top5,401866476,TOTAL,OVER,,40.5,SUBMITTED_NOT_IN_COHORT,outputs/2026-week8-postgame-audit/week8_cohort_membership.csv
+8,governed_v28_top5,401860905,TOTAL,UNDER,,64.5,SUBMITTED_NOT_IN_COHORT,outputs/2026-week8-postgame-audit/week8_cohort_membership.csv
+8,governed_v28_top5,401860906,TOTAL,UNDER,,60.5,SUBMITTED_NOT_IN_COHORT,outputs/2026-week8-postgame-audit/week8_cohort_membership.csv
+8,governed_v28_top5,401856836,TOTAL,UNDER,,55.5,SUBMITTED_NOT_IN_COHORT,outputs/2026-week8-postgame-audit/week8_cohort_membership.csv
+8,governed_v28_top5,401856834,TOTAL,UNDER,,53.5,SUBMITTED_NOT_IN_COHORT,outputs/2026-week8-postgame-audit/week8_cohort_membership.csv
+8,human_review_candidate_board,401861965,ATS,Massachusetts,14.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week8-postgame-audit/week8_cohort_membership.csv
+8,human_review_candidate_board,401856840,ATS,Cincinnati,10.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week8-postgame-audit/week8_cohort_membership.csv
+8,human_review_candidate_board,401860905,ATS,Colorado State,1.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week8-postgame-audit/week8_cohort_membership.csv
+8,human_review_candidate_board,401856730,ATS,Mississippi State,4.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week8-postgame-audit/week8_cohort_membership.csv
+8,human_review_candidate_board,401858499,ATS,UCLA,-13.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week8-postgame-audit/week8_cohort_membership.csv
+8,human_review_candidate_board,401866476,TOTAL,OVER,40.5,40.5,EXACT_MATCH,outputs/2026-week8-postgame-audit/week8_cohort_membership.csv
+8,human_review_candidate_board,401860905,TOTAL,UNDER,64.5,64.5,EXACT_MATCH,outputs/2026-week8-postgame-audit/week8_cohort_membership.csv
+8,human_review_candidate_board,401860906,TOTAL,UNDER,60.5,60.5,EXACT_MATCH,outputs/2026-week8-postgame-audit/week8_cohort_membership.csv
+8,human_review_candidate_board,401856836,TOTAL,UNDER,55.5,55.5,EXACT_MATCH,outputs/2026-week8-postgame-audit/week8_cohort_membership.csv
+8,human_review_candidate_board,401856834,TOTAL,UNDER,53.5,53.5,EXACT_MATCH,outputs/2026-week8-postgame-audit/week8_cohort_membership.csv
+8,legacy_mixed_research_top5,401866476,TOTAL,OVER,40.5,40.5,EXACT_MATCH,outputs/2026-week8-postgame-audit/week8_cohort_membership.csv
+8,legacy_mixed_research_top5,401860905,TOTAL,UNDER,64.5,64.5,EXACT_MATCH,outputs/2026-week8-postgame-audit/week8_cohort_membership.csv
+8,legacy_mixed_research_top5,401860906,TOTAL,UNDER,60.5,60.5,EXACT_MATCH,outputs/2026-week8-postgame-audit/week8_cohort_membership.csv
+8,legacy_mixed_research_top5,401856836,TOTAL,UNDER,55.5,55.5,EXACT_MATCH,outputs/2026-week8-postgame-audit/week8_cohort_membership.csv
+8,legacy_mixed_research_top5,401856834,TOTAL,UNDER,53.5,53.5,EXACT_MATCH,outputs/2026-week8-postgame-audit/week8_cohort_membership.csv
+8,total_research_top10,401866476,TOTAL,OVER,40.5,40.5,EXACT_MATCH,outputs/2026-week8-postgame-audit/week8_cohort_membership.csv
+8,total_research_top10,401860905,TOTAL,UNDER,64.5,64.5,EXACT_MATCH,outputs/2026-week8-postgame-audit/week8_cohort_membership.csv
+8,total_research_top10,401860906,TOTAL,UNDER,60.5,60.5,EXACT_MATCH,outputs/2026-week8-postgame-audit/week8_cohort_membership.csv
+8,total_research_top10,401856836,TOTAL,UNDER,55.5,55.5,EXACT_MATCH,outputs/2026-week8-postgame-audit/week8_cohort_membership.csv
+8,total_research_top10,401856834,TOTAL,UNDER,53.5,53.5,EXACT_MATCH,outputs/2026-week8-postgame-audit/week8_cohort_membership.csv
+8,total_research_top10,401862807,TOTAL,UNDER,54.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week8-postgame-audit/week8_cohort_membership.csv
+8,total_research_top10,401858497,TOTAL,OVER,40.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week8-postgame-audit/week8_cohort_membership.csv
+8,total_research_top10,401869935,TOTAL,UNDER,58.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week8-postgame-audit/week8_cohort_membership.csv
+8,total_research_top10,401869845,TOTAL,UNDER,55.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week8-postgame-audit/week8_cohort_membership.csv
+8,total_research_top10,401864525,TOTAL,OVER,44.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week8-postgame-audit/week8_cohort_membership.csv
+8,total_research_top5,401866476,TOTAL,OVER,40.5,40.5,EXACT_MATCH,outputs/2026-week8-postgame-audit/week8_cohort_membership.csv
+8,total_research_top5,401860905,TOTAL,UNDER,64.5,64.5,EXACT_MATCH,outputs/2026-week8-postgame-audit/week8_cohort_membership.csv
+8,total_research_top5,401860906,TOTAL,UNDER,60.5,60.5,EXACT_MATCH,outputs/2026-week8-postgame-audit/week8_cohort_membership.csv
+8,total_research_top5,401856836,TOTAL,UNDER,55.5,55.5,EXACT_MATCH,outputs/2026-week8-postgame-audit/week8_cohort_membership.csv
+8,total_research_top5,401856834,TOTAL,UNDER,53.5,53.5,EXACT_MATCH,outputs/2026-week8-postgame-audit/week8_cohort_membership.csv
+9,ATS_RESEARCH_1-5,401856737,ATS,Mississippi State,20.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week9-postgame-audit/v1/frozen_cohort_membership.csv
+9,ATS_RESEARCH_1-5,401858505,ATS,Northwestern,3.5,3.5,EXACT_MATCH,outputs/2026-week9-postgame-audit/v1/frozen_cohort_membership.csv
+9,ATS_RESEARCH_1-5,401859185,ATS,Navy,30.5,30.5,EXACT_MATCH,outputs/2026-week9-postgame-audit/v1/frozen_cohort_membership.csv
+9,ATS_RESEARCH_1-5,401864529,ATS,San José State,14.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week9-postgame-audit/v1/frozen_cohort_membership.csv
+9,ATS_RESEARCH_1-5,401869963,ATS,Troy,20.5,20.5,EXACT_MATCH,outputs/2026-week9-postgame-audit/v1/frozen_cohort_membership.csv
+9,ATS_RESEARCH_1-5,401871095,TOTAL,UNDER,,56.5,SUBMITTED_NOT_IN_COHORT,outputs/2026-week9-postgame-audit/v1/frozen_cohort_membership.csv
+9,ATS_RESEARCH_1-5,401858278,TOTAL,UNDER,,58.5,SUBMITTED_NOT_IN_COHORT,outputs/2026-week9-postgame-audit/v1/frozen_cohort_membership.csv
+9,ATS_RESEARCH_6-10,401856735,ATS,Auburn,13.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week9-postgame-audit/v1/frozen_cohort_membership.csv
+9,ATS_RESEARCH_6-10,401856847,ATS,Iowa State,8.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week9-postgame-audit/v1/frozen_cohort_membership.csv
+9,ATS_RESEARCH_6-10,401858278,ATS,Syracuse,10.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week9-postgame-audit/v1/frozen_cohort_membership.csv
+9,ATS_RESEARCH_6-10,401858507,ATS,Rutgers,14.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week9-postgame-audit/v1/frozen_cohort_membership.csv
+9,ATS_RESEARCH_6-10,401864530,ATS,Northern Illinois,24.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week9-postgame-audit/v1/frozen_cohort_membership.csv
+9,ATS_RESEARCH_6-10,401858505,ATS,Northwestern,,3.5,SUBMITTED_NOT_IN_COHORT,outputs/2026-week9-postgame-audit/v1/frozen_cohort_membership.csv
+9,ATS_RESEARCH_6-10,401859185,ATS,Navy,,30.5,SUBMITTED_NOT_IN_COHORT,outputs/2026-week9-postgame-audit/v1/frozen_cohort_membership.csv
+9,ATS_RESEARCH_6-10,401871095,TOTAL,UNDER,,56.5,SUBMITTED_NOT_IN_COHORT,outputs/2026-week9-postgame-audit/v1/frozen_cohort_membership.csv
+9,ATS_RESEARCH_6-10,401858278,TOTAL,UNDER,,58.5,SUBMITTED_NOT_IN_COHORT,outputs/2026-week9-postgame-audit/v1/frozen_cohort_membership.csv
+9,ATS_RESEARCH_6-10,401869963,ATS,Troy,,20.5,SUBMITTED_NOT_IN_COHORT,outputs/2026-week9-postgame-audit/v1/frozen_cohort_membership.csv
+9,FROZEN_FULL_ATS,401856733,ATS,Arkansas,9.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week9-postgame-audit
+9,FROZEN_FULL_ATS,401856734,ATS,Florida,11.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week9-postgame-audit
+9,FROZEN_FULL_ATS,401856735,ATS,Auburn,13.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week9-postgame-audit
+9,FROZEN_FULL_ATS,401856736,ATS,South Carolina,5.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week9-postgame-audit
+9,FROZEN_FULL_ATS,401856737,ATS,Mississippi State,20.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week9-postgame-audit
+9,FROZEN_FULL_ATS,401856842,ATS,Arizona,3.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week9-postgame-audit
+9,FROZEN_FULL_ATS,401856843,ATS,Arizona State,16.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week9-postgame-audit
+9,FROZEN_FULL_ATS,401856844,ATS,Baylor,1.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week9-postgame-audit
+9,FROZEN_FULL_ATS,401856845,ATS,TCU,-5.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week9-postgame-audit
+9,FROZEN_FULL_ATS,401856846,ATS,Colorado,2.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week9-postgame-audit
+9,FROZEN_FULL_ATS,401856847,ATS,Iowa State,8.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week9-postgame-audit
+9,FROZEN_FULL_ATS,401856848,ATS,Cincinnati,6.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week9-postgame-audit
+9,FROZEN_FULL_ATS,401858277,ATS,NC State,-6.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week9-postgame-audit
+9,FROZEN_FULL_ATS,401858278,ATS,Syracuse,10.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week9-postgame-audit
+9,FROZEN_FULL_ATS,401858279,ATS,Duke,-7.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week9-postgame-audit
+9,FROZEN_FULL_ATS,401858280,ATS,Clemson,6.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week9-postgame-audit
+9,FROZEN_FULL_ATS,401858281,ATS,Pittsburgh,-7.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week9-postgame-audit
+9,FROZEN_FULL_ATS,401858282,ATS,North Carolina,14.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week9-postgame-audit
+9,FROZEN_FULL_ATS,401858283,ATS,Stanford,22.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week9-postgame-audit
+9,FROZEN_FULL_ATS,401858284,ATS,Virginia,12.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week9-postgame-audit
+9,FROZEN_FULL_ATS,401858501,ATS,Minnesota,20.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week9-postgame-audit
+9,FROZEN_FULL_ATS,401858502,ATS,Wisconsin,3.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week9-postgame-audit
+9,FROZEN_FULL_ATS,401858503,ATS,Maryland,2.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week9-postgame-audit
+9,FROZEN_FULL_ATS,401858504,ATS,Nebraska,-7.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week9-postgame-audit
+9,FROZEN_FULL_ATS,401858505,ATS,Northwestern,3.5,3.5,EXACT_MATCH,outputs/2026-week9-postgame-audit
+9,FROZEN_FULL_ATS,401858506,ATS,Purdue,7.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week9-postgame-audit
+9,FROZEN_FULL_ATS,401858507,ATS,Rutgers,14.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week9-postgame-audit
+9,FROZEN_FULL_ATS,401858508,ATS,Nevada,22.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week9-postgame-audit
+9,FROZEN_FULL_ATS,401858509,ATS,USC,6.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week9-postgame-audit
+9,FROZEN_FULL_ATS,401859185,ATS,Navy,30.5,30.5,EXACT_MATCH,outputs/2026-week9-postgame-audit
+9,FROZEN_FULL_ATS,401860908,ATS,Texas State,11.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week9-postgame-audit
+9,FROZEN_FULL_ATS,401860909,ATS,San Diego State,-2.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week9-postgame-audit
+9,FROZEN_FULL_ATS,401860910,ATS,Colorado State,6.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week9-postgame-audit
+9,FROZEN_FULL_ATS,401860924,ATS,Fresno State,5.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week9-postgame-audit
+9,FROZEN_FULL_ATS,401861966,ATS,Air Force,-2.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week9-postgame-audit
+9,FROZEN_FULL_ATS,401862812,ATS,Florida Atlantic,13.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week9-postgame-audit
+9,FROZEN_FULL_ATS,401862813,ATS,Charlotte,10.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week9-postgame-audit
+9,FROZEN_FULL_ATS,401862814,ATS,Army,6.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week9-postgame-audit
+9,FROZEN_FULL_ATS,401862815,ATS,Temple,5.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week9-postgame-audit
+9,FROZEN_FULL_ATS,401862816,ATS,UAB,7.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week9-postgame-audit
+9,FROZEN_FULL_ATS,401864529,ATS,San José State,14.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week9-postgame-audit
+9,FROZEN_FULL_ATS,401864530,ATS,Northern Illinois,24.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week9-postgame-audit
+9,FROZEN_FULL_ATS,401864531,ATS,UTEP,25.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week9-postgame-audit
+9,FROZEN_FULL_ATS,401866451,ATS,Sacramento State,9.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week9-postgame-audit
+9,FROZEN_FULL_ATS,401866452,ATS,Bowling Green,13.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week9-postgame-audit
+9,FROZEN_FULL_ATS,401869846,ATS,App State,5.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week9-postgame-audit
+9,FROZEN_FULL_ATS,401869944,ATS,Georgia State,-6.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week9-postgame-audit
+9,FROZEN_FULL_ATS,401869963,ATS,Troy,20.5,20.5,EXACT_MATCH,outputs/2026-week9-postgame-audit
+9,FROZEN_FULL_ATS,401871057,ATS,New Mexico State,3.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week9-postgame-audit
+9,FROZEN_FULL_ATS,401871058,ATS,Middle Tennessee,-2.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week9-postgame-audit
+9,FROZEN_FULL_ATS,401871059,ATS,Florida International,13.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week9-postgame-audit
+9,FROZEN_FULL_ATS,401871095,ATS,UL Monroe,3.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week9-postgame-audit
+9,FROZEN_FULL_ATS,401871096,ATS,Old Dominion,2.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week9-postgame-audit
+9,FROZEN_FULL_ATS,401871097,ATS,South Alabama,5.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week9-postgame-audit
+9,FROZEN_FULL_ATS,401871095,TOTAL,UNDER,,56.5,SUBMITTED_NOT_IN_COHORT,outputs/2026-week9-postgame-audit
+9,FROZEN_FULL_ATS,401858278,TOTAL,UNDER,,58.5,SUBMITTED_NOT_IN_COHORT,outputs/2026-week9-postgame-audit
+9,FROZEN_FULL_TOTAL,401856733,TOTAL,OVER,48.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week9-postgame-audit
+9,FROZEN_FULL_TOTAL,401856734,TOTAL,UNDER,55.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week9-postgame-audit
+9,FROZEN_FULL_TOTAL,401856735,TOTAL,UNDER,57.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week9-postgame-audit
+9,FROZEN_FULL_TOTAL,401856736,TOTAL,UNDER,44.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week9-postgame-audit
+9,FROZEN_FULL_TOTAL,401856737,TOTAL,UNDER,49.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week9-postgame-audit
+9,FROZEN_FULL_TOTAL,401856842,TOTAL,UNDER,54.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week9-postgame-audit
+9,FROZEN_FULL_TOTAL,401856843,TOTAL,OVER,48.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week9-postgame-audit
+9,FROZEN_FULL_TOTAL,401856844,TOTAL,UNDER,48.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week9-postgame-audit
+9,FROZEN_FULL_TOTAL,401856845,TOTAL,UNDER,46.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week9-postgame-audit
+9,FROZEN_FULL_TOTAL,401856846,TOTAL,OVER,47.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week9-postgame-audit
+9,FROZEN_FULL_TOTAL,401856847,TOTAL,UNDER,58.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week9-postgame-audit
+9,FROZEN_FULL_TOTAL,401856848,TOTAL,UNDER,56.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week9-postgame-audit
+9,FROZEN_FULL_TOTAL,401858277,TOTAL,UNDER,56.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week9-postgame-audit
+9,FROZEN_FULL_TOTAL,401858278,TOTAL,UNDER,58.5,58.5,EXACT_MATCH,outputs/2026-week9-postgame-audit
+9,FROZEN_FULL_TOTAL,401858279,TOTAL,OVER,47.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week9-postgame-audit
+9,FROZEN_FULL_TOTAL,401858280,TOTAL,UNDER,50.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week9-postgame-audit
+9,FROZEN_FULL_TOTAL,401858281,TOTAL,UNDER,53.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week9-postgame-audit
+9,FROZEN_FULL_TOTAL,401858282,TOTAL,OVER,52.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week9-postgame-audit
+9,FROZEN_FULL_TOTAL,401858283,TOTAL,UNDER,61.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week9-postgame-audit
+9,FROZEN_FULL_TOTAL,401858284,TOTAL,OVER,49.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week9-postgame-audit
+9,FROZEN_FULL_TOTAL,401858501,TOTAL,OVER,41.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week9-postgame-audit
+9,FROZEN_FULL_TOTAL,401858502,TOTAL,OVER,36.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week9-postgame-audit
+9,FROZEN_FULL_TOTAL,401858503,TOTAL,UNDER,54.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week9-postgame-audit
+9,FROZEN_FULL_TOTAL,401858504,TOTAL,UNDER,49.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week9-postgame-audit
+9,FROZEN_FULL_TOTAL,401858505,TOTAL,OVER,47.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week9-postgame-audit
+9,FROZEN_FULL_TOTAL,401858506,TOTAL,UNDER,54.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week9-postgame-audit
+9,FROZEN_FULL_TOTAL,401858507,TOTAL,OVER,46.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week9-postgame-audit
+9,FROZEN_FULL_TOTAL,401858508,TOTAL,OVER,43.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week9-postgame-audit
+9,FROZEN_FULL_TOTAL,401858509,TOTAL,UNDER,52.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week9-postgame-audit
+9,FROZEN_FULL_TOTAL,401859185,TOTAL,UNDER,57.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week9-postgame-audit
+9,FROZEN_FULL_TOTAL,401860908,TOTAL,UNDER,62.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week9-postgame-audit
+9,FROZEN_FULL_TOTAL,401860909,TOTAL,UNDER,48.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week9-postgame-audit
+9,FROZEN_FULL_TOTAL,401860910,TOTAL,UNDER,63.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week9-postgame-audit
+9,FROZEN_FULL_TOTAL,401860924,TOTAL,UNDER,58.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week9-postgame-audit
+9,FROZEN_FULL_TOTAL,401861966,TOTAL,UNDER,52.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week9-postgame-audit
+9,FROZEN_FULL_TOTAL,401862812,TOTAL,UNDER,77.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week9-postgame-audit
+9,FROZEN_FULL_TOTAL,401862813,TOTAL,OVER,46.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week9-postgame-audit
+9,FROZEN_FULL_TOTAL,401862814,TOTAL,UNDER,59.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week9-postgame-audit
+9,FROZEN_FULL_TOTAL,401862815,TOTAL,OVER,49.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week9-postgame-audit
+9,FROZEN_FULL_TOTAL,401862816,TOTAL,OVER,42.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week9-postgame-audit
+9,FROZEN_FULL_TOTAL,401864529,TOTAL,OVER,41.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week9-postgame-audit
+9,FROZEN_FULL_TOTAL,401864530,TOTAL,UNDER,54.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week9-postgame-audit
+9,FROZEN_FULL_TOTAL,401864531,TOTAL,OVER,43.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week9-postgame-audit
+9,FROZEN_FULL_TOTAL,401866451,TOTAL,UNDER,46.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week9-postgame-audit
+9,FROZEN_FULL_TOTAL,401866452,TOTAL,OVER,44.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week9-postgame-audit
+9,FROZEN_FULL_TOTAL,401869846,TOTAL,UNDER,56.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week9-postgame-audit
+9,FROZEN_FULL_TOTAL,401869944,TOTAL,UNDER,58.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week9-postgame-audit
+9,FROZEN_FULL_TOTAL,401869963,TOTAL,UNDER,49.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week9-postgame-audit
+9,FROZEN_FULL_TOTAL,401871057,TOTAL,UNDER,49.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week9-postgame-audit
+9,FROZEN_FULL_TOTAL,401871058,TOTAL,OVER,50.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week9-postgame-audit
+9,FROZEN_FULL_TOTAL,401871059,TOTAL,UNDER,45.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week9-postgame-audit
+9,FROZEN_FULL_TOTAL,401871095,TOTAL,UNDER,56.5,56.5,EXACT_MATCH,outputs/2026-week9-postgame-audit
+9,FROZEN_FULL_TOTAL,401871096,TOTAL,OVER,45.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week9-postgame-audit
+9,FROZEN_FULL_TOTAL,401871097,TOTAL,UNDER,57.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week9-postgame-audit
+9,FROZEN_FULL_TOTAL,401858505,ATS,Northwestern,,3.5,SUBMITTED_NOT_IN_COHORT,outputs/2026-week9-postgame-audit
+9,FROZEN_FULL_TOTAL,401859185,ATS,Navy,,30.5,SUBMITTED_NOT_IN_COHORT,outputs/2026-week9-postgame-audit
+9,FROZEN_FULL_TOTAL,401869963,ATS,Troy,,20.5,SUBMITTED_NOT_IN_COHORT,outputs/2026-week9-postgame-audit
+9,GOVERNED_ATS_TOP5,401862812,ATS,Florida Atlantic,13.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week9-postgame-audit/v1/frozen_cohort_membership.csv
+9,GOVERNED_ATS_TOP5,401862813,ATS,Charlotte,10.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week9-postgame-audit/v1/frozen_cohort_membership.csv
+9,GOVERNED_ATS_TOP5,401869963,ATS,Troy,20.5,20.5,EXACT_MATCH,outputs/2026-week9-postgame-audit/v1/frozen_cohort_membership.csv
+9,GOVERNED_ATS_TOP5,401871057,ATS,New Mexico State,3.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week9-postgame-audit/v1/frozen_cohort_membership.csv
+9,GOVERNED_ATS_TOP5,401871058,ATS,Middle Tennessee,-2.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week9-postgame-audit/v1/frozen_cohort_membership.csv
+9,GOVERNED_ATS_TOP5,401858505,ATS,Northwestern,,3.5,SUBMITTED_NOT_IN_COHORT,outputs/2026-week9-postgame-audit/v1/frozen_cohort_membership.csv
+9,GOVERNED_ATS_TOP5,401859185,ATS,Navy,,30.5,SUBMITTED_NOT_IN_COHORT,outputs/2026-week9-postgame-audit/v1/frozen_cohort_membership.csv
+9,GOVERNED_ATS_TOP5,401871095,TOTAL,UNDER,,56.5,SUBMITTED_NOT_IN_COHORT,outputs/2026-week9-postgame-audit/v1/frozen_cohort_membership.csv
+9,GOVERNED_ATS_TOP5,401858278,TOTAL,UNDER,,58.5,SUBMITTED_NOT_IN_COHORT,outputs/2026-week9-postgame-audit/v1/frozen_cohort_membership.csv
+9,HUMAN_20261028-evening_1-5,401858505,ATS,Northwestern,3.5,3.5,EXACT_MATCH,outputs/2026-week9-postgame-audit/v1/frozen_cohort_membership.csv
+9,HUMAN_20261028-evening_1-5,401859185,ATS,Navy,30.5,30.5,EXACT_MATCH,outputs/2026-week9-postgame-audit/v1/frozen_cohort_membership.csv
+9,HUMAN_20261028-evening_1-5,401871095,TOTAL,UNDER,56.5,56.5,EXACT_MATCH,outputs/2026-week9-postgame-audit/v1/frozen_cohort_membership.csv
+9,HUMAN_20261028-evening_1-5,401869963,ATS,Troy,20.5,20.5,EXACT_MATCH,outputs/2026-week9-postgame-audit/v1/frozen_cohort_membership.csv
+9,HUMAN_20261028-evening_1-5,401862812,TOTAL,UNDER,77.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week9-postgame-audit/v1/frozen_cohort_membership.csv
+9,HUMAN_20261028-evening_1-5,401858278,TOTAL,UNDER,,58.5,SUBMITTED_NOT_IN_COHORT,outputs/2026-week9-postgame-audit/v1/frozen_cohort_membership.csv
+9,HUMAN_20261028-evening_6-10,401858278,TOTAL,UNDER,58.5,58.5,EXACT_MATCH,outputs/2026-week9-postgame-audit/v1/frozen_cohort_membership.csv
+9,HUMAN_20261028-evening_6-10,401860910,TOTAL,UNDER,63.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week9-postgame-audit/v1/frozen_cohort_membership.csv
+9,HUMAN_20261028-evening_6-10,401864529,ATS,San José State,14.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week9-postgame-audit/v1/frozen_cohort_membership.csv
+9,HUMAN_20261028-evening_6-10,401858502,TOTAL,OVER,36.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week9-postgame-audit/v1/frozen_cohort_membership.csv
+9,HUMAN_20261028-evening_6-10,401856737,ATS,Mississippi State,20.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week9-postgame-audit/v1/frozen_cohort_membership.csv
+9,HUMAN_20261028-evening_6-10,401858505,ATS,Northwestern,,3.5,SUBMITTED_NOT_IN_COHORT,outputs/2026-week9-postgame-audit/v1/frozen_cohort_membership.csv
+9,HUMAN_20261028-evening_6-10,401859185,ATS,Navy,,30.5,SUBMITTED_NOT_IN_COHORT,outputs/2026-week9-postgame-audit/v1/frozen_cohort_membership.csv
+9,HUMAN_20261028-evening_6-10,401871095,TOTAL,UNDER,,56.5,SUBMITTED_NOT_IN_COHORT,outputs/2026-week9-postgame-audit/v1/frozen_cohort_membership.csv
+9,HUMAN_20261028-evening_6-10,401869963,ATS,Troy,,20.5,SUBMITTED_NOT_IN_COHORT,outputs/2026-week9-postgame-audit/v1/frozen_cohort_membership.csv
+9,HUMAN_20261028-morning_1-5,401858505,ATS,Northwestern,3.5,3.5,EXACT_MATCH,outputs/2026-week9-postgame-audit/v1/frozen_cohort_membership.csv
+9,HUMAN_20261028-morning_1-5,401859185,ATS,Navy,30.5,30.5,EXACT_MATCH,outputs/2026-week9-postgame-audit/v1/frozen_cohort_membership.csv
+9,HUMAN_20261028-morning_1-5,401871095,TOTAL,UNDER,56.5,56.5,EXACT_MATCH,outputs/2026-week9-postgame-audit/v1/frozen_cohort_membership.csv
+9,HUMAN_20261028-morning_1-5,401864529,ATS,San José State,14.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week9-postgame-audit/v1/frozen_cohort_membership.csv
+9,HUMAN_20261028-morning_1-5,401862812,TOTAL,UNDER,77.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week9-postgame-audit/v1/frozen_cohort_membership.csv
+9,HUMAN_20261028-morning_1-5,401858278,TOTAL,UNDER,,58.5,SUBMITTED_NOT_IN_COHORT,outputs/2026-week9-postgame-audit/v1/frozen_cohort_membership.csv
+9,HUMAN_20261028-morning_1-5,401869963,ATS,Troy,,20.5,SUBMITTED_NOT_IN_COHORT,outputs/2026-week9-postgame-audit/v1/frozen_cohort_membership.csv
+9,HUMAN_20261028-morning_6-10,401860910,TOTAL,UNDER,63.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week9-postgame-audit/v1/frozen_cohort_membership.csv
+9,HUMAN_20261028-morning_6-10,401858278,TOTAL,UNDER,58.5,58.5,EXACT_MATCH,outputs/2026-week9-postgame-audit/v1/frozen_cohort_membership.csv
+9,HUMAN_20261028-morning_6-10,401858502,TOTAL,OVER,36.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week9-postgame-audit/v1/frozen_cohort_membership.csv
+9,HUMAN_20261028-morning_6-10,401869963,ATS,Troy,20.5,20.5,EXACT_MATCH,outputs/2026-week9-postgame-audit/v1/frozen_cohort_membership.csv
+9,HUMAN_20261028-morning_6-10,401856737,ATS,Mississippi State,20.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week9-postgame-audit/v1/frozen_cohort_membership.csv
+9,HUMAN_20261028-morning_6-10,401858505,ATS,Northwestern,,3.5,SUBMITTED_NOT_IN_COHORT,outputs/2026-week9-postgame-audit/v1/frozen_cohort_membership.csv
+9,HUMAN_20261028-morning_6-10,401859185,ATS,Navy,,30.5,SUBMITTED_NOT_IN_COHORT,outputs/2026-week9-postgame-audit/v1/frozen_cohort_membership.csv
+9,HUMAN_20261028-morning_6-10,401871095,TOTAL,UNDER,,56.5,SUBMITTED_NOT_IN_COHORT,outputs/2026-week9-postgame-audit/v1/frozen_cohort_membership.csv
+9,HUMAN_20261029-morning-decision_1-5,401858505,ATS,Northwestern,3.5,3.5,EXACT_MATCH,outputs/2026-week9-postgame-audit/v1/frozen_cohort_membership.csv
+9,HUMAN_20261029-morning-decision_1-5,401859185,ATS,Navy,30.5,30.5,EXACT_MATCH,outputs/2026-week9-postgame-audit/v1/frozen_cohort_membership.csv
+9,HUMAN_20261029-morning-decision_1-5,401871095,TOTAL,UNDER,56.5,56.5,EXACT_MATCH,outputs/2026-week9-postgame-audit/v1/frozen_cohort_membership.csv
+9,HUMAN_20261029-morning-decision_1-5,401858278,TOTAL,UNDER,58.5,58.5,EXACT_MATCH,outputs/2026-week9-postgame-audit/v1/frozen_cohort_membership.csv
+9,HUMAN_20261029-morning-decision_1-5,401869963,ATS,Troy,20.5,20.5,EXACT_MATCH,outputs/2026-week9-postgame-audit/v1/frozen_cohort_membership.csv
+9,HUMAN_20261029-morning-decision_6-10,401862812,TOTAL,UNDER,77.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week9-postgame-audit/v1/frozen_cohort_membership.csv
+9,HUMAN_20261029-morning-decision_6-10,401860910,TOTAL,UNDER,63.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week9-postgame-audit/v1/frozen_cohort_membership.csv
+9,HUMAN_20261029-morning-decision_6-10,401864529,ATS,San José State,14.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week9-postgame-audit/v1/frozen_cohort_membership.csv
+9,HUMAN_20261029-morning-decision_6-10,401858502,TOTAL,OVER,36.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week9-postgame-audit/v1/frozen_cohort_membership.csv
+9,HUMAN_20261029-morning-decision_6-10,401856737,ATS,Mississippi State,20.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week9-postgame-audit/v1/frozen_cohort_membership.csv
+9,HUMAN_20261029-morning-decision_6-10,401858505,ATS,Northwestern,,3.5,SUBMITTED_NOT_IN_COHORT,outputs/2026-week9-postgame-audit/v1/frozen_cohort_membership.csv
+9,HUMAN_20261029-morning-decision_6-10,401859185,ATS,Navy,,30.5,SUBMITTED_NOT_IN_COHORT,outputs/2026-week9-postgame-audit/v1/frozen_cohort_membership.csv
+9,HUMAN_20261029-morning-decision_6-10,401871095,TOTAL,UNDER,,56.5,SUBMITTED_NOT_IN_COHORT,outputs/2026-week9-postgame-audit/v1/frozen_cohort_membership.csv
+9,HUMAN_20261029-morning-decision_6-10,401858278,TOTAL,UNDER,,58.5,SUBMITTED_NOT_IN_COHORT,outputs/2026-week9-postgame-audit/v1/frozen_cohort_membership.csv
+9,HUMAN_20261029-morning-decision_6-10,401869963,ATS,Troy,,20.5,SUBMITTED_NOT_IN_COHORT,outputs/2026-week9-postgame-audit/v1/frozen_cohort_membership.csv
+9,HUMAN_20261030-friday-morning_1-5,401858505,ATS,Northwestern,3.5,3.5,EXACT_MATCH,outputs/2026-week9-postgame-audit/v1/frozen_cohort_membership.csv
+9,HUMAN_20261030-friday-morning_1-5,401859185,ATS,Navy,30.5,30.5,EXACT_MATCH,outputs/2026-week9-postgame-audit/v1/frozen_cohort_membership.csv
+9,HUMAN_20261030-friday-morning_1-5,401871095,TOTAL,UNDER,56.5,56.5,EXACT_MATCH,outputs/2026-week9-postgame-audit/v1/frozen_cohort_membership.csv
+9,HUMAN_20261030-friday-morning_1-5,401858278,TOTAL,UNDER,58.5,58.5,EXACT_MATCH,outputs/2026-week9-postgame-audit/v1/frozen_cohort_membership.csv
+9,HUMAN_20261030-friday-morning_1-5,401869963,ATS,Troy,20.5,20.5,EXACT_MATCH,outputs/2026-week9-postgame-audit/v1/frozen_cohort_membership.csv
+9,HUMAN_20261030-friday-morning_6-10,401862812,TOTAL,UNDER,77.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week9-postgame-audit/v1/frozen_cohort_membership.csv
+9,HUMAN_20261030-friday-morning_6-10,401860910,TOTAL,UNDER,63.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week9-postgame-audit/v1/frozen_cohort_membership.csv
+9,HUMAN_20261030-friday-morning_6-10,401864529,ATS,San José State,14.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week9-postgame-audit/v1/frozen_cohort_membership.csv
+9,HUMAN_20261030-friday-morning_6-10,401858502,TOTAL,OVER,36.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week9-postgame-audit/v1/frozen_cohort_membership.csv
+9,HUMAN_20261030-friday-morning_6-10,401856737,ATS,Mississippi State,20.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week9-postgame-audit/v1/frozen_cohort_membership.csv
+9,HUMAN_20261030-friday-morning_6-10,401858505,ATS,Northwestern,,3.5,SUBMITTED_NOT_IN_COHORT,outputs/2026-week9-postgame-audit/v1/frozen_cohort_membership.csv
+9,HUMAN_20261030-friday-morning_6-10,401859185,ATS,Navy,,30.5,SUBMITTED_NOT_IN_COHORT,outputs/2026-week9-postgame-audit/v1/frozen_cohort_membership.csv
+9,HUMAN_20261030-friday-morning_6-10,401871095,TOTAL,UNDER,,56.5,SUBMITTED_NOT_IN_COHORT,outputs/2026-week9-postgame-audit/v1/frozen_cohort_membership.csv
+9,HUMAN_20261030-friday-morning_6-10,401858278,TOTAL,UNDER,,58.5,SUBMITTED_NOT_IN_COHORT,outputs/2026-week9-postgame-audit/v1/frozen_cohort_membership.csv
+9,HUMAN_20261030-friday-morning_6-10,401869963,ATS,Troy,,20.5,SUBMITTED_NOT_IN_COHORT,outputs/2026-week9-postgame-audit/v1/frozen_cohort_membership.csv
+9,INITIAL_FROZEN_TEN_CANDIDATES_NO_COMBINED_ORDER,401859185,ATS,Navy,30.5,30.5,EXACT_MATCH,outputs/2026-week9-postgame-audit/v1/frozen_cohort_membership.csv
+9,INITIAL_FROZEN_TEN_CANDIDATES_NO_COMBINED_ORDER,401856737,ATS,Mississippi State,20.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week9-postgame-audit/v1/frozen_cohort_membership.csv
+9,INITIAL_FROZEN_TEN_CANDIDATES_NO_COMBINED_ORDER,401869963,ATS,Troy,20.5,20.5,EXACT_MATCH,outputs/2026-week9-postgame-audit/v1/frozen_cohort_membership.csv
+9,INITIAL_FROZEN_TEN_CANDIDATES_NO_COMBINED_ORDER,401858505,ATS,Northwestern,3.5,3.5,EXACT_MATCH,outputs/2026-week9-postgame-audit/v1/frozen_cohort_membership.csv
+9,INITIAL_FROZEN_TEN_CANDIDATES_NO_COMBINED_ORDER,401864529,ATS,San José State,14.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week9-postgame-audit/v1/frozen_cohort_membership.csv
+9,INITIAL_FROZEN_TEN_CANDIDATES_NO_COMBINED_ORDER,401862812,TOTAL,UNDER,77.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week9-postgame-audit/v1/frozen_cohort_membership.csv
+9,INITIAL_FROZEN_TEN_CANDIDATES_NO_COMBINED_ORDER,401860910,TOTAL,UNDER,63.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week9-postgame-audit/v1/frozen_cohort_membership.csv
+9,INITIAL_FROZEN_TEN_CANDIDATES_NO_COMBINED_ORDER,401858502,TOTAL,OVER,36.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week9-postgame-audit/v1/frozen_cohort_membership.csv
+9,INITIAL_FROZEN_TEN_CANDIDATES_NO_COMBINED_ORDER,401871095,TOTAL,UNDER,56.5,56.5,EXACT_MATCH,outputs/2026-week9-postgame-audit/v1/frozen_cohort_membership.csv
+9,INITIAL_FROZEN_TEN_CANDIDATES_NO_COMBINED_ORDER,401858278,TOTAL,UNDER,58.5,58.5,EXACT_MATCH,outputs/2026-week9-postgame-audit/v1/frozen_cohort_membership.csv
+9,ORIGINAL_COMBINED_RESEARCH_TOP5,401862812,TOTAL,UNDER,77.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week9-postgame-audit/v1/frozen_cohort_membership.csv
+9,ORIGINAL_COMBINED_RESEARCH_TOP5,401860910,TOTAL,UNDER,63.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week9-postgame-audit/v1/frozen_cohort_membership.csv
+9,ORIGINAL_COMBINED_RESEARCH_TOP5,401858502,TOTAL,OVER,36.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week9-postgame-audit/v1/frozen_cohort_membership.csv
+9,ORIGINAL_COMBINED_RESEARCH_TOP5,401871095,TOTAL,UNDER,56.5,56.5,EXACT_MATCH,outputs/2026-week9-postgame-audit/v1/frozen_cohort_membership.csv
+9,ORIGINAL_COMBINED_RESEARCH_TOP5,401858278,TOTAL,UNDER,58.5,58.5,EXACT_MATCH,outputs/2026-week9-postgame-audit/v1/frozen_cohort_membership.csv
+9,ORIGINAL_COMBINED_RESEARCH_TOP5,401858505,ATS,Northwestern,,3.5,SUBMITTED_NOT_IN_COHORT,outputs/2026-week9-postgame-audit/v1/frozen_cohort_membership.csv
+9,ORIGINAL_COMBINED_RESEARCH_TOP5,401859185,ATS,Navy,,30.5,SUBMITTED_NOT_IN_COHORT,outputs/2026-week9-postgame-audit/v1/frozen_cohort_membership.csv
+9,ORIGINAL_COMBINED_RESEARCH_TOP5,401869963,ATS,Troy,,20.5,SUBMITTED_NOT_IN_COHORT,outputs/2026-week9-postgame-audit/v1/frozen_cohort_membership.csv
+9,TOTAL_RESEARCH_1-5,401858278,TOTAL,UNDER,58.5,58.5,EXACT_MATCH,outputs/2026-week9-postgame-audit/v1/frozen_cohort_membership.csv
+9,TOTAL_RESEARCH_1-5,401858502,TOTAL,OVER,36.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week9-postgame-audit/v1/frozen_cohort_membership.csv
+9,TOTAL_RESEARCH_1-5,401860910,TOTAL,UNDER,63.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week9-postgame-audit/v1/frozen_cohort_membership.csv
+9,TOTAL_RESEARCH_1-5,401862812,TOTAL,UNDER,77.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week9-postgame-audit/v1/frozen_cohort_membership.csv
+9,TOTAL_RESEARCH_1-5,401871095,TOTAL,UNDER,56.5,56.5,EXACT_MATCH,outputs/2026-week9-postgame-audit/v1/frozen_cohort_membership.csv
+9,TOTAL_RESEARCH_1-5,401858505,ATS,Northwestern,,3.5,SUBMITTED_NOT_IN_COHORT,outputs/2026-week9-postgame-audit/v1/frozen_cohort_membership.csv
+9,TOTAL_RESEARCH_1-5,401859185,ATS,Navy,,30.5,SUBMITTED_NOT_IN_COHORT,outputs/2026-week9-postgame-audit/v1/frozen_cohort_membership.csv
+9,TOTAL_RESEARCH_1-5,401869963,ATS,Troy,,20.5,SUBMITTED_NOT_IN_COHORT,outputs/2026-week9-postgame-audit/v1/frozen_cohort_membership.csv
+9,TOTAL_RESEARCH_6-10,401856842,TOTAL,UNDER,54.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week9-postgame-audit/v1/frozen_cohort_membership.csv
+9,TOTAL_RESEARCH_6-10,401856847,TOTAL,UNDER,58.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week9-postgame-audit/v1/frozen_cohort_membership.csv
+9,TOTAL_RESEARCH_6-10,401860908,TOTAL,UNDER,62.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week9-postgame-audit/v1/frozen_cohort_membership.csv
+9,TOTAL_RESEARCH_6-10,401860924,TOTAL,UNDER,58.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week9-postgame-audit/v1/frozen_cohort_membership.csv
+9,TOTAL_RESEARCH_6-10,401869846,TOTAL,UNDER,56.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week9-postgame-audit/v1/frozen_cohort_membership.csv
+9,TOTAL_RESEARCH_6-10,401858505,ATS,Northwestern,,3.5,SUBMITTED_NOT_IN_COHORT,outputs/2026-week9-postgame-audit/v1/frozen_cohort_membership.csv
+9,TOTAL_RESEARCH_6-10,401859185,ATS,Navy,,30.5,SUBMITTED_NOT_IN_COHORT,outputs/2026-week9-postgame-audit/v1/frozen_cohort_membership.csv
+9,TOTAL_RESEARCH_6-10,401871095,TOTAL,UNDER,,56.5,SUBMITTED_NOT_IN_COHORT,outputs/2026-week9-postgame-audit/v1/frozen_cohort_membership.csv
+9,TOTAL_RESEARCH_6-10,401858278,TOTAL,UNDER,,58.5,SUBMITTED_NOT_IN_COHORT,outputs/2026-week9-postgame-audit/v1/frozen_cohort_membership.csv
+9,TOTAL_RESEARCH_6-10,401869963,ATS,Troy,,20.5,SUBMITTED_NOT_IN_COHORT,outputs/2026-week9-postgame-audit/v1/frozen_cohort_membership.csv
+10,ATS_RESEARCH_1-5,401856743,ATS,Missouri,2.5,2.5,EXACT_MATCH,outputs/2026-week10-postgame-audit/v2/frozen_cohort_membership.csv
+10,ATS_RESEARCH_1-5,401858289,ATS,Boston College,6.5,6.5,EXACT_MATCH,outputs/2026-week10-postgame-audit/v2/frozen_cohort_membership.csv
+10,ATS_RESEARCH_1-5,401858292,ATS,UConn,6.5,6.5,EXACT_MATCH,outputs/2026-week10-postgame-audit/v2/frozen_cohort_membership.csv
+10,ATS_RESEARCH_1-5,401860911,ATS,Colorado State,17.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week10-postgame-audit/v2/frozen_cohort_membership.csv
+10,ATS_RESEARCH_1-5,401871076,ATS,Middle Tennessee,1.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week10-postgame-audit/v2/frozen_cohort_membership.csv
+10,ATS_RESEARCH_1-5,401869964,TOTAL,UNDER,,58.5,SUBMITTED_NOT_IN_COHORT,outputs/2026-week10-postgame-audit/v2/frozen_cohort_membership.csv
+10,ATS_RESEARCH_1-5,401862823,TOTAL,OVER,,45.5,SUBMITTED_NOT_IN_COHORT,outputs/2026-week10-postgame-audit/v2/frozen_cohort_membership.csv
+10,ATS_RESEARCH_6-10,401858287,ATS,Georgia Tech,14.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week10-postgame-audit/v2/frozen_cohort_membership.csv
+10,ATS_RESEARCH_6-10,401858513,ATS,Northwestern,-2.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week10-postgame-audit/v2/frozen_cohort_membership.csv
+10,ATS_RESEARCH_6-10,401864534,ATS,San José State,-9.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week10-postgame-audit/v2/frozen_cohort_membership.csv
+10,ATS_RESEARCH_6-10,401869964,ATS,Southern Miss,14.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week10-postgame-audit/v2/frozen_cohort_membership.csv
+10,ATS_RESEARCH_6-10,401870795,ATS,New Mexico State,17.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week10-postgame-audit/v2/frozen_cohort_membership.csv
+10,ATS_RESEARCH_6-10,401856743,ATS,Missouri,,2.5,SUBMITTED_NOT_IN_COHORT,outputs/2026-week10-postgame-audit/v2/frozen_cohort_membership.csv
+10,ATS_RESEARCH_6-10,401858289,ATS,Boston College,,6.5,SUBMITTED_NOT_IN_COHORT,outputs/2026-week10-postgame-audit/v2/frozen_cohort_membership.csv
+10,ATS_RESEARCH_6-10,401858292,ATS,UConn,,6.5,SUBMITTED_NOT_IN_COHORT,outputs/2026-week10-postgame-audit/v2/frozen_cohort_membership.csv
+10,ATS_RESEARCH_6-10,401869964,TOTAL,UNDER,,58.5,SUBMITTED_NOT_IN_COHORT,outputs/2026-week10-postgame-audit/v2/frozen_cohort_membership.csv
+10,ATS_RESEARCH_6-10,401862823,TOTAL,OVER,,45.5,SUBMITTED_NOT_IN_COHORT,outputs/2026-week10-postgame-audit/v2/frozen_cohort_membership.csv
+10,FROZEN_FULL_ATS,401856738,ATS,Arkansas,10.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week10-postgame-audit
+10,FROZEN_FULL_ATS,401856739,ATS,Florida,-6.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week10-postgame-audit
+10,FROZEN_FULL_ATS,401856740,ATS,LSU,-5.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week10-postgame-audit
+10,FROZEN_FULL_ATS,401856741,ATS,Ole Miss,3.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week10-postgame-audit
+10,FROZEN_FULL_ATS,401856742,ATS,Mississippi State,-2.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week10-postgame-audit
+10,FROZEN_FULL_ATS,401856743,ATS,Missouri,2.5,2.5,EXACT_MATCH,outputs/2026-week10-postgame-audit
+10,FROZEN_FULL_ATS,401856744,ATS,Texas A&M,7.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week10-postgame-audit
+10,FROZEN_FULL_ATS,401856745,ATS,Tennessee,-6.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week10-postgame-audit
+10,FROZEN_FULL_ATS,401856849,ATS,Utah,-4.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week10-postgame-audit
+10,FROZEN_FULL_ATS,401856850,ATS,Kansas,-2.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week10-postgame-audit
+10,FROZEN_FULL_ATS,401856851,ATS,Cincinnati,10.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week10-postgame-audit
+10,FROZEN_FULL_ATS,401856852,ATS,Arizona State,-3.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week10-postgame-audit
+10,FROZEN_FULL_ATS,401856853,ATS,Baylor,-9.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week10-postgame-audit
+10,FROZEN_FULL_ATS,401856854,ATS,Kansas State,4.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week10-postgame-audit
+10,FROZEN_FULL_ATS,401856855,ATS,TCU,9.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week10-postgame-audit
+10,FROZEN_FULL_ATS,401856856,ATS,West Virginia,16.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week10-postgame-audit
+10,FROZEN_FULL_ATS,401858285,ATS,Syracuse,2.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week10-postgame-audit
+10,FROZEN_FULL_ATS,401858286,ATS,NC State,4.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week10-postgame-audit
+10,FROZEN_FULL_ATS,401858287,ATS,Georgia Tech,14.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week10-postgame-audit
+10,FROZEN_FULL_ATS,401858288,ATS,Virginia Tech,5.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week10-postgame-audit
+10,FROZEN_FULL_ATS,401858289,ATS,Boston College,6.5,6.5,EXACT_MATCH,outputs/2026-week10-postgame-audit
+10,FROZEN_FULL_ATS,401858291,ATS,Notre Dame,-5.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week10-postgame-audit
+10,FROZEN_FULL_ATS,401858292,ATS,UConn,6.5,6.5,EXACT_MATCH,outputs/2026-week10-postgame-audit
+10,FROZEN_FULL_ATS,401858510,ATS,Nebraska,-4.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week10-postgame-audit
+10,FROZEN_FULL_ATS,401858511,ATS,Michigan,-13.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week10-postgame-audit
+10,FROZEN_FULL_ATS,401858512,ATS,UCLA,-5.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week10-postgame-audit
+10,FROZEN_FULL_ATS,401858513,ATS,Northwestern,-2.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week10-postgame-audit
+10,FROZEN_FULL_ATS,401858514,ATS,Ohio State,-7.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week10-postgame-audit
+10,FROZEN_FULL_ATS,401858515,ATS,Maryland,6.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week10-postgame-audit
+10,FROZEN_FULL_ATS,401858516,ATS,Washington,-1.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week10-postgame-audit
+10,FROZEN_FULL_ATS,401858517,ATS,Rutgers,17.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week10-postgame-audit
+10,FROZEN_FULL_ATS,401860911,ATS,Colorado State,17.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week10-postgame-audit
+10,FROZEN_FULL_ATS,401860912,ATS,Texas State,6.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week10-postgame-audit
+10,FROZEN_FULL_ATS,401860913,ATS,Utah State,2.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week10-postgame-audit
+10,FROZEN_FULL_ATS,401862817,ATS,Florida Atlantic,7.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week10-postgame-audit
+10,FROZEN_FULL_ATS,401862818,ATS,East Carolina,-1.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week10-postgame-audit
+10,FROZEN_FULL_ATS,401862819,ATS,UAB,-9.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week10-postgame-audit
+10,FROZEN_FULL_ATS,401862820,ATS,Temple,7.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week10-postgame-audit
+10,FROZEN_FULL_ATS,401862821,ATS,Rice,16.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week10-postgame-audit
+10,FROZEN_FULL_ATS,401862822,ATS,Tulane,1.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week10-postgame-audit
+10,FROZEN_FULL_ATS,401862823,ATS,Air Force,3.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week10-postgame-audit
+10,FROZEN_FULL_ATS,401864532,ATS,UTEP,9.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week10-postgame-audit
+10,FROZEN_FULL_ATS,401864533,ATS,Nevada,9.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week10-postgame-audit
+10,FROZEN_FULL_ATS,401864534,ATS,San José State,-9.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week10-postgame-audit
+10,FROZEN_FULL_ATS,401864535,ATS,Wyoming,6.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week10-postgame-audit
+10,FROZEN_FULL_ATS,401869927,ATS,Georgia State,4.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week10-postgame-audit
+10,FROZEN_FULL_ATS,401869936,ATS,UL Monroe,14.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week10-postgame-audit
+10,FROZEN_FULL_ATS,401869945,ATS,Coastal Carolina,-7.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week10-postgame-audit
+10,FROZEN_FULL_ATS,401869951,ATS,Marshall,10.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week10-postgame-audit
+10,FROZEN_FULL_ATS,401869964,ATS,Southern Miss,14.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week10-postgame-audit
+10,FROZEN_FULL_ATS,401869968,ATS,Louisiana,-8.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week10-postgame-audit
+10,FROZEN_FULL_ATS,401870795,ATS,New Mexico State,17.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week10-postgame-audit
+10,FROZEN_FULL_ATS,401871073,ATS,Kennesaw State,2.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week10-postgame-audit
+10,FROZEN_FULL_ATS,401871074,ATS,Florida International,-4.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week10-postgame-audit
+10,FROZEN_FULL_ATS,401871075,ATS,Sam Houston,17.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week10-postgame-audit
+10,FROZEN_FULL_ATS,401871076,ATS,Middle Tennessee,1.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week10-postgame-audit
+10,FROZEN_FULL_ATS,401871098,ATS,Troy,4.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week10-postgame-audit
+10,FROZEN_FULL_ATS,401869964,TOTAL,UNDER,,58.5,SUBMITTED_NOT_IN_COHORT,outputs/2026-week10-postgame-audit
+10,FROZEN_FULL_ATS,401862823,TOTAL,OVER,,45.5,SUBMITTED_NOT_IN_COHORT,outputs/2026-week10-postgame-audit
+10,FROZEN_FULL_TOTAL,401856738,TOTAL,UNDER,52.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week10-postgame-audit
+10,FROZEN_FULL_TOTAL,401856739,TOTAL,OVER,44.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week10-postgame-audit
+10,FROZEN_FULL_TOTAL,401856740,TOTAL,UNDER,52.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week10-postgame-audit
+10,FROZEN_FULL_TOTAL,401856741,TOTAL,UNDER,56.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week10-postgame-audit
+10,FROZEN_FULL_TOTAL,401856742,TOTAL,OVER,48.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week10-postgame-audit
+10,FROZEN_FULL_TOTAL,401856743,TOTAL,OVER,43.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week10-postgame-audit
+10,FROZEN_FULL_TOTAL,401856744,TOTAL,UNDER,51.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week10-postgame-audit
+10,FROZEN_FULL_TOTAL,401856745,TOTAL,UNDER,50.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week10-postgame-audit
+10,FROZEN_FULL_TOTAL,401856849,TOTAL,OVER,48.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week10-postgame-audit
+10,FROZEN_FULL_TOTAL,401856850,TOTAL,UNDER,47.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week10-postgame-audit
+10,FROZEN_FULL_TOTAL,401856851,TOTAL,UNDER,62.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week10-postgame-audit
+10,FROZEN_FULL_TOTAL,401856852,TOTAL,UNDER,48.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week10-postgame-audit
+10,FROZEN_FULL_TOTAL,401856853,TOTAL,UNDER,51.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week10-postgame-audit
+10,FROZEN_FULL_TOTAL,401856854,TOTAL,UNDER,62.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week10-postgame-audit
+10,FROZEN_FULL_TOTAL,401856855,TOTAL,OVER,43.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week10-postgame-audit
+10,FROZEN_FULL_TOTAL,401856856,TOTAL,UNDER,65.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week10-postgame-audit
+10,FROZEN_FULL_TOTAL,401858285,TOTAL,UNDER,49.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week10-postgame-audit
+10,FROZEN_FULL_TOTAL,401858286,TOTAL,OVER,51.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week10-postgame-audit
+10,FROZEN_FULL_TOTAL,401858287,TOTAL,UNDER,61.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week10-postgame-audit
+10,FROZEN_FULL_TOTAL,401858288,TOTAL,UNDER,56.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week10-postgame-audit
+10,FROZEN_FULL_TOTAL,401858289,TOTAL,UNDER,51.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week10-postgame-audit
+10,FROZEN_FULL_TOTAL,401858291,TOTAL,UNDER,57.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week10-postgame-audit
+10,FROZEN_FULL_TOTAL,401858292,TOTAL,UNDER,54.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week10-postgame-audit
+10,FROZEN_FULL_TOTAL,401858510,TOTAL,OVER,50.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week10-postgame-audit
+10,FROZEN_FULL_TOTAL,401858511,TOTAL,OVER,40.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week10-postgame-audit
+10,FROZEN_FULL_TOTAL,401858512,TOTAL,OVER,39.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week10-postgame-audit
+10,FROZEN_FULL_TOTAL,401858513,TOTAL,OVER,45.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week10-postgame-audit
+10,FROZEN_FULL_TOTAL,401858514,TOTAL,OVER,46.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week10-postgame-audit
+10,FROZEN_FULL_TOTAL,401858515,TOTAL,UNDER,57.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week10-postgame-audit
+10,FROZEN_FULL_TOTAL,401858516,TOTAL,OVER,44.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week10-postgame-audit
+10,FROZEN_FULL_TOTAL,401858517,TOTAL,OVER,45.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week10-postgame-audit
+10,FROZEN_FULL_TOTAL,401860911,TOTAL,UNDER,68.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week10-postgame-audit
+10,FROZEN_FULL_TOTAL,401860912,TOTAL,UNDER,72.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week10-postgame-audit
+10,FROZEN_FULL_TOTAL,401860913,TOTAL,OVER,42.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week10-postgame-audit
+10,FROZEN_FULL_TOTAL,401862817,TOTAL,UNDER,73.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week10-postgame-audit
+10,FROZEN_FULL_TOTAL,401862818,TOTAL,OVER,39.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week10-postgame-audit
+10,FROZEN_FULL_TOTAL,401862819,TOTAL,UNDER,47.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week10-postgame-audit
+10,FROZEN_FULL_TOTAL,401862820,TOTAL,OVER,54.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week10-postgame-audit
+10,FROZEN_FULL_TOTAL,401862821,TOTAL,UNDER,64.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week10-postgame-audit
+10,FROZEN_FULL_TOTAL,401862822,TOTAL,OVER,49.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week10-postgame-audit
+10,FROZEN_FULL_TOTAL,401862823,TOTAL,OVER,45.5,45.5,EXACT_MATCH,outputs/2026-week10-postgame-audit
+10,FROZEN_FULL_TOTAL,401864532,TOTAL,OVER,48.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week10-postgame-audit
+10,FROZEN_FULL_TOTAL,401864533,TOTAL,OVER,39.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week10-postgame-audit
+10,FROZEN_FULL_TOTAL,401864534,TOTAL,UNDER,51.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week10-postgame-audit
+10,FROZEN_FULL_TOTAL,401864535,TOTAL,OVER,48.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week10-postgame-audit
+10,FROZEN_FULL_TOTAL,401869927,TOTAL,UNDER,55.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week10-postgame-audit
+10,FROZEN_FULL_TOTAL,401869936,TOTAL,UNDER,53.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week10-postgame-audit
+10,FROZEN_FULL_TOTAL,401869945,TOTAL,UNDER,44.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week10-postgame-audit
+10,FROZEN_FULL_TOTAL,401869951,TOTAL,UNDER,54.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week10-postgame-audit
+10,FROZEN_FULL_TOTAL,401869964,TOTAL,UNDER,58.5,58.5,EXACT_MATCH,outputs/2026-week10-postgame-audit
+10,FROZEN_FULL_TOTAL,401869968,TOTAL,UNDER,57.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week10-postgame-audit
+10,FROZEN_FULL_TOTAL,401870795,TOTAL,UNDER,46.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week10-postgame-audit
+10,FROZEN_FULL_TOTAL,401871073,TOTAL,UNDER,56.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week10-postgame-audit
+10,FROZEN_FULL_TOTAL,401871074,TOTAL,UNDER,49.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week10-postgame-audit
+10,FROZEN_FULL_TOTAL,401871075,TOTAL,UNDER,48.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week10-postgame-audit
+10,FROZEN_FULL_TOTAL,401871076,TOTAL,UNDER,53.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week10-postgame-audit
+10,FROZEN_FULL_TOTAL,401871098,TOTAL,UNDER,47.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week10-postgame-audit
+10,FROZEN_FULL_TOTAL,401856743,ATS,Missouri,,2.5,SUBMITTED_NOT_IN_COHORT,outputs/2026-week10-postgame-audit
+10,FROZEN_FULL_TOTAL,401858289,ATS,Boston College,,6.5,SUBMITTED_NOT_IN_COHORT,outputs/2026-week10-postgame-audit
+10,FROZEN_FULL_TOTAL,401858292,ATS,UConn,,6.5,SUBMITTED_NOT_IN_COHORT,outputs/2026-week10-postgame-audit
+10,GOVERNED_ATS_TOP5,401858288,ATS,Virginia Tech,5.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week10-postgame-audit/v2/frozen_cohort_membership.csv
+10,GOVERNED_ATS_TOP5,401858510,ATS,Nebraska,-4.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week10-postgame-audit/v2/frozen_cohort_membership.csv
+10,GOVERNED_ATS_TOP5,401862817,ATS,Florida Atlantic,7.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week10-postgame-audit/v2/frozen_cohort_membership.csv
+10,GOVERNED_ATS_TOP5,401862818,ATS,East Carolina,-1.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week10-postgame-audit/v2/frozen_cohort_membership.csv
+10,GOVERNED_ATS_TOP5,401869964,ATS,Southern Miss,14.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week10-postgame-audit/v2/frozen_cohort_membership.csv
+10,GOVERNED_ATS_TOP5,401856743,ATS,Missouri,,2.5,SUBMITTED_NOT_IN_COHORT,outputs/2026-week10-postgame-audit/v2/frozen_cohort_membership.csv
+10,GOVERNED_ATS_TOP5,401858289,ATS,Boston College,,6.5,SUBMITTED_NOT_IN_COHORT,outputs/2026-week10-postgame-audit/v2/frozen_cohort_membership.csv
+10,GOVERNED_ATS_TOP5,401858292,ATS,UConn,,6.5,SUBMITTED_NOT_IN_COHORT,outputs/2026-week10-postgame-audit/v2/frozen_cohort_membership.csv
+10,GOVERNED_ATS_TOP5,401869964,TOTAL,UNDER,,58.5,SUBMITTED_NOT_IN_COHORT,outputs/2026-week10-postgame-audit/v2/frozen_cohort_membership.csv
+10,GOVERNED_ATS_TOP5,401862823,TOTAL,OVER,,45.5,SUBMITTED_NOT_IN_COHORT,outputs/2026-week10-postgame-audit/v2/frozen_cohort_membership.csv
+10,HUMAN_20261105-afternoon-decision_1-5,401856743,ATS,Missouri,2.5,2.5,EXACT_MATCH,outputs/2026-week10-postgame-audit/v2/frozen_cohort_membership.csv
+10,HUMAN_20261105-afternoon-decision_1-5,401858289,ATS,Boston College,6.5,6.5,EXACT_MATCH,outputs/2026-week10-postgame-audit/v2/frozen_cohort_membership.csv
+10,HUMAN_20261105-afternoon-decision_1-5,401858292,ATS,UConn,6.5,6.5,EXACT_MATCH,outputs/2026-week10-postgame-audit/v2/frozen_cohort_membership.csv
+10,HUMAN_20261105-afternoon-decision_1-5,401869964,TOTAL,UNDER,58.5,58.5,EXACT_MATCH,outputs/2026-week10-postgame-audit/v2/frozen_cohort_membership.csv
+10,HUMAN_20261105-afternoon-decision_1-5,401862823,TOTAL,OVER,45.5,45.5,EXACT_MATCH,outputs/2026-week10-postgame-audit/v2/frozen_cohort_membership.csv
+10,HUMAN_20261105-afternoon-decision_6-10,401856856,TOTAL,UNDER,65.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week10-postgame-audit/v2/frozen_cohort_membership.csv
+10,HUMAN_20261105-afternoon-decision_6-10,401871076,ATS,Middle Tennessee,1.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week10-postgame-audit/v2/frozen_cohort_membership.csv
+10,HUMAN_20261105-afternoon-decision_6-10,401860911,ATS,Colorado State,17.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week10-postgame-audit/v2/frozen_cohort_membership.csv
+10,HUMAN_20261105-afternoon-decision_6-10,401862817,TOTAL,UNDER,73.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week10-postgame-audit/v2/frozen_cohort_membership.csv
+10,HUMAN_20261105-afternoon-decision_6-10,401860912,TOTAL,UNDER,72.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week10-postgame-audit/v2/frozen_cohort_membership.csv
+10,HUMAN_20261105-afternoon-decision_6-10,401856743,ATS,Missouri,,2.5,SUBMITTED_NOT_IN_COHORT,outputs/2026-week10-postgame-audit/v2/frozen_cohort_membership.csv
+10,HUMAN_20261105-afternoon-decision_6-10,401858289,ATS,Boston College,,6.5,SUBMITTED_NOT_IN_COHORT,outputs/2026-week10-postgame-audit/v2/frozen_cohort_membership.csv
+10,HUMAN_20261105-afternoon-decision_6-10,401858292,ATS,UConn,,6.5,SUBMITTED_NOT_IN_COHORT,outputs/2026-week10-postgame-audit/v2/frozen_cohort_membership.csv
+10,HUMAN_20261105-afternoon-decision_6-10,401869964,TOTAL,UNDER,,58.5,SUBMITTED_NOT_IN_COHORT,outputs/2026-week10-postgame-audit/v2/frozen_cohort_membership.csv
+10,HUMAN_20261105-afternoon-decision_6-10,401862823,TOTAL,OVER,,45.5,SUBMITTED_NOT_IN_COHORT,outputs/2026-week10-postgame-audit/v2/frozen_cohort_membership.csv
+10,INITIAL_FROZEN_TEN_CANDIDATES_NO_COMBINED_ORDER,401858292,ATS,UConn,6.5,6.5,EXACT_MATCH,outputs/2026-week10-postgame-audit/v2/frozen_cohort_membership.csv
+10,INITIAL_FROZEN_TEN_CANDIDATES_NO_COMBINED_ORDER,401858289,ATS,Boston College,6.5,6.5,EXACT_MATCH,outputs/2026-week10-postgame-audit/v2/frozen_cohort_membership.csv
+10,INITIAL_FROZEN_TEN_CANDIDATES_NO_COMBINED_ORDER,401856743,ATS,Missouri,2.5,2.5,EXACT_MATCH,outputs/2026-week10-postgame-audit/v2/frozen_cohort_membership.csv
+10,INITIAL_FROZEN_TEN_CANDIDATES_NO_COMBINED_ORDER,401860911,ATS,Colorado State,17.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week10-postgame-audit/v2/frozen_cohort_membership.csv
+10,INITIAL_FROZEN_TEN_CANDIDATES_NO_COMBINED_ORDER,401871076,ATS,Middle Tennessee,1.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week10-postgame-audit/v2/frozen_cohort_membership.csv
+10,INITIAL_FROZEN_TEN_CANDIDATES_NO_COMBINED_ORDER,401862817,TOTAL,UNDER,73.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week10-postgame-audit/v2/frozen_cohort_membership.csv
+10,INITIAL_FROZEN_TEN_CANDIDATES_NO_COMBINED_ORDER,401860912,TOTAL,UNDER,72.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week10-postgame-audit/v2/frozen_cohort_membership.csv
+10,INITIAL_FROZEN_TEN_CANDIDATES_NO_COMBINED_ORDER,401856856,TOTAL,UNDER,65.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week10-postgame-audit/v2/frozen_cohort_membership.csv
+10,INITIAL_FROZEN_TEN_CANDIDATES_NO_COMBINED_ORDER,401862823,TOTAL,OVER,45.5,45.5,EXACT_MATCH,outputs/2026-week10-postgame-audit/v2/frozen_cohort_membership.csv
+10,INITIAL_FROZEN_TEN_CANDIDATES_NO_COMBINED_ORDER,401869964,TOTAL,UNDER,58.5,58.5,EXACT_MATCH,outputs/2026-week10-postgame-audit/v2/frozen_cohort_membership.csv
+10,ORIGINAL_COMBINED_RESEARCH_TOP5,401862817,TOTAL,UNDER,73.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week10-postgame-audit/v2/frozen_cohort_membership.csv
+10,ORIGINAL_COMBINED_RESEARCH_TOP5,401860912,TOTAL,UNDER,72.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week10-postgame-audit/v2/frozen_cohort_membership.csv
+10,ORIGINAL_COMBINED_RESEARCH_TOP5,401856856,TOTAL,UNDER,65.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week10-postgame-audit/v2/frozen_cohort_membership.csv
+10,ORIGINAL_COMBINED_RESEARCH_TOP5,401862823,TOTAL,OVER,45.5,45.5,EXACT_MATCH,outputs/2026-week10-postgame-audit/v2/frozen_cohort_membership.csv
+10,ORIGINAL_COMBINED_RESEARCH_TOP5,401869964,TOTAL,UNDER,58.5,58.5,EXACT_MATCH,outputs/2026-week10-postgame-audit/v2/frozen_cohort_membership.csv
+10,ORIGINAL_COMBINED_RESEARCH_TOP5,401856743,ATS,Missouri,,2.5,SUBMITTED_NOT_IN_COHORT,outputs/2026-week10-postgame-audit/v2/frozen_cohort_membership.csv
+10,ORIGINAL_COMBINED_RESEARCH_TOP5,401858289,ATS,Boston College,,6.5,SUBMITTED_NOT_IN_COHORT,outputs/2026-week10-postgame-audit/v2/frozen_cohort_membership.csv
+10,ORIGINAL_COMBINED_RESEARCH_TOP5,401858292,ATS,UConn,,6.5,SUBMITTED_NOT_IN_COHORT,outputs/2026-week10-postgame-audit/v2/frozen_cohort_membership.csv
+10,TOTAL_RESEARCH_1-5,401856856,TOTAL,UNDER,65.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week10-postgame-audit/v2/frozen_cohort_membership.csv
+10,TOTAL_RESEARCH_1-5,401860912,TOTAL,UNDER,72.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week10-postgame-audit/v2/frozen_cohort_membership.csv
+10,TOTAL_RESEARCH_1-5,401862817,TOTAL,UNDER,73.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week10-postgame-audit/v2/frozen_cohort_membership.csv
+10,TOTAL_RESEARCH_1-5,401862823,TOTAL,OVER,45.5,45.5,EXACT_MATCH,outputs/2026-week10-postgame-audit/v2/frozen_cohort_membership.csv
+10,TOTAL_RESEARCH_1-5,401869964,TOTAL,UNDER,58.5,58.5,EXACT_MATCH,outputs/2026-week10-postgame-audit/v2/frozen_cohort_membership.csv
+10,TOTAL_RESEARCH_1-5,401856743,ATS,Missouri,,2.5,SUBMITTED_NOT_IN_COHORT,outputs/2026-week10-postgame-audit/v2/frozen_cohort_membership.csv
+10,TOTAL_RESEARCH_1-5,401858289,ATS,Boston College,,6.5,SUBMITTED_NOT_IN_COHORT,outputs/2026-week10-postgame-audit/v2/frozen_cohort_membership.csv
+10,TOTAL_RESEARCH_1-5,401858292,ATS,UConn,,6.5,SUBMITTED_NOT_IN_COHORT,outputs/2026-week10-postgame-audit/v2/frozen_cohort_membership.csv
+10,TOTAL_RESEARCH_6-10,401856854,TOTAL,UNDER,62.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week10-postgame-audit/v2/frozen_cohort_membership.csv
+10,TOTAL_RESEARCH_6-10,401858513,TOTAL,OVER,45.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week10-postgame-audit/v2/frozen_cohort_membership.csv
+10,TOTAL_RESEARCH_6-10,401860911,TOTAL,UNDER,68.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week10-postgame-audit/v2/frozen_cohort_membership.csv
+10,TOTAL_RESEARCH_6-10,401862821,TOTAL,UNDER,64.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week10-postgame-audit/v2/frozen_cohort_membership.csv
+10,TOTAL_RESEARCH_6-10,401869968,TOTAL,UNDER,57.5,,RECOMMENDED_NOT_SUBMITTED,outputs/2026-week10-postgame-audit/v2/frozen_cohort_membership.csv
+10,TOTAL_RESEARCH_6-10,401856743,ATS,Missouri,,2.5,SUBMITTED_NOT_IN_COHORT,outputs/2026-week10-postgame-audit/v2/frozen_cohort_membership.csv
+10,TOTAL_RESEARCH_6-10,401858289,ATS,Boston College,,6.5,SUBMITTED_NOT_IN_COHORT,outputs/2026-week10-postgame-audit/v2/frozen_cohort_membership.csv
+10,TOTAL_RESEARCH_6-10,401858292,ATS,UConn,,6.5,SUBMITTED_NOT_IN_COHORT,outputs/2026-week10-postgame-audit/v2/frozen_cohort_membership.csv
+10,TOTAL_RESEARCH_6-10,401869964,TOTAL,UNDER,,58.5,SUBMITTED_NOT_IN_COHORT,outputs/2026-week10-postgame-audit/v2/frozen_cohort_membership.csv
+10,TOTAL_RESEARCH_6-10,401862823,TOTAL,OVER,,45.5,SUBMITTED_NOT_IN_COHORT,outputs/2026-week10-postgame-audit/v2/frozen_cohort_membership.csv
