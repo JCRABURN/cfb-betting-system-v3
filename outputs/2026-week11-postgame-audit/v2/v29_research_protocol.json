@@ -1,0 +1,19 @@
+{
+  "calibrated_confidence_gate": "Research bucket only; production Confidence3-5 prohibited until prospective minimum500 decided bucket cases (800 for5),20 weeks,two seasons,ECE<=.03,lower95 bound>.52381,stable folds,and owner approval.",
+  "confidence_boundaries": [
+    0.525,
+    0.55,
+    0.58,
+    0.62
+  ],
+  "dependence": "At most one selection per game. Report shared teams across weeks and pairwise overlap. No forced ATS/totals allocation.",
+  "fallback": "Mandatory contest picks may remain Confidence1. When calibrated ranking unavailable, mark the whole ranking UNVALIDATED_FALLBACK and sort by market,canonical matchup,side for reproducibility only. Never describe tie-break order as quality.",
+  "model_status": "RESEARCH_ONLY_NOT_PROMOTED",
+  "probability_prior_cases": 20,
+  "probability_prior_mean": 0.5,
+  "prospective_promotion": "At least20 untouched future evaluation weeks; paired week-block95 MAE difference<0 versus line and baseline in each promoted market, Brier improvement, ranking AUC lower95>.5, combined-five unit difference lower95>0 versus strongest preregistered incumbent, no unexplained severe subgroup instability. Familywise multiple-candidate adjustment required. No threshold tuning on holdout.",
+  "ridge_penalty": 10.0,
+  "specified_after_week": 11,
+  "training": "Expanding Weeks5..evaluation_week-1; Week5 seed only; all eligible games retained.",
+  "version": "v2.9-research-proposal-1"
+}

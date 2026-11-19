@@ -1,0 +1,286 @@
+{
+  "unchanged": 56,
+  "changed_non_manifest": 0,
+  "files": [
+    {
+      "file": "CONFIDENCE_FORENSICS.md",
+      "identical": true,
+      "sha256": "21faf57d4c5e73bcf28d477bf3c8f04d0ed91291f6ea348fc03ed2aa319d05ff"
+    },
+    {
+      "file": "EXECUTIVE_REPORT.md",
+      "identical": true,
+      "sha256": "477ef1e910e4fdabaea5fb6a0ef1dffe2096cd0e219b311ffe78fe53ac53bb81"
+    },
+    {
+      "file": "GAME_LEVEL_LOGIC_FAILURES.md",
+      "identical": true,
+      "sha256": "5eb205838316b839160bb7d16fb76efdecefd22a9777e7983e8bbf3bda64d0d9"
+    },
+    {
+      "file": "LESSONS_LEARNED.md",
+      "identical": true,
+      "sha256": "fdde31faa6db2d3889b828e6d3d107a6993e5bff23db346be182ca9a2f683212"
+    },
+    {
+      "file": "PROPOSED_MASTER_PROMPT_V2_9.md",
+      "identical": true,
+      "sha256": "ef1b0d1ef702c18fa510ede03f5d6e7fde9626beecc36492ed3bda229816e31f"
+    },
+    {
+      "file": "SEASON_CONTEST_REPORT.md",
+      "identical": true,
+      "sha256": "bf6e228a9bf210d61b0b650d84767c7a2a0e4ee47e1555d79a51da1d82eeeb6c"
+    },
+    {
+      "file": "actual_market_performance.csv",
+      "identical": true,
+      "sha256": "d0bf5902ee1bae341450f786540e6ab8bab357d9dcaed7f1cd904437263c90c3"
+    },
+    {
+      "file": "actual_v3_submission_ledger.csv",
+      "identical": true,
+      "sha256": "bae0289ee6a2b20686d42b61d14737e3c86d47f024ef695cb46446092587c42a"
+    },
+    {
+      "file": "actual_weekly_performance.csv",
+      "identical": true,
+      "sha256": "191dee3ddd2f176dbaf63c4d34c2d3950dddd6eccffe4e11988d7899c190fc7e"
+    },
+    {
+      "file": "actual_weight_performance.csv",
+      "identical": true,
+      "sha256": "c115b7677f62e7ad349a89072410b999a0f80fb5118f8c7788352347c234662b"
+    },
+    {
+      "file": "audit_findings.json",
+      "identical": true,
+      "sha256": "2969e75aaf7f0f7b7086a760c2ef714a988033f0456bd36f23759b213dbaabcc"
+    },
+    {
+      "file": "clv_audit.json",
+      "identical": true,
+      "sha256": "11722116bdae9bd21a69a95a16605bb963f71bc36359062f5aa57929f2d126d1"
+    },
+    {
+      "file": "clv_observations.csv",
+      "identical": true,
+      "sha256": "e27716a11883ff8dc7ac8dd63ba969391ae2facb4686fc4b47849e9f5aea8dc5"
+    },
+    {
+      "file": "cohort_membership.csv",
+      "identical": true,
+      "sha256": "bb58149d1842b077c3aaa09fdb53a7f3f25afbe25306329561762478ae62aafa"
+    },
+    {
+      "file": "cohort_overlap.csv",
+      "identical": true,
+      "sha256": "4b86404530df631d79309ce20e6017d6aa5beb07faa90b3758db67455214ba0b"
+    },
+    {
+      "file": "cohort_results.csv",
+      "identical": true,
+      "sha256": "cd3f2fbeba43b3a0fff623ef14679620a21e622f9297a34fbe7059c8d4ddfa9a"
+    },
+    {
+      "file": "confidence_calibration.csv",
+      "identical": true,
+      "sha256": "b10bdea8d904033217cbe6920451ff9eb792febdc797db38088f225813278827"
+    },
+    {
+      "file": "cumulative_grade_ledger.csv",
+      "identical": true,
+      "sha256": "b0d2cd3e040688d3fbb60fb9cdce87f7503ac03d27ff7d3e49d6d5aea01c07be"
+    },
+    {
+      "file": "cumulative_performance.csv",
+      "identical": true,
+      "sha256": "46b6c9f6d812cdb18f2fda812b1bd20abd116430c253a01a0c6b54f9b0b82100"
+    },
+    {
+      "file": "cumulative_rank_performance.csv",
+      "identical": true,
+      "sha256": "1ceb640afa411fabd53ca807a289920ed4366835c85480056ff6a918d9b0f9dd"
+    },
+    {
+      "file": "custody_verification.json",
+      "identical": true,
+      "sha256": "a9f84d01a436b40759774526388dddea2fe01e4bbca9a69d25c8647e5837a1d1"
+    },
+    {
+      "file": "drive_quarantine_adjudication.csv",
+      "identical": true,
+      "sha256": "52188632e2f7b6bc603fc2bdfc7e013ebfb0f331e79054e20a6cf743a16776c5"
+    },
+    {
+      "file": "earlier_week_qualified_records.csv",
+      "identical": true,
+      "sha256": "c294ee8fd403e7844f93c90253e9959d51707de5db138a2e1c4e6005053f2944"
+    },
+    {
+      "file": "external_week11_records_not_graded.csv",
+      "identical": true,
+      "sha256": "4db1d5d73cffd9400bb84bfe78b0c51f40fa5d9f49f5acb461e055df86b134ba"
+    },
+    {
+      "file": "forecast_vs_market.csv",
+      "identical": true,
+      "sha256": "69fbe0fa85f5a0967556e5dee9d1fb31deb2d6f6dd41ec50788fe1f89881c7bd"
+    },
+    {
+      "file": "frozen_drive_forecasts.csv",
+      "identical": true,
+      "sha256": "33215c909dd27a74629b22f1b652829d69d15ab8c4649c96cbc5ddc5134a2c06"
+    },
+    {
+      "file": "frozen_research_all_grades.csv",
+      "identical": true,
+      "sha256": "04950d517ce58dea3edb2a445507cc19688b83a7f63215a3bb7e8615d53df759"
+    },
+    {
+      "file": "frozen_research_membership.csv",
+      "identical": true,
+      "sha256": "eacf573307b9e17bb02543149a85889653cd098d60ee0db1b28c7d5003fe32cd"
+    },
+    {
+      "file": "frozen_research_metrics.csv",
+      "identical": true,
+      "sha256": "7db3d1f48a768adafc49944120799dca3df862c8e416e7f03e1b512f927d4fc4"
+    },
+    {
+      "file": "frozen_research_reliability.csv",
+      "identical": true,
+      "sha256": "3e38f0903deefe030c4f1a05584c8efa4a2bd74f85e8aac73e4815c8f7cec048"
+    },
+    {
+      "file": "frozen_research_top5.csv",
+      "identical": true,
+      "sha256": "1508b57f9a3c2a4fbc6100e81e683df952081483ef69e7702e09cbba406280dc"
+    },
+    {
+      "file": "game_process.csv",
+      "identical": true,
+      "sha256": "64e6d52d7010459295aa7eccdf4ccc35dd48dbc8ef8f7cf48aeb4329e849accb"
+    },
+    {
+      "file": "game_process_evidence.json",
+      "identical": true,
+      "sha256": "88860cda7b34fa2fd842959f498cdf1334ccdaad7864466e1c4ac15dea1c69d4"
+    },
+    {
+      "file": "game_results_reconciliation.csv",
+      "identical": true,
+      "sha256": "a3c52f1621e21f0ab1493b10dcb8807a71ed826564da56bf52bf41d102d2c42d"
+    },
+    {
+      "file": "historical_line_reconciliation.csv",
+      "identical": true,
+      "sha256": "8157637fb4cb958be4113a036b3f3ee61d251513b45fc2de33a456ecc56d759b"
+    },
+    {
+      "file": "hook_backdoor_audit.csv",
+      "identical": true,
+      "sha256": "5fe50c123658cfa32b55edc4c9eae53a54d3b47807a82319178696c760dcc00e"
+    },
+    {
+      "file": "human_confidence_ledger.csv",
+      "identical": true,
+      "sha256": "c3a1d9f06effe80f2d17f3ce1b7af56605aa513fd2f0a30818b9ad411a17aa16"
+    },
+    {
+      "file": "logic_failure_priority.csv",
+      "identical": true,
+      "sha256": "e977b5521cd31e1d621dd9329fa2f58421536b338b7550cd288fed71b3503311"
+    },
+    {
+      "file": "nonoffensive_scoring.csv",
+      "identical": true,
+      "sha256": "11781b985aa78fb04e0b525b5a65309ce0b2688bd1ee9eecbe5b96aa82036023"
+    },
+    {
+      "file": "observed_passers.csv",
+      "identical": true,
+      "sha256": "0634cb9bca199e9053a9d380e281156038b54a10443ee7fc8ecac996cdc1c96d"
+    },
+    {
+      "file": "ranking_discrimination.csv",
+      "identical": true,
+      "sha256": "c3ad13eea1339398b5f50f7728c364ee99567f1d815ef70ca94a2e2e84c4fe6f"
+    },
+    {
+      "file": "season_contest_quality.json",
+      "identical": true,
+      "sha256": "0d5b62a724e2e0dd6259113929e35688fea8600f3aa463745c48a4e77d64a36c"
+    },
+    {
+      "file": "season_game_reconciliation.csv",
+      "identical": true,
+      "sha256": "08db99f1595fb27fcec4903ac4bdc89719e26dddbc3beb4f156fd1b6bb0e5a88"
+    },
+    {
+      "file": "season_recommendation_ledger.csv",
+      "identical": true,
+      "sha256": "68317cbbbd0bb972808b3b85243f814dc053f486b9818d5c1608a50cebb6d8d2"
+    },
+    {
+      "file": "season_recommendation_performance.csv",
+      "identical": true,
+      "sha256": "a218e8e8b23ade42786fd463d2f5114548a2e61203e08043aca2a67ada580c35"
+    },
+    {
+      "file": "segment_diagnostics.csv",
+      "identical": true,
+      "sha256": "3cd43502f0ad3dfa4e38662fa487e33443dc32faff4fbeb877c831ab99e3125b"
+    },
+    {
+      "file": "submission_recommendation_differences.csv",
+      "identical": true,
+      "sha256": "d58ba192380afc71de68e6dd66e85d4559f1c039410b4d7f0af24fdccc399f75"
+    },
+    {
+      "file": "team_process.csv",
+      "identical": true,
+      "sha256": "64e5f03d6fd346c8b3c44481ee4cbb8783d87bdf750e0c5db4e0db6397a7af11"
+    },
+    {
+      "file": "v29_all_candidate_predictions.csv",
+      "identical": true,
+      "sha256": "a03bc3c8f322a78bbb5da05b28dd1c40125a90e1026927b13871894d5374c8ed"
+    },
+    {
+      "file": "v29_candidate_top5.csv",
+      "identical": true,
+      "sha256": "684a8b7e3eaa725e86d146eac88c7753d8979888c1ddf593db84e0bbebfae89e"
+    },
+    {
+      "file": "v29_chronological_folds.csv",
+      "identical": true,
+      "sha256": "bd148bf23c82441b6eb5a61492ec65a24f1e9d73779dbe23b31dec3332f7be74"
+    },
+    {
+      "file": "v29_feature_research_catalog.csv",
+      "identical": true,
+      "sha256": "15630cee31cf28538a6170a9b186429f3f9a2158eb6103e2b1f8a1d44f46a91b"
+    },
+    {
+      "file": "v29_research_protocol.json",
+      "identical": true,
+      "sha256": "e83ab6da72b8caf0e46a601fddaee7c3234355352da611fa05bb80b2aad8e123"
+    },
+    {
+      "file": "week11_ats_audit.csv",
+      "identical": true,
+      "sha256": "79881e73e643e071343c918e82e0664ba13d48681d29df80bda5145ddd1a6dba"
+    },
+    {
+      "file": "week11_export_kickoff_differences.csv",
+      "identical": true,
+      "sha256": "59f347a751472d2620c5c82ded015881f9720d2889ed186a90912fd040709c1d"
+    },
+    {
+      "file": "week11_totals_audit.csv",
+      "identical": true,
+      "sha256": "f5513264714cde9ef73e2a10a5539e1f4d31f991ab920763aa938583e100ad36"
+    }
+  ]
+}

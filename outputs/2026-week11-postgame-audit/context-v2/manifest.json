@@ -1,0 +1,14 @@
+{
+  "code_sha256_lf": "c3ca0a872af06911fb75d392ff48e8dc307c39b7bac86b6014b8d9647423e75b",
+  "input_sha256": {
+    "outputs/2026-week11-owner-review/20261112-v1/review.json": "6ec1fda9dec2a0825d64c4a176f2ee849fcb227c2d9b1422207a8e2ac4da46bb",
+    "outputs/2026-week11-owner-review/20261113-v2/review.json": "1180a6e76417847f0d98b5f3ca20f2cae8b1b813cf80b21df0f8ead42326a145",
+    "outputs/2026-week11-postgame-audit/v1/game_process_evidence.json": "88860cda7b34fa2fd842959f498cdf1334ccdaad7864466e1c4ac15dea1c69d4"
+  },
+  "output_sha256": {
+    "PREGAME_CONTEXT_COMPARISON.md": "61671606078036e137e1e7710fc3ac5aa2d627d5e712b4c22841ff7af1e8b705",
+    "pregame_context_comparison.csv": "19566aac348d6bd1813826a44fa41b43994931c41990b4b3d5fcd52cd46d8a70"
+  },
+  "rows": 49,
+  "status": "POSTGAME_COMPARISON_ONLY"
+}

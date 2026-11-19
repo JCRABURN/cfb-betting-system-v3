@@ -1,0 +1,12 @@
+{
+  "status": "SEALED_PROSPECTIVE_RESEARCH_BOARD",
+  "eligible_games": 57,
+  "ats_selections": 57,
+  "total_selections": 57,
+  "excluded_elapsed_games": 5,
+  "first_eligible_kickoff_utc": "2026-11-06T00:30:00+00:00",
+  "model_code_commit": "8afc2a3817fa811fdfe159c20b4b62cc6e8839e0",
+  "clv_status": "INCOMPLETE",
+  "model_policy_change": false,
+  "combined_top5": "UNCALIBRATED_RESEARCH_ONLY"
+}

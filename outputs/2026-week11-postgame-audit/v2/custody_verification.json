@@ -1,0 +1,36 @@
+{
+  "archived_files": 870,
+  "custody_qualification": "Three Wednesday games were sealed after kickoff. Original generation timestamp is not independently verified pregame custody.",
+  "database_integrity": "ok",
+  "foreign_key_violations": 0,
+  "historical": {
+    "database_foreign_key_violations": 0,
+    "database_integrity": "ok",
+    "fixture_sha256": "df58c3e13192bb4c95568ceb01e72f3f741184ae9647301ec363eaade6387dbe",
+    "input_files_verified": 2729,
+    "original_protected_files_verified": 125,
+    "source_database_row_counts": {
+      "betting_lines": 26535,
+      "games": 5051,
+      "ingestion_runs": 37,
+      "injuries": 0,
+      "picks": 22,
+      "sqlite_sequence": 5,
+      "supplemental_game_dates": 204,
+      "team_game_stats": 14721,
+      "teams": 136,
+      "weather": 0
+    },
+    "source_database_sha256": "09d0bcda684356001bacf8bc9e42939add56b053f405564d9be924e39c0cf842"
+  },
+  "original_board_seal_sha256": "d6d163f2500fa638ad73da8b4b0da244e9cad4fe456e42d80ea65e36e073868c",
+  "original_forecasts_regenerated": false,
+  "original_screenshots": 8,
+  "original_source_csv_sha256": "a27f367a38918e188cc2e8aa417b9a1970049ca02d0501789d00ccfdb0b12c22",
+  "owner_approval": "WEEK11_SUBMISSIONS_EXTERNAL_ORIGIN_EXCLUDED; V3_COHORTS_REMAIN_RECOMMENDATIONS",
+  "sealed_at_utc": "2026-11-12T12:10:25.542915+00:00",
+  "source_commit": "bcdd78fb2755f9552e45ccfc5f891bd25e012eef",
+  "source_database_sha256": "09d0bcda684356001bacf8bc9e42939add56b053f405564d9be924e39c0cf842",
+  "source_pr": 53,
+  "source_pr_status": "MERGED_2026_11_16"
+}

@@ -1,0 +1,490 @@
+{
+  "status": "READ_ONLY_BYTES_AND_REPLAY_VERIFIED_NOT_APPROVAL",
+  "board": {
+    "status": "LATE_CUSTODY_CAPTURE_NOT_FULL_PREGAME_SEAL",
+    "eligible_games": 64,
+    "ats_selections": 64,
+    "custody_mode": "late_capture",
+    "capture_after_recorded_kickoff_game_ids": [
+      "401866461",
+      "401866462",
+      "401866463"
+    ],
+    "capture_before_recorded_kickoff_count": 61,
+    "game_custody_timing": [
+      {
+        "game_id": "401856857",
+        "kickoff_utc": "2026-11-14T20:30:00+00:00",
+        "forecast_timestamp_before_kickoff": true,
+        "seal_before_recorded_kickoff": true,
+        "pregame_external_seal_proven": false
+      },
+      {
+        "game_id": "401856858",
+        "kickoff_utc": "2026-11-14T20:30:00+00:00",
+        "forecast_timestamp_before_kickoff": true,
+        "seal_before_recorded_kickoff": true,
+        "pregame_external_seal_proven": false
+      },
+      {
+        "game_id": "401856859",
+        "kickoff_utc": "2026-11-14T17:00:00+00:00",
+        "forecast_timestamp_before_kickoff": true,
+        "seal_before_recorded_kickoff": true,
+        "pregame_external_seal_proven": false
+      },
+      {
+        "game_id": "401856860",
+        "kickoff_utc": "2026-11-14T03:15:00+00:00",
+        "forecast_timestamp_before_kickoff": true,
+        "seal_before_recorded_kickoff": true,
+        "pregame_external_seal_proven": false
+      },
+      {
+        "game_id": "401856861",
+        "kickoff_utc": "2026-11-14T22:30:00+00:00",
+        "forecast_timestamp_before_kickoff": true,
+        "seal_before_recorded_kickoff": true,
+        "pregame_external_seal_proven": false
+      },
+      {
+        "game_id": "401856862",
+        "kickoff_utc": "2026-11-14T19:00:00+00:00",
+        "forecast_timestamp_before_kickoff": true,
+        "seal_before_recorded_kickoff": true,
+        "pregame_external_seal_proven": false
+      },
+      {
+        "game_id": "401856863",
+        "kickoff_utc": "2026-11-15T02:30:00+00:00",
+        "forecast_timestamp_before_kickoff": true,
+        "seal_before_recorded_kickoff": true,
+        "pregame_external_seal_proven": false
+      },
+      {
+        "game_id": "401856864",
+        "kickoff_utc": "2026-11-15T00:30:00+00:00",
+        "forecast_timestamp_before_kickoff": true,
+        "seal_before_recorded_kickoff": true,
+        "pregame_external_seal_proven": false
+      },
+      {
+        "game_id": "401856882",
+        "kickoff_utc": "2026-11-15T00:45:00+00:00",
+        "forecast_timestamp_before_kickoff": true,
+        "seal_before_recorded_kickoff": true,
+        "pregame_external_seal_proven": false
+      },
+      {
+        "game_id": "401856883",
+        "kickoff_utc": "2026-11-14T20:30:00+00:00",
+        "forecast_timestamp_before_kickoff": true,
+        "seal_before_recorded_kickoff": true,
+        "pregame_external_seal_proven": false
+      },
+      {
+        "game_id": "401856884",
+        "kickoff_utc": "2026-11-14T23:15:00+00:00",
+        "forecast_timestamp_before_kickoff": true,
+        "seal_before_recorded_kickoff": true,
+        "pregame_external_seal_proven": false
+      },
+      {
+        "game_id": "401856885",
+        "kickoff_utc": "2026-11-15T00:30:00+00:00",
+        "forecast_timestamp_before_kickoff": true,
+        "seal_before_recorded_kickoff": true,
+        "pregame_external_seal_proven": false
+      },
+      {
+        "game_id": "401856886",
+        "kickoff_utc": "2026-11-14T17:00:00+00:00",
+        "forecast_timestamp_before_kickoff": true,
+        "seal_before_recorded_kickoff": true,
+        "pregame_external_seal_proven": false
+      },
+      {
+        "game_id": "401856887",
+        "kickoff_utc": "2026-11-14T21:15:00+00:00",
+        "forecast_timestamp_before_kickoff": true,
+        "seal_before_recorded_kickoff": true,
+        "pregame_external_seal_proven": false
+      },
+      {
+        "game_id": "401856888",
+        "kickoff_utc": "2026-11-14T20:00:00+00:00",
+        "forecast_timestamp_before_kickoff": true,
+        "seal_before_recorded_kickoff": true,
+        "pregame_external_seal_proven": false
+      },
+      {
+        "game_id": "401856889",
+        "kickoff_utc": "2026-11-14T17:45:00+00:00",
+        "forecast_timestamp_before_kickoff": true,
+        "seal_before_recorded_kickoff": true,
+        "pregame_external_seal_proven": false
+      },
+      {
+        "game_id": "401858293",
+        "kickoff_utc": "2026-11-14T00:00:00+00:00",
+        "forecast_timestamp_before_kickoff": true,
+        "seal_before_recorded_kickoff": true,
+        "pregame_external_seal_proven": false
+      },
+      {
+        "game_id": "401858294",
+        "kickoff_utc": "2026-11-14T20:30:00+00:00",
+        "forecast_timestamp_before_kickoff": true,
+        "seal_before_recorded_kickoff": true,
+        "pregame_external_seal_proven": false
+      },
+      {
+        "game_id": "401858295",
+        "kickoff_utc": "2026-11-14T20:30:00+00:00",
+        "forecast_timestamp_before_kickoff": true,
+        "seal_before_recorded_kickoff": true,
+        "pregame_external_seal_proven": false
+      },
+      {
+        "game_id": "401858296",
+        "kickoff_utc": "2026-11-14T17:00:00+00:00",
+        "forecast_timestamp_before_kickoff": true,
+        "seal_before_recorded_kickoff": true,
+        "pregame_external_seal_proven": false
+      },
+      {
+        "game_id": "401858297",
+        "kickoff_utc": "2026-11-14T17:30:00+00:00",
+        "forecast_timestamp_before_kickoff": true,
+        "seal_before_recorded_kickoff": true,
+        "pregame_external_seal_proven": false
+      },
+      {
+        "game_id": "401858298",
+        "kickoff_utc": "2026-11-15T00:00:00+00:00",
+        "forecast_timestamp_before_kickoff": true,
+        "seal_before_recorded_kickoff": true,
+        "pregame_external_seal_proven": false
+      },
+      {
+        "game_id": "401858299",
+        "kickoff_utc": "2026-11-15T00:30:00+00:00",
+        "forecast_timestamp_before_kickoff": true,
+        "seal_before_recorded_kickoff": true,
+        "pregame_external_seal_proven": false
+      },
+      {
+        "game_id": "401858300",
+        "kickoff_utc": "2026-11-14T17:00:00+00:00",
+        "forecast_timestamp_before_kickoff": true,
+        "seal_before_recorded_kickoff": true,
+        "pregame_external_seal_proven": false
+      },
+      {
+        "game_id": "401858301",
+        "kickoff_utc": "2026-11-14T17:00:00+00:00",
+        "forecast_timestamp_before_kickoff": true,
+        "seal_before_recorded_kickoff": true,
+        "pregame_external_seal_proven": false
+      },
+      {
+        "game_id": "401858518",
+        "kickoff_utc": "2026-11-14T20:30:00+00:00",
+        "forecast_timestamp_before_kickoff": true,
+        "seal_before_recorded_kickoff": true,
+        "pregame_external_seal_proven": false
+      },
+      {
+        "game_id": "401858519",
+        "kickoff_utc": "2026-11-15T00:30:00+00:00",
+        "forecast_timestamp_before_kickoff": true,
+        "seal_before_recorded_kickoff": true,
+        "pregame_external_seal_proven": false
+      },
+      {
+        "game_id": "401858520",
+        "kickoff_utc": "2026-11-14T17:00:00+00:00",
+        "forecast_timestamp_before_kickoff": true,
+        "seal_before_recorded_kickoff": true,
+        "pregame_external_seal_proven": false
+      },
+      {
+        "game_id": "401858521",
+        "kickoff_utc": "2026-11-14T21:15:00+00:00",
+        "forecast_timestamp_before_kickoff": true,
+        "seal_before_recorded_kickoff": true,
+        "pregame_external_seal_proven": false
+      },
+      {
+        "game_id": "401858522",
+        "kickoff_utc": "2026-11-14T17:00:00+00:00",
+        "forecast_timestamp_before_kickoff": true,
+        "seal_before_recorded_kickoff": true,
+        "pregame_external_seal_proven": false
+      },
+      {
+        "game_id": "401858523",
+        "kickoff_utc": "2026-11-14T20:30:00+00:00",
+        "forecast_timestamp_before_kickoff": true,
+        "seal_before_recorded_kickoff": true,
+        "pregame_external_seal_proven": false
+      },
+      {
+        "game_id": "401858524",
+        "kickoff_utc": "2026-11-15T00:00:00+00:00",
+        "forecast_timestamp_before_kickoff": true,
+        "seal_before_recorded_kickoff": true,
+        "pregame_external_seal_proven": false
+      },
+      {
+        "game_id": "401858525",
+        "kickoff_utc": "2026-11-14T17:30:00+00:00",
+        "forecast_timestamp_before_kickoff": true,
+        "seal_before_recorded_kickoff": true,
+        "pregame_external_seal_proven": false
+      },
+      {
+        "game_id": "401858526",
+        "kickoff_utc": "2026-11-14T02:00:00+00:00",
+        "forecast_timestamp_before_kickoff": true,
+        "seal_before_recorded_kickoff": true,
+        "pregame_external_seal_proven": false
+      },
+      {
+        "game_id": "401860914",
+        "kickoff_utc": "2026-11-14T23:00:00+00:00",
+        "forecast_timestamp_before_kickoff": true,
+        "seal_before_recorded_kickoff": true,
+        "pregame_external_seal_proven": false
+      },
+      {
+        "game_id": "401860915",
+        "kickoff_utc": "2026-11-15T02:30:00+00:00",
+        "forecast_timestamp_before_kickoff": true,
+        "seal_before_recorded_kickoff": true,
+        "pregame_external_seal_proven": false
+      },
+      {
+        "game_id": "401860916",
+        "kickoff_utc": "2026-11-14T21:00:00+00:00",
+        "forecast_timestamp_before_kickoff": true,
+        "seal_before_recorded_kickoff": true,
+        "pregame_external_seal_proven": false
+      },
+      {
+        "game_id": "401860917",
+        "kickoff_utc": "2026-11-15T03:30:00+00:00",
+        "forecast_timestamp_before_kickoff": true,
+        "seal_before_recorded_kickoff": true,
+        "pregame_external_seal_proven": false
+      },
+      {
+        "game_id": "401861967",
+        "kickoff_utc": "2026-11-14T17:00:00+00:00",
+        "forecast_timestamp_before_kickoff": true,
+        "seal_before_recorded_kickoff": true,
+        "pregame_external_seal_proven": false
+      },
+      {
+        "game_id": "401862824",
+        "kickoff_utc": "2026-11-13T01:00:00+00:00",
+        "forecast_timestamp_before_kickoff": true,
+        "seal_before_recorded_kickoff": true,
+        "pregame_external_seal_proven": false
+      },
+      {
+        "game_id": "401862825",
+        "kickoff_utc": "2026-11-14T18:00:00+00:00",
+        "forecast_timestamp_before_kickoff": true,
+        "seal_before_recorded_kickoff": true,
+        "pregame_external_seal_proven": false
+      },
+      {
+        "game_id": "401862826",
+        "kickoff_utc": "2026-11-14T20:30:00+00:00",
+        "forecast_timestamp_before_kickoff": true,
+        "seal_before_recorded_kickoff": true,
+        "pregame_external_seal_proven": false
+      },
+      {
+        "game_id": "401862827",
+        "kickoff_utc": "2026-11-15T02:00:00+00:00",
+        "forecast_timestamp_before_kickoff": true,
+        "seal_before_recorded_kickoff": true,
+        "pregame_external_seal_proven": false
+      },
+      {
+        "game_id": "401862828",
+        "kickoff_utc": "2026-11-14T19:00:00+00:00",
+        "forecast_timestamp_before_kickoff": true,
+        "seal_before_recorded_kickoff": true,
+        "pregame_external_seal_proven": false
+      },
+      {
+        "game_id": "401862829",
+        "kickoff_utc": "2026-11-14T18:00:00+00:00",
+        "forecast_timestamp_before_kickoff": true,
+        "seal_before_recorded_kickoff": true,
+        "pregame_external_seal_proven": false
+      },
+      {
+        "game_id": "401864536",
+        "kickoff_utc": "2026-11-14T20:30:00+00:00",
+        "forecast_timestamp_before_kickoff": true,
+        "seal_before_recorded_kickoff": true,
+        "pregame_external_seal_proven": false
+      },
+      {
+        "game_id": "401864537",
+        "kickoff_utc": "2026-11-15T04:00:00+00:00",
+        "forecast_timestamp_before_kickoff": true,
+        "seal_before_recorded_kickoff": true,
+        "pregame_external_seal_proven": false
+      },
+      {
+        "game_id": "401864538",
+        "kickoff_utc": "2026-11-15T00:00:00+00:00",
+        "forecast_timestamp_before_kickoff": true,
+        "seal_before_recorded_kickoff": true,
+        "pregame_external_seal_proven": false
+      },
+      {
+        "game_id": "401864539",
+        "kickoff_utc": "2026-11-15T00:30:00+00:00",
+        "forecast_timestamp_before_kickoff": true,
+        "seal_before_recorded_kickoff": true,
+        "pregame_external_seal_proven": false
+      },
+      {
+        "game_id": "401864540",
+        "kickoff_utc": "2026-11-15T03:00:00+00:00",
+        "forecast_timestamp_before_kickoff": true,
+        "seal_before_recorded_kickoff": true,
+        "pregame_external_seal_proven": false
+      },
+      {
+        "game_id": "401866461",
+        "kickoff_utc": "2026-11-12T00:30:00+00:00",
+        "forecast_timestamp_before_kickoff": true,
+        "seal_before_recorded_kickoff": false,
+        "pregame_external_seal_proven": false
+      },
+      {
+        "game_id": "401866462",
+        "kickoff_utc": "2026-11-12T00:30:00+00:00",
+        "forecast_timestamp_before_kickoff": true,
+        "seal_before_recorded_kickoff": false,
+        "pregame_external_seal_proven": false
+      },
+      {
+        "game_id": "401866463",
+        "kickoff_utc": "2026-11-12T00:30:00+00:00",
+        "forecast_timestamp_before_kickoff": true,
+        "seal_before_recorded_kickoff": false,
+        "pregame_external_seal_proven": false
+      },
+      {
+        "game_id": "401869928",
+        "kickoff_utc": "2026-11-14T23:00:00+00:00",
+        "forecast_timestamp_before_kickoff": true,
+        "seal_before_recorded_kickoff": true,
+        "pregame_external_seal_proven": false
+      },
+      {
+        "game_id": "401869937",
+        "kickoff_utc": "2026-11-14T18:00:00+00:00",
+        "forecast_timestamp_before_kickoff": true,
+        "seal_before_recorded_kickoff": true,
+        "pregame_external_seal_proven": false
+      },
+      {
+        "game_id": "401869952",
+        "kickoff_utc": "2026-11-14T20:30:00+00:00",
+        "forecast_timestamp_before_kickoff": true,
+        "seal_before_recorded_kickoff": true,
+        "pregame_external_seal_proven": false
+      },
+      {
+        "game_id": "401869969",
+        "kickoff_utc": "2026-11-13T02:00:00+00:00",
+        "forecast_timestamp_before_kickoff": true,
+        "seal_before_recorded_kickoff": true,
+        "pregame_external_seal_proven": false
+      },
+      {
+        "game_id": "401870752",
+        "kickoff_utc": "2026-11-14T20:30:00+00:00",
+        "forecast_timestamp_before_kickoff": true,
+        "seal_before_recorded_kickoff": true,
+        "pregame_external_seal_proven": false
+      },
+      {
+        "game_id": "401870769",
+        "kickoff_utc": "2026-11-14T19:00:00+00:00",
+        "forecast_timestamp_before_kickoff": true,
+        "seal_before_recorded_kickoff": true,
+        "pregame_external_seal_proven": false
+      },
+      {
+        "game_id": "401870796",
+        "kickoff_utc": "2026-11-14T20:00:00+00:00",
+        "forecast_timestamp_before_kickoff": true,
+        "seal_before_recorded_kickoff": true,
+        "pregame_external_seal_proven": false
+      },
+      {
+        "game_id": "401871060",
+        "kickoff_utc": "2026-11-14T20:00:00+00:00",
+        "forecast_timestamp_before_kickoff": true,
+        "seal_before_recorded_kickoff": true,
+        "pregame_external_seal_proven": false
+      },
+      {
+        "game_id": "401871061",
+        "kickoff_utc": "2026-11-14T20:30:00+00:00",
+        "forecast_timestamp_before_kickoff": true,
+        "seal_before_recorded_kickoff": true,
+        "pregame_external_seal_proven": false
+      },
+      {
+        "game_id": "401871099",
+        "kickoff_utc": "2026-11-14T22:00:00+00:00",
+        "forecast_timestamp_before_kickoff": true,
+        "seal_before_recorded_kickoff": true,
+        "pregame_external_seal_proven": false
+      },
+      {
+        "game_id": "401871100",
+        "kickoff_utc": "2026-11-15T00:00:00+00:00",
+        "forecast_timestamp_before_kickoff": true,
+        "seal_before_recorded_kickoff": true,
+        "pregame_external_seal_proven": false
+      }
+    ],
+    "timestamp_evidence_limit": "Local recorded generation timestamps are not independent proof of pregame external sealing. Recorded kickoff comparison does not refresh live eligibility.",
+    "total_selections": 64,
+    "excluded_elapsed_games": 3,
+    "first_eligible_kickoff_utc": "2026-11-12T00:30:00+00:00",
+    "model_code_commit": "b3f27eb120487cb4cb71d7b626fe65c14e0bb701",
+    "clv_status": "INCOMPLETE",
+    "model_policy_change": false,
+    "combined_top5": "UNCALIBRATED_RESEARCH_ONLY"
+  },
+  "shadow": {
+    "status": "VERIFIED",
+    "games": 61,
+    "predictions": 610,
+    "drive_predictions": 61
+  },
+  "owner_review": {
+    "status": "PROVISIONAL_OWNER_REVIEW_NOT_SUBMITTED_CONTEST_PICKS",
+    "candidate_games": 19,
+    "recommendations": 5,
+    "owner_approval": "PENDING"
+  },
+  "friday_review": {
+    "status": "PROVISIONAL_CONTEXT_REFRESH_NO_SELECTION_CHANGE",
+    "recommendations": 5,
+    "owner_approval": "PENDING"
+  }
+}

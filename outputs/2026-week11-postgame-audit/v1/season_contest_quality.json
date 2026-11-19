@@ -1,0 +1,15 @@
+{
+  "duplicate_games": 0,
+  "excluded_external_origin": 5,
+  "export_selections": 55,
+  "model_attribution": "Owner confirmed later PR54 correction in this task; Weeks1-10 only",
+  "original_pdf_binary_verification": "NOT_AVAILABLE_LOCALLY; upstream manifest hashes preserved",
+  "reconciled_matchups": 621,
+  "score_conflicts": 0,
+  "source_matchups": 621,
+  "source_print_date": "2026-11-16; does not prove forecast timestamps",
+  "unresolved_matchups": 0,
+  "v3_graded_selections": 50,
+  "week4_verified": "3-2, 8/15; full-card forecasts missing",
+  "week7_verified": "ALL_FIVE_EXACT_MATCHES"
+}
