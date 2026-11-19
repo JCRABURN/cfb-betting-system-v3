@@ -234,3 +234,16 @@ scripts/verify_week11_acceptance.py text eol=crlf
 scripts/verify_week11_transcription.py text eol=crlf
 scripts/week11_context.py text eol=crlf
 scripts/week11_eligibility.py text eol=crlf
+
+# Retain eleven additional historical receipt inputs pinned by the integrated audit.
+outputs/2026-week6-ranking-calibration-research/ats_counterfactual_top5_in_sample.csv text eol=crlf
+outputs/2026-week6-ranking-calibration-research/diagnostics.json text eol=crlf
+outputs/2026-week6-ranking-calibration-research/report.md text eol=crlf
+outputs/2026-week6-ranking-calibration-research/week6_ats_58_reconstructed.csv text eol=crlf
+outputs/2026-week7-monitoring/20261014T131100Z-context-snapshot.md text eol=crlf
+outputs/2026-week7-monitoring/20261014T131300Z-context-detail.md text eol=crlf
+outputs/2026-week7-monitoring/20261017T134114Z-monitoring-summary.md text eol=crlf
+outputs/2026-week7-owner-review/OWNER-APPROVED-WEEK-7-CUSTODY-VERIFICATION.json text eol=crlf
+outputs/2026-week7-owner-review/week7_final_selection_review_2026-10-13.md text eol=crlf
+outputs/2026-week7-owner-review/week7_owner_approval_candidate.json text eol=crlf
+outputs/week_1_2026_report.md text eol=crlf
