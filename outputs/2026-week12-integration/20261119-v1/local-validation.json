@@ -1,0 +1,218 @@
+{
+  "started_at_utc": "2026-11-19T14:39:21.944061+00:00",
+  "premerge_head": "880d3f9f7b87313aebb2425efafe5318525eb53e",
+  "merged_main": "217600fe1445edc7c0f2a51c04246e5ba38ea0cb",
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "commands": [
+    {
+      "command": [
+        "C:\\Users\\jraburn\\Documents\\GitHub\\cfb-betting-system-v3\\.venv\\Scripts\\python.exe",
+        "scripts/verify_repo_safety.py"
+      ],
+      "started_at_utc": "2026-11-19T14:39:22.053964+00:00",
+      "completed_at_utc": "2026-11-19T14:39:22.171277+00:00",
+      "exit_code": 0,
+      "output_file": "01.log",
+      "output_sha256": "d981d5495b37dc2087673e331f2c28790b3d2daa42d4b6080a8ec84f48a22215"
+    },
+    {
+      "command": [
+        "C:\\Users\\jraburn\\Documents\\GitHub\\cfb-betting-system-v3\\.venv\\Scripts\\python.exe",
+        "-m",
+        "scripts.verify_week12_integration"
+      ],
+      "started_at_utc": "2026-11-19T14:39:22.173271+00:00",
+      "completed_at_utc": "2026-11-19T14:39:22.633187+00:00",
+      "exit_code": 0,
+      "output_file": "02.log",
+      "output_sha256": "ca04bae2820c0795f49c4f6cbe2dd5bbadca513e48367666987a7eefa728522d"
+    },
+    {
+      "command": [
+        "C:\\Users\\jraburn\\Documents\\GitHub\\cfb-betting-system-v3\\.venv\\Scripts\\python.exe",
+        "-m",
+        "scripts.verify_migrations"
+      ],
+      "started_at_utc": "2026-11-19T14:39:22.633187+00:00",
+      "completed_at_utc": "2026-11-19T14:39:24.799135+00:00",
+      "exit_code": 0,
+      "output_file": "03.log",
+      "output_sha256": "6d10ca3708b3b9320a0df5ea8608bab329733fda4b6cb70fb655e40e8593cb85"
+    },
+    {
+      "command": [
+        "C:\\Users\\jraburn\\Documents\\GitHub\\cfb-betting-system-v3\\.venv\\Scripts\\python.exe",
+        "-m",
+        "scripts.verify_cloud_migrations"
+      ],
+      "started_at_utc": "2026-11-19T14:39:24.799135+00:00",
+      "completed_at_utc": "2026-11-19T14:39:25.341500+00:00",
+      "exit_code": 0,
+      "output_file": "04.log",
+      "output_sha256": "2790b83b30e2bd8e1465ecb0e0bab322445766631024b6604c5fab27cd50c70d"
+    },
+    {
+      "command": [
+        "C:\\Users\\jraburn\\Documents\\GitHub\\cfb-betting-system-v3\\.venv\\Scripts\\python.exe",
+        "-m",
+        "pytest",
+        "-q"
+      ],
+      "started_at_utc": "2026-11-19T14:39:25.341500+00:00",
+      "completed_at_utc": "2026-11-19T14:55:38.079403+00:00",
+      "exit_code": 0,
+      "output_file": "05.log",
+      "output_sha256": "e0eea6d01c7f269617d2ee2f190f2d0ab6c90f2346ccc171a65fb3bf37b5cbea"
+    },
+    {
+      "command": [
+        "C:\\Users\\jraburn\\Documents\\GitHub\\cfb-betting-system-v3\\.venv\\Scripts\\python.exe",
+        "-m",
+        "scripts.verify_replay_compat",
+        "--output",
+        "outputs/2026-week12-integration/20261119-v1/replay-verification/compatibility.json"
+      ],
+      "started_at_utc": "2026-11-19T14:55:38.080415+00:00",
+      "completed_at_utc": "2026-11-19T14:58:06.809596+00:00",
+      "exit_code": 0,
+      "output_file": "06.log",
+      "output_sha256": "95190486669cc842dcc2be2e8f7b30a113636d2a382a9969fefbea34b4fbd99c"
+    },
+    {
+      "command": [
+        "C:\\Users\\jraburn\\Documents\\GitHub\\cfb-betting-system-v3\\.venv\\Scripts\\python.exe",
+        "-m",
+        "scripts.verify_week7_corrected_git_custody"
+      ],
+      "started_at_utc": "2026-11-19T14:58:06.809596+00:00",
+      "completed_at_utc": "2026-11-19T14:58:17.576839+00:00",
+      "exit_code": 0,
+      "output_file": "07.log",
+      "output_sha256": "ec12df47f403b3d37505c510df219bd083342d653cb57e774f346652ca2d0c82"
+    },
+    {
+      "command": [
+        "C:\\Users\\jraburn\\Documents\\GitHub\\cfb-betting-system-v3\\.venv\\Scripts\\python.exe",
+        "-m",
+        "scripts.build_week9_formal_audit",
+        "--verify"
+      ],
+      "started_at_utc": "2026-11-19T14:58:17.577844+00:00",
+      "completed_at_utc": "2026-11-19T14:58:20.122149+00:00",
+      "exit_code": 0,
+      "output_file": "08.log",
+      "output_sha256": "e46e2857a3f925b71bd122c07c27fce4ef6f52491013aabafcc871fe2b01b777"
+    },
+    {
+      "command": [
+        "C:\\Users\\jraburn\\Documents\\GitHub\\cfb-betting-system-v3\\.venv\\Scripts\\python.exe",
+        "-m",
+        "scripts.week9_scoring_process_v2",
+        "--verify"
+      ],
+      "started_at_utc": "2026-11-19T14:58:20.123137+00:00",
+      "completed_at_utc": "2026-11-19T14:58:23.183715+00:00",
+      "exit_code": 0,
+      "output_file": "09.log",
+      "output_sha256": "48516f8417d5dc519c50bd1efeb6a2d4dfcb69119e4518e9eb4174d64414a739"
+    },
+    {
+      "command": [
+        "C:\\Users\\jraburn\\Documents\\GitHub\\cfb-betting-system-v3\\.venv\\Scripts\\python.exe",
+        "-m",
+        "scripts.diagnose_cross_platform_replay",
+        "--output",
+        "outputs/2026-week12-integration/20261119-v1/replay-diagnostics"
+      ],
+      "started_at_utc": "2026-11-19T14:58:23.184858+00:00",
+      "completed_at_utc": "2026-11-19T14:58:31.246377+00:00",
+      "exit_code": 0,
+      "output_file": "10.log",
+      "output_sha256": "92313fac0382b434ab85563ed0e1c064a6b8fb93425a55c3e43196900fc34f37"
+    },
+    {
+      "command": [
+        "C:\\Users\\jraburn\\Documents\\GitHub\\cfb-betting-system-v3\\.venv\\Scripts\\python.exe",
+        "-m",
+        "scripts.verify_week10_acceptance"
+      ],
+      "started_at_utc": "2026-11-19T14:58:31.247359+00:00",
+      "completed_at_utc": "2026-11-19T14:58:31.477064+00:00",
+      "exit_code": 0,
+      "output_file": "11.log",
+      "output_sha256": "8882c2f7d483581d7eaba87bceb142dd915e05dd030e972aa2cc80c40ec1ba6f"
+    },
+    {
+      "command": [
+        "C:\\Users\\jraburn\\Documents\\GitHub\\cfb-betting-system-v3\\.venv\\Scripts\\python.exe",
+        "-m",
+        "scripts.build_week10_formal_audit",
+        "--verify"
+      ],
+      "started_at_utc": "2026-11-19T14:58:31.478063+00:00",
+      "completed_at_utc": "2026-11-19T14:58:37.851409+00:00",
+      "exit_code": 0,
+      "output_file": "12.log",
+      "output_sha256": "eb33fe83a9727f4d606775fa8bab59a8ffc30833373d7a164587052b9bb1831b"
+    },
+    {
+      "command": [
+        "C:\\Users\\jraburn\\Documents\\GitHub\\cfb-betting-system-v3\\.venv\\Scripts\\python.exe",
+        "-m",
+        "scripts.verify_week12_acceptance"
+      ],
+      "started_at_utc": "2026-11-19T14:58:37.852424+00:00",
+      "completed_at_utc": "2026-11-19T14:58:39.668863+00:00",
+      "exit_code": 0,
+      "output_file": "13.log",
+      "output_sha256": "bb42a8172c594dcdfdb1ce2193844c865c9ea4e68863743ca8ad4908230a9bbe"
+    },
+    {
+      "command": [
+        "C:\\Users\\jraburn\\Documents\\GitHub\\cfb-betting-system-v3\\.venv\\Scripts\\python.exe",
+        "-m",
+        "scripts.qualify_week12_delivery",
+        "--verify"
+      ],
+      "started_at_utc": "2026-11-19T14:58:39.669939+00:00",
+      "completed_at_utc": "2026-11-19T14:58:39.981859+00:00",
+      "exit_code": 0,
+      "output_file": "14.log",
+      "output_sha256": "fd307f922b1441d3a4c5ccf379143aa7dd409c7df2b7155ee2f4f787f38b0aa5"
+    },
+    {
+      "command": [
+        "C:\\Users\\jraburn\\Documents\\GitHub\\cfb-betting-system-v3\\.venv\\Scripts\\python.exe",
+        "-m",
+        "scripts.review_week12_thursday",
+        "--verify"
+      ],
+      "started_at_utc": "2026-11-19T14:58:39.982862+00:00",
+      "completed_at_utc": "2026-11-19T14:58:40.333185+00:00",
+      "exit_code": 0,
+      "output_file": "15.log",
+      "output_sha256": "f6ac928796795caee959a44a5c697507940f7dabf50a4254d796738c1f12ae73"
+    },
+    {
+      "command": [
+        "C:\\Users\\jraburn\\Documents\\GitHub\\cfb-betting-system-v3\\.venv\\Scripts\\python.exe",
+        "-m",
+        "scripts.review_week12_context",
+        "--capture",
+        "outputs/2026-week12-context/20261119-morning",
+        "--conference",
+        "outputs/2026-week12-context/20261119-conference",
+        "--eligibility-capture",
+        "outputs/2026-week12-readiness/20261119-morning",
+        "--output",
+        "outputs/2026-week12-integration/20261119-v1/outputs/2026-week12-context/20261119-review-v2",
+        "--verify"
+      ],
+      "started_at_utc": "2026-11-19T14:58:40.334322+00:00",
+      "completed_at_utc": "2026-11-19T14:58:40.710295+00:00",
+      "exit_code": 1,
+      "output_file": "16.log",
+      "output_sha256": "e81297e3b61008a83d564d2eec43973ab2beef4c477a80ad3b65c51c7cffe118"
+    }
+  ]
+}

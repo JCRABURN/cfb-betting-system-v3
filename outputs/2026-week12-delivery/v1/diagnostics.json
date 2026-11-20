@@ -1,0 +1,35 @@
+{
+  "actual_lock_timestamp": "2026-11-18T19:16:40.507990+00:00",
+  "calibrated_cross_market_probability_available": false,
+  "context_status": "SEPARATE_APPEND_ONLY_CONTEXT_REVIEW_REQUIRED",
+  "duplicate_games": 0,
+  "elapsed_games": 3,
+  "elapsed_markets": 6,
+  "eligible_missing_forecasts": 0,
+  "external_week11_submissions_used": false,
+  "files": {
+    "all-132-markets.csv": "ec95005271e4d56c7d3f705eb413fa72bf78cc76b6fd46241cabb041e8e6fc1a",
+    "full-card-66.csv": "432a210e009bc4ca53e7075243315cb8128f3c1cd438f744c18746cfc011e948",
+    "provisional-research-five.csv": "b935507137ae6f4fc4eb9d50515fb79d7e84a5839f926ea9f07bdf30b64c34a1"
+  },
+  "frozen_code_commit": "69d14465fdaf437f8bdec85e155d97c818c020b4",
+  "intake_games": 66,
+  "intake_markets": 132,
+  "limitation": "Unchanged v2.8 ATS returns null governed uncertainty; ATS score is a capped linear heuristic. Totals use an uncalibrated normal residual CDF. These scales cannot certify the strongest combined five. No policy was promoted to manufacture calibration.",
+  "model_generated_at_utc": "2026-11-18T19:16:53.585528+00:00",
+  "no_market_allocation_quota": true,
+  "official_combined_top_five_available": false,
+  "production_database_modified": false,
+  "prospective_ats": 63,
+  "prospective_totals": 63,
+  "provisional_chips": [
+    5,
+    4,
+    3,
+    2,
+    1
+  ],
+  "provisional_research_five_games": 5,
+  "source_print_timestamp": "2026-11-17T14:22:00-06:00",
+  "status": "DRAFT_FORECASTS_COMPLETE_FOR_ELIGIBLE_GAMES_OFFICIAL_COMBINED_SELECTION_BLOCKED"
+}

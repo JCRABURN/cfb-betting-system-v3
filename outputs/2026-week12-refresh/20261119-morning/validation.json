@@ -1,0 +1,80 @@
+{
+  "timestamp_utc": "2026-11-19T14:11:19.572370+00:00",
+  "base_head": "8df4bba5d8259abb7e26f001c77c3b3bfc7cf91e",
+  "working_code_sha256_lf": {
+    "scripts/capture_week12_context.py": "c754c3d47957dee26c17bea2b6d4ff531c629de0e0d21eb72fbdeed60059a740",
+    "scripts/review_week12_context.py": "2b6fbe33dff139c4b62823248e68ef99efd4754f3ecf5219991d2a8a61423116",
+    "scripts/review_week12_thursday.py": "8ac87f96051ce1aae65416aad255f35bd20311bd3a9fe53013f98c3ca661fa08",
+    "tests/test_week12_context_refresh.py": "819ae552722df427e4af2fba671d5ba79dc700077f94342fcd02eefa4fdcc437"
+  },
+  "commands": [
+    {
+      "command": [
+        "../../.venv/Scripts/python.exe",
+        "-m",
+        "pytest",
+        "tests/test_week12_context_refresh.py",
+        "tests/test_week12_source.py",
+        "tests/test_week12_delivery.py",
+        "-q"
+      ],
+      "exit_code": 0,
+      "output": ".........................................                                [100%]\n41 passed in 7.23s\n"
+    },
+    {
+      "command": [
+        "../../.venv/Scripts/python.exe",
+        "-m",
+        "scripts.verify_week12_acceptance"
+      ],
+      "exit_code": 0,
+      "output": "{\n  \"actual_recovery_timestamp\": \"2026-11-18T19:06:51.776041+00:00\",\n  \"additional_provider_games\": 4,\n  \"ats_count\": 66,\n  \"calibrated_cross_market_probabilities_available\": false,\n  \"canonical_matches\": 66,\n  \"duplicate_games\": 0,\n  \"elapsed_games\": 3,\n  \"eligibility_as_of_utc\": \"2026-11-18T19:09:32.641812+00:00\",\n  \"extracted_text_sha256\": \"b36e3b27c98516cea5ea90a00ab10c5cda912167e03b5e44dcfaf4d2bbb8a44d\",\n  \"files\": {\n    \"contest-lines.csv\": \"70ca1b635a7eb7d2931298d43c2f6926def46c45461c682375e9bf79620956d3\",\n    \"provider-reconciliation.csv\": \"15c2546e52fef7a44e9b1c43ba29817c8a1ac2f6e09832a23220f9f6707a2526\",\n    \"scheduled-games-not-on-pdf.json\": \"002719175e96898b0d93951dac41ae2cd5b88b26694cefd342b28878818fa232\"\n  },\n  \"game_count\": 66,\n  \"kickoff_differences\": 0,\n  \"pdf_sha256\": \"60d6ced55737fe6749a34f092735b3a613d75824ebfd9138de1aa429d393edd2\",\n  \"policy\": \"v2.8 unchanged\",\n  \"provider_manifest_sha256\": \"1acfb9ff8fe0de474a0f230f72a57e304d15502528bfceca6bc58f5fd4ff5942\",\n  \"receipt_sha256\": \"7b0e386115628800c0fbf113383744aae1659b785ae67e1b4145478a9c6a56ce\",\n  \"season\": 2026,\n  \"source\": \"SplashSports\",\n  \"source_timestamp\": \"2026-11-17T14:22:00-06:00\",\n  \"source_timestamp_kind\": \"PDF_PRINT_TIME_NOT_MODEL_FORECAST\",\n  \"totals_count\": 66,\n  \"unresolved_teams\": 0,\n  \"upcoming_games\": 63,\n  \"version\": \"week12-source-v1\",\n  \"visual_validation\": \"All eight original PDF pages inspected; all 66 names, signed spreads, paired totals and displayed kickoffs checked.\",\n  \"week\": 12\n}\n\n{\n  \"actual_lock_timestamp\": \"2026-11-18T19:16:40.507990+00:00\",\n  \"calibrated_cross_market_probability_available\": false,\n  \"context_status\": \"SEPARATE_APPEND_ONLY_CONTEXT_REVIEW_REQUIRED\",\n  \"duplicate_games\": 0,\n  \"elapsed_games\": 3,\n  \"elapsed_markets\": 6,\n  \"eligible_missing_forecasts\": 0,\n  \"external_week11_submissions_used\": false,\n  \"files\": {\n    \"all-132-markets.csv\": \"ec95005271e4d56c7d3f705eb413fa72bf78cc76b6fd46241cabb041e8e6fc1a\",\n    \"full-card-66.csv\": \"432a210e009bc4ca53e7075243315cb8128f3c1cd438f744c18746cfc011e948\",\n    \"provisional-research-five.csv\": \"b935507137ae6f4fc4eb9d50515fb79d7e84a5839f926ea9f07bdf30b64c34a1\"\n  },\n  \"frozen_code_commit\": \"69d14465fdaf437f8bdec85e155d97c818c020b4\",\n  \"intake_games\": 66,\n  \"intake_markets\": 132,\n  \"limitation\": \"Unchanged v2.8 ATS returns null governed uncertainty; ATS score is a capped linear heuristic. Totals use an uncalibrated normal residual CDF. These scales cannot certify the strongest combined five. No policy was promoted to manufacture calibration.\",\n  \"model_generated_at_utc\": \"2026-11-18T19:16:53.585528+00:00\",\n  \"no_market_allocation_quota\": true,\n  \"official_combined_top_five_available\": false,\n  \"production_database_modified\": false,\n  \"prospective_ats\": 63,\n  \"prospective_totals\": 63,\n  \"provisional_chips\": [\n    5,\n    4,\n    3,\n    2,\n    1\n  ],\n  \"provisional_research_five_games\": 5,\n  \"source_print_timestamp\": \"2026-11-17T14:22:00-06:00\",\n  \"status\": \"DRAFT_FORECASTS_COMPLETE_FOR_ELIGIBLE_GAMES_OFFICIAL_COMBINED_SELECTION_BLOCKED\"\n}\n\n{\n  \"as_of_utc\": \"2026-11-18T19:19:11.851475+00:00\",\n  \"files\": {\n    \"all-game-context.csv\": \"5917c5a440cab7f6cda0387227e745bb1c953aa03a171c498b5d9953f8f9b662\",\n    \"conference-personnel.csv\": \"476463f56fa5e537fe3a14f1b07ac4f1ffc4d2bf51c8819c22c839d2802df2dd\",\n    \"conference-report-status.json\": \"7b3b118cc4cf63c9be94b66ad291550e3d8c965e6b5339503a4eb5235be59bf6\"\n  },\n  \"games\": 63,\n  \"indoor\": 1,\n  \"initial_personnel_report_teams\": 6,\n  \"input_manifests\": {\n    \"outputs/2026-week12-context/20261118-conference/manifest.json\": \"f206a57a2884eff6bdc64d8c805461c5dc4abb2a6dcabb7c5e1b446a1a360805\",\n    \"outputs/2026-week12-context/20261118-initial/manifest.json\": \"030d44f97940fe3342c1af4ed27340e76e1663582d72f6baa053475eb0f0d1b8\"\n  },\n  \"numerical_adjustments\": 0,\n  \"original_lines_changed\": false,\n  \"pending_report_teams\": 44,\n  \"personnel_records\": 427,\n  \"version\": \"week12-context-review-v2\",\n  \"weather_available\": 62\n}\n\n{\"status\": \"VERIFIED_READ_ONLY_DRAFT_WITH_DECLARED_GAPS\", \"files\": 1210, \"games\": 66, \"markets\": 132, \"eligible_predictions\": 126, \"elapsed_markets\": 6, \"official_combined_top5\": false, \"forward_sealed_games\": 61, \"late_custody_games\": 2}\n"
+    },
+    {
+      "command": [
+        "../../.venv/Scripts/python.exe",
+        "-m",
+        "scripts.qualify_week12_delivery",
+        "--verify"
+      ],
+      "exit_code": 0,
+      "output": "{\"files\": 3, \"forward_games\": 61, \"late_games\": 2, \"no_forecast_games\": 3}\n"
+    },
+    {
+      "command": [
+        "../../.venv/Scripts/python.exe",
+        "-m",
+        "scripts.review_week12_context",
+        "--capture",
+        "outputs/2026-week12-context/20261119-morning",
+        "--conference",
+        "outputs/2026-week12-context/20261119-conference",
+        "--eligibility-capture",
+        "outputs/2026-week12-readiness/20261119-morning",
+        "--output",
+        "outputs/2026-week12-context/20261119-review-v2",
+        "--verify"
+      ],
+      "exit_code": 0,
+      "output": "{\n  \"as_of_utc\": \"2026-11-19T14:06:06.440126+00:00\",\n  \"files\": {\n    \"all-game-context.csv\": \"fdc7cefecda5589007bc04f1eac5fe987d3f662dc8d611b93f6bc5d67bc86733\",\n    \"conference-personnel.csv\": \"c5eb6fd47e2106ce56e494612129ab22e7cc4e807dfa8e4fc58820a9343a7fd8\",\n    \"conference-report-status.json\": \"ec67d17ebcf2c359e65bc4aeaa12f2391f0552f049721f96f90635e357cb5cf4\"\n  },\n  \"games\": 61,\n  \"indoor\": 1,\n  \"initial_personnel_report_teams\": 50,\n  \"input_manifests\": {\n    \"outputs/2026-week12-context/20261119-conference/manifest.json\": \"e99ca4261667fea8cd101f0ee6d0203e4fcff8d4e63a9a853469b45c4d6692ad\",\n    \"outputs/2026-week12-context/20261119-morning/manifest.json\": \"99cc286aa9106f2aa073cbb52b9dd3525f8838562284f2a87adab17cce5a9c34\",\n    \"outputs/2026-week12-readiness/20261119-morning/capture-manifest.json\": \"da8c3e5fbecc9a1433164d6b882c3e9cdbba3ed131ef544586ae0b3e0c03187d\"\n  },\n  \"numerical_adjustments\": 0,\n  \"original_lines_changed\": false,\n  \"pending_report_teams\": 0,\n  \"personnel_records\": 3774,\n  \"version\": \"week12-context-review-v3\",\n  \"weather_available\": 60\n}\n\n"
+    },
+    {
+      "command": [
+        "../../.venv/Scripts/python.exe",
+        "-m",
+        "scripts.review_week12_thursday",
+        "--verify"
+      ],
+      "exit_code": 0,
+      "output": "{\n  \"context_changes\": 454,\n  \"eligible_games\": 61,\n  \"evidence_as_of_utc\": \"2026-11-19T14:06:06.440126+00:00\",\n  \"external_week11_submissions_used\": false,\n  \"files\": {\n    \"all-132-markets.csv\": \"fa755f4e605485731179599f70236a43687a804c7ef3cf277c988f0db17cd3f3\",\n    \"context-changes.json\": \"6c459d213910adfc6d0ff313c4e33c70212ff5dcb84dae144687468fc327f515\",\n    \"eligibility.json\": \"02880889206d51384aafc79bba64d7054a1393b745081003ebcfb35e94fc6b03\",\n    \"feature-comparison.json\": \"777052f3d63164f4c6d80aeb00e3835025c8d14540992a4b97ac5819c9317407\",\n    \"full-card-66.csv\": \"aa14edd24bb7341005340e0d7f68a0ced9267cc67bb53d84f4354a7a0c8b958d\",\n    \"market-observations-separate.json\": \"a4fefda8ebe642af6b0e04df9742dda202fa5435c97027c14b700fce34b09989\",\n    \"personnel-changes.json\": \"6ebc1c16ad6bde06843b3c51842c4558fc6e4b099e5439396ff7ab39d88abd9a\"\n  },\n  \"forecast_changes\": 0,\n  \"full_card_rows\": 66,\n  \"inputs\": {\n    \"outputs/2026-week12-context/20261119-review-v2/manifest.json\": \"5b9acb661d063a18552d4d9f13c9c15a5a86232e27c14e8695de86ce33e57121\",\n    \"outputs/2026-week12-context/review-v2/manifest.json\": \"e269a62cf2c98bff0ae811389da6638c213cdcb2f3a1af949f1cab46af05d2cf\",\n    \"outputs/2026-week12-delivery/initial-seal.json\": \"10b3a27c9703561805197039c1c70fd8ad0ec031246ec3592addf3cda23363eb\",\n    \"outputs/2026-week12-delivery/v2/all-132-markets.csv\": \"fa755f4e605485731179599f70236a43687a804c7ef3cf277c988f0db17cd3f3\",\n    \"outputs/2026-week12-delivery/v2/full-card-66.csv\": \"aa14edd24bb7341005340e0d7f68a0ced9267cc67bb53d84f4354a7a0c8b958d\",\n    \"outputs/2026-week12-readiness/20261119-morning/capture-manifest.json\": \"da8c3e5fbecc9a1433164d6b882c3e9cdbba3ed131ef544586ae0b3e0c03187d\",\n    \"outputs/2026-week12-readiness/execution-gate-20261118/capture-manifest.json\": \"3e3a86ccf99a7fb507e82ab97770e4e18e484fdb0c21d2732bb9aed84324c598\"\n  },\n  \"market_games_changed\": 24,\n  \"market_rows\": 132,\n  \"model_rerun\": false,\n  \"numeric_adjustments\": 0,\n  \"official_common_calibrated_top_five\": false,\n  \"personnel_changes\": 3354,\n  \"reason\": \"All seven prior-week statistical payloads unchanged; no approved numeric contextual adjustment or common calibration.\",\n  \"started_games_unchanged\": 5,\n  \"version\": \"week12-thursday-evidence-review-v1\"\n}\n\n"
+    },
+    {
+      "command": [
+        "../../.venv/Scripts/python.exe",
+        "scripts/verify_repo_safety.py"
+      ],
+      "exit_code": 0,
+      "output": "Repository dependency and workflow safety checks passed.\n"
+    }
+  ]
+}

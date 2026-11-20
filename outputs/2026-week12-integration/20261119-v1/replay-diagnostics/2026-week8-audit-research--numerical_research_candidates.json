@@ -1,0 +1,82 @@
+{
+  "limitation": "Bias uses only earlier weeks in each fold, but the candidate was proposed after viewing these results. Shrinkage grid is retrospective exploration, not independent validation.",
+  "prior_week_bias_correction": [
+    {
+      "baseline_mae": 12.43003044803628,
+      "baseline_rmse": 16.278069078260607,
+      "candidate_mae": 12.84261467105481,
+      "candidate_rmse": 16.306658073570397,
+      "prior_bias": 2.4478295180523935,
+      "prior_training_n": 56,
+      "test_n": 58,
+      "test_week": 6
+    },
+    {
+      "baseline_mae": 12.939958905721614,
+      "baseline_rmse": 15.610982366133085,
+      "candidate_mae": 12.807727064200499,
+      "candidate_rmse": 15.566579760655621,
+      "prior_bias": 1.7283249873127617,
+      "prior_training_n": 114,
+      "test_n": 59,
+      "test_week": 7
+    },
+    {
+      "baseline_mae": 15.010405353992184,
+      "baseline_rmse": 18.95490162840772,
+      "candidate_mae": 14.80981786408742,
+      "candidate_rmse": 18.62941226878878,
+      "prior_bias": 1.5701950148728827,
+      "prior_training_n": 173,
+      "test_n": 52,
+      "test_week": 8
+    }
+  ],
+  "score_shrinkage_exploratory_grid": [
+    {
+      "brier": 0.25,
+      "log_loss": 0.6931471805599453,
+      "n": 169,
+      "strength": 0,
+      "test_weeks": [
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "brier": 0.25078326043193316,
+      "log_loss": 0.6947263865828939,
+      "n": 169,
+      "strength": 0.25,
+      "test_weeks": [
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "brier": 0.2528482260357947,
+      "log_loss": 0.6989799881038625,
+      "n": 169,
+      "strength": 0.5,
+      "test_weeks": [
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "brier": 0.2608232727593028,
+      "log_loss": 0.7165438191132817,
+      "n": 169,
+      "strength": 1,
+      "test_weeks": [
+        6,
+        7,
+        8
+      ]
+    }
+  ],
+  "status": "RESEARCH_ONLY_NOT_DEPLOYED"
+}

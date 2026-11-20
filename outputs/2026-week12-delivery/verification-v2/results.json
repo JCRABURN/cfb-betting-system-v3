@@ -1,0 +1,5 @@
+{
+  "command": "python -m pytest -q tests/test_week12_source.py tests/test_week12_delivery.py",
+  "exit_code": 0,
+  "completed_at_utc": "2026-11-19T01:18:12.226306+00:00"
+}

@@ -1,0 +1,65 @@
+{
+  "code_sha256_lf": "ae9fb32a33c6844e408d2195e7092154241f7660bf70efc06d5d0d7afe7b64f7",
+  "created_at_utc": "2026-11-19T14:06:06.771549+00:00",
+  "owner_approval": "PENDING",
+  "records": [
+    {
+      "conference": "B10",
+      "endpoint": "https://app.hdintelligence.com/api/get-publish-public",
+      "http_status": 200,
+      "method": "POST_READ_ONLY_PUBLIC_REPORT",
+      "official_wrapper": "https://bigten.org/sports/2026/9/10/FB_Availability_Reports.aspx",
+      "parameters": {
+        "conference": "B10",
+        "organization": "B10",
+        "sport": "Football"
+      },
+      "path": "B10.json.gz",
+      "provider": "Official conference public report embed",
+      "raw_sha256": "173a2f3c45fcef10ee363956f03c1790791745ad1608a7ccdc9fd04b546fc899",
+      "received_at_utc": "2026-11-19T14:06:02.901862+00:00",
+      "requested_at_utc": "2026-11-19T14:06:02.047543+00:00",
+      "status": "CAPTURED",
+      "stored_sha256": "6c3fb01081002ff86fd3a0b40795dddb7e8a8d139be9911d01781c5d26e05f93"
+    },
+    {
+      "conference": "B12",
+      "endpoint": "https://app.hdintelligence.com/api/get-publish-public",
+      "http_status": 200,
+      "method": "POST_READ_ONLY_PUBLIC_REPORT",
+      "official_wrapper": "https://big12sports.com/FBReporting",
+      "parameters": {
+        "conference": "B12",
+        "organization": "B12",
+        "sport": "Football"
+      },
+      "path": "B12.json.gz",
+      "provider": "Official conference public report embed",
+      "raw_sha256": "a233ba195fbd99ae1eb141e800e958cf2f8c223ef80c8cef4d3896907e5f2f42",
+      "received_at_utc": "2026-11-19T14:06:03.617449+00:00",
+      "requested_at_utc": "2026-11-19T14:06:02.948308+00:00",
+      "status": "CAPTURED",
+      "stored_sha256": "8c4f51bd62cc471f4b2c96c118d7d6b54c683db102ea59de8e56ddc6d27de523"
+    },
+    {
+      "conference": "ACC",
+      "endpoint": "https://app.hdintelligence.com/api/get-publish-public",
+      "http_status": 200,
+      "method": "POST_READ_ONLY_PUBLIC_REPORT",
+      "official_wrapper": "https://app.hdintelligence.com/?conf=ACC&source=ACC&sport=Football&type=report",
+      "parameters": {
+        "conference": "ACC",
+        "organization": "ACC",
+        "sport": "Football"
+      },
+      "path": "ACC.json.gz",
+      "provider": "Official conference public report embed",
+      "raw_sha256": "8a1c148bbaaecf3ed383b04983996f663388011fc149ad88f5a40fd946fe82f3",
+      "received_at_utc": "2026-11-19T14:06:06.440126+00:00",
+      "requested_at_utc": "2026-11-19T14:06:03.665435+00:00",
+      "status": "CAPTURED",
+      "stored_sha256": "00c43216b8e1d6cc32a556ca84771e9a1bc4acd3ae7fcb3e8c74506834f279d5"
+    }
+  ],
+  "usage": "Pregame context only for future candidate games; initial availability is not final clearance or a starting assignment."
+}

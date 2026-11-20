@@ -1,0 +1,60 @@
+game_id,away,home,away_score,home_score,kickoff_utc,neutral_site,status,summary_sha256,source_url
+401866442,Massachusetts,Buffalo,18,25,2026-10-17T17:00Z,False,FINAL,9dc1d6cec059ecebf2904f45b29775431f9cb5d04d18b7d84a4e6d6f2b340bf7,https://www.espn.com/college-football/game/_/gameId/401866442
+401858492,Nebraska,Oregon,14,17,2026-10-18T03:00Z,False,FINAL,c69708bc6edaa1bbca898a015378c9061dbfde796cf204a63c3ba35e3af3cd54,https://www.espn.com/college-football/game/_/gameId/401858492
+401858265,Louisville,Syracuse,34,26,2026-10-17T23:30Z,False,FINAL,9effa35dcc96bbcc1c733be0dd1ecaaf6ffd2484cc2b403d3132ea9ba0a2e757,https://www.espn.com/college-football/game/_/gameId/401858265
+401864524,UNLV,Air Force,31,41,2026-10-17T19:30Z,False,FINAL,824964fc096c39719a4c0e2fd79a082c3cb2636bf3a3988f02c1ee1dc7e71fdd,https://www.espn.com/college-football/game/_/gameId/401864524
+401858488,Ohio State,Indiana,19,15,2026-10-17T16:00Z,False,FINAL,43402740244f7dee7c7b6e767690345ea0acc00d0387f77472e466304a3d5e99,https://www.espn.com/college-football/game/_/gameId/401858488
+401856809,Notre Dame,BYU,24,28,2026-10-17T23:30Z,False,FINAL,a5b082a967c088e0d11597a767017be15dcb4fe00976d6e1cdba848664fe652d,https://www.espn.com/college-football/game/_/gameId/401856809
+401862806,Kent State,South Florida,2,29,2026-10-17T23:00Z,False,FINAL,5f0b601a1caecd0b30759ec64219612956c66037106e582dd269b019aa9a381b,https://www.espn.com/college-football/game/_/gameId/401862806
+401869957,Georgia State,James Madison,22,49,2026-10-17T16:00Z,False,FINAL,b625bfd72af9f4b8e0b4b7bc15b7f1bd4ac7d01e2e00ad5de0558616b45b871f,https://www.espn.com/college-football/game/_/gameId/401869957
+401866445,Ohio,Sacramento State,48,7,2026-10-18T02:00Z,False,FINAL,4818a35cb7e33c3612a71e04c1179a1ff77e240849009157dcd62a2c40a270fe,https://www.espn.com/college-football/game/_/gameId/401866445
+401856723,Alabama,Tennessee,10,26,2026-10-17T19:30Z,False,FINAL,72ec2aa93d1f7821d2197060cb3ff11cefdcab9d1ba635cf31aab055e6e087aa,https://www.espn.com/college-football/game/_/gameId/401856723
+401856724,Florida,Texas,27,24,2026-10-17T16:00Z,False,FINAL,fdcab3ef19f717bb9b6f9fbba266bb6c78bc14998d0a694d16fb7e019d905ed6,https://www.espn.com/college-football/game/_/gameId/401856724
+401856721,Missouri,Ole Miss,3,31,2026-10-17T19:30Z,False,FINAL,c9bbcb71386602699f70d1ef637cb19e49d87442aad801b04400eee4495821ba,https://www.espn.com/college-football/game/_/gameId/401856721
+401869934,Arkansas State,Southern Miss,23,13,2026-10-17T23:00Z,False,FINAL,f370d54033bede0d16c7d8e2dad1bdedd54dfe198a1d085a55929bb619fc6320,https://www.espn.com/college-football/game/_/gameId/401869934
+401864522,Northern Illinois,Wyoming,23,41,2026-10-17T19:30Z,False,FINAL,3762d28074d295702080dee1447cbe7afd61e216344fd897b2552830b9fe16bf,https://www.espn.com/college-football/game/_/gameId/401864522
+401860923,Colorado State,Texas State,27,66,2026-10-16T00:00Z,False,FINAL,00d8f77b21ddb11bccc3e7d242e6fe8399ddf946510b3ca55ce11a9aa84047f9,https://www.espn.com/college-football/game/_/gameId/401860923
+401856720,Mississippi State,LSU,0,31,2026-10-17T16:00Z,False,FINAL,2fba9eed5e6a60801ca9c51a683af4af6796eb85bdecb8005fed134c9b5076ca,https://www.espn.com/college-football/game/_/gameId/401856720
+401871067,Delaware,Middle Tennessee,30,33,2026-10-13T23:00Z,False,FINAL,cd1f9062ee4057273edc78bdc63b518001daa3e8918a3bcbe0cb6dd4e6b25676,https://www.espn.com/college-football/game/_/gameId/401871067
+401871091,Louisiana Tech,UL Monroe,24,0,2026-10-18T00:00Z,False,FINAL,b0a09cc6fdff2b6c719c11d8faffb230d63bc74caa83fe6d800570ccb555b078,https://www.espn.com/college-football/game/_/gameId/401871091
+401864523,San José State,UTEP,24,11,2026-10-18T01:00Z,False,FINAL,db1743b9ab248a4594261706a5e31ec215116ca81c19dacd5d2db7224aba8495,https://www.espn.com/college-football/game/_/gameId/401864523
+401862803,Charlotte,Temple,38,31,2026-10-17T17:00Z,False,FINAL,152ee1760b9116a3fdbdb7f2ec927cc8d54dd9357ec57b6661720747b986cd52,https://www.espn.com/college-football/game/_/gameId/401862803
+401858494,Wisconsin,UCLA,7,17,2026-10-17T23:30Z,False,FINAL,b58f42c99e89cf98cb662af27b51e67164e7c418574e2252092494dae846f801,https://www.espn.com/college-football/game/_/gameId/401858494
+401856829,Cincinnati,West Virginia,42,45,2026-10-17T16:00Z,False,FINAL,1cd68130338cee152eb6301f78b53bb2d862c1a59630799ad8bc238cae1510f7,https://www.espn.com/college-football/game/_/gameId/401856829
+401871068,Western Kentucky,Sam Houston,16,3,2026-10-15T00:00Z,False,FINAL,1c55a28003cd89a87dd3c6c11b8dc7e1ca938bb42f0440af5d7da197351fbc28,https://www.espn.com/college-football/game/_/gameId/401871068
+401856722,Kentucky,Oklahoma,21,13,2026-10-17T23:30Z,False,FINAL,5b47e2a4d308add636c432849a8a68e69176cebbdfbe1d95a5b4260c2056508f,https://www.espn.com/college-football/game/_/gameId/401856722
+401856833,Utah,Colorado,27,24,2026-10-18T02:15Z,False,FINAL,a76dea7a85a1682c8c22114779cab4b4832c28fa8969aee267624f1e472d72cd,https://www.espn.com/college-football/game/_/gameId/401856833
+401858268,Virginia,SMU,13,23,2026-10-17T16:00Z,False,FINAL,d3437f809f87d428fbebeb1208623919daf9a63be085aff34d18a1a599c3d4a8,https://www.espn.com/college-football/game/_/gameId/401858268
+401858266,North Carolina,Duke,24,20,2026-10-17T19:30Z,False,FINAL,cb8281adcae13162daed853618ca5d34e6cc177cdc42d6cf6286e067eb82e093,https://www.espn.com/college-football/game/_/gameId/401858266
+401858491,Northwestern,Michigan State,24,21,2026-10-17T16:00Z,False,FINAL,c007ae3f1c7a7942809cbb8a7862b7b13746bc755eb62f45ee9c5a5cf4ace6c8,https://www.espn.com/college-football/game/_/gameId/401858491
+401864521,New Mexico,Hawai'i,21,10,2026-10-18T02:30Z,False,FINAL,e17eb25937b7b0c1aed87fc34572fbd10c8bfea31dd5a1e5c90696d8011e3ee2,https://www.espn.com/college-football/game/_/gameId/401864521
+401869844,App State,Coastal Carolina,35,32,2026-10-17T00:00Z,False,FINAL,74fbaaaf7693d3d0066c9e77ffbb7994389cc5feb8da711bb5729d61ffe64864,https://www.espn.com/college-football/game/_/gameId/401869844
+401856831,Oklahoma State,Houston,32,35,2026-10-17T23:30Z,False,FINAL,6e3e0baee7dd5c69bf465d33366e5c157951ebae644c7b9f44ba9b810c03a6df,https://www.espn.com/college-football/game/_/gameId/401856831
+401856830,Kansas,Kansas State,24,35,2026-10-17T16:00Z,False,FINAL,6dde32866c275c507f397dbfea4fd299bf44482d7be7f1f6228670df4d0c84ab,https://www.espn.com/college-football/game/_/gameId/401856830
+401871054,Kennesaw State,Missouri State,21,24,2026-10-14T23:30Z,False,FINAL,fdce07192c1ff4d20b4a99478913b73a838bc1b7e4cb7abc52e5d3112567c782,https://www.espn.com/college-football/game/_/gameId/401871054
+401869950,Georgia Southern,Old Dominion,23,15,2026-10-15T23:30Z,False,FINAL,1f92a34715910f7fc45b24772bd3a7d2ed40f70d9edf5c016043d1bf9147e313,https://www.espn.com/college-football/game/_/gameId/401869950
+401858269,Wake Forest,California,41,7,2026-10-18T02:30Z,False,FINAL,285efb7b60fa51960cd695c46117498b40d98b5310b8143905d505858760b585,https://www.espn.com/college-football/game/_/gameId/401858269
+401856828,Arizona State,Texas Tech,25,53,2026-10-17T19:30Z,False,FINAL,f495bceb1d043a1f2539fe9df6792a4c68a254696dc01b6b0d39cf2f86523c25,https://www.espn.com/college-football/game/_/gameId/401856828
+401856726,Arkansas,Vanderbilt,31,21,2026-10-17T23:00Z,False,FINAL,b5130aacd6d7d1926afe8c6b18f6a9a0a277c7a3de9e281c97fbd1c20cbae004,https://www.espn.com/college-football/game/_/gameId/401856726
+401858267,Pittsburgh,Boston College,21,27,2026-10-17T16:00Z,False,FINAL,8e00e532ff73151c471b547706dd982251253406d758970352d9e85a80d3170d,https://www.espn.com/college-football/game/_/gameId/401858267
+401856719,Auburn,Georgia,27,24,2026-10-17T19:30Z,False,FINAL,4c262d4014725f9e9cf0e45460ad645cf3ac4ae53275a19ff0bf46ccc193c04e,https://www.espn.com/college-football/game/_/gameId/401856719
+401869966,Troy,Louisiana,6,33,2026-10-17T21:00Z,False,FINAL,82341d1d2815b4e2b351c069f75eed94907aca06812507fe2ed52611f036c3fd,https://www.espn.com/college-football/game/_/gameId/401869966
+401871053,Florida International,Jacksonville State,24,27,2026-10-14T00:00Z,False,FINAL,c6a7aaba6ce3e223f4ed3bbfdb5073b4156bbf4c7e263722b759e58c266b63a7,https://www.espn.com/college-football/game/_/gameId/401871053
+401866478,Akron,Miami (OH),14,34,2026-10-17T19:30Z,False,FINAL,59f5c558b962a603a1f28e275c50aabdadbea80b06da1e03f04b7b26f90863da,https://www.espn.com/college-football/game/_/gameId/401866478
+401858493,Washington,Purdue,38,26,2026-10-17T00:00Z,False,FINAL,94d74a1d23b6fc4757d7642836207b176b2045fa0aa0b2bd78973f39e8a865d4,https://www.espn.com/college-football/game/_/gameId/401858493
+401866443,Western Michigan,Central Michigan,21,14,2026-10-17T17:30Z,False,FINAL,55c60b3cab3fbdf2c293f106d88e3b5477b2a690555da3f37eeacd413c9f676d,https://www.espn.com/college-football/game/_/gameId/401866443
+401862802,Florida Atlantic,Army,24,56,2026-10-17T16:00Z,False,FINAL,8aebb058cd516f5a16f0a024a7c314a2e61b08cd45c66a36dedd5cb21af2b99e,https://www.espn.com/college-football/game/_/gameId/401862802
+401862800,East Carolina,UAB,17,30,2026-10-15T23:30Z,False,FINAL,b7661e4a66a7e1482c528b46b728b4597ab9bfe44dd7b43f926ecc7e8eb8f89c,https://www.espn.com/college-football/game/_/gameId/401862800
+401858490,Penn State,Michigan,18,21,2026-10-17T19:30Z,False,FINAL,34290f7e9ebaf83b3f1819cdf9e41e39aff1adea21d8a3ed518a7c444844dd89,https://www.espn.com/college-football/game/_/gameId/401858490
+401858263,Florida State,Miami,35,43,2026-10-17T23:00Z,False,FINAL,d3ac74da8fdc7f2be5495d207a2a6af9d48cc6293b88f3592af852b82a64b9ae,https://www.espn.com/college-football/game/_/gameId/401858263
+401860904,Fresno State,San Diego State,23,26,2026-10-18T02:30Z,False,FINAL,90876bb9c929b5f5c29742370e6acede356ba97c4f32e1712ec1ff46a39b4d1d,https://www.espn.com/college-football/game/_/gameId/401860904
+401858489,Rutgers,Maryland,37,30,2026-10-17T16:30Z,False,FINAL,47e049219e5a0a52307998d9936094db2bf91ec2768c5676df26cf662a946d44,https://www.espn.com/college-football/game/_/gameId/401858489
+401866444,Toledo,Eastern Michigan,34,14,2026-10-17T19:30Z,False,FINAL,9d131e653ef84c4ab10df0e3188d73af134c5568db9f1767477f0710585464b3,https://www.espn.com/college-football/game/_/gameId/401866444
+401858264,Georgia Tech,Virginia Tech,24,34,2026-10-17T19:30Z,False,FINAL,fb54fa1c2ae255e618479e2aae1671cb16c887631aa6bd1ae12fa77cb15ddcf9,https://www.espn.com/college-football/game/_/gameId/401858264
+401862805,Tulsa,Rice,38,17,2026-10-17T20:30Z,False,FINAL,c6bc5d682f545245549d46e8c11a2b1db01bcd05c721de5cba317518396ee65b,https://www.espn.com/college-football/game/_/gameId/401862805
+401864520,Nevada,North Dakota State,17,31,2026-10-17T23:00Z,False,FINAL,790a5177cc17567eda7cb99dfbc82d9016e66f427397fc3dd337bd26dbfcd208,https://www.espn.com/college-football/game/_/gameId/401864520
+401866441,Ball State,Bowling Green,32,31,2026-10-17T16:00Z,False,FINAL,5fabd4ca828c69b22fa40d392a2f4dec92aa11f94ec3e869401fabbfbba9c580,https://www.espn.com/college-football/game/_/gameId/401866441
+401862801,Memphis,Tulane,17,31,2026-10-16T23:30Z,False,FINAL,3fc9d4a587953999a25001321592213153ea64d821e68352e8c0be80072d38e8,https://www.espn.com/college-football/game/_/gameId/401862801
+401856832,TCU,Baylor,17,6,2026-10-17T23:00Z,False,FINAL,0f691a4f794117ba6ad4d511cac94cbf14a23449bda3392b75e70046b4e1fa54,https://www.espn.com/college-football/game/_/gameId/401856832
+401862804,Navy,UTSA,34,38,2026-10-18T00:00Z,False,FINAL,0fac95f8c5d06368e9a7dddcafbfc4e9bd3bf343aeb0cd28694b0450ce43de9e,https://www.espn.com/college-football/game/_/gameId/401862804
+401860903,Washington State,Oregon State,30,48,2026-10-17T22:00Z,False,FINAL,9b7ab89932a327520e576d57a0685876bcbbc2a8f147f80d75788a1ce321e3f1,https://www.espn.com/college-football/game/_/gameId/401860903

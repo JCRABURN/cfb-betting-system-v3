@@ -1,0 +1,35 @@
+{
+  "completed_at_utc": "2026-11-19T01:27:21.369334+00:00",
+  "commands": [
+    {
+      "command": "python -m pytest -q",
+      "exit_code": 0,
+      "seconds": 918.12,
+      "log": "check-00.log"
+    },
+    {
+      "command": "python scripts/verify_repo_safety.py",
+      "exit_code": 0,
+      "seconds": 0.23,
+      "log": "check-01.log"
+    },
+    {
+      "command": "python -m scripts.verify_migrations",
+      "exit_code": 0,
+      "seconds": 1.5,
+      "log": "check-02.log"
+    },
+    {
+      "command": "python -m scripts.verify_cloud_migrations",
+      "exit_code": 0,
+      "seconds": 0.77,
+      "log": "check-03.log"
+    },
+    {
+      "command": "python -m scripts.verify_week12_acceptance",
+      "exit_code": 0,
+      "seconds": 2.02,
+      "log": "check-04.log"
+    }
+  ]
+}

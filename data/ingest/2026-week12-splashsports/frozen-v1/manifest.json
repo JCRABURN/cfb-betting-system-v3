@@ -1,0 +1,32 @@
+{
+  "actual_recovery_timestamp": "2026-11-18T19:06:51.776041+00:00",
+  "additional_provider_games": 4,
+  "ats_count": 66,
+  "calibrated_cross_market_probabilities_available": false,
+  "canonical_matches": 66,
+  "duplicate_games": 0,
+  "elapsed_games": 3,
+  "eligibility_as_of_utc": "2026-11-18T19:09:32.641812+00:00",
+  "extracted_text_sha256": "b36e3b27c98516cea5ea90a00ab10c5cda912167e03b5e44dcfaf4d2bbb8a44d",
+  "files": {
+    "contest-lines.csv": "70ca1b635a7eb7d2931298d43c2f6926def46c45461c682375e9bf79620956d3",
+    "provider-reconciliation.csv": "15c2546e52fef7a44e9b1c43ba29817c8a1ac2f6e09832a23220f9f6707a2526",
+    "scheduled-games-not-on-pdf.json": "002719175e96898b0d93951dac41ae2cd5b88b26694cefd342b28878818fa232"
+  },
+  "game_count": 66,
+  "kickoff_differences": 0,
+  "pdf_sha256": "60d6ced55737fe6749a34f092735b3a613d75824ebfd9138de1aa429d393edd2",
+  "policy": "v2.8 unchanged",
+  "provider_manifest_sha256": "1acfb9ff8fe0de474a0f230f72a57e304d15502528bfceca6bc58f5fd4ff5942",
+  "receipt_sha256": "7b0e386115628800c0fbf113383744aae1659b785ae67e1b4145478a9c6a56ce",
+  "season": 2026,
+  "source": "SplashSports",
+  "source_timestamp": "2026-11-17T14:22:00-06:00",
+  "source_timestamp_kind": "PDF_PRINT_TIME_NOT_MODEL_FORECAST",
+  "totals_count": 66,
+  "unresolved_teams": 0,
+  "upcoming_games": 63,
+  "version": "week12-source-v1",
+  "visual_validation": "All eight original PDF pages inspected; all 66 names, signed spreads, paired totals and displayed kickoffs checked.",
+  "week": 12
+}

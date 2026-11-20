@@ -1,0 +1,10 @@
+{
+  "as_of_utc": "2026-11-20T14:05:59.951521+00:00",
+  "changes": [],
+  "current_sha256": "aa14edd24bb7341005340e0d7f68a0ced9267cc67bb53d84f4354a7a0c8b958d",
+  "evidence": "outputs/2026-week12-refresh/20261120-morning/manifest.json",
+  "evidence_sha256": "689ed61bd7d7800bdaab017fd82ef8b7ed8c36b60debc700d17d09ab2590b67b",
+  "model_version": "approved-v2.8; initial-execution-69d14465; data=feature-comparison.json; context=20261120-review",
+  "previous_sha256": "aa14edd24bb7341005340e0d7f68a0ced9267cc67bb53d84f4354a7a0c8b958d",
+  "reason": "Friday official evidence refresh: all seven prior-week statistical payloads unchanged; personnel/weather/market changes retained separately. No validated numeric adjustment or calibration; all 66 historical rows unchanged."
+}
