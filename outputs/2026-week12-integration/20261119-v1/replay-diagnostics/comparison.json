@@ -1,0 +1,206 @@
+{
+  "comparisons": [
+    {
+      "archived_sha256": "ec46f6b0a9eed4af66e8dfefcf6036fdcb0c56348ccfdf1246619e7a49f59c8d",
+      "byte_identical": true,
+      "computed_sha256": "ec46f6b0a9eed4af66e8dfefcf6036fdcb0c56348ccfdf1246619e7a49f59c8d",
+      "differences": [],
+      "first_different_byte": null,
+      "path": "outputs/2026-week7-postgame-audit/week7_diagnostics.json"
+    },
+    {
+      "archived_sha256": "bb59bf47455cc155d62f93e401dd043de7efb00d164866321e7ba1757cd57884",
+      "byte_identical": true,
+      "computed_sha256": "bb59bf47455cc155d62f93e401dd043de7efb00d164866321e7ba1757cd57884",
+      "differences": [],
+      "first_different_byte": null,
+      "path": "outputs/2026-week7-postgame-audit/week7_final_results.csv"
+    },
+    {
+      "archived_sha256": "48a4171a57ea53dd18507a2e04721c1c77a7155f48c9f93704fd23bec3067dc8",
+      "byte_identical": true,
+      "computed_sha256": "48a4171a57ea53dd18507a2e04721c1c77a7155f48c9f93704fd23bec3067dc8",
+      "differences": [],
+      "first_different_byte": null,
+      "path": "outputs/2026-week7-postgame-audit/week7_ats_audit.csv"
+    },
+    {
+      "archived_sha256": "d7dce91e9e5e26893f84e683a34f3817ed69200703cbe0f974cc194fbbff0dfb",
+      "byte_identical": true,
+      "computed_sha256": "d7dce91e9e5e26893f84e683a34f3817ed69200703cbe0f974cc194fbbff0dfb",
+      "differences": [],
+      "first_different_byte": null,
+      "path": "outputs/2026-week7-postgame-audit/week7_totals_audit.csv"
+    },
+    {
+      "archived_sha256": "bef7e456e1a653c0fb9d7318f6400cb8240bb46972155ad573c0075dd461fd86",
+      "byte_identical": true,
+      "computed_sha256": "bef7e456e1a653c0fb9d7318f6400cb8240bb46972155ad573c0075dd461fd86",
+      "differences": [],
+      "first_different_byte": null,
+      "path": "outputs/2026-week7-postgame-audit/week7_owner_approved_five_audit.csv"
+    },
+    {
+      "archived_sha256": "c64ccdbac799b08ab5f1634c5ddc3a193588111c8d4ea8612bcdd6edfc33156c",
+      "byte_identical": true,
+      "computed_sha256": "c64ccdbac799b08ab5f1634c5ddc3a193588111c8d4ea8612bcdd6edfc33156c",
+      "differences": [],
+      "first_different_byte": null,
+      "path": "outputs/2026-week7-postgame-audit/week7_cohort_membership.csv"
+    },
+    {
+      "archived_sha256": "56ddb9acfcaf36d2eaa71fd895f4c1fda7878f5182c8008a6781e724109dc4cb",
+      "byte_identical": true,
+      "computed_sha256": "56ddb9acfcaf36d2eaa71fd895f4c1fda7878f5182c8008a6781e724109dc4cb",
+      "differences": [],
+      "first_different_byte": null,
+      "path": "outputs/2026-week7-postgame-audit/week7_source_correction_impact.csv"
+    },
+    {
+      "archived_sha256": "31562fbc6b646def90b3bf212efbd40eb021d585ee7d1dcb26cd30cc48609fc0",
+      "byte_identical": true,
+      "computed_sha256": "31562fbc6b646def90b3bf212efbd40eb021d585ee7d1dcb26cd30cc48609fc0",
+      "differences": [],
+      "first_different_byte": null,
+      "path": "outputs/2026-week7-postgame-audit/week7_postgame_report.md"
+    },
+    {
+      "archived_sha256": "738fdaf68ab42c63e1630ac8ceee56a1821bcfc56e33fdeea0038bf7770f0d6a",
+      "byte_identical": true,
+      "computed_sha256": "738fdaf68ab42c63e1630ac8ceee56a1821bcfc56e33fdeea0038bf7770f0d6a",
+      "differences": [],
+      "first_different_byte": null,
+      "path": "outputs/2026-week8-postgame-audit/week8_diagnostics.json"
+    },
+    {
+      "archived_sha256": "88d5974fedbd925514b6be06b06e70e3c1eb54734a3181a951d1bda90ebc07e6",
+      "byte_identical": true,
+      "computed_sha256": "88d5974fedbd925514b6be06b06e70e3c1eb54734a3181a951d1bda90ebc07e6",
+      "differences": [],
+      "first_different_byte": null,
+      "path": "outputs/2026-week8-postgame-audit/cross_week_diagnostics.json"
+    },
+    {
+      "archived_sha256": "474b81b69aedca0b63d407a694313d815af297d27c710c06b853abc512509778",
+      "byte_identical": true,
+      "computed_sha256": "474b81b69aedca0b63d407a694313d815af297d27c710c06b853abc512509778",
+      "differences": [],
+      "first_different_byte": null,
+      "path": "outputs/2026-week8-postgame-audit/week8_postgame_report.md"
+    },
+    {
+      "archived_sha256": "8a295f194fa715b71c4259337b2d74b1fb3b46678c978d6ab3acdb401d462b13",
+      "byte_identical": true,
+      "computed_sha256": "8a295f194fa715b71c4259337b2d74b1fb3b46678c978d6ab3acdb401d462b13",
+      "differences": [],
+      "first_different_byte": null,
+      "path": "outputs/2026-week8-postgame-audit/cross_week_tables.md"
+    },
+    {
+      "archived_sha256": "5b885bf098485b7942b3f59d5bb6869520c0f703366e34a6be2b5872f955923e",
+      "byte_identical": true,
+      "computed_sha256": "5b885bf098485b7942b3f59d5bb6869520c0f703366e34a6be2b5872f955923e",
+      "differences": [],
+      "first_different_byte": null,
+      "path": "outputs/2026-week8-postgame-audit/week8_final_results.csv"
+    },
+    {
+      "archived_sha256": "74aa1c4b2766e8972f33fcba94cfa1241cdd09e90dabec61b6f89e5984b5791a",
+      "byte_identical": true,
+      "computed_sha256": "74aa1c4b2766e8972f33fcba94cfa1241cdd09e90dabec61b6f89e5984b5791a",
+      "differences": [],
+      "first_different_byte": null,
+      "path": "outputs/2026-week8-postgame-audit/week8_ats_audit.csv"
+    },
+    {
+      "archived_sha256": "a7175b6aa042e424b5d78ec22c9f906fbbd9195cace1f622cb4503858735a1d5",
+      "byte_identical": true,
+      "computed_sha256": "a7175b6aa042e424b5d78ec22c9f906fbbd9195cace1f622cb4503858735a1d5",
+      "differences": [],
+      "first_different_byte": null,
+      "path": "outputs/2026-week8-postgame-audit/week8_totals_audit.csv"
+    },
+    {
+      "archived_sha256": "5a8c7ac78e173e0dcefb48f1acdeb5bbb24d01db9ee5d1166b8ffb6ff59a56fc",
+      "byte_identical": true,
+      "computed_sha256": "5a8c7ac78e173e0dcefb48f1acdeb5bbb24d01db9ee5d1166b8ffb6ff59a56fc",
+      "differences": [],
+      "first_different_byte": null,
+      "path": "outputs/2026-week8-postgame-audit/week8_cohort_membership.csv"
+    },
+    {
+      "archived_sha256": "c7b0a53b0d55ad6fd6dfc629bb76dcde0edc449870ff4cbe40734022c310a472",
+      "byte_identical": true,
+      "computed_sha256": "c7b0a53b0d55ad6fd6dfc629bb76dcde0edc449870ff4cbe40734022c310a472",
+      "differences": [],
+      "first_different_byte": null,
+      "path": "outputs/2026-week8-postgame-audit/week8_postgame_manifest.json"
+    },
+    {
+      "archived_sha256": "36d867cf1f808d2a2022ebfcae8837d06e2b8128d2f1dbb67077953b5babeb46",
+      "byte_identical": true,
+      "computed_sha256": "36d867cf1f808d2a2022ebfcae8837d06e2b8128d2f1dbb67077953b5babeb46",
+      "differences": [],
+      "first_different_byte": null,
+      "path": "outputs/2026-week8-audit-research/numerical_research_candidates.json"
+    },
+    {
+      "archived_sha256": "1348ca065f46d99e011fb6b6f179978849b7fa7402e0042e128e5055bcb140f1",
+      "byte_identical": true,
+      "computed_sha256": "1348ca065f46d99e011fb6b6f179978849b7fa7402e0042e128e5055bcb140f1",
+      "differences": [],
+      "first_different_byte": null,
+      "path": "outputs/2026-week9-context/20261028T1320Z/derived_context_board.json"
+    }
+  ],
+  "controls": [
+    {
+      "differences": [],
+      "intervention": "Only module-local sum replaced with explicit Neumaier arithmetic",
+      "module": "scripts.build_week7_postgame_audit"
+    },
+    {
+      "differences": [],
+      "intervention": "Only module-local sum replaced with explicit Neumaier arithmetic",
+      "module": "scripts.build_week8_postgame_audit"
+    },
+    {
+      "differences": [],
+      "intervention": "Only module-local sum replaced with explicit Neumaier arithmetic",
+      "module": "scripts.week8_numerical_research"
+    }
+  ],
+  "environment": {
+    "commit": "880d3f9f7b87313aebb2425efafe5318525eb53e",
+    "compensated_probe": 1.0,
+    "float_format": "sys.float_info(max=1.7976931348623157e+308, max_exp=1024, max_10_exp=308, min=2.2250738585072014e-308, min_exp=-1021, min_10_exp=-307, dig=15, mant_dig=53, epsilon=2.220446049250313e-16, radix=2, rounds=1)",
+    "git_status": "M  .gitattributes\nM  .github/workflows/ci.yml\nA  outputs/2026-season-contest-evidence/20261116-v1/capture-manifest.json\nA  outputs/2026-season-contest-evidence/20261116-v1/cfbd-week1.json.gz\nA  outputs/2026-season-contest-evidence/20261116-v1/cfbd-week10.json.gz\nA  outputs/2026-season-contest-evidence/20261116-v1/cfbd-week11.json.gz\nA  outputs/2026-season-contest-evidence/20261116-v1/cfbd-week2.json.gz\nA  outputs/2026-season-contest-evidence/20261116-v1/cfbd-week3.json.gz\nA  outputs/2026-season-contest-evidence/20261116-v1/cfbd-week4.json.gz\nA  outputs/2026-season-contest-evidence/20261116-v1/cfbd-week5.json.gz\nA  outputs/2026-season-contest-evidence/20261116-v1/cfbd-week6.json.gz\nA  outputs/2026-season-contest-evidence/20261116-v1/cfbd-week7.json.gz\nA  outputs/2026-season-contest-evidence/20261116-v1/cfbd-week8.json.gz\nA  outputs/2026-season-contest-evidence/20261116-v1/cfbd-week9.json.gz\nA  outputs/2026-season-contest-evidence/20261116-v1/espn-week1.json.gz\nA  outputs/2026-season-contest-evidence/20261116-v1/espn-week10.json.gz\nA  outputs/2026-season-contest-evidence/20261116-v1/espn-week11.json.gz\nA  outputs/2026-season-contest-evidence/20261116-v1/espn-week2.json.gz\nA  outputs/2026-season-contest-evidence/20261116-v1/espn-week3.json.gz\nA  outputs/2026-season-contest-evidence/20261116-v1/espn-week4.json.gz\nA  outputs/2026-season-contest-evidence/20261116-v1/espn-week5.json.gz\nA  outputs/2026-season-contest-evidence/20261116-v1/espn-week6.json.gz\nA  outputs/2026-season-contest-evidence/20261116-v1/espn-week7.json.gz\nA  outputs/2026-season-contest-evidence/20261116-v1/espn-week8.json.gz\nA  outputs/2026-season-contest-evidence/20261116-v1/espn-week9.json.gz\nA  outputs/2026-week11-postgame-audit/README.md\nA  outputs/2026-week11-postgame-audit/VERIFICATION.md\nA  outputs/2026-week11-postgame-audit/context-v2/PREGAME_CONTEXT_COMPARISON.md\nA  outputs/2026-week11-postgame-audit/context-v2/manifest.json\nA  outputs/2026-week11-postgame-audit/context-v2/pregame_context_comparison.csv\nA  outputs/2026-week11-postgame-audit/deliverables/season-performance.xlsx\nA  outputs/2026-week11-postgame-audit/deliverables/workbook-verification.json\nA  outputs/2026-week11-postgame-audit/v1/CONFIDENCE_FORENSICS.md\nA  outputs/2026-week11-postgame-audit/v1/EXECUTIVE_REPORT.md\nA  outputs/2026-week11-postgame-audit/v1/GAME_LEVEL_LOGIC_FAILURES.md\nA  outputs/2026-week11-postgame-audit/v1/LESSONS_LEARNED.md\nA  outputs/2026-week11-postgame-audit/v1/PROPOSED_MASTER_PROMPT_V2_9.md\nA  outputs/2026-week11-postgame-audit/v1/SEASON_CONTEST_REPORT.md\nA  outputs/2026-week11-postgame-audit/v1/actual_market_performance.csv\nA  outputs/2026-week11-postgame-audit/v1/actual_v3_submission_ledger.csv\nA  outputs/2026-week11-postgame-audit/v1/actual_weekly_performance.csv\nA  outputs/2026-week11-postgame-audit/v1/actual_weight_performance.csv\nA  outputs/2026-week11-postgame-audit/v1/audit_findings.json\nA  outputs/2026-week11-postgame-audit/v1/audit_manifest.json\nA  outputs/2026-week11-postgame-audit/v1/clv_audit.json\nA  outputs/2026-week11-postgame-audit/v1/clv_observations.csv\nA  outputs/2026-week11-postgame-audit/v1/cohort_membership.csv\nA  outputs/2026-week11-postgame-audit/v1/cohort_overlap.csv\nA  outputs/2026-week11-postgame-audit/v1/cohort_results.csv\nA  outputs/2026-week11-postgame-audit/v1/confidence_calibration.csv\nA  outputs/2026-week11-postgame-audit/v1/cumulative_grade_ledger.csv\nA  outputs/2026-week11-postgame-audit/v1/cumulative_performance.csv\nA  outputs/2026-week11-postgame-audit/v1/cumulative_rank_performance.csv\nA  outputs/2026-week11-postgame-audit/v1/custody_verification.json\nA  outputs/2026-week11-postgame-audit/v1/drive_quarantine_adjudication.csv\nA  outputs/2026-week11-postgame-audit/v1/earlier_week_qualified_records.csv\nA  outputs/2026-week11-postgame-audit/v1/external_week11_records_not_graded.csv\nA  outputs/2026-week11-postgame-audit/v1/forecast_vs_market.csv\nA  outputs/2026-week11-postgame-audit/v1/frozen_drive_forecasts.csv\nA  outputs/2026-week11-postgame-audit/v1/frozen_research_all_grades.csv\nA  outputs/2026-week11-postgame-audit/v1/frozen_research_membership.csv\nA  outputs/2026-week11-postgame-audit/v1/frozen_research_metrics.csv\nA  outputs/2026-week11-postgame-audit/v1/frozen_research_reliability.csv\nA  outputs/2026-week11-postgame-audit/v1/frozen_research_top5.csv\nA  outputs/2026-week11-postgame-audit/v1/game_process.csv\nA  outputs/2026-week11-postgame-audit/v1/game_process_evidence.json\nA  outputs/2026-week11-postgame-audit/v1/game_results_reconciliation.csv\nA  outputs/2026-week11-postgame-audit/v1/historical_line_reconciliation.csv\nA  outputs/2026-week11-postgame-audit/v1/hook_backdoor_audit.csv\nA  outputs/2026-week11-postgame-audit/v1/human_confidence_ledger.csv\nA  outputs/2026-week11-postgame-audit/v1/logic_failure_priority.csv\nA  outputs/2026-week11-postgame-audit/v1/nonoffensive_scoring.csv\nA  outputs/2026-week11-postgame-audit/v1/observed_passers.csv\nA  outputs/2026-week11-postgame-audit/v1/ranking_discrimination.csv\nA  outputs/2026-week11-postgame-audit/v1/season_contest_quality.json\nA  outputs/2026-week11-postgame-audit/v1/season_game_reconciliation.csv\nA  outputs/2026-week11-postgame-audit/v1/season_recommendation_ledger.csv\nA  outputs/2026-week11-postgame-audit/v1/season_recommendation_performance.csv\nA  outputs/2026-week11-postgame-audit/v1/segment_diagnostics.csv\nA  outputs/2026-week11-postgame-audit/v1/submission_recommendation_differences.csv\nA  outputs/2026-week11-postgame-audit/v1/team_process.csv\nA  outputs/2026-week11-postgame-audit/v1/v29_all_candidate_predictions.csv\nA  outputs/2026-week11-postgame-audit/v1/v29_candidate_top5.csv\nA  outputs/2026-week11-postgame-audit/v1/v29_chronological_folds.csv\nA  outputs/2026-week11-postgame-audit/v1/v29_feature_research_catalog.csv\nA  outputs/2026-week11-postgame-audit/v1/v29_research_protocol.json\nA  outputs/2026-week11-postgame-audit/v1/week11_ats_audit.csv\nA  outputs/2026-week11-postgame-audit/v1/week11_export_kickoff_differences.csv\nA  outputs/2026-week11-postgame-audit/v1/week11_totals_audit.csv\nA  outputs/2026-week11-postgame-audit/v2/CONFIDENCE_FORENSICS.md\nA  outputs/2026-week11-postgame-audit/v2/EXECUTIVE_REPORT.md\nA  outputs/2026-week11-postgame-audit/v2/GAME_LEVEL_LOGIC_FAILURES.md\nA  outputs/2026-week11-postgame-audit/v2/LESSONS_LEARNED.md\nA  outputs/2026-week11-postgame-audit/v2/PROPOSED_MASTER_PROMPT_V2_9.md\nA  outputs/2026-week11-postgame-audit/v2/SEASON_CONTEST_REPORT.md\nA  outputs/2026-week11-postgame-audit/v2/actual_market_performance.csv\nA  outputs/2026-week11-postgame-audit/v2/actual_v3_submission_ledger.csv\nA  outputs/2026-week11-postgame-audit/v2/actual_weekly_performance.csv\nA  outputs/2026-week11-postgame-audit/v2/actual_weight_performance.csv\nA  outputs/2026-week11-postgame-audit/v2/audit_findings.json\nA  outputs/2026-week11-postgame-audit/v2/audit_manifest.json\nA  outputs/2026-week11-postgame-audit/v2/clv_audit.json\nA  outputs/2026-week11-postgame-audit/v2/clv_observations.csv\nA  outputs/2026-week11-postgame-audit/v2/cohort_membership.csv\nA  outputs/2026-week11-postgame-audit/v2/cohort_overlap.csv\nA  outputs/2026-week11-postgame-audit/v2/cohort_results.csv\nA  outputs/2026-week11-postgame-audit/v2/confidence_calibration.csv\nA  outputs/2026-week11-postgame-audit/v2/cumulative_grade_ledger.csv\nA  outputs/2026-week11-postgame-audit/v2/cumulative_performance.csv\nA  outputs/2026-week11-postgame-audit/v2/cumulative_rank_performance.csv\nA  outputs/2026-week11-postgame-audit/v2/custody_verification.json\nA  outputs/2026-week11-postgame-audit/v2/drive_quarantine_adjudication.csv\nA  outputs/2026-week11-postgame-audit/v2/earlier_week_qualified_records.csv\nA  outputs/2026-week11-postgame-audit/v2/external_week11_records_not_graded.csv\nA  outputs/2026-week11-postgame-audit/v2/forecast_vs_market.csv\nA  outputs/2026-week11-postgame-audit/v2/frozen_drive_forecasts.csv\nA  outputs/2026-week11-postgame-audit/v2/frozen_research_all_grades.csv\nA  outputs/2026-week11-postgame-audit/v2/frozen_research_membership.csv\nA  outputs/2026-week11-postgame-audit/v2/frozen_research_metrics.csv\nA  outputs/2026-week11-postgame-audit/v2/frozen_research_reliability.csv\nA  outputs/2026-week11-postgame-audit/v2/frozen_research_top5.csv\nA  outputs/2026-week11-postgame-audit/v2/game_process.csv\nA  outputs/2026-week11-postgame-audit/v2/game_process_evidence.json\nA  outputs/2026-week11-postgame-audit/v2/game_results_reconciliation.csv\nA  outputs/2026-week11-postgame-audit/v2/historical_line_reconciliation.csv\nA  outputs/2026-week11-postgame-audit/v2/hook_backdoor_audit.csv\nA  outputs/2026-week11-postgame-audit/v2/human_confidence_ledger.csv\nA  outputs/2026-week11-postgame-audit/v2/logic_failure_priority.csv\nA  outputs/2026-week11-postgame-audit/v2/nonoffensive_scoring.csv\nA  outputs/2026-week11-postgame-audit/v2/observed_passers.csv\nA  outputs/2026-week11-postgame-audit/v2/ranking_discrimination.csv\nA  outputs/2026-week11-postgame-audit/v2/season_contest_quality.json\nA  outputs/2026-week11-postgame-audit/v2/season_game_reconciliation.csv\nA  outputs/2026-week11-postgame-audit/v2/season_recommendation_ledger.csv\nA  outputs/2026-week11-postgame-audit/v2/season_recommendation_performance.csv\nA  outputs/2026-week11-postgame-audit/v2/segment_diagnostics.csv\nA  outputs/2026-week11-postgame-audit/v2/submission_recommendation_differences.csv\nA  outputs/2026-week11-postgame-audit/v2/team_process.csv\nA  outputs/2026-week11-postgame-audit/v2/v29_all_candidate_predictions.csv\nA  outputs/2026-week11-postgame-audit/v2/v29_candidate_top5.csv\nA  outputs/2026-week11-postgame-audit/v2/v29_chronological_folds.csv\nA  outputs/2026-week11-postgame-audit/v2/v29_feature_research_catalog.csv\nA  outputs/2026-week11-postgame-audit/v2/v29_research_protocol.json\nA  outputs/2026-week11-postgame-audit/v2/week11_ats_audit.csv\nA  outputs/2026-week11-postgame-audit/v2/week11_export_kickoff_differences.csv\nA  outputs/2026-week11-postgame-audit/v2/week11_totals_audit.csv\nA  outputs/2026-week11-postgame-audit/verification-v1/check-00.log\nA  outputs/2026-week11-postgame-audit/verification-v1/check-01.log\nA  outputs/2026-week11-postgame-audit/verification-v1/check-02.log\nA  outputs/2026-week11-postgame-audit/verification-v1/check-03.log\nA  outputs/2026-week11-postgame-audit/verification-v1/check-04.log\nA  outputs/2026-week11-postgame-audit/verification-v1/check-05.log\nA  outputs/2026-week11-postgame-audit/verification-v1/check-06.log\nA  outputs/2026-week11-postgame-audit/verification-v1/check-07.log\nA  outputs/2026-week11-postgame-audit/verification-v1/check-08.log\nA  outputs/2026-week11-postgame-audit/verification-v1/check-09.log\nA  outputs/2026-week11-postgame-audit/verification-v1/check-10.log\nA  outputs/2026-week11-postgame-audit/verification-v1/check-11.log\nA  outputs/2026-week11-postgame-audit/verification-v1/check-12.log\nA  outputs/2026-week11-postgame-audit/verification-v1/check-13.log\nA  outputs/2026-week11-postgame-audit/verification-v1/compatibility.json\nA  outputs/2026-week11-postgame-audit/verification-v1/results.json\nA  outputs/2026-week11-postgame-audit/verification-v2/README.md\nA  outputs/2026-week11-postgame-audit/verification-v2/checkout-byte-reconciliation.json\nA  outputs/2026-week11-postgame-audit/verification-v3/CLOSED_INVENTORY.md\nA  outputs/2026-week11-postgame-audit/verification-v3/historical-checkout-reconciliation.json\nA  outputs/2026-week11-postgame-audit/verification-v3/v1-v2-artifact-comparison.json\nA  outputs/2026-week11-postgame-evidence/20261116-v1/capture-manifest.json\nA  outputs/2026-week11-postgame-evidence/20261116-v1/cfbd-advanced.json.gz\nA  outputs/2026-week11-postgame-evidence/20261116-v1/cfbd-drives.json.gz\nA  outputs/2026-week11-postgame-evidence/20261116-v1/cfbd-games.json.gz\nA  outputs/2026-week11-postgame-evidence/20261116-v1/cfbd-lines.json.gz\nA  outputs/2026-week11-postgame-evidence/20261116-v1/cfbd-player-stats.json.gz\nA  outputs/2026-week11-postgame-evidence/20261116-v1/cfbd-plays.json.gz\nA  outputs/2026-week11-postgame-evidence/20261116-v1/cfbd-team-stats.json.gz\nA  outputs/2026-week11-postgame-evidence/20261116-v1/espn-401856857.json.gz\nA  outputs/2026-week11-postgame-evidence/20261116-v1/espn-401856858.json.gz\nA  outputs/2026-week11-postgame-evidence/20261116-v1/espn-401856859.json.gz\nA  outputs/2026-week11-postgame-evidence/20261116-v1/espn-401856860.json.gz\nA  outputs/2026-week11-postgame-evidence/20261116-v1/espn-401856861.json.gz\nA  outputs/2026-week11-postgame-evidence/20261116-v1/espn-401856862.json.gz\nA  outputs/2026-week11-postgame-evidence/20261116-v1/espn-401856863.json.gz\nA  outputs/2026-week11-postgame-evidence/20261116-v1/espn-401856864.json.gz\nA  outputs/2026-week11-postgame-evidence/20261116-v1/espn-401856882.json.gz\nA  outputs/2026-week11-postgame-evidence/20261116-v1/espn-401856883.json.gz\nA  outputs/2026-week11-postgame-evidence/20261116-v1/espn-401856884.json.gz\nA  outputs/2026-week11-postgame-evidence/20261116-v1/espn-401856885.json.gz\nA  outputs/2026-week11-postgame-evidence/20261116-v1/espn-401856886.json.gz\nA  outputs/2026-week11-postgame-evidence/20261116-v1/espn-401856887.json.gz\nA  outputs/2026-week11-postgame-evidence/20261116-v1/espn-401856888.json.gz\nA  outputs/2026-week11-postgame-evidence/20261116-v1/espn-401856889.json.gz\nA  outputs/2026-week11-postgame-evidence/20261116-v1/espn-401858293.json.gz\nA  outputs/2026-week11-postgame-evidence/20261116-v1/espn-401858294.json.gz\nA  outputs/2026-week11-postgame-evidence/20261116-v1/espn-401858295.json.gz\nA  outputs/2026-week11-postgame-evidence/20261116-v1/espn-401858296.json.gz\nA  outputs/2026-week11-postgame-evidence/20261116-v1/espn-401858297.json.gz\nA  outputs/2026-week11-postgame-evidence/20261116-v1/espn-401858298.json.gz\nA  outputs/2026-week11-postgame-evidence/20261116-v1/espn-401858299.json.gz\nA  outputs/2026-week11-postgame-evidence/20261116-v1/espn-401858300.json.gz\nA  outputs/2026-week11-postgame-evidence/20261116-v1/espn-401858301.json.gz\nA  outputs/2026-week11-postgame-evidence/20261116-v1/espn-401858518.json.gz\nA  outputs/2026-week11-postgame-evidence/20261116-v1/espn-401858519.json.gz\nA  outputs/2026-week11-postgame-evidence/20261116-v1/espn-401858520.json.gz\nA  outputs/2026-week11-postgame-evidence/20261116-v1/espn-401858521.json.gz\nA  outputs/2026-week11-postgame-evidence/20261116-v1/espn-401858522.json.gz\nA  outputs/2026-week11-postgame-evidence/20261116-v1/espn-401858523.json.gz\nA  outputs/2026-week11-postgame-evidence/20261116-v1/espn-401858524.json.gz\nA  outputs/2026-week11-postgame-evidence/20261116-v1/espn-401858525.json.gz\nA  outputs/2026-week11-postgame-evidence/20261116-v1/espn-401858526.json.gz\nA  outputs/2026-week11-postgame-evidence/20261116-v1/espn-401860914.json.gz\nA  outputs/2026-week11-postgame-evidence/20261116-v1/espn-401860915.json.gz\nA  outputs/2026-week11-postgame-evidence/20261116-v1/espn-401860916.json.gz\nA  outputs/2026-week11-postgame-evidence/20261116-v1/espn-401860917.json.gz\nA  outputs/2026-week11-postgame-evidence/20261116-v1/espn-401861967.json.gz\nA  outputs/2026-week11-postgame-evidence/20261116-v1/espn-401862824.json.gz\nA  outputs/2026-week11-postgame-evidence/20261116-v1/espn-401862825.json.gz\nA  outputs/2026-week11-postgame-evidence/20261116-v1/espn-401862826.json.gz\nA  outputs/2026-week11-postgame-evidence/20261116-v1/espn-401862827.json.gz\nA  outputs/2026-week11-postgame-evidence/20261116-v1/espn-401862828.json.gz\nA  outputs/2026-week11-postgame-evidence/20261116-v1/espn-401862829.json.gz\nA  outputs/2026-week11-postgame-evidence/20261116-v1/espn-401864536.json.gz\nA  outputs/2026-week11-postgame-evidence/20261116-v1/espn-401864537.json.gz\nA  outputs/2026-week11-postgame-evidence/20261116-v1/espn-401864538.json.gz\nA  outputs/2026-week11-postgame-evidence/20261116-v1/espn-401864539.json.gz\nA  outputs/2026-week11-postgame-evidence/20261116-v1/espn-401864540.json.gz\nA  outputs/2026-week11-postgame-evidence/20261116-v1/espn-401866458.json.gz\nA  outputs/2026-week11-postgame-evidence/20261116-v1/espn-401866459.json.gz\nA  outputs/2026-week11-postgame-evidence/20261116-v1/espn-401866460.json.gz\nA  outputs/2026-week11-postgame-evidence/20261116-v1/espn-401866461.json.gz\nA  outputs/2026-week11-postgame-evidence/20261116-v1/espn-401866462.json.gz\nA  outputs/2026-week11-postgame-evidence/20261116-v1/espn-401866463.json.gz\nA  outputs/2026-week11-postgame-evidence/20261116-v1/espn-401869928.json.gz\nA  outputs/2026-week11-postgame-evidence/20261116-v1/espn-401869937.json.gz\nA  outputs/2026-week11-postgame-evidence/20261116-v1/espn-401869952.json.gz\nA  outputs/2026-week11-postgame-evidence/20261116-v1/espn-401869969.json.gz\nA  outputs/2026-week11-postgame-evidence/20261116-v1/espn-401870752.json.gz\nA  outputs/2026-week11-postgame-evidence/20261116-v1/espn-401870769.json.gz\nA  outputs/2026-week11-postgame-evidence/20261116-v1/espn-401870796.json.gz\nA  outputs/2026-week11-postgame-evidence/20261116-v1/espn-401871060.json.gz\nA  outputs/2026-week11-postgame-evidence/20261116-v1/espn-401871061.json.gz\nA  outputs/2026-week11-postgame-evidence/20261116-v1/espn-401871099.json.gz\nA  outputs/2026-week11-postgame-evidence/20261116-v1/espn-401871100.json.gz\nA  outputs/2026-week11-postgame-evidence/20261116-v1/espn-scoreboard.json.gz\nA  outputs/2026-week11-postgame-evidence/drive-summaries-v1/capture-manifest.json\nA  outputs/2026-week11-postgame-evidence/drive-summaries-v1/espn-401866453.json.gz\nA  outputs/2026-week11-postgame-evidence/drive-summaries-v1/espn-401866454.json.gz\nA  outputs/2026-week11-postgame-evidence/drive-summaries-v1/espn-401866671.json.gz\nA  outputs/2026-week11-postgame-evidence/drive-summaries-v1/espn-401866674.json.gz\nA  outputs/2026-week11-postgame-evidence/drive-summaries-v1/espn-401866675.json.gz\nA  outputs/2026-week11-postgame-evidence/drive-summaries-v1/espn-401866680.json.gz\nA  outputs/2026-week11-postgame-evidence/drive-summaries-v1/espn-401866682.json.gz\nA  outputs/2026-week11-postgame-evidence/drive-summaries-v1/espn-401866684.json.gz\nA  outputs/2026-week11-postgame-evidence/drive-summaries-v1/espn-401867689.json.gz\nA  outputs/2026-week11-postgame-evidence/drive-summaries-v1/espn-401867690.json.gz\nA  outputs/2026-week11-postgame-evidence/drive-summaries-v1/espn-401867808.json.gz\nA  outputs/2026-week11-postgame-evidence/drive-summaries-v1/espn-401867809.json.gz\nA  outputs/2026-week11-postgame-evidence/drive-summaries-v1/espn-401867851.json.gz\nA  outputs/2026-week11-postgame-evidence/drive-summaries-v1/espn-401867862.json.gz\nA  outputs/2026-week11-postgame-evidence/drive-summaries-v1/espn-401867902.json.gz\nA  outputs/2026-week11-postgame-evidence/drive-summaries-v1/espn-401867926.json.gz\nA  outputs/2026-week11-postgame-evidence/drive-summaries-v1/espn-401867933.json.gz\nA  outputs/2026-week11-postgame-evidence/drive-summaries-v1/espn-401867955.json.gz\nA  outputs/2026-week11-postgame-evidence/drive-summaries-v1/espn-401867956.json.gz\nA  outputs/2026-week11-postgame-evidence/drive-summaries-v1/espn-401867957.json.gz\nA  outputs/2026-week11-postgame-evidence/drive-summaries-v1/espn-401867994.json.gz\nA  outputs/2026-week11-postgame-evidence/drive-summaries-v1/espn-401867995.json.gz\nA  outputs/2026-week11-postgame-evidence/drive-summaries-v1/espn-401868003.json.gz\nA  outputs/2026-week11-postgame-evidence/drive-summaries-v1/espn-401868057.json.gz\nA  outputs/2026-week11-postgame-evidence/drive-summaries-v1/espn-401868067.json.gz\nA  outputs/2026-week11-postgame-evidence/drive-summaries-v1/espn-401868068.json.gz\nA  outputs/2026-week11-postgame-evidence/drive-summaries-v1/espn-401868080.json.gz\nA  outputs/2026-week11-postgame-evidence/drive-summaries-v1/espn-401868081.json.gz\nA  outputs/2026-week11-postgame-evidence/drive-summaries-v1/espn-401868097.json.gz\nA  outputs/2026-week11-postgame-evidence/drive-summaries-v1/espn-401868098.json.gz\nA  outputs/2026-week11-postgame-evidence/drive-summaries-v1/espn-401868106.json.gz\nA  outputs/2026-week11-postgame-evidence/drive-summaries-v1/espn-401868116.json.gz\nA  outputs/2026-week11-postgame-evidence/drive-summaries-v1/espn-401868121.json.gz\nA  outputs/2026-week11-postgame-evidence/drive-summaries-v1/espn-401868126.json.gz\nA  outputs/2026-week11-postgame-evidence/drive-summaries-v1/espn-401868135.json.gz\nA  outputs/2026-week11-postgame-evidence/drive-summaries-v1/espn-401868137.json.gz\nA  outputs/2026-week11-postgame-evidence/drive-summaries-v1/espn-401868184.json.gz\nA  outputs/2026-week11-postgame-evidence/drive-summaries-v1/espn-401868190.json.gz\nA  outputs/2026-week11-postgame-evidence/drive-summaries-v1/espn-401868214.json.gz\nA  outputs/2026-week11-postgame-evidence/drive-summaries-v1/espn-401868216.json.gz\nA  outputs/2026-week11-postgame-evidence/drive-summaries-v1/espn-401868230.json.gz\nA  outputs/2026-week11-postgame-evidence/drive-summaries-v1/espn-401868251.json.gz\nA  outputs/2026-week11-postgame-evidence/drive-summaries-v1/espn-401868252.json.gz\nA  outputs/2026-week11-postgame-evidence/drive-summaries-v1/espn-401868258.json.gz\nA  outputs/2026-week11-postgame-evidence/drive-summaries-v1/espn-401868266.json.gz\nA  outputs/2026-week11-postgame-evidence/drive-summaries-v1/espn-401868278.json.gz\nA  outputs/2026-week11-postgame-evidence/drive-summaries-v1/espn-401868312.json.gz\nA  outputs/2026-week11-postgame-evidence/drive-summaries-v1/espn-401868313.json.gz\nA  outputs/2026-week11-postgame-evidence/drive-summaries-v1/espn-401868321.json.gz\nA  outputs/2026-week11-postgame-evidence/drive-summaries-v1/espn-401868341.json.gz\nA  outputs/2026-week11-postgame-evidence/drive-summaries-v1/espn-401868349.json.gz\nA  outputs/2026-week11-postgame-evidence/drive-summaries-v1/espn-401868379.json.gz\nA  outputs/2026-week11-postgame-evidence/drive-summaries-v1/espn-401868384.json.gz\nA  outputs/2026-week11-postgame-evidence/drive-summaries-v1/espn-401868392.json.gz\nA  outputs/2026-week11-postgame-evidence/drive-summaries-v1/espn-401868393.json.gz\nA  outputs/2026-week11-postgame-evidence/drive-summaries-v1/espn-401868939.json.gz\nA  outputs/2026-week11-postgame-evidence/drive-summaries-v1/espn-401868944.json.gz\nA  outputs/2026-week11-postgame-evidence/drive-summaries-v1/espn-401868956.json.gz\nA  outputs/2026-week11-postgame-evidence/drive-summaries-v1/espn-401868961.json.gz\nA  outputs/2026-week11-postgame-evidence/drive-summaries-v1/espn-401869138.json.gz\nA  outputs/2026-week11-postgame-evidence/drive-summaries-v1/espn-401869139.json.gz\nA  outputs/2026-week11-postgame-evidence/drive-summaries-v1/espn-401869153.json.gz\nA  outputs/2026-week11-postgame-evidence/drive-summaries-v1/espn-401871055.json.gz\nA  outputs/2026-week11-postgame-evidence/drive-summaries-v1/espn-401871070.json.gz\nA  outputs/2026-week11-postgame-evidence/drive-summaries-v1/espn-401872617.json.gz\nA  outputs/2026-week11-postgame-evidence/drive-supplement-v1/capture-manifest.json\nA  outputs/2026-week11-postgame-evidence/drive-supplement-v1/cfbd-week8-plays.json.gz\nA  outputs/2026-week11-postgame-evidence/pr53-source-manifest.json\nA  scripts/build_week11_formal_audit.py\nA  scripts/build_week11_workbook.mjs\nA  scripts/capture_season_contest_results.py\nA  scripts/capture_week11_drive_summaries.py\nA  scripts/capture_week11_drive_supplement.py\nA  scripts/capture_week11_postgame.py\nA  scripts/prepare_week11_workbook.py\nA  scripts/season_contest_audit.py\nA  scripts/season_contest_report.py\nA  scripts/verify_week11_workbook.py\nA  scripts/verify_week12_integration.py\nA  scripts/week11_audit_grading.py\nA  scripts/week11_audit_inputs.py\nA  scripts/week11_audit_metrics.py\nA  scripts/week11_audit_process.py\nA  scripts/week11_audit_report.py\nA  scripts/week11_audit_research.py\nA  scripts/week11_context_postgame.py\nA  scripts/week11_drive_adjudication.py\nA  scripts/week11_v29_research.py\nA  tests/test_season_contest_audit.py\nA  tests/test_week11_closed_inventory.py\nA  tests/test_week11_context_postgame.py\nA  tests/test_week11_forensic_audit.py\nA  tests/test_week11_workbook.py\nA  tests/test_week12_integration.py\n",
+    "machine": "AMD64",
+    "math_log_probe": "-0x1.6d3c324e13f50p-2",
+    "packages": {
+      "Pygments": "2.20.0",
+      "certifi": "2026.7.22",
+      "charset-normalizer": "3.4.9",
+      "colorama": "0.4.6",
+      "idna": "3.18",
+      "iniconfig": "2.3.0",
+      "packaging": "26.3",
+      "pip": "25.0.1",
+      "pluggy": "1.6.0",
+      "pytest": "9.1.1",
+      "requests": "2.34.2",
+      "urllib3": "2.7.0"
+    },
+    "parents": "8df4bba5d8259abb7e26f001c77c3b3bfc7cf91e",
+    "platform": "Windows-11-10.0.22621-SP0",
+    "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+    "requirements_sha256": {
+      "requirements-dev.txt": "089d9c094500662925d623fb46b0e2ebff64a7febf95809b63ea2da8c70ef93f",
+      "requirements.txt": "5a2cb3b8e154f349ba016c1f7de9e817134d4a9f7a78a28d18a611d1f4adf305"
+    },
+    "sum_probe": 1.0,
+    "tzpath": [],
+    "utc": "2026-11-19T14:58:30.054270+00:00"
+  },
+  "week8_manifest_differences": []
+}

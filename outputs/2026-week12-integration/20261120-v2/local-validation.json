@@ -1,0 +1,180 @@
+{
+  "started_at_utc": "2026-11-20T14:02:57.265340+00:00",
+  "correction": "Runner rewrote a read-only --verify output path; prior failed receipt retained. No evidence hash failure or artifact rewrite occurred. Resume from rejected command with original path.",
+  "commands": [
+    {
+      "command": [
+        "C:\\Users\\jraburn\\Documents\\GitHub\\cfb-betting-system-v3\\.venv\\Scripts\\python.exe",
+        "-m",
+        "scripts.review_week12_context",
+        "--capture",
+        "outputs/2026-week12-context/20261119-morning",
+        "--conference",
+        "outputs/2026-week12-context/20261119-conference",
+        "--eligibility-capture",
+        "outputs/2026-week12-readiness/20261119-morning",
+        "--output",
+        "outputs/2026-week12-context/20261119-review-v2",
+        "--verify"
+      ],
+      "started_at_utc": "2026-11-20T14:02:57.265340+00:00",
+      "completed_at_utc": "2026-11-20T14:03:21.208129+00:00",
+      "exit_code": 0,
+      "output_file": "01.log",
+      "output_sha256": "386432823f513bee3c5d8aacfe5e290885ce596b97f15179c6d05f56a54d21cf"
+    },
+    {
+      "command": [
+        "C:\\Users\\jraburn\\Documents\\GitHub\\cfb-betting-system-v3\\.venv\\Scripts\\python.exe",
+        "-m",
+        "scripts.prepare_week11_readiness",
+        "--verify"
+      ],
+      "started_at_utc": "2026-11-20T14:03:21.209127+00:00",
+      "completed_at_utc": "2026-11-20T14:04:21.201306+00:00",
+      "exit_code": 0,
+      "output_file": "02.log",
+      "output_sha256": "7bcb30e3b790fe662a4871b0e30dae70b1eaddf7a627b7241f12292d3fdeecf4"
+    },
+    {
+      "command": [
+        "C:\\Users\\jraburn\\Documents\\GitHub\\cfb-betting-system-v3\\.venv\\Scripts\\python.exe",
+        "-m",
+        "research.week11_validation.anchor_diagnostics_v2",
+        "--verify"
+      ],
+      "started_at_utc": "2026-11-20T14:04:21.201306+00:00",
+      "completed_at_utc": "2026-11-20T14:04:21.816074+00:00",
+      "exit_code": 0,
+      "output_file": "03.log",
+      "output_sha256": "20f1a1f8731934056e4bd338d564d3b72ef381c839b3cf144133ada2f6604cf6"
+    },
+    {
+      "command": [
+        "C:\\Users\\jraburn\\Documents\\GitHub\\cfb-betting-system-v3\\.venv\\Scripts\\python.exe",
+        "-m",
+        "scripts.verify_week11_transcription"
+      ],
+      "started_at_utc": "2026-11-20T14:04:21.816074+00:00",
+      "completed_at_utc": "2026-11-20T14:04:22.163820+00:00",
+      "exit_code": 0,
+      "output_file": "04.log",
+      "output_sha256": "13b318158161be01442df835e69694c3eca0b3c074f909b075adc05acf2186a9"
+    },
+    {
+      "command": [
+        "C:\\Users\\jraburn\\Documents\\GitHub\\cfb-betting-system-v3\\.venv\\Scripts\\python.exe",
+        "-m",
+        "scripts.verify_week11_acceptance"
+      ],
+      "started_at_utc": "2026-11-20T14:04:22.164820+00:00",
+      "completed_at_utc": "2026-11-20T14:04:55.134483+00:00",
+      "exit_code": 0,
+      "output_file": "05.log",
+      "output_sha256": "1b50c03f8212ca300cacff98193cab278f20718fe121d35cc0c6083013fe4381"
+    },
+    {
+      "command": [
+        "C:\\Users\\jraburn\\Documents\\GitHub\\cfb-betting-system-v3\\.venv\\Scripts\\python.exe",
+        "-m",
+        "scripts.build_week11_formal_audit",
+        "--verify"
+      ],
+      "started_at_utc": "2026-11-20T14:04:55.135436+00:00",
+      "completed_at_utc": "2026-11-20T14:05:39.663131+00:00",
+      "exit_code": 0,
+      "output_file": "06.log",
+      "output_sha256": "88554e1e6d100eaabf1b5b577f9eda335786e6cea36fab2c9e2fe9934fece95f"
+    },
+    {
+      "command": [
+        "C:\\Users\\jraburn\\Documents\\GitHub\\cfb-betting-system-v3\\.venv\\Scripts\\python.exe",
+        "-m",
+        "scripts.verify_week11_workbook"
+      ],
+      "started_at_utc": "2026-11-20T14:05:39.663131+00:00",
+      "completed_at_utc": "2026-11-20T14:05:40.832554+00:00",
+      "exit_code": 0,
+      "output_file": "07.log",
+      "output_sha256": "f5c68a660b40a4b74c6a20e4763eeab167b1dcd2c18cfd8457d36106ecc20e99"
+    },
+    {
+      "command": [
+        "C:\\Users\\jraburn\\Documents\\GitHub\\cfb-betting-system-v3\\.venv\\Scripts\\python.exe",
+        "-m",
+        "scripts.week11_context_postgame",
+        "--verify"
+      ],
+      "started_at_utc": "2026-11-20T14:05:40.833514+00:00",
+      "completed_at_utc": "2026-11-20T14:05:41.492928+00:00",
+      "exit_code": 0,
+      "output_file": "08.log",
+      "output_sha256": "dd4845e32dfb261bf37086f2f29e6e50faecd19b99f14f5116b74a5f7b8243be"
+    },
+    {
+      "command": [
+        "C:\\Users\\jraburn\\Documents\\GitHub\\cfb-betting-system-v3\\.venv\\Scripts\\python.exe",
+        "-m",
+        "scripts.verify_week9_owner_review",
+        "outputs/2026-week9-owner-review/20261028-evening/owner_review_shortlist.json"
+      ],
+      "started_at_utc": "2026-11-20T14:05:41.493976+00:00",
+      "completed_at_utc": "2026-11-20T14:05:41.768756+00:00",
+      "exit_code": 0,
+      "output_file": "09.log",
+      "output_sha256": "2647b9e8e7878a4d611b21fef9dea248a41b85b456c4a52a65c22d3671c890ac"
+    },
+    {
+      "command": [
+        "C:\\Users\\jraburn\\Documents\\GitHub\\cfb-betting-system-v3\\.venv\\Scripts\\python.exe",
+        "-m",
+        "scripts.verify_week9_owner_review",
+        "outputs/2026-week9-owner-review/20261028-morning/owner_review_shortlist.json"
+      ],
+      "started_at_utc": "2026-11-20T14:05:41.769866+00:00",
+      "completed_at_utc": "2026-11-20T14:05:41.954465+00:00",
+      "exit_code": 0,
+      "output_file": "10.log",
+      "output_sha256": "2647b9e8e7878a4d611b21fef9dea248a41b85b456c4a52a65c22d3671c890ac"
+    },
+    {
+      "command": [
+        "C:\\Users\\jraburn\\Documents\\GitHub\\cfb-betting-system-v3\\.venv\\Scripts\\python.exe",
+        "-m",
+        "scripts.verify_week9_owner_review",
+        "outputs/2026-week9-owner-review/20261029-morning-decision/owner_review_shortlist.json"
+      ],
+      "started_at_utc": "2026-11-20T14:05:41.955439+00:00",
+      "completed_at_utc": "2026-11-20T14:05:42.154311+00:00",
+      "exit_code": 0,
+      "output_file": "11.log",
+      "output_sha256": "2647b9e8e7878a4d611b21fef9dea248a41b85b456c4a52a65c22d3671c890ac"
+    },
+    {
+      "command": [
+        "C:\\Users\\jraburn\\Documents\\GitHub\\cfb-betting-system-v3\\.venv\\Scripts\\python.exe",
+        "-m",
+        "scripts.verify_week9_owner_review",
+        "outputs/2026-week9-owner-review/20261030-friday-morning/owner_review_shortlist.json"
+      ],
+      "started_at_utc": "2026-11-20T14:05:42.155221+00:00",
+      "completed_at_utc": "2026-11-20T14:05:42.372249+00:00",
+      "exit_code": 0,
+      "output_file": "12.log",
+      "output_sha256": "2647b9e8e7878a4d611b21fef9dea248a41b85b456c4a52a65c22d3671c890ac"
+    },
+    {
+      "command": [
+        "C:\\Users\\jraburn\\Documents\\GitHub\\cfb-betting-system-v3\\.venv\\Scripts\\python.exe",
+        "-m",
+        "scripts.verify_week10_owner_review",
+        "outputs/2026-week10-owner-review/20261105-afternoon-decision/owner-review.json"
+      ],
+      "started_at_utc": "2026-11-20T14:05:42.373246+00:00",
+      "completed_at_utc": "2026-11-20T14:05:43.394103+00:00",
+      "exit_code": 0,
+      "output_file": "13.log",
+      "output_sha256": "fff1924af877f6ece60e037fa0390dbd5991138cfa58c90a459998cfdfa15b69"
+    }
+  ]
+}

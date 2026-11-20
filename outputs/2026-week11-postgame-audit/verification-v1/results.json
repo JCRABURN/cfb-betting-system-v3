@@ -1,0 +1,111 @@
+{
+  "base_commit": "79fa442a3c15d8f3f7435721b3d90db368ae55df",
+  "code_custody": "v1/audit_manifest.json plus context-v2/manifest.json and deliverables/workbook-verification.json",
+  "commands": [
+    {
+      "command": "python -m pytest -q",
+      "exit_code": 0,
+      "log": "check-00.log",
+      "seconds": 762.64
+    },
+    {
+      "command": "python scripts/verify_repo_safety.py",
+      "exit_code": 0,
+      "log": "check-01.log",
+      "seconds": 0.39
+    },
+    {
+      "command": "python -m scripts.verify_migrations",
+      "exit_code": 0,
+      "log": "check-02.log",
+      "seconds": 1.97
+    },
+    {
+      "command": "python -m scripts.verify_cloud_migrations",
+      "exit_code": 0,
+      "log": "check-03.log",
+      "seconds": 1.64
+    },
+    {
+      "command": "python -m scripts.verify_replay_compat --output .local-week11-audit-preview/verification/compatibility.json",
+      "exit_code": 0,
+      "log": "check-04.log",
+      "seconds": 124.17
+    },
+    {
+      "command": "python -m scripts.build_week9_formal_audit --verify",
+      "exit_code": 0,
+      "log": "check-05.log",
+      "seconds": 3.14
+    },
+    {
+      "command": "python -m scripts.week9_scoring_process_v2 --verify",
+      "exit_code": 0,
+      "log": "check-06.log",
+      "seconds": 4.23
+    },
+    {
+      "command": "python -m scripts.verify_week10_acceptance",
+      "exit_code": 0,
+      "log": "check-07.log",
+      "seconds": 1.64
+    },
+    {
+      "command": "python -m scripts.build_week10_formal_audit --verify",
+      "exit_code": 0,
+      "log": "check-08.log",
+      "seconds": 16.58
+    },
+    {
+      "command": "python -m scripts.prepare_week11_readiness --verify",
+      "exit_code": 0,
+      "log": "check-09.log",
+      "seconds": 2.97
+    },
+    {
+      "command": "python -m research.week11_validation.anchor_diagnostics_v2 --verify",
+      "exit_code": 0,
+      "log": "check-10.log",
+      "seconds": 0.46
+    },
+    {
+      "command": "python -m scripts.verify_week11_transcription",
+      "exit_code": 0,
+      "log": "check-11.log",
+      "seconds": 0.64
+    },
+    {
+      "command": "python -m scripts.verify_week11_acceptance",
+      "exit_code": 0,
+      "log": "check-12.log",
+      "seconds": 13.12
+    },
+    {
+      "command": "python -m scripts.build_week11_formal_audit --verify",
+      "exit_code": 0,
+      "log": "check-13.log",
+      "seconds": 38.5
+    }
+  ],
+  "environment": "Windows; Python 3.12.14",
+  "full_suite": "1196 passed, 39 existing deprecation warnings; before five supplemental context/workbook tests were added",
+  "logs_sha256": {
+    "check-00.log": "c87da06af459d518ee681593215fdea086e6daac3636f8ab2e24ccb930ff63c5",
+    "check-01.log": "d981d5495b37dc2087673e331f2c28790b3d2daa42d4b6080a8ec84f48a22215",
+    "check-02.log": "6d10ca3708b3b9320a0df5ea8608bab329733fda4b6cb70fb655e40e8593cb85",
+    "check-03.log": "2790b83b30e2bd8e1465ecb0e0bab322445766631024b6604c5fab27cd50c70d",
+    "check-04.log": "95190486669cc842dcc2be2e8f7b30a113636d2a382a9969fefbea34b4fbd99c",
+    "check-05.log": "e46e2857a3f925b71bd122c07c27fce4ef6f52491013aabafcc871fe2b01b777",
+    "check-06.log": "48516f8417d5dc519c50bd1efeb6a2d4dfcb69119e4518e9eb4174d64414a739",
+    "check-07.log": "8882c2f7d483581d7eaba87bceb142dd915e05dd030e972aa2cc80c40ec1ba6f",
+    "check-08.log": "eb33fe83a9727f4d606775fa8bab59a8ffc30833373d7a164587052b9bb1831b",
+    "check-09.log": "7bcb30e3b790fe662a4871b0e30dae70b1eaddf7a627b7241f12292d3fdeecf4",
+    "check-10.log": "20f1a1f8731934056e4bd338d564d3b72ef381c839b3cf144133ada2f6604cf6",
+    "check-11.log": "13b318158161be01442df835e69694c3eca0b3c074f909b075adc05acf2186a9",
+    "check-12.log": "1b50c03f8212ca300cacff98193cab278f20718fe121d35cc0c6083013fe4381",
+    "check-13.log": "88554e1e6d100eaabf1b5b577f9eda335786e6cea36fab2c9e2fe9934fece95f",
+    "compatibility.json": "4561ec8e4d1fd999c66f913063018117a886d3a078bce89039b00125f9975b81"
+  },
+  "source_database_sha256": "09d0bcda684356001bacf8bc9e42939add56b053f405564d9be924e39c0cf842",
+  "supplemental_tests": "55 audit/context tests passed in 18.64s; 5 context/workbook tests passed in 3.45s; shared context tests counted once"
+}

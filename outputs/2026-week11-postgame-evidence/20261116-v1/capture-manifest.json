@@ -1,0 +1,1529 @@
+{
+  "capture_code_sha256_lf": "f43b5d07b792efd18a60a7283505c8e73514a0fcd4a5f0288c61bcee9d71ba90",
+  "captured_at_utc": "2026-11-16T15:36:04.898659+00:00",
+  "lines_qualification": "POSTGAME_OBSERVATIONS_UNLESS_PROVIDER_SUPPLIES_ACTUAL_QUOTE_TIMESTAMPS",
+  "postgame_only": true,
+  "prediction_or_database_writes": false,
+  "prediction_source_commit": "bcdd78fb2755f9552e45ccfc5f891bd25e012eef",
+  "records": [
+    {
+      "endpoint": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/scoreboard",
+      "http_status": 200,
+      "name": "espn-scoreboard",
+      "parameters": {
+        "groups": 80,
+        "limit": 300,
+        "seasontype": 2,
+        "week": 11,
+        "year": 2026
+      },
+      "parser_version": "week11-postgame-v1",
+      "path": "espn-scoreboard.json.gz",
+      "provider": "ESPN",
+      "raw_bytes": 1081303,
+      "raw_sha256": "5333d30bd86abf069d39e9b049eca445785009ff76e30fc2712f5cc335929fb7",
+      "received_at_utc": "2026-11-16T15:35:56.832192+00:00",
+      "records": null,
+      "requested_at_utc": "2026-11-16T15:35:56.376199+00:00",
+      "resolved_url": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/scoreboard?year=2026&week=11&seasontype=2&groups=80&limit=300",
+      "status": "CAPTURED",
+      "stored_sha256": "376d2503223c6e779440ce4f70c1fa3f266c0a27c9f5ad96f94d8ad7fc279875"
+    },
+    {
+      "endpoint": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary",
+      "http_status": 200,
+      "name": "espn-401856857",
+      "parameters": {
+        "event": "401856857"
+      },
+      "parser_version": "week11-postgame-v1",
+      "path": "espn-401856857.json.gz",
+      "provider": "ESPN",
+      "raw_bytes": 520070,
+      "raw_sha256": "b47adae4d369d1e6088c176334674c6fee90579fcd242b86f7e12e412cfeaa91",
+      "received_at_utc": "2026-11-16T15:35:56.815352+00:00",
+      "records": null,
+      "requested_at_utc": "2026-11-16T15:35:56.376199+00:00",
+      "resolved_url": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401856857",
+      "status": "CAPTURED",
+      "stored_sha256": "1970619deb1a1f4567fe54b76b4e2fdc6d86f248c95096ff93bd7ccafab9d271"
+    },
+    {
+      "endpoint": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary",
+      "http_status": 200,
+      "name": "espn-401856858",
+      "parameters": {
+        "event": "401856858"
+      },
+      "parser_version": "week11-postgame-v1",
+      "path": "espn-401856858.json.gz",
+      "provider": "ESPN",
+      "raw_bytes": 518438,
+      "raw_sha256": "2c879cfa15b8b501ea088cc2c86875d9a6bba8f2cce047266f5ab0eb0972014c",
+      "received_at_utc": "2026-11-16T15:35:56.907500+00:00",
+      "records": null,
+      "requested_at_utc": "2026-11-16T15:35:56.376199+00:00",
+      "resolved_url": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401856858",
+      "status": "CAPTURED",
+      "stored_sha256": "5cf8bf87b98ec32a0c05fcf43a39333c8946940aa814e892704b1f84f878dac3"
+    },
+    {
+      "endpoint": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary",
+      "http_status": 200,
+      "name": "espn-401856859",
+      "parameters": {
+        "event": "401856859"
+      },
+      "parser_version": "week11-postgame-v1",
+      "path": "espn-401856859.json.gz",
+      "provider": "ESPN",
+      "raw_bytes": 512006,
+      "raw_sha256": "cfe9658839a8b612dd57a8947120d0b97209d751558770e8d9110a2597881822",
+      "received_at_utc": "2026-11-16T15:35:56.938929+00:00",
+      "records": null,
+      "requested_at_utc": "2026-11-16T15:35:56.376199+00:00",
+      "resolved_url": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401856859",
+      "status": "CAPTURED",
+      "stored_sha256": "79233686653e8543811023b071e0c84e542e6b0b6d0b356209feab0ebdb54c78"
+    },
+    {
+      "endpoint": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary",
+      "http_status": 200,
+      "name": "espn-401856860",
+      "parameters": {
+        "event": "401856860"
+      },
+      "parser_version": "week11-postgame-v1",
+      "path": "espn-401856860.json.gz",
+      "provider": "ESPN",
+      "raw_bytes": 575878,
+      "raw_sha256": "c8e04930b02202ac84ac939a7a57001c90cb9db3e6584f64871fe9a3e2bc9a81",
+      "received_at_utc": "2026-11-16T15:35:56.861305+00:00",
+      "records": null,
+      "requested_at_utc": "2026-11-16T15:35:56.376199+00:00",
+      "resolved_url": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401856860",
+      "status": "CAPTURED",
+      "stored_sha256": "659223b89b564d5cc8c799f349503dd69da95c2214a59453496be664dacb5bc9"
+    },
+    {
+      "endpoint": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary",
+      "http_status": 200,
+      "name": "espn-401856861",
+      "parameters": {
+        "event": "401856861"
+      },
+      "parser_version": "week11-postgame-v1",
+      "path": "espn-401856861.json.gz",
+      "provider": "ESPN",
+      "raw_bytes": 546005,
+      "raw_sha256": "7c9305064a691eda32b98cb0f295e2cfe66d297653321c1d4e684cfc9a6c8eaf",
+      "received_at_utc": "2026-11-16T15:35:56.815352+00:00",
+      "records": null,
+      "requested_at_utc": "2026-11-16T15:35:56.376199+00:00",
+      "resolved_url": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401856861",
+      "status": "CAPTURED",
+      "stored_sha256": "ca8a8d76cca8fe3ede7a972b614020421ebae366a1e6a11131ef9fb8b115d43d"
+    },
+    {
+      "endpoint": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary",
+      "http_status": 200,
+      "name": "espn-401856862",
+      "parameters": {
+        "event": "401856862"
+      },
+      "parser_version": "week11-postgame-v1",
+      "path": "espn-401856862.json.gz",
+      "provider": "ESPN",
+      "raw_bytes": 507095,
+      "raw_sha256": "b76e4e560a29eed6b15cc35949649510d242d4daa18accaa3ee8c5bff85d332f",
+      "received_at_utc": "2026-11-16T15:35:57.095188+00:00",
+      "records": null,
+      "requested_at_utc": "2026-11-16T15:35:56.815352+00:00",
+      "resolved_url": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401856862",
+      "status": "CAPTURED",
+      "stored_sha256": "aa52ee38f683fad11671e1fe445610ca69bb832c03043a658c75dbd0fb211f44"
+    },
+    {
+      "endpoint": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary",
+      "http_status": 200,
+      "name": "espn-401856863",
+      "parameters": {
+        "event": "401856863"
+      },
+      "parser_version": "week11-postgame-v1",
+      "path": "espn-401856863.json.gz",
+      "provider": "ESPN",
+      "raw_bytes": 676172,
+      "raw_sha256": "f569eb23cdfabd117a0b8a9619b6319d4932d1437c9a50bc944c903c50b7cc6f",
+      "received_at_utc": "2026-11-16T15:35:57.054109+00:00",
+      "records": null,
+      "requested_at_utc": "2026-11-16T15:35:56.831194+00:00",
+      "resolved_url": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401856863",
+      "status": "CAPTURED",
+      "stored_sha256": "e849c0a2b6ca651dbca7a8fa7dacbbfb4613473abae26ea5399f6b1394e34513"
+    },
+    {
+      "endpoint": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary",
+      "http_status": 200,
+      "name": "espn-401856864",
+      "parameters": {
+        "event": "401856864"
+      },
+      "parser_version": "week11-postgame-v1",
+      "path": "espn-401856864.json.gz",
+      "provider": "ESPN",
+      "raw_bytes": 547174,
+      "raw_sha256": "2da88ddcc07bf9bbc2bcf52da7197434e4a415e5fe3914ae7b7815563429fd7e",
+      "received_at_utc": "2026-11-16T15:35:57.008659+00:00",
+      "records": null,
+      "requested_at_utc": "2026-11-16T15:35:56.842737+00:00",
+      "resolved_url": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401856864",
+      "status": "CAPTURED",
+      "stored_sha256": "0a1284c88a5c650f7720f193db86e10fb403ede1a8317f360da698be42b6059b"
+    },
+    {
+      "endpoint": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary",
+      "http_status": 200,
+      "name": "espn-401856882",
+      "parameters": {
+        "event": "401856882"
+      },
+      "parser_version": "week11-postgame-v1",
+      "path": "espn-401856882.json.gz",
+      "provider": "ESPN",
+      "raw_bytes": 578160,
+      "raw_sha256": "9e354d3929c6460e2623264da76f59a5253bbe702a2c43f491d30d28a1a0def8",
+      "received_at_utc": "2026-11-16T15:35:57.138824+00:00",
+      "records": null,
+      "requested_at_utc": "2026-11-16T15:35:56.875833+00:00",
+      "resolved_url": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401856882",
+      "status": "CAPTURED",
+      "stored_sha256": "17954021137804819650da71c55e802e1384c5942b39c85fa9f133862d05d71b"
+    },
+    {
+      "endpoint": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary",
+      "http_status": 200,
+      "name": "espn-401856883",
+      "parameters": {
+        "event": "401856883"
+      },
+      "parser_version": "week11-postgame-v1",
+      "path": "espn-401856883.json.gz",
+      "provider": "ESPN",
+      "raw_bytes": 562166,
+      "raw_sha256": "8fda352d50a380eb728b0a5f9ae7ede7ac342456c7fe4bb002b74f72ce2a37cb",
+      "received_at_utc": "2026-11-16T15:35:57.068185+00:00",
+      "records": null,
+      "requested_at_utc": "2026-11-16T15:35:56.907500+00:00",
+      "resolved_url": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401856883",
+      "status": "CAPTURED",
+      "stored_sha256": "68b9fb90eabbe3405ec13870cf573dc9f4564e0c79f08c4d63599b7e1561b1cc"
+    },
+    {
+      "endpoint": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary",
+      "http_status": 200,
+      "name": "espn-401856884",
+      "parameters": {
+        "event": "401856884"
+      },
+      "parser_version": "week11-postgame-v1",
+      "path": "espn-401856884.json.gz",
+      "provider": "ESPN",
+      "raw_bytes": 499019,
+      "raw_sha256": "a216df4f347f741dd87cc6f78b2676fc4019741af98e562ed7a9a8bdf43bb441",
+      "received_at_utc": "2026-11-16T15:35:57.145256+00:00",
+      "records": null,
+      "requested_at_utc": "2026-11-16T15:35:56.953310+00:00",
+      "resolved_url": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401856884",
+      "status": "CAPTURED",
+      "stored_sha256": "24863848b833670794594e6369c430c8abdaecb5b1f0e820ce6e16fa3b014483"
+    },
+    {
+      "endpoint": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary",
+      "http_status": 200,
+      "name": "espn-401856885",
+      "parameters": {
+        "event": "401856885"
+      },
+      "parser_version": "week11-postgame-v1",
+      "path": "espn-401856885.json.gz",
+      "provider": "ESPN",
+      "raw_bytes": 568372,
+      "raw_sha256": "d3600e3d5b862416fc45a9bbb11bf74f5568d9f09c7ad2b0d4245c0249cf128b",
+      "received_at_utc": "2026-11-16T15:35:57.321049+00:00",
+      "records": null,
+      "requested_at_utc": "2026-11-16T15:35:57.028686+00:00",
+      "resolved_url": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401856885",
+      "status": "CAPTURED",
+      "stored_sha256": "50f55187cbf2cf9a8f7acdc999cd02d728e99c4231b24049b1ac2c28bea9bd29"
+    },
+    {
+      "endpoint": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary",
+      "http_status": 200,
+      "name": "espn-401856886",
+      "parameters": {
+        "event": "401856886"
+      },
+      "parser_version": "week11-postgame-v1",
+      "path": "espn-401856886.json.gz",
+      "provider": "ESPN",
+      "raw_bytes": 618168,
+      "raw_sha256": "89025518966d7043a6a7379aa2ab0c1db573d684564a9436ba8ae83af23a66f6",
+      "received_at_utc": "2026-11-16T15:35:57.256593+00:00",
+      "records": null,
+      "requested_at_utc": "2026-11-16T15:35:57.065190+00:00",
+      "resolved_url": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401856886",
+      "status": "CAPTURED",
+      "stored_sha256": "a36e32ffd6caadde7f0231fabe611e66c58eb834d38bcdffb4f17c74fa1787ed"
+    },
+    {
+      "endpoint": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary",
+      "http_status": 200,
+      "name": "espn-401856887",
+      "parameters": {
+        "event": "401856887"
+      },
+      "parser_version": "week11-postgame-v1",
+      "path": "espn-401856887.json.gz",
+      "provider": "ESPN",
+      "raw_bytes": 508585,
+      "raw_sha256": "4b2ad3fddf65e978331cc93218fc137b617de6d337a1dd835333443d44ea4676",
+      "received_at_utc": "2026-11-16T15:35:57.272239+00:00",
+      "records": null,
+      "requested_at_utc": "2026-11-16T15:35:57.075190+00:00",
+      "resolved_url": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401856887",
+      "status": "CAPTURED",
+      "stored_sha256": "8bb7be435d3db4415249cd3000d4b332cba7b7c9ca52ffc06340ee67dd9c4d61"
+    },
+    {
+      "endpoint": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary",
+      "http_status": 200,
+      "name": "espn-401856888",
+      "parameters": {
+        "event": "401856888"
+      },
+      "parser_version": "week11-postgame-v1",
+      "path": "espn-401856888.json.gz",
+      "provider": "ESPN",
+      "raw_bytes": 522902,
+      "raw_sha256": "875a398e6dcdb7cebabf97d2396873c7914b6ed754e386a57d19bdc95f45eb45",
+      "received_at_utc": "2026-11-16T15:35:57.405138+00:00",
+      "records": null,
+      "requested_at_utc": "2026-11-16T15:35:57.101776+00:00",
+      "resolved_url": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401856888",
+      "status": "CAPTURED",
+      "stored_sha256": "df74f3d58dfc4aeea0c87b5c1b1cb906f885cc9462c4faefef8862e7e31a799d"
+    },
+    {
+      "endpoint": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary",
+      "http_status": 200,
+      "name": "espn-401856889",
+      "parameters": {
+        "event": "401856889"
+      },
+      "parser_version": "week11-postgame-v1",
+      "path": "espn-401856889.json.gz",
+      "provider": "ESPN",
+      "raw_bytes": 559319,
+      "raw_sha256": "c95edadd5e29ca57afdb720ba07182a3688918b709573f6a5c62a0f5a6fdcf14",
+      "received_at_utc": "2026-11-16T15:35:57.404138+00:00",
+      "records": null,
+      "requested_at_utc": "2026-11-16T15:35:57.144069+00:00",
+      "resolved_url": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401856889",
+      "status": "CAPTURED",
+      "stored_sha256": "69943899ad61fe7bac2141cafd3fda6a2cf8ae6e133ce4183abc86efa8f02e6e"
+    },
+    {
+      "endpoint": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary",
+      "http_status": 200,
+      "name": "espn-401858293",
+      "parameters": {
+        "event": "401858293"
+      },
+      "parser_version": "week11-postgame-v1",
+      "path": "espn-401858293.json.gz",
+      "provider": "ESPN",
+      "raw_bytes": 536126,
+      "raw_sha256": "518d0cc76adeff41a77886b6fdbea8a538431da33bbe9d2ef6f93f4a22eb4015",
+      "received_at_utc": "2026-11-16T15:35:57.364825+00:00",
+      "records": null,
+      "requested_at_utc": "2026-11-16T15:35:57.149708+00:00",
+      "resolved_url": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401858293",
+      "status": "CAPTURED",
+      "stored_sha256": "8ae9e5a43bd6ddbec9a2e8817ae626fb165efac5d4c2ac5ba2d0835518f89de0"
+    },
+    {
+      "endpoint": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary",
+      "http_status": 200,
+      "name": "espn-401858294",
+      "parameters": {
+        "event": "401858294"
+      },
+      "parser_version": "week11-postgame-v1",
+      "path": "espn-401858294.json.gz",
+      "provider": "ESPN",
+      "raw_bytes": 503024,
+      "raw_sha256": "b73460e11c48cf34d0713ceb7005c3c996be64b520b9313a44fb389822cde4b8",
+      "received_at_utc": "2026-11-16T15:35:57.497823+00:00",
+      "records": null,
+      "requested_at_utc": "2026-11-16T15:35:57.256593+00:00",
+      "resolved_url": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401858294",
+      "status": "CAPTURED",
+      "stored_sha256": "7ab687c70bd40f8f18963e200c5ad31bb343336d7b74032ddc67f387685b46a2"
+    },
+    {
+      "endpoint": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary",
+      "http_status": 200,
+      "name": "espn-401858295",
+      "parameters": {
+        "event": "401858295"
+      },
+      "parser_version": "week11-postgame-v1",
+      "path": "espn-401858295.json.gz",
+      "provider": "ESPN",
+      "raw_bytes": 544530,
+      "raw_sha256": "24a21b660f618d3b23e65985e768e856064dd7bb2c24c322a2ff63c7d7f5fd30",
+      "received_at_utc": "2026-11-16T15:35:57.461614+00:00",
+      "records": null,
+      "requested_at_utc": "2026-11-16T15:35:57.287865+00:00",
+      "resolved_url": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401858295",
+      "status": "CAPTURED",
+      "stored_sha256": "97386305ab1bca45233d6aa37c9684ee0e224c2c0d62aa6e404d2c80af7b4660"
+    },
+    {
+      "endpoint": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary",
+      "http_status": 200,
+      "name": "espn-401858296",
+      "parameters": {
+        "event": "401858296"
+      },
+      "parser_version": "week11-postgame-v1",
+      "path": "espn-401858296.json.gz",
+      "provider": "ESPN",
+      "raw_bytes": 564289,
+      "raw_sha256": "2d2203f2399b804e732812c689da1368ae683ccd61c3371489b9f17c891b7f6e",
+      "received_at_utc": "2026-11-16T15:35:57.649442+00:00",
+      "records": null,
+      "requested_at_utc": "2026-11-16T15:35:57.335553+00:00",
+      "resolved_url": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401858296",
+      "status": "CAPTURED",
+      "stored_sha256": "6ec4bbfe547472419e480930e22733aeb2279ea0b498c0c6f2de7ac533b29c99"
+    },
+    {
+      "endpoint": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary",
+      "http_status": 200,
+      "name": "espn-401858297",
+      "parameters": {
+        "event": "401858297"
+      },
+      "parser_version": "week11-postgame-v1",
+      "path": "espn-401858297.json.gz",
+      "provider": "ESPN",
+      "raw_bytes": 544273,
+      "raw_sha256": "d1b28487b8fd331150b273fad5598ce94e50f25052a3a392884f36adbc9583d5",
+      "received_at_utc": "2026-11-16T15:35:57.617405+00:00",
+      "records": null,
+      "requested_at_utc": "2026-11-16T15:35:57.369188+00:00",
+      "resolved_url": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401858297",
+      "status": "CAPTURED",
+      "stored_sha256": "b26f9493e8e0676e99e868735b5a3ebe8103b053f43ff4bba03af5d1c63695bb"
+    },
+    {
+      "endpoint": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary",
+      "http_status": 200,
+      "name": "espn-401858298",
+      "parameters": {
+        "event": "401858298"
+      },
+      "parser_version": "week11-postgame-v1",
+      "path": "espn-401858298.json.gz",
+      "provider": "ESPN",
+      "raw_bytes": 526912,
+      "raw_sha256": "30c492a69339a05c504ae377c6e13c08121649cd147448f40d5f0dfb6f591790",
+      "received_at_utc": "2026-11-16T15:35:57.616404+00:00",
+      "records": null,
+      "requested_at_utc": "2026-11-16T15:35:57.410448+00:00",
+      "resolved_url": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401858298",
+      "status": "CAPTURED",
+      "stored_sha256": "b54665f6cabafc9c8e49aef9e6a25bca0c68a74918f7cdf4d7741de441e98de8"
+    },
+    {
+      "endpoint": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary",
+      "http_status": 200,
+      "name": "espn-401858299",
+      "parameters": {
+        "event": "401858299"
+      },
+      "parser_version": "week11-postgame-v1",
+      "path": "espn-401858299.json.gz",
+      "provider": "ESPN",
+      "raw_bytes": 582330,
+      "raw_sha256": "67a0b19535827a1b1668f905c57f922e454c082d25d6755f44ecb76c096d1fba",
+      "received_at_utc": "2026-11-16T15:35:57.649442+00:00",
+      "records": null,
+      "requested_at_utc": "2026-11-16T15:35:57.410448+00:00",
+      "resolved_url": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401858299",
+      "status": "CAPTURED",
+      "stored_sha256": "94ac75bba5d34c98055ae1e8d1b4bcde9eb796697b58ccb58f0daab82d152428"
+    },
+    {
+      "endpoint": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary",
+      "http_status": 200,
+      "name": "espn-401858300",
+      "parameters": {
+        "event": "401858300"
+      },
+      "parser_version": "week11-postgame-v1",
+      "path": "espn-401858300.json.gz",
+      "provider": "ESPN",
+      "raw_bytes": 582562,
+      "raw_sha256": "72b0083e7c4d116746573e69aa403e0cda03f369d7f822bf20197437ae3b2316",
+      "received_at_utc": "2026-11-16T15:35:57.711774+00:00",
+      "records": null,
+      "requested_at_utc": "2026-11-16T15:35:57.473593+00:00",
+      "resolved_url": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401858300",
+      "status": "CAPTURED",
+      "stored_sha256": "97bcf46fd33a443c919c8cd7379104d0e280a5ef6096824dd1a079ccfeeb7755"
+    },
+    {
+      "endpoint": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary",
+      "http_status": 200,
+      "name": "espn-401858301",
+      "parameters": {
+        "event": "401858301"
+      },
+      "parser_version": "week11-postgame-v1",
+      "path": "espn-401858301.json.gz",
+      "provider": "ESPN",
+      "raw_bytes": 552507,
+      "raw_sha256": "f6c84d79b597f004d3159ba055481453f2c41843bad65e9fd537f3ef2273ea0e",
+      "received_at_utc": "2026-11-16T15:35:57.690557+00:00",
+      "records": null,
+      "requested_at_utc": "2026-11-16T15:35:57.503906+00:00",
+      "resolved_url": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401858301",
+      "status": "CAPTURED",
+      "stored_sha256": "e63a7f88c67643f60f536ed586d8d60395e8bdf41dcda8f114f4fefb341c6203"
+    },
+    {
+      "endpoint": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary",
+      "http_status": 200,
+      "name": "espn-401858518",
+      "parameters": {
+        "event": "401858518"
+      },
+      "parser_version": "week11-postgame-v1",
+      "path": "espn-401858518.json.gz",
+      "provider": "ESPN",
+      "raw_bytes": 541112,
+      "raw_sha256": "899873241e20c955ae778631c7c932c1e646675495a429c06107d0c1ce3f01f1",
+      "received_at_utc": "2026-11-16T15:35:57.945102+00:00",
+      "records": null,
+      "requested_at_utc": "2026-11-16T15:35:57.629405+00:00",
+      "resolved_url": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401858518",
+      "status": "CAPTURED",
+      "stored_sha256": "8ea5db3016170f2a01eaa8ca082ffa62b5662103b1d32ae05711419c74ca2770"
+    },
+    {
+      "endpoint": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary",
+      "http_status": 200,
+      "name": "espn-401858519",
+      "parameters": {
+        "event": "401858519"
+      },
+      "parser_version": "week11-postgame-v1",
+      "path": "espn-401858519.json.gz",
+      "provider": "ESPN",
+      "raw_bytes": 453619,
+      "raw_sha256": "b3c75d9bc7f4c24523f6d2879fd17a39b5cdb8c6285e027d99351e1fa53b7981",
+      "received_at_utc": "2026-11-16T15:35:57.848932+00:00",
+      "records": null,
+      "requested_at_utc": "2026-11-16T15:35:57.632405+00:00",
+      "resolved_url": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401858519",
+      "status": "CAPTURED",
+      "stored_sha256": "26d426a12ea488772ec2101f1bbe193ec6ae729ce6395dd23250bc34da585039"
+    },
+    {
+      "endpoint": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary",
+      "http_status": 200,
+      "name": "espn-401858520",
+      "parameters": {
+        "event": "401858520"
+      },
+      "parser_version": "week11-postgame-v1",
+      "path": "espn-401858520.json.gz",
+      "provider": "ESPN",
+      "raw_bytes": 515555,
+      "raw_sha256": "08bf1ac6eb72ce497199e73658a18e191be7b5d047228f8eeaa3c0cc6304f3e6",
+      "received_at_utc": "2026-11-16T15:35:57.849937+00:00",
+      "records": null,
+      "requested_at_utc": "2026-11-16T15:35:57.661708+00:00",
+      "resolved_url": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401858520",
+      "status": "CAPTURED",
+      "stored_sha256": "15d35f04a05596ea87ee6bccdf2ac9ab07f1e0fdaee6239604a1beb56629da1e"
+    },
+    {
+      "endpoint": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary",
+      "http_status": 200,
+      "name": "espn-401858521",
+      "parameters": {
+        "event": "401858521"
+      },
+      "parser_version": "week11-postgame-v1",
+      "path": "espn-401858521.json.gz",
+      "provider": "ESPN",
+      "raw_bytes": 522911,
+      "raw_sha256": "661179313963996aad77d329519c1e49d63eb62f5a8dbc72be7c70782fcf1258",
+      "received_at_utc": "2026-11-16T15:35:57.864830+00:00",
+      "records": null,
+      "requested_at_utc": "2026-11-16T15:35:57.661708+00:00",
+      "resolved_url": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401858521",
+      "status": "CAPTURED",
+      "stored_sha256": "cafa9f4eca96b5f17ec1fa0f58e1fb581439f719dcb97b2bd426a63d262e5c44"
+    },
+    {
+      "endpoint": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary",
+      "http_status": 200,
+      "name": "espn-401858522",
+      "parameters": {
+        "event": "401858522"
+      },
+      "parser_version": "week11-postgame-v1",
+      "path": "espn-401858522.json.gz",
+      "provider": "ESPN",
+      "raw_bytes": 471148,
+      "raw_sha256": "ae9126b233f96484eaf7d143d717a32b294c6d05ea046481e7da32380a8e257c",
+      "received_at_utc": "2026-11-16T15:35:58.188645+00:00",
+      "records": null,
+      "requested_at_utc": "2026-11-16T15:35:57.695189+00:00",
+      "resolved_url": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401858522",
+      "status": "CAPTURED",
+      "stored_sha256": "cd902a6b241702634605e75769a979148d6c9312d910d25d4283509b56936561"
+    },
+    {
+      "endpoint": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary",
+      "http_status": 200,
+      "name": "espn-401858523",
+      "parameters": {
+        "event": "401858523"
+      },
+      "parser_version": "week11-postgame-v1",
+      "path": "espn-401858523.json.gz",
+      "provider": "ESPN",
+      "raw_bytes": 482659,
+      "raw_sha256": "254580032c3e01fe1ec98b2f2ec19f04c65106272c64590b866866ce643b0f3c",
+      "received_at_utc": "2026-11-16T15:35:57.945102+00:00",
+      "records": null,
+      "requested_at_utc": "2026-11-16T15:35:57.711774+00:00",
+      "resolved_url": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401858523",
+      "status": "CAPTURED",
+      "stored_sha256": "a981a0fd09b2adbc7c7d80c1c545b2114786bdc1acef7c7bbfb751b8a839cffe"
+    },
+    {
+      "endpoint": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary",
+      "http_status": 200,
+      "name": "espn-401858524",
+      "parameters": {
+        "event": "401858524"
+      },
+      "parser_version": "week11-postgame-v1",
+      "path": "espn-401858524.json.gz",
+      "provider": "ESPN",
+      "raw_bytes": 464843,
+      "raw_sha256": "dfceddb73d5a0b75dc64e954a509de088dda3aceadf7a6f9d84f161ff250804f",
+      "received_at_utc": "2026-11-16T15:35:58.023240+00:00",
+      "records": null,
+      "requested_at_utc": "2026-11-16T15:35:57.849937+00:00",
+      "resolved_url": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401858524",
+      "status": "CAPTURED",
+      "stored_sha256": "fe7e45808b26d34e5b30f53177a280d8220c18f8caeac0a3cac727c9a513ee57"
+    },
+    {
+      "endpoint": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary",
+      "http_status": 200,
+      "name": "espn-401858525",
+      "parameters": {
+        "event": "401858525"
+      },
+      "parser_version": "week11-postgame-v1",
+      "path": "espn-401858525.json.gz",
+      "provider": "ESPN",
+      "raw_bytes": 495149,
+      "raw_sha256": "76ef15d8f16171511a7e390053fa47ecd288ae0d2d17d4f7a65c8cea0942f9f4",
+      "received_at_utc": "2026-11-16T15:35:58.188645+00:00",
+      "records": null,
+      "requested_at_utc": "2026-11-16T15:35:57.864830+00:00",
+      "resolved_url": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401858525",
+      "status": "CAPTURED",
+      "stored_sha256": "d578877ca326f8b75dd3a9f9cb9a842cfccf34b9da5ca00495b1e121b5a61c75"
+    },
+    {
+      "endpoint": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary",
+      "http_status": 200,
+      "name": "espn-401858526",
+      "parameters": {
+        "event": "401858526"
+      },
+      "parser_version": "week11-postgame-v1",
+      "path": "espn-401858526.json.gz",
+      "provider": "ESPN",
+      "raw_bytes": 485885,
+      "raw_sha256": "05e1184fa9c79b5bcd75c61768abd324715689c3dc2676d5db4c3d14ce2b351e",
+      "received_at_utc": "2026-11-16T15:35:58.031271+00:00",
+      "records": null,
+      "requested_at_utc": "2026-11-16T15:35:57.864830+00:00",
+      "resolved_url": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401858526",
+      "status": "CAPTURED",
+      "stored_sha256": "79b87db4c8b984edfb312d5bb0df187967391b7da0afdc9ad67af30a65ef31e5"
+    },
+    {
+      "endpoint": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary",
+      "http_status": 200,
+      "name": "espn-401860914",
+      "parameters": {
+        "event": "401860914"
+      },
+      "parser_version": "week11-postgame-v1",
+      "path": "espn-401860914.json.gz",
+      "provider": "ESPN",
+      "raw_bytes": 493068,
+      "raw_sha256": "28a46dfa768898e6be8290e2ac8275996bfcd8636f655fb9635c0edbb810c3e4",
+      "received_at_utc": "2026-11-16T15:35:58.251663+00:00",
+      "records": null,
+      "requested_at_utc": "2026-11-16T15:35:57.945102+00:00",
+      "resolved_url": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401860914",
+      "status": "CAPTURED",
+      "stored_sha256": "4d909e9d4a87f5f8848c189cd61d00798231f6c479e5b5f63e80c7a63a8066d2"
+    },
+    {
+      "endpoint": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary",
+      "http_status": 200,
+      "name": "espn-401860915",
+      "parameters": {
+        "event": "401860915"
+      },
+      "parser_version": "week11-postgame-v1",
+      "path": "espn-401860915.json.gz",
+      "provider": "ESPN",
+      "raw_bytes": 500085,
+      "raw_sha256": "2b3557b5511be7509ee9a27855712c62bacb61d1a3889e6f765b005b5b307d71",
+      "received_at_utc": "2026-11-16T15:35:58.188645+00:00",
+      "records": null,
+      "requested_at_utc": "2026-11-16T15:35:57.963571+00:00",
+      "resolved_url": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401860915",
+      "status": "CAPTURED",
+      "stored_sha256": "ff575b15c24b3be6e0475b9848481a454f264b84372f7dcd0b1ae3e67ff8d47d"
+    },
+    {
+      "endpoint": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary",
+      "http_status": 200,
+      "name": "espn-401860916",
+      "parameters": {
+        "event": "401860916"
+      },
+      "parser_version": "week11-postgame-v1",
+      "path": "espn-401860916.json.gz",
+      "provider": "ESPN",
+      "raw_bytes": 501072,
+      "raw_sha256": "ce4b407d395efb48e4ee8b3f0cc61e8343f1dd309ac38507395f9f7b4fdbb6e7",
+      "received_at_utc": "2026-11-16T15:35:58.370882+00:00",
+      "records": null,
+      "requested_at_utc": "2026-11-16T15:35:58.028270+00:00",
+      "resolved_url": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401860916",
+      "status": "CAPTURED",
+      "stored_sha256": "6be2d663662cb0b5c96d7ccfdbae2c1ebbc7065aa16bc0cc6ab28a81aafb785d"
+    },
+    {
+      "endpoint": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary",
+      "http_status": 200,
+      "name": "espn-401860917",
+      "parameters": {
+        "event": "401860917"
+      },
+      "parser_version": "week11-postgame-v1",
+      "path": "espn-401860917.json.gz",
+      "provider": "ESPN",
+      "raw_bytes": 500570,
+      "raw_sha256": "fc3cb024ddf5b8b28f65c0382043f67b01740363db970f49f160d6f00890c6a3",
+      "received_at_utc": "2026-11-16T15:35:58.385791+00:00",
+      "records": null,
+      "requested_at_utc": "2026-11-16T15:35:58.036274+00:00",
+      "resolved_url": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401860917",
+      "status": "CAPTURED",
+      "stored_sha256": "92ae3e1f7e45203ba621f788b1f9094a204fa9d382a5fa7b26602fbf988283b4"
+    },
+    {
+      "endpoint": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary",
+      "http_status": 200,
+      "name": "espn-401861967",
+      "parameters": {
+        "event": "401861967"
+      },
+      "parser_version": "week11-postgame-v1",
+      "path": "espn-401861967.json.gz",
+      "provider": "ESPN",
+      "raw_bytes": 527929,
+      "raw_sha256": "69d7c707dc3d5ac0bffe1206ebaa46d7ee1f95ba74f7889feaa591d1d31bb827",
+      "received_at_utc": "2026-11-16T15:35:58.385791+00:00",
+      "records": null,
+      "requested_at_utc": "2026-11-16T15:35:58.188645+00:00",
+      "resolved_url": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401861967",
+      "status": "CAPTURED",
+      "stored_sha256": "f1234053f21b5fbe72a48fda2ba411fb8cb0bc53fddf1bc7855d8d7890aa934c"
+    },
+    {
+      "endpoint": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary",
+      "http_status": 200,
+      "name": "espn-401862824",
+      "parameters": {
+        "event": "401862824"
+      },
+      "parser_version": "week11-postgame-v1",
+      "path": "espn-401862824.json.gz",
+      "provider": "ESPN",
+      "raw_bytes": 634618,
+      "raw_sha256": "7826bbbe2feeb6b7ea07f908eade4cd7be14a05fb029f2811273a795e9b97d49",
+      "received_at_utc": "2026-11-16T15:35:58.407072+00:00",
+      "records": null,
+      "requested_at_utc": "2026-11-16T15:35:58.188645+00:00",
+      "resolved_url": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401862824",
+      "status": "CAPTURED",
+      "stored_sha256": "19011e01d34e81bd731d71121e75f44207e5c70fb6a8f471d07262ee4bb200d5"
+    },
+    {
+      "endpoint": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary",
+      "http_status": 200,
+      "name": "espn-401862825",
+      "parameters": {
+        "event": "401862825"
+      },
+      "parser_version": "week11-postgame-v1",
+      "path": "espn-401862825.json.gz",
+      "provider": "ESPN",
+      "raw_bytes": 569901,
+      "raw_sha256": "c8575fd09f84e4776c68c57d1d41cc50cd232c1ff95e0728ccf7136a0e98a6a1",
+      "received_at_utc": "2026-11-16T15:35:58.534739+00:00",
+      "records": null,
+      "requested_at_utc": "2026-11-16T15:35:58.203709+00:00",
+      "resolved_url": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401862825",
+      "status": "CAPTURED",
+      "stored_sha256": "1defbdf3fbeabcaf511190c52a8ef8a6b6afa96fc097db286fb1ee57b19c826e"
+    },
+    {
+      "endpoint": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary",
+      "http_status": 200,
+      "name": "espn-401862826",
+      "parameters": {
+        "event": "401862826"
+      },
+      "parser_version": "week11-postgame-v1",
+      "path": "espn-401862826.json.gz",
+      "provider": "ESPN",
+      "raw_bytes": 654150,
+      "raw_sha256": "43099c159fb4880d667764b5b923b7fba754972fb1ed29e8ff904fc915acf130",
+      "received_at_utc": "2026-11-16T15:35:58.472634+00:00",
+      "records": null,
+      "requested_at_utc": "2026-11-16T15:35:58.251663+00:00",
+      "resolved_url": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401862826",
+      "status": "CAPTURED",
+      "stored_sha256": "2e28e7ebc1fd97d48baa7b9e9b0d1fcd7fbde5f22d294beac1f070cf33534ec4"
+    },
+    {
+      "endpoint": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary",
+      "http_status": 200,
+      "name": "espn-401862827",
+      "parameters": {
+        "event": "401862827"
+      },
+      "parser_version": "week11-postgame-v1",
+      "path": "espn-401862827.json.gz",
+      "provider": "ESPN",
+      "raw_bytes": 565511,
+      "raw_sha256": "d3ed010afba3f05bb5cf02ea7e7e396cef0026557edf2355e58ff0592dbb1c4b",
+      "received_at_utc": "2026-11-16T15:35:58.594154+00:00",
+      "records": null,
+      "requested_at_utc": "2026-11-16T15:35:58.382791+00:00",
+      "resolved_url": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401862827",
+      "status": "CAPTURED",
+      "stored_sha256": "e5ad7d12f3006af186f1b66677f3c99d7294e8496be6684e46bba7b6a133765c"
+    },
+    {
+      "endpoint": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary",
+      "http_status": 200,
+      "name": "espn-401862828",
+      "parameters": {
+        "event": "401862828"
+      },
+      "parser_version": "week11-postgame-v1",
+      "path": "espn-401862828.json.gz",
+      "provider": "ESPN",
+      "raw_bytes": 505154,
+      "raw_sha256": "c8f87bfcd7ab9b763b5cf74760257082aa7d89f568cd10b4327f9146340d835c",
+      "received_at_utc": "2026-11-16T15:35:58.577368+00:00",
+      "records": null,
+      "requested_at_utc": "2026-11-16T15:35:58.402556+00:00",
+      "resolved_url": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401862828",
+      "status": "CAPTURED",
+      "stored_sha256": "407aad69328f647bbaefeb5224954d1d7272ddeb9af7725e37d6cd1435182ebb"
+    },
+    {
+      "endpoint": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary",
+      "http_status": 200,
+      "name": "espn-401862829",
+      "parameters": {
+        "event": "401862829"
+      },
+      "parser_version": "week11-postgame-v1",
+      "path": "espn-401862829.json.gz",
+      "provider": "ESPN",
+      "raw_bytes": 555893,
+      "raw_sha256": "e730304f7bcd4a53f659ecd3372b2064042368f179fe2e8b664222ae30a170ff",
+      "received_at_utc": "2026-11-16T15:35:58.567107+00:00",
+      "records": null,
+      "requested_at_utc": "2026-11-16T15:35:58.405072+00:00",
+      "resolved_url": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401862829",
+      "status": "CAPTURED",
+      "stored_sha256": "bbf6ceb0515c7225a72d6499d0ec9a859faf7ee94f41d1de5ab50cb1f47cd910"
+    },
+    {
+      "endpoint": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary",
+      "http_status": 200,
+      "name": "espn-401864536",
+      "parameters": {
+        "event": "401864536"
+      },
+      "parser_version": "week11-postgame-v1",
+      "path": "espn-401864536.json.gz",
+      "provider": "ESPN",
+      "raw_bytes": 474331,
+      "raw_sha256": "6fdefb1e9ab7d08bd851204b3e1f2742f6db3ae0dd71d944833bd033ed4de507",
+      "received_at_utc": "2026-11-16T15:35:58.604460+00:00",
+      "records": null,
+      "requested_at_utc": "2026-11-16T15:35:58.412164+00:00",
+      "resolved_url": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401864536",
+      "status": "CAPTURED",
+      "stored_sha256": "3fead9f06dbdb2ca274263e30b1cccac050c603c5fb3d1598086548b07b2380e"
+    },
+    {
+      "endpoint": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary",
+      "http_status": 200,
+      "name": "espn-401864537",
+      "parameters": {
+        "event": "401864537"
+      },
+      "parser_version": "week11-postgame-v1",
+      "path": "espn-401864537.json.gz",
+      "provider": "ESPN",
+      "raw_bytes": 506435,
+      "raw_sha256": "a9654a393e8acf6f65b227a0433d0150d14d33af9eaf38e3536c9bcdba5ed3e6",
+      "received_at_utc": "2026-11-16T15:35:58.656606+00:00",
+      "records": null,
+      "requested_at_utc": "2026-11-16T15:35:58.482635+00:00",
+      "resolved_url": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401864537",
+      "status": "CAPTURED",
+      "stored_sha256": "df28d2bd79e6a90096c8eeec6eaff8db5634b356d1852cf4ed8dae5ad20140fe"
+    },
+    {
+      "endpoint": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary",
+      "http_status": 200,
+      "name": "espn-401864538",
+      "parameters": {
+        "event": "401864538"
+      },
+      "parser_version": "week11-postgame-v1",
+      "path": "espn-401864538.json.gz",
+      "provider": "ESPN",
+      "raw_bytes": 478423,
+      "raw_sha256": "a1938c2b4870a3905b75d8d299bc660d39566b973182d94c86da3cd4ac1b2af7",
+      "received_at_utc": "2026-11-16T15:35:58.704852+00:00",
+      "records": null,
+      "requested_at_utc": "2026-11-16T15:35:58.545093+00:00",
+      "resolved_url": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401864538",
+      "status": "CAPTURED",
+      "stored_sha256": "84c79c5b01ec7865d57e01bead82eac8045404c6393132b00055ea69f94ce862"
+    },
+    {
+      "endpoint": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary",
+      "http_status": 200,
+      "name": "espn-401864539",
+      "parameters": {
+        "event": "401864539"
+      },
+      "parser_version": "week11-postgame-v1",
+      "path": "espn-401864539.json.gz",
+      "provider": "ESPN",
+      "raw_bytes": 490249,
+      "raw_sha256": "507b5263f383fbeaf6d1929690d143f7fe1990ca2338a2ead7faf254a90b1b84",
+      "received_at_utc": "2026-11-16T15:35:58.840707+00:00",
+      "records": null,
+      "requested_at_utc": "2026-11-16T15:35:58.577368+00:00",
+      "resolved_url": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401864539",
+      "status": "CAPTURED",
+      "stored_sha256": "51f1d86447fcf63f32df00d39fa1e481134514256bcef837caac35f578ffcdb0"
+    },
+    {
+      "endpoint": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary",
+      "http_status": 200,
+      "name": "espn-401864540",
+      "parameters": {
+        "event": "401864540"
+      },
+      "parser_version": "week11-postgame-v1",
+      "path": "espn-401864540.json.gz",
+      "provider": "ESPN",
+      "raw_bytes": 490982,
+      "raw_sha256": "afcfba50b07ee1266aa7dd55612f0a882e6cb96dca970d6cd622f0cfe4a390b1",
+      "received_at_utc": "2026-11-16T15:35:58.739759+00:00",
+      "records": null,
+      "requested_at_utc": "2026-11-16T15:35:58.577368+00:00",
+      "resolved_url": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401864540",
+      "status": "CAPTURED",
+      "stored_sha256": "79d9ae26fd025aa23f098d6fae3bdb06198befd31616bcbcc751c7b84bfc41ac"
+    },
+    {
+      "endpoint": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary",
+      "http_status": 200,
+      "name": "espn-401866458",
+      "parameters": {
+        "event": "401866458"
+      },
+      "parser_version": "week11-postgame-v1",
+      "path": "espn-401866458.json.gz",
+      "provider": "ESPN",
+      "raw_bytes": 435332,
+      "raw_sha256": "c54e053a52a67792418d6119ee0ed223db6ff53ed307144665587b69c9f04157",
+      "received_at_utc": "2026-11-16T15:35:58.778082+00:00",
+      "records": null,
+      "requested_at_utc": "2026-11-16T15:35:58.596336+00:00",
+      "resolved_url": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401866458",
+      "status": "CAPTURED",
+      "stored_sha256": "943892c159c1037b5a5549783ef270f6eac7d264bce701e433cadedd0a236649"
+    },
+    {
+      "endpoint": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary",
+      "http_status": 200,
+      "name": "espn-401866459",
+      "parameters": {
+        "event": "401866459"
+      },
+      "parser_version": "week11-postgame-v1",
+      "path": "espn-401866459.json.gz",
+      "provider": "ESPN",
+      "raw_bytes": 565500,
+      "raw_sha256": "eca8a15e1a92729d6205052c071b75c7288adc5ee171780409f37a43821fe294",
+      "received_at_utc": "2026-11-16T15:35:59.010670+00:00",
+      "records": null,
+      "requested_at_utc": "2026-11-16T15:35:58.611873+00:00",
+      "resolved_url": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401866459",
+      "status": "CAPTURED",
+      "stored_sha256": "343c121b743c0b5329225c7a6e1e5d30ef12d1211a33a2742b24b7619c167efe"
+    },
+    {
+      "endpoint": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary",
+      "http_status": 200,
+      "name": "espn-401866460",
+      "parameters": {
+        "event": "401866460"
+      },
+      "parser_version": "week11-postgame-v1",
+      "path": "espn-401866460.json.gz",
+      "provider": "ESPN",
+      "raw_bytes": 579340,
+      "raw_sha256": "2dd332ed6cbb89159f829488d3e37174475ec27355556e51cc923ee4acce2bb6",
+      "received_at_utc": "2026-11-16T15:35:58.825065+00:00",
+      "records": null,
+      "requested_at_utc": "2026-11-16T15:35:58.672267+00:00",
+      "resolved_url": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401866460",
+      "status": "CAPTURED",
+      "stored_sha256": "bdd6abb24c51e85e713ad5dcd149cf6fbd02954c51bb10e10672cd189b0a6eb1"
+    },
+    {
+      "endpoint": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary",
+      "http_status": 200,
+      "name": "espn-401866461",
+      "parameters": {
+        "event": "401866461"
+      },
+      "parser_version": "week11-postgame-v1",
+      "path": "espn-401866461.json.gz",
+      "provider": "ESPN",
+      "raw_bytes": 520902,
+      "raw_sha256": "3ab41449f1a4efc810b95f680620bf62cdc6144167a5268dc7ebea39f7c759ce",
+      "received_at_utc": "2026-11-16T15:35:59.001331+00:00",
+      "records": null,
+      "requested_at_utc": "2026-11-16T15:35:58.722786+00:00",
+      "resolved_url": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401866461",
+      "status": "CAPTURED",
+      "stored_sha256": "ed6615194557368b453965988557e1c101cf095ca4f278cd84b64ca0fba02fbf"
+    },
+    {
+      "endpoint": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary",
+      "http_status": 200,
+      "name": "espn-401866462",
+      "parameters": {
+        "event": "401866462"
+      },
+      "parser_version": "week11-postgame-v1",
+      "path": "espn-401866462.json.gz",
+      "provider": "ESPN",
+      "raw_bytes": 474519,
+      "raw_sha256": "9eb34f2541059005116ead6d221b251c7795a63ed7f81b5f513d0afc52e90c44",
+      "received_at_utc": "2026-11-16T15:35:58.920136+00:00",
+      "records": null,
+      "requested_at_utc": "2026-11-16T15:35:58.746754+00:00",
+      "resolved_url": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401866462",
+      "status": "CAPTURED",
+      "stored_sha256": "a98fb2421bbdf7b9ce1a12cc9ebe31ed6723b07aa90475d3c8cb919c3693b6d4"
+    },
+    {
+      "endpoint": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary",
+      "http_status": 200,
+      "name": "espn-401866463",
+      "parameters": {
+        "event": "401866463"
+      },
+      "parser_version": "week11-postgame-v1",
+      "path": "espn-401866463.json.gz",
+      "provider": "ESPN",
+      "raw_bytes": 477925,
+      "raw_sha256": "dbc8132324941f0344369b9612ddc8bd5a7a25a34290f65323cc6eecd71e6f4a",
+      "received_at_utc": "2026-11-16T15:35:59.057204+00:00",
+      "records": null,
+      "requested_at_utc": "2026-11-16T15:35:58.796346+00:00",
+      "resolved_url": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401866463",
+      "status": "CAPTURED",
+      "stored_sha256": "d061df4766c3979a2a24e9788a248863f558a2618dee1d3a8a104b2fd8b81fd2"
+    },
+    {
+      "endpoint": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary",
+      "http_status": 200,
+      "name": "espn-401869928",
+      "parameters": {
+        "event": "401869928"
+      },
+      "parser_version": "week11-postgame-v1",
+      "path": "espn-401869928.json.gz",
+      "provider": "ESPN",
+      "raw_bytes": 552005,
+      "raw_sha256": "55e89ab7c6421b0de8939cda8ef74c826805aaa3e1f7ac5ba88183ab3e268423",
+      "received_at_utc": "2026-11-16T15:35:59.153237+00:00",
+      "records": null,
+      "requested_at_utc": "2026-11-16T15:35:58.840707+00:00",
+      "resolved_url": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401869928",
+      "status": "CAPTURED",
+      "stored_sha256": "1916b5a1c4f6d2f16d052e9326c15c2a854e3757be335ca084e1f7e4b20b25d5"
+    },
+    {
+      "endpoint": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary",
+      "http_status": 200,
+      "name": "espn-401869937",
+      "parameters": {
+        "event": "401869937"
+      },
+      "parser_version": "week11-postgame-v1",
+      "path": "espn-401869937.json.gz",
+      "provider": "ESPN",
+      "raw_bytes": 504516,
+      "raw_sha256": "c48d77769e2e224839e27b2101a9b0ff974f08ddabed5a450df64eac2e29d102",
+      "received_at_utc": "2026-11-16T15:35:59.128546+00:00",
+      "records": null,
+      "requested_at_utc": "2026-11-16T15:35:58.840707+00:00",
+      "resolved_url": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401869937",
+      "status": "CAPTURED",
+      "stored_sha256": "f26d3dc6c383556935fa61b9dae760300a104878fbb144777f5b64a51a11a96b"
+    },
+    {
+      "endpoint": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary",
+      "http_status": 200,
+      "name": "espn-401869952",
+      "parameters": {
+        "event": "401869952"
+      },
+      "parser_version": "week11-postgame-v1",
+      "path": "espn-401869952.json.gz",
+      "provider": "ESPN",
+      "raw_bytes": 541100,
+      "raw_sha256": "ea9edd36a1fa19e26f449301aa367949b4154e39a5c5dca632d7fb1853e95155",
+      "received_at_utc": "2026-11-16T15:35:59.137570+00:00",
+      "records": null,
+      "requested_at_utc": "2026-11-16T15:35:58.938995+00:00",
+      "resolved_url": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401869952",
+      "status": "CAPTURED",
+      "stored_sha256": "58cff2ad63ddc239d45ebd17014f535f930d91d9f28ee8e116fe3e0642c6beaa"
+    },
+    {
+      "endpoint": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary",
+      "http_status": 200,
+      "name": "espn-401869969",
+      "parameters": {
+        "event": "401869969"
+      },
+      "parser_version": "week11-postgame-v1",
+      "path": "espn-401869969.json.gz",
+      "provider": "ESPN",
+      "raw_bytes": 507525,
+      "raw_sha256": "b16b9166bd43f9a2fc9eea5b916071728364f1384a9386d0259fdd8a8efaddb4",
+      "received_at_utc": "2026-11-16T15:35:59.310460+00:00",
+      "records": null,
+      "requested_at_utc": "2026-11-16T15:35:59.010670+00:00",
+      "resolved_url": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401869969",
+      "status": "CAPTURED",
+      "stored_sha256": "9c97d3211d27e940321d309013fd14b197fb6f088d6221b19b6f1883a23af78e"
+    },
+    {
+      "endpoint": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary",
+      "http_status": 200,
+      "name": "espn-401870752",
+      "parameters": {
+        "event": "401870752"
+      },
+      "parser_version": "week11-postgame-v1",
+      "path": "espn-401870752.json.gz",
+      "provider": "ESPN",
+      "raw_bytes": 528495,
+      "raw_sha256": "778a8a6d45d3e9be12ffa73a4075e53ca23fa3824e12c4862064d2380a606683",
+      "received_at_utc": "2026-11-16T15:35:59.310460+00:00",
+      "records": null,
+      "requested_at_utc": "2026-11-16T15:35:59.025691+00:00",
+      "resolved_url": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401870752",
+      "status": "CAPTURED",
+      "stored_sha256": "29c653b01ab3cf2b4ce4cae1680544ea5ed6185ba0acfe1582829f62ddbd63ca"
+    },
+    {
+      "endpoint": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary",
+      "http_status": 200,
+      "name": "espn-401870769",
+      "parameters": {
+        "event": "401870769"
+      },
+      "parser_version": "week11-postgame-v1",
+      "path": "espn-401870769.json.gz",
+      "provider": "ESPN",
+      "raw_bytes": 501771,
+      "raw_sha256": "47b9ace92dd40ee7f0b9fb83d04105142be84e5498d1f0ce68ef8cde233ef78d",
+      "received_at_utc": "2026-11-16T15:35:59.421212+00:00",
+      "records": null,
+      "requested_at_utc": "2026-11-16T15:35:59.073298+00:00",
+      "resolved_url": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401870769",
+      "status": "CAPTURED",
+      "stored_sha256": "509277562ae590914f87de89c43bf47ac2450662eaa08055d23980193b286bed"
+    },
+    {
+      "endpoint": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary",
+      "http_status": 200,
+      "name": "espn-401870796",
+      "parameters": {
+        "event": "401870796"
+      },
+      "parser_version": "week11-postgame-v1",
+      "path": "espn-401870796.json.gz",
+      "provider": "ESPN",
+      "raw_bytes": 574511,
+      "raw_sha256": "976bccd0c3555a68adfdfd8436adb81360204db5f9009570eb0e4d2eaa1d9a02",
+      "received_at_utc": "2026-11-16T15:35:59.389537+00:00",
+      "records": null,
+      "requested_at_utc": "2026-11-16T15:35:59.137570+00:00",
+      "resolved_url": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401870796",
+      "status": "CAPTURED",
+      "stored_sha256": "130e0196078ec00ffb028d64ac76a100c73f02a31c5ee6052f4a6435ff3a7222"
+    },
+    {
+      "endpoint": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary",
+      "http_status": 200,
+      "name": "espn-401871060",
+      "parameters": {
+        "event": "401871060"
+      },
+      "parser_version": "week11-postgame-v1",
+      "path": "espn-401871060.json.gz",
+      "provider": "ESPN",
+      "raw_bytes": 485958,
+      "raw_sha256": "2b63cbe0421281a3e51dafa270504c4a1d02e62ad10ffc0f40a13af7add4ab5e",
+      "received_at_utc": "2026-11-16T15:35:59.484909+00:00",
+      "records": null,
+      "requested_at_utc": "2026-11-16T15:35:59.137570+00:00",
+      "resolved_url": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401871060",
+      "status": "CAPTURED",
+      "stored_sha256": "96221fd14d10b070a65003c5c8d584f68104d0ece9aae1e3afd9b92b090d6c23"
+    },
+    {
+      "endpoint": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary",
+      "http_status": 200,
+      "name": "espn-401871061",
+      "parameters": {
+        "event": "401871061"
+      },
+      "parser_version": "week11-postgame-v1",
+      "path": "espn-401871061.json.gz",
+      "provider": "ESPN",
+      "raw_bytes": 492327,
+      "raw_sha256": "89bcbe5dd99ae1875ca003ad4a27e64e12908c7e2895e6c11741399920474cee",
+      "received_at_utc": "2026-11-16T15:35:59.373483+00:00",
+      "records": null,
+      "requested_at_utc": "2026-11-16T15:35:59.168858+00:00",
+      "resolved_url": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401871061",
+      "status": "CAPTURED",
+      "stored_sha256": "f63106988be1732239ab9ac9b33ed5645a4638d5a0f7dd294e4398be30852143"
+    },
+    {
+      "endpoint": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary",
+      "http_status": 200,
+      "name": "espn-401871099",
+      "parameters": {
+        "event": "401871099"
+      },
+      "parser_version": "week11-postgame-v1",
+      "path": "espn-401871099.json.gz",
+      "provider": "ESPN",
+      "raw_bytes": 644224,
+      "raw_sha256": "bc9f7dd03d3879c8be82006d6551df25e009bbe76e938538477dd8d905bfb5e8",
+      "received_at_utc": "2026-11-16T15:35:59.511754+00:00",
+      "records": null,
+      "requested_at_utc": "2026-11-16T15:35:59.310460+00:00",
+      "resolved_url": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401871099",
+      "status": "CAPTURED",
+      "stored_sha256": "16d1c02ace358e83a674a5f707638ff891c132a9af6d1278e2c1f7a05d6cdf71"
+    },
+    {
+      "endpoint": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary",
+      "http_status": 200,
+      "name": "espn-401871100",
+      "parameters": {
+        "event": "401871100"
+      },
+      "parser_version": "week11-postgame-v1",
+      "path": "espn-401871100.json.gz",
+      "provider": "ESPN",
+      "raw_bytes": 530613,
+      "raw_sha256": "f3bdb703d70a51b415c36e99f0d4da71284963a8c64e989f752e724ba2e609e2",
+      "received_at_utc": "2026-11-16T15:35:59.577528+00:00",
+      "records": null,
+      "requested_at_utc": "2026-11-16T15:35:59.326117+00:00",
+      "resolved_url": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/summary?event=401871100",
+      "status": "CAPTURED",
+      "stored_sha256": "b48929a86be4fda0dd9a0e6020151561bf73ff446c9ec85ad5f6954f1fb8ee54"
+    },
+    {
+      "endpoint": "https://api.collegefootballdata.com/games",
+      "http_status": 200,
+      "name": "cfbd-games",
+      "parameters": {
+        "seasonType": "regular",
+        "week": 11,
+        "year": 2026
+      },
+      "parser_version": "week11-postgame-v1",
+      "path": "cfbd-games.json.gz",
+      "provider": "CFBD",
+      "raw_bytes": 247331,
+      "raw_sha256": "02a94ea7fe1593716547758e8467e741e09471675f7083c3629dd8e83093f91c",
+      "received_at_utc": "2026-11-16T15:35:59.814893+00:00",
+      "records": 323,
+      "requested_at_utc": "2026-11-16T15:35:59.389537+00:00",
+      "resolved_url": "https://api.collegefootballdata.com/games?year=2026&week=11&seasonType=regular",
+      "status": "CAPTURED",
+      "stored_sha256": "5e7e8c13eaeb51355fec9999efe5c260a72b914711c41926b3362f2621c2c9af"
+    },
+    {
+      "endpoint": "https://api.collegefootballdata.com/games/teams",
+      "http_status": 200,
+      "name": "cfbd-team-stats",
+      "parameters": {
+        "seasonType": "regular",
+        "week": 11,
+        "year": 2026
+      },
+      "parser_version": "week11-postgame-v1",
+      "path": "cfbd-team-stats.json.gz",
+      "provider": "CFBD",
+      "raw_bytes": 366428,
+      "raw_sha256": "bf6b26b3712c4c1dbe37e104ea4be59558cc4cde164f260770343871d2608e63",
+      "received_at_utc": "2026-11-16T15:35:59.956908+00:00",
+      "records": 130,
+      "requested_at_utc": "2026-11-16T15:35:59.406704+00:00",
+      "resolved_url": "https://api.collegefootballdata.com/games/teams?year=2026&week=11&seasonType=regular",
+      "status": "CAPTURED",
+      "stored_sha256": "1237902a0d5bbce17dad9675c54c4df03957f6004715572c5b2b1802f58fb39c"
+    },
+    {
+      "endpoint": "https://api.collegefootballdata.com/games/players",
+      "http_status": 200,
+      "name": "cfbd-player-stats",
+      "parameters": {
+        "seasonType": "regular",
+        "week": 11,
+        "year": 2026
+      },
+      "parser_version": "week11-postgame-v1",
+      "path": "cfbd-player-stats.json.gz",
+      "provider": "CFBD",
+      "raw_bytes": 3737789,
+      "raw_sha256": "13c152fa30f5d51a35d87d2b5de1b2b770af032a6590dc6a74a42ac8066ab6c2",
+      "received_at_utc": "2026-11-16T15:36:03.934291+00:00",
+      "records": 130,
+      "requested_at_utc": "2026-11-16T15:35:59.421212+00:00",
+      "resolved_url": "https://api.collegefootballdata.com/games/players?year=2026&week=11&seasonType=regular",
+      "status": "CAPTURED",
+      "stored_sha256": "1b5efd55379cc4757b0d6dee03f696a30e7d53e9dd0c40110d570204b2edb9c3"
+    },
+    {
+      "endpoint": "https://api.collegefootballdata.com/stats/game/advanced",
+      "http_status": 200,
+      "name": "cfbd-advanced",
+      "parameters": {
+        "excludeGarbageTime": "false",
+        "seasonType": "regular",
+        "week": 11,
+        "year": 2026
+      },
+      "parser_version": "week11-postgame-v1",
+      "path": "cfbd-advanced.json.gz",
+      "provider": "CFBD",
+      "raw_bytes": 481723,
+      "raw_sha256": "d7cdc34c291b60b7baed4a938c5fb3663a97968130ae59bc77b58452ea3f1ad9",
+      "received_at_utc": "2026-11-16T15:36:01.365034+00:00",
+      "records": 260,
+      "requested_at_utc": "2026-11-16T15:35:59.493239+00:00",
+      "resolved_url": "https://api.collegefootballdata.com/stats/game/advanced?year=2026&week=11&seasonType=regular&excludeGarbageTime=false",
+      "status": "CAPTURED",
+      "stored_sha256": "b894c14a82f6bea3cb5825cd72a1b38bf21af1930f6e2e4f9e66774093468e8e"
+    },
+    {
+      "endpoint": "https://api.collegefootballdata.com/drives",
+      "http_status": 200,
+      "name": "cfbd-drives",
+      "parameters": {
+        "seasonType": "regular",
+        "week": 11,
+        "year": 2026
+      },
+      "parser_version": "week11-postgame-v1",
+      "path": "cfbd-drives.json.gz",
+      "provider": "CFBD",
+      "raw_bytes": 1693657,
+      "raw_sha256": "a39e0d340140c7b1a3949271d0125d23d3527bc12e4b57f5a491045bd5e3f8ce",
+      "received_at_utc": "2026-11-16T15:36:03.621590+00:00",
+      "records": 3074,
+      "requested_at_utc": "2026-11-16T15:35:59.517693+00:00",
+      "resolved_url": "https://api.collegefootballdata.com/drives?year=2026&week=11&seasonType=regular",
+      "status": "CAPTURED",
+      "stored_sha256": "a7229227a5d641a8df22e84196ee723ad1b96e245551d1a8f814b07799c7b6e5"
+    },
+    {
+      "endpoint": "https://api.collegefootballdata.com/plays",
+      "http_status": 200,
+      "name": "cfbd-plays",
+      "parameters": {
+        "seasonType": "regular",
+        "week": 11,
+        "year": 2026
+      },
+      "parser_version": "week11-postgame-v1",
+      "path": "cfbd-plays.json.gz",
+      "provider": "CFBD",
+      "raw_bytes": 15043153,
+      "raw_sha256": "0dc759c8c6938be18de51cdaebe6cb36e179d592d52e5514064ac09555c3d0fd",
+      "received_at_utc": "2026-11-16T15:36:04.595137+00:00",
+      "records": 22893,
+      "requested_at_utc": "2026-11-16T15:35:59.593148+00:00",
+      "resolved_url": "https://api.collegefootballdata.com/plays?year=2026&week=11&seasonType=regular",
+      "status": "CAPTURED",
+      "stored_sha256": "ea27457532977dcdf22b65985847b3b5054de5a69148a00afa69e40c2052acdf"
+    },
+    {
+      "endpoint": "https://api.collegefootballdata.com/lines",
+      "http_status": 200,
+      "name": "cfbd-lines",
+      "parameters": {
+        "seasonType": "regular",
+        "week": 11,
+        "year": 2026
+      },
+      "parser_version": "week11-postgame-v1",
+      "path": "cfbd-lines.json.gz",
+      "provider": "CFBD",
+      "raw_bytes": 76601,
+      "raw_sha256": "ed3494f409ac446b7ed84d5576484f1528a87d1063234fc7f190b6c0af2874da",
+      "received_at_utc": "2026-11-16T15:36:03.840010+00:00",
+      "records": 129,
+      "requested_at_utc": "2026-11-16T15:35:59.830549+00:00",
+      "resolved_url": "https://api.collegefootballdata.com/lines?year=2026&week=11&seasonType=regular",
+      "status": "CAPTURED",
+      "stored_sha256": "a43e542134344f249f0ffa1dbf430bbaeabb4f6f2655fd13bc2dbc8a1bc3c46a"
+    }
+  ],
+  "request_failures": [],
+  "required_game_ids": [
+    "401856857",
+    "401856858",
+    "401856859",
+    "401856860",
+    "401856861",
+    "401856862",
+    "401856863",
+    "401856864",
+    "401856882",
+    "401856883",
+    "401856884",
+    "401856885",
+    "401856886",
+    "401856887",
+    "401856888",
+    "401856889",
+    "401858293",
+    "401858294",
+    "401858295",
+    "401858296",
+    "401858297",
+    "401858298",
+    "401858299",
+    "401858300",
+    "401858301",
+    "401858518",
+    "401858519",
+    "401858520",
+    "401858521",
+    "401858522",
+    "401858523",
+    "401858524",
+    "401858525",
+    "401858526",
+    "401860914",
+    "401860915",
+    "401860916",
+    "401860917",
+    "401861967",
+    "401862824",
+    "401862825",
+    "401862826",
+    "401862827",
+    "401862828",
+    "401862829",
+    "401864536",
+    "401864537",
+    "401864538",
+    "401864539",
+    "401864540",
+    "401866458",
+    "401866459",
+    "401866460",
+    "401866461",
+    "401866462",
+    "401866463",
+    "401869928",
+    "401869937",
+    "401869952",
+    "401869969",
+    "401870752",
+    "401870769",
+    "401870796",
+    "401871060",
+    "401871061",
+    "401871099",
+    "401871100"
+  ],
+  "season": 2026,
+  "source_commit": "d3ba84db74b67a6e4dd8d61e49f28c0759d3a34e",
+  "status": "CAPTURED_REQUIRES_RECONCILIATION",
+  "version": "week11-postgame-v1",
+  "week": 11
+}

@@ -1,0 +1,2722 @@
+[
+  {
+    "away": "Iowa State",
+    "current": "15 mph NNE;15 mph NNE;15 mph NNE",
+    "field": "wind",
+    "game_id": "401856869",
+    "home": "UCF",
+    "previous": "15 mph NE;15 mph NE;15 mph NE"
+  },
+  {
+    "away": "Iowa State",
+    "current": "59;55;52",
+    "field": "precipitation_probability",
+    "game_id": "401856869",
+    "home": "UCF",
+    "previous": "32;63;63"
+  },
+  {
+    "away": "Iowa State",
+    "current": "Showers And Thunderstorms Likely;Showers And Thunderstorms Likely;Chance Showers And Thunderstorms",
+    "field": "weather_description",
+    "game_id": "401856869",
+    "home": "UCF",
+    "previous": "Chance Rain Showers;Rain Showers Likely;Rain Showers Likely"
+  },
+  {
+    "away": "Iowa State",
+    "current": "2026-11-20T14:03:11+00:00",
+    "field": "forecast_issued_utc",
+    "game_id": "401856869",
+    "home": "UCF",
+    "previous": "2026-11-19T14:04:29+00:00"
+  },
+  {
+    "away": "Bowling Green",
+    "current": "52;50;49;48",
+    "field": "temperature_f",
+    "game_id": "401866468",
+    "home": "Toledo",
+    "previous": "50;49;48;47"
+  },
+  {
+    "away": "Bowling Green",
+    "current": "3 mph S;3 mph S;3 mph S;5 mph S",
+    "field": "wind",
+    "game_id": "401866468",
+    "home": "Toledo",
+    "previous": "2 mph SE;2 mph S;2 mph S;3 mph S"
+  },
+  {
+    "away": "Bowling Green",
+    "current": "Clear;Clear;Clear;Clear",
+    "field": "weather_description",
+    "game_id": "401866468",
+    "home": "Toledo",
+    "previous": "Mostly Clear;Clear;Clear;Clear"
+  },
+  {
+    "away": "Bowling Green",
+    "current": "2026-11-20T14:01:27+00:00",
+    "field": "forecast_issued_utc",
+    "game_id": "401866468",
+    "home": "Toledo",
+    "previous": "2026-11-19T14:01:24+00:00"
+  },
+  {
+    "away": "Bowling Green",
+    "current": "1",
+    "field": "home_official_recent_articles",
+    "game_id": "401866468",
+    "home": "Toledo",
+    "previous": "2"
+  },
+  {
+    "away": "Bowling Green",
+    "current": "https://utrockets.com/news/2026/11/18/football-toledo-welcomes-bowling-green-to-the-glass-bowl-for-battle-of-i-75",
+    "field": "home_article_sources",
+    "game_id": "401866468",
+    "home": "Toledo",
+    "previous": "https://utrockets.com/news/2026/11/12/football-utoledo-bgsu-student-veterans-to-hold-fourth-annual-ruck-the-ball-march;https://utrockets.com/news/2026/11/18/football-toledo-welcomes-bowling-green-to-the-glass-bowl-for-battle-of-i-75"
+  },
+  {
+    "away": "Clemson",
+    "current": "52;50;48;47",
+    "field": "temperature_f",
+    "game_id": "401858303",
+    "home": "Duke",
+    "previous": "53;51;49;48"
+  },
+  {
+    "away": "Clemson",
+    "current": "3 mph NE;3 mph NE;2 mph NE;2 mph NE",
+    "field": "wind",
+    "game_id": "401858303",
+    "home": "Duke",
+    "previous": "2 mph NE;2 mph NE;2 mph NE;2 mph NE"
+  },
+  {
+    "away": "Clemson",
+    "current": "2026-11-20T14:01:26+00:00",
+    "field": "forecast_issued_utc",
+    "game_id": "401858303",
+    "home": "Duke",
+    "previous": "2026-11-19T14:04:29+00:00"
+  },
+  {
+    "away": "Clemson",
+    "current": "OL #50 Collin Sadler: Available;OL #51 Gavin Blanchard: Available;OL #52 Elyjah Thurmon: Available;OL #54 Ian Reed: Available;OL #55 Harris Sewell: Probable;OL #62 Bryce Smith: Available;OL #63 Easton Ware: Out;OL #64 Grant Wise: Available;OL #65 Chapman Pendergrass: Available;OL #67 Carlito Jones: Available;OL #70 Chance Barclay: Available;OL #71 Leo Delaney: Available;OL #72 Adam Guthrie: Exempt;OL #73 Hayes Galloway: Available;OL #74 Brayden Jacobs: Available;OL #75 Tucker Kattus: Available;OL #76 Mason Wade: Out;OL #77 Ronan O'Connell: Available;OL #78 Carter Scruggs: Available;OL #79 Braden Wilmes: Out",
+    "field": "away_ol_report",
+    "game_id": "401858303",
+    "home": "Duke",
+    "previous": "OL #50 Collin Sadler: Available;OL #51 Gavin Blanchard: Available;OL #52 Elyjah Thurmon: Available;OL #54 Ian Reed: Available;OL #55 Harris Sewell: Probable;OL #62 Bryce Smith: Available;OL #63 Easton Ware: Questionable;OL #64 Grant Wise: Available;OL #65 Chapman Pendergrass: Available;OL #67 Carlito Jones: Available;OL #70 Chance Barclay: Available;OL #71 Leo Delaney: Available;OL #72 Adam Guthrie: Exempt;OL #73 Hayes Galloway: Available;OL #74 Brayden Jacobs: Available;OL #75 Tucker Kattus: Available;OL #76 Mason Wade: Out;OL #77 Ronan O'Connell: Available;OL #78 Carter Scruggs: Available;OL #79 Braden Wilmes: Out"
+  },
+  {
+    "away": "Clemson",
+    "current": "CB #0 Donovan Starr: Out;CB #1 Branden Strozier: Available;CB #2 Ashton Hampton: Available;CB #3 Elliot Washington II: Questionable;S #5 Ronan Hanafin: Available;S #6 Jerome Carter III: Available;LB #7 Jeremiah Alexander: Out;CB #8 Corian Gipson: Out;LB #9 Drew Woodaz: Available;DB #10 Misun Kelley: Available;S #11 Polo Anderson: Out;CB #12 Shavar Young Jr.: Out;DE #13 Will Heldt: Available;DE #14 London Merritt: Available;DE #15 Jahiem Lawson: Available;CB #16 Myles Oliver: Available;DE #17 Ari Watford: Available;S #18 Kylon Griffin: Available;LB #19 Brayden Reilly: Available;S #20 Jakarrion Kenan: Available;LB #21 Kobe McCloud: Available;S #22 Corey Myrick: Available;DE #23 C.J. Wesley: Available;LB #24 Logan Anderson: Available;CB #25 Marcell Gipson Jr.: Available;LB #26 C.J. Kubah-Taylor: Available;S #27 Noah Dixon: Available;DT #29 Champ Thompson: Out;S #30 Kylen Webb: Available;S #31 Joe Wilkinson: Available;DE #32 Michael Foster: Available;DL #33 Caden Story: Available;DE #34 Armon Mason: Exempt;DB #35 Tyler Conner: Available;CB #37 Davion Joyner: Available;LB #38 Dominic Staten: Available;LB #39 J.D. Bonamy: Available;DE #41 Connor McFadden: Available;DT #42 Hevin Brown-Shuler: Exempt;LB #43 Billy Wilkes: Available;DT #44 Kourtney Kelly: Available;DT #45 Vic Burley: Out;LB #47 Sammy Brown: Available;DE #49 Darien Mayo: Available;LB #50 Fletcher Cothran: Available;LB #53 Joseph Roberto II: Exempt;DT #54 Kam Cody: Available;DT #55 Makhi Williams Lee: Available;DT #56 Andy Burburija: Available;DE #90 J.R. Hardrick: Available;DT #91 Dietrick Pennington: Available;DT #92 Devarrick Woods: Available;DT #95 Amare Adams: Available;DT #97 Patrick Swygert: Available;DT #99 Markus Strong: Out",
+    "field": "away_defense_report",
+    "game_id": "401858303",
+    "home": "Duke",
+    "previous": "CB #0 Donovan Starr: Out;CB #1 Branden Strozier: Available;CB #2 Ashton Hampton: Available;CB #3 Elliot Washington II: Questionable;S #5 Ronan Hanafin: Available;S #6 Jerome Carter III: Available;LB #7 Jeremiah Alexander: Questionable;CB #8 Corian Gipson: Out;LB #9 Drew Woodaz: Available;DB #10 Misun Kelley: Available;S #11 Polo Anderson: Out;CB #12 Shavar Young Jr.: Out;DE #13 Will Heldt: Available;DE #14 London Merritt: Available;DE #15 Jahiem Lawson: Available;CB #16 Myles Oliver: Available;DE #17 Ari Watford: Available;S #18 Kylon Griffin: Available;LB #19 Brayden Reilly: Available;S #20 Jakarrion Kenan: Available;LB #21 Kobe McCloud: Available;S #22 Corey Myrick: Available;DE #23 C.J. Wesley: Available;LB #24 Logan Anderson: Available;CB #25 Marcell Gipson Jr.: Available;LB #26 C.J. Kubah-Taylor: Available;S #27 Noah Dixon: Available;DT #29 Champ Thompson: Questionable;S #30 Kylen Webb: Available;S #31 Joe Wilkinson: Available;DE #32 Michael Foster: Available;DL #33 Caden Story: Available;DE #34 Armon Mason: Exempt;DB #35 Tyler Conner: Available;CB #37 Davion Joyner: Available;LB #38 Dominic Staten: Available;LB #39 J.D. Bonamy: Available;DE #41 Connor McFadden: Available;DT #42 Hevin Brown-Shuler: Exempt;LB #43 Billy Wilkes: Available;DT #44 Kourtney Kelly: Available;DT #45 Vic Burley: Out;LB #47 Sammy Brown: Available;DE #49 Darien Mayo: Available;LB #50 Fletcher Cothran: Available;LB #53 Joseph Roberto II: Exempt;DT #54 Kam Cody: Available;DT #55 Makhi Williams Lee: Available;DT #56 Andy Burburija: Available;DE #90 J.R. Hardrick: Available;DT #91 Dietrick Pennington: Available;DT #92 Devarrick Woods: Available;DT #95 Amare Adams: Available;DT #97 Patrick Swygert: Available;DT #99 Markus Strong: Out"
+  },
+  {
+    "away": "Clemson",
+    "current": "https://goduke.com/news/2026/11/14/football-no-5-miami-holds-off-duke-36-25;https://goduke.com/news/2026/11/15/football-duke-returns-to-coaches-top-25-poll;https://goduke.com/news/2026/11/16/football-duke-at-wake-forest-kick-set-for-3-or-3-30-pm;https://goduke.com/news/2026/11/16/football-sheppard-named-acc-co-running-back-of-the-week;https://goduke.com/news/2026/11/17/football-sheppard-a-doak-walker-award-semifinalist;https://goduke.com/news/2026/11/18/football-the-talk-of-the-town;https://goduke.com/news/2026/11/19/football-senior-night-set-for-friday",
+    "field": "home_article_sources",
+    "game_id": "401858303",
+    "home": "Duke",
+    "previous": "https://goduke.com/news/2026/11/12/football-the-nate-sheppard-mentality;https://goduke.com/news/2026/11/14/football-no-5-miami-holds-off-duke-36-25;https://goduke.com/news/2026/11/15/football-duke-returns-to-coaches-top-25-poll;https://goduke.com/news/2026/11/16/football-duke-at-wake-forest-kick-set-for-3-or-3-30-pm;https://goduke.com/news/2026/11/16/football-sheppard-named-acc-co-running-back-of-the-week;https://goduke.com/news/2026/11/17/football-sheppard-a-doak-walker-award-semifinalist;https://goduke.com/news/2026/11/18/football-the-talk-of-the-town"
+  },
+  {
+    "away": "UTEP",
+    "current": "41;36;32",
+    "field": "temperature_f",
+    "game_id": "401864545",
+    "home": "Air Force",
+    "previous": "42;38;36"
+  },
+  {
+    "away": "UTEP",
+    "current": "5 mph WSW;5 mph WNW;5 mph WNW",
+    "field": "wind",
+    "game_id": "401864545",
+    "home": "Air Force",
+    "previous": "5 mph WSW;5 mph WSW;5 mph W"
+  },
+  {
+    "away": "UTEP",
+    "current": "0;0;0",
+    "field": "precipitation_probability",
+    "game_id": "401864545",
+    "home": "Air Force",
+    "previous": "2;2;2"
+  },
+  {
+    "away": "UTEP",
+    "current": "Mostly Clear;Partly Cloudy;Partly Cloudy",
+    "field": "weather_description",
+    "game_id": "401864545",
+    "home": "Air Force",
+    "previous": "Mostly Clear;Mostly Clear;Partly Cloudy"
+  },
+  {
+    "away": "UTEP",
+    "current": "2026-11-20T14:03:11+00:00",
+    "field": "forecast_issued_utc",
+    "game_id": "401864545",
+    "home": "Air Force",
+    "previous": "2026-11-19T14:04:29+00:00"
+  },
+  {
+    "away": "Oregon",
+    "current": "53;52;51",
+    "field": "temperature_f",
+    "game_id": "401858529",
+    "home": "Michigan State",
+    "previous": "50;49;49"
+  },
+  {
+    "away": "Oregon",
+    "current": "6 mph S;6 mph S;6 mph S",
+    "field": "wind",
+    "game_id": "401858529",
+    "home": "Michigan State",
+    "previous": "5 mph S;5 mph S;6 mph S"
+  },
+  {
+    "away": "Oregon",
+    "current": "2026-11-20T14:01:33+00:00",
+    "field": "forecast_issued_utc",
+    "game_id": "401858529",
+    "home": "Michigan State",
+    "previous": "2026-11-19T14:04:29+00:00"
+  },
+  {
+    "away": "Oregon",
+    "current": "https://goducks.com/news/2026/11/14/football-dominant-ducks-maintain-momentum-beat-michigan;https://goducks.com/news/2026/11/16/football-ducks-head-to-east-lansing-for-friday-night-showdown;https://goducks.com/news/2026/11/17/football-ducks-keep-climbing-up-to-no-13-in-cfp-rankings;https://goducks.com/news/2026/11/19/football-nfl-producks-week-10",
+    "field": "away_article_sources",
+    "game_id": "401858529",
+    "home": "Michigan State",
+    "previous": "https://goducks.com/news/2026/11/14/football-dominant-ducks-maintain-momentum-beat-michigan;https://goducks.com/news/2026/11/16/football-ducks-head-to-east-lansing-for-friday-night-showdown;https://goducks.com/news/2026/11/16/football-raiola-named-big-ten-offensive-player-of-the-week;https://goducks.com/news/2026/11/17/football-ducks-keep-climbing-up-to-no-13-in-cfp-rankings"
+  },
+  {
+    "away": "Oregon",
+    "current": "CB #0 NiJhay Burt: Available;S #2 Devin Vaught: Out;CB #3 Tre Bell: Questionable;CB #4 Charles Brantley: Available;LB #5 Jordan Hall: Out;S #7 Michael Richard: Questionable;LB #10 DiMari Malone: Available;LB #12 Cam Stodghill: Available;CB #14 Andrew Brinson IV: Available;S #15 Caleb Gash: Available;LB #16 Adam Shaw: Available;S #17 Jonathan Granby: Available;LB #18 Dion Crawford: Available;CB #20 Keshawn Williams: Available;DB #21 Nikai Martinez: Available;CB #22 Tyran Chappell: Doubtful;LB #23 DeJae White: Available;CB #24 Jeremiah Favorite: Available;DL #25 Carlos Hazelwood: Available;S #26 Trevaughn Martinez: Available;CB #27 Truth Umenyiora: Available;S #28 Brayden Thomas: Available;CB #29 KJ Deriso: Available;S #30 Aveon Grose: Available;S #31 Deuce Edwards: Available;S #32 Evan Young: Available;S #34 Khalil Majeed: Available;S #35 Eliyjah Caldwell: Available;LB #39 Jack Lansing III: Available;CB #42 Luca Genrich: Available;LB #44 Caleb Wheatland: Available;LB #45 Brady Pretzlaff: Available;DL #52 Mikeshun Beeler: Available;DL #55 Ben Roberts: Out;DL #57 Hudson Aultman: Available;DL #91 Jackson Pahl: Available;DL #96 Eli Coenen: Available;DL #97 Cal Thrush: Available;DL #98 Derrick Simmons: Available",
+    "field": "home_defense_report",
+    "game_id": "401858529",
+    "home": "Michigan State",
+    "previous": "CB #0 NiJhay Burt: Available;S #2 Devin Vaught: Out;CB #3 Tre Bell: Questionable;CB #4 Charles Brantley: Available;LB #5 Jordan Hall: Out;S #7 Michael Richard: Questionable;LB #10 DiMari Malone: Available;LB #12 Cam Stodghill: Available;CB #14 Andrew Brinson IV: Available;S #15 Caleb Gash: Available;LB #16 Adam Shaw: Available;S #17 Jonathan Granby: Available;LB #18 Dion Crawford: Available;CB #20 Keshawn Williams: Available;DB #21 Nikai Martinez: Available;CB #22 Tyran Chappell: Available;LB #23 DeJae White: Available;CB #24 Jeremiah Favorite: Available;DL #25 Carlos Hazelwood: Available;S #26 Trevaughn Martinez: Available;CB #27 Truth Umenyiora: Available;S #28 Brayden Thomas: Available;CB #29 KJ Deriso: Available;S #30 Aveon Grose: Available;S #31 Deuce Edwards: Available;S #32 Evan Young: Available;S #34 Khalil Majeed: Available;S #35 Eliyjah Caldwell: Available;LB #39 Jack Lansing III: Available;CB #42 Luca Genrich: Available;LB #44 Caleb Wheatland: Available;LB #45 Brady Pretzlaff: Available;DL #52 Mikeshun Beeler: Available;DL #55 Ben Roberts: Out;DL #57 Hudson Aultman: Available;DL #91 Jackson Pahl: Available;DL #96 Eli Coenen: Available;DL #97 Cal Thrush: Available;DL #98 Derrick Simmons: Available"
+  },
+  {
+    "away": "New Mexico",
+    "current": "28;27;25",
+    "field": "temperature_f",
+    "game_id": "401864542",
+    "home": "Wyoming",
+    "previous": "29;27;27"
+  },
+  {
+    "away": "New Mexico",
+    "current": "25 mph WSW;25 mph WSW;20 mph WSW",
+    "field": "wind",
+    "game_id": "401864542",
+    "home": "Wyoming",
+    "previous": "20 mph WSW;20 mph WSW;20 mph WSW"
+  },
+  {
+    "away": "New Mexico",
+    "current": "0;0;0",
+    "field": "precipitation_probability",
+    "game_id": "401864542",
+    "home": "Wyoming",
+    "previous": "2;2;2"
+  },
+  {
+    "away": "New Mexico",
+    "current": "2026-11-20T14:01:42+00:00",
+    "field": "forecast_issued_utc",
+    "game_id": "401864542",
+    "home": "Wyoming",
+    "previous": "2026-11-19T14:04:29+00:00"
+  },
+  {
+    "away": "New Mexico",
+    "current": "7",
+    "field": "home_official_recent_articles",
+    "game_id": "401864542",
+    "home": "Wyoming",
+    "previous": "5"
+  },
+  {
+    "away": "New Mexico",
+    "current": "https://gowyo.com/news/2026/11/13/football-cowboy-classics-utep;https://gowyo.com/news/2026/11/14/football-cowboys-tied-for-first-in-mountain-west-after-win-at-utep;https://gowyo.com/news/2026/11/16/football-cowboys-host-new-mexico-in-a-high-stakes-battle-on-friday-evening;https://gowyo.com/news/2026/11/16/football-pokes-insider-wyoming-cramming-for-weighty-mountain-west-final-exam;https://gowyo.com/news/2026/11/16/football-wyomings-game-time-against-uconn-set-for-10-am;https://gowyo.com/news/2026/11/19/football-cowboy-classics-new-mexico;https://gowyo.com/news/2026/11/19/football-pokes-insider-wyoming-o-line-preparing-for-biggest-test-against-new-mexico",
+    "field": "home_article_sources",
+    "game_id": "401864542",
+    "home": "Wyoming",
+    "previous": "https://gowyo.com/news/2026/11/13/football-cowboy-classics-utep;https://gowyo.com/news/2026/11/14/football-cowboys-tied-for-first-in-mountain-west-after-win-at-utep;https://gowyo.com/news/2026/11/16/football-cowboys-host-new-mexico-in-a-high-stakes-battle-on-friday-evening;https://gowyo.com/news/2026/11/16/football-pokes-insider-wyoming-cramming-for-weighty-mountain-west-final-exam;https://gowyo.com/news/2026/11/16/football-wyomings-game-time-against-uconn-set-for-10-am"
+  },
+  {
+    "away": "BYU",
+    "current": "67;68;69",
+    "field": "temperature_f",
+    "game_id": "401856866",
+    "home": "Kansas",
+    "previous": "64;66;67"
+  },
+  {
+    "away": "BYU",
+    "current": "5;5;8",
+    "field": "precipitation_probability",
+    "game_id": "401856866",
+    "home": "Kansas",
+    "previous": "3;51;51"
+  },
+  {
+    "away": "BYU",
+    "current": "Sunny;Sunny;Sunny",
+    "field": "weather_description",
+    "game_id": "401856866",
+    "home": "Kansas",
+    "previous": "Partly Sunny;Chance Light Rain;Chance Light Rain"
+  },
+  {
+    "away": "BYU",
+    "current": "2026-11-20T14:03:11+00:00",
+    "field": "forecast_issued_utc",
+    "game_id": "401856866",
+    "home": "Kansas",
+    "previous": "2026-11-19T14:04:29+00:00"
+  },
+  {
+    "away": "BYU",
+    "current": "QB #8 Isaiah Marshall: Available;QB #10 Chase Jenkins: Available;QB #15 Cole Ballard: Available;QB #16 Jaylen Mason: Available;QB #18 Braylen Rooney: Available;QB #20 Connor Hanika: Available",
+    "field": "home_qb_report",
+    "game_id": "401856866",
+    "home": "Kansas",
+    "previous": "QB #8 Isaiah Marshall: Available;QB #10 Chase Jenkins: Available;QB #15 Cole Ballard: Probable;QB #16 Jaylen Mason: Available;QB #18 Braylen Rooney: Available;QB #20 Connor Hanika: Available"
+  },
+  {
+    "away": "BYU",
+    "current": "CB #0 Austin Alexander: Available;CB #1 Jalen Todd: Available;CB #2 Syeed Gibbs: Available;S #3 Corey Gordon: Available;LB #4 Trey Lathan: Available;CB #5 Roman Pearson: Available;CB #6 Jahlil Hurley: Exempt;LB #7 Bam Crouch: Available;LB #8 Josh Galbreath: Available;DE #9 Dakyus Brinkley: Available;CB #10 Elijah Cannon: Available;LB #11 Malachi Curvey: Available;S #12 Jaden Harris: Available;LB #13 Quincy Davis: Available;LB #14 Jaron Willis: Exempt;S #16 Brandon Schmelzle: Available;CB #17 Trey Brown: Available;LB #18 Joseph Credit: Available;CB #19 Chris McCorkle: Available;S #20 Christian Pritchett: Available;S #22 Khijohnn Cummings-Coleman: Available;S #23 Mason Ellis: Probable;S #24 Darrion Jones: Available;LB #25 Jibreel Al-Amin: Available;CB #26 Robert Reddick: Available;S #27 Taylor Davis: Available;LB #30 Parker Schwarz: Available;LB #32 Xander Blasing: Available;DE #33 Leroy Harris III: Available;S #34 Dillon Marshall: Available;CB #36 Jameer Moore: Available;S #40 Colter McDaniel: Available;LB #41 Ezra Vedral: Available;DE #44 David Santiago: Available;DE #45 Garrett Martin: Available;DE #50 Wyatt Brungardt: Available;DE #53 Draeden Punt: Available;DT #56 Marcus Calvin: Available;LB #59 Jett Kohanzo: Available;DL #70 Jason Strickland: Available;DT #71 Grady Seyfert: Out;DT #88 Kevin Oatis: Available;DT #89 Clifton Thomas: Available;DE #90 Adrian Holley: Available;DE #91 Alex Bray: Available;DT #92 Nakwaine Carter: Out;DT #93 Josiah Hammond: Available;DT #94 Blake Herold: Available;DT #95 Tre'von McAlpine: Exempt;DT #96 Jibriel Conde: Available;DE #97 Hunter Higgins: Available;DT #98 Jalen Atkins: Available;DT #99 Eamon Smalls: Available",
+    "field": "home_defense_report",
+    "game_id": "401856866",
+    "home": "Kansas",
+    "previous": "CB #0 Austin Alexander: Available;CB #1 Jalen Todd: Available;CB #2 Syeed Gibbs: Available;S #3 Corey Gordon: Available;LB #4 Trey Lathan: Available;CB #5 Roman Pearson: Available;CB #6 Jahlil Hurley: Out;LB #7 Bam Crouch: Available;LB #8 Josh Galbreath: Available;DE #9 Dakyus Brinkley: Available;CB #10 Elijah Cannon: Available;LB #11 Malachi Curvey: Available;S #12 Jaden Harris: Available;LB #13 Quincy Davis: Available;LB #14 Jaron Willis: Exempt;S #16 Brandon Schmelzle: Available;CB #17 Trey Brown: Available;LB #18 Joseph Credit: Available;CB #19 Chris McCorkle: Available;S #20 Christian Pritchett: Available;S #22 Khijohnn Cummings-Coleman: Available;S #23 Mason Ellis: Probable;S #24 Darrion Jones: Available;LB #25 Jibreel Al-Amin: Available;CB #26 Robert Reddick: Available;S #27 Taylor Davis: Available;LB #30 Parker Schwarz: Available;LB #32 Xander Blasing: Available;DE #33 Leroy Harris III: Available;S #34 Dillon Marshall: Available;CB #36 Jameer Moore: Available;S #40 Colter McDaniel: Available;LB #41 Ezra Vedral: Available;DE #44 David Santiago: Available;DE #45 Garrett Martin: Available;DE #50 Wyatt Brungardt: Available;DE #53 Draeden Punt: Available;DT #56 Marcus Calvin: Available;LB #59 Jett Kohanzo: Available;DL #70 Jason Strickland: Available;DT #71 Grady Seyfert: Out;DT #88 Kevin Oatis: Available;DT #89 Clifton Thomas: Available;DE #90 Adrian Holley: Available;DE #91 Alex Bray: Available;DT #92 Nakwaine Carter: Out;DT #93 Josiah Hammond: Available;DT #94 Blake Herold: Available;DT #95 Tre'von McAlpine: Exempt;DT #96 Jibriel Conde: Available;DE #97 Hunter Higgins: Available;DT #98 Jalen Atkins: Available;DT #99 Eamon Smalls: Available"
+  },
+  {
+    "away": "Memphis",
+    "current": "59;60;61",
+    "field": "temperature_f",
+    "game_id": "401862834",
+    "home": "Navy",
+    "previous": "60;61;62"
+  },
+  {
+    "away": "Memphis",
+    "current": "Partly Sunny;Partly Sunny;Partly Sunny",
+    "field": "weather_description",
+    "game_id": "401862834",
+    "home": "Navy",
+    "previous": "Mostly Sunny;Mostly Sunny;Mostly Sunny"
+  },
+  {
+    "away": "Memphis",
+    "current": "2026-11-20T14:03:11+00:00",
+    "field": "forecast_issued_utc",
+    "game_id": "401862834",
+    "home": "Navy",
+    "previous": "2026-11-19T14:04:29+00:00"
+  },
+  {
+    "away": "Memphis",
+    "current": "https://gotigersgo.com/news/2026/11/16/football-memphis-temple-set-for-2-30-pm-kickoff-on-black-friday;https://gotigersgo.com/news/2026/11/16/football-stokes-named-to-davey-o-brien-award-great-8-for-fourth-time-in-2026;https://gotigersgo.com/news/2026/11/16/football-tigers-ranked-at-no-24-in-associated-press-poll-receiving-votes-in-us-lbm-coaches-poll;https://gotigersgo.com/news/2026/11/17/football-davis-picks-up-second-earl-campbell-tyler-rose-award-honorable-mention;https://gotigersgo.com/news/2026/11/17/football-stokes-named-semifinalist-for-davey-o-brien-national-quarterback-award;https://gotigersgo.com/news/2026/11/19/football-no-24-tigers-head-east-to-annapolis-for-saturday-game-at-navy",
+    "field": "away_article_sources",
+    "game_id": "401862834",
+    "home": "Navy",
+    "previous": "https://gotigersgo.com/news/2026/11/16/football-memphis-temple-set-for-2-30-pm-kickoff-on-black-friday;https://gotigersgo.com/news/2026/11/16/football-montgomery-stokes-collect-american-weekly-honorable-mentions;https://gotigersgo.com/news/2026/11/16/football-stokes-named-to-davey-o-brien-award-great-8-for-fourth-time-in-2026;https://gotigersgo.com/news/2026/11/16/football-tigers-ranked-at-no-24-in-associated-press-poll-receiving-votes-in-us-lbm-coaches-poll;https://gotigersgo.com/news/2026/11/17/football-davis-picks-up-second-earl-campbell-tyler-rose-award-honorable-mention;https://gotigersgo.com/news/2026/11/17/football-stokes-named-semifinalist-for-davey-o-brien-national-quarterback-award"
+  },
+  {
+    "away": "Vanderbilt",
+    "current": "70;70;71",
+    "field": "temperature_f",
+    "game_id": "401856748",
+    "home": "Florida",
+    "previous": "73;73;74"
+  },
+  {
+    "away": "Vanderbilt",
+    "current": "12 mph N;12 mph N;12 mph N",
+    "field": "wind",
+    "game_id": "401856748",
+    "home": "Florida",
+    "previous": "13 mph N;13 mph N;13 mph N"
+  },
+  {
+    "away": "Vanderbilt",
+    "current": "9;8;7",
+    "field": "precipitation_probability",
+    "game_id": "401856748",
+    "home": "Florida",
+    "previous": "30;23;23"
+  },
+  {
+    "away": "Vanderbilt",
+    "current": "Mostly Cloudy;Mostly Cloudy;Mostly Cloudy",
+    "field": "weather_description",
+    "game_id": "401856748",
+    "home": "Florida",
+    "previous": "Chance Rain Showers;Slight Chance Rain Showers;Slight Chance Rain Showers"
+  },
+  {
+    "away": "Vanderbilt",
+    "current": "2026-11-20T14:03:11+00:00",
+    "field": "forecast_issued_utc",
+    "game_id": "401856748",
+    "home": "Florida",
+    "previous": "2026-11-19T14:04:29+00:00"
+  },
+  {
+    "away": "Syracuse",
+    "current": "60;61;61",
+    "field": "temperature_f",
+    "game_id": "401858309",
+    "home": "Boston College",
+    "previous": "59;61;61"
+  },
+  {
+    "away": "Syracuse",
+    "current": "3 mph SE;5 mph SE;6 mph SE",
+    "field": "wind",
+    "game_id": "401858309",
+    "home": "Boston College",
+    "previous": "2 mph SE;3 mph S;3 mph S"
+  },
+  {
+    "away": "Syracuse",
+    "current": "2026-11-20T14:03:11+00:00",
+    "field": "forecast_issued_utc",
+    "game_id": "401858309",
+    "home": "Boston College",
+    "previous": "2026-11-19T14:04:29+00:00"
+  },
+  {
+    "away": "Syracuse",
+    "current": "8",
+    "field": "away_official_recent_articles",
+    "game_id": "401858309",
+    "home": "Boston College",
+    "previous": "6"
+  },
+  {
+    "away": "Syracuse",
+    "current": "https://cuse.com/news/2026/11/14/football-orange-storm-back-for-road-win-over-nc-state;https://cuse.com/news/2026/11/16/football-adeleye-russell-iii-earn-acc-player-of-the-week-nods;https://cuse.com/news/2026/11/16/football-angeli-earns-manning-award-star-of-the-week;https://cuse.com/news/2026/11/16/football-cuse-and-notre-dame-set-for-noon-kick-on-abc;https://cuse.com/news/2026/11/16/football-hatcher-named-biletnikoff-award-semifinalist;https://cuse.com/news/2026/11/16/football-orange-set-to-battle-boston-college-saturday;https://cuse.com/news/2026/11/19/football-syracuse-vs-notre-dame-is-sold-out;https://cuse.com/news/2026/11/20/football-orange-meet-boston-college-for-60th-time-on-saturday",
+    "field": "away_article_sources",
+    "game_id": "401858309",
+    "home": "Boston College",
+    "previous": "https://cuse.com/news/2026/11/14/football-orange-storm-back-for-road-win-over-nc-state;https://cuse.com/news/2026/11/16/football-adeleye-russell-iii-earn-acc-player-of-the-week-nods;https://cuse.com/news/2026/11/16/football-angeli-earns-manning-award-star-of-the-week;https://cuse.com/news/2026/11/16/football-cuse-and-notre-dame-set-for-noon-kick-on-abc;https://cuse.com/news/2026/11/16/football-hatcher-named-biletnikoff-award-semifinalist;https://cuse.com/news/2026/11/16/football-orange-set-to-battle-boston-college-saturday"
+  },
+  {
+    "away": "Syracuse",
+    "current": "OL #50 Kahlil Stewart: Available;OL #53 Ted Olsen: Available;OL #55 Zach Rice: Available;OL #57 Javeion Cooper: Available;OL #58 David Ndukwe: Available;OL #60 Naquil Betrand: Available;OL #61 Joseph White: Available;OL #62 Jackson Iak: Out;OL #63 Brayden Charney: Available;OL #64 Skylar Harvey: Available;OL #65 Adam Boeheim: Available;OL #66 Shemaj Henry: Available;OL #67 D'Joni Scatliffe: Available;OL #69 Oluwafunto Akinshilo: Available;OL #70 Kardiear Shepherd: Available;OL #71 Jayden Mann: Out;OL #73 Vito Shevchenko: Available;OL #74 Matthew Hawn: Available;OL #75 Trevion Mack: Doubtful;OL #76 Byron Washington: Available;OL #77 Kam Pringle: Available;OL #78 Joe Cruz: Available;OL #79 Travis Brown-Miller: Available",
+    "field": "away_ol_report",
+    "game_id": "401858309",
+    "home": "Boston College",
+    "previous": "OL #50 Kahlil Stewart: Available;OL #53 Ted Olsen: Available;OL #55 Zach Rice: Available;OL #57 Javeion Cooper: Available;OL #58 David Ndukwe: Available;OL #60 Naquil Betrand: Available;OL #61 Joseph White: Available;OL #62 Jackson Iak: Out;OL #63 Brayden Charney: Available;OL #64 Skylar Harvey: Available;OL #65 Adam Boeheim: Available;OL #66 Shemaj Henry: Available;OL #67 D'Joni Scatliffe: Available;OL #69 Oluwafunto Akinshilo: Available;OL #70 Kardiear Shepherd: Available;OL #71 Jayden Mann: Out;OL #73 Vito Shevchenko: Available;OL #74 Matthew Hawn: Available;OL #75 Trevion Mack: Questionable;OL #76 Byron Washington: Available;OL #77 Kam Pringle: Available;OL #78 Joe Cruz: Available;OL #79 Travis Brown-Miller: Available"
+  },
+  {
+    "away": "Syracuse",
+    "current": "DB #0 Braheem Long Jr.: Available;DB #1 Demetres Samuel Jr.: Available;LB #2 Zyian Moultrie-Goddard: Available;DB #3 Davien Kerr: Available;DB #4 Chase Geter: Available;LB #5 Antoine Deslauriers: Available;LB #6 Chris D'Appolonia: Available;DB #7 Nazir Ward: Available;DB #8 Tedarius Hughes: Available;DB #9 Jai Eugene Jr.: Out;LB #10 Gary Bryant III: Available;DL #11 Nissi Ogbebor: Available;DB #12 Chris Peal: Available;DB #13 Amare Snowden: Available;LB #14 Keyshawn Johnson: Available;DL #15 Nathan Nyandoro: Available;DL #16 Jarius Rodgers: Available;DL #17 Kamron Wilson: Available;LB #18 David Omopariola: Available;DB #19 Cornell Perry: Available;DB #20 Rayshon Andrews: Available;DB #22 Ziyyon Bredell: Available;LB #23 Trey Dudley: Available;DB #24 Ibn-Wadu Muhammad: Available;DB #25 Cam Hairston-Taylor: Out;DB #26 Darnell Stokes Jr.: Available;DB #27 Javon Lawrence: Available;DB #29 Terrance Johnson: Available;DL #30 Tunmise Adeleye: Available;DB #31 Marcus Washington Jr.: Available;LB #33 Gemaus Sackie: Available;DB #34 Nate Prater: Available;DB #38 James Trotter: Available;DB #39 Bradley Chandler: Available;LB #42 Maurice Medley: Available;LB #43 Garvin St. John: Available;DL #45 Clark Calloway: Available;LB #49 Josh Kubala: Available;DL #77 Jaylen Pray: Available;LB #82 Jamie Tremble: Available;DL #88 Elijah Crawford: Available;DL #90 Kordae Houston: Available;DL #92 Rashard Perry: Available;DL #93 Alex Haskell: Available;DL #94 Walt Frazier Jr.: Available;DL #95 Dillan Fontus: Available;DL #98 Jartavius Flounoy: Available;DL #99 Isaiah Hastings: Available",
+    "field": "away_defense_report",
+    "game_id": "401858309",
+    "home": "Boston College",
+    "previous": "DB #0 Braheem Long Jr.: Available;DB #1 Demetres Samuel Jr.: Available;LB #2 Zyian Moultrie-Goddard: Available;DB #3 Davien Kerr: Available;DB #4 Chase Geter: Available;LB #5 Antoine Deslauriers: Available;LB #6 Chris D'Appolonia: Available;DB #7 Nazir Ward: Available;DB #8 Tedarius Hughes: Available;DB #9 Jai Eugene Jr.: Out;LB #10 Gary Bryant III: Available;DL #11 Nissi Ogbebor: Available;DB #12 Chris Peal: Available;DB #13 Amare Snowden: Available;LB #14 Keyshawn Johnson: Available;DL #15 Nathan Nyandoro: Available;DL #16 Jarius Rodgers: Available;DL #17 Kamron Wilson: Available;LB #18 David Omopariola: Available;DB #19 Cornell Perry: Available;DB #20 Rayshon Andrews: Available;DB #22 Ziyyon Bredell: Available;LB #23 Trey Dudley: Available;DB #24 Ibn-Wadu Muhammad: Available;DB #25 Cam Hairston-Taylor: Available;DB #26 Darnell Stokes Jr.: Available;DB #27 Javon Lawrence: Available;DB #29 Terrance Johnson: Available;DL #30 Tunmise Adeleye: Available;DB #31 Marcus Washington Jr.: Available;LB #33 Gemaus Sackie: Available;DB #34 Nate Prater: Available;DB #38 James Trotter: Available;DB #39 Bradley Chandler: Available;LB #42 Maurice Medley: Available;LB #43 Garvin St. John: Available;DL #45 Clark Calloway: Available;LB #49 Josh Kubala: Available;DL #77 Jaylen Pray: Available;LB #82 Jamie Tremble: Available;DL #88 Elijah Crawford: Available;DL #90 Kordae Houston: Available;DL #92 Rashard Perry: Available;DL #93 Alex Haskell: Available;DL #94 Walt Frazier Jr.: Available;DL #95 Dillan Fontus: Available;DL #98 Jartavius Flounoy: Available;DL #99 Isaiah Hastings: Available"
+  },
+  {
+    "away": "Colorado",
+    "current": "62;65;66",
+    "field": "temperature_f",
+    "game_id": "401856867",
+    "home": "Cincinnati",
+    "previous": "61;64;67"
+  },
+  {
+    "away": "Colorado",
+    "current": "2 mph S;2 mph S;2 mph S",
+    "field": "wind",
+    "game_id": "401856867",
+    "home": "Cincinnati",
+    "previous": "3 mph S;3 mph S;3 mph S"
+  },
+  {
+    "away": "Colorado",
+    "current": "2026-11-20T14:03:11+00:00",
+    "field": "forecast_issued_utc",
+    "game_id": "401856867",
+    "home": "Cincinnati",
+    "previous": "2026-11-19T14:04:29+00:00"
+  },
+  {
+    "away": "Colorado",
+    "current": "8",
+    "field": "away_official_recent_articles",
+    "game_id": "401856867",
+    "home": "Cincinnati",
+    "previous": "7"
+  },
+  {
+    "away": "Colorado",
+    "current": "https://cubuffs.com/news/2026/11/13/football-colorado-clobbers-no-14-houston;https://cubuffs.com/news/2026/11/13/football-flashback-revisiting-colorados-2001-season;https://cubuffs.com/news/2026/11/14/football-buffs-offense-explodes-in-win-over-houston;https://cubuffs.com/news/2026/11/16/football-fontenette-offensive-line-earn-big-12-weekly-honors-after-win-over-no-14-houston;https://cubuffs.com/news/2026/11/17/football-catch-the-same-bus-buffs-aim-to-take-houston-formula-on-the-road;https://cubuffs.com/news/2026/11/17/football-former-buffs-continue-to-make-noise-in-the-pros;https://cubuffs.com/news/2026/11/19/football-buffs-special-teams-remain-a-bright-spot;https://cubuffs.com/news/2026/11/19/football-the-road-ahead-cincinnati-presented-by-progressive",
+    "field": "away_article_sources",
+    "game_id": "401856867",
+    "home": "Cincinnati",
+    "previous": "https://cubuffs.com/news/2026/11/12/football-the-road-ahead-houston-presented-by-progressive;https://cubuffs.com/news/2026/11/13/football-colorado-clobbers-no-14-houston;https://cubuffs.com/news/2026/11/13/football-flashback-revisiting-colorados-2001-season;https://cubuffs.com/news/2026/11/14/football-buffs-offense-explodes-in-win-over-houston;https://cubuffs.com/news/2026/11/16/football-fontenette-offensive-line-earn-big-12-weekly-honors-after-win-over-no-14-houston;https://cubuffs.com/news/2026/11/17/football-catch-the-same-bus-buffs-aim-to-take-houston-formula-on-the-road;https://cubuffs.com/news/2026/11/17/football-former-buffs-continue-to-make-noise-in-the-pros"
+  },
+  {
+    "away": "Colorado",
+    "current": "DB #4 Naeten Mitchell: Out;DB #5 RJ Johnson: Available;DB #6 Boo Carter: Available;DB #7 Randon Fontenette: Available;DB #8 Emory Floyd: Available;DB #10 Makari Vickers: Available;DB #13 Jason Stokes Jr.: Available;LB #17 Liona Lefau: Available;DB #20 Cree Thomas: Doubtful;DB #25 Mojo Williams Jr.: Available;DB #26 Braylon Edwards: Out;DE #27 Domata Peko Jr.: Available;DB #28 Ben Finneseth: Available;CB #31 Preston Ashley: Available;DB #32 Myles Weston: Exempt;DB #33 Kole Mathis: Available;DB #34 Drew Molinari: Available;LB #35 Tyler Martinez: Available;DB #39 Donavon Stephens: Available;LB #40 Colby Johnson: Available;DE #41 Kylan Salter: Available;LB #44 Gideon ESPN Lampron: Available;DL #45 Vili Taufatofua: Available;DE #49 Quency Wiggins: Available;LB #50 Rodney Colton Jr.: Available;LB #51 Carson Crawford: Questionable;DE #52 Immanuel Ezeogu: Available;DE #53 Toby Anene: Available;LB #54 Bo LaPenna: Available;LB #55 Gage Goldberg: Available;DL #56 Lamont Lester Jr.: Available;DL #88 Samu Taumanupepe: Available;DL #90 Tyler Moore: Available;DL #91 Sedrick Smith: Available;DE #92 Sam Gadie: Out;DL #93 Malachi Brown: Exempt;DL #94 Josiah Manu: Exempt;DE #95 Yamil Talib: Available;DL #97 Santana Hopper: Available;DL #99 Dylan Manuel: Questionable",
+    "field": "away_defense_report",
+    "game_id": "401856867",
+    "home": "Cincinnati",
+    "previous": "DB #4 Naeten Mitchell: Out;DB #5 RJ Johnson: Available;DB #6 Boo Carter: Available;DB #7 Randon Fontenette: Available;DB #8 Emory Floyd: Available;DB #10 Makari Vickers: Available;DB #13 Jason Stokes Jr.: Available;LB #17 Liona Lefau: Available;DB #20 Cree Thomas: Doubtful;DB #25 Mojo Williams Jr.: Available;DB #26 Braylon Edwards: Out;DE #27 Domata Peko Jr.: Available;DB #28 Ben Finneseth: Available;CB #31 Preston Ashley: Available;DB #32 Myles Weston: Exempt;DB #33 Kole Mathis: Available;DB #34 Drew Molinari: Available;LB #35 Tyler Martinez: Available;DB #39 Donavon Stephens: Available;LB #40 Colby Johnson: Available;DE #41 Kylan Salter: Available;LB #44 Gideon ESPN Lampron: Available;DL #45 Vili Taufatofua: Available;DE #49 Quency Wiggins: Available;LB #50 Rodney Colton Jr.: Available;LB #51 Carson Crawford: Available;DE #52 Immanuel Ezeogu: Available;DE #53 Toby Anene: Available;LB #54 Bo LaPenna: Available;LB #55 Gage Goldberg: Available;DL #56 Lamont Lester Jr.: Available;DL #88 Samu Taumanupepe: Available;DL #90 Tyler Moore: Available;DL #91 Sedrick Smith: Available;DE #92 Sam Gadie: Out;DL #93 Malachi Brown: Exempt;DL #94 Josiah Manu: Exempt;DE #95 Yamil Talib: Available;DL #97 Santana Hopper: Available;DL #99 Dylan Manuel: Questionable"
+  },
+  {
+    "away": "Wisconsin",
+    "current": "62;66;68",
+    "field": "temperature_f",
+    "game_id": "401858533",
+    "home": "Purdue",
+    "previous": "61;66;66"
+  },
+  {
+    "away": "Wisconsin",
+    "current": "8 mph S;8 mph S;9 mph S",
+    "field": "wind",
+    "game_id": "401858533",
+    "home": "Purdue",
+    "previous": "8 mph S;9 mph S;9 mph S"
+  },
+  {
+    "away": "Wisconsin",
+    "current": "0;0;0",
+    "field": "precipitation_probability",
+    "game_id": "401858533",
+    "home": "Purdue",
+    "previous": "0;1;1"
+  },
+  {
+    "away": "Wisconsin",
+    "current": "Sunny;Sunny;Sunny",
+    "field": "weather_description",
+    "game_id": "401858533",
+    "home": "Purdue",
+    "previous": "Sunny;Sunny;Mostly Sunny"
+  },
+  {
+    "away": "Wisconsin",
+    "current": "2026-11-20T14:01:13+00:00",
+    "field": "forecast_issued_utc",
+    "game_id": "401858533",
+    "home": "Purdue",
+    "previous": "2026-11-19T14:04:30+00:00"
+  },
+  {
+    "away": "Wisconsin",
+    "current": "https://uwbadgers.com/news/2026/11/14/football-badgers-fall-at-maryland;https://uwbadgers.com/news/2026/11/17/football-lahm-named-a-lou-groza-semifinalist;https://uwbadgers.com/news/2026/11/19/football-wisconsin-faces-purdue-in-last-road-game",
+    "field": "away_article_sources",
+    "game_id": "401858533",
+    "home": "Purdue",
+    "previous": "https://uwbadgers.com/news/2026/11/12/football-perkins-and-conger-announced-as-big-ten-jackie-robinson-award-honorees;https://uwbadgers.com/news/2026/11/14/football-badgers-fall-at-maryland;https://uwbadgers.com/news/2026/11/17/football-lahm-named-a-lou-groza-semifinalist"
+  },
+  {
+    "away": "Wisconsin",
+    "current": "OL #50 Ryan Cory: Available;OL #51 Austin Kawecki: Available;OL #52 Hardy Watts: Available;OL #53 Cam Clark: Exempt;OL #54 Brady Bekkenhuis: Exempt;OL #55 Kevin Heywood: Out;OL #58 Michael Roeske: Exempt;OL #60 Nolan Davenport: Exempt;OL #64 Evan Brown: Exempt;OL #65 Aiden Dirksen: Exempt;OL #70 Barrett Nelson: Questionable;OL #71 PJ Wilkins: Available;OL #72 Lucas Simmons-Johansson: Available;OL #73 Blake Cherry: Available;OL #75 Emerson Mandell: Questionable;OL #76 Stylz Blackmon: Available;OL #77 Peyton Lange: Available;OL #78 Colin Cubberly: Available;OL #79 Logan Powell: Exempt",
+    "field": "away_ol_report",
+    "game_id": "401858533",
+    "home": "Purdue",
+    "previous": "OL #50 Ryan Cory: Available;OL #51 Austin Kawecki: Available;OL #52 Hardy Watts: Available;OL #53 Cam Clark: Exempt;OL #54 Brady Bekkenhuis: Exempt;OL #55 Kevin Heywood: Out;OL #58 Michael Roeske: Exempt;OL #60 Nolan Davenport: Exempt;OL #64 Evan Brown: Exempt;OL #65 Aiden Dirksen: Exempt;OL #70 Barrett Nelson: Doubtful;OL #71 PJ Wilkins: Available;OL #72 Lucas Simmons-Johansson: Available;OL #73 Blake Cherry: Available;OL #75 Emerson Mandell: Questionable;OL #76 Stylz Blackmon: Available;OL #77 Peyton Lange: Available;OL #78 Colin Cubberly: Available;OL #79 Logan Powell: Exempt"
+  },
+  {
+    "away": "Wisconsin",
+    "current": "OLB #0 Justus Boone: Available;CB #1 Eric Fletcher Jr.: Available;CB #2 Javan Robinson: Doubtful;CB #3 Cai Bates: Out;S #4 Marvin Burks Jr.: Available;CB #5 Bryce West: Available;CB #6 Jai'mier Scott: Probable;OLB #7 Tyreese Fearbry: Available;LB #8 Mason Posa: Available;S #11 Carson Van Dinter: Questionable;OLB #12 Nicolas Clayton: Available;S #13 Matthew Traynor: Available;OLB #14 Liam Danitz: Available;OLB #15 Sebastian Cheeks: Available;S #16 Grant Dean: Available;CB #17 Carsen Eloms: Exempt;CB #18 Donovan Dunmore: Available;LB #19 Thomas Heiberger: Available;S #20 Luke Emmerich: Available;S #21 Cairo Skanes: Available;OLB #22 Jaylen Williams: Exempt;LB #23 Landon Gauthier: Available;S #25 Will Mikonowicz: Exempt;S #26 Kah'ni Watts: Exempt;S #27 Raphael Dunn: Available;LB #28 Jon Jon Kamara: Available;S #29 Matthew Jung: Out;DL #30 Charles Perkins: Available;CB #31 Deshuan Moss: Exempt;OLB #34 Ashton Fickell: Exempt;OLB #39 Jayden Loftin: Available;LB #43 Taylor Schaefer: Available;LB #44 Cooper Catalano: Available;OLB #45 Yahya Gaad: Exempt;OLB #47 Evan Van Dyn Hoven: Exempt;LB #49 Ben Wenzel: Exempt;OLB #50 Sam Lateju: Exempt;OLB #51 Micheal Garner: Available;LB #55 Drew Braam: Available;LB #59 Aaron Witt: Available;DL #76 Dillan Johnson: Available;OLB #77 Will McDonald: Available;DL #90 Djidjou Bah: Exempt;DL #91 Hammond Russell IV: Available;DL #92 Nolan Vils: Available;DL #93 DeNigel Cooper: Available;DL #94 Xavier Ukponu: Exempt;DL #95 Jacob Anderson: Available;DL #96 Arthur Scott III: Exempt;DL #97 Junior Poyser: Available",
+    "field": "away_defense_report",
+    "game_id": "401858533",
+    "home": "Purdue",
+    "previous": "OLB #0 Justus Boone: Available;CB #1 Eric Fletcher Jr.: Available;CB #2 Javan Robinson: Doubtful;CB #3 Cai Bates: Out;S #4 Marvin Burks Jr.: Available;CB #5 Bryce West: Available;CB #6 Jai'mier Scott: Probable;OLB #7 Tyreese Fearbry: Available;LB #8 Mason Posa: Available;S #11 Carson Van Dinter: Questionable;OLB #12 Nicolas Clayton: Available;S #13 Matthew Traynor: Available;OLB #14 Liam Danitz: Available;OLB #15 Sebastian Cheeks: Probable;S #16 Grant Dean: Available;CB #17 Carsen Eloms: Exempt;CB #18 Donovan Dunmore: Available;LB #19 Thomas Heiberger: Probable;S #20 Luke Emmerich: Available;S #21 Cairo Skanes: Available;OLB #22 Jaylen Williams: Exempt;LB #23 Landon Gauthier: Available;S #25 Will Mikonowicz: Exempt;S #26 Kah'ni Watts: Exempt;S #27 Raphael Dunn: Available;LB #28 Jon Jon Kamara: Available;S #29 Matthew Jung: Out;DL #30 Charles Perkins: Available;CB #31 Deshuan Moss: Exempt;OLB #34 Ashton Fickell: Exempt;OLB #39 Jayden Loftin: Available;LB #43 Taylor Schaefer: Available;LB #44 Cooper Catalano: Available;OLB #45 Yahya Gaad: Exempt;OLB #47 Evan Van Dyn Hoven: Exempt;LB #49 Ben Wenzel: Exempt;OLB #50 Sam Lateju: Exempt;OLB #51 Micheal Garner: Available;LB #55 Drew Braam: Available;LB #59 Aaron Witt: Available;DL #76 Dillan Johnson: Available;OLB #77 Will McDonald: Available;DL #90 Djidjou Bah: Exempt;DL #91 Hammond Russell IV: Available;DL #92 Nolan Vils: Available;DL #93 DeNigel Cooper: Available;DL #94 Xavier Ukponu: Exempt;DL #95 Jacob Anderson: Available;DL #96 Arthur Scott III: Exempt;DL #97 Junior Poyser: Available"
+  },
+  {
+    "away": "North Texas",
+    "current": "70;71;71",
+    "field": "temperature_f",
+    "game_id": "401862835",
+    "home": "Tulane",
+    "previous": "69;70;71"
+  },
+  {
+    "away": "North Texas",
+    "current": "1;0;0",
+    "field": "precipitation_probability",
+    "game_id": "401862835",
+    "home": "Tulane",
+    "previous": "14;12;12"
+  },
+  {
+    "away": "North Texas",
+    "current": "Sunny;Sunny;Mostly Sunny",
+    "field": "weather_description",
+    "game_id": "401862835",
+    "home": "Tulane",
+    "previous": "Mostly Cloudy;Mostly Cloudy;Partly Sunny"
+  },
+  {
+    "away": "North Texas",
+    "current": "2026-11-20T14:03:12+00:00",
+    "field": "forecast_issued_utc",
+    "game_id": "401862835",
+    "home": "Tulane",
+    "previous": "2026-11-19T14:04:30+00:00"
+  },
+  {
+    "away": "North Texas",
+    "current": "https://tulanegreenwave.com/news/2026/11/14/football-earns-20-17-road-comeback-victory-over-rice;https://tulanegreenwave.com/news/2026/11/15/football-listen-to-the-olive-blue-revieux-with-corey-gloor-rice;https://tulanegreenwave.com/news/2026/11/15/footballs-start-time-and-network-announced-for-north-texas;https://tulanegreenwave.com/news/2026/11/16/footballs-start-time-and-network-announced-for-south-florida;https://tulanegreenwave.com/news/2026/11/17/footballs-cooper-helmke-named-a-semifinalist-for-the-2026-lou-groza-award;https://tulanegreenwave.com/news/2026/11/19/football-listen-to-the-current-with-maddie-hudak-episode-12",
+    "field": "home_article_sources",
+    "game_id": "401862835",
+    "home": "Tulane",
+    "previous": "https://tulanegreenwave.com/news/2026/11/13/footballs-start-time-altered-for-rice;https://tulanegreenwave.com/news/2026/11/14/football-earns-20-17-road-comeback-victory-over-rice;https://tulanegreenwave.com/news/2026/11/15/football-listen-to-the-olive-blue-revieux-with-corey-gloor-rice;https://tulanegreenwave.com/news/2026/11/15/footballs-start-time-and-network-announced-for-north-texas;https://tulanegreenwave.com/news/2026/11/16/footballs-start-time-and-network-announced-for-south-florida;https://tulanegreenwave.com/news/2026/11/17/footballs-cooper-helmke-named-a-semifinalist-for-the-2026-lou-groza-award"
+  },
+  {
+    "away": "Ohio State",
+    "current": "58;58;57",
+    "field": "temperature_f",
+    "game_id": "401858531",
+    "home": "Nebraska",
+    "previous": "57;57;56"
+  },
+  {
+    "away": "Ohio State",
+    "current": "9 mph SW;10 mph W;10 mph NW",
+    "field": "wind",
+    "game_id": "401858531",
+    "home": "Nebraska",
+    "previous": "12 mph W;12 mph W;12 mph WNW"
+  },
+  {
+    "away": "Ohio State",
+    "current": "3;23;23",
+    "field": "precipitation_probability",
+    "game_id": "401858531",
+    "home": "Nebraska",
+    "previous": "28;67;67"
+  },
+  {
+    "away": "Ohio State",
+    "current": "Mostly Cloudy;Slight Chance Rain Showers;Slight Chance Rain Showers",
+    "field": "weather_description",
+    "game_id": "401858531",
+    "home": "Nebraska",
+    "previous": "Chance Rain Showers;Rain Showers Likely;Rain Showers Likely"
+  },
+  {
+    "away": "Ohio State",
+    "current": "2026-11-20T13:12:50+00:00",
+    "field": "forecast_issued_utc",
+    "game_id": "401858531",
+    "home": "Nebraska",
+    "previous": "2026-11-19T14:04:30+00:00"
+  },
+  {
+    "away": "Northwestern",
+    "current": "56;57;55",
+    "field": "temperature_f",
+    "game_id": "401858530",
+    "home": "Minnesota",
+    "previous": "56;56;55"
+  },
+  {
+    "away": "Northwestern",
+    "current": "10 mph W;10 mph W;10 mph WNW",
+    "field": "wind",
+    "game_id": "401858530",
+    "home": "Minnesota",
+    "previous": "10 mph W;10 mph WNW;10 mph WNW"
+  },
+  {
+    "away": "Northwestern",
+    "current": "25;31;27",
+    "field": "precipitation_probability",
+    "game_id": "401858530",
+    "home": "Minnesota",
+    "previous": "61;48;48"
+  },
+  {
+    "away": "Northwestern",
+    "current": "Chance Light Rain;Chance Light Rain;Chance Light Rain",
+    "field": "weather_description",
+    "game_id": "401858530",
+    "home": "Minnesota",
+    "previous": "Light Rain Likely;Chance Light Rain;Chance Light Rain"
+  },
+  {
+    "away": "Northwestern",
+    "current": "2026-11-20T14:03:12+00:00",
+    "field": "forecast_issued_utc",
+    "game_id": "401858530",
+    "home": "Minnesota",
+    "previous": "2026-11-19T14:04:30+00:00"
+  },
+  {
+    "away": "Northwestern",
+    "current": "DB #0 Alijah Jones: Available;LB #2 Kobie McKinzie: Available;DB #3 Brenden Deasfernandes: Available;DB #4 Montae Pate: Available;DL #5 Dominic Kirks: Available;DB #6 Robert Fitzgerald: Available;DB #7 Ore Adeyi: Questionable;DB #9 Braden Turner: Available;DB #11 Seth Valeri: Available;DB #12 Gabe Davis-Ray: Available;DB #13 Josh Fussell: Questionable;DL #15 Brendan Flakes: Available;DB #16 J.J. Lewis: Available;DB #17 Jaden Vaughn: Available;DB #21 Damon Walters: Available;DB #22 Terrion Curry-Hicks: Available;DB #23 Nate Dawson: Available;DL #24 Jamaal Johnson: Available;DB #25 Marquet Dorsey Jr.: Available;DB #26 Jalen Lewis: Available;DB #27 Jack Oyola: Available;DB #28 Timi Oke: Available;DB #29 Jon Jon Stevens Jr.: Available;DB #31 Tito Williams Jr.: Available;LB #32 Matthew Smith: Probable;LB #33 Braydon Brus: Available;LB #34 Payton Roth: Available;DB #35 Sean Martin: Available;LB #37 Max Mohring: Out;LB #38 Josh Veldman: Available;LB #39 Parker Maiers: Available;LB #40 Jason Reynolds II: Available;LB #42 Nigel Glover: Available;DL #44 Callen Campbell: Available;LB #45 Jack Sadowsky V: Available;LB #46 Lincoln Creager: Available;DL #47 Michael Kilbane: Available;LB #49 Amare Jordan: Available;LB #50 Qayvier Johnson: Out;LB #51 Miles Crutchley: Available;DL #52 Calvin Lorek: Available;DL #53 Tanner Jumpp: Available;DL #54 Tyler Gant: Available;DL #55 Dylan Roberts: Available;DL #56 Tre Hoskins: Available;DL #57 Nick Costa: Available;DL #58 Ronald Derrick III: Available;DL #63 Nick Zalewski: Available;DL #88 Migo Jackson: Out;DL #90 Jack Trautmann: Available;DL #91 Caden O'Rourke: Available;DL #92 Mason Green: Available;DL #93 Glory Stephen-Wangboje: Available;DL #94 Gage LaDere: Available;DL #95 Mason Mayne: Available;DL #96 Jonah Hayes: Available;DL #97 Braxton Strong: Available;DL #98 Landon Lauter: Available;DL #99 Troy Regovich: Available",
+    "field": "away_defense_report",
+    "game_id": "401858530",
+    "home": "Minnesota",
+    "previous": "DB #0 Alijah Jones: Available;LB #2 Kobie McKinzie: Available;DB #3 Brenden Deasfernandes: Available;DB #4 Montae Pate: Available;DL #5 Dominic Kirks: Available;DB #6 Robert Fitzgerald: Available;DB #7 Ore Adeyi: Questionable;DB #9 Braden Turner: Available;DB #11 Seth Valeri: Available;DB #12 Gabe Davis-Ray: Available;DB #13 Josh Fussell: Questionable;DL #15 Brendan Flakes: Available;DB #16 J.J. Lewis: Available;DB #17 Jaden Vaughn: Available;DB #21 Damon Walters: Available;DB #22 Terrion Curry-Hicks: Available;DB #23 Nate Dawson: Available;DL #24 Jamaal Johnson: Available;DB #25 Marquet Dorsey Jr.: Available;DB #26 Jalen Lewis: Available;DB #27 Jack Oyola: Available;DB #28 Timi Oke: Available;DB #29 Jon Jon Stevens Jr.: Available;DB #31 Tito Williams Jr.: Available;LB #32 Matthew Smith: Questionable;LB #33 Braydon Brus: Available;LB #34 Payton Roth: Available;DB #35 Sean Martin: Available;LB #37 Max Mohring: Out;LB #38 Josh Veldman: Available;LB #39 Parker Maiers: Available;LB #40 Jason Reynolds II: Available;LB #42 Nigel Glover: Available;DL #44 Callen Campbell: Available;LB #45 Jack Sadowsky V: Available;LB #46 Lincoln Creager: Available;DL #47 Michael Kilbane: Available;LB #49 Amare Jordan: Available;LB #50 Qayvier Johnson: Out;LB #51 Miles Crutchley: Available;DL #52 Calvin Lorek: Available;DL #53 Tanner Jumpp: Available;DL #54 Tyler Gant: Available;DL #55 Dylan Roberts: Available;DL #56 Tre Hoskins: Available;DL #57 Nick Costa: Available;DL #58 Ronald Derrick III: Available;DL #63 Nick Zalewski: Available;DL #88 Migo Jackson: Available;DL #90 Jack Trautmann: Available;DL #91 Caden O'Rourke: Available;DL #92 Mason Green: Available;DL #93 Glory Stephen-Wangboje: Available;DL #94 Gage LaDere: Available;DL #95 Mason Mayne: Available;DL #96 Jonah Hayes: Available;DL #97 Braxton Strong: Available;DL #98 Landon Lauter: Available;DL #99 Troy Regovich: Available"
+  },
+  {
+    "away": "Northwestern",
+    "current": "7",
+    "field": "home_official_recent_articles",
+    "game_id": "401858530",
+    "home": "Minnesota",
+    "previous": "8"
+  },
+  {
+    "away": "Northwestern",
+    "current": "https://gophersports.com/news/2026/11/14/football-game-trailer-gophers-at-penn-state;https://gophersports.com/news/2026/11/14/football-gophers-fall-at-penn-state-host-northwestern-for-senior-day;https://gophersports.com/news/2026/11/15/football-offensive-coordinator-greg-harbaugh-relieved-of-duties;https://gophersports.com/news/2026/11/16/football-coach-fleck-previews-home-finale-against-northwestern;https://gophersports.com/news/2026/11/17/football-drzewiecki-named-semifinalist-for-lou-groza-collegiate-place-kicker-award;https://gophersports.com/news/2026/11/18/football-game-11-preview-minnesota-vs-northwestern;https://gophersports.com/news/2026/11/18/football-johnson-named-outland-trophy-semifinalist",
+    "field": "home_article_sources",
+    "game_id": "401858530",
+    "home": "Minnesota",
+    "previous": "https://gophersports.com/news/2026/11/12/football-tracy-a-finalist-for-jet-award;https://gophersports.com/news/2026/11/14/football-game-trailer-gophers-at-penn-state;https://gophersports.com/news/2026/11/14/football-gophers-fall-at-penn-state-host-northwestern-for-senior-day;https://gophersports.com/news/2026/11/15/football-offensive-coordinator-greg-harbaugh-relieved-of-duties;https://gophersports.com/news/2026/11/16/football-coach-fleck-previews-home-finale-against-northwestern;https://gophersports.com/news/2026/11/17/football-drzewiecki-named-semifinalist-for-lou-groza-collegiate-place-kicker-award;https://gophersports.com/news/2026/11/18/football-game-11-preview-minnesota-vs-northwestern;https://gophersports.com/news/2026/11/18/football-johnson-named-outland-trophy-semifinalist"
+  },
+  {
+    "away": "Wake Forest",
+    "current": "65;66;67",
+    "field": "temperature_f",
+    "game_id": "401858310",
+    "home": "Georgia Tech",
+    "previous": "64;66;67"
+  },
+  {
+    "away": "Wake Forest",
+    "current": "15 mph E;10 mph E;10 mph E",
+    "field": "wind",
+    "game_id": "401858310",
+    "home": "Georgia Tech",
+    "previous": "10 mph E;10 mph E;10 mph E"
+  },
+  {
+    "away": "Wake Forest",
+    "current": "8;11;17",
+    "field": "precipitation_probability",
+    "game_id": "401858310",
+    "home": "Georgia Tech",
+    "previous": "4;4;4"
+  },
+  {
+    "away": "Wake Forest",
+    "current": "Mostly Sunny;Mostly Sunny;Slight Chance Rain Showers",
+    "field": "weather_description",
+    "game_id": "401858310",
+    "home": "Georgia Tech",
+    "previous": "Mostly Sunny;Mostly Sunny;Mostly Sunny"
+  },
+  {
+    "away": "Wake Forest",
+    "current": "2026-11-20T14:01:40+00:00",
+    "field": "forecast_issued_utc",
+    "game_id": "401858310",
+    "home": "Georgia Tech",
+    "previous": "2026-11-19T14:04:30+00:00"
+  },
+  {
+    "away": "Wake Forest",
+    "current": "6",
+    "field": "away_official_recent_articles",
+    "game_id": "401858310",
+    "home": "Georgia Tech",
+    "previous": "5"
+  },
+  {
+    "away": "Wake Forest",
+    "current": "https://godeacs.com/news/2026/11/16/football-kickoff-time-for-senior-day-against-duke-announced-for-3-or-3-30-pm;https://godeacs.com/news/2026/11/16/football-wake-forest-head-coach-jake-dickert-named-paul-bear-bryant-national-coach-of-the-week;https://godeacs.com/news/2026/11/16/football-wake-forests-carlos-hernandez-named-semifinalist-for-biletnikoff-award;https://godeacs.com/news/2026/11/16/football-wake-forests-will-way-named-acc-offensive-lineman-of-the-week;https://godeacs.com/news/2026/11/17/football-wake-forests-gio-lopez-named-davey-o-brien-award-semifinalist;https://godeacs.com/news/2026/11/19/football-wake-forests-langston-hardy-named-finalist-for-bronko-nagurski-trophy",
+    "field": "away_article_sources",
+    "game_id": "401858310",
+    "home": "Georgia Tech",
+    "previous": "https://godeacs.com/news/2026/11/16/football-kickoff-time-for-senior-day-against-duke-announced-for-3-or-3-30-pm;https://godeacs.com/news/2026/11/16/football-wake-forest-head-coach-jake-dickert-named-paul-bear-bryant-national-coach-of-the-week;https://godeacs.com/news/2026/11/16/football-wake-forests-carlos-hernandez-named-semifinalist-for-biletnikoff-award;https://godeacs.com/news/2026/11/16/football-wake-forests-will-way-named-acc-offensive-lineman-of-the-week;https://godeacs.com/news/2026/11/17/football-wake-forests-gio-lopez-named-davey-o-brien-award-semifinalist"
+  },
+  {
+    "away": "Wake Forest",
+    "current": "QB #3 Gio Lopez: Probable;QB #6 Steele Pizzella: Available;QB #13 Billy Johnson: Available;QB #15 Gannon Jones: Available;QB #17 Grant Lawless: Available",
+    "field": "away_qb_report",
+    "game_id": "401858310",
+    "home": "Georgia Tech",
+    "previous": "QB #3 Gio Lopez: Questionable;QB #6 Steele Pizzella: Available;QB #13 Billy Johnson: Available;QB #15 Gannon Jones: Available;QB #17 Grant Lawless: Available"
+  },
+  {
+    "away": "East Carolina",
+    "current": "57;60;61",
+    "field": "temperature_f",
+    "game_id": "401862831",
+    "home": "Army",
+    "previous": "59;61;61"
+  },
+  {
+    "away": "East Carolina",
+    "current": "1 mph N;1 mph SE;2 mph S",
+    "field": "wind",
+    "game_id": "401862831",
+    "home": "Army",
+    "previous": "2 mph SE;2 mph S;2 mph S"
+  },
+  {
+    "away": "East Carolina",
+    "current": "Sunny;Sunny;Mostly Sunny",
+    "field": "weather_description",
+    "game_id": "401862831",
+    "home": "Army",
+    "previous": "Sunny;Sunny;Sunny"
+  },
+  {
+    "away": "East Carolina",
+    "current": "2026-11-20T13:27:12+00:00",
+    "field": "forecast_issued_utc",
+    "game_id": "401862831",
+    "home": "Army",
+    "previous": "2026-11-19T14:04:30+00:00"
+  },
+  {
+    "away": "East Carolina",
+    "current": "2",
+    "field": "home_official_recent_articles",
+    "game_id": "401862831",
+    "home": "Army",
+    "previous": "3"
+  },
+  {
+    "away": "East Carolina",
+    "current": "https://goarmywestpoint.com/news/2026/11/16/football-james-wagenseller-flipping-the-field-for-the-black-knights;https://goarmywestpoint.com/news/2026/11/17/football-the-rivalry-returns-philadelphia-awarded-four-future-army-navy-game-matchups",
+    "field": "home_article_sources",
+    "game_id": "401862831",
+    "home": "Army",
+    "previous": "https://goarmywestpoint.com/news/2026/11/14/football-college-gameday-to-be-at-metlife-stadium-for-127th-army-navy-game-presented-by-usaa;https://goarmywestpoint.com/news/2026/11/16/football-james-wagenseller-flipping-the-field-for-the-black-knights;https://goarmywestpoint.com/news/2026/11/17/football-the-rivalry-returns-philadelphia-awarded-four-future-army-navy-game-matchups"
+  },
+  {
+    "away": "North Carolina",
+    "current": "62;64;64;65",
+    "field": "temperature_f",
+    "game_id": "401858305",
+    "home": "Virginia",
+    "previous": "63;65;65;65"
+  },
+  {
+    "away": "North Carolina",
+    "current": "3 mph E;3 mph E;3 mph E;3 mph E",
+    "field": "wind",
+    "game_id": "401858305",
+    "home": "Virginia",
+    "previous": "2 mph NE;3 mph E;3 mph E;3 mph E"
+  },
+  {
+    "away": "North Carolina",
+    "current": "0;0;0;0",
+    "field": "precipitation_probability",
+    "game_id": "401858305",
+    "home": "Virginia",
+    "previous": "0;1;1;1"
+  },
+  {
+    "away": "North Carolina",
+    "current": "Partly Sunny;Mostly Cloudy;Mostly Cloudy;Mostly Cloudy",
+    "field": "weather_description",
+    "game_id": "401858305",
+    "home": "Virginia",
+    "previous": "Mostly Sunny;Mostly Sunny;Mostly Sunny;Mostly Sunny"
+  },
+  {
+    "away": "North Carolina",
+    "current": "2026-11-20T14:03:12+00:00",
+    "field": "forecast_issued_utc",
+    "game_id": "401858305",
+    "home": "Virginia",
+    "previous": "2026-11-19T14:04:31+00:00"
+  },
+  {
+    "away": "North Carolina",
+    "current": "OL #51 Grayson Reid: Available;OL #52 McKale Boley: Available;OL #54 Makilan Thomas: Available;OL #55 Jim Harris Jr.: Available;OL #57 Luke Hatfield: Available;OL #58 Noah Hartsoe: Out;OL #60 Drake Metcalf: Doubtful;OL #61 Dane Steele: Available;OL #64 Cole Surber: Available;OL #65 Grant Ellinger: Out;OL #66 Mikey Gildea: Available;OL #67 Will Rosen: Available;OL #69 Ryan Brubaker: Available;OL #70 Dane Wleklinski: Available;OL #71 Monroe Mills: Available;OL #72 Ben York: Available;OL #75 Dylan Biehl: Available;OL #76 Alex Payne: Available;OL #77 Noah Josey: Available;OL #79 Jon Adair: Available",
+    "field": "home_ol_report",
+    "game_id": "401858305",
+    "home": "Virginia",
+    "previous": "OL #51 Grayson Reid: Available;OL #52 McKale Boley: Available;OL #54 Makilan Thomas: Available;OL #55 Jim Harris Jr.: Available;OL #57 Luke Hatfield: Available;OL #58 Noah Hartsoe: Out;OL #60 Drake Metcalf: Questionable;OL #61 Dane Steele: Available;OL #64 Cole Surber: Available;OL #65 Grant Ellinger: Out;OL #66 Mikey Gildea: Available;OL #67 Will Rosen: Available;OL #69 Ryan Brubaker: Available;OL #70 Dane Wleklinski: Available;OL #71 Monroe Mills: Available;OL #72 Ben York: Available;OL #75 Dylan Biehl: Available;OL #76 Alex Payne: Available;OL #77 Noah Josey: Available;OL #79 Jon Adair: Available"
+  },
+  {
+    "away": "North Carolina",
+    "current": "DB #0 Ja'Maric Morris: Available;S #1 Montino Williams: Available;DB #2 Donavon Platt: Available;CB #3 Kevon Gray: Available;S #4 Corey Costner: Out;LB #5 Kam Robinson: Available;S #6 Brandyn Hillman: Available;CB #7 Josiah Persinger: Available;S #8 Christian Ellis: Doubtful;CB #9 Jam Jackson: Available;CB #10 Jacobie Henderson: Available;LB #11 Maddox Marcellus: Out;LB #13 Myles Brown: Available;DE #14 Fisher Camac: Available;DB #15 Lukas Sanker: Available;DE #16 Matthew Fobbs-White: Available;CB #17 Justin Ross: Available;DB #18 Jalen McNair: Available;DE #19 Evan Ward: Available;CB #20 Omillio Agard: Out;S #21 Keke Adams: Available;CB #22 Isaiah Harris: Available;S #23 Jaylen Jones: Available;LB #25 Derek Uran: Available;LB #26 Caleb Hardy: Available;DB #27 Alex Dunn: Out;LB #28 Dallas Brannon: Available;CB #29 Jayden Covil: Available;S #30 Ethan Minter: Available;DB #31 Patrick Campbell: Available;LB #32 Landon Danley: Out;DE #33 Nnanna Anyanwu: Available;S #34 Kevin Chadwick Jr.: Available;DL #36 Justin Townsend: Available;S #38 Armstrong Jones: Available;LB #42 Isaiah Reese: Out;DT #44 Darrion Henry-Young: Available;LB #45 Justin Rowe: Available;DT #46 Chase Morrison: Out;DE #47 Gabe Sneed: Available;LB #49 Cayden Cook-Cash: Available;DT #51 Sichan John: Available;DE #53 Gavin Johnson: Available;DT #55 Anthony Britton: Available;DT #56 Tyler Simmons: Available;DE #85 Jewett Hayes: Available;DL #88 Kervins Choute: Available;DT #91 Jason Hammond: Out;DT #92 Jonathan Allen: Available;DE #93 Billy Koudelka: Questionable;DE #94 Ezekiel Larry: Available;DE #95 Cazeem Moore: Available;DT #96 Bull Richardson: Out;DE #99 Devon Baxter: Out",
+    "field": "home_defense_report",
+    "game_id": "401858305",
+    "home": "Virginia",
+    "previous": "DB #0 Ja'Maric Morris: Available;S #1 Montino Williams: Available;DB #2 Donavon Platt: Available;CB #3 Kevon Gray: Available;S #4 Corey Costner: Out;LB #5 Kam Robinson: Available;S #6 Brandyn Hillman: Available;CB #7 Josiah Persinger: Available;S #8 Christian Ellis: Available;CB #9 Jam Jackson: Available;CB #10 Jacobie Henderson: Available;LB #11 Maddox Marcellus: Out;LB #13 Myles Brown: Available;DE #14 Fisher Camac: Available;DB #15 Lukas Sanker: Available;DE #16 Matthew Fobbs-White: Available;CB #17 Justin Ross: Available;DB #18 Jalen McNair: Available;DE #19 Evan Ward: Available;CB #20 Omillio Agard: Out;S #21 Keke Adams: Available;CB #22 Isaiah Harris: Available;S #23 Jaylen Jones: Available;LB #25 Derek Uran: Available;LB #26 Caleb Hardy: Available;DB #27 Alex Dunn: Out;LB #28 Dallas Brannon: Available;CB #29 Jayden Covil: Available;S #30 Ethan Minter: Available;DB #31 Patrick Campbell: Available;LB #32 Landon Danley: Out;DE #33 Nnanna Anyanwu: Available;S #34 Kevin Chadwick Jr.: Available;DL #36 Justin Townsend: Available;S #38 Armstrong Jones: Available;LB #42 Isaiah Reese: Out;DT #44 Darrion Henry-Young: Available;LB #45 Justin Rowe: Available;DT #46 Chase Morrison: Out;DE #47 Gabe Sneed: Available;LB #49 Cayden Cook-Cash: Available;DT #51 Sichan John: Available;DE #53 Gavin Johnson: Available;DT #55 Anthony Britton: Available;DT #56 Tyler Simmons: Available;DE #85 Jewett Hayes: Available;DL #88 Kervins Choute: Available;DT #91 Jason Hammond: Out;DT #92 Jonathan Allen: Available;DE #93 Billy Koudelka: Available;DE #94 Ezekiel Larry: Available;DE #95 Cazeem Moore: Available;DT #96 Bull Richardson: Out;DE #99 Devon Baxter: Out"
+  },
+  {
+    "away": "Houston",
+    "current": "66;67;66",
+    "field": "temperature_f",
+    "game_id": "401856868",
+    "home": "West Virginia",
+    "previous": "68;66;66"
+  },
+  {
+    "away": "Houston",
+    "current": "2 mph S;2 mph SE;2 mph SE",
+    "field": "wind",
+    "game_id": "401856868",
+    "home": "West Virginia",
+    "previous": "2 mph SE;1 mph SE;0 mph "
+  },
+  {
+    "away": "Houston",
+    "current": "Mostly Sunny;Mostly Sunny;Mostly Sunny",
+    "field": "weather_description",
+    "game_id": "401856868",
+    "home": "West Virginia",
+    "previous": "Sunny;Sunny;Sunny"
+  },
+  {
+    "away": "Houston",
+    "current": "2026-11-20T14:03:12+00:00",
+    "field": "forecast_issued_utc",
+    "game_id": "401856868",
+    "home": "West Virginia",
+    "previous": "2026-11-19T14:04:30+00:00"
+  },
+  {
+    "away": "Houston",
+    "current": "OL #50 Aaron Wolford: Out;OL #52 Anthony Boswell: Available;OL #53 Ronnell McLain: Available;OL #54 Rhett Gray: Available;OL #55 Demetris Dean II: Available;OL #56 Shadre Hurst: Available;OL #57 Hayden Wright: Available;OL #62 Ricardo Cordova: Available;OL #66 McKenzie Agnello: Available;OL #67 Hingano Hautau: Available;OL #68 Sean Terrell: Available;OL #70 Larry Crawford: Available;OL #71 Noah Abebe: Available;OL #72 RJ Lee: Available;OL #73 Drew Terrill: Available;OL #77 Troy Pless: Available;OL #79 Alvin Ebosele: Available",
+    "field": "away_ol_report",
+    "game_id": "401856868",
+    "home": "West Virginia",
+    "previous": "OL #50 Aaron Wolford: Out;OL #52 Anthony Boswell: Available;OL #53 Ronnell McLain: Available;OL #54 Rhett Gray: Available;OL #55 Demetris Dean II: Available;OL #56 Shadre Hurst: Available;OL #57 Hayden Wright: Available;OL #62 Ricardo Cordova: Available;OL #66 McKenzie Agnello: Probable;OL #67 Hingano Hautau: Available;OL #68 Sean Terrell: Available;OL #70 Larry Crawford: Available;OL #71 Noah Abebe: Available;OL #72 RJ Lee: Available;OL #73 Drew Terrill: Available;OL #77 Troy Pless: Available;OL #79 Alvin Ebosele: Available"
+  },
+  {
+    "away": "Houston",
+    "current": "QB #3 Michael Hawkins Jr.: Probable;QB #6 Max Brown: Available;QB #7 Wyatt Walker Brown: Available;QB #8 Jyron Hughley: Available;QB #15 Scotty Fox Jr.: Available;QB #18 John Johnson III: Available;QB #19 Max Anderson: Available",
+    "field": "home_qb_report",
+    "game_id": "401856868",
+    "home": "West Virginia",
+    "previous": "QB #3 Michael Hawkins Jr.: Questionable;QB #6 Max Brown: Available;QB #7 Wyatt Walker Brown: Available;QB #8 Jyron Hughley: Available;QB #15 Scotty Fox Jr.: Available;QB #18 John Johnson III: Available;QB #19 Max Anderson: Available"
+  },
+  {
+    "away": "Western Kentucky",
+    "current": "64;65;65",
+    "field": "temperature_f",
+    "game_id": "401871080",
+    "home": "Liberty",
+    "previous": "64;65;64"
+  },
+  {
+    "away": "Western Kentucky",
+    "current": "8 mph NE;8 mph NE;7 mph NE",
+    "field": "wind",
+    "game_id": "401871080",
+    "home": "Liberty",
+    "previous": "7 mph E;7 mph E;6 mph NE"
+  },
+  {
+    "away": "Western Kentucky",
+    "current": "0;0;0",
+    "field": "precipitation_probability",
+    "game_id": "401871080",
+    "home": "Liberty",
+    "previous": "1;1;1"
+  },
+  {
+    "away": "Western Kentucky",
+    "current": "Mostly Cloudy;Mostly Cloudy;Mostly Cloudy",
+    "field": "weather_description",
+    "game_id": "401871080",
+    "home": "Liberty",
+    "previous": "Mostly Sunny;Mostly Sunny;Partly Sunny"
+  },
+  {
+    "away": "Western Kentucky",
+    "current": "2026-11-20T14:00:41+00:00",
+    "field": "forecast_issued_utc",
+    "game_id": "401871080",
+    "home": "Liberty",
+    "previous": "2026-11-19T14:04:31+00:00"
+  },
+  {
+    "away": "Western Kentucky",
+    "current": "https://libertyflames.com/news/2026/11/16/football-engbers-named-cusa-offensive-lineman-of-the-week;https://libertyflames.com/news/2026/11/17/football-press-conference-wku;https://libertyflames.com/news/2026/11/17/football-reeves-named-semifinalist-for-2026-lou-groza-collegiate-place-kicker-award;https://libertyflames.com/news/2026/11/19/football-game-day-wku",
+    "field": "home_article_sources",
+    "game_id": "401871080",
+    "home": "Liberty",
+    "previous": "https://libertyflames.com/news/2026/11/14/football-flames-run-their-way-into-the-cusa-title-game-with-mtsu-victory;https://libertyflames.com/news/2026/11/16/football-engbers-named-cusa-offensive-lineman-of-the-week;https://libertyflames.com/news/2026/11/17/football-press-conference-wku;https://libertyflames.com/news/2026/11/17/football-reeves-named-semifinalist-for-2026-lou-groza-collegiate-place-kicker-award"
+  },
+  {
+    "away": "Missouri State",
+    "current": "72;74;72",
+    "field": "temperature_f",
+    "game_id": "401871079",
+    "home": "Jacksonville State",
+    "previous": "70;70;71"
+  },
+  {
+    "away": "Missouri State",
+    "current": "10 mph E;10 mph E;5 mph E",
+    "field": "wind",
+    "game_id": "401871079",
+    "home": "Jacksonville State",
+    "previous": "10 mph E;10 mph E;10 mph E"
+  },
+  {
+    "away": "Missouri State",
+    "current": "1;1;1",
+    "field": "precipitation_probability",
+    "game_id": "401871079",
+    "home": "Jacksonville State",
+    "previous": "3;3;3"
+  },
+  {
+    "away": "Missouri State",
+    "current": "Mostly Sunny;Mostly Sunny;Sunny",
+    "field": "weather_description",
+    "game_id": "401871079",
+    "home": "Jacksonville State",
+    "previous": "Mostly Sunny;Mostly Sunny;Mostly Sunny"
+  },
+  {
+    "away": "Missouri State",
+    "current": "2026-11-20T14:01:09+00:00",
+    "field": "forecast_issued_utc",
+    "game_id": "401871079",
+    "home": "Jacksonville State",
+    "previous": "2026-11-19T14:04:30+00:00"
+  },
+  {
+    "away": "Charlotte",
+    "current": "72;73;73",
+    "field": "temperature_f",
+    "game_id": "401862832",
+    "home": "Tulsa",
+    "previous": "71;72;72"
+  },
+  {
+    "away": "Charlotte",
+    "current": "0;0;11",
+    "field": "precipitation_probability",
+    "game_id": "401862832",
+    "home": "Tulsa",
+    "previous": "23;23;23"
+  },
+  {
+    "away": "Charlotte",
+    "current": "Mostly Sunny;Sunny;Sunny",
+    "field": "weather_description",
+    "game_id": "401862832",
+    "home": "Tulsa",
+    "previous": "Slight Chance Rain Showers;Slight Chance Rain Showers;Slight Chance Rain Showers"
+  },
+  {
+    "away": "Charlotte",
+    "current": "2026-11-20T14:03:13+00:00",
+    "field": "forecast_issued_utc",
+    "game_id": "401862832",
+    "home": "Tulsa",
+    "previous": "2026-11-19T14:04:30+00:00"
+  },
+  {
+    "away": "Charlotte",
+    "current": "4",
+    "field": "home_official_recent_articles",
+    "game_id": "401862832",
+    "home": "Tulsa",
+    "previous": "3"
+  },
+  {
+    "away": "Charlotte",
+    "current": "https://tulsahurricane.com/news/2026/11/14/football-tulsa-clinches-bowl-eligibility-in-38-21-win-over-fau;https://tulsahurricane.com/news/2026/11/16/football-watch-tre-lamb-previews-tulsas-matchup-against-charlotte;https://tulsahurricane.com/news/2026/11/19/football-tailgate-experience-set-for-charlotte;https://tulsahurricane.com/news/2026/11/19/football-tulsa-hosts-charlotte-saturday-in-regular-season-home-finale",
+    "field": "home_article_sources",
+    "game_id": "401862832",
+    "home": "Tulsa",
+    "previous": "https://tulsahurricane.com/news/2026/11/12/football-tulsa-hosts-florida-atlantic-for-homecoming;https://tulsahurricane.com/news/2026/11/14/football-tulsa-clinches-bowl-eligibility-in-38-21-win-over-fau;https://tulsahurricane.com/news/2026/11/16/football-watch-tre-lamb-previews-tulsas-matchup-against-charlotte"
+  },
+  {
+    "away": "Middle Tennessee",
+    "current": "75;76;77",
+    "field": "temperature_f",
+    "game_id": "401871081",
+    "home": "Sam Houston",
+    "previous": "75;75;75"
+  },
+  {
+    "away": "Middle Tennessee",
+    "current": "5 mph S;5 mph SE;5 mph SE",
+    "field": "wind",
+    "game_id": "401871081",
+    "home": "Sam Houston",
+    "previous": "5 mph SE;5 mph S;5 mph S"
+  },
+  {
+    "away": "Middle Tennessee",
+    "current": "0;0;0",
+    "field": "precipitation_probability",
+    "game_id": "401871081",
+    "home": "Sam Houston",
+    "previous": "5;5;5"
+  },
+  {
+    "away": "Middle Tennessee",
+    "current": "Mostly Sunny;Mostly Sunny;Mostly Sunny",
+    "field": "weather_description",
+    "game_id": "401871081",
+    "home": "Sam Houston",
+    "previous": "Partly Sunny;Mostly Sunny;Mostly Sunny"
+  },
+  {
+    "away": "Middle Tennessee",
+    "current": "2026-11-20T14:03:13+00:00",
+    "field": "forecast_issued_utc",
+    "game_id": "401871081",
+    "home": "Sam Houston",
+    "previous": "2026-11-19T14:04:30+00:00"
+  },
+  {
+    "away": "Middle Tennessee",
+    "current": "https://gobearkats.com/news/2026/11/14/football-kats-fall-to-kennesaw-state;https://gobearkats.com/news/2026/11/19/football-game-11-preview-vs-mtsu",
+    "field": "home_article_sources",
+    "game_id": "401871081",
+    "home": "Sam Houston",
+    "previous": "https://gobearkats.com/news/2026/11/12/football-game-10-preview-vs-kennesaw-state;https://gobearkats.com/news/2026/11/14/football-kats-fall-to-kennesaw-state"
+  },
+  {
+    "away": "Iowa",
+    "current": "68;69;68;67",
+    "field": "temperature_f",
+    "game_id": "401858527",
+    "home": "Illinois",
+    "previous": "67;68;68;66"
+  },
+  {
+    "away": "Iowa",
+    "current": "10 mph S;10 mph S;9 mph S;8 mph S",
+    "field": "wind",
+    "game_id": "401858527",
+    "home": "Illinois",
+    "previous": "10 mph S;10 mph S;10 mph S;10 mph S"
+  },
+  {
+    "away": "Iowa",
+    "current": "0;0;0;0",
+    "field": "precipitation_probability",
+    "game_id": "401858527",
+    "home": "Illinois",
+    "previous": "3;3;3;3"
+  },
+  {
+    "away": "Iowa",
+    "current": "Sunny;Sunny;Sunny;Sunny",
+    "field": "weather_description",
+    "game_id": "401858527",
+    "home": "Illinois",
+    "previous": "Mostly Sunny;Mostly Sunny;Mostly Sunny;Partly Sunny"
+  },
+  {
+    "away": "Iowa",
+    "current": "2026-11-20T14:01:43+00:00",
+    "field": "forecast_issued_utc",
+    "game_id": "401858527",
+    "home": "Illinois",
+    "previous": "2026-11-19T14:04:31+00:00"
+  },
+  {
+    "away": "UL Monroe",
+    "current": "56;55;54;52",
+    "field": "temperature_f",
+    "game_id": "401869929",
+    "home": "App State",
+    "previous": "56;55;53;51"
+  },
+  {
+    "away": "UL Monroe",
+    "current": "8 mph E;8 mph E;6 mph E;5 mph E",
+    "field": "wind",
+    "game_id": "401869929",
+    "home": "App State",
+    "previous": "7 mph SE;6 mph E;5 mph E;5 mph E"
+  },
+  {
+    "away": "UL Monroe",
+    "current": "0;0;0;0",
+    "field": "precipitation_probability",
+    "game_id": "401869929",
+    "home": "App State",
+    "previous": "4;4;4;4"
+  },
+  {
+    "away": "UL Monroe",
+    "current": "Mostly Cloudy;Mostly Cloudy;Mostly Cloudy;Mostly Cloudy",
+    "field": "weather_description",
+    "game_id": "401869929",
+    "home": "App State",
+    "previous": "Mostly Sunny;Mostly Sunny;Mostly Sunny;Mostly Sunny"
+  },
+  {
+    "away": "UL Monroe",
+    "current": "2026-11-20T14:00:56+00:00",
+    "field": "forecast_issued_utc",
+    "game_id": "401869929",
+    "home": "App State",
+    "previous": "2026-11-19T14:04:31+00:00"
+  },
+  {
+    "away": "South Florida",
+    "current": "81;82;81;79",
+    "field": "temperature_f",
+    "game_id": "401862833",
+    "home": "Florida Atlantic",
+    "previous": "82;81;80;79"
+  },
+  {
+    "away": "South Florida",
+    "current": "10 mph SW;10 mph W;9 mph W;7 mph W",
+    "field": "wind",
+    "game_id": "401862833",
+    "home": "Florida Atlantic",
+    "previous": "10 mph W;10 mph NW;9 mph NW;8 mph NW"
+  },
+  {
+    "away": "South Florida",
+    "current": "3;12;23;20",
+    "field": "precipitation_probability",
+    "game_id": "401862833",
+    "home": "Florida Atlantic",
+    "previous": "35;35;35;35"
+  },
+  {
+    "away": "South Florida",
+    "current": "Partly Sunny;Mostly Sunny;Slight Chance Rain Showers;Slight Chance Rain Showers",
+    "field": "weather_description",
+    "game_id": "401862833",
+    "home": "Florida Atlantic",
+    "previous": "Chance Rain Showers;Chance Rain Showers;Chance Rain Showers;Chance Rain Showers"
+  },
+  {
+    "away": "South Florida",
+    "current": "2026-11-20T14:03:13+00:00",
+    "field": "forecast_issued_utc",
+    "game_id": "401862833",
+    "home": "Florida Atlantic",
+    "previous": "2026-11-19T14:04:31+00:00"
+  },
+  {
+    "away": "South Florida",
+    "current": "https://fausports.com/news/2026/11/16/football-kickoff-time-at-ecu-scheduled-for-1-pm;https://fausports.com/news/2026/11/16/football-valsin-and-rooks-to-join-kittleys-weekly-espn-presser;https://fausports.com/news/2026/11/17/football-messer-magic-shirt-available-at-on-campus-store;https://fausports.com/news/2026/11/17/football-trent-vasey-joins-kittley-on-weekly-coaches-show",
+    "field": "home_article_sources",
+    "game_id": "401862833",
+    "home": "Florida Atlantic",
+    "previous": "https://fausports.com/news/2026/11/13/football-where-are-they-now-johnnie-sloan;https://fausports.com/news/2026/11/16/football-kickoff-time-at-ecu-scheduled-for-1-pm;https://fausports.com/news/2026/11/16/football-messer-named-biletnikoff-award-semifinalist;https://fausports.com/news/2026/11/16/football-valsin-and-rooks-to-join-kittleys-weekly-espn-presser"
+  },
+  {
+    "away": "Delaware",
+    "current": "61;62;61",
+    "field": "temperature_f",
+    "game_id": "401871077",
+    "home": "New Mexico State",
+    "previous": "61;61;60"
+  },
+  {
+    "away": "Delaware",
+    "current": "15 mph W;15 mph W;13 mph W",
+    "field": "wind",
+    "game_id": "401871077",
+    "home": "New Mexico State",
+    "previous": "13 mph W;12 mph W;9 mph W"
+  },
+  {
+    "away": "Delaware",
+    "current": "2026-11-20T14:03:13+00:00",
+    "field": "forecast_issued_utc",
+    "game_id": "401871077",
+    "home": "New Mexico State",
+    "previous": "2026-11-19T14:02:11+00:00"
+  },
+  {
+    "away": "Delaware",
+    "current": "4",
+    "field": "away_official_recent_articles",
+    "game_id": "401871077",
+    "home": "New Mexico State",
+    "previous": "3"
+  },
+  {
+    "away": "Delaware",
+    "current": "https://bluehens.com/news/2026/11/13/football-celebrates-80th-anniversary-of-first-national-championship-heading-into-homecoming;https://bluehens.com/news/2026/11/14/football-delaware-defense-stands-tall-in-24-16-win-over-fiu;https://bluehens.com/news/2026/11/16/footballs-minicucci-earns-cusa-offensive-player-of-the-week-for-third-time;https://bluehens.com/news/2026/11/19/football-looks-to-become-bowl-eligible-for-second-straight-season-at-new-mexico-state",
+    "field": "away_article_sources",
+    "game_id": "401871077",
+    "home": "New Mexico State",
+    "previous": "https://bluehens.com/news/2026/11/13/football-celebrates-80th-anniversary-of-first-national-championship-heading-into-homecoming;https://bluehens.com/news/2026/11/14/football-delaware-defense-stands-tall-in-24-16-win-over-fiu;https://bluehens.com/news/2026/11/16/footballs-minicucci-earns-cusa-offensive-player-of-the-week-for-third-time"
+  },
+  {
+    "away": "Coastal Carolina",
+    "current": "77;78;76",
+    "field": "temperature_f",
+    "game_id": "401869946",
+    "home": "Louisiana",
+    "previous": "76;76;74"
+  },
+  {
+    "away": "Coastal Carolina",
+    "current": "5 mph SE;5 mph SE;5 mph E",
+    "field": "wind",
+    "game_id": "401869946",
+    "home": "Louisiana",
+    "previous": "5 mph E;5 mph E;5 mph E"
+  },
+  {
+    "away": "Coastal Carolina",
+    "current": "0;0;0",
+    "field": "precipitation_probability",
+    "game_id": "401869946",
+    "home": "Louisiana",
+    "previous": "10;10;10"
+  },
+  {
+    "away": "Coastal Carolina",
+    "current": "Sunny;Sunny;Mostly Sunny",
+    "field": "weather_description",
+    "game_id": "401869946",
+    "home": "Louisiana",
+    "previous": "Partly Sunny;Partly Sunny;Partly Sunny"
+  },
+  {
+    "away": "Coastal Carolina",
+    "current": "2026-11-20T14:03:13+00:00",
+    "field": "forecast_issued_utc",
+    "game_id": "401869946",
+    "home": "Louisiana",
+    "previous": "2026-11-19T14:04:31+00:00"
+  },
+  {
+    "away": "Florida International",
+    "current": "67;67;66",
+    "field": "temperature_f",
+    "game_id": "401871078",
+    "home": "Kennesaw State",
+    "previous": "67;66;64"
+  },
+  {
+    "away": "Florida International",
+    "current": "6;12;10",
+    "field": "precipitation_probability",
+    "game_id": "401871078",
+    "home": "Kennesaw State",
+    "previous": "2;2;2"
+  },
+  {
+    "away": "Florida International",
+    "current": "Sunny;Sunny;Sunny",
+    "field": "weather_description",
+    "game_id": "401871078",
+    "home": "Kennesaw State",
+    "previous": "Mostly Sunny;Mostly Sunny;Mostly Sunny"
+  },
+  {
+    "away": "Florida International",
+    "current": "2026-11-20T14:01:22+00:00",
+    "field": "forecast_issued_utc",
+    "game_id": "401871078",
+    "home": "Kennesaw State",
+    "previous": "2026-11-19T14:04:31+00:00"
+  },
+  {
+    "away": "UCLA",
+    "current": "62;61;58;55",
+    "field": "temperature_f",
+    "game_id": "401858528",
+    "home": "Michigan",
+    "previous": "61;60;58;54"
+  },
+  {
+    "away": "UCLA",
+    "current": "8 mph S;7 mph S;7 mph S;6 mph SSE",
+    "field": "wind",
+    "game_id": "401858528",
+    "home": "Michigan",
+    "previous": "7 mph S;7 mph S;7 mph S;7 mph S"
+  },
+  {
+    "away": "UCLA",
+    "current": "Sunny;Sunny;Sunny;Clear",
+    "field": "weather_description",
+    "game_id": "401858528",
+    "home": "Michigan",
+    "previous": "Sunny;Sunny;Sunny;Mostly Clear"
+  },
+  {
+    "away": "UCLA",
+    "current": "2026-11-20T14:03:13+00:00",
+    "field": "forecast_issued_utc",
+    "game_id": "401858528",
+    "home": "Michigan",
+    "previous": "2026-11-19T14:04:31+00:00"
+  },
+  {
+    "away": "UCLA",
+    "current": "LB #0 Donavyn Pellot: Available;DB #1 Scooter Jackson: Available;DB #2 Rodrick Pleasant: Available;DB #3 Robert Stafford III: Available;DB #4 Cole Martin: Available;DB #6 Tao Johnson: Available;DB #7 Aaron Williams: Available;LB #9 Jalen Woods: Doubtful;LB #10 Sammy Omosigho: Available;DL #11 Nico Davillier: Available;DB #12 Malik Hartford: Available;DB #14 LaRue Zamorano III: Available;DL #15 Sahir West: Available;OLB #17 Lucien Holland: Available;DB #18 Osiris Gilbert: Available;OLB #19 Ryan McCulloch: Out;OLB #20 Scott Taylor: Available;DB #21 Dante Lovett: Available;DB #22 Ty Lee: Available;DB #23 Jhase McMillan: Available;DL #24 Cole Cogshell: Available;DB #25 Kuron Jabari Jr.: Available;LB #25 Trent Hendrick: Available;DB #26 CJ Lavender: Available;DB #27 Ta'Shawn James: Available;DB #28 Mason Rivera: Available;DL #29 Robert James III: Available;DB #30 Zeke Johnson: Available;DB #31 Chase Coleman: Available;DB #32 Derrick Barksdale: Available;DL #33 Dallin Havea: Available;DB #35 Logan Hirou: Available;DB #37 Joshua Dixon: Available;OLB #39 Anthony Sacca: Available;LB #40 Mone Malafu: Available;OLB #41 Jewelous \"JuJu\" Walls: Available;DB #43 Brett Barry: Available;DL #44 Ashton Sanders: Out;DB #45 Jamier Johnson: Available;LB #49 Malaki Soliai-Tui: Available;LB #53 Jacob Reis: Available;DL #54 Ty Partlow: Available;DL #55 A.J. Fuimaono: Available;LB #56 Drew Spinogatti: Available;LB #57 Matt Muasau: Available;DL #59 Gavin Blum: Available;DL #88 Grant Buckey: Available;DL #90 Amier Washington: Available;DL #92 Darold DeNgohe: Available;DL #94 Marcus Almada: Available;DL #95 Tyson Ford: Available;DL #96 James Moffat: Available;DL #97 Aiden Gobaira: Available;DL #99 Maxwell Roy: Available",
+    "field": "away_defense_report",
+    "game_id": "401858528",
+    "home": "Michigan",
+    "previous": "LB #0 Donavyn Pellot: Available;DB #1 Scooter Jackson: Available;DB #2 Rodrick Pleasant: Available;DB #3 Robert Stafford III: Available;DB #4 Cole Martin: Available;DB #6 Tao Johnson: Available;DB #7 Aaron Williams: Available;LB #9 Jalen Woods: Questionable;LB #10 Sammy Omosigho: Available;DL #11 Nico Davillier: Available;DB #12 Malik Hartford: Available;DB #14 LaRue Zamorano III: Available;DL #15 Sahir West: Available;OLB #17 Lucien Holland: Available;DB #18 Osiris Gilbert: Available;OLB #19 Ryan McCulloch: Out;OLB #20 Scott Taylor: Available;DB #21 Dante Lovett: Available;DB #22 Ty Lee: Available;DB #23 Jhase McMillan: Available;DL #24 Cole Cogshell: Available;DB #25 Kuron Jabari Jr.: Available;LB #25 Trent Hendrick: Available;DB #26 CJ Lavender: Available;DB #27 Ta'Shawn James: Available;DB #28 Mason Rivera: Available;DL #29 Robert James III: Available;DB #30 Zeke Johnson: Available;DB #31 Chase Coleman: Available;DB #32 Derrick Barksdale: Available;DL #33 Dallin Havea: Available;DB #35 Logan Hirou: Available;DB #37 Joshua Dixon: Available;OLB #39 Anthony Sacca: Available;LB #40 Mone Malafu: Available;OLB #41 Jewelous \"JuJu\" Walls: Available;DB #43 Brett Barry: Available;DL #44 Ashton Sanders: Out;DB #45 Jamier Johnson: Available;LB #49 Malaki Soliai-Tui: Available;LB #53 Jacob Reis: Available;DL #54 Ty Partlow: Available;DL #55 A.J. Fuimaono: Available;LB #56 Drew Spinogatti: Available;LB #57 Matt Muasau: Available;DL #59 Gavin Blum: Available;DL #88 Grant Buckey: Available;DL #90 Amier Washington: Available;DL #92 Darold DeNgohe: Available;DL #94 Marcus Almada: Available;DL #95 Tyson Ford: Available;DL #96 James Moffat: Available;DL #97 Aiden Gobaira: Available;DL #99 Maxwell Roy: Available"
+  },
+  {
+    "away": "NC State",
+    "current": "71;70;70;68",
+    "field": "temperature_f",
+    "game_id": "401858304",
+    "home": "Florida State",
+    "previous": "75;74;73;71"
+  },
+  {
+    "away": "NC State",
+    "current": "10 mph NNE;10 mph NNE;10 mph NNE;10 mph NNE",
+    "field": "wind",
+    "game_id": "401858304",
+    "home": "Florida State",
+    "previous": "10 mph NE;10 mph NE;10 mph NE;10 mph NE"
+  },
+  {
+    "away": "NC State",
+    "current": "4;4;4;4",
+    "field": "precipitation_probability",
+    "game_id": "401858304",
+    "home": "Florida State",
+    "previous": "9;9;9;9"
+  },
+  {
+    "away": "NC State",
+    "current": "2026-11-20T14:01:38+00:00",
+    "field": "forecast_issued_utc",
+    "game_id": "401858304",
+    "home": "Florida State",
+    "previous": "2026-11-19T14:04:32+00:00"
+  },
+  {
+    "away": "NC State",
+    "current": "QB #10 Will Wilson: Out;QB #11 CJ Bailey: Available;QB #12 Tad Hudson: Available;QB #15 Hudson Wilharm: Available;QB #16 Parker Thompson: Available",
+    "field": "away_qb_report",
+    "game_id": "401858304",
+    "home": "Florida State",
+    "previous": "QB #10 Will Wilson: Questionable;QB #11 CJ Bailey: Available;QB #12 Tad Hudson: Available;QB #15 Hudson Wilharm: Available;QB #16 Parker Thompson: Available"
+  },
+  {
+    "away": "NC State",
+    "current": "DB #0 Quindarrius Jones: Doubtful;DL #1 Darryll Desir: Available;DL #3 Mandrell Desir: Available;DB #4 Charles Lester III: Available;DL #5 Daniel Lyons: Available;DB #6 Ja\u2019Bril Rawls: Out;DB #7 Ashlynd Barker: Available;DL #8 Deante McCray: Probable;LB #9 Omar Graham Jr.: Available;LB #10 Chris Jones: Available;DB #11 CJ Richard Jr.: Available;DB #12 Nehemiah Chandler: Available;DL #13 Deamontae Diggs: Available;DB #14 Ma'Khi Jones: Probable;DL #15 Rylan Kennedy: Doubtful;DB #16 Karson Hobbs: Out;DB #18 Jamari Howard: Probable;DB #19 Jarvis Boatwright Jr.: Available;LB #20 Blake Nichelson: Available;DB #21 Max Redmon: Available;DB #22 Zae Thomas: Available;DB #24 K.J. Kirkland: Available;DB #26 Ricky Knight III: Available;DB #27 Jordan Crutchfield: Available;LB #28 Mikai Gbayor: Available;LB #29 Caleb LaVallee: Probable;LB #30 Izayia Williams: Out;LB #31 Karon Maycock: Available;DL #32 Jalen Anderson: Available;DB #33 Antonio Cromartie Jr.: Available;LB #35 Ethan Pritchard: Available;DB #37 Tre Bell III: Available;LB #38 Daylen Green: Out;DB #40 Darin Townsend: Available;LB #41 AJ Cottrill: Available;LB #42 Chris Thomas: Available;LB #43 Trent Rogers: Available;LB #45 Noah LaVallee: Out;DB #47 Donny Hiebert: Available;LB #53 Brandon Torres: Available;DL #54 Earnest Rankins: Available;DL #55 Kevin Wynn: Out;DL #88 Jordan Sanders: Available;DL #90 Jaemin Pinckney: Available;DL #91 Cam Brooks: Available;DL #92 Judah Daniels: Available;DL #94 Franklin Whitley: Available;DL #95 Christian Collins-Murray: Available;DL #96 Tylon Lee: Available;DL #98 Wihtlley Cadeau: Available",
+    "field": "home_defense_report",
+    "game_id": "401858304",
+    "home": "Florida State",
+    "previous": "DB #0 Quindarrius Jones: Doubtful;DL #1 Darryll Desir: Available;DL #3 Mandrell Desir: Available;DB #4 Charles Lester III: Available;DL #5 Daniel Lyons: Available;DB #6 Ja\u2019Bril Rawls: Doubtful;DB #7 Ashlynd Barker: Available;DL #8 Deante McCray: Questionable;LB #9 Omar Graham Jr.: Available;LB #10 Chris Jones: Available;DB #11 CJ Richard Jr.: Available;DB #12 Nehemiah Chandler: Available;DL #13 Deamontae Diggs: Available;DB #14 Ma'Khi Jones: Probable;DL #15 Rylan Kennedy: Doubtful;DB #16 Karson Hobbs: Out;DB #18 Jamari Howard: Probable;DB #19 Jarvis Boatwright Jr.: Available;LB #20 Blake Nichelson: Available;DB #21 Max Redmon: Available;DB #22 Zae Thomas: Available;DB #24 K.J. Kirkland: Available;DB #26 Ricky Knight III: Available;DB #27 Jordan Crutchfield: Available;LB #28 Mikai Gbayor: Available;LB #29 Caleb LaVallee: Probable;LB #30 Izayia Williams: Out;LB #31 Karon Maycock: Available;DL #32 Jalen Anderson: Available;DB #33 Antonio Cromartie Jr.: Available;LB #35 Ethan Pritchard: Available;DB #37 Tre Bell III: Available;LB #38 Daylen Green: Out;DB #40 Darin Townsend: Available;LB #41 AJ Cottrill: Available;LB #42 Chris Thomas: Available;LB #43 Trent Rogers: Available;LB #45 Noah LaVallee: Out;DB #47 Donny Hiebert: Available;LB #53 Brandon Torres: Available;DL #54 Earnest Rankins: Available;DL #55 Kevin Wynn: Out;DL #88 Jordan Sanders: Available;DL #90 Jaemin Pinckney: Available;DL #91 Cam Brooks: Available;DL #92 Judah Daniels: Available;DL #94 Franklin Whitley: Available;DL #95 Christian Collins-Murray: Available;DL #96 Tylon Lee: Available;DL #98 Wihtlley Cadeau: Available"
+  },
+  {
+    "away": "Old Dominion",
+    "current": "60;58;55;51",
+    "field": "temperature_f",
+    "game_id": "401861968",
+    "home": "UConn",
+    "previous": "59;57;54;50"
+  },
+  {
+    "away": "Old Dominion",
+    "current": "5 mph S;5 mph S;5 mph S;3 mph S",
+    "field": "wind",
+    "game_id": "401861968",
+    "home": "UConn",
+    "previous": "1 mph S;1 mph S;1 mph S;2 mph S"
+  },
+  {
+    "away": "Old Dominion",
+    "current": "Mostly Sunny;Mostly Sunny;Mostly Sunny;Mostly Cloudy",
+    "field": "weather_description",
+    "game_id": "401861968",
+    "home": "UConn",
+    "previous": "Sunny;Sunny;Sunny;Mostly Clear"
+  },
+  {
+    "away": "Old Dominion",
+    "current": "2026-11-20T14:03:14+00:00",
+    "field": "forecast_issued_utc",
+    "game_id": "401861968",
+    "home": "UConn",
+    "previous": "2026-11-19T14:04:32+00:00"
+  },
+  {
+    "away": "Indiana",
+    "current": "48;48;49;48",
+    "field": "temperature_f",
+    "game_id": "401858535",
+    "home": "Washington",
+    "previous": "48;49;49;48"
+  },
+  {
+    "away": "Indiana",
+    "current": "2 mph S;2 mph SW;2 mph SW;2 mph SW",
+    "field": "wind",
+    "game_id": "401858535",
+    "home": "Washington",
+    "previous": "2 mph E;3 mph E;3 mph E;3 mph E"
+  },
+  {
+    "away": "Indiana",
+    "current": "17;13;18;30",
+    "field": "precipitation_probability",
+    "game_id": "401858535",
+    "home": "Washington",
+    "previous": "36;36;36;36"
+  },
+  {
+    "away": "Indiana",
+    "current": "Slight Chance Light Rain;Cloudy;Slight Chance Light Rain;Chance Light Rain",
+    "field": "weather_description",
+    "game_id": "401858535",
+    "home": "Washington",
+    "previous": "Chance Light Rain;Chance Light Rain;Chance Light Rain;Chance Light Rain"
+  },
+  {
+    "away": "Indiana",
+    "current": "2026-11-20T14:03:14+00:00",
+    "field": "forecast_issued_utc",
+    "game_id": "401858535",
+    "home": "Washington",
+    "previous": "2026-11-19T14:02:10+00:00"
+  },
+  {
+    "away": "Indiana",
+    "current": "https://iuhoosiers.com/news/2026/11/16/football-football-gameday-at-washington-week-12;https://iuhoosiers.com/news/2026/11/17/football-hoosiers-into-no-8-in-cfp-rankings-at-halfway-point;https://iuhoosiers.com/news/2026/11/19/football-top-notch-back-khobie-martin-glad-to-be-back-in-the-loop-PETE;https://iuhoosiers.com/news/2026/11/20/football-fired-up-hoosiers-ready-for-final-regular-season-road-trip-PETE",
+    "field": "away_article_sources",
+    "game_id": "401858535",
+    "home": "Washington",
+    "previous": "https://iuhoosiers.com/news/2026/11/16/football-football-gameday-at-washington-week-12;https://iuhoosiers.com/news/2026/11/17/football-hoosiers-into-no-8-in-cfp-rankings-at-halfway-point;https://iuhoosiers.com/news/2026/11/17/football-quoted-lee-beebe-jr-khobie-martin-jamari-sharpe;https://iuhoosiers.com/news/2026/11/19/football-top-notch-back-khobie-martin-glad-to-be-back-in-the-loop-PETE"
+  },
+  {
+    "away": "Indiana",
+    "current": "DB #0 Carson Williams: Available;DB #1 Amare Ferrell: Available;DB #2 Byron Baldwin Jr.: Available;DB #3 Jaylen Bell: Available;DB #4 A.J. Harris: Doubtful;LB #5 Rolijah Hardy: Questionable;DB #6 Preston Zachman: Available;DL #7 Chiddi Obiazor: Available;DL #8 Josh Burnham: Available;DB #9 Seaonta Stewart Jr.: Available;DL #9 Stephen Daley: Available;DB #10 Ryland Gandy: Available;DL #12 Tobi Osunsanmi: Available;DB #13 Quan Sanks: Available;LB #14 Kaiden Turner: Available;DB #16 Jamar Owens: Available;DL #17 Daniel Ndukwe: Available;DL #18 Kellan Wyatt: Out;DB #19 Zacharey Smith: Available;LB #21 Jacob Savage: Available;DB #22 Jamari Sharpe: Available;LB #23 Henry Ohlinger: Available;LB #24 Ja'Dyn Williams: Available;DB #25 D'Montae Tims: Available;DB #26 Iosua Stephens: Available;DB #27 Kasmir Hicks: Available;LB #30 PJ Nelson: Available;DB #31 Anthony Chung: Available;DB #33 Garrett Reese: Out;LB #34 Jeff Utzinger: Available;DB #36 Clay Conner: Available;DB #37 Heath Kizer: Available;LB #38 Kaden McConnell: Available;DL #40 Quentin Clark: Available;DL #41 Keishaun Calhoun: Available;DL #42 Kevontay Hugan: Available;LB #44 Amari Kamara: Available;DB #45 Lincoln Murff: Available;LB #46 Isaiah Jones: Available;DL #50 Jhrevious Hall: Available;LB #52 Clayton Allen: Out;DL #55 Rodney White: Available;DL #90 Joe Hjelle: Available;DL #91 Blake Smythe: Available;DL #92 Gabe Hill: Available;DL #93 Ronelle Johnson: Available;DL #94 Kyler Garcia: Available;DL #95 Tyrique Tucker: Available;DL #97 Mario Landino: Available;DL #98 Cam McHaney: Available;DL #99 Tyrone Burrus Jr.: Available",
+    "field": "away_defense_report",
+    "game_id": "401858535",
+    "home": "Washington",
+    "previous": "DB #0 Carson Williams: Available;DB #1 Amare Ferrell: Available;DB #2 Byron Baldwin Jr.: Available;DB #3 Jaylen Bell: Available;DB #4 A.J. Harris: Doubtful;LB #5 Rolijah Hardy: Probable;DB #6 Preston Zachman: Available;DL #7 Chiddi Obiazor: Available;DL #8 Josh Burnham: Available;DB #9 Seaonta Stewart Jr.: Available;DL #9 Stephen Daley: Available;DB #10 Ryland Gandy: Available;DL #12 Tobi Osunsanmi: Available;DB #13 Quan Sanks: Available;LB #14 Kaiden Turner: Available;DB #16 Jamar Owens: Available;DL #17 Daniel Ndukwe: Available;DL #18 Kellan Wyatt: Out;DB #19 Zacharey Smith: Available;LB #21 Jacob Savage: Available;DB #22 Jamari Sharpe: Available;LB #23 Henry Ohlinger: Available;LB #24 Ja'Dyn Williams: Available;DB #25 D'Montae Tims: Available;DB #26 Iosua Stephens: Available;DB #27 Kasmir Hicks: Available;LB #30 PJ Nelson: Available;DB #31 Anthony Chung: Available;DB #33 Garrett Reese: Out;LB #34 Jeff Utzinger: Available;DB #36 Clay Conner: Available;DB #37 Heath Kizer: Available;LB #38 Kaden McConnell: Available;DL #40 Quentin Clark: Available;DL #41 Keishaun Calhoun: Available;DL #42 Kevontay Hugan: Available;LB #44 Amari Kamara: Available;DB #45 Lincoln Murff: Available;LB #46 Isaiah Jones: Available;DL #50 Jhrevious Hall: Available;LB #52 Clayton Allen: Out;DL #55 Rodney White: Available;DL #90 Joe Hjelle: Available;DL #91 Blake Smythe: Available;DL #92 Gabe Hill: Available;DL #93 Ronelle Johnson: Available;DL #94 Kyler Garcia: Available;DL #95 Tyrique Tucker: Available;DL #97 Mario Landino: Available;DL #98 Cam McHaney: Available;DL #99 Tyrone Burrus Jr.: Available"
+  },
+  {
+    "away": "Indiana",
+    "current": "LB #0 Taariq Al-Uqdah: Available;CB #2 Rahshawn Clark: Available;CB #3 Emmanuel Karnley: Available;S #4 Rylon Dillard-Allen: Available;DL #5 Derek Colman-Brusa: Available;CB #6 Dylan Robinson: Available;S #7 Alex McLaughlin: Available;CB #8 Ramonz Adams Jr.: Available;LB #9 Jacob Manu: Available;LB #10 Xe'ree Alexander: Available;CB #13 Rahsjon Duncan: Exempt;S #15 Rahim Wright II: Available;CB #17 Elijah Durr: Probable;DL #18 Kai McClendon: Available;S #21 Gavin Day: Available;LB #23 Zaydrius Rainey-Sale: Available;CB #24 Jeron Jones: Available;LB #25 Donovan Robinson Jr.: Available;CB #26 Elias Johnson: Available;LB #27 Beck Walker: Exempt;S #28 Ksani Jiles: Exempt;CB #30 Kayden Greene: Available;S #31 Paul Mencke Jr.: Available;DL #33 Darin Conley: Available;LB #40 Ezaya Tokio: Exempt;DL #46 Ta'ita'i Uiagalelei: Available;DL #55 Victor Sanchez Hernandez: Exempt;DL #56 Ta'a Malu: Exempt;LB #57 Jesse Ewell Jr.: Exempt;DL #58 DeSean Watts: Available;DL #64 Tufanua Ionatana Umu-Cais: Available;DL #90 Elinneus Davis: Available;DL #94 Joseph Peko: Exempt;DL #98 Omar Khan: Available;S CJ Christian: Out",
+    "field": "home_defense_report",
+    "game_id": "401858535",
+    "home": "Washington",
+    "previous": "LB #0 Taariq Al-Uqdah: Available;CB #2 Rahshawn Clark: Available;CB #3 Emmanuel Karnley: Available;S #4 Rylon Dillard-Allen: Available;DL #5 Derek Colman-Brusa: Available;CB #6 Dylan Robinson: Available;S #7 Alex McLaughlin: Available;CB #8 Ramonz Adams Jr.: Available;LB #9 Jacob Manu: Available;LB #10 Xe'ree Alexander: Available;CB #13 Rahsjon Duncan: Exempt;S #15 Rahim Wright II: Available;CB #17 Elijah Durr: Available;DL #18 Kai McClendon: Available;S #21 Gavin Day: Available;LB #23 Zaydrius Rainey-Sale: Available;CB #24 Jeron Jones: Available;LB #25 Donovan Robinson Jr.: Available;CB #26 Elias Johnson: Available;LB #27 Beck Walker: Exempt;S #28 Ksani Jiles: Exempt;CB #30 Kayden Greene: Available;S #31 Paul Mencke Jr.: Available;DL #33 Darin Conley: Available;LB #40 Ezaya Tokio: Exempt;DL #46 Ta'ita'i Uiagalelei: Available;DL #55 Victor Sanchez Hernandez: Exempt;DL #56 Ta'a Malu: Exempt;LB #57 Jesse Ewell Jr.: Exempt;DL #58 DeSean Watts: Available;DL #64 Tufanua Ionatana Umu-Cais: Available;DL #90 Elinneus Davis: Available;DL #94 Joseph Peko: Exempt;DL #98 Omar Khan: Available;S CJ Christian: Out"
+  },
+  {
+    "away": "LSU",
+    "current": "68;66;64;59",
+    "field": "temperature_f",
+    "game_id": "401856754",
+    "home": "Tennessee",
+    "previous": "68;67;65;61"
+  },
+  {
+    "away": "LSU",
+    "current": "0;0;0;0",
+    "field": "precipitation_probability",
+    "game_id": "401856754",
+    "home": "Tennessee",
+    "previous": "1;1;1;1"
+  },
+  {
+    "away": "LSU",
+    "current": "2026-11-20T14:01:20+00:00",
+    "field": "forecast_issued_utc",
+    "game_id": "401856754",
+    "home": "Tennessee",
+    "previous": "2026-11-19T14:04:32+00:00"
+  },
+  {
+    "away": "LSU",
+    "current": "https://utsports.com/news/2026/11/17/football-9-vols-emphasize-team-growth-versatility-ahead-of-senior-day-showdown;https://utsports.com/news/2026/11/18/football-gilliam-adds-to-list-of-accolades-named-semifinalist-for-outland-trophy;https://utsports.com/news/2026/11/18/football-vols-in-the-nfl-week-10;https://utsports.com/news/2026/11/20/football-fb-preview-9-vols-host-lsu-in-pivotal-late-season-matchup",
+    "field": "home_article_sources",
+    "game_id": "401856754",
+    "home": "Tennessee",
+    "previous": "https://utsports.com/news/2026/11/17/football-9-vols-emphasize-team-growth-versatility-ahead-of-senior-day-showdown;https://utsports.com/news/2026/11/17/football-bishop-ranvier-named-semifinalists-for-doak-walker-and-lou-groza-awards;https://utsports.com/news/2026/11/18/football-gilliam-adds-to-list-of-accolades-named-semifinalist-for-outland-trophy;https://utsports.com/news/2026/11/18/football-vols-in-the-nfl-week-10"
+  },
+  {
+    "away": "Texas Tech",
+    "current": "75;75;76;75",
+    "field": "temperature_f",
+    "game_id": "401856871",
+    "home": "Baylor",
+    "previous": "75;75;74;72"
+  },
+  {
+    "away": "Texas Tech",
+    "current": "10 mph S;10 mph S;10 mph S;10 mph S",
+    "field": "wind",
+    "game_id": "401856871",
+    "home": "Baylor",
+    "previous": "15 mph S;10 mph S;10 mph S;10 mph SSE"
+  },
+  {
+    "away": "Texas Tech",
+    "current": "0;0;0;0",
+    "field": "precipitation_probability",
+    "game_id": "401856871",
+    "home": "Baylor",
+    "previous": "4;4;4;4"
+  },
+  {
+    "away": "Texas Tech",
+    "current": "Mostly Sunny;Mostly Sunny;Partly Sunny;Partly Sunny",
+    "field": "weather_description",
+    "game_id": "401856871",
+    "home": "Baylor",
+    "previous": "Mostly Sunny;Mostly Sunny;Mostly Sunny;Mostly Sunny"
+  },
+  {
+    "away": "Texas Tech",
+    "current": "2026-11-20T14:03:14+00:00",
+    "field": "forecast_issued_utc",
+    "game_id": "401856871",
+    "home": "Baylor",
+    "previous": "2026-11-19T14:04:32+00:00"
+  },
+  {
+    "away": "Texas Tech",
+    "current": "6",
+    "field": "away_official_recent_articles",
+    "game_id": "401856871",
+    "home": "Baylor",
+    "previous": "7"
+  },
+  {
+    "away": "Texas Tech",
+    "current": "https://texastech.com/news/2026/11/17/football-castellanos-named-walter-camp-national-offensive-player-of-the-week;https://texastech.com/news/2026/11/17/football-harrington-back-on-lou-groza-award-semifinalists-list;https://texastech.com/news/2026/11/17/football-red-raiders-in-the-nfl-week-10;https://texastech.com/news/2026/11/17/football-red-raiders-stay-put-at-No-12-in-cfp-rankings;https://texastech.com/news/2026/11/18/football-castellanos-williams-named-pony-express-award-elite-eleven;https://texastech.com/news/2026/11/18/football-holmes-named-outland-trophy-semifinalist",
+    "field": "away_article_sources",
+    "game_id": "401856871",
+    "home": "Baylor",
+    "previous": "https://texastech.com/news/2026/11/16/football-simmons-recognized-as-big-12-special-teams-player-of-the-week;https://texastech.com/news/2026/11/17/football-castellanos-named-walter-camp-national-offensive-player-of-the-week;https://texastech.com/news/2026/11/17/football-harrington-back-on-lou-groza-award-semifinalists-list;https://texastech.com/news/2026/11/17/football-red-raiders-in-the-nfl-week-10;https://texastech.com/news/2026/11/17/football-red-raiders-stay-put-at-No-12-in-cfp-rankings;https://texastech.com/news/2026/11/18/football-castellanos-williams-named-pony-express-award-elite-eleven;https://texastech.com/news/2026/11/18/football-holmes-named-outland-trophy-semifinalist"
+  },
+  {
+    "away": "Texas Tech",
+    "current": "QB #4 Thomas Castellanos: Available;QB #10 Lloyd Jones III: Available;QB #12 Stephen Cannon: Available;QB #15 Will Hammond: Available;QB #16 Holden Phillips: Available;QB #18 Kirk Francis: Available",
+    "field": "away_qb_report",
+    "game_id": "401856871",
+    "home": "Baylor",
+    "previous": "QB #4 Thomas Castellanos: Probable;QB #10 Lloyd Jones III: Available;QB #12 Stephen Cannon: Available;QB #15 Will Hammond: Available;QB #16 Holden Phillips: Available;QB #18 Kirk Francis: Available"
+  },
+  {
+    "away": "Texas Tech",
+    "current": "S #0 Mikal Harrison-Pilot: Available;DL #1 Julien Laventure: Available;OLB #2 Trey White: Available;S #3 Peyton Morgan: Questionable;CB #4 Davin Martin: Available;S #5 Oliver Miles III: Available;LB #6 John Curry: Available;S #7 Brenden Jordan: Probable;OLB #8 Jamond Mathis: Available;LB #9 Corey Platt Jr.: Available;DL #10 A.J. Holmes Jr.: Available;LB #11 Brock Golwas: Available;CB #12 Tarrion Grant: Available;LB #13 Ben Roberts: Available;CB #14 Brice Pollock: Available;LB #15 Austin Romaine: Available;CB #16 Ashton Hampton: Available;CB #17 Noah Lewis: Available;CB #18 S'Vioarean Martin: Available;CB #19 Cam Wyatt: Available;OLB #20 Adam Trick: Available;S #21 Miquel Dingle Jr.: Out;S #22 Marcus Ramon-Edwards: Available;S #23 Maddox Quiller: Available;S #24 Malik Esquerra: Available;S #25 Donovan Webb: Available;S #26 Aaron Bradshaw: Available;CB #27 Amier Boyd: Available;S #28 Braylan McDonald: Exempt;S #28 Jordan Rogers: Available;CB #29 Luke Hamilton: Available;S #30 Jamarn Grant II: Available;LB #31 Cord Nolan: Available;OLB #32 LaDamion Guyton: Doubtful;OLB #33 Ansel Nedore: Probable;LB #34 Kaegan Ash: Available;LB #35 Adam Hill: Available;OLB #36 Demarcus Marks: Available;LB #40 Wesley Smith: Available;LB #43 Chris Lemons: Exempt;DL #51 Jayden Cofield: Available;OLB #56 Amarie Fleming: Available;OLB #86 Sean Robinson: Available;DL #90 Ayden Johnson: Available;DL #91 Krush Johnson: Available;DL #92 Bryce Butler: Available;DL #93 Dylan Singleton: Available;OLB #95 Christian Bruce: Available;DL #96 Keyshawn Williams: Available;OLB #97 Charles Anderson Jr.: Available;DL #98 Mateen Ibirogba: Available;DL #99 Jojo Johnson: Available",
+    "field": "away_defense_report",
+    "game_id": "401856871",
+    "home": "Baylor",
+    "previous": "S #0 Mikal Harrison-Pilot: Available;DL #1 Julien Laventure: Available;OLB #2 Trey White: Available;S #3 Peyton Morgan: Questionable;CB #4 Davin Martin: Available;S #5 Oliver Miles III: Available;LB #6 John Curry: Available;S #7 Brenden Jordan: Questionable;OLB #8 Jamond Mathis: Available;LB #9 Corey Platt Jr.: Available;DL #10 A.J. Holmes Jr.: Available;LB #11 Brock Golwas: Available;CB #12 Tarrion Grant: Available;LB #13 Ben Roberts: Available;CB #14 Brice Pollock: Available;LB #15 Austin Romaine: Available;CB #16 Ashton Hampton: Available;CB #17 Noah Lewis: Available;CB #18 S'Vioarean Martin: Available;CB #19 Cam Wyatt: Available;OLB #20 Adam Trick: Available;S #21 Miquel Dingle Jr.: Questionable;S #22 Marcus Ramon-Edwards: Available;S #23 Maddox Quiller: Available;S #24 Malik Esquerra: Available;S #25 Donovan Webb: Available;S #26 Aaron Bradshaw: Available;CB #27 Amier Boyd: Available;S #28 Braylan McDonald: Exempt;S #28 Jordan Rogers: Available;CB #29 Luke Hamilton: Available;S #30 Jamarn Grant II: Available;LB #31 Cord Nolan: Available;OLB #32 LaDamion Guyton: Questionable;OLB #33 Ansel Nedore: Questionable;LB #34 Kaegan Ash: Available;LB #35 Adam Hill: Available;OLB #36 Demarcus Marks: Available;LB #40 Wesley Smith: Available;LB #43 Chris Lemons: Exempt;DL #51 Jayden Cofield: Available;OLB #56 Amarie Fleming: Available;OLB #86 Sean Robinson: Available;DL #90 Ayden Johnson: Available;DL #91 Krush Johnson: Available;DL #92 Bryce Butler: Available;DL #93 Dylan Singleton: Available;OLB #95 Christian Bruce: Available;DL #96 Keyshawn Williams: Available;OLB #97 Charles Anderson Jr.: Available;DL #98 Mateen Ibirogba: Available;DL #99 Jojo Johnson: Available"
+  },
+  {
+    "away": "Texas Tech",
+    "current": "DL #0 Hosea Wheeler: Available;LB #5 Travion Barnes: Available;CB #7 Devon Jordan: Available;S #8 Jacob Redding: Out;LB #10 Kyland Reed: Questionable;S #11 Devin Turner: Available;CB #12 Kyler Beaty: Available;S #14 Daniel Cobbs: Questionable;S #15 Colby McCalister: Available;S #17 Tyler Turner: Available;S #19 Leo Almanza Jr.: Available;S #21 Bo Onu: Available;CB #22 Reggie Bush II: Available;CB #23 Stilton McKelvey: Available;S #24 Micah Gifford: Available;CB #25 LeVar Thornton Jr.: Available;S #26 Colin Peacock: Available;CB #27 Jayden Rowe: Available;CB #28 Calvin Simpson-Hunt: Available;S #29 Jordan Davis: Available;S #30 Michael Allen: Available;LB #31 Anthony Crenshaw Jr.: Available;S #32 Austin Ausberry: Available;CB #33 Kalique Cheeves: Available;CB #34 Daniel Edeni: Available;LB #36 Kedrick Walker: Available;S #37 Demetrius Brisbon: Available;CB #38 Jamarion Richardson: Out;S #39 Cole Redding: Available;DE #40 Kyler Jordan: Available;LB #41 Kaleb Burns: Available;LB #42 Jamarion Phillips: Available;LB #44 JJ Shelton: Available;LB #46 Jahiem Porter: Available;S #48 Jad Darkazalli: Available;LB #49 Trey Laurence: Available;DL #52 Aleki Manutai: Available;DE #53 Daemian Wimberly: Available;DL #54 Jae'Lin Battle: Available;LB #56 Kaleb Arterberry: Available;DE #57 Christopher Johnson: Available;DL #59 Devonte Tezino: Out;DL #90 Braylen Jackson: Available;DL #91 Traevon Mitchell: Available;DE #92 Trent Thomas: Available;DE #93 Zavion Hardy: Available;DL #96 Kamren Washington: Available;DE #97 Jordan Mack: Available;DL #98 Jackson Blackwell: Available;DL #99 Jamaal Whyce Jr.: Available",
+    "field": "home_defense_report",
+    "game_id": "401856871",
+    "home": "Baylor",
+    "previous": "DL #0 Hosea Wheeler: Available;LB #5 Travion Barnes: Available;CB #7 Devon Jordan: Available;S #8 Jacob Redding: Out;LB #10 Kyland Reed: Available;S #11 Devin Turner: Available;CB #12 Kyler Beaty: Available;S #14 Daniel Cobbs: Questionable;S #15 Colby McCalister: Available;S #17 Tyler Turner: Available;S #19 Leo Almanza Jr.: Available;S #21 Bo Onu: Available;CB #22 Reggie Bush II: Available;CB #23 Stilton McKelvey: Available;S #24 Micah Gifford: Available;CB #25 LeVar Thornton Jr.: Available;S #26 Colin Peacock: Available;CB #27 Jayden Rowe: Available;CB #28 Calvin Simpson-Hunt: Available;S #29 Jordan Davis: Available;S #30 Michael Allen: Available;LB #31 Anthony Crenshaw Jr.: Available;S #32 Austin Ausberry: Available;CB #33 Kalique Cheeves: Available;CB #34 Daniel Edeni: Available;LB #36 Kedrick Walker: Available;S #37 Demetrius Brisbon: Available;CB #38 Jamarion Richardson: Out;S #39 Cole Redding: Available;DE #40 Kyler Jordan: Available;LB #41 Kaleb Burns: Available;LB #42 Jamarion Phillips: Available;LB #44 JJ Shelton: Available;LB #46 Jahiem Porter: Available;S #48 Jad Darkazalli: Available;LB #49 Trey Laurence: Available;DL #52 Aleki Manutai: Available;DE #53 Daemian Wimberly: Available;DL #54 Jae'Lin Battle: Available;LB #56 Kaleb Arterberry: Available;DE #57 Christopher Johnson: Available;DL #59 Devonte Tezino: Out;DL #90 Braylen Jackson: Available;DL #91 Traevon Mitchell: Available;DE #92 Trent Thomas: Available;DE #93 Zavion Hardy: Available;DL #96 Kamren Washington: Available;DE #97 Jordan Mack: Available;DL #98 Jackson Blackwell: Available;DL #99 Jamaal Whyce Jr.: Available"
+  },
+  {
+    "away": "Arkansas",
+    "current": "74;75;74;73",
+    "field": "temperature_f",
+    "game_id": "401856755",
+    "home": "Texas",
+    "previous": "74;74;73;71"
+  },
+  {
+    "away": "Arkansas",
+    "current": "5 mph S;5 mph S;5 mph S;5 mph S",
+    "field": "wind",
+    "game_id": "401856755",
+    "home": "Texas",
+    "previous": "10 mph S;5 mph S;5 mph S;5 mph S"
+  },
+  {
+    "away": "Arkansas",
+    "current": "0;0;0;0",
+    "field": "precipitation_probability",
+    "game_id": "401856755",
+    "home": "Texas",
+    "previous": "5;5;5;5"
+  },
+  {
+    "away": "Arkansas",
+    "current": "Mostly Sunny;Sunny;Sunny;Mostly Sunny",
+    "field": "weather_description",
+    "game_id": "401856755",
+    "home": "Texas",
+    "previous": "Mostly Sunny;Mostly Sunny;Mostly Sunny;Mostly Sunny"
+  },
+  {
+    "away": "Arkansas",
+    "current": "2026-11-20T14:03:14+00:00",
+    "field": "forecast_issued_utc",
+    "game_id": "401856755",
+    "home": "Texas",
+    "previous": "2026-11-19T14:04:32+00:00"
+  },
+  {
+    "away": "Arkansas",
+    "current": "https://texaslonghorns.com/news/2026/11/15/football-video-steve-sarkisian-postgame-press-conference-lsu;https://texaslonghorns.com/news/2026/11/16/football-video-steve-sarkisian-press-conference-nov-16;https://texaslonghorns.com/news/2026/11/19/football-video-steve-sarkisian-media-availability-nov-19",
+    "field": "home_article_sources",
+    "game_id": "401856755",
+    "home": "Texas",
+    "previous": "https://texaslonghorns.com/news/2026/11/12/football-video-steve-sarkisian-media-availability-nov-12;https://texaslonghorns.com/news/2026/11/15/football-video-steve-sarkisian-postgame-press-conference-lsu;https://texaslonghorns.com/news/2026/11/16/football-video-steve-sarkisian-press-conference-nov-16"
+  },
+  {
+    "away": "Rutgers",
+    "current": "61;60;56;52",
+    "field": "temperature_f",
+    "game_id": "401858532",
+    "home": "Penn State",
+    "previous": "61;59;55;52"
+  },
+  {
+    "away": "Rutgers",
+    "current": "5 mph S;3 mph SE;3 mph SE;2 mph SE",
+    "field": "wind",
+    "game_id": "401858532",
+    "home": "Penn State",
+    "previous": "5 mph SE;3 mph SE;3 mph SE;2 mph SE"
+  },
+  {
+    "away": "Rutgers",
+    "current": "Mostly Sunny;Mostly Sunny;Partly Sunny;Mostly Cloudy",
+    "field": "weather_description",
+    "game_id": "401858532",
+    "home": "Penn State",
+    "previous": "Sunny;Sunny;Sunny;Partly Cloudy"
+  },
+  {
+    "away": "Rutgers",
+    "current": "2026-11-20T14:03:14+00:00",
+    "field": "forecast_issued_utc",
+    "game_id": "401858532",
+    "home": "Penn State",
+    "previous": "2026-11-19T14:04:32+00:00"
+  },
+  {
+    "away": "Rutgers",
+    "current": "OL #50 Cooper Cousins: Available;OL #51 Brock Riker: Available;OL #52 Dominic Rulli: Available;OL #54 Vaea Ikakoula: Available;OL #55 Chimdy Onoh: Available;OL #56 Mason Bandhauer: Available;OL #61 Liam Horan: Exempt;OL #65 Jim Fitzgerald: Available;OL #66 Will Tompkins: Exempt;OL #67 Henry Boehme: Exempt;OL #68 Anthony Donkoh: Available;OL #70 Trevor Buhr: Available;OL #71 Garrett Sexton: Available;OL #72 Tyshon Huff: Exempt;OL #74 Kuol Kuol II: Available;OL #75 Pete Eglitis: Exempt;OL #76 Hunter Albright: Exempt;OL #77 Owen Aliciene: Available;OL #78 Malachi Goodman: Available;OL #79 Donnie Harbour: Out",
+    "field": "home_ol_report",
+    "game_id": "401858532",
+    "home": "Penn State",
+    "previous": "OL #50 Cooper Cousins: Available;OL #51 Brock Riker: Available;OL #52 Dominic Rulli: Available;OL #54 Vaea Ikakoula: Available;OL #55 Chimdy Onoh: Available;OL #56 Mason Bandhauer: Available;OL #61 Liam Horan: Exempt;OL #65 Jim Fitzgerald: Available;OL #66 Will Tompkins: Exempt;OL #67 Henry Boehme: Exempt;OL #68 Anthony Donkoh: Available;OL #70 Trevor Buhr: Available;OL #71 Garrett Sexton: Available;OL #72 Tyshon Huff: Exempt;OL #74 Kuol Kuol II: Available;OL #75 Pete Eglitis: Exempt;OL #76 Hunter Albright: Exempt;OL #77 Owen Aliciene: Available;OL #78 Malachi Goodman: Available;OL #79 Donnie Harbour: Doubtful"
+  },
+  {
+    "away": "Rutgers",
+    "current": "CB #0 Jahmir Joseph: Doubtful;DE #1 Ikenna Ezeogu: Available;CB #2 Audavion Collins: Available;S #3 Jamison Patton: Available;S #4 Jeremiah Cooper: Available;CB #5 Daryus Dixson: Available;CB #7 Zion Tracy: Available;LB #8 Kooper Ebel: Available;LB #9 Cael Brezina: Available;DE #10 Caleb Bacon: Out;DE #11 LaVar Arrington II: Available;S #12 Xxavier Thomas: Available;LB #13 Tony Rojas: Available;CB #15 Joshua Johnson: Available;CB #16 Donte Nastasi: Available;CB #17 Josiah Zayas: Available;DE #18 Max Granville: Out;DE #19 Yvan Kemajou: Available;S #20 Tyrell Chatman: Available;S #21 Vaboue Toure: Available;CB #24 Ibn McDaniels: Available;LB #25 Alex Tatsch: Out;LB #26 Cam Smith: Available;S #27 Omarion Davis: Exempt;S #28 Bryson Williams: Available;CB #29 Hunter Sowell: Available;CB #30 Christian Askew: Exempt;S #31 Marcus Neal Jr.: Available;LB #32 John Klosterman: Available;DE #33 Alexander McPherson: Available;LB #34 Chris Fileppo: Exempt;CB #35 Tyler Armstead: Probable;DT #39 Ty Blanding: Available;LB #40 Keian Kaiser: Available;S #41 Jake LaVerde: Exempt;DE #42 Mason Robinson: Exempt;DE #43 Dayshaun Burnett: Available;LB #45 Josh Banks: Exempt;LB #46 Evan Wolff: Exempt;DE #47 Aidan Probst: Exempt;DT #56 Alijah Carnell: Probable;DT #73 Caleb Brewer: Available;DE #88 Elijah Reeder: Exempt;DE #89 Jackson Ford: Available;DT #90 Liam Andrews: Exempt;DT #91 Armstrong Nnodim: Available;DT #92 Siale Taupaki: Available;DT #94 De'Andre Cook: Available;DT #98 Dallas Vakalahi: Available;DT #99 Keanu Williams: Available",
+    "field": "home_defense_report",
+    "game_id": "401858532",
+    "home": "Penn State",
+    "previous": "CB #0 Jahmir Joseph: Doubtful;DE #1 Ikenna Ezeogu: Available;CB #2 Audavion Collins: Available;S #3 Jamison Patton: Available;S #4 Jeremiah Cooper: Available;CB #5 Daryus Dixson: Available;CB #7 Zion Tracy: Available;LB #8 Kooper Ebel: Available;LB #9 Cael Brezina: Available;DE #10 Caleb Bacon: Out;DE #11 LaVar Arrington II: Available;S #12 Xxavier Thomas: Available;LB #13 Tony Rojas: Available;CB #15 Joshua Johnson: Available;CB #16 Donte Nastasi: Available;CB #17 Josiah Zayas: Available;DE #18 Max Granville: Out;DE #19 Yvan Kemajou: Available;S #20 Tyrell Chatman: Available;S #21 Vaboue Toure: Available;CB #24 Ibn McDaniels: Available;LB #25 Alex Tatsch: Out;LB #26 Cam Smith: Available;S #27 Omarion Davis: Exempt;S #28 Bryson Williams: Available;CB #29 Hunter Sowell: Available;CB #30 Christian Askew: Exempt;S #31 Marcus Neal Jr.: Available;LB #32 John Klosterman: Available;DE #33 Alexander McPherson: Available;LB #34 Chris Fileppo: Exempt;CB #35 Tyler Armstead: Questionable;DT #39 Ty Blanding: Available;LB #40 Keian Kaiser: Available;S #41 Jake LaVerde: Exempt;DE #42 Mason Robinson: Exempt;DE #43 Dayshaun Burnett: Available;LB #45 Josh Banks: Exempt;LB #46 Evan Wolff: Exempt;DE #47 Aidan Probst: Exempt;DT #56 Alijah Carnell: Questionable;DT #73 Caleb Brewer: Available;DE #88 Elijah Reeder: Exempt;DE #89 Jackson Ford: Available;DT #90 Liam Andrews: Exempt;DT #91 Armstrong Nnodim: Available;DT #92 Siale Taupaki: Available;DT #94 De'Andre Cook: Available;DT #98 Dallas Vakalahi: Available;DT #99 Keanu Williams: Available"
+  },
+  {
+    "away": "Texas A&M",
+    "current": "71;69;69;68",
+    "field": "temperature_f",
+    "game_id": "401856752",
+    "home": "Oklahoma",
+    "previous": "67;68;67;66"
+  },
+  {
+    "away": "Texas A&M",
+    "current": "18 mph S;17 mph S;16 mph S;15 mph S",
+    "field": "wind",
+    "game_id": "401856752",
+    "home": "Oklahoma",
+    "previous": "15 mph S;14 mph S;13 mph S;12 mph S"
+  },
+  {
+    "away": "Texas A&M",
+    "current": "17;17;17;17",
+    "field": "precipitation_probability",
+    "game_id": "401856752",
+    "home": "Oklahoma",
+    "previous": "37;37;37;37"
+  },
+  {
+    "away": "Texas A&M",
+    "current": "Slight Chance Rain Showers;Slight Chance Rain Showers;Slight Chance Rain Showers;Slight Chance Rain Showers",
+    "field": "weather_description",
+    "game_id": "401856752",
+    "home": "Oklahoma",
+    "previous": "Chance Rain Showers;Chance Rain Showers;Chance Rain Showers;Chance Rain Showers"
+  },
+  {
+    "away": "Texas A&M",
+    "current": "2026-11-20T14:03:15+00:00",
+    "field": "forecast_issued_utc",
+    "game_id": "401856752",
+    "home": "Oklahoma",
+    "previous": "2026-11-19T14:04:32+00:00"
+  },
+  {
+    "away": "Georgia State",
+    "current": "68;65;60",
+    "field": "temperature_f",
+    "game_id": "401869958",
+    "home": "Marshall",
+    "previous": "70;66;62"
+  },
+  {
+    "away": "Georgia State",
+    "current": "2 mph E;2 mph E;3 mph E",
+    "field": "wind",
+    "game_id": "401869958",
+    "home": "Marshall",
+    "previous": "1 mph SE;1 mph SE;2 mph E"
+  },
+  {
+    "away": "Georgia State",
+    "current": "Sunny;Mostly Sunny;Partly Cloudy",
+    "field": "weather_description",
+    "game_id": "401869958",
+    "home": "Marshall",
+    "previous": "Sunny;Sunny;Mostly Clear"
+  },
+  {
+    "away": "Georgia State",
+    "current": "2026-11-20T14:03:15+00:00",
+    "field": "forecast_issued_utc",
+    "game_id": "401869958",
+    "home": "Marshall",
+    "previous": "2026-11-19T14:04:32+00:00"
+  },
+  {
+    "away": "South Alabama",
+    "current": "76;76;73",
+    "field": "temperature_f",
+    "game_id": "401871101",
+    "home": "Southern Miss",
+    "previous": "76;75;72"
+  },
+  {
+    "away": "South Alabama",
+    "current": "5 mph E;5 mph E;5 mph E",
+    "field": "wind",
+    "game_id": "401871101",
+    "home": "Southern Miss",
+    "previous": "5 mph ESE;5 mph ESE;5 mph ESE"
+  },
+  {
+    "away": "South Alabama",
+    "current": "0;0;0",
+    "field": "precipitation_probability",
+    "game_id": "401871101",
+    "home": "Southern Miss",
+    "previous": "4;4;4"
+  },
+  {
+    "away": "South Alabama",
+    "current": "Mostly Sunny;Mostly Sunny;Mostly Sunny",
+    "field": "weather_description",
+    "game_id": "401871101",
+    "home": "Southern Miss",
+    "previous": "Partly Sunny;Partly Sunny;Partly Sunny"
+  },
+  {
+    "away": "South Alabama",
+    "current": "2026-11-20T14:03:15+00:00",
+    "field": "forecast_issued_utc",
+    "game_id": "401871101",
+    "home": "Southern Miss",
+    "previous": "2026-11-19T14:04:32+00:00"
+  },
+  {
+    "away": "Georgia Southern",
+    "current": "70;69;66",
+    "field": "temperature_f",
+    "game_id": "401869953",
+    "home": "Troy",
+    "previous": "71;68;65"
+  },
+  {
+    "away": "Georgia Southern",
+    "current": "10 mph NE;5 mph NE;5 mph NE",
+    "field": "wind",
+    "game_id": "401869953",
+    "home": "Troy",
+    "previous": "10 mph E;10 mph E;5 mph E"
+  },
+  {
+    "away": "Georgia Southern",
+    "current": "3;3;3",
+    "field": "precipitation_probability",
+    "game_id": "401869953",
+    "home": "Troy",
+    "previous": "6;6;6"
+  },
+  {
+    "away": "Georgia Southern",
+    "current": "2026-11-20T14:03:15+00:00",
+    "field": "forecast_issued_utc",
+    "game_id": "401869953",
+    "home": "Troy",
+    "previous": "2026-11-19T14:04:33+00:00"
+  },
+  {
+    "away": "Georgia Southern",
+    "current": "https://gseagles.com/news/2026/11/14/football-eagles-earn-bowl-eligibility-with-34-17-win-over-georgia-state;https://gseagles.com/news/2026/11/16/football-game-preview-eagles-look-to-continue-hot-streak-at-troy;https://gseagles.com/news/2026/11/19/football-the-extra-down-diego-aviles-turned-patience-into-opportunity",
+    "field": "away_article_sources",
+    "game_id": "401869953",
+    "home": "Troy",
+    "previous": "https://gseagles.com/news/2026/11/12/football-the-extra-down-the-work-behind-anthony-bynums-rise;https://gseagles.com/news/2026/11/14/football-eagles-earn-bowl-eligibility-with-34-17-win-over-georgia-state;https://gseagles.com/news/2026/11/16/football-game-preview-eagles-look-to-continue-hot-streak-at-troy"
+  },
+  {
+    "away": "Georgia Southern",
+    "current": "4",
+    "field": "home_official_recent_articles",
+    "game_id": "401869953",
+    "home": "Troy",
+    "previous": "5"
+  },
+  {
+    "away": "Georgia Southern",
+    "current": "https://troytrojans.com/news/2026/11/14/football-troy-drops-battle-for-the-belt-at-south-alabama;https://troytrojans.com/news/2026/11/16/football-gerad-parker-press-confernece-georgia-southern-game;https://troytrojans.com/news/2026/11/18/football-johnsons-journal-four-time-cancer-suvivor-bryce-steele-takes-nothing-for-granted;https://troytrojans.com/news/2026/11/18/football-need-to-know-gameday-at-the-vet-georgia-southern-game",
+    "field": "home_article_sources",
+    "game_id": "401869953",
+    "home": "Troy",
+    "previous": "https://troytrojans.com/news/2026/11/12/football-troy-travels-to-mobile-for-battle-for-the-belt;https://troytrojans.com/news/2026/11/14/football-troy-drops-battle-for-the-belt-at-south-alabama;https://troytrojans.com/news/2026/11/16/football-gerad-parker-press-confernece-georgia-southern-game;https://troytrojans.com/news/2026/11/18/football-johnsons-journal-four-time-cancer-suvivor-bryce-steele-takes-nothing-for-granted;https://troytrojans.com/news/2026/11/18/football-need-to-know-gameday-at-the-vet-georgia-southern-game"
+  },
+  {
+    "away": "Washington State",
+    "current": "73;70;67",
+    "field": "temperature_f",
+    "game_id": "401860920",
+    "home": "Texas State",
+    "previous": "71;69;67"
+  },
+  {
+    "away": "Washington State",
+    "current": "5 mph S;5 mph S;0 mph ",
+    "field": "wind",
+    "game_id": "401860920",
+    "home": "Texas State",
+    "previous": "5 mph SSE;0 mph ;0 mph "
+  },
+  {
+    "away": "Washington State",
+    "current": "0;5;5",
+    "field": "precipitation_probability",
+    "game_id": "401860920",
+    "home": "Texas State",
+    "previous": "5;4;4"
+  },
+  {
+    "away": "Washington State",
+    "current": "2026-11-20T14:03:15+00:00",
+    "field": "forecast_issued_utc",
+    "game_id": "401860920",
+    "home": "Texas State",
+    "previous": "2026-11-19T14:04:33+00:00"
+  },
+  {
+    "away": "Maryland",
+    "current": "65;65;62;61",
+    "field": "temperature_f",
+    "game_id": "401858534",
+    "home": "USC",
+    "previous": "66;65;64;61"
+  },
+  {
+    "away": "Maryland",
+    "current": "5 mph WNW;5 mph W;5 mph W;5 mph W",
+    "field": "wind",
+    "game_id": "401858534",
+    "home": "USC",
+    "previous": "5 mph WSW;5 mph W;5 mph W;5 mph W"
+  },
+  {
+    "away": "Maryland",
+    "current": "Mostly Sunny;Mostly Sunny;Mostly Sunny;Partly Cloudy",
+    "field": "weather_description",
+    "game_id": "401858534",
+    "home": "USC",
+    "previous": "Partly Sunny;Mostly Sunny;Mostly Sunny;Partly Cloudy"
+  },
+  {
+    "away": "Maryland",
+    "current": "2026-11-20T14:03:15+00:00",
+    "field": "forecast_issued_utc",
+    "game_id": "401858534",
+    "home": "USC",
+    "previous": "2026-11-19T14:02:14+00:00"
+  },
+  {
+    "away": "Maryland",
+    "current": "CB #0 Jontez Williams: Available;DE #1 Kameryn Crawford: Available;CB #2 Elbert \"Rock\" Hill IV: Available;DT #4 Jahkeem Stewart: Available;S #6 Christian Pierce: Available;S #7 Alex Graham: Available;LB #8 Desman Stephens II: Available;S #9 Kennedy Urlacher: Available;DE #10 Braylan Shelby: Questionable;LB #14 Ta'Mere Robinson: Available;LB #15 Jadyn Walker: Available;S #16 Prophet Brown: Available;LB #17 Deven Bryant: Available;DE #18 Zuriah Fisher: Available;CB #19 Brandon Lockhart: Available;CB #21 RJ Sermons: Probable;LB #22 Talanoa Ili: Available;S #23 Kendarius Reddick: Out;LB #24 Shaun Scott: Exempt;CB #25 Marcelles Williams: Available;LB #26 Elijah Newby: Available;CB #27 Chasen Johnson: Available;CB #28 Carrington Pierce: Available;S #29 Joshua Holland II: Available;S #30 Marquis Gallegos: Available;S #31 Madden Riordan: Available;CB #34 Jayden Crowder: Available;DE #35 Ty Swanson: Exempt;S #36 Peyton \"Man Man\" Dyer: Available;S #37 Trestin Castro: Out;S #38 Isaiah Rubin: Available;S #39 Peter Sciarrino: Exempt;CB #40 Shawn Sehra: Available;LB #41 Ryan O'Connell: Available;DT #44 Braeden Jones: Exempt;DT #45 Jaimeon Winfield: Available;LB #46 Nick De Fina: Exempt;LB #47 Austin Engroff: Exempt;CB #48 Derek Diniz: Exempt;DE #49 Simote Katoanga: Available;LB #50 Taylor \"Taybo\" Johnson: Out;DE #51 Andrew Williams: Exempt;DT #52 Tomuhini \"Tom Tom\" Topui: Available;DE #54 Ethan Brougham: Exempt;LB #57 Roman Marchetti: Out;LB #58 GianCarlo Rufo: Doubtful;DT #88 Floyd Boucard: Available;DT #89 Brendan Cho: Exempt;DT #90 Jake Johnson: Exempt;DT #91 Alex VanSumeren: Available;DE #92 Sam Smith: Exempt;DE #94 Luke Wafle: Available;DE #95 Jadyn Ramos: Available;DT #96 Jordan Abarca: Exempt;DT #97 Jide Abasiri: Available;DT #99 Jamaal Jarrett: Available",
+    "field": "home_defense_report",
+    "game_id": "401858534",
+    "home": "USC",
+    "previous": "CB #0 Jontez Williams: Available;DE #1 Kameryn Crawford: Available;CB #2 Elbert \"Rock\" Hill IV: Available;DT #4 Jahkeem Stewart: Available;S #6 Christian Pierce: Available;S #7 Alex Graham: Available;LB #8 Desman Stephens II: Available;S #9 Kennedy Urlacher: Available;DE #10 Braylan Shelby: Questionable;LB #14 Ta'Mere Robinson: Available;LB #15 Jadyn Walker: Available;S #16 Prophet Brown: Available;LB #17 Deven Bryant: Available;DE #18 Zuriah Fisher: Available;CB #19 Brandon Lockhart: Available;CB #21 RJ Sermons: Probable;LB #22 Talanoa Ili: Available;S #23 Kendarius Reddick: Out;LB #24 Shaun Scott: Exempt;CB #25 Marcelles Williams: Available;LB #26 Elijah Newby: Available;CB #27 Chasen Johnson: Available;CB #28 Carrington Pierce: Available;S #29 Joshua Holland II: Available;S #30 Marquis Gallegos: Available;S #31 Madden Riordan: Available;CB #34 Jayden Crowder: Available;DE #35 Ty Swanson: Exempt;S #36 Peyton \"Man Man\" Dyer: Available;S #37 Trestin Castro: Out;S #38 Isaiah Rubin: Available;S #39 Peter Sciarrino: Exempt;CB #40 Shawn Sehra: Available;LB #41 Ryan O'Connell: Available;DT #44 Braeden Jones: Exempt;DT #45 Jaimeon Winfield: Available;LB #46 Nick De Fina: Exempt;LB #47 Austin Engroff: Exempt;CB #48 Derek Diniz: Exempt;DE #49 Simote Katoanga: Available;LB #50 Taylor \"Taybo\" Johnson: Out;DE #51 Andrew Williams: Exempt;DT #52 Tomuhini \"Tom Tom\" Topui: Available;DE #54 Ethan Brougham: Exempt;LB #57 Roman Marchetti: Out;LB #58 GianCarlo Rufo: Questionable;DT #88 Floyd Boucard: Available;DT #89 Brendan Cho: Exempt;DT #90 Jake Johnson: Exempt;DT #91 Alex VanSumeren: Available;DE #92 Sam Smith: Exempt;DE #94 Luke Wafle: Available;DE #95 Jadyn Ramos: Available;DT #96 Jordan Abarca: Exempt;DT #97 Jide Abasiri: Available;DT #99 Jamaal Jarrett: Available"
+  },
+  {
+    "away": "Virginia Tech",
+    "current": "77;77;76",
+    "field": "temperature_f",
+    "game_id": "401858302",
+    "home": "Miami",
+    "previous": "77;76;75"
+  },
+  {
+    "away": "Virginia Tech",
+    "current": "6 mph SW;5 mph SW;3 mph SW",
+    "field": "wind",
+    "game_id": "401858302",
+    "home": "Miami",
+    "previous": "5 mph W;5 mph W;3 mph W"
+  },
+  {
+    "away": "Virginia Tech",
+    "current": "6;6;6",
+    "field": "precipitation_probability",
+    "game_id": "401858302",
+    "home": "Miami",
+    "previous": "12;12;12"
+  },
+  {
+    "away": "Virginia Tech",
+    "current": "Partly Cloudy;Mostly Clear;Mostly Clear",
+    "field": "weather_description",
+    "game_id": "401858302",
+    "home": "Miami",
+    "previous": "Partly Cloudy;Partly Cloudy;Partly Cloudy"
+  },
+  {
+    "away": "Virginia Tech",
+    "current": "2026-11-20T14:00:44+00:00",
+    "field": "forecast_issued_utc",
+    "game_id": "401858302",
+    "home": "Miami",
+    "previous": "2026-11-19T13:16:48+00:00"
+  },
+  {
+    "away": "UNLV",
+    "current": "56;55;53",
+    "field": "temperature_f",
+    "game_id": "401864544",
+    "home": "San Jos\u00e9 State",
+    "previous": "59;57;56"
+  },
+  {
+    "away": "UNLV",
+    "current": "3 mph SSE;3 mph SSE;3 mph SSE",
+    "field": "wind",
+    "game_id": "401864544",
+    "home": "San Jos\u00e9 State",
+    "previous": "3 mph S;3 mph S;3 mph S"
+  },
+  {
+    "away": "UNLV",
+    "current": "39;39;39",
+    "field": "precipitation_probability",
+    "game_id": "401864544",
+    "home": "San Jos\u00e9 State",
+    "previous": "57;57;57"
+  },
+  {
+    "away": "UNLV",
+    "current": "Chance Light Rain;Chance Light Rain;Chance Light Rain",
+    "field": "weather_description",
+    "game_id": "401864544",
+    "home": "San Jos\u00e9 State",
+    "previous": "Light Rain Likely;Light Rain Likely;Light Rain Likely"
+  },
+  {
+    "away": "UNLV",
+    "current": "2026-11-20T14:03:15+00:00",
+    "field": "forecast_issued_utc",
+    "game_id": "401864544",
+    "home": "San Jos\u00e9 State",
+    "previous": "2026-11-19T14:04:33+00:00"
+  },
+  {
+    "away": "Arizona",
+    "current": "59;56;53",
+    "field": "temperature_f",
+    "game_id": "401856865",
+    "home": "Kansas State",
+    "previous": "55;52;49"
+  },
+  {
+    "away": "Arizona",
+    "current": "5 mph SW;5 mph SW;10 mph W",
+    "field": "wind",
+    "game_id": "401856865",
+    "home": "Kansas State",
+    "previous": "5 mph SW;5 mph W;5 mph NW"
+  },
+  {
+    "away": "Arizona",
+    "current": "99;99;99",
+    "field": "precipitation_probability",
+    "game_id": "401856865",
+    "home": "Kansas State",
+    "previous": "77;77;77"
+  },
+  {
+    "away": "Arizona",
+    "current": "Showers And Thunderstorms;Showers And Thunderstorms;Showers And Thunderstorms",
+    "field": "weather_description",
+    "game_id": "401856865",
+    "home": "Kansas State",
+    "previous": "Light Rain;Light Rain;Light Rain"
+  },
+  {
+    "away": "Arizona",
+    "current": "2026-11-20T14:01:38+00:00",
+    "field": "forecast_issued_utc",
+    "game_id": "401856865",
+    "home": "Kansas State",
+    "previous": "2026-11-19T14:04:33+00:00"
+  },
+  {
+    "away": "Arizona",
+    "current": "LB #0 Dash Fifita: Available;S #2 Daylen Austin: Exempt;DL #3 Tre Smith: Probable;S #4 Matai Tagoa'i: Available;LB #5 Max Harris: Out;LB #6 Taye Brown: Available;LB #7 Chase Kennedy: Available;CB #8 Jay'Vion Cole: Available;CB #9 Tyrese Boss: Available;LB #10 Myron Robinson: Available;LB #11 Jabari Mann: Available;CB #12 Dwight Bootle II: Questionable;S #13 Cam Chapa: Probable;S #14 Hannibal Navies II: Available;S #15 Malcolm Hartzog Jr.: Probable;LB #16 Everett Roussaw Jr.: Available;S #17 Lee Molette III: Available;LB #18 Carter Jones: Available;S #20 Dajon Hinton: Questionable;S #21 Johno Price: Available;S #23 Gavin Hunter: Available;CB #24 Kingston Spivey: Available;CB #25 Zuri Watson: Available;LB #26 Coleman Patmon: Available;DL #27 Keytrin Harris: Out;CB #28 Swayde Griffin: Probable;LB #29 Jaden Parker: Available;CB #30 Xaier Hiler: Available;CB #31 Aiden Miller: Available;LB #32 Nela Taliauli: Available;S #33 Kason Brown: Available;S #34 James Pike: Available;S #35 Quinn Olson: Available;LB #36 Dominic Hanger: Available;DL #38 Kevin Moorer Jr.: Questionable;LB #39 Jacob Buggie: Available;LB #40 Brandon Craddock: Available;DL #41 Julian Savaiinaea: Available;DL #42 Dominic Lolesio: Available;DL #44 Prince Williams: Available;DL #45 Victory Johnson: Available;S #47 Harold Lusk II: Available;LB #48 Cooper Blomstrom: Available;DL #51 Kaisi Lafitaga: Available;DL #52 Dustin Petras: Available;DL #53 Christian Madoski: Available;LB #55 Leviticus Su'a: Available;DL #78 Manoah Faupusa: Available;DL #91 Porter Patton: Exempt;DL #92 Ezra Funa: Available;DL #95 Palu, Leroy: Available;DL #96 Zac Siulepa: Available;DL #99 Mays Pese: Available",
+    "field": "away_defense_report",
+    "game_id": "401856865",
+    "home": "Kansas State",
+    "previous": "LB #0 Dash Fifita: Available;S #2 Daylen Austin: Exempt;DL #3 Tre Smith: Questionable;S #4 Matai Tagoa'i: Available;LB #5 Max Harris: Out;LB #6 Taye Brown: Available;LB #7 Chase Kennedy: Available;CB #8 Jay'Vion Cole: Available;CB #9 Tyrese Boss: Available;LB #10 Myron Robinson: Available;LB #11 Jabari Mann: Available;CB #12 Dwight Bootle II: Questionable;S #13 Cam Chapa: Questionable;S #14 Hannibal Navies II: Available;S #15 Malcolm Hartzog Jr.: Questionable;LB #16 Everett Roussaw Jr.: Available;S #17 Lee Molette III: Available;LB #18 Carter Jones: Available;S #20 Dajon Hinton: Questionable;S #21 Johno Price: Available;S #23 Gavin Hunter: Available;CB #24 Kingston Spivey: Available;CB #25 Zuri Watson: Available;LB #26 Coleman Patmon: Available;DL #27 Keytrin Harris: Out;CB #28 Swayde Griffin: Probable;LB #29 Jaden Parker: Available;CB #30 Xaier Hiler: Available;CB #31 Aiden Miller: Available;LB #32 Nela Taliauli: Available;S #33 Kason Brown: Available;S #34 James Pike: Available;S #35 Quinn Olson: Available;LB #36 Dominic Hanger: Available;DL #38 Kevin Moorer Jr.: Questionable;LB #39 Jacob Buggie: Available;LB #40 Brandon Craddock: Available;DL #41 Julian Savaiinaea: Available;DL #42 Dominic Lolesio: Available;DL #44 Prince Williams: Available;DL #45 Victory Johnson: Available;S #47 Harold Lusk II: Available;LB #48 Cooper Blomstrom: Available;DL #51 Kaisi Lafitaga: Available;DL #52 Dustin Petras: Available;DL #53 Christian Madoski: Available;LB #55 Leviticus Su'a: Available;DL #78 Manoah Faupusa: Available;DL #91 Porter Patton: Exempt;DL #92 Ezra Funa: Available;DL #95 Palu, Leroy: Available;DL #96 Zac Siulepa: Available;DL #99 Mays Pese: Available"
+  },
+  {
+    "away": "Arizona",
+    "current": "QB #2 Avery Johnson: Out;QB #3 Blake Barnett: Available;QB #7 Jacob Knuth: Exempt;QB #10 Dillon Duff: Available",
+    "field": "home_qb_report",
+    "game_id": "401856865",
+    "home": "Kansas State",
+    "previous": "QB #2 Avery Johnson: Out;QB #3 Blake Barnett: Available;QB #7 Jacob Knuth: Out;QB #10 Dillon Duff: Available"
+  },
+  {
+    "away": "Arkansas State",
+    "current": "70;66;65",
+    "field": "temperature_f",
+    "game_id": "401869938",
+    "home": "Louisiana Tech",
+    "previous": "70;68;65"
+  },
+  {
+    "away": "Arkansas State",
+    "current": "5 mph SE;0 mph ;0 mph ",
+    "field": "wind",
+    "game_id": "401869938",
+    "home": "Louisiana Tech",
+    "previous": "0 mph ;0 mph ;0 mph "
+  },
+  {
+    "away": "Arkansas State",
+    "current": "2;2;2",
+    "field": "precipitation_probability",
+    "game_id": "401869938",
+    "home": "Louisiana Tech",
+    "previous": "12;12;12"
+  },
+  {
+    "away": "Arkansas State",
+    "current": "Mostly Clear;Clear;Mostly Clear",
+    "field": "weather_description",
+    "game_id": "401869938",
+    "home": "Louisiana Tech",
+    "previous": "Mostly Cloudy;Mostly Cloudy;Mostly Cloudy"
+  },
+  {
+    "away": "Arkansas State",
+    "current": "2026-11-20T14:03:15+00:00",
+    "field": "forecast_issued_utc",
+    "game_id": "401869938",
+    "home": "Louisiana Tech",
+    "previous": "2026-11-19T14:01:36+00:00"
+  },
+  {
+    "away": "Arkansas State",
+    "current": "5",
+    "field": "home_official_recent_articles",
+    "game_id": "401869938",
+    "home": "Louisiana Tech",
+    "previous": "6"
+  },
+  {
+    "away": "Arkansas State",
+    "current": "https://latechsports.com/news/2026/11/14/football-bulldogs-clinch-sun-belt-west-division-title-with-63-31-victory-over-southern-miss;https://latechsports.com/news/2026/11/16/football-mayfield-matthews-tabbed-with-sun-belt-weekly-honors;https://latechsports.com/news/2026/11/16/football-six-chapters-one-story-chapter-six-the-next-generation;https://latechsports.com/news/2026/11/18/football-know-before-you-go-arkansas-state-gameday-guide;https://latechsports.com/news/2026/11/19/football-preview-la-tech-vs-arkansas-state",
+    "field": "home_article_sources",
+    "game_id": "401869938",
+    "home": "Louisiana Tech",
+    "previous": "https://latechsports.com/news/2026/11/12/football-eli-finley-named-john-mackey-award-semifinalist;https://latechsports.com/news/2026/11/12/football-preview-la-tech-vs-southern-miss;https://latechsports.com/news/2026/11/14/football-bulldogs-clinch-sun-belt-west-division-title-with-63-31-victory-over-southern-miss;https://latechsports.com/news/2026/11/16/football-mayfield-matthews-tabbed-with-sun-belt-weekly-honors;https://latechsports.com/news/2026/11/16/football-six-chapters-one-story-chapter-six-the-next-generation;https://latechsports.com/news/2026/11/18/football-know-before-you-go-arkansas-state-gameday-guide"
+  },
+  {
+    "away": "Pittsburgh",
+    "current": "59;53;50;49",
+    "field": "temperature_f",
+    "game_id": "401858306",
+    "home": "Louisville",
+    "previous": "59;56;54;52"
+  },
+  {
+    "away": "Pittsburgh",
+    "current": "3 mph SE;2 mph SE;2 mph SE;2 mph SE",
+    "field": "wind",
+    "game_id": "401858306",
+    "home": "Louisville",
+    "previous": "3 mph SE;3 mph SE;3 mph SE;3 mph SE"
+  },
+  {
+    "away": "Pittsburgh",
+    "current": "0;0;0;0",
+    "field": "precipitation_probability",
+    "game_id": "401858306",
+    "home": "Louisville",
+    "previous": "1;1;1;1"
+  },
+  {
+    "away": "Pittsburgh",
+    "current": "Clear;Clear;Mostly Clear;Mostly Clear",
+    "field": "weather_description",
+    "game_id": "401858306",
+    "home": "Louisville",
+    "previous": "Mostly Clear;Partly Cloudy;Partly Cloudy;Partly Cloudy"
+  },
+  {
+    "away": "Pittsburgh",
+    "current": "2026-11-20T14:03:15+00:00",
+    "field": "forecast_issued_utc",
+    "game_id": "401858306",
+    "home": "Louisville",
+    "previous": "2026-11-19T14:02:03+00:00"
+  },
+  {
+    "away": "Pittsburgh",
+    "current": "DraftKings;Bovada",
+    "field": "market_providers",
+    "game_id": "401858306",
+    "home": "Louisville",
+    "previous": "Bovada;DraftKings"
+  },
+  {
+    "away": "Pittsburgh",
+    "current": "5",
+    "field": "away_official_recent_articles",
+    "game_id": "401858306",
+    "home": "Louisville",
+    "previous": "6"
+  },
+  {
+    "away": "Pittsburgh",
+    "current": "https://pittsburghpanthers.com/news/2026/11/16/football-game-week-pitt-louisville-meet-in-primetime;https://pittsburghpanthers.com/news/2026/11/17/football-chadha-named-lou-groza-award-semifinalist;https://pittsburghpanthers.com/news/2026/11/17/football-listen-mason-heintschel-pitt-junior-captains;https://pittsburghpanthers.com/news/2026/11/17/football-talkin-pitt-meet-the-challenge;https://pittsburghpanthers.com/news/2026/11/18/football-behind-enemy-lines-louisville",
+    "field": "away_article_sources",
+    "game_id": "401858306",
+    "home": "Louisville",
+    "previous": "https://pittsburghpanthers.com/news/2026/11/16/football-game-week-pitt-louisville-meet-in-primetime;https://pittsburghpanthers.com/news/2026/11/16/football-narduzzi-notebook-effort-isn-t-the-issue-as-pitt-turns-to-louisville;https://pittsburghpanthers.com/news/2026/11/17/football-chadha-named-lou-groza-award-semifinalist;https://pittsburghpanthers.com/news/2026/11/17/football-listen-mason-heintschel-pitt-junior-captains;https://pittsburghpanthers.com/news/2026/11/17/football-talkin-pitt-meet-the-challenge;https://pittsburghpanthers.com/news/2026/11/18/football-behind-enemy-lines-louisville"
+  },
+  {
+    "away": "Pittsburgh",
+    "current": "DB #1 Jabari Mack: Probable;DL #2 Demeco Kennedy: Available;DL #3 Tyler Thompson: Available;DB #4 TJ Banks: Available;DB #5 Koen Entringer: Available;LB #6 Stanquan Clark: Out - (1st Half);DB #9 Antonio Watts: Out;DB #10 Kaleb Beasley: Available;LB #11 T.J. Capers: Available;DB #12 DJ Waller Jr.: Available;DB #13 Tayon Holloway: Available;DL #17 AJ Green: Available;DL #19 Micah Carter: Available;DB #20 Antonio Harris: Available;DB #21 Jaydin Broadnax: Available;LB #23 Benjamin Perry: Available;DB #25 Brycen Scott: Available;DB #26 Jordan Vann: Available;DB #27 Myles Norwood: Available;DB #28 Santana Wilson: Available;DB #29 Blake Ruffin: Available;LB #30 Taj Powell: Available;DB #31 Micah Rice: Available;DB #33 Kris Brunson: Available;LB #34 Brady Ballart: Available;LB #36 Jacob Smith: Available;DB #37 Anderson Mitchell: Available;LB #38 Cam White: Available;DB #39 Jordan Gervais: Available;DL #40 Eric Hazzard: Available;LB #41 Caleb Matelau: Available;LB #43 Trent Carter: Available;DB #47 Garion McPherson: Available;DL #50 Clev Lubin: Available;LB #52 Kalib Perry: Available;DL #62 Chris Jones Jr.: Available;DL #90 Daylen Russell: Available;DL #91 Keon Webb: Available;DL #93 Bailey Abercrombie: Available;DL #94 Dillon Smith: Available;DL #95 Joshua Donald: Available;DL #96 Tommy Ziesmer: Available;DL #97 Maurice Davis: Available;DL #98 Sam Dawson: Out;DL #99 Jerod Smith II: Available",
+    "field": "home_defense_report",
+    "game_id": "401858306",
+    "home": "Louisville",
+    "previous": "DB #1 Jabari Mack: Probable;DL #2 Demeco Kennedy: Available;DL #3 Tyler Thompson: Available;DB #4 TJ Banks: Available;DB #5 Koen Entringer: Available;LB #6 Stanquan Clark: Available;DB #9 Antonio Watts: Out;DB #10 Kaleb Beasley: Available;LB #11 T.J. Capers: Available;DB #12 DJ Waller Jr.: Available;DB #13 Tayon Holloway: Available;DL #17 AJ Green: Available;DL #19 Micah Carter: Available;DB #20 Antonio Harris: Available;DB #21 Jaydin Broadnax: Available;LB #23 Benjamin Perry: Available;DB #25 Brycen Scott: Available;DB #26 Jordan Vann: Available;DB #27 Myles Norwood: Available;DB #28 Santana Wilson: Available;DB #29 Blake Ruffin: Available;LB #30 Taj Powell: Available;DB #31 Micah Rice: Available;DB #33 Kris Brunson: Available;LB #34 Brady Ballart: Available;LB #36 Jacob Smith: Available;DB #37 Anderson Mitchell: Available;LB #38 Cam White: Available;DB #39 Jordan Gervais: Available;DL #40 Eric Hazzard: Available;LB #41 Caleb Matelau: Available;LB #43 Trent Carter: Available;DB #47 Garion McPherson: Available;DL #50 Clev Lubin: Available;LB #52 Kalib Perry: Available;DL #62 Chris Jones Jr.: Available;DL #90 Daylen Russell: Available;DL #91 Keon Webb: Available;DL #93 Bailey Abercrombie: Available;DL #94 Dillon Smith: Available;DL #95 Joshua Donald: Available;DL #96 Tommy Ziesmer: Available;DL #97 Maurice Davis: Available;DL #98 Sam Dawson: Out;DL #99 Jerod Smith II: Available"
+  },
+  {
+    "away": "SMU",
+    "current": "57;55;54;52",
+    "field": "temperature_f",
+    "game_id": "401858307",
+    "home": "Notre Dame",
+    "previous": "57;56;55;55"
+  },
+  {
+    "away": "SMU",
+    "current": "0;0;0;0",
+    "field": "precipitation_probability",
+    "game_id": "401858307",
+    "home": "Notre Dame",
+    "previous": "8;8;8;8"
+  },
+  {
+    "away": "SMU",
+    "current": "Mostly Clear;Mostly Clear;Mostly Clear;Partly Cloudy",
+    "field": "weather_description",
+    "game_id": "401858307",
+    "home": "Notre Dame",
+    "previous": "Partly Cloudy;Partly Cloudy;Mostly Cloudy;Mostly Cloudy"
+  },
+  {
+    "away": "SMU",
+    "current": "2026-11-20T14:03:16+00:00",
+    "field": "forecast_issued_utc",
+    "game_id": "401858307",
+    "home": "Notre Dame",
+    "previous": "2026-11-19T14:04:33+00:00"
+  },
+  {
+    "away": "Georgia",
+    "current": "61;60;59;59",
+    "field": "temperature_f",
+    "game_id": "401856753",
+    "home": "South Carolina",
+    "previous": "62;60;59;58"
+  },
+  {
+    "away": "Georgia",
+    "current": "12 mph NE;10 mph NE;9 mph NE;9 mph NE",
+    "field": "wind",
+    "game_id": "401856753",
+    "home": "South Carolina",
+    "previous": "8 mph N;7 mph N;7 mph N;6 mph N"
+  },
+  {
+    "away": "Georgia",
+    "current": "39;39;39;39",
+    "field": "precipitation_probability",
+    "game_id": "401856753",
+    "home": "South Carolina",
+    "previous": "15;15;15;15"
+  },
+  {
+    "away": "Georgia",
+    "current": "Chance Light Rain;Chance Light Rain;Chance Light Rain;Chance Light Rain",
+    "field": "weather_description",
+    "game_id": "401856753",
+    "home": "South Carolina",
+    "previous": "Partly Cloudy;Partly Cloudy;Partly Cloudy;Partly Cloudy"
+  },
+  {
+    "away": "Georgia",
+    "current": "2026-11-20T14:03:16+00:00",
+    "field": "forecast_issued_utc",
+    "game_id": "401856753",
+    "home": "South Carolina",
+    "previous": "2026-11-19T14:04:33+00:00"
+  },
+  {
+    "away": "Georgia",
+    "current": "5",
+    "field": "away_official_recent_articles",
+    "game_id": "401856753",
+    "home": "South Carolina",
+    "previous": "6"
+  },
+  {
+    "away": "Georgia",
+    "current": "https://georgiadogs.com/news/2026/11/18/football-bolden-named-lott-impact-trophy-semifinalist;https://georgiadogs.com/news/2026/11/18/football-bulldogs-in-the-nfl-week-10-recap;https://georgiadogs.com/news/2026/11/18/football-stockton-named-davey-o-brien-award-semifinalist;https://georgiadogs.com/news/2026/11/19/football-cole-included-as-a-bronko-nagurski-trophy-finalist;https://georgiadogs.com/news/2026/11/19/football-cole-named-a-lombardi-award-finalist",
+    "field": "away_article_sources",
+    "game_id": "401856753",
+    "home": "South Carolina",
+    "previous": "https://georgiadogs.com/news/2026/11/16/football-kirby-smart-all-access-missouri;https://georgiadogs.com/news/2026/11/16/football-smart-player-talk-south-carolina;https://georgiadogs.com/news/2026/11/17/football-griffin-humphreys-look-ahead-to-south-carolina;https://georgiadogs.com/news/2026/11/18/football-bolden-named-lott-impact-trophy-semifinalist;https://georgiadogs.com/news/2026/11/18/football-bulldogs-in-the-nfl-week-10-recap;https://georgiadogs.com/news/2026/11/18/football-stockton-named-davey-o-brien-award-semifinalist"
+  },
+  {
+    "away": "Colorado State",
+    "current": "53;53;51;49",
+    "field": "temperature_f",
+    "game_id": "401860918",
+    "home": "Fresno State",
+    "previous": "56;55;52;50"
+  },
+  {
+    "away": "Colorado State",
+    "current": "0;0;0;0",
+    "field": "precipitation_probability",
+    "game_id": "401860918",
+    "home": "Fresno State",
+    "previous": "1;1;1;1"
+  },
+  {
+    "away": "Colorado State",
+    "current": "Mostly Cloudy;Mostly Cloudy;Mostly Cloudy;Mostly Cloudy",
+    "field": "weather_description",
+    "game_id": "401860918",
+    "home": "Fresno State",
+    "previous": "Partly Sunny;Partly Sunny;Mostly Cloudy;Mostly Cloudy"
+  },
+  {
+    "away": "Colorado State",
+    "current": "2026-11-20T14:01:46+00:00",
+    "field": "forecast_issued_utc",
+    "game_id": "401860918",
+    "home": "Fresno State",
+    "previous": "2026-11-19T14:04:33+00:00"
+  },
+  {
+    "away": "Colorado State",
+    "current": "https://csurams.com/news/2026/11/15/football-rams-woes-continue-in-road-loss;https://csurams.com/news/2026/11/16/football-setting-the-stage-defense-getting-influx-of-youth;https://csurams.com/news/2026/11/16/football-watch-coach-moras-weekly-press-conference;https://csurams.com/news/2026/11/17/football-game-week-at-fresno-state;https://csurams.com/news/2026/11/18/football-better-late-than-never-for-martinez;https://csurams.com/news/2026/11/19/football-memorable-moments-rams-triumphant-in-bowl-return",
+    "field": "away_article_sources",
+    "game_id": "401860918",
+    "home": "Fresno State",
+    "previous": "https://csurams.com/news/2026/11/14/football-game-day-at-washington-state;https://csurams.com/news/2026/11/15/football-rams-woes-continue-in-road-loss;https://csurams.com/news/2026/11/16/football-setting-the-stage-defense-getting-influx-of-youth;https://csurams.com/news/2026/11/16/football-watch-coach-moras-weekly-press-conference;https://csurams.com/news/2026/11/17/football-game-week-at-fresno-state;https://csurams.com/news/2026/11/18/football-better-late-than-never-for-martinez"
+  },
+  {
+    "away": "Kentucky",
+    "current": "68;64;62;62",
+    "field": "temperature_f",
+    "game_id": "401856751",
+    "home": "Missouri",
+    "previous": "67;65;63;61"
+  },
+  {
+    "away": "Kentucky",
+    "current": "6 mph S;7 mph S;8 mph S;8 mph S",
+    "field": "wind",
+    "game_id": "401856751",
+    "home": "Missouri",
+    "previous": "7 mph S;7 mph S;8 mph S;8 mph S"
+  },
+  {
+    "away": "Kentucky",
+    "current": "3;3;3;3",
+    "field": "precipitation_probability",
+    "game_id": "401856751",
+    "home": "Missouri",
+    "previous": "39;39;39;39"
+  },
+  {
+    "away": "Kentucky",
+    "current": "Partly Cloudy;Partly Cloudy;Mostly Cloudy;Mostly Cloudy",
+    "field": "weather_description",
+    "game_id": "401856751",
+    "home": "Missouri",
+    "previous": "Chance Light Rain;Chance Light Rain;Chance Light Rain;Chance Light Rain"
+  },
+  {
+    "away": "Kentucky",
+    "current": "2026-11-20T14:01:41+00:00",
+    "field": "forecast_issued_utc",
+    "game_id": "401856751",
+    "home": "Missouri",
+    "previous": "2026-11-19T14:04:33+00:00"
+  },
+  {
+    "away": "Stanford",
+    "current": "53;51;50;50",
+    "field": "temperature_f",
+    "game_id": "401858308",
+    "home": "California",
+    "previous": "54;53;52;51"
+  },
+  {
+    "away": "Stanford",
+    "current": "2 mph SSE;2 mph SSE;2 mph SSE;3 mph SSE",
+    "field": "wind",
+    "game_id": "401858308",
+    "home": "California",
+    "previous": "2 mph SSW;2 mph SSW;2 mph SSW;1 mph N"
+  },
+  {
+    "away": "Stanford",
+    "current": "88;88;88;88",
+    "field": "precipitation_probability",
+    "game_id": "401858308",
+    "home": "California",
+    "previous": "74;74;74;74"
+  },
+  {
+    "away": "Stanford",
+    "current": "Light Rain;Light Rain;Light Rain;Light Rain",
+    "field": "weather_description",
+    "game_id": "401858308",
+    "home": "California",
+    "previous": "Light Rain Likely;Light Rain Likely;Light Rain Likely;Light Rain Likely"
+  },
+  {
+    "away": "Stanford",
+    "current": "2026-11-20T14:03:16+00:00",
+    "field": "forecast_issued_utc",
+    "game_id": "401858308",
+    "home": "California",
+    "previous": "2026-11-19T13:56:57+00:00"
+  },
+  {
+    "away": "Stanford",
+    "current": "ILB #0 Jahsiah Galvan: Available;S #3 Jaylen'Dai Sumlin: Available;CB #4 Leroy Bryant: Available;S #5 Jay Green: Available;S #6 Darrius Davis: Available;CB #8 Cam Richardson: Available;CB #9 Brandon Nicholson: Out;ILB #10 Sam Mattingly: Available;OLB #11 Tevarua Tafiti: Available;S #15 Donte Utu: Available;S #17 Omari Gaines: Available;CB #18 Jason Hill Jr.: Available;CB #20 Xavier Harmon: Available;S #21 Scotty Edwards: Available;DB #22 Zaiden McDonald: Out;ILB #23 Wassie Lugolobi: Available;ILB #25 Bo Tate: Available;CB #26 Chris Garland: Out;CB #27 Breylan Thompson: Out;CB #28 Sam Neely III: Out;DB #29 Caleb Carson: Available;CB #30 Jack Duckworth: Available;CB #31 Aaron Morris: Available;LB #32 Chase Cahoon: Available;DB #33 Lasiah Jackson: Available;CB #34 Javion Randall: Available;ILB #35 Matt Rose: Out;OLB #36 Tre Williams: Available;ILB #38 Zach Johnson: Available;S #39 Charlie Eckhardt: Available;OLB #40 Mickey Vaccarello: Available;OLB #41 Lucas Shanafelt: Available;DL #42 Jacobi Murray: Available;ILB #43 Landon McComber: Available;OLB #44 Ernest Cooper: Probable;DL #45 Omar Staples: Available;OLB #46 Carter Davis: Available;OLB #48 Drew Cunningham: Available;OLB #49 Gabe Kaminski: Available;OLB #52 Sarrel Howard: Available;ILB #54 Preston Jernegan: Out;DL #55 Joe Asiain: Available;DT #57 Kole Briehler: Available;DL #58 Brendan Delaney: Out;DL #75 Braden Marceau-Olayinka: Available;OLB #88 Keysaun Eleazer: Available;OLB #90 Gavin Geweniger: Available;DL #94 Daniel Ogiozee: Out;DE #95 Adam Shovlin: Available;DL #96 Connor Bachhuber: Available;DL #97 Zach Rowell: Available;DL #98 Max Meier: Out;DL #99 Benedict Umeh: Available",
+    "field": "away_defense_report",
+    "game_id": "401858308",
+    "home": "California",
+    "previous": "ILB #0 Jahsiah Galvan: Available;S #3 Jaylen'Dai Sumlin: Available;CB #4 Leroy Bryant: Available;S #5 Jay Green: Available;S #6 Darrius Davis: Available;CB #8 Cam Richardson: Available;CB #9 Brandon Nicholson: Out;ILB #10 Sam Mattingly: Available;OLB #11 Tevarua Tafiti: Available;S #15 Donte Utu: Available;S #17 Omari Gaines: Available;CB #18 Jason Hill Jr.: Available;CB #20 Xavier Harmon: Available;S #21 Scotty Edwards: Available;DB #22 Zaiden McDonald: Doubtful;ILB #23 Wassie Lugolobi: Available;ILB #25 Bo Tate: Available;CB #26 Chris Garland: Out;CB #27 Breylan Thompson: Out;CB #28 Sam Neely III: Out;DB #29 Caleb Carson: Available;CB #30 Jack Duckworth: Available;CB #31 Aaron Morris: Available;LB #32 Chase Cahoon: Available;DB #33 Lasiah Jackson: Available;CB #34 Javion Randall: Available;ILB #35 Matt Rose: Out;OLB #36 Tre Williams: Available;ILB #38 Zach Johnson: Available;S #39 Charlie Eckhardt: Available;OLB #40 Mickey Vaccarello: Available;OLB #41 Lucas Shanafelt: Available;DL #42 Jacobi Murray: Available;ILB #43 Landon McComber: Available;OLB #44 Ernest Cooper: Questionable;DL #45 Omar Staples: Available;OLB #46 Carter Davis: Available;OLB #48 Drew Cunningham: Available;OLB #49 Gabe Kaminski: Available;OLB #52 Sarrel Howard: Available;ILB #54 Preston Jernegan: Out;DL #55 Joe Asiain: Available;DT #57 Kole Briehler: Available;DL #58 Brendan Delaney: Out;DL #75 Braden Marceau-Olayinka: Available;OLB #88 Keysaun Eleazer: Available;OLB #90 Gavin Geweniger: Available;DL #94 Daniel Ogiozee: Out;DE #95 Adam Shovlin: Available;DL #96 Connor Bachhuber: Available;DL #97 Zach Rowell: Available;DL #98 Max Meier: Doubtful;DL #99 Benedict Umeh: Available"
+  },
+  {
+    "away": "Stanford",
+    "current": "https://calbears.com/news/2026/11/13/football-the-beauty-of-all-the-steps;https://calbears.com/news/2026/11/14/football-postgame-notes-virginia-36-california-7;https://calbears.com/news/2026/11/16/football-pitt-game-time-announced;https://calbears.com/news/2026/11/17/football-bears-set-for-clash-with-cardinal-in-129th-big-game;https://calbears.com/news/2026/11/18/football-pro-bears-week-10-nohl-williams-intercepts-michael-penix-jr;https://calbears.com/news/2026/11/18/football-smith-named-2026-recipient-of-glenn-seaborg-award",
+    "field": "home_article_sources",
+    "game_id": "401858308",
+    "home": "California",
+    "previous": "https://calbears.com/news/2026/11/13/football-the-beauty-of-all-the-steps;https://calbears.com/news/2026/11/14/football-postgame-notes-virginia-36-california-7;https://calbears.com/news/2026/11/15/football-2026-big-game-week-events;https://calbears.com/news/2026/11/16/football-pitt-game-time-announced;https://calbears.com/news/2026/11/17/football-bears-set-for-clash-with-cardinal-in-129th-big-game;https://calbears.com/news/2026/11/18/football-pro-bears-week-10-nohl-williams-intercepts-michael-penix-jr"
+  },
+  {
+    "away": "UTSA",
+    "current": "61;59;58",
+    "field": "temperature_f",
+    "game_id": "401862836",
+    "home": "UAB",
+    "previous": "63;60;58"
+  },
+  {
+    "away": "UTSA",
+    "current": "1;1;1",
+    "field": "precipitation_probability",
+    "game_id": "401862836",
+    "home": "UAB",
+    "previous": "4;4;4"
+  },
+  {
+    "away": "UTSA",
+    "current": "Clear;Mostly Clear;Mostly Clear",
+    "field": "weather_description",
+    "game_id": "401862836",
+    "home": "UAB",
+    "previous": "Mostly Clear;Mostly Clear;Mostly Clear"
+  },
+  {
+    "away": "UTSA",
+    "current": "2026-11-20T13:54:04+00:00",
+    "field": "forecast_issued_utc",
+    "game_id": "401862836",
+    "home": "UAB",
+    "previous": "2026-11-19T14:04:34+00:00"
+  },
+  {
+    "away": "UTSA",
+    "current": "https://uabsports.com/news/2026/11/14/football-uab-becomes-bowl-eligible-with-36-10-victory-at-temple;https://uabsports.com/news/2026/11/15/football-uab-announces-7-pm-kickoff-against-utsa-on-espnu;https://uabsports.com/news/2026/11/16/football-blazers-turn-attention-to-utsa-for-senior-day-at-protective-stadium;https://uabsports.com/news/2026/11/16/football-dean-named-american-defensive-player-of-the-week-for-third-time-robinson-earns-honorable-mention;https://uabsports.com/news/2026/11/17/football-jonah-delange-named-lou-groza-award-semifinalist;https://uabsports.com/news/2026/11/19/football-gameday-guide-utsa-november-21",
+    "field": "home_article_sources",
+    "game_id": "401862836",
+    "home": "UAB",
+    "previous": "https://uabsports.com/news/2026/11/12/football-uab-travels-to-temple-saturday-seeking-bowl-eligibility;https://uabsports.com/news/2026/11/14/football-uab-becomes-bowl-eligible-with-36-10-victory-at-temple;https://uabsports.com/news/2026/11/15/football-uab-announces-7-pm-kickoff-against-utsa-on-espnu;https://uabsports.com/news/2026/11/16/football-blazers-turn-attention-to-utsa-for-senior-day-at-protective-stadium;https://uabsports.com/news/2026/11/16/football-dean-named-american-defensive-player-of-the-week-for-third-time-robinson-earns-honorable-mention;https://uabsports.com/news/2026/11/17/football-jonah-delange-named-lou-groza-award-semifinalist"
+  },
+  {
+    "away": "Utah",
+    "current": "69;67;66",
+    "field": "temperature_f",
+    "game_id": "401856872",
+    "home": "TCU",
+    "previous": "66;64;63"
+  },
+  {
+    "away": "Utah",
+    "current": "11;11;11",
+    "field": "precipitation_probability",
+    "game_id": "401856872",
+    "home": "TCU",
+    "previous": "12;12;12"
+  },
+  {
+    "away": "Utah",
+    "current": "Mostly Cloudy;Mostly Cloudy;Mostly Cloudy",
+    "field": "weather_description",
+    "game_id": "401856872",
+    "home": "TCU",
+    "previous": "Partly Cloudy;Partly Cloudy;Partly Cloudy"
+  },
+  {
+    "away": "Utah",
+    "current": "2026-11-20T14:03:16+00:00",
+    "field": "forecast_issued_utc",
+    "game_id": "401856872",
+    "home": "TCU",
+    "previous": "2026-11-19T14:02:03+00:00"
+  },
+  {
+    "away": "Utah",
+    "current": "7",
+    "field": "away_official_recent_articles",
+    "game_id": "401856872",
+    "home": "TCU",
+    "previous": "8"
+  },
+  {
+    "away": "Utah",
+    "current": "https://utahutes.com/news/2026/11/15/football-dampier-leads-no-2-utah-past-no-23-arizona-as-utes-stay-unbeaten;https://utahutes.com/news/2026/11/16/football-dampier-earns-second-straight-big-12-offensive-player-of-the-week-honor;https://utahutes.com/news/2026/11/16/football-no-2-utah-wraps-up-regular-season-road-slate-at-tcu;https://utahutes.com/news/2026/11/17/football-dampier-takes-two-national-player-of-the-week-accolades;https://utahutes.com/news/2026/11/17/football-davey-o-brien-award-names-dampier-semifinalist;https://utahutes.com/news/2026/11/18/football-zereoue-williams-selected-as-semifinalist-for-outland-trophy;https://utahutes.com/news/2026/11/19/football-utes-in-the-pros-week-11",
+    "field": "away_article_sources",
+    "game_id": "401856872",
+    "home": "TCU",
+    "previous": "https://utahutes.com/news/2026/11/12/football-utes-in-the-pros-week-10;https://utahutes.com/news/2026/11/15/football-dampier-leads-no-2-utah-past-no-23-arizona-as-utes-stay-unbeaten;https://utahutes.com/news/2026/11/15/football-kickoff-time-network-set-for-no-2-utah-at-tcu;https://utahutes.com/news/2026/11/16/football-morgan-scalley-weekly-press-conference-tcu;https://utahutes.com/news/2026/11/16/football-no-2-utah-wraps-up-regular-season-road-slate-at-tcu;https://utahutes.com/news/2026/11/17/football-dampier-takes-two-national-player-of-the-week-accolades;https://utahutes.com/news/2026/11/17/football-davey-o-brien-award-names-dampier-semifinalist;https://utahutes.com/news/2026/11/18/football-zereoue-williams-selected-as-semifinalist-for-outland-trophy"
+  },
+  {
+    "away": "Utah",
+    "current": "LB #0 Cyrus Polu: Available;S #1 Rabbit Evans: Available;CB #2 Rock Caldwell: Available;CB #4 JC Hart: Available;CB #5 James Chenault: Available;S #6 Nate Ritchie: Available;LB #7 Johnathan Hall: Available;DE #8 Ethan Day: Available;CB #9 Elijah Davis: Available;LB #10 Trey Reynolds: Available;CB #11 Elijah Reed: Available;S #12 Davis Andrews: Available;S #14 Cole Standage: Available;DE #15 Lance Holtzclaw: Available;DE #16 PJ Takitaki: Available;CB #18 Earl Parker: Available;CB #19 Dylan Waters: Available;S #21 Nate Tilmon: Available;S #23 Jackson Bennee: Available;S #24 Marcus Wimberly: Out;S #25 Manny Fuller: Available;CB #26 Nick Brown: Available;CB #27 Brandon Holmes: Available;S #28 Luke Bryant: Available;LB #28 Anthony Hernandez: Available;CB #29 Major Hinchen: Available;S #31 Jack Evans: Available;S #32 Josh Sovereign: Available;S #34 Ashton Olevao: Available;LB #35 Preston Pitts: Exempt;LB #36 Brock Fonoimoana: Exempt;S #38 Tommy Nelson: Available;DE #40 Paul Fitzgerald: Available;LB #41 LaGary Mitchell: Available;LB #42 Tayson Reid: Available;LB #43 Grady Mareko: Available;DT #45 Pupu Sepulona: Available;DE #46 Mauka Bernard: Available;DE #47 Jared Fredrick: Available;DE #48 Alex Cloward: Available;DT #51 Karson Kaufusi: Probable;DT #57 Stanley Raass: Available;DE #58 Fameitau Siale: Available;DT #78 Taniela Pepa: Available;LB #83 Elijah Elliss: Available;DT #90 Jireh Moe: Available;DE #92 Nicholas Igwe: Available;DE #93 Kash Dillon: Available;DT #94 Mike Tauteoli: Available;DT #96 Dilan Battle: Available;DT #97 Lucas Samsula: Available;DT #99 Jamal Wallace: Exempt",
+    "field": "away_defense_report",
+    "game_id": "401856872",
+    "home": "TCU",
+    "previous": "LB #0 Cyrus Polu: Available;S #1 Rabbit Evans: Available;CB #2 Rock Caldwell: Available;CB #4 JC Hart: Available;CB #5 James Chenault: Available;S #6 Nate Ritchie: Available;LB #7 Johnathan Hall: Available;DE #8 Ethan Day: Available;CB #9 Elijah Davis: Available;LB #10 Trey Reynolds: Available;CB #11 Elijah Reed: Available;S #12 Davis Andrews: Available;S #14 Cole Standage: Available;DE #15 Lance Holtzclaw: Available;DE #16 PJ Takitaki: Available;CB #18 Earl Parker: Available;CB #19 Dylan Waters: Available;S #21 Nate Tilmon: Available;S #23 Jackson Bennee: Available;S #24 Marcus Wimberly: Out;S #25 Manny Fuller: Available;CB #26 Nick Brown: Available;CB #27 Brandon Holmes: Available;S #28 Luke Bryant: Available;LB #28 Anthony Hernandez: Available;CB #29 Major Hinchen: Available;S #31 Jack Evans: Available;S #32 Josh Sovereign: Available;S #34 Ashton Olevao: Available;LB #35 Preston Pitts: Exempt;LB #36 Brock Fonoimoana: Exempt;S #38 Tommy Nelson: Available;DE #40 Paul Fitzgerald: Available;LB #41 LaGary Mitchell: Available;LB #42 Tayson Reid: Available;LB #43 Grady Mareko: Available;DT #45 Pupu Sepulona: Available;DE #46 Mauka Bernard: Available;DE #47 Jared Fredrick: Available;DE #48 Alex Cloward: Available;DE #49 Ryker Kemp: Available;DT #51 Karson Kaufusi: Questionable;DT #57 Stanley Raass: Available;DE #58 Fameitau Siale: Available;DT #78 Taniela Pepa: Available;LB #83 Elijah Elliss: Available;DT #90 Jireh Moe: Available;DE #92 Nicholas Igwe: Available;DE #93 Kash Dillon: Available;DT #94 Mike Tauteoli: Available;DT #96 Dilan Battle: Available;DT #97 Lucas Samsula: Available;DT #99 Jamal Wallace: Exempt"
+  },
+  {
+    "away": "Utah",
+    "current": "https://gofrogs.com/news/2026/11/17/football-video-sonny-dykes-and-players-weekly-press-conference-vs-utah;https://gofrogs.com/news/2026/11/18/football-tcu-athletics-and-revelxp-renew-partnership-to-continue-elevating-horned-frogs-game-day-experiences;https://gofrogs.com/news/2026/11/19/football-frogs-host-no-2-utah-under-the-lights-on-saturday",
+    "field": "home_article_sources",
+    "game_id": "401856872",
+    "home": "TCU",
+    "previous": "https://gofrogs.com/news/2026/11/15/football-big-12-and-fox-set-kick-time-for-tcu-vs-no-2-utah;https://gofrogs.com/news/2026/11/17/football-video-sonny-dykes-and-players-weekly-press-conference-vs-utah;https://gofrogs.com/news/2026/11/18/football-tcu-athletics-and-revelxp-renew-partnership-to-continue-elevating-horned-frogs-game-day-experiences"
+  },
+  {
+    "away": "Utah",
+    "current": "CB #1 Vernon Glover, Jr.: Available;S #2 Jamel Johnson: Available;LB #3 Max Carroll: Available;CB #4 Gil Jackson Jr.: Available;S #6 Kylin Jackson: Available;S #7 Julius Simms: Available;LB #11 Michael Short: Exempt;CB #12 Kalen Carroll: Available;S #13 Ryan Yaites: Available;S #15 Devyn Hidrogo: Available;CB #16 Brock King: Exempt;CB #17 Devondre McGee: Exempt;S #18 Kaden McFadden: Available;LB #20 Anthony Williams: Available;CB #21 Teon Parks: Available;S #22 Jordan Lester: Available;LB #23 Keylan Abrams: Out;S #24 Joseph Albright: Available;S #25 Zach Taylor: Available;CB #26 Deon Mays: Available;LB #27 Michael Teason Jr.: Available;CB #28 Micah Strickland: Available;S #29 Jason Bradford: Available;CB #30 Max Rankin: Available;LB #31 Noriel Dominguez: Available;LB #32 Dillon Arkansas: Available;DT #34 Perry Cole Jr.: Available;DT #35 Tristan Johnson: Available;LB #37 Hudson Hooper: Available;LB #38 Zion Junk: Exempt;S #39 Jack Pitchford: Available;LB #41 Caleb Cortez: Available;S #42 Sebastian Peterson: Available;LB #44 Sam Haley: Available;LB #46 Rhett Steppe: Available;DT #52 Blake Robinett: Available;DT #90 Kelten Mickell: Available;DT #91 Floyd Guidry: Available;DT #92 Ansel Din-Mbuh: Probable;DT #95 Markis Deal: Probable;DT #96 Maddox Flynt: Available",
+    "field": "home_defense_report",
+    "game_id": "401856872",
+    "home": "TCU",
+    "previous": "CB #1 Vernon Glover, Jr.: Available;S #2 Jamel Johnson: Available;LB #3 Max Carroll: Available;CB #4 Gil Jackson Jr.: Available;S #6 Kylin Jackson: Available;S #7 Julius Simms: Available;LB #11 Michael Short: Exempt;CB #12 Kalen Carroll: Available;S #13 Ryan Yaites: Available;S #15 Devyn Hidrogo: Available;CB #16 Brock King: Exempt;CB #17 Devondre McGee: Exempt;S #18 Kaden McFadden: Available;LB #20 Anthony Williams: Available;CB #21 Teon Parks: Available;S #22 Jordan Lester: Available;LB #23 Keylan Abrams: Available;S #24 Joseph Albright: Available;S #25 Zach Taylor: Available;CB #26 Deon Mays: Available;LB #27 Michael Teason Jr.: Available;CB #28 Micah Strickland: Available;S #29 Jason Bradford: Available;CB #30 Max Rankin: Available;LB #31 Noriel Dominguez: Available;LB #32 Dillon Arkansas: Available;DT #34 Perry Cole Jr.: Available;DT #35 Tristan Johnson: Available;LB #37 Hudson Hooper: Available;LB #38 Zion Junk: Exempt;S #39 Jack Pitchford: Available;LB #41 Caleb Cortez: Available;S #42 Sebastian Peterson: Available;LB #44 Sam Haley: Available;LB #46 Rhett Steppe: Available;DT #52 Blake Robinett: Available;DT #90 Kelten Mickell: Available;DT #91 Floyd Guidry: Available;DT #92 Ansel Din-Mbuh: Probable;DT #95 Markis Deal: Probable;DT #96 Maddox Flynt: Available"
+  },
+  {
+    "away": "San Diego State",
+    "current": "39;39;38;38",
+    "field": "temperature_f",
+    "game_id": "401860925",
+    "home": "Boise State",
+    "previous": "40;39;38;37"
+  },
+  {
+    "away": "San Diego State",
+    "current": "6 mph SE;8 mph ESE;8 mph ESE;8 mph ESE",
+    "field": "wind",
+    "game_id": "401860925",
+    "home": "Boise State",
+    "previous": "3 mph SSE;6 mph SE;6 mph SE;6 mph SE"
+  },
+  {
+    "away": "San Diego State",
+    "current": "2;2;2;2",
+    "field": "precipitation_probability",
+    "game_id": "401860925",
+    "home": "Boise State",
+    "previous": "5;8;11;15"
+  },
+  {
+    "away": "San Diego State",
+    "current": "Cloudy;Cloudy;Cloudy;Cloudy",
+    "field": "weather_description",
+    "game_id": "401860925",
+    "home": "Boise State",
+    "previous": "Mostly Cloudy;Mostly Cloudy;Mostly Cloudy;Slight Chance Rain And Snow"
+  },
+  {
+    "away": "San Diego State",
+    "current": "2026-11-20T14:01:44+00:00",
+    "field": "forecast_issued_utc",
+    "game_id": "401860925",
+    "home": "Boise State",
+    "previous": "2026-11-19T14:04:34+00:00"
+  },
+  {
+    "away": "San Diego State",
+    "current": "https://broncosports.com/news/2026/11/18/football-nfl-broncos-week-11;https://broncosports.com/news/2026/11/18/football-super-bowl-champion-george-holani-to-raise-blue-chaos-flag;https://broncosports.com/news/2026/11/18/football-week-12-availability-report;https://broncosports.com/news/2026/11/19/football-no-15-15-17-broncos-host-aztecs-for-senior-night",
+    "field": "home_article_sources",
+    "game_id": "401860925",
+    "home": "Boise State",
+    "previous": "https://broncosports.com/news/2026/11/18/football-madsen-jones-selected-for-pony-express-award-watch-list;https://broncosports.com/news/2026/11/18/football-nfl-broncos-week-11;https://broncosports.com/news/2026/11/18/football-super-bowl-champion-george-holani-to-raise-blue-chaos-flag;https://broncosports.com/news/2026/11/18/football-week-12-availability-report"
+  },
+  {
+    "away": "Oklahoma State",
+    "current": "58;57;55;54",
+    "field": "temperature_f",
+    "game_id": "401856870",
+    "home": "Arizona State",
+    "previous": "57;55;54;53"
+  },
+  {
+    "away": "Oklahoma State",
+    "current": "Partly Cloudy;Mostly Cloudy;Mostly Cloudy;Mostly Cloudy",
+    "field": "weather_description",
+    "game_id": "401856870",
+    "home": "Arizona State",
+    "previous": "Mostly Cloudy;Mostly Cloudy;Mostly Cloudy;Mostly Cloudy"
+  },
+  {
+    "away": "Oklahoma State",
+    "current": "2026-11-20T14:03:16+00:00",
+    "field": "forecast_issued_utc",
+    "game_id": "401856870",
+    "home": "Arizona State",
+    "previous": "2026-11-19T14:04:34+00:00"
+  },
+  {
+    "away": "Oklahoma State",
+    "current": "DE #0 Malik Charles: Available;S #1 Evan Jackson: Available;LB #2 Isaiah Chisom: Available;LB #3 Tate Romney: Doubtful;CB #4 Mo Horn: Available;DT #5 Saadiq Clements: Available;S #6 Christian Bodnar: Available;S #7 Quinton Hammonds: Available;CB #8 Kollin Lewis: Available;CB #9 LaDainian Fields: Available;DE #10 James Williams: Available;DE #11 Keviyan Huddleston: Available;S #12 Cameron Epps: Available;CB #13 Trudell Berry: Available;CB #14 Kobi Foreman: Available;DT #15 Fatafehi Vailea II: Exempt;LB #16 Dallas Winner-Johnson: Available;S #18 Mose Phillips III: Exempt;DE #19 DJ Jackson Jr.: Available;LB #20 Taurean Davis: Available;S #22 Jeremy Cook Jr.: Available;S #23 Braeden Presley: Available;S #25 Markeith Williams: Available;CB #26 Maliek Bracy: Available;S #27 Vincent Holmes: Available;CB #28 Marrel Davis III: Available;S #29 Cooper Lai: Available;LB #30 Trip White: Available;DE #31 Billy Walton III: Available;LB #32 Ethan Wesloski: Available;LB #33 Jack Puckett: Available;S #36 Bobby Deal Jr.: Available;DE #38 Carl'veon Young: Available;LB #40 Cooper Mailand: Available;DL #41 Byron Stubbs: Available;DE #44 Rashod Bradley: Available;DT #45 Enai White: Available;S #46 Hunter Trusler: Available;S #47 Harrison Dempsey: Available;LB #50 Gunnar Wilson: Available;LB #52 Beau Wendel: Available;LB #53 Christian Jones: Available;DT #59 Xavier Mason: Available;DE #87 DeSean Brown: Available;DT #88 Landon Dean: Out;DT #90 Savion Barthelemy: Available;DE #91 Landon Bland: Available;DT #92 Jerry Lawson: Available;DT #93 Dominic Macon: Available;DT #94 Braylon Rigsby: Available;DE #95 Jaleel Johnson: Available;DE #96 Joey Quinn: Available;DT #97 Nygel Farsee: Available;DT #98 Luke Webb: Available;DT #99 Iman Oates: Available",
+    "field": "away_defense_report",
+    "game_id": "401856870",
+    "home": "Arizona State",
+    "previous": "DE #0 Malik Charles: Available;S #1 Evan Jackson: Available;LB #2 Isaiah Chisom: Available;LB #3 Tate Romney: Doubtful;CB #4 Mo Horn: Available;DT #5 Saadiq Clements: Available;S #6 Christian Bodnar: Available;S #7 Quinton Hammonds: Available;CB #8 Kollin Lewis: Available;CB #9 LaDainian Fields: Available;DE #10 James Williams: Available;DE #11 Keviyan Huddleston: Available;S #12 Cameron Epps: Available;CB #13 Trudell Berry: Available;CB #14 Kobi Foreman: Available;DT #15 Fatafehi Vailea II: Exempt;LB #16 Dallas Winner-Johnson: Available;S #18 Mose Phillips III: Exempt;DE #19 DJ Jackson Jr.: Available;LB #20 Taurean Davis: Available;S #22 Jeremy Cook Jr.: Available;S #23 Braeden Presley: Available;S #25 Markeith Williams: Available;CB #26 Maliek Bracy: Available;S #27 Vincent Holmes: Available;CB #28 Marrel Davis III: Available;S #29 Cooper Lai: Available;LB #30 Trip White: Available;DE #31 Billy Walton III: Available;LB #32 Ethan Wesloski: Probable;LB #33 Jack Puckett: Available;S #36 Bobby Deal Jr.: Available;DE #38 Carl'veon Young: Available;LB #40 Cooper Mailand: Available;DL #41 Byron Stubbs: Available;DE #44 Rashod Bradley: Available;DT #45 Enai White: Available;S #46 Hunter Trusler: Available;S #47 Harrison Dempsey: Available;LB #50 Gunnar Wilson: Available;LB #52 Beau Wendel: Available;LB #53 Christian Jones: Available;DT #59 Xavier Mason: Available;DE #87 DeSean Brown: Available;DT #88 Landon Dean: Out;DT #90 Savion Barthelemy: Available;DE #91 Landon Bland: Available;DT #92 Jerry Lawson: Available;DT #93 Dominic Macon: Available;DT #94 Braylon Rigsby: Available;DE #95 Jaleel Johnson: Available;DE #96 Joey Quinn: Available;DT #97 Nygel Farsee: Available;DT #98 Luke Webb: Available;DT #99 Iman Oates: Available"
+  },
+  {
+    "away": "Oklahoma State",
+    "current": "OL #50 Marques Uini: Available;OL #52 Manamo'ui Muti: Available;OL #53 Rob Lapuaho: Available;OL #54 Desean Bryant Jr.: Available;OL #55 Niniva Nicholson: Available;OL #56 Cortavius Tisaby: Available;OL #57 Filiva'a Lokotui: Available;OL #58 Tana Alo-Tupuola: Available;OL #59 Maki Stewart: Available;OL #64 Wade Helton: Questionable;OL #69 Brent Helton: Available;OL #70 Jalen Klemm: Available;OL #71 Makua Pule: Available;OL #72 Doughless Teloma: Available;OL #73 Terrell Kim: Available;OL #74 Siosaia Lapuaho: Available;OL #75 Jarmaine Mitchell: Out;OL #76 Champ Westbrooks: Available;OL #77 Matai Jefferson: Available;OL #78 Luke Baklenko: Available;OL #79 Xander Ruggeroli: Available",
+    "field": "home_ol_report",
+    "game_id": "401856870",
+    "home": "Arizona State",
+    "previous": "OL #50 Marques Uini: Available;OL #52 Manamo'ui Muti: Available;OL #53 Rob Lapuaho: Available;OL #54 Desean Bryant Jr.: Available;OL #55 Niniva Nicholson: Available;OL #56 Cortavius Tisaby: Available;OL #57 Filiva'a Lokotui: Available;OL #58 Tana Alo-Tupuola: Available;OL #59 Maki Stewart: Available;OL #64 Wade Helton: Questionable;OL #69 Brent Helton: Available;OL #70 Jalen Klemm: Available;OL #71 Makua Pule: Available;OL #72 Doughless Teloma: Available;OL #73 Terrell Kim: Available;OL #74 Siosaia Lapuaho: Available;OL #75 Jarmaine Mitchell: Available;OL #76 Champ Westbrooks: Available;OL #77 Matai Jefferson: Available;OL #78 Luke Baklenko: Available;OL #79 Xander Ruggeroli: Available"
+  },
+  {
+    "away": "Utah State",
+    "current": "41;41;41;41",
+    "field": "temperature_f",
+    "game_id": "401860919",
+    "home": "Oregon State",
+    "previous": "42;42;41;41"
+  },
+  {
+    "away": "Utah State",
+    "current": "7 mph S;7 mph S;7 mph S;10 mph S",
+    "field": "wind",
+    "game_id": "401860919",
+    "home": "Oregon State",
+    "previous": "8 mph S;8 mph S;8 mph S;12 mph S"
+  },
+  {
+    "away": "Utah State",
+    "current": "59;59;59;25",
+    "field": "precipitation_probability",
+    "game_id": "401860919",
+    "home": "Oregon State",
+    "previous": "76;76;76;39"
+  },
+  {
+    "away": "Utah State",
+    "current": "Light Rain Likely;Light Rain Likely;Light Rain Likely;Chance Light Rain",
+    "field": "weather_description",
+    "game_id": "401860919",
+    "home": "Oregon State",
+    "previous": "Light Rain;Light Rain;Light Rain;Chance Light Rain"
+  },
+  {
+    "away": "Utah State",
+    "current": "2026-11-20T14:03:17+00:00",
+    "field": "forecast_issued_utc",
+    "game_id": "401860919",
+    "home": "Oregon State",
+    "previous": "2026-11-19T14:04:34+00:00"
+  },
+  {
+    "away": "Hawai'i",
+    "current": "31;30;30;29",
+    "field": "temperature_f",
+    "game_id": "401864541",
+    "home": "Nevada",
+    "previous": "32;31;31;30"
+  },
+  {
+    "away": "Hawai'i",
+    "current": "2;2;2;4",
+    "field": "precipitation_probability",
+    "game_id": "401864541",
+    "home": "Nevada",
+    "previous": "13;13;13;16"
+  },
+  {
+    "away": "Hawai'i",
+    "current": "Mostly Cloudy;Mostly Cloudy;Mostly Cloudy;Mostly Cloudy",
+    "field": "weather_description",
+    "game_id": "401864541",
+    "home": "Nevada",
+    "previous": "Mostly Cloudy;Mostly Cloudy;Mostly Cloudy;Slight Chance Light Snow"
+  },
+  {
+    "away": "Hawai'i",
+    "current": "2026-11-20T14:03:17+00:00",
+    "field": "forecast_issued_utc",
+    "game_id": "401864541",
+    "home": "Nevada",
+    "previous": "2026-11-19T14:04:34+00:00"
+  }
+]

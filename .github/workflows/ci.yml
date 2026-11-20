@@ -34,6 +34,8 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
+          # Test the exact reviewed PR head, including its integrated main history.
+          ref: ${{ github.event.pull_request.head.sha }}
           # Replay checks compare execution code to its original commit.
           fetch-depth: 0
 
@@ -51,6 +53,9 @@ jobs:
       - name: Verify repository safety controls
         run: python scripts/verify_repo_safety.py
 
+      - name: Verify both integration parents and preserved evidence
+        run: python -m scripts.verify_week12_integration
+
       - name: Verify migrations on a disposable database copy
         run: python -m scripts.verify_migrations
 
@@ -62,6 +67,9 @@ jobs:
 
       - name: Verify exact historical audit and prospective custody
         run: python -m scripts.verify_replay_compat --output replay-verification/compatibility.json
+
+      - name: Verify corrected Week 7 indexed source and forecast custody
+        run: python -m scripts.verify_week7_corrected_git_custody
 
       - name: Verify exact Week 9 formal postgame audit
         run: python -m scripts.build_week9_formal_audit --verify
@@ -95,6 +103,18 @@ jobs:
       - name: Verify Week 12 actual seal qualifications on complete delivery
         run: python -m scripts.qualify_week12_delivery --verify
 
+      - name: Verify append-only Week 12 Thursday research refresh
+        run: python -m scripts.review_week12_thursday --verify
+
+      - name: Verify Week 12 Thursday context and eligibility provenance
+        run: python -m scripts.review_week12_context --capture outputs/2026-week12-context/20261119-morning --conference outputs/2026-week12-context/20261119-conference --eligibility-capture outputs/2026-week12-readiness/20261119-morning --output outputs/2026-week12-context/20261119-review-v2 --verify
+
+      - name: Verify Week 12 Friday context and eligibility provenance
+        run: python -m scripts.review_week12_context --capture outputs/2026-week12-context/20261120-morning --conference outputs/2026-week12-context/20261120-conference --eligibility-capture outputs/2026-week12-readiness/20261120-morning --output outputs/2026-week12-context/20261120-review --verify
+
+      - name: Verify append-only Friday refresh and unchanged historical card
+        run: python -m scripts.build_week12_daily_refresh --previous-context outputs/2026-week12-context/20261119-review-v2 --previous-capture outputs/2026-week12-context/20261119-morning --context outputs/2026-week12-context/20261120-review --capture outputs/2026-week12-context/20261120-morning --previous-card outputs/2026-week12-refresh/20261119-morning/full-card-66.csv --output outputs/2026-week12-refresh/20261120-morning --verify
+
       - name: Verify Week 11 source custody and schedule readiness without contest lines
         run: python -m scripts.prepare_week11_readiness --verify
 
@@ -106,3 +126,12 @@ jobs:
 
       - name: Verify Week 11 complete board, explicit late custody and separate research
         run: python -m scripts.verify_week11_acceptance
+
+      - name: Verify integrated Week 11 forensic and recovered season audit
+        run: python -m scripts.build_week11_formal_audit --verify
+
+      - name: Verify season workbook formulas and cached grades
+        run: python -m scripts.verify_week11_workbook
+
+      - name: Verify frozen pregame to postgame context comparison
+        run: python -m scripts.week11_context_postgame --verify

@@ -1,0 +1,36 @@
+{
+  "ats_picks": 0,
+  "blockers": [
+    "Recover and independently inspect all eight original images with actual receipt and byte hashes",
+    "Refresh live schedule and status before prospective execution; never backfill elapsed games",
+    "Formal disposable-database ingestion, model lock/seal, full cards and candidate context review remain pending"
+  ],
+  "elapsed_by_archived_schedule": [
+    "401866459",
+    "401866458",
+    "401866460"
+  ],
+  "eligibility_as_of_utc": "2026-11-11T01:40:28.406171+00:00",
+  "kickoff_zone_basis": "For November10-14 only, UTC-06:00 matches all67 provider kickoffs, consistent with America/Chicago; screenshots do not label timezone",
+  "model_lock_or_seal_created": false,
+  "original_image_custody": "INCOMPLETE: remote metadata reports original image bytes unavailable; last-asset hash alone is not independent verification",
+  "owner_quote_timestamp": null,
+  "owner_selection_approval": "PENDING",
+  "remaining_by_archived_schedule": 64,
+  "screenshot_images_independently_verified_here": 0,
+  "screenshot_references": 8,
+  "source_commit": "8cccef1c5f14b4230091fb443af92f8a5665c358",
+  "source_observed_no_later_than": "2026-11-10T16:27:38-06:00",
+  "source_rows": 67,
+  "source_sha256": {
+    "data/ingest/2026-week11-splashsports-schedule-reconciliation.csv": "16881fd0f9aa868a9f6953e5d210e1202bd53be600843bb3b6a348d5312d5437",
+    "data/ingest/2026-week11-splashsports-transcription.csv": "ee7ab2b94b7ce42d57deefac6aa478a8da09c011086f921cd2cf061147058faa",
+    "production-weeks/2026-week11-splashsports-lock-metadata.json": "3b12cd8a0fb339ee30690b910bcefe1abeaeb879f0a5b4d45f895cf21a492b0a",
+    "production-weeks/2026-week11-splashsports.csv": "a27f367a38918e188cc2e8aa417b9a1970049ca02d0501789d00ccfdb0b12c22"
+  },
+  "spread_rows": 67,
+  "status": "TRANSCRIPTION_BYTES_AND_67_MATCHUPS_VERIFIED_ORIGINAL_IMAGE_CUSTODY_INCOMPLETE",
+  "supersession": "The concurrent source delivery supersedes earlier local no-screenshot-receipt statements. Earlier captures/gates remain intact.",
+  "total_rows": 67,
+  "totals_picks": 0
+}

@@ -1,0 +1,61 @@
+{
+  "failed_ci_run": 44378636901,
+  "reason": "Eleven historical input receipt hashes require original CRLF checkout bytes; all 1201 tests passed on all four jobs.",
+  "records": [
+    {
+      "path": "outputs/2026-week6-ranking-calibration-research/ats_counterfactual_top5_in_sample.csv",
+      "git_blob_sha256": "3e306034a509855e0a9e38d2d4e9848b46b0cbe00c3a957d7ba01df4ac1d390a",
+      "crlf_receipt_sha256": "35da19c47880552599fec263aa04a77c0ecc8825b4977db4f641e0be0c7d87f6"
+    },
+    {
+      "path": "outputs/2026-week6-ranking-calibration-research/diagnostics.json",
+      "git_blob_sha256": "b36989124de6d32d60e98619c39d9371766b625626ec578a573f992a0803f39a",
+      "crlf_receipt_sha256": "5c787b69b54af14f692d2710409e79fab6b28e752bff3ab4656d2913c22ef5c9"
+    },
+    {
+      "path": "outputs/2026-week6-ranking-calibration-research/report.md",
+      "git_blob_sha256": "8a8dc0d68be5da880a0a6ad47dba8a1c4e3e1b9665179b1163e0b71bbc99716b",
+      "crlf_receipt_sha256": "b8390cbb4b7bdaa448a6ad7cafeebf97979021e8b4825c89f5855a6f4a4a318c"
+    },
+    {
+      "path": "outputs/2026-week6-ranking-calibration-research/week6_ats_58_reconstructed.csv",
+      "git_blob_sha256": "1b22bb8982d2e628c26ab6c07ab255b8a434c069bc2c50aef641ba95cd86a7b4",
+      "crlf_receipt_sha256": "3bec5592867a4dfd263635a205692479c281fd6746600bf60e83ab45a4178a04"
+    },
+    {
+      "path": "outputs/2026-week7-monitoring/20261014T131100Z-context-snapshot.md",
+      "git_blob_sha256": "e05e29597aca26e1cb30b571354c14783858a955a3c6097726a3d9bac1c64692",
+      "crlf_receipt_sha256": "d74c2dd81a7115342d3ade0ac2425adc6eec34b2a96f0f3a2713dccb49340e7d"
+    },
+    {
+      "path": "outputs/2026-week7-monitoring/20261014T131300Z-context-detail.md",
+      "git_blob_sha256": "784569a5c7200542613594a4426156861a54681081851e2601c7eb3fae1957ed",
+      "crlf_receipt_sha256": "0978e351e78b370caf6e41829da32464bf5182cba4c5648db34f932d82306076"
+    },
+    {
+      "path": "outputs/2026-week7-monitoring/20261017T134114Z-monitoring-summary.md",
+      "git_blob_sha256": "88ca9ff331c6b35e4da51b45e006bf463c578d60d23d7219b6e4f4c3bfa9466c",
+      "crlf_receipt_sha256": "071a49ada3421639ee7e087bf94c8f8ed18706e3768204d3c94895974a6bd910"
+    },
+    {
+      "path": "outputs/2026-week7-owner-review/OWNER-APPROVED-WEEK-7-CUSTODY-VERIFICATION.json",
+      "git_blob_sha256": "8e7d60875b1a78bd300c64faea122b92db58dd6c51aa6d07081c7e40322b6122",
+      "crlf_receipt_sha256": "285d89fac1ee0bfe68e2ef3db36e14ed8b1d553a16759d0b40992a0f8f0d6aac"
+    },
+    {
+      "path": "outputs/2026-week7-owner-review/week7_final_selection_review_2026-10-13.md",
+      "git_blob_sha256": "33fad73b4a5b41d637cf5029e2306c66e664e6a9f978b487b7cc6493ad2e1e48",
+      "crlf_receipt_sha256": "ee9955926e2fa8b65f8ca1b8eeccba111da439ec52ffaab38b499b6fe41fa180"
+    },
+    {
+      "path": "outputs/2026-week7-owner-review/week7_owner_approval_candidate.json",
+      "git_blob_sha256": "80cd81f62cd2d312269aa3bcce0ac4b64d697eadb01c1c816cd4612d822990bd",
+      "crlf_receipt_sha256": "b1f9228277bb2030d1249f22a57dedc0941913c65d0274280cce64181ef7a2cc"
+    },
+    {
+      "path": "outputs/week_1_2026_report.md",
+      "git_blob_sha256": "0d8415c4b0dc30cdc01268a9ac6147d4081c80b523c0a221b96a66573067f16b",
+      "crlf_receipt_sha256": "e700e1dd294a0014972baf386dceca2c100683cdff3a0232b2f87e63f949b949"
+    }
+  ]
+}

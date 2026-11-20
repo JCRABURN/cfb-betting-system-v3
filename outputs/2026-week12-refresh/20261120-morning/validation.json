@@ -1,0 +1,104 @@
+{
+  "started_at_utc": "2026-11-20T14:08:02.474830+00:00",
+  "code_sha256_lf": {
+    ".gitattributes": "1be3dc2febe915de765937384febc30ae3b7b86619d2e9a415af4ff569a3df63",
+    ".github/workflows/ci.yml": "3d16858140edb0ca76ef0418040ab8f31fba113a0b430b0701473154f507f730",
+    "scripts/verify_week12_integration.py": "53ae6761c0637925d7380f847f86441cc0a15e8848fd28b7f3af2ad8bf978cc6",
+    "tests/test_week12_integration.py": "e15cd28e920f003d1cbc3918a2fa06cdeae9b8bfac94cd5accede18af4ee3ef2",
+    "scripts/build_week12_daily_refresh.py": "d231d0fddf76fb244ca82cbc469bdd909b126b25c851fd999e6a4093dfc185f2",
+    "tests/test_week12_daily_refresh.py": "3c559f4d2c55e99ae04201e04a2902fb18104bfe3f9f4200df1d94ec2ff6921d"
+  },
+  "commands": [
+    {
+      "command": [
+        "C:\\Users\\jraburn\\Documents\\GitHub\\cfb-betting-system-v3\\.venv\\Scripts\\python.exe",
+        "-m",
+        "pytest",
+        "tests/test_week12_source.py",
+        "tests/test_week12_delivery.py",
+        "tests/test_week12_context_refresh.py",
+        "tests/test_week12_integration.py",
+        "tests/test_week12_daily_refresh.py",
+        "-q"
+      ],
+      "exit_code": 0,
+      "output": "....................................................                     [100%]\r\n============================== warnings summary ===============================\r\n..\\..\\.venv\\Lib\\site-packages\\_pytest\\cacheprovider.py:469\r\n  C:\\Users\\jraburn\\Documents\\GitHub\\cfb-betting-system-v3\\.venv\\Lib\\site-packages\\_pytest\\cacheprovider.py:469: PytestCacheWarning: could not create cache path C:\\Users\\jraburn\\Documents\\GitHub\\cfb-betting-system-v3\\.worktrees\\week12-prospective\\.pytest_cache\\v\\cache\\nodeids: [WinError 5] Access is denied: 'C:\\\\Users\\\\jraburn\\\\Documents\\\\GitHub\\\\cfb-betting-system-v3\\\\.worktrees\\\\week12-prospective\\\\.pytest_cache\\\\v\\\\cache'\r\n    config.cache.set(\"cache/nodeids\", sorted(self.cached_nodeids))\r\n\r\n-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html\r\n52 passed, 1 warning in 6.06s\r\n"
+    },
+    {
+      "command": [
+        "C:\\Users\\jraburn\\Documents\\GitHub\\cfb-betting-system-v3\\.venv\\Scripts\\python.exe",
+        "-m",
+        "scripts.review_week12_context",
+        "--capture",
+        "outputs/2026-week12-context/20261120-morning",
+        "--conference",
+        "outputs/2026-week12-context/20261120-conference",
+        "--eligibility-capture",
+        "outputs/2026-week12-readiness/20261120-morning",
+        "--output",
+        "outputs/2026-week12-context/20261120-review",
+        "--verify"
+      ],
+      "exit_code": 0,
+      "output": "{\r\n  \"as_of_utc\": \"2026-11-20T14:04:24.705040+00:00\",\r\n  \"files\": {\r\n    \"all-game-context.csv\": \"8632aa000e1d4610ec6a97876f8b4fa6ec09bc13919eaf203ae6270b9d73b0f9\",\r\n    \"conference-personnel.csv\": \"99b1458774981751b08baf96d1a1b9c6f26a20ba35424164f1197447ec7e63a5\",\r\n    \"conference-report-status.json\": \"e182c5ef8b0e4450f7363ee3d7ace110c6f93aac67ceb4aec6b57b4a9f2c6c83\"\r\n  },\r\n  \"games\": 60,\r\n  \"indoor\": 1,\r\n  \"initial_personnel_report_teams\": 50,\r\n  \"input_manifests\": {\r\n    \"outputs/2026-week12-context/20261120-conference/manifest.json\": \"e6ce6b3b436089a5fa8e463273e2774dcbb132546253ff4795ff6eea709904e5\",\r\n    \"outputs/2026-week12-context/20261120-morning/manifest.json\": \"29d02c9d8ca6cf4642696309cab7dc87f760a04612de6a963f39d4a83c97d16e\",\r\n    \"outputs/2026-week12-readiness/20261120-morning/capture-manifest.json\": \"4d0b5e3e5d93cef0776cd6fd77d6aea809b02addabb4c1517aeec606d7d2381c\"\r\n  },\r\n  \"numerical_adjustments\": 0,\r\n  \"original_lines_changed\": false,\r\n  \"pending_report_teams\": 0,\r\n  \"personnel_records\": 3773,\r\n  \"version\": \"week12-context-review-v3\",\r\n  \"weather_available\": 59\r\n}\r\n\r\n"
+    },
+    {
+      "command": [
+        "C:\\Users\\jraburn\\Documents\\GitHub\\cfb-betting-system-v3\\.venv\\Scripts\\python.exe",
+        "-m",
+        "scripts.build_week12_daily_refresh",
+        "--previous-context",
+        "outputs/2026-week12-context/20261119-review-v2",
+        "--previous-capture",
+        "outputs/2026-week12-context/20261119-morning",
+        "--context",
+        "outputs/2026-week12-context/20261120-review",
+        "--capture",
+        "outputs/2026-week12-context/20261120-morning",
+        "--previous-card",
+        "outputs/2026-week12-refresh/20261119-morning/full-card-66.csv",
+        "--output",
+        "outputs/2026-week12-refresh/20261120-morning",
+        "--verify"
+      ],
+      "exit_code": 0,
+      "output": "{\r\n  \"context_changes\": 340,\r\n  \"eligible_games\": 60,\r\n  \"evidence_as_of_utc\": \"2026-11-20T14:04:24.705040+00:00\",\r\n  \"external_week11_submissions_used\": false,\r\n  \"files\": {\r\n    \"all-132-markets.csv\": \"fa755f4e605485731179599f70236a43687a804c7ef3cf277c988f0db17cd3f3\",\r\n    \"context-changes.json\": \"6e75a93cee73be4374b6d0bbab8a5fb35290d3da6cbbddaea92e2bfdd55539b3\",\r\n    \"eligibility.json\": \"30a2a3cbbe99d478dbcd9dc46ec103e746f25974b1e7b9c8a9e6692c76974074\",\r\n    \"feature-comparison.json\": \"777052f3d63164f4c6d80aeb00e3835025c8d14540992a4b97ac5819c9317407\",\r\n    \"full-card-66.csv\": \"aa14edd24bb7341005340e0d7f68a0ced9267cc67bb53d84f4354a7a0c8b958d\",\r\n    \"market-observations-separate.json\": \"83f57ff1f409eaf0cee171c364080e739c4cd874aec485908db98f109cd489fe\",\r\n    \"personnel-changes.json\": \"7939c1d00683be8a90f2950ea52074316df5121922bc3d8f894c90965415bf0b\"\r\n  },\r\n  \"forecast_changes\": 0,\r\n  \"full_card_rows\": 66,\r\n  \"inputs\": {\r\n    \"outputs/2026-week12-context/20261119-morning/manifest.json\": \"99cc286aa9106f2aa073cbb52b9dd3525f8838562284f2a87adab17cce5a9c34\",\r\n    \"outputs/2026-week12-context/20261119-review-v2/manifest.json\": \"5b9acb661d063a18552d4d9f13c9c15a5a86232e27c14e8695de86ce33e57121\",\r\n    \"outputs/2026-week12-context/20261120-morning/manifest.json\": \"29d02c9d8ca6cf4642696309cab7dc87f760a04612de6a963f39d4a83c97d16e\",\r\n    \"outputs/2026-week12-context/20261120-review/manifest.json\": \"7db92261728516ecb5b8523d45876550b5daa11f1325ebceae8eb93ab3ede4aa\",\r\n    \"outputs/2026-week12-readiness/20261120-morning/capture-manifest.json\": \"4d0b5e3e5d93cef0776cd6fd77d6aea809b02addabb4c1517aeec606d7d2381c\",\r\n    \"outputs/2026-week12-readiness/execution-gate-20261118/capture-manifest.json\": \"3e3a86ccf99a7fb507e82ab97770e4e18e484fdb0c21d2732bb9aed84324c598\",\r\n    \"outputs/2026-week12-refresh/20261119-morning/all-132-markets.csv\": \"fa755f4e605485731179599f70236a43687a804c7ef3cf277c988f0db17cd3f3\",\r\n    \"outputs/2026-week12-refresh/20261119-morning/full-card-66.csv\": \"aa14edd24bb7341005340e0d7f68a0ced9267cc67bb53d84f4354a7a0c8b958d\"\r\n  },\r\n  \"market_games_changed\": 49,\r\n  \"market_rows\": 132,\r\n  \"model_rerun\": false,\r\n  \"numeric_adjustments\": 0,\r\n  \"official_common_calibrated_top_five\": false,\r\n  \"personnel_changes\": 48,\r\n  \"reason\": \"Seven prior-week statistical payloads unchanged; context risks remain separate without approved numeric adjustment or calibration.\",\r\n  \"started_games_unchanged\": 6,\r\n  \"version\": \"week12-daily-evidence-review-v1\"\r\n}\r\n\r\n"
+    },
+    {
+      "command": [
+        "C:\\Users\\jraburn\\Documents\\GitHub\\cfb-betting-system-v3\\.venv\\Scripts\\python.exe",
+        "-m",
+        "scripts.verify_week12_integration"
+      ],
+      "exit_code": 0,
+      "output": "{\r\n  \"status\": \"VERIFIED_BOTH_PARENT_INVENTORIES\",\r\n  \"parents\": {\r\n    \"approved_main\": {\r\n      \"commit\": \"217600fe1445edc7c0f2a51c04246e5ba38ea0cb\",\r\n      \"inherited_files\": 6176,\r\n      \"protected_evidence_files\": 5741,\r\n      \"changed_evidence_files\": 0\r\n    },\r\n    \"original_week12\": {\r\n      \"commit\": \"880d3f9f7b87313aebb2425efafe5318525eb53e\",\r\n      \"inherited_files\": 8226,\r\n      \"protected_evidence_files\": 7798,\r\n      \"changed_evidence_files\": 0\r\n    }\r\n  },\r\n  \"evidence_prefixes\": [\r\n    \"outputs/\",\r\n    \"data/ingest/\",\r\n    \"production-weeks/\"\r\n  ],\r\n  \"model_policy_validation\": \"Separate original Week12 seal and Week11 audit code checks\"\r\n}\r\n"
+    },
+    {
+      "command": [
+        "C:\\Users\\jraburn\\Documents\\GitHub\\cfb-betting-system-v3\\.venv\\Scripts\\python.exe",
+        "-m",
+        "scripts.verify_week12_acceptance"
+      ],
+      "exit_code": 0,
+      "output": "{\r\n  \"actual_recovery_timestamp\": \"2026-11-18T19:06:51.776041+00:00\",\r\n  \"additional_provider_games\": 4,\r\n  \"ats_count\": 66,\r\n  \"calibrated_cross_market_probabilities_available\": false,\r\n  \"canonical_matches\": 66,\r\n  \"duplicate_games\": 0,\r\n  \"elapsed_games\": 3,\r\n  \"eligibility_as_of_utc\": \"2026-11-18T19:09:32.641812+00:00\",\r\n  \"extracted_text_sha256\": \"b36e3b27c98516cea5ea90a00ab10c5cda912167e03b5e44dcfaf4d2bbb8a44d\",\r\n  \"files\": {\r\n    \"contest-lines.csv\": \"70ca1b635a7eb7d2931298d43c2f6926def46c45461c682375e9bf79620956d3\",\r\n    \"provider-reconciliation.csv\": \"15c2546e52fef7a44e9b1c43ba29817c8a1ac2f6e09832a23220f9f6707a2526\",\r\n    \"scheduled-games-not-on-pdf.json\": \"002719175e96898b0d93951dac41ae2cd5b88b26694cefd342b28878818fa232\"\r\n  },\r\n  \"game_count\": 66,\r\n  \"kickoff_differences\": 0,\r\n  \"pdf_sha256\": \"60d6ced55737fe6749a34f092735b3a613d75824ebfd9138de1aa429d393edd2\",\r\n  \"policy\": \"v2.8 unchanged\",\r\n  \"provider_manifest_sha256\": \"1acfb9ff8fe0de474a0f230f72a57e304d15502528bfceca6bc58f5fd4ff5942\",\r\n  \"receipt_sha256\": \"7b0e386115628800c0fbf113383744aae1659b785ae67e1b4145478a9c6a56ce\",\r\n  \"season\": 2026,\r\n  \"source\": \"SplashSports\",\r\n  \"source_timestamp\": \"2026-11-17T14:22:00-06:00\",\r\n  \"source_timestamp_kind\": \"PDF_PRINT_TIME_NOT_MODEL_FORECAST\",\r\n  \"totals_count\": 66,\r\n  \"unresolved_teams\": 0,\r\n  \"upcoming_games\": 63,\r\n  \"version\": \"week12-source-v1\",\r\n  \"visual_validation\": \"All eight original PDF pages inspected; all 66 names, signed spreads, paired totals and displayed kickoffs checked.\",\r\n  \"week\": 12\r\n}\r\n\r\n{\r\n  \"actual_lock_timestamp\": \"2026-11-18T19:16:40.507990+00:00\",\r\n  \"calibrated_cross_market_probability_available\": false,\r\n  \"context_status\": \"SEPARATE_APPEND_ONLY_CONTEXT_REVIEW_REQUIRED\",\r\n  \"duplicate_games\": 0,\r\n  \"elapsed_games\": 3,\r\n  \"elapsed_markets\": 6,\r\n  \"eligible_missing_forecasts\": 0,\r\n  \"external_week11_submissions_used\": false,\r\n  \"files\": {\r\n    \"all-132-markets.csv\": \"ec95005271e4d56c7d3f705eb413fa72bf78cc76b6fd46241cabb041e8e6fc1a\",\r\n    \"full-card-66.csv\": \"432a210e009bc4ca53e7075243315cb8128f3c1cd438f744c18746cfc011e948\",\r\n    \"provisional-research-five.csv\": \"b935507137ae6f4fc4eb9d50515fb79d7e84a5839f926ea9f07bdf30b64c34a1\"\r\n  },\r\n  \"frozen_code_commit\": \"69d14465fdaf437f8bdec85e155d97c818c020b4\",\r\n  \"intake_games\": 66,\r\n  \"intake_markets\": 132,\r\n  \"limitation\": \"Unchanged v2.8 ATS returns null governed uncertainty; ATS score is a capped linear heuristic. Totals use an uncalibrated normal residual CDF. These scales cannot certify the strongest combined five. No policy was promoted to manufacture calibration.\",\r\n  \"model_generated_at_utc\": \"2026-11-18T19:16:53.585528+00:00\",\r\n  \"no_market_allocation_quota\": true,\r\n  \"official_combined_top_five_available\": false,\r\n  \"production_database_modified\": false,\r\n  \"prospective_ats\": 63,\r\n  \"prospective_totals\": 63,\r\n  \"provisional_chips\": [\r\n    5,\r\n    4,\r\n    3,\r\n    2,\r\n    1\r\n  ],\r\n  \"provisional_research_five_games\": 5,\r\n  \"source_print_timestamp\": \"2026-11-17T14:22:00-06:00\",\r\n  \"status\": \"DRAFT_FORECASTS_COMPLETE_FOR_ELIGIBLE_GAMES_OFFICIAL_COMBINED_SELECTION_BLOCKED\"\r\n}\r\n\r\n{\r\n  \"as_of_utc\": \"2026-11-18T19:19:11.851475+00:00\",\r\n  \"files\": {\r\n    \"all-game-context.csv\": \"5917c5a440cab7f6cda0387227e745bb1c953aa03a171c498b5d9953f8f9b662\",\r\n    \"conference-personnel.csv\": \"476463f56fa5e537fe3a14f1b07ac4f1ffc4d2bf51c8819c22c839d2802df2dd\",\r\n    \"conference-report-status.json\": \"7b3b118cc4cf63c9be94b66ad291550e3d8c965e6b5339503a4eb5235be59bf6\"\r\n  },\r\n  \"games\": 63,\r\n  \"indoor\": 1,\r\n  \"initial_personnel_report_teams\": 6,\r\n  \"input_manifests\": {\r\n    \"outputs/2026-week12-context/20261118-conference/manifest.json\": \"f206a57a2884eff6bdc64d8c805461c5dc4abb2a6dcabb7c5e1b446a1a360805\",\r\n    \"outputs/2026-week12-context/20261118-initial/manifest.json\": \"030d44f97940fe3342c1af4ed27340e76e1663582d72f6baa053475eb0f0d1b8\"\r\n  },\r\n  \"numerical_adjustments\": 0,\r\n  \"original_lines_changed\": false,\r\n  \"pending_report_teams\": 44,\r\n  \"personnel_records\": 427,\r\n  \"version\": \"week12-context-review-v2\",\r\n  \"weather_available\": 62\r\n}\r\n\r\n{\"status\": \"VERIFIED_READ_ONLY_DRAFT_WITH_DECLARED_GAPS\", \"files\": 1210, \"games\": 66, \"markets\": 132, \"eligible_predictions\": 126, \"elapsed_markets\": 6, \"official_combined_top5\": false, \"forward_sealed_games\": 61, \"late_custody_games\": 2}\r\n"
+    },
+    {
+      "command": [
+        "C:\\Users\\jraburn\\Documents\\GitHub\\cfb-betting-system-v3\\.venv\\Scripts\\python.exe",
+        "-m",
+        "scripts.qualify_week12_delivery",
+        "--verify"
+      ],
+      "exit_code": 0,
+      "output": "{\"files\": 3, \"forward_games\": 61, \"late_games\": 2, \"no_forecast_games\": 3}\r\n"
+    },
+    {
+      "command": [
+        "C:\\Users\\jraburn\\Documents\\GitHub\\cfb-betting-system-v3\\.venv\\Scripts\\python.exe",
+        "scripts/verify_repo_safety.py"
+      ],
+      "exit_code": 0,
+      "output": "Repository dependency and workflow safety checks passed.\r\n"
+    }
+  ]
+}

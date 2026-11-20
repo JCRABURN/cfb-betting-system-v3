@@ -1,0 +1,45 @@
+{
+  "timestamp_utc": "2026-11-19T14:45:30.892276+00:00",
+  "working_code_sha256_lf": {
+    ".gitattributes": "1be3dc2febe915de765937384febc30ae3b7b86619d2e9a415af4ff569a3df63",
+    ".github/workflows/ci.yml": "91c87d1d24802802e26c9063daf4d0978e3756a12413abfccd6c8c85bf55ee6d",
+    "scripts/verify_week12_integration.py": "53ae6761c0637925d7380f847f86441cc0a15e8848fd28b7f3af2ad8bf978cc6",
+    "tests/test_week12_integration.py": "e15cd28e920f003d1cbc3918a2fa06cdeae9b8bfac94cd5accede18af4ee3ef2"
+  },
+  "checks": [
+    {
+      "command": [
+        "C:\\Users\\jraburn\\Documents\\GitHub\\cfb-betting-system-v3\\.venv\\Scripts\\python.exe",
+        "-m",
+        "pytest",
+        "tests/test_week12_integration.py",
+        "-q"
+      ],
+      "exit_code": 0,
+      "output": "......                                                                   [100%]\r\n6 passed in 0.04s\r\n"
+    },
+    {
+      "command": [
+        "C:\\Users\\jraburn\\Documents\\GitHub\\cfb-betting-system-v3\\.venv\\Scripts\\python.exe",
+        "-m",
+        "scripts.verify_week12_integration"
+      ],
+      "exit_code": 0,
+      "output": "{\r\n  \"status\": \"VERIFIED_BOTH_PARENT_INVENTORIES\",\r\n  \"parents\": {\r\n    \"approved_main\": {\r\n      \"commit\": \"217600fe1445edc7c0f2a51c04246e5ba38ea0cb\",\r\n      \"inherited_files\": 6176,\r\n      \"protected_evidence_files\": 5741,\r\n      \"changed_evidence_files\": 0\r\n    },\r\n    \"original_week12\": {\r\n      \"commit\": \"880d3f9f7b87313aebb2425efafe5318525eb53e\",\r\n      \"inherited_files\": 8226,\r\n      \"protected_evidence_files\": 7798,\r\n      \"changed_evidence_files\": 0\r\n    }\r\n  },\r\n  \"evidence_prefixes\": [\r\n    \"outputs/\",\r\n    \"data/ingest/\",\r\n    \"production-weeks/\"\r\n  ],\r\n  \"model_policy_validation\": \"Separate original Week12 seal and Week11 audit code checks\"\r\n}\r\n"
+    }
+  ],
+  "parent_ci_gates": {
+    "217600fe1445edc7c0f2a51c04246e5ba38ea0cb": {
+      "retained_commands": 18,
+      "missing_commands": []
+    },
+    "880d3f9f7b87313aebb2425efafe5318525eb53e": {
+      "retained_commands": 17,
+      "missing_commands": []
+    }
+  },
+  "exact_pr_head_checkout": true,
+  "heartbeat_status": "ACTIVE",
+  "heartbeat_checked_from": "local automation.toml",
+  "first_full_suite_note": "Started before the final scope-only integration inventory refinement; all six final integration cases rerun here. Exact-head CI runs the full final suite."
+}
