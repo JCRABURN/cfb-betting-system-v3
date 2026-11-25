@@ -1,3 +1,10 @@
+# Preserve exact Week 13 sources, outputs and prior-week feature custody.
+data/ingest/2026-week13-splashsports/** -text whitespace=cr-at-eol
+outputs/2026-week13-readiness/** -text whitespace=cr-at-eol
+outputs/2026-week13-prospective/** -text whitespace=cr-at-eol
+outputs/2026-week12-readiness/20261118T190925Z/capture-manifest.json -text
+outputs/2026-week12-readiness/20261118T190925Z/cfbd-prior-season-advanced.json.gz -text
+
 outputs/2026-week6-execution-20261006T2133Z/** text eol=lf
 outputs/2026-week6-postgame-audit/** text eol=lf
 outputs/2026-week6-postgame-audit/**/*.gz -text

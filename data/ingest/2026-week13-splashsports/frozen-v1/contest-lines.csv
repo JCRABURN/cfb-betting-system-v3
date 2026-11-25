@@ -1,0 +1,70 @@
+source_row,pdf_page,raw_away,raw_home,away_abbreviation,home_abbreviation,away_spread,home_spread,locked_total,displayed_kickoff,source_kickoff_utc
+1,1,Miami (OH),Western Michigan,M-OH,WMU,6.5,-6.5,46.5,Tue 6:00pm,2026-11-25T00:00:00+00:00
+2,1,Kent State,Eastern Michigan,KENT,EMU,5.5,-5.5,46.5,Tue 6:00pm,2026-11-25T00:00:00+00:00
+3,1,TCU,Texas Tech,TCU,TTU,14.5,-14.5,47.5,Thu 7:00pm,2026-11-27T01:00:00+00:00
+4,1,Toledo,Ohio,TOL,OHIO,-3.5,3.5,48.5,Fri 11:00am,2026-11-27T17:00:00+00:00
+5,1,Mississippi State,Ole Miss,MSST,MISS,19.5,-19.5,56.5,Fri 11:00am,2026-11-27T17:00:00+00:00
+6,1,Buffalo,Akron,BUFF,AKR,-7.5,7.5,49.5,Fri 11:00am,2026-11-27T17:00:00+00:00
+7,1,Nebraska,Iowa,NEB,IOWA,4.5,-4.5,40.5,Fri 11:00am,2026-11-27T17:00:00+00:00
+8,1,Tulsa,UTSA,TLSA,UTSA,1.5,-1.5,58.5,Fri 11:00am,2026-11-27T17:00:00+00:00
+9,1,Appalachian State,South Alabama,APP,USA,3.5,-3.5,56.5,Fri 2:00pm,2026-11-27T20:00:00+00:00
+10,2,Temple,Memphis,TEM,MEM,17.5,-17.5,67.5,Fri 2:30pm,2026-11-27T20:30:00+00:00
+11,2,North Dakota State,San Jose State,NDSU,SJSU,-8.5,8.5,39.5,Fri 2:30pm,2026-11-27T20:30:00+00:00
+12,2,Florida,Florida State,FLA,FSU,-6.5,6.5,53.5,Fri 2:30pm,2026-11-27T20:30:00+00:00
+13,2,Air Force,New Mexico,AFA,UNM,6.5,-6.5,41.5,Fri 3:30pm,2026-11-27T21:30:00+00:00
+14,2,Texas,Texas A&M,TEX,TXAM,-11.5,11.5,40.5,Fri 6:30pm,2026-11-28T00:30:00+00:00
+15,2,Minnesota,Wisconsin,MINN,WIS,7.5,-7.5,37.5,Fri 6:30pm,2026-11-28T00:30:00+00:00
+16,2,West Virginia,Utah,WVU,UTAH,22.5,-22.5,68.5,Fri 8:00pm,2026-11-28T02:00:00+00:00
+17,2,Notre Dame,Syracuse,ND,SYR,-25.5,25.5,52.5,Sat 11:00am,2026-11-28T17:00:00+00:00
+18,2,Michigan,Ohio State,MICH,OSU,10.5,-10.5,38.5,Sat 11:00am,2026-11-28T17:00:00+00:00
+19,2,Central Michigan,Ball State,CMU,BALL,-4.5,4.5,48.5,Sat 11:00am,2026-11-28T17:00:00+00:00
+20,2,UConn,Wyoming,CONN,WYO,-3.5,3.5,46.5,Sat 11:00am,2026-11-28T17:00:00+00:00
+21,2,Navy,Charlotte,NAVY,CHAR,-16.5,16.5,55.5,Sat 11:00am,2026-11-28T17:00:00+00:00
+22,3,NC State,North Carolina,NCST,UNC,5.5,-5.5,53.5,Sat 11:00am,2026-11-28T17:00:00+00:00
+23,3,Boston College,Miami (FL),BC,MIA,25.5,-25.5,54.5,Sat 11:00am,2026-11-28T17:00:00+00:00
+24,3,Louisiana Tech,Georgia Southern,LT,GASO,2.5,-2.5,53.5,Sat 11:00am,2026-11-28T17:00:00+00:00
+25,3,Louisville,Kentucky,LOU,UK,-2.5,2.5,54.5,Sat 11:00am,2026-11-28T17:00:00+00:00
+26,3,Illinois,Northwestern,ILL,NW,2.5,-2.5,49.5,Sat 11:30am,2026-11-28T17:30:00+00:00
+27,3,LSU,Arkansas,LSU,ARK,-14.5,14.5,49.5,Sat 11:45am,2026-11-28T17:45:00+00:00
+28,3,Marshall,Louisiana-Monroe,MRSH,ULM,-4.5,4.5,51.5,Sat 12:00pm,2026-11-28T18:00:00+00:00
+29,3,Kennesaw State,Western Kentucky,KENN,WKU,-3.5,3.5,53.5,Sat 12:00pm,2026-11-28T18:00:00+00:00
+30,3,Florida Atlantic,East Carolina,FAU,ECU,1.5,-1.5,56.5,Sat 12:00pm,2026-11-28T18:00:00+00:00
+31,3,Southern Miss,Old Dominion,USM,ODU,5.5,-5.5,50.5,Sat 12:00pm,2026-11-28T18:00:00+00:00
+32,3,Liberty,Missouri State,LIB,MOSU,-16.5,16.5,52.5,Sat 1:00pm,2026-11-28T19:00:00+00:00
+33,3,Coastal Carolina,James Madison,CCAR,JMU,17.5,-17.5,55.5,Sat 1:00pm,2026-11-28T19:00:00+00:00
+34,4,Kansas State,Iowa State,KSU,ISU,3.5,-3.5,53.5,Sat 1:00pm,2026-11-28T19:00:00+00:00
+35,4,UCF,Colorado,UCF,COLO,2.5,-2.5,50.5,Sat 1:00pm,2026-11-28T19:00:00+00:00
+36,4,Army,Rice,ARMY,RICE,-5.5,5.5,48.5,Sat 1:00pm,2026-11-28T19:00:00+00:00
+37,4,Sam Houston,Florida International,SHSU,FIU,11.5,-11.5,41.5,Sat 1:00pm,2026-11-28T19:00:00+00:00
+38,4,Louisiana,Georgia State,ULL,GAST,-5.5,5.5,55.5,Sat 1:00pm,2026-11-28T19:00:00+00:00
+39,4,New Mexico State,Middle Tennessee,NMSU,MTU,3.5,-3.5,51.5,Sat 1:00pm,2026-11-28T19:00:00+00:00
+40,4,Troy,Arkansas State,TROY,ARST,3.5,-3.5,46.5,Sat 2:00pm,2026-11-28T20:00:00+00:00
+41,4,South Carolina,Clemson,SCAR,CLEM,-5.5,5.5,41.5,Sat 2:00pm,2026-11-28T20:00:00+00:00
+42,4,Virginia,Virginia Tech,UVA,VT,3.5,-3.5,51.5,Sat 2:00pm,2026-11-28T20:00:00+00:00
+43,4,USC,UCLA,USC,UCLA,-6.5,6.5,45.5,Sat 2:30pm,2026-11-28T20:30:00+00:00
+44,4,Jacksonville State,Delaware,JVST,DEL,2.5,-2.5,58.5,Sat 2:30pm,2026-11-28T20:30:00+00:00
+45,4,Tulane,South Florida,TULN,USF,5.5,-5.5,43.5,Sat 2:30pm,2026-11-28T20:30:00+00:00
+46,5,Duke,Wake Forest,DUKE,WAKE,14.5,-14.5,54.5,Sat 2:30pm,2026-11-28T20:30:00+00:00
+47,5,SMU,Stanford,SMU,STAN,-7.5,7.5,61.5,Sat 2:30pm,2026-11-28T20:30:00+00:00
+48,5,UMass,Bowling Green,MASS,BGSU,3.5,-3.5,43.5,Sat 2:30pm,2026-11-28T20:30:00+00:00
+49,5,UTEP,Northern Illinois,UTEP,NIU,4.5,-4.5,50.5,Sat 2:30pm,2026-11-28T20:30:00+00:00
+50,5,Penn State,Maryland,PSU,MD,-7.5,7.5,50.5,Sat 2:30pm,2026-11-28T20:30:00+00:00
+51,5,Cincinnati,BYU,CIN,BYU,14.5,-14.5,55.5,Sat 2:30pm,2026-11-28T20:30:00+00:00
+52,5,Georgia Tech,Georgia,GT,UGA,35.5,-35.5,54.5,Sat 2:30pm,2026-11-28T20:30:00+00:00
+53,5,UAB,North Texas,UAB,UNT,3.5,-3.5,46.5,Sat 3:00pm,2026-11-28T21:00:00+00:00
+54,5,Oklahoma,Missouri,OKLA,MIZZ,1.5,-1.5,41.5,Sat 3:15pm,2026-11-28T21:15:00+00:00
+55,5,Michigan State,Rutgers,MSU,RUTG,-3.5,3.5,47.5,Sat 3:15pm,2026-11-28T21:15:00+00:00
+56,5,Boise State,Colorado State,BSU,CSU,-21.5,21.5,76.5,Sat 5:00pm,2026-11-28T23:00:00+00:00
+57,5,Kansas,Oklahoma State,KU,OKST,6.5,-6.5,65.5,Sat 5:15pm,2026-11-28T23:15:00+00:00
+58,6,San Diego State,Washington State,SDSU,WSU,2.5,-2.5,46.5,Sat 5:30pm,2026-11-28T23:30:00+00:00
+59,6,Tennessee,Vanderbilt,TENN,VAN,-13.5,13.5,43.5,Sat 6:00pm,2026-11-29T00:00:00+00:00
+60,6,Purdue,Indiana,PUR,IND,23.5,-23.5,52.5,Sat 6:00pm,2026-11-29T00:00:00+00:00
+61,6,Washington,Oregon,WASH,ORE,14.5,-14.5,50.5,Sat 6:30pm,2026-11-29T00:30:00+00:00
+62,6,Pittsburgh,California,PITT,CAL,-9.5,9.5,47.5,Sat 6:30pm,2026-11-29T00:30:00+00:00
+63,6,Auburn,Alabama,AUB,ALA,15.5,-15.5,48.5,Sat 6:30pm,2026-11-29T00:30:00+00:00
+64,6,Nevada,UNLV,NEV,UNLV,5.5,-5.5,44.5,Sat 8:00pm,2026-11-29T02:00:00+00:00
+65,6,Arizona State,Arizona,ASU,ARIZ,9.5,-9.5,54.5,Sat 8:00pm,2026-11-29T02:00:00+00:00
+66,6,Baylor,Houston,BAY,HOU,5.5,-5.5,55.5,Sat 8:30pm,2026-11-29T02:30:00+00:00
+67,6,Texas State,Utah State,TXST,USU,-6.5,6.5,52.5,Sat 8:30pm,2026-11-29T02:30:00+00:00
+68,6,Oregon State,Fresno State,ORST,FRES,2.5,-2.5,56.5,Sat 9:00pm,2026-11-29T03:00:00+00:00
+69,6,Sacramento State,Hawai'i,SAC,HAW,13.5,-13.5,39.5,Sat 10:00pm,2026-11-29T04:00:00+00:00
