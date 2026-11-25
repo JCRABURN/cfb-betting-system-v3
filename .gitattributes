@@ -1,3 +1,8 @@
+# Preserve exact Week 13 source and execution evidence on every platform.
+data/ingest/2026-week13-splashsports/** -text whitespace=cr-at-eol
+outputs/2026-week13-readiness/** -text whitespace=cr-at-eol
+outputs/2026-week13-prospective/** -text whitespace=cr-at-eol
+
 # Exact original Week12 PDF, frozen contest lines and append-only receipt bytes.
 data/ingest/2026-week12-splashsports/** -text whitespace=cr-at-eol
 outputs/2026-week12-readiness/** -text whitespace=cr-at-eol
