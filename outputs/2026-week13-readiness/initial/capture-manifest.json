@@ -1,0 +1,112 @@
+{
+  "capture_code_sha256_lf": "c0540106cd5544364dfebb99b70ef6a9c16db3db3072f4995b9ec99f45e7708c",
+  "captured_at_utc": "2026-11-25T15:11:52.651270+00:00",
+  "contest_lines_locked": false,
+  "feature_cutoff": {
+    "end_week": 12,
+    "season": 2026
+  },
+  "governing_policy": "Master Prompt v2.8",
+  "market_prices_are_contest_lines": false,
+  "note": "Schedule coverage includes every game involving an FBS team, including FCS opponents. Retrieval time is not a market quote timestamp. No target-game results may enter prediction features.",
+  "owner_screenshots_received": false,
+  "policy_changed": false,
+  "predictions_generated": false,
+  "records": [
+    {
+      "endpoint": "https://api.collegefootballdata.com/games",
+      "http_status": 200,
+      "name": "cfbd-games-all",
+      "parameters": {
+        "seasonType": "regular",
+        "year": 2026
+      },
+      "path": "cfbd-games-all.json.gz",
+      "raw_bytes": 2883702,
+      "raw_sha256": "dd19083fcbdb2fc7fec5db660458567d3dbe0ad88d40fce888385f50216864ac",
+      "received_at_utc": "2026-11-25T15:11:33.159392+00:00",
+      "records": 3767,
+      "requested_at_utc": "2026-11-25T15:11:32.126765+00:00",
+      "resolved_url": "https://api.collegefootballdata.com/games?year=2026&seasonType=regular",
+      "status": "CAPTURED",
+      "stored_sha256": "e63b1220fe80104ffdd0033d15c3200ab71f3f3335f994413ff3db4a1332ae23"
+    },
+    {
+      "endpoint": "https://api.collegefootballdata.com/teams/fbs",
+      "http_status": 200,
+      "name": "cfbd-fbs-teams",
+      "parameters": {
+        "year": 2026
+      },
+      "path": "cfbd-fbs-teams.json.gz",
+      "raw_bytes": 202966,
+      "raw_sha256": "15611e4d36965423f96b01f58fbe1ea9de04f88c2909a490ddbfcab4511ea2c2",
+      "received_at_utc": "2026-11-25T15:11:32.526435+00:00",
+      "records": 138,
+      "requested_at_utc": "2026-11-25T15:11:32.126765+00:00",
+      "resolved_url": "https://api.collegefootballdata.com/teams/fbs?year=2026",
+      "status": "CAPTURED",
+      "stored_sha256": "0852e9210f0eeb3c5d8d8e9b6281b4e7b62b98d381cf5f2c36af9658b071dbcd"
+    },
+    {
+      "endpoint": "https://api.collegefootballdata.com/teams",
+      "http_status": 200,
+      "name": "cfbd-all-teams",
+      "parameters": {},
+      "path": "cfbd-all-teams.json.gz",
+      "raw_bytes": 1518842,
+      "raw_sha256": "f022a53b3ea78eab176829ebad6c8238e97e3e108b9e5da560eecfc8b2cf8967",
+      "received_at_utc": "2026-11-25T15:11:32.676401+00:00",
+      "records": 1933,
+      "requested_at_utc": "2026-11-25T15:11:32.126765+00:00",
+      "resolved_url": "https://api.collegefootballdata.com/teams",
+      "status": "CAPTURED",
+      "stored_sha256": "282170329e27daa7597ec8b32f902a5f84534207de3c12a7fd21695b6ed213c6"
+    },
+    {
+      "endpoint": "https://api.collegefootballdata.com/stats/season/advanced",
+      "http_status": 200,
+      "name": "cfbd-prior-season-advanced",
+      "parameters": {
+        "endWeek": 12,
+        "excludeGarbageTime": "true",
+        "year": 2026
+      },
+      "path": "cfbd-prior-season-advanced.json.gz",
+      "raw_bytes": 341502,
+      "raw_sha256": "8004c191ef5e8fe91fc53ff720ae2d5f76c3ea616831b96c1612f2db6568c3f7",
+      "received_at_utc": "2026-11-25T15:11:52.645213+00:00",
+      "records": 138,
+      "requested_at_utc": "2026-11-25T15:11:32.126765+00:00",
+      "resolved_url": "https://api.collegefootballdata.com/stats/season/advanced?year=2026&endWeek=12&excludeGarbageTime=true",
+      "status": "CAPTURED",
+      "stored_sha256": "73707c242bcb8a5a3c01602163e254c30f9be0be99339bb977b5d7baad1c9a05"
+    },
+    {
+      "endpoint": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/scoreboard",
+      "http_status": 200,
+      "name": "espn-schedule",
+      "parameters": {
+        "groups": 80,
+        "limit": 300,
+        "seasontype": 2,
+        "week": 13,
+        "year": 2026
+      },
+      "path": "espn-schedule.json.gz",
+      "raw_bytes": 1304782,
+      "raw_sha256": "7b4f879de2980a9f361c06abb1138ae6d42708631a1cad87d84296cdb9d874a2",
+      "received_at_utc": "2026-11-25T15:11:32.776120+00:00",
+      "records": null,
+      "requested_at_utc": "2026-11-25T15:11:32.528082+00:00",
+      "resolved_url": "https://site.api.espn.com/apis/site/v2/sports/football/college-football/scoreboard?year=2026&week=13&seasontype=2&groups=80&limit=300",
+      "status": "CAPTURED",
+      "stored_sha256": "c630bb4393a032feb399626455bc1aba2e6e49753841d2fce07adb06ff34a704"
+    }
+  ],
+  "season": 2026,
+  "source_commit": "2111ac479ce4c9b06c591242736422e197f7a976",
+  "status": "CAPTURED_REQUIRES_RECONCILIATION",
+  "version": "week13-readiness-capture-v1",
+  "week": 13
+}

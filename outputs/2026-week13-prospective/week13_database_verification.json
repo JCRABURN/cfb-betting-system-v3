@@ -1,0 +1,51 @@
+{
+  "teams": {
+    "before_count": 136,
+    "after_count": 138,
+    "original_rows_missing_or_changed": 0
+  },
+  "games": {
+    "before_count": 5051,
+    "after_count": 5762,
+    "original_rows_missing_or_changed": 0
+  },
+  "betting_lines": {
+    "before_count": 26535,
+    "after_count": 26535,
+    "original_rows_missing_or_changed": 0
+  },
+  "team_game_stats": {
+    "before_count": 14721,
+    "after_count": 15963,
+    "original_rows_missing_or_changed": 0
+  },
+  "weather": {
+    "before_count": 0,
+    "after_count": 0,
+    "original_rows_missing_or_changed": 0
+  },
+  "injuries": {
+    "before_count": 0,
+    "after_count": 0,
+    "original_rows_missing_or_changed": 0
+  },
+  "picks": {
+    "before_count": 22,
+    "after_count": 22,
+    "original_rows_missing_or_changed": 0
+  },
+  "ingestion_runs": {
+    "before_count": 37,
+    "after_count": 37,
+    "original_rows_missing_or_changed": 0
+  },
+  "supplemental_game_dates": {
+    "before_count": 204,
+    "after_count": 204,
+    "original_rows_missing_or_changed": 0
+  },
+  "source_database_sha256": "09d0bcda684356001bacf8bc9e42939add56b053f405564d9be924e39c0cf842",
+  "execution_database_sha256": "35fad02bd9067c7c2d9beb6af7b3a785bbd6502ab7c451372f56b8d566c46ded",
+  "integrity": "ok",
+  "foreign_key_violations": 0
+}
